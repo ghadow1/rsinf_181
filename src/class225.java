@@ -16,7 +16,7 @@ public class class225 {
                   method4122(class217_4.field2675, class217_4.field2688, -1666853879);
                }
 
-               class61 class61_5 = (class61) client.field816.method5952((long)class217_4.field2688);
+               class61 class61_5 = (class61) Client.field816.method5952((long)class217_4.field2688);
                if (class61_5 != null) {
                   class235.method4269(class61_5.field571, (byte) 41);
                }
@@ -35,7 +35,7 @@ public class class225 {
                   if (i_6 != -1) {
                      class258 class258_7 = class7.method81(i_6, (byte) 1);
 
-                     for (class217_4.field2584 += client.field718; class217_4.field2584 > class258_7.field3522[class217_4.field2692]; class224.method4120(class217_4)) {
+                     for (class217_4.field2584 += Client.field718; class217_4.field2584 > class258_7.field3522[class217_4.field2692]; class224.method4120(class217_4)) {
                         class217_4.field2584 -= class258_7.field3522[class217_4.field2692];
                         ++class217_4.field2692;
                         if (class217_4.field2692 >= class258_7.field3520.length) {
@@ -51,8 +51,8 @@ public class class225 {
                if (class217_4.field2575 != 0 && !class217_4.field2563) {
                   int i_9 = class217_4.field2575 >> 16;
                   i_6 = class217_4.field2575 << 16 >> 16;
-                  i_9 *= client.field718;
-                  i_6 *= client.field718;
+                  i_9 *= Client.field718;
+                  i_6 *= Client.field718;
                   class217_4.field2615 = i_9 + class217_4.field2615 & 0x7ff;
                   class217_4.field2616 = i_6 + class217_4.field2616 & 0x7ff;
                   class224.method4120(class217_4);

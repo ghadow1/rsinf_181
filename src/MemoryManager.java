@@ -50,9 +50,9 @@ public class MemoryManager implements Runnable {
                     ManagementFactory.getGarbageCollectorMXBeans().iterator();
 
             while (iterator.hasNext()) {
-               GarbageCollectorMXBean garbagecollectormxbean_3 = (GarbageCollectorMXBean) iterator.next();
-               if (garbagecollectormxbean_3.isValid()) {
-                  GCMonitor.gcBean = garbagecollectormxbean_3;
+               GarbageCollectorMXBean bean = (GarbageCollectorMXBean) iterator.next();
+               if (bean.isValid()) {
+                  GCMonitor.gcBean = bean;
                   GCMonitor_2.lastCheckTime = -1L;
                   GCMonitor_2.lastGCTime = -1L;
                }

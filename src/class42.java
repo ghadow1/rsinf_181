@@ -78,8 +78,8 @@ public class class42 implements class37 {
 
    static void method763(class235 class235_0, String string_1) {
       class58 class58_3 = new class58(class235_0, string_1);
-      client.field925.add(class58_3);
-      client.field927 += class58_3.field539;
+      Client.field925.add(class58_3);
+      Client.field927 += class58_3.field539;
    }
 
 }

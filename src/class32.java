@@ -26,16 +26,16 @@ public class class32 {
          i_9 = i_4 * i_6 - i_5 * i_1 >> 16;
          i_1 = i_6 * i_1 + i_5 * i_4 >> 16;
          if (i_1 >= 50) {
-            client.field752 = i_0 * client.field917 / i_1 + client.field746 / 2;
-            client.field753 = client.field714 / 2 + i_9 * client.field917 / i_1;
+            Client.field752 = i_0 * Client.field917 / i_1 + Client.field746 / 2;
+            Client.field753 = Client.field714 / 2 + i_9 * Client.field917 / i_1;
          } else {
-            client.field752 = -1;
-            client.field753 = -1;
+            Client.field752 = -1;
+            Client.field753 = -1;
          }
 
       } else {
-         client.field752 = -1;
-         client.field753 = -1;
+         Client.field752 = -1;
+         Client.field753 = -1;
       }
    }
 

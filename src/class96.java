@@ -318,16 +318,16 @@ public class class96 {
    }
 
    static void method2265(int i_0) {
-      if (i_0 != client.field662) {
-         if (client.field662 == 0) {
+      if (i_0 != Client.field662) {
+         if (Client.field662 == 0) {
             class27.field233.method885((byte) 11);
          }
 
          if (i_0 == 20 || i_0 == 40 || i_0 == 45) {
-            client.field686 = 0;
-            client.field687 = 0;
-            client.field688 = 0;
-            client.field797.method4996(i_0);
+            Client.field686 = 0;
+            Client.field687 = 0;
+            Client.field688 = 0;
+            Client.field797.method4996(i_0);
             if (i_0 != 20) {
                class9.method99(false, -1114411806);
             }
@@ -338,19 +338,19 @@ public class class96 {
             class269.field3563 = null;
          }
 
-         if (client.field662 == 25) {
-            client.field709 = 0;
-            client.field705 = 0;
-            client.field706 = 1;
-            client.field707 = 0;
-            client.field896 = 1;
+         if (Client.field662 == 25) {
+            Client.field709 = 0;
+            Client.field705 = 0;
+            Client.field706 = 1;
+            Client.field707 = 0;
+            Client.field896 = 1;
          }
 
          if (i_0 != 5 && i_0 != 10) {
             if (i_0 == 20) {
-               class309.method5892(class17.field110, client.field683, true, client.field662 == 11 ? 4 : 0, -273498913);
+               class309.method5892(class17.field110, Client.field683, true, Client.field662 == 11 ? 4 : 0, -273498913);
             } else if (i_0 == 11) {
-               class309.method5892(class17.field110, client.field683, false, 4, -273498913);
+               class309.method5892(class17.field110, Client.field683, false, 4, -273498913);
             } else if (class85.field1179) {
                class85.field1194 = null;
                class240.field3207 = null;
@@ -389,10 +389,10 @@ public class class96 {
                class85.field1179 = false;
             }
          } else {
-            class309.method5892(class17.field110, client.field683, true, 0, -273498913);
+            class309.method5892(class17.field110, Client.field683, true, 0, -273498913);
          }
 
-         client.field662 = i_0;
+         Client.field662 = i_0;
       }
    }
 

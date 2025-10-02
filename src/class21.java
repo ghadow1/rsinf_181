@@ -122,20 +122,20 @@ public abstract class class21 {
    }
 
    static final void method272(class256 class256_0, int i_1, int i_2, int i_3, int i_4) {
-      if (client.field791 < 400) {
+      if (Client.field791 < 400) {
          if (class256_0.field3476 != null) {
             class256_0 = class256_0.method4709(942859640);
          }
 
          if (class256_0 != null) {
             if (class256_0.field3496) {
-               if (!class256_0.field3498 || client.field825 == i_1) {
+               if (!class256_0.field3498 || Client.field825 == i_1) {
                   String string_5 = class256_0.field3468;
                   int i_8;
                   int i_9;
                   if (class256_0.field3478 != 0) {
                      i_8 = class256_0.field3478;
-                     i_9 = client.field657.field618;
+                     i_9 = Client.field657.field618;
                      int i_10 = i_9 - i_8;
                      String string_7;
                      if (i_10 < -9) {
@@ -161,18 +161,18 @@ public abstract class class21 {
                      string_5 = string_5 + string_7 + " " + " (" + "level-" + class256_0.field3478 + ")";
                   }
 
-                  if (class256_0.field3498 && client.field799) {
+                  if (class256_0.field3498 && Client.field799) {
                      class188.method3644("Examine", class73.method1756(16776960, -844505624) + string_5, 1003, i_1, i_2, i_3, 1154358453);
                   }
 
-                  if (client.field900 == 1) {
-                     class188.method3644("Use", client.field738 + " " + "->" + " " + class73.method1756(16776960, -844505624) + string_5, 7, i_1, i_2, i_3, 1492323075);
-                  } else if (client.field810) {
+                  if (Client.field900 == 1) {
+                     class188.method3644("Use", Client.field738 + " " + "->" + " " + class73.method1756(16776960, -844505624) + string_5, 7, i_1, i_2, i_3, 1492323075);
+                  } else if (Client.field810) {
                      if ((class35.field301 & 0x2) == 2) {
-                        class188.method3644(client.field813, client.field814 + " " + "->" + " " + class73.method1756(16776960, -844505624) + string_5, 8, i_1, i_2, i_3, 1830552502);
+                        class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class73.method1756(16776960, -844505624) + string_5, 8, i_1, i_2, i_3, 1830552502);
                      }
                   } else {
-                     int i_11 = class256_0.field3498 && client.field799 ? 2000 : 0;
+                     int i_11 = class256_0.field3498 && Client.field799 ? 2000 : 0;
                      String[] arr_12 = class256_0.field3483;
                      if (arr_12 != null) {
                         for (i_8 = 4; i_8 >= 0; --i_8) {
@@ -207,8 +207,8 @@ public abstract class class21 {
                         for (i_8 = 4; i_8 >= 0; --i_8) {
                            if (arr_12[i_8] != null && arr_12[i_8].equalsIgnoreCase("Attack")) {
                               short s_13 = 0;
-                              if (class84.field1170 != client.field679) {
-                                 if (client.field679 == class84.field1167 || class84.field1173 == client.field679 && class256_0.field3478 > client.field657.field618) {
+                              if (class84.field1170 != Client.field679) {
+                                 if (Client.field679 == class84.field1167 || class84.field1173 == Client.field679 && class256_0.field3478 > Client.field657.field618) {
                                     s_13 = 2000;
                                  }
 
@@ -239,7 +239,7 @@ public abstract class class21 {
                         }
                      }
 
-                     if (!class256_0.field3498 || !client.field799) {
+                     if (!class256_0.field3498 || !Client.field799) {
                         class188.method3644("Examine", class73.method1756(16776960, -844505624) + string_5, 1003, i_1, i_2, i_3, -1913385031);
                      }
                   }

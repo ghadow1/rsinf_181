@@ -22,7 +22,7 @@ final class class5 implements Comparator {
    }
 
    static final void method60(int i_0, int i_1) {
-      class261 class261_3 = client.field887[class42.field372][i_0][i_1];
+      class261 class261_3 = Client.field887[class42.field372][i_0][i_1];
       if (class261_3 == null) {
          field22.method3087(class42.field372, i_0, i_1);
       } else {

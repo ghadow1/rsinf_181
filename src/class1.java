@@ -11,7 +11,7 @@ final class class1 implements class0 {
    }
 
    static final void method10(class185 class185_0) {
-      class299 class299_2 = client.field880.field1314;
+      class299 class299_2 = Client.field880.field1314;
       int i_3;
       int i_4;
       int i_5;
@@ -23,7 +23,7 @@ final class class1 implements class0 {
          i_3 = class299_2.readInvertedUnsignedByte();
          i_4 = i_3 >> 2;
          i_5 = i_3 & 0x3;
-         i_6 = client.field713[i_4];
+         i_6 = Client.field713[i_4];
          i_7 = class299_2.readInvertedUnsignedByte();
          i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
          i_9 = (i_7 & 0x7) + class94.field1306;
@@ -39,7 +39,7 @@ final class class1 implements class0 {
             i_5 = (i_3 & 0x7) + class94.field1306;
             i_6 = class299_2.readShortWithOffset2();
             if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
-               class261 class261_32 = client.field887[class42.field372][i_4][i_5];
+               class261 class261_32 = Client.field887[class42.field372][i_4][i_5];
                if (class261_32 != null) {
                   for (class87_33 = (class87) class261_32.method4892(); class87_33 != null; class87_33 = (class87) class261_32.method4894()) {
                      if ((i_6 & 0x7fff) == class87_33.field1244) {
@@ -49,7 +49,7 @@ final class class1 implements class0 {
                   }
 
                   if (class261_32.method4892() == null) {
-                     client.field887[class42.field372][i_4][i_5] = null;
+                     Client.field887[class42.field372][i_4][i_5] = null;
                   }
 
                   class5.method60(i_4, i_5);
@@ -84,9 +84,9 @@ final class class1 implements class0 {
                   i_13 = i_13 * 128 + 64;
                   i_15 = i_15 * 128 + 64;
                   i_42 = i_42 * 128 + 64;
-                  class86 class86_16 = new class86(i_5, class42.field372, i_40, i_13, class62.method1130(i_40, i_13, class42.field372) - i_6, i_10 + client.field881, i_4 + client.field881, i_8, i_9, i_7, i_3);
-                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, class42.field372) - i_3, i_10 + client.field881, -2118689642);
-                  client.field670.method4917(class86_16);
+                  class86 class86_16 = new class86(i_5, class42.field372, i_40, i_13, class62.method1130(i_40, i_13, class42.field372) - i_6, i_10 + Client.field881, i_4 + Client.field881, i_8, i_9, i_7, i_3);
+                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, class42.field372) - i_3, i_10 + Client.field881, -2118689642);
+                  Client.field670.method4917(class86_16);
                }
 
             } else if (class185.field2322 == class185_0) {
@@ -97,7 +97,7 @@ final class class1 implements class0 {
                i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                i_8 = (i_6 & 0x7) + class94.field1306;
                if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
-                  class261 class261_43 = client.field887[class42.field372][i_7][i_8];
+                  class261 class261_43 = Client.field887[class42.field372][i_7][i_8];
                   if (class261_43 != null) {
                      for (class87 class87_35 = (class87) class261_43.method4892(); class87_35 != null; class87_35 = (class87) class261_43.method4894()) {
                         if ((i_3 & 0x7fff) == class87_35.field1244 && i_5 == class87_35.field1245) {
@@ -120,11 +120,11 @@ final class class1 implements class0 {
                   class87_33 = new class87();
                   class87_33.field1244 = i_4;
                   class87_33.field1245 = i_3;
-                  if (client.field887[class42.field372][i_6][i_7] == null) {
-                     client.field887[class42.field372][i_6][i_7] = new class261();
+                  if (Client.field887[class42.field372][i_6][i_7] == null) {
+                     Client.field887[class42.field372][i_6][i_7] = new class261();
                   }
 
-                  client.field887[class42.field372][i_6][i_7].method4917(class87_33);
+                  Client.field887[class42.field372][i_6][i_7].method4917(class87_33);
                   class5.method60(i_6, i_7);
                }
 
@@ -140,13 +140,13 @@ final class class1 implements class0 {
                   i_10 = class299_2.readShortWithOffset2();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      i_11 = i_8 + 1;
-                     if (client.field657.field994[0] >= i_4 - i_11 && client.field657.field994[0] <= i_4 + i_11 && client.field657.field962[0] >= i_5 - i_11 && client.field657.field962[0] <= i_5 + i_11 && client.field892 != 0 && i_9 > 0 && client.field893 < 50) {
-                        client.field894[client.field893] = i_10;
-                        client.field895[client.field893] = i_9;
-                        client.field897[client.field893] = i_6;
-                        client.field898[client.field893] = null;
-                        client.field841[client.field893] = i_8 + (i_5 << 8) + (i_4 << 16);
-                        ++client.field893;
+                     if (Client.field657.field994[0] >= i_4 - i_11 && Client.field657.field994[0] <= i_4 + i_11 && Client.field657.field962[0] >= i_5 - i_11 && Client.field657.field962[0] <= i_5 + i_11 && Client.field892 != 0 && i_9 > 0 && Client.field893 < 50) {
+                        Client.field894[Client.field893] = i_10;
+                        Client.field895[Client.field893] = i_9;
+                        Client.field897[Client.field893] = i_6;
+                        Client.field898[Client.field893] = null;
+                        Client.field841[Client.field893] = i_8 + (i_5 << 8) + (i_4 << 16);
+                        ++Client.field893;
                      }
                   }
                }
@@ -160,7 +160,7 @@ final class class1 implements class0 {
                   i_8 = class299_2.readOffsetUnsignedByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
-                  i_11 = client.field713[i_9];
+                  i_11 = Client.field713[i_9];
                   byte b_12 = class299_2.readOffsetByte();
                   i_13 = class299_2.readShortLittleEndian();
                   b_14 = class299_2.readNegatedByte();
@@ -168,10 +168,10 @@ final class class1 implements class0 {
                   int i_36 = (i_15 >> 4 & 0x7) + class311.field3819;
                   int i_17 = (i_15 & 0x7) + class94.field1306;
                   class66 class66_18;
-                  if (i_13 == client.field770) {
-                     class66_18 = client.field657;
+                  if (i_13 == Client.field770) {
+                     class66_18 = Client.field657;
                   } else {
-                     class66_18 = client.field909[i_13];
+                     class66_18 = Client.field909[i_13];
                   }
 
                   if (class66_18 != null) {
@@ -197,8 +197,8 @@ final class class1 implements class0 {
                      class127 class127_30 = class253_19.method4592(i_9, i_10, ints_26, i_28, i_27, i_29, -1160623337);
                      if (class127_30 != null) {
                         class201.method3885(class42.field372, i_36, i_17, i_11, -1, 0, 0, i_7 + 1, i_4 + 1, -2048347982);
-                        class66_18.field614 = i_7 + client.field881;
-                        class66_18.field622 = i_4 + client.field881;
+                        class66_18.field614 = i_7 + Client.field881;
+                        class66_18.field622 = i_4 + Client.field881;
                         class66_18.field626 = class127_30;
                         class66_18.field633 = i_36 * 128 + i_20 * 64;
                         class66_18.field620 = i_17 * 128 + i_21 * 64;
@@ -231,7 +231,7 @@ final class class1 implements class0 {
                   i_6 = class299_2.readInvertedUnsignedByte();
                   i_7 = i_6 >> 2;
                   i_8 = i_6 & 0x3;
-                  i_9 = client.field713[i_7];
+                  i_9 = Client.field713[i_7];
                   i_10 = class299_2.readShortWithOffset();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      class201.method3885(class42.field372, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
@@ -247,15 +247,15 @@ final class class1 implements class0 {
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
                      i_7 = i_7 * 128 + 64;
                      i_8 = i_8 * 128 + 64;
-                     class77 class77_34 = new class77(i_3, class42.field372, i_7, i_8, class62.method1130(i_7, i_8, class42.field372) - i_4, i_5, client.field881);
-                     client.field785.method4917(class77_34);
+                     class77 class77_34 = new class77(i_3, class42.field372, i_7, i_8, class62.method1130(i_7, i_8, class42.field372) - i_4, i_5, Client.field881);
+                     Client.field785.method4917(class77_34);
                   }
 
                } else if (class185.field2324 == class185_0) {
                   i_3 = class299_2.readInvertedUnsignedByte();
                   i_4 = i_3 >> 2;
                   i_5 = i_3 & 0x3;
-                  i_6 = client.field713[i_4];
+                  i_6 = Client.field713[i_4];
                   i_7 = class299_2.readNegatedUnsignedByte();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;

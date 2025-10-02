@@ -42,7 +42,7 @@ public final class class48 extends Canvas {
    static final void method810(int i_0, int i_1, int i_2, int i_3, class325 class325_4, class211 class211_5, int i_6) {
       int i_7 = i_3 * i_3 + i_2 * i_2;
       if (i_7 > 4225 && i_7 < 90000) {
-         int i_8 = client.field722 & 0x7ff;
+         int i_8 = Client.field722 & 0x7ff;
          int i_9 = class130.field1787[i_8];
          int i_10 = class130.field1784[i_8];
          int i_11 = i_10 * i_2 + i_3 * i_9 >> 16;

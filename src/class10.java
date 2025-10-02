@@ -74,102 +74,102 @@ final class class10 implements Comparator {
                s_4 = 0;
             }
 
-            if (s_4 != client.field911) {
-               if (client.field911 == 0 && client.field889 != -1) {
-                  class169.method3503(class29.field253, client.field889, 0, s_4, false, 210229460);
-                  client.field699 = false;
+            if (s_4 != Client.field911) {
+               if (Client.field911 == 0 && Client.field889 != -1) {
+                  class169.method3503(class29.field253, Client.field889, 0, s_4, false, 210229460);
+                  Client.field699 = false;
                } else if (s_4 == 0) {
                   class171.method3553(401790387);
-                  client.field699 = false;
+                  Client.field699 = false;
                } else if (class197.field2402 != 0) {
                   class56.field529 = s_4;
                } else {
                   class76.field1099.method3706(s_4, 1964595873);
                }
 
-               client.field911 = s_4;
+               Client.field911 = s_4;
             }
          }
 
          if (i_5 == 4) {
             if (i_3 == 0) {
-               client.field891 = 127;
+               Client.field891 = 127;
             }
 
             if (i_3 == 1) {
-               client.field891 = 96;
+               Client.field891 = 96;
             }
 
             if (i_3 == 2) {
-               client.field891 = 64;
+               Client.field891 = 64;
             }
 
             if (i_3 == 3) {
-               client.field891 = 32;
+               Client.field891 = 32;
             }
 
             if (i_3 == 4) {
-               client.field891 = 0;
+               Client.field891 = 0;
             }
          }
 
          if (i_5 == 5) {
-            client.field789 = i_3;
+            Client.field789 = i_3;
          }
 
          if (i_5 == 6) {
-            client.field819 = i_3;
+            Client.field819 = i_3;
          }
 
          if (i_5 == 9) {
-            client.field809 = i_3;
+            Client.field809 = i_3;
          }
 
          if (i_5 == 10) {
             if (i_3 == 0) {
-               client.field892 = 127;
+               Client.field892 = 127;
             }
 
             if (i_3 == 1) {
-               client.field892 = 96;
+               Client.field892 = 96;
             }
 
             if (i_3 == 2) {
-               client.field892 = 64;
+               Client.field892 = 64;
             }
 
             if (i_3 == 3) {
-               client.field892 = 32;
+               Client.field892 = 32;
             }
 
             if (i_3 == 4) {
-               client.field892 = 0;
+               Client.field892 = 0;
             }
          }
 
          if (i_5 == 17) {
-            client.field825 = i_3 & 0xffff;
+            Client.field825 = i_3 & 0xffff;
          }
 
          if (i_5 == 18) {
-            client.field678 = (class84) MemoryManager.findById(class233.method4141((byte) -27), i_3);
-            if (client.field678 == null) {
-               client.field678 = class84.field1173;
+            Client.field678 = (class84) MemoryManager.findById(class233.method4141((byte) -27), i_3);
+            if (Client.field678 == null) {
+               Client.field678 = class84.field1173;
             }
          }
 
          if (i_5 == 19) {
             if (i_3 == -1) {
-               client.field781 = -1;
+               Client.field781 = -1;
             } else {
-               client.field781 = i_3 & 0x7ff;
+               Client.field781 = i_3 & 0x7ff;
             }
          }
 
          if (i_5 == 22) {
-            client.field679 = (class84) MemoryManager.findById(class233.method4141((byte) 48), i_3);
-            if (client.field679 == null) {
-               client.field679 = class84.field1173;
+            Client.field679 = (class84) MemoryManager.findById(class233.method4141((byte) 48), i_3);
+            if (Client.field679 == null) {
+               Client.field679 = class84.field1173;
             }
          }
 

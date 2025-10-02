@@ -67,7 +67,7 @@ public class class18 extends class34 {
          str_5 = "_wip";
       }
 
-      File file_6 = new File(class228.field3095, "jagex_" + string_1 + "_preferences" + string_0 + str_5 + ".dat");
+      File file_6 = new File(GameState.field3095, "jagex_" + string_1 + "_preferences" + string_0 + str_5 + ".dat");
       class343 class343_7;
       if (!bool_2 && file_6.exists()) {
          try {
@@ -110,11 +110,11 @@ public class class18 extends class34 {
       }
 
       int i_4 = class299_0.method5445(2);
-      class66 class66_5 = client.field909[i_1];
+      class66 class66_5 = Client.field909[i_1];
       if (i_4 == 0) {
          if (bool_3) {
             class66_5.field638 = false;
-         } else if (client.field770 == i_1) {
+         } else if (Client.field770 == i_1) {
             throw new RuntimeException();
          } else {
             class89.field1253[i_1] = (class66_5.field629 << 28) + (class1.field1 + class66_5.field962[0] >> 13) + (class196.field2389 + class66_5.field994[0] >> 13 << 14);
@@ -125,7 +125,7 @@ public class class18 extends class34 {
             }
 
             class89.field1261[i_1] = class66_5.field975;
-            client.field909[i_1] = null;
+            Client.field909[i_1] = null;
             if (class299_0.method5445(1) != 0) {
                class226.method4123(class299_0, i_1, -352047926);
             }
@@ -161,7 +161,7 @@ public class class18 extends class34 {
                ++i_8;
             }
 
-            if (client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
+            if (Client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
                class66_5.method1205(i_7, i_8, 1226353499);
                class66_5.field638 = false;
             } else if (bool_3) {
@@ -223,7 +223,7 @@ public class class18 extends class34 {
                i_8 += 2;
             }
 
-            if (client.field770 != i_1 || class66_5.field1005 >= 1536 && class66_5.field949 >= 1536 && class66_5.field1005 < 11776 && class66_5.field949 < 11776) {
+            if (Client.field770 != i_1 || class66_5.field1005 >= 1536 && class66_5.field949 >= 1536 && class66_5.field1005 < 11776 && class66_5.field949 < 11776) {
                if (bool_3) {
                   class66_5.field638 = true;
                   class66_5.field639 = i_7;
@@ -258,7 +258,7 @@ public class class18 extends class34 {
 
                i_11 = i_9 + class66_5.field994[0];
                i_12 = i_10 + class66_5.field962[0];
-               if (client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
+               if (Client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
                   class66_5.method1205(i_11, i_12, 1788073097);
                   class66_5.field638 = false;
                } else if (bool_3) {
@@ -271,7 +271,7 @@ public class class18 extends class34 {
                }
 
                class66_5.field629 = (byte)(i_8 + class66_5.field629 & 0x3);
-               if (client.field770 == i_1) {
+               if (Client.field770 == i_1) {
                   class42.field372 = class66_5.field629;
                }
 
@@ -282,7 +282,7 @@ public class class18 extends class34 {
                i_10 = i_7 & 0x3fff;
                i_11 = (i_9 + class196.field2389 + class66_5.field994[0] & 0x3fff) - class196.field2389;
                i_12 = (i_10 + class1.field1 + class66_5.field962[0] & 0x3fff) - class1.field1;
-               if (client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
+               if (Client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
                   class66_5.method1205(i_11, i_12, 1045541896);
                   class66_5.field638 = false;
                } else if (bool_3) {
@@ -295,7 +295,7 @@ public class class18 extends class34 {
                }
 
                class66_5.field629 = (byte)(i_8 + class66_5.field629 & 0x3);
-               if (client.field770 == i_1) {
+               if (Client.field770 == i_1) {
                   class42.field372 = class66_5.field629;
                }
 
@@ -307,8 +307,8 @@ public class class18 extends class34 {
    static final void method205(class217 class217_0, int i_1, int i_2, int i_3, byte b_4) {
       class211 class211_5 = class217_0.method4040(false, (byte) 0);
       if (class211_5 != null) {
-         if (client.field652 < 3) {
-            class64.field607.method6140(i_1, i_2, class211_5.field2519, class211_5.field2522, 25, 25, client.field722, 256, class211_5.field2521, class211_5.field2520);
+         if (Client.field652 < 3) {
+            class64.field607.method6140(i_1, i_2, class211_5.field2519, class211_5.field2522, 25, 25, Client.field722, 256, class211_5.field2521, class211_5.field2520);
          } else {
             class321.method6016(i_1, i_2, 0, class211_5.field2521, class211_5.field2520);
          }
@@ -333,8 +333,8 @@ public class class18 extends class34 {
    }
 
    static final void method208(class217 class217_0, int i_1, int i_2, int i_3) {
-      if (client.field652 == 0 || client.field652 == 3) {
-         if (!client.field674 && (class54.field493 == 1 || !class46.field413 && class54.field493 == 4)) {
+      if (Client.field652 == 0 || Client.field652 == 3) {
+         if (!Client.field674 && (class54.field493 == 1 || !class46.field413 && class54.field493 == 4)) {
             class211 class211_4 = class217_0.method4040(true, (byte) 0);
             if (class211_4 == null) {
                return;
@@ -345,31 +345,31 @@ public class class18 extends class34 {
             if (class211_4.method3959(i_5, i_6, (short) 25393)) {
                i_5 -= class211_4.field2519 / 2;
                i_6 -= class211_4.field2522 / 2;
-               int i_7 = client.field722 & 0x7ff;
+               int i_7 = Client.field722 & 0x7ff;
                int i_8 = class130.field1787[i_7];
                int i_9 = class130.field1784[i_7];
                int i_10 = i_5 * i_9 + i_6 * i_8 >> 11;
                int i_11 = i_6 * i_9 - i_8 * i_5 >> 11;
-               int i_12 = i_10 + client.field657.field1005 >> 7;
-               int i_13 = client.field657.field949 - i_11 >> 7;
-               class187 class187_14 = class235.method4265(class183.field2262, client.field880.field1313, 1775123545);
+               int i_12 = i_10 + Client.field657.field1005 >> 7;
+               int i_13 = Client.field657.field949 - i_11 >> 7;
+               class187 class187_14 = class235.method4265(class183.field2262, Client.field880.field1313, 1775123545);
                class187_14.field2333.writeByte(18);
                class187_14.field2333.writeShortWithOffset2(i_13 + class1.field1);
                class187_14.field2333.writeShortWithOffset2(i_12 + class196.field2389);
                class187_14.field2333.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.field2333.writeByte(i_5);
                class187_14.field2333.writeByte(i_6);
-               class187_14.field2333.writeShortBigEndian(client.field722);
+               class187_14.field2333.writeShortBigEndian(Client.field722);
                class187_14.field2333.writeByte(57);
                class187_14.field2333.writeByte(0);
                class187_14.field2333.writeByte(0);
                class187_14.field2333.writeByte(89);
-               class187_14.field2333.writeShortBigEndian(client.field657.field1005);
-               class187_14.field2333.writeShortBigEndian(client.field657.field949);
+               class187_14.field2333.writeShortBigEndian(Client.field657.field1005);
+               class187_14.field2333.writeShortBigEndian(Client.field657.field949);
                class187_14.field2333.writeByte(63);
-               client.field880.copy(class187_14);
-               client.field885 = i_12;
-               client.field842 = i_13;
+               Client.field880.copy(class187_14);
+               Client.field885 = i_12;
+               Client.field842 = i_13;
             }
          }
 

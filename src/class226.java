@@ -23,10 +23,10 @@ public class class226 {
             class89.field1256[++class89.field1262 - 1] = i_1;
          }
 
-         if (client.field909[i_1] != null) {
+         if (Client.field909[i_1] != null) {
             throw new RuntimeException();
          } else {
-            class66 class66_7 = client.field909[i_1] = new class66();
+            class66 class66_7 = Client.field909[i_1] = new class66();
             class66_7.field637 = i_1;
             if (class89.field1254[i_1] != null) {
                class66_7.method1179(class89.field1254[i_1], 51836787);

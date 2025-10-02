@@ -508,7 +508,7 @@ public class class201 extends LinkedListNode {
    static final void method3885(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9) {
       class68 class68_10 = null;
 
-      for (class68 class68_11 = (class68) client.field783.method4892(); class68_11 != null; class68_11 = (class68) client.field783.method4894()) {
+      for (class68 class68_11 = (class68) Client.field783.method4892(); class68_11 != null; class68_11 = (class68) Client.field783.method4894()) {
          if (i_0 == class68_11.field943 && class68_11.field937 == i_1 && i_2 == class68_11.field934 && i_3 == class68_11.field932) {
             class68_10 = class68_11;
             break;
@@ -522,7 +522,7 @@ public class class201 extends LinkedListNode {
          class68_10.field937 = i_1;
          class68_10.field934 = i_2;
          class294.method5327(class68_10, -813349979);
-         client.field783.method4917(class68_10);
+         Client.field783.method4917(class68_10);
       }
 
       class68_10.field938 = i_4;

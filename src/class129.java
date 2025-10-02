@@ -19,7 +19,7 @@ public class class129 {
 
    static final void method2972(byte b_0) {
       for (int i_1 = 0; i_1 < class89.field1255; i_1++) {
-         class66 class66_2 = client.field909[class89.field1257[i_1]];
+         class66 class66_2 = Client.field909[class89.field1257[i_1]];
          class66_2.method1182((byte) -80);
       }
 

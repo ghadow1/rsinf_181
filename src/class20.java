@@ -18,8 +18,8 @@ public class class20 implements UnknownT {
 
    static final void method238(class299 class299_0, byte b_1) {
       class299_0.method5438();
-      int i_2 = client.field770;
-      class66 class66_3 = client.field657 = client.field909[i_2] = new class66();
+      int i_2 = Client.field770;
+      class66 class66_3 = Client.field657 = Client.field909[i_2] = new class66();
       class66_3.field637 = i_2;
       int i_4 = class299_0.method5445(30);
       byte b_5 = (byte)(i_4 >> 28);
@@ -62,17 +62,17 @@ public class class20 implements UnknownT {
          class70.field1014 -= 2;
          i_4 = class76.field1098[class70.field1014];
          int i_5 = class76.field1098[class70.field1014 + 1];
-         if (!client.field899) {
-            client.field721 = i_4;
-            client.field722 = i_5;
+         if (!Client.field899) {
+            Client.field721 = i_4;
+            Client.field722 = i_5;
          }
 
          return 1;
       } else if (i_0 == 5505) {
-         class76.field1098[++class70.field1014 - 1] = client.field721;
+         class76.field1098[++class70.field1014 - 1] = Client.field721;
          return 1;
       } else if (i_0 == 5506) {
-         class76.field1098[++class70.field1014 - 1] = client.field722;
+         class76.field1098[++class70.field1014 - 1] = Client.field722;
          return 1;
       } else if (i_0 == 5530) {
          i_4 = class76.field1098[--class70.field1014];
@@ -80,10 +80,10 @@ public class class20 implements UnknownT {
             i_4 = 0;
          }
 
-         client.field728 = i_4;
+         Client.field728 = i_4;
          return 1;
       } else if (i_0 == 5531) {
-         class76.field1098[++class70.field1014 - 1] = client.field728;
+         class76.field1098[++class70.field1014 - 1] = Client.field728;
          return 1;
       } else {
          return 2;
@@ -93,62 +93,62 @@ public class class20 implements UnknownT {
    static int method242(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       if (i_0 == 6200) {
          class70.field1014 -= 2;
-         client.field782 = (short)class59.method1116(class76.field1098[class70.field1014], -1225456641);
-         if (client.field782 <= 0) {
-            client.field782 = 256;
+         Client.field782 = (short)class59.method1116(class76.field1098[class70.field1014], -1225456641);
+         if (Client.field782 <= 0) {
+            Client.field782 = 256;
          }
 
-         client.field651 = (short)class59.method1116(class76.field1098[class70.field1014 + 1], -1873104061);
-         if (client.field651 <= 0) {
-            client.field651 = 256;
+         Client.field651 = (short)class59.method1116(class76.field1098[class70.field1014 + 1], -1873104061);
+         if (Client.field651 <= 0) {
+            Client.field651 = 256;
          }
 
          return 1;
       } else if (i_0 == 6201) {
          class70.field1014 -= 2;
-         client.field906 = (short)class76.field1098[class70.field1014];
-         if (client.field906 <= 0) {
-            client.field906 = 256;
+         Client.field906 = (short)class76.field1098[class70.field1014];
+         if (Client.field906 <= 0) {
+            Client.field906 = 256;
          }
 
-         client.field908 = (short)class76.field1098[class70.field1014 + 1];
-         if (client.field908 <= 0) {
-            client.field908 = 320;
+         Client.field908 = (short)class76.field1098[class70.field1014 + 1];
+         if (Client.field908 <= 0) {
+            Client.field908 = 320;
          }
 
          return 1;
       } else if (i_0 == 6202) {
          class70.field1014 -= 4;
-         client.field820 = (short)class76.field1098[class70.field1014];
-         if (client.field820 <= 0) {
-            client.field820 = 1;
+         Client.field820 = (short)class76.field1098[class70.field1014];
+         if (Client.field820 <= 0) {
+            Client.field820 = 1;
          }
 
-         client.field790 = (short)class76.field1098[class70.field1014 + 1];
-         if (client.field790 <= 0) {
-            client.field790 = 32767;
-         } else if (client.field790 < client.field820) {
-            client.field790 = client.field820;
+         Client.field790 = (short)class76.field1098[class70.field1014 + 1];
+         if (Client.field790 <= 0) {
+            Client.field790 = 32767;
+         } else if (Client.field790 < Client.field820) {
+            Client.field790 = Client.field820;
          }
 
-         client.field732 = (short)class76.field1098[class70.field1014 + 2];
-         if (client.field732 <= 0) {
-            client.field732 = 1;
+         Client.field732 = (short)class76.field1098[class70.field1014 + 2];
+         if (Client.field732 <= 0) {
+            Client.field732 = 1;
          }
 
-         client.field659 = (short)class76.field1098[class70.field1014 + 3];
-         if (client.field659 <= 0) {
-            client.field659 = 32767;
-         } else if (client.field659 < client.field732) {
-            client.field659 = client.field732;
+         Client.field659 = (short)class76.field1098[class70.field1014 + 3];
+         if (Client.field659 <= 0) {
+            Client.field659 = 32767;
+         } else if (Client.field659 < Client.field732) {
+            Client.field659 = Client.field732;
          }
 
          return 1;
       } else if (i_0 == 6203) {
-         if (client.field827 != null) {
-            class144.method3318(0, 0, client.field827.field2579, client.field827.field2667, false, (byte) -24);
-            class76.field1098[++class70.field1014 - 1] = client.field746;
-            class76.field1098[++class70.field1014 - 1] = client.field714;
+         if (Client.field827 != null) {
+            class144.method3318(0, 0, Client.field827.field2579, Client.field827.field2667, false, (byte) -24);
+            class76.field1098[++class70.field1014 - 1] = Client.field746;
+            class76.field1098[++class70.field1014 - 1] = Client.field714;
          } else {
             class76.field1098[++class70.field1014 - 1] = -1;
             class76.field1098[++class70.field1014 - 1] = -1;
@@ -156,12 +156,12 @@ public class class20 implements UnknownT {
 
          return 1;
       } else if (i_0 == 6204) {
-         class76.field1098[++class70.field1014 - 1] = client.field906;
-         class76.field1098[++class70.field1014 - 1] = client.field908;
+         class76.field1098[++class70.field1014 - 1] = Client.field906;
+         class76.field1098[++class70.field1014 - 1] = Client.field908;
          return 1;
       } else if (i_0 == 6205) {
-         class76.field1098[++class70.field1014 - 1] = class232.method4140(client.field782, 616247304);
-         class76.field1098[++class70.field1014 - 1] = class232.method4140(client.field651, -1125712705);
+         class76.field1098[++class70.field1014 - 1] = class232.method4140(Client.field782, 616247304);
+         class76.field1098[++class70.field1014 - 1] = class232.method4140(Client.field651, -1125712705);
          return 1;
       } else {
          return 2;

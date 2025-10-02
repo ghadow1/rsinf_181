@@ -1,4 +1,4 @@
-public class class152 extends class275 {
+public class class152 extends ChainedComparator {
 
    final boolean field1975;
 
@@ -6,12 +6,12 @@ public class class152 extends class275 {
       this.field1975 = bool_1;
    }
 
-   int method3384(class279 class279_1, class279 class279_2, int i_3) {
-      return client.field807 == class279_1.field3636 && class279_2.field3636 == client.field807 ? (this.field1975 ? class279_1.method5041(-156755920).method5198(class279_2.method5041(-156755920), (byte) -28) : class279_2.method5041(-156755920).method5198(class279_1.method5041(-156755920), (byte) -73)) : this.method5061(class279_1, class279_2, 191415789);
+   int method3384(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
+      return Client.field807 == categorizable_1.category && categorizable_2.category == Client.field807 ? (this.field1975 ? categorizable_1.method5041(-156755920).method5198(categorizable_2.method5041(-156755920), (byte) -28) : categorizable_2.method5041(-156755920).method5198(categorizable_1.method5041(-156755920), (byte) -73)) : this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method3384((class279) object_1, (class279) object_2, 1918476759);
+      return this.method3384((Categorizable) object_1, (Categorizable) object_2, 1918476759);
    }
 
    static class310[] method3383(int i_0) {
@@ -45,7 +45,7 @@ public class class152 extends class275 {
             class70.field1014 -= 2;
             i_12 = class76.field1098[class70.field1014];
             i_7 = class76.field1098[class70.field1014 + 1];
-            class217_5.field2645 = client.method1649(i_12, i_7, -1376178564);
+            class217_5.field2645 = Client.method1649(i_12, i_7, -1376178564);
             return 1;
          } else if (i_0 == 1302) {
             class217_5.field2648 = class76.field1098[--class70.field1014] == 1;

@@ -43,12 +43,12 @@ public final class class75 extends LinkedListNode {
 
    static void method1827() {
       if (class68.field944 != null) {
-         client.field924 = client.field881;
+         Client.field924 = Client.field881;
          class68.field944.method4320();
 
-         for (int i_1 = 0; i_1 < client.field909.length; i_1++) {
-            if (client.field909[i_1] != null) {
-               class68.field944.method4316((client.field909[i_1].field1005 >> 7) + class196.field2389, (client.field909[i_1].field949 >> 7) + class1.field1);
+         for (int i_1 = 0; i_1 < Client.field909.length; i_1++) {
+            if (Client.field909[i_1] != null) {
+               class68.field944.method4316((Client.field909[i_1].field1005 >> 7) + class196.field2389, (Client.field909[i_1].field949 >> 7) + class1.field1);
             }
          }
       }
@@ -68,28 +68,28 @@ public final class class75 extends LinkedListNode {
    }
 
    static final void method1826(int i_0) {
-      client.field767 = 0;
-      int i_1 = (client.field657.field1005 >> 7) + class196.field2389;
-      int i_2 = (client.field657.field949 >> 7) + class1.field1;
+      Client.field767 = 0;
+      int i_1 = (Client.field657.field1005 >> 7) + class196.field2389;
+      int i_2 = (Client.field657.field949 >> 7) + class1.field1;
       if (i_1 >= 3053 && i_1 <= 3156 && i_2 >= 3056 && i_2 <= 3136) {
-         client.field767 = 1;
+         Client.field767 = 1;
       }
 
       if (i_1 >= 3072 && i_1 <= 3118 && i_2 >= 9492 && i_2 <= 9535) {
-         client.field767 = 1;
+         Client.field767 = 1;
       }
 
-      if (client.field767 == 1 && i_1 >= 3139 && i_1 <= 3199 && i_2 >= 3008 && i_2 <= 3062) {
-         client.field767 = 0;
+      if (Client.field767 == 1 && i_1 >= 3139 && i_1 <= 3199 && i_2 >= 3008 && i_2 <= 3062) {
+         Client.field767 = 0;
       }
 
    }
 
    static void method1824(int i_0, class213 class213_1, boolean bool_2, byte b_3) {
       class26 class26_4 = class31.method538(868064378).method6327(i_0, -1144902380);
-      int i_5 = client.field657.field629;
-      int i_6 = (client.field657.field1005 >> 7) + class196.field2389;
-      int i_7 = (client.field657.field949 >> 7) + class1.field1;
+      int i_5 = Client.field657.field629;
+      int i_6 = (Client.field657.field1005 >> 7) + class196.field2389;
+      int i_7 = (Client.field657.field949 >> 7) + class1.field1;
       class213 class213_8 = new class213(i_5, i_6, i_7);
       class31.method538(-1492208120).method6315(class26_4, class213_8, class213_1, bool_2, 1469825217);
    }

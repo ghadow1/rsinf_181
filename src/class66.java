@@ -74,11 +74,11 @@ public final class class66 extends class69 {
             }
 
             if (!this.field634 && this.field626 != null) {
-               if (client.field881 >= this.field622) {
+               if (Client.field881 >= this.field622) {
                   this.field626 = null;
                }
 
-               if (client.field881 >= this.field614 && client.field881 < this.field622) {
+               if (Client.field881 >= this.field614 && Client.field881 < this.field622) {
                   class127_5 = this.field626;
                   class127_5.method2901(this.field633 - super.field1005, this.field624 - this.field623, this.field620 - super.field949);
                   if (super.field1000 == 512) {
@@ -270,14 +270,14 @@ public final class class66 extends class69 {
       this.field621 = new class283(class300_1.readNullTerminatedString(), class40.field353);
       this.method1182((byte) -29);
       this.method1185(-202982507);
-      if (this == client.field657) {
+      if (this == Client.field657) {
          class10.field69 = this.field621.method5197((byte) 76);
       }
 
       this.field618 = class300_1.readUnsignedByte();
       this.field617 = class300_1.readUnsignedShortBigEndian();
       this.field628 = class300_1.readUnsignedByte() == 1;
-      if (client.field703 == 0 && client.field890 >= 2) {
+      if (Client.field703 == 0 && Client.field890 >= 2) {
          this.field628 = false;
       }
 
@@ -309,7 +309,7 @@ public final class class66 extends class69 {
 
       int i_2;
       for (i_2 = 0; i_2 < class89.field1255; i_2++) {
-         class66 class66_3 = client.field909[ints_1[i_2]];
+         class66 class66_3 = Client.field909[ints_1[i_2]];
          if (class66_3 != null && class66_3.field1002 > 0) {
             --class66_3.field1002;
             if (class66_3.field1002 == 0) {
@@ -318,9 +318,9 @@ public final class class66 extends class69 {
          }
       }
 
-      for (i_2 = 0; i_2 < client.field695; i_2++) {
-         int i_5 = client.field696[i_2];
-         class79 class79_4 = client.field694[i_5];
+      for (i_2 = 0; i_2 < Client.field695; i_2++) {
+         int i_5 = Client.field696[i_2];
+         class79 class79_4 = Client.field694[i_5];
          if (class79_4 != null && class79_4.field1002 > 0) {
             --class79_4.field1002;
             if (class79_4.field1002 == 0) {

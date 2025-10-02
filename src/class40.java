@@ -570,7 +570,7 @@ public class class40 {
       }
 
       String string_4;
-      if (class217_0.field2567 == 2 && !client.field810) {
+      if (class217_0.field2567 == 2 && !Client.field810) {
          string_4 = class292.method5318(class217_0, (byte) 126);
          if (string_4 != null) {
             class188.method3644(string_4, class73.method1756(65280, -844505624) + class217_0.field2686, 25, 0, -1, class217_0.field2688, 1431395202);
@@ -589,7 +589,7 @@ public class class40 {
          class188.method3644(class217_0.field2573, "", 29, 0, 0, class217_0.field2688, -119888586);
       }
 
-      if (class217_0.field2567 == 6 && client.field850 == null) {
+      if (class217_0.field2567 == 6 && Client.field850 == null) {
          class188.method3644(class217_0.field2573, "", 30, 0, -1, class217_0.field2688, -1987811730);
       }
 
@@ -608,23 +608,23 @@ public class class40 {
                }
 
                if (i_1 >= i_7 && i_2 >= i_8 && i_1 < i_7 + 32 && i_2 < i_8 + 32) {
-                  client.field764 = i_14;
+                  Client.field764 = i_14;
                   class294.field3697 = class217_0;
                   if (class217_0.field2560[i_14] > 0) {
                      class254 class254_9 = class26.method404(class217_0.field2560[i_14] - 1);
-                     if (client.field900 == 1 && class92.method2185(class268.method4987(class217_0))) {
+                     if (Client.field900 == 1 && class92.method2185(class268.method4987(class217_0))) {
                         if (class217_0.field2688 != class63.field594 || i_14 != class23.field182) {
-                           class188.method3644("Use", client.field738 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 31, class254_9.field3410, i_14, class217_0.field2688, -1926139785);
+                           class188.method3644("Use", Client.field738 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 31, class254_9.field3410, i_14, class217_0.field2688, -1926139785);
                         }
-                     } else if (client.field810 && class92.method2185(class268.method4987(class217_0))) {
+                     } else if (Client.field810 && class92.method2185(class268.method4987(class217_0))) {
                         if ((class35.field301 & 0x10) == 16) {
-                           class188.method3644(client.field813, client.field814 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 32, class254_9.field3410, i_14, class217_0.field2688, -1736041216);
+                           class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 32, class254_9.field3410, i_14, class217_0.field2688, -1736041216);
                         }
                      } else {
                         String[] arr_10 = class254_9.field3427;
                         int i_11 = -1;
-                        if (client.field800) {
-                           boolean bool_12 = client.field801 || class45.field395[81];
+                        if (Client.field800) {
+                           boolean bool_12 = Client.flag_23 || class45.field395[81];
                            if (bool_12) {
                               i_11 = class254_9.method4652((byte) 19);
                            }
@@ -696,9 +696,9 @@ public class class40 {
       }
 
       if (class217_0.field2563) {
-         if (client.field810) {
+         if (Client.field810) {
             if (class96.method2266(class268.method4987(class217_0), -2113880295) && (class35.field301 & 0x20) == 32) {
-               class188.method3644(client.field813, client.field814 + " " + "->" + " " + class217_0.field2643, 58, 0, class217_0.field2565, class217_0.field2688, 148926542);
+               class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class217_0.field2643, 58, 0, class217_0.field2565, class217_0.field2688, 148926542);
             }
          } else {
             for (i_14 = 9; i_14 >= 5; --i_14) {

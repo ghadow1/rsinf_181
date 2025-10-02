@@ -15,12 +15,12 @@ final class class8 implements Comparator {
    }
 
    static String method94(String string_0, int i_1) {
-      class228[] arr_2 = class156.method3419(-556302366);
+      GameState[] arr_2 = PriorityComparator.getGameStates();
 
       for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
-         class228 class228_4 = arr_2[i_3];
-         if (class228_4.field3090 != -1 && string_0.startsWith(class33.method556(class228_4.field3090, (byte) -20))) {
-            string_0 = string_0.substring(6 + Integer.toString(class228_4.field3090).length());
+         GameState gameState_4 = arr_2[i_3];
+         if (gameState_4.field3090 != -1 && string_0.startsWith(class33.method556(gameState_4.field3090, (byte) -20))) {
+            string_0 = string_0.substring(6 + Integer.toString(gameState_4.field3090).length());
             break;
          }
       }
@@ -31,37 +31,37 @@ final class class8 implements Comparator {
    static final void method85(class217 class217_0, int i_1) {
       int i_2 = class217_0.field2568;
       if (i_2 == 324) {
-         if (client.field919 == -1) {
-            client.field919 = class217_0.field2599;
-            client.field920 = class217_0.field2600;
+         if (Client.field919 == -1) {
+            Client.field919 = class217_0.field2599;
+            Client.field920 = class217_0.field2600;
          }
 
-         if (client.field918.field2535) {
-            class217_0.field2599 = client.field919;
+         if (Client.field918.field2535) {
+            class217_0.field2599 = Client.field919;
          } else {
-            class217_0.field2599 = client.field920;
+            class217_0.field2599 = Client.field920;
          }
 
       } else if (i_2 == 325) {
-         if (client.field919 == -1) {
-            client.field919 = class217_0.field2599;
-            client.field920 = class217_0.field2600;
+         if (Client.field919 == -1) {
+            Client.field919 = class217_0.field2599;
+            Client.field920 = class217_0.field2600;
          }
 
-         if (client.field918.field2535) {
-            class217_0.field2599 = client.field920;
+         if (Client.field918.field2535) {
+            class217_0.field2599 = Client.field920;
          } else {
-            class217_0.field2599 = client.field919;
+            class217_0.field2599 = Client.field919;
          }
 
       } else if (i_2 == 327) {
          class217_0.field2615 = 150;
-         class217_0.field2616 = (int)(Math.sin((double)client.field881 / 40.0D) * 256.0D) & 0x7ff;
+         class217_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
          class217_0.field2607 = 5;
          class217_0.field2649 = 0;
       } else if (i_2 == 328) {
          class217_0.field2615 = 150;
-         class217_0.field2616 = (int)(Math.sin((double)client.field881 / 40.0D) * 256.0D) & 0x7ff;
+         class217_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
          class217_0.field2607 = 5;
          class217_0.field2649 = 1;
       }
@@ -94,11 +94,11 @@ final class class8 implements Comparator {
    }
 
    static void method93(int i_0, int i_1) {
-      if (i_0 == -1 && !client.field699) {
+      if (i_0 == -1 && !Client.field699) {
          class171.method3553(-461767725);
-      } else if (i_0 != -1 && i_0 != client.field889 && client.field911 != 0 && !client.field699) {
+      } else if (i_0 != -1 && i_0 != Client.field889 && Client.field911 != 0 && !Client.field699) {
          class235 class235_2 = class29.field253;
-         int i_3 = client.field911;
+         int i_3 = Client.field911;
          class197.field2402 = 1;
          class11.field76 = class235_2;
          class197.field2403 = i_0;
@@ -108,7 +108,7 @@ final class class8 implements Comparator {
          class197.field2404 = 2;
       }
 
-      client.field889 = i_0;
+      Client.field889 = i_0;
    }
 
 }

@@ -17,7 +17,7 @@ public class class14 {
       class64 class64_6 = class94_5.method2202(i_0, string_1, string_2, string_3, (byte) 0);
       class91.field1277.method5938(class64_6, (long)class64_6.field600);
       class91.field1278.method4950(class64_6);
-      client.field847 = client.field673;
+      Client.field847 = Client.field673;
    }
 
    static final void method153(class217 class217_0, int i_1, int i_2, int i_3) {
@@ -54,7 +54,7 @@ public class class14 {
             string_4 = string_5 + string_6 + "; Max-Age=" + 94608000L;
          }
 
-         client client_17 = class27.field233;
+         Client client_17 = class27.field233;
          string_6 = "document.cookie=\"" + string_4 + "\"";
          JSObject.getWindow(client_17).eval(string_6);
       } catch (Throwable throwable_16) {
@@ -64,11 +64,11 @@ public class class14 {
    }
 
    static final void method159(String string_0, int i_1) {
-      class187 class187_3 = class235.method4265(class183.field2280, client.field880.field1313, 1775123545);
+      class187 class187_3 = class235.method4265(class183.field2280, Client.field880.field1313, 1775123545);
       class187_3.field2333.writeByte(class209.method3945(string_0) + 1);
       class187_3.field2333.writeNullTerminatedString(string_0);
       class187_3.field2333.writeByte(i_1);
-      client.field880.copy(class187_3);
+      Client.field880.copy(class187_3);
    }
 
 }

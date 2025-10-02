@@ -5,7 +5,7 @@ public class class281 {
    public static final class281 field3639 = new class281();
 
    static final void method5180(String string_0, boolean bool_1, int i_2) {
-      if (client.field784) {
+      if (Client.field784) {
          byte b_3 = 4;
          int i_4 = b_3 + 6;
          int i_5 = b_3 + 6;
@@ -23,9 +23,9 @@ public class class281 {
             int i_10 = i_6;
             int i_11 = i_7;
 
-            for (int i_12 = 0; i_12 < client.field858; i_12++) {
-               if (client.field808[i_12] + client.field865[i_12] > i_8 && client.field808[i_12] < i_8 + i_10 && client.field864[i_12] + client.field860[i_12] > i_9 && client.field864[i_12] < i_11 + i_9) {
-                  client.field861[i_12] = true;
+            for (int i_12 = 0; i_12 < Client.field858; i_12++) {
+               if (Client.field808[i_12] + Client.field865[i_12] > i_8 && Client.field808[i_12] < i_8 + i_10 && Client.field864[i_12] + Client.field860[i_12] > i_9 && Client.field864[i_12] < i_11 + i_9) {
+                  Client.field861[i_12] = true;
                }
             }
          }

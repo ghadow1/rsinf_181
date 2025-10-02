@@ -78,7 +78,7 @@ public abstract class class34 {
    }
 
    static int method598(byte b_0) {
-      return client.field869 ? 2 : 1;
+      return Client.field869 ? 2 : 1;
    }
 
    public static void method599(int i_0) {

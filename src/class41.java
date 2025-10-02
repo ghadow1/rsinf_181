@@ -47,7 +47,7 @@ public class class41 {
                }
 
                i_12 = class299_0.readSmartInt();
-               class66_2.method1657(i_8, i_10, i_9, i_11, client.field881, i_12, -13467582);
+               class66_2.method1657(i_8, i_10, i_9, i_11, Client.field881, i_12, -13467582);
             }
          }
 
@@ -60,7 +60,7 @@ public class class41 {
                   i_11 = class299_0.readSmartInt();
                   i_12 = class299_0.readOffsetUnsignedByte();
                   i_13 = i_10 > 0 ? class299_0.readUnsignedByte() : i_12;
-                  class66_2.method1655(i_9, client.field881, i_10, i_11, i_12, i_13, (byte) 52);
+                  class66_2.method1655(i_9, Client.field881, i_10, i_11, i_12, i_13, (byte) 52);
                } else {
                   class66_2.method1659(i_9, 1541896355);
                }
@@ -72,10 +72,10 @@ public class class41 {
          class66_2.field986 = class299_0.readShortWithOffset2();
          i_6 = class299_0.readIntCustomOrder2();
          class66_2.field990 = i_6 >> 16;
-         class66_2.field989 = (i_6 & 0xffff) + client.field881;
+         class66_2.field989 = (i_6 & 0xffff) + Client.field881;
          class66_2.field987 = 0;
          class66_2.field988 = 0;
-         if (class66_2.field989 > client.field881) {
+         if (class66_2.field989 > Client.field881) {
             class66_2.field987 = -1;
          }
 
@@ -93,8 +93,8 @@ public class class41 {
          class66_2.field993 = class299_0.readOffsetByte();
          class66_2.field992 = class299_0.readOffsetByte();
          class66_2.field983 = class299_0.readInvertedByte();
-         class66_2.field995 = class299_0.readShortWithOffset() + client.field881;
-         class66_2.field996 = class299_0.readShortLittleEndian() + client.field881;
+         class66_2.field995 = class299_0.readShortWithOffset() + Client.field881;
+         class66_2.field996 = class299_0.readShortLittleEndian() + Client.field881;
          class66_2.field997 = class299_0.readUnsignedShortBigEndian();
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
@@ -118,7 +118,7 @@ public class class41 {
          if (class66_2.field977.charAt(0) == 126) {
             class66_2.field977 = class66_2.field977.substring(1);
             class62.method1132(2, class66_2.field621.method5197((byte) 51), class66_2.field977, -2101795865);
-         } else if (class66_2 == client.field657) {
+         } else if (class66_2 == Client.field657) {
             class62.method1132(2, class66_2.field621.method5197((byte) 62), class66_2.field977, -2114277383);
          }
 
@@ -158,17 +158,17 @@ public class class41 {
 
       if ((i_3 & 0x10) != 0) {
          i_6 = class299_0.readShortWithOffset();
-         class228 class228_20 = (class228) MemoryManager.findById(class156.method3419(390349850), class299_0.readUnsignedByte());
+         GameState gameState_20 = (GameState) MemoryManager.findById(PriorityComparator.getGameStates(), class299_0.readUnsignedByte());
          boolean bool_18 = class299_0.readNegatedUnsignedByte() == 1;
          i_9 = class299_0.readUnsignedByte();
          i_10 = class299_0.position;
          if (class66_2.field621 != null && class66_2.field613 != null) {
             boolean bool_19 = false;
-            if (class228_20.field3092 && class58.field546.method1765(class66_2.field621, (byte) -1)) {
+            if (gameState_20.field3092 && class58.field546.method1765(class66_2.field621, (byte) -1)) {
                bool_19 = true;
             }
 
-            if (!bool_19 && client.field767 == 0 && !class66_2.field628) {
+            if (!bool_19 && Client.field767 == 0 && !class66_2.field628) {
                class89.field1264.position = 0;
                class299_0.readBytes(class89.field1264.buffer, 0, i_9);
                class89.field1264.position = 0;
@@ -178,15 +178,15 @@ public class class41 {
                class66_2.field982 = i_6 & 0xff;
                class66_2.field1002 = 150;
                class66_2.field963 = bool_18;
-               class66_2.field998 = class66_2 != client.field657 && class228_20.field3092 && "" != client.field762 && string_16.toLowerCase().indexOf(client.field762) == -1;
-               if (class228_20.field3091) {
+               class66_2.field998 = class66_2 != Client.field657 && gameState_20.field3092 && "" != Client.field762 && string_16.toLowerCase().indexOf(Client.field762) == -1;
+               if (gameState_20.field3091) {
                   i_13 = bool_18 ? 91 : 1;
                } else {
                   i_13 = bool_18 ? 90 : 2;
                }
 
-               if (class228_20.field3090 != -1) {
-                  class62.method1132(i_13, class33.method556(class228_20.field3090, (byte) 66) + class66_2.field621.method5197((byte) 113), string_16, -2085086030);
+               if (gameState_20.field3090 != -1) {
+                  class62.method1132(i_13, class33.method556(gameState_20.field3090, (byte) 66) + class66_2.field621.method5197((byte) 113), string_16, -2085086030);
                } else {
                   class62.method1132(i_13, class66_2.field621.method5197((byte) 121), string_16, -2116827582);
                }

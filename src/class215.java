@@ -42,7 +42,7 @@ public class class215 {
 
    static final void method4022(int i_0) {
       class133.field1848 = false;
-      client.field656 = false;
+      Client.field656 = false;
    }
 
    public static class324 method4021(class233 class233_0, String string_1, String string_2, int i_3) {

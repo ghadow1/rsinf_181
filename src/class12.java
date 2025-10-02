@@ -117,7 +117,7 @@ final class class12 implements Comparator {
    static final boolean method149(class217 class217_0, byte b_1) {
       int i_2 = class217_0.field2568;
       if (i_2 == 205) {
-         client.field700 = 250;
+         Client.field700 = 250;
          return true;
       } else {
          int i_3;
@@ -125,27 +125,27 @@ final class class12 implements Comparator {
          if (i_2 >= 300 && i_2 <= 313) {
             i_3 = (i_2 - 300) / 2;
             i_4 = i_2 & 0x1;
-            client.field918.method3992(i_3, i_4 == 1, (short) 7431);
+            Client.field918.method3992(i_3, i_4 == 1, (short) 7431);
          }
 
          if (i_2 >= 314 && i_2 <= 323) {
             i_3 = (i_2 - 314) / 2;
             i_4 = i_2 & 0x1;
-            client.field918.method3993(i_3, i_4 == 1, (byte) 1);
+            Client.field918.method3993(i_3, i_4 == 1, (byte) 1);
          }
 
          if (i_2 == 324) {
-            client.field918.method4006(false, -1889308905);
+            Client.field918.method4006(false, -1889308905);
          }
 
          if (i_2 == 325) {
-            client.field918.method4006(true, -1889308905);
+            Client.field918.method4006(true, -1889308905);
          }
 
          if (i_2 == 326) {
-            class187 class187_5 = class235.method4265(class183.field2215, client.field880.field1313, 1775123545);
-            client.field918.method3995(class187_5.field2333, 318518244);
-            client.field880.copy(class187_5);
+            class187 class187_5 = class235.method4265(class183.field2215, Client.field880.field1313, 1775123545);
+            Client.field918.method3995(class187_5.field2333, 318518244);
+            Client.field880.copy(class187_5);
             return true;
          } else {
             return false;

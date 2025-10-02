@@ -27,39 +27,39 @@ public final class class68 extends LinkedListNode {
       class61 class61_4 = new class61();
       class61_4.field571 = i_1;
       class61_4.field569 = i_2;
-      client.field816.method5951(class61_4, (long)i_0);
+      Client.field816.method5951(class61_4, (long)i_0);
       class12.method146(i_1, -2080937521);
       class217 class217_5 = class80.fetchSomething(i_0);
       class224.method4120(class217_5);
-      if (client.field850 != null) {
-         class224.method4120(client.field850);
-         client.field850 = null;
+      if (Client.field850 != null) {
+         class224.method4120(Client.field850);
+         Client.field850 = null;
       }
 
-      for (int i_6 = 0; i_6 < client.field791; i_6++) {
-         if (class1.method5(client.field794[i_6], -2073640894)) {
-            if (i_6 < client.field791 - 1) {
-               for (int i_7 = i_6; i_7 < client.field791 - 1; i_7++) {
-                  client.field796[i_7] = client.field796[i_7 + 1];
-                  client.field668[i_7] = client.field668[i_7 + 1];
-                  client.field794[i_7] = client.field794[i_7 + 1];
-                  client.field795[i_7] = client.field795[i_7 + 1];
-                  client.field792[i_7] = client.field792[i_7 + 1];
-                  client.field793[i_7] = client.field793[i_7 + 1];
-                  client.field769[i_7] = client.field769[i_7 + 1];
+      for (int i_6 = 0; i_6 < Client.field791; i_6++) {
+         if (class1.method5(Client.field794[i_6], -2073640894)) {
+            if (i_6 < Client.field791 - 1) {
+               for (int i_7 = i_6; i_7 < Client.field791 - 1; i_7++) {
+                  Client.field796[i_7] = Client.field796[i_7 + 1];
+                  Client.field668[i_7] = Client.field668[i_7 + 1];
+                  Client.field794[i_7] = Client.field794[i_7 + 1];
+                  Client.field795[i_7] = Client.field795[i_7 + 1];
+                  Client.field792[i_7] = Client.field792[i_7 + 1];
+                  Client.field793[i_7] = Client.field793[i_7 + 1];
+                  Client.field769[i_7] = Client.field769[i_7 + 1];
                }
             }
 
             --i_6;
-            --client.field791;
+            --Client.field791;
          }
       }
 
       class12.method145((byte) 107);
       class27.method413(class217.field2556[i_0 >> 16], class217_5, false, 1377168714);
       class48.method813(i_1, 1924602779);
-      if (client.field905 != -1) {
-         class17.method175(client.field905, 1, -1199742641);
+      if (Client.field905 != -1) {
+         class17.method175(Client.field905, 1, -1199742641);
       }
 
       return class61_4;

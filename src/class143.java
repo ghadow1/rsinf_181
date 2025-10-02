@@ -123,7 +123,7 @@ public class class143 implements Runnable {
          return 1;
       } else if (i_0 == 2702) {
          int i_6 = class76.field1098[--class70.field1014];
-         class61 class61_5 = (class61) client.field816.method5952((long)i_6);
+         class61 class61_5 = (class61) Client.field816.method5952((long)i_6);
          if (class61_5 != null) {
             class76.field1098[++class70.field1014 - 1] = 1;
          } else {
@@ -132,7 +132,7 @@ public class class143 implements Runnable {
 
          return 1;
       } else if (i_0 == 2706) {
-         class76.field1098[++class70.field1014 - 1] = client.field905;
+         class76.field1098[++class70.field1014 - 1] = Client.field905;
          return 1;
       } else {
          return 2;

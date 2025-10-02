@@ -61,11 +61,11 @@ public class class38 extends class26 {
    }
 
    static class174 method667(int i_0, int i_1, int i_2) {
-      client.field735.field2098 = i_0;
-      client.field735.field2101 = i_1;
-      client.field735.field2099 = 1;
-      client.field735.field2097 = 1;
-      return client.field735;
+      Client.field735.field2098 = i_0;
+      Client.field735.field2101 = i_1;
+      Client.field735.field2099 = 1;
+      Client.field735.field2097 = 1;
+      return Client.field735;
    }
 
 }

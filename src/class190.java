@@ -69,14 +69,14 @@ public class class190 implements UnknownT {
    }
 
    static boolean method3667(int i_0) {
-      if (client.field925 != null && client.field926 < client.field925.size()) {
-         while (client.field926 < client.field925.size()) {
-            class58 class58_1 = (class58) client.field925.get(client.field926);
+      if (Client.field925 != null && Client.field926 < Client.field925.size()) {
+         while (Client.field926 < Client.field925.size()) {
+            class58 class58_1 = (class58) Client.field925.get(Client.field926);
             if (!class58_1.method1095((byte) -30)) {
                return false;
             }
 
-            ++client.field926;
+            ++Client.field926;
          }
 
          return true;
@@ -87,15 +87,15 @@ public class class190 implements UnknownT {
 
    static String method3666(String string_0, boolean bool_1, int i_2) {
       String str_3 = bool_1 ? "https://" : "http://";
-      if (client.field703 == 1) {
+      if (Client.field703 == 1) {
          string_0 = string_0 + "-wtrc";
-      } else if (client.field703 == 2) {
+      } else if (Client.field703 == 2) {
          string_0 = string_0 + "-wtqa";
-      } else if (client.field703 == 3) {
+      } else if (Client.field703 == 3) {
          string_0 = string_0 + "-wtwip";
-      } else if (client.field703 == 5) {
+      } else if (Client.field703 == 5) {
          string_0 = string_0 + "-wti";
-      } else if (client.field703 == 4) {
+      } else if (Client.field703 == 4) {
          string_0 = "local";
       }
 

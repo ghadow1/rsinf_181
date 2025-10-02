@@ -11,7 +11,7 @@ public class class61 extends LinkedListNode {
 
       for (int i_4 = 0; i_4 < class89.field1262; i_4++) {
          int i_5 = class89.field1256[i_4];
-         class66 class66_6 = client.field909[i_5];
+         class66 class66_6 = Client.field909[i_5];
          int i_7 = class299_0.readUnsignedByte();
          if ((i_7 & 0x8) != 0) {
             i_7 += class299_0.readUnsignedByte() << 8;

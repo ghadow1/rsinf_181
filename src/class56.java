@@ -10,26 +10,26 @@ public class class56 {
    int field522 = -1;
 
    static final void method1090() {
-      if (client.field700 > 0) {
+      if (Client.field700 > 0) {
          class174.disconnectGame();
       } else {
-         client.field797.method4993();
+         Client.field797.method4993();
          class96.method2265(40);
-         class269.field3563 = client.field880.method2223();
-         client.field880.method2224();
+         class269.field3563 = Client.field880.method2223();
+         Client.field880.method2224();
       }
    }
 
    static void method1085() {
-      if (client.field657.field1005 >> 7 == client.field885 && client.field657.field949 >> 7 == client.field842) {
-         client.field885 = 0;
+      if (Client.field657.field1005 >> 7 == Client.field885 && Client.field657.field949 >> 7 == Client.field842) {
+         Client.field885 = 0;
       }
 
    }
 
    static final void method1087(boolean bool_0, class299 class299_1) {
-      client.field775 = 0;
-      client.field697 = 0;
+      Client.field775 = 0;
+      Client.field697 = 0;
       class250.method4530();
 
       int i_3;
@@ -39,21 +39,21 @@ public class class56 {
       int i_8;
       int i_9;
       int i_10;
-      while (class299_1.method5461(client.field880.field1315) >= 27) {
+      while (class299_1.method5461(Client.field880.field1315) >= 27) {
          i_3 = class299_1.method5445(15);
          if (i_3 == 32767) {
             break;
          }
 
          boolean bool_4 = false;
-         if (client.field694[i_3] == null) {
-            client.field694[i_3] = new class79();
+         if (Client.field694[i_3] == null) {
+            Client.field694[i_3] = new class79();
             bool_4 = true;
          }
 
-         class79_5 = client.field694[i_3];
-         client.field696[++client.field695 - 1] = i_3;
-         class79_5.field973 = client.field881;
+         class79_5 = Client.field694[i_3];
+         Client.field696[++Client.field695 - 1] = i_3;
+         class79_5.field973 = Client.field881;
          if (bool_0) {
             i_6 = class299_1.method5445(8);
             if (i_6 > 127) {
@@ -67,14 +67,14 @@ public class class56 {
          }
 
          i_7 = class299_1.method5445(1);
-         i_8 = client.field780[class299_1.method5445(3)];
+         i_8 = Client.field780[class299_1.method5445(3)];
          if (bool_4) {
             class79_5.field1000 = class79_5.field950 = i_8;
          }
 
          i_9 = class299_1.method5445(1);
          if (i_9 == 1) {
-            client.field859[++client.field697 - 1] = i_3;
+            Client.field859[++Client.field697 - 1] = i_3;
          }
 
          if (bool_0) {
@@ -103,15 +103,15 @@ public class class56 {
          class79_5.field1004 = class79_5.field1134.field3472;
          class79_5.field955 = class79_5.field1134.field3482;
          class79_5.field956 = class79_5.field1134.field3474;
-         class79_5.method1963(client.field657.field994[0] + i_6, client.field657.field962[0] + i_10, i_7 == 1, (short) 128);
+         class79_5.method1963(Client.field657.field994[0] + i_6, Client.field657.field962[0] + i_10, i_7 == 1, (short) 128);
       }
 
       class299_1.method5446();
 
       int i_15;
-      for (i_3 = 0; i_3 < client.field697; i_3++) {
-         i_15 = client.field859[i_3];
-         class79_5 = client.field694[i_15];
+      for (i_3 = 0; i_3 < Client.field697; i_3++) {
+         i_15 = Client.field859[i_3];
+         class79_5 = Client.field694[i_15];
          i_6 = class299_1.readUnsignedByte();
          if ((i_6 & 0x1) != 0) {
             class79_5.field975 = class299_1.readShortLittleEndian();
@@ -195,7 +195,7 @@ public class class56 {
                   }
 
                   i_13 = class299_1.readSmartInt();
-                  class79_5.method1657(i_9, i_11, i_10, i_12, client.field881, i_13, 295125263);
+                  class79_5.method1657(i_9, i_11, i_10, i_12, Client.field881, i_13, 295125263);
                }
             }
 
@@ -208,7 +208,7 @@ public class class56 {
                      i_12 = class299_1.readSmartInt();
                      i_13 = class299_1.readUnsignedByte();
                      int i_14 = i_11 > 0 ? class299_1.readInvertedUnsignedByte() : i_13;
-                     class79_5.method1655(i_10, client.field881, i_11, i_12, i_13, i_14, (byte) 15);
+                     class79_5.method1655(i_10, Client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
                      class79_5.method1659(i_10, 1541896355);
                   }
@@ -220,10 +220,10 @@ public class class56 {
             class79_5.field986 = class299_1.readShortLittleEndian();
             i_7 = class299_1.readIntCustomOrder2();
             class79_5.field990 = i_7 >> 16;
-            class79_5.field989 = (i_7 & 0xffff) + client.field881;
+            class79_5.field989 = (i_7 & 0xffff) + Client.field881;
             class79_5.field987 = 0;
             class79_5.field988 = 0;
-            if (class79_5.field989 > client.field881) {
+            if (class79_5.field989 > Client.field881) {
                class79_5.field987 = -1;
             }
 
@@ -238,20 +238,20 @@ public class class56 {
          }
       }
 
-      for (i_3 = 0; i_3 < client.field775; i_3++) {
-         i_15 = client.field776[i_3];
-         if (client.field694[i_15].field973 != client.field881) {
-            client.field694[i_15].field1134 = null;
-            client.field694[i_15] = null;
+      for (i_3 = 0; i_3 < Client.field775; i_3++) {
+         i_15 = Client.field776[i_3];
+         if (Client.field694[i_15].field973 != Client.field881) {
+            Client.field694[i_15].field1134 = null;
+            Client.field694[i_15] = null;
          }
       }
 
-      if (class299_1.position != client.field880.field1315) {
-         throw new RuntimeException(class299_1.position + "," + client.field880.field1315);
+      if (class299_1.position != Client.field880.field1315) {
+         throw new RuntimeException(class299_1.position + "," + Client.field880.field1315);
       } else {
-         for (i_3 = 0; i_3 < client.field695; i_3++) {
-            if (client.field694[client.field696[i_3]] == null) {
-               throw new RuntimeException(i_3 + "," + client.field695);
+         for (i_3 = 0; i_3 < Client.field695; i_3++) {
+            if (Client.field694[Client.field696[i_3]] == null) {
+               throw new RuntimeException(i_3 + "," + Client.field695);
             }
          }
 
@@ -285,16 +285,16 @@ public class class56 {
    }
 
    static void method1086(int i_0, int i_1, int i_2) {
-      class187 class187_3 = class235.method4265(class183.field2273, client.field880.field1313, 1775123545);
+      class187 class187_3 = class235.method4265(class183.field2273, Client.field880.field1313, 1775123545);
       class187_3.field2333.writeIntCustomOrder(i_0);
       class187_3.field2333.writeShortWithOffset2(i_1);
-      client.field880.copy(class187_3);
+      Client.field880.copy(class187_3);
    }
 
    static final void method1089(byte b_0) {
-      class187 class187_1 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(class183.field2286, Client.field880.field1313, 1775123545);
       class187_1.field2333.writeByte(0);
-      client.field880.copy(class187_1);
+      Client.field880.copy(class187_1);
    }
 
 }

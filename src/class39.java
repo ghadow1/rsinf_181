@@ -86,7 +86,7 @@ public class class39 extends class21 {
 
    static int method696(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       if (i_0 == 5630) {
-         client.field700 = 250;
+         Client.field700 = 250;
          return 1;
       } else {
          return 2;

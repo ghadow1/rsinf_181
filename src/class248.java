@@ -140,7 +140,7 @@ public class class248 extends class175 {
             }
          }
 
-         if (client.field662 != 5) {
+         if (Client.field662 != 5) {
             if (class85.field1193 == -1L) {
                class85.field1193 = TimeUtils.getAdjustedTimeMillis() + 1000L;
             }
@@ -153,7 +153,7 @@ public class class248 extends class175 {
                }
             }
 
-            if (client.field662 == 10 || client.field662 == 11) {
+            if (Client.field662 == 10 || Client.field662 == 11) {
                if (class190.field2348 == class56.field528) {
                   if (class54.field493 == 1 || !class46.field413 && class54.field493 == 4) {
                      i_4 = class85.field1208 + 5;
@@ -202,19 +202,19 @@ public class class248 extends class175 {
 
                   i_8 = class62.field585 + 80;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20 || bool_18) {
-                     if ((client.field653 & 0x2000000) != 0) {
+                     if ((Client.field653 & 0x2000000) != 0) {
                         class85.field1197 = "";
                         class85.field1210 = "This is a <col=00ffff>Beta<col=ffffff> world.";
                         class85.field1195 = "Your normal account will not be affected.";
                         class85.field1196 = "";
                         class85.field1209 = 1;
-                        if (client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
+                        if (Client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
                            class85.field1202 = 1;
                         } else {
                            class85.field1202 = 0;
                         }
-                     } else if ((client.field653 & 0x4) != 0) {
-                        if ((client.field653 & 0x400) != 0) {
+                     } else if ((Client.field653 & 0x4) != 0) {
+                        if ((Client.field653 & 0x400) != 0) {
                            class85.field1210 = "This is a <col=ffff00>High Risk <col=ff0000>PvP<col=ffffff> world.";
                            class85.field1195 = "Players can attack each other almost everywhere";
                            class85.field1196 = "and the Protect Item prayer won\'t work.";
@@ -226,18 +226,18 @@ public class class248 extends class175 {
 
                         class85.field1197 = "Warning!";
                         class85.field1209 = 1;
-                        if (client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
+                        if (Client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
                            class85.field1202 = 1;
                         } else {
                            class85.field1202 = 0;
                         }
-                     } else if ((client.field653 & 0x400) != 0) {
+                     } else if ((Client.field653 & 0x400) != 0) {
                         class85.field1210 = "This is a <col=ffff00>High Risk<col=ffffff> world.";
                         class85.field1195 = "The Protect Item prayer will";
                         class85.field1196 = "not work on this world.";
                         class85.field1197 = "Warning!";
                         class85.field1209 = 1;
-                        if (client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
+                        if (Client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
                            class85.field1202 = 1;
                         } else {
                            class85.field1202 = 0;
@@ -315,8 +315,8 @@ public class class248 extends class175 {
                         s_9 = 277;
                         class85.field1199 = i_16 >= i_8 && i_16 < i_8 + class237.field3191 && i_17 >= s_9 && i_17 < s_9 + class25.field212;
                         if (i_4 == 1 && class85.field1199) {
-                           client.field691 = !client.field691;
-                           if (!client.field691 && class17.field117.field1065 != null) {
+                           Client.field691 = !Client.field691;
+                           if (!Client.field691 && class17.field117.field1065 != null) {
                               class17.field117.field1065 = null;
                               class97.method2268(2113961646);
                            }
@@ -330,7 +330,7 @@ public class class248 extends class175 {
                            if (!class17.field117.field1066) {
                               class85.field1180 = "";
                               class17.field117.field1065 = null;
-                              if (client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
+                              if (Client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
                                  class85.field1202 = 1;
                               } else {
                                  class85.field1202 = 0;

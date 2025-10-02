@@ -60,22 +60,22 @@ public class class144 {
       int i_6 = i_3 - 334;
       int i_7;
       if (i_6 < 0) {
-         i_7 = client.field782;
+         i_7 = Client.field782;
       } else if (i_6 >= 100) {
-         i_7 = client.field651;
+         i_7 = Client.field651;
       } else {
-         i_7 = (client.field651 - client.field782) * i_6 / 100 + client.field782;
+         i_7 = (Client.field651 - Client.field782) * i_6 / 100 + Client.field782;
       }
 
       int i_8 = i_3 * i_7 * 512 / (i_2 * 334);
       int i_9;
       int i_10;
       short s_18;
-      if (i_8 < client.field732) {
-         s_18 = client.field732;
+      if (i_8 < Client.field732) {
+         s_18 = Client.field732;
          i_7 = s_18 * i_2 * 334 / (i_3 * 512);
-         if (i_7 > client.field790) {
-            i_7 = client.field790;
+         if (i_7 > Client.field790) {
+            i_7 = Client.field790;
             i_9 = i_3 * i_7 * 512 / (s_18 * 334);
             i_10 = (i_2 - i_9) / 2;
             if (bool_4) {
@@ -87,11 +87,11 @@ public class class144 {
             i_0 += i_10;
             i_2 -= i_10 * 2;
          }
-      } else if (i_8 > client.field659) {
-         s_18 = client.field659;
+      } else if (i_8 > Client.field659) {
+         s_18 = Client.field659;
          i_7 = s_18 * i_2 * 334 / (i_3 * 512);
-         if (i_7 < client.field820) {
-            i_7 = client.field820;
+         if (i_7 < Client.field820) {
+            i_7 = Client.field820;
             i_9 = s_18 * i_2 * 334 / (i_7 * 512);
             i_10 = (i_3 - i_9) / 2;
             if (bool_4) {
@@ -105,8 +105,8 @@ public class class144 {
          }
       }
 
-      client.field917 = i_3 * i_7 / 334;
-      if (i_2 != client.field746 || i_3 != client.field714) {
+      Client.field917 = i_3 * i_7 / 334;
+      if (i_2 != Client.field746 || i_3 != Client.field714) {
          int[] ints_17 = new int[9];
 
          for (i_10 = 0; i_10 < ints_17.length; i_10++) {
@@ -120,7 +120,7 @@ public class class144 {
                i_15 = 100;
             }
 
-            int i_16 = (client.field908 - client.field906) * i_15 / 100 + client.field906;
+            int i_16 = (Client.field908 - Client.field906) * i_15 / 100 + Client.field906;
             int i_14 = i_16 * i_12 / 256;
             ints_17[i_10] = i_13 * i_14 >> 16;
          }
@@ -128,10 +128,10 @@ public class class144 {
          class133.method3101(ints_17, 500, 800, i_2 * 334 / i_3, 334);
       }
 
-      client.field913 = i_0;
-      client.field914 = i_1;
-      client.field746 = i_2;
-      client.field714 = i_3;
+      Client.field913 = i_0;
+      Client.field914 = i_1;
+      Client.field746 = i_2;
+      Client.field714 = i_3;
    }
 
    public static void method3317(class233 class233_0, class233 class233_1, class233 class233_2, class233 class233_3, int i_4) {

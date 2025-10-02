@@ -112,7 +112,7 @@ public final class class45 implements KeyListener, FocusListener {
          }
 
          for (int i_1 = 0; i_1 < class89.field1255; i_1++) {
-            class66 class66_2 = client.field909[class89.field1257[i_1]];
+            class66 class66_2 = Client.field909[class89.field1257[i_1]];
             class66_2.method1185(-2115191954);
          }
 

@@ -34,15 +34,15 @@ public class class212 {
                }
 
                if (i_7 == 1) {
-                  i_8 = client.field760[ints_3[i_5++]];
+                  i_8 = Client.field760[ints_3[i_5++]];
                }
 
                if (i_7 == 2) {
-                  i_8 = client.field787[ints_3[i_5++]];
+                  i_8 = Client.field787[ints_3[i_5++]];
                }
 
                if (i_7 == 3) {
-                  i_8 = client.field788[ints_3[i_5++]];
+                  i_8 = Client.field788[ints_3[i_5++]];
                }
 
                int i_10;
@@ -54,7 +54,7 @@ public class class212 {
                   i_10 += ints_3[i_5++];
                   class217_11 = class80.fetchSomething(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || client.field655)) {
+                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || Client.field655)) {
                      for (i_13 = 0; i_13 < class217_11.field2560.length; i_13++) {
                         if (i_12 + 1 == class217_11.field2560[i_13]) {
                            i_8 += class217_11.field2705[i_13];
@@ -68,7 +68,7 @@ public class class212 {
                }
 
                if (i_7 == 6) {
-                  i_8 = class221.field2743[client.field787[ints_3[i_5++]] - 1];
+                  i_8 = class221.field2743[Client.field787[ints_3[i_5++]] - 1];
                }
 
                if (i_7 == 7) {
@@ -76,13 +76,13 @@ public class class212 {
                }
 
                if (i_7 == 8) {
-                  i_8 = client.field657.field618;
+                  i_8 = Client.field657.field618;
                }
 
                if (i_7 == 9) {
                   for (i_10 = 0; i_10 < 25; i_10++) {
                      if (class221.field2744[i_10]) {
-                        i_8 += client.field787[i_10];
+                        i_8 += Client.field787[i_10];
                      }
                   }
                }
@@ -92,7 +92,7 @@ public class class212 {
                   i_10 += ints_3[i_5++];
                   class217_11 = class80.fetchSomething(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || client.field655)) {
+                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || Client.field655)) {
                      for (i_13 = 0; i_13 < class217_11.field2560.length; i_13++) {
                         if (i_12 + 1 == class217_11.field2560[i_13]) {
                            i_8 = 999999999;
@@ -103,11 +103,11 @@ public class class212 {
                }
 
                if (i_7 == 11) {
-                  i_8 = client.field910;
+                  i_8 = Client.field910;
                }
 
                if (i_7 == 12) {
-                  i_8 = client.field823;
+                  i_8 = Client.field823;
                }
 
                if (i_7 == 13) {
@@ -134,11 +134,11 @@ public class class212 {
                }
 
                if (i_7 == 18) {
-                  i_8 = (client.field657.field1005 >> 7) + class196.field2389;
+                  i_8 = (Client.field657.field1005 >> 7) + class196.field2389;
                }
 
                if (i_7 == 19) {
-                  i_8 = (client.field657.field949 >> 7) + class1.field1;
+                  i_8 = (Client.field657.field949 >> 7) + class1.field1;
                }
 
                if (i_7 == 20) {

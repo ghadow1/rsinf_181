@@ -229,7 +229,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
 
                   for (i_3 = 1; i_3 < 2048; i_3++) {
                      class89.field1252[i_3] = (byte)(class89.field1252[i_3] >> 1);
-                     class66 class66_6 = client.field909[i_3];
+                     class66 class66_6 = Client.field909[i_3];
                      if (class66_6 != null) {
                         class89.field1257[++class89.field1255 - 1] = i_3;
                      } else {

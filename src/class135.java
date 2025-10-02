@@ -18,16 +18,16 @@ public abstract class class135 extends class175 {
    }
 
    static final void method3260(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5, boolean bool_6) {
-      if (!client.field674) {
-         if (client.field791 < 500) {
-            client.field796[client.field791] = string_0;
-            client.field668[client.field791] = string_1;
-            client.field794[client.field791] = i_2;
-            client.field795[client.field791] = i_3;
-            client.field792[client.field791] = i_4;
-            client.field793[client.field791] = i_5;
-            client.field769[client.field791] = bool_6;
-            ++client.field791;
+      if (!Client.field674) {
+         if (Client.field791 < 500) {
+            Client.field796[Client.field791] = string_0;
+            Client.field668[Client.field791] = string_1;
+            Client.field794[Client.field791] = i_2;
+            Client.field795[Client.field791] = i_3;
+            Client.field792[Client.field791] = i_4;
+            Client.field793[Client.field791] = i_5;
+            Client.field769[Client.field791] = bool_6;
+            ++Client.field791;
          }
 
       }

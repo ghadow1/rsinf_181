@@ -13,22 +13,22 @@ public class class272 {
 
    static void startUpInitialization() {
       int i_1;
-      if (client.field680 == 0) {
+      if (Client.field680 == 0) {
          class5.field22 = new class133(4, 104, 104, class55.field516);
 
          for (i_1 = 0; i_1 < 4; i_1++) {
-            client.field710[i_1] = new class172(104, 104);
+            Client.field710[i_1] = new class172(104, 104);
          }
 
          class174.field2102 = new class325(512, 512);
          class85.field1189 = "Starting game engine...";
          class85.field1188 = 5;
-         client.field680 = 20;
-      } else if (client.field680 == 20) {
+         Client.field680 = 20;
+      } else if (Client.field680 == 20) {
          class85.field1189 = "Prepared visibility map";
          class85.field1188 = 10;
-         client.field680 = 30;
-      } else if (client.field680 == 30) {
+         Client.field680 = 30;
+      } else if (Client.field680 == 30) {
          class197.field2405 = class65.method1169(0, false, true, true, (byte) 6);
          class167.field2049 = class65.method1169(1, false, true, true, (byte) 6);
          class215.field2544 = class65.method1169(2, true, false, true, (byte) 6);
@@ -37,7 +37,7 @@ public class class272 {
          class35.field307 = class65.method1169(5, true, true, true, (byte) 6);
          class29.field253 = class65.method1169(6, true, true, true, (byte) 6);
          class256.field3500 = class65.method1169(7, false, true, true, (byte) 6);
-         client.field683 = class65.method1169(8, false, true, true, (byte) 6);
+         Client.field683 = class65.method1169(8, false, true, true, (byte) 6);
          class4.field18 = class65.method1169(9, false, true, true, (byte) 6);
          class17.field110 = class65.method1169(10, false, true, true, (byte) 6);
          class32.field279 = class65.method1169(11, false, true, true, (byte) 6);
@@ -46,13 +46,13 @@ public class class272 {
          class126.field1647 = class65.method1169(14, false, true, true, (byte) 6);
          class67.field650 = class65.method1169(15, false, true, true, (byte) 6);
          class27.field232 = class65.method1169(17, true, true, true, (byte) 6);
-         client.field684 = class65.method1169(18, false, true, true, (byte) 6);
+         Client.field684 = class65.method1169(18, false, true, true, (byte) 6);
          class254.field3457 = class65.method1169(19, false, true, true, (byte) 6);
          class135.field1874 = class65.method1169(20, false, true, true, (byte) 6);
          class85.field1189 = "Connecting to update server";
          class85.field1188 = 20;
-         client.field680 = 40;
-      } else if (client.field680 == 40) {
+         Client.field680 = 40;
+      } else if (Client.field680 == 40) {
          byte b_31 = 0;
          i_1 = b_31 + class197.field2405.method4259() * 4 / 100;
          i_1 += class167.field2049.method4259() * 4 / 100;
@@ -62,7 +62,7 @@ public class class272 {
          i_1 += class35.field307.method4259() * 4 / 100;
          i_1 += class29.field253.method4259() * 2 / 100;
          i_1 += class256.field3500.method4259() * 56 / 100;
-         i_1 += client.field683.method4259() * 2 / 100;
+         i_1 += Client.field683.method4259() * 2 / 100;
          i_1 += class4.field18.method4259() * 2 / 100;
          i_1 += class17.field110.method4259() * 2 / 100;
          i_1 += class32.field279.method4259() * 2 / 100;
@@ -71,7 +71,7 @@ public class class272 {
          i_1 += class126.field1647.method4259() * 2 / 100;
          i_1 += class67.field650.method4259() * 2 / 100;
          i_1 += class254.field3457.method4259() / 100;
-         i_1 += client.field684.method4259() / 100;
+         i_1 += Client.field684.method4259() / 100;
          i_1 += class135.field1874.method4259() / 100;
          i_1 += class27.field232.method4258((byte) 44) && class27.field232.method4148(741322871) ? 1 : 0;
          if (i_1 != 100) {
@@ -87,21 +87,21 @@ public class class272 {
             class42.method763(class35.field307, "Maps");
             class42.method763(class29.field253, "Music Tracks");
             class42.method763(class256.field3500, "Models");
-            class42.method763(client.field683, "Sprites");
+            class42.method763(Client.field683, "Sprites");
             class42.method763(class32.field279, "Music Jingles");
             class42.method763(class126.field1647, "Music Samples");
             class42.method763(class67.field650, "Music Patches");
             class42.method763(class254.field3457, "World Map");
-            class42.method763(client.field684, "World Map Geography");
+            class42.method763(Client.field684, "World Map Geography");
             class42.method763(class135.field1874, "World Map Ground");
             class159.field1995 = new class312();
             class159.field1995.method5903(class27.field232, (byte) 104);
             class85.field1189 = "Loaded update list";
             class85.field1188 = 30;
-            client.field680 = 45;
+            Client.field680 = 45;
          }
-      } else if (client.field680 == 45) {
-         class126.method2853(22050, !client.field656, 2, -1363278802);
+      } else if (Client.field680 == 45) {
+         class126.method2853(22050, !Client.field656, 2, -1363278802);
          class198 class198_34 = new class198();
          class198_34.method3720(9, 128, -1686884768);
          class80.field1144 = class234.method4256(GCMonitor_2.field463, 0, 22050, 2015059645);
@@ -113,36 +113,36 @@ public class class272 {
          class84.field1177 = new class112(22050, class172.field2078);
          class85.field1189 = "Prepared sound engine";
          class85.field1188 = 35;
-         client.field680 = 50;
-         class169.field2056 = new class293(client.field683, class2.field6);
+         Client.field680 = 50;
+         class169.field2056 = new class293(Client.field683, class2.field6);
       } else {
          int i_2;
-         if (client.field680 == 50) {
+         if (Client.field680 == 50) {
             class292[] arr_33 = new class292[] {class292.field3681, class292.field3677, class292.field3676, class292.field3679, class292.field3684, class292.field3678};
             i_2 = arr_33.length;
             class293 class293_30 = class169.field2056;
             class292[] arr_4 = new class292[] {class292.field3681, class292.field3677, class292.field3676, class292.field3679, class292.field3684, class292.field3678};
-            client.field704 = class293_30.method5321(arr_4, -354104614);
-            if (client.field704.size() < i_2) {
-               class85.field1189 = "Loading fonts - " + client.field704.size() * 100 / i_2 + "%";
+            Client.field704 = class293_30.method5321(arr_4, -354104614);
+            if (Client.field704.size() < i_2) {
+               class85.field1189 = "Loading fonts - " + Client.field704.size() * 100 / i_2 + "%";
                class85.field1188 = 40;
             } else {
-               class213.field2529 = (class295) client.field704.get(class292.field3676);
-               class169.field2054 = (class295) client.field704.get(class292.field3677);
-               class23.field193 = (class295) client.field704.get(class292.field3678);
-               class22.field174 = client.field711.vmethod6276(1619784372);
+               class213.field2529 = (class295) Client.field704.get(class292.field3676);
+               class169.field2054 = (class295) Client.field704.get(class292.field3677);
+               class23.field193 = (class295) Client.field704.get(class292.field3678);
+               class22.field174 = Client.field711.vmethod6276(1619784372);
                class85.field1189 = "Loaded fonts";
                class85.field1188 = 40;
-               client.field680 = 60;
+               Client.field680 = 60;
             }
          } else {
             class235 class235_3;
             int i_5;
             class235 class235_26;
             int i_27;
-            if (client.field680 == 60) {
+            if (Client.field680 == 60) {
                class235_26 = class17.field110;
-               class235_3 = client.field683;
+               class235_3 = Client.field683;
                i_27 = 0;
                if (class235_26.method4164("title.jpg", "", -1918711245)) {
                   ++i_27;
@@ -201,9 +201,9 @@ public class class272 {
                   class85.field1189 = "Loaded title screen";
                   class85.field1188 = 50;
                   class96.method2265(5);
-                  client.field680 = 70;
+                  Client.field680 = 70;
                }
-            } else if (client.field680 == 70) {
+            } else if (Client.field680 == 70) {
                if (!class215.field2544.method4148(1149416705)) {
                   class85.field1189 = "Loading config - " + class215.field2544.method4257(889991726) + "%";
                   class85.field1188 = 60;
@@ -214,7 +214,7 @@ public class class272 {
                   class6.method66(class215.field2544, class256.field3500);
                   class235_26 = class215.field2544;
                   class235_3 = class256.field3500;
-                  boolean bool_35 = client.field656;
+                  boolean bool_35 = Client.field656;
                   class253.field3395 = class235_26;
                   class253.field3351 = class235_3;
                   class253.field3352 = bool_35;
@@ -222,7 +222,7 @@ public class class272 {
                   class87.method2054(class215.field2544, (byte) 97);
                   class235 class235_28 = class215.field2544;
                   class235 class235_6 = class256.field3500;
-                  boolean bool_7 = client.field655;
+                  boolean bool_7 = Client.field655;
                   class295 class295_8 = class213.field2529;
                   class91.field1276 = class235_28;
                   class254.field3405 = class235_6;
@@ -242,7 +242,7 @@ public class class272 {
                   class235 class235_14 = class215.field2544;
                   class248.field3298 = class235_14;
                   class6.method68(class215.field2544);
-                  class144.method3317(GCMonitor.field382, class256.field3500, client.field683, class2.field6, -354587299);
+                  class144.method3317(GCMonitor.field382, class256.field3500, Client.field683, class2.field6, -354587299);
                   class15.method173(class215.field2544, -1590503408);
                   class235 class235_15 = class215.field2544;
                   class251.field3314 = class235_15;
@@ -250,17 +250,17 @@ public class class272 {
                   class45.method794(class215.field2544, -939658474);
                   class170.field2057 = new class90();
                   class235 class235_16 = class215.field2544;
-                  class235 class235_17 = client.field683;
+                  class235 class235_17 = Client.field683;
                   class235 class235_18 = class2.field6;
                   ErrorHandler.field3327 = class235_16;
                   ErrorHandler.field3343 = class235_17;
                   ErrorHandler.field3326 = class235_18;
                   class235 class235_19 = class215.field2544;
-                  class235 class235_20 = client.field683;
+                  class235 class235_20 = Client.field683;
                   class246.field3281 = class235_19;
                   class246.field3280 = class235_20;
                   class235 class235_21 = class215.field2544;
-                  class235 class235_22 = client.field683;
+                  class235 class235_22 = Client.field683;
                   class241.field3225 = class235_22;
                   if (class235_21.method4148(-443186285)) {
                      class314.field3846 = class235_21.method4154(35, -1168959068);
@@ -278,72 +278,72 @@ public class class272 {
 
                   class85.field1189 = "Loaded config";
                   class85.field1188 = 60;
-                  client.field680 = 80;
+                  Client.field680 = 80;
                }
-            } else if (client.field680 == 80) {
+            } else if (Client.field680 == 80) {
                i_1 = 0;
                if (class64.field607 == null) {
-                  class64.field607 = class65.method1178(client.field683, class159.field1995.field3826, 0, 254674010);
+                  class64.field607 = class65.method1178(Client.field683, class159.field1995.field3826, 0, 254674010);
                } else {
                   ++i_1;
                }
 
                if (class151.field1972 == null) {
-                  class151.field1972 = class65.method1178(client.field683, class159.field1995.field3823, 0, 300652258);
+                  class151.field1972 = class65.method1178(Client.field683, class159.field1995.field3823, 0, 300652258);
                } else {
                   ++i_1;
                }
 
                if (class285.field3660 == null) {
-                  class285.field3660 = class289.method5281(client.field683, class159.field1995.field3824, 0, 1777014825);
+                  class285.field3660 = class289.method5281(Client.field683, class159.field1995.field3824, 0, 1777014825);
                } else {
                   ++i_1;
                }
 
                if (class157.field1989 == null) {
-                  class157.field1989 = class131.method3062(client.field683, class159.field1995.field3825, 0, 1591290793);
+                  class157.field1989 = class131.method3062(Client.field683, class159.field1995.field3825, 0, 1591290793);
                } else {
                   ++i_1;
                }
 
                if (class108.field1442 == null) {
-                  class108.field1442 = class131.method3062(client.field683, class159.field1995.field3830, 0, 4902842);
+                  class108.field1442 = class131.method3062(Client.field683, class159.field1995.field3830, 0, 4902842);
                } else {
                   ++i_1;
                }
 
                if (class173.field2096 == null) {
-                  class173.field2096 = class131.method3062(client.field683, class159.field1995.field3827, 0, 1581353977);
+                  class173.field2096 = class131.method3062(Client.field683, class159.field1995.field3827, 0, 1581353977);
                } else {
                   ++i_1;
                }
 
                if (class39.field342 == null) {
-                  class39.field342 = class131.method3062(client.field683, class159.field1995.field3828, 0, -14882219);
+                  class39.field342 = class131.method3062(Client.field683, class159.field1995.field3828, 0, -14882219);
                } else {
                   ++i_1;
                }
 
                if (class140.field1915 == null) {
-                  class140.field1915 = class131.method3062(client.field683, class159.field1995.field3829, 0, 483704862);
+                  class140.field1915 = class131.method3062(Client.field683, class159.field1995.field3829, 0, 483704862);
                } else {
                   ++i_1;
                }
 
                if (class221.field2746 == null) {
-                  class221.field2746 = class131.method3062(client.field683, class159.field1995.field3832, 0, 543599290);
+                  class221.field2746 = class131.method3062(Client.field683, class159.field1995.field3832, 0, 543599290);
                } else {
                   ++i_1;
                }
 
                if (class12.field82 == null) {
-                  class12.field82 = class289.method5281(client.field683, class159.field1995.field3831, 0, 2112903096);
+                  class12.field82 = class289.method5281(Client.field683, class159.field1995.field3831, 0, 2112903096);
                } else {
                   ++i_1;
                }
 
                if (class11.field72 == null) {
-                  class11.field72 = class289.method5281(client.field683, class159.field1995.field3822, 0, 1884067998);
+                  class11.field72 = class289.method5281(Client.field683, class159.field1995.field3822, 0, 1884067998);
                } else {
                   ++i_1;
                }
@@ -361,19 +361,19 @@ public class class272 {
                   class285.field3660[0].method6091(i_2 + i_5, i_5 + i_29, i_5 + i_27);
                   class85.field1189 = "Loaded sprites";
                   class85.field1188 = 70;
-                  client.field680 = 90;
+                  Client.field680 = 90;
                }
-            } else if (client.field680 == 90) {
+            } else if (Client.field680 == 90) {
                if (!class4.field18.method4148(75783134)) {
                   class85.field1189 = "Loading textures - " + "0%";
                   class85.field1188 = 90;
                } else {
-                  class6.field40 = new class119(class4.field18, client.field683, 20, 0.8D, client.field656 ? 64 : 128);
+                  class6.field40 = new class119(class4.field18, Client.field683, 20, 0.8D, Client.field656 ? 64 : 128);
                   class130.method2983(class6.field40);
                   class130.method2978(0.8D);
-                  client.field680 = 100;
+                  Client.field680 = 100;
                }
-            } else if (client.field680 == 100) {
+            } else if (Client.field680 == 100) {
                i_1 = class6.field40.method2763();
                if (i_1 < 100) {
                   class85.field1189 = "Loading textures - " + i_1 + "%";
@@ -381,15 +381,15 @@ public class class272 {
                } else {
                   class85.field1189 = "Loaded textures";
                   class85.field1188 = 90;
-                  client.field680 = 110;
+                  Client.field680 = 110;
                }
-            } else if (client.field680 == 110) {
+            } else if (Client.field680 == 110) {
                class40.field348 = new class63();
                GCMonitor_2.field463.method3472(class40.field348, 10, 1809900382);
                class85.field1189 = "Loaded input handler";
                class85.field1188 = 92;
-               client.field680 = 120;
-            } else if (client.field680 == 120) {
+               Client.field680 = 120;
+            } else if (Client.field680 == 120) {
                if (!class17.field110.method4164("huffman", "", -1918711245)) {
                   class85.field1189 = "Loading wordpack - " + 0 + "%";
                   class85.field1188 = 94;
@@ -398,9 +398,9 @@ public class class272 {
                   class210.field2515 = class209_25;
                   class85.field1189 = "Loaded wordpack";
                   class85.field1188 = 94;
-                  client.field680 = 130;
+                  Client.field680 = 130;
                }
-            } else if (client.field680 == 130) {
+            } else if (Client.field680 == 130) {
                if (!GCMonitor.field382.method4148(1613307654)) {
                   class85.field1189 = "Loading interfaces - " + GCMonitor.field382.method4257(258439292) * 4 / 5 + "%";
                   class85.field1188 = 96;
@@ -413,22 +413,22 @@ public class class272 {
                } else {
                   class85.field1189 = "Loaded interfaces";
                   class85.field1188 = 98;
-                  client.field680 = 140;
+                  Client.field680 = 140;
                }
-            } else if (client.field680 == 140) {
+            } else if (Client.field680 == 140) {
                class85.field1188 = 100;
                if (!class254.field3457.method4165(class35.field308.field306, -928538356)) {
                   class85.field1189 = "Loading world map - " + class254.field3457.method4238(class35.field308.field306, (byte) -19) / 10 + "%";
                } else {
                   if (class136.field1875 == null) {
                      class136.field1875 = new class333();
-                     class136.field1875.method6298(class254.field3457, client.field684, class135.field1874, class23.field193, client.field704, class285.field3660, 269789148);
+                     class136.field1875.method6298(class254.field3457, Client.field684, class135.field1874, class23.field193, Client.field704, class285.field3660, 269789148);
                   }
 
                   class85.field1189 = "Loaded world map";
-                  client.field680 = 150;
+                  Client.field680 = 150;
                }
-            } else if (client.field680 == 150) {
+            } else if (Client.field680 == 150) {
                class96.method2265(10);
             }
          }

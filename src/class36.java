@@ -333,14 +333,14 @@ public final class class36 {
    }
 
    static final void method601(class66 class66_0, int i_1, int i_2, int i_3, byte b_4) {
-      if (client.field657 != class66_0) {
-         if (client.field791 < 400) {
+      if (Client.field657 != class66_0) {
+         if (Client.field791 < 400) {
             String string_5;
             int i_8;
             if (class66_0.field617 == 0) {
                String string_6 = class66_0.field619[0] + class66_0.field621 + class66_0.field619[1];
                i_8 = class66_0.field618;
-               int i_9 = client.field657.field618;
+               int i_9 = Client.field657.field618;
                int i_10 = i_9 - i_8;
                String string_7;
                if (i_10 < -9) {
@@ -369,46 +369,46 @@ public final class class36 {
             }
 
             int i_11;
-            if (client.field900 == 1) {
-               class188.method3644("Use", client.field738 + " " + "->" + " " + class73.method1756(16777215, -844505624) + string_5, 14, i_1, i_2, i_3, -1599303692);
-            } else if (client.field810) {
+            if (Client.field900 == 1) {
+               class188.method3644("Use", Client.field738 + " " + "->" + " " + class73.method1756(16777215, -844505624) + string_5, 14, i_1, i_2, i_3, -1599303692);
+            } else if (Client.field810) {
                if ((class35.field301 & 0x8) == 8) {
-                  class188.method3644(client.field813, client.field814 + " " + "->" + " " + class73.method1756(16777215, -844505624) + string_5, 15, i_1, i_2, i_3, 1801868715);
+                  class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class73.method1756(16777215, -844505624) + string_5, 15, i_1, i_2, i_3, 1801868715);
                }
             } else {
                for (i_11 = 7; i_11 >= 0; --i_11) {
-                  if (client.field778[i_11] != null) {
+                  if (Client.field778[i_11] != null) {
                      short s_12 = 0;
-                     if (client.field778[i_11].equalsIgnoreCase("Attack")) {
-                        if (client.field678 == class84.field1170) {
+                     if (Client.field778[i_11].equalsIgnoreCase("Attack")) {
+                        if (Client.field678 == class84.field1170) {
                            continue;
                         }
 
-                        if (class84.field1167 == client.field678 || class84.field1173 == client.field678 && class66_0.field618 > client.field657.field618) {
+                        if (class84.field1167 == Client.field678 || class84.field1173 == Client.field678 && class66_0.field618 > Client.field657.field618) {
                            s_12 = 2000;
                         }
 
-                        if (client.field657.field632 != 0 && class66_0.field632 != 0) {
-                           if (class66_0.field632 == client.field657.field632) {
+                        if (Client.field657.field632 != 0 && class66_0.field632 != 0) {
+                           if (class66_0.field632 == Client.field657.field632) {
                               s_12 = 2000;
                            } else {
                               s_12 = 0;
                            }
                         }
-                     } else if (client.field779[i_11]) {
+                     } else if (Client.field779[i_11]) {
                         s_12 = 2000;
                      }
 
                      boolean bool_13 = false;
-                     i_8 = client.field811[i_11] + s_12;
-                     class188.method3644(client.field778[i_11], class73.method1756(16777215, -844505624) + string_5, i_8, i_1, i_2, i_3, 209520680);
+                     i_8 = Client.field811[i_11] + s_12;
+                     class188.method3644(Client.field778[i_11], class73.method1756(16777215, -844505624) + string_5, i_8, i_1, i_2, i_3, 209520680);
                   }
                }
             }
 
-            for (i_11 = 0; i_11 < client.field791; i_11++) {
-               if (client.field794[i_11] == 23) {
-                  client.field668[i_11] = class73.method1756(16777215, -844505624) + string_5;
+            for (i_11 = 0; i_11 < Client.field791; i_11++) {
+               if (Client.field794[i_11] == 23) {
+                  Client.field668[i_11] = class73.method1756(16777215, -844505624) + string_5;
                   break;
                }
             }

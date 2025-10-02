@@ -14,9 +14,9 @@ public class class49 {
       if (class85.field1180 == null || class85.field1180.length() <= 0) {
          if (class17.field117.field1065 != null) {
             class85.field1180 = class17.field117.field1065;
-            client.field691 = true;
+            Client.field691 = true;
          } else {
-            client.field691 = false;
+            Client.field691 = false;
          }
 
       }

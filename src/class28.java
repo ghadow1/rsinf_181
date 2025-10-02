@@ -13,7 +13,7 @@ public class class28 {
    }
 
    static String method417(int i_0, byte b_1) {
-      return i_0 < 0 ? "" : (client.field668[i_0].length() > 0 ? client.field796[i_0] + " " + client.field668[i_0] : client.field796[i_0]);
+      return i_0 < 0 ? "" : (Client.field668[i_0].length() > 0 ? Client.field796[i_0] + " " + Client.field668[i_0] : Client.field796[i_0]);
    }
 
    static int method420(long long_0) {
@@ -21,12 +21,12 @@ public class class28 {
    }
 
    public static void method418(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
-      class187 class187_5 = class235.method4265(class183.field2296, client.field880.field1313, 1775123545);
-      class187_5.field2333.writeIntReversed(bool_3 ? client.field855 : 0);
+      class187 class187_5 = class235.method4265(class183.field2296, Client.field880.field1313, 1775123545);
+      class187_5.field2333.writeIntReversed(bool_3 ? Client.field855 : 0);
       class187_5.field2333.writeShortLittleEndian(i_1);
       class187_5.field2333.writeNegatedByte(i_2);
       class187_5.field2333.writeShortBigEndian(i_0);
-      client.field880.copy(class187_5);
+      Client.field880.copy(class187_5);
    }
 
    static final void method419(ByteBuffer class300_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {

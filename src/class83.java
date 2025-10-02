@@ -158,7 +158,7 @@ public class class83 {
             return 1;
          } else if (i_0 == 1121) {
             class56.method1086(class217_4.field2688, class217_4.field2565, -881674814);
-            client.field850 = class217_4;
+            Client.field850 = class217_4;
             class224.method4120(class217_4);
             return 1;
          } else if (i_0 == 1122) {

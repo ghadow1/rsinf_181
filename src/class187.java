@@ -16,7 +16,7 @@ public class class187 extends LinkedListNode {
 
    static final void method3628() {
       class241.method4368(false);
-      client.field705 = 0;
+      Client.field705 = 0;
       boolean bool_1 = true;
 
       int i_2;
@@ -25,7 +25,7 @@ public class class187 extends LinkedListNode {
             class13.field90[i_2] = class35.field307.method4144(class88.field1248[i_2], 0);
             if (class13.field90[i_2] == null) {
                bool_1 = false;
-               ++client.field705;
+               ++Client.field705;
             }
          }
 
@@ -33,15 +33,15 @@ public class class187 extends LinkedListNode {
             class80.field1145[i_2] = class35.field307.method4181(class22.field178[i_2], 0, class29.field255[i_2]);
             if (class80.field1145[i_2] == null) {
                bool_1 = false;
-               ++client.field705;
+               ++Client.field705;
             }
          }
       }
 
       if (!bool_1) {
-         client.field709 = 1;
+         Client.field709 = 1;
       } else {
-         client.field707 = 0;
+         Client.field707 = 0;
          bool_1 = true;
 
          int i_4;
@@ -51,7 +51,7 @@ public class class187 extends LinkedListNode {
             if (bytes_3 != null) {
                i_4 = (TimeUtils.field2501[i_2] >> 8) * 64 - class196.field2389;
                i_5 = (TimeUtils.field2501[i_2] & 0xff) * 64 - class1.field1;
-               if (client.field798) {
+               if (Client.field798) {
                   i_4 = 10;
                   i_5 = 10;
                }
@@ -61,9 +61,9 @@ public class class187 extends LinkedListNode {
          }
 
          if (!bool_1) {
-            client.field709 = 2;
+            Client.field709 = 2;
          } else {
-            if (client.field709 != 0) {
+            if (Client.field709 != 0) {
                class281.method5180("Loading - please wait." + "<br>" + " (" + 100 + "%" + ")", true, -1780948037);
             }
 
@@ -71,7 +71,7 @@ public class class187 extends LinkedListNode {
             class5.field22.method3066();
 
             for (i_2 = 0; i_2 < 4; i_2++) {
-               client.field710[i_2].method3558();
+               Client.field710[i_2].method3558();
             }
 
             int i_50;
@@ -120,7 +120,7 @@ public class class187 extends LinkedListNode {
             int i_12;
             int i_13;
             int i_52;
-            if (!client.field798) {
+            if (!Client.field798) {
                byte[] bytes_6;
                for (i_50 = 0; i_50 < i_2; i_50++) {
                   i_4 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
@@ -130,7 +130,7 @@ public class class187 extends LinkedListNode {
                      class186.method3619((byte) 50);
                      i_7 = class48.field418 * 8 - 48;
                      i_8 = class128.field1747 * 8 - 48;
-                     class172[] arr_9 = client.field710;
+                     class172[] arr_9 = Client.field710;
 
                      for (i_10 = 0; i_10 < 4; i_10++) {
                         for (i_11 = 0; i_11 < 64; i_11++) {
@@ -172,20 +172,20 @@ public class class187 extends LinkedListNode {
                      i_5 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
                      i_52 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
                      class186.method3619((byte) 75);
-                     class205.method3933(bytes_54, i_5, i_52, class5.field22, client.field710);
+                     class205.method3933(bytes_54, i_5, i_52, class5.field22, Client.field710);
                   }
                }
             }
 
             int i_53;
-            if (client.field798) {
+            if (Client.field798) {
                for (i_50 = 0; i_50 < 4; i_50++) {
                   class186.method3619((byte) 116);
 
                   for (i_4 = 0; i_4 < 13; i_4++) {
                      for (i_5 = 0; i_5 < 13; i_5++) {
                         boolean bool_57 = false;
-                        i_7 = client.field712[i_50][i_4][i_5];
+                        i_7 = Client.field712[i_50][i_4][i_5];
                         if (i_7 != -1) {
                            i_8 = i_7 >> 24 & 0x3;
                            i_53 = i_7 >> 1 & 0x3;
@@ -195,7 +195,7 @@ public class class187 extends LinkedListNode {
 
                            for (i_13 = 0; i_13 < TimeUtils.field2501.length; i_13++) {
                               if (TimeUtils.field2501[i_13] == i_12 && class13.field90[i_13] != null) {
-                                 class56.method1088(class13.field90[i_13], i_50, i_4 * 8, i_5 * 8, i_8, (i_10 & 0x7) * 8, (i_11 & 0x7) * 8, i_53, client.field710, (byte) 66);
+                                 class56.method1088(class13.field90[i_13], i_50, i_4 * 8, i_5 * 8, i_8, (i_10 & 0x7) * 8, (i_11 & 0x7) * 8, i_53, Client.field710, (byte) 66);
                                  bool_57 = true;
                                  break;
                               }
@@ -239,7 +239,7 @@ public class class187 extends LinkedListNode {
 
                for (i_50 = 0; i_50 < 13; i_50++) {
                   for (i_4 = 0; i_4 < 13; i_4++) {
-                     i_5 = client.field712[0][i_50][i_4];
+                     i_5 = Client.field712[0][i_50][i_4];
                      if (i_5 == -1) {
                         class89.method2092(i_50 * 8, i_4 * 8, 8, 8, (byte) -116);
                      }
@@ -254,7 +254,7 @@ public class class187 extends LinkedListNode {
                   for (i_4 = 0; i_4 < 13; i_4++) {
                      label447:
                      for (i_5 = 0; i_5 < 13; i_5++) {
-                        i_52 = client.field712[i_50][i_4][i_5];
+                        i_52 = Client.field712[i_50][i_4][i_5];
                         if (i_52 != -1) {
                            i_7 = i_52 >> 24 & 0x3;
                            i_8 = i_52 >> 1 & 0x3;
@@ -270,7 +270,7 @@ public class class187 extends LinkedListNode {
                                  int i_16 = (i_53 & 0x7) * 8;
                                  int i_17 = (i_10 & 0x7) * 8;
                                  class133 class133_18 = class5.field22;
-                                 class172[] arr_19 = client.field710;
+                                 class172[] arr_19 = Client.field710;
                                  ByteBuffer class300_20 = new ByteBuffer(bytes_55);
                                  int i_21 = -1;
 
@@ -372,7 +372,7 @@ public class class187 extends LinkedListNode {
 
             class241.method4368(true);
             class186.method3619((byte) 101);
-            class6.method72(class5.field22, client.field710);
+            class6.method72(class5.field22, Client.field710);
             class241.method4368(true);
             i_50 = class55.field503;
             if (i_50 > class42.field372) {
@@ -383,7 +383,7 @@ public class class187 extends LinkedListNode {
                i_50 = class42.field372 - 1;
             }
 
-            if (client.field656) {
+            if (Client.field656) {
                class5.field22.method3067(class55.field503);
             } else {
                class5.field22.method3067(0);
@@ -397,7 +397,7 @@ public class class187 extends LinkedListNode {
 
             class186.method3619((byte) 11);
 
-            for (class68 class68_58 = (class68) client.field783.method4892(); class68_58 != null; class68_58 = (class68) client.field783.method4894()) {
+            for (class68 class68_58 = (class68) Client.field783.method4892(); class68_58 != null; class68_58 = (class68) Client.field783.method4894()) {
                if (class68_58.field931 == -1) {
                   class68_58.field941 = 0;
                   class294.method5327(class68_58, -938277055);
@@ -409,12 +409,12 @@ public class class187 extends LinkedListNode {
             class253.field3387.method3323();
             class187 class187_59;
             if (class27.field233.method931(285080873)) {
-               class187_59 = class235.method4265(class183.field2212, client.field880.field1313, 1775123545);
+               class187_59 = class235.method4265(class183.field2212, Client.field880.field1313, 1775123545);
                class187_59.field2333.writeIntBigEndian(1057001181);
-               client.field880.copy(class187_59);
+               Client.field880.copy(class187_59);
             }
 
-            if (!client.field798) {
+            if (!Client.field798) {
                i_4 = (class48.field418 - 6) / 8;
                i_5 = (class48.field418 + 6) / 8;
                i_52 = (class128.field1747 - 6) / 8;
@@ -433,8 +433,8 @@ public class class187 extends LinkedListNode {
             class96.method2265(30);
             class186.method3619((byte) 70);
             class45.method787(337917094);
-            class187_59 = class235.method4265(class183.field2279, client.field880.field1313, 1775123545);
-            client.field880.copy(class187_59);
+            class187_59 = class235.method4265(class183.field2279, Client.field880.field1313, 1775123545);
+            Client.field880.copy(class187_59);
             class141.method3291();
          }
       }

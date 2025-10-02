@@ -917,9 +917,9 @@ public class class217 extends LinkedListNode {
          if (i_1 >= i_7 && i_1 < 104 - i_7 && i_2 >= i_7 && i_2 < 104 - i_7) {
             int i_9 = class66_0.method1187(-1116736107);
             class174 class174_10 = class38.method667(i_1, i_2, 2134464513);
-            class172 class172_11 = client.field710[class66_0.field629];
-            int[] ints_12 = client.field929;
-            int[] ints_13 = client.field930;
+            class172 class172_11 = Client.field710[class66_0.field629];
+            int[] ints_12 = Client.field929;
+            int[] ints_13 = Client.field930;
 
             int i_14;
             int i_15;
@@ -1359,7 +1359,7 @@ public class class217 extends LinkedListNode {
             i_14 = i_8;
             if (i_8 >= 1) {
                for (i_15 = 0; i_15 < i_14 - 1; i_15++) {
-                  class66_0.method1191(client.field929[i_15], client.field930[i_15], b_3, (byte) 1);
+                  class66_0.method1191(Client.field929[i_15], Client.field930[i_15], b_3, (byte) 1);
                }
 
             }
@@ -1368,21 +1368,21 @@ public class class217 extends LinkedListNode {
    }
 
    static void method4090(int i_0) {
-      if (client.field736 && client.field657 != null) {
-         int i_1 = client.field657.field994[0];
-         int i_2 = client.field657.field962[0];
+      if (Client.field736 && Client.field657 != null) {
+         int i_1 = Client.field657.field994[0];
+         int i_2 = Client.field657.field962[0];
          if (i_1 < 0 || i_2 < 0 || i_1 >= 104 || i_2 >= 104) {
             return;
          }
 
-         class54.field499 = client.field657.field1005;
-         int i_3 = class62.method1130(client.field657.field1005, client.field657.field949, class42.field372) - client.field728;
-         if (i_3 < client.field729) {
-            client.field729 = i_3;
+         class54.field499 = Client.field657.field1005;
+         int i_3 = class62.method1130(Client.field657.field1005, Client.field657.field949, class42.field372) - Client.field728;
+         if (i_3 < Client.field729) {
+            Client.field729 = i_3;
          }
 
-         class26.field227 = client.field657.field949;
-         client.field736 = false;
+         class26.field227 = Client.field657.field949;
+         Client.field736 = false;
       }
 
    }

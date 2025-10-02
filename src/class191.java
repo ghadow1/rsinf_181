@@ -16,10 +16,10 @@ public class class191 {
 
       } else {
          if (i_7 != -1) {
-            client.field843[i_7] = true;
+            Client.field843[i_7] = true;
          } else {
             for (int i_9 = 0; i_9 < 100; i_9++) {
-               client.field843[i_9] = true;
+               Client.field843[i_9] = true;
             }
          }
 

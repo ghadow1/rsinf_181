@@ -127,7 +127,7 @@ public class class243 extends class175 {
 
    static void method4415(int i_0) {
       if (class136.field1875 != null) {
-         class136.field1875.method6309(class42.field372, (client.field657.field1005 >> 7) + class196.field2389, (client.field657.field949 >> 7) + class1.field1, false, (byte) -128);
+         class136.field1875.method6309(class42.field372, (Client.field657.field1005 >> 7) + class196.field2389, (Client.field657.field949 >> 7) + class1.field1, false, (byte) -128);
          class136.field1875.method6471(-1903923036);
       }
 

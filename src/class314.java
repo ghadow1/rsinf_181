@@ -33,18 +33,18 @@ public class class314 implements Comparator {
       }
 
       if (string_0.equalsIgnoreCase("displayfps")) {
-         client.field884 = !client.field884;
+         Client.field884 = !Client.field884;
       }
 
       if (string_0.equalsIgnoreCase("renderself")) {
-         client.field773 = !client.field773;
+         Client.field773 = !Client.field773;
       }
 
       if (string_0.equalsIgnoreCase("mouseovertext")) {
-         client.field802 = !client.field802;
+         Client.field802 = !Client.field802;
       }
 
-      if (client.field890 >= 2) {
+      if (Client.field890 >= 2) {
          if (string_0.equalsIgnoreCase("errortest")) {
             throw new RuntimeException();
          }
@@ -54,11 +54,11 @@ public class class314 implements Comparator {
          }
 
          if (string_0.equalsIgnoreCase("fpson")) {
-            client.field884 = true;
+            Client.field884 = true;
          }
 
          if (string_0.equalsIgnoreCase("fpsoff")) {
-            client.field884 = false;
+            Client.field884 = false;
          }
 
          if (string_0.equalsIgnoreCase("gc")) {
@@ -70,10 +70,10 @@ public class class314 implements Comparator {
          }
       }
 
-      class187 class187_2 = class235.method4265(class183.field2263, client.field880.field1313, 1775123545);
+      class187 class187_2 = class235.method4265(class183.field2263, Client.field880.field1313, 1775123545);
       class187_2.field2333.writeByte(string_0.length() + 1);
       class187_2.field2333.writeNullTerminatedString(string_0);
-      client.field880.copy(class187_2);
+      Client.field880.copy(class187_2);
    }
 
 }

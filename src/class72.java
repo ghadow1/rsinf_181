@@ -217,7 +217,7 @@ public class class72 {
       }
 
       this.field1055 += i_1;
-      i_8 = ((client.field881 & 0x1) + i_1) / 2;
+      i_8 = ((Client.field881 & 0x1) + i_1) / 2;
       if (i_8 > 0) {
          short s_17 = 128;
          byte b_18 = 2;
@@ -378,7 +378,7 @@ public class class72 {
          i_9 = 100;
       }
 
-      int i_10 = (client.field908 - client.field906) * i_9 / 100 + client.field906;
+      int i_10 = (Client.field908 - Client.field906) * i_9 / 100 + Client.field906;
       int i_8 = i_5 * i_10 / 256;
       i_9 = 2048 - i_3 & 0x7ff;
       i_10 = 2048 - i_4 & 0x7ff;
@@ -409,8 +409,8 @@ public class class72 {
       class1.field3 = i_2 - i_13;
       class11.field77 = i_3;
       class76.field1112 = i_4;
-      if (client.field727 == 1 && client.field890 >= 2 && client.field881 % 50 == 0 && (class54.field499 >> 7 != client.field657.field1005 >> 7 || class26.field227 >> 7 != client.field657.field949 >> 7)) {
-         i_14 = client.field657.field629;
+      if (Client.field727 == 1 && Client.field890 >= 2 && Client.field881 % 50 == 0 && (class54.field499 >> 7 != Client.field657.field1005 >> 7 || class26.field227 >> 7 != Client.field657.field949 >> 7)) {
+         i_14 = Client.field657.field629;
          i_15 = (class54.field499 >> 7) + class196.field2389;
          i_16 = (class26.field227 >> 7) + class1.field1;
          class28.method418(i_15, i_16, i_14, true, 1931276581);

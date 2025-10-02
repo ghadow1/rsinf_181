@@ -52,18 +52,18 @@ public class class7 {
    }
 
    static final void method73(int i_0) {
-      class187 class187_1 = class235.method4265(class183.field2223, client.field880.field1313, 1775123545);
-      client.field880.copy(class187_1);
+      class187 class187_1 = class235.method4265(class183.field2223, Client.field880.field1313, 1775123545);
+      Client.field880.copy(class187_1);
 
-      for (class61 class61_2 = (class61) client.field816.method5950(); class61_2 != null; class61_2 = (class61) client.field816.method5953()) {
+      for (class61 class61_2 = (class61) Client.field816.method5950(); class61_2 != null; class61_2 = (class61) Client.field816.method5953()) {
          if (class61_2.field569 == 0 || class61_2.field569 == 3) {
             class197.method3697(class61_2, true);
          }
       }
 
-      if (client.field850 != null) {
-         class224.method4120(client.field850);
-         client.field850 = null;
+      if (Client.field850 != null) {
+         class224.method4120(Client.field850);
+         Client.field850 = null;
       }
 
    }

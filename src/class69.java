@@ -200,8 +200,8 @@ public abstract class class69 extends class135 {
    }
 
    static void method1670(byte b_0) {
-      if (client.field727 == 1) {
-         client.field736 = true;
+      if (Client.field727 == 1) {
+         Client.field736 = true;
       }
 
    }

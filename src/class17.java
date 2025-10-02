@@ -38,9 +38,9 @@ public class class17 {
    }
 
    static void method188(int i_0, int i_1, int i_2) {
-      if (client.field911 != 0 && i_0 != -1) {
-         class169.method3503(class32.field279, i_0, 0, client.field911, false, 1012111879);
-         client.field699 = true;
+      if (Client.field911 != 0 && i_0 != -1) {
+         class169.method3503(class32.field279, i_0, 0, Client.field911, false, 1012111879);
+         Client.field699 = true;
       }
 
    }

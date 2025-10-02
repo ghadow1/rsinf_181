@@ -20,14 +20,14 @@ public final class class55 {
    static int field510 = (int)(Math.random() * 33.0D) - 16;
 
    static final void method1084(boolean bool_0, class299 class299_1) {
-      client.field798 = bool_0;
+      Client.field798 = bool_0;
       int i_3;
       int i_4;
       int i_6;
       int i_7;
       int i_8;
       int i_9;
-      if (!client.field798) {
+      if (!Client.field798) {
          i_3 = class299_1.readShortWithOffset2();
          i_4 = class299_1.readShortWithOffset();
          int i_5 = class299_1.readUnsignedShortBigEndian();
@@ -81,9 +81,9 @@ public final class class55 {
                for (i_9 = 0; i_9 < 13; i_9++) {
                   i_10 = class299_1.method5445(1);
                   if (i_10 == 1) {
-                     client.field712[i_7][i_8][i_9] = class299_1.method5445(26);
+                     Client.field712[i_7][i_8][i_9] = class299_1.method5445(26);
                   } else {
-                     client.field712[i_7][i_8][i_9] = -1;
+                     Client.field712[i_7][i_8][i_9] = -1;
                   }
                }
             }
@@ -108,7 +108,7 @@ public final class class55 {
          for (i_7 = 0; i_7 < 4; i_7++) {
             for (i_8 = 0; i_8 < 13; i_8++) {
                for (i_9 = 0; i_9 < 13; i_9++) {
-                  i_10 = client.field712[i_7][i_8][i_9];
+                  i_10 = Client.field712[i_7][i_8][i_9];
                   if (i_10 != -1) {
                      int i_11 = i_10 >> 14 & 0x3ff;
                      int i_12 = i_10 >> 3 & 0x7ff;

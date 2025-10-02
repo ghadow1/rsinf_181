@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class class159 extends class275 {
+public class class159 extends ChainedComparator {
 
    static class312 field1995;
    final boolean field1997;
@@ -11,12 +11,12 @@ public class class159 extends class275 {
       this.field1997 = bool_1;
    }
 
-   int method3442(class279 class279_1, class279 class279_2, int i_3) {
-      return class279_1.field3636 != 0 && class279_2.field3636 != 0 ? (this.field1997 ? class279_1.method5041(-156755920).method5198(class279_2.method5041(-156755920), (byte) -119) : class279_2.method5041(-156755920).method5198(class279_1.method5041(-156755920), (byte) -6)) : this.method5061(class279_1, class279_2, -966304887);
+   int method3442(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
+      return categorizable_1.category != 0 && categorizable_2.category != 0 ? (this.field1997 ? categorizable_1.method5041(-156755920).method5198(categorizable_2.method5041(-156755920), (byte) -119) : categorizable_2.method5041(-156755920).method5198(categorizable_1.method5041(-156755920), (byte) -6)) : this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method3442((class279) object_1, (class279) object_2, 660153035);
+      return this.method3442((Categorizable) object_1, (Categorizable) object_2, 660153035);
    }
 
    public static void method3440(String string_0, String string_1, int i_2, int i_3, int i_4) throws IOException {
@@ -32,9 +32,9 @@ public class class159 extends class275 {
       class67.field647 = class62.field586.toLowerCase();
 
       try {
-         class228.field3095 = System.getProperty("user.home");
-         if (class228.field3095 != null) {
-            class228.field3095 = class228.field3095 + "/";
+         GameState.field3095 = System.getProperty("user.home");
+         if (GameState.field3095 != null) {
+            GameState.field3095 = GameState.field3095 + "/";
          }
       } catch (Exception exception_14) {
          ;
@@ -42,25 +42,25 @@ public class class159 extends class275 {
 
       try {
          if (class67.field647.startsWith("win")) {
-            if (class228.field3095 == null) {
-               class228.field3095 = System.getenv("USERPROFILE");
+            if (GameState.field3095 == null) {
+               GameState.field3095 = System.getenv("USERPROFILE");
             }
-         } else if (class228.field3095 == null) {
-            class228.field3095 = System.getenv("HOME");
+         } else if (GameState.field3095 == null) {
+            GameState.field3095 = System.getenv("HOME");
          }
 
-         if (class228.field3095 != null) {
-            class228.field3095 = class228.field3095 + "/";
+         if (GameState.field3095 != null) {
+            GameState.field3095 = GameState.field3095 + "/";
          }
       } catch (Exception exception_13) {
          ;
       }
 
-      if (class228.field3095 == null) {
-         class228.field3095 = "~/";
+      if (GameState.field3095 == null) {
+         GameState.field3095 = "~/";
       }
 
-      class167.field2043 = new String[] {"c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", class228.field3095, "/tmp/", ""};
+      class167.field2043 = new String[] {"c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", GameState.field3095, "/tmp/", ""};
       class184.field2309 = new String[] {".jagex_cache_" + class119.field1539, ".file_store_" + class119.field1539};
       int i_10 = 0;
 
@@ -104,7 +104,7 @@ public class class159 extends class275 {
          class169.field2055 = true;
 
          try {
-            File file_17 = new File(class228.field3095, "random.dat");
+            File file_17 = new File(GameState.field3095, "random.dat");
             if (file_17.exists()) {
                class167.field2040 = new class342(new class343(file_17, "rw", 25L), 24, 0);
             } else {

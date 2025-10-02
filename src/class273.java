@@ -1,4 +1,4 @@
-public class class273 extends class279 {
+public class class273 extends Categorizable {
 
    class281 field3611;
    class281 field3612;

@@ -1,20 +1,20 @@
-public class class279 extends class274 {
+public class Categorizable extends class274 {
 
    static long field3632;
    public int field3634;
-   public int field3636 = -1;
+   public int category = -1;
    public int field3633;
 
    public boolean method5168(byte b_1) {
-      return this.field3636 > 0;
+      return this.category > 0;
    }
 
    public int method5164(int i_1) {
-      return this.field3636;
+      return this.category;
    }
 
    void method5163(int i_1, int i_2, int i_3) {
-      this.field3636 = i_1;
+      this.category = i_1;
       this.field3633 = i_2;
    }
 
@@ -25,14 +25,14 @@ public class class279 extends class274 {
    }
 
    static int method5176(byte b_0) {
-      if (client.field925 != null && client.field926 < client.field925.size()) {
+      if (Client.field925 != null && Client.field926 < Client.field925.size()) {
          int i_1 = 0;
 
-         for (int i_2 = 0; i_2 <= client.field926; i_2++) {
-            i_1 += ((class58) client.field925.get(i_2)).field542;
+         for (int i_2 = 0; i_2 <= Client.field926; i_2++) {
+            i_1 += ((class58) Client.field925.get(i_2)).field542;
          }
 
-         return i_1 * 10000 / client.field927;
+         return i_1 * 10000 / Client.field927;
       } else {
          return 10000;
       }

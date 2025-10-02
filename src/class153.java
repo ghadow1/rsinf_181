@@ -1,4 +1,4 @@
-public class class153 extends class275 {
+public class class153 extends ChainedComparator {
 
    final boolean field1979;
 
@@ -6,20 +6,20 @@ public class class153 extends class275 {
       this.field1979 = bool_1;
    }
 
-   int method3391(class279 class279_1, class279 class279_2, int i_3) {
-      if (client.field807 == class279_1.field3636) {
-         if (class279_2.field3636 != client.field807) {
+   int method3391(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
+      if (Client.field807 == categorizable_1.category) {
+         if (categorizable_2.category != Client.field807) {
             return this.field1979 ? -1 : 1;
          }
-      } else if (class279_2.field3636 == client.field807) {
+      } else if (categorizable_2.category == Client.field807) {
          return this.field1979 ? 1 : -1;
       }
 
-      return this.method5061(class279_1, class279_2, -1128143293);
+      return this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method3391((class279) object_1, (class279) object_2, 16711935);
+      return this.method3391((Categorizable) object_1, (Categorizable) object_2, 16711935);
    }
 
    static final void method3399(int i_0, int i_1, boolean bool_2, int i_3) {
@@ -40,7 +40,7 @@ public class class153 extends class275 {
          int i_8;
          int i_10;
          for (i_8 = 0; i_8 < 32768; i_8++) {
-            class79 class79_9 = client.field694[i_8];
+            class79 class79_9 = Client.field694[i_8];
             if (class79_9 != null) {
                for (i_10 = 0; i_10 < 10; i_10++) {
                   class79_9.field994[i_10] -= i_6;
@@ -53,7 +53,7 @@ public class class153 extends class275 {
          }
 
          for (i_8 = 0; i_8 < 2048; i_8++) {
-            class66 class66_22 = client.field909[i_8];
+            class66 class66_22 = Client.field909[i_8];
             if (class66_22 != null) {
                for (i_10 = 0; i_10 < 10; i_10++) {
                   class66_22.field994[i_10] -= i_6;
@@ -91,15 +91,15 @@ public class class153 extends class275 {
 
                for (int i_18 = 0; i_18 < 4; i_18++) {
                   if (i_16 >= 0 && i_17 >= 0 && i_16 < 104 && i_17 < 104) {
-                     client.field887[i_18][i_14][i_15] = client.field887[i_18][i_16][i_17];
+                     Client.field887[i_18][i_14][i_15] = Client.field887[i_18][i_16][i_17];
                   } else {
-                     client.field887[i_18][i_14][i_15] = null;
+                     Client.field887[i_18][i_14][i_15] = null;
                   }
                }
             }
          }
 
-         for (class68 class68_20 = (class68) client.field783.method4892(); class68_20 != null; class68_20 = (class68) client.field783.method4894()) {
+         for (class68 class68_20 = (class68) Client.field783.method4892(); class68_20 != null; class68_20 = (class68) Client.field783.method4894()) {
             class68_20.field937 -= i_6;
             class68_20.field934 -= i_7;
             if (class68_20.field937 < 0 || class68_20.field934 < 0 || class68_20.field937 >= 104 || class68_20.field934 >= 104) {
@@ -107,23 +107,23 @@ public class class153 extends class275 {
             }
          }
 
-         if (client.field885 != 0) {
-            client.field885 -= i_6;
-            client.field842 -= i_7;
+         if (Client.field885 != 0) {
+            Client.field885 -= i_6;
+            Client.field842 -= i_7;
          }
 
-         client.field893 = 0;
-         client.field899 = false;
+         Client.field893 = 0;
+         Client.field899 = false;
          class299.field3727 -= i_6 << 7;
          class1.field3 -= i_7 << 7;
          class54.field499 -= i_6 << 7;
          class26.field227 -= i_7 << 7;
-         client.field747 = -1;
-         client.field785.method4886();
-         client.field670.method4886();
+         Client.field747 = -1;
+         Client.field785.method4886();
+         Client.field670.method4886();
 
          for (i_15 = 0; i_15 < 4; i_15++) {
-            client.field710[i_15].method3558();
+            Client.field710[i_15].method3558();
          }
 
       }

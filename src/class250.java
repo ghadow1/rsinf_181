@@ -47,59 +47,59 @@ public class class250 extends class175 {
    }
 
    static final void method4530() {
-      class299 class299_1 = client.field880.field1314;
+      class299 class299_1 = Client.field880.field1314;
       class299_1.method5438();
       int i_2 = class299_1.method5445(8);
       int i_3;
-      if (i_2 < client.field695) {
-         for (i_3 = i_2; i_3 < client.field695; i_3++) {
-            client.field776[++client.field775 - 1] = client.field696[i_3];
+      if (i_2 < Client.field695) {
+         for (i_3 = i_2; i_3 < Client.field695; i_3++) {
+            Client.field776[++Client.field775 - 1] = Client.field696[i_3];
          }
       }
 
-      if (i_2 > client.field695) {
+      if (i_2 > Client.field695) {
          throw new RuntimeException("");
       } else {
-         client.field695 = 0;
+         Client.field695 = 0;
 
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            int i_4 = client.field696[i_3];
-            class79 class79_5 = client.field694[i_4];
+            int i_4 = Client.field696[i_3];
+            class79 class79_5 = Client.field694[i_4];
             int i_6 = class299_1.method5445(1);
             if (i_6 == 0) {
-               client.field696[++client.field695 - 1] = i_4;
-               class79_5.field973 = client.field881;
+               Client.field696[++Client.field695 - 1] = i_4;
+               class79_5.field973 = Client.field881;
             } else {
                int i_7 = class299_1.method5445(2);
                if (i_7 == 0) {
-                  client.field696[++client.field695 - 1] = i_4;
-                  class79_5.field973 = client.field881;
-                  client.field859[++client.field697 - 1] = i_4;
+                  Client.field696[++Client.field695 - 1] = i_4;
+                  class79_5.field973 = Client.field881;
+                  Client.field859[++Client.field697 - 1] = i_4;
                } else {
                   int i_8;
                   int i_9;
                   if (i_7 == 1) {
-                     client.field696[++client.field695 - 1] = i_4;
-                     class79_5.field973 = client.field881;
+                     Client.field696[++Client.field695 - 1] = i_4;
+                     class79_5.field973 = Client.field881;
                      i_8 = class299_1.method5445(3);
                      class79_5.method1974(i_8, (byte) 1);
                      i_9 = class299_1.method5445(1);
                      if (i_9 == 1) {
-                        client.field859[++client.field697 - 1] = i_4;
+                        Client.field859[++Client.field697 - 1] = i_4;
                      }
                   } else if (i_7 == 2) {
-                     client.field696[++client.field695 - 1] = i_4;
-                     class79_5.field973 = client.field881;
+                     Client.field696[++Client.field695 - 1] = i_4;
+                     class79_5.field973 = Client.field881;
                      i_8 = class299_1.method5445(3);
                      class79_5.method1974(i_8, (byte) 2);
                      i_9 = class299_1.method5445(3);
                      class79_5.method1974(i_9, (byte) 2);
                      int i_10 = class299_1.method5445(1);
                      if (i_10 == 1) {
-                        client.field859[++client.field697 - 1] = i_4;
+                        Client.field859[++Client.field697 - 1] = i_4;
                      }
                   } else if (i_7 == 3) {
-                     client.field776[++client.field775 - 1] = i_4;
+                     Client.field776[++Client.field775 - 1] = i_4;
                   }
                }
             }
@@ -113,8 +113,8 @@ public class class250 extends class175 {
       int i_4;
       int i_5;
       class258 class258_12;
-      if (class69_0.field995 > client.field881) {
-         i_3 = class69_0.field995 - client.field881;
+      if (class69_0.field995 > Client.field881) {
+         i_3 = class69_0.field995 - Client.field881;
          i_4 = class69_0.field991 * 128 + class69_0.field952 * 64;
          i_5 = class69_0.field993 * 128 + class69_0.field952 * 64;
          class69_0.field1005 += (i_4 - class69_0.field1005) / i_3;
@@ -124,10 +124,10 @@ public class class250 extends class175 {
       } else {
          int i_6;
          int i_8;
-         if (class69_0.field996 >= client.field881) {
-            if (class69_0.field996 == client.field881 || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981, (byte) 1).field3522[class69_0.field951]) {
+         if (class69_0.field996 >= Client.field881) {
+            if (class69_0.field996 == Client.field881 || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981, (byte) 1).field3522[class69_0.field951]) {
                i_3 = class69_0.field996 - class69_0.field995;
-               i_4 = client.field881 - class69_0.field995;
+               i_4 = Client.field881 - class69_0.field995;
                i_5 = class69_0.field991 * 128 + class69_0.field952 * 64;
                i_6 = class69_0.field993 * 128 + class69_0.field952 * 64;
                int i_7 = class69_0.field992 * 128 + class69_0.field952 * 64;
@@ -306,7 +306,7 @@ public class class250 extends class175 {
          class69_0.method1658(-1575805976);
       }
 
-      if (client.field657 == class69_0 && (class69_0.field1005 < 1536 || class69_0.field949 < 1536 || class69_0.field1005 >= 11776 || class69_0.field949 >= 11776)) {
+      if (Client.field657 == class69_0 && (class69_0.field1005 < 1536 || class69_0.field949 < 1536 || class69_0.field1005 >= 11776 || class69_0.field949 >= 11776)) {
          class69_0.field981 = -1;
          class69_0.field986 = -1;
          class69_0.field995 = 0;
@@ -338,7 +338,7 @@ public class class250 extends class175 {
          }
       }
 
-      if (class69_0.field986 != -1 && client.field881 >= class69_0.field989) {
+      if (class69_0.field986 != -1 && Client.field881 >= class69_0.field989) {
          if (class69_0.field987 < 0) {
             class69_0.field987 = 0;
          }
@@ -367,7 +367,7 @@ public class class250 extends class175 {
 
       if (class69_0.field981 != -1 && class69_0.field984 <= 1) {
          class258_12 = class7.method81(class69_0.field981, (byte) 1);
-         if (class258_12.field3525 == 1 && class69_0.field1008 > 0 && class69_0.field995 <= client.field881 && class69_0.field996 < client.field881) {
+         if (class258_12.field3525 == 1 && class69_0.field1008 > 0 && class69_0.field995 <= Client.field881 && class69_0.field996 < Client.field881) {
             class69_0.field984 = 1;
             return;
          }

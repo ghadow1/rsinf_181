@@ -6,7 +6,7 @@ import java.net.URLConnection;
 import java.util.Iterator;
 import java.util.Random;
 
-public class class154 extends class275 {
+public class class154 extends ChainedComparator {
 
    public static class203 field1981;
    final boolean field1983;
@@ -15,12 +15,12 @@ public class class154 extends class275 {
       this.field1983 = bool_1;
    }
 
-   int method3401(class279 class279_1, class279 class279_2, int i_3) {
-      return client.field807 == class279_1.field3636 && class279_2.field3636 == client.field807 ? (this.field1983 ? class279_1.field3633 - class279_2.field3633 : class279_2.field3633 - class279_1.field3633) : this.method5061(class279_1, class279_2, -30327366);
+   int method3401(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
+      return Client.field807 == categorizable_1.category && categorizable_2.category == Client.field807 ? (this.field1983 ? categorizable_1.field3633 - categorizable_2.field3633 : categorizable_2.field3633 - categorizable_1.field3633) : this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method3401((class279) object_1, (class279) object_2, 1029227971);
+      return this.method3401((Categorizable) object_1, (Categorizable) object_2, 1029227971);
    }
 
    static void method3405(int i_0) {
@@ -105,8 +105,8 @@ public class class154 extends class275 {
 
             class300_10.writeLongBigEndian(random_37.nextLong());
             class300_10.write48BitLong(random_37.nextLong());
-            if (client.field693 != null) {
-               class300_10.writeBytes(client.field693, 0, client.field693.length);
+            if (Client.field693 != null) {
+               class300_10.writeBytes(Client.field693, 0, Client.field693.length);
             } else {
                byte[] bytes_13 = new byte[24];
 

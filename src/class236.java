@@ -27,7 +27,7 @@ public class class236 {
 
       int i_4;
       int i_5;
-      for (i_4 = 0; i_4 < client.field791; i_4++) {
+      for (i_4 = 0; i_4 < Client.field791; i_4++) {
          i_5 = class23.field193.method5417(class28.method417(i_4, (byte) 42));
          if (i_5 > i_3) {
             i_3 = i_5;
@@ -35,7 +35,7 @@ public class class236 {
       }
 
       i_3 += 8;
-      i_4 = client.field791 * 15 + 22;
+      i_4 = Client.field791 * 15 + 22;
       i_5 = i_0 - i_3 / 2;
       if (i_3 + i_5 > class7.field46) {
          i_5 = class7.field46 - i_3;
@@ -57,7 +57,7 @@ public class class236 {
       class247.field3292 = i_5;
       class30.field267 = i_6;
       class42.field373 = i_3;
-      class75.field1092 = client.field791 * 15 + 22;
+      class75.field1092 = Client.field791 * 15 + 22;
    }
 
 }

@@ -29,7 +29,7 @@ public class class64 extends class175 {
 
    void method1143(int i_1, String string_2, String string_3, String string_4, byte b_5) {
       this.field600 = class255.method4701(-71692752);
-      this.field598 = client.field881;
+      this.field598 = Client.field881;
       this.field602 = i_1;
       this.field599 = string_2;
       this.method1164(-1250059182);

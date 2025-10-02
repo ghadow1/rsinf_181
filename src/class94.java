@@ -69,9 +69,9 @@ public class class94 {
    }
 
    static final void method2215(int i_0, int i_1, int i_2, int i_3, int i_4) {
-      for (int i_5 = 0; i_5 < client.field858; i_5++) {
-         if (client.field808[i_5] + client.field865[i_5] > i_0 && client.field808[i_5] < i_0 + i_2 && client.field860[i_5] + client.field864[i_5] > i_1 && client.field864[i_5] < i_3 + i_1) {
-            client.field843[i_5] = true;
+      for (int i_5 = 0; i_5 < Client.field858; i_5++) {
+         if (Client.field808[i_5] + Client.field865[i_5] > i_0 && Client.field808[i_5] < i_0 + i_2 && Client.field860[i_5] + Client.field864[i_5] > i_1 && Client.field864[i_5] < i_3 + i_1) {
+            Client.field843[i_5] = true;
          }
       }
 

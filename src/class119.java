@@ -128,7 +128,7 @@ public class class119 implements class139 {
 
    static File method2760(String string_0, String string_1, int i_2) {
       String str_4 = i_2 == 0 ? "" : "" + i_2;
-      class167.field2038 = new File(class228.field3095, "jagex_cl_" + string_0 + "_" + string_1 + str_4 + ".dat");
+      class167.field2038 = new File(GameState.field3095, "jagex_cl_" + string_0 + "_" + string_1 + str_4 + ".dat");
       String string_5 = null;
       String string_6 = null;
       boolean bool_7 = false;
@@ -204,7 +204,7 @@ public class class119 implements class139 {
       }
 
       if (string_5 == null) {
-         string_5 = class228.field3095 + File.separatorChar + "jagexcache" + str_4 + File.separatorChar + string_0 + File.separatorChar + string_1 + File.separatorChar;
+         string_5 = GameState.field3095 + File.separatorChar + "jagexcache" + str_4 + File.separatorChar + string_0 + File.separatorChar + string_1 + File.separatorChar;
          bool_7 = true;
       }
 

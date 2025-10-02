@@ -43,9 +43,9 @@ public class class9 {
 
    static final void method99(boolean bool_0, int i_1) {
       if (bool_0) {
-         client.field690 = class85.field1201 ? class160.field2004 : class160.field2002;
+         Client.field690 = class85.field1201 ? class160.field2004 : class160.field2002;
       } else {
-         client.field690 = class17.field117.field1067.containsKey(Integer.valueOf(class128.method2971(class85.field1180, -1497982672))) ? class160.field2005 : class160.field2001;
+         Client.field690 = class17.field117.field1067.containsKey(Integer.valueOf(class128.method2971(class85.field1180, -1497982672))) ? class160.field2005 : class160.field2001;
       }
 
    }
@@ -54,8 +54,8 @@ public class class9 {
       int i_4;
       if (i_0 == 6600) {
          i_4 = class42.field372;
-         int i_10 = (client.field657.field1005 >> 7) + class196.field2389;
-         int i_6 = (client.field657.field949 >> 7) + class1.field1;
+         int i_10 = (Client.field657.field1005 >> 7) + class196.field2389;
+         int i_6 = (Client.field657.field949 >> 7) + class1.field1;
          class31.method538(-1838562089).method6309(i_4, i_10, i_6, true, (byte) -35);
          return 1;
       } else {

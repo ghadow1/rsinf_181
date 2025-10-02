@@ -221,7 +221,7 @@ public class class333 {
          int i_7 = (int)((float)this.field3999 - ((float)(i_2 - this.field3975) - (float)this.method6461((byte) 127) * this.field3994 / 2.0F) / this.field3994);
          this.field4024 = this.field3986.method331(i_6 + this.field3986.method338(-1555576379) * 64, i_7 + this.field3986.method340(-531003506) * 64, 1177032245);
          if (this.field4024 != null && bool_3) {
-            boolean bool_8 = client.field890 >= 2;
+            boolean bool_8 = Client.field890 >= 2;
             if (bool_8 && class45.field395[82] && class45.field395[81]) {
                class28.method418(this.field4024.field2530, this.field4024.field2528, this.field4024.field2531, false, 1223150720);
             } else {
@@ -235,9 +235,9 @@ public class class333 {
                }
 
                if (bool_9) {
-                  class187 class187_12 = class235.method4265(class183.field2248, client.field880.field1313, 1775123545);
+                  class187 class187_12 = class235.method4265(class183.field2248, Client.field880.field1313, 1775123545);
                   class187_12.field2333.writeIntReversed(this.field4024.method3971(1080399232));
-                  client.field880.copy(class187_12);
+                  Client.field880.copy(class187_12);
                   this.field3982 = 0L;
                }
             }
@@ -280,7 +280,7 @@ public class class333 {
    }
 
    boolean method6318(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
-      return this.field4026 == null ? true : (this.field4026.field3899 == i_1 && this.field4026.field3900 == i_2 ? (this.field4019.field310 != this.field4027 ? true : (this.field4030 != client.field924 ? true : (i_3 <= 0 && i_4 <= 0 ? i_3 + i_1 < i_5 || i_2 + i_4 < i_6 : true))) : true);
+      return this.field4026 == null ? true : (this.field4026.field3899 == i_1 && this.field4026.field3900 == i_2 ? (this.field4019.field310 != this.field4027 ? true : (this.field4030 != Client.field924 ? true : (i_3 <= 0 && i_4 <= 0 ? i_3 + i_1 < i_5 || i_2 + i_4 < i_6 : true))) : true);
    }
 
    void method6322(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
@@ -316,7 +316,7 @@ public class class333 {
             this.field3998 = this.method6333(140338410) - i_6 / 2 - i_8;
             this.field4027 = this.field4019.field310;
             class68.field944.method4321(this.field3977, this.field3998, this.field4026, (float)this.field4027 / f_11);
-            this.field4030 = client.field924;
+            this.field4030 = Client.field924;
             i_14 = i_1 - (i_12 + i_8 - this.field3977) * this.field4019.field310;
             i_15 = i_2 - this.field4019.field310 * (i_8 - (i_13 - this.field3998));
          }
@@ -341,7 +341,7 @@ public class class333 {
          this.method6322(i_1, i_2, i_3, i_4, i_8, 1955930802);
       } else {
          if (!this.field4019.method609(1588270336)) {
-            this.field4019.method602(this.field4029, this.field3986.method369(-185399103), client.field655, (byte) 1);
+            this.field4019.method602(this.field4029, this.field3986.method369(-185399103), Client.field655, (byte) 1);
             if (!this.field4019.method609(1588270336)) {
                return;
             }
@@ -374,7 +374,7 @@ public class class333 {
          }
 
          this.method6319(i_1, i_2, i_3, i_4, i_9, i_10, (byte) -125);
-         bool_11 = client.field890 >= 2;
+         bool_11 = Client.field890 >= 2;
          if (bool_11 && this.field4025 && this.field4024 != null) {
             this.field3981.method5346("Coord: " + this.field4024, class321.field3874 + 10, class321.field3870 + 20, 16776960, -1);
          }
@@ -394,7 +394,7 @@ public class class333 {
    public void method6320(int i_1, int i_2, int i_3, int i_4, int i_5) {
       if (this.field4028.method6295(1906092832)) {
          if (!this.field4019.method609(1588270336)) {
-            this.field4019.method602(this.field4029, this.field3986.method369(131273805), client.field655, (byte) 1);
+            this.field4019.method602(this.field4029, this.field3986.method369(131273805), Client.field655, (byte) 1);
             if (!this.field4019.method609(1588270336)) {
                return;
             }

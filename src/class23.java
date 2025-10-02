@@ -66,7 +66,7 @@ public class class23 extends class34 {
       } else if (i_0 == 5) {
          class85.field1212 = 2;
          class268.loginResponseMessages("Your account has not logged out from its last", "session or the server is too busy right now.", "Please try again in a few minutes.");
-      } else if (i_0 == 68 || !client.field658 && i_0 == 6) {
+      } else if (i_0 == 68 || !Client.field658 && i_0 == 6) {
          class268.loginResponseMessages("RuneScape has been updated!", "Please reload this page.", "");
       } else if (i_0 == 7) {
          class268.loginResponseMessages("This world is full.", "Please use a different world.", "");

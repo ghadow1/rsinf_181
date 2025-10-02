@@ -197,7 +197,7 @@ public class class309 implements Runnable {
          byte[] bytes_5 = class233_0.method4163("title.jpg", "", 1900657492);
          class5.field23 = class158.method3435(bytes_5, (byte) -3);
          class79.field1135 = class5.field23.method6112();
-         if ((client.field653 & 0x20000000) != 0) {
+         if ((Client.field653 & 0x20000000) != 0) {
             class87.field1243 = class215.method4021(class233_1, "logo_deadman_mode", "", -1167154349);
          } else {
             class87.field1243 = class215.method4021(class233_1, "logo", "", -1167154349);

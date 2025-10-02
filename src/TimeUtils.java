@@ -31,7 +31,7 @@ public class TimeUtils extends class205 {
 
    static final void method3938(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       if (i_2 >= 1 && i_3 >= 1 && i_2 <= 102 && i_3 <= 102) {
-         if (client.field656 && i_0 != class42.field372) {
+         if (Client.field656 && i_0 != class42.field372) {
             return;
          }
 
@@ -66,7 +66,7 @@ public class TimeUtils extends class205 {
                class5.field22.method3208(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15, (short) 4095);
                if (class253_14.field3382 != 0) {
-                  client.field710[i_0].method3564(i_2, i_3, i_16, i_17, class253_14.field3368, -1166825819);
+                  Client.field710[i_0].method3564(i_2, i_3, i_16, i_17, class253_14.field3368, -1166825819);
                }
             }
 
@@ -82,7 +82,7 @@ public class TimeUtils extends class205 {
                }
 
                if (class253_14.field3382 != 0) {
-                  client.field710[i_0].method3565(i_2, i_3, class253_14.field3365, class253_14.field3366, i_17, class253_14.field3368);
+                  Client.field710[i_0].method3565(i_2, i_3, class253_14.field3365, class253_14.field3366, i_17, class253_14.field3368);
                }
             }
 
@@ -90,7 +90,7 @@ public class TimeUtils extends class205 {
                class5.field22.method3201(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15, (short) 4095);
                if (class253_14.field3382 == 1) {
-                  client.field710[i_0].method3567(i_2, i_3);
+                  Client.field710[i_0].method3567(i_2, i_3);
                }
             }
          }
@@ -101,7 +101,7 @@ public class TimeUtils extends class205 {
                i_13 = i_0 + 1;
             }
 
-            class183.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, client.field710[i_0], 1078750200);
+            class183.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, Client.field710[i_0], 1078750200);
          }
       }
 

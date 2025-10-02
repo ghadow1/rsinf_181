@@ -146,8 +146,8 @@ public class class202 extends class115 {
    }
 
    static void method3911(class71 class71_0) {
-      if (class71_0.method1680((byte) 0) != client.field655) {
-         client.field655 = class71_0.method1680((byte) 0);
+      if (class71_0.method1680((byte) 0) != Client.field655) {
+         Client.field655 = class71_0.method1680((byte) 0);
          boolean bool_2 = class71_0.method1680((byte) 0);
          if (bool_2 != class134.field1868) {
             class254.field3407.method3323();
@@ -158,10 +158,10 @@ public class class202 extends class115 {
       }
 
       class73.field1068 = class71_0.field1029;
-      client.field807 = class71_0.field1025;
-      client.field653 = class71_0.field1023;
-      class190.field2358 = client.field703 == 0 ? 43594 : class71_0.field1025 + 40000;
-      class132.field1800 = client.field703 == 0 ? 443 : class71_0.field1025 + 50000;
+      Client.field807 = class71_0.field1025;
+      Client.field653 = class71_0.field1023;
+      class190.field2358 = Client.field703 == 0 ? 43594 : class71_0.field1025 + 40000;
+      class132.field1800 = Client.field703 == 0 ? 443 : class71_0.field1025 + 50000;
       class90.field1266 = class190.field2358;
    }
 

@@ -62,7 +62,7 @@ public class Launcher implements AppletStub {
         }
         codebase = new URL(args.length == 0 ? "http://127.0.0.1" : args[0]);
         params.put(worldListKey, "http://" + codebase.getHost());
-        client game = new client();
+        Client game = new Client();
         game.setSize(new Dimension(Integer.parseInt(cfg.get("applet_minwidth")),
                 Integer.parseInt(cfg.get("applet_minheight"))));
         game.setPreferredSize(new Dimension(Integer.parseInt(cfg.get("applet_minwidth")),

@@ -42,7 +42,7 @@ public class class282 extends class277 {
 
                if (class284_12 != null) {
                   this.method5083(class284_12, class283_5, class283_6, 336541548);
-                  if (i_7 != class284_12.field3636) {
+                  if (i_7 != class284_12.category) {
                      boolean bool_15 = true;
 
                      for (class286 class286_14 = (class286) this.field3642.method4922(); class286_14 != null; class286_14 = (class286) this.field3642.method4923()) {
@@ -69,13 +69,13 @@ public class class282 extends class277 {
                   class284_12 = (class284) this.method5088(class283_5, class283_6, (byte) -26);
                }
 
-               if (i_7 != class284_12.field3636) {
+               if (i_7 != class284_12.category) {
                   class284_12.field3633 = ++this.field3643 - 1;
-                  if (class284_12.field3636 == -1 && i_7 == 0) {
+                  if (class284_12.category == -1 && i_7 == 0) {
                      class284_12.field3633 = -(class284_12.field3633 * -782754599) * -1246846103;
                   }
 
-                  class284_12.field3636 = i_7;
+                  class284_12.category = i_7;
                }
 
                class284_12.field3634 = i_8;
@@ -98,7 +98,7 @@ public class class282 extends class277 {
 
    public boolean method5183(class283 class283_1, boolean bool_2, int i_3) {
       class284 class284_4 = (class284) this.method5082(class283_1, (byte) -108);
-      return class284_4 == null ? false : !bool_2 || class284_4.field3636 != 0;
+      return class284_4 == null ? false : !bool_2 || class284_4.category != 0;
    }
 
    class274[] vmethod5230(int i_1, int i_2) {

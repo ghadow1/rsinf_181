@@ -4,7 +4,7 @@ public class class13 {
    static byte[][] field90;
 
    static final int method151(int i_0) {
-      return client.field791 - 1;
+      return Client.field791 - 1;
    }
 
    public static int method152(String string_0, int i_1) {

@@ -20,8 +20,8 @@ public class class31 {
    }
 
    static void method542(int i_0) {
-      if (client.field810) {
-         class217 class217_1 = client.method1649(class41.field359, client.field848, -970013539);
+      if (Client.field810) {
+         class217 class217_1 = Client.method1649(class41.field359, Client.field848, -970013539);
          if (class217_1 != null && class217_1.field2662 != null) {
             class62 class62_2 = new class62();
             class62_2.field575 = class217_1;
@@ -29,7 +29,7 @@ public class class31 {
             class184.method3613(class62_2, (byte) 11);
          }
 
-         client.field810 = false;
+         Client.field810 = false;
          class224.method4120(class217_1);
       }
    }
@@ -43,7 +43,7 @@ public class class31 {
                   method539(class217_4.field2675, i_1, (short) 7563);
                }
 
-               class61 class61_5 = (class61) client.field816.method5952((long)class217_4.field2688);
+               class61 class61_5 = (class61) Client.field816.method5952((long)class217_4.field2688);
                if (class61_5 != null) {
                   class17.method175(class61_5.field571, i_1, -1199742641);
                }
@@ -77,7 +77,7 @@ public class class31 {
 
    static int method540(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       if (i_0 == 3300) {
-         class76.field1098[++class70.field1014 - 1] = client.field881;
+         class76.field1098[++class70.field1014 - 1] = Client.field881;
          return 1;
       } else {
          int i_4;
@@ -106,22 +106,22 @@ public class class31 {
             return 1;
          } else if (i_0 == 3305) {
             i_4 = class76.field1098[--class70.field1014];
-            class76.field1098[++class70.field1014 - 1] = client.field760[i_4];
+            class76.field1098[++class70.field1014 - 1] = Client.field760[i_4];
             return 1;
          } else if (i_0 == 3306) {
             i_4 = class76.field1098[--class70.field1014];
-            class76.field1098[++class70.field1014 - 1] = client.field787[i_4];
+            class76.field1098[++class70.field1014 - 1] = Client.field787[i_4];
             return 1;
          } else if (i_0 == 3307) {
             i_4 = class76.field1098[--class70.field1014];
-            class76.field1098[++class70.field1014 - 1] = client.field788[i_4];
+            class76.field1098[++class70.field1014 - 1] = Client.field788[i_4];
             return 1;
          } else {
             int i_6;
             if (i_0 == 3308) {
                i_4 = class42.field372;
-               i_5 = (client.field657.field1005 >> 7) + class196.field2389;
-               i_6 = (client.field657.field949 >> 7) + class1.field1;
+               i_5 = (Client.field657.field1005 >> 7) + class196.field2389;
+               i_6 = (Client.field657.field949 >> 7) + class1.field1;
                class76.field1098[++class70.field1014 - 1] = (i_5 << 14) + i_6 + (i_4 << 28);
                return 1;
             } else if (i_0 == 3309) {
@@ -137,7 +137,7 @@ public class class31 {
                class76.field1098[++class70.field1014 - 1] = i_4 & 0x3fff;
                return 1;
             } else if (i_0 == 3312) {
-               class76.field1098[++class70.field1014 - 1] = client.field655 ? 1 : 0;
+               class76.field1098[++class70.field1014 - 1] = Client.field655 ? 1 : 0;
                return 1;
             } else if (i_0 == 3313) {
                class70.field1014 -= 2;
@@ -158,27 +158,27 @@ public class class31 {
                class76.field1098[++class70.field1014 - 1] = class342.method6528(i_4, i_5, 736449403);
                return 1;
             } else if (i_0 == 3316) {
-               if (client.field890 >= 2) {
-                  class76.field1098[++class70.field1014 - 1] = client.field890;
+               if (Client.field890 >= 2) {
+                  class76.field1098[++class70.field1014 - 1] = Client.field890;
                } else {
                   class76.field1098[++class70.field1014 - 1] = 0;
                }
 
                return 1;
             } else if (i_0 == 3317) {
-               class76.field1098[++class70.field1014 - 1] = client.field669;
+               class76.field1098[++class70.field1014 - 1] = Client.field669;
                return 1;
             } else if (i_0 == 3318) {
-               class76.field1098[++class70.field1014 - 1] = client.field807;
+               class76.field1098[++class70.field1014 - 1] = Client.field807;
                return 1;
             } else if (i_0 == 3321) {
-               class76.field1098[++class70.field1014 - 1] = client.field910;
+               class76.field1098[++class70.field1014 - 1] = Client.field910;
                return 1;
             } else if (i_0 == 3322) {
-               class76.field1098[++class70.field1014 - 1] = client.field823;
+               class76.field1098[++class70.field1014 - 1] = Client.field823;
                return 1;
             } else if (i_0 == 3323) {
-               if (client.field826) {
+               if (Client.field826) {
                   class76.field1098[++class70.field1014 - 1] = 1;
                } else {
                   class76.field1098[++class70.field1014 - 1] = 0;
@@ -186,7 +186,7 @@ public class class31 {
 
                return 1;
             } else if (i_0 == 3324) {
-               class76.field1098[++class70.field1014 - 1] = client.field653;
+               class76.field1098[++class70.field1014 - 1] = Client.field653;
                return 1;
             } else if (i_0 == 3325) {
                class70.field1014 -= 4;

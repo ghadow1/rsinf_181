@@ -153,40 +153,40 @@ public class class245 extends class175 {
    }
 
    static final void method4461(int i_0) {
-      for (int i_1 = 0; i_1 < client.field893; i_1++) {
-         --client.field897[i_1];
-         if (client.field897[i_1] >= -10) {
-            class101 class101_10 = client.field898[i_1];
+      for (int i_1 = 0; i_1 < Client.field893; i_1++) {
+         --Client.field897[i_1];
+         if (Client.field897[i_1] >= -10) {
+            class101 class101_10 = Client.field898[i_1];
             if (class101_10 == null) {
                Object obj_10000 = null;
-               class101_10 = class101.method2334(class13.field89, client.field894[i_1], 0);
+               class101_10 = class101.method2334(class13.field89, Client.field894[i_1], 0);
                if (class101_10 == null) {
                   continue;
                }
 
-               client.field897[i_1] += class101_10.method2331();
-               client.field898[i_1] = class101_10;
+               Client.field897[i_1] += class101_10.method2331();
+               Client.field898[i_1] = class101_10;
             }
 
-            if (client.field897[i_1] < 0) {
+            if (Client.field897[i_1] < 0) {
                int i_3;
-               if (client.field841[i_1] != 0) {
-                  int i_4 = (client.field841[i_1] & 0xff) * 128;
-                  int i_5 = client.field841[i_1] >> 16 & 0xff;
-                  int i_6 = i_5 * 128 + 64 - client.field657.field1005;
+               if (Client.field841[i_1] != 0) {
+                  int i_4 = (Client.field841[i_1] & 0xff) * 128;
+                  int i_5 = Client.field841[i_1] >> 16 & 0xff;
+                  int i_6 = i_5 * 128 + 64 - Client.field657.field1005;
                   if (i_6 < 0) {
                      i_6 = -i_6;
                   }
 
-                  int i_7 = client.field841[i_1] >> 8 & 0xff;
-                  int i_8 = i_7 * 128 + 64 - client.field657.field949;
+                  int i_7 = Client.field841[i_1] >> 8 & 0xff;
+                  int i_8 = i_7 * 128 + 64 - Client.field657.field949;
                   if (i_8 < 0) {
                      i_8 = -i_8;
                   }
 
                   int i_9 = i_6 + i_8 - 128;
                   if (i_9 > i_4) {
-                     client.field897[i_1] = -100;
+                     Client.field897[i_1] = -100;
                      continue;
                   }
 
@@ -194,36 +194,36 @@ public class class245 extends class175 {
                      i_9 = 0;
                   }
 
-                  i_3 = (i_4 - i_9) * client.field892 / i_4;
+                  i_3 = (i_4 - i_9) * Client.field892 / i_4;
                } else {
-                  i_3 = client.field891;
+                  i_3 = Client.field891;
                }
 
                if (i_3 > 0) {
                   class103 class103_11 = class101_10.method2330().method2376(class84.field1177);
                   class113 class113_12 = class113.method2529(class103_11, 100, i_3);
-                  class113_12.method2626(client.field895[i_1] - 1);
+                  class113_12.method2626(Client.field895[i_1] - 1);
                   class57.field532.method2286(class113_12);
                }
 
-               client.field897[i_1] = -100;
+               Client.field897[i_1] = -100;
             }
          } else {
-            --client.field893;
+            --Client.field893;
 
-            for (int i_2 = i_1; i_2 < client.field893; i_2++) {
-               client.field894[i_2] = client.field894[i_2 + 1];
-               client.field898[i_2] = client.field898[i_2 + 1];
-               client.field895[i_2] = client.field895[i_2 + 1];
-               client.field897[i_2] = client.field897[i_2 + 1];
-               client.field841[i_2] = client.field841[i_2 + 1];
+            for (int i_2 = i_1; i_2 < Client.field893; i_2++) {
+               Client.field894[i_2] = Client.field894[i_2 + 1];
+               Client.field898[i_2] = Client.field898[i_2 + 1];
+               Client.field895[i_2] = Client.field895[i_2 + 1];
+               Client.field897[i_2] = Client.field897[i_2 + 1];
+               Client.field841[i_2] = Client.field841[i_2 + 1];
             }
 
             --i_1;
          }
       }
 
-      if (client.field699) {
+      if (Client.field699) {
          boolean bool_13;
          if (class197.field2402 != 0) {
             bool_13 = true;
@@ -232,11 +232,11 @@ public class class245 extends class175 {
          }
 
          if (!bool_13) {
-            if (client.field911 != 0 && client.field889 != -1) {
-               class169.method3503(class29.field253, client.field889, 0, client.field911, false, 1090882543);
+            if (Client.field911 != 0 && Client.field889 != -1) {
+               class169.method3503(class29.field253, Client.field889, 0, Client.field911, false, 1090882543);
             }
 
-            client.field699 = false;
+            Client.field699 = false;
          }
       }
 

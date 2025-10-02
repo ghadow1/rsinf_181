@@ -144,7 +144,7 @@ public class class192 implements UnknownT {
    }
 
    static void method3675(int i_0) {
-      client.field727 = i_0;
+      Client.field727 = i_0;
    }
 
    static class192[] method3674() {
@@ -168,7 +168,7 @@ public class class192 implements UnknownT {
 
       class71.field1026 = ints_3;
       class71.field1018 = ints_4;
-      client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018, (byte) -109);
+      Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018, (byte) -109);
    }
 
    public static void method3678() {

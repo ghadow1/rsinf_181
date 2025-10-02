@@ -9,7 +9,7 @@ public class class268 {
    }
 
    static int method4987(class217 class217_0) {
-      class179 class179_2 = (class179) client.field857.method5952((long)class217_0.field2565 + ((long)class217_0.field2688 << 32));
+      class179 class179_2 = (class179) Client.field857.method5952((long)class217_0.field2565 + ((long)class217_0.field2688 << 32));
       return class179_2 != null ? class179_2.field2111 : class217_0.field2669;
    }
 

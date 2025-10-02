@@ -156,11 +156,11 @@ public class class70 extends LinkedListNode {
    }
 
    static void method1677(int i_0) {
-      class187 class187_1 = class235.method4265(class183.field2238, client.field880.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(class183.field2238, Client.field880.field1313, 1775123545);
       class187_1.field2333.writeByte(class34.method598((byte) -18));
       class187_1.field2333.writeShortBigEndian(class7.field46);
       class187_1.field2333.writeShortBigEndian(class249.field3308);
-      client.field880.copy(class187_1);
+      Client.field880.copy(class187_1);
    }
 
    static boolean method1676(String string_0, int i_1) {

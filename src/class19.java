@@ -278,21 +278,21 @@ public class class19 implements class37 {
    }
 
    static void method224(class258 class258_0, int i_1, int i_2, int i_3, int i_4) {
-      if (client.field893 < 50 && client.field892 != 0) {
+      if (Client.field893 < 50 && Client.field892 != 0) {
          if (class258_0.field3523 != null && i_1 < class258_0.field3523.length) {
             int i_5 = class258_0.field3523[i_1];
             if (i_5 != 0) {
                int i_6 = i_5 >> 8;
                int i_7 = i_5 >> 4 & 0x7;
                int i_8 = i_5 & 0xf;
-               client.field894[client.field893] = i_6;
-               client.field895[client.field893] = i_7;
-               client.field897[client.field893] = 0;
-               client.field898[client.field893] = null;
+               Client.field894[Client.field893] = i_6;
+               Client.field895[Client.field893] = i_7;
+               Client.field897[Client.field893] = 0;
+               Client.field898[Client.field893] = null;
                int i_9 = (i_2 - 64) / 128;
                int i_10 = (i_3 - 64) / 128;
-               client.field841[client.field893] = i_8 + (i_10 << 8) + (i_9 << 16);
-               ++client.field893;
+               Client.field841[Client.field893] = i_8 + (i_10 << 8) + (i_9 << 16);
+               ++Client.field893;
             }
          }
       }

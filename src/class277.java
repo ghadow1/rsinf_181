@@ -162,8 +162,8 @@ public abstract class class277 {
    public final void method5100(Comparator comparator_1, int i_2) {
       if (this.field3622 == null) {
          this.field3622 = comparator_1;
-      } else if (this.field3622 instanceof class275) {
-         ((class275) this.field3622).method5060(comparator_1, -6206068);
+      } else if (this.field3622 instanceof ChainedComparator) {
+         ((ChainedComparator) this.field3622).addToChain(comparator_1);
       }
 
    }

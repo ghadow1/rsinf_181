@@ -769,7 +769,7 @@ public class class29 {
    void method473(int i_1, class40 class40_2, class324[] arr_3, class233 class233_4, class233 class233_5, int i_6) {
       this.field250 = i_1;
       if (this.field247 != null || !this.field242.isEmpty()) {
-         if (class228.method4130(this.field245, this.field246, i_1, (short) -4698) == null) {
+         if (GameState.method4130(this.field245, this.field246, i_1, (short) -4698) == null) {
             boolean bool_7 = true;
             bool_7 &= this.method430(class233_4, (byte) 96);
             int i_9;
@@ -808,7 +808,7 @@ public class class29 {
    }
 
    void method506(int i_1, int i_2, int i_3, int i_4) {
-      class325 class325_5 = class228.method4130(this.field245, this.field246, this.field250, (short) -6643);
+      class325 class325_5 = GameState.method4130(this.field245, this.field246, this.field250, (short) -6643);
       if (class325_5 != null) {
          if (i_3 == this.field250 * 64) {
             class325_5.method6121(i_1, i_2);
@@ -840,22 +840,22 @@ public class class29 {
    }
 
    static final void method497(boolean bool_0, int i_1) {
-      for (int i_2 = 0; i_2 < client.field695; i_2++) {
-         class79 class79_3 = client.field694[client.field696[i_2]];
+      for (int i_2 = 0; i_2 < Client.field695; i_2++) {
+         class79 class79_3 = Client.field694[Client.field696[i_2]];
          if (class79_3 != null && class79_3.vmethod1965(135759381) && class79_3.field1134.field3473 == bool_0 && class79_3.field1134.method4710()) {
             int i_4 = class79_3.field1005 >> 7;
             int i_5 = class79_3.field949 >> 7;
             if (i_4 >= 0 && i_4 < 104 && i_5 >= 0 && i_5 < 104) {
                if (class79_3.field952 == 1 && (class79_3.field1005 & 0x7f) == 64 && (class79_3.field949 & 0x7f) == 64) {
-                  if (client.field750[i_4][i_5] == client.field751) {
+                  if (Client.field750[i_4][i_5] == Client.field751) {
                      continue;
                   }
 
-                  client.field750[i_4][i_5] = client.field751;
+                  Client.field750[i_4][i_5] = Client.field751;
                }
 
-               long long_6 = class126.method2854(0, 0, 1, !class79_3.field1134.field3496, client.field696[i_2], 605057963);
-               class79_3.field953 = client.field881;
+               long long_6 = class126.method2854(0, 0, 1, !class79_3.field1134.field3496, Client.field696[i_2], 605057963);
+               class79_3.field953 = Client.field881;
                class5.field22.method3077(class42.field372, class79_3.field1005, class79_3.field949, class62.method1130(class79_3.field952 * 64 - 64 + class79_3.field1005, class79_3.field952 * 64 - 64 + class79_3.field949, class42.field372), class79_3.field952 * 64 - 64 + 60, class79_3, class79_3.field950, long_6, class79_3.field967);
             }
          }

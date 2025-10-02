@@ -1,10 +1,10 @@
-public class class284 extends class279 {
+public class class284 extends Categorizable {
 
    boolean field3650;
    boolean field3651;
 
    int method5219(class284 class284_1, int i_2) {
-      return super.field3636 == client.field807 && client.field807 != class284_1.field3636 ? -1 : (client.field807 == class284_1.field3636 && super.field3636 != client.field807 ? 1 : (super.field3636 != 0 && class284_1.field3636 == 0 ? -1 : (class284_1.field3636 != 0 && super.field3636 == 0 ? 1 : (this.field3650 && !class284_1.field3650 ? -1 : (!this.field3650 && class284_1.field3650 ? 1 : (this.field3651 && !class284_1.field3651 ? -1 : (!this.field3651 && class284_1.field3651 ? 1 : (super.field3636 != 0 ? super.field3633 - class284_1.field3633 : class284_1.field3633 - super.field3633))))))));
+      return super.category == Client.field807 && Client.field807 != class284_1.category ? -1 : (Client.field807 == class284_1.category && super.category != Client.field807 ? 1 : (super.category != 0 && class284_1.category == 0 ? -1 : (class284_1.category != 0 && super.category == 0 ? 1 : (this.field3650 && !class284_1.field3650 ? -1 : (!this.field3650 && class284_1.field3650 ? 1 : (this.field3651 && !class284_1.field3651 ? -1 : (!this.field3651 && class284_1.field3651 ? 1 : (super.category != 0 ? super.field3633 - class284_1.field3633 : class284_1.field3633 - super.field3633))))))));
    }
 
    public int vmethod5221(class274 class274_1, int i_2) {
@@ -30,9 +30,9 @@ public class class284 extends class279 {
          if (class69_0.field975 != -1) {
             Object obj_2 = null;
             if (class69_0.field975 < 32768) {
-               obj_2 = client.field694[class69_0.field975];
+               obj_2 = Client.field694[class69_0.field975];
             } else if (class69_0.field975 >= 32768) {
-               obj_2 = client.field909[class69_0.field975 - 32768];
+               obj_2 = Client.field909[class69_0.field975 - 32768];
             }
 
             if (obj_2 != null) {

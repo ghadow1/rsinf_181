@@ -13,7 +13,7 @@ public class BufferPoolConfig {
          class79.field1135.method6121(class85.field1208 + 382, 0);
          class87.field1243.method6101(class85.field1208 + 382 - class87.field1243.field3897 / 2, 18);
          int i_5;
-         if (client.field662 == 0 || client.field662 == 5) {
+         if (Client.field662 == 0 || Client.field662 == 5) {
             byte b_4 = 20;
             class295_0.method5341("RuneScape is loading - please wait...", class85.field1187 + 180, 245 - b_4, 16777215, -1);
             i_5 = 253 - b_4;
@@ -29,7 +29,7 @@ public class BufferPoolConfig {
          short s_23;
          int i_24;
          short s_25;
-         if (client.field662 == 20) {
+         if (Client.field662 == 20) {
             class85.field1194.method6101(class85.field1187 + 180 - class85.field1194.field3897 / 2, 271 - class85.field1194.field3893 / 2);
             s_23 = 201;
             class295_0.method5341(class85.field1210, class85.field1187 + 180, s_23, 16776960, 0);
@@ -55,7 +55,7 @@ public class BufferPoolConfig {
             }
          }
 
-         if (client.field662 == 10 || client.field662 == 11) {
+         if (Client.field662 == 10 || Client.field662 == 11) {
             class85.field1194.method6101(class85.field1187, 171);
             short s_18;
             if (class85.field1209 == 0) {
@@ -104,13 +104,13 @@ public class BufferPoolConfig {
                      ;
                   }
 
-                  class295_0.method5346(class296.method5362(string_7) + (class85.field1202 == 0 & client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 70, i_24, 16777215, 0);
+                  class295_0.method5346(class296.method5362(string_7) + (class85.field1202 == 0 & Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 70, i_24, 16777215, 0);
                   i_24 += 15;
-                  class295_0.method5346("Password: " + class183.method3612(class85.field1198, -231155257) + (class85.field1202 == 1 & client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 108, i_24, 16777215, 0);
+                  class295_0.method5346("Password: " + class183.method3612(class85.field1198, -231155257) + (class85.field1202 == 1 & Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 108, i_24, 16777215, 0);
                   i_24 += 15;
                   s_23 = 277;
                   i_8 = class62.field585 + -117;
-                  boolean bool_10 = client.field691;
+                  boolean bool_10 = Client.field691;
                   boolean bool_11 = class85.field1199;
                   class324 class324_9 = bool_10 ? (bool_11 ? class85.field1185 : class112.field1466) : (bool_11 ? class64.field606 : class85.field1178);
                   class324_9.method6101(i_8, s_23);
@@ -134,15 +134,15 @@ public class BufferPoolConfig {
                   s_23 = 357;
                   switch(class85.field1212) {
                   case 2:
-                     class156.field1986 = "Having trouble logging in?";
+                     PriorityComparator.cachedValue = "Having trouble logging in?";
                      break;
                   default:
-                     class156.field1986 = "Can\'t login? Click here.";
+                     PriorityComparator.cachedValue = "Can\'t login? Click here.";
                   }
 
-                  class96.field1325 = new class319(class62.field585, s_23, class295_1.method5417(class156.field1986), 11);
+                  class96.field1325 = new class319(class62.field585, s_23, class295_1.method5417(PriorityComparator.cachedValue), 11);
                   class38.field332 = new class319(class62.field585, s_23, class295_1.method5417("Still having trouble logging in?"), 11);
-                  class295_1.method5341(class156.field1986, class62.field585, s_23, 16777215, 0);
+                  class295_1.method5341(PriorityComparator.cachedValue, class62.field585, s_23, 16777215, 0);
                } else if (class85.field1209 == 3) {
                   s_23 = 201;
                   class295_0.method5341("Invalid credentials.", class85.field1187 + 180, s_23, 16776960, 0);
@@ -170,7 +170,7 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      class295_0.method5341(class85.field1196, class85.field1187 + 180, i_24, 16777215, 0);
                      i_24 += 15;
-                     class295_0.method5346("PIN: " + class183.method3612(class36.field328, -231155257) + (client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class85.field1187 + 180 - 108, i_24, 16777215, 0);
+                     class295_0.method5346("PIN: " + class183.method3612(class36.field328, -231155257) + (Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class85.field1187 + 180 - 108, i_24, 16777215, 0);
                      i_24 -= 8;
                      class295_0.method5346("Trust this computer", class85.field1187 + 180 - 9, i_24, 16776960, 0);
                      i_24 += 15;
@@ -212,7 +212,7 @@ public class BufferPoolConfig {
                         ;
                      }
 
-                     class295_0.method5346(class296.method5362(string_7) + (client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class85.field1187 + 180 - 34, i_24, 16777215, 0);
+                     class295_0.method5346(class296.method5362(string_7) + (Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class85.field1187 + 180 - 34, i_24, 16777215, 0);
                      i_24 += 15;
                      i_8 = class85.field1187 + 180 - 80;
                      s_21 = 321;
@@ -316,31 +316,31 @@ public class BufferPoolConfig {
             }
          }
 
-         if (client.field662 >= 10) {
+         if (Client.field662 >= 10) {
             int[] ints_19 = new int[4];
             class321.method5999(ints_19);
             class321.method5997(class85.field1208, 0, class85.field1208 + 765, class249.field3308);
-            class278.field3631.method1735(class85.field1208 - 22, client.field881, (byte) -86);
-            class278.field3631.method1735(class85.field1208 + 22 + 765 - 128, client.field881, (byte) -49);
+            class278.field3631.method1735(class85.field1208 - 22, Client.field881, (byte) -86);
+            class278.field3631.method1735(class85.field1208 + 22 + 765 - 128, Client.field881, (byte) -49);
             class321.method6013(ints_19);
          }
 
          class85.field1183[class17.field117.field1063 ? 1 : 0].method6101(class85.field1208 + 765 - 40, 463);
-         if (client.field662 > 5 && class56.field528 == class190.field2348) {
+         if (Client.field662 > 5 && class56.field528 == class190.field2348) {
             if (class30.field264 != null) {
                i_24 = class85.field1208 + 5;
                s_25 = 463;
                byte b_28 = 100;
                byte b_20 = 35;
                class30.field264.method6101(i_24, s_25);
-               class295_0.method5341("World" + " " + client.field807, b_28 / 2 + i_24, b_20 / 2 + s_25 - 2, 16777215, 0);
+               class295_0.method5341("World" + " " + Client.field807, b_28 / 2 + i_24, b_20 / 2 + s_25 - 2, 16777215, 0);
                if (class71.field1027 != null) {
                   class295_1.method5341("Loading...", b_28 / 2 + i_24, b_20 / 2 + s_25 + 12, 16777215, 0);
                } else {
                   class295_1.method5341("Click to switch", b_28 / 2 + i_24, b_20 / 2 + s_25 + 12, 16777215, 0);
                }
             } else {
-               class30.field264 = class215.method4021(client.field683, "sl_button", "", -1167154349);
+               class30.field264 = class215.method4021(Client.field683, "sl_button", "", -1167154349);
             }
          }
 

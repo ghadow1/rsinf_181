@@ -23,7 +23,7 @@ public class class76 {
       if (i_0 < 0) {
          return false;
       } else {
-         int i_2 = client.field794[i_0];
+         int i_2 = Client.field794[i_0];
          if (i_2 >= 2000) {
             i_2 -= 2000;
          }
@@ -38,7 +38,7 @@ public class class76 {
 
    static final void method1935(int i_0, int i_1, int i_2, int i_3, class325 class325_4, class211 class211_5, byte b_6) {
       if (class325_4 != null) {
-         int i_7 = client.field722 & 0x7ff;
+         int i_7 = Client.field722 & 0x7ff;
          int i_8 = i_3 * i_3 + i_2 * i_2;
          if (i_8 <= 6400) {
             int i_9 = class130.field1787[i_7];

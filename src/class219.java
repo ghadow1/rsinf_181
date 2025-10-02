@@ -28,23 +28,23 @@ public class class219 {
       }
 
       if (class217_0.field2568 == 1337) {
-         client.field827 = class217_0;
+         Client.field827 = class217_0;
       }
 
       if (bool_3 && class217_0.field2679 != null && (i_5 != class217_0.field2579 || i_6 != class217_0.field2667)) {
          class62 class62_7 = new class62();
          class62_7.field575 = class217_0;
          class62_7.field581 = class217_0.field2679;
-         client.field854.method4917(class62_7);
+         Client.field854.method4917(class62_7);
       }
 
    }
 
    static final void method4111(String string_0, int i_1) {
-      class187 class187_2 = class235.method4265(class183.field2210, client.field880.field1313, 1775123545);
+      class187 class187_2 = class235.method4265(class183.field2210, Client.field880.field1313, 1775123545);
       class187_2.field2333.writeByte(class209.method3945(string_0));
       class187_2.field2333.writeNullTerminatedString(string_0);
-      client.field880.copy(class187_2);
+      Client.field880.copy(class187_2);
    }
 
    static final void method4113(class69 class69_0, int i_1, int i_2) {

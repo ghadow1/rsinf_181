@@ -49,9 +49,9 @@ public class class80 {
       int i_4;
       int i_5;
       int i_6;
-      if (client.field727 == 0) {
-         i_1 = client.field657.field1005;
-         i_2 = client.field657.field949;
+      if (Client.field727 == 0) {
+         i_1 = Client.field657.field1005;
+         i_2 = Client.field657.field949;
          if (class54.field499 - i_1 < -500 || class54.field499 - i_1 > 500 || class26.field227 - i_2 < -500 || class26.field227 - i_2 > 500) {
             class54.field499 = i_1;
             class26.field227 = i_2;
@@ -95,14 +95,14 @@ public class class80 {
             i_7 = 32768;
          }
 
-         if (i_7 > client.field739) {
-            client.field739 += (i_7 - client.field739) / 24;
-         } else if (i_7 < client.field739) {
-            client.field739 += (i_7 - client.field739) / 80;
+         if (i_7 > Client.field739) {
+            Client.field739 += (i_7 - Client.field739) / 24;
+         } else if (i_7 < Client.field739) {
+            Client.field739 += (i_7 - Client.field739) / 80;
          }
 
-         client.field729 = class62.method1130(client.field657.field1005, client.field657.field949, class42.field372) - client.field728;
-      } else if (client.field727 == 1) {
+         Client.field729 = class62.method1130(Client.field657.field1005, Client.field657.field949, class42.field372) - Client.field728;
+      } else if (Client.field727 == 1) {
          class217.method4090(-174761515);
          short s_11 = -1;
          if (class45.field395[33]) {
@@ -138,40 +138,40 @@ public class class80 {
 
          i_3 = 0;
          if (s_11 >= 0 || b_12 != 0) {
-            i_3 = class45.field395[81] ? client.field734 : client.field733;
+            i_3 = class45.field395[81] ? Client.field734 : Client.field733;
             i_3 *= 16;
-            client.field731 = s_11;
-            client.field871 = b_12;
+            Client.field731 = s_11;
+            Client.field871 = b_12;
          }
 
-         if (client.field928 < i_3) {
-            client.field928 += i_3 / 8;
-            if (client.field928 > i_3) {
-               client.field928 = i_3;
+         if (Client.field928 < i_3) {
+            Client.field928 += i_3 / 8;
+            if (Client.field928 > i_3) {
+               Client.field928 = i_3;
             }
-         } else if (client.field928 > i_3) {
-            client.field928 = client.field928 * 9 / 10;
+         } else if (Client.field928 > i_3) {
+            Client.field928 = Client.field928 * 9 / 10;
          }
 
-         if (client.field928 > 0) {
-            i_4 = client.field928 / 16;
-            if (client.field731 >= 0) {
-               i_1 = client.field731 - class76.field1112 & 0x7ff;
+         if (Client.field928 > 0) {
+            i_4 = Client.field928 / 16;
+            if (Client.field731 >= 0) {
+               i_1 = Client.field731 - class76.field1112 & 0x7ff;
                i_5 = class130.field1787[i_1];
                i_6 = class130.field1784[i_1];
                class54.field499 += i_4 * i_5 / 65536;
                class26.field227 += i_6 * i_4 / 65536;
             }
 
-            if (client.field871 != 0) {
-               client.field729 += i_4 * client.field871;
-               if (client.field729 > 0) {
-                  client.field729 = 0;
+            if (Client.field871 != 0) {
+               Client.field729 += i_4 * Client.field871;
+               if (Client.field729 > 0) {
+                  Client.field729 = 0;
                }
             }
          } else {
-            client.field731 = -1;
-            client.field871 = -1;
+            Client.field731 = -1;
+            Client.field871 = -1;
          }
 
          if (class45.field395[13]) {
@@ -180,41 +180,41 @@ public class class80 {
       }
 
       if (class54.field485 == 4 && class46.field413) {
-         i_1 = class54.field487 - client.field726;
-         client.field724 = i_1 * 2;
-         client.field726 = i_1 != -1 && i_1 != 1 ? (class54.field487 + client.field726) / 2 : class54.field487;
-         i_2 = client.field725 - class54.field492;
-         client.field723 = i_2 * 2;
-         client.field725 = i_2 != -1 && i_2 != 1 ? (client.field725 + class54.field492) / 2 : class54.field492;
+         i_1 = class54.field487 - Client.field726;
+         Client.field724 = i_1 * 2;
+         Client.field726 = i_1 != -1 && i_1 != 1 ? (class54.field487 + Client.field726) / 2 : class54.field487;
+         i_2 = Client.field725 - class54.field492;
+         Client.field723 = i_2 * 2;
+         Client.field725 = i_2 != -1 && i_2 != 1 ? (Client.field725 + class54.field492) / 2 : class54.field492;
       } else {
          if (class45.field395[96]) {
-            client.field723 += (-24 - client.field723) / 2;
+            Client.field723 += (-24 - Client.field723) / 2;
          } else if (class45.field395[97]) {
-            client.field723 += (24 - client.field723) / 2;
+            Client.field723 += (24 - Client.field723) / 2;
          } else {
-            client.field723 /= 2;
+            Client.field723 /= 2;
          }
 
          if (class45.field395[98]) {
-            client.field724 += (12 - client.field724) / 2;
+            Client.field724 += (12 - Client.field724) / 2;
          } else if (class45.field395[99]) {
-            client.field724 += (-12 - client.field724) / 2;
+            Client.field724 += (-12 - Client.field724) / 2;
          } else {
-            client.field724 /= 2;
+            Client.field724 /= 2;
          }
 
-         client.field726 = class54.field487;
-         client.field725 = class54.field492;
+         Client.field726 = class54.field487;
+         Client.field725 = class54.field492;
       }
 
-      client.field722 = client.field723 / 2 + client.field722 & 0x7ff;
-      client.field721 += client.field724 / 2;
-      if (client.field721 < 128) {
-         client.field721 = 128;
+      Client.field722 = Client.field723 / 2 + Client.field722 & 0x7ff;
+      Client.field721 += Client.field724 / 2;
+      if (Client.field721 < 128) {
+         Client.field721 = 128;
       }
 
-      if (client.field721 > 383) {
-         client.field721 = 383;
+      if (Client.field721 > 383) {
+         Client.field721 = 383;
       }
 
    }

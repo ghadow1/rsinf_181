@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public final class client extends GCMonitor_2 implements class280 {
+public final class Client extends GCMonitor_2 implements class280 {
 
    static class235 field683;
    static class235 field684;
@@ -156,7 +156,7 @@ public final class client extends GCMonitor_2 implements class280 {
    static boolean[] field769;
    static boolean field799;
    static boolean field800;
-   static boolean field801;
+   static boolean flag_23;
    static boolean field802;
    static int field803;
    static int field804;
@@ -408,7 +408,7 @@ public final class client extends GCMonitor_2 implements class280 {
       field769 = new boolean[500];
       field799 = false;
       field800 = false;
-      field801 = false;
+      flag_23 = false;
       field802 = true;
       field803 = -1;
       field804 = -1;
@@ -1220,7 +1220,7 @@ public final class client extends GCMonitor_2 implements class280 {
                long_24 = class299_4.readLongFromMediumEndian();
                long_26 = (long)class299_4.readUnsignedShortBigEndian();
                long_22 = (long)class299_4.read24BitInt();
-               class228 class228_12 = (class228) MemoryManager.findById(class156.method3419(-1282154756), class299_4.readUnsignedByte());
+               GameState gameState_12 = (GameState) MemoryManager.findById(PriorityComparator.getGameStates(), class299_4.readUnsignedByte());
                long_13 = (long_26 << 32) + long_22;
                boolean bool_50 = false;
 
@@ -1231,7 +1231,7 @@ public final class client extends GCMonitor_2 implements class280 {
                   }
                }
 
-               if (class228_12.field3092 && class58.field546.method1765(new class283(string_38, class40.field353), (byte) -1)) {
+               if (gameState_12.field3092 && class58.field546.method1765(new class283(string_38, class40.field353), (byte) -1)) {
                   bool_50 = true;
                }
 
@@ -1239,8 +1239,8 @@ public final class client extends GCMonitor_2 implements class280 {
                   field922[field875] = long_13;
                   field875 = (field875 + 1) % 100;
                   String string_28 = class296.method5362(class1.method17(class311.method5898(class299_4, (byte) 39), (byte) -89));
-                  if (class228_12.field3090 != -1) {
-                     class14.method157(9, class33.method556(class228_12.field3090, (byte) -57) + string_38, string_28, class215.method4023(long_24));
+                  if (gameState_12.field3090 != -1) {
+                     class14.method157(9, class33.method556(gameState_12.field3090, (byte) -57) + string_38, string_28, class215.method4023(long_24));
                   } else {
                      class14.method157(9, string_38, string_28, class215.method4023(long_24));
                   }
@@ -1858,7 +1858,7 @@ public final class client extends GCMonitor_2 implements class280 {
             if (ServerPacketProt.field2135 == class95_1.inPacketType) {
                bool_51 = class299_4.readUnsignedByte() == 1;
                if (bool_51) {
-                  class279.field3632 = TimeUtils.getAdjustedTimeMillis() - class299_4.readLongFromMediumEndian();
+                  Categorizable.field3632 = TimeUtils.getAdjustedTimeMillis() - class299_4.readLongFromMediumEndian();
                   class68.field942 = new class6(class299_4, true);
                } else {
                   class68.field942 = null;
@@ -1939,7 +1939,7 @@ public final class client extends GCMonitor_2 implements class280 {
                string_38 = class299_4.readNullTerminatedString();
                long_24 = (long)class299_4.readUnsignedShortBigEndian();
                long_26 = (long)class299_4.read24BitInt();
-               class228 class228_31 = (class228) MemoryManager.findById(class156.method3419(562234979), class299_4.readUnsignedByte());
+               GameState gameState_31 = (GameState) MemoryManager.findById(PriorityComparator.getGameStates(), class299_4.readUnsignedByte());
                long long_32 = (long_24 << 32) + long_26;
                boolean bool_34 = false;
 
@@ -1959,14 +1959,14 @@ public final class client extends GCMonitor_2 implements class280 {
                   field875 = (field875 + 1) % 100;
                   String string_35 = class296.method5362(class1.method17(class311.method5898(class299_4, (byte) 52), (byte) -86));
                   byte b_15;
-                  if (class228_31.field3091) {
+                  if (gameState_31.field3091) {
                      b_15 = 7;
                   } else {
                      b_15 = 3;
                   }
 
-                  if (class228_31.field3090 != -1) {
-                     class62.method1132(b_15, class33.method556(class228_31.field3090, (byte) -86) + string_38, string_35, -2081158306);
+                  if (gameState_31.field3090 != -1) {
+                     class62.method1132(b_15, class33.method556(gameState_31.field3090, (byte) -86) + string_38, string_35, -2081158306);
                   } else {
                      class62.method1132(b_15, string_38, string_35, -2140168948);
                   }
@@ -3683,7 +3683,7 @@ public final class client extends GCMonitor_2 implements class280 {
                field880.field1315 = class299_3.readUnsignedShortBigEndian();
 
                try {
-                  client client_8 = class27.field233;
+                  Client client_8 = class27.field233;
                   JSObject.getWindow(client_8).call("zap", (Object[]) null);
                } catch (Throwable throwable_21) {
                   ;

@@ -9,7 +9,7 @@ public abstract class class174 {
    public abstract boolean vmethod3594(int var1, int var2, int var3, class172 var4, int var5);
 
    static final void disconnectGame() {
-      client.field880.method2233();
+      Client.field880.method2233();
       class197.method3688();
       class244.field3254.method3323();
       class245.field3273.method3323();
@@ -42,7 +42,7 @@ public abstract class class174 {
       class35.field307.method4158(468299296);
       class29.field253.method4158(-678416824);
       class256.field3500.method4158(-1208530808);
-      client.field683.method4158(-487246667);
+      Client.field683.method4158(-487246667);
       class4.field18.method4158(-1989731361);
       class17.field110.method4158(-1533856957);
       class32.field279.method4158(287902762);
@@ -50,13 +50,13 @@ public abstract class class174 {
       class5.field22.method3066();
 
       for (int i_1 = 0; i_1 < 4; i_1++) {
-         client.field710[i_1].method3558();
+         Client.field710[i_1].method3558();
       }
 
       System.gc();
       class40.method729(2, (byte) -32);
-      client.field889 = -1;
-      client.field699 = false;
+      Client.field889 = -1;
+      Client.field699 = false;
 
       for (class75 class75_2 = (class75) class75.field1080.method4892(); class75_2 != null; class75_2 = (class75) class75.field1080.method4894()) {
          if (class75_2.field1085 != null) {

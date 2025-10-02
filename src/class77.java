@@ -58,11 +58,11 @@ public final class class77 extends class135 {
 
    static void method1945(int i_0) {
       class224.method4121();
-      client.field796[0] = "Cancel";
-      client.field668[0] = "";
-      client.field794[0] = 1006;
-      client.field769[0] = false;
-      client.field791 = 1;
+      Client.field796[0] = "Cancel";
+      Client.field668[0] = "";
+      Client.field794[0] = 1006;
+      Client.field769[0] = false;
+      Client.field791 = 1;
    }
 
    static final void method1947(class115 class115_0, int i_1) {

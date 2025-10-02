@@ -311,9 +311,9 @@ public class class209 {
                int i_15 = i_11 + i_2;
                if (i_14 > 0 && i_15 > 0 && i_14 < 103 && i_15 < 103) {
                   class253 class253_16 = class128.method2970(i_6, (short) 4095);
-                  if (i_13 != 22 || !client.field656 || class253_16.field3369 != 0 || class253_16.field3382 == 1 || class253_16.field3388) {
+                  if (i_13 != 22 || !Client.field656 || class253_16.field3369 != 0 || class253_16.field3382 == 1 || class253_16.field3388) {
                      if (!class253_16.method4608(-275510577)) {
-                        ++client.field707;
+                        ++Client.field707;
                         bool_4 = false;
                      }
 
