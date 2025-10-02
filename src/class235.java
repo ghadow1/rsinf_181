@@ -286,7 +286,7 @@ public class class235 extends class233 {
       }
    }
 
-   public static class187 method4265(class183 class183_0, class328 class328_1, int i_2) {
+   public static class187 method4265(ClientPacketProt clientPacketProt_0, class328 class328_1, int i_2) {
       class187 class187_3;
       if (class187.field2336 == 0) {
          class187_3 = new class187();
@@ -294,8 +294,8 @@ public class class235 extends class233 {
          class187_3 = class187.field2335[--class187.field2336];
       }
 
-      class187_3.field2338 = class183_0;
-      class187_3.field2332 = class183_0.field2275;
+      class187_3.field2338 = clientPacketProt_0;
+      class187_3.field2332 = clientPacketProt_0.field2275;
       if (class187_3.field2332 == -1) {
          class187_3.outBuffer = new Buffer_3(260);
       } else if (class187_3.field2332 == -2) {

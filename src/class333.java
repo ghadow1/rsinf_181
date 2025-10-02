@@ -235,7 +235,7 @@ public class class333 {
                }
 
                if (bool_9) {
-                  class187 class187_12 = class235.method4265(class183.field2248, Client.data.field1313, 1775123545);
+                  class187 class187_12 = class235.method4265(ClientPacketProt.field2248, Client.data.field1313, 1775123545);
                   class187_12.outBuffer.writeIntReversed(this.field4024.method3971(1080399232));
                   Client.data.copy(class187_12);
                   this.field3982 = 0L;

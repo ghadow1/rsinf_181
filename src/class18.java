@@ -352,7 +352,7 @@ public class class18 extends class34 {
                int i_11 = i_6 * i_9 - i_8 * i_5 >> 11;
                int i_12 = i_10 + Client.field657.field1005 >> 7;
                int i_13 = Client.field657.field949 - i_11 >> 7;
-               class187 class187_14 = class235.method4265(class183.field2262, Client.data.field1313, 1775123545);
+               class187 class187_14 = class235.method4265(ClientPacketProt.field2262, Client.data.field1313, 1775123545);
                class187_14.outBuffer.writeByte(18);
                class187_14.outBuffer.writeShortWithOffset2(i_13 + class1.field1);
                class187_14.outBuffer.writeShortWithOffset2(i_12 + class196.field2389);

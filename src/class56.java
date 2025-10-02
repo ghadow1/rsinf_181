@@ -285,14 +285,14 @@ public class class56 {
    }
 
    static void method1086(int i_0, int i_1, int i_2) {
-      class187 class187_3 = class235.method4265(class183.field2273, Client.data.field1313, 1775123545);
+      class187 class187_3 = class235.method4265(ClientPacketProt.field2273, Client.data.field1313, 1775123545);
       class187_3.outBuffer.writeIntCustomOrder(i_0);
       class187_3.outBuffer.writeShortWithOffset2(i_1);
       Client.data.copy(class187_3);
    }
 
    static final void method1089(byte b_0) {
-      class187 class187_1 = class235.method4265(class183.field2286, Client.data.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(ClientPacketProt.field2286, Client.data.field1313, 1775123545);
       class187_1.outBuffer.writeByte(0);
       Client.data.copy(class187_1);
    }

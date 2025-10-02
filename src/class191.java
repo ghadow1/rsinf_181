@@ -10,7 +10,7 @@ public class class191 {
          class23.field188 = null;
          class292.method5319(class217.field2556[i_0], -1, i_1, i_2, i_3, i_4, i_5, i_6, i_7, -414433713);
          if (class23.field188 != null) {
-            class292.method5319(class23.field188, -1412584499, i_1, i_2, i_3, i_4, class220.field2742, class183.field2305, i_7, -414433713);
+            class292.method5319(class23.field188, -1412584499, i_1, i_2, i_3, i_4, class220.field2742, ClientPacketProt.field2305, i_7, -414433713);
             class23.field188 = null;
          }
 

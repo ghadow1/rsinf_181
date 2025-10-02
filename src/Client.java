@@ -1568,7 +1568,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                i_17 = jagbuf.readIntMedEndian();
                i_6 = jagbuf.readIntMedEndian();
                i_18 = MemoryManager.getGCPercentage();
-               class187 class187_57 = class235.method4265(class183.field2236, data.field1313, 1775123545);
+               class187 class187_57 = class235.method4265(ClientPacketProt.field2236, data.field1313, 1775123545);
                class187_57.outBuffer.writeNegatedByte(i_18);
                class187_57.outBuffer.writeByte(GCMonitor_2.field462);
                class187_57.outBuffer.writeIntReversed(i_17);
@@ -2619,7 +2619,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             int i_3;
             class187 class187_16;
             while (class198.method3811(1881799127)) {
-               class187_16 = class235.method4265(class183.field2252, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2252, data.field1313, 1775123545);
                class187_16.outBuffer.writeByte(0);
                i_3 = class187_16.outBuffer.position;
                class70.method1671(class187_16.outBuffer);
@@ -2628,7 +2628,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
 
             if (field797.field3605) {
-               class187_16 = class235.method4265(class183.field2217, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2217, data.field1313, 1775123545);
                class187_16.outBuffer.writeByte(0);
                i_3 = class187_16.outBuffer.position;
                field797.method4999(class187_16.outBuffer);
@@ -2676,7 +2676,7 @@ public final class Client extends GCMonitor_2 implements class280 {
 
                      if (i_10 != field717 || i_9 != field665) {
                         if (class187_17 == null) {
-                           class187_17 = class235.method4265(class183.field2237, data.field1313, 1775123545);
+                           class187_17 = class235.method4265(ClientPacketProt.field2237, data.field1313, 1775123545);
                            class187_17.outBuffer.writeByte(0);
                            i_4 = class187_17.outBuffer.position;
                            class187_17.outBuffer.position += 2;
@@ -2771,7 +2771,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                }
 
                i_6 = (int)long_18;
-               class187_20 = class235.method4265(class183.field2234, data.field1313, 1775123545);
+               class187_20 = class235.method4265(ClientPacketProt.field2234, data.field1313, 1775123545);
                class187_20.outBuffer.writeShortBigEndian((class54.field493 == 2 ? 1 : 0) + (i_6 << 1));
                class187_20.outBuffer.writeShortBigEndian(i_5);
                class187_20.outBuffer.writeShortBigEndian(i_4);
@@ -2779,7 +2779,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
 
             if (class45.field386 > 0) {
-               class187_16 = class235.method4265(class183.field2270, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2270, data.field1313, 1775123545);
                class187_16.outBuffer.writeShortBigEndian(0);
                i_3 = class187_16.outBuffer.position;
                long long_21 = TimeUtils.getAdjustedTimeMillis();
@@ -2810,7 +2810,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             if (field878 && field822 <= 0) {
                field822 = 20;
                field878 = false;
-               class187_16 = class235.method4265(class183.field2242, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2242, data.field1313, 1775123545);
                class187_16.outBuffer.writeShortWithOffset(field721);
                class187_16.outBuffer.writeShortLittleEndian(field722);
                data.copy(class187_16);
@@ -2818,14 +2818,14 @@ public final class Client extends GCMonitor_2 implements class280 {
 
             if (class267.field3557 && !field667) {
                field667 = true;
-               class187_16 = class235.method4265(class183.field2276, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2276, data.field1313, 1775123545);
                class187_16.outBuffer.writeByte(1);
                data.copy(class187_16);
             }
 
             if (!class267.field3557 && field667) {
                field667 = false;
-               class187_16 = class235.method4265(class183.field2276, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2276, data.field1313, 1775123545);
                class187_16.outBuffer.writeByte(0);
                data.copy(class187_16);
             }
@@ -3063,7 +3063,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                                                             class217_44.method4063(field764, field765, 572956178);
                                                          }
 
-                                                         class187_20 = class235.method4265(class183.field2283, data.field1313, 1775123545);
+                                                         class187_20 = class235.method4265(ClientPacketProt.field2283, data.field1313, 1775123545);
                                                          class187_20.outBuffer.writeShortBigEndian(field764);
                                                          class187_20.outBuffer.writeShortLittleEndian(field765);
                                                          class187_20.outBuffer.writeIntBigEndian(class18.field127.field2688);
@@ -3091,7 +3091,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                                              if (class133.method3105()) {
                                                 i_5 = class133.field1850;
                                                 i_6 = class133.field1837;
-                                                class187_20 = class235.method4265(class183.field2299, data.field1313, 1775123545);
+                                                class187_20 = class235.method4265(ClientPacketProt.field2299, data.field1313, 1775123545);
                                                 class187_20.outBuffer.writeByte(5);
                                                 class187_20.outBuffer.writeShortWithOffset2(i_6 + class1.field1);
                                                 class187_20.outBuffer.writeShortWithOffset2(i_5 + class196.field2389);
@@ -3259,14 +3259,14 @@ public final class Client extends GCMonitor_2 implements class280 {
                                              if (i_5 > 15000 && i_7 > 15000) {
                                                 field700 = 250;
                                                 class54.field480 = 14500;
-                                                class187_31 = class235.method4265(class183.field2300, data.field1313, 1775123545);
+                                                class187_31 = class235.method4265(ClientPacketProt.field2300, data.field1313, 1775123545);
                                                 data.copy(class187_31);
                                              }
 
                                              class58.field546.method1762((byte) 9);
                                              ++data.field1319;
                                              if (data.field1319 > 50) {
-                                                class187_31 = class235.method4265(class183.field2225, data.field1313, 1775123545);
+                                                class187_31 = class235.method4265(ClientPacketProt.field2225, data.field1313, 1775123545);
                                                 data.copy(class187_31);
                                              }
 
@@ -4069,7 +4069,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   }
 
                   if (class217_16 != null) {
-                     class187 class187_17 = class235.method4265(class183.field2260, data.field1313, 1775123545);
+                     class187 class187_17 = class235.method4265(ClientPacketProt.field2260, data.field1313, 1775123545);
                      class187_17.outBuffer.writeShortWithOffset2(field828.field2565);
                      class187_17.outBuffer.writeShortWithOffset2(field832.field2690);
                      class187_17.outBuffer.writeShortBigEndian(field832.field2565);

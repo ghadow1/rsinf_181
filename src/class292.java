@@ -46,7 +46,7 @@ public class class292 {
                   if (i_1 != -1412584499 && !class217_11.field2648) {
                      class23.field188 = arr_0;
                      class220.field2742 = i_6;
-                     class183.field2305 = i_7;
+                     ClientPacketProt.field2305 = i_7;
                      continue;
                   }
 

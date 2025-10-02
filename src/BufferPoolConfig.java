@@ -42,7 +42,7 @@ public class BufferPoolConfig {
             if (class85.field1209 != 4) {
                class295_0.method5346("Login: ", class85.field1187 + 180 - 110, i_24, 16777215, 0);
                s_25 = 200;
-               string_6 = class17.field117.field1066 ? class183.method3612(class85.field1180, -231155257) : class85.field1180;
+               string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(class85.field1180, -231155257) : class85.field1180;
 
                for (string_7 = string_6; class295_0.method5417(string_7) > s_25; string_7 = string_7.substring(0, string_7.length() - 1)) {
                   ;
@@ -50,7 +50,7 @@ public class BufferPoolConfig {
 
                class295_0.method5346(class296.method5362(string_7), class85.field1187 + 180 - 70, i_24, 16777215, 0);
                i_24 += 15;
-               class295_0.method5346("Password: " + class183.method3612(class85.field1198, -231155257), class85.field1187 + 180 - 108, i_24, 16777215, 0);
+               class295_0.method5346("Password: " + ClientPacketProt.method3612(class85.field1198, -231155257), class85.field1187 + 180 - 108, i_24, 16777215, 0);
                i_24 += 15;
             }
          }
@@ -98,7 +98,7 @@ public class BufferPoolConfig {
                   i_24 += 7;
                   class295_0.method5346("Login: ", class62.field585 - 110, i_24, 16777215, 0);
                   s_25 = 200;
-                  string_6 = class17.field117.field1066 ? class183.method3612(class85.field1180, -231155257) : class85.field1180;
+                  string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(class85.field1180, -231155257) : class85.field1180;
 
                   for (string_7 = string_6; class295_0.method5417(string_7) > s_25; string_7 = string_7.substring(1)) {
                      ;
@@ -106,7 +106,7 @@ public class BufferPoolConfig {
 
                   class295_0.method5346(class296.method5362(string_7) + (class85.field1202 == 0 & Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 70, i_24, 16777215, 0);
                   i_24 += 15;
-                  class295_0.method5346("Password: " + class183.method3612(class85.field1198, -231155257) + (class85.field1202 == 1 & Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 108, i_24, 16777215, 0);
+                  class295_0.method5346("Password: " + ClientPacketProt.method3612(class85.field1198, -231155257) + (class85.field1202 == 1 & Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class62.field585 - 108, i_24, 16777215, 0);
                   i_24 += 15;
                   s_23 = 277;
                   i_8 = class62.field585 + -117;
@@ -170,7 +170,7 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      class295_0.method5341(class85.field1196, class85.field1187 + 180, i_24, 16777215, 0);
                      i_24 += 15;
-                     class295_0.method5346("PIN: " + class183.method3612(class36.field328, -231155257) + (Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class85.field1187 + 180 - 108, i_24, 16777215, 0);
+                     class295_0.method5346("PIN: " + ClientPacketProt.method3612(class36.field328, -231155257) + (Client.field881 % 40 < 20 ? class73.method1756(16776960, -844505624) + "|" : ""), class85.field1187 + 180 - 108, i_24, 16777215, 0);
                      i_24 -= 8;
                      class295_0.method5346("Trust this computer", class85.field1187 + 180 - 9, i_24, 16776960, 0);
                      i_24 += 15;
@@ -206,7 +206,7 @@ public class BufferPoolConfig {
                      i_24 += 14;
                      class295_0.method5346("Username/email: ", class85.field1187 + 180 - 145, i_24, 16777215, 0);
                      s_25 = 174;
-                     string_6 = class17.field117.field1066 ? class183.method3612(class85.field1180, -231155257) : class85.field1180;
+                     string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(class85.field1180, -231155257) : class85.field1180;
 
                      for (string_7 = string_6; class295_0.method5417(string_7) > s_25; string_7 = string_7.substring(1)) {
                         ;

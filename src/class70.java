@@ -156,7 +156,7 @@ public class class70 extends LinkedListNode {
    }
 
    static void writeOutgoingWindowMode() {
-      class187 class187_1 = class235.method4265(class183.WINDOW_STATUS, Client.data.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(ClientPacketProt.WINDOW_STATUS, Client.data.field1313, 1775123545);
       class187_1.outBuffer.writeByte(class34.method598()); //..Display Mode
       class187_1.outBuffer.writeShortBigEndian(class7.field46);
       class187_1.outBuffer.writeShortBigEndian(class249.field3308);

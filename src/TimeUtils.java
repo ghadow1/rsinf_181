@@ -101,7 +101,7 @@ public class TimeUtils extends class205 {
                i_13 = i_0 + 1;
             }
 
-            class183.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, Client.field710[i_0], 1078750200);
+            ClientPacketProt.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, Client.field710[i_0], 1078750200);
          }
       }
 

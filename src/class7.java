@@ -52,7 +52,7 @@ public class class7 {
    }
 
    static final void method73(int i_0) {
-      class187 class187_1 = class235.method4265(class183.field2223, Client.data.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(ClientPacketProt.field2223, Client.data.field1313, 1775123545);
       Client.data.copy(class187_1);
 
       for (class61 class61_2 = (class61) Client.field816.method5950(); class61_2 != null; class61_2 = (class61) Client.field816.method5953()) {
