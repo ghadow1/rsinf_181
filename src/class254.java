@@ -120,7 +120,7 @@ public class class254 extends class175 {
                this.field3416[i_5] = (short)class300_1.method5496(-1459053594);
             }
          } else if (i_2 == 42) {
-            this.field3403 = class300_1.method5495((byte) 0);
+            this.field3403 = class300_1.method5495();
          } else if (i_2 == 65) {
             this.field3452 = true;
          } else if (i_2 == 78) {
@@ -156,9 +156,9 @@ public class class254 extends class175 {
          } else if (i_2 == 112) {
             this.field3404 = class300_1.method5496(-1459053594);
          } else if (i_2 == 113) {
-            this.field3448 = class300_1.method5495((byte) 0);
+            this.field3448 = class300_1.method5495();
          } else if (i_2 == 114) {
-            this.field3419 = class300_1.method5495((byte) 0);
+            this.field3419 = class300_1.method5495();
          } else if (i_2 == 115) {
             this.field3450 = class300_1.method5504((byte) 34);
          } else if (i_2 == 139) {
@@ -187,7 +187,7 @@ public class class254 extends class175 {
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3, 44972047).method4644(1, 656500227);
+            return class26.method404(i_3).method4644(1, 656500227);
          }
       }
 
@@ -236,7 +236,7 @@ public class class254 extends class175 {
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3, 44972047).method4643(1, 2115855556);
+            return class26.method404(i_3).method4643(1, 2115855556);
          }
       }
 
@@ -504,7 +504,7 @@ public class class254 extends class175 {
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3, 44972047);
+            return class26.method404(i_3);
          }
       }
 

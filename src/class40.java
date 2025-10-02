@@ -611,7 +611,7 @@ public class class40 {
                   client.field764 = i_14;
                   class294.field3697 = class217_0;
                   if (class217_0.field2560[i_14] > 0) {
-                     class254 class254_9 = class26.method404(class217_0.field2560[i_14] - 1, 44972047);
+                     class254 class254_9 = class26.method404(class217_0.field2560[i_14] - 1);
                      if (client.field900 == 1 && class92.method2185(class268.method4987(class217_0, 2033009534), (byte) -58)) {
                         if (class217_0.field2688 != class63.field594 || i_14 != class23.field182) {
                            class188.method3644("Use", client.field738 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 31, class254_9.field3410, i_14, class217_0.field2688, -1926139785);

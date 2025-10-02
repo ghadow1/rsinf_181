@@ -6,7 +6,7 @@ public final class class87 extends class135 {
    int field1245;
 
    protected final class127 vmethod3253(int i_1) {
-      return class26.method404(this.field1244, 44972047).method4644(this.field1245, -260081327);
+      return class26.method404(this.field1244).method4644(this.field1245, -260081327);
    }
 
    static void method2053(int i_0, int i_1, int i_2, int i_3, int i_4) {

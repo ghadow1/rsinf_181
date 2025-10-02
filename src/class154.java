@@ -84,23 +84,23 @@ public class class154 extends class275 {
 
             int i_12;
             for (i_12 = 0; i_12 < 4; i_12++) {
-               class300_27.method5481(random_37.nextInt(), -126630647);
+               class300_27.method5481(random_37.nextInt());
             }
 
-            class300_27.method5481(ints_11[0], -1224831214);
-            class300_27.method5481(ints_11[1], 1711211224);
+            class300_27.method5481(ints_11[0]);
+            class300_27.method5481(ints_11[1]);
             class300_27.method5483(long_2);
             class300_27.method5483(0L);
 
             for (i_12 = 0; i_12 < 4; i_12++) {
-               class300_27.method5481(random_37.nextInt(), 1122210121);
+               class300_27.method5481(random_37.nextInt());
             }
 
             class300_27.method5517(class80.field1140, class80.field1141, (byte) -74);
             class300_10.method5655(10, 660232089);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
-               class300_10.method5481(random_37.nextInt(), 1757032950);
+               class300_10.method5481(random_37.nextInt());
             }
 
             class300_10.method5483(random_37.nextLong());

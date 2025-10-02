@@ -131,9 +131,9 @@ public class class253 extends class175 {
       } else if (i_2 == 28) {
          this.field3374 = class300_1.method5504((byte) 108);
       } else if (i_2 == 29) {
-         this.field3350 = class300_1.method5495((byte) 0);
+         this.field3350 = class300_1.method5495();
       } else if (i_2 == 39) {
-         this.field3380 = class300_1.method5495((byte) 0) * 25;
+         this.field3380 = class300_1.method5495() * 25;
       } else if (i_2 >= 30 && i_2 < 35) {
          this.field3377[i_2 - 30] = class300_1.method5503(-231155257);
          if (this.field3377[i_2 - 30].equalsIgnoreCase("Hidden")) {

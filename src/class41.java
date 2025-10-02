@@ -25,7 +25,7 @@ public class class41 {
       int i_10;
       int i_13;
       if ((i_3 & 0x40) != 0) {
-         i_6 = class299_0.method5722(1885742813);
+         i_6 = class299_0.readByte();
          int i_8;
          int i_11;
          int i_12;
@@ -51,14 +51,14 @@ public class class41 {
             }
          }
 
-         i_7 = class299_0.method5524((byte) -126);
+         i_7 = class299_0.method5524();
          if (i_7 > 0) {
             for (i_8 = 0; i_8 < i_7; i_8++) {
                i_9 = class299_0.method5508(497319136);
                i_10 = class299_0.method5508(497319136);
                if (i_10 != 32767) {
                   i_11 = class299_0.method5508(497319136);
-                  i_12 = class299_0.method5722(1716330151);
+                  i_12 = class299_0.readByte();
                   i_13 = i_10 > 0 ? class299_0.method5504((byte) 27) : i_12;
                   class66_2.method1655(i_9, client.field881, i_10, i_11, i_12, i_13, (byte) 52);
                } else {
@@ -69,8 +69,8 @@ public class class41 {
       }
 
       if ((i_3 & 0x200) != 0) {
-         class66_2.field986 = class299_0.method5534(-2031295382);
-         i_6 = class299_0.method5542((byte) 87);
+         class66_2.field986 = class299_0.readShort();
+         i_6 = class299_0.readInt();
          class66_2.field990 = i_6 >> 16;
          class66_2.field989 = (i_6 & 0xffff) + client.field881;
          class66_2.field987 = 0;
@@ -85,16 +85,16 @@ public class class41 {
       }
 
       if ((i_3 & 0x1000) != 0) {
-         b_5 = class299_0.method5694(1943789766);
+         b_5 = class299_0.method5694();
       }
 
       if ((i_3 & 0x400) != 0) {
          class66_2.field991 = class299_0.method5528(-166242071);
-         class66_2.field993 = class299_0.method5694(-1916852717);
-         class66_2.field992 = class299_0.method5694(1689389617);
+         class66_2.field993 = class299_0.method5694();
+         class66_2.field992 = class299_0.method5694();
          class66_2.field983 = class299_0.method5528(-166242071);
-         class66_2.field995 = class299_0.method5518((byte) 0) + client.field881;
-         class66_2.field996 = class299_0.method5532((byte) 118) + client.field881;
+         class66_2.field995 = class299_0.method5518() + client.field881;
+         class66_2.field996 = class299_0.method5532() + client.field881;
          class66_2.field997 = class299_0.method5496(-1459053594);
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
@@ -129,7 +129,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x4) != 0) {
-         class66_2.field976 = class299_0.method5532((byte) 46);
+         class66_2.field976 = class299_0.method5532();
          if (class66_2.field1003 == 0) {
             class66_2.field1000 = class66_2.field976;
             class66_2.field976 = -1;
@@ -137,7 +137,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x1) != 0) {
-         i_6 = class299_0.method5525(1184955181);
+         i_6 = class299_0.method5525();
          byte[] bytes_14 = new byte[i_6];
          class300 class300_15 = new class300(bytes_14);
          class299_0.method5544(bytes_14, 0, i_6, -467001406);
@@ -146,20 +146,20 @@ public class class41 {
       }
 
       if ((i_3 & 0x2) != 0) {
-         class66_2.field975 = class299_0.method5518((byte) 0);
+         class66_2.field975 = class299_0.method5518();
          if (class66_2.field975 == 65535) {
             class66_2.field975 = -1;
          }
       }
 
       if ((i_3 & 0x800) != 0) {
-         class89.field1250[i_1] = class299_0.method5694(-882379660);
+         class89.field1250[i_1] = class299_0.method5694();
       }
 
       if ((i_3 & 0x10) != 0) {
-         i_6 = class299_0.method5518((byte) 0);
-         class228 class228_20 = (class228) class107.method2476(class156.method3419(390349850), class299_0.method5504((byte) 52), (byte) 0);
-         boolean bool_18 = class299_0.method5524((byte) -116) == 1;
+         i_6 = class299_0.method5518();
+         class228 class228_20 = (class228) class107.method2476(class156.method3419(390349850), class299_0.method5504((byte) 52));
+         boolean bool_18 = class299_0.method5524() == 1;
          i_9 = class299_0.method5504((byte) 81);
          i_10 = class299_0.field3732;
          if (class66_2.field621 != null && class66_2.field613 != null) {

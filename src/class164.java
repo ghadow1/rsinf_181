@@ -4,7 +4,7 @@ public class class164 extends class170 {
    int field2014 = 256;
    int field2013 = 1;
    int field2015 = 0;
-   long field2012 = class206.method3939(-1803392760);
+   long field2012 = class206.method3939();
    int field2016;
 
    class164() {
@@ -19,7 +19,7 @@ public class class164 extends class170 {
       int i_5 = this.field2013;
       this.field2014 = 300;
       this.field2013 = 1;
-      this.field2012 = class206.method3939(-1700892153);
+      this.field2012 = class206.method3939();
       if (this.field2011[this.field2016] == 0L) {
          this.field2014 = i_4;
          this.field2013 = i_5;

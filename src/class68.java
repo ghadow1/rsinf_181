@@ -15,7 +15,7 @@ public final class class68 extends class180 {
    int field941 = 0;
    int field931 = -1;
 
-   static void method1653(int i_0, int i_1, int i_2) {
+   static void method1653(int i_0, int i_1) {
       long long_3 = (long)((i_0 << 16) + i_1);
       class232 class232_5 = (class232) class236.field3180.method5952(long_3);
       if (class232_5 != null) {
@@ -23,13 +23,13 @@ public final class class68 extends class180 {
       }
    }
 
-   static final class61 method1652(int i_0, int i_1, int i_2, byte b_3) {
+   static final class61 method1652(int i_0, int i_1, int i_2) {
       class61 class61_4 = new class61();
       class61_4.field571 = i_1;
       class61_4.field569 = i_2;
       client.field816.method5951(class61_4, (long)i_0);
       class12.method146(i_1, -2080937521);
-      class217 class217_5 = class80.method1978(i_0, -1789424359);
+      class217 class217_5 = class80.method1978(i_0);
       class224.method4120(class217_5, -1083646474);
       if (client.field850 != null) {
          class224.method4120(client.field850, -1263151193);

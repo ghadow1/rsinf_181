@@ -19,7 +19,7 @@ public class class206 extends class205 {
       return bytes_2;
    }
 
-   public static final synchronized long method3939(int i_0) {
+   public static final synchronized long method3939() {
       long long_1 = System.currentTimeMillis();
       if (long_1 < class46.field416) {
          class2.field4 += class46.field416 - long_1;
@@ -29,7 +29,7 @@ public class class206 extends class205 {
       return class2.field4 + long_1;
    }
 
-   static final void method3938(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
+   static final void method3938(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       if (i_2 >= 1 && i_3 >= 1 && i_2 <= 102 && i_3 <= 102) {
          if (client.field656 && i_0 != class42.field372) {
             return;
@@ -82,7 +82,7 @@ public class class206 extends class205 {
                }
 
                if (class253_14.field3382 != 0) {
-                  client.field710[i_0].method3565(i_2, i_3, class253_14.field3365, class253_14.field3366, i_17, class253_14.field3368, (byte) -77);
+                  client.field710[i_0].method3565(i_2, i_3, class253_14.field3365, class253_14.field3366, i_17, class253_14.field3368);
                }
             }
 
@@ -90,7 +90,7 @@ public class class206 extends class205 {
                class5.field22.method3201(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15, (short) 4095);
                if (class253_14.field3382 == 1) {
-                  client.field710[i_0].method3567(i_2, i_3, (byte) -34);
+                  client.field710[i_0].method3567(i_2, i_3);
                }
             }
          }

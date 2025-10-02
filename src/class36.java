@@ -179,10 +179,10 @@ public final class class36 {
          this.field312.method405((byte) 32);
          this.field319 = this.field312.method338(-1534939923) * 64;
          this.field325 = this.field312.method340(473515020) * 64;
-         this.field314 = (this.field312.method339(419584711) - this.field312.method338(845768281) + 1) * 64;
-         this.field324 = (this.field312.method341(-850737822) - this.field312.method340(-427693058) + 1) * 64;
-         int i_17 = this.field312.method339(1490557672) - this.field312.method338(-264563708) + 1;
-         int i_10 = this.field312.method341(947938392) - this.field312.method340(161263687) + 1;
+         this.field314 = (this.field312.method339() - this.field312.method338(845768281) + 1) * 64;
+         this.field324 = (this.field312.method341() - this.field312.method340(-427693058) + 1) * 64;
+         int i_17 = this.field312.method339() - this.field312.method338(-264563708) + 1;
+         int i_10 = this.field312.method341() - this.field312.method340(161263687) + 1;
          System.nanoTime();
          System.nanoTime();
          class88.method2069(-1709939450);
@@ -195,14 +195,14 @@ public final class class36 {
             int i_14 = class15_12.field158;
             int i_15 = i_13 - this.field312.method338(-786100799);
             int i_16 = i_14 - this.field312.method340(-1970340826);
-            this.field315[i_15][i_16] = new class29(i_13, i_14, this.field312.method325((byte) -26), this.field322);
+            this.field315[i_15][i_16] = new class29(i_13, i_14, this.field312.method325(), this.field322);
             this.field315[i_15][i_16].method423(class15_12, this.field312.field331, 1340237556);
          }
 
          for (int i_18 = 0; i_18 < i_17; i_18++) {
             for (int i_19 = 0; i_19 < i_10; i_19++) {
                if (this.field315[i_18][i_19] == null) {
-                  this.field315[i_18][i_19] = new class29(this.field312.method338(-134766221) + i_18, this.field312.method340(-1532237977) + i_19, this.field312.method325((byte) -46), this.field322);
+                  this.field315[i_18][i_19] = new class29(this.field312.method338(-134766221) + i_18, this.field312.method340(-1532237977) + i_19, this.field312.method325(), this.field322);
                   this.field315[i_18][i_19].method424(this.field312.field330, this.field312.field331, -523355957);
                }
             }

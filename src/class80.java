@@ -8,7 +8,7 @@ public class class80 {
    static final BigInteger field1140 = new BigInteger("80782894952180643741752986186714059433953886149239752893425047584684715842049");
    static final BigInteger field1141 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
 
-   public static class217 method1978(int i_0, int i_1) {
+   public static class217 method1978(int i_0) {
       int i_2 = i_0 >> 16;
       int i_3 = i_0 & 0xffff;
       if (class217.field2556[i_2] == null || class217.field2556[i_2][i_3] == null) {
@@ -21,7 +21,7 @@ public class class80 {
       return class217.field2556[i_2][i_3];
    }
 
-   public static int method1979(byte[] bytes_0, int i_1, CharSequence charsequence_2, byte b_3) {
+   public static int method1979(byte[] bytes_0, int i_1, CharSequence charsequence_2) {
       int i_4 = charsequence_2.length();
       int i_5 = i_1;
 
@@ -42,7 +42,7 @@ public class class80 {
       return i_5 - i_1;
    }
 
-   static final void method1982(int i_0) {
+   static final void method1982() {
       int i_1;
       int i_2;
       int i_3;

@@ -13,7 +13,7 @@ public class class272 {
 
    public void method5014(byte b_1) {
       if (this.field3602 != -1L) {
-         this.field3607 = class206.method3939(-1613301334) - this.field3602;
+         this.field3607 = class206.method3939() - this.field3602;
          this.field3602 = -1L;
       }
 
@@ -23,19 +23,19 @@ public class class272 {
 
    public void method4993(int i_1) {
       if (this.field3603 != -1L) {
-         this.field3604 = class206.method3939(-974551883) - this.field3603;
+         this.field3604 = class206.method3939() - this.field3603;
          this.field3603 = -1L;
       }
 
    }
 
    public void method4996(int i_1, int i_2) {
-      this.field3602 = class206.method3939(-1845070803);
+      this.field3602 = class206.method3939();
       this.field3608 = i_1;
    }
 
    public void method5005(int i_1) {
-      this.field3603 = class206.method3939(-1765057269);
+      this.field3603 = class206.method3939();
    }
 
    public void method4999(class300 class300_1, int i_2) {

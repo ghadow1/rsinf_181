@@ -15,7 +15,7 @@ public class class25 {
       class217 class217_4;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_4 = class80.method1978(class76.field1098[--class70.field1014], -1590922142);
+         class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
       } else {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }
@@ -39,7 +39,7 @@ public class class25 {
          int i_6 = class76.field1098[class70.field1014 + 1];
          class217_4.field2690 = i_5;
          class217_4.field2655 = i_6;
-         class254 class254_7 = class26.method404(i_5, 44972047);
+         class254 class254_7 = class26.method404(i_5);
          class217_4.field2615 = class254_7.field3418;
          class217_4.field2616 = class254_7.field3447;
          class217_4.field2640 = class254_7.field3420;
@@ -70,7 +70,7 @@ public class class25 {
       int i_4 = 0;
 
       for (int i_5 = 0; i_5 < class254.field3455; i_5++) {
-         class254 class254_6 = class26.method404(i_5, 44972047);
+         class254 class254_6 = class26.method404(i_5);
          if ((!bool_1 || class254_6.field3452) && class254_6.field3444 == -1 && class254_6.field3449.toLowerCase().indexOf(string_0) != -1) {
             if (i_4 >= 250) {
                class257.field3502 = -1;
@@ -98,7 +98,7 @@ public class class25 {
       String[] arr_9 = new String[class257.field3502];
 
       for (int i_10 = 0; i_10 < class257.field3502; i_10++) {
-         arr_9[i_10] = class26.method404(shorts_3[i_10], 44972047).field3449;
+         arr_9[i_10] = class26.method404(shorts_3[i_10]).field3449;
       }
 
       class82.method1991(arr_9, class39.field336, (short) -2750);

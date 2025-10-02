@@ -236,7 +236,7 @@ public class class333 {
 
                if (bool_9) {
                   class187 class187_12 = class235.method4265(class183.field2248, client.field880.field1313, 1775123545);
-                  class187_12.field2333.method5539(this.field4024.method3971(1080399232), (byte) -31);
+                  class187_12.field2333.method5539(this.field4024.method3971(1080399232));
                   client.field880.method2219(class187_12, 2067459847);
                   this.field3982 = 0L;
                }
@@ -251,7 +251,7 @@ public class class333 {
    final void method6305(int i_1, int i_2, boolean bool_3, int i_4) {
       this.field3990 = i_1;
       this.field3999 = i_2;
-      class206.method3939(-1069420175);
+      class206.method3939();
       if (bool_3) {
          this.method6306((byte) 1);
       }
@@ -448,7 +448,7 @@ public class class333 {
          class26 class26_12 = new class26();
          class26_12.method344(class300_11, ints_9[i_10], (byte) 0);
          this.field3992.put(class26_12.method369(-229522962), class26_12);
-         if (class26_12.method334(-1524903705)) {
+         if (class26_12.method334()) {
             this.field3985 = class26_12;
          }
       }
@@ -580,7 +580,7 @@ public class class333 {
    }
 
    public void method6301(int i_1, int i_2, boolean bool_3, boolean bool_4, byte b_5) {
-      long long_6 = class206.method3939(-2069806468);
+      long long_6 = class206.method3939();
       this.method6302(i_1, i_2, bool_4, long_6);
       if (!this.method6307(-1798677301) && (bool_4 || bool_3)) {
          if (bool_4) {

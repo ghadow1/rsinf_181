@@ -123,7 +123,7 @@ public class class153 extends class275 {
          client.field670.method4886();
 
          for (i_15 = 0; i_15 < 4; i_15++) {
-            client.field710[i_15].method3558(867257132);
+            client.field710[i_15].method3558();
          }
 
       }

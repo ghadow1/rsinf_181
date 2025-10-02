@@ -12,7 +12,7 @@ public class class9 {
    }
 
    public class9(class300 class300_1, boolean bool_2) {
-      this.field62 = class300_1.method5495((byte) 0);
+      this.field62 = class300_1.method5495();
       this.field59 = class300_1.method5496(-1459053594);
       this.field60 = class300_1.method5499((byte) -8);
       this.field61 = class300_1.method5499((byte) -59);
@@ -65,7 +65,7 @@ public class class9 {
             String str_17 = "";
             class26_12 = class31.method538(1201574134).method6327(i_4, -733609439);
             if (class26_12 != null) {
-               str_17 = class26_12.method335(-1054173331);
+               str_17 = class26_12.method335();
             }
 
             class76.field1093[++class221.field2747 - 1] = str_17;
@@ -114,7 +114,7 @@ public class class9 {
                   if (class26_14 == null) {
                      class76.field1098[++class70.field1014 - 1] = 0;
                   } else {
-                     class76.field1098[++class70.field1014 - 1] = class26_14.method345(1084515082).method3971(-462286769);
+                     class76.field1098[++class70.field1014 - 1] = class26_14.method345().method3971(-462286769);
                   }
 
                   return 1;
@@ -125,8 +125,8 @@ public class class9 {
                      class76.field1098[++class70.field1014 - 1] = 0;
                      class76.field1098[++class70.field1014 - 1] = 0;
                   } else {
-                     class76.field1098[++class70.field1014 - 1] = (class26_14.method339(-1992426641) - class26_14.method338(-225927464) + 1) * 64;
-                     class76.field1098[++class70.field1014 - 1] = (class26_14.method341(-308162102) - class26_14.method340(-187266563) + 1) * 64;
+                     class76.field1098[++class70.field1014 - 1] = (class26_14.method339() - class26_14.method338(-225927464) + 1) * 64;
+                     class76.field1098[++class70.field1014 - 1] = (class26_14.method341() - class26_14.method340(-187266563) + 1) * 64;
                   }
 
                   return 1;
@@ -141,8 +141,8 @@ public class class9 {
                   } else {
                      class76.field1098[++class70.field1014 - 1] = class26_14.method338(-528143039) * 64;
                      class76.field1098[++class70.field1014 - 1] = class26_14.method340(-1424093929) * 64;
-                     class76.field1098[++class70.field1014 - 1] = class26_14.method339(-529422426) * 64 + 64 - 1;
-                     class76.field1098[++class70.field1014 - 1] = class26_14.method341(-677581776) * 64 + 64 - 1;
+                     class76.field1098[++class70.field1014 - 1] = class26_14.method339() * 64 + 64 - 1;
+                     class76.field1098[++class70.field1014 - 1] = class26_14.method341() * 64 + 64 - 1;
                   }
 
                   return 1;

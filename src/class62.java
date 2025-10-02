@@ -56,7 +56,7 @@ public class class62 extends class180 {
    }
 
    static int method1127(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = class80.method1978(class76.field1098[--class70.field1014], -1295660624);
+      class217 class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
       if (i_0 == 2500) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2577;
          return 1;

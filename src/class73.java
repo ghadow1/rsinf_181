@@ -73,8 +73,8 @@ public class class73 {
 
       while (iterator_3.hasNext()) {
          Entry map$entry_4 = (Entry) iterator_3.next();
-         class300_2.method5481(((Integer) map$entry_4.getKey()).intValue(), 1409433322);
-         class300_2.method5481(((Integer) map$entry_4.getValue()).intValue(), -706045548);
+         class300_2.method5481(((Integer) map$entry_4.getKey()).intValue());
+         class300_2.method5481(((Integer) map$entry_4.getValue()).intValue());
       }
 
       class300_2.method5485(this.field1065 != null ? this.field1065 : "", 1759387252);

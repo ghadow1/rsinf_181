@@ -126,9 +126,9 @@ public class class256 extends class175 {
       } else if (i_2 == 99) {
          this.field3473 = true;
       } else if (i_2 == 100) {
-         this.field3489 = class300_1.method5495((byte) 0);
+         this.field3489 = class300_1.method5495();
       } else if (i_2 == 101) {
-         this.field3477 = class300_1.method5495((byte) 0) * 5;
+         this.field3477 = class300_1.method5495() * 5;
       } else if (i_2 == 102) {
          this.field3491 = class300_1.method5496(-1459053594);
       } else if (i_2 == 103) {

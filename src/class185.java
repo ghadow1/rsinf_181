@@ -67,12 +67,12 @@ public class class185 {
          int i_10;
          if (i_9 == 0) {
             for (i_10 = 0; i_10 < i_7; i_10++) {
-               bytes_8[i_10] = class300_2.method5495((byte) 0);
+               bytes_8[i_10] = class300_2.method5495();
             }
          } else if (i_9 == 1) {
             for (i_10 = 0; i_10 < i_5; i_10++) {
                for (int i_11 = 0; i_11 < i_6; i_11++) {
-                  bytes_8[i_10 + i_11 * i_5] = class300_2.method5495((byte) 0);
+                  bytes_8[i_10 + i_11 * i_5] = class300_2.method5495();
                }
             }
          }

@@ -52,7 +52,7 @@ final class class5 implements Comparator {
 
          class87 class87_7;
          for (class87_7 = (class87) class261_3.method4892(); class87_7 != null; class87_7 = (class87) class261_3.method4894()) {
-            class254 class254_8 = class26.method404(class87_7.field1244, 44972047);
+            class254 class254_8 = class26.method404(class87_7.field1244);
             long long_9 = (long)class254_8.field3428;
             if (class254_8.field3423 == 1) {
                long_9 *= (long)(class87_7.field1245 + 1);

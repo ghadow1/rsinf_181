@@ -22,9 +22,9 @@ public class class28 {
 
    public static void method418(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
       class187 class187_5 = class235.method4265(class183.field2296, client.field880.field1313, 1775123545);
-      class187_5.field2333.method5539(bool_3 ? client.field855 : 0, (byte) -71);
-      class187_5.field2333.method5634(i_1, (byte) 3);
-      class187_5.field2333.method5521(i_2, -83332801);
+      class187_5.field2333.method5539(bool_3 ? client.field855 : 0);
+      class187_5.field2333.method5634(i_1);
+      class187_5.field2333.method5521(i_2);
       class187_5.field2333.method5479(i_0, (byte) -90);
       client.field880.method2219(class187_5, 2067459847);
    }
@@ -60,7 +60,7 @@ public class class28 {
             }
 
             if (i_8 <= 49) {
-               class55.field505[i_1][i_2][i_3] = class300_0.method5495((byte) 0);
+               class55.field505[i_1][i_2][i_3] = class300_0.method5495();
                class55.field506[i_1][i_2][i_3] = (byte)((i_8 - 2) / 4);
                class268.field3561[i_1][i_2][i_3] = (byte)(i_8 - 2 + i_6 & 0x3);
             } else if (i_8 <= 81) {

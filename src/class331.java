@@ -92,10 +92,10 @@ public class class331 extends class180 {
       class300_1.method5655(this.field3957, 1730851184);
 
       for (int i_3 = 0; i_3 < this.field3960.length; i_3++) {
-         class300_1.method5481(this.field3960[i_3], -1022982373);
+         class300_1.method5481(this.field3960[i_3]);
       }
 
-      class300_1.method5481(this.field3935, -1774821419);
+      class300_1.method5481(this.field3935);
       class300_1.method5486(this.field3931, 1411654389);
    }
 

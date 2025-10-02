@@ -21,7 +21,7 @@ public class class83 {
       if (i_0 >= 2000) {
          i_0 -= 1000;
          i_5 = class76.field1098[--class70.field1014];
-         class217_4 = class80.method1978(i_5, -2057883066);
+         class217_4 = class80.method1978(i_5);
       } else {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }
@@ -175,7 +175,7 @@ public class class83 {
             return 1;
          } else if (i_0 == 1125) {
             i_9 = class76.field1098[--class70.field1014];
-            class323 class323_7 = (class323) class107.method2476(class105.method2405((byte) 69), i_9, (byte) 0);
+            class323 class323_7 = (class323) class107.method2476(class105.method2405((byte) 69), i_9);
             if (class323_7 != null) {
                class217_4.field2693 = class323_7;
                class224.method4120(class217_4, -1838794485);

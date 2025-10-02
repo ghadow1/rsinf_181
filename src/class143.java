@@ -109,11 +109,11 @@ public class class143 implements Runnable {
    static int method3306(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       class217 class217_4;
       if (i_0 == 2700) {
-         class217_4 = class80.method1978(class76.field1098[--class70.field1014], -1792645732);
+         class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
          class76.field1098[++class70.field1014 - 1] = class217_4.field2690;
          return 1;
       } else if (i_0 == 2701) {
-         class217_4 = class80.method1978(class76.field1098[--class70.field1014], -1666447513);
+         class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
          if (class217_4.field2690 != -1) {
             class76.field1098[++class70.field1014 - 1] = class217_4.field2655;
          } else {

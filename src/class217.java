@@ -537,10 +537,10 @@ public class class217 extends class180 {
          this.field2576 = class300_1.method5496(-1459053594);
       }
 
-      this.field2638 = class300_1.method5495((byte) 0);
-      this.field2572 = class300_1.method5495((byte) 0);
-      this.field2694 = class300_1.method5495((byte) 0);
-      this.field2570 = class300_1.method5495((byte) 0);
+      this.field2638 = class300_1.method5495();
+      this.field2572 = class300_1.method5495();
+      this.field2694 = class300_1.method5495();
+      this.field2570 = class300_1.method5495();
       this.field2583 = class300_1.method5496(-1459053594);
       if (this.field2583 == 65535) {
          this.field2583 = -1;
@@ -788,7 +788,7 @@ public class class217 extends class180 {
             }
 
             if (i_6 == 4) {
-               class254 class254_10 = class26.method404(i_7, 44972047);
+               class254 class254_10 = class26.method404(i_7);
                class121_9 = class254_10.method4643(10, 1813353109);
                if (class121_9 == null) {
                   field2562 = true;

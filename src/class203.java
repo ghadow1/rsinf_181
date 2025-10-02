@@ -164,8 +164,8 @@ public class class203 extends class180 {
       class300_1.field3732 += i_5 * 3;
       this.field2491 = new byte[i_4];
       class300 class300_51 = new class300(this.field2491);
-      class300_51.method5481(1297377380, 194212452);
-      class300_51.method5481(6, -1789150025);
+      class300_51.method5481(1297377380);
+      class300_51.method5481(6);
       class300_51.method5479(i_2 > 1 ? 1 : 0, (byte) -49);
       class300_51.method5479(i_2, (byte) -87);
       class300_51.method5479(i_3, (byte) 33);
@@ -182,7 +182,7 @@ public class class203 extends class180 {
 
       label235:
       for (int i_60 = 0; i_60 < i_2; i_60++) {
-         class300_51.method5481(1297379947, -2095140300);
+         class300_51.method5481(1297379947);
          class300_51.field3732 += 4;
          int i_61 = class300_51.field3732;
          int i_62 = -1;

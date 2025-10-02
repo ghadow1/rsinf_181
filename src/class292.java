@@ -372,7 +372,7 @@ public class class292 {
                                  }
 
                                  if (class217_11.field2563 && class217_11.field2690 != -1) {
-                                    class254 class254_46 = class26.method404(class217_11.field2690, 44972047);
+                                    class254 class254_46 = class26.method404(class217_11.field2690);
                                     string_45 = class254_46.field3449;
                                     if (string_45 == null) {
                                        string_45 = "null";
@@ -462,7 +462,7 @@ public class class292 {
                                  class127 class127_42 = null;
                                  i_23 = 0;
                                  if (class217_11.field2690 != -1) {
-                                    class254_34 = class26.method404(class217_11.field2690, 44972047);
+                                    class254_34 = class26.method404(class217_11.field2690);
                                     if (class254_34 != null) {
                                        class254_34 = class254_34.method4656(class217_11.field2655, (byte) -52);
                                        class127_42 = class254_34.method4644(1, -682416240);
@@ -524,7 +524,7 @@ public class class292 {
                                     for (i_22 = 0; i_22 < class217_11.field2576; i_22++) {
                                        for (i_23 = 0; i_23 < class217_11.field2670; i_23++) {
                                           if (class217_11.field2560[i_21] > 0) {
-                                             class254_34 = class26.method404(class217_11.field2560[i_21] - 1, 44972047);
+                                             class254_34 = class26.method404(class217_11.field2560[i_21] - 1);
                                              String string_35;
                                              if (class254_34.field3423 != 1 && class217_11.field2705[i_21] == 1) {
                                                 string_35 = class73.method1756(16748608, -844505624) + class254_34.field3449 + "</col>";
@@ -649,7 +649,7 @@ public class class292 {
       int i_4;
       if (i_0 == 4200) {
          i_4 = class76.field1098[--class70.field1014];
-         class76.field1093[++class221.field2747 - 1] = class26.method404(i_4, 44972047).field3449;
+         class76.field1093[++class221.field2747 - 1] = class26.method404(i_4).field3449;
          return 1;
       } else {
          int i_5;
@@ -658,7 +658,7 @@ public class class292 {
             class70.field1014 -= 2;
             i_4 = class76.field1098[class70.field1014];
             i_5 = class76.field1098[class70.field1014 + 1];
-            class254_6 = class26.method404(i_4, 44972047);
+            class254_6 = class26.method404(i_4);
             if (i_5 >= 1 && i_5 <= 5 && class254_6.field3426[i_5 - 1] != null) {
                class76.field1093[++class221.field2747 - 1] = class254_6.field3426[i_5 - 1];
             } else {
@@ -670,7 +670,7 @@ public class class292 {
             class70.field1014 -= 2;
             i_4 = class76.field1098[class70.field1014];
             i_5 = class76.field1098[class70.field1014 + 1];
-            class254_6 = class26.method404(i_4, 44972047);
+            class254_6 = class26.method404(i_4);
             if (i_5 >= 1 && i_5 <= 5 && class254_6.field3427[i_5 - 1] != null) {
                class76.field1093[++class221.field2747 - 1] = class254_6.field3427[i_5 - 1];
             } else {
@@ -680,17 +680,17 @@ public class class292 {
             return 1;
          } else if (i_0 == 4203) {
             i_4 = class76.field1098[--class70.field1014];
-            class76.field1098[++class70.field1014 - 1] = class26.method404(i_4, 44972047).field3428;
+            class76.field1098[++class70.field1014 - 1] = class26.method404(i_4).field3428;
             return 1;
          } else if (i_0 == 4204) {
             i_4 = class76.field1098[--class70.field1014];
-            class76.field1098[++class70.field1014 - 1] = class26.method404(i_4, 44972047).field3423 == 1 ? 1 : 0;
+            class76.field1098[++class70.field1014 - 1] = class26.method404(i_4).field3423 == 1 ? 1 : 0;
             return 1;
          } else {
             class254 class254_7;
             if (i_0 == 4205) {
                i_4 = class76.field1098[--class70.field1014];
-               class254_7 = class26.method404(i_4, 44972047);
+               class254_7 = class26.method404(i_4);
                if (class254_7.field3444 == -1 && class254_7.field3443 >= 0) {
                   class76.field1098[++class70.field1014 - 1] = class254_7.field3443;
                } else {
@@ -700,7 +700,7 @@ public class class292 {
                return 1;
             } else if (i_0 == 4206) {
                i_4 = class76.field1098[--class70.field1014];
-               class254_7 = class26.method404(i_4, 44972047);
+               class254_7 = class26.method404(i_4);
                if (class254_7.field3444 >= 0 && class254_7.field3443 >= 0) {
                   class76.field1098[++class70.field1014 - 1] = class254_7.field3443;
                } else {
@@ -710,11 +710,11 @@ public class class292 {
                return 1;
             } else if (i_0 == 4207) {
                i_4 = class76.field1098[--class70.field1014];
-               class76.field1098[++class70.field1014 - 1] = class26.method404(i_4, 44972047).field3425 ? 1 : 0;
+               class76.field1098[++class70.field1014 - 1] = class26.method404(i_4).field3425 ? 1 : 0;
                return 1;
             } else if (i_0 == 4208) {
                i_4 = class76.field1098[--class70.field1014];
-               class254_7 = class26.method404(i_4, 44972047);
+               class254_7 = class26.method404(i_4);
                if (class254_7.field3439 == -1 && class254_7.field3400 >= 0) {
                   class76.field1098[++class70.field1014 - 1] = class254_7.field3400;
                } else {
@@ -724,7 +724,7 @@ public class class292 {
                return 1;
             } else if (i_0 == 4209) {
                i_4 = class76.field1098[--class70.field1014];
-               class254_7 = class26.method404(i_4, 44972047);
+               class254_7 = class26.method404(i_4);
                if (class254_7.field3439 >= 0 && class254_7.field3400 >= 0) {
                   class76.field1098[++class70.field1014 - 1] = class254_7.field3400;
                } else {

@@ -71,7 +71,7 @@ public class class187 extends class180 {
             class5.field22.method3066();
 
             for (i_2 = 0; i_2 < 4; i_2++) {
-               client.field710[i_2].method3558(-1772918444);
+               client.field710[i_2].method3558();
             }
 
             int i_50;
@@ -410,7 +410,7 @@ public class class187 extends class180 {
             class187 class187_59;
             if (class27.field233.method931(285080873)) {
                class187_59 = class235.method4265(class183.field2212, client.field880.field1313, 1775123545);
-               class187_59.field2333.method5481(1057001181, 1290532184);
+               class187_59.field2333.method5481(1057001181);
                client.field880.method2219(class187_59, 2067459847);
             }
 

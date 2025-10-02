@@ -32,10 +32,10 @@ public class class26 {
       this.field224 = new LinkedList();
 
       for (int i_5 = 0; i_5 < i_4; i_5++) {
-         this.field224.add(this.method327(class300_1, -1426808810));
+         this.field224.add(this.method327(class300_1));
       }
 
-      this.method332(-1983561837);
+      this.method332();
    }
 
    public boolean method329(int i_1, int i_2, int i_3) {
@@ -140,7 +140,7 @@ public class class26 {
       return this.field228;
    }
 
-   void method332(int i_1) {
+   void method332() {
       Iterator iterator_2 = this.field224.iterator();
 
       while (iterator_2.hasNext()) {
@@ -150,10 +150,10 @@ public class class26 {
 
    }
 
-   class37 method327(class300 class300_1, int i_2) {
+   class37 method327(class300 class300_1) {
       int i_3 = class300_1.method5504((byte) 34);
       class20[] arr_4 = new class20[] {class20.field147, class20.field149, class20.field148, class20.field146};
-      class20 class20_5 = (class20) class107.method2476(arr_4, i_3, (byte) 0);
+      class20 class20_5 = (class20) class107.method2476(arr_4, i_3);
       Object obj_6 = null;
       switch(class20_5.field150) {
       case 0:
@@ -176,31 +176,31 @@ public class class26 {
       return (class37) obj_6;
    }
 
-   public int method339(int i_1) {
+   public int method339() {
       return this.field223;
    }
 
-   public boolean method334(int i_1) {
+   public boolean method334() {
       return this.field215;
    }
 
-   public int method341(int i_1) {
+   public int method341() {
       return this.field222;
    }
 
-   int method325(byte b_1) {
+   int method325() {
       return this.field216;
    }
 
-   public String method335(int i_1) {
+   public String method335() {
       return this.field219;
    }
 
-   public class213 method345(int i_1) {
+   public class213 method345() {
       return new class213(this.field218);
    }
 
-   public static class254 method404(int i_0, int i_1) {
+   public static class254 method404(int i_0) {
       class254 class254_2 = (class254) class254.field3407.method3320((long)i_0);
       if (class254_2 != null) {
          return class254_2;
@@ -214,15 +214,15 @@ public class class26 {
 
          class254_2.method4637(1271908540);
          if (class254_2.field3444 != -1) {
-            class254_2.method4666(method404(class254_2.field3444, 44972047), method404(class254_2.field3443, 44972047), -1452987438);
+            class254_2.method4666(method404(class254_2.field3444), method404(class254_2.field3443), -1452987438);
          }
 
          if (class254_2.field3454 != -1) {
-            class254_2.method4641(method404(class254_2.field3454, 44972047), method404(class254_2.field3453, 44972047), (byte) 0);
+            class254_2.method4641(method404(class254_2.field3454), method404(class254_2.field3453), (byte) 0);
          }
 
          if (class254_2.field3439 != -1) {
-            class254_2.method4689(method404(class254_2.field3439, 44972047), method404(class254_2.field3400, 44972047), (byte) 109);
+            class254_2.method4689(method404(class254_2.field3439), method404(class254_2.field3400), (byte) 109);
          }
 
          if (!class134.field1868 && class254_2.field3425) {
@@ -256,7 +256,7 @@ public class class26 {
    }
 
    public static boolean method365(int i_0) {
-      long long_1 = class206.method3939(-1680767402);
+      long long_1 = class206.method3939();
       int i_3 = (int)(long_1 - class236.field3169);
       class236.field3169 = long_1;
       if (i_3 > 200) {
@@ -360,7 +360,7 @@ public class class26 {
                         class226.field3071 = class232_14;
                         class240.field3209 = new class300(i_15 + i_11 + class226.field3071.field3122);
                         class240.field3209.method5655(i_10, 255539407);
-                        class240.field3209.method5481(i_11, -1169161093);
+                        class240.field3209.method5481(i_11);
                         class236.field3175 = 8;
                         class236.field3174.field3732 = 0;
                      } else if (class236.field3175 == 0) {

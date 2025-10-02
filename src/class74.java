@@ -144,7 +144,7 @@ public class class74 {
 
    final void method1762(byte b_1) {
       for (class286 class286_2 = (class286) this.field1070.field3642.method4922(); class286_2 != null; class286_2 = (class286) this.field1070.field3642.method4923()) {
-         if ((long)class286_2.field3661 < class206.method3939(-1057737493) / 1000L - 5L) {
+         if ((long)class286_2.field3661 < class206.method3939() / 1000L - 5L) {
             if (class286_2.field3663 > 0) {
                class62.method1132(5, "", class286_2.field3662 + " has logged in.", -2103264112);
             }
@@ -314,7 +314,7 @@ public class class74 {
                } else if (i_0 == 3923) {
                   i_4 = class76.field1098[--class70.field1014];
                   class7_12 = (class7) class68.field942.field36.get(i_4);
-                  long long_6 = class206.method3939(-1518171261) - class279.field3632 - class7_12.field42;
+                  long long_6 = class206.method3939() - class279.field3632 - class7_12.field42;
                   int i_8 = (int)(long_6 / 3600000L);
                   int i_9 = (int)((long_6 - (long)(i_8 * 3600000)) / 60000L);
                   int i_10 = (int)((long_6 - (long)(i_8 * 3600000) - (long)(i_9 * 60000)) / 1000L);

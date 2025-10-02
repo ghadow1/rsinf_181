@@ -152,7 +152,7 @@ final class class10 implements Comparator {
          }
 
          if (i_5 == 18) {
-            client.field678 = (class84) class107.method2476(class233.method4141((byte) -27), i_3, (byte) 0);
+            client.field678 = (class84) class107.method2476(class233.method4141((byte) -27), i_3);
             if (client.field678 == null) {
                client.field678 = class84.field1173;
             }
@@ -167,7 +167,7 @@ final class class10 implements Comparator {
          }
 
          if (i_5 == 22) {
-            client.field679 = (class84) class107.method2476(class233.method4141((byte) 48), i_3, (byte) 0);
+            client.field679 = (class84) class107.method2476(class233.method4141((byte) 48), i_3);
             if (client.field679 == null) {
                client.field679 = class84.field1173;
             }

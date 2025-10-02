@@ -65,7 +65,7 @@ public class class70 extends class180 {
       class97 class97_2 = (class97) class96.field1324.method4838();
       if (class97_2 != null) {
          int i_3 = class299_0.field3732;
-         class299_0.method5481(class97_2.field1340, -890185318);
+         class299_0.method5481(class97_2.field1340);
 
          for (int i_4 = 0; i_4 < class97_2.field1330; i_4++) {
             if (class97_2.field1332[i_4] != 0) {
@@ -79,7 +79,7 @@ public class class70 extends class180 {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getInt((Object) null);
                      class299_0.method5655(0, 1117423719);
-                     class299_0.method5481(i_7, -433478698);
+                     class299_0.method5481(i_7);
                   } else if (i_5 == 1) {
                      field_6 = class97_2.field1333[i_4];
                      field_6.setInt((Object) null, class97_2.field1329[i_4]);
@@ -88,7 +88,7 @@ public class class70 extends class180 {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getModifiers();
                      class299_0.method5655(0, 1194584478);
-                     class299_0.method5481(i_7, 1096227411);
+                     class299_0.method5481(i_7);
                   }
 
                   Method method_26;
@@ -97,7 +97,7 @@ public class class70 extends class180 {
                         method_26 = class97_2.field1335[i_4];
                         i_7 = method_26.getModifiers();
                         class299_0.method5655(0, 934492629);
-                        class299_0.method5481(i_7, -1472155018);
+                        class299_0.method5481(i_7);
                      }
                   } else {
                      method_26 = class97_2.field1335[i_4];
@@ -150,7 +150,7 @@ public class class70 extends class180 {
             }
          }
 
-         class299_0.method5529(i_3, 1250667479);
+         class299_0.method5529(i_3);
          class97_2.method3607();
       }
    }

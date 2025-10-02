@@ -114,15 +114,15 @@ public class class56 {
          class79_5 = client.field694[i_15];
          i_6 = class299_1.method5504((byte) 42);
          if ((i_6 & 0x1) != 0) {
-            class79_5.field975 = class299_1.method5532((byte) 28);
+            class79_5.field975 = class299_1.method5532();
             if (class79_5.field975 == 65535) {
                class79_5.field975 = -1;
             }
          }
 
          if ((i_6 & 0x40) != 0) {
-            i_7 = class299_1.method5534(-2104150124);
-            i_8 = class299_1.method5534(-2058967951);
+            i_7 = class299_1.readShort();
+            i_8 = class299_1.readShort();
             i_9 = class79_5.field1005 - (i_7 - class196.field2389 - class196.field2389) * 64;
             i_10 = class79_5.field949 - (i_8 - class1.field1 - class1.field1) * 64;
             if (i_9 != 0 || i_10 != 0) {
@@ -136,7 +136,7 @@ public class class56 {
                i_7 = -1;
             }
 
-            i_8 = class299_1.method5525(2127964353);
+            i_8 = class299_1.method5525();
             if (i_7 == class79_5.field981 && i_7 != -1) {
                i_9 = class7.method81(i_7, (byte) 1).field3529;
                if (i_9 == 1) {
@@ -173,7 +173,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x10) != 0) {
-            i_7 = class299_1.method5524((byte) -67);
+            i_7 = class299_1.method5524();
             int i_11;
             int i_12;
             int i_13;
@@ -199,7 +199,7 @@ public class class56 {
                }
             }
 
-            i_8 = class299_1.method5722(1353343245);
+            i_8 = class299_1.readByte();
             if (i_8 > 0) {
                for (i_9 = 0; i_9 < i_8; i_9++) {
                   i_10 = class299_1.method5508(497319136);
@@ -207,7 +207,7 @@ public class class56 {
                   if (i_11 != 32767) {
                      i_12 = class299_1.method5508(497319136);
                      i_13 = class299_1.method5504((byte) 74);
-                     int i_14 = i_11 > 0 ? class299_1.method5525(375649690) : i_13;
+                     int i_14 = i_11 > 0 ? class299_1.method5525() : i_13;
                      class79_5.method1655(i_10, client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
                      class79_5.method1659(i_10, 1541896355);
@@ -217,8 +217,8 @@ public class class56 {
          }
 
          if ((i_6 & 0x8) != 0) {
-            class79_5.field986 = class299_1.method5532((byte) 27);
-            i_7 = class299_1.method5542((byte) 113);
+            class79_5.field986 = class299_1.method5532();
+            i_7 = class299_1.readInt();
             class79_5.field990 = i_7 >> 16;
             class79_5.field989 = (i_7 & 0xffff) + client.field881;
             class79_5.field987 = 0;
@@ -274,7 +274,7 @@ public class class56 {
          for (int i_12 = 0; i_12 < 64; i_12++) {
             for (int i_13 = 0; i_13 < 64; i_13++) {
                if (i_11 == i_4 && i_12 >= i_5 && i_12 < i_5 + 8 && i_13 >= i_6 && i_13 < i_6 + 8) {
-                  class28.method419(class300_14, i_1, i_2 + class197.method3702(i_12 & 0x7, i_13 & 0x7, i_7, (byte) -75), i_3 + class36.method625(i_12 & 0x7, i_13 & 0x7, i_7, 1091225216), 0, 0, i_7, -1566017890);
+                  class28.method419(class300_14, i_1, i_2 + class197.method3702(i_12 & 0x7, i_13 & 0x7, i_7), i_3 + class36.method625(i_12 & 0x7, i_13 & 0x7, i_7, 1091225216), 0, 0, i_7, -1566017890);
                } else {
                   class28.method419(class300_14, 0, -1, -1, 0, 0, 0, -1566017890);
                }
@@ -287,7 +287,7 @@ public class class56 {
    static void method1086(int i_0, int i_1, int i_2) {
       class187 class187_3 = class235.method4265(class183.field2273, client.field880.field1313, 1775123545);
       class187_3.field2333.method5540(i_0, 703583712);
-      class187_3.field2333.method5530(i_1, (byte) -4);
+      class187_3.field2333.method5530(i_1);
       client.field880.method2219(class187_3, 2067459847);
    }
 

@@ -1,6 +1,6 @@
 public class class286 extends class178 {
 
-   public int field3661 = (int)(class206.method3939(-1000924540) / 1000L);
+   public int field3661 = (int)(class206.method3939() / 1000L);
    public class283 field3662;
    public short field3663;
 

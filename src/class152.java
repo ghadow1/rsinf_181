@@ -23,7 +23,7 @@ public class class152 extends class275 {
       class217 class217_5;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_5 = class80.method1978(class76.field1098[--class70.field1014], -1576142208);
+         class217_5 = class80.method1978(class76.field1098[--class70.field1014]);
          bool_4 = false;
       } else {
          class217_5 = bool_2 ? class76.field1111 : class207.field2507;

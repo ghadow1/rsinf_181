@@ -52,9 +52,9 @@ public class class212 {
                if (i_7 == 4) {
                   i_10 = ints_3[i_5++] << 16;
                   i_10 += ints_3[i_5++];
-                  class217_11 = class80.method1978(i_10, -1861769190);
+                  class217_11 = class80.method1978(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12, 44972047).field3425 || client.field655)) {
+                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || client.field655)) {
                      for (i_13 = 0; i_13 < class217_11.field2560.length; i_13++) {
                         if (i_12 + 1 == class217_11.field2560[i_13]) {
                            i_8 += class217_11.field2705[i_13];
@@ -90,9 +90,9 @@ public class class212 {
                if (i_7 == 10) {
                   i_10 = ints_3[i_5++] << 16;
                   i_10 += ints_3[i_5++];
-                  class217_11 = class80.method1978(i_10, -1361787766);
+                  class217_11 = class80.method1978(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12, 44972047).field3425 || client.field655)) {
+                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || client.field655)) {
                      for (i_13 = 0; i_13 < class217_11.field2560.length; i_13++) {
                         if (i_12 + 1 == class217_11.field2560[i_13]) {
                            i_8 = 999999999;

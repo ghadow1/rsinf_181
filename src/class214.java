@@ -105,7 +105,7 @@ public class class214 {
                   bool_10 = true;
                }
 
-               if (i_12 >= 512 && !class26.method404(i_12 - 512, 44972047).method4646(this.field2535, (byte) -66)) {
+               if (i_12 >= 512 && !class26.method404(i_12 - 512).method4646(this.field2535, (byte) -66)) {
                   bool_10 = true;
                }
             }
@@ -136,7 +136,7 @@ public class class214 {
                   }
 
                   if (i_14 >= 512) {
-                     class121_15 = class26.method404(i_14 - 512, 44972047).method4694(this.field2535, (byte) 36);
+                     class121_15 = class26.method404(i_14 - 512).method4694(this.field2535, (byte) 36);
                      if (class121_15 != null) {
                         arr_17[i_12++] = class121_15;
                      }
@@ -191,7 +191,7 @@ public class class214 {
                bool_2 = true;
             }
 
-            if (i_4 >= 512 && !class26.method404(i_4 - 512, 44972047).method4683(this.field2535, -447503257)) {
+            if (i_4 >= 512 && !class26.method404(i_4 - 512).method4683(this.field2535, -447503257)) {
                bool_2 = true;
             }
          }
@@ -214,7 +214,7 @@ public class class214 {
                }
 
                if (i_6 >= 512) {
-                  class121_7 = class26.method404(i_6 - 512, 44972047).method4649(this.field2535, (byte) 81);
+                  class121_7 = class26.method404(i_6 - 512).method4649(this.field2535, (byte) 81);
                   if (class121_7 != null) {
                      arr_8[i_4++] = class121_7;
                   }

@@ -132,11 +132,11 @@ public class class300 extends class180 {
       return i_3 | b_2;
    }
 
-   public byte method5495(byte b_1) {
+   public byte method5495() {
       return this.field3730[++this.field3732 - 1];
    }
 
-   public void method5481(int i_1, int i_2) {
+   public void method5481(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 24);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 16);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
@@ -234,8 +234,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_8, 977299808);
-         this.method5481(i_9, 814462228);
+         this.method5481(i_8);
+         this.method5481(i_9);
       }
 
       this.field3732 = i_5;
@@ -296,65 +296,65 @@ public class class300 extends class180 {
       }
    }
 
-   public int method5529(int i_1, int i_2) {
+   public int method5529(int i_1) {
       int i_3 = class2.method18(this.field3730, i_1, this.field3732, 2112627434);
-      this.method5481(i_3, 759553697);
+      this.method5481(i_3);
       return i_3;
    }
 
-   public byte method5694(int i_1) {
+   public byte method5694() {
       return (byte)(this.field3730[++this.field3732 - 1] - 128);
    }
 
-   public int method5525(int i_1) {
+   public int method5525() {
       return 128 - this.field3730[++this.field3732 - 1] & 0xff;
    }
 
-   public void method5539(int i_1, byte b_2) {
+   public void method5539(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
       this.field3730[++this.field3732 - 1] = (byte)i_1;
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 24);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 16);
    }
 
-   public int method5518(byte b_1) {
+   public int method5518() {
       this.field3732 += 2;
       return (this.field3730[this.field3732 - 1] - 128 & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8);
    }
 
-   public int method5524(byte b_1) {
+   public int method5524() {
       return 0 - this.field3730[++this.field3732 - 1] & 0xff;
    }
 
-   public int method5722(int i_1) {
+   public int readByte() {
       return this.field3730[++this.field3732 - 1] - 128 & 0xff;
    }
 
-   public int method5532(byte b_1) {
+   public int method5532() {
       this.field3732 += 2;
       return ((this.field3730[this.field3732 - 1] & 0xff) << 8) + (this.field3730[this.field3732 - 2] & 0xff);
    }
 
-   public void method5475(int i_1, int i_2) {
+   public void method5475(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 + 128);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
    }
 
-   public int method5534(int i_1) {
+   public int readShort() {
       this.field3732 += 2;
       return ((this.field3730[this.field3732 - 1] & 0xff) << 8) + (this.field3730[this.field3732 - 2] - 128 & 0xff);
    }
 
-   public void method5634(int i_1, byte b_2) {
+   public void method5634(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)i_1;
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
    }
 
-   public void method5502(int i_1, short s_2) {
+   public void method5502(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(128 - i_1);
    }
 
-   public int method5535(byte b_1) {
+   public int method5535() {
       this.field3732 += 2;
       int i_2 = ((this.field3730[this.field3732 - 1] & 0xff) << 8) + (this.field3730[this.field3732 - 2] & 0xff);
       if (i_2 > 32767) {
@@ -364,35 +364,35 @@ public class class300 extends class180 {
       return i_2;
    }
 
-   public byte method5527(int i_1) {
+   public byte method5527() {
       return (byte)(0 - this.field3730[++this.field3732 - 1]);
    }
 
-   public void method5521(int i_1, int i_2) {
+   public void method5521(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(0 - i_1);
    }
 
-   public int method5543(int i_1) {
+   public int method5543() {
       this.field3732 += 4;
       return ((this.field3730[this.field3732 - 1] & 0xff) << 8) + ((this.field3730[this.field3732 - 4] & 0xff) << 16) + (this.field3730[this.field3732 - 2] & 0xff) + ((this.field3730[this.field3732 - 3] & 0xff) << 24);
    }
 
-   public void method5530(int i_1, byte b_2) {
+   public void method5530(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 + 128);
    }
 
-   public int method5541(int i_1) {
+   public int method5541() {
       this.field3732 += 4;
       return (this.field3730[this.field3732 - 4] & 0xff) + ((this.field3730[this.field3732 - 3] & 0xff) << 8) + ((this.field3730[this.field3732 - 2] & 0xff) << 16) + ((this.field3730[this.field3732 - 1] & 0xff) << 24);
    }
 
-   public int method5542(byte b_1) {
+   public int readInt() {
       this.field3732 += 4;
       return ((this.field3730[this.field3732 - 2] & 0xff) << 24) + ((this.field3730[this.field3732 - 4] & 0xff) << 8) + (this.field3730[this.field3732 - 3] & 0xff) + ((this.field3730[this.field3732 - 1] & 0xff) << 16);
    }
 
-   public int method5591(int i_1) {
+   public int method5591() {
       this.field3732 += 3;
       return (this.field3730[this.field3732 - 3] & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8) + ((this.field3730[this.field3732 - 1] & 0xff) << 16);
    }
@@ -449,7 +449,7 @@ public class class300 extends class180 {
 
       this.field3730[++this.field3732 - 1] = 0;
       this.method5603(i_5, -1995040852);
-      this.field3732 += class80.method1979(this.field3730, this.field3732, charsequence_1, (byte) 0);
+      this.field3732 += class80.method1979(this.field3730, this.field3732, charsequence_1);
    }
 
    public void method5490(int i_1, int i_2) {
@@ -549,8 +549,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_5, -1132565145);
-         this.method5481(i_6, 860174959);
+         this.method5481(i_5);
+         this.method5481(i_6);
       }
 
    }
@@ -581,8 +581,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_5, -1878750879);
-         this.method5481(i_6, 1404778061);
+         this.method5481(i_5);
+         this.method5481(i_6);
       }
 
    }
@@ -604,8 +604,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_8, 513043040);
-         this.method5481(i_9, -9955971);
+         this.method5481(i_8);
+         this.method5481(i_9);
       }
 
       this.field3732 = i_5;

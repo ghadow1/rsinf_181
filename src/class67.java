@@ -121,7 +121,7 @@ public class class67 implements Comparator {
 
                class133_6.method3072(i_0, i_1, i_2, i_17, (class135) obj_23, long_20, i_22);
                if (class253_9.field3382 == 1 && class172_7 != null) {
-                  class172_7.method3562(i_1, i_2, -363679248);
+                  class172_7.method3562(i_1, i_2);
                }
 
             }
@@ -141,7 +141,7 @@ public class class67 implements Comparator {
                   }
 
                   if (class253_9.field3382 != 0 && class172_7 != null) {
-                     class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368, -1502680936);
+                     class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368);
                   }
 
                } else if (i_5 == 0) {
@@ -191,7 +191,7 @@ public class class67 implements Comparator {
                   }
 
                   if (class253_9.field3382 != 0 && class172_7 != null) {
-                     class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368, (byte) 91);
+                     class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                   }
 
                   if (class253_9.field3374 != 16) {
@@ -219,7 +219,7 @@ public class class67 implements Comparator {
                   }
 
                   if (class253_9.field3382 != 0 && class172_7 != null) {
-                     class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368, (byte) 47);
+                     class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                   }
 
                } else {
@@ -254,7 +254,7 @@ public class class67 implements Comparator {
                      }
 
                      if (class253_9.field3382 != 0 && class172_7 != null) {
-                        class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368, (byte) 43);
+                        class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                      }
 
                      if (class253_9.field3374 != 16) {
@@ -282,7 +282,7 @@ public class class67 implements Comparator {
                      }
 
                      if (class253_9.field3382 != 0 && class172_7 != null) {
-                        class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368, (byte) -94);
+                        class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                      }
 
                   } else if (i_5 == 9) {
@@ -294,7 +294,7 @@ public class class67 implements Comparator {
 
                      class133_6.method3076(i_0, i_1, i_2, i_17, 1, 1, (class135) obj_23, 0, long_20, i_22);
                      if (class253_9.field3382 != 0 && class172_7 != null) {
-                        class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368, -1417095551);
+                        class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368);
                      }
 
                      if (class253_9.field3374 != 16) {
@@ -396,7 +396,7 @@ public class class67 implements Comparator {
                }
 
                if (class253_9.field3382 != 0 && class172_7 != null) {
-                  class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368, -1990157871);
+                  class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368);
                }
 
             }

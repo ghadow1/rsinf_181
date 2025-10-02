@@ -46,7 +46,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
          field480 = 0;
          field490 = mouseevent_1.getX();
          field491 = mouseevent_1.getY();
-         field500 = class206.method3939(-1729516435);
+         field500 = class206.method3939();
          field489 = this.method1007(mouseevent_1, -1900631244);
          if (field489 != 0) {
             field481 = field489;

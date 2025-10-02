@@ -9,11 +9,11 @@ public class class197 {
    static class235 field2405;
    public static int field2402 = 0;
 
-   public static void method3688(byte b_0) {
+   public static void method3688() {
       class257.field3503.method3323();
    }
 
-   static final void method3697(class61 class61_0, boolean bool_1, int i_2) {
+   static final void method3697(class61 class61_0, boolean bool_1) {
       int i_3 = class61_0.field571;
       int i_4 = (int)class61_0.field2113;
       class61_0.method3607();
@@ -47,7 +47,7 @@ public class class197 {
          }
       }
 
-      class217 class217_9 = class80.method1978(i_4, -1363069962);
+      class217 class217_9 = class80.method1978(i_4);
       if (class217_9 != null) {
          class224.method4120(class217_9, -1689064001);
       }
@@ -78,12 +78,12 @@ public class class197 {
 
    }
 
-   public static int method3702(int i_0, int i_1, int i_2, byte b_3) {
+   public static int method3702(int i_0, int i_1, int i_2) {
       i_2 &= 0x3;
       return i_2 == 0 ? i_0 : (i_2 == 1 ? i_1 : (i_2 == 2 ? 7 - i_0 : 7 - i_1));
    }
 
-   static int method3703(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method3703(int i_0) {
       if (i_0 == 6500) {
          class76.field1098[++class70.field1014 - 1] = class157.method3428(865287787) ? 1 : 0;
          return 1;
@@ -204,9 +204,9 @@ public class class197 {
                      i_9 = class76.field1098[class70.field1014 + 1];
                      class249_10 = class18.method209(i_9, (byte) 4);
                      if (class249_10.method4499(715128499)) {
-                        class76.field1093[++class221.field2747 - 1] = class26.method404(i_8, 44972047).method4648(i_9, class249_10.field3303, -204298018);
+                        class76.field1093[++class221.field2747 - 1] = class26.method404(i_8).method4648(i_9, class249_10.field3303, -204298018);
                      } else {
-                        class76.field1098[++class70.field1014 - 1] = class26.method404(i_8, 44972047).method4650(i_9, class249_10.field3302, (byte) -52);
+                        class76.field1098[++class70.field1014 - 1] = class26.method404(i_8).method4650(i_9, class249_10.field3302, (byte) -52);
                      }
 
                      return 1;
@@ -277,5 +277,4 @@ public class class197 {
          }
       }
    }
-
 }

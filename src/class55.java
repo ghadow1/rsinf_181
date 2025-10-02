@@ -28,8 +28,8 @@ public final class class55 {
       int i_8;
       int i_9;
       if (!client.field798) {
-         i_3 = class299_1.method5534(-2041220157);
-         i_4 = class299_1.method5518((byte) 0);
+         i_3 = class299_1.readShort();
+         i_4 = class299_1.method5518();
          int i_5 = class299_1.method5496(-1459053594);
          class29.field255 = new int[i_5][4];
 
@@ -69,8 +69,8 @@ public final class class55 {
 
          class153.method3399(i_4, i_3, true, 240895507);
       } else {
-         i_3 = class299_1.method5518((byte) 0);
-         i_4 = class299_1.method5534(-2046216611);
+         i_3 = class299_1.method5518();
+         i_4 = class299_1.readShort();
          boolean bool_16 = class299_1.method5504((byte) 73) == 1;
          i_6 = class299_1.method5496(-1459053594);
          class299_1.method5438(1273494550);

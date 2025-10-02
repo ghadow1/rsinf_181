@@ -625,11 +625,11 @@ public class class121 extends class135 {
          }
 
          if (i_13 == 255) {
-            this.field1559[i_38] = class300_6.method5495((byte) 0);
+            this.field1559[i_38] = class300_6.method5495();
          }
 
          if (i_14 == 1) {
-            this.field1587[i_38] = class300_7.method5495((byte) 0);
+            this.field1587[i_38] = class300_7.method5495();
          }
 
          if (i_15 == 1) {
@@ -951,7 +951,7 @@ public class class121 extends class135 {
          class300_2.field3732 = 0;
 
          for (i_26 = 0; i_26 < i_11; i_26++) {
-            byte b_27 = this.field1565[i_26] = class300_2.method5495((byte) 0);
+            byte b_27 = this.field1565[i_26] = class300_2.method5495();
             if (b_27 == 0) {
                ++i_23;
             }
@@ -1122,15 +1122,15 @@ public class class121 extends class135 {
       for (i_51 = 0; i_51 < i_10; i_51++) {
          this.field1561[i_51] = (short)class300_2.method5496(-1459053594);
          if (i_12 == 1) {
-            this.field1557[i_51] = class300_3.method5495((byte) 0);
+            this.field1557[i_51] = class300_3.method5495();
          }
 
          if (i_13 == 255) {
-            this.field1559[i_51] = class300_4.method5495((byte) 0);
+            this.field1559[i_51] = class300_4.method5495();
          }
 
          if (i_14 == 1) {
-            this.field1587[i_51] = class300_5.method5495((byte) 0);
+            this.field1587[i_51] = class300_5.method5495();
          }
 
          if (i_15 == 1) {

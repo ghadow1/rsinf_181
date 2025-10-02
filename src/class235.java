@@ -99,7 +99,7 @@ public class class235 extends class233 {
    }
 
    void vmethod4278(int i_1, int i_2) {
-      class68.method1653(this.field3154, i_1, -1833847542);
+      class68.method1653(this.field3154, i_1);
    }
 
    public boolean method4267(int i_1, int i_2) {

@@ -10,7 +10,7 @@ public abstract class class174 {
 
    static final void method3593(int i_0) {
       client.field880.method2233((short) -29648);
-      class197.method3688((byte) -1);
+      class197.method3688();
       class244.field3254.method3323();
       class245.field3273.method3323();
       class120.method2766((byte) 76);
@@ -50,7 +50,7 @@ public abstract class class174 {
       class5.field22.method3066();
 
       for (int i_1 = 0; i_1 < 4; i_1++) {
-         client.field710[i_1].method3558(-656933922);
+         client.field710[i_1].method3558();
       }
 
       System.gc();

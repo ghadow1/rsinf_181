@@ -138,7 +138,7 @@ public class class137 {
       }
 
       for (class61 class61_5 = (class61) client.field816.method5950(); class61_5 != null; class61_5 = (class61) client.field816.method5953()) {
-         class197.method3697(class61_5, true, 543273905);
+         class197.method3697(class61_5, true);
       }
 
       client.field905 = -1;

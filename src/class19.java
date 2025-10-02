@@ -167,7 +167,7 @@ public class class19 implements class37 {
          }
       }
 
-      class254 class254_10 = class26.method404(i_0, 44972047);
+      class254 class254_10 = class26.method404(i_0);
       if (i_1 > 1 && class254_10.field3441 != null) {
          int i_11 = -1;
 
@@ -178,7 +178,7 @@ public class class19 implements class37 {
          }
 
          if (i_11 != -1) {
-            class254_10 = class26.method404(i_11, 44972047);
+            class254_10 = class26.method404(i_11);
          }
       }
 

@@ -44,7 +44,7 @@ public class class134 {
       if (i_0 >= 2000) {
          i_0 -= 1000;
          i_4 = class76.field1098[--class70.field1014];
-         class217_5 = class80.method1978(i_4, -1449254199);
+         class217_5 = class80.method1978(i_4);
       } else {
          class217_5 = bool_2 ? class76.field1111 : class207.field2507;
       }

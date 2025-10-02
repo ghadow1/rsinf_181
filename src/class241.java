@@ -103,7 +103,7 @@ public class class241 extends class175 {
             this.field3214 = new byte[i_4];
 
             for (i_6 = 0; i_6 < i_4; i_6++) {
-               this.field3214[i_6] = class300_1.method5495((byte) 0);
+               this.field3214[i_6] = class300_1.method5495();
             }
          } else if (i_2 != 16) {
             if (i_2 == 17) {
@@ -129,10 +129,10 @@ public class class241 extends class175 {
                class300_1.method5504((byte) 58);
             } else if (i_2 == 29) {
                class255[] arr_7 = new class255[] {class255.field3461, class255.field3460, class255.field3458};
-               this.field3226 = (class255) class107.method2476(arr_7, class300_1.method5504((byte) 61), (byte) 0);
+               this.field3226 = (class255) class107.method2476(arr_7, class300_1.method5504((byte) 61));
             } else if (i_2 == 30) {
                class238[] arr_8 = new class238[] {class238.field3193, class238.field3195, class238.field3194};
-               this.field3227 = (class238) class107.method2476(arr_8, class300_1.method5504((byte) 89), (byte) 0);
+               this.field3227 = (class238) class107.method2476(arr_8, class300_1.method5504((byte) 89));
             }
          }
       }

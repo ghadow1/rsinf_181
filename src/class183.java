@@ -173,7 +173,7 @@ public class class183 implements class181 {
 
          class133_7.method3072(i_0, i_2, i_3, i_18, (class135) obj_24, long_21, i_23);
          if (class253_10.field3382 == 1) {
-            class172_8.method3562(i_2, i_3, -912986468);
+            class172_8.method3562(i_2, i_3);
          }
 
       } else if (i_6 != 10 && i_6 != 11) {
@@ -186,7 +186,7 @@ public class class183 implements class181 {
 
             class133_7.method3076(i_0, i_2, i_3, i_18, 1, 1, (class135) obj_24, 0, long_21, i_23);
             if (class253_10.field3382 != 0) {
-               class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368, -2061847673);
+               class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368);
             }
 
          } else if (i_6 == 0) {
@@ -198,7 +198,7 @@ public class class183 implements class181 {
 
             class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field512[i_5], 0, long_21, i_23);
             if (class253_10.field3382 != 0) {
-               class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368, (byte) 44);
+               class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
             }
 
          } else if (i_6 == 1) {
@@ -210,7 +210,7 @@ public class class183 implements class181 {
 
             class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field513[i_5], 0, long_21, i_23);
             if (class253_10.field3382 != 0) {
-               class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368, (byte) 11);
+               class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
             }
 
          } else {
@@ -229,7 +229,7 @@ public class class183 implements class181 {
 
                class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_25, (class135) obj_26, class55.field512[i_5], class55.field512[i_30], long_21, i_23);
                if (class253_10.field3382 != 0) {
-                  class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368, (byte) 66);
+                  class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
                }
 
             } else if (i_6 == 3) {
@@ -241,7 +241,7 @@ public class class183 implements class181 {
 
                class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field513[i_5], 0, long_21, i_23);
                if (class253_10.field3382 != 0) {
-                  class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368, (byte) -45);
+                  class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
                }
 
             } else if (i_6 == 9) {
@@ -253,7 +253,7 @@ public class class183 implements class181 {
 
                class133_7.method3076(i_0, i_2, i_3, i_18, 1, 1, (class135) obj_24, 0, long_21, i_23);
                if (class253_10.field3382 != 0) {
-                  class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368, -2073518569);
+                  class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368);
                }
 
             } else if (i_6 == 4) {
@@ -337,7 +337,7 @@ public class class183 implements class181 {
          }
 
          if (class253_10.field3382 != 0) {
-            class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368, -1288067144);
+            class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368);
          }
 
       }

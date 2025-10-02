@@ -102,7 +102,7 @@ public class class244 extends class175 {
    }
 
    static int method4433(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = class80.method1978(class76.field1098[--class70.field1014], -1607136710);
+      class217 class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
       if (i_0 == 2800) {
          class76.field1098[++class70.field1014 - 1] = class78.method1957(class268.method4987(class217_4, 1531196842), (byte) 42);
          return 1;

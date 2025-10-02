@@ -40,7 +40,7 @@ public class class107 implements Runnable {
       }
    }
 
-   public static class194 method2476(class194[] arr_0, int i_1, byte b_2) {
+   public static class194 method2476(class194[] arr_0, int i_1) {
       class194[] arr_3 = arr_0;
 
       for (int i_4 = 0; i_4 < arr_3.length; i_4++) {
@@ -53,7 +53,7 @@ public class class107 implements Runnable {
       return null;
    }
 
-   protected static int method2479(int i_0) {
+   protected static int method2479() {
       int i_1 = 0;
       if (class43.field378 == null || !class43.field378.isValid()) {
          try {
@@ -73,7 +73,7 @@ public class class107 implements Runnable {
       }
 
       if (class43.field378 != null) {
-         long long_10 = class206.method3939(-1829934136);
+         long long_10 = class206.method3939();
          long long_4 = class43.field378.getCollectionTime();
          if (class53.field458 != -1L) {
             long long_6 = long_4 - class53.field458;

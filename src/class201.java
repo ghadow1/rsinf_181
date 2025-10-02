@@ -21,7 +21,7 @@ public class class201 extends class180 {
 
       int i_5;
       for (i_5 = 0; i_5 < i_3; i_5++) {
-         bytes_4[i_5] = class300_2.method5495((byte) 0);
+         bytes_4[i_5] = class300_2.method5495();
       }
 
       ++class300_2.field3732;
@@ -38,7 +38,7 @@ public class class201 extends class180 {
 
       int i_8;
       for (i_8 = 0; i_8 < i_6; i_8++) {
-         bytes_7[i_8] = class300_2.method5495((byte) 0);
+         bytes_7[i_8] = class300_2.method5495();
       }
 
       ++class300_2.field3732;
@@ -54,7 +54,7 @@ public class class201 extends class180 {
       byte[] bytes_10 = new byte[i_9];
 
       for (int i_11 = 0; i_11 < i_9; i_11++) {
-         bytes_10[i_11] = class300_2.method5495((byte) 0);
+         bytes_10[i_11] = class300_2.method5495();
       }
 
       ++class300_2.field3732;
@@ -116,7 +116,7 @@ public class class201 extends class180 {
 
       int i_19;
       for (i_19 = 0; i_19 < i_17; i_19++) {
-         bytes_18[i_19] = class300_2.method5495((byte) 0);
+         bytes_18[i_19] = class300_2.method5495();
       }
 
       ++class300_2.field3732;
@@ -251,26 +251,26 @@ public class class201 extends class180 {
          class196_28 = arr_37[i_27];
          if (class196_28.field2387 != null) {
             for (i_29 = 1; i_29 < class196_28.field2387.length; i_29 += 2) {
-               class196_28.field2387[i_29] = class300_2.method5495((byte) 0);
+               class196_28.field2387[i_29] = class300_2.method5495();
             }
          }
 
          if (class196_28.field2388 != null) {
             for (i_29 = 3; i_29 < class196_28.field2388.length - 2; i_29 += 2) {
-               class196_28.field2388[i_29] = class300_2.method5495((byte) 0);
+               class196_28.field2388[i_29] = class300_2.method5495();
             }
          }
       }
 
       if (bytes_45 != null) {
          for (i_27 = 1; i_27 < bytes_45.length; i_27 += 2) {
-            bytes_45[i_27] = class300_2.method5495((byte) 0);
+            bytes_45[i_27] = class300_2.method5495();
          }
       }
 
       if (bytes_39 != null) {
          for (i_27 = 1; i_27 < bytes_39.length; i_27 += 2) {
-            bytes_39[i_27] = class300_2.method5495((byte) 0);
+            bytes_39[i_27] = class300_2.method5495();
          }
       }
 

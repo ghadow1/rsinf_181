@@ -191,8 +191,8 @@ public final class class66 extends class69 {
    final void method1179(class300 class300_1, int i_2) {
       class300_1.field3732 = 0;
       int i_3 = class300_1.method5504((byte) 86);
-      this.field635 = class300_1.method5495((byte) 0);
-      this.field615 = class300_1.method5495((byte) 0);
+      this.field635 = class300_1.method5495();
+      this.field615 = class300_1.method5495();
       int i_4 = -1;
       this.field632 = 0;
       int[] ints_5 = new int[12];
@@ -212,7 +212,7 @@ public final class class66 extends class69 {
             }
 
             if (ints_5[i_6] >= 512) {
-               int i_9 = class26.method404(ints_5[i_6] - 512, 44972047).field3450;
+               int i_9 = class26.method404(ints_5[i_6] - 512).field3450;
                if (i_9 != 0) {
                   this.field632 = i_9;
                }

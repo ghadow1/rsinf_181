@@ -151,7 +151,7 @@ public class class58 {
       class217 class217_4;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_4 = class80.method1978(class76.field1098[--class70.field1014], -1536235012);
+         class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
       } else {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }
@@ -189,7 +189,7 @@ public class class58 {
                break;
             }
 
-            class217_3 = class80.method1978(class217_3.field2583, -2108521350);
+            class217_3 = class80.method1978(class217_3.field2583);
             if (class217_3 == null) {
                class217_2 = null;
                break;

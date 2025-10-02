@@ -7,7 +7,7 @@ final class class1 implements class0 {
    static int field3;
 
    void method6(Integer integer_1, class300 class300_2, int i_3) {
-      class300_2.method5481(integer_1.intValue(), 457477431);
+      class300_2.method5481(integer_1.intValue());
    }
 
    public Object vmethod42(class300 class300_1, int i_2) {
@@ -28,11 +28,11 @@ final class class1 implements class0 {
       int i_8;
       int i_9;
       if (class185.field2320 == class185_0) {
-         i_3 = class299_2.method5525(273693700);
+         i_3 = class299_2.method5525();
          i_4 = i_3 >> 2;
          i_5 = i_3 & 0x3;
          i_6 = client.field713[i_4];
-         i_7 = class299_2.method5525(-943948393);
+         i_7 = class299_2.method5525();
          i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
          i_9 = (i_7 & 0x7) + class94.field1306;
          if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
@@ -42,10 +42,10 @@ final class class1 implements class0 {
       } else {
          class87 class87_33;
          if (class185.field2321 == class185_0) {
-            i_3 = class299_2.method5722(1668168770);
+            i_3 = class299_2.readByte();
             i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
             i_5 = (i_3 & 0x7) + class94.field1306;
-            i_6 = class299_2.method5534(-2069501194);
+            i_6 = class299_2.readShort();
             if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                class261 class261_32 = client.field887[class42.field372][i_4][i_5];
                if (class261_32 != null) {
@@ -72,19 +72,19 @@ final class class1 implements class0 {
             int i_15;
             int i_40;
             if (class185.field2316 == class185_0) {
-               i_3 = class299_2.method5525(172925753) * 4;
+               i_3 = class299_2.method5525() * 4;
                i_4 = class299_2.method5496(-1459053594);
-               i_5 = class299_2.method5518((byte) 0);
-               i_6 = class299_2.method5525(2086127655) * 4;
-               i_7 = class299_2.method5535((byte) -20);
+               i_5 = class299_2.method5518();
+               i_6 = class299_2.method5525() * 4;
+               i_7 = class299_2.method5535();
                i_8 = class299_2.method5504((byte) 23);
-               i_9 = class299_2.method5525(1325687822);
-               i_10 = class299_2.method5532((byte) 104);
-               i_11 = class299_2.method5722(1843299082);
+               i_9 = class299_2.method5525();
+               i_10 = class299_2.method5532();
+               i_11 = class299_2.readByte();
                i_40 = (i_11 >> 4 & 0x7) + class311.field3819;
                i_13 = (i_11 & 0x7) + class94.field1306;
-               b_14 = class299_2.method5694(1975655770);
-               byte b_41 = class299_2.method5527(433221072);
+               b_14 = class299_2.method5694();
+               byte b_41 = class299_2.method5527();
                i_15 = b_41 + i_40;
                int i_42 = b_14 + i_13;
                if (i_40 >= 0 && i_13 >= 0 && i_40 < 104 && i_13 < 104 && i_15 >= 0 && i_42 >= 0 && i_15 < 104 && i_42 < 104 && i_5 != 65535) {
@@ -98,10 +98,10 @@ final class class1 implements class0 {
                }
 
             } else if (class185.field2322 == class185_0) {
-               i_3 = class299_2.method5532((byte) 108);
-               i_4 = class299_2.method5534(-2037722726);
-               i_5 = class299_2.method5532((byte) 48);
-               i_6 = class299_2.method5722(1102609318);
+               i_3 = class299_2.method5532();
+               i_4 = class299_2.readShort();
+               i_5 = class299_2.method5532();
+               i_6 = class299_2.readByte();
                i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                i_8 = (i_6 & 0x7) + class94.field1306;
                if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
@@ -119,9 +119,9 @@ final class class1 implements class0 {
                }
 
             } else if (class185.field2315 == class185_0) {
-               i_3 = class299_2.method5518((byte) 0);
-               i_4 = class299_2.method5534(-2111963887);
-               i_5 = class299_2.method5722(1449586458);
+               i_3 = class299_2.method5518();
+               i_4 = class299_2.readShort();
+               i_5 = class299_2.readByte();
                i_6 = (i_5 >> 4 & 0x7) + class311.field3819;
                i_7 = (i_5 & 0x7) + class94.field1306;
                if (i_6 >= 0 && i_7 >= 0 && i_6 < 104 && i_7 < 104) {
@@ -141,11 +141,11 @@ final class class1 implements class0 {
                   i_3 = class299_2.method5504((byte) 14);
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
-                  i_6 = class299_2.method5525(-945671319);
-                  i_7 = class299_2.method5722(1280527844);
+                  i_6 = class299_2.method5525();
+                  i_7 = class299_2.readByte();
                   i_8 = i_7 >> 4 & 0xf;
                   i_9 = i_7 & 0x7;
-                  i_10 = class299_2.method5534(-2109912719);
+                  i_10 = class299_2.readShort();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      i_11 = i_8 + 1;
                      if (client.field657.field994[0] >= i_4 - i_11 && client.field657.field994[0] <= i_4 + i_11 && client.field657.field962[0] >= i_5 - i_11 && client.field657.field962[0] <= i_5 + i_11 && client.field892 != 0 && i_9 > 0 && client.field893 < 50) {
@@ -160,19 +160,19 @@ final class class1 implements class0 {
                }
 
                if (class185.field2318 == class185_0) {
-                  byte b_38 = class299_2.method5527(433221072);
-                  i_4 = class299_2.method5534(-2114828530);
-                  byte b_39 = class299_2.method5527(433221072);
-                  i_6 = class299_2.method5518((byte) 0);
+                  byte b_38 = class299_2.method5527();
+                  i_4 = class299_2.readShort();
+                  byte b_39 = class299_2.method5527();
+                  i_6 = class299_2.method5518();
                   i_7 = class299_2.method5496(-1459053594);
-                  i_8 = class299_2.method5722(1590164370);
+                  i_8 = class299_2.readByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
                   i_11 = client.field713[i_9];
-                  byte b_12 = class299_2.method5694(251006365);
-                  i_13 = class299_2.method5532((byte) 38);
-                  b_14 = class299_2.method5527(433221072);
-                  i_15 = class299_2.method5524((byte) -111);
+                  byte b_12 = class299_2.method5694();
+                  i_13 = class299_2.method5532();
+                  b_14 = class299_2.method5527();
+                  i_15 = class299_2.method5524();
                   int i_36 = (i_15 >> 4 & 0x7) + class311.field3819;
                   int i_17 = (i_15 & 0x7) + class94.field1306;
                   class66 class66_18;
@@ -233,22 +233,22 @@ final class class1 implements class0 {
                }
 
                if (class185.field2323 == class185_0) {
-                  i_3 = class299_2.method5722(1314965010);
+                  i_3 = class299_2.readByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
-                  i_6 = class299_2.method5525(-1777658985);
+                  i_6 = class299_2.method5525();
                   i_7 = i_6 >> 2;
                   i_8 = i_6 & 0x3;
                   i_9 = client.field713[i_7];
-                  i_10 = class299_2.method5518((byte) 0);
+                  i_10 = class299_2.method5518();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      class201.method3885(class42.field372, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
                   }
 
                } else if (class185.field2317 == class185_0) {
                   i_3 = class299_2.method5496(-1459053594);
-                  i_4 = class299_2.method5722(1126310446);
-                  i_5 = class299_2.method5518((byte) 0);
+                  i_4 = class299_2.readByte();
+                  i_5 = class299_2.method5518();
                   i_6 = class299_2.method5504((byte) 43);
                   i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                   i_8 = (i_6 & 0x7) + class94.field1306;
@@ -260,11 +260,11 @@ final class class1 implements class0 {
                   }
 
                } else if (class185.field2324 == class185_0) {
-                  i_3 = class299_2.method5525(2076409312);
+                  i_3 = class299_2.method5525();
                   i_4 = i_3 >> 2;
                   i_5 = i_3 & 0x3;
                   i_6 = client.field713[i_4];
-                  i_7 = class299_2.method5524((byte) -16);
+                  i_7 = class299_2.method5524();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;
                   i_10 = class299_2.method5496(-1459053594);

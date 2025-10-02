@@ -59,7 +59,7 @@ public class class31 {
 
             if (i_1 == 1 && class217_4.field2678 != null) {
                if (class217_4.field2565 >= 0) {
-                  class217 class217_7 = class80.method1978(class217_4.field2688, -1663336200);
+                  class217 class217_7 = class80.method1978(class217_4.field2688);
                   if (class217_7 == null || class217_7.field2675 == null || class217_4.field2565 >= class217_7.field2675.length || class217_4 != class217_7.field2675[class217_4.field2565]) {
                      continue;
                   }

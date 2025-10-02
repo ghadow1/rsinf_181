@@ -41,7 +41,7 @@ public class class132 extends class180 {
          if (i_5 == 0) {
             throw new RuntimeException();
          } else {
-            class217 class217_7 = class80.method1978(i_4, -1743723304);
+            class217 class217_7 = class80.method1978(i_4);
             if (class217_7.field2675 == null) {
                class217_7.field2675 = new class217[i_6 + 1];
             }
@@ -79,18 +79,18 @@ public class class132 extends class180 {
          class217 class217_10;
          if (i_0 == 101) {
             class217_10 = bool_2 ? class76.field1111 : class207.field2507;
-            class217 class217_11 = class80.method1978(class217_10.field2688, -1865757751);
+            class217 class217_11 = class80.method1978(class217_10.field2688);
             class217_11.field2675[class217_10.field2565] = null;
             class224.method4120(class217_11, -1578420884);
             return 1;
          } else if (i_0 == 102) {
-            class217_10 = class80.method1978(class76.field1098[--class70.field1014], -1974434459);
+            class217_10 = class80.method1978(class76.field1098[--class70.field1014]);
             class217_10.field2675 = null;
             class224.method4120(class217_10, 1119207764);
             return 1;
          } else if (i_0 != 200) {
             if (i_0 == 201) {
-               class217_10 = class80.method1978(class76.field1098[--class70.field1014], -2025579345);
+               class217_10 = class80.method1978(class76.field1098[--class70.field1014]);
                if (class217_10 != null) {
                   class76.field1098[++class70.field1014 - 1] = 1;
                   if (bool_2) {
