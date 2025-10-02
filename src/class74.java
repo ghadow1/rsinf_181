@@ -38,7 +38,7 @@ public class class74 {
       this.field1076 = 1;
    }
 
-   final void method1805(class300 class300_1, int i_2, int i_3) {
+   final void method1805(ByteBuffer class300_1, int i_2, int i_3) {
       this.field1070.method5184(class300_1, i_2, 2066125669);
       this.field1076 = 2;
       class129.method2972((byte) 6);
@@ -73,7 +73,7 @@ public class class74 {
                } else {
                   class187 class187_4 = class235.method4265(class183.field2291, client.field880.field1313, 1775123545);
                   class187_4.field2333.writeByte2(class209.method3945(string_1));
-                  class187_4.field2333.method5485(string_1);
+                  class187_4.field2333.writeNullTerminatedString(string_1);
                   client.field880.copy(class187_4);
                }
             }
@@ -89,7 +89,7 @@ public class class74 {
                client.field672 = client.field673;
                class187 class187_4 = class235.method4265(class183.field2224, client.field880.field1313, 1775123545);
                class187_4.field2333.writeByte2(class209.method3945(string_1));
-               class187_4.field2333.method5485(string_1);
+               class187_4.field2333.writeNullTerminatedString(string_1);
                client.field880.copy(class187_4);
             }
 
@@ -127,7 +127,7 @@ public class class74 {
                client.field672 = client.field673;
                class187 class187_4 = class235.method4265(class183.field2231, client.field880.field1313, 1775123545);
                class187_4.field2333.writeByte2(class209.method3945(string_1));
-               class187_4.field2333.method5485(string_1);
+               class187_4.field2333.writeNullTerminatedString(string_1);
                client.field880.copy(class187_4);
             }
 

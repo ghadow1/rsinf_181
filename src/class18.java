@@ -94,7 +94,7 @@ public class class18 extends class34 {
          byte[] bytes_3 = class249.field3307.method4144(11, i_0);
          class249_2 = new class249();
          if (bytes_3 != null) {
-            class249_2.method4497(new class300(bytes_3), (byte) -1);
+            class249_2.method4497(new ByteBuffer(bytes_3), (byte) -1);
          }
 
          class249_2.method4496((byte) -67);
@@ -316,15 +316,15 @@ public class class18 extends class34 {
       }
    }
 
-   static String method194(class300 class300_0, int i_1, int i_2) {
+   static String method194(ByteBuffer class300_0, int i_1, int i_2) {
       try {
-         int i_3 = class300_0.method5508();
+         int i_3 = class300_0.readSmartInt();
          if (i_3 > i_1) {
             i_3 = i_1;
          }
 
          byte[] bytes_4 = new byte[i_3];
-         class300_0.field3732 += class210.field2515.method3944(class300_0.field3730, class300_0.field3732, bytes_4, 0, i_3, 2122202814);
+         class300_0.position += class210.field2515.method3944(class300_0.buffer, class300_0.position, bytes_4, 0, i_3, 2122202814);
          String string_5 = class74.method1820(bytes_4, 0, i_3, (byte) 90);
          return string_5;
       } catch (Exception exception_7) {
@@ -359,13 +359,13 @@ public class class18 extends class34 {
                class187_14.field2333.method5520(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.field2333.writeByte2(i_5);
                class187_14.field2333.writeByte2(i_6);
-               class187_14.field2333.writeShort(client.field722);
+               class187_14.field2333.writeShortBigEndian(client.field722);
                class187_14.field2333.writeByte2(57);
                class187_14.field2333.writeByte2(0);
                class187_14.field2333.writeByte2(0);
                class187_14.field2333.writeByte2(89);
-               class187_14.field2333.writeShort(client.field657.field1005);
-               class187_14.field2333.writeShort(client.field657.field949);
+               class187_14.field2333.writeShortBigEndian(client.field657.field1005);
+               class187_14.field2333.writeShortBigEndian(client.field657.field949);
                class187_14.field2333.writeByte2(63);
                client.field880.copy(class187_14);
                client.field885 = i_12;

@@ -6,8 +6,8 @@ final class class1 implements class0 {
    static int field1;
    static int field3;
 
-   void method6(Integer integer_1, class300 class300_2) {
-      class300_2.write32IntBigEndian(integer_1.intValue());
+   void method6(Integer integer_1, ByteBuffer class300_2) {
+      class300_2.writeIntBigEndian(integer_1.intValue());
    }
 
    static final void method10(class185 class185_0) {
@@ -65,11 +65,11 @@ final class class1 implements class0 {
             int i_40;
             if (class185.field2316 == class185_0) {
                i_3 = class299_2.readByteInverse() * 4;
-               i_4 = class299_2.readShortUBigEndian();
+               i_4 = class299_2.readUnsignedShortBigEndian();
                i_5 = class299_2.readShortBigEndian();
                i_6 = class299_2.readByteInverse() * 4;
                i_7 = class299_2.method5535();
-               i_8 = class299_2.readUByte();
+               i_8 = class299_2.readUnsignedByte();
                i_9 = class299_2.readByteInverse();
                i_10 = class299_2.readShortLittleEndian();
                i_11 = class299_2.readByte();
@@ -130,7 +130,7 @@ final class class1 implements class0 {
 
             } else {
                if (class185.field2319 == class185_0) {
-                  i_3 = class299_2.readUByte();
+                  i_3 = class299_2.readUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
                   i_6 = class299_2.readByteInverse();
@@ -156,7 +156,7 @@ final class class1 implements class0 {
                   i_4 = class299_2.readShort();
                   byte b_39 = class299_2.method5527();
                   i_6 = class299_2.readShortBigEndian();
-                  i_7 = class299_2.readShortUBigEndian();
+                  i_7 = class299_2.readUnsignedShortBigEndian();
                   i_8 = class299_2.readByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
@@ -238,10 +238,10 @@ final class class1 implements class0 {
                   }
 
                } else if (class185.field2317 == class185_0) {
-                  i_3 = class299_2.readShortUBigEndian();
+                  i_3 = class299_2.readUnsignedShortBigEndian();
                   i_4 = class299_2.readByte();
                   i_5 = class299_2.readShortBigEndian();
-                  i_6 = class299_2.readUByte();
+                  i_6 = class299_2.readUnsignedByte();
                   i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                   i_8 = (i_6 & 0x7) + class94.field1306;
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
@@ -259,7 +259,7 @@ final class class1 implements class0 {
                   i_7 = class299_2.readByteUNeg();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;
-                  i_10 = class299_2.readShortUBigEndian();
+                  i_10 = class299_2.readUnsignedShortBigEndian();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
                         class136 class136_37 = class5.field22.method3088(class42.field372, i_8, i_9);
@@ -318,11 +318,11 @@ final class class1 implements class0 {
       }
    }
 
-   public void vmethod43(Object object_1, class300 class300_2, int i_3) {
+   public void vmethod43(Object object_1, ByteBuffer class300_2, int i_3) {
       this.method6((Integer) object_1, class300_2);
    }
 
-   public Object vmethod42(class300 class300_1, int i_2) {
+   public Object vmethod42(ByteBuffer class300_1, int i_2) {
       return Integer.valueOf(class300_1.readIntMedEndian());
    }
 

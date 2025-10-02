@@ -21,70 +21,70 @@ public class class258 extends class175 {
    int[] field3530;
    public int[] field3523;
 
-   void method4780(class300 class300_1, int i_2, int i_3) {
+   void method4780(ByteBuffer class300_1, int i_2, int i_3) {
       int i_4;
       int i_5;
       if (i_2 == 1) {
-         i_4 = class300_1.readShortUBigEndian();
+         i_4 = class300_1.readUnsignedShortBigEndian();
          this.field3522 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3522[i_5] = class300_1.readShortUBigEndian();
+            this.field3522[i_5] = class300_1.readUnsignedShortBigEndian();
          }
 
          this.field3520 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3520[i_5] = class300_1.readShortUBigEndian();
+            this.field3520[i_5] = class300_1.readUnsignedShortBigEndian();
          }
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3520[i_5] += class300_1.readShortUBigEndian() << 16;
+            this.field3520[i_5] += class300_1.readUnsignedShortBigEndian() << 16;
          }
       } else if (i_2 == 2) {
-         this.field3515 = class300_1.readShortUBigEndian();
+         this.field3515 = class300_1.readUnsignedShortBigEndian();
       } else if (i_2 == 3) {
-         i_4 = class300_1.readUByte();
+         i_4 = class300_1.readUnsignedByte();
          this.field3518 = new int[i_4 + 1];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3518[i_5] = class300_1.readUByte();
+            this.field3518[i_5] = class300_1.readUnsignedByte();
          }
 
          this.field3518[i_4] = 9999999;
       } else if (i_2 == 4) {
          this.field3526 = true;
       } else if (i_2 == 5) {
-         this.field3533 = class300_1.readUByte();
+         this.field3533 = class300_1.readUnsignedByte();
       } else if (i_2 == 6) {
-         this.field3528 = class300_1.readShortUBigEndian();
+         this.field3528 = class300_1.readUnsignedShortBigEndian();
       } else if (i_2 == 7) {
-         this.field3521 = class300_1.readShortUBigEndian();
+         this.field3521 = class300_1.readUnsignedShortBigEndian();
       } else if (i_2 == 8) {
-         this.field3535 = class300_1.readUByte();
+         this.field3535 = class300_1.readUnsignedByte();
       } else if (i_2 == 9) {
-         this.field3525 = class300_1.readUByte();
+         this.field3525 = class300_1.readUnsignedByte();
       } else if (i_2 == 10) {
-         this.field3532 = class300_1.readUByte();
+         this.field3532 = class300_1.readUnsignedByte();
       } else if (i_2 == 11) {
-         this.field3529 = class300_1.readUByte();
+         this.field3529 = class300_1.readUnsignedByte();
       } else if (i_2 == 12) {
-         i_4 = class300_1.readUByte();
+         i_4 = class300_1.readUnsignedByte();
          this.field3530 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3530[i_5] = class300_1.readShortUBigEndian();
+            this.field3530[i_5] = class300_1.readUnsignedShortBigEndian();
          }
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3530[i_5] += class300_1.readShortUBigEndian() << 16;
+            this.field3530[i_5] += class300_1.readUnsignedShortBigEndian() << 16;
          }
       } else if (i_2 == 13) {
-         i_4 = class300_1.readUByte();
+         i_4 = class300_1.readUnsignedByte();
          this.field3523 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3523[i_5] = class300_1.method5567();
+            this.field3523[i_5] = class300_1.read24BitInt();
          }
       }
 
@@ -217,9 +217,9 @@ public class class258 extends class175 {
 
    }
 
-   void method4759(class300 class300_1, byte b_2) {
+   void method4759(ByteBuffer class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

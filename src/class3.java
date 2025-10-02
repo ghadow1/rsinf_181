@@ -19,7 +19,7 @@ public class class3 implements class194 {
       return this.field11;
    }
 
-   public Object method34(class300 class300_1, int i_2) {
+   public Object method34(ByteBuffer class300_1, int i_2) {
       return this.field13.vmethod42(class300_1, -408972538);
    }
 
@@ -27,7 +27,7 @@ public class class3 implements class194 {
       return class33.method554(charsequence_0, 10);
    }
 
-   public static void method30(Object object_0, class300 class300_1, byte b_2) {
+   public static void method30(Object object_0, ByteBuffer class300_1, byte b_2) {
       class0 class0_3 = method31(object_0.getClass(), -961366401);
       class0_3.vmethod43(object_0, class300_1, 1977897097);
    }

@@ -237,10 +237,10 @@ public class class309 implements Runnable {
 
          if (class236.field3176 != null) {
             try {
-               class300 class300_11 = new class300(4);
+               ByteBuffer class300_11 = new ByteBuffer(4);
                class300_11.writeByte2(3);
                class300_11.method5480(0);
-               class236.field3176.vmethod5829(class300_11.field3730, 0, 4, -1696227994);
+               class236.field3176.vmethod5829(class300_11.buffer, 0, 4, -1696227994);
             } catch (IOException ioexception_14) {
                try {
                   class236.field3176.vmethod5830(274967727);

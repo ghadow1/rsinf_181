@@ -13,7 +13,7 @@ final class class5 implements Comparator {
          byte[] bytes_3 = class240.field3204.method4144(16, i_0);
          class240_2 = new class240();
          if (bytes_3 != null) {
-            class240_2.method4353(new class300(bytes_3), -927981442);
+            class240_2.method4353(new ByteBuffer(bytes_3), -927981442);
          }
 
          class240.field3205.method3322(class240_2, (long)i_0);

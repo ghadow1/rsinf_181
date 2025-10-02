@@ -5,16 +5,16 @@ public class class239 extends class175 {
    static class145 field3202 = new class145(64);
    public int field3201 = 0;
 
-   void method4340(class300 class300_1, int i_2, int i_3) {
+   void method4340(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 2) {
-         this.field3201 = class300_1.readShortUBigEndian();
+         this.field3201 = class300_1.readUnsignedShortBigEndian();
       }
 
    }
 
-   void method4350(class300 class300_1, int i_2) {
+   void method4350(ByteBuffer class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

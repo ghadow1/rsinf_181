@@ -35,14 +35,14 @@ public class class70 extends class180 {
    }
 
    static final byte[] method1678(byte[] bytes_0) {
-      class300 class300_2 = new class300(bytes_0);
-      int i_3 = class300_2.readUByte();
+      ByteBuffer class300_2 = new ByteBuffer(bytes_0);
+      int i_3 = class300_2.readUnsignedByte();
       int i_4 = class300_2.readIntMedEndian();
       if (i_4 < 0 || class233.field3143 != 0 && i_4 > class233.field3143) {
          throw new RuntimeException();
       } else if (i_3 == 0) {
          byte[] bytes_5 = new byte[i_4];
-         class300_2.byteArrayCopy(bytes_5, 0, i_4);
+         class300_2.readBytes(bytes_5, 0, i_4);
          return bytes_5;
       } else {
          int i_7 = class300_2.readIntMedEndian();
@@ -64,8 +64,8 @@ public class class70 extends class180 {
    public static void method1671(class299 class299_0) {
       class97 class97_2 = (class97) class96.field1324.method4838();
       if (class97_2 != null) {
-         int i_3 = class299_0.field3732;
-         class299_0.write32IntBigEndian(class97_2.field1340);
+         int i_3 = class299_0.position;
+         class299_0.writeIntBigEndian(class97_2.field1340);
 
          for (int i_4 = 0; i_4 < class97_2.field1330; i_4++) {
             if (class97_2.field1332[i_4] != 0) {
@@ -79,7 +79,7 @@ public class class70 extends class180 {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getInt((Object) null);
                      class299_0.writeByte2(0);
-                     class299_0.write32IntBigEndian(i_7);
+                     class299_0.writeIntBigEndian(i_7);
                   } else if (i_5 == 1) {
                      field_6 = class97_2.field1333[i_4];
                      field_6.setInt((Object) null, class97_2.field1329[i_4]);
@@ -88,7 +88,7 @@ public class class70 extends class180 {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getModifiers();
                      class299_0.writeByte2(0);
-                     class299_0.write32IntBigEndian(i_7);
+                     class299_0.writeIntBigEndian(i_7);
                   }
 
                   Method method_26;
@@ -97,7 +97,7 @@ public class class70 extends class180 {
                         method_26 = class97_2.field1335[i_4];
                         i_7 = method_26.getModifiers();
                         class299_0.writeByte2(0);
-                        class299_0.write32IntBigEndian(i_7);
+                        class299_0.writeIntBigEndian(i_7);
                      }
                   } else {
                      method_26 = class97_2.field1335[i_4];
@@ -114,10 +114,10 @@ public class class70 extends class180 {
                         class299_0.writeByte2(0);
                      } else if (object_12 instanceof Number) {
                         class299_0.writeByte2(1);
-                        class299_0.method5483(((Number) object_12).longValue());
+                        class299_0.writeLongBigEndian(((Number) object_12).longValue());
                      } else if (object_12 instanceof String) {
                         class299_0.writeByte2(2);
-                        class299_0.method5485((String) object_12);
+                        class299_0.writeNullTerminatedString((String) object_12);
                      } else {
                         class299_0.writeByte2(4);
                      }
@@ -158,8 +158,8 @@ public class class70 extends class180 {
    static void method1677(int i_0) {
       class187 class187_1 = class235.method4265(class183.field2238, client.field880.field1313, 1775123545);
       class187_1.field2333.writeByte2(class34.method598((byte) -18));
-      class187_1.field2333.writeShort(class7.field46);
-      class187_1.field2333.writeShort(class249.field3308);
+      class187_1.field2333.writeShortBigEndian(class7.field46);
+      class187_1.field2333.writeShortBigEndian(class249.field3308);
       client.field880.copy(class187_1);
    }
 

@@ -2,7 +2,7 @@ public class class89 {
 
    static byte[] field1252 = new byte[2048];
    static byte[] field1250 = new byte[2048];
-   static class300[] field1254 = new class300[2048];
+   static ByteBuffer[] field1254 = new ByteBuffer[2048];
    static int field1255 = 0;
    static int[] field1257 = new int[2048];
    static int field1251 = 0;
@@ -12,7 +12,7 @@ public class class89 {
    static int[] field1261 = new int[2048];
    static int field1262 = 0;
    static int[] field1256 = new int[2048];
-   static class300 field1264 = new class300(new byte[5000]);
+   static ByteBuffer field1264 = new ByteBuffer(new byte[5000]);
 
    public static void method2093(byte b_0) {
       Object object_1 = class234.field3147;

@@ -11,9 +11,9 @@ public class class9 {
    public class9() {
    }
 
-   public class9(class300 class300_1, boolean bool_2) {
-      this.field62 = class300_1.readByte2();
-      this.field59 = class300_1.readShortUBigEndian();
+   public class9(ByteBuffer class300_1, boolean bool_2) {
+      this.field62 = class300_1.readSignedByte();
+      this.field59 = class300_1.readUnsignedShortBigEndian();
       this.field60 = class300_1.readIntMedEndian();
       this.field61 = class300_1.readIntMedEndian();
       this.field58 = class300_1.readIntMedEndian();

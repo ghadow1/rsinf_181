@@ -22,9 +22,9 @@ public class class162 implements class161 {
                      class217.field2556[i_0][i_3] = new class217();
                      class217.field2556[i_0][i_3].field2688 = i_3 + (i_0 << 16);
                      if (bytes_4[0] == -1) {
-                        class217.field2556[i_0][i_3].method4088(new class300(bytes_4), (byte) 30);
+                        class217.field2556[i_0][i_3].method4088(new ByteBuffer(bytes_4), (byte) 30);
                      } else {
-                        class217.field2556[i_0][i_3].method4031(new class300(bytes_4), (byte) 9);
+                        class217.field2556[i_0][i_3].method4031(new ByteBuffer(bytes_4), (byte) 9);
                      }
                   }
                }

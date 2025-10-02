@@ -53,7 +53,7 @@ public final class class136 {
          byte[] bytes_3 = class251.field3314.method4144(8, i_0);
          class251_2 = new class251();
          if (bytes_3 != null) {
-            class251_2.method4533(new class300(bytes_3), (byte) 49);
+            class251_2.method4533(new ByteBuffer(bytes_3), (byte) 49);
          }
 
          class251.field3315.method3322(class251_2, (long)i_0);

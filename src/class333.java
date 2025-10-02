@@ -444,7 +444,7 @@ public class class333 {
       this.field3992 = new HashMap(ints_9.length);
 
       for (int i_10 = 0; i_10 < ints_9.length; i_10++) {
-         class300 class300_11 = new class300(this.field4029.method4144(i_8, ints_9[i_10]));
+         ByteBuffer class300_11 = new ByteBuffer(this.field4029.method4144(i_8, ints_9[i_10]));
          class26 class26_12 = new class26();
          class26_12.method344(class300_11, ints_9[i_10], (byte) 0);
          this.field3992.put(class26_12.method369(-229522962), class26_12);

@@ -40,7 +40,7 @@ public class class102 extends class180 {
    }
 
    void method2346(byte[] bytes_1) {
-      class300 class300_2 = new class300(bytes_1);
+      ByteBuffer class300_2 = new ByteBuffer(bytes_1);
       this.field1356 = class300_2.readIntMedEndian();
       this.field1357 = class300_2.readIntMedEndian();
       this.field1358 = class300_2.readIntMedEndian();
@@ -58,12 +58,12 @@ public class class102 extends class180 {
 
          int i_6;
          do {
-            i_6 = class300_2.readUByte();
+            i_6 = class300_2.readUnsignedByte();
             i_5 += i_6;
          } while (i_6 >= 255);
 
          byte[] bytes_7 = new byte[i_5];
-         class300_2.byteArrayCopy(bytes_7, 0, i_5);
+         class300_2.readBytes(bytes_7, 0, i_5);
          this.field1366[i_4] = bytes_7;
       }
 

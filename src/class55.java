@@ -30,7 +30,7 @@ public final class class55 {
       if (!client.field798) {
          i_3 = class299_1.readShort();
          i_4 = class299_1.readShortBigEndian();
-         int i_5 = class299_1.readShortUBigEndian();
+         int i_5 = class299_1.readUnsignedShortBigEndian();
          class29.field255 = new int[i_5][4];
 
          for (i_6 = 0; i_6 < i_5; i_6++) {
@@ -71,8 +71,8 @@ public final class class55 {
       } else {
          i_3 = class299_1.readShortBigEndian();
          i_4 = class299_1.readShort();
-         boolean bool_16 = class299_1.readUByte() == 1;
-         i_6 = class299_1.readShortUBigEndian();
+         boolean bool_16 = class299_1.readUnsignedByte() == 1;
+         i_6 = class299_1.readUnsignedShortBigEndian();
          class299_1.method5438();
 
          int i_10;

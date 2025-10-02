@@ -50,32 +50,32 @@ public class class117 {
       field1528 = new int[5];
    }
 
-   final void method2718(class300 class300_1) {
+   final void method2718(ByteBuffer class300_1) {
       this.field1525 = new class106();
       this.field1525.method2464(class300_1);
       this.field1504 = new class106();
       this.field1504.method2464(class300_1);
-      int i_2 = class300_1.readUByte();
+      int i_2 = class300_1.readUnsignedByte();
       if (i_2 != 0) {
-         --class300_1.field3732;
+         --class300_1.position;
          this.field1505 = new class106();
          this.field1505.method2464(class300_1);
          this.field1506 = new class106();
          this.field1506.method2464(class300_1);
       }
 
-      i_2 = class300_1.readUByte();
+      i_2 = class300_1.readUnsignedByte();
       if (i_2 != 0) {
-         --class300_1.field3732;
+         --class300_1.position;
          this.field1513 = new class106();
          this.field1513.method2464(class300_1);
          this.field1508 = new class106();
          this.field1508.method2464(class300_1);
       }
 
-      i_2 = class300_1.readUByte();
+      i_2 = class300_1.readUnsignedByte();
       if (i_2 != 0) {
-         --class300_1.field3732;
+         --class300_1.position;
          this.field1509 = new class106();
          this.field1509.method2464(class300_1);
          this.field1519 = new class106();
@@ -83,20 +83,20 @@ public class class117 {
       }
 
       for (int i_3 = 0; i_3 < 10; i_3++) {
-         int i_4 = class300_1.method5508();
+         int i_4 = class300_1.readSmartInt();
          if (i_4 == 0) {
             break;
          }
 
          this.field1523[i_3] = i_4;
          this.field1512[i_3] = class300_1.method5507();
-         this.field1521[i_3] = class300_1.method5508();
+         this.field1521[i_3] = class300_1.readSmartInt();
       }
 
-      this.field1524 = class300_1.method5508();
-      this.field1515 = class300_1.method5508();
-      this.field1518 = class300_1.readShortUBigEndian();
-      this.field1514 = class300_1.readShortUBigEndian();
+      this.field1524 = class300_1.readSmartInt();
+      this.field1515 = class300_1.readSmartInt();
+      this.field1518 = class300_1.readUnsignedShortBigEndian();
+      this.field1514 = class300_1.readUnsignedShortBigEndian();
       this.field1516 = new class114();
       this.field1517 = new class106();
       this.field1516.method2680(class300_1, this.field1517);

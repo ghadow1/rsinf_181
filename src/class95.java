@@ -8,7 +8,7 @@ public class class95 {
    ServerPacketProt field1309;
    class260 field1316 = new class260();
    int field1311 = 0;
-   class300 field1312 = new class300(5000);
+   ByteBuffer field1312 = new ByteBuffer(5000);
    class299 field1314 = new class299(40000);
    ServerPacketProt inPacketType = null;
    int field1315 = 0;
@@ -40,8 +40,8 @@ public class class95 {
 
    public final void copy(class187 class187_1) {
       this.field1316.method4819(class187_1);
-      class187_1.field2331 = class187_1.field2333.field3732;
-      class187_1.field2333.field3732 = 0;
+      class187_1.field2331 = class187_1.field2333.position;
+      class187_1.field2333.position = 0;
       this.field1311 += class187_1.field2331;
    }
 
@@ -51,17 +51,17 @@ public class class95 {
 
    final void method2234() throws IOException {
       if (this.field1320 != null && this.field1311 > 0) {
-         this.field1312.field3732 = 0;
+         this.field1312.position = 0;
 
          while (true) {
             class187 class187_2 = (class187) this.field1316.method4838();
-            if (class187_2 == null || class187_2.field2331 > this.field1312.field3730.length - this.field1312.field3732) {
-               this.field1320.vmethod5829(this.field1312.field3730, 0, this.field1312.field3732, -1696227994);
+            if (class187_2 == null || class187_2.field2331 > this.field1312.buffer.length - this.field1312.position) {
+               this.field1320.vmethod5829(this.field1312.buffer, 0, this.field1312.position, -1696227994);
                this.field1319 = 0;
                break;
             }
 
-            this.field1312.method5488(class187_2.field2333.field3730, 0, class187_2.field2331);
+            this.field1312.method5488(class187_2.field2333.buffer, 0, class187_2.field2331);
             this.field1311 -= class187_2.field2331;
             class187_2.method3607();
             class187_2.field2333.method5477();

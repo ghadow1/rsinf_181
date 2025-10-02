@@ -312,7 +312,7 @@ public class class214 {
       }
    }
 
-   public void method3995(class300 class300_1, int i_2) {
+   public void method3995(ByteBuffer class300_1, int i_2) {
       class300_1.writeByte2(this.field2535 ? 1 : 0);
 
       int i_3;

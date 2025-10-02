@@ -22,7 +22,7 @@ public class class128 {
          class253_2 = new class253();
          class253_2.field3357 = i_0;
          if (bytes_3 != null) {
-            class253_2.method4625(new class300(bytes_3), (byte) 82);
+            class253_2.method4625(new ByteBuffer(bytes_3), (byte) 82);
          }
 
          class253_2.method4586(-583792962);

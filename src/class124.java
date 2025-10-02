@@ -12,23 +12,23 @@ public class class124 extends class180 {
    int[] field1631;
    static int[] field1628;
 
-   class124(class300 class300_1) {
-      this.field1623 = class300_1.readShortUBigEndian();
-      this.field1624 = class300_1.readUByte() == 1;
-      int i_2 = class300_1.readUByte();
+   class124(ByteBuffer class300_1) {
+      this.field1623 = class300_1.readUnsignedShortBigEndian();
+      this.field1624 = class300_1.readUnsignedByte() == 1;
+      int i_2 = class300_1.readUnsignedByte();
       if (i_2 >= 1 && i_2 <= 4) {
          this.field1632 = new int[i_2];
 
          int i_3;
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            this.field1632[i_3] = class300_1.readShortUBigEndian();
+            this.field1632[i_3] = class300_1.readUnsignedShortBigEndian();
          }
 
          if (i_2 > 1) {
             this.field1626 = new int[i_2 - 1];
 
             for (i_3 = 0; i_3 < i_2 - 1; i_3++) {
-               this.field1626[i_3] = class300_1.readUByte();
+               this.field1626[i_3] = class300_1.readUnsignedByte();
             }
          }
 
@@ -36,7 +36,7 @@ public class class124 extends class180 {
             this.field1627 = new int[i_2 - 1];
 
             for (i_3 = 0; i_3 < i_2 - 1; i_3++) {
-               this.field1627[i_3] = class300_1.readUByte();
+               this.field1627[i_3] = class300_1.readUnsignedByte();
             }
          }
 
@@ -46,8 +46,8 @@ public class class124 extends class180 {
             this.field1619[i_3] = class300_1.readIntMedEndian();
          }
 
-         this.field1629 = class300_1.readUByte();
-         this.field1630 = class300_1.readUByte();
+         this.field1629 = class300_1.readUnsignedByte();
+         this.field1630 = class300_1.readUnsignedByte();
          this.field1631 = null;
       } else {
          throw new RuntimeException();

@@ -4,7 +4,7 @@ public class class250 extends class175 {
    public static class145 field3311 = new class145(64);
    class316 field3310;
 
-   void method4513(class300 class300_1, int i_2, int i_3) {
+   void method4513(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 249) {
          this.field3310 = class26.method403(class300_1, this.field3310, -412721913);
       }
@@ -35,9 +35,9 @@ public class class250 extends class175 {
    void method4512(short s_1) {
    }
 
-   void method4516(class300 class300_1, int i_2) {
+   void method4516(ByteBuffer class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

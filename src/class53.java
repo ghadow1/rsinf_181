@@ -678,7 +678,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          class256_2 = new class256();
          class256_2.field3467 = i_0;
          if (bytes_3 != null) {
-            class256_2.method4703(new class300(bytes_3), -1547887563);
+            class256_2.method4703(new ByteBuffer(bytes_3), -1547887563);
          }
 
          class256_2.method4704(-169621084);

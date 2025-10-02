@@ -13,7 +13,7 @@ public class class59 extends class180 {
          byte[] bytes_3 = class244.field3255.method4144(1, i_0);
          class244_2 = new class244();
          if (bytes_3 != null) {
-            class244_2.method4418(new class300(bytes_3), i_0, -655708438);
+            class244_2.method4418(new ByteBuffer(bytes_3), i_0, -655708438);
          }
 
          class244_2.method4417(978427623);

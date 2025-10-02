@@ -23,7 +23,7 @@ public class class119 implements class139 {
       this.field1531 = new class124[class233_1.method4154(0, -2013902268)];
 
       for (int i_9 = 0; i_9 < i_8; i_9++) {
-         class300 class300_10 = new class300(class233_1.method4144(0, ints_7[i_9]));
+         ByteBuffer class300_10 = new ByteBuffer(class233_1.method4144(0, ints_7[i_9]));
          this.field1531[ints_7[i_9]] = new class124(class300_10);
       }
 
@@ -132,35 +132,35 @@ public class class119 implements class139 {
       String string_5 = null;
       String string_6 = null;
       boolean bool_7 = false;
-      class300 class300_9;
+      ByteBuffer class300_9;
       File file_24;
       if (class167.field2038.exists()) {
          try {
             class343 class343_8 = new class343(class167.field2038, "rw", 10000L);
 
             int i_10;
-            for (class300_9 = new class300((int)class343_8.method6552()); class300_9.field3732 < class300_9.field3730.length; class300_9.field3732 += i_10) {
-               i_10 = class343_8.method6554(class300_9.field3730, class300_9.field3732, class300_9.field3730.length - class300_9.field3732);
+            for (class300_9 = new ByteBuffer((int)class343_8.method6552()); class300_9.position < class300_9.buffer.length; class300_9.position += i_10) {
+               i_10 = class343_8.method6554(class300_9.buffer, class300_9.position, class300_9.buffer.length - class300_9.position);
                if (i_10 == -1) {
                   throw new IOException();
                }
             }
 
-            class300_9.field3732 = 0;
-            i_10 = class300_9.readUByte();
+            class300_9.position = 0;
+            i_10 = class300_9.readUnsignedByte();
             if (i_10 < 1 || i_10 > 3) {
                throw new IOException("" + i_10);
             }
 
             int i_11 = 0;
             if (i_10 > 1) {
-               i_11 = class300_9.readUByte();
+               i_11 = class300_9.readUnsignedByte();
             }
 
             if (i_10 <= 2) {
-               string_5 = class300_9.method5512();
+               string_5 = class300_9.readPrefixedNullTerminatedString();
                if (i_11 == 1) {
-                  string_6 = class300_9.method5512();
+                  string_6 = class300_9.readPrefixedNullTerminatedString();
                }
             } else {
                string_5 = class300_9.method5505();
@@ -238,12 +238,12 @@ public class class119 implements class139 {
 
          try {
             class343 class343_26 = new class343(class167.field2038, "rw", 10000L);
-            class300 class300_27 = new class300(500);
+            ByteBuffer class300_27 = new ByteBuffer(500);
             class300_27.writeByte2(3);
             class300_27.writeByte2(0);
             class300_27.method5487(file_23.getPath());
 
-            class343_26.method6561(class300_27.field3730, 0, class300_27.field3732);
+            class343_26.method6561(class300_27.buffer, 0, class300_27.position);
             class343_26.method6550();
          } catch (IOException ioexception_20) {
             ioexception_20.printStackTrace();

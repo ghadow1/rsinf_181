@@ -1,6 +1,6 @@
 public abstract class class322 {
 
-   static class300 field3882;
+   static ByteBuffer field3882;
    public int[] field3876;
    public int field3877;
    public int field3878;

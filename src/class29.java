@@ -184,7 +184,7 @@ public class class29 {
             byte[] bytes_14 = class257.field3505.method4144(4, i_8);
             class257_13 = new class257();
             if (bytes_14 != null) {
-               class257_13.method4744(new class300(bytes_14), i_8, (byte) -104);
+               class257_13.method4744(new ByteBuffer(bytes_14), i_8, (byte) -104);
             }
 
             class257_13.method4743(2079651033);
@@ -363,7 +363,7 @@ public class class29 {
                byte[] bytes_12 = class257.field3505.method4144(4, i_7);
                class257_11 = new class257();
                if (bytes_12 != null) {
-                  class257_11.method4744(new class300(bytes_12), i_7, (byte) -90);
+                  class257_11.method4744(new ByteBuffer(bytes_12), i_7, (byte) -90);
                }
 
                class257_11.method4743(-739254085);

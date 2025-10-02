@@ -272,7 +272,7 @@ public class class209 {
 
    static int method3948(int i_0, int i_1) {
       long long_3 = (long)((i_0 << 16) + i_1);
-      return class226.field3071 != null && class226.field3071.field2113 == long_3 ? class240.field3209.field3732 * 99 / (class240.field3209.field3730.length - class226.field3071.field3122) + 1 : 0;
+      return class226.field3071 != null && class226.field3071.field2113 == long_3 ? class240.field3209.position * 99 / (class240.field3209.buffer.length - class226.field3071.field3122) + 1 : 0;
    }
 
    public static int method3945(String string_0) {
@@ -281,7 +281,7 @@ public class class209 {
 
    static final boolean method3947(byte[] bytes_0, int i_1, int i_2) {
       boolean bool_4 = true;
-      class300 class300_5 = new class300(bytes_0);
+      ByteBuffer class300_5 = new ByteBuffer(bytes_0);
       int i_6 = -1;
 
       label71:
@@ -298,7 +298,7 @@ public class class209 {
          while (true) {
             int i_10;
             while (!bool_9) {
-               i_10 = class300_5.method5508();
+               i_10 = class300_5.readSmartInt();
                if (i_10 == 0) {
                   continue label71;
                }
@@ -306,7 +306,7 @@ public class class209 {
                i_8 += i_10 - 1;
                int i_11 = i_8 & 0x3f;
                int i_12 = i_8 >> 6 & 0x3f;
-               int i_13 = class300_5.readUByte() >> 2;
+               int i_13 = class300_5.readUnsignedByte() >> 2;
                int i_14 = i_12 + i_1;
                int i_15 = i_11 + i_2;
                if (i_14 > 0 && i_15 > 0 && i_14 < 103 && i_15 < 103) {
@@ -322,12 +322,12 @@ public class class209 {
                }
             }
 
-            i_10 = class300_5.method5508();
+            i_10 = class300_5.readSmartInt();
             if (i_10 == 0) {
                break;
             }
 
-            class300_5.readUByte();
+            class300_5.readUnsignedByte();
          }
       }
    }

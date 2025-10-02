@@ -79,9 +79,9 @@ public class class244 extends class175 {
       this.field3257 = (int)(d_13 * (double)this.field3260);
    }
 
-   void method4432(class300 class300_1, int i_2, int i_3, byte b_4) {
+   void method4432(ByteBuffer class300_1, int i_2, int i_3, byte b_4) {
       if (i_2 == 1) {
-         this.field3256 = class300_1.method5567();
+         this.field3256 = class300_1.read24BitInt();
       }
 
    }
@@ -90,9 +90,9 @@ public class class244 extends class175 {
       this.method4420(this.field3256, -1792138465);
    }
 
-   public void method4418(class300 class300_1, int i_2, int i_3) {
+   public void method4418(ByteBuffer class300_1, int i_2, int i_3) {
       while (true) {
-         int i_4 = class300_1.readUByte();
+         int i_4 = class300_1.readUnsignedByte();
          if (i_4 == 0) {
             return;
          }

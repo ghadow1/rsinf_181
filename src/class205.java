@@ -5,7 +5,7 @@ public abstract class class205 {
    abstract byte[] vmethod3935(int var1);
 
    static final void method3933(byte[] bytes_0, int i_1, int i_2, class133 class133_3, class172[] arr_4) {
-      class300 class300_6 = new class300(bytes_0);
+      ByteBuffer class300_6 = new ByteBuffer(bytes_0);
       int i_7 = -1;
 
       while (true) {
@@ -18,7 +18,7 @@ public abstract class class205 {
          int i_9 = 0;
 
          while (true) {
-            int i_10 = class300_6.method5508();
+            int i_10 = class300_6.readSmartInt();
             if (i_10 == 0) {
                break;
             }
@@ -27,7 +27,7 @@ public abstract class class205 {
             int i_11 = i_9 & 0x3f;
             int i_12 = i_9 >> 6 & 0x3f;
             int i_13 = i_9 >> 12;
-            int i_14 = class300_6.readUByte();
+            int i_14 = class300_6.readUnsignedByte();
             int i_15 = i_14 >> 2;
             int i_16 = i_14 & 0x3;
             int i_17 = i_12 + i_1;

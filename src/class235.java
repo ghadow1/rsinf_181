@@ -21,7 +21,7 @@ public class class235 extends class233 {
       this.field3157 = bool_6;
       int i_8 = this.field3154;
       if (class322.field3882 != null) {
-         class322.field3882.field3732 = i_8 * 8 + 5;
+         class322.field3882.position = i_8 * 8 + 5;
          int i_9 = class322.field3882.readIntMedEndian();
          int i_10 = class322.field3882.readIntMedEndian();
          this.method4262(i_9, i_10, 238802641);
@@ -126,8 +126,8 @@ public class class235 extends class233 {
             return;
          }
 
-         class300 class300_12 = new class300(class70.method1678(bytes_3));
-         int i_13 = class300_12.readUByte();
+         ByteBuffer class300_12 = new ByteBuffer(class70.method1678(bytes_3));
+         int i_13 = class300_12.readUnsignedByte();
          if (i_13 != 5 && i_13 != 6) {
             throw new RuntimeException(i_13 + "," + this.field3154 + "," + i_2);
          }

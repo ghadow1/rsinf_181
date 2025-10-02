@@ -1,4 +1,4 @@
-public class class299 extends class300 {
+public class class299 extends ByteBuffer {
 
    static int field3727;
    static final int[] field3724 = new int[] {0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1};
@@ -10,7 +10,7 @@ public class class299 extends class300 {
    }
 
    public boolean method5441() {
-      int i_2 = super.field3730[super.field3732] - this.field3725.method6254((byte) 7) & 0xff;
+      int i_2 = super.buffer[super.position] - this.field3725.method6254((byte) 7) & 0xff;
       return i_2 >= 128;
    }
 
@@ -19,15 +19,15 @@ public class class299 extends class300 {
    }
 
    public void method5473(int i_1) {
-      super.field3730[++super.field3732 - 1] = (byte)(i_1 + this.field3725.method6246((byte) 75));
+      super.buffer[++super.position - 1] = (byte)(i_1 + this.field3725.method6246((byte) 75));
    }
 
    public void method5438() {
-      this.field3726 = super.field3732 * 8;
+      this.field3726 = super.position * 8;
    }
 
    public void method5446() {
-      super.field3732 = (this.field3726 + 7) / 8;
+      super.position = (this.field3726 + 7) / 8;
    }
 
    public int method5445(int i_1) {
@@ -36,14 +36,14 @@ public class class299 extends class300 {
       int i_5 = 0;
 
       for (this.field3726 += i_1; i_1 > i_4; i_4 = 8) {
-         i_5 += (super.field3730[i_3++] & field3724[i_4]) << i_1 - i_4;
+         i_5 += (super.buffer[i_3++] & field3724[i_4]) << i_1 - i_4;
          i_1 -= i_4;
       }
 
       if (i_4 == i_1) {
-         i_5 += super.field3730[i_3] & field3724[i_4];
+         i_5 += super.buffer[i_3] & field3724[i_4];
       } else {
-         i_5 += super.field3730[i_3] >> i_4 - i_1 & field3724[i_1];
+         i_5 += super.buffer[i_3] >> i_4 - i_1 & field3724[i_1];
       }
 
       return i_5;
@@ -51,7 +51,7 @@ public class class299 extends class300 {
 
    public void method5443(byte[] bytes_1, int i_2, int i_3) {
       for (int i_5 = 0; i_5 < i_3; i_5++) {
-         bytes_1[i_5 + i_2] = (byte)(super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 74));
+         bytes_1[i_5 + i_2] = (byte)(super.buffer[++super.position - 1] - this.field3725.method6246((byte) 74));
       }
 
    }
@@ -61,12 +61,12 @@ public class class299 extends class300 {
    }
 
    public int method5451() {
-      int i_2 = super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 118) & 0xff;
-      return i_2 < 128 ? i_2 : (i_2 - 128 << 8) + (super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 13) & 0xff);
+      int i_2 = super.buffer[++super.position - 1] - this.field3725.method6246((byte) 118) & 0xff;
+      return i_2 < 128 ? i_2 : (i_2 - 128 << 8) + (super.buffer[++super.position - 1] - this.field3725.method6246((byte) 13) & 0xff);
    }
 
    public int method5440() {
-      return super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 15) & 0xff;
+      return super.buffer[++super.position - 1] - this.field3725.method6246((byte) 15) & 0xff;
    }
 
    public void method5437(int[] ints_1) {

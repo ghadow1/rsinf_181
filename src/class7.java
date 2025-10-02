@@ -9,11 +9,11 @@ public class class7 {
    public final long field42;
    public final class9 field53;
 
-   class7(class300 class300_1, byte b_2, int i_3) {
-      this.field44 = class300_1.readNullTermString();
-      this.field45 = class300_1.readNullTermString();
-      this.field51 = class300_1.readShortUBigEndian();
-      this.field42 = class300_1.method5531();
+   class7(ByteBuffer class300_1, byte b_2, int i_3) {
+      this.field44 = class300_1.readNullTerminatedString();
+      this.field45 = class300_1.readNullTerminatedString();
+      this.field51 = class300_1.readUnsignedShortBigEndian();
+      this.field42 = class300_1.readLongFromMediumEndian();
       int i_4 = class300_1.readIntMedEndian();
       int i_5 = class300_1.readIntMedEndian();
       this.field53 = new class9();
@@ -42,7 +42,7 @@ public class class7 {
          byte[] bytes_3 = class258.field3527.method4144(12, i_0);
          class258_2 = new class258();
          if (bytes_3 != null) {
-            class258_2.method4759(new class300(bytes_3), (byte) 88);
+            class258_2.method4759(new ByteBuffer(bytes_3), (byte) 88);
          }
 
          class258_2.method4761(806874502);

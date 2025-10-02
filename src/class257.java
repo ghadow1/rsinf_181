@@ -14,15 +14,15 @@ public class class257 extends class175 {
    public int field3504;
    public int field3514;
 
-   void method4745(class300 class300_1, int i_2, int i_3, byte b_4) {
+   void method4745(ByteBuffer class300_1, int i_2, int i_3, byte b_4) {
       if (i_2 == 1) {
-         this.field3512 = class300_1.method5567();
+         this.field3512 = class300_1.read24BitInt();
       } else if (i_2 == 2) {
-         this.field3508 = class300_1.readUByte();
+         this.field3508 = class300_1.readUnsignedByte();
       } else if (i_2 == 5) {
          this.field3506 = false;
       } else if (i_2 == 7) {
-         this.field3507 = class300_1.method5567();
+         this.field3507 = class300_1.read24BitInt();
       } else if (i_2 == 8) {
          ;
       }
@@ -101,9 +101,9 @@ public class class257 extends class175 {
       this.method4749(this.field3512, -1232631755);
    }
 
-   public void method4744(class300 class300_1, int i_2, byte b_3) {
+   public void method4744(ByteBuffer class300_1, int i_2, byte b_3) {
       while (true) {
-         int i_4 = class300_1.readUByte();
+         int i_4 = class300_1.readUnsignedByte();
          if (i_4 == 0) {
             return;
          }

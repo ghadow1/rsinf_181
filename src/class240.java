@@ -1,22 +1,22 @@
 public class class240 extends class175 {
 
-   static class300 field3209;
+   static ByteBuffer field3209;
    static class324 field3207;
    static class233 field3204;
    public static int field3203;
    static class145 field3205 = new class145(64);
    public int field3206 = 0;
 
-   void method4354(class300 class300_1, int i_2, int i_3) {
+   void method4354(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 5) {
-         this.field3206 = class300_1.readShortUBigEndian();
+         this.field3206 = class300_1.readUnsignedShortBigEndian();
       }
 
    }
 
-   void method4353(class300 class300_1, int i_2) {
+   void method4353(ByteBuffer class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

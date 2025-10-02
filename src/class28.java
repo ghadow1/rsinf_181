@@ -25,17 +25,17 @@ public class class28 {
       class187_5.field2333.write32IntReverse(bool_3 ? client.field855 : 0);
       class187_5.field2333.method5634(i_1);
       class187_5.field2333.writeByte(i_2);
-      class187_5.field2333.writeShort(i_0);
+      class187_5.field2333.writeShortBigEndian(i_0);
       client.field880.copy(class187_5);
    }
 
-   static final void method419(class300 class300_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
+   static final void method419(ByteBuffer class300_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
       int i_8;
       if (i_2 >= 0 && i_2 < 104 && i_3 >= 0 && i_3 < 104) {
          class55.field502[i_1][i_2][i_3] = 0;
 
          while (true) {
-            i_8 = class300_0.readUByte();
+            i_8 = class300_0.readUnsignedByte();
             if (i_8 == 0) {
                if (i_1 == 0) {
                   class55.field516[0][i_2][i_3] = -class1.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5, (byte) 84) * 8;
@@ -46,7 +46,7 @@ public class class28 {
             }
 
             if (i_8 == 1) {
-               int i_9 = class300_0.readUByte();
+               int i_9 = class300_0.readUnsignedByte();
                if (i_9 == 1) {
                   i_9 = 0;
                }
@@ -60,7 +60,7 @@ public class class28 {
             }
 
             if (i_8 <= 49) {
-               class55.field505[i_1][i_2][i_3] = class300_0.readByte2();
+               class55.field505[i_1][i_2][i_3] = class300_0.readSignedByte();
                class55.field506[i_1][i_2][i_3] = (byte)((i_8 - 2) / 4);
                class268.field3561[i_1][i_2][i_3] = (byte)(i_8 - 2 + i_6 & 0x3);
             } else if (i_8 <= 81) {
@@ -71,18 +71,18 @@ public class class28 {
          }
       } else {
          while (true) {
-            i_8 = class300_0.readUByte();
+            i_8 = class300_0.readUnsignedByte();
             if (i_8 == 0) {
                break;
             }
 
             if (i_8 == 1) {
-               class300_0.readUByte();
+               class300_0.readUnsignedByte();
                break;
             }
 
             if (i_8 <= 49) {
-               class300_0.readUByte();
+               class300_0.readUnsignedByte();
             }
          }
       }

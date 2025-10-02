@@ -112,7 +112,7 @@ public class class56 {
       for (i_3 = 0; i_3 < client.field697; i_3++) {
          i_15 = client.field859[i_3];
          class79_5 = client.field694[i_15];
-         i_6 = class299_1.readUByte();
+         i_6 = class299_1.readUnsignedByte();
          if ((i_6 & 0x1) != 0) {
             class79_5.field975 = class299_1.readShortLittleEndian();
             if (class79_5.field975 == 65535) {
@@ -131,7 +131,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x20) != 0) {
-            i_7 = class299_1.readShortUBigEndian();
+            i_7 = class299_1.readUnsignedShortBigEndian();
             if (i_7 == 65535) {
                i_7 = -1;
             }
@@ -160,7 +160,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = class53.method1005(class299_1.readShortUBigEndian(), (byte) -91);
+            class79_5.field1134 = class53.method1005(class299_1.readUnsignedShortBigEndian(), (byte) -91);
             class79_5.field952 = class79_5.field1134.field3469;
             class79_5.field948 = class79_5.field1134.field3492;
             class79_5.field957 = class79_5.field1134.field3475;
@@ -182,19 +182,19 @@ public class class56 {
                   i_10 = -1;
                   i_11 = -1;
                   i_12 = -1;
-                  i_9 = class299_1.method5508();
+                  i_9 = class299_1.readSmartInt();
                   if (i_9 == 32767) {
-                     i_9 = class299_1.method5508();
-                     i_11 = class299_1.method5508();
-                     i_10 = class299_1.method5508();
-                     i_12 = class299_1.method5508();
+                     i_9 = class299_1.readSmartInt();
+                     i_11 = class299_1.readSmartInt();
+                     i_10 = class299_1.readSmartInt();
+                     i_12 = class299_1.readSmartInt();
                   } else if (i_9 != 32766) {
-                     i_11 = class299_1.method5508();
+                     i_11 = class299_1.readSmartInt();
                   } else {
                      i_9 = -1;
                   }
 
-                  i_13 = class299_1.method5508();
+                  i_13 = class299_1.readSmartInt();
                   class79_5.method1657(i_9, i_11, i_10, i_12, client.field881, i_13, 295125263);
                }
             }
@@ -202,11 +202,11 @@ public class class56 {
             i_8 = class299_1.readByte();
             if (i_8 > 0) {
                for (i_9 = 0; i_9 < i_8; i_9++) {
-                  i_10 = class299_1.method5508();
-                  i_11 = class299_1.method5508();
+                  i_10 = class299_1.readSmartInt();
+                  i_11 = class299_1.readSmartInt();
                   if (i_11 != 32767) {
-                     i_12 = class299_1.method5508();
-                     i_13 = class299_1.readUByte();
+                     i_12 = class299_1.readSmartInt();
+                     i_13 = class299_1.readUnsignedByte();
                      int i_14 = i_11 > 0 ? class299_1.readByteInverse() : i_13;
                      class79_5.method1655(i_10, client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
@@ -233,7 +233,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x2) != 0) {
-            class79_5.field977 = class299_1.readNullTermString();
+            class79_5.field977 = class299_1.readNullTerminatedString();
             class79_5.field1002 = 100;
          }
       }
@@ -246,8 +246,8 @@ public class class56 {
          }
       }
 
-      if (class299_1.field3732 != client.field880.field1315) {
-         throw new RuntimeException(class299_1.field3732 + "," + client.field880.field1315);
+      if (class299_1.position != client.field880.field1315) {
+         throw new RuntimeException(class299_1.position + "," + client.field880.field1315);
       } else {
          for (i_3 = 0; i_3 < client.field695; i_3++) {
             if (client.field694[client.field696[i_3]] == null) {
@@ -268,7 +268,7 @@ public class class56 {
          }
       }
 
-      class300 class300_14 = new class300(bytes_0);
+      ByteBuffer class300_14 = new ByteBuffer(bytes_0);
 
       for (i_11 = 0; i_11 < 4; i_11++) {
          for (int i_12 = 0; i_12 < 64; i_12++) {

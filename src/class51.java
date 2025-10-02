@@ -13,7 +13,7 @@ public class class51 {
          byte[] bytes_3 = class246.field3281.method4144(33, i_0);
          class246_2 = new class246();
          if (bytes_3 != null) {
-            class246_2.method4473(new class300(bytes_3), (byte) -11);
+            class246_2.method4473(new ByteBuffer(bytes_3), (byte) -11);
          }
 
          class246.field3278.method3322(class246_2, (long)i_0);

@@ -28,7 +28,7 @@ public class class90 {
             byte[] bytes_5 = class242.field3233.method4144(19, i_2);
             class242_4 = new class242();
             if (bytes_5 != null) {
-               class242_4.method4401(new class300(bytes_5), (byte) 22);
+               class242_4.method4401(new ByteBuffer(bytes_5), (byte) 22);
             }
 
             class242.field3232.method3322(class242_4, (long)i_2);
@@ -83,16 +83,16 @@ public class class90 {
                   }
                }
 
-               class300 class300_32 = new class300(i_3);
+               ByteBuffer class300_32 = new ByteBuffer(i_3);
                class300_32.writeByte2(2);
-               class300_32.writeShort(i_4);
+               class300_32.writeShortBigEndian(i_4);
                Iterator iterator_33 = this.field1271.entrySet().iterator();
 
                while (iterator_33.hasNext()) {
                   Entry map$entry_18 = (Entry) iterator_33.next();
                   int i_19 = ((Integer) map$entry_18.getKey()).intValue();
                   if (this.field1268[i_19]) {
-                     class300_32.writeShort(i_19);
+                     class300_32.writeShortBigEndian(i_19);
                      Object object_9 = map$entry_18.getValue();
                      Class class_11 = object_9.getClass();
                      class3[] arr_12 = new class3[] {class3.field9, class3.field14, class3.field7};
@@ -120,7 +120,7 @@ public class class90 {
                   }
                }
 
-               class343_2.method6561(class300_32.field3730, 0, class300_32.field3732);
+               class343_2.method6561(class300_32.buffer, 0, class300_32.position);
                bool_26 = false;
                break label164;
             } catch (Exception exception_30) {
@@ -175,13 +175,13 @@ public class class90 {
                         }
                      }
 
-                     class300 class300_16 = new class300(bytes_3);
-                     if (class300_16.field3730.length - class300_16.field3732 < 1) {
+                     ByteBuffer class300_16 = new ByteBuffer(bytes_3);
+                     if (class300_16.buffer.length - class300_16.position < 1) {
                         bool_26 = false;
                         break label236;
                      }
 
-                     int i_17 = class300_16.readUByte();
+                     int i_17 = class300_16.readUnsignedByte();
                      if (i_17 < 0) {
                         bool_26 = false;
                         break label238;
@@ -197,7 +197,7 @@ public class class90 {
                      int i_10;
                      int i_18;
                      if (i_17 >= 2) {
-                        i_18 = class300_16.readShortUBigEndian();
+                        i_18 = class300_16.readUnsignedShortBigEndian();
                         i_8 = 0;
 
                         while (true) {
@@ -206,8 +206,8 @@ public class class90 {
                               break;
                            }
 
-                           i_9 = class300_16.readShortUBigEndian();
-                           i_10 = class300_16.readUByte();
+                           i_9 = class300_16.readUnsignedShortBigEndian();
+                           i_10 = class300_16.readUnsignedByte();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
                            class3 class3_12 = (class3) class107.method2476(arr_11, i_10);
                            Object object_13 = class3_12.method34(class300_16, -25501823);
@@ -218,21 +218,21 @@ public class class90 {
                            ++i_8;
                         }
                      } else {
-                        i_18 = class300_16.readShortUBigEndian();
+                        i_18 = class300_16.readUnsignedShortBigEndian();
 
                         for (i_8 = 0; i_8 < i_18; i_8++) {
-                           i_9 = class300_16.readShortUBigEndian();
+                           i_9 = class300_16.readUnsignedShortBigEndian();
                            i_10 = class300_16.readIntMedEndian();
                            if (this.field1268[i_9]) {
                               this.field1271.put(Integer.valueOf(i_9), Integer.valueOf(i_10));
                            }
                         }
 
-                        i_8 = class300_16.readShortUBigEndian();
+                        i_8 = class300_16.readUnsignedShortBigEndian();
 
                         for (i_9 = 0; i_9 < i_8; i_9++) {
-                           class300_16.readShortUBigEndian();
-                           class300_16.readNullTermString();
+                           class300_16.readUnsignedShortBigEndian();
+                           class300_16.readNullTerminatedString();
                         }
 
                         bool_26 = false;

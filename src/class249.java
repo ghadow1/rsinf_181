@@ -8,9 +8,9 @@ public class class249 extends class175 {
    char field3306;
    public String field3303;
 
-   void method4498(class300 class300_1, int i_2, int i_3) {
+   void method4498(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         byte b_5 = class300_1.readByte2();
+         byte b_5 = class300_1.readSignedByte();
          int i_6 = b_5 & 0xff;
          if (i_6 == 0) {
             throw new IllegalArgumentException("" + Integer.toString(i_6, 16));
@@ -32,7 +32,7 @@ public class class249 extends class175 {
       } else if (i_2 == 4) {
          this.field3305 = false;
       } else if (i_2 == 5) {
-         this.field3303 = class300_1.readNullTermString();
+         this.field3303 = class300_1.readNullTerminatedString();
       }
 
    }
@@ -44,9 +44,9 @@ public class class249 extends class175 {
    void method4496(byte b_1) {
    }
 
-   void method4497(class300 class300_1, byte b_2) {
+   void method4497(ByteBuffer class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
@@ -63,7 +63,7 @@ public class class249 extends class175 {
          byte[] bytes_3 = class250.field3309.method4144(34, i_0);
          class250_2 = new class250();
          if (bytes_3 != null) {
-            class250_2.method4516(new class300(bytes_3), 1347797517);
+            class250_2.method4516(new ByteBuffer(bytes_3), 1347797517);
          }
 
          class250_2.method4512((short) 9298);

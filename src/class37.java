@@ -10,6 +10,6 @@ public interface class37 {
 
    int[] vmethod760(int var1, int var2, int var3, byte var4);
 
-   void vmethod743(class300 var1, int var2);
+   void vmethod743(ByteBuffer var1, int var2);
 
 }

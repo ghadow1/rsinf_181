@@ -3,15 +3,15 @@ final class class2 implements class0 {
    static long field4;
    static class235 field6;
 
-   void method19(Long long_1, class300 class300_2, int i_3) {
-      class300_2.method5483(long_1.longValue());
+   void method19(Long long_1, ByteBuffer class300_2, int i_3) {
+      class300_2.writeLongBigEndian(long_1.longValue());
    }
 
-   public Object vmethod42(class300 class300_1, int i_2) {
-      return Long.valueOf(class300_1.method5531());
+   public Object vmethod42(ByteBuffer class300_1, int i_2) {
+      return Long.valueOf(class300_1.readLongFromMediumEndian());
    }
 
-   public void vmethod43(Object object_1, class300 class300_2, int i_3) {
+   public void vmethod43(Object object_1, ByteBuffer class300_2, int i_3) {
       this.method19((Long) object_1, class300_2, -338982282);
    }
 
@@ -19,7 +19,7 @@ final class class2 implements class0 {
       int i_4 = -1;
 
       for (int i_5 = i_1; i_5 < i_2; i_5++) {
-         i_4 = i_4 >>> 8 ^ class300.field3731[(i_4 ^ bytes_0[i_5]) & 0xff];
+         i_4 = i_4 >>> 8 ^ ByteBuffer.crc32Table[(i_4 ^ bytes_0[i_5]) & 0xff];
       }
 
       i_4 = ~i_4;

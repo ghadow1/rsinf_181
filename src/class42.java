@@ -59,17 +59,17 @@ public class class42 implements class37 {
       }
    }
 
-   public void vmethod743(class300 class300_1, int i_2) {
-      this.field368 = class300_1.readUByte();
-      this.field363 = class300_1.readUByte();
-      this.field364 = class300_1.readShortUBigEndian();
-      this.field376 = class300_1.readUByte();
-      this.field365 = class300_1.readShortUBigEndian();
-      this.field369 = class300_1.readUByte();
-      this.field366 = class300_1.readShortUBigEndian();
-      this.field370 = class300_1.readUByte();
-      this.field375 = class300_1.readShortUBigEndian();
-      this.field371 = class300_1.readUByte();
+   public void vmethod743(ByteBuffer class300_1, int i_2) {
+      this.field368 = class300_1.readUnsignedByte();
+      this.field363 = class300_1.readUnsignedByte();
+      this.field364 = class300_1.readUnsignedShortBigEndian();
+      this.field376 = class300_1.readUnsignedByte();
+      this.field365 = class300_1.readUnsignedShortBigEndian();
+      this.field369 = class300_1.readUnsignedByte();
+      this.field366 = class300_1.readUnsignedShortBigEndian();
+      this.field370 = class300_1.readUnsignedByte();
+      this.field375 = class300_1.readUnsignedShortBigEndian();
+      this.field371 = class300_1.readUnsignedByte();
       this.method744(33671142);
    }
 

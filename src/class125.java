@@ -14,17 +14,17 @@ public class class125 {
 
    class125(byte[] bytes_1, class132 class132_2) {
       this.field1634 = class132_2;
-      class300 class300_3 = new class300(bytes_1);
-      class300 class300_4 = new class300(bytes_1);
-      class300_3.field3732 = 2;
-      int i_5 = class300_3.readUByte();
+      ByteBuffer class300_3 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_4 = new ByteBuffer(bytes_1);
+      class300_3.position = 2;
+      int i_5 = class300_3.readUnsignedByte();
       int i_6 = -1;
       int i_7 = 0;
-      class300_4.field3732 = i_5 + class300_3.field3732;
+      class300_4.position = i_5 + class300_3.position;
 
       int i_8;
       for (i_8 = 0; i_8 < i_5; i_8++) {
-         int i_9 = class300_3.readUByte();
+         int i_9 = class300_3.readUnsignedByte();
          if (i_9 > 0) {
             if (this.field1634.field1798[i_8] != 0) {
                for (int i_10 = i_8 - 1; i_10 > i_6; --i_10) {
@@ -71,7 +71,7 @@ public class class125 {
          }
       }
 
-      if (bytes_1.length != class300_4.field3732) {
+      if (bytes_1.length != class300_4.position) {
          throw new RuntimeException();
       } else {
          this.field1637 = i_7;

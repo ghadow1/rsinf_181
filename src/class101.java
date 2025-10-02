@@ -4,18 +4,18 @@ public class class101 {
    int field1353;
    int field1354;
 
-   class101(class300 class300_1) {
+   class101(ByteBuffer class300_1) {
       for (int i_2 = 0; i_2 < 10; i_2++) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 != 0) {
-            --class300_1.field3732;
+            --class300_1.position;
             this.field1351[i_2] = new class117();
             this.field1351[i_2].method2718(class300_1);
          }
       }
 
-      this.field1353 = class300_1.readShortUBigEndian();
-      this.field1354 = class300_1.readShortUBigEndian();
+      this.field1353 = class300_1.readUnsignedShortBigEndian();
+      this.field1354 = class300_1.readUnsignedShortBigEndian();
    }
 
    final byte[] method2332() {
@@ -94,7 +94,7 @@ public class class101 {
 
    public static class101 method2334(class233 class233_0, int i_1, int i_2) {
       byte[] bytes_3 = class233_0.method4144(i_1, i_2);
-      return bytes_3 == null ? null : new class101(new class300(bytes_3));
+      return bytes_3 == null ? null : new class101(new ByteBuffer(bytes_3));
    }
 
 }

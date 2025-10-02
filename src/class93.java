@@ -110,13 +110,13 @@ public class class93 extends class135 {
       }
 
       class236.field3176 = class305_0;
-      class300 class300_3;
+      ByteBuffer class300_3;
       if (class236.field3176 != null) {
          try {
-            class300_3 = new class300(4);
+            class300_3 = new ByteBuffer(4);
             class300_3.writeByte2(bool_1 ? 2 : 3);
             class300_3.method5480(0);
-            class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
+            class236.field3176.vmethod5829(class300_3.buffer, 0, 4, -1696227994);
          } catch (IOException ioexception_8) {
             try {
                class236.field3176.vmethod5830(1987296931);
@@ -129,7 +129,7 @@ public class class93 extends class135 {
          }
       }
 
-      class236.field3174.field3732 = 0;
+      class236.field3174.position = 0;
       class226.field3071 = null;
       class240.field3209 = null;
       class236.field3175 = 0;
@@ -142,11 +142,11 @@ public class class93 extends class135 {
                if (class232_10 == null) {
                   if (class236.field3181 != 0) {
                      try {
-                        class300_3 = new class300(4);
+                        class300_3 = new ByteBuffer(4);
                         class300_3.writeByte2(4);
                         class300_3.writeByte2(class236.field3181);
-                        class300_3.writeShort(0);
-                        class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
+                        class300_3.writeShortBigEndian(0);
+                        class236.field3176.vmethod5829(class300_3.buffer, 0, 4, -1696227994);
                      } catch (IOException ioexception_6) {
                         try {
                            class236.field3176.vmethod5830(-1353478313);

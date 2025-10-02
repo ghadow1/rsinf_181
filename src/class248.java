@@ -7,18 +7,18 @@ public class class248 extends class175 {
    public int field3297;
    public int field3295;
 
-   void method4489(class300 class300_1, int i_2, int i_3) {
+   void method4489(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3296 = class300_1.readShortUBigEndian();
-         this.field3297 = class300_1.readUByte();
-         this.field3295 = class300_1.readUByte();
+         this.field3296 = class300_1.readUnsignedShortBigEndian();
+         this.field3297 = class300_1.readUnsignedByte();
+         this.field3295 = class300_1.readUnsignedByte();
       }
 
    }
 
-   public void method4485(class300 class300_1, int i_2) {
+   public void method4485(ByteBuffer class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

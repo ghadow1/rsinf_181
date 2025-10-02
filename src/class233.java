@@ -129,18 +129,18 @@ public abstract class class233 {
       int i_4 = bytes_1.length;
       int i_3 = class2.method18(bytes_1, 0, i_4, 1766587749);
       this.field3136 = i_3;
-      class300 class300_5 = new class300(class70.method1678(bytes_1));
-      int i_6 = class300_5.readUByte();
+      ByteBuffer class300_5 = new ByteBuffer(class70.method1678(bytes_1));
+      int i_6 = class300_5.readUnsignedByte();
       if (i_6 >= 5 && i_6 <= 7) {
          if (i_6 >= 6) {
             class300_5.readIntMedEndian();
          }
 
-         int i_7 = class300_5.readUByte();
+         int i_7 = class300_5.readUnsignedByte();
          if (i_6 >= 7) {
             this.field3142 = class300_5.method5685();
          } else {
-            this.field3142 = class300_5.readShortUBigEndian();
+            this.field3142 = class300_5.readUnsignedShortBigEndian();
          }
 
          int i_8 = 0;
@@ -156,7 +156,7 @@ public abstract class class233 {
             }
          } else {
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3128[i_10] = i_8 += class300_5.readShortUBigEndian();
+               this.field3128[i_10] = i_8 += class300_5.readUnsignedShortBigEndian();
                if (this.field3128[i_10] > i_9) {
                   i_9 = this.field3128[i_10];
                }
@@ -188,7 +188,7 @@ public abstract class class233 {
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3133[this.field3128[i_10]] = class300_5.readShortUBigEndian();
+            this.field3133[this.field3128[i_10]] = class300_5.readUnsignedShortBigEndian();
          }
 
          int i_11;
@@ -222,7 +222,7 @@ public abstract class class233 {
                this.field3137[i_11] = new int[i_12];
 
                for (i_14 = 0; i_14 < i_12; i_14++) {
-                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.readShortUBigEndian();
+                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.readUnsignedShortBigEndian();
                   if (i_15 > i_13) {
                      i_13 = i_15;
                   }
@@ -330,8 +330,8 @@ public abstract class class233 {
                bytes_22 = class308.method5873(this.field3126[i_1], false);
             } else {
                bytes_22 = class308.method5873(this.field3126[i_1], true);
-               class300 class300_9 = new class300(bytes_22);
-               class300_9.method5703(ints_2, 5, class300_9.field3730.length);
+               ByteBuffer class300_9 = new ByteBuffer(bytes_22);
+               class300_9.method5703(ints_2, 5, class300_9.buffer.length);
             }
 
             byte[] bytes_26 = class70.method1678(bytes_22);
@@ -345,9 +345,9 @@ public abstract class class233 {
                --i_10;
                i_11 = bytes_26[i_10] & 0xff;
                i_10 -= i_11 * i_4 * 4;
-               class300 class300_12 = new class300(bytes_26);
+               ByteBuffer class300_12 = new ByteBuffer(bytes_26);
                int[] ints_13 = new int[i_4];
-               class300_12.field3732 = i_10;
+               class300_12.position = i_10;
 
                int i_15;
                int i_16;
@@ -367,7 +367,7 @@ public abstract class class233 {
                   ints_13[i_15] = 0;
                }
 
-               class300_12.field3732 = i_10;
+               class300_12.position = i_10;
                i_15 = 0;
 
                int i_18;

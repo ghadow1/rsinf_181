@@ -23,20 +23,20 @@ public class class157 extends class275 {
             class71.field1027 = class258.field3534.method3296(new URL(class26.field213), (byte) 78);
          } else if (class71.field1027.method3307(1792198908)) {
             byte[] bytes_1 = class71.field1027.method3308(-338757002);
-            class300 class300_2 = new class300(bytes_1);
+            ByteBuffer class300_2 = new ByteBuffer(bytes_1);
             class300_2.readIntMedEndian();
-            class71.field1022 = class300_2.readShortUBigEndian();
+            class71.field1022 = class300_2.readUnsignedShortBigEndian();
             class71.field1031 = new class71[class71.field1022];
 
             class71 class71_4;
             for (int i_3 = 0; i_3 < class71.field1022; class71_4.field1034 = i_3++) {
                class71_4 = class71.field1031[i_3] = new class71();
-               class71_4.field1025 = class300_2.readShortUBigEndian();
+               class71_4.field1025 = class300_2.readUnsignedShortBigEndian();
                class71_4.field1023 = class300_2.readIntMedEndian();
-               class71_4.field1029 = class300_2.readNullTermString();
-               class71_4.field1028 = class300_2.readNullTermString();
-               class71_4.field1032 = class300_2.readUByte();
-               class71_4.field1030 = class300_2.method5606();
+               class71_4.field1029 = class300_2.readNullTerminatedString();
+               class71_4.field1028 = class300_2.readNullTerminatedString();
+               class71_4.field1032 = class300_2.readUnsignedByte();
+               class71_4.field1030 = class300_2.readSignedShortBigEndian();
             }
 
             client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018, (byte) -62);

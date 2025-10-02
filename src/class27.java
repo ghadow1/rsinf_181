@@ -67,8 +67,8 @@ public final class class27 {
 
    }
 
-   static void method407(class300 class300_0, int i_1, int i_2) {
-      byte[] bytes_3 = class300_0.field3730;
+   static void method407(ByteBuffer class300_0, int i_1, int i_2) {
+      byte[] bytes_3 = class300_0.buffer;
       if (client.field693 == null) {
          client.field693 = new byte[24];
       }
@@ -77,7 +77,7 @@ public final class class27 {
       if (class167.field2040 != null) {
          try {
             class167.field2040.method6521(0L);
-            class167.field2040.method6524(class300_0.field3730, i_1, 24, -966965622);
+            class167.field2040.method6524(class300_0.buffer, i_1, 24, -966965622);
          } catch (Exception exception_5) {
             ;
          }

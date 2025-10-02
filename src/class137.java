@@ -40,7 +40,7 @@ public class class137 {
       client.field879 = -1L;
       class192.method3678();
       client.field880.method2218();
-      client.field880.field1314.field3732 = 0;
+      client.field880.field1314.position = 0;
       client.field880.inPacketType = null;
       client.field880.field1309 = null;
       client.field880.field1321 = null;

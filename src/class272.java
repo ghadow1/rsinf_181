@@ -270,7 +270,7 @@ public class class272 {
                         byte[] bytes_24 = class235_21.method4144(35, i_23);
                         class241.field3219[i_23] = new class241(i_23);
                         if (bytes_24 != null) {
-                           class241.field3219[i_23].method4369(new class300(bytes_24));
+                           class241.field3219[i_23].method4369(new ByteBuffer(bytes_24));
                            class241.field3219[i_23].method4370();
                         }
                      }
@@ -467,7 +467,7 @@ public class class272 {
       this.field3609 = 0;
    }
 
-   public void method4999(class300 class300_1) {
+   public void method4999(ByteBuffer class300_1) {
       long long_3 = this.field3604;
       long_3 /= 10L;
       if (long_3 < 0L) {
@@ -476,7 +476,7 @@ public class class272 {
          long_3 = 65535L;
       }
 
-      class300_1.writeShort((int) long_3);
+      class300_1.writeShortBigEndian((int) long_3);
       long long_5 = this.field3607;
       long_5 /= 10L;
       if (long_5 < 0L) {
@@ -485,7 +485,7 @@ public class class272 {
          long_5 = 65535L;
       }
 
-      class300_1.writeShort((int) long_5);
+      class300_1.writeShortBigEndian((int) long_5);
       long long_7 = this.field3606;
       long_7 /= 10L;
       if (long_7 < 0L) {
@@ -494,11 +494,11 @@ public class class272 {
          long_7 = 65535L;
       }
 
-      class300_1.writeShort((int) long_7);
-      class300_1.writeShort(this.field3608);
-      class300_1.writeShort(this.field3609);
-      class300_1.writeShort(this.field3601);
-      class300_1.writeShort(this.field3610);
+      class300_1.writeShortBigEndian((int) long_7);
+      class300_1.writeShortBigEndian(this.field3608);
+      class300_1.writeShortBigEndian(this.field3609);
+      class300_1.writeShortBigEndian(this.field3601);
+      class300_1.writeShortBigEndian(this.field3610);
    }
 
    public void method5000() {

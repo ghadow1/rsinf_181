@@ -142,7 +142,7 @@ public class class187 extends class180 {
                         }
                      }
 
-                     class300 class300_51 = new class300(bytes_6);
+                     ByteBuffer class300_51 = new ByteBuffer(bytes_6);
 
                      for (i_11 = 0; i_11 < 4; i_11++) {
                         for (i_12 = 0; i_12 < 64; i_12++) {
@@ -271,7 +271,7 @@ public class class187 extends class180 {
                                  int i_17 = (i_10 & 0x7) * 8;
                                  class133 class133_18 = class5.field22;
                                  class172[] arr_19 = client.field710;
-                                 class300 class300_20 = new class300(bytes_55);
+                                 ByteBuffer class300_20 = new ByteBuffer(bytes_55);
                                  int i_21 = -1;
 
                                  while (true) {
@@ -284,7 +284,7 @@ public class class187 extends class180 {
                                     int i_23 = 0;
 
                                     while (true) {
-                                       int i_24 = class300_20.method5508();
+                                       int i_24 = class300_20.readSmartInt();
                                        if (i_24 == 0) {
                                           break;
                                        }
@@ -293,7 +293,7 @@ public class class187 extends class180 {
                                        int i_25 = i_23 & 0x3f;
                                        int i_26 = i_23 >> 6 & 0x3f;
                                        int i_27 = i_23 >> 12;
-                                       int i_28 = class300_20.readUByte();
+                                       int i_28 = class300_20.readUnsignedByte();
                                        int i_29 = i_28 >> 2;
                                        int i_30 = i_28 & 0x3;
                                        if (i_7 == i_27 && i_26 >= i_16 && i_26 < i_16 + 8 && i_25 >= i_17 && i_25 < i_17 + 8) {
@@ -410,7 +410,7 @@ public class class187 extends class180 {
             class187 class187_59;
             if (class27.field233.method931(285080873)) {
                class187_59 = class235.method4265(class183.field2212, client.field880.field1313, 1775123545);
-               class187_59.field2333.write32IntBigEndian(1057001181);
+               class187_59.field2333.writeIntBigEndian(1057001181);
                client.field880.copy(class187_59);
             }
 

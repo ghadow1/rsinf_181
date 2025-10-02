@@ -4,16 +4,16 @@ public class class242 extends class175 {
    public static class145 field3232 = new class145(64);
    public boolean field3234 = false;
 
-   void method4396(class300 class300_1, int i_2, int i_3) {
+   void method4396(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 2) {
          this.field3234 = true;
       }
 
    }
 
-   public void method4401(class300 class300_1, byte b_2) {
+   public void method4401(ByteBuffer class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

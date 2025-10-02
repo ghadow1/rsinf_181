@@ -453,24 +453,24 @@ public class class121 extends class135 {
    void method2793(byte[] bytes_1) {
       boolean bool_2 = false;
       boolean bool_3 = false;
-      class300 class300_4 = new class300(bytes_1);
-      class300 class300_5 = new class300(bytes_1);
-      class300 class300_6 = new class300(bytes_1);
-      class300 class300_7 = new class300(bytes_1);
-      class300 class300_8 = new class300(bytes_1);
-      class300_4.field3732 = bytes_1.length - 18;
-      int i_9 = class300_4.readShortUBigEndian();
-      int i_10 = class300_4.readShortUBigEndian();
-      int i_11 = class300_4.readUByte();
-      int i_12 = class300_4.readUByte();
-      int i_13 = class300_4.readUByte();
-      int i_14 = class300_4.readUByte();
-      int i_15 = class300_4.readUByte();
-      int i_16 = class300_4.readUByte();
-      int i_17 = class300_4.readShortUBigEndian();
-      int i_18 = class300_4.readShortUBigEndian();
-      int i_19 = class300_4.readShortUBigEndian();
-      int i_20 = class300_4.readShortUBigEndian();
+      ByteBuffer class300_4 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_5 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_6 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_7 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_8 = new ByteBuffer(bytes_1);
+      class300_4.position = bytes_1.length - 18;
+      int i_9 = class300_4.readUnsignedShortBigEndian();
+      int i_10 = class300_4.readUnsignedShortBigEndian();
+      int i_11 = class300_4.readUnsignedByte();
+      int i_12 = class300_4.readUnsignedByte();
+      int i_13 = class300_4.readUnsignedByte();
+      int i_14 = class300_4.readUnsignedByte();
+      int i_15 = class300_4.readUnsignedByte();
+      int i_16 = class300_4.readUnsignedByte();
+      int i_17 = class300_4.readUnsignedShortBigEndian();
+      int i_18 = class300_4.readUnsignedShortBigEndian();
+      int i_19 = class300_4.readUnsignedShortBigEndian();
+      int i_20 = class300_4.readUnsignedShortBigEndian();
       byte b_21 = 0;
       int i_45 = b_21 + i_9;
       int i_23 = i_45;
@@ -552,11 +552,11 @@ public class class121 extends class135 {
       }
 
       this.field1561 = new short[i_10];
-      class300_4.field3732 = b_21;
-      class300_5.field3732 = i_32;
-      class300_6.field3732 = i_33;
-      class300_7.field3732 = i_45;
-      class300_8.field3732 = i_27;
+      class300_4.position = b_21;
+      class300_5.position = i_32;
+      class300_6.position = i_33;
+      class300_7.position = i_45;
+      class300_8.position = i_27;
       int i_35 = 0;
       int i_36 = 0;
       int i_37 = 0;
@@ -567,7 +567,7 @@ public class class121 extends class135 {
       int i_41;
       int i_42;
       for (i_38 = 0; i_38 < i_9; i_38++) {
-         i_39 = class300_4.readUByte();
+         i_39 = class300_4.readUnsignedByte();
          i_40 = 0;
          if ((i_39 & 0x1) != 0) {
             i_40 = class300_5.method5507();
@@ -590,20 +590,20 @@ public class class121 extends class135 {
          i_36 = this.field1550[i_38];
          i_37 = this.field1552[i_38];
          if (i_16 == 1) {
-            this.field1569[i_38] = class300_8.readUByte();
+            this.field1569[i_38] = class300_8.readUnsignedByte();
          }
       }
 
-      class300_4.field3732 = i_30;
-      class300_5.field3732 = i_26;
-      class300_6.field3732 = i_24;
-      class300_7.field3732 = i_28;
-      class300_8.field3732 = i_25;
+      class300_4.position = i_30;
+      class300_5.position = i_26;
+      class300_6.position = i_24;
+      class300_7.position = i_28;
+      class300_8.position = i_25;
 
       for (i_38 = 0; i_38 < i_10; i_38++) {
-         this.field1561[i_38] = (short)class300_4.readShortUBigEndian();
+         this.field1561[i_38] = (short)class300_4.readUnsignedShortBigEndian();
          if (i_12 == 1) {
-            i_39 = class300_5.readUByte();
+            i_39 = class300_5.readUnsignedByte();
             if ((i_39 & 0x1) == 1) {
                this.field1557[i_38] = 1;
                bool_2 = true;
@@ -625,20 +625,20 @@ public class class121 extends class135 {
          }
 
          if (i_13 == 255) {
-            this.field1559[i_38] = class300_6.readByte2();
+            this.field1559[i_38] = class300_6.readSignedByte();
          }
 
          if (i_14 == 1) {
-            this.field1587[i_38] = class300_7.readByte2();
+            this.field1587[i_38] = class300_7.readSignedByte();
          }
 
          if (i_15 == 1) {
-            this.field1553[i_38] = class300_8.readUByte();
+            this.field1553[i_38] = class300_8.readUnsignedByte();
          }
       }
 
-      class300_4.field3732 = i_29;
-      class300_5.field3732 = i_23;
+      class300_4.position = i_29;
+      class300_5.position = i_23;
       i_38 = 0;
       i_39 = 0;
       i_40 = 0;
@@ -647,7 +647,7 @@ public class class121 extends class135 {
       int i_43;
       int i_44;
       for (i_42 = 0; i_42 < i_10; i_42++) {
-         i_43 = class300_5.readUByte();
+         i_43 = class300_5.readUnsignedByte();
          if (i_43 == 1) {
             i_38 = class300_4.method5507() + i_41;
             i_39 = class300_4.method5507() + i_38;
@@ -688,13 +688,13 @@ public class class121 extends class135 {
          }
       }
 
-      class300_4.field3732 = i_31;
+      class300_4.position = i_31;
 
       for (i_42 = 0; i_42 < i_11; i_42++) {
          this.field1565[i_42] = 0;
-         this.field1566[i_42] = (short)class300_4.readShortUBigEndian();
-         this.field1567[i_42] = (short)class300_4.readShortUBigEndian();
-         this.field1568[i_42] = (short)class300_4.readShortUBigEndian();
+         this.field1566[i_42] = (short)class300_4.readUnsignedShortBigEndian();
+         this.field1567[i_42] = (short)class300_4.readUnsignedShortBigEndian();
+         this.field1568[i_42] = (short)class300_4.readUnsignedShortBigEndian();
       }
 
       if (this.field1560 != null) {
@@ -920,38 +920,38 @@ public class class121 extends class135 {
    }
 
    void method2770(byte[] bytes_1) {
-      class300 class300_2 = new class300(bytes_1);
-      class300 class300_3 = new class300(bytes_1);
-      class300 class300_4 = new class300(bytes_1);
-      class300 class300_5 = new class300(bytes_1);
-      class300 class300_6 = new class300(bytes_1);
-      class300 class300_7 = new class300(bytes_1);
-      class300 class300_8 = new class300(bytes_1);
-      class300_2.field3732 = bytes_1.length - 23;
-      int i_9 = class300_2.readShortUBigEndian();
-      int i_10 = class300_2.readShortUBigEndian();
-      int i_11 = class300_2.readUByte();
-      int i_12 = class300_2.readUByte();
-      int i_13 = class300_2.readUByte();
-      int i_14 = class300_2.readUByte();
-      int i_15 = class300_2.readUByte();
-      int i_16 = class300_2.readUByte();
-      int i_17 = class300_2.readUByte();
-      int i_18 = class300_2.readShortUBigEndian();
-      int i_19 = class300_2.readShortUBigEndian();
-      int i_20 = class300_2.readShortUBigEndian();
-      int i_21 = class300_2.readShortUBigEndian();
-      int i_22 = class300_2.readShortUBigEndian();
+      ByteBuffer class300_2 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_3 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_4 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_5 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_6 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_7 = new ByteBuffer(bytes_1);
+      ByteBuffer class300_8 = new ByteBuffer(bytes_1);
+      class300_2.position = bytes_1.length - 23;
+      int i_9 = class300_2.readUnsignedShortBigEndian();
+      int i_10 = class300_2.readUnsignedShortBigEndian();
+      int i_11 = class300_2.readUnsignedByte();
+      int i_12 = class300_2.readUnsignedByte();
+      int i_13 = class300_2.readUnsignedByte();
+      int i_14 = class300_2.readUnsignedByte();
+      int i_15 = class300_2.readUnsignedByte();
+      int i_16 = class300_2.readUnsignedByte();
+      int i_17 = class300_2.readUnsignedByte();
+      int i_18 = class300_2.readUnsignedShortBigEndian();
+      int i_19 = class300_2.readUnsignedShortBigEndian();
+      int i_20 = class300_2.readUnsignedShortBigEndian();
+      int i_21 = class300_2.readUnsignedShortBigEndian();
+      int i_22 = class300_2.readUnsignedShortBigEndian();
       int i_23 = 0;
       int i_24 = 0;
       int i_25 = 0;
       int i_26;
       if (i_11 > 0) {
          this.field1565 = new byte[i_11];
-         class300_2.field3732 = 0;
+         class300_2.position = 0;
 
          for (i_26 = 0; i_26 < i_11; i_26++) {
-            byte b_27 = this.field1565[i_26] = class300_2.readByte2();
+            byte b_27 = this.field1565[i_26] = class300_2.readSignedByte();
             if (b_27 == 0) {
                ++i_23;
             }
@@ -1069,11 +1069,11 @@ public class class121 extends class135 {
          this.field1568 = new short[i_11];
       }
 
-      class300_2.field3732 = i_11;
-      class300_3.field3732 = i_38;
-      class300_4.field3732 = i_39;
-      class300_5.field3732 = i_40;
-      class300_6.field3732 = i_32;
+      class300_2.position = i_11;
+      class300_3.position = i_38;
+      class300_4.position = i_39;
+      class300_5.position = i_40;
+      class300_6.position = i_32;
       int i_48 = 0;
       int i_49 = 0;
       int i_50 = 0;
@@ -1084,7 +1084,7 @@ public class class121 extends class135 {
       int i_54;
       int i_55;
       for (i_51 = 0; i_51 < i_9; i_51++) {
-         i_52 = class300_2.readUByte();
+         i_52 = class300_2.readUnsignedByte();
          i_53 = 0;
          if ((i_52 & 0x1) != 0) {
             i_53 = class300_3.method5507();
@@ -1107,47 +1107,47 @@ public class class121 extends class135 {
          i_49 = this.field1550[i_51];
          i_50 = this.field1552[i_51];
          if (i_17 == 1) {
-            this.field1569[i_51] = class300_6.readUByte();
+            this.field1569[i_51] = class300_6.readUnsignedByte();
          }
       }
 
-      class300_2.field3732 = i_37;
-      class300_3.field3732 = i_28;
-      class300_4.field3732 = i_30;
-      class300_5.field3732 = i_33;
-      class300_6.field3732 = i_31;
-      class300_7.field3732 = i_35;
-      class300_8.field3732 = i_36;
+      class300_2.position = i_37;
+      class300_3.position = i_28;
+      class300_4.position = i_30;
+      class300_5.position = i_33;
+      class300_6.position = i_31;
+      class300_7.position = i_35;
+      class300_8.position = i_36;
 
       for (i_51 = 0; i_51 < i_10; i_51++) {
-         this.field1561[i_51] = (short)class300_2.readShortUBigEndian();
+         this.field1561[i_51] = (short)class300_2.readUnsignedShortBigEndian();
          if (i_12 == 1) {
-            this.field1557[i_51] = class300_3.readByte2();
+            this.field1557[i_51] = class300_3.readSignedByte();
          }
 
          if (i_13 == 255) {
-            this.field1559[i_51] = class300_4.readByte2();
+            this.field1559[i_51] = class300_4.readSignedByte();
          }
 
          if (i_14 == 1) {
-            this.field1587[i_51] = class300_5.readByte2();
+            this.field1587[i_51] = class300_5.readSignedByte();
          }
 
          if (i_15 == 1) {
-            this.field1553[i_51] = class300_6.readUByte();
+            this.field1553[i_51] = class300_6.readUnsignedByte();
          }
 
          if (i_16 == 1) {
-            this.field1562[i_51] = (short)(class300_7.readShortUBigEndian() - 1);
+            this.field1562[i_51] = (short)(class300_7.readUnsignedShortBigEndian() - 1);
          }
 
          if (this.field1560 != null && this.field1562[i_51] != -1) {
-            this.field1560[i_51] = (byte)(class300_8.readUByte() - 1);
+            this.field1560[i_51] = (byte)(class300_8.readUnsignedByte() - 1);
          }
       }
 
-      class300_2.field3732 = i_34;
-      class300_3.field3732 = i_29;
+      class300_2.position = i_34;
+      class300_3.position = i_29;
       i_51 = 0;
       i_52 = 0;
       i_53 = 0;
@@ -1155,7 +1155,7 @@ public class class121 extends class135 {
 
       int i_56;
       for (i_55 = 0; i_55 < i_10; i_55++) {
-         i_56 = class300_3.readUByte();
+         i_56 = class300_3.readUnsignedByte();
          if (i_56 == 1) {
             i_51 = class300_2.method5507() + i_54;
             i_52 = class300_2.method5507() + i_51;
@@ -1196,29 +1196,29 @@ public class class121 extends class135 {
          }
       }
 
-      class300_2.field3732 = i_41;
-      class300_3.field3732 = i_42;
-      class300_4.field3732 = i_43;
-      class300_5.field3732 = i_44;
-      class300_6.field3732 = i_45;
-      class300_7.field3732 = i_46;
+      class300_2.position = i_41;
+      class300_3.position = i_42;
+      class300_4.position = i_43;
+      class300_5.position = i_44;
+      class300_6.position = i_45;
+      class300_7.position = i_46;
 
       for (i_55 = 0; i_55 < i_11; i_55++) {
          i_56 = this.field1565[i_55] & 0xff;
          if (i_56 == 0) {
-            this.field1566[i_55] = (short)class300_2.readShortUBigEndian();
-            this.field1567[i_55] = (short)class300_2.readShortUBigEndian();
-            this.field1568[i_55] = (short)class300_2.readShortUBigEndian();
+            this.field1566[i_55] = (short)class300_2.readUnsignedShortBigEndian();
+            this.field1567[i_55] = (short)class300_2.readUnsignedShortBigEndian();
+            this.field1568[i_55] = (short)class300_2.readUnsignedShortBigEndian();
          }
       }
 
-      class300_2.field3732 = i_26;
-      i_55 = class300_2.readUByte();
+      class300_2.position = i_26;
+      i_55 = class300_2.readUnsignedByte();
       if (i_55 != 0) {
          new class134();
-         class300_2.readShortUBigEndian();
-         class300_2.readShortUBigEndian();
-         class300_2.readShortUBigEndian();
+         class300_2.readUnsignedShortBigEndian();
+         class300_2.readUnsignedShortBigEndian();
+         class300_2.readUnsignedShortBigEndian();
          class300_2.readIntMedEndian();
       }
 

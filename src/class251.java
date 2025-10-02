@@ -12,28 +12,28 @@ public class class251 extends class175 {
    public String[] field3323;
    public int[] field3322;
 
-   void method4537(class300 class300_1, int i_2, byte b_3) {
+   void method4537(ByteBuffer class300_1, int i_2, byte b_3) {
       if (i_2 == 1) {
-         this.field3317 = (char)class300_1.readUByte();
+         this.field3317 = (char)class300_1.readUnsignedByte();
       } else if (i_2 == 2) {
-         this.field3321 = (char)class300_1.readUByte();
+         this.field3321 = (char)class300_1.readUnsignedByte();
       } else if (i_2 == 3) {
-         this.field3318 = class300_1.readNullTermString();
+         this.field3318 = class300_1.readNullTerminatedString();
       } else if (i_2 == 4) {
          this.field3319 = class300_1.readIntMedEndian();
       } else {
          int i_4;
          if (i_2 == 5) {
-            this.field3320 = class300_1.readShortUBigEndian();
+            this.field3320 = class300_1.readUnsignedShortBigEndian();
             this.field3316 = new int[this.field3320];
             this.field3323 = new String[this.field3320];
 
             for (i_4 = 0; i_4 < this.field3320; i_4++) {
                this.field3316[i_4] = class300_1.readIntMedEndian();
-               this.field3323[i_4] = class300_1.readNullTermString();
+               this.field3323[i_4] = class300_1.readNullTerminatedString();
             }
          } else if (i_2 == 6) {
-            this.field3320 = class300_1.readShortUBigEndian();
+            this.field3320 = class300_1.readUnsignedShortBigEndian();
             this.field3316 = new int[this.field3320];
             this.field3322 = new int[this.field3320];
 
@@ -50,9 +50,9 @@ public class class251 extends class175 {
       return this.field3320;
    }
 
-   void method4533(class300 class300_1, byte b_2) {
+   void method4533(ByteBuffer class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.readUByte();
+         int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }

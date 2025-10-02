@@ -86,9 +86,9 @@ public class class94 {
 
    }
 
-   public static void method2213(class300 class300_0, int i_1, byte b_2) {
+   public static void method2213(ByteBuffer class300_0, int i_1, byte b_2) {
       class97 class97_3 = new class97();
-      class97_3.field1330 = class300_0.readUByte();
+      class97_3.field1330 = class300_0.readUnsignedByte();
       class97_3.field1340 = class300_0.readIntMedEndian();
       class97_3.field1331 = new int[class97_3.field1330];
       class97_3.field1332 = new int[class97_3.field1330];
@@ -99,29 +99,29 @@ public class class94 {
 
       for (int i_4 = 0; i_4 < class97_3.field1330; i_4++) {
          try {
-            int i_5 = class300_0.readUByte();
+            int i_5 = class300_0.readUnsignedByte();
             String string_6;
             String string_7;
             int i_8;
             if (i_5 != 0 && i_5 != 1 && i_5 != 2) {
                if (i_5 == 3 || i_5 == 4) {
-                  string_6 = class300_0.readNullTermString();
-                  string_7 = class300_0.readNullTermString();
-                  i_8 = class300_0.readUByte();
+                  string_6 = class300_0.readNullTerminatedString();
+                  string_7 = class300_0.readNullTerminatedString();
+                  i_8 = class300_0.readUnsignedByte();
                   String[] arr_9 = new String[i_8];
 
                   for (int i_10 = 0; i_10 < i_8; i_10++) {
-                     arr_9[i_10] = class300_0.readNullTermString();
+                     arr_9[i_10] = class300_0.readNullTerminatedString();
                   }
 
-                  String string_21 = class300_0.readNullTermString();
+                  String string_21 = class300_0.readNullTerminatedString();
                   byte[][] bytes_11 = new byte[i_8][];
                   int i_13;
                   if (i_5 == 3) {
                      for (int i_12 = 0; i_12 < i_8; i_12++) {
                         i_13 = class300_0.readIntMedEndian();
                         bytes_11[i_12] = new byte[i_13];
-                        class300_0.byteArrayCopy(bytes_11[i_12], 0, i_13);
+                        class300_0.readBytes(bytes_11[i_12], 0, i_13);
                      }
                   }
 
@@ -164,8 +164,8 @@ public class class94 {
                   class97_3.field1336[i_4] = bytes_11;
                }
             } else {
-               string_6 = class300_0.readNullTermString();
-               string_7 = class300_0.readNullTermString();
+               string_6 = class300_0.readNullTerminatedString();
+               string_7 = class300_0.readNullTerminatedString();
                i_8 = 0;
                if (i_5 == 1) {
                   i_8 = class300_0.readIntMedEndian();

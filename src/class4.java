@@ -3,15 +3,15 @@ final class class4 implements class0 {
    static int field19;
    static class235 field18;
 
-   void method40(String string_1, class300 class300_2, byte b_3) {
-      class300_2.method5485(string_1);
+   void method40(String string_1, ByteBuffer class300_2, byte b_3) {
+      class300_2.writeNullTerminatedString(string_1);
    }
 
-   public Object vmethod42(class300 class300_1, int i_2) {
-      return class300_1.readNullTermString();
+   public Object vmethod42(ByteBuffer class300_1, int i_2) {
+      return class300_1.readNullTerminatedString();
    }
 
-   public void vmethod43(Object object_1, class300 class300_2, int i_3) {
+   public void vmethod43(Object object_1, ByteBuffer class300_2, int i_3) {
       this.method40((String) object_1, class300_2, (byte) 0);
    }
 

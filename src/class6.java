@@ -19,9 +19,9 @@ public class class6 {
       field32 = new class8();
    }
 
-   public class6(class300 class300_1, boolean bool_2) {
-      int i_3 = class300_1.readShortUBigEndian();
-      boolean bool_4 = class300_1.readUByte() == 1;
+   public class6(ByteBuffer class300_1, boolean bool_2) {
+      int i_3 = class300_1.readUnsignedShortBigEndian();
+      boolean bool_4 = class300_1.readUnsignedByte() == 1;
       byte b_5;
       if (bool_4) {
          b_5 = 1;
@@ -29,7 +29,7 @@ public class class6 {
          b_5 = 0;
       }
 
-      int i_6 = class300_1.readShortUBigEndian();
+      int i_6 = class300_1.readUnsignedShortBigEndian();
       this.field36 = new ArrayList(i_6);
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
@@ -169,7 +169,7 @@ public class class6 {
                         byte[] bytes_49 = class244.field3255.method4144(1, i_18);
                         class244_47 = new class244();
                         if (bytes_49 != null) {
-                           class244_47.method4418(new class300(bytes_49), i_18, 1618503924);
+                           class244_47.method4418(new ByteBuffer(bytes_49), i_18, 1618503924);
                         }
 
                         class244_47.method4417(-165448710);
@@ -266,7 +266,7 @@ public class class6 {
                                  byte[] bytes_37 = class257.field3505.method4144(4, i_35);
                                  class257_36 = new class257();
                                  if (bytes_37 != null) {
-                                    class257_36.method4744(new class300(bytes_37), i_35, (byte) -108);
+                                    class257_36.method4744(new ByteBuffer(bytes_37), i_35, (byte) -108);
                                  }
 
                                  class257_36.method4743(1977976880);
@@ -302,7 +302,7 @@ public class class6 {
                               byte[] bytes_39 = class257.field3505.method4144(4, i_51);
                               class257_38 = new class257();
                               if (bytes_39 != null) {
-                                 class257_38.method4744(new class300(bytes_39), i_51, (byte) -93);
+                                 class257_38.method4744(new ByteBuffer(bytes_39), i_51, (byte) -93);
                               }
 
                               class257_38.method4743(-866326245);

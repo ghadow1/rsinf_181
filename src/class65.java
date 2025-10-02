@@ -390,7 +390,7 @@ public class class65 extends class174 {
       if (!string_0.equals("")) {
          class187 class187_2 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
          class187_2.field2333.writeByte2(class209.method3945(string_0));
-         class187_2.field2333.method5485(string_0);
+         class187_2.field2333.writeNullTerminatedString(string_0);
          client.field880.copy(class187_2);
       }
    }

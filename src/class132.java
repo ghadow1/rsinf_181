@@ -8,23 +8,23 @@ public class class132 extends class180 {
 
    class132(int i_1, byte[] bytes_2) {
       this.field1799 = i_1;
-      class300 class300_3 = new class300(bytes_2);
-      this.field1797 = class300_3.readUByte();
+      ByteBuffer class300_3 = new ByteBuffer(bytes_2);
+      this.field1797 = class300_3.readUnsignedByte();
       this.field1798 = new int[this.field1797];
       this.field1796 = new int[this.field1797][];
 
       int i_4;
       for (i_4 = 0; i_4 < this.field1797; i_4++) {
-         this.field1798[i_4] = class300_3.readUByte();
+         this.field1798[i_4] = class300_3.readUnsignedByte();
       }
 
       for (i_4 = 0; i_4 < this.field1797; i_4++) {
-         this.field1796[i_4] = new int[class300_3.readUByte()];
+         this.field1796[i_4] = new int[class300_3.readUnsignedByte()];
       }
 
       for (i_4 = 0; i_4 < this.field1797; i_4++) {
          for (int i_5 = 0; i_5 < this.field1796[i_4].length; i_5++) {
-            this.field1796[i_4][i_5] = class300_3.readUByte();
+            this.field1796[i_4][i_5] = class300_3.readUnsignedByte();
          }
       }
 
@@ -127,8 +127,8 @@ public class class132 extends class180 {
       }
    }
 
-   public static int method3063(class300 class300_0, String string_1, int i_2) {
-      int i_3 = class300_0.field3732;
+   public static int method3063(ByteBuffer class300_0, String string_1, int i_2) {
+      int i_3 = class300_0.position;
       int i_5 = string_1.length();
       byte[] bytes_6 = new byte[i_5];
 
@@ -196,8 +196,8 @@ public class class132 extends class180 {
       }
 
       class300_0.method5492(bytes_6.length, (byte) 38);
-      class300_0.field3732 += class210.field2515.method3942(bytes_6, 0, bytes_6.length, class300_0.field3730, class300_0.field3732, -1706453276);
-      return class300_0.field3732 - i_3;
+      class300_0.position += class210.field2515.method3942(bytes_6, 0, bytes_6.length, class300_0.buffer, class300_0.position, -1706453276);
+      return class300_0.position - i_3;
    }
 
 }

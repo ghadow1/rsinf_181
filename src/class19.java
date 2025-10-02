@@ -61,21 +61,21 @@ public class class19 implements class37 {
       }
    }
 
-   public void vmethod743(class300 class300_1, int i_2) {
-      this.field132 = class300_1.readUByte();
-      this.field130 = class300_1.readUByte();
-      this.field131 = class300_1.readShortUBigEndian();
-      this.field140 = class300_1.readUByte();
-      this.field137 = class300_1.readUByte();
-      this.field136 = class300_1.readShortUBigEndian();
-      this.field143 = class300_1.readUByte();
-      this.field138 = class300_1.readUByte();
-      this.field133 = class300_1.readShortUBigEndian();
-      this.field139 = class300_1.readUByte();
-      this.field129 = class300_1.readUByte();
-      this.field134 = class300_1.readShortUBigEndian();
-      this.field141 = class300_1.readUByte();
-      this.field142 = class300_1.readUByte();
+   public void vmethod743(ByteBuffer class300_1, int i_2) {
+      this.field132 = class300_1.readUnsignedByte();
+      this.field130 = class300_1.readUnsignedByte();
+      this.field131 = class300_1.readUnsignedShortBigEndian();
+      this.field140 = class300_1.readUnsignedByte();
+      this.field137 = class300_1.readUnsignedByte();
+      this.field136 = class300_1.readUnsignedShortBigEndian();
+      this.field143 = class300_1.readUnsignedByte();
+      this.field138 = class300_1.readUnsignedByte();
+      this.field133 = class300_1.readUnsignedShortBigEndian();
+      this.field139 = class300_1.readUnsignedByte();
+      this.field129 = class300_1.readUnsignedByte();
+      this.field134 = class300_1.readUnsignedShortBigEndian();
+      this.field141 = class300_1.readUnsignedByte();
+      this.field142 = class300_1.readUnsignedByte();
       this.method211(35507364);
    }
 

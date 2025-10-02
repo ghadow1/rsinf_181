@@ -370,10 +370,10 @@ public class class96 {
                class40.method729(2, (byte) 14);
                if (class236.field3176 != null) {
                   try {
-                     class300 class300_2 = new class300(4);
+                     ByteBuffer class300_2 = new ByteBuffer(4);
                      class300_2.writeByte2(2);
                      class300_2.method5480(0);
-                     class236.field3176.vmethod5829(class300_2.field3730, 0, 4, -1696227994);
+                     class236.field3176.vmethod5829(class300_2.buffer, 0, 4, -1696227994);
                   } catch (IOException ioexception_5) {
                      try {
                         class236.field3176.vmethod5830(-738517040);

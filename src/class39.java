@@ -19,21 +19,21 @@ public class class39 extends class21 {
       return this.field340;
    }
 
-   void vmethod679(class300 class300_1, int i_2) {
+   void vmethod679(ByteBuffer class300_1, int i_2) {
       super.field160 = Math.min(super.field160, 4);
       super.field163 = new short[1][64][64];
       super.field170 = new short[super.field160][64][64];
       super.field165 = new byte[super.field160][64][64];
       super.field166 = new byte[super.field160][64][64];
       super.field164 = new class25[super.field160][64][64][];
-      int i_3 = class300_1.readUByte();
+      int i_3 = class300_1.readUnsignedByte();
       if (i_3 != class30.field258.field260) {
          throw new IllegalStateException("");
       } else {
-         int i_4 = class300_1.readUByte();
-         int i_5 = class300_1.readUByte();
-         int i_6 = class300_1.readUByte();
-         int i_7 = class300_1.readUByte();
+         int i_4 = class300_1.readUnsignedByte();
+         int i_5 = class300_1.readUnsignedByte();
+         int i_6 = class300_1.readUnsignedByte();
+         int i_7 = class300_1.readUnsignedByte();
          if (i_4 == super.field157 && i_5 == super.field158 && i_6 == this.field337 && i_7 == this.field338) {
             for (int i_8 = 0; i_8 < 8; i_8++) {
                for (int i_9 = 0; i_9 < 8; i_9++) {
@@ -47,23 +47,23 @@ public class class39 extends class21 {
       }
    }
 
-   void method674(class300 class300_1, int i_2) {
-      int i_3 = class300_1.readUByte();
+   void method674(ByteBuffer class300_1, int i_2) {
+      int i_3 = class300_1.readUnsignedByte();
       if (i_3 != class31.field269.field270) {
          throw new IllegalStateException("");
       } else {
-         super.field159 = class300_1.readUByte();
-         super.field160 = class300_1.readUByte();
-         super.field167 = class300_1.readShortUBigEndian();
-         super.field156 = class300_1.readShortUBigEndian();
-         this.field340 = class300_1.readUByte();
-         this.field335 = class300_1.readUByte();
-         super.field157 = class300_1.readShortUBigEndian();
-         super.field158 = class300_1.readShortUBigEndian();
-         this.field337 = class300_1.readUByte();
-         this.field338 = class300_1.readUByte();
-         super.field161 = class300_1.method5511();
-         super.field162 = class300_1.method5511();
+         super.field159 = class300_1.readUnsignedByte();
+         super.field160 = class300_1.readUnsignedByte();
+         super.field167 = class300_1.readUnsignedShortBigEndian();
+         super.field156 = class300_1.readUnsignedShortBigEndian();
+         this.field340 = class300_1.readUnsignedByte();
+         this.field335 = class300_1.readUnsignedByte();
+         super.field157 = class300_1.readUnsignedShortBigEndian();
+         super.field158 = class300_1.readUnsignedShortBigEndian();
+         this.field337 = class300_1.readUnsignedByte();
+         this.field338 = class300_1.readUnsignedByte();
+         super.field161 = class300_1.readNullableShort();
+         super.field162 = class300_1.readNullableShort();
       }
    }
 

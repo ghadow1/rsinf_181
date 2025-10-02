@@ -162,8 +162,8 @@ public final class class36 {
          System.nanoTime();
          int i_5 = class233_1.method4160(class35.field308.field306);
          int i_6 = class233_1.method4161(i_5, string_2);
-         class300 class300_7 = new class300(class233_1.method4163(class35.field308.field306, string_2, 794658484));
-         class300 class300_8 = new class300(class233_1.method4163(class35.field302.field306, string_2, 529639123));
+         ByteBuffer class300_7 = new ByteBuffer(class233_1.method4163(class35.field308.field306, string_2, 794658484));
+         ByteBuffer class300_8 = new ByteBuffer(class233_1.method4163(class35.field302.field306, string_2, 529639123));
          System.nanoTime();
          System.nanoTime();
          this.field312 = new class38();

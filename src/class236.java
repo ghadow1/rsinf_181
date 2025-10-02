@@ -14,7 +14,7 @@ public class class236 {
    public static int field3171 = 0;
    static class318 field3172 = new class318(4096);
    public static int field3164 = 0;
-   static class300 field3174 = new class300(8);
+   static ByteBuffer field3174 = new ByteBuffer(8);
    static int field3175 = 0;
    static CRC32 field3177 = new CRC32();
    static class235[] field3173 = new class235[256];

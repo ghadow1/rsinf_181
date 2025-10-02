@@ -22,7 +22,7 @@ public class class134 {
             }
          }
 
-         class73_2 = new class73(new class300(bytes_3));
+         class73_2 = new class73(new ByteBuffer(bytes_3));
       } catch (Exception exception_7) {
          ;
       }

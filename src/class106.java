@@ -19,8 +19,8 @@ public class class106 {
       this.field1429[1] = 65535;
    }
 
-   final void method2464(class300 class300_1) {
-      this.field1430 = class300_1.readUByte();
+   final void method2464(ByteBuffer class300_1) {
+      this.field1430 = class300_1.readUnsignedByte();
       this.field1436 = class300_1.readIntMedEndian();
       this.field1431 = class300_1.readIntMedEndian();
       this.method2469(class300_1);
@@ -34,14 +34,14 @@ public class class106 {
       this.field1432 = 0;
    }
 
-   final void method2469(class300 class300_1) {
-      this.field1428 = class300_1.readUByte();
+   final void method2469(ByteBuffer class300_1) {
+      this.field1428 = class300_1.readUnsignedByte();
       this.field1437 = new int[this.field1428];
       this.field1429 = new int[this.field1428];
 
       for (int i_2 = 0; i_2 < this.field1428; i_2++) {
-         this.field1437[i_2] = class300_1.readShortUBigEndian();
-         this.field1429[i_2] = class300_1.readShortUBigEndian();
+         this.field1437[i_2] = class300_1.readUnsignedShortBigEndian();
+         this.field1429[i_2] = class300_1.readUnsignedShortBigEndian();
       }
 
    }
