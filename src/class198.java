@@ -29,7 +29,7 @@ public class class198 extends class115 {
    long field2434;
 
    public class198() {
-      this.method3726((short) 7883);
+      this.method3726();
    }
 
    void method3824(int i_1, int i_2, int i_3) {
@@ -56,7 +56,7 @@ public class class198 extends class115 {
       }
    }
 
-   void method3723(int i_1, int i_2) {
+   void method3723(int i_1) {
       for (class199 class199_3 = (class199) this.field2435.field2484.method4892(); class199_3 != null; class199_3 = (class199) this.field2435.field2484.method4894()) {
          if (i_1 < 0 || class199_3.field2440 == i_1) {
             if (class199_3.field2454 != null) {
@@ -78,9 +78,9 @@ public class class198 extends class115 {
 
    }
 
-   public synchronized void method3712(int i_1) {
+   public synchronized void method3712() {
       this.field2416.method3831();
-      this.method3726((short) 23201);
+      this.method3726();
    }
 
    void method3724(int i_1, byte b_2) {
@@ -169,11 +169,11 @@ public class class198 extends class115 {
       }
    }
 
-   void method3788(int i_1, int i_2, int i_3, int i_4) {
+   void method3788() {
    }
 
-   void method3726(short s_1) {
-      this.method3723(-1, 889719076);
+   void method3726() {
+      this.method3723(-1);
       this.method3724(-1, (byte) 112);
 
       int i_2;
@@ -388,7 +388,7 @@ public class class198 extends class115 {
          i_4 = i_1 & 0xf;
          i_5 = i_1 >> 8 & 0x7f;
          i_6 = i_1 >> 16 & 0x7f;
-         this.method3788(i_4, i_5, i_6, 2105784371);
+         this.method3788();
       } else if (i_3 == 176) {
          i_4 = i_1 & 0xf;
          i_5 = i_1 >> 8 & 0x7f;
@@ -475,7 +475,7 @@ public class class198 extends class115 {
          }
 
          if (i_5 == 120) {
-            this.method3723(i_4, 889719076);
+            this.method3723(i_4);
          }
 
          if (i_5 == 121) {
@@ -541,7 +541,7 @@ public class class198 extends class115 {
       } else {
          i_3 = i_1 & 0xff;
          if (i_3 == 255) {
-            this.method3726((short) 21336);
+            this.method3726();
          }
       }
    }
@@ -562,7 +562,7 @@ public class class198 extends class115 {
    }
 
    public synchronized void method3802(class203 class203_1, boolean bool_2, int i_3) {
-      this.method3712(-1871433949);
+      this.method3712();
       this.field2416.method3877(class203_1.field2491);
       this.field2430 = bool_2;
       this.field2433 = 0L;
@@ -697,7 +697,7 @@ public class class198 extends class115 {
                this.field2416.method3836(i_2);
                if (this.field2416.method3856()) {
                   if (!this.field2430 || i_3 == 0) {
-                     this.method3726((short) 17272);
+                     this.method3726();
                      this.field2416.method3831();
                      return;
                   }

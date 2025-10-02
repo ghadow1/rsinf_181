@@ -38,7 +38,7 @@ public class class71 {
       return (0x20000000 & this.field1023) != 0;
    }
 
-   static int method1686(class299 class299_0, byte b_1) {
+   static int method1686(class299 class299_0) {
       int i_2 = class299_0.method5445(2);
       int i_3;
       if (i_2 == 0) {
@@ -54,7 +54,7 @@ public class class71 {
       return i_3;
    }
 
-   static class92 method1705(byte[] bytes_0, int i_1) {
+   static class92 method1705(byte[] bytes_0) {
       class92 class92_2 = new class92();
       class300 class300_3 = new class300(bytes_0);
       class300_3.field3732 = class300_3.field3730.length - 2;
@@ -66,7 +66,7 @@ public class class71 {
       class92_2.field1285 = class300_3.readShortUBigEndian();
       class92_2.field1289 = class300_3.readShortUBigEndian();
       class92_2.field1290 = class300_3.readShortUBigEndian();
-      int i_7 = class300_3.method5504();
+      int i_7 = class300_3.readUByte();
       int i_8;
       int i_9;
       if (i_7 > 0) {
@@ -113,7 +113,7 @@ public class class71 {
          } else if (i_9 < 100 && i_9 != 21 && i_9 != 38 && i_9 != 39) {
             class92_2.field1288[i_8] = class300_3.readIntMedEndian();
          } else {
-            class92_2.field1288[i_8] = class300_3.method5504();
+            class92_2.field1288[i_8] = class300_3.readUByte();
          }
       }
 

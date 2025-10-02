@@ -129,14 +129,14 @@ public abstract class class233 {
       int i_4 = bytes_1.length;
       int i_3 = class2.method18(bytes_1, 0, i_4, 1766587749);
       this.field3136 = i_3;
-      class300 class300_5 = new class300(class70.method1678(bytes_1, -303237660));
-      int i_6 = class300_5.method5504();
+      class300 class300_5 = new class300(class70.method1678(bytes_1));
+      int i_6 = class300_5.readUByte();
       if (i_6 >= 5 && i_6 <= 7) {
          if (i_6 >= 6) {
             class300_5.readIntMedEndian();
          }
 
-         int i_7 = class300_5.method5504();
+         int i_7 = class300_5.readUByte();
          if (i_6 >= 7) {
             this.field3142 = class300_5.method5685();
          } else {
@@ -286,12 +286,12 @@ public abstract class class233 {
       }
    }
 
-   public int method4160(String string_1, int i_2) {
+   public int method4160(String string_1) {
       string_1 = string_1.toLowerCase();
       return this.field3135.method6501(class12.method148(string_1, (byte) -78), 1528091447);
    }
 
-   public int method4161(int i_1, String string_2, byte b_3) {
+   public int method4161(int i_1, String string_2) {
       string_2 = string_2.toLowerCase();
       return this.field3140[i_1].method6501(class12.method148(string_2, (byte) 16), 1528091447);
    }
@@ -334,7 +334,7 @@ public abstract class class233 {
                class300_9.method5703(ints_2, 5, class300_9.field3730.length);
             }
 
-            byte[] bytes_26 = class70.method1678(bytes_22, -303237660);
+            byte[] bytes_26 = class70.method1678(bytes_22);
             if (this.field3141) {
                this.field3126[i_1] = null;
             }
@@ -501,7 +501,7 @@ public abstract class class233 {
    static int method4172(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       if (i_0 == 3200) {
          class70.field1014 -= 3;
-         class81.method1989(class76.field1098[class70.field1014], class76.field1098[class70.field1014 + 1], class76.field1098[class70.field1014 + 2], 1791085167);
+         class81.method1989(class76.field1098[class70.field1014], class76.field1098[class70.field1014 + 1], class76.field1098[class70.field1014 + 2]);
          return 1;
       } else if (i_0 == 3201) {
          class8.method93(class76.field1098[--class70.field1014], 486411267);

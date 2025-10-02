@@ -34,15 +34,15 @@ public class class237 {
 
    }
 
-   class325 method4318(int i_1, int i_2) {
+   class325 method4318(int i_1) {
       if (!this.field3183.containsKey(Integer.valueOf(i_1))) {
-         this.method4317(i_1, 1241140434);
+         this.method4317(i_1);
       }
 
       return (class325) this.field3183.get(Integer.valueOf(i_1));
    }
 
-   void method4317(int i_1, int i_2) {
+   void method4317(int i_1) {
       int i_3 = i_1 * 2 + 1;
       double[] doubles_4 = class271.method4992(0.0D, (double)((float)i_1 / 3.0F), i_1, -694088627);
       double d_5 = doubles_4[i_1] * doubles_4[i_1];
@@ -90,9 +90,9 @@ public class class237 {
       }
    }
 
-   public final void method4321(int i_1, int i_2, class325 class325_3, float f_4, int i_5) {
+   public final void method4321(int i_1, int i_2, class325 class325_3, float f_4) {
       int i_6 = (int)(18.0F * f_4);
-      class325 class325_7 = this.method4318(i_6, 314101713);
+      class325 class325_7 = this.method4318(i_6);
       int i_8 = i_6 * 2 + 1;
       class319 class319_9 = new class319(0, 0, class325_3.field3899, class325_3.field3900);
       class319 class319_10 = new class319(0, 0);
@@ -136,11 +136,11 @@ public class class237 {
       System.nanoTime();
    }
 
-   public final void method4320(byte b_1) {
+   public final void method4320() {
       this.field3190 = 0;
    }
 
-   public final void method4316(int i_1, int i_2, byte b_3) {
+   public final void method4316(int i_1, int i_2) {
       if (this.field3190 < this.field3184.length) {
          this.field3184[this.field3190] = i_1;
          this.field3182[this.field3190] = i_2;

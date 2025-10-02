@@ -1,9 +1,10 @@
+import netscape.javascript.JSObject;
+
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import netscape.javascript.JSObject;
 
 public final class client extends class53 implements class280 {
 
@@ -538,14 +539,9 @@ public final class client extends class53 implements class280 {
       field930 = new int[50];
    }
 
-   void method1247(int i_1) {
-      if (field662 != 1000) {
-         boolean bool_2 = class26.method365(-296796650);
-         if (!bool_2) {
-            this.method1248(-1712345498);
-         }
-
-      }
+   public static class217 method1649(int i_0, int i_1, int i_2) {
+      class217 class217_3 = class80.fetchSomething(i_0);
+      return i_1 == -1 ? class217_3 : (class217_3 != null && class217_3.field2675 != null && i_1 < class217_3.field2675.length ? class217_3.field2675[i_1] : null);
    }
 
    public class283 vmethod5179(byte b_1) {
@@ -620,6 +616,27 @@ public final class client extends class53 implements class280 {
 
    }
 
+   static final void method1650(String string_0, int i_1) {
+      StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
+      Object obj_10001 = null;
+      String string_2 = stringbuilder_10000.append(" is already on your ignore list").toString();
+      class62.method1132(30, "", string_2, -2140749974);
+   }
+
+   void method1247(int i_1) {
+      if (field662 != 1000) {
+         boolean bool_2 = class26.method365(-296796650);
+         if (!bool_2) {
+            this.method1248();
+         }
+
+      }
+   }
+
+   final void method1293(boolean bool_1, int i_2) {
+      class27.method416(field905, class7.field46, class249.field3308, bool_1, -2132885563);
+   }
+
    protected final void vmethod1243(int i_1) {
       int[] ints_2 = new int[] {20, 260, 10000};
       int[] ints_3 = new int[] {1000, 100, 500};
@@ -650,21 +667,25 @@ public final class client extends class53 implements class280 {
       class36.field329 = this.method877((byte) 24);
       class62.field573 = new class308(255, class167.field2042, class167.field2039, 500000);
       class17.field117 = class134.method3249(1887842280);
-      this.method878(-661756545);
+      this.method878();
       class218.method4110(this, class60.field566, -1987450780);
       if (field703 != 0) {
          field884 = true;
       }
 
-      class170.method3515(class17.field117.field1064, -1434133306);
+      class170.method3515(class17.field117.field1064);
       class58.field546 = new class74(class40.field353);
    }
 
-   final void method1293(boolean bool_1, int i_2) {
-      class27.method416(field905, class7.field46, class249.field3308, bool_1, -2132885563);
+   final boolean method1257(int i_1) {
+      int i_2 = class13.method151(246973533);
+      return (field789 == 1 && field791 > 2 || class76.method1936(i_2)) && !field769[i_2];
    }
 
-   void method1249(int i_1, byte b_2) {
+   protected final void vmethod1273(int i_1) {
+   }
+
+   void method1249(int i_1) {
       class191.field2363 = null;
       class70.field1015 = null;
       field681 = 0;
@@ -677,17 +698,17 @@ public final class client extends class53 implements class280 {
       ++field685;
       if (field685 >= 2 && (i_1 == 7 || i_1 == 9)) {
          if (field662 <= 5) {
-            this.method901("js5connect_full", (byte) 8);
+            this.loadingError("js5connect_full");
             field662 = 1000;
          } else {
             field682 = 3000;
          }
       } else if (field685 >= 2 && i_1 == 6) {
-         this.method901("js5connect_outofdate", (byte) 21);
+         this.loadingError("js5connect_outofdate");
          field662 = 1000;
       } else if (field685 >= 4) {
          if (field662 <= 5) {
-            this.method901("js5connect", (byte) 63);
+            this.loadingError("js5connect");
             field662 = 1000;
          } else {
             field682 = 3000;
@@ -696,15 +717,7 @@ public final class client extends class53 implements class280 {
 
    }
 
-   final boolean method1257(int i_1) {
-      int i_2 = class13.method151(246973533);
-      return (field789 == 1 && field791 > 2 || class76.method1936(i_2, 1044045879)) && !field769[i_2];
-   }
-
-   protected final void vmethod1273(int i_1) {
-   }
-
-   final boolean method1451(class95 class95_1, int i_2) {
+   final boolean method1451(class95 class95_1) {
       class305 class305_3 = class95_1.method2223();
       class299 class299_4 = class95_1.field1314;
       if (class305_3 == null) {
@@ -736,7 +749,7 @@ public final class client extends class53 implements class280 {
                }
 
                class95_1.field1322 = true;
-               ServerPacketProt[] arr_5 = class76.method1934(-1240082425);
+               ServerPacketProt[] arr_5 = class76.method1934();
                i_6 = class299_4.method5451();
                if (i_6 < 0 || i_6 >= arr_5.length) {
                   throw new IOException(i_6 + " " + class299_4.field3732);
@@ -772,7 +785,7 @@ public final class client extends class53 implements class280 {
             class299_4.field3732 = 0;
             class305_3.vmethod5828(class299_4.field3730, 0, class95_1.field1315, (byte) -30);
             class95_1.field1318 = 0;
-            field797.method5005(1547117629);
+            field797.method5005();
             class95_1.field1317 = class95_1.field1321;
             class95_1.field1321 = class95_1.field1309;
             class95_1.field1309 = class95_1.inPacketType;
@@ -781,8 +794,8 @@ public final class client extends class53 implements class280 {
             boolean bool_48;
             if (ServerPacketProt.ifSetHideMessage == class95_1.inPacketType) {
                i_17 = class299_4.readIntMedEndian();
-               bool_48 = class299_4.method5504() == 1;
-               class217_7 = class80.method1978(i_17);
+               bool_48 = class299_4.readUByte() == 1;
+               class217_7 = class80.fetchSomething(i_17);
                if (bool_48 != class217_7.field2706) {
                   class217_7.field2706 = bool_48;
                   class224.method4120(class217_7);
@@ -793,13 +806,13 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2115 == class95_1.inPacketType) {
-               field652 = class299_4.method5504();
+               field652 = class299_4.readUByte();
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2200 == class95_1.inPacketType) {
-               i_17 = class299_4.method5504();
+               i_17 = class299_4.readUByte();
                class108.method2491(i_17, 1967203322);
                class95_1.inPacketType = null;
                return false;
@@ -812,37 +825,37 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.varpSmallMessage == class95_1.inPacketType) {
-               byte b_61 = class299_4.method5694();
-               i_6 = class299_4.method5518();
+               byte b_61 = class299_4.readSByte();
+               i_6 = class299_4.readShortBigEndian();
                class212.field2524[i_6] = b_61;
                if (class212.field2525[i_6] != b_61) {
                   class212.field2525[i_6] = b_61;
                }
 
-               class10.method124(i_6, (byte) 31);
+               class10.method124(i_6);
                field863[++field806 - 1 & 0x1f] = i_6;
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.updateZonePartialFollowsMessage == class95_1.inPacketType) {
-               class311.field3819 = class299_4.method5524();
-               class94.field1306 = class299_4.method5525();
+               class311.field3819 = class299_4.readByteUNeg();
+               class94.field1306 = class299_4.readByteInverse();
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2161 == class95_1.inPacketType) {
-               i_17 = class299_4.method5532();
-               class120.method2764(i_17, (byte) -23);
+               i_17 = class299_4.readShortLittleEndian();
+               class120.method2764(i_17);
                field888[++field671 - 1 & 0x1f] = i_17 & 0x7fff;
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2149 == class95_1.inPacketType) {
-               i_17 = class299_4.method5504();
-               class192.method3675(i_17, 2005954129);
+               i_17 = class299_4.readUByte();
+               class192.method3675(i_17);
                class95_1.inPacketType = null;
                return true;
             }
@@ -866,8 +879,8 @@ public final class client extends class53 implements class280 {
                i_17 = class299_4.readShort();
                i_6 = class299_4.readShort();
                i_18 = class299_4.readShort();
-               i_8 = class299_4.method5543();
-               class217_9 = class80.method1978(i_8);
+               i_8 = class299_4.read32IntBigEndian();
+               class217_9 = class80.fetchSomething(i_8);
                if (i_17 != class217_9.field2615 || i_18 != class217_9.field2616 || i_6 != class217_9.field2618) {
                   class217_9.field2615 = i_17;
                   class217_9.field2616 = i_18;
@@ -880,12 +893,12 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.updateZonePartialEnclosedMessage == class95_1.inPacketType) {
-               class94.field1306 = class299_4.method5525();
-               class311.field3819 = class299_4.method5524();
+               class94.field1306 = class299_4.readByteInverse();
+               class311.field3819 = class299_4.readByteUNeg();
 
                while (class299_4.field3732 < class95_1.field1315) {
-                  i_17 = class299_4.method5504();
-                  class185 class185_59 = class6.method70(-249126537)[i_17];
+                  i_17 = class299_4.readUByte();
+                  class185 class185_59 = class6.method70()[i_17];
                   class1.method10(class185_59);
                }
 
@@ -901,8 +914,8 @@ public final class client extends class53 implements class280 {
                   i_6 = -1;
                }
 
-               i_18 = class299_4.method5543();
-               class217_20 = class80.method1978(i_17);
+               i_18 = class299_4.read32IntBigEndian();
+               class217_20 = class80.fetchSomething(i_17);
                class254 class254_44;
                if (!class217_20.field2563) {
                   if (i_6 == -1) {
@@ -949,18 +962,18 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.synthSoundMessage == class95_1.inPacketType) {
                i_17 = class299_4.readShortUBigEndian();
-               i_6 = class299_4.method5504();
+               i_6 = class299_4.readUByte();
                i_18 = class299_4.readShortUBigEndian();
-               class81.method1989(i_17, i_6, i_18, 1510929763);
+               class81.method1989(i_17, i_6, i_18);
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2154 == class95_1.inPacketType) {
-               i_17 = class299_4.method5504();
-               i_6 = class299_4.method5504();
-               i_18 = class299_4.method5504();
-               i_8 = class299_4.method5504();
+               i_17 = class299_4.readUByte();
+               i_6 = class299_4.readUByte();
+               i_18 = class299_4.readUByte();
+               i_8 = class299_4.readUByte();
                field886[i_17] = true;
                field901[i_17] = i_6;
                field902[i_17] = i_18;
@@ -971,14 +984,14 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.rebuildRegionMessage == class95_1.inPacketType) {
-               class55.method1084(true, class95_1.field1314, -1790728617);
+               class55.method1084(true, class95_1.field1314);
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2194 == class95_1.inPacketType) {
-               class61.method1120(class299_4, class95_1.field1315, 2052544381);
-               class75.method1827(-472154636);
+               class61.method1120(class299_4, class95_1.field1315);
+               class75.method1827();
                class95_1.inPacketType = null;
                return true;
             }
@@ -988,15 +1001,15 @@ public final class client extends class53 implements class280 {
             int i_21;
             if (ServerPacketProt.field2198 == class95_1.inPacketType) {
                field899 = true;
-               class70.field1017 = class299_4.method5504();
-               class30.field259 = class299_4.method5504();
+               class70.field1017 = class299_4.readUByte();
+               class30.field259 = class299_4.readUByte();
                class31.field268 = class299_4.readShortUBigEndian();
-               class56.field526 = class299_4.method5504();
-               class55.field501 = class299_4.method5504();
+               class56.field526 = class299_4.readUByte();
+               class55.field501 = class299_4.readUByte();
                if (class55.field501 >= 100) {
                   i_17 = class70.field1017 * 128 + 64;
                   i_6 = class30.field259 * 128 + 64;
-                  i_18 = class62.method1130(i_17, i_6, class42.field372, (short) -2998) - class31.field268;
+                  i_18 = class62.method1130(i_17, i_6, class42.field372) - class31.field268;
                   i_8 = i_17 - class299.field3727;
                   i_21 = i_18 - class43.field383;
                   i_10 = i_6 - class1.field3;
@@ -1049,9 +1062,9 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2145 == class95_1.inPacketType) {
-               i_17 = class299_4.method5543();
+               i_17 = class299_4.read32IntBigEndian();
                i_6 = class299_4.readShort();
-               class217_7 = class80.method1978(i_17);
+               class217_7 = class80.fetchSomething(i_17);
                if (class217_7 != null && class217_7.field2566 == 0) {
                   if (i_6 > class217_7.field2569 - class217_7.field2667) {
                      i_6 = class217_7.field2569 - class217_7.field2667;
@@ -1074,12 +1087,12 @@ public final class client extends class53 implements class280 {
             long long_22;
             if (ServerPacketProt.ifSetEventsMessage == class95_1.inPacketType) {
                i_17 = class299_4.method5541();
-               i_6 = class299_4.method5518();
+               i_6 = class299_4.readShortBigEndian();
                if (i_6 == 65535) {
                   i_6 = -1;
                }
 
-               i_18 = class299_4.method5543();
+               i_18 = class299_4.read32IntBigEndian();
                i_8 = class299_4.readShortUBigEndian();
                if (i_8 == 65535) {
                   i_8 = -1;
@@ -1102,7 +1115,7 @@ public final class client extends class53 implements class280 {
             class217 class217_54;
             if (ServerPacketProt.field2122 == class95_1.inPacketType) {
                i_17 = class299_4.readInt();
-               class217_54 = class80.method1978(i_17);
+               class217_54 = class80.fetchSomething(i_17);
 
                for (i_18 = 0; i_18 < class217_54.field2560.length; i_18++) {
                   class217_54.field2560[i_18] = -1;
@@ -1141,7 +1154,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2183 == class95_1.inPacketType) {
-               class226.field3072 = class171.method3530(class299_4.method5504(), 939071894);
+               class226.field3072 = class171.method3530(class299_4.readUByte(), 939071894);
                class95_1.inPacketType = null;
                return true;
             }
@@ -1159,7 +1172,7 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2155 == class95_1.inPacketType) {
                i_17 = class299_4.method5591();
-               i_6 = class299_4.method5518();
+               i_6 = class299_4.readShortBigEndian();
                if (i_6 == 65535) {
                   i_6 = -1;
                }
@@ -1171,8 +1184,8 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2124 == class95_1.inPacketType) {
                i_17 = class299_4.method5606();
-               i_6 = class299_4.method5543();
-               class217_7 = class80.method1978(i_6);
+               i_6 = class299_4.read32IntBigEndian();
+               class217_7 = class80.fetchSomething(i_6);
                if (i_17 != class217_7.field2611 || i_17 == -1) {
                   class217_7.field2611 = i_17;
                   class217_7.field2692 = 0;
@@ -1193,7 +1206,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2196 == class95_1.inPacketType) {
-               class56.method1087(true, class299_4, 1426671502);
+               class56.method1087(true, class299_4);
                class95_1.inPacketType = null;
                return true;
             }
@@ -1207,7 +1220,7 @@ public final class client extends class53 implements class280 {
                long_24 = class299_4.method5531();
                long_26 = (long)class299_4.readShortUBigEndian();
                long_22 = (long)class299_4.method5567();
-               class228 class228_12 = (class228) class107.method2476(class156.method3419(-1282154756), class299_4.method5504());
+               class228 class228_12 = (class228) class107.method2476(class156.method3419(-1282154756), class299_4.readUByte());
                long_13 = (long_26 << 32) + long_22;
                boolean bool_50 = false;
 
@@ -1227,9 +1240,9 @@ public final class client extends class53 implements class280 {
                   field875 = (field875 + 1) % 100;
                   String string_28 = class296.method5362(class1.method17(class311.method5898(class299_4, (byte) 39), (byte) -89));
                   if (class228_12.field3090 != -1) {
-                     class14.method157(9, class33.method556(class228_12.field3090, (byte) -57) + string_38, string_28, class215.method4023(long_24), 2056666863);
+                     class14.method157(9, class33.method556(class228_12.field3090, (byte) -57) + string_38, string_28, class215.method4023(long_24));
                   } else {
-                     class14.method157(9, string_38, string_28, class215.method4023(long_24), 2131683708);
+                     class14.method157(9, string_38, string_28, class215.method4023(long_24));
                   }
                }
 
@@ -1313,15 +1326,15 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2121 == class95_1.inPacketType) {
                field899 = true;
-               class46.field412 = class299_4.method5504();
-               class210.field2516 = class299_4.method5504();
+               class46.field412 = class299_4.readUByte();
+               class210.field2516 = class299_4.readUByte();
                class190.field2345 = class299_4.readShortUBigEndian();
-               class83.field1166 = class299_4.method5504();
-               class96.field1327 = class299_4.method5504();
+               class83.field1166 = class299_4.readUByte();
+               class96.field1327 = class299_4.readUByte();
                if (class96.field1327 >= 100) {
                   class299.field3727 = class46.field412 * 128 + 64;
                   class1.field3 = class210.field2516 * 128 + 64;
-                  class43.field383 = class62.method1130(class299.field3727, class1.field3, class42.field372, (short) 4258) - class190.field2345;
+                  class43.field383 = class62.method1130(class299.field3727, class1.field3, class42.field372) - class190.field2345;
                }
 
                class95_1.inPacketType = null;
@@ -1355,8 +1368,8 @@ public final class client extends class53 implements class280 {
             if (ServerPacketProt.updateStatMessage == class95_1.inPacketType) {
                class65.method1176((byte) 65);
                i_17 = class299_4.method5541();
-               i_6 = class299_4.method5524();
-               i_18 = class299_4.method5504();
+               i_6 = class299_4.readByteUNeg();
+               i_18 = class299_4.readUByte();
                field788[i_6] = i_17;
                field760[i_6] = i_18;
                field787[i_6] = 1;
@@ -1424,8 +1437,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2170 == class95_1.inPacketType) {
-               i_17 = class299_4.method5504();
-               if (class299_4.method5504() == 0) {
+               i_17 = class299_4.readUByte();
+               if (class299_4.readUByte() == 0) {
                   field866[i_17] = new class9();
                   class299_4.field3732 += 18;
                } else {
@@ -1442,7 +1455,7 @@ public final class client extends class53 implements class280 {
                for (i_17 = 0; i_17 < class212.field2525.length; i_17++) {
                   if (class212.field2524[i_17] != class212.field2525[i_17]) {
                      class212.field2525[i_17] = class212.field2524[i_17];
-                     class10.method124(i_17, (byte) 36);
+                     class10.method124(i_17);
                      field863[++field806 - 1 & 0x1f] = i_17;
                   }
                }
@@ -1453,8 +1466,8 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.ifSetNpcHeadMessage == class95_1.inPacketType) {
                i_17 = class299_4.readShort();
-               i_6 = class299_4.method5543();
-               class217_7 = class80.method1978(i_6);
+               i_6 = class299_4.read32IntBigEndian();
+               class217_7 = class80.fetchSomething(i_6);
                if (class217_7.field2607 != 2 || i_17 != class217_7.field2649) {
                   class217_7.field2607 = 2;
                   class217_7.field2649 = i_17;
@@ -1469,7 +1482,7 @@ public final class client extends class53 implements class280 {
                i_17 = class299_4.readInt();
                i_6 = class299_4.method5500();
                i_18 = class299_4.method5535();
-               class217_20 = class80.method1978(i_17);
+               class217_20 = class80.fetchSomething(i_17);
                if (i_18 != class217_20.field2651 || i_6 != class217_20.field2574 || class217_20.field2694 != 0 || class217_20.field2570 != 0) {
                   class217_20.field2651 = i_18;
                   class217_20.field2574 = i_6;
@@ -1487,14 +1500,14 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2160 == class95_1.inPacketType) {
-               class55.method1084(false, class95_1.field1314, -1856951391);
+               class55.method1084(false, class95_1.field1314);
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.messageGameMessage == class95_1.inPacketType) {
                i_17 = class299_4.method5508();
-               bool_48 = class299_4.method5504() == 1;
+               bool_48 = class299_4.readUByte() == 1;
                str_45 = "";
                boolean bool_46 = false;
                if (bool_48) {
@@ -1521,15 +1534,15 @@ public final class client extends class53 implements class280 {
                   class212.field2525[i_17] = i_6;
                }
 
-               class10.method124(i_17, (byte) 65);
+               class10.method124(i_17);
                field863[++field806 - 1 & 0x1f] = i_17;
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2140 == class95_1.inPacketType) {
-               class94.field1306 = class299_4.method5524();
-               class311.field3819 = class299_4.method5504();
+               class94.field1306 = class299_4.readByteUNeg();
+               class311.field3819 = class299_4.readUByte();
 
                for (i_17 = class311.field3819; i_17 < class311.field3819 + 8; i_17++) {
                   for (i_6 = class94.field1306; i_6 < class94.field1306 + 8; i_6++) {
@@ -1580,8 +1593,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.ifSetPlayerHeadMessage == class95_1.inPacketType) {
-               i_17 = class299_4.method5543();
-               class217_54 = class80.method1978(i_17);
+               i_17 = class299_4.read32IntBigEndian();
+               class217_54 = class80.fetchSomething(i_17);
                class217_54.field2607 = 3;
                class217_54.field2649 = field657.field613.method3994(-1943102032);
                class224.method4120(class217_54);
@@ -1604,7 +1617,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2151 == class95_1.inPacketType) {
-               field708 = class299_4.method5504();
+               field708 = class299_4.readUByte();
                if (field708 == 1) {
                   field824 = class299_4.readShortUBigEndian();
                }
@@ -1638,7 +1651,7 @@ public final class client extends class53 implements class280 {
                   field708 = 2;
                   field737 = class299_4.readShortUBigEndian();
                   field777 = class299_4.readShortUBigEndian();
-                  field675 = class299_4.method5504();
+                  field675 = class299_4.readUByte();
                }
 
                if (field708 == 10) {
@@ -1689,7 +1702,7 @@ public final class client extends class53 implements class280 {
                for (; i_18-- > 0; class61_60.field567 = true) {
                   i_8 = class299_4.readIntMedEndian();
                   i_21 = class299_4.readShortUBigEndian();
-                  i_10 = class299_4.method5504();
+                  i_10 = class299_4.readUByte();
                   class61_60 = (class61) field816.method5952((long)i_8);
                   if (class61_60 != null && i_21 != class61_60.field571) {
                      class197.method3697(class61_60, true);
@@ -1735,7 +1748,7 @@ public final class client extends class53 implements class280 {
                }
 
                if (i_17 >= 0) {
-                  class217_7 = class80.method1978(i_17);
+                  class217_7 = class80.fetchSomething(i_17);
                } else {
                   class217_7 = null;
                }
@@ -1752,9 +1765,9 @@ public final class client extends class53 implements class280 {
 
                for (i_21 = 0; i_21 < i_8; i_21++) {
                   i_10 = class299_4.readShortUBigEndian();
-                  i_11 = class299_4.method5504();
+                  i_11 = class299_4.readUByte();
                   if (i_11 == 255) {
-                     i_11 = class299_4.method5543();
+                     i_11 = class299_4.read32IntBigEndian();
                   }
 
                   if (class217_7 != null && i_21 < class217_7.field2560.length) {
@@ -1776,12 +1789,12 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.setMapFlagMessage == class95_1.inPacketType) {
-               field885 = class299_4.method5504();
+               field885 = class299_4.readUByte();
                if (field885 == 255) {
                   field885 = 0;
                }
 
-               field842 = class299_4.method5504();
+               field842 = class299_4.readUByte();
                if (field842 == 255) {
                   field842 = 0;
                }
@@ -1799,8 +1812,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2195 == class95_1.inPacketType) {
-               field872 = class299_4.method5524();
-               field907 = class299_4.method5524();
+               field872 = class299_4.readByteUNeg();
+               field907 = class299_4.readByteUNeg();
                class95_1.inPacketType = null;
                return true;
             }
@@ -1808,7 +1821,7 @@ public final class client extends class53 implements class280 {
             if (ServerPacketProt.ifSetTextMessage == class95_1.inPacketType) {
                i_17 = class299_4.readIntMedEndian();
                string_19 = class299_4.readNullTermString();
-               class217_7 = class80.method1978(i_17);
+               class217_7 = class80.fetchSomething(i_17);
                if (!string_19.equals(class217_7.field2601)) {
                   class217_7.field2601 = string_19;
                   class224.method4120(class217_7);
@@ -1843,7 +1856,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2135 == class95_1.inPacketType) {
-               bool_51 = class299_4.method5504() == 1;
+               bool_51 = class299_4.readUByte() == 1;
                if (bool_51) {
                   class279.field3632 = class206.getAdjustedTimeMillis() - class299_4.method5531();
                   class68.field942 = new class6(class299_4, true);
@@ -1858,12 +1871,12 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2139 == class95_1.inPacketType) {
                i_17 = class299_4.readInt();
-               i_6 = class299_4.method5518();
+               i_6 = class299_4.readShortBigEndian();
                i_18 = i_6 >> 10 & 0x1f;
                i_8 = i_6 >> 5 & 0x1f;
                i_21 = i_6 & 0x1f;
                i_10 = (i_8 << 11) + (i_18 << 19) + (i_21 << 3);
-               class217 class217_29 = class80.method1978(i_17);
+               class217 class217_29 = class80.fetchSomething(i_17);
                if (i_10 != class217_29.field2695) {
                   class217_29.field2695 = i_10;
                   class224.method4120(class217_29);
@@ -1903,12 +1916,12 @@ public final class client extends class53 implements class280 {
                   field816.method5951(class61_42, (long)i_17);
                }
 
-               class217_9 = class80.method1978(i_6);
+               class217_9 = class80.fetchSomething(i_6);
                if (class217_9 != null) {
                   class224.method4120(class217_9);
                }
 
-               class217_9 = class80.method1978(i_17);
+               class217_9 = class80.fetchSomething(i_17);
                if (class217_9 != null) {
                   class224.method4120(class217_9);
                   class27.method413(class217.field2556[class217_9.field2688 >>> 16], class217_9, true, -1513497710);
@@ -1926,7 +1939,7 @@ public final class client extends class53 implements class280 {
                string_38 = class299_4.readNullTermString();
                long_24 = (long)class299_4.readShortUBigEndian();
                long_26 = (long)class299_4.method5567();
-               class228 class228_31 = (class228) class107.method2476(class156.method3419(562234979), class299_4.method5504());
+               class228 class228_31 = (class228) class107.method2476(class156.method3419(562234979), class299_4.readUByte());
                long long_32 = (long_24 << 32) + long_26;
                boolean bool_34 = false;
 
@@ -1964,16 +1977,16 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2148 == class95_1.inPacketType) {
-               class56.method1087(false, class299_4, -1037301232);
+               class56.method1087(false, class299_4);
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.field2156 == class95_1.inPacketType) {
-               i_17 = class299_4.method5518();
-               i_6 = class299_4.method5532();
+               i_17 = class299_4.readShortBigEndian();
+               i_6 = class299_4.readShortLittleEndian();
                i_18 = class299_4.readInt();
-               class217_20 = class80.method1978(i_18);
+               class217_20 = class80.fetchSomething(i_18);
                class217_20.field2575 = i_17 + (i_6 << 16);
                class95_1.inPacketType = null;
                return true;
@@ -1987,9 +2000,9 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2175 == class95_1.inPacketType) {
-               i_17 = class299_4.method5543();
+               i_17 = class299_4.read32IntBigEndian();
                i_6 = class299_4.readShort();
-               class217_7 = class80.method1978(i_17);
+               class217_7 = class80.fetchSomething(i_17);
                if (class217_7.field2607 != 1 || i_6 != class217_7.field2649) {
                   class217_7.field2607 = 1;
                   class217_7.field2649 = i_6;
@@ -2008,7 +2021,7 @@ public final class client extends class53 implements class280 {
                }
 
                if (i_17 >= 0) {
-                  class217_7 = class80.method1978(i_17);
+                  class217_7 = class80.fetchSomething(i_17);
                } else {
                   class217_7 = null;
                }
@@ -2018,7 +2031,7 @@ public final class client extends class53 implements class280 {
                   i_21 = class299_4.readShortUBigEndian();
                   i_10 = 0;
                   if (i_21 != 0) {
-                     i_10 = class299_4.method5504();
+                     i_10 = class299_4.readUByte();
                      if (i_10 == 255) {
                         i_10 = class299_4.readIntMedEndian();
                      }
@@ -2040,15 +2053,15 @@ public final class client extends class53 implements class280 {
                return true;
             }
 
-            if (ServerPacketProt.field2202 == class95_1.inPacketType) {
-               class14.method155(class299_4.readNullTermString(), (byte) -27);
+            if (ServerPacketProt.setNewCookieTokenSomething == class95_1.inPacketType) {
+               class14.generateDocument(class299_4.readNullTermString());
                class95_1.inPacketType = null;
                return true;
             }
 
             if (ServerPacketProt.updateRunEnergyMessage == class95_1.inPacketType) {
                class65.method1176((byte) -125);
-               field910 = class299_4.method5504();
+               field910 = class299_4.readUByte();
                field844 = field673;
                class95_1.inPacketType = null;
                return true;
@@ -2057,7 +2070,7 @@ public final class client extends class53 implements class280 {
             class252.method4556("" + (class95_1.inPacketType != null ? class95_1.inPacketType.field2201 : -1) + "," + (class95_1.field1321 != null ? class95_1.field1321.field2201 : -1) + "," + (class95_1.field1317 != null ? class95_1.field1317.field2201 : -1) + "," + class95_1.field1315, (Throwable) null, (byte) 116);
             class174.disconnectGame();
          } catch (IOException ioexception_36) {
-            class56.method1090(1799204565);
+            class56.method1090();
          } catch (Exception exception_37) {
             string_19 = "" + (class95_1.inPacketType != null ? class95_1.inPacketType.field2201 : -1) + "," + (class95_1.field1321 != null ? class95_1.field1321.field2201 : -1) + "," + (class95_1.field1317 != null ? class95_1.field1317.field2201 : -1) + "," + class95_1.field1315 + "," + (field657.field994[0] + class196.field2389) + "," + (field657.field962[0] + class1.field1) + ",";
 
@@ -2073,219 +2086,10 @@ public final class client extends class53 implements class280 {
       }
    }
 
-   protected final void vmethod1599(byte b_1) {
-      ++field881;
-      this.method1247(1600104353);
-
-      while (true) {
-         class261 class261_3 = class234.field3146;
-         class231 class231_2;
-         synchronized(class234.field3146) {
-            class231_2 = (class231) class234.field3145.method4900();
-         }
-
-         if (class231_2 == null) {
-            int i_7;
-            try {
-               if (class197.field2402 == 1) {
-                  i_7 = class76.field1099.method3707(911615124);
-                  if (i_7 > 0 && class76.field1099.method3713(529284444)) {
-                     i_7 -= class197.field2404;
-                     if (i_7 < 0) {
-                        i_7 = 0;
-                     }
-
-                     class76.field1099.method3706(i_7, 985423372);
-                  } else {
-                     class76.field1099.method3712(-1656243709);
-                     class76.field1099.method3710(535953816);
-                     if (class11.field76 != null) {
-                        class197.field2402 = 2;
-                     } else {
-                        class197.field2402 = 0;
-                     }
-
-                     class154.field1981 = null;
-                     class17.field119 = null;
-                  }
-               }
-            } catch (Exception exception_12) {
-               exception_12.printStackTrace();
-               class76.field1099.method3712(-1239536546);
-               class197.field2402 = 0;
-               class154.field1981 = null;
-               class17.field119 = null;
-               class11.field76 = null;
-            }
-
-            class186.method3619((byte) 33);
-            class45 class45_13 = class45.field392;
-            synchronized(class45.field392) {
-               ++class45.field406;
-               class45.field396 = class45.field385;
-               class45.field386 = 0;
-               int i_8;
-               if (class45.field398 >= 0) {
-                  while (class45.field388 != class45.field398) {
-                     i_8 = class45.field391[class45.field388];
-                     class45.field388 = class45.field388 + 1 & 0x7f;
-                     if (i_8 < 0) {
-                        class45.field395[~i_8] = false;
-                     } else {
-                        if (!class45.field395[i_8] && class45.field386 < class45.field401.length - 1) {
-                           class45.field401[++class45.field386 - 1] = i_8;
-                        }
-
-                        class45.field395[i_8] = true;
-                     }
-                  }
-               } else {
-                  for (i_8 = 0; i_8 < 112; i_8++) {
-                     class45.field395[i_8] = false;
-                  }
-
-                  class45.field398 = class45.field388;
-               }
-
-               if (class45.field386 > 0) {
-                  class45.field406 = 0;
-               }
-
-               class45.field385 = class45.field404;
-            }
-
-            class54 class54_14 = class54.field479;
-            synchronized(class54.field479) {
-               class54.field485 = class54.field481;
-               class54.field492 = class54.field488;
-               class54.field487 = class54.field477;
-               class54.field482 = class54.field484;
-               class54.field493 = class54.field489;
-               class54.field483 = class54.field490;
-               class54.field495 = class54.field491;
-               class54.field497 = class54.field500;
-               class54.field489 = 0;
-            }
-
-            if (class36.field329 != null) {
-               i_7 = class36.field329.vmethod3496(1768142580);
-               field853 = i_7;
-            }
-
-            if (field662 == 0) {
-               class272.method5016(1204156569);
-               class141.method3291(2093071208);
-            } else if (field662 == 5) {
-               class248.method4484(this, -442455221);
-               class272.method5016(673436377);
-               class141.method3291(1718679997);
-            } else if (field662 != 10 && field662 != 11) {
-               if (field662 == 20) {
-                  class248.method4484(this, -2077082933);
-                  this.method1250(-1766885092);
-               } else if (field662 == 25) {
-                  class187.method3628(-13305757);
-               }
-            } else {
-               class248.method4484(this, -675408594);
-            }
-
-            if (field662 == 30) {
-               this.method1251(1319159959);
-            } else if (field662 == 40 || field662 == 45) {
-               this.method1250(-1078015369);
-            }
-
-            return;
-         }
-
-         class231_2.field3117.method4264(class231_2.field3116, (int)class231_2.field2113, class231_2.field3115, false, -1554685282);
-      }
-   }
-
    final void method1274(int i_1, int i_2, int i_3) {
       class236.method4312(i_1, i_2, -1775821653);
       class5.field22.method3103(class42.field372, i_1, i_2, false);
       field674 = true;
-   }
-
-   void method1248(int i_1) {
-      if (class236.field3179 >= 4) {
-         this.method901("js5crc", (byte) 79);
-         field662 = 1000;
-      } else {
-         if (class236.field3178 >= 4) {
-            if (field662 <= 5) {
-               this.method901("js5io", (byte) -16);
-               field662 = 1000;
-               return;
-            }
-
-            field682 = 3000;
-            class236.field3178 = 3;
-         }
-
-         if (--field682 + 1 <= 0) {
-            try {
-               if (field681 == 0) {
-                  class191.field2363 = class53.field463.method3478(class73.field1068, class90.field1266, 313449224);
-                  ++field681;
-               }
-
-               if (field681 == 1) {
-                  if (class191.field2363.field2022 == 2) {
-                     this.method1249(-1, (byte) 3);
-                     return;
-                  }
-
-                  if (class191.field2363.field2022 == 1) {
-                     ++field681;
-                  }
-               }
-
-               if (field681 == 2) {
-                  if (field815) {
-                     class70.field1015 = class303.method5770((Socket) class191.field2363.field2025, 40000, 5000, (byte) 10);
-                  } else {
-                     class70.field1015 = new class171((Socket) class191.field2363.field2025, class53.field463, 5000);
-                  }
-
-                  class300 class300_2 = new class300(5);
-                  class300_2.writeByte2(15);
-                  class300_2.method5481(181);
-                  class70.field1015.vmethod5829(class300_2.field3730, 0, 5, -1696227994);
-                  ++field681;
-                  class192.field2382 = class206.getAdjustedTimeMillis();
-               }
-
-               if (field681 == 3) {
-                  if (class70.field1015.vmethod5826((byte) 28) > 0 || !field815 && field662 <= 5) {
-                     int i_3 = class70.field1015.vmethod5825((byte) 2);
-                     if (i_3 != 0) {
-                        this.method1249(i_3, (byte) 3);
-                        return;
-                     }
-
-                     ++field681;
-                  } else if (class206.getAdjustedTimeMillis() - class192.field2382 > 30000L) {
-                     this.method1249(-2, (byte) 3);
-                     return;
-                  }
-               }
-
-               if (field681 == 4) {
-                  class93.method2193(class70.field1015, field662 > 20, (short) -31468);
-                  class191.field2363 = null;
-                  class70.field1015 = null;
-                  field681 = 0;
-                  field685 = 0;
-               }
-            } catch (IOException ioexception_4) {
-               this.method1249(-3, (byte) 3);
-            }
-
-         }
-      }
    }
 
    final void method1254(int i_1) {
@@ -2470,6 +2274,215 @@ public final class client extends class53 implements class280 {
 
    }
 
+   protected final void vmethod1599(byte b_1) {
+      ++field881;
+      this.method1247(1600104353);
+
+      while (true) {
+         class261 class261_3 = class234.field3146;
+         class231 class231_2;
+         synchronized (class234.field3146) {
+            class231_2 = (class231) class234.field3145.method4900();
+         }
+
+         if (class231_2 == null) {
+            int i_7;
+            try {
+               if (class197.field2402 == 1) {
+                  i_7 = class76.field1099.method3707(911615124);
+                  if (i_7 > 0 && class76.field1099.method3713(529284444)) {
+                     i_7 -= class197.field2404;
+                     if (i_7 < 0) {
+                        i_7 = 0;
+                     }
+
+                     class76.field1099.method3706(i_7, 985423372);
+                  } else {
+                     class76.field1099.method3712();
+                     class76.field1099.method3710(535953816);
+                     if (class11.field76 != null) {
+                        class197.field2402 = 2;
+                     } else {
+                        class197.field2402 = 0;
+                     }
+
+                     class154.field1981 = null;
+                     class17.field119 = null;
+                  }
+               }
+            } catch (Exception exception_12) {
+               exception_12.printStackTrace();
+               class76.field1099.method3712();
+               class197.field2402 = 0;
+               class154.field1981 = null;
+               class17.field119 = null;
+               class11.field76 = null;
+            }
+
+            class186.method3619((byte) 33);
+            class45 class45_13 = class45.field392;
+            synchronized (class45.field392) {
+               ++class45.field406;
+               class45.field396 = class45.field385;
+               class45.field386 = 0;
+               int i_8;
+               if (class45.field398 >= 0) {
+                  while (class45.field388 != class45.field398) {
+                     i_8 = class45.field391[class45.field388];
+                     class45.field388 = class45.field388 + 1 & 0x7f;
+                     if (i_8 < 0) {
+                        class45.field395[~i_8] = false;
+                     } else {
+                        if (!class45.field395[i_8] && class45.field386 < class45.field401.length - 1) {
+                           class45.field401[++class45.field386 - 1] = i_8;
+                        }
+
+                        class45.field395[i_8] = true;
+                     }
+                  }
+               } else {
+                  for (i_8 = 0; i_8 < 112; i_8++) {
+                     class45.field395[i_8] = false;
+                  }
+
+                  class45.field398 = class45.field388;
+               }
+
+               if (class45.field386 > 0) {
+                  class45.field406 = 0;
+               }
+
+               class45.field385 = class45.field404;
+            }
+
+            class54 class54_14 = class54.field479;
+            synchronized (class54.field479) {
+               class54.field485 = class54.field481;
+               class54.field492 = class54.field488;
+               class54.field487 = class54.field477;
+               class54.field482 = class54.field484;
+               class54.field493 = class54.field489;
+               class54.field483 = class54.field490;
+               class54.field495 = class54.field491;
+               class54.field497 = class54.field500;
+               class54.field489 = 0;
+            }
+
+            if (class36.field329 != null) {
+               i_7 = class36.field329.vmethod3496(1768142580);
+               field853 = i_7;
+            }
+
+            if (field662 == 0) {
+               class272.startUpInitialization();
+               class141.method3291();
+            } else if (field662 == 5) {
+               class248.method4484();
+               class272.startUpInitialization();
+               class141.method3291();
+            } else if (field662 != 10 && field662 != 11) {
+               if (field662 == 20) {
+                  class248.method4484();
+                  this.method1250();
+               } else if (field662 == 25) {
+                  class187.method3628();
+               }
+            } else {
+               class248.method4484();
+            }
+
+            if (field662 == 30) {
+               this.method1251();
+            } else if (field662 == 40 || field662 == 45) {
+               this.method1250();
+            }
+
+            return;
+         }
+
+         class231_2.field3117.method4264(class231_2.field3116, (int) class231_2.field2113, class231_2.field3115, false);
+      }
+   }
+
+   void method1248() {
+      if (class236.field3179 >= 4) {
+         this.loadingError("js5crc");
+         field662 = 1000;
+      } else {
+         if (class236.field3178 >= 4) {
+            if (field662 <= 5) {
+               this.loadingError("js5io");
+               field662 = 1000;
+               return;
+            }
+
+            field682 = 3000;
+            class236.field3178 = 3;
+         }
+
+         if (--field682 + 1 <= 0) {
+            try {
+               if (field681 == 0) {
+                  class191.field2363 = class53.field463.method3478(class73.field1068, class90.field1266);
+                  ++field681;
+               }
+
+               if (field681 == 1) {
+                  if (class191.field2363.field2022 == 2) {
+                     this.method1249(-1);
+                     return;
+                  }
+
+                  if (class191.field2363.field2022 == 1) {
+                     ++field681;
+                  }
+               }
+
+               if (field681 == 2) {
+                  if (field815) {
+                     class70.field1015 = class303.method5770((Socket) class191.field2363.field2025, 40000, 5000, (byte) 10);
+                  } else {
+                     class70.field1015 = new class171((Socket) class191.field2363.field2025, class53.field463, 5000);
+                  }
+
+                  class300 class300_2 = new class300(5);
+                  class300_2.writeByte2(15);
+                  class300_2.write32IntBigEndian(181);
+                  class70.field1015.vmethod5829(class300_2.field3730, 0, 5, -1696227994);
+                  ++field681;
+                  class192.field2382 = class206.getAdjustedTimeMillis();
+               }
+
+               if (field681 == 3) {
+                  if (class70.field1015.vmethod5826((byte) 28) > 0 || !field815 && field662 <= 5) {
+                     int i_3 = class70.field1015.vmethod5825((byte) 2);
+                     if (i_3 != 0) {
+                        this.method1249(i_3);
+                        return;
+                     }
+
+                     ++field681;
+                  } else if (class206.getAdjustedTimeMillis() - class192.field2382 > 30000L) {
+                     this.method1249(-2);
+                     return;
+                  }
+               }
+
+               if (field681 == 4) {
+                  class93.method2193(class70.field1015, field662 > 20, (short) -31468);
+                  class191.field2363 = null;
+                  class70.field1015 = null;
+                  field681 = 0;
+                  field685 = 0;
+               }
+            } catch (IOException ioexception_4) {
+               this.method1249(-3);
+            }
+
+         }
+      }
+   }
+
    protected final void vmethod1493(boolean bool_1, byte b_2) {
       boolean bool_3;
       label168: {
@@ -2501,7 +2514,7 @@ public final class client extends class53 implements class280 {
             }
          } catch (Exception exception_7) {
             exception_7.printStackTrace();
-            class76.field1099.method3712(-2108774826);
+            class76.field1099.method3712();
             class197.field2402 = 0;
             class154.field1981 = null;
             class17.field119 = null;
@@ -2516,7 +2529,7 @@ public final class client extends class53 implements class280 {
       }
 
       if ((field662 == 10 || field662 == 20 || field662 == 30) && field868 != 0L && class206.getAdjustedTimeMillis() > field868) {
-         class170.method3515(class34.method598((byte) -72), -1950826442);
+         class170.method3515(class34.method598((byte) -72));
       }
 
       int i_5;
@@ -2579,7 +2592,7 @@ public final class client extends class53 implements class280 {
 
    }
 
-   final void method1251(int i_1) {
+   final void method1251() {
       if (field669 > 1) {
          --field669;
       }
@@ -2590,14 +2603,14 @@ public final class client extends class53 implements class280 {
 
       if (field701) {
          field701 = false;
-         class56.method1090(204342367);
+         class56.method1090();
       } else {
          if (!field674) {
             class77.method1945(-1819884546);
          }
 
          int i_2;
-         for (i_2 = 0; i_2 < 100 && this.method1451(field880, 1494391815); i_2++) {
+         for (i_2 = 0; i_2 < 100 && this.method1451(field880); i_2++) {
             ;
          }
 
@@ -2608,7 +2621,7 @@ public final class client extends class53 implements class280 {
                class187_16 = class235.method4265(class183.field2252, field880.field1313, 1775123545);
                class187_16.field2333.writeByte2(0);
                i_3 = class187_16.field2333.field3732;
-               class70.method1671(class187_16.field2333, -2067523200);
+               class70.method1671(class187_16.field2333);
                class187_16.field2333.method5491(class187_16.field2333.field3732 - i_3);
                field880.copy(class187_16);
             }
@@ -2617,7 +2630,7 @@ public final class client extends class53 implements class280 {
                class187_16 = class235.method4265(class183.field2217, field880.field1313, 1775123545);
                class187_16.field2333.writeByte2(0);
                i_3 = class187_16.field2333.field3732;
-               field797.method4999(class187_16.field2333, 1450575552);
+               field797.method4999(class187_16.field2333);
                class187_16.field2333.method5491(class187_16.field2333.field3732 - i_3);
                field880.copy(class187_16);
                field797.method4998(-481288218);
@@ -2686,25 +2699,25 @@ public final class client extends class53 implements class280 {
                         if (i_13 < 8 && i_11 >= -32 && i_11 <= 31 && i_12 >= -32 && i_12 <= 31) {
                            i_11 += 32;
                            i_12 += 32;
-                           class187_17.field2333.method5479((i_13 << 12) + i_12 + (i_11 << 6));
+                           class187_17.field2333.writeShort((i_13 << 12) + i_12 + (i_11 << 6));
                         } else if (i_13 < 32 && i_11 >= -128 && i_11 <= 127 && i_12 >= -128 && i_12 <= 127) {
                            i_11 += 128;
                            i_12 += 128;
                            class187_17.field2333.writeByte2(i_13 + 128);
-                           class187_17.field2333.method5479(i_12 + (i_11 << 8));
+                           class187_17.field2333.writeShort(i_12 + (i_11 << 8));
                         } else if (i_13 < 32) {
                            class187_17.field2333.writeByte2(i_13 + 192);
                            if (i_10 != -1 && i_9 != -1) {
-                              class187_17.field2333.method5481(i_10 | i_9 << 16);
+                              class187_17.field2333.write32IntBigEndian(i_10 | i_9 << 16);
                            } else {
-                              class187_17.field2333.method5481(Integer.MIN_VALUE);
+                              class187_17.field2333.write32IntBigEndian(Integer.MIN_VALUE);
                            }
                         } else {
-                           class187_17.field2333.method5479((i_13 & 0x1fff) + 57344);
+                           class187_17.field2333.writeShort((i_13 & 0x1fff) + 57344);
                            if (i_10 != -1 && i_9 != -1) {
-                              class187_17.field2333.method5481(i_10 | i_9 << 16);
+                              class187_17.field2333.write32IntBigEndian(i_10 | i_9 << 16);
                            } else {
-                              class187_17.field2333.method5481(Integer.MIN_VALUE);
+                              class187_17.field2333.write32IntBigEndian(Integer.MIN_VALUE);
                            }
                         }
 
@@ -2758,15 +2771,15 @@ public final class client extends class53 implements class280 {
 
                i_6 = (int)long_18;
                class187_20 = class235.method4265(class183.field2234, field880.field1313, 1775123545);
-               class187_20.field2333.method5479((class54.field493 == 2 ? 1 : 0) + (i_6 << 1));
-               class187_20.field2333.method5479(i_5);
-               class187_20.field2333.method5479(i_4);
+               class187_20.field2333.writeShort((class54.field493 == 2 ? 1 : 0) + (i_6 << 1));
+               class187_20.field2333.writeShort(i_5);
+               class187_20.field2333.writeShort(i_4);
                field880.copy(class187_20);
             }
 
             if (class45.field386 > 0) {
                class187_16 = class235.method4265(class183.field2270, field880.field1313, 1775123545);
-               class187_16.field2333.method5479(0);
+               class187_16.field2333.writeShort(0);
                i_3 = class187_16.field2333.field3732;
                long long_21 = class206.getAdjustedTimeMillis();
 
@@ -2873,7 +2886,7 @@ public final class client extends class53 implements class280 {
                         i_11 = class43.method770(long_25);
                         i_12 = class128.method2970(i_11, (short) 4095).field3378;
                         if (i_12 >= 0) {
-                           field786[field730] = class222.method4118(i_12).method4379(false, 1310169716);
+                           field786[field730] = class222.method4118(i_12).method4379();
                            field664[field730] = i_7;
                            field883[field730] = i_8;
                            ++field730;
@@ -2882,7 +2895,7 @@ public final class client extends class53 implements class280 {
                   }
                }
 
-               class202.field2486.method6078((byte) 48);
+               class202.field2486.method6078();
             }
 
             if (field662 == 30) {
@@ -2916,7 +2929,7 @@ public final class client extends class53 implements class280 {
                class245.method4461(1752614077);
                ++field880.field1318;
                if (field880.field1318 > 750) {
-                  class56.method1090(-1434007383);
+                  class56.method1090();
                } else {
                   i_2 = class89.field1255;
                   ints_38 = class89.field1257;
@@ -3050,9 +3063,9 @@ public final class client extends class53 implements class280 {
                                                          }
 
                                                          class187_20 = class235.method4265(class183.field2283, field880.field1313, 1775123545);
-                                                         class187_20.field2333.method5479(field764);
+                                                         class187_20.field2333.writeShort(field764);
                                                          class187_20.field2333.method5634(field765);
-                                                         class187_20.field2333.method5481(class18.field127.field2688);
+                                                         class187_20.field2333.write32IntBigEndian(class18.field127.field2688);
                                                          class187_20.field2333.writeByte(b_35);
                                                          field880.copy(class187_20);
                                                       }
@@ -3127,7 +3140,7 @@ public final class client extends class53 implements class280 {
                                              if (field899) {
                                                 i_5 = class46.field412 * 128 + 64;
                                                 i_6 = class210.field2516 * 128 + 64;
-                                                i_7 = class62.method1130(i_5, i_6, class42.field372, (short) -366) - class190.field2345;
+                                                i_7 = class62.method1130(i_5, i_6, class42.field372) - class190.field2345;
                                                 if (class299.field3727 < i_5) {
                                                    class299.field3727 = (i_5 - class299.field3727) * class96.field1327 / 1000 + class299.field3727 + class83.field1166;
                                                    if (class299.field3727 > i_5) {
@@ -3172,7 +3185,7 @@ public final class client extends class53 implements class280 {
 
                                                 i_5 = class70.field1017 * 128 + 64;
                                                 i_6 = class30.field259 * 128 + 64;
-                                                i_7 = class62.method1130(i_5, i_6, class42.field372, (short) -4952) - class31.field268;
+                                                i_7 = class62.method1130(i_5, i_6, class42.field372) - class31.field268;
                                                 i_8 = i_5 - class299.field3727;
                                                 i_9 = i_7 - class43.field383;
                                                 i_10 = i_6 - class1.field3;
@@ -3259,7 +3272,7 @@ public final class client extends class53 implements class280 {
                                              try {
                                                 field880.method2234();
                                              } catch (IOException ioexception_32) {
-                                                class56.method1090(584557555);
+                                                class56.method1090();
                                              }
 
                                              return;
@@ -3270,7 +3283,7 @@ public final class client extends class53 implements class280 {
                                              break;
                                           }
 
-                                          class217_41 = class80.method1978(class217_29.field2583);
+                                          class217_41 = class80.fetchSomething(class217_29.field2583);
                                        } while (class217_41 == null || class217_41.field2675 == null || class217_29.field2565 >= class217_41.field2675.length || class217_29 != class217_41.field2675[class217_29.field2565]);
 
                                        class184.method3613(class62_43, (byte) -43);
@@ -3282,7 +3295,7 @@ public final class client extends class53 implements class280 {
                                     break;
                                  }
 
-                                 class217_41 = class80.method1978(class217_29.field2583);
+                                 class217_41 = class80.fetchSomething(class217_29.field2583);
                               } while (class217_41 == null || class217_41.field2675 == null || class217_29.field2565 >= class217_41.field2675.length || class217_29 != class217_41.field2675[class217_29.field2565]);
 
                               class184.method3613(class62_43, (byte) -26);
@@ -3294,7 +3307,7 @@ public final class client extends class53 implements class280 {
                            break;
                         }
 
-                        class217_41 = class80.method1978(class217_29.field2583);
+                        class217_41 = class80.fetchSomething(class217_29.field2583);
                      } while (class217_41 == null || class217_41.field2675 == null || class217_29.field2565 >= class217_41.field2675.length || class217_29 != class217_41.field2675[class217_29.field2565]);
 
                      class184.method3613(class62_43, (byte) -119);
@@ -3305,7 +3318,7 @@ public final class client extends class53 implements class280 {
       }
    }
 
-   final void method1250(int i_1) {
+   final void method1250() {
       Object obj_2 = field880.method2223();
       class299 class299_3 = field880.field1314;
 
@@ -3332,7 +3345,7 @@ public final class client extends class53 implements class280 {
 
          if (field686 == 1) {
             if (class278.field3628 == null) {
-               class278.field3628 = class53.field463.method3478(class73.field1068, class90.field1266, 313449224);
+               class278.field3628 = class53.field463.method3478(class73.field1068, class90.field1266);
             }
 
             if (class278.field3628.field2022 == 2) {
@@ -3437,23 +3450,23 @@ public final class client extends class53 implements class280 {
 
             class299_4.writeByte2(1);
             //..Keys
-            class299_4.method5481(ints_25[0]);
-            class299_4.method5481(ints_25[1]);
-            class299_4.method5481(ints_25[2]);
-            class299_4.method5481(ints_25[3]);
+            class299_4.write32IntBigEndian(ints_25[0]);
+            class299_4.write32IntBigEndian(ints_25[1]);
+            class299_4.write32IntBigEndian(ints_25[2]);
+            class299_4.write32IntBigEndian(ints_25[3]);
 
 
             class299_4.method5483(class135.field1872);
             if (field662 == 40) {
-               class299_4.method5481(class74.field1074[0]);
-               class299_4.method5481(class74.field1074[1]);
-               class299_4.method5481(class74.field1074[2]);
-               class299_4.method5481(class74.field1074[3]);
+               class299_4.write32IntBigEndian(class74.field1074[0]);
+               class299_4.write32IntBigEndian(class74.field1074[1]);
+               class299_4.write32IntBigEndian(class74.field1074[2]);
+               class299_4.write32IntBigEndian(class74.field1074[3]);
             } else {
                class299_4.writeByte2(field690.vmethod6084(1559391851));
                switch(field690.field2003) {
                case 0:
-                  class299_4.method5481(((Integer) class17.field117.field1067.get(Integer.valueOf(class128.method2971(class85.field1180, -1418597327)))).intValue());
+                  class299_4.write32IntBigEndian(((Integer) class17.field117.field1067.get(Integer.valueOf(class128.method2971(class85.field1180, -1418597327)))).intValue());
                   break;
                case 1:
                case 2:
@@ -3487,18 +3500,18 @@ public final class client extends class53 implements class280 {
                class187_7.field2333.writeByte2(class184.field2308.field2313);
             }
 
-            class187_7.field2333.method5479(0);
+            class187_7.field2333.writeShort(0);
 
             int i_17 = class187_7.field2333.field3732;
-            class187_7.field2333.method5481(181); //..Version
-            class187_7.field2333.method5481(1);
+            class187_7.field2333.write32IntBigEndian(181); //..Version
+            class187_7.field2333.write32IntBigEndian(1);
             class187_7.field2333.writeByte2(field761);
             class187_7.field2333.method5488(class299_4.field3730, 0, class299_4.field3732);
             int i_9 = class187_7.field2333.field3732;
             class187_7.field2333.method5485(class85.field1180);
             class187_7.field2333.writeByte2((field869 ? 1 : 0) << 1 | (field656 ? 1 : 0));
-            class187_7.field2333.method5479(class7.field46);
-            class187_7.field2333.method5479(class249.field3308);
+            class187_7.field2333.writeShort(class7.field46);
+            class187_7.field2333.writeShort(class249.field3308);
             class299 class299_10 = class187_7.field2333;
             int i_13;
             if (field693 != null) {
@@ -3527,34 +3540,34 @@ public final class client extends class53 implements class280 {
             }
 
             class187_7.field2333.method5485(class294.field3695);
-            class187_7.field2333.method5481(class239.field3199);
+            class187_7.field2333.write32IntBigEndian(class239.field3199);
             class300 class300_11 = new class300(class22.field174.method6282((byte) -5));
             class22.field174.method6281(class300_11, -1667072289);
             class187_7.field2333.method5488(class300_11.field3730, 0, class300_11.field3730.length);
             class187_7.field2333.writeByte2(field761);
-            class187_7.field2333.method5481(0);
-            class187_7.field2333.method5481(class197.field2405.field3136);
-            class187_7.field2333.method5481(class167.field2049.field3136);
-            class187_7.field2333.method5481(class215.field2544.field3136);
-            class187_7.field2333.method5481(class43.field382.field3136);
-            class187_7.field2333.method5481(class13.field89.field3136);
-            class187_7.field2333.method5481(class35.field307.field3136);
-            class187_7.field2333.method5481(class29.field253.field3136);
-            class187_7.field2333.method5481(class256.field3500.field3136);
-            class187_7.field2333.method5481(field683.field3136);
-            class187_7.field2333.method5481(class4.field18.field3136);
-            class187_7.field2333.method5481(class17.field110.field3136);
-            class187_7.field2333.method5481(class32.field279.field3136);
-            class187_7.field2333.method5481(class151.field1971.field3136);
-            class187_7.field2333.method5481(class2.field6.field3136);
-            class187_7.field2333.method5481(class126.field1647.field3136);
-            class187_7.field2333.method5481(class67.field650.field3136);
-            class187_7.field2333.method5481(0);
-            class187_7.field2333.method5481(class27.field232.field3136);
-            class187_7.field2333.method5481(field684.field3136);
-            class187_7.field2333.method5481(class254.field3457.field3136);
-            class187_7.field2333.method5481(class135.field1874.field3136);
-            class187_7.field2333.method5691(ints_25, i_9, class187_7.field2333.field3732, 1174596892);
+            class187_7.field2333.write32IntBigEndian(0);
+            class187_7.field2333.write32IntBigEndian(class197.field2405.field3136);
+            class187_7.field2333.write32IntBigEndian(class167.field2049.field3136);
+            class187_7.field2333.write32IntBigEndian(class215.field2544.field3136);
+            class187_7.field2333.write32IntBigEndian(class43.field382.field3136);
+            class187_7.field2333.write32IntBigEndian(class13.field89.field3136);
+            class187_7.field2333.write32IntBigEndian(class35.field307.field3136);
+            class187_7.field2333.write32IntBigEndian(class29.field253.field3136);
+            class187_7.field2333.write32IntBigEndian(class256.field3500.field3136);
+            class187_7.field2333.write32IntBigEndian(field683.field3136);
+            class187_7.field2333.write32IntBigEndian(class4.field18.field3136);
+            class187_7.field2333.write32IntBigEndian(class17.field110.field3136);
+            class187_7.field2333.write32IntBigEndian(class32.field279.field3136);
+            class187_7.field2333.write32IntBigEndian(class151.field1971.field3136);
+            class187_7.field2333.write32IntBigEndian(class2.field6.field3136);
+            class187_7.field2333.write32IntBigEndian(class126.field1647.field3136);
+            class187_7.field2333.write32IntBigEndian(class67.field650.field3136);
+            class187_7.field2333.write32IntBigEndian(0);
+            class187_7.field2333.write32IntBigEndian(class27.field232.field3136);
+            class187_7.field2333.write32IntBigEndian(field684.field3136);
+            class187_7.field2333.write32IntBigEndian(class254.field3457.field3136);
+            class187_7.field2333.write32IntBigEndian(class135.field1874.field3136);
+            class187_7.field2333.method5691(ints_25, i_9, class187_7.field2333.field3732);
             class187_7.field2333.method5490(class187_7.field2333.field3732 - i_17);
             field880.copy(class187_7);
             field880.method2234();
@@ -3657,7 +3670,7 @@ public final class client extends class53 implements class280 {
                field771 = ((class305) obj_2).vmethod5825((byte) 2);
                ((class305) obj_2).vmethod5828(class299_3.field3730, 0, 1, (byte) -50);
                class299_3.field3732 = 0;
-               ServerPacketProt[] arr_6 = class76.method1934(-23272757);
+               ServerPacketProt[] arr_6 = class76.method1934();
                int i_20 = class299_3.method5451();
                if (i_20 < 0 || i_20 >= arr_6.length) {
                   throw new IOException(i_20 + " " + class299_3.field3732);
@@ -3683,11 +3696,11 @@ public final class client extends class53 implements class280 {
                if (((class305) obj_2).vmethod5826((byte) 73) >= field880.field1315) {
                   class299_3.field3732 = 0;
                   ((class305) obj_2).vmethod5828(class299_3.field3730, 0, field880.field1315, (byte) -46);
-                  field797.method5014((byte) -20);
+                  field797.method5014();
                   class137.method3264(-1702335616);
                   class20.method238(class299_3, (byte) -61);
                   class48.field418 = -1;
-                  class55.method1084(false, class299_3, -1936823520);
+                  class55.method1084(false, class299_3);
                   field880.inPacketType = null;
                }
 
@@ -3742,7 +3755,7 @@ public final class client extends class53 implements class280 {
                      ((class305) obj_2).vmethod5828(class299_3.field3730, 0, field880.field1315, (byte) -4);
                      class299_3.field3732 = 0;
                      i_31 = field880.field1315;
-                     field797.method5000(2054543133);
+                     field797.method5000();
                      field880.method2218();
                      field880.field1314.field3732 = 0;
                      field880.inPacketType = null;
@@ -3893,7 +3906,7 @@ public final class client extends class53 implements class280 {
                      if (i_15 == 39 || i_15 == 40 || i_15 == 41 || i_15 == 42 || i_15 == 43 || i_15 == 33 || i_15 == 34 || i_15 == 35 || i_15 == 36 || i_15 == 37 || i_15 == 38 || i_15 == 1005) {
                         i_16 = field792[i_3];
                         i_6 = field793[i_3];
-                        class217 class217_17 = class80.method1978(i_6);
+                        class217 class217_17 = class80.fetchSomething(i_6);
                         i_9 = class268.method4987(class217_17);
                         boolean bool_8 = (i_9 >> 28 & 0x1) != 0;
                         if (bool_8) {
@@ -3942,7 +3955,7 @@ public final class client extends class53 implements class280 {
                   class224.method4120(class18.field127);
                }
 
-               class18.field127 = class80.method1978(i_6);
+               class18.field127 = class80.fetchSomething(i_6);
                field765 = i_16;
                field654 = class54.field483;
                field763 = class54.field495;
@@ -3959,7 +3972,7 @@ public final class client extends class53 implements class280 {
    }
 
    void method1260(class217 class217_1, int i_2) {
-      class217 class217_3 = class217_1.field2583 == -1 ? null : class80.method1978(class217_1.field2583);
+      class217 class217_3 = class217_1.field2583 == -1 ? null : class80.fetchSomething(class217_1.field2583);
       int i_4;
       int i_5;
       if (class217_3 == null) {
@@ -4044,7 +4057,7 @@ public final class client extends class53 implements class280 {
                            break;
                         }
 
-                        class217_10 = class80.method1978(class217_10.field2583);
+                        class217_10 = class80.fetchSomething(class217_10.field2583);
                         if (class217_10 == null) {
                            class217_16 = null;
                            break;
@@ -4058,10 +4071,10 @@ public final class client extends class53 implements class280 {
                      class187 class187_17 = class235.method4265(class183.field2260, field880.field1313, 1775123545);
                      class187_17.field2333.method5530(field828.field2565);
                      class187_17.field2333.method5530(field832.field2690);
-                     class187_17.field2333.method5479(field832.field2565);
+                     class187_17.field2333.writeShort(field832.field2565);
                      class187_17.field2333.write32IntLittleEndian(field828.field2688);
                      class187_17.field2333.write32IntReverse(field832.field2688);
-                     class187_17.field2333.method5479(field828.field2690);
+                     class187_17.field2333.writeShort(field828.field2690);
                      field880.copy(class187_17);
                   }
                }
@@ -4087,7 +4100,7 @@ public final class client extends class53 implements class280 {
    }
 
    public final void init() {
-      if (this.method934(-878010075)) {
+      if (this.getHost()) {
          class271[] arr_1 = class137.method3265(1137342160);
 
          for (int i_2 = 0; i_2 < arr_1.length; i_2++) {
@@ -4179,18 +4192,6 @@ public final class client extends class53 implements class280 {
          class341.field4066 = field761;
          this.method996(765, 503, 181, -1542260379);
       }
-   }
-
-   static final void method1650(String string_0, int i_1) {
-      StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
-      Object obj_10001 = null;
-      String string_2 = stringbuilder_10000.append(" is already on your ignore list").toString();
-      class62.method1132(30, "", string_2, -2140749974);
-   }
-
-   public static class217 method1649(int i_0, int i_1, int i_2) {
-      class217 class217_3 = class80.method1978(i_0);
-      return i_1 == -1 ? class217_3 : (class217_3 != null && class217_3.field2675 != null && i_1 < class217_3.field2675.length ? class217_3.field2675[i_1] : null);
    }
 
    static void method1651(class71[] arr_0, int i_1, int i_2, int[] ints_3, int[] ints_4, byte b_5) {

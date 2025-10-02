@@ -19,22 +19,22 @@ public class class73 {
 
    class73(class300 class300_1) {
       if (class300_1 != null && class300_1.field3730 != null) {
-         int i_2 = class300_1.method5504();
+         int i_2 = class300_1.readUByte();
          if (i_2 >= 0 && i_2 <= field1062) {
-            if (class300_1.method5504() == 1) {
+            if (class300_1.readUByte() == 1) {
                this.field1060 = true;
             }
 
             if (i_2 > 1) {
-               this.field1063 = class300_1.method5504() == 1;
+               this.field1063 = class300_1.readUByte() == 1;
             }
 
             if (i_2 > 3) {
-               this.field1064 = class300_1.method5504();
+               this.field1064 = class300_1.readUByte();
             }
 
             if (i_2 > 2) {
-               int i_3 = class300_1.method5504();
+               int i_3 = class300_1.readUByte();
 
                for (int i_4 = 0; i_4 < i_3; i_4++) {
                   int i_5 = class300_1.readIntMedEndian();
@@ -73,8 +73,8 @@ public class class73 {
 
       while (iterator_3.hasNext()) {
          Entry map$entry_4 = (Entry) iterator_3.next();
-         class300_2.method5481(((Integer) map$entry_4.getKey()).intValue());
-         class300_2.method5481(((Integer) map$entry_4.getValue()).intValue());
+         class300_2.write32IntBigEndian(((Integer) map$entry_4.getKey()).intValue());
+         class300_2.write32IntBigEndian(((Integer) map$entry_4.getValue()).intValue());
       }
 
       class300_2.method5485(this.field1065 != null ? this.field1065 : "");
@@ -177,7 +177,7 @@ public class class73 {
             i_5 = class76.field1098[class70.field1014];
             int i_6 = class76.field1098[class70.field1014 + 1];
             class187 class187_7 = class235.method4265(class183.field2205, client.field880.field1313, 1775123545);
-            class187_7.field2333.writeByte2(class209.method3945(string_4, 501855513) + 2);
+            class187_7.field2333.writeByte2(class209.method3945(string_4) + 2);
             class187_7.field2333.method5485(string_4);
             class187_7.field2333.writeByte2(i_5 - 1);
             class187_7.field2333.writeByte2(i_6);
@@ -367,7 +367,7 @@ public class class73 {
                string_4 = class76.field1093[class221.field2747];
                String string_13 = class76.field1093[class221.field2747 + 1];
                class187 class187_12 = class235.method4265(class183.field2228, client.field880.field1313, 1775123545);
-               class187_12.field2333.method5479(0);
+               class187_12.field2333.writeShort(0);
                int i_14 = class187_12.field2333.field3732;
                class187_12.field2333.method5485(string_4);
                class132.method3063(class187_12.field2333, string_13, 845593608);
@@ -388,7 +388,7 @@ public class class73 {
                   return 1;
                } else if (i_0 == 5019) {
                   i_11 = class76.field1098[--class70.field1014];
-                  class76.field1098[++class70.field1014 - 1] = class192.method3669(i_11, -72629118);
+                  class76.field1098[++class70.field1014 - 1] = class192.method3669(i_11);
                   return 1;
                } else if (i_0 == 5020) {
                   string_4 = class76.field1093[--class221.field2747];

@@ -16,7 +16,7 @@ public class class240 extends class175 {
 
    void method4353(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

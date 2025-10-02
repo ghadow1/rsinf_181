@@ -28,7 +28,7 @@ public final class class289 {
             class324_7.field3895 = class326.field3912[i_6];
          }
 
-         class16.method174(572816821);
+         class16.method174();
          return arr_5;
       }
    }

@@ -6,7 +6,7 @@ public class class101 {
 
    class101(class300 class300_1) {
       for (int i_2 = 0; i_2 < 10; i_2++) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 != 0) {
             --class300_1.field3732;
             this.field1351[i_2] = new class117();

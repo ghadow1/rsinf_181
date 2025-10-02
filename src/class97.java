@@ -19,14 +19,14 @@ public class class97 extends class180 {
       try {
          class343_1 = class18.method207("", class29.field248.field3111, true, 733930440);
          class300 class300_2 = class17.field117.method1746(-2138331500);
-         class343_1.method6561(class300_2.field3730, 0, class300_2.field3732, -1093230712);
+         class343_1.method6561(class300_2.field3730, 0, class300_2.field3732);
       } catch (Exception exception_4) {
          ;
       }
 
       try {
          if (class343_1 != null) {
-            class343_1.method6555(true, 182298539);
+            class343_1.method6555(true);
          }
       } catch (Exception exception_3) {
          ;

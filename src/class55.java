@@ -19,7 +19,7 @@ public final class class55 {
    static int field519 = (int)(Math.random() * 17.0D) - 8;
    static int field510 = (int)(Math.random() * 33.0D) - 16;
 
-   static final void method1084(boolean bool_0, class299 class299_1, int i_2) {
+   static final void method1084(boolean bool_0, class299 class299_1) {
       client.field798 = bool_0;
       int i_3;
       int i_4;
@@ -29,7 +29,7 @@ public final class class55 {
       int i_9;
       if (!client.field798) {
          i_3 = class299_1.readShort();
-         i_4 = class299_1.method5518();
+         i_4 = class299_1.readShortBigEndian();
          int i_5 = class299_1.readShortUBigEndian();
          class29.field255 = new int[i_5][4];
 
@@ -60,8 +60,8 @@ public final class class55 {
                i_9 = i_8 + (i_7 << 8);
                if (!bool_17 || i_8 != 49 && i_8 != 149 && i_8 != 147 && i_7 != 50 && (i_7 != 49 || i_8 != 47)) {
                   class206.field2501[i_5] = i_9;
-                  class88.field1248[i_5] = class35.field307.method4160("m" + i_7 + "_" + i_8, 774222007);
-                  class22.field178[i_5] = class35.field307.method4160("l" + i_7 + "_" + i_8, 1023832758);
+                  class88.field1248[i_5] = class35.field307.method4160("m" + i_7 + "_" + i_8);
+                  class22.field178[i_5] = class35.field307.method4160("l" + i_7 + "_" + i_8);
                   ++i_5;
                }
             }
@@ -69,9 +69,9 @@ public final class class55 {
 
          class153.method3399(i_4, i_3, true, 240895507);
       } else {
-         i_3 = class299_1.method5518();
+         i_3 = class299_1.readShortBigEndian();
          i_4 = class299_1.readShort();
-         boolean bool_16 = class299_1.method5504() == 1;
+         boolean bool_16 = class299_1.readUByte() == 1;
          i_6 = class299_1.readShortUBigEndian();
          class299_1.method5438();
 
@@ -126,8 +126,8 @@ public final class class55 {
                         class206.field2501[i_6] = i_13;
                         i_14 = i_13 >> 8 & 0xff;
                         int i_15 = i_13 & 0xff;
-                        class88.field1248[i_6] = class35.field307.method4160("m" + i_14 + "_" + i_15, 2048004806);
-                        class22.field178[i_6] = class35.field307.method4160("l" + i_14 + "_" + i_15, 1148766449);
+                        class88.field1248[i_6] = class35.field307.method4160("m" + i_14 + "_" + i_15);
+                        class22.field178[i_6] = class35.field307.method4160("l" + i_14 + "_" + i_15);
                         ++i_6;
                      }
                   }

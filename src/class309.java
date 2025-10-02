@@ -205,12 +205,12 @@ public class class309 implements Runnable {
 
          class85.field1194 = class215.method4021(class233_1, "titlebox", "", -1167154349);
          class240.field3207 = class215.method4021(class233_1, "titlebutton", "", -1167154349);
-         int i_7 = class233_1.method4160("runes", 877570230);
-         int i_8 = class233_1.method4161(i_7, "", (byte) 32);
+         int i_7 = class233_1.method4160("runes");
+         int i_8 = class233_1.method4161(i_7, "");
          class324[] arr_6 = class289.method5281(class233_1, i_7, i_8, 1740775565);
          class85.field1181 = arr_6;
-         i_8 = class233_1.method4160("title_mute", 1260712466);
-         int i_9 = class233_1.method4161(i_8, "", (byte) 60);
+         i_8 = class233_1.method4160("title_mute");
+         int i_9 = class233_1.method4161(i_8, "");
          class324[] arr_10 = class289.method5281(class233_1, i_8, i_9, 1982525323);
          class85.field1183 = arr_10;
          class85.field1178 = class215.method4021(class233_1, "options_radio_buttons,0", "", -1167154349);

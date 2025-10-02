@@ -5,9 +5,9 @@ public class class225 {
    static final void method4122(class217[] arr_0, int i_1, int i_2) {
       for (int i_3 = 0; i_3 < arr_0.length; i_3++) {
          class217 class217_4 = arr_0[i_3];
-         if (class217_4 != null && class217_4.field2583 == i_1 && (!class217_4.field2563 || !class62.method1133(class217_4, 1962980394))) {
+         if (class217_4 != null && class217_4.field2583 == i_1 && (!class217_4.field2563 || !class62.method1133(class217_4))) {
             if (class217_4.field2566 == 0) {
-               if (!class217_4.field2563 && class62.method1133(class217_4, 2098911000) && class217_4 != class72.field1059) {
+               if (!class217_4.field2563 && class62.method1133(class217_4) && class217_4 != class72.field1059) {
                   continue;
                }
 

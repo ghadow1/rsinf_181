@@ -19,15 +19,15 @@ public class class246 extends class175 {
       if (i_2 == 1) {
          class300_1.readShortUBigEndian();
       } else if (i_2 == 2) {
-         this.field3275 = class300_1.method5504();
+         this.field3275 = class300_1.readUByte();
       } else if (i_2 == 3) {
-         this.field3282 = class300_1.method5504();
+         this.field3282 = class300_1.readUByte();
       } else if (i_2 == 4) {
          this.field3283 = 0;
       } else if (i_2 == 5) {
          this.field3285 = class300_1.readShortUBigEndian();
       } else if (i_2 == 6) {
-         class300_1.method5504();
+         class300_1.readUByte();
       } else if (i_2 == 7) {
          this.field3286 = class300_1.method5511();
       } else if (i_2 == 8) {
@@ -35,16 +35,16 @@ public class class246 extends class175 {
       } else if (i_2 == 11) {
          this.field3283 = class300_1.readShortUBigEndian();
       } else if (i_2 == 14) {
-         this.field3288 = class300_1.method5504();
+         this.field3288 = class300_1.readUByte();
       } else if (i_2 == 15) {
-         this.field3289 = class300_1.method5504();
+         this.field3289 = class300_1.readUByte();
       }
 
    }
 
    void method4473(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

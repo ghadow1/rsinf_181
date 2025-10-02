@@ -17,12 +17,12 @@ public final class class141 {
          return null;
       } else {
          class295 class295_2 = new class295(bytes_0, class212.field2523, class326.field3915, class326.field3914, class216.field2548, class138.field1895, class326.field3912);
-         class16.method174(572816821);
+         class16.method174();
          return class295_2;
       }
    }
 
-   protected static final void method3291(int i_0) {
+   protected static final void method3291() {
       class53.field447.vmethod3513(-1402657312);
 
       int i_1;

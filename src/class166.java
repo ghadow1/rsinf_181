@@ -30,7 +30,7 @@ public class class166 implements Runnable {
       this.field2031.start();
    }
 
-   final class165 method3471(int i_1, int i_2, int i_3, Object object_4, byte b_5) {
+   final class165 method3471(int i_1, int i_2, Object object_4) {
       class165 class165_6 = new class165();
       class165_6.field2023 = i_1;
       class165_6.field2024 = i_2;
@@ -49,10 +49,10 @@ public class class166 implements Runnable {
    }
 
    public final class165 method3472(Runnable runnable_1, int i_2, int i_3) {
-      return this.method3471(2, i_2, 0, runnable_1, (byte) 115);
+      return this.method3471(2, i_2, runnable_1);
    }
 
-   public final void method3469(int i_1) {
+   public final void method3469() {
       synchronized(this) {
          this.field2032 = true;
          this.notifyAll();
@@ -66,8 +66,8 @@ public class class166 implements Runnable {
 
    }
 
-   public final class165 method3478(String string_1, int i_2, int i_3) {
-      return this.method3471(1, i_2, 0, string_1, (byte) 98);
+   public final class165 method3478(String string_1, int i_2) {
+      return this.method3471(1, i_2, string_1);
    }
 
    public final void run() {

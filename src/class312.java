@@ -17,7 +17,7 @@ public class class312 {
       class300 class300_4 = new class300(bytes_3);
 
       while (true) {
-         int i_5 = class300_4.method5504();
+         int i_5 = class300_4.readUByte();
          if (i_5 == 0) {
             return;
          }

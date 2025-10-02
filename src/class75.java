@@ -17,9 +17,9 @@ public final class class75 extends class180 {
    int[] field1088;
    class113 field1085;
 
-   void method1821(int i_1) {
+   void method1821() {
       int i_2 = this.field1079;
-      class253 class253_3 = this.field1087.method4595((byte) 45);
+      class253 class253_3 = this.field1087.method4595();
       if (class253_3 != null) {
          this.field1079 = class253_3.field3394;
          this.field1091 = class253_3.field3399 * 128;
@@ -41,14 +41,14 @@ public final class class75 extends class180 {
 
    }
 
-   static void method1827(int i_0) {
+   static void method1827() {
       if (class68.field944 != null) {
          client.field924 = client.field881;
-         class68.field944.method4320((byte) 25);
+         class68.field944.method4320();
 
          for (int i_1 = 0; i_1 < client.field909.length; i_1++) {
             if (client.field909[i_1] != null) {
-               class68.field944.method4316((client.field909[i_1].field1005 >> 7) + class196.field2389, (client.field909[i_1].field949 >> 7) + class1.field1, (byte) -97);
+               class68.field944.method4316((client.field909[i_1].field1005 >> 7) + class196.field2389, (client.field909[i_1].field949 >> 7) + class1.field1);
             }
          }
       }
@@ -57,12 +57,12 @@ public final class class75 extends class180 {
 
    static class92 method1828(int i_0, int i_1, int i_2, short s_3) {
       int i_4 = (i_1 << 8) + i_0;
-      class92 class92_6 = class49.method821(i_4, i_0, (byte) 3);
+      class92 class92_6 = class49.method821(i_4);
       if (class92_6 != null) {
          return class92_6;
       } else {
          int i_5 = class312.method5899(i_2, i_0, (byte) -122);
-         class92_6 = class49.method821(i_5, i_0, (byte) 21);
+         class92_6 = class49.method821(i_5);
          return class92_6 != null ? class92_6 : null;
       }
    }

@@ -85,7 +85,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       }
    }
 
-   protected final boolean method934(int i_1) {
+   protected final boolean getHost() {
       String string_2 = this.getDocumentBase().getHost().toLowerCase();
       if (!string_2.equals("jagex.com") && !string_2.endsWith(".jagex.com")) {
          if (!string_2.equals("runescape.com") && !string_2.endsWith(".runescape.com")) {
@@ -99,7 +99,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
                if (string_2.endsWith("192.168.1.")) {
                   return true;
                } else {
-                  this.method901("invalidhost", (byte) -43);
+                  this.loadingError("invalidhost");
                   return false;
                }
             }
@@ -115,12 +115,12 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       if (this == field442 && !field445) {
          field444 = class206.getAdjustedTimeMillis();
          class251.method4550(5000L);
-         this.method891((byte) 19);
+         this.method891();
       }
    }
 
-   class319 method903(int i_1) {
-      Container container_2 = this.method902(555430345);
+   class319 method903() {
+      Container container_2 = this.method902();
       int i_3 = Math.max(container_2.getWidth(), this.field476);
       int i_4 = Math.max(container_2.getHeight(), this.field459);
       if (this.field441 != null) {
@@ -132,11 +132,11 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       return new class319(i_3, i_4);
    }
 
-   Container method902(int i_1) {
+   Container method902() {
       return (Container) (this.field441 != null ? this.field441 : this) ;
    }
 
-   protected void method901(String string_1, byte b_2) {
+   protected void loadingError(String string_1) {
       if (!this.field446) {
          this.field446 = true;
          System.out.println("error_game_" + string_1);
@@ -150,11 +150,11 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       }
    }
 
-   final void method890(int i_1) {
+   final void method890() {
       this.field450 = true;
    }
 
-   final synchronized void method891(byte b_1) {
+   final synchronized void method891() {
       if (!field445) {
          field445 = true;
 
@@ -180,7 +180,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
 
          if (field463 != null) {
             try {
-               field463.method3469(876535177);
+               field463.method3469();
             } catch (Exception exception_3) {
                ;
             }
@@ -190,8 +190,8 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       }
    }
 
-   final synchronized void method1003(int i_1) {
-      Container container_2 = this.method902(2083877937);
+   final synchronized void method1003() {
+      Container container_2 = this.method902();
       if (this.field460 != null) {
          this.field460.removeFocusListener(this);
          container_2.remove(this.field460);
@@ -237,9 +237,9 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
    protected abstract void vmethod1608(int var1);
 
    final void method882(int i_1) {
-      Container container_2 = this.method902(1296482110);
+      Container container_2 = this.method902();
       if (container_2 != null) {
-         class319 class319_3 = this.method903(-357178622);
+         class319 class319_3 = this.method903();
          this.field454 = Math.max(class319_3.field3865, this.field476);
          this.field455 = Math.max(class319_3.field3866, this.field459);
          if (this.field454 <= 0) {
@@ -331,7 +331,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
    protected abstract void vmethod1599(byte var1);
 
    void method910(int i_1) {
-      Container container_2 = this.method902(343418165);
+      Container container_2 = this.method902();
       long long_3 = class206.getAdjustedTimeMillis();
       long long_5 = field452[class238.field3192];
       field452[class238.field3192] = long_3;
@@ -355,7 +355,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       }
 
       if (this.field467) {
-         this.method908(165240301);
+         this.method908();
       }
 
       this.method970(-2058666477);
@@ -425,7 +425,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          class45.field407[520] = 59;
       }
 
-      class81.method1990(this.field460, 481246027);
+      class81.method1990(this.field460);
    }
 
    protected final void method932(int i_1) {
@@ -446,7 +446,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          if (field442 != null) {
             ++field466;
             if (field466 >= 3) {
-               this.method901("alreadyloaded", (byte) 29);
+               this.loadingError("alreadyloaded");
                return;
             }
 
@@ -466,18 +466,18 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          field463.method3472(this, 1, 193419386);
       } catch (Exception exception_6) {
          class252.method4556((String) null, exception_6, (byte) 89);
-         this.method901("crash", (byte) -56);
+         this.loadingError("crash");
       }
 
    }
 
-   protected void method878(int i_1) {
+   protected void method878() {
       this.field470 = this.getToolkit().getSystemClipboard();
    }
 
-   protected final void method988(int i_1, int i_2, int i_3) {
+   protected final void method988(int i_1, int i_2) {
       if (this.field473 != i_1 || i_2 != this.field461) {
-         this.method890(501361759);
+         this.method890();
       }
 
       this.field473 = i_1;
@@ -486,7 +486,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
 
    protected abstract void vmethod1252(int var1);
 
-   final void method908(int i_1) {
+   final void method908() {
       Canvas canvas_2 = this.field460;
       canvas_2.removeKeyListener(class45.field392);
       canvas_2.removeFocusListener(class45.field392);
@@ -500,18 +500,18 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          this.field469.method773(this.field460, -325226469);
       }
 
-      this.method1003(1330618968);
-      class81.method1990(this.field460, 1405088776);
+      this.method1003();
+      class81.method1990(this.field460);
       class18.method200(this.field460, (byte) 109);
       if (this.field469 != null) {
          this.field469.method772(this.field460, (byte) 13);
       }
 
-      this.method890(501361759);
+      this.method890();
    }
 
    final void method970(int i_1) {
-      class319 class319_2 = this.method903(-357178622);
+      class319 class319_2 = this.method903();
       if (this.field454 != class319_2.field3865 || class319_2.field3866 != this.field455 || this.field450) {
          this.method882(-517749579);
          this.field450 = false;
@@ -528,7 +528,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       int i_5 = this.field455 - class249.field3308 - i_3;
       if (i_2 > 0 || i_4 > 0 || i_3 > 0 || i_5 > 0) {
          try {
-            Container container_6 = this.method902(-119470127);
+            Container container_6 = this.method902();
             int i_7 = 0;
             int i_8 = 0;
             if (container_6 == this.field441) {
@@ -576,7 +576,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
             if (string_1.indexOf("sun") != -1 || string_1.indexOf("apple") != -1) {
                String string_2 = class166.field2028;
                if (string_2.equals("1.1") || string_2.startsWith("1.1.") || string_2.equals("1.2") || string_2.startsWith("1.2.") || string_2.equals("1.3") || string_2.startsWith("1.3.") || string_2.equals("1.4") || string_2.startsWith("1.4.") || string_2.equals("1.5") || string_2.startsWith("1.5.") || string_2.equals("1.6.0")) {
-                  this.method901("wrongjava", (byte) -54);
+                  this.loadingError("wrongjava");
                   return;
                }
 
@@ -587,8 +587,8 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
                   }
 
                   String string_4 = string_2.substring(6, i_3);
-                  if (class192.method3677(string_4, (byte) -31) && class3.method38(string_4, (byte) 0) < 10) {
-                     this.method901("wrongjava", (byte) 93);
+                  if (class192.method3677(string_4) && class3.method38(string_4, (byte) 0) < 10) {
+                     this.loadingError("wrongjava");
                      return;
                   }
                }
@@ -598,7 +598,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          }
 
          this.setFocusCycleRoot(true);
-         this.method1003(1073262022);
+         this.method1003();
          this.vmethod1243(2070235141);
          field447 = class173.method3589(-1483717574);
 
@@ -614,10 +614,10 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          }
       } catch (Exception exception_6) {
          class252.method4556((String) null, exception_6, (byte) 40);
-         this.method901("crash", (byte) -87);
+         this.loadingError("crash");
       }
 
-      this.method891((byte) -95);
+      this.method891();
    }
 
    public final void windowDeiconified(WindowEvent windowevent_1) {

@@ -35,7 +35,7 @@ public class class157 extends class275 {
                class71_4.field1023 = class300_2.readIntMedEndian();
                class71_4.field1029 = class300_2.readNullTermString();
                class71_4.field1028 = class300_2.readNullTermString();
-               class71_4.field1032 = class300_2.method5504();
+               class71_4.field1032 = class300_2.readUByte();
                class71_4.field1030 = class300_2.method5606();
             }
 

@@ -58,12 +58,12 @@ public class class102 extends class180 {
 
          int i_6;
          do {
-            i_6 = class300_2.method5504();
+            i_6 = class300_2.readUByte();
             i_5 += i_6;
          } while (i_6 >= 255);
 
          byte[] bytes_7 = new byte[i_5];
-         class300_2.method5697(bytes_7, 0, i_5);
+         class300_2.byteArrayCopy(bytes_7, 0, i_5);
          this.field1366[i_4] = bytes_7;
       }
 

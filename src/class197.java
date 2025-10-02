@@ -47,7 +47,7 @@ public class class197 {
          }
       }
 
-      class217 class217_9 = class80.method1978(i_4);
+      class217 class217_9 = class80.fetchSomething(i_4);
       if (class217_9 != null) {
          class224.method4120(class217_9);
       }

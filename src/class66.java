@@ -190,9 +190,9 @@ public final class class66 extends class69 {
 
    final void method1179(class300 class300_1, int i_2) {
       class300_1.field3732 = 0;
-      int i_3 = class300_1.method5504();
-      this.field635 = class300_1.method5495();
-      this.field615 = class300_1.method5495();
+      int i_3 = class300_1.readUByte();
+      this.field635 = class300_1.readByte2();
+      this.field615 = class300_1.readByte2();
       int i_4 = -1;
       this.field632 = 0;
       int[] ints_5 = new int[12];
@@ -200,11 +200,11 @@ public final class class66 extends class69 {
       int i_7;
       int i_8;
       for (int i_6 = 0; i_6 < 12; i_6++) {
-         i_7 = class300_1.method5504();
+         i_7 = class300_1.readUByte();
          if (i_7 == 0) {
             ints_5[i_6] = 0;
          } else {
-            i_8 = class300_1.method5504();
+            i_8 = class300_1.readUByte();
             ints_5[i_6] = i_8 + (i_7 << 8);
             if (i_6 == 0 && ints_5[0] == 65535) {
                i_4 = class300_1.readShortUBigEndian();
@@ -223,7 +223,7 @@ public final class class66 extends class69 {
       int[] ints_10 = new int[5];
 
       for (i_7 = 0; i_7 < 5; i_7++) {
-         i_8 = class300_1.method5504();
+         i_8 = class300_1.readUByte();
          if (i_8 < 0 || i_8 >= class247.field3291[i_7].length) {
             i_8 = 0;
          }
@@ -274,9 +274,9 @@ public final class class66 extends class69 {
          class10.field69 = this.field621.method5197((byte) 76);
       }
 
-      this.field618 = class300_1.method5504();
+      this.field618 = class300_1.readUByte();
       this.field617 = class300_1.readShortUBigEndian();
-      this.field628 = class300_1.method5504() == 1;
+      this.field628 = class300_1.readUByte() == 1;
       if (client.field703 == 0 && client.field890 >= 2) {
          this.field628 = false;
       }

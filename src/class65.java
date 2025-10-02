@@ -26,7 +26,7 @@ public class class65 extends class174 {
             class325_5.field3908[i_8] = class138.field1895[bytes_7[i_8] & 0xff];
          }
 
-         class16.method174(572816821);
+         class16.method174();
          return class325_5;
       }
    }
@@ -48,7 +48,7 @@ public class class65 extends class174 {
 
             if (!bool_3) {
                i_5 = (int)class61_1.field2113;
-               class217 class217_6 = class80.method1978(i_5);
+               class217 class217_6 = class80.fetchSomething(i_5);
                if (class217_6 != null) {
                   class224.method4120(class217_6);
                }
@@ -141,7 +141,7 @@ public class class65 extends class174 {
                if (i_18 == 2 && class5.field22.method3096(class42.field372, i_16, i_17, long_26) >= 0) {
                   class253 class253_20 = class128.method2970(i_19, (short) 4095);
                   if (class253_20.field3391 != null) {
-                     class253_20 = class253_20.method4595((byte) 86);
+                     class253_20 = class253_20.method4595();
                   }
 
                   if (class253_20 == null) {
@@ -389,7 +389,7 @@ public class class65 extends class174 {
    static final void method1170(String string_0, int i_1) {
       if (!string_0.equals("")) {
          class187 class187_2 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
-         class187_2.field2333.writeByte2(class209.method3945(string_0, -557080149));
+         class187_2.field2333.writeByte2(class209.method3945(string_0));
          class187_2.field2333.method5485(string_0);
          client.field880.copy(class187_2);
       }

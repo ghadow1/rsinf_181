@@ -31,7 +31,7 @@ public class class200 {
       if (i_5 != 240 && i_5 != 247) {
          return this.method3840(i_1, i_5);
       } else {
-         int i_3 = this.field2470.method5657();
+         int i_3 = this.field2470.readVarLengthInt();
          if (i_5 == 247 && i_3 > 0) {
             int i_4 = this.field2470.field3730[this.field2470.field3732] & 0xff;
             if (i_4 >= 241 && i_4 <= 243 || i_4 == 246 || i_4 == 248 || i_4 >= 250 && i_4 <= 252 || i_4 == 254) {
@@ -117,15 +117,15 @@ public class class200 {
    }
 
    void method3865(int i_1) {
-      int i_2 = this.field2470.method5657();
+      int i_2 = this.field2470.readVarLengthInt();
       this.field2465[i_1] += i_2;
    }
 
    int method3840(int i_1, int i_2) {
       int i_4;
       if (i_2 == 255) {
-         int i_7 = this.field2470.method5504();
-         i_4 = this.field2470.method5657();
+         int i_7 = this.field2470.readUByte();
+         i_4 = this.field2470.readVarLengthInt();
          if (i_7 == 47) {
             this.field2470.field3732 += i_4;
             return 1;
@@ -145,11 +145,11 @@ public class class200 {
          byte b_3 = field2468[i_2 - 128];
          i_4 = i_2;
          if (b_3 >= 1) {
-            i_4 = i_2 | this.field2470.method5504() << 8;
+            i_4 = i_2 | this.field2470.readUByte() << 8;
          }
 
          if (b_3 >= 2) {
-            i_4 |= this.field2470.method5504() << 16;
+            i_4 |= this.field2470.readUByte() << 16;
          }
 
          return i_4;

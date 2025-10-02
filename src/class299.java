@@ -86,7 +86,7 @@ public class class299 extends class300 {
          class324_5.field3893 = class216.field2548[0];
          class324_5.field3892 = class138.field1895;
          class324_5.field3895 = class326.field3912[0];
-         class16.method174(572816821);
+         class16.method174();
          return class324_5;
       }
    }

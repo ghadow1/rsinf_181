@@ -68,7 +68,7 @@ public class class159 extends class275 {
       File file_9;
       label135:
       while (i_10 < 4) {
-         class1.field2 = class119.method2760(string_0, string_1, i_10, -1682877008);
+         class1.field2 = class119.method2760(string_0, string_1, i_10);
          if (!class1.field2.exists()) {
             class1.field2.mkdirs();
          }
@@ -153,7 +153,7 @@ public class class159 extends class275 {
          if (i_0 == 5307) {
             i_4 = class76.field1098[--class70.field1014];
             if (i_4 == 1 || i_4 == 2) {
-               class170.method3515(i_4, -1702537778);
+               class170.method3515(i_4);
             }
 
             return 1;

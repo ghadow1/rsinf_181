@@ -37,7 +37,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt field2149 = new ServerPacketProt(34, 1);
    public static final ServerPacketProt ifSetNpcHeadMessage = new ServerPacketProt(35, 6);
    public static final ServerPacketProt field2151 = new ServerPacketProt(36, 6);
-   public static final ServerPacketProt field2202 = new ServerPacketProt(37, -1);
+   public static final ServerPacketProt setNewCookieTokenSomething = new ServerPacketProt(37, -1);
    public static final ServerPacketProt field2180 = new ServerPacketProt(38, -2);
    public static final ServerPacketProt field2154 = new ServerPacketProt(39, 4);
    public static final ServerPacketProt field2155 = new ServerPacketProt(40, 5);

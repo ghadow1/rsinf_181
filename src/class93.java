@@ -70,7 +70,7 @@ public class class93 extends class135 {
 
       class253 class253_13 = class128.method2970(this.field1297, (short) 4095);
       if (class253_13.field3391 != null) {
-         class253_13 = class253_13.method4595((byte) 53);
+         class253_13 = class253_13.method4595();
       }
 
       if (class253_13 == null) {
@@ -145,7 +145,7 @@ public class class93 extends class135 {
                         class300_3 = new class300(4);
                         class300_3.writeByte2(4);
                         class300_3.writeByte2(class236.field3181);
-                        class300_3.method5479(0);
+                        class300_3.writeShort(0);
                         class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
                      } catch (IOException ioexception_6) {
                         try {

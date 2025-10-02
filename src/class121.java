@@ -461,12 +461,12 @@ public class class121 extends class135 {
       class300_4.field3732 = bytes_1.length - 18;
       int i_9 = class300_4.readShortUBigEndian();
       int i_10 = class300_4.readShortUBigEndian();
-      int i_11 = class300_4.method5504();
-      int i_12 = class300_4.method5504();
-      int i_13 = class300_4.method5504();
-      int i_14 = class300_4.method5504();
-      int i_15 = class300_4.method5504();
-      int i_16 = class300_4.method5504();
+      int i_11 = class300_4.readUByte();
+      int i_12 = class300_4.readUByte();
+      int i_13 = class300_4.readUByte();
+      int i_14 = class300_4.readUByte();
+      int i_15 = class300_4.readUByte();
+      int i_16 = class300_4.readUByte();
       int i_17 = class300_4.readShortUBigEndian();
       int i_18 = class300_4.readShortUBigEndian();
       int i_19 = class300_4.readShortUBigEndian();
@@ -567,7 +567,7 @@ public class class121 extends class135 {
       int i_41;
       int i_42;
       for (i_38 = 0; i_38 < i_9; i_38++) {
-         i_39 = class300_4.method5504();
+         i_39 = class300_4.readUByte();
          i_40 = 0;
          if ((i_39 & 0x1) != 0) {
             i_40 = class300_5.method5507();
@@ -590,7 +590,7 @@ public class class121 extends class135 {
          i_36 = this.field1550[i_38];
          i_37 = this.field1552[i_38];
          if (i_16 == 1) {
-            this.field1569[i_38] = class300_8.method5504();
+            this.field1569[i_38] = class300_8.readUByte();
          }
       }
 
@@ -603,7 +603,7 @@ public class class121 extends class135 {
       for (i_38 = 0; i_38 < i_10; i_38++) {
          this.field1561[i_38] = (short)class300_4.readShortUBigEndian();
          if (i_12 == 1) {
-            i_39 = class300_5.method5504();
+            i_39 = class300_5.readUByte();
             if ((i_39 & 0x1) == 1) {
                this.field1557[i_38] = 1;
                bool_2 = true;
@@ -625,15 +625,15 @@ public class class121 extends class135 {
          }
 
          if (i_13 == 255) {
-            this.field1559[i_38] = class300_6.method5495();
+            this.field1559[i_38] = class300_6.readByte2();
          }
 
          if (i_14 == 1) {
-            this.field1587[i_38] = class300_7.method5495();
+            this.field1587[i_38] = class300_7.readByte2();
          }
 
          if (i_15 == 1) {
-            this.field1553[i_38] = class300_8.method5504();
+            this.field1553[i_38] = class300_8.readUByte();
          }
       }
 
@@ -647,7 +647,7 @@ public class class121 extends class135 {
       int i_43;
       int i_44;
       for (i_42 = 0; i_42 < i_10; i_42++) {
-         i_43 = class300_5.method5504();
+         i_43 = class300_5.readUByte();
          if (i_43 == 1) {
             i_38 = class300_4.method5507() + i_41;
             i_39 = class300_4.method5507() + i_38;
@@ -930,13 +930,13 @@ public class class121 extends class135 {
       class300_2.field3732 = bytes_1.length - 23;
       int i_9 = class300_2.readShortUBigEndian();
       int i_10 = class300_2.readShortUBigEndian();
-      int i_11 = class300_2.method5504();
-      int i_12 = class300_2.method5504();
-      int i_13 = class300_2.method5504();
-      int i_14 = class300_2.method5504();
-      int i_15 = class300_2.method5504();
-      int i_16 = class300_2.method5504();
-      int i_17 = class300_2.method5504();
+      int i_11 = class300_2.readUByte();
+      int i_12 = class300_2.readUByte();
+      int i_13 = class300_2.readUByte();
+      int i_14 = class300_2.readUByte();
+      int i_15 = class300_2.readUByte();
+      int i_16 = class300_2.readUByte();
+      int i_17 = class300_2.readUByte();
       int i_18 = class300_2.readShortUBigEndian();
       int i_19 = class300_2.readShortUBigEndian();
       int i_20 = class300_2.readShortUBigEndian();
@@ -951,7 +951,7 @@ public class class121 extends class135 {
          class300_2.field3732 = 0;
 
          for (i_26 = 0; i_26 < i_11; i_26++) {
-            byte b_27 = this.field1565[i_26] = class300_2.method5495();
+            byte b_27 = this.field1565[i_26] = class300_2.readByte2();
             if (b_27 == 0) {
                ++i_23;
             }
@@ -1084,7 +1084,7 @@ public class class121 extends class135 {
       int i_54;
       int i_55;
       for (i_51 = 0; i_51 < i_9; i_51++) {
-         i_52 = class300_2.method5504();
+         i_52 = class300_2.readUByte();
          i_53 = 0;
          if ((i_52 & 0x1) != 0) {
             i_53 = class300_3.method5507();
@@ -1107,7 +1107,7 @@ public class class121 extends class135 {
          i_49 = this.field1550[i_51];
          i_50 = this.field1552[i_51];
          if (i_17 == 1) {
-            this.field1569[i_51] = class300_6.method5504();
+            this.field1569[i_51] = class300_6.readUByte();
          }
       }
 
@@ -1122,19 +1122,19 @@ public class class121 extends class135 {
       for (i_51 = 0; i_51 < i_10; i_51++) {
          this.field1561[i_51] = (short)class300_2.readShortUBigEndian();
          if (i_12 == 1) {
-            this.field1557[i_51] = class300_3.method5495();
+            this.field1557[i_51] = class300_3.readByte2();
          }
 
          if (i_13 == 255) {
-            this.field1559[i_51] = class300_4.method5495();
+            this.field1559[i_51] = class300_4.readByte2();
          }
 
          if (i_14 == 1) {
-            this.field1587[i_51] = class300_5.method5495();
+            this.field1587[i_51] = class300_5.readByte2();
          }
 
          if (i_15 == 1) {
-            this.field1553[i_51] = class300_6.method5504();
+            this.field1553[i_51] = class300_6.readUByte();
          }
 
          if (i_16 == 1) {
@@ -1142,7 +1142,7 @@ public class class121 extends class135 {
          }
 
          if (this.field1560 != null && this.field1562[i_51] != -1) {
-            this.field1560[i_51] = (byte)(class300_8.method5504() - 1);
+            this.field1560[i_51] = (byte)(class300_8.readUByte() - 1);
          }
       }
 
@@ -1155,7 +1155,7 @@ public class class121 extends class135 {
 
       int i_56;
       for (i_55 = 0; i_55 < i_10; i_55++) {
-         i_56 = class300_3.method5504();
+         i_56 = class300_3.readUByte();
          if (i_56 == 1) {
             i_51 = class300_2.method5507() + i_54;
             i_52 = class300_2.method5507() + i_51;
@@ -1213,7 +1213,7 @@ public class class121 extends class135 {
       }
 
       class300_2.field3732 = i_26;
-      i_55 = class300_2.method5504();
+      i_55 = class300_2.readUByte();
       if (i_55 != 0) {
          new class134();
          class300_2.readShortUBigEndian();

@@ -6,8 +6,8 @@ final class class1 implements class0 {
    static int field1;
    static int field3;
 
-   void method6(Integer integer_1, class300 class300_2, int i_3) {
-      class300_2.method5481(integer_1.intValue());
+   void method6(Integer integer_1, class300 class300_2) {
+      class300_2.write32IntBigEndian(integer_1.intValue());
    }
 
    static final void method10(class185 class185_0) {
@@ -20,11 +20,11 @@ final class class1 implements class0 {
       int i_8;
       int i_9;
       if (class185.field2320 == class185_0) {
-         i_3 = class299_2.method5525();
+         i_3 = class299_2.readByteInverse();
          i_4 = i_3 >> 2;
          i_5 = i_3 & 0x3;
          i_6 = client.field713[i_4];
-         i_7 = class299_2.method5525();
+         i_7 = class299_2.readByteInverse();
          i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
          i_9 = (i_7 & 0x7) + class94.field1306;
          if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
@@ -64,18 +64,18 @@ final class class1 implements class0 {
             int i_15;
             int i_40;
             if (class185.field2316 == class185_0) {
-               i_3 = class299_2.method5525() * 4;
+               i_3 = class299_2.readByteInverse() * 4;
                i_4 = class299_2.readShortUBigEndian();
-               i_5 = class299_2.method5518();
-               i_6 = class299_2.method5525() * 4;
+               i_5 = class299_2.readShortBigEndian();
+               i_6 = class299_2.readByteInverse() * 4;
                i_7 = class299_2.method5535();
-               i_8 = class299_2.method5504();
-               i_9 = class299_2.method5525();
-               i_10 = class299_2.method5532();
+               i_8 = class299_2.readUByte();
+               i_9 = class299_2.readByteInverse();
+               i_10 = class299_2.readShortLittleEndian();
                i_11 = class299_2.readByte();
                i_40 = (i_11 >> 4 & 0x7) + class311.field3819;
                i_13 = (i_11 & 0x7) + class94.field1306;
-               b_14 = class299_2.method5694();
+               b_14 = class299_2.readSByte();
                byte b_41 = class299_2.method5527();
                i_15 = b_41 + i_40;
                int i_42 = b_14 + i_13;
@@ -84,15 +84,15 @@ final class class1 implements class0 {
                   i_13 = i_13 * 128 + 64;
                   i_15 = i_15 * 128 + 64;
                   i_42 = i_42 * 128 + 64;
-                  class86 class86_16 = new class86(i_5, class42.field372, i_40, i_13, class62.method1130(i_40, i_13, class42.field372, (short) -11749) - i_6, i_10 + client.field881, i_4 + client.field881, i_8, i_9, i_7, i_3);
-                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, class42.field372, (short) -26235) - i_3, i_10 + client.field881, -2118689642);
+                  class86 class86_16 = new class86(i_5, class42.field372, i_40, i_13, class62.method1130(i_40, i_13, class42.field372) - i_6, i_10 + client.field881, i_4 + client.field881, i_8, i_9, i_7, i_3);
+                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, class42.field372) - i_3, i_10 + client.field881, -2118689642);
                   client.field670.method4917(class86_16);
                }
 
             } else if (class185.field2322 == class185_0) {
-               i_3 = class299_2.method5532();
+               i_3 = class299_2.readShortLittleEndian();
                i_4 = class299_2.readShort();
-               i_5 = class299_2.method5532();
+               i_5 = class299_2.readShortLittleEndian();
                i_6 = class299_2.readByte();
                i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                i_8 = (i_6 & 0x7) + class94.field1306;
@@ -111,7 +111,7 @@ final class class1 implements class0 {
                }
 
             } else if (class185.field2315 == class185_0) {
-               i_3 = class299_2.method5518();
+               i_3 = class299_2.readShortBigEndian();
                i_4 = class299_2.readShort();
                i_5 = class299_2.readByte();
                i_6 = (i_5 >> 4 & 0x7) + class311.field3819;
@@ -130,10 +130,10 @@ final class class1 implements class0 {
 
             } else {
                if (class185.field2319 == class185_0) {
-                  i_3 = class299_2.method5504();
+                  i_3 = class299_2.readUByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
-                  i_6 = class299_2.method5525();
+                  i_6 = class299_2.readByteInverse();
                   i_7 = class299_2.readByte();
                   i_8 = i_7 >> 4 & 0xf;
                   i_9 = i_7 & 0x7;
@@ -155,16 +155,16 @@ final class class1 implements class0 {
                   byte b_38 = class299_2.method5527();
                   i_4 = class299_2.readShort();
                   byte b_39 = class299_2.method5527();
-                  i_6 = class299_2.method5518();
+                  i_6 = class299_2.readShortBigEndian();
                   i_7 = class299_2.readShortUBigEndian();
                   i_8 = class299_2.readByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
                   i_11 = client.field713[i_9];
-                  byte b_12 = class299_2.method5694();
-                  i_13 = class299_2.method5532();
+                  byte b_12 = class299_2.readSByte();
+                  i_13 = class299_2.readShortLittleEndian();
                   b_14 = class299_2.method5527();
-                  i_15 = class299_2.method5524();
+                  i_15 = class299_2.readByteUNeg();
                   int i_36 = (i_15 >> 4 & 0x7) + class311.field3819;
                   int i_17 = (i_15 & 0x7) + class94.field1306;
                   class66 class66_18;
@@ -228,11 +228,11 @@ final class class1 implements class0 {
                   i_3 = class299_2.readByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
-                  i_6 = class299_2.method5525();
+                  i_6 = class299_2.readByteInverse();
                   i_7 = i_6 >> 2;
                   i_8 = i_6 & 0x3;
                   i_9 = client.field713[i_7];
-                  i_10 = class299_2.method5518();
+                  i_10 = class299_2.readShortBigEndian();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      class201.method3885(class42.field372, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
                   }
@@ -240,23 +240,23 @@ final class class1 implements class0 {
                } else if (class185.field2317 == class185_0) {
                   i_3 = class299_2.readShortUBigEndian();
                   i_4 = class299_2.readByte();
-                  i_5 = class299_2.method5518();
-                  i_6 = class299_2.method5504();
+                  i_5 = class299_2.readShortBigEndian();
+                  i_6 = class299_2.readUByte();
                   i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                   i_8 = (i_6 & 0x7) + class94.field1306;
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
                      i_7 = i_7 * 128 + 64;
                      i_8 = i_8 * 128 + 64;
-                     class77 class77_34 = new class77(i_3, class42.field372, i_7, i_8, class62.method1130(i_7, i_8, class42.field372, (short) -1406) - i_4, i_5, client.field881);
+                     class77 class77_34 = new class77(i_3, class42.field372, i_7, i_8, class62.method1130(i_7, i_8, class42.field372) - i_4, i_5, client.field881);
                      client.field785.method4917(class77_34);
                   }
 
                } else if (class185.field2324 == class185_0) {
-                  i_3 = class299_2.method5525();
+                  i_3 = class299_2.readByteInverse();
                   i_4 = i_3 >> 2;
                   i_5 = i_3 & 0x3;
                   i_6 = client.field713[i_4];
-                  i_7 = class299_2.method5524();
+                  i_7 = class299_2.readByteUNeg();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;
                   i_10 = class299_2.readShortUBigEndian();
@@ -319,7 +319,7 @@ final class class1 implements class0 {
    }
 
    public void vmethod43(Object object_1, class300 class300_2, int i_3) {
-      this.method6((Integer) object_1, class300_2, 982248566);
+      this.method6((Integer) object_1, class300_2);
    }
 
    public Object vmethod42(class300 class300_1, int i_2) {

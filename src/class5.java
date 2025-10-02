@@ -63,7 +63,7 @@ final class class5 implements Comparator {
             }
 
             long long_10 = class126.method2854(i_0, i_1, 3, false, 0, -1948443569);
-            field22.method3073(class42.field372, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, class42.field372, (short) -7398), class87_6, long_10, class87_13, class87_12);
+            field22.method3073(class42.field372, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, class42.field372), class87_6, long_10, class87_13, class87_12);
          }
       }
    }

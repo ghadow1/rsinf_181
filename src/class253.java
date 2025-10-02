@@ -52,7 +52,7 @@ public class class253 extends class175 {
    public int[] field3391;
    class316 field3396;
 
-   public final class253 method4595(byte b_1) {
+   public final class253 method4595() {
       int i_2 = -1;
       if (this.field3349 != -1) {
          i_2 = class67.method1237(this.field3349, -836499887);
@@ -70,11 +70,11 @@ public class class253 extends class175 {
       return i_3 != -1 ? class128.method2970(i_3, (short) 4095) : null;
    }
 
-   void method4628(class300 class300_1, int i_2, int i_3) {
+   void method4628(class300 class300_1, int i_2) {
       int i_4;
       int i_5;
       if (i_2 == 1) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          if (i_4 > 0) {
             if (this.field3362 != null && !field3352) {
                class300_1.field3732 += 3 * i_4;
@@ -84,14 +84,14 @@ public class class253 extends class175 {
 
                for (i_5 = 0; i_5 < i_4; i_5++) {
                   this.field3362[i_5] = class300_1.readShortUBigEndian();
-                  this.field3359[i_5] = class300_1.method5504();
+                  this.field3359[i_5] = class300_1.readUByte();
                }
             }
          }
       } else if (i_2 == 2) {
          this.field3360 = class300_1.readNullTermString();
       } else if (i_2 == 5) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          if (i_4 > 0) {
             if (this.field3362 != null && !field3352) {
                class300_1.field3732 += i_4 * 2;
@@ -105,16 +105,16 @@ public class class253 extends class175 {
             }
          }
       } else if (i_2 == 14) {
-         this.field3365 = class300_1.method5504();
+         this.field3365 = class300_1.readUByte();
       } else if (i_2 == 15) {
-         this.field3366 = class300_1.method5504();
+         this.field3366 = class300_1.readUByte();
       } else if (i_2 == 17) {
          this.field3382 = 0;
          this.field3368 = false;
       } else if (i_2 == 18) {
          this.field3368 = false;
       } else if (i_2 == 19) {
-         this.field3369 = class300_1.method5504();
+         this.field3369 = class300_1.readUByte();
       } else if (i_2 == 21) {
          this.field3370 = 0;
       } else if (i_2 == 22) {
@@ -129,18 +129,18 @@ public class class253 extends class175 {
       } else if (i_2 == 27) {
          this.field3382 = 1;
       } else if (i_2 == 28) {
-         this.field3374 = class300_1.method5504();
+         this.field3374 = class300_1.readUByte();
       } else if (i_2 == 29) {
-         this.field3350 = class300_1.method5495();
+         this.field3350 = class300_1.readByte2();
       } else if (i_2 == 39) {
-         this.field3380 = class300_1.method5495() * 25;
+         this.field3380 = class300_1.readByte2() * 25;
       } else if (i_2 >= 30 && i_2 < 35) {
          this.field3377[i_2 - 30] = class300_1.readNullTermString();
          if (this.field3377[i_2 - 30].equalsIgnoreCase("Hidden")) {
             this.field3377[i_2 - 30] = null;
          }
       } else if (i_2 == 40) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          this.field3375 = new short[i_4];
          this.field3353 = new short[i_4];
 
@@ -149,7 +149,7 @@ public class class253 extends class175 {
             this.field3353[i_5] = (short)class300_1.readShortUBigEndian();
          }
       } else if (i_2 == 41) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          this.field3363 = new short[i_4];
          this.field3364 = new short[i_4];
 
@@ -170,7 +170,7 @@ public class class253 extends class175 {
       } else if (i_2 == 68) {
          this.field3379 = class300_1.readShortUBigEndian();
       } else if (i_2 == 69) {
-         class300_1.method5504();
+         class300_1.readUByte();
       } else if (i_2 == 70) {
          this.field3385 = class300_1.method5606();
       } else if (i_2 == 71) {
@@ -182,23 +182,23 @@ public class class253 extends class175 {
       } else if (i_2 == 74) {
          this.field3389 = true;
       } else if (i_2 == 75) {
-         this.field3361 = class300_1.method5504();
+         this.field3361 = class300_1.readUByte();
       } else if (i_2 != 77 && i_2 != 92) {
          if (i_2 == 78) {
             this.field3394 = class300_1.readShortUBigEndian();
-            this.field3399 = class300_1.method5504();
+            this.field3399 = class300_1.readUByte();
          } else if (i_2 == 79) {
             this.field3392 = class300_1.readShortUBigEndian();
             this.field3397 = class300_1.readShortUBigEndian();
-            this.field3399 = class300_1.method5504();
-            i_4 = class300_1.method5504();
+            this.field3399 = class300_1.readUByte();
+            i_4 = class300_1.readUByte();
             this.field3367 = new int[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
                this.field3367[i_5] = class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 81) {
-            this.field3370 = class300_1.method5504() * 256;
+            this.field3370 = class300_1.readUByte() * 256;
          } else if (i_2 == 82) {
             this.field3378 = class300_1.readShortUBigEndian();
          } else if (i_2 == 249) {
@@ -223,7 +223,7 @@ public class class253 extends class175 {
             }
          }
 
-         i_5 = class300_1.method5504();
+         i_5 = class300_1.readUByte();
          this.field3391 = new int[i_5 + 2];
 
          for (int i_6 = 0; i_6 <= i_5; i_6++) {
@@ -395,12 +395,12 @@ public class class253 extends class175 {
 
    void method4625(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4628(class300_1, i_3, 2121034762);
+         this.method4628(class300_1, i_3);
       }
    }
 

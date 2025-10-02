@@ -83,12 +83,12 @@ public class class254 extends class175 {
          this.field3425 = true;
       } else if (i_2 == 23) {
          this.field3456 = class300_1.readShortUBigEndian();
-         this.field3431 = class300_1.method5504();
+         this.field3431 = class300_1.readUByte();
       } else if (i_2 == 24) {
          this.field3437 = class300_1.readShortUBigEndian();
       } else if (i_2 == 25) {
          this.field3432 = class300_1.readShortUBigEndian();
-         this.field3434 = class300_1.method5504();
+         this.field3434 = class300_1.readUByte();
       } else if (i_2 == 26) {
          this.field3433 = class300_1.readShortUBigEndian();
       } else if (i_2 >= 30 && i_2 < 35) {
@@ -102,7 +102,7 @@ public class class254 extends class175 {
          int i_4;
          int i_5;
          if (i_2 == 40) {
-            i_4 = class300_1.method5504();
+            i_4 = class300_1.readUByte();
             this.field3424 = new short[i_4];
             this.field3414 = new short[i_4];
 
@@ -111,7 +111,7 @@ public class class254 extends class175 {
                this.field3414[i_5] = (short)class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 41) {
-            i_4 = class300_1.method5504();
+            i_4 = class300_1.readUByte();
             this.field3415 = new short[i_4];
             this.field3416 = new short[i_4];
 
@@ -120,7 +120,7 @@ public class class254 extends class175 {
                this.field3416[i_5] = (short)class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 42) {
-            this.field3403 = class300_1.method5495();
+            this.field3403 = class300_1.readByte2();
          } else if (i_2 == 65) {
             this.field3452 = true;
          } else if (i_2 == 78) {
@@ -156,11 +156,11 @@ public class class254 extends class175 {
          } else if (i_2 == 112) {
             this.field3404 = class300_1.readShortUBigEndian();
          } else if (i_2 == 113) {
-            this.field3448 = class300_1.method5495();
+            this.field3448 = class300_1.readByte2();
          } else if (i_2 == 114) {
-            this.field3419 = class300_1.method5495();
+            this.field3419 = class300_1.readByte2();
          } else if (i_2 == 115) {
-            this.field3450 = class300_1.method5504();
+            this.field3450 = class300_1.readUByte();
          } else if (i_2 == 139) {
             this.field3453 = class300_1.readShortUBigEndian();
          } else if (i_2 == 140) {
@@ -328,7 +328,7 @@ public class class254 extends class175 {
 
    void method4638(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

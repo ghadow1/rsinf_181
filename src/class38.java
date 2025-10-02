@@ -16,7 +16,7 @@ public class class38 extends class26 {
       for (int i_5 = 0; i_5 < i_4; i_5++) {
          int i_6 = class300_1.method5511();
          class213 class213_7 = new class213(class300_1.readIntMedEndian());
-         boolean bool_8 = class300_1.method5504() == 1;
+         boolean bool_8 = class300_1.readUByte() == 1;
          if (bool_2 || !bool_8) {
             this.field331.add(new class18((class213) null, class213_7, i_6, (class28) null));
          }

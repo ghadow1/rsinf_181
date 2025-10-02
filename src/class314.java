@@ -66,7 +66,7 @@ public class class314 implements Comparator {
          }
 
          if (string_0.equalsIgnoreCase("clientdrop")) {
-            class56.method1090(38049763);
+            class56.method1090();
          }
       }
 

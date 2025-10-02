@@ -14,8 +14,8 @@ public class class187 extends class180 {
       }
    }
 
-   static final void method3628(int i_0) {
-      class241.method4368(false, 426729441);
+   static final void method3628() {
+      class241.method4368(false);
       client.field705 = 0;
       boolean bool_1 = true;
 
@@ -56,7 +56,7 @@ public class class187 extends class180 {
                   i_5 = 10;
                }
 
-               bool_1 &= class209.method3947(bytes_3, i_4, i_5, -1212406127);
+               bool_1 &= class209.method3947(bytes_3, i_4, i_5);
             }
          }
 
@@ -112,7 +112,7 @@ public class class187 extends class180 {
             }
 
             class75.field1080.method4886();
-            class241.method4368(true, 497343809);
+            class241.method4368(true);
             int i_7;
             int i_8;
             int i_10;
@@ -164,7 +164,7 @@ public class class187 extends class180 {
                   }
                }
 
-               class241.method4368(true, -208645300);
+               class241.method4368(true);
 
                for (i_50 = 0; i_50 < i_2; i_50++) {
                   byte[] bytes_54 = class80.field1145[i_50];
@@ -246,7 +246,7 @@ public class class187 extends class180 {
                   }
                }
 
-               class241.method4368(true, 1461681438);
+               class241.method4368(true);
 
                for (i_50 = 0; i_50 < 4; i_50++) {
                   class186.method3619((byte) 71);
@@ -293,7 +293,7 @@ public class class187 extends class180 {
                                        int i_25 = i_23 & 0x3f;
                                        int i_26 = i_23 >> 6 & 0x3f;
                                        int i_27 = i_23 >> 12;
-                                       int i_28 = class300_20.method5504();
+                                       int i_28 = class300_20.readUByte();
                                        int i_29 = i_28 >> 2;
                                        int i_30 = i_28 & 0x3;
                                        if (i_7 == i_27 && i_26 >= i_16 && i_26 < i_16 + 8 && i_25 >= i_17 && i_25 < i_17 + 8) {
@@ -370,10 +370,10 @@ public class class187 extends class180 {
                }
             }
 
-            class241.method4368(true, 1357071198);
+            class241.method4368(true);
             class186.method3619((byte) 101);
-            class6.method72(class5.field22, client.field710, -1548454076);
-            class241.method4368(true, 1328522423);
+            class6.method72(class5.field22, client.field710);
+            class241.method4368(true);
             i_50 = class55.field503;
             if (i_50 > class42.field372) {
                i_50 = class42.field372;
@@ -410,7 +410,7 @@ public class class187 extends class180 {
             class187 class187_59;
             if (class27.field233.method931(285080873)) {
                class187_59 = class235.method4265(class183.field2212, client.field880.field1313, 1775123545);
-               class187_59.field2333.method5481(1057001181);
+               class187_59.field2333.write32IntBigEndian(1057001181);
                client.field880.copy(class187_59);
             }
 
@@ -435,7 +435,7 @@ public class class187 extends class180 {
             class45.method787(337917094);
             class187_59 = class235.method4265(class183.field2279, client.field880.field1313, 1775123545);
             client.field880.copy(class187_59);
-            class141.method3291(1597788723);
+            class141.method3291();
          }
       }
    }

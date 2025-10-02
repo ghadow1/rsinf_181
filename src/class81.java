@@ -2,13 +2,13 @@ import java.awt.Component;
 
 public class class81 {
 
-   static void method1990(Component component_0, int i_1) {
+   static void method1990(Component component_0) {
       component_0.setFocusTraversalKeysEnabled(false);
       component_0.addKeyListener(class45.field392);
       component_0.addFocusListener(class45.field392);
    }
 
-   static void method1989(int i_0, int i_1, int i_2, int i_3) {
+   static void method1989(int i_0, int i_1, int i_2) {
       if (client.field891 != 0 && i_1 != 0 && client.field893 < 50) {
          client.field894[client.field893] = i_0;
          client.field895[client.field893] = i_1;
@@ -20,7 +20,7 @@ public class class81 {
 
    }
 
-   static void method1988(int i_0, String string_1, int i_2) {
+   static void method1988(int i_0, String string_1) {
       int i_3 = class89.field1255;
       int[] ints_4 = class89.field1257;
       boolean bool_5 = false;
@@ -32,7 +32,7 @@ public class class81 {
             class187 class187_9;
             if (i_0 == 1) {
                class187_9 = class235.method4265(class183.field2250, client.field880.field1313, 1775123545);
-               class187_9.field2333.method5479(ints_4[i_7]);
+               class187_9.field2333.writeShort(ints_4[i_7]);
                class187_9.field2333.writeByte(0);
                client.field880.copy(class187_9);
             } else if (i_0 == 4) {

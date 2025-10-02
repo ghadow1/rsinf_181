@@ -26,7 +26,7 @@ public class class185 {
       class300_2.field3732 = bytes_0.length - 7 - class326.field3911 * 8;
       class326.field3913 = class300_2.readShortUBigEndian();
       class326.field3910 = class300_2.readShortUBigEndian();
-      int i_3 = (class300_2.method5504() & 0xff) + 1;
+      int i_3 = (class300_2.readUByte() & 0xff) + 1;
 
       int i_4;
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
@@ -63,16 +63,16 @@ public class class185 {
          int i_7 = i_6 * i_5;
          byte[] bytes_8 = new byte[i_7];
          class326.field3912[i_4] = bytes_8;
-         int i_9 = class300_2.method5504();
+         int i_9 = class300_2.readUByte();
          int i_10;
          if (i_9 == 0) {
             for (i_10 = 0; i_10 < i_7; i_10++) {
-               bytes_8[i_10] = class300_2.method5495();
+               bytes_8[i_10] = class300_2.readByte2();
             }
          } else if (i_9 == 1) {
             for (i_10 = 0; i_10 < i_5; i_10++) {
                for (int i_11 = 0; i_11 < i_6; i_11++) {
-                  bytes_8[i_10 + i_11 * i_5] = class300_2.method5495();
+                  bytes_8[i_10 + i_11 * i_5] = class300_2.readByte2();
                }
             }
          }

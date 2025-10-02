@@ -14,8 +14,8 @@ public class class124 extends class180 {
 
    class124(class300 class300_1) {
       this.field1623 = class300_1.readShortUBigEndian();
-      this.field1624 = class300_1.method5504() == 1;
-      int i_2 = class300_1.method5504();
+      this.field1624 = class300_1.readUByte() == 1;
+      int i_2 = class300_1.readUByte();
       if (i_2 >= 1 && i_2 <= 4) {
          this.field1632 = new int[i_2];
 
@@ -28,7 +28,7 @@ public class class124 extends class180 {
             this.field1626 = new int[i_2 - 1];
 
             for (i_3 = 0; i_3 < i_2 - 1; i_3++) {
-               this.field1626[i_3] = class300_1.method5504();
+               this.field1626[i_3] = class300_1.readUByte();
             }
          }
 
@@ -36,7 +36,7 @@ public class class124 extends class180 {
             this.field1627 = new int[i_2 - 1];
 
             for (i_3 = 0; i_3 < i_2 - 1; i_3++) {
-               this.field1627[i_3] = class300_1.method5504();
+               this.field1627[i_3] = class300_1.readUByte();
             }
          }
 
@@ -46,8 +46,8 @@ public class class124 extends class180 {
             this.field1619[i_3] = class300_1.readIntMedEndian();
          }
 
-         this.field1629 = class300_1.method5504();
-         this.field1630 = class300_1.method5504();
+         this.field1629 = class300_1.readUByte();
+         this.field1630 = class300_1.readUByte();
          this.field1631 = null;
       } else {
          throw new RuntimeException();
@@ -84,7 +84,7 @@ public class class124 extends class180 {
             class324_10.field3893 = class216.field2548[0];
             class324_10.field3892 = class138.field1895;
             class324_10.field3895 = class326.field3912[0];
-            class16.method174(572816821);
+            class16.method174();
             class324_7 = class324_10;
          }
 

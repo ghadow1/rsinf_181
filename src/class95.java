@@ -78,7 +78,7 @@ public class class95 {
                if (class86_1.field1224 > 0) {
                   class79 class79_2 = client.field694[class86_1.field1224 - 1];
                   if (class79_2 != null && class79_2.field1005 >= 0 && class79_2.field1005 < 13312 && class79_2.field949 >= 0 && class79_2.field949 < 13312) {
-                     class86_1.method2033(class79_2.field1005, class79_2.field949, class62.method1130(class79_2.field1005, class79_2.field949, class86_1.field1215, (short) -29605) - class86_1.field1225, client.field881, -653530834);
+                     class86_1.method2033(class79_2.field1005, class79_2.field949, class62.method1130(class79_2.field1005, class79_2.field949, class86_1.field1215) - class86_1.field1225, client.field881, -653530834);
                   }
                }
 
@@ -92,7 +92,7 @@ public class class95 {
                   }
 
                   if (class66_4 != null && class66_4.field1005 >= 0 && class66_4.field1005 < 13312 && class66_4.field949 >= 0 && class66_4.field949 < 13312) {
-                     class86_1.method2033(class66_4.field1005, class66_4.field949, class62.method1130(class66_4.field1005, class66_4.field949, class86_1.field1215, (short) -19214) - class86_1.field1225, client.field881, -1906132151);
+                     class86_1.method2033(class66_4.field1005, class66_4.field949, class62.method1130(class66_4.field1005, class66_4.field949, class86_1.field1215) - class86_1.field1225, client.field881, -1906132151);
                   }
                }
 

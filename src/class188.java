@@ -21,8 +21,8 @@ public class class188 {
       int i_6;
       if (class31.field271 == null) {
          class235_4 = client.field683;
-         i_5 = class235_4.method4160("sl_back", 1414499126);
-         i_6 = class235_4.method4161(i_5, "", (byte) 53);
+         i_5 = class235_4.method4160("sl_back");
+         i_6 = class235_4.method4161(i_5, "");
          class325[] arr_3 = class131.method3062(class235_4, i_5, i_6, -207318054);
          class31.field271 = arr_3;
       }
@@ -30,24 +30,24 @@ public class class188 {
       class324[] arr_26;
       if (class57.field533 == null) {
          class235_4 = client.field683;
-         i_5 = class235_4.method4160("sl_flags", 1948862779);
-         i_6 = class235_4.method4161(i_5, "", (byte) 8);
+         i_5 = class235_4.method4160("sl_flags");
+         i_6 = class235_4.method4161(i_5, "");
          arr_26 = class289.method5281(class235_4, i_5, i_6, 2048583436);
          class57.field533 = arr_26;
       }
 
       if (class225.field3062 == null) {
          class235_4 = client.field683;
-         i_5 = class235_4.method4160("sl_arrows", 577288891);
-         i_6 = class235_4.method4161(i_5, "", (byte) 41);
+         i_5 = class235_4.method4160("sl_arrows");
+         i_6 = class235_4.method4161(i_5, "");
          arr_26 = class289.method5281(class235_4, i_5, i_6, 2025488546);
          class225.field3062 = arr_26;
       }
 
       if (class74.field1073 == null) {
          class235_4 = client.field683;
-         i_5 = class235_4.method4160("sl_stars", 1279005108);
-         i_6 = class235_4.method4161(i_5, "", (byte) 17);
+         i_5 = class235_4.method4160("sl_stars");
+         i_6 = class235_4.method4161(i_5, "");
          arr_26 = class289.method5281(class235_4, i_5, i_6, 1876500415);
          class74.field1073 = arr_26;
       }

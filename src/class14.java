@@ -1,12 +1,13 @@
+import netscape.javascript.JSObject;
+
 import java.util.Date;
 import java.util.concurrent.ScheduledExecutorService;
-import netscape.javascript.JSObject;
 
 public class class14 {
 
    static ScheduledExecutorService field97;
 
-   static void method157(int i_0, String string_1, String string_2, String string_3, int i_4) {
+   static void method157(int i_0, String string_1, String string_2, String string_3) {
       class94 class94_5 = (class94) class91.field1279.get(Integer.valueOf(i_0));
       if (class94_5 == null) {
          class94_5 = new class94();
@@ -19,7 +20,7 @@ public class class14 {
       client.field847 = client.field673;
    }
 
-   static final void method153(class217 class217_0, int i_1, int i_2, int i_3, int i_4) {
+   static final void method153(class217 class217_0, int i_1, int i_2, int i_3) {
       if (class217_0.field2641 == null) {
          throw new RuntimeException();
       } else {
@@ -28,7 +29,7 @@ public class class14 {
       }
    }
 
-   static void method155(String string_0, byte b_1) {
+   static void generateDocument(String string_0) {
       class294.field3695 = string_0;
 
       try {
@@ -62,9 +63,9 @@ public class class14 {
 
    }
 
-   static final void method159(String string_0, int i_1, int i_2) {
+   static final void method159(String string_0, int i_1) {
       class187 class187_3 = class235.method4265(class183.field2280, client.field880.field1313, 1775123545);
-      class187_3.field2333.writeByte2(class209.method3945(string_0, 319235587) + 1);
+      class187_3.field2333.writeByte2(class209.method3945(string_0) + 1);
       class187_3.field2333.method5485(string_0);
       class187_3.field2333.writeByte2(i_1);
       client.field880.copy(class187_3);

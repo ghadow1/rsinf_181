@@ -23,7 +23,7 @@ public class class152 extends class275 {
       class217 class217_5;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_5 = class80.method1978(class76.field1098[--class70.field1014]);
+         class217_5 = class80.fetchSomething(class76.field1098[--class70.field1014]);
          bool_4 = false;
       } else {
          class217_5 = bool_2 ? class76.field1111 : class207.field2507;
@@ -86,7 +86,7 @@ public class class152 extends class275 {
                   i_7 = class76.field1098[class70.field1014 + 1];
                   i_8 = class76.field1098[class70.field1014 + 2];
                   if (i_12 >= 0 && i_12 <= 9) {
-                     class14.method153(class217_5, i_12, i_7, i_8, -956406946);
+                     class14.method153(class217_5, i_12, i_7, i_8);
                      return 1;
                   } else {
                      throw new RuntimeException();
@@ -95,7 +95,7 @@ public class class152 extends class275 {
                   b_6 = 10;
                   i_7 = class76.field1098[--class70.field1014];
                   i_8 = class76.field1098[--class70.field1014];
-                  class14.method153(class217_5, b_6, i_7, i_8, -2006801653);
+                  class14.method153(class217_5, b_6, i_7, i_8);
                   return 1;
                } else if (i_0 == 1354) {
                   --class70.field1014;

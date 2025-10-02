@@ -26,7 +26,7 @@ public class class235 extends class233 {
          int i_10 = class322.field3882.readIntMedEndian();
          this.method4262(i_9, i_10, 238802641);
       } else {
-         class128.method2961((class235) null, 255, 255, 0, (byte) 0, true, -913325342);
+         class128.method2961((class235) null, 255, 255, 0, (byte) 0, true);
          class236.field3173[i_8] = this;
       }
 
@@ -36,7 +36,7 @@ public class class235 extends class233 {
       if (this.field3156 != null && this.field3160 != null && this.field3160[i_1]) {
          class88.method2056(i_1, this.field3156, this, -1214592487);
       } else {
-         class128.method2961(this, this.field3154, i_1, super.field3131[i_1], (byte) 2, true, -913325342);
+         class128.method2961(this, this.field3154, i_1, super.field3131[i_1], (byte) 2, true);
       }
 
    }
@@ -46,7 +46,7 @@ public class class235 extends class233 {
    }
 
    int vmethod4266(int i_1, byte b_2) {
-      return super.field3126[i_1] != null ? 100 : (this.field3160[i_1] ? 100 : class209.method3948(this.field3154, i_1, (byte) 5));
+      return super.field3126[i_1] != null ? 100 : (this.field3160[i_1] ? 100 : class209.method3948(this.field3154, i_1));
    }
 
    void method4270(int i_1) {
@@ -102,11 +102,11 @@ public class class235 extends class233 {
       class68.method1653(this.field3154, i_1);
    }
 
-   public boolean method4267(int i_1, int i_2) {
+   public boolean method4267(int i_1) {
       return this.field3160[i_1];
    }
 
-   public void method4264(class308 class308_1, int i_2, byte[] bytes_3, boolean bool_4, int i_5) {
+   public void method4264(class308 class308_1, int i_2, byte[] bytes_3, boolean bool_4) {
       int i_6;
       if (class308_1 == this.field3153) {
          if (this.field3155) {
@@ -114,7 +114,7 @@ public class class235 extends class233 {
          }
 
          if (bytes_3 == null) {
-            class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true, -913325342);
+            class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true);
             return;
          }
 
@@ -122,12 +122,12 @@ public class class235 extends class233 {
          field3158.update(bytes_3, 0, bytes_3.length);
          i_6 = (int)field3158.getValue();
          if (i_6 != this.field3159) {
-            class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true, -913325342);
+            class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true);
             return;
          }
 
-         class300 class300_12 = new class300(class70.method1678(bytes_3, -303237660));
-         int i_13 = class300_12.method5504();
+         class300 class300_12 = new class300(class70.method1678(bytes_3));
+         int i_13 = class300_12.readUByte();
          if (i_13 != 5 && i_13 != 6) {
             throw new RuntimeException(i_13 + "," + this.field3154 + "," + i_2);
          }
@@ -138,7 +138,7 @@ public class class235 extends class233 {
          }
 
          if (i_9 != this.field3161) {
-            class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true, -913325342);
+            class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true);
             return;
          }
 
@@ -152,7 +152,7 @@ public class class235 extends class233 {
          if (bytes_3 == null || bytes_3.length <= 2) {
             this.field3160[i_2] = false;
             if (this.field3157 || bool_4) {
-               class128.method2961(this, this.field3154, i_2, super.field3131[i_2], (byte) 2, bool_4, -913325342);
+               class128.method2961(this, this.field3154, i_2, super.field3131[i_2], (byte) 2, bool_4);
             }
 
             return;
@@ -165,7 +165,7 @@ public class class235 extends class233 {
          if (i_6 != super.field3131[i_2] || i_7 != super.field3132[i_2]) {
             this.field3160[i_2] = false;
             if (this.field3157 || bool_4) {
-               class128.method2961(this, this.field3154, i_2, super.field3131[i_2], (byte) 2, bool_4, -913325342);
+               class128.method2961(this, this.field3154, i_2, super.field3131[i_2], (byte) 2, bool_4);
             }
 
             return;
@@ -197,18 +197,18 @@ public class class235 extends class233 {
       if (this.field3153 != null) {
          class88.method2056(this.field3154, this.field3153, this, -1214592487);
       } else {
-         class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true, -913325342);
+         class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true);
       }
 
    }
 
-   public int method4259(int i_1) {
+   public int method4259() {
       if (this.field3155) {
          return 100;
       } else if (super.field3126 != null) {
          return 99;
       } else {
-         int i_2 = class209.method3948(255, this.field3154, (byte) 5);
+         int i_2 = class209.method3948(255, this.field3154);
          if (i_2 >= 100) {
             i_2 = 99;
          }

@@ -1,6 +1,6 @@
 public class class327 {
 
-   static final int method6244(int i_0, int i_1, int i_2, int i_3) {
+   static final int method6244(int i_0, int i_1, int i_2) {
       if (i_2 > 179) {
          i_1 /= 2;
       }

@@ -29,10 +29,10 @@ public class class23 extends class34 {
    }
 
    void method289(byte b_1) {
-      this.field184 = class128.method2970(this.field195, (short) 4095).method4595((byte) 125).field3378;
+      this.field184 = class128.method2970(this.field195, (short) 4095).method4595().field3378;
       this.field191 = this.field183.method451(class222.method4118(this.field184), 1686665284);
       class241 class241_2 = class222.method4118(this.vmethod597(-1800055467));
-      class325 class325_3 = class241_2.method4379(false, 1274763949);
+      class325 class325_3 = class241_2.method4379();
       if (class325_3 != null) {
          this.field189 = class325_3.field3899;
          this.field186 = class325_3.field3900;

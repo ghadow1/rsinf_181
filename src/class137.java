@@ -38,7 +38,7 @@ public class class137 {
       class267.field3557 = true;
       client.field667 = true;
       client.field879 = -1L;
-      class192.method3678((byte) 46);
+      class192.method3678();
       client.field880.method2218();
       client.field880.field1314.field3732 = 0;
       client.field880.inPacketType = null;

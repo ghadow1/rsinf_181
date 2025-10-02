@@ -24,7 +24,7 @@ public class class3 implements class194 {
    }
 
    public static int method38(CharSequence charsequence_0, byte b_1) {
-      return class33.method554(charsequence_0, 10, true, -2067134672);
+      return class33.method554(charsequence_0, 10);
    }
 
    public static void method30(Object object_0, class300 class300_1, byte b_2) {

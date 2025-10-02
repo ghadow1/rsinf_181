@@ -55,7 +55,7 @@ public class class117 {
       this.field1525.method2464(class300_1);
       this.field1504 = new class106();
       this.field1504.method2464(class300_1);
-      int i_2 = class300_1.method5504();
+      int i_2 = class300_1.readUByte();
       if (i_2 != 0) {
          --class300_1.field3732;
          this.field1505 = new class106();
@@ -64,7 +64,7 @@ public class class117 {
          this.field1506.method2464(class300_1);
       }
 
-      i_2 = class300_1.method5504();
+      i_2 = class300_1.readUByte();
       if (i_2 != 0) {
          --class300_1.field3732;
          this.field1513 = new class106();
@@ -73,7 +73,7 @@ public class class117 {
          this.field1508.method2464(class300_1);
       }
 
-      i_2 = class300_1.method5504();
+      i_2 = class300_1.readUByte();
       if (i_2 != 0) {
          --class300_1.field3732;
          this.field1509 = new class106();

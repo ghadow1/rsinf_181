@@ -44,32 +44,32 @@ public class class258 extends class175 {
       } else if (i_2 == 2) {
          this.field3515 = class300_1.readShortUBigEndian();
       } else if (i_2 == 3) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          this.field3518 = new int[i_4 + 1];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3518[i_5] = class300_1.method5504();
+            this.field3518[i_5] = class300_1.readUByte();
          }
 
          this.field3518[i_4] = 9999999;
       } else if (i_2 == 4) {
          this.field3526 = true;
       } else if (i_2 == 5) {
-         this.field3533 = class300_1.method5504();
+         this.field3533 = class300_1.readUByte();
       } else if (i_2 == 6) {
          this.field3528 = class300_1.readShortUBigEndian();
       } else if (i_2 == 7) {
          this.field3521 = class300_1.readShortUBigEndian();
       } else if (i_2 == 8) {
-         this.field3535 = class300_1.method5504();
+         this.field3535 = class300_1.readUByte();
       } else if (i_2 == 9) {
-         this.field3525 = class300_1.method5504();
+         this.field3525 = class300_1.readUByte();
       } else if (i_2 == 10) {
-         this.field3532 = class300_1.method5504();
+         this.field3532 = class300_1.readUByte();
       } else if (i_2 == 11) {
-         this.field3529 = class300_1.method5504();
+         this.field3529 = class300_1.readUByte();
       } else if (i_2 == 12) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          this.field3530 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
@@ -80,7 +80,7 @@ public class class258 extends class175 {
             this.field3530[i_5] += class300_1.readShortUBigEndian() << 16;
          }
       } else if (i_2 == 13) {
-         i_4 = class300_1.method5504();
+         i_4 = class300_1.readUByte();
          this.field3523 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
@@ -219,7 +219,7 @@ public class class258 extends class175 {
 
    void method4759(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

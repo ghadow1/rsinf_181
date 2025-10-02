@@ -22,13 +22,13 @@ public class class49 {
       }
    }
 
-   static class92 method821(int i_0, int i_1, byte b_2) {
+   static class92 method821(int i_0) {
       class92 class92_3 = (class92) class92.field1291.method3320((long)(i_0 << 16));
       if (class92_3 != null) {
          return class92_3;
       } else {
          String string_4 = String.valueOf(i_0);
-         int i_5 = class151.field1971.method4160(string_4, 1119165390);
+         int i_5 = class151.field1971.method4160(string_4);
          if (i_5 == -1) {
             return null;
          } else {
@@ -38,7 +38,7 @@ public class class49 {
                   return null;
                }
 
-               class92_3 = class71.method1705(bytes_6, 184444180);
+               class92_3 = class71.method1705(bytes_6);
                if (class92_3 != null) {
                   class92.field1291.method3322(class92_3, (long)(i_0 << 16));
                   return class92_3;

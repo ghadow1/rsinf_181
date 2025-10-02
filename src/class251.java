@@ -14,9 +14,9 @@ public class class251 extends class175 {
 
    void method4537(class300 class300_1, int i_2, byte b_3) {
       if (i_2 == 1) {
-         this.field3317 = (char)class300_1.method5504();
+         this.field3317 = (char)class300_1.readUByte();
       } else if (i_2 == 2) {
-         this.field3321 = (char)class300_1.method5504();
+         this.field3321 = (char)class300_1.readUByte();
       } else if (i_2 == 3) {
          this.field3318 = class300_1.readNullTermString();
       } else if (i_2 == 4) {
@@ -52,7 +52,7 @@ public class class251 extends class175 {
 
    void method4533(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

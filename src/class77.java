@@ -81,7 +81,7 @@ public final class class77 extends class135 {
       class217 class217_4;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
+         class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
       } else {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }

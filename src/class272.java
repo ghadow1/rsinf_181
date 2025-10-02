@@ -11,77 +11,7 @@ public class class272 {
    int field3601 = 0;
    int field3610 = 0;
 
-   public void method5014(byte b_1) {
-      if (this.field3602 != -1L) {
-         this.field3607 = class206.getAdjustedTimeMillis() - this.field3602;
-         this.field3602 = -1L;
-      }
-
-      ++this.field3601;
-      this.field3605 = true;
-   }
-
-   public void method4993(int i_1) {
-      if (this.field3603 != -1L) {
-         this.field3604 = class206.getAdjustedTimeMillis() - this.field3603;
-         this.field3603 = -1L;
-      }
-
-   }
-
-   public void method4996(int i_1, int i_2) {
-      this.field3602 = class206.getAdjustedTimeMillis();
-      this.field3608 = i_1;
-   }
-
-   public void method5005(int i_1) {
-      this.field3603 = class206.getAdjustedTimeMillis();
-   }
-
-   public void method4999(class300 class300_1, int i_2) {
-      long long_3 = this.field3604;
-      long_3 /= 10L;
-      if (long_3 < 0L) {
-         long_3 = 0L;
-      } else if (long_3 > 65535L) {
-         long_3 = 65535L;
-      }
-
-      class300_1.method5479((int)long_3);
-      long long_5 = this.field3607;
-      long_5 /= 10L;
-      if (long_5 < 0L) {
-         long_5 = 0L;
-      } else if (long_5 > 65535L) {
-         long_5 = 65535L;
-      }
-
-      class300_1.method5479((int)long_5);
-      long long_7 = this.field3606;
-      long_7 /= 10L;
-      if (long_7 < 0L) {
-         long_7 = 0L;
-      } else if (long_7 > 65535L) {
-         long_7 = 65535L;
-      }
-
-      class300_1.method5479((int)long_7);
-      class300_1.method5479(this.field3608);
-      class300_1.method5479(this.field3609);
-      class300_1.method5479(this.field3601);
-      class300_1.method5479(this.field3610);
-   }
-
-   public void method4998(int i_1) {
-      this.field3605 = false;
-      this.field3609 = 0;
-   }
-
-   public void method5000(int i_1) {
-      this.method5014((byte) -61);
-   }
-
-   static void method5016(int i_0) {
+   static void startUpInitialization() {
       int i_1;
       if (client.field680 == 0) {
          class5.field22 = new class133(4, 104, 104, class55.field516);
@@ -124,25 +54,25 @@ public class class272 {
          client.field680 = 40;
       } else if (client.field680 == 40) {
          byte b_31 = 0;
-         i_1 = b_31 + class197.field2405.method4259(-249697380) * 4 / 100;
-         i_1 += class167.field2049.method4259(1382990960) * 4 / 100;
-         i_1 += class215.field2544.method4259(1182574331) * 2 / 100;
-         i_1 += class43.field382.method4259(1064421581) * 2 / 100;
-         i_1 += class13.field89.method4259(1350005605) * 6 / 100;
-         i_1 += class35.field307.method4259(-1806460829) * 4 / 100;
-         i_1 += class29.field253.method4259(-574341136) * 2 / 100;
-         i_1 += class256.field3500.method4259(-1161812715) * 56 / 100;
-         i_1 += client.field683.method4259(-251523955) * 2 / 100;
-         i_1 += class4.field18.method4259(1728299971) * 2 / 100;
-         i_1 += class17.field110.method4259(1087798931) * 2 / 100;
-         i_1 += class32.field279.method4259(1106951011) * 2 / 100;
-         i_1 += class151.field1971.method4259(751185492) * 2 / 100;
-         i_1 += class2.field6.method4259(516994311) * 2 / 100;
-         i_1 += class126.field1647.method4259(-1994768981) * 2 / 100;
-         i_1 += class67.field650.method4259(1242373364) * 2 / 100;
-         i_1 += class254.field3457.method4259(750700428) / 100;
-         i_1 += client.field684.method4259(-2144697167) / 100;
-         i_1 += class135.field1874.method4259(86947986) / 100;
+         i_1 = b_31 + class197.field2405.method4259() * 4 / 100;
+         i_1 += class167.field2049.method4259() * 4 / 100;
+         i_1 += class215.field2544.method4259() * 2 / 100;
+         i_1 += class43.field382.method4259() * 2 / 100;
+         i_1 += class13.field89.method4259() * 6 / 100;
+         i_1 += class35.field307.method4259() * 4 / 100;
+         i_1 += class29.field253.method4259() * 2 / 100;
+         i_1 += class256.field3500.method4259() * 56 / 100;
+         i_1 += client.field683.method4259() * 2 / 100;
+         i_1 += class4.field18.method4259() * 2 / 100;
+         i_1 += class17.field110.method4259() * 2 / 100;
+         i_1 += class32.field279.method4259() * 2 / 100;
+         i_1 += class151.field1971.method4259() * 2 / 100;
+         i_1 += class2.field6.method4259() * 2 / 100;
+         i_1 += class126.field1647.method4259() * 2 / 100;
+         i_1 += class67.field650.method4259() * 2 / 100;
+         i_1 += class254.field3457.method4259() / 100;
+         i_1 += client.field684.method4259() / 100;
+         i_1 += class135.field1874.method4259() / 100;
          i_1 += class27.field232.method4258((byte) 44) && class27.field232.method4148(741322871) ? 1 : 0;
          if (i_1 != 100) {
             if (i_1 != 0) {
@@ -151,19 +81,19 @@ public class class272 {
 
             class85.field1188 = 30;
          } else {
-            class42.method763(class197.field2405, "Animations", 446000898);
-            class42.method763(class167.field2049, "Skeletons", 673228862);
-            class42.method763(class13.field89, "Sound FX", 2030354472);
-            class42.method763(class35.field307, "Maps", 103420275);
-            class42.method763(class29.field253, "Music Tracks", 372350168);
-            class42.method763(class256.field3500, "Models", 908432465);
-            class42.method763(client.field683, "Sprites", 323621654);
-            class42.method763(class32.field279, "Music Jingles", 889373285);
-            class42.method763(class126.field1647, "Music Samples", 1823308104);
-            class42.method763(class67.field650, "Music Patches", 1856837281);
-            class42.method763(class254.field3457, "World Map", 431715499);
-            class42.method763(client.field684, "World Map Geography", 1575138712);
-            class42.method763(class135.field1874, "World Map Ground", 1266985767);
+            class42.method763(class197.field2405, "Animations");
+            class42.method763(class167.field2049, "Skeletons");
+            class42.method763(class13.field89, "Sound FX");
+            class42.method763(class35.field307, "Maps");
+            class42.method763(class29.field253, "Music Tracks");
+            class42.method763(class256.field3500, "Models");
+            class42.method763(client.field683, "Sprites");
+            class42.method763(class32.field279, "Music Jingles");
+            class42.method763(class126.field1647, "Music Samples");
+            class42.method763(class67.field650, "Music Patches");
+            class42.method763(class254.field3457, "World Map");
+            class42.method763(client.field684, "World Map Geography");
+            class42.method763(class135.field1874, "World Map Ground");
             class159.field1995 = new class312();
             class159.field1995.method5903(class27.field232, (byte) 104);
             class85.field1189 = "Loaded update list";
@@ -281,7 +211,7 @@ public class class272 {
                   class235 class235_32 = class215.field2544;
                   class257.field3505 = class235_32;
                   class27.method414(class215.field2544, -2096884458);
-                  class6.method66(class215.field2544, class256.field3500, (byte) -127);
+                  class6.method66(class215.field2544, class256.field3500);
                   class235_26 = class215.field2544;
                   class235_3 = class256.field3500;
                   boolean bool_35 = client.field656;
@@ -311,7 +241,7 @@ public class class272 {
                   class43.field379 = class235_13;
                   class235 class235_14 = class215.field2544;
                   class248.field3298 = class235_14;
-                  class6.method68(class215.field2544, (byte) 1);
+                  class6.method68(class215.field2544);
                   class144.method3317(class43.field382, class256.field3500, client.field683, class2.field6, -354587299);
                   class15.method173(class215.field2544, -1590503408);
                   class235 class235_15 = class215.field2544;
@@ -340,8 +270,8 @@ public class class272 {
                         byte[] bytes_24 = class235_21.method4144(35, i_23);
                         class241.field3219[i_23] = new class241(i_23);
                         if (bytes_24 != null) {
-                           class241.field3219[i_23].method4369(new class300(bytes_24), -2108629289);
-                           class241.field3219[i_23].method4370(2017602837);
+                           class241.field3219[i_23].method4369(new class300(bytes_24));
+                           class241.field3219[i_23].method4370();
                         }
                      }
                   }
@@ -444,7 +374,7 @@ public class class272 {
                   client.field680 = 100;
                }
             } else if (client.field680 == 100) {
-               i_1 = class6.field40.method2763(2052170496);
+               i_1 = class6.field40.method2763();
                if (i_1 < 100) {
                   class85.field1189 = "Loading textures - " + i_1 + "%";
                   class85.field1188 = 90;
@@ -503,6 +433,76 @@ public class class272 {
             }
          }
       }
+   }
+
+   public void method5014() {
+      if (this.field3602 != -1L) {
+         this.field3607 = class206.getAdjustedTimeMillis() - this.field3602;
+         this.field3602 = -1L;
+      }
+
+      ++this.field3601;
+      this.field3605 = true;
+   }
+
+   public void method4993() {
+      if (this.field3603 != -1L) {
+         this.field3604 = class206.getAdjustedTimeMillis() - this.field3603;
+         this.field3603 = -1L;
+      }
+
+   }
+
+   public void method4996(int i_1) {
+      this.field3602 = class206.getAdjustedTimeMillis();
+      this.field3608 = i_1;
+   }
+
+   public void method5005() {
+      this.field3603 = class206.getAdjustedTimeMillis();
+   }
+
+   public void method4998(int i_1) {
+      this.field3605 = false;
+      this.field3609 = 0;
+   }
+
+   public void method4999(class300 class300_1) {
+      long long_3 = this.field3604;
+      long_3 /= 10L;
+      if (long_3 < 0L) {
+         long_3 = 0L;
+      } else if (long_3 > 65535L) {
+         long_3 = 65535L;
+      }
+
+      class300_1.writeShort((int) long_3);
+      long long_5 = this.field3607;
+      long_5 /= 10L;
+      if (long_5 < 0L) {
+         long_5 = 0L;
+      } else if (long_5 > 65535L) {
+         long_5 = 65535L;
+      }
+
+      class300_1.writeShort((int) long_5);
+      long long_7 = this.field3606;
+      long_7 /= 10L;
+      if (long_7 < 0L) {
+         long_7 = 0L;
+      } else if (long_7 > 65535L) {
+         long_7 = 65535L;
+      }
+
+      class300_1.writeShort((int) long_7);
+      class300_1.writeShort(this.field3608);
+      class300_1.writeShort(this.field3609);
+      class300_1.writeShort(this.field3601);
+      class300_1.writeShort(this.field3610);
+   }
+
+   public void method5000() {
+      this.method5014();
    }
 
    public static String method5015(CharSequence[] arr_0, int i_1, int i_2, int i_3) {

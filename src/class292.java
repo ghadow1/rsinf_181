@@ -32,7 +32,7 @@ public class class292 {
 
             class217_11.field2701 = i_12;
             class217_11.field2702 = client.field881;
-            if (!class217_11.field2563 || !class62.method1133(class217_11, 1912589638)) {
+            if (!class217_11.field2563 || !class62.method1133(class217_11)) {
                if (class217_11.field2568 > 0) {
                   class8.method85(class217_11, -1619270893);
                }
@@ -176,7 +176,7 @@ public class class292 {
                   }
 
                   if (class217_11.field2566 == 0) {
-                     if (!class217_11.field2563 && class62.method1133(class217_11, 1901482305) && class217_11 != class72.field1059) {
+                     if (!class217_11.field2563 && class62.method1133(class217_11) && class217_11 != class72.field1059) {
                         continue;
                      }
 

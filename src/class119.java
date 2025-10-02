@@ -84,7 +84,7 @@ public class class119 implements class139 {
       return this.field1531[i_1].field1624;
    }
 
-   public int method2763(int i_1) {
+   public int method2763() {
       int i_2 = 0;
       int i_3 = 0;
       class124[] arr_4 = this.field1531;
@@ -111,7 +111,7 @@ public class class119 implements class139 {
       }
    }
 
-   public void method2736(int i_1, int i_2) {
+   public void method2736(int i_1) {
       for (int i_3 = 0; i_3 < this.field1531.length; i_3++) {
          class124 class124_4 = this.field1531[i_3];
          if (class124_4 != null && class124_4.field1629 != 0 && class124_4.field1633) {
@@ -122,11 +122,11 @@ public class class119 implements class139 {
 
    }
 
-   public static synchronized byte[] method2729(int i_0, int i_1) {
+   public static synchronized byte[] method2729(int i_0) {
       return class302.method5761(i_0, false, (byte) 58);
    }
 
-   static File method2760(String string_0, String string_1, int i_2, int i_3) {
+   static File method2760(String string_0, String string_1, int i_2) {
       String str_4 = i_2 == 0 ? "" : "" + i_2;
       class167.field2038 = new File(class228.field3095, "jagex_cl_" + string_0 + "_" + string_1 + str_4 + ".dat");
       String string_5 = null;
@@ -139,22 +139,22 @@ public class class119 implements class139 {
             class343 class343_8 = new class343(class167.field2038, "rw", 10000L);
 
             int i_10;
-            for (class300_9 = new class300((int)class343_8.method6552(791044525)); class300_9.field3732 < class300_9.field3730.length; class300_9.field3732 += i_10) {
-               i_10 = class343_8.method6554(class300_9.field3730, class300_9.field3732, class300_9.field3730.length - class300_9.field3732, 1114407324);
+            for (class300_9 = new class300((int)class343_8.method6552()); class300_9.field3732 < class300_9.field3730.length; class300_9.field3732 += i_10) {
+               i_10 = class343_8.method6554(class300_9.field3730, class300_9.field3732, class300_9.field3730.length - class300_9.field3732);
                if (i_10 == -1) {
                   throw new IOException();
                }
             }
 
             class300_9.field3732 = 0;
-            i_10 = class300_9.method5504();
+            i_10 = class300_9.readUByte();
             if (i_10 < 1 || i_10 > 3) {
                throw new IOException("" + i_10);
             }
 
             int i_11 = 0;
             if (i_10 > 1) {
-               i_11 = class300_9.method5504();
+               i_11 = class300_9.readUByte();
             }
 
             if (i_10 <= 2) {
@@ -169,7 +169,7 @@ public class class119 implements class139 {
                }
             }
 
-            class343_8.method6550(1074818569);
+            class343_8.method6550();
          } catch (IOException ioexception_22) {
             ioexception_22.printStackTrace();
          }
@@ -243,8 +243,8 @@ public class class119 implements class139 {
             class300_27.writeByte2(0);
             class300_27.method5487(file_23.getPath());
 
-            class343_26.method6561(class300_27.field3730, 0, class300_27.field3732, 793801547);
-            class343_26.method6550(-638608856);
+            class343_26.method6561(class300_27.field3730, 0, class300_27.field3732);
+            class343_26.method6550();
          } catch (IOException ioexception_20) {
             ioexception_20.printStackTrace();
          }
@@ -254,13 +254,13 @@ public class class119 implements class139 {
    }
 
    public static void method2761(class233 class233_0, String string_1, String string_2, int i_3, boolean bool_4, byte b_5) {
-      int i_6 = class233_0.method4160(string_1, 1865107380);
-      int i_7 = class233_0.method4161(i_6, string_2, (byte) 35);
+      int i_6 = class233_0.method4160(string_1);
+      int i_7 = class233_0.method4161(i_6, string_2);
       class169.method3503(class233_0, i_6, i_7, i_3, bool_4, -1551692511);
    }
 
    static int method2743(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
+      class217 class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
       if (i_0 == 2600) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2585;
          return 1;

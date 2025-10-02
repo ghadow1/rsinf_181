@@ -84,23 +84,23 @@ public class class154 extends class275 {
 
             int i_12;
             for (i_12 = 0; i_12 < 4; i_12++) {
-               class300_27.method5481(random_37.nextInt());
+               class300_27.write32IntBigEndian(random_37.nextInt());
             }
 
-            class300_27.method5481(ints_11[0]);
-            class300_27.method5481(ints_11[1]);
+            class300_27.write32IntBigEndian(ints_11[0]);
+            class300_27.write32IntBigEndian(ints_11[1]);
             class300_27.method5483(long_2);
             class300_27.method5483(0L);
 
             for (i_12 = 0; i_12 < 4; i_12++) {
-               class300_27.method5481(random_37.nextInt());
+               class300_27.write32IntBigEndian(random_37.nextInt());
             }
 
             class300_27.method5517(class80.field1140, class80.field1141);
             class300_10.writeByte2(10);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
-               class300_10.method5481(random_37.nextInt());
+               class300_10.write32IntBigEndian(random_37.nextInt());
             }
 
             class300_10.method5483(random_37.nextLong());
@@ -133,7 +133,7 @@ public class class154 extends class275 {
 
             class300_10.method5483(random_37.nextLong());
             class300_10.method5517(class80.field1140, class80.field1141);
-            i_12 = class209.method3945(string_36, 547195601);
+            i_12 = class209.method3945(string_36);
             if (i_12 % 8 != 0) {
                i_12 += 8 - i_12 % 8;
             }
@@ -148,7 +148,7 @@ public class class154 extends class275 {
             class300_28.method5488(class300_27.field3730, 0, class300_27.field3732);
             class300_28.writeByte2(class300_10.field3732);
             class300_28.method5488(class300_10.field3730, 0, class300_10.field3732);
-            class300_28.method5479(class300_38.field3732);
+            class300_28.writeShort(class300_38.field3732);
             class300_28.method5488(class300_38.field3730, 0, class300_38.field3732);
             byte[] bytes_16 = class300_28.field3730;
             String string_30 = class217.method4092(bytes_16, 0, bytes_16.length, 1305438411);

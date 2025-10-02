@@ -25,7 +25,7 @@ public class class28 {
       class187_5.field2333.write32IntReverse(bool_3 ? client.field855 : 0);
       class187_5.field2333.method5634(i_1);
       class187_5.field2333.writeByte(i_2);
-      class187_5.field2333.method5479(i_0);
+      class187_5.field2333.writeShort(i_0);
       client.field880.copy(class187_5);
    }
 
@@ -35,7 +35,7 @@ public class class28 {
          class55.field502[i_1][i_2][i_3] = 0;
 
          while (true) {
-            i_8 = class300_0.method5504();
+            i_8 = class300_0.readUByte();
             if (i_8 == 0) {
                if (i_1 == 0) {
                   class55.field516[0][i_2][i_3] = -class1.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5, (byte) 84) * 8;
@@ -46,7 +46,7 @@ public class class28 {
             }
 
             if (i_8 == 1) {
-               int i_9 = class300_0.method5504();
+               int i_9 = class300_0.readUByte();
                if (i_9 == 1) {
                   i_9 = 0;
                }
@@ -60,7 +60,7 @@ public class class28 {
             }
 
             if (i_8 <= 49) {
-               class55.field505[i_1][i_2][i_3] = class300_0.method5495();
+               class55.field505[i_1][i_2][i_3] = class300_0.readByte2();
                class55.field506[i_1][i_2][i_3] = (byte)((i_8 - 2) / 4);
                class268.field3561[i_1][i_2][i_3] = (byte)(i_8 - 2 + i_6 & 0x3);
             } else if (i_8 <= 81) {
@@ -71,18 +71,18 @@ public class class28 {
          }
       } else {
          while (true) {
-            i_8 = class300_0.method5504();
+            i_8 = class300_0.readUByte();
             if (i_8 == 0) {
                break;
             }
 
             if (i_8 == 1) {
-               class300_0.method5504();
+               class300_0.readUByte();
                break;
             }
 
             if (i_8 <= 49) {
-               class300_0.method5504();
+               class300_0.readUByte();
             }
          }
       }

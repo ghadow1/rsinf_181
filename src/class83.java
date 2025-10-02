@@ -10,7 +10,7 @@ public class class83 {
       if (class17.field117.field1060) {
          return class42.field372;
       } else {
-         int i_1 = class62.method1130(class299.field3727, class1.field3, class42.field372, (short) 16100);
+         int i_1 = class62.method1130(class299.field3727, class1.field3, class42.field372);
          return i_1 - class43.field383 < 800 && (class55.field502[class42.field372][class299.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? class42.field372 : 3;
       }
    }
@@ -21,7 +21,7 @@ public class class83 {
       if (i_0 >= 2000) {
          i_0 -= 1000;
          i_5 = class76.field1098[--class70.field1014];
-         class217_4 = class80.method1978(i_5);
+         class217_4 = class80.fetchSomething(i_5);
       } else {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }
@@ -220,7 +220,7 @@ public class class83 {
       class75_6.field1088 = class253_3.field3367;
       if (class253_3.field3391 != null) {
          class75_6.field1087 = class253_3;
-         class75_6.method1821(-1999836308);
+         class75_6.method1821();
       }
 
       class75.field1080.method4917(class75_6);

@@ -25,10 +25,10 @@ public class class26 {
       this.field219 = class300_1.readNullTermString();
       this.field218 = new class213(class300_1.readIntMedEndian());
       this.field216 = class300_1.readIntMedEndian();
-      class300_1.method5504();
-      this.field215 = class300_1.method5504() == 1;
-      this.field228 = class300_1.method5504();
-      int i_4 = class300_1.method5504();
+      class300_1.readUByte();
+      this.field215 = class300_1.readUByte() == 1;
+      this.field228 = class300_1.readUByte();
+      int i_4 = class300_1.readUByte();
       this.field224 = new LinkedList();
 
       for (int i_5 = 0; i_5 < i_4; i_5++) {
@@ -151,7 +151,7 @@ public class class26 {
    }
 
    class37 method327(class300 class300_1) {
-      int i_3 = class300_1.method5504();
+      int i_3 = class300_1.readUByte();
       class20[] arr_4 = new class20[] {class20.field147, class20.field149, class20.field148, class20.field146};
       class20 class20_5 = (class20) class107.method2476(arr_4, i_3);
       Object obj_6 = null;
@@ -340,9 +340,9 @@ public class class26 {
 
                      if (class226.field3071 == null) {
                         class236.field3174.field3732 = 0;
-                        i_8 = class236.field3174.method5504();
+                        i_8 = class236.field3174.readUByte();
                         i_9 = class236.field3174.readShortUBigEndian();
-                        int i_10 = class236.field3174.method5504();
+                        int i_10 = class236.field3174.readUByte();
                         i_11 = class236.field3174.readIntMedEndian();
                         long long_12 = (long)(i_9 + (i_8 << 16));
                         class232 class232_14 = (class232) class236.field3167.method5952(long_12);
@@ -360,7 +360,7 @@ public class class26 {
                         class226.field3071 = class232_14;
                         class240.field3209 = new class300(i_15 + i_11 + class226.field3071.field3122);
                         class240.field3209.writeByte2(i_10);
-                        class240.field3209.method5481(i_11);
+                        class240.field3209.write32IntBigEndian(i_11);
                         class236.field3175 = 8;
                         class236.field3174.field3732 = 0;
                      } else if (class236.field3175 == 0) {
@@ -463,7 +463,7 @@ public class class26 {
    }
 
    static final class316 method403(class300 class300_0, class316 class316_1, int i_2) {
-      int i_3 = class300_0.method5504();
+      int i_3 = class300_0.readUByte();
       int i_4;
       if (class316_1 == null) {
          int i_5 = i_3 - 1;
@@ -477,7 +477,7 @@ public class class26 {
       }
 
       for (i_4 = 0; i_4 < i_3; i_4++) {
-         boolean bool_8 = class300_0.method5504() == 1;
+         boolean bool_8 = class300_0.readUByte() == 1;
          int i_6 = class300_0.method5567();
          Object obj_7;
          if (bool_8) {

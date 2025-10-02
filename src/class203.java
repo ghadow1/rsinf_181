@@ -5,7 +5,7 @@ public class class203 extends class180 {
 
    class203(class300 class300_1) {
       class300_1.field3732 = class300_1.field3730.length - 3;
-      int i_2 = class300_1.method5504();
+      int i_2 = class300_1.readUByte();
       int i_3 = class300_1.readShortUBigEndian();
       int i_4 = i_2 * 10 + 14;
       class300_1.field3732 = 0;
@@ -25,7 +25,7 @@ public class class203 extends class180 {
          i_14 = -1;
 
          while (true) {
-            i_15 = class300_1.method5504();
+            i_15 = class300_1.readUByte();
             if (i_15 != i_14) {
                ++i_4;
             }
@@ -66,7 +66,7 @@ public class class203 extends class180 {
       i_14 = i_2 + i_5 + i_6 + i_7 + i_8 + i_9 + i_10 + i_11 + i_12;
 
       for (i_15 = 0; i_15 < i_14; i_15++) {
-         class300_1.method5657();
+         class300_1.readVarLengthInt();
       }
 
       i_4 += class300_1.field3732 - i_13;
@@ -87,7 +87,7 @@ public class class203 extends class180 {
 
       int i_29;
       for (i_29 = 0; i_29 < i_6; i_29++) {
-         i_28 = i_28 + class300_1.method5504() & 0x7f;
+         i_28 = i_28 + class300_1.readUByte() & 0x7f;
          if (i_28 != 0 && i_28 != 32) {
             if (i_28 == 1) {
                ++i_16;
@@ -164,11 +164,11 @@ public class class203 extends class180 {
       class300_1.field3732 += i_5 * 3;
       this.field2491 = new byte[i_4];
       class300 class300_51 = new class300(this.field2491);
-      class300_51.method5481(1297377380);
-      class300_51.method5481(6);
-      class300_51.method5479(i_2 > 1 ? 1 : 0);
-      class300_51.method5479(i_2);
-      class300_51.method5479(i_3);
+      class300_51.write32IntBigEndian(1297377380);
+      class300_51.write32IntBigEndian(6);
+      class300_51.writeShort(i_2 > 1 ? 1 : 0);
+      class300_51.writeShort(i_2);
+      class300_51.writeShort(i_3);
       class300_1.field3732 = i_13;
       int i_52 = 0;
       int i_53 = 0;
@@ -182,14 +182,14 @@ public class class203 extends class180 {
 
       label235:
       for (int i_60 = 0; i_60 < i_2; i_60++) {
-         class300_51.method5481(1297379947);
+         class300_51.write32IntBigEndian(1297379947);
          class300_51.field3732 += 4;
          int i_61 = class300_51.field3732;
          int i_62 = -1;
 
          while (true) {
             while (true) {
-               int i_63 = class300_1.method5657();
+               int i_63 = class300_1.readVarLengthInt();
                class300_51.method5603(i_63);
                int i_64 = class300_1.field3730[i_29++] & 0xff;
                boolean bool_65 = i_64 != i_62;
@@ -201,7 +201,7 @@ public class class203 extends class180 {
 
                   class300_51.writeByte2(47);
                   class300_51.writeByte2(0);
-                  class300_51.method5489(class300_51.field3732 - i_61);
+                  class300_51.writeMiddleEndianInt(class300_51.field3732 - i_61);
                   continue label235;
                }
 

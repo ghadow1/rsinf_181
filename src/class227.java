@@ -13,7 +13,7 @@ public final class class227 {
             long long_5 = class126.method2854(0, 0, 0, false, class66_0.field637, -33230179);
             if (class66_0.field626 != null && client.field881 >= class66_0.field614 && client.field881 < class66_0.field622) {
                class66_0.field634 = false;
-               class66_0.field623 = class62.method1130(class66_0.field1005, class66_0.field949, class42.field372, (short) -7888);
+               class66_0.field623 = class62.method1130(class66_0.field1005, class66_0.field949, class42.field372);
                class66_0.field953 = client.field881;
                class5.field22.method3079(class42.field372, class66_0.field1005, class66_0.field949, class66_0.field623, 60, class66_0, class66_0.field950, long_5, class66_0.field627, class66_0.field625, class66_0.field612, class66_0.field630);
             } else {
@@ -25,7 +25,7 @@ public final class class227 {
                   client.field750[i_3][i_4] = client.field751;
                }
 
-               class66_0.field623 = class62.method1130(class66_0.field1005, class66_0.field949, class42.field372, (short) 3648);
+               class66_0.field623 = class62.method1130(class66_0.field1005, class66_0.field949, class42.field372);
                class66_0.field953 = client.field881;
                class5.field22.method3077(class42.field372, class66_0.field1005, class66_0.field949, class66_0.field623, 60, class66_0, class66_0.field950, long_5, class66_0.field967);
             }

@@ -16,12 +16,12 @@ final class class10 implements Comparator {
       return super.equals(object_1);
    }
 
-   static final void method124(int i_0, byte b_1) {
+   static final void method124(int i_0) {
       class65.method1176((byte) -51);
 
       for (class75 class75_2 = (class75) class75.field1080.method4892(); class75_2 != null; class75_2 = (class75) class75.field1080.method4894()) {
          if (class75_2.field1087 != null) {
-            class75_2.method1821(-2146253621);
+            class75_2.method1821();
          }
       }
 

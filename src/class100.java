@@ -207,7 +207,7 @@ public class class100 {
 
    static int method2327(int i_0, int i_1) {
       int i_2;
-      for (i_2 = (int)Math.pow((double)i_0, 1.0D / (double)i_1) + 1; class54.method1009(i_2, i_1, -102731253) > i_0; --i_2) {
+      for (i_2 = (int)Math.pow((double)i_0, 1.0D / (double)i_1) + 1; class54.method1009(i_2, i_1) > i_0; --i_2) {
          ;
       }
 

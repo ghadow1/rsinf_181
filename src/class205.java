@@ -27,7 +27,7 @@ public abstract class class205 {
             int i_11 = i_9 & 0x3f;
             int i_12 = i_9 >> 6 & 0x3f;
             int i_13 = i_9 >> 12;
-            int i_14 = class300_6.method5504();
+            int i_14 = class300_6.readUByte();
             int i_15 = i_14 >> 2;
             int i_16 = i_14 & 0x3;
             int i_17 = i_12 + i_1;

@@ -37,7 +37,7 @@ public class class208 {
                i_7 = class76.field1102.get(5);
                int i_17 = class76.field1102.get(2);
                int i_9 = class76.field1102.get(1);
-               class76.field1093[++class221.field2747 - 1] = i_7 + "-" + class76.field1097[i_17] + "-" + i_9;
+               class76.field1093[++class221.field2747 - 1] = i_7 + "-" + class76.dateMonths[i_17] + "-" + i_9;
                return 1;
             } else if (i_0 != 4105) {
                if (i_0 == 4106) {

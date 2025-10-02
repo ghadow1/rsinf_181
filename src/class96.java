@@ -127,7 +127,7 @@ public class class96 {
                   } else if (i_30 == 2) {
                      i_12 = ints_7[i_18];
                      class212.field2525[i_12] = class76.field1098[--class70.field1014];
-                     class10.method124(i_12, (byte) 112);
+                     class10.method124(i_12);
                   } else if (i_30 == 3) {
                      class76.field1093[++class221.field2747 - 1] = class92_4.field1286[i_18];
                   } else if (i_30 == 6) {
@@ -327,7 +327,7 @@ public class class96 {
             client.field686 = 0;
             client.field687 = 0;
             client.field688 = 0;
-            client.field797.method4996(i_0, 1668948707);
+            client.field797.method4996(i_0);
             if (i_0 != 20) {
                class9.method99(false, -1114411806);
             }

@@ -160,8 +160,8 @@ public final class class36 {
          this.field321 = false;
          this.field311 = true;
          System.nanoTime();
-         int i_5 = class233_1.method4160(class35.field308.field306, 1321122112);
-         int i_6 = class233_1.method4161(i_5, string_2, (byte) 106);
+         int i_5 = class233_1.method4160(class35.field308.field306);
+         int i_6 = class233_1.method4161(i_5, string_2);
          class300 class300_7 = new class300(class233_1.method4163(class35.field308.field306, string_2, 794658484));
          class300 class300_8 = new class300(class233_1.method4163(class35.field302.field306, string_2, 529639123));
          System.nanoTime();

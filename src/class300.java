@@ -42,7 +42,7 @@ public class class300 extends class180 {
    }
 
    public class300(int i_1) {
-      this.field3730 = class119.method2729(i_1, 506694111);
+      this.field3730 = class119.method2729(i_1);
       this.field3732 = 0;
    }
 
@@ -59,7 +59,7 @@ public class class300 extends class180 {
 
    public int method5508() {
       int i_2 = this.field3730[this.field3732] & 0xff;
-      return i_2 < 128 ? this.method5504() : this.readShortUBigEndian() - 32768;
+      return i_2 < 128 ? this.readUByte() : this.readShortUBigEndian() - 32768;
    }
 
    public void method5485(String string_1) {
@@ -93,7 +93,7 @@ public class class300 extends class180 {
       this.field3730[++this.field3732 - 1] = (byte)i_1;
    }
 
-   public int method5504() {
+   public int readUByte() {
       return this.field3730[++this.field3732 - 1] & 0xff;
    }
 
@@ -122,7 +122,13 @@ public class class300 extends class180 {
       }
    }
 
-   public int method5657() {
+   /**
+    * This method is a variable-length integer reader, also known as a VLQ
+    * (Variable-Length Quantity) or Varint reader. It is designed to efficiently
+    * read an integer that can be stored using one or more bytes, where smaller
+    * integers use fewer bytes.
+    */
+   public int readVarLengthInt() {
       byte b_2 = this.field3730[++this.field3732 - 1];
 
       int i_3;
@@ -133,11 +139,11 @@ public class class300 extends class180 {
       return i_3 | b_2;
    }
 
-   public byte method5495() {
+   public byte readByte2() {
       return this.field3730[++this.field3732 - 1];
    }
 
-   public void method5481(int i_1) {
+   public void write32IntBigEndian(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 24);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 16);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
@@ -149,14 +155,19 @@ public class class300 extends class180 {
       return (this.field3730[this.field3732 - 1] & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8);
    }
 
-   public void method5697(byte[] bytes_1, int i_2, int i_3) {
+   /**
+    * This method is a bulk read operation or a byte-array copy. It reads a
+    * specified number of bytes from the internal buffer (this.field3730) and
+    * writes them into an external byte array (bytes_1) at a given offset.
+    */
+   public void byteArrayCopy(byte[] bytes_1, int i_2, int i_3) {
       for (int i_5 = i_2; i_5 < i_3 + i_2; i_5++) {
          bytes_1[i_5] = this.field3730[++this.field3732 - 1];
       }
 
    }
 
-   public void method5479(int i_1) {
+   public void writeShort(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
       this.field3730[++this.field3732 - 1] = (byte)i_1;
    }
@@ -235,8 +246,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_8);
-         this.method5481(i_9);
+         this.write32IntBigEndian(i_8);
+         this.write32IntBigEndian(i_9);
       }
 
       this.field3732 = i_5;
@@ -270,12 +281,12 @@ public class class300 extends class180 {
    }
 
    public boolean method5698() {
-      return (this.method5504() & 0x1) == 1;
+      return (this.readUByte() & 0x1) == 1;
    }
 
    public int method5507() {
       int i_2 = this.field3730[this.field3732] & 0xff;
-      return i_2 < 128 ? this.method5504() - 64 : this.readShortUBigEndian() - 49152;
+      return i_2 < 128 ? this.readUByte() - 64 : this.readShortUBigEndian() - 49152;
    }
 
    public void method5486(String string_1) {
@@ -299,15 +310,15 @@ public class class300 extends class180 {
 
    public int method5529(int i_1) {
       int i_3 = class2.method18(this.field3730, i_1, this.field3732, 2112627434);
-      this.method5481(i_3);
+      this.write32IntBigEndian(i_3);
       return i_3;
    }
 
-   public byte method5694() {
+   public byte readSByte() {
       return (byte)(this.field3730[++this.field3732 - 1] - 128);
    }
 
-   public int method5525() {
+   public int readByteInverse() {
       return 128 - this.field3730[++this.field3732 - 1] & 0xff;
    }
 
@@ -319,12 +330,12 @@ public class class300 extends class180 {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 16);
    }
 
-   public int method5518() {
+   public int readShortBigEndian() {
       this.field3732 += 2;
       return (this.field3730[this.field3732 - 1] - 128 & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8);
    }
 
-   public int method5524() {
+   public int readByteUNeg() {
       return 0 - this.field3730[++this.field3732 - 1] & 0xff;
    }
 
@@ -332,7 +343,7 @@ public class class300 extends class180 {
       return this.field3730[++this.field3732 - 1] - 128 & 0xff;
    }
 
-   public int method5532() {
+   public int readShortLittleEndian() {
       this.field3732 += 2;
       return ((this.field3730[this.field3732 - 1] & 0xff) << 8) + (this.field3730[this.field3732 - 2] & 0xff);
    }
@@ -374,7 +385,7 @@ public class class300 extends class180 {
       this.field3730[++this.field3732 - 1] = (byte)(0 - i_1);
    }
 
-   public int method5543() {
+   public int read32IntBigEndian() {
       this.field3732 += 4;
       return ((this.field3730[this.field3732 - 1] & 0xff) << 8) + ((this.field3730[this.field3732 - 4] & 0xff) << 16) + (this.field3730[this.field3732 - 2] & 0xff) + ((this.field3730[this.field3732 - 3] & 0xff) << 24);
    }
@@ -423,7 +434,7 @@ public class class300 extends class180 {
       if (b_2 != 0) {
          throw new IllegalStateException("");
       } else {
-         int i_3 = this.method5657();
+         int i_3 = this.readVarLengthInt();
          if (i_3 + this.field3732 > this.field3730.length) {
             throw new IllegalStateException("");
          } else {
@@ -471,12 +482,12 @@ public class class300 extends class180 {
       int i_4 = this.field3732;
       this.field3732 = 0;
       byte[] bytes_5 = new byte[i_4];
-      this.method5697(bytes_5, 0, i_4);
+      this.byteArrayCopy(bytes_5, 0, i_4);
       BigInteger biginteger_6 = new BigInteger(bytes_5);
       BigInteger biginteger_7 = biginteger_6.modPow(biginteger_1, biginteger_2);
       byte[] bytes_8 = biginteger_7.toByteArray();
       this.field3732 = 0;
-      this.method5479(bytes_8.length);
+      this.writeShort(bytes_8.length);
       this.method5488(bytes_8, 0, bytes_8.length);
    }
 
@@ -484,7 +495,7 @@ public class class300 extends class180 {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 + 128);
    }
 
-   public void method5489(int i_1) {
+   public void writeMiddleEndianInt(int i_1) {
       if (i_1 < 0) {
          throw new IllegalArgumentException();
       } else {
@@ -512,7 +523,7 @@ public class class300 extends class180 {
       return i_2;
    }
 
-   public void method5544(byte[] bytes_1, int i_2, int i_3, int i_4) {
+   public void method5544(byte[] bytes_1, int i_2, int i_3) {
       for (int i_5 = i_2; i_5 < i_3 + i_2; i_5++) {
          bytes_1[i_5] = (byte)(this.field3730[++this.field3732 - 1] - 128);
       }
@@ -551,8 +562,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_5);
-         this.method5481(i_6);
+         this.write32IntBigEndian(i_5);
+         this.write32IntBigEndian(i_6);
       }
 
    }
@@ -561,7 +572,7 @@ public class class300 extends class180 {
       if (i_1 >= 0 && i_1 < 128) {
          this.writeByte2(i_1);
       } else if (i_1 >= 0 && i_1 < 32768) {
-         this.method5479(i_1 + 32768);
+         this.writeShort(i_1 + 32768);
       } else {
          throw new IllegalArgumentException();
       }
@@ -583,13 +594,13 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_5);
-         this.method5481(i_6);
+         this.write32IntBigEndian(i_5);
+         this.write32IntBigEndian(i_6);
       }
 
    }
 
-   public void method5691(int[] ints_1, int i_2, int i_3, int i_4) {
+   public void method5691(int[] ints_1, int i_2, int i_3) {
       int i_5 = this.field3732;
       this.field3732 = i_2;
       int i_6 = (i_3 - i_2) / 8;
@@ -606,8 +617,8 @@ public class class300 extends class180 {
          }
 
          this.field3732 -= 8;
-         this.method5481(i_8);
-         this.method5481(i_9);
+         this.write32IntBigEndian(i_8);
+         this.write32IntBigEndian(i_9);
       }
 
       this.field3732 = i_5;

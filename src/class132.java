@@ -9,22 +9,22 @@ public class class132 extends class180 {
    class132(int i_1, byte[] bytes_2) {
       this.field1799 = i_1;
       class300 class300_3 = new class300(bytes_2);
-      this.field1797 = class300_3.method5504();
+      this.field1797 = class300_3.readUByte();
       this.field1798 = new int[this.field1797];
       this.field1796 = new int[this.field1797][];
 
       int i_4;
       for (i_4 = 0; i_4 < this.field1797; i_4++) {
-         this.field1798[i_4] = class300_3.method5504();
+         this.field1798[i_4] = class300_3.readUByte();
       }
 
       for (i_4 = 0; i_4 < this.field1797; i_4++) {
-         this.field1796[i_4] = new int[class300_3.method5504()];
+         this.field1796[i_4] = new int[class300_3.readUByte()];
       }
 
       for (i_4 = 0; i_4 < this.field1797; i_4++) {
          for (int i_5 = 0; i_5 < this.field1796[i_4].length; i_5++) {
-            this.field1796[i_4][i_5] = class300_3.method5504();
+            this.field1796[i_4][i_5] = class300_3.readUByte();
          }
       }
 
@@ -41,7 +41,7 @@ public class class132 extends class180 {
          if (i_5 == 0) {
             throw new RuntimeException();
          } else {
-            class217 class217_7 = class80.method1978(i_4);
+            class217 class217_7 = class80.fetchSomething(i_4);
             if (class217_7.field2675 == null) {
                class217_7.field2675 = new class217[i_6 + 1];
             }
@@ -79,18 +79,18 @@ public class class132 extends class180 {
          class217 class217_10;
          if (i_0 == 101) {
             class217_10 = bool_2 ? class76.field1111 : class207.field2507;
-            class217 class217_11 = class80.method1978(class217_10.field2688);
+            class217 class217_11 = class80.fetchSomething(class217_10.field2688);
             class217_11.field2675[class217_10.field2565] = null;
             class224.method4120(class217_11);
             return 1;
          } else if (i_0 == 102) {
-            class217_10 = class80.method1978(class76.field1098[--class70.field1014]);
+            class217_10 = class80.fetchSomething(class76.field1098[--class70.field1014]);
             class217_10.field2675 = null;
             class224.method4120(class217_10);
             return 1;
          } else if (i_0 != 200) {
             if (i_0 == 201) {
-               class217_10 = class80.method1978(class76.field1098[--class70.field1014]);
+               class217_10 = class80.fetchSomething(class76.field1098[--class70.field1014]);
                if (class217_10 != null) {
                   class76.field1098[++class70.field1014 - 1] = 1;
                   if (bool_2) {

@@ -29,7 +29,7 @@ public final class class68 extends class180 {
       class61_4.field569 = i_2;
       client.field816.method5951(class61_4, (long)i_0);
       class12.method146(i_1, -2080937521);
-      class217 class217_5 = class80.method1978(i_0);
+      class217 class217_5 = class80.fetchSomething(i_0);
       class224.method4120(class217_5);
       if (client.field850 != null) {
          class224.method4120(client.field850);

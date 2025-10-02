@@ -6,7 +6,7 @@ public abstract class class170 {
 
    public abstract void vmethod3513(int var1);
 
-   static void method3515(int i_0, int i_1) {
+   static void method3515(int i_0) {
       client.field868 = 0L;
       if (i_0 >= 2) {
          client.field869 = true;
@@ -15,9 +15,9 @@ public abstract class class170 {
       }
 
       if (class34.method598((byte) -108) == 1) {
-         class27.field233.method988(765, 503, 34519869);
+         class27.field233.method988(765, 503);
       } else {
-         class27.field233.method988(7680, 2160, -787426983);
+         class27.field233.method988(7680, 2160);
       }
 
       if (client.field662 >= 25) {

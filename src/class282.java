@@ -12,17 +12,17 @@ public class class282 extends class277 {
    public void method5184(class300 class300_1, int i_2, int i_3) {
       while (true) {
          if (class300_1.field3732 < i_2) {
-            boolean bool_4 = class300_1.method5504() == 1;
+            boolean bool_4 = class300_1.readUByte() == 1;
             class283 class283_5 = new class283(class300_1.readNullTermString(), this.field3640);
             class283 class283_6 = new class283(class300_1.readNullTermString(), this.field3640);
             int i_7 = class300_1.readShortUBigEndian();
-            int i_8 = class300_1.method5504();
-            int i_9 = class300_1.method5504();
+            int i_8 = class300_1.readUByte();
+            int i_9 = class300_1.readUByte();
             boolean bool_10 = (i_9 & 0x2) != 0;
             boolean bool_11 = (i_9 & 0x1) != 0;
             if (i_7 > 0) {
                class300_1.readNullTermString();
-               class300_1.method5504();
+               class300_1.readUByte();
                class300_1.readIntMedEndian();
             }
 

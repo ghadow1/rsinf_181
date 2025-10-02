@@ -8,7 +8,7 @@ public class class80 {
    static final BigInteger field1140 = new BigInteger("80782894952180643741752986186714059433953886149239752893425047584684715842049");
    static final BigInteger field1141 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
 
-   public static class217 method1978(int i_0) {
+   public static class217 fetchSomething(int i_0) {
       int i_2 = i_0 >> 16;
       int i_3 = i_0 & 0xffff;
       if (class217.field2556[i_2] == null || class217.field2556[i_2][i_3] == null) {
@@ -67,7 +67,7 @@ public class class80 {
 
          i_3 = class54.field499 >> 7;
          i_4 = class26.field227 >> 7;
-         i_5 = class62.method1130(class54.field499, class26.field227, class42.field372, (short) 23590);
+         i_5 = class62.method1130(class54.field499, class26.field227, class42.field372);
          i_6 = 0;
          int i_7;
          if (i_3 > 3 && i_4 > 3 && i_3 < 100 && i_4 < 100) {
@@ -101,7 +101,7 @@ public class class80 {
             client.field739 += (i_7 - client.field739) / 80;
          }
 
-         client.field729 = class62.method1130(client.field657.field1005, client.field657.field949, class42.field372, (short) 3073) - client.field728;
+         client.field729 = class62.method1130(client.field657.field1005, client.field657.field949, class42.field372) - client.field728;
       } else if (client.field727 == 1) {
          class217.method4090(-174761515);
          short s_11 = -1;

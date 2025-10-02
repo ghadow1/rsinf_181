@@ -14,7 +14,7 @@ public class class58 {
       this.field542 = 0;
 
       for (int i_2 = 0; i_2 < this.field539; i_2++) {
-         if (!this.field547.method4268(i_2, (byte) 0) || this.field547.method4267(i_2, 2032179519)) {
+         if (!this.field547.method4268(i_2, (byte) 0) || this.field547.method4267(i_2)) {
             ++this.field542;
          }
       }
@@ -151,7 +151,7 @@ public class class58 {
       class217 class217_4;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
+         class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
       } else {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }
@@ -189,7 +189,7 @@ public class class58 {
                break;
             }
 
-            class217_3 = class80.method1978(class217_3.field2583);
+            class217_3 = class80.fetchSomething(class217_3.field2583);
             if (class217_3 == null) {
                class217_2 = null;
                break;

@@ -10,15 +10,15 @@ public class class248 extends class175 {
    void method4489(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
          this.field3296 = class300_1.readShortUBigEndian();
-         this.field3297 = class300_1.method5504();
-         this.field3295 = class300_1.method5504();
+         this.field3297 = class300_1.readUByte();
+         this.field3295 = class300_1.readUByte();
       }
 
    }
 
    public void method4485(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }
@@ -28,10 +28,10 @@ public class class248 extends class175 {
    }
 
    public static int method4493(CharSequence charsequence_0, int i_1, int i_2) {
-      return class33.method554(charsequence_0, i_1, true, 1235482028);
+      return class33.method554(charsequence_0, i_1);
    }
 
-   static void method4484(class53 class53_0, int i_1) {
+   static void method4484() {
       int i_4;
       int i_16;
       if (class85.field1205) {
@@ -43,45 +43,45 @@ public class class248 extends class175 {
 
                int i_2 = class85.field1208 + 280;
                if (class54.field483 >= i_2 && class54.field483 <= i_2 + 14 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(0, 0, -881071999);
+                  class192.method3676(0, 0);
                   break;
                }
 
                if (class54.field483 >= i_2 + 15 && class54.field483 <= i_2 + 80 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(0, 1, -881071999);
+                  class192.method3676(0, 1);
                   break;
                }
 
                int i_3 = class85.field1208 + 390;
                if (class54.field483 >= i_3 && class54.field483 <= i_3 + 14 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(1, 0, -881071999);
+                  class192.method3676(1, 0);
                   break;
                }
 
                if (class54.field483 >= i_3 + 15 && class54.field483 <= i_3 + 80 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(1, 1, -881071999);
+                  class192.method3676(1, 1);
                   break;
                }
 
                i_4 = class85.field1208 + 500;
                if (class54.field483 >= i_4 && class54.field483 <= i_4 + 14 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(2, 0, -881071999);
+                  class192.method3676(2, 0);
                   break;
                }
 
                if (class54.field483 >= i_4 + 15 && class54.field483 <= i_4 + 80 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(2, 1, -881071999);
+                  class192.method3676(2, 1);
                   break;
                }
 
                i_16 = class85.field1208 + 610;
                if (class54.field483 >= i_16 && class54.field483 <= i_16 + 14 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(3, 0, -881071999);
+                  class192.method3676(3, 0);
                   break;
                }
 
                if (class54.field483 >= i_16 + 15 && class54.field483 <= i_16 + 80 && class54.field495 >= 4 && class54.field495 <= 18) {
-                  class192.method3676(3, 1, -881071999);
+                  class192.method3676(3, 1);
                   break;
                }
 

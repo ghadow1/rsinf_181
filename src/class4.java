@@ -17,7 +17,7 @@ final class class4 implements class0 {
 
    static final void method48(int i_0, int i_1, int i_2, int i_3, int i_4) {
       ++client.field751;
-      class56.method1085(975361183);
+      class56.method1085();
       if (client.field773) {
          class227.method4124(client.field657, false, (byte) 22);
       }
@@ -424,7 +424,7 @@ final class class4 implements class0 {
          }
       }
 
-      ((class119) class130.field1781).method2736(client.field718, 1054980439);
+      ((class119) class130.field1781).method2736(client.field718);
       class21.method273(i_0, i_1, i_2, i_3, -2108015148);
       class299.field3727 = i_29;
       class43.field383 = i_7;

@@ -16,7 +16,7 @@ public class class18 extends class34 {
       this.field125 = i_3;
       this.field122 = class28_4;
       class241 class241_5 = class222.method4118(this.vmethod597(1142709906));
-      class325 class325_6 = class241_5.method4379(false, 1628650395);
+      class325 class325_6 = class241_5.method4379();
       if (class325_6 != null) {
          this.field123 = class325_6.field3899;
          this.field124 = class325_6.field3900;
@@ -359,13 +359,13 @@ public class class18 extends class34 {
                class187_14.field2333.method5520(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.field2333.writeByte2(i_5);
                class187_14.field2333.writeByte2(i_6);
-               class187_14.field2333.method5479(client.field722);
+               class187_14.field2333.writeShort(client.field722);
                class187_14.field2333.writeByte2(57);
                class187_14.field2333.writeByte2(0);
                class187_14.field2333.writeByte2(0);
                class187_14.field2333.writeByte2(89);
-               class187_14.field2333.method5479(client.field657.field1005);
-               class187_14.field2333.method5479(client.field657.field949);
+               class187_14.field2333.writeShort(client.field657.field1005);
+               class187_14.field2333.writeShort(client.field657.field949);
                class187_14.field2333.writeByte2(63);
                client.field880.copy(class187_14);
                client.field885 = i_12;

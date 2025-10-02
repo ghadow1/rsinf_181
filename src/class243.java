@@ -29,14 +29,14 @@ public class class243 extends class175 {
       } else if (i_2 == 6) {
          this.field3250 = class300_1.readShortUBigEndian();
       } else if (i_2 == 7) {
-         this.field3251 = class300_1.method5504();
+         this.field3251 = class300_1.readUByte();
       } else if (i_2 == 8) {
-         this.field3253 = class300_1.method5504();
+         this.field3253 = class300_1.readUByte();
       } else {
          int i_4;
          int i_5;
          if (i_2 == 40) {
-            i_4 = class300_1.method5504();
+            i_4 = class300_1.readUByte();
             this.field3244 = new short[i_4];
             this.field3243 = new short[i_4];
 
@@ -45,7 +45,7 @@ public class class243 extends class175 {
                this.field3243[i_5] = (short)class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 41) {
-            i_4 = class300_1.method5504();
+            i_4 = class300_1.readUByte();
             this.field3246 = new short[i_4];
             this.field3245 = new short[i_4];
 
@@ -116,7 +116,7 @@ public class class243 extends class175 {
 
    void method4407(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

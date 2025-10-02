@@ -57,8 +57,8 @@ public class class33 implements class37 {
    }
 
    public void vmethod743(class300 class300_1, int i_2) {
-      this.field293 = class300_1.method5504();
-      this.field286 = class300_1.method5504();
+      this.field293 = class300_1.readUByte();
+      this.field286 = class300_1.readUByte();
       this.field294 = class300_1.readShortUBigEndian();
       this.field288 = class300_1.readShortUBigEndian();
       this.field287 = class300_1.readShortUBigEndian();
@@ -66,7 +66,7 @@ public class class33 implements class37 {
       this.method571(-209894164);
    }
 
-   static int method554(CharSequence charsequence_0, int i_1, boolean bool_2, int i_3) {
+   static int method554(CharSequence charsequence_0, int i_1) {
       if (i_1 >= 2 && i_1 <= 36) {
          boolean bool_4 = false;
          boolean bool_5 = false;

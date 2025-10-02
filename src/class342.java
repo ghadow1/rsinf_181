@@ -17,7 +17,7 @@ public class class342 {
 
    public class342(class343 class343_1, int i_2, int i_3) throws IOException {
       this.field4070 = class343_1;
-      this.field4079 = this.field4074 = class343_1.method6552(716678172);
+      this.field4079 = this.field4074 = class343_1.method6552();
       this.field4071 = new byte[i_2];
       this.field4075 = new byte[i_3];
       this.field4072 = 0L;
@@ -54,7 +54,7 @@ public class class342 {
             this.field4070.method6551(this.field4072);
 
             for (this.field4080 = this.field4072; i_3 > 0; i_3 -= i_9) {
-               i_9 = this.field4070.method6554(bytes_1, i_2, i_3, 2031981325);
+               i_9 = this.field4070.method6554(bytes_1, i_2, i_3);
                if (i_9 == -1) {
                   break;
                }
@@ -130,7 +130,7 @@ public class class342 {
             this.field4080 = this.field4077;
          }
 
-         this.field4070.method6561(this.field4075, 0, this.field4076, 652023387);
+         this.field4070.method6561(this.field4075, 0, this.field4076);
          this.field4080 += -299149629L * (long)(this.field4076 * -1383888405);
          if (this.field4080 > this.field4074) {
             this.field4074 = this.field4080;
@@ -212,7 +212,7 @@ public class class342 {
                this.field4080 = this.field4072;
             }
 
-            this.field4070.method6561(bytes_1, i_2, i_3, 1339603550);
+            this.field4070.method6561(bytes_1, i_2, i_3);
             this.field4080 += (long)i_3;
             if (this.field4080 > this.field4074) {
                this.field4074 = this.field4080;
@@ -259,7 +259,7 @@ public class class342 {
             i_2 = 200000000;
          }
 
-         i_3 = this.field4070.method6554(this.field4071, this.field4073, i_2, -76837129);
+         i_3 = this.field4070.method6554(this.field4071, this.field4073, i_2);
          if (i_3 == -1) {
             break;
          }
@@ -271,7 +271,7 @@ public class class342 {
 
    public void method6540(byte b_1) throws IOException {
       this.method6523(813445771);
-      this.field4070.method6550(934829031);
+      this.field4070.method6550();
    }
 
    public void method6547(byte[] bytes_1, int i_2) throws IOException {

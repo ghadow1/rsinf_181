@@ -24,7 +24,7 @@ public final class class52 extends class322 {
       WritableRaster writableraster_6 = Raster.createWritableRaster(directcolormodel_5.createCompatibleSampleModel(super.field3877, super.field3878), databufferint_4, (Point) null);
       this.field440 = new BufferedImage(directcolormodel_5, writableraster_6, false, new Hashtable());
       this.method856(component_3, (byte) 0);
-      this.method6078((byte) 106);
+      this.method6078();
    }
 
    final void method860(Graphics graphics_1, int i_2, int i_3, int i_4, int i_5, int i_6) {

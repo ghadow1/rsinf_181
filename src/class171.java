@@ -200,7 +200,7 @@ public final class class171 extends class305 implements Runnable {
    }
 
    public static void method3553(int i_0) {
-      class76.field1099.method3712(-1802113740);
+      class76.field1099.method3712();
       class197.field2402 = 1;
       class11.field76 = null;
    }

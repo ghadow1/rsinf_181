@@ -10,7 +10,7 @@ public class class249 extends class175 {
 
    void method4498(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         byte b_5 = class300_1.method5495();
+         byte b_5 = class300_1.readByte2();
          int i_6 = b_5 & 0xff;
          if (i_6 == 0) {
             throw new IllegalArgumentException("" + Integer.toString(i_6, 16));
@@ -46,7 +46,7 @@ public class class249 extends class175 {
 
    void method4497(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

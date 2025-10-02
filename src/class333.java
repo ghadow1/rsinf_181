@@ -315,7 +315,7 @@ public class class333 {
             this.field3977 = this.method6332(1671180892) - i_5 / 2 - i_8;
             this.field3998 = this.method6333(140338410) - i_6 / 2 - i_8;
             this.field4027 = this.field4019.field310;
-            class68.field944.method4321(this.field3977, this.field3998, this.field4026, (float)this.field4027 / f_11, -690333183);
+            class68.field944.method4321(this.field3977, this.field3998, this.field4026, (float)this.field4027 / f_11);
             this.field4030 = client.field924;
             i_14 = i_1 - (i_12 + i_8 - this.field3977) * this.field4019.field310;
             i_15 = i_2 - this.field4019.field310 * (i_8 - (i_13 - this.field3998));
@@ -439,7 +439,7 @@ public class class333 {
       this.field4021.put(class17.field118, hashmap_5.get(field3979));
       this.field4021.put(class17.field116, hashmap_5.get(field3980));
       this.field4028 = new class332(class233_1);
-      int i_8 = this.field4029.method4160(class35.field308.field306, 1993215311);
+      int i_8 = this.field4029.method4160(class35.field308.field306);
       int[] ints_9 = this.field4029.method4153(i_8);
       this.field3992 = new HashMap(ints_9.length);
 

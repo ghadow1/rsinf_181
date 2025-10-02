@@ -12,11 +12,11 @@ public class class134 {
 
       try {
          class343_1 = class18.method207("", class29.field248.field3111, false, 403925175);
-         byte[] bytes_3 = new byte[(int)class343_1.method6552(1189798798)];
+         byte[] bytes_3 = new byte[(int)class343_1.method6552()];
 
          int i_5;
          for (int i_4 = 0; i_4 < bytes_3.length; i_4 += i_5) {
-            i_5 = class343_1.method6554(bytes_3, i_4, bytes_3.length - i_4, 701557643);
+            i_5 = class343_1.method6554(bytes_3, i_4, bytes_3.length - i_4);
             if (i_5 == -1) {
                throw new IOException();
             }
@@ -29,7 +29,7 @@ public class class134 {
 
       try {
          if (class343_1 != null) {
-            class343_1.method6550(52246424);
+            class343_1.method6550();
          }
       } catch (Exception exception_6) {
          ;
@@ -44,7 +44,7 @@ public class class134 {
       if (i_0 >= 2000) {
          i_0 -= 1000;
          i_4 = class76.field1098[--class70.field1014];
-         class217_5 = class80.method1978(i_4);
+         class217_5 = class80.fetchSomething(i_4);
       } else {
          class217_5 = bool_2 ? class76.field1111 : class207.field2507;
       }

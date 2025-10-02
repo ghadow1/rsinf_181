@@ -230,7 +230,7 @@ public class class29 {
             } else if (class257_12.field3512 == 16711935) {
                i_10 = i_11;
             } else {
-               i_18 = class192.method3679(class257_12.field3513, class257_12.field3509, class257_12.field3510, (byte) 69);
+               i_18 = class192.method3679(class257_12.field3513, class257_12.field3509, class257_12.field3510);
                b_16 = 96;
                if (i_18 == -2) {
                   i_15 = 12345678;
@@ -410,7 +410,7 @@ public class class29 {
                } else if (class257_10.field3512 == 16711935) {
                   i_8 = i_9;
                } else {
-                  i_17 = class192.method3679(class257_10.field3513, class257_10.field3509, class257_10.field3510, (byte) 116);
+                  i_17 = class192.method3679(class257_10.field3513, class257_10.field3509, class257_10.field3510);
                   b_14 = 96;
                   if (i_17 == -2) {
                      i_13 = 12345678;
@@ -449,7 +449,7 @@ public class class29 {
    }
 
    void method446(class241 class241_1, int i_2, int i_3, int i_4) {
-      class325 class325_5 = class241_1.method4379(false, 698450975);
+      class325 class325_5 = class241_1.method4379();
       if (class325_5 != null) {
          int i_6 = this.method455(class325_5, class241_1.field3226, 406251697);
          int i_7 = this.method450(class325_5, class241_1.field3227, (byte) 36);
@@ -596,7 +596,7 @@ public class class29 {
    }
 
    void method493(class241 class241_1, int i_2, int i_3, int i_4, int i_5, byte b_6) {
-      class325 class325_7 = class241_1.method4379(false, 923437987);
+      class325 class325_7 = class241_1.method4379();
       if (class325_7 != null) {
          class325_7.method6126(i_2 - class325_7.field3899 / 2, i_3 - class325_7.field3900 / 2);
          if (i_4 % i_5 < i_5 / 2) {
@@ -856,7 +856,7 @@ public class class29 {
 
                long long_6 = class126.method2854(0, 0, 1, !class79_3.field1134.field3496, client.field696[i_2], 605057963);
                class79_3.field953 = client.field881;
-               class5.field22.method3077(class42.field372, class79_3.field1005, class79_3.field949, class62.method1130(class79_3.field952 * 64 - 64 + class79_3.field1005, class79_3.field952 * 64 - 64 + class79_3.field949, class42.field372, (short) 17919), class79_3.field952 * 64 - 64 + 60, class79_3, class79_3.field950, long_6, class79_3.field967);
+               class5.field22.method3077(class42.field372, class79_3.field1005, class79_3.field949, class62.method1130(class79_3.field952 * 64 - 64 + class79_3.field1005, class79_3.field952 * 64 - 64 + class79_3.field949, class42.field372), class79_3.field952 * 64 - 64 + 60, class79_3, class79_3.field950, long_6, class79_3.field967);
             }
          }
       }
@@ -864,8 +864,8 @@ public class class29 {
    }
 
    public static void method533(int i_0, class233 class233_1, String string_2, String string_3, int i_4, boolean bool_5, int i_6) {
-      int i_7 = class233_1.method4160(string_2, 808298561);
-      int i_8 = class233_1.method4161(i_7, string_3, (byte) 12);
+      int i_7 = class233_1.method4160(string_2);
+      int i_8 = class233_1.method4161(i_7, string_3);
       class197.field2402 = 1;
       class11.field76 = class233_1;
       class197.field2403 = i_7;

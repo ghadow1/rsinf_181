@@ -58,8 +58,8 @@ public class class24 implements class37 {
    }
 
    public void vmethod743(class300 class300_1, int i_2) {
-      this.field197 = class300_1.method5504();
-      this.field196 = class300_1.method5504();
+      this.field197 = class300_1.readUByte();
+      this.field196 = class300_1.readUByte();
       this.field200 = class300_1.readShortUBigEndian();
       this.field199 = class300_1.readShortUBigEndian();
       this.field207 = class300_1.readShortUBigEndian();

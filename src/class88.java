@@ -46,10 +46,10 @@ public class class88 {
       }
 
       if (bytes_4 != null) {
-         class235_2.method4264(class308_1, i_0, bytes_4, true, -1887037156);
+         class235_2.method4264(class308_1, i_0, bytes_4, true);
       } else {
          byte[] bytes_9 = class308_1.method5865(i_0, -8739933);
-         class235_2.method4264(class308_1, i_0, bytes_9, true, -1905277609);
+         class235_2.method4264(class308_1, i_0, bytes_9, true);
       }
    }
 

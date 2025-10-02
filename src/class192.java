@@ -21,23 +21,23 @@ public class class192 implements class194 {
    final int field2379;
 
    static {
-      field2375 = new class192("", 0, new class191[] {class191.field2364});
-      field2367 = new class192("", 1, new class191[] {class191.field2362, class191.field2364});
-      field2368 = new class192("", 2, new class191[] {class191.field2362, class191.field2365, class191.field2364});
-      field2381 = new class192("", 3, new class191[] {class191.field2362});
-      field2370 = new class192("", 4);
-      field2373 = new class192("", 5, new class191[] {class191.field2362, class191.field2364});
-      field2372 = new class192("", 6, new class191[] {class191.field2364});
-      field2376 = new class192("", 8, new class191[] {class191.field2362, class191.field2364});
-      field2374 = new class192("", 9, new class191[] {class191.field2362, class191.field2365});
-      field2369 = new class192("", 10, new class191[] {class191.field2362});
-      field2371 = new class192("", 11, new class191[] {class191.field2362});
-      field2377 = new class192("", 12, new class191[] {class191.field2362, class191.field2364});
-      field2378 = new class192("", 13, new class191[] {class191.field2362});
-      method3674(858782431);
+      field2375 = new class192(0, new class191[]{class191.field2364});
+      field2367 = new class192(1, new class191[]{class191.field2362, class191.field2364});
+      field2368 = new class192(2, new class191[]{class191.field2362, class191.field2365, class191.field2364});
+      field2381 = new class192(3, new class191[]{class191.field2362});
+      field2370 = new class192(4);
+      field2373 = new class192(5, new class191[]{class191.field2362, class191.field2364});
+      field2372 = new class192(6, new class191[]{class191.field2364});
+      field2376 = new class192(8, new class191[]{class191.field2362, class191.field2364});
+      field2374 = new class192(9, new class191[]{class191.field2362, class191.field2365});
+      field2369 = new class192(10, new class191[]{class191.field2362});
+      field2371 = new class192(11, new class191[]{class191.field2362});
+      field2377 = new class192(12, new class191[]{class191.field2362, class191.field2364});
+      field2378 = new class192(13, new class191[]{class191.field2362});
+      method3674();
    }
 
-   class192(String string_1, int i_2, class191[] arr_3) {
+   class192(int i_2, class191[] arr_3) {
       this.field2379 = i_2;
       class191[] arr_4 = arr_3;
 
@@ -48,7 +48,7 @@ public class class192 implements class194 {
 
    }
 
-   class192(String string_1, int i_2) {
+   class192(int i_2) {
       this.field2379 = i_2;
    }
 
@@ -56,7 +56,7 @@ public class class192 implements class194 {
       return this.field2379;
    }
 
-   static int method3679(int i_0, int i_1, int i_2, byte b_3) {
+   static int method3679(int i_0, int i_1, int i_2) {
       if (i_2 > 179) {
          i_1 /= 2;
       }
@@ -77,7 +77,7 @@ public class class192 implements class194 {
       return i_4;
    }
 
-   public static boolean method3677(CharSequence charsequence_0, byte b_1) {
+   public static boolean method3677(CharSequence charsequence_0) {
       boolean bool_3 = false;
       boolean bool_4 = false;
       int i_5 = 0;
@@ -143,15 +143,15 @@ public class class192 implements class194 {
       return bool_2;
    }
 
-   static void method3675(int i_0, int i_1) {
+   static void method3675(int i_0) {
       client.field727 = i_0;
    }
 
-   static class192[] method3674(int i_0) {
+   static class192[] method3674() {
       return new class192[] {field2377, field2374, field2369, field2378, field2372, field2373, field2381, field2367, field2371, field2370, field2376, field2368, field2375};
    }
 
-   static void method3676(int i_0, int i_1, int i_2) {
+   static void method3676(int i_0, int i_1) {
       int[] ints_3 = new int[4];
       int[] ints_4 = new int[4];
       ints_3[0] = i_0;
@@ -171,11 +171,11 @@ public class class192 implements class194 {
       client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018, (byte) -109);
    }
 
-   public static void method3678(byte b_0) {
+   public static void method3678() {
       class96.field1324 = new class260();
    }
 
-   static int method3669(int i_0, int i_1) {
+   static int method3669(int i_0) {
       class64 class64_2 = (class64) class91.field1277.method5924((long)i_0);
       return class64_2 == null ? -1 : (class64_2.field2106 == class91.field1278.field3551 ? -1 : ((class64) class64_2.field2106).field600);
    }

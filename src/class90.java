@@ -76,7 +76,7 @@ public class class90 {
                      if (object_8 instanceof Integer) {
                         i_3 += 4;
                      } else if (object_8 instanceof String) {
-                        i_3 += class209.method3945((String) object_8, 350180445);
+                        i_3 += class209.method3945((String) object_8);
                      }
 
                      ++i_4;
@@ -85,14 +85,14 @@ public class class90 {
 
                class300 class300_32 = new class300(i_3);
                class300_32.writeByte2(2);
-               class300_32.method5479(i_4);
+               class300_32.writeShort(i_4);
                Iterator iterator_33 = this.field1271.entrySet().iterator();
 
                while (iterator_33.hasNext()) {
                   Entry map$entry_18 = (Entry) iterator_33.next();
                   int i_19 = ((Integer) map$entry_18.getKey()).intValue();
                   if (this.field1268[i_19]) {
-                     class300_32.method5479(i_19);
+                     class300_32.writeShort(i_19);
                      Object object_9 = map$entry_18.getValue();
                      Class class_11 = object_9.getClass();
                      class3[] arr_12 = new class3[] {class3.field9, class3.field14, class3.field7};
@@ -120,7 +120,7 @@ public class class90 {
                   }
                }
 
-               class343_2.method6561(class300_32.field3730, 0, class300_32.field3732, 96217367);
+               class343_2.method6561(class300_32.field3730, 0, class300_32.field3732);
                bool_26 = false;
                break label164;
             } catch (Exception exception_30) {
@@ -128,7 +128,7 @@ public class class90 {
             } finally {
                if(bool_26) {
                   try {
-                     class343_2.method6550(414248711);
+                     class343_2.method6550();
                   } catch (Exception exception_27) {
                      ;
                   }
@@ -137,7 +137,7 @@ public class class90 {
             }
 
             try {
-               class343_2.method6550(1194565895);
+               class343_2.method6550();
             } catch (Exception exception_28) {
                ;
             }
@@ -145,7 +145,7 @@ public class class90 {
          }
 
          try {
-            class343_2.method6550(-1684100095);
+            class343_2.method6550();
          } catch (Exception exception_29) {
             ;
          }
@@ -165,11 +165,11 @@ public class class90 {
                label235: {
                   try {
                      bool_26 = true;
-                     byte[] bytes_3 = new byte[(int)class343_2.method6552(-1748957902)];
+                     byte[] bytes_3 = new byte[(int)class343_2.method6552()];
 
                      int i_5;
                      for (int i_4 = 0; i_4 < bytes_3.length; i_4 += i_5) {
-                        i_5 = class343_2.method6554(bytes_3, i_4, bytes_3.length - i_4, 1748068416);
+                        i_5 = class343_2.method6554(bytes_3, i_4, bytes_3.length - i_4);
                         if (i_5 == -1) {
                            throw new EOFException();
                         }
@@ -181,7 +181,7 @@ public class class90 {
                         break label236;
                      }
 
-                     int i_17 = class300_16.method5504();
+                     int i_17 = class300_16.readUByte();
                      if (i_17 < 0) {
                         bool_26 = false;
                         break label238;
@@ -207,7 +207,7 @@ public class class90 {
                            }
 
                            i_9 = class300_16.readShortUBigEndian();
-                           i_10 = class300_16.method5504();
+                           i_10 = class300_16.readUByte();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
                            class3 class3_12 = (class3) class107.method2476(arr_11, i_10);
                            Object object_13 = class3_12.method34(class300_16, -25501823);
@@ -243,7 +243,7 @@ public class class90 {
                   } finally {
                      if(bool_26) {
                         try {
-                           class343_2.method6550(-148886646);
+                           class343_2.method6550();
                         } catch (Exception exception_27) {
                            ;
                         }
@@ -252,7 +252,7 @@ public class class90 {
                   }
 
                   try {
-                     class343_2.method6550(820455936);
+                     class343_2.method6550();
                   } catch (Exception exception_30) {
                      ;
                   }
@@ -260,7 +260,7 @@ public class class90 {
                }
 
                try {
-                  class343_2.method6550(-1265010716);
+                  class343_2.method6550();
                } catch (Exception exception_29) {
                   ;
                }
@@ -268,7 +268,7 @@ public class class90 {
             }
 
             try {
-               class343_2.method6550(31759710);
+               class343_2.method6550();
             } catch (Exception exception_28) {
                ;
             }
@@ -281,7 +281,7 @@ public class class90 {
       }
 
       try {
-         class343_2.method6550(1862531027);
+         class343_2.method6550();
       } catch (Exception exception_31) {
          ;
       }

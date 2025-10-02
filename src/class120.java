@@ -16,7 +16,7 @@ public final class class120 {
       class253.field3355.method3323();
    }
 
-   static void method2764(int i_0, byte b_1) {
+   static void method2764(int i_0) {
       class59 class59_2 = (class59) class59.field552.method5952((long)i_0);
       if (class59_2 != null) {
          class59_2.method3607();

@@ -50,7 +50,7 @@ public class class252 extends class175 {
       } else if (i_2 == 11) {
          this.field3341 = 0;
       } else if (i_2 == 12) {
-         this.field3348 = class300_1.method5504();
+         this.field3348 = class300_1.readUByte();
       } else if (i_2 == 13) {
          this.field3328 = class300_1.method5606();
       } else if (i_2 == 14) {
@@ -74,7 +74,7 @@ public class class252 extends class175 {
             }
          }
 
-         int i_5 = class300_1.method5504();
+         int i_5 = class300_1.readUByte();
          this.field3345 = new int[i_5 + 2];
 
          for (int i_6 = 0; i_6 <= i_5; i_6++) {
@@ -91,7 +91,7 @@ public class class252 extends class175 {
 
    void method4552(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504();
+         int i_3 = class300_1.readUByte();
          if (i_3 == 0) {
             return;
          }

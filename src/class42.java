@@ -60,23 +60,23 @@ public class class42 implements class37 {
    }
 
    public void vmethod743(class300 class300_1, int i_2) {
-      this.field368 = class300_1.method5504();
-      this.field363 = class300_1.method5504();
+      this.field368 = class300_1.readUByte();
+      this.field363 = class300_1.readUByte();
       this.field364 = class300_1.readShortUBigEndian();
-      this.field376 = class300_1.method5504();
+      this.field376 = class300_1.readUByte();
       this.field365 = class300_1.readShortUBigEndian();
-      this.field369 = class300_1.method5504();
+      this.field369 = class300_1.readUByte();
       this.field366 = class300_1.readShortUBigEndian();
-      this.field370 = class300_1.method5504();
+      this.field370 = class300_1.readUByte();
       this.field375 = class300_1.readShortUBigEndian();
-      this.field371 = class300_1.method5504();
+      this.field371 = class300_1.readUByte();
       this.method744(33671142);
    }
 
    void method744(int i_1) {
    }
 
-   static void method763(class235 class235_0, String string_1, int i_2) {
+   static void method763(class235 class235_0, String string_1) {
       class58 class58_3 = new class58(class235_0, string_1);
       client.field925.add(class58_3);
       client.field927 += class58_3.field539;

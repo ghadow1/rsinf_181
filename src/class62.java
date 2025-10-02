@@ -25,14 +25,14 @@ public class class62 extends class180 {
    }
 
    static void method1132(int i_0, String string_1, String string_2, int i_3) {
-      class14.method157(i_0, string_1, string_2, (String) null, 2069773416);
+      class14.method157(i_0, string_1, string_2, (String) null);
    }
 
-   static boolean method1133(class217 class217_0, int i_1) {
+   static boolean method1133(class217 class217_0) {
       return class217_0.field2706;
    }
 
-   static final int method1130(int i_0, int i_1, int i_2, short s_3) {
+   static final int method1130(int i_0, int i_1, int i_2) {
       int i_4 = i_0 >> 7;
       int i_5 = i_1 >> 7;
       if (i_4 >= 0 && i_5 >= 0 && i_4 <= 103 && i_5 <= 103) {
@@ -56,7 +56,7 @@ public class class62 extends class180 {
    }
 
    static int method1127(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = class80.method1978(class76.field1098[--class70.field1014]);
+      class217 class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
       if (i_0 == 2500) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2577;
          return 1;

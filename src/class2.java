@@ -39,10 +39,10 @@ final class class2 implements class0 {
          class217 class217_10 = arr_0[i_9];
          if (class217_10 != null && class217_10.field2583 == i_1 && (!class217_10.field2563 || class217_10.field2566 == 0 || class217_10.field2551 || class268.method4987(class217_10) != 0 || class217_10 == client.field829 || class217_10.field2568 == 1338)) {
             if (class217_10.field2563) {
-               if (class62.method1133(class217_10, 2063123103)) {
+               if (class62.method1133(class217_10)) {
                   continue;
                }
-            } else if (class217_10.field2566 == 0 && class217_10 != class72.field1059 && class62.method1133(class217_10, 1884809573)) {
+            } else if (class217_10.field2566 == 0 && class217_10 != class72.field1059 && class62.method1133(class217_10)) {
                continue;
             }
 

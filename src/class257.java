@@ -18,7 +18,7 @@ public class class257 extends class175 {
       if (i_2 == 1) {
          this.field3512 = class300_1.method5567();
       } else if (i_2 == 2) {
-         this.field3508 = class300_1.method5504();
+         this.field3508 = class300_1.readUByte();
       } else if (i_2 == 5) {
          this.field3506 = false;
       } else if (i_2 == 7) {
@@ -103,7 +103,7 @@ public class class257 extends class175 {
 
    public void method4744(class300 class300_1, int i_2, byte b_3) {
       while (true) {
-         int i_4 = class300_1.method5504();
+         int i_4 = class300_1.readUByte();
          if (i_4 == 0) {
             return;
          }

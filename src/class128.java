@@ -36,7 +36,7 @@ public class class128 {
       }
    }
 
-   static void method2961(class235 class235_0, int i_1, int i_2, int i_3, byte b_4, boolean bool_5, int i_6) {
+   static void method2961(class235 class235_0, int i_1, int i_2, int i_3, byte b_4, boolean bool_5) {
       long long_7 = (long)((i_1 << 16) + i_2);
       class232 class232_9 = (class232) class236.field3165.method5952(long_7);
       if (class232_9 == null) {
@@ -97,7 +97,7 @@ public class class128 {
          if (bytes_3 == null) {
             return null;
          } else {
-            class92_2 = class71.method1705(bytes_3, -75241458);
+            class92_2 = class71.method1705(bytes_3);
             class92.field1291.method3322(class92_2, (long)i_0);
             return class92_2;
          }

@@ -51,7 +51,7 @@ public class class41 {
             }
          }
 
-         i_7 = class299_0.method5524();
+         i_7 = class299_0.readByteUNeg();
          if (i_7 > 0) {
             for (i_8 = 0; i_8 < i_7; i_8++) {
                i_9 = class299_0.method5508();
@@ -59,7 +59,7 @@ public class class41 {
                if (i_10 != 32767) {
                   i_11 = class299_0.method5508();
                   i_12 = class299_0.readByte();
-                  i_13 = i_10 > 0 ? class299_0.method5504() : i_12;
+                  i_13 = i_10 > 0 ? class299_0.readUByte() : i_12;
                   class66_2.method1655(i_9, client.field881, i_10, i_11, i_12, i_13, (byte) 52);
                } else {
                   class66_2.method1659(i_9, 1541896355);
@@ -85,16 +85,16 @@ public class class41 {
       }
 
       if ((i_3 & 0x1000) != 0) {
-         b_5 = class299_0.method5694();
+         b_5 = class299_0.readSByte();
       }
 
       if ((i_3 & 0x400) != 0) {
          class66_2.field991 = class299_0.method5528();
-         class66_2.field993 = class299_0.method5694();
-         class66_2.field992 = class299_0.method5694();
+         class66_2.field993 = class299_0.readSByte();
+         class66_2.field992 = class299_0.readSByte();
          class66_2.field983 = class299_0.method5528();
-         class66_2.field995 = class299_0.method5518() + client.field881;
-         class66_2.field996 = class299_0.method5532() + client.field881;
+         class66_2.field995 = class299_0.readShortBigEndian() + client.field881;
+         class66_2.field996 = class299_0.readShortLittleEndian() + client.field881;
          class66_2.field997 = class299_0.readShortUBigEndian();
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
@@ -129,7 +129,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x4) != 0) {
-         class66_2.field976 = class299_0.method5532();
+         class66_2.field976 = class299_0.readShortLittleEndian();
          if (class66_2.field1003 == 0) {
             class66_2.field1000 = class66_2.field976;
             class66_2.field976 = -1;
@@ -137,30 +137,30 @@ public class class41 {
       }
 
       if ((i_3 & 0x1) != 0) {
-         i_6 = class299_0.method5525();
+         i_6 = class299_0.readByteInverse();
          byte[] bytes_14 = new byte[i_6];
          class300 class300_15 = new class300(bytes_14);
-         class299_0.method5544(bytes_14, 0, i_6, -467001406);
+         class299_0.method5544(bytes_14, 0, i_6);
          class89.field1254[i_1] = class300_15;
          class66_2.method1179(class300_15, -776146380);
       }
 
       if ((i_3 & 0x2) != 0) {
-         class66_2.field975 = class299_0.method5518();
+         class66_2.field975 = class299_0.readShortBigEndian();
          if (class66_2.field975 == 65535) {
             class66_2.field975 = -1;
          }
       }
 
       if ((i_3 & 0x800) != 0) {
-         class89.field1250[i_1] = class299_0.method5694();
+         class89.field1250[i_1] = class299_0.readSByte();
       }
 
       if ((i_3 & 0x10) != 0) {
-         i_6 = class299_0.method5518();
-         class228 class228_20 = (class228) class107.method2476(class156.method3419(390349850), class299_0.method5504());
-         boolean bool_18 = class299_0.method5524() == 1;
-         i_9 = class299_0.method5504();
+         i_6 = class299_0.readShortBigEndian();
+         class228 class228_20 = (class228) class107.method2476(class156.method3419(390349850), class299_0.readUByte());
+         boolean bool_18 = class299_0.readByteUNeg() == 1;
+         i_9 = class299_0.readUByte();
          i_10 = class299_0.field3732;
          if (class66_2.field621 != null && class66_2.field613 != null) {
             boolean bool_19 = false;
@@ -170,7 +170,7 @@ public class class41 {
 
             if (!bool_19 && client.field767 == 0 && !class66_2.field628) {
                class89.field1264.field3732 = 0;
-               class299_0.method5697(class89.field1264.field3730, 0, i_9);
+               class299_0.byteArrayCopy(class89.field1264.field3730, 0, i_9);
                class89.field1264.field3732 = 0;
                String string_16 = class296.method5362(class1.method17(class311.method5898(class89.field1264, (byte) 23), (byte) -16));
                class66_2.field977 = string_16.trim();
@@ -208,7 +208,7 @@ public class class41 {
             i_6 = -1;
          }
 
-         i_7 = class299_0.method5504();
+         i_7 = class299_0.readUByte();
          class63.method1139(class66_2, i_6, i_7, (byte) -124);
       }
 

@@ -5,7 +5,7 @@ public abstract class class322 {
    public int field3877;
    public int field3878;
 
-   public final void method6078(byte b_1) {
+   public final void method6078() {
       class321.method6033(this.field3876, this.field3877, this.field3878);
    }
 

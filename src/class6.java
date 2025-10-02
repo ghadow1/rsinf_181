@@ -21,7 +21,7 @@ public class class6 {
 
    public class6(class300 class300_1, boolean bool_2) {
       int i_3 = class300_1.readShortUBigEndian();
-      boolean bool_4 = class300_1.method5504() == 1;
+      boolean bool_4 = class300_1.readUByte() == 1;
       byte b_5;
       if (bool_4) {
          b_5 = 1;
@@ -47,22 +47,22 @@ public class class6 {
 
    }
 
-   public static class185[] method70(int i_0) {
+   public static class185[] method70() {
       return new class185[] {class185.field2322, class185.field2316, class185.field2318, class185.field2317, class185.field2324, class185.field2319, class185.field2320, class185.field2321, class185.field2315, class185.field2323};
    }
 
-   public static void method66(class233 class233_0, class233 class233_1, byte b_2) {
+   public static void method66(class233 class233_0, class233 class233_1) {
       class245.field3274 = class233_0;
       class288.field3665 = class233_1;
       class245.field3263 = class245.field3274.method4154(3, -946844151);
    }
 
-   public static void method68(class233 class233_0, byte b_1) {
+   public static void method68(class233 class233_0) {
       class240.field3204 = class233_0;
       class240.field3203 = class240.field3204.method4154(16, -1659066369);
    }
 
-   static final void method72(class133 class133_0, class172[] arr_1, int i_2) {
+   static final void method72(class133 class133_0, class172[] arr_1) {
       int i_3;
       int i_4;
       int i_5;
@@ -237,7 +237,7 @@ public class class6 {
                            i_33 = i_13 * 256 / i_16;
                            i_34 = i_14 / i_17;
                            i_35 = i_15 / i_17;
-                           i_31 = class327.method6244(i_33, i_34, i_35, 590825496);
+                           i_31 = class327.method6244(i_33, i_34, i_35);
                            i_33 = i_33 + class55.field519 & 0xff;
                            i_35 += class55.field510;
                            if (i_35 < 0) {
@@ -246,7 +246,7 @@ public class class6 {
                               i_35 = 255;
                            }
 
-                           i_32 = class327.method6244(i_33, i_34, i_35, -182036624);
+                           i_32 = class327.method6244(i_33, i_34, i_35);
                         }
 
                         class257 class257_36;
@@ -323,7 +323,7 @@ public class class6 {
                               i_52 = -1;
                               i_41 = -2;
                            } else {
-                              i_40 = class327.method6244(class257_36.field3513, class257_36.field3509, class257_36.field3510, 69221161);
+                              i_40 = class327.method6244(class257_36.field3513, class257_36.field3509, class257_36.field3510);
                               i_42 = class257_36.field3513 + class55.field519 & 0xff;
                               i_43 = class257_36.field3510 + class55.field510;
                               if (i_43 < 0) {
@@ -332,7 +332,7 @@ public class class6 {
                                  i_43 = 255;
                               }
 
-                              i_41 = class327.method6244(i_42, class257_36.field3509, i_43, -481515597);
+                              i_41 = class327.method6244(i_42, class257_36.field3509, i_43);
                            }
 
                            i_42 = 0;
@@ -349,7 +349,7 @@ public class class6 {
                                  i_44 = 255;
                               }
 
-                              i_41 = class327.method6244(i_43, class257_36.field3504, i_44, 1940950395);
+                              i_41 = class327.method6244(i_43, class257_36.field3504, i_44);
                               i_42 = class130.field1783[class112.method2517(i_41, 96, (byte) 1)];
                            }
 
