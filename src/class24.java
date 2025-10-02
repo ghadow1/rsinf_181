@@ -60,14 +60,14 @@ public class class24 implements class37 {
    public void vmethod743(class300 class300_1, int i_2) {
       this.field197 = class300_1.method5504();
       this.field196 = class300_1.method5504();
-      this.field200 = class300_1.method5496();
-      this.field199 = class300_1.method5496();
-      this.field207 = class300_1.method5496();
-      this.field201 = class300_1.method5496();
-      this.field202 = class300_1.method5496();
-      this.field203 = class300_1.method5496();
-      this.field204 = class300_1.method5496();
-      this.field205 = class300_1.method5496();
+      this.field200 = class300_1.readShortUBigEndian();
+      this.field199 = class300_1.readShortUBigEndian();
+      this.field207 = class300_1.readShortUBigEndian();
+      this.field201 = class300_1.readShortUBigEndian();
+      this.field202 = class300_1.readShortUBigEndian();
+      this.field203 = class300_1.readShortUBigEndian();
+      this.field204 = class300_1.readShortUBigEndian();
+      this.field205 = class300_1.readShortUBigEndian();
       this.method305((byte) -39);
    }
 

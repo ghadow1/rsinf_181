@@ -24,7 +24,7 @@ public class class184 implements class181 {
    }
 
    public static void method3613(class62 class62_0, byte b_1) {
-      class96.method2267(class62_0, 500000, -806238798);
+      class96.method2267(class62_0, 500000);
    }
 
 }

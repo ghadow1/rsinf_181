@@ -23,7 +23,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt ifSetObjectMessage = new ServerPacketProt(20, 10);
    public static final ServerPacketProt ifSetHideMessage = new ServerPacketProt(21, 5);
    public static final ServerPacketProt updateStatMessage = new ServerPacketProt(22, 6);
-   public static final ServerPacketProt field2138 = new ServerPacketProt(23, 2);
+   public static final ServerPacketProt midiSongMessage = new ServerPacketProt(23, 2);
    public static final ServerPacketProt field2139 = new ServerPacketProt(24, 6);
    public static final ServerPacketProt field2140 = new ServerPacketProt(25, 2);
    public static final ServerPacketProt field2137 = new ServerPacketProt(26, 5);
@@ -44,7 +44,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt field2156 = new ServerPacketProt(41, 8);
    public static final ServerPacketProt field2157 = new ServerPacketProt(42, 14);
    public static final ServerPacketProt field2162 = new ServerPacketProt(43, -2);
-   public static final ServerPacketProt field2159 = new ServerPacketProt(44, -2);
+   public static final ServerPacketProt updateInvPartialMessage = new ServerPacketProt(44, -2);
    public static final ServerPacketProt field2189 = new ServerPacketProt(45, -1);
    public static final ServerPacketProt field2161 = new ServerPacketProt(46, 2);
    public static final ServerPacketProt field2150 = new ServerPacketProt(47, -1);
@@ -65,13 +65,13 @@ public class ServerPacketProt {
    public static final ServerPacketProt runClientScriptMessage = new ServerPacketProt(62, -2);
    public static final ServerPacketProt varpSmallMessage = new ServerPacketProt(63, 3);
    public static final ServerPacketProt updateZonePartialFollowsMessage = new ServerPacketProt(64, 2);
-   public static final ServerPacketProt field2158 = new ServerPacketProt(65, 5);
+   public static final ServerPacketProt synthSoundMessage = new ServerPacketProt(65, 5);
    public static final ServerPacketProt setOpPlayerMessage = new ServerPacketProt(66, -1);
    public static final ServerPacketProt setMapFlagMessage = new ServerPacketProt(67, 2);
    public static final ServerPacketProt field2183 = new ServerPacketProt(68, 1);
    public static final ServerPacketProt field2184 = new ServerPacketProt(69, 8);
    public static final ServerPacketProt updateInvFullMessage = new ServerPacketProt(70, -2);
-   public static final ServerPacketProt field2186 = new ServerPacketProt(71, 2);
+   public static final ServerPacketProt updateRunWeightMessage = new ServerPacketProt(71, 2);
    public static final ServerPacketProt updateRebootTimerMessage = new ServerPacketProt(72, 2);
    public static final ServerPacketProt field2188 = new ServerPacketProt(73, 0);
    public static final ServerPacketProt field2115 = new ServerPacketProt(74, 1);

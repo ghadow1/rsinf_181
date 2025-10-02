@@ -114,7 +114,7 @@ public class class93 extends class135 {
       if (class236.field3176 != null) {
          try {
             class300_3 = new class300(4);
-            class300_3.method5655(bool_1 ? 2 : 3);
+            class300_3.writeByte2(bool_1 ? 2 : 3);
             class300_3.method5480(0);
             class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
          } catch (IOException ioexception_8) {
@@ -143,8 +143,8 @@ public class class93 extends class135 {
                   if (class236.field3181 != 0) {
                      try {
                         class300_3 = new class300(4);
-                        class300_3.method5655(4);
-                        class300_3.method5655(class236.field3181);
+                        class300_3.writeByte2(4);
+                        class300_3.writeByte2(class236.field3181);
                         class300_3.method5479(0);
                         class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
                      } catch (IOException ioexception_6) {
@@ -160,7 +160,7 @@ public class class93 extends class135 {
                   }
 
                   class236.field3163 = 0;
-                  class236.field3169 = class206.method3939();
+                  class236.field3169 = class206.getAdjustedTimeMillis();
                   return;
                }
 

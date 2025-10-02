@@ -9,7 +9,7 @@ public class class248 extends class175 {
 
    void method4489(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3296 = class300_1.method5496();
+         this.field3296 = class300_1.readShortUBigEndian();
          this.field3297 = class300_1.method5504();
          this.field3295 = class300_1.method5504();
       }
@@ -95,7 +95,7 @@ public class class248 extends class175 {
 
                if (class85.field1207 != -1) {
                   class71 class71_14 = class71.field1031[class85.field1207];
-                  class202.method3911(class71_14, (byte) 35);
+                  class202.method3911(class71_14);
                   class85.field1205 = false;
                   class5.field23.method6121(class85.field1208, 0);
                   class79.field1135.method6121(class85.field1208 + 382, 0);
@@ -142,10 +142,10 @@ public class class248 extends class175 {
 
          if (client.field662 != 5) {
             if (class85.field1193 == -1L) {
-               class85.field1193 = class206.method3939() + 1000L;
+               class85.field1193 = class206.getAdjustedTimeMillis() + 1000L;
             }
 
-            long long_12 = class206.method3939();
+            long long_12 = class206.getAdjustedTimeMillis();
             if (class190.method3667(1477910272) && class85.field1211 == -1L) {
                class85.field1211 = long_12;
                if (class85.field1211 > class85.field1193) {
@@ -272,7 +272,7 @@ public class class248 extends class175 {
                            if (i_4 == 1 && i_16 >= class96.field1325.field3863 - i_8 && i_16 <= i_8 + class96.field1325.field3863 && i_17 >= s_20 - 15 && i_17 < s_20) {
                               switch(class85.field1212) {
                               case 1:
-                                 class268.method4988("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.", 2087318259);
+                                 class268.loginResponseMessages("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.");
                                  class85.field1209 = 5;
                                  return;
                               case 2:
@@ -286,18 +286,18 @@ public class class248 extends class175 {
                         if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
                            class85.field1180 = class85.field1180.trim();
                            if (class85.field1180.length() == 0) {
-                              class268.method4988("", "Please enter your username/email address.", "", 2090622198);
+                              class268.loginResponseMessages("", "Please enter your username/email address.", "");
                               return;
                            }
 
                            if (class85.field1198.length() == 0) {
-                              class268.method4988("", "Please enter your password.", "", 1461559375);
+                              class268.loginResponseMessages("", "Please enter your password.", "");
                               return;
                            }
 
-                           class268.method4988("", "Connecting to server...", "", 1538697521);
+                           class268.loginResponseMessages("", "Connecting to server...", "");
                            class9.method99(false, -1093013043);
-                           class96.method2265(20, (short) -26325);
+                           class96.method2265(20);
                            return;
                         }
 
@@ -382,18 +382,18 @@ public class class248 extends class175 {
                                  if (class97.field1338 == 84) {
                                     class85.field1180 = class85.field1180.trim();
                                     if (class85.field1180.length() == 0) {
-                                       class268.method4988("", "Please enter your username/email address.", "", 1483564748);
+                                       class268.loginResponseMessages("", "Please enter your username/email address.", "");
                                        return;
                                     }
 
                                     if (class85.field1198.length() == 0) {
-                                       class268.method4988("", "Please enter your password.", "", 1967995276);
+                                       class268.loginResponseMessages("", "Please enter your password.", "");
                                        return;
                                     }
 
-                                    class268.method4988("", "Connecting to server...", "", 2105001947);
+                                    class268.loginResponseMessages("", "Connecting to server...", "");
                                     class9.method99(false, -1259093589);
-                                    class96.method2265(20, (short) -30642);
+                                    class96.method2265(20);
                                     return;
                                  }
 
@@ -415,7 +415,7 @@ public class class248 extends class175 {
                         i_19 = class85.field1187 + 180;
                         s_21 = 326;
                         if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                           class268.method4988("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.", 2123490261);
+                           class268.loginResponseMessages("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.");
                            class85.field1209 = 5;
                            return;
                         }
@@ -427,15 +427,15 @@ public class class248 extends class175 {
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
                               class36.field328.trim();
                               if (class36.field328.length() != 6) {
-                                 class268.method4988("", "Please enter a 6-digit PIN.", "", 1760501500);
+                                 class268.loginResponseMessages("", "Please enter a 6-digit PIN.", "");
                                  return;
                               }
 
                               class9.field65 = Integer.parseInt(class36.field328);
                               class36.field328 = "";
                               class9.method99(true, -2125427032);
-                              class268.method4988("", "Connecting to server...", "", 1950884897);
-                              class96.method2265(20, (short) -30429);
+                              class268.loginResponseMessages("", "Connecting to server...", "");
+                              class96.method2265(20);
                               return;
                            }
 
@@ -480,15 +480,15 @@ public class class248 extends class175 {
                                  if (class97.field1338 == 84) {
                                     class36.field328.trim();
                                     if (class36.field328.length() != 6) {
-                                       class268.method4988("", "Please enter a 6-digit PIN.", "", 1638608336);
+                                       class268.loginResponseMessages("", "Please enter a 6-digit PIN.", "");
                                        return;
                                     }
 
                                     class9.field65 = Integer.parseInt(class36.field328);
                                     class36.field328 = "";
                                     class9.method99(true, -1709278569);
-                                    class268.method4988("", "Connecting to server...", "", 1403558740);
-                                    class96.method2265(20, (short) -22838);
+                                    class268.loginResponseMessages("", "Connecting to server...", "");
+                                    class96.method2265(20);
                                     return;
                                  }
 
@@ -565,7 +565,7 @@ public class class248 extends class175 {
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
                               class5.method50(class190.method3666("secure", true, -1044311329) + "m=dob/set_dob.ws", true, false);
-                              class268.method4988("", "Page has opened in a new window.", "(Please check your popup blocker.)", 2084098439);
+                              class268.loginResponseMessages("", "Page has opened in a new window.", "(Please check your popup blocker.)");
                               class85.field1209 = 6;
                               return;
                            }
@@ -579,7 +579,7 @@ public class class248 extends class175 {
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
                               class5.method50("https://www.jagex.com/terms/privacy/#eight", true, false);
-                              class268.method4988("", "Page has opened in a new window.", "(Please check your popup blocker.)", 1864087916);
+                              class268.loginResponseMessages("", "Page has opened in a new window.", "(Please check your popup blocker.)");
                               class85.field1209 = 6;
                               return;
                            }
@@ -605,7 +605,7 @@ public class class248 extends class175 {
                            s_9 = 276;
                            if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
                               class5.method50(str_15, true, false);
-                              class268.method4988("", "Page has opened in a new window.", "(Please check your popup blocker.)", 1579449635);
+                              class268.loginResponseMessages("", "Page has opened in a new window.", "(Please check your popup blocker.)");
                               class85.field1209 = 6;
                               return;
                            }

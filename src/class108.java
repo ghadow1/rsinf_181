@@ -68,7 +68,7 @@ public class class108 {
    }
 
    public class103 method2483(int i_1, int[] ints_2, byte b_3) {
-      if (this.field1446.method4232(-1169062250) == 1) {
+      if (this.field1446.method4232() == 1) {
          return this.method2481(0, i_1, ints_2, (byte) 60);
       } else if (this.field1446.method4154(i_1, -1029639441) == 1) {
          return this.method2481(i_1, 0, ints_2, (byte) 49);
@@ -78,7 +78,7 @@ public class class108 {
    }
 
    public class103 method2484(int i_1, int[] ints_2, int i_3) {
-      if (this.field1449.method4232(189556312) == 1) {
+      if (this.field1449.method4232() == 1) {
          return this.method2486(0, i_1, ints_2, 1581933102);
       } else if (this.field1449.method4154(i_1, -1618278527) == 1) {
          return this.method2486(i_1, 0, ints_2, -998034610);
@@ -88,10 +88,10 @@ public class class108 {
    }
 
    static final void method2491(int i_0, int i_1) {
-      class174.method3593(-1554619789);
+      class174.disconnectGame();
       switch(i_0) {
       case 1:
-         class213.method3990((byte) -40);
+         class213.disconnectMessage();
          break;
       case 2:
          class54.method1039((byte) -37);

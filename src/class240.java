@@ -9,7 +9,7 @@ public class class240 extends class175 {
 
    void method4354(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 5) {
-         this.field3206 = class300_1.method5496();
+         this.field3206 = class300_1.readShortUBigEndian();
       }
 
    }

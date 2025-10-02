@@ -18,28 +18,28 @@ public class class251 extends class175 {
       } else if (i_2 == 2) {
          this.field3321 = (char)class300_1.method5504();
       } else if (i_2 == 3) {
-         this.field3318 = class300_1.method5503();
+         this.field3318 = class300_1.readNullTermString();
       } else if (i_2 == 4) {
-         this.field3319 = class300_1.method5499();
+         this.field3319 = class300_1.readIntMedEndian();
       } else {
          int i_4;
          if (i_2 == 5) {
-            this.field3320 = class300_1.method5496();
+            this.field3320 = class300_1.readShortUBigEndian();
             this.field3316 = new int[this.field3320];
             this.field3323 = new String[this.field3320];
 
             for (i_4 = 0; i_4 < this.field3320; i_4++) {
-               this.field3316[i_4] = class300_1.method5499();
-               this.field3323[i_4] = class300_1.method5503();
+               this.field3316[i_4] = class300_1.readIntMedEndian();
+               this.field3323[i_4] = class300_1.readNullTermString();
             }
          } else if (i_2 == 6) {
-            this.field3320 = class300_1.method5496();
+            this.field3320 = class300_1.readShortUBigEndian();
             this.field3316 = new int[this.field3320];
             this.field3322 = new int[this.field3320];
 
             for (i_4 = 0; i_4 < this.field3320; i_4++) {
-               this.field3316[i_4] = class300_1.method5499();
-               this.field3322[i_4] = class300_1.method5499();
+               this.field3316[i_4] = class300_1.readIntMedEndian();
+               this.field3322[i_4] = class300_1.readIntMedEndian();
             }
          }
       }

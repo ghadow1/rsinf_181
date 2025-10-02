@@ -19,15 +19,15 @@ public class class243 extends class175 {
 
    void method4410(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3242 = class300_1.method5496();
+         this.field3242 = class300_1.readShortUBigEndian();
       } else if (i_2 == 2) {
-         this.field3238 = class300_1.method5496();
+         this.field3238 = class300_1.readShortUBigEndian();
       } else if (i_2 == 4) {
-         this.field3252 = class300_1.method5496();
+         this.field3252 = class300_1.readShortUBigEndian();
       } else if (i_2 == 5) {
-         this.field3249 = class300_1.method5496();
+         this.field3249 = class300_1.readShortUBigEndian();
       } else if (i_2 == 6) {
-         this.field3250 = class300_1.method5496();
+         this.field3250 = class300_1.readShortUBigEndian();
       } else if (i_2 == 7) {
          this.field3251 = class300_1.method5504();
       } else if (i_2 == 8) {
@@ -41,8 +41,8 @@ public class class243 extends class175 {
             this.field3243 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3244[i_5] = (short)class300_1.method5496();
-               this.field3243[i_5] = (short)class300_1.method5496();
+               this.field3244[i_5] = (short)class300_1.readShortUBigEndian();
+               this.field3243[i_5] = (short)class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 41) {
             i_4 = class300_1.method5504();
@@ -50,8 +50,8 @@ public class class243 extends class175 {
             this.field3245 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3246[i_5] = (short)class300_1.method5496();
-               this.field3245[i_5] = (short)class300_1.method5496();
+               this.field3246[i_5] = (short)class300_1.readShortUBigEndian();
+               this.field3245[i_5] = (short)class300_1.readShortUBigEndian();
             }
          }
       }

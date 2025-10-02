@@ -40,7 +40,7 @@ public class class14 {
             string_4 = string_4 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
          } else {
             String string_5 = string_4 + "; Expires=";
-            long long_7 = class206.method3939() + 94608000000L;
+            long long_7 = class206.getAdjustedTimeMillis() + 94608000000L;
             class207.field2504.setTime(new Date(long_7));
             int i_9 = class207.field2504.get(7);
             int i_10 = class207.field2504.get(5);
@@ -64,10 +64,10 @@ public class class14 {
 
    static final void method159(String string_0, int i_1, int i_2) {
       class187 class187_3 = class235.method4265(class183.field2280, client.field880.field1313, 1775123545);
-      class187_3.field2333.method5655(class209.method3945(string_0, 319235587) + 1);
+      class187_3.field2333.writeByte2(class209.method3945(string_0, 319235587) + 1);
       class187_3.field2333.method5485(string_0);
-      class187_3.field2333.method5655(i_1);
-      client.field880.method2219(class187_3);
+      class187_3.field2333.writeByte2(i_1);
+      client.field880.copy(class187_3);
    }
 
 }

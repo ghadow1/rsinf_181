@@ -17,7 +17,7 @@ public class class162 implements class161 {
 
             for (int i_3 = 0; i_3 < i_2; i_3++) {
                if (class217.field2556[i_0][i_3] == null) {
-                  byte[] bytes_4 = class217.field2557.method4144(i_0, i_3, 429329480);
+                  byte[] bytes_4 = class217.field2557.method4144(i_0, i_3);
                   if (bytes_4 != null) {
                      class217.field2556[i_0][i_3] = new class217();
                      class217.field2556[i_0][i_3].field2688 = i_3 + (i_0 << 16);

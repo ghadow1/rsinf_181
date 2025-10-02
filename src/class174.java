@@ -8,7 +8,7 @@ public abstract class class174 {
 
    public abstract boolean vmethod3594(int var1, int var2, int var3, class172 var4, int var5);
 
-   static final void method3593(int i_0) {
+   static final void disconnectGame() {
       client.field880.method2233();
       class197.method3688();
       class244.field3254.method3323();
@@ -29,7 +29,7 @@ public abstract class class174 {
       class252.field3330.method3323();
       class23.method286(536238322);
       class250.field3311.method3323();
-      class213.method3989(1626401232);
+      class213.method3989();
       class63.method1134((byte) 5);
       class214.field2536.method3323();
       class207.method3940((byte) -50);
@@ -71,7 +71,7 @@ public abstract class class174 {
       }
 
       class75.field1080.method4886();
-      class96.method2265(10, (short) -5494);
+      class96.method2265(10);
    }
 
 }

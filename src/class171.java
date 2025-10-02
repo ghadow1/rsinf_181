@@ -224,7 +224,7 @@ public final class class171 extends class305 implements Runnable {
       if (class248_4 != null) {
          class248_3 = class248_4;
       } else {
-         byte[] bytes_9 = class248.field3298.method4144(14, i_0, -1339398578);
+         byte[] bytes_9 = class248.field3298.method4144(14, i_0);
          class248_4 = new class248();
          if (bytes_9 != null) {
             class248_4.method4485(new class300(bytes_9), -1509826882);
@@ -251,7 +251,7 @@ public final class class171 extends class305 implements Runnable {
       if (class239_2 != null) {
          return class239_2;
       } else {
-         byte[] bytes_3 = class239.field3200.method4144(5, i_0, 424769267);
+         byte[] bytes_3 = class239.field3200.method4144(5, i_0);
          class239_2 = new class239();
          if (bytes_3 != null) {
             class239_2.method4350(new class300(bytes_3), -1922259569);

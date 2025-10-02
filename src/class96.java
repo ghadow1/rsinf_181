@@ -6,13 +6,13 @@ public class class96 {
    static int field1327;
    static class260 field1324 = new class260();
 
-   static void method2267(class62 class62_0, int i_1, int i_2) {
+   static void method2267(class62 class62_0, int i_1) {
       Object[] arr_3 = class62_0.field581;
       class92 class92_4;
       int i_18;
       if (class187.method3627(class62_0.field584, 729695552)) {
          class18.field121 = (class41) arr_3[0];
-         class241 class241_5 = class222.method4118(class18.field121.field355, -673469339);
+         class241 class241_5 = class222.method4118(class18.field121.field355);
          class92_4 = class75.method1828(class62_0.field584, class241_5.field3213, class241_5.field3230, (short) 17061);
       } else {
          i_18 = ((Integer) arr_3[0]).intValue();
@@ -317,7 +317,7 @@ public class class96 {
       }
    }
 
-   static void method2265(int i_0, short s_1) {
+   static void method2265(int i_0) {
       if (i_0 != client.field662) {
          if (client.field662 == 0) {
             class27.field233.method885((byte) 11);
@@ -371,7 +371,7 @@ public class class96 {
                if (class236.field3176 != null) {
                   try {
                      class300 class300_2 = new class300(4);
-                     class300_2.method5655(2);
+                     class300_2.writeByte2(2);
                      class300_2.method5480(0);
                      class236.field3176.vmethod5829(class300_2.field3730, 0, 4, -1696227994);
                   } catch (IOException ioexception_5) {

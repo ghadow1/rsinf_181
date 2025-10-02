@@ -236,8 +236,8 @@ public class class333 {
 
                if (bool_9) {
                   class187 class187_12 = class235.method4265(class183.field2248, client.field880.field1313, 1775123545);
-                  class187_12.field2333.method5539(this.field4024.method3971(1080399232));
-                  client.field880.method2219(class187_12);
+                  class187_12.field2333.write32IntReverse(this.field4024.method3971(1080399232));
+                  client.field880.copy(class187_12);
                   this.field3982 = 0L;
                }
             }
@@ -251,7 +251,7 @@ public class class333 {
    final void method6305(int i_1, int i_2, boolean bool_3, int i_4) {
       this.field3990 = i_1;
       this.field3999 = i_2;
-      class206.method3939();
+      class206.getAdjustedTimeMillis();
       if (bool_3) {
          this.method6306((byte) 1);
       }
@@ -440,11 +440,11 @@ public class class333 {
       this.field4021.put(class17.field116, hashmap_5.get(field3980));
       this.field4028 = new class332(class233_1);
       int i_8 = this.field4029.method4160(class35.field308.field306, 1993215311);
-      int[] ints_9 = this.field4029.method4153(i_8, 1426425678);
+      int[] ints_9 = this.field4029.method4153(i_8);
       this.field3992 = new HashMap(ints_9.length);
 
       for (int i_10 = 0; i_10 < ints_9.length; i_10++) {
-         class300 class300_11 = new class300(this.field4029.method4144(i_8, ints_9[i_10], 1731639626));
+         class300 class300_11 = new class300(this.field4029.method4144(i_8, ints_9[i_10]));
          class26 class26_12 = new class26();
          class26_12.method344(class300_11, ints_9[i_10], (byte) 0);
          this.field3992.put(class26_12.method369(-229522962), class26_12);
@@ -544,7 +544,7 @@ public class class333 {
                }
 
                class34 class34_12 = (class34) iterator_11.next();
-               class241 class241_13 = class222.method4118(class34_12.vmethod597(1352739892), -673469339);
+               class241 class241_13 = class222.method4118(class34_12.vmethod597(1352739892));
                bool_14 = false;
 
                for (int i_15 = this.field4020.length - 1; i_15 >= 0; --i_15) {
@@ -580,7 +580,7 @@ public class class333 {
    }
 
    public void method6301(int i_1, int i_2, boolean bool_3, boolean bool_4, byte b_5) {
-      long long_6 = class206.method3939();
+      long long_6 = class206.getAdjustedTimeMillis();
       this.method6302(i_1, i_2, bool_4, long_6);
       if (!this.method6307(-1798677301) && (bool_4 || bool_3)) {
          if (bool_4) {
@@ -682,8 +682,8 @@ public class class333 {
       this.field4017 = 0;
 
       for (int i_3 = 0; i_3 < class314.field3846; i_3++) {
-         if (class222.method4118(i_3, -673469339) != null && class222.method4118(i_3, -673469339).field3230 == i_1) {
-            this.field4003.add(Integer.valueOf(class222.method4118(i_3, -673469339).field3213));
+         if (class222.method4118(i_3) != null && class222.method4118(i_3).field3230 == i_1) {
+            this.field4003.add(Integer.valueOf(class222.method4118(i_3).field3213));
          }
       }
 
@@ -735,8 +735,8 @@ public class class333 {
       }
 
       for (int i_4 = 0; i_4 < class314.field3846; i_4++) {
-         if (class222.method4118(i_4, -673469339) != null && class222.method4118(i_4, -673469339).field3230 == i_1) {
-            int i_5 = class222.method4118(i_4, -673469339).field3213;
+         if (class222.method4118(i_4) != null && class222.method4118(i_4).field3230 == i_1) {
+            int i_5 = class222.method4118(i_4).field3213;
             if (!bool_2) {
                this.field4016.add(Integer.valueOf(i_5));
             } else {

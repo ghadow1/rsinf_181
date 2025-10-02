@@ -89,7 +89,7 @@ public abstract class class21 {
 
    void method245(class233 class233_1, int i_2) {
       if (!this.method244(-613524686)) {
-         byte[] bytes_3 = class233_1.method4144(this.field161, this.field162, -1787309856);
+         byte[] bytes_3 = class233_1.method4144(this.field161, this.field162);
          if (bytes_3 != null) {
             this.vmethod679(new class300(bytes_3), -1951934103);
             this.field168 = true;

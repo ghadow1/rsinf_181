@@ -6,7 +6,7 @@ public class class203 extends class180 {
    class203(class300 class300_1) {
       class300_1.field3732 = class300_1.field3730.length - 3;
       int i_2 = class300_1.method5504();
-      int i_3 = class300_1.method5496();
+      int i_3 = class300_1.readShortUBigEndian();
       int i_4 = i_2 * 10 + 14;
       class300_1.field3732 = 0;
       int i_5 = 0;
@@ -196,52 +196,52 @@ public class class203 extends class180 {
                i_62 = i_64 & 0xf;
                if (i_64 == 7) {
                   if (bool_65) {
-                     class300_51.method5655(255);
+                     class300_51.writeByte2(255);
                   }
 
-                  class300_51.method5655(47);
-                  class300_51.method5655(0);
+                  class300_51.writeByte2(47);
+                  class300_51.writeByte2(0);
                   class300_51.method5489(class300_51.field3732 - i_61);
                   continue label235;
                }
 
                if (i_64 == 23) {
                   if (bool_65) {
-                     class300_51.method5655(255);
+                     class300_51.writeByte2(255);
                   }
 
-                  class300_51.method5655(81);
-                  class300_51.method5655(3);
-                  class300_51.method5655(class300_1.field3730[i_50++]);
-                  class300_51.method5655(class300_1.field3730[i_50++]);
-                  class300_51.method5655(class300_1.field3730[i_50++]);
+                  class300_51.writeByte2(81);
+                  class300_51.writeByte2(3);
+                  class300_51.writeByte2(class300_1.field3730[i_50++]);
+                  class300_51.writeByte2(class300_1.field3730[i_50++]);
+                  class300_51.writeByte2(class300_1.field3730[i_50++]);
                } else {
                   i_52 ^= i_64 >> 4;
                   if (i_62 == 0) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 144);
+                        class300_51.writeByte2(i_52 + 144);
                      }
 
                      i_53 += class300_1.field3730[i_37++];
                      i_54 += class300_1.field3730[i_38++];
-                     class300_51.method5655(i_53 & 0x7f);
-                     class300_51.method5655(i_54 & 0x7f);
+                     class300_51.writeByte2(i_53 & 0x7f);
+                     class300_51.writeByte2(i_54 & 0x7f);
                   } else if (i_62 == 1) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 128);
+                        class300_51.writeByte2(i_52 + 128);
                      }
 
                      i_53 += class300_1.field3730[i_37++];
                      i_55 += class300_1.field3730[i_40++];
-                     class300_51.method5655(i_53 & 0x7f);
-                     class300_51.method5655(i_55 & 0x7f);
+                     class300_51.writeByte2(i_53 & 0x7f);
+                     class300_51.writeByte2(i_55 & 0x7f);
                   } else if (i_62 == 2) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 176);
+                        class300_51.writeByte2(i_52 + 176);
                      }
 
                      i_28 = i_28 + class300_1.field3730[i_15++] & 0x7f;
-                     class300_51.method5655(i_28);
+                     class300_51.writeByte2(i_28);
                      byte b_66;
                      if (i_28 != 0 && i_28 != 32) {
                         if (i_28 == 1) {
@@ -275,42 +275,42 @@ public class class203 extends class180 {
 
                      int i_67 = b_66 + ints_59[i_28];
                      ints_59[i_28] = i_67;
-                     class300_51.method5655(i_67 & 0x7f);
+                     class300_51.writeByte2(i_67 & 0x7f);
                   } else if (i_62 == 3) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 224);
+                        class300_51.writeByte2(i_52 + 224);
                      }
 
                      i_56 += class300_1.field3730[i_45++];
                      i_56 += class300_1.field3730[i_33++] << 7;
-                     class300_51.method5655(i_56 & 0x7f);
-                     class300_51.method5655(i_56 >> 7 & 0x7f);
+                     class300_51.writeByte2(i_56 & 0x7f);
+                     class300_51.writeByte2(i_56 >> 7 & 0x7f);
                   } else if (i_62 == 4) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 208);
+                        class300_51.writeByte2(i_52 + 208);
                      }
 
                      i_57 += class300_1.field3730[i_32++];
-                     class300_51.method5655(i_57 & 0x7f);
+                     class300_51.writeByte2(i_57 & 0x7f);
                   } else if (i_62 == 5) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 160);
+                        class300_51.writeByte2(i_52 + 160);
                      }
 
                      i_53 += class300_1.field3730[i_37++];
                      i_58 += class300_1.field3730[i_31++];
-                     class300_51.method5655(i_53 & 0x7f);
-                     class300_51.method5655(i_58 & 0x7f);
+                     class300_51.writeByte2(i_53 & 0x7f);
+                     class300_51.writeByte2(i_58 & 0x7f);
                   } else {
                      if (i_62 != 6) {
                         throw new RuntimeException();
                      }
 
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 192);
+                        class300_51.writeByte2(i_52 + 192);
                      }
 
-                     class300_51.method5655(class300_1.field3730[i_44++]);
+                     class300_51.writeByte2(class300_1.field3730[i_44++]);
                   }
                }
             }
@@ -404,7 +404,7 @@ public class class203 extends class180 {
    }
 
    public static class203 method3917(class233 class233_0, int i_1, int i_2) {
-      byte[] bytes_3 = class233_0.method4144(i_1, i_2, -1990204311);
+      byte[] bytes_3 = class233_0.method4144(i_1, i_2);
       return bytes_3 == null ? null : new class203(new class300(bytes_3));
    }
 

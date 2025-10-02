@@ -67,29 +67,29 @@ public class class331 extends class180 {
    }
 
    public void method6281(class300 class300_1, int i_2) {
-      class300_1.method5655(8);
-      class300_1.method5655(this.field3938);
-      class300_1.method5655(this.field3939 ? 1 : 0);
+      class300_1.writeByte2(8);
+      class300_1.writeByte2(this.field3938);
+      class300_1.writeByte2(this.field3939 ? 1 : 0);
       class300_1.method5479(this.field3953);
-      class300_1.method5655(this.field3941);
-      class300_1.method5655(this.field3942);
-      class300_1.method5655(this.field3961);
-      class300_1.method5655(this.field3944);
-      class300_1.method5655(this.field3945 ? 1 : 0);
+      class300_1.writeByte2(this.field3941);
+      class300_1.writeByte2(this.field3942);
+      class300_1.writeByte2(this.field3961);
+      class300_1.writeByte2(this.field3944);
+      class300_1.writeByte2(this.field3945 ? 1 : 0);
       class300_1.method5479(this.field3962);
-      class300_1.method5655(this.field3943);
+      class300_1.writeByte2(this.field3943);
       class300_1.method5480(this.field3948);
       class300_1.method5479(this.field3949);
       class300_1.method5486(this.field3934);
       class300_1.method5486(this.field3951);
       class300_1.method5486(this.field3952);
       class300_1.method5486(this.field3946);
-      class300_1.method5655(this.field3955);
+      class300_1.writeByte2(this.field3955);
       class300_1.method5479(this.field3936);
       class300_1.method5486(this.field3947);
       class300_1.method5486(this.field3959);
-      class300_1.method5655(this.field3956);
-      class300_1.method5655(this.field3957);
+      class300_1.writeByte2(this.field3956);
+      class300_1.writeByte2(this.field3957);
 
       for (int i_3 = 0; i_3 < this.field3960.length; i_3++) {
          class300_1.method5481(this.field3960[i_3]);

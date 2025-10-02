@@ -7,10 +7,10 @@ public class class15 extends class21 {
       } else {
          super.field159 = class300_1.method5504();
          super.field160 = class300_1.method5504();
-         super.field167 = class300_1.method5496();
-         super.field156 = class300_1.method5496();
-         super.field157 = class300_1.method5496();
-         super.field158 = class300_1.method5496();
+         super.field167 = class300_1.readShortUBigEndian();
+         super.field156 = class300_1.readShortUBigEndian();
+         super.field157 = class300_1.readShortUBigEndian();
+         super.field158 = class300_1.readShortUBigEndian();
          super.field161 = class300_1.method5511();
          super.field162 = class300_1.method5511();
       }

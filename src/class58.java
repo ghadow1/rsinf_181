@@ -7,7 +7,7 @@ public class class58 {
 
    class58(class235 class235_1, String string_2) {
       this.field547 = class235_1;
-      this.field539 = class235_1.method4232(-123392820);
+      this.field539 = class235_1.method4232();
    }
 
    boolean method1095(byte b_1) {
@@ -176,7 +176,7 @@ public class class58 {
 
    static class217 method1099(class217 class217_0, int i_1) {
       class217 class217_3 = class217_0;
-      int i_4 = class32.method545(class268.method4987(class217_0, 1333388777), -1017590998);
+      int i_4 = class32.method545(class268.method4987(class217_0), -1017590998);
       class217 class217_2;
       if (i_4 == 0) {
          class217_2 = null;

@@ -7,10 +7,10 @@ public class class138 extends class175 {
       class261 class261_5 = new class261();
       int i_6 = class233_1.method4154(i_3, -1771537388);
       this.field1893 = new class125[i_6];
-      int[] ints_7 = class233_1.method4153(i_3, 1575027413);
+      int[] ints_7 = class233_1.method4153(i_3);
 
       for (int i_8 = 0; i_8 < ints_7.length; i_8++) {
-         byte[] bytes_9 = class233_1.method4144(i_3, ints_7[i_8], -863855546);
+         byte[] bytes_9 = class233_1.method4144(i_3, ints_7[i_8]);
          class132 class132_10 = null;
          int i_11 = (bytes_9[0] & 0xff) << 8 | bytes_9[1] & 0xff;
 
@@ -24,9 +24,9 @@ public class class138 extends class175 {
          if (class132_10 == null) {
             byte[] bytes_13;
             if (bool_4) {
-               bytes_13 = class233_2.method4150(0, i_11, -377229485);
+               bytes_13 = class233_2.method4150(0, i_11);
             } else {
-               bytes_13 = class233_2.method4150(i_11, 0, -377229485);
+               bytes_13 = class233_2.method4150(i_11, 0);
             }
 
             class132_10 = new class132(i_11, bytes_13);

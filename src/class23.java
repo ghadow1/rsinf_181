@@ -30,8 +30,8 @@ public class class23 extends class34 {
 
    void method289(byte b_1) {
       this.field184 = class128.method2970(this.field195, (short) 4095).method4595((byte) 125).field3378;
-      this.field191 = this.field183.method451(class222.method4118(this.field184, -673469339), 1686665284);
-      class241 class241_2 = class222.method4118(this.vmethod597(-1800055467), -673469339);
+      this.field191 = this.field183.method451(class222.method4118(this.field184), 1686665284);
+      class241 class241_2 = class222.method4118(this.vmethod597(-1800055467));
       class325 class325_3 = class241_2.method4379(false, 1274763949);
       if (class325_3 != null) {
          this.field189 = class325_3.field3899;
@@ -53,11 +53,11 @@ public class class23 extends class34 {
 
    static void method296(int i_0, byte b_1) {
       if (i_0 == -3) {
-         class268.method4988("Connection timed out.", "Please try using a different world.", "", 1547798935);
+         class268.loginResponseMessages("Connection timed out.", "Please try using a different world.", "");
       } else if (i_0 == -2) {
-         class268.method4988("", "Error connecting to server.", "", 1414327239);
+         class268.loginResponseMessages("", "Error connecting to server.", "");
       } else if (i_0 == -1) {
-         class268.method4988("No response from server.", "Please try using a different world.", "", 2110028671);
+         class268.loginResponseMessages("No response from server.", "Please try using a different world.", "");
       } else if (i_0 == 3) {
          class85.field1209 = 3;
          class85.field1212 = 1;
@@ -65,78 +65,78 @@ public class class23 extends class34 {
          class63.method1137(0, 1823729833);
       } else if (i_0 == 5) {
          class85.field1212 = 2;
-         class268.method4988("Your account has not logged out from its last", "session or the server is too busy right now.", "Please try again in a few minutes.", 1293771561);
+         class268.loginResponseMessages("Your account has not logged out from its last", "session or the server is too busy right now.", "Please try again in a few minutes.");
       } else if (i_0 == 68 || !client.field658 && i_0 == 6) {
-         class268.method4988("RuneScape has been updated!", "Please reload this page.", "", 1502985849);
+         class268.loginResponseMessages("RuneScape has been updated!", "Please reload this page.", "");
       } else if (i_0 == 7) {
-         class268.method4988("This world is full.", "Please use a different world.", "", 1979089170);
+         class268.loginResponseMessages("This world is full.", "Please use a different world.", "");
       } else if (i_0 == 8) {
-         class268.method4988("Unable to connect.", "Login server offline.", "", 1741578340);
+         class268.loginResponseMessages("Unable to connect.", "Login server offline.", "");
       } else if (i_0 == 9) {
-         class268.method4988("Login limit exceeded.", "Too many connections from your address.", "", 1852116173);
+         class268.loginResponseMessages("Login limit exceeded.", "Too many connections from your address.", "");
       } else if (i_0 == 10) {
-         class268.method4988("Unable to connect.", "Bad session id.", "", 1694789647);
+         class268.loginResponseMessages("Unable to connect.", "Bad session id.", "");
       } else if (i_0 == 11) {
-         class268.method4988("We suspect someone knows your password.", "Press \'change your password\' on front page.", "", 1294820154);
+         class268.loginResponseMessages("We suspect someone knows your password.", "Press \'change your password\' on front page.", "");
       } else if (i_0 == 12) {
-         class268.method4988("You need a members account to login to this world.", "Please subscribe, or use a different world.", "", 1621746055);
+         class268.loginResponseMessages("You need a members account to login to this world.", "Please subscribe, or use a different world.", "");
       } else if (i_0 == 13) {
-         class268.method4988("Could not complete login.", "Please try using a different world.", "", 1428329280);
+         class268.loginResponseMessages("Could not complete login.", "Please try using a different world.", "");
       } else if (i_0 == 14) {
-         class268.method4988("The server is being updated.", "Please wait 1 minute and try again.", "", 1493252797);
+         class268.loginResponseMessages("The server is being updated.", "Please wait 1 minute and try again.", "");
       } else if (i_0 == 16) {
-         class268.method4988("Too many login attempts.", "Please wait a few minutes before trying again.", "", 1795532174);
+         class268.loginResponseMessages("Too many login attempts.", "Please wait a few minutes before trying again.", "");
       } else if (i_0 == 17) {
-         class268.method4988("You are standing in a members-only area.", "To play on this world move to a free area first", "", 2053194059);
+         class268.loginResponseMessages("You are standing in a members-only area.", "To play on this world move to a free area first", "");
       } else if (i_0 == 18) {
          class63.method1137(1, 1736065240);
       } else if (i_0 == 19) {
-         class268.method4988("This world is running a closed Beta.", "Sorry invited players only.", "Please use a different world.", 1276810351);
+         class268.loginResponseMessages("This world is running a closed Beta.", "Sorry invited players only.", "Please use a different world.");
       } else if (i_0 == 20) {
-         class268.method4988("Invalid loginserver requested.", "Please try using a different world.", "", 1955506524);
+         class268.loginResponseMessages("Invalid loginserver requested.", "Please try using a different world.", "");
       } else if (i_0 == 22) {
-         class268.method4988("Malformed login packet.", "Please try again.", "", 1453521599);
+         class268.loginResponseMessages("Malformed login packet.", "Please try again.", "");
       } else if (i_0 == 23) {
-         class268.method4988("No reply from loginserver.", "Please wait 1 minute and try again.", "", 1604762756);
+         class268.loginResponseMessages("No reply from loginserver.", "Please wait 1 minute and try again.", "");
       } else if (i_0 == 24) {
-         class268.method4988("Error loading your profile.", "Please contact customer support.", "", 1956007739);
+         class268.loginResponseMessages("Error loading your profile.", "Please contact customer support.", "");
       } else if (i_0 == 25) {
-         class268.method4988("Unexpected loginserver response.", "Please try using a different world.", "", 1612374516);
+         class268.loginResponseMessages("Unexpected loginserver response.", "Please try using a different world.", "");
       } else if (i_0 == 26) {
-         class268.method4988("This computers address has been blocked", "as it was used to break our rules.", "", 1953966249);
+         class268.loginResponseMessages("This computers address has been blocked", "as it was used to break our rules.", "");
       } else if (i_0 == 27) {
-         class268.method4988("", "Service unavailable.", "", 1815496596);
+         class268.loginResponseMessages("", "Service unavailable.", "");
       } else if (i_0 == 31) {
-         class268.method4988("Your account must have a displayname set", "in order to play the game.  Please set it", "via the website, or the main game.", 1902684822);
+         class268.loginResponseMessages("Your account must have a displayname set", "in order to play the game.  Please set it", "via the website, or the main game.");
       } else if (i_0 == 32) {
-         class268.method4988("Your attempt to log into your account was", "unsuccessful.  Don\'t worry, you can sort", "this out by visiting the billing system.", 1563367525);
+         class268.loginResponseMessages("Your attempt to log into your account was", "unsuccessful.  Don\'t worry, you can sort", "this out by visiting the billing system.");
       } else if (i_0 == 37) {
-         class268.method4988("Your account is currently inaccessible.", "Please try again in a few minutes.", "", 1575764173);
+         class268.loginResponseMessages("Your account is currently inaccessible.", "Please try again in a few minutes.", "");
       } else if (i_0 == 38) {
-         class268.method4988("You need to vote to play!", "Visit runescape.com and vote,", "and then come back here!", 1507432819);
+         class268.loginResponseMessages("You need to vote to play!", "Visit runescape.com and vote,", "and then come back here!");
       } else if (i_0 == 55) {
          class85.field1209 = 8;
       } else {
          if (i_0 == 56) {
-            class268.method4988("Enter the 6-digit code generated by your", "authenticator app.", "", 1609019916);
-            class96.method2265(11, (short) -7568);
+            class268.loginResponseMessages("Enter the 6-digit code generated by your", "authenticator app.", "");
+            class96.method2265(11);
             return;
          }
 
          if (i_0 == 57) {
-            class268.method4988("The code you entered was incorrect.", "Please try again.", "", 1501596951);
-            class96.method2265(11, (short) -22900);
+            class268.loginResponseMessages("The code you entered was incorrect.", "Please try again.", "");
+            class96.method2265(11);
             return;
          }
 
          if (i_0 == 61) {
             class85.field1209 = 7;
          } else {
-            class268.method4988("Unexpected server response", "Please try using a different world.", "", 2087428447);
+            class268.loginResponseMessages("Unexpected server response", "Please try using a different world.", "");
          }
       }
 
-      class96.method2265(10, (short) -28845);
+      class96.method2265(10);
    }
 
    public static void method286(int i_0) {

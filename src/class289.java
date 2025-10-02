@@ -11,7 +11,7 @@ public final class class289 {
    }
 
    public static class324[] method5281(class233 class233_0, int i_1, int i_2, int i_3) {
-      if (!class284.method5220(class233_0, i_1, i_2, (byte) 10)) {
+      if (!class284.method5220(class233_0, i_1, i_2)) {
          return null;
       } else {
          class324[] arr_5 = new class324[class326.field3911];

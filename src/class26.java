@@ -21,10 +21,10 @@ public class class26 {
 
    public void method344(class300 class300_1, int i_2, byte b_3) {
       this.field221 = i_2;
-      this.field214 = class300_1.method5503();
-      this.field219 = class300_1.method5503();
-      this.field218 = new class213(class300_1.method5499());
-      this.field216 = class300_1.method5499();
+      this.field214 = class300_1.readNullTermString();
+      this.field219 = class300_1.readNullTermString();
+      this.field218 = new class213(class300_1.readIntMedEndian());
+      this.field216 = class300_1.readIntMedEndian();
       class300_1.method5504();
       this.field215 = class300_1.method5504() == 1;
       this.field228 = class300_1.method5504();
@@ -205,7 +205,7 @@ public class class26 {
       if (class254_2 != null) {
          return class254_2;
       } else {
-         byte[] bytes_3 = class91.field1276.method4144(10, i_0, -490966166);
+         byte[] bytes_3 = class91.field1276.method4144(10, i_0);
          class254_2 = new class254();
          class254_2.field3410 = i_0;
          if (bytes_3 != null) {
@@ -256,7 +256,7 @@ public class class26 {
    }
 
    public static boolean method365(int i_0) {
-      long long_1 = class206.method3939();
+      long long_1 = class206.getAdjustedTimeMillis();
       int i_3 = (int)(long_1 - class236.field3169);
       class236.field3169 = long_1;
       if (i_3 > 200) {
@@ -278,7 +278,7 @@ public class class26 {
                while (class236.field3168 < 200 && class236.field3166 > 0) {
                   class232_4 = (class232) class236.field3165.method5950();
                   class300_5 = new class300(4);
-                  class300_5.method5655(1);
+                  class300_5.writeByte2(1);
                   class300_5.method5480((int)class232_4.field2113);
                   class236.field3176.vmethod5829(class300_5.field3730, 0, 4, -1696227994);
                   class236.field3167.method5951(class232_4, class232_4.field2113);
@@ -289,7 +289,7 @@ public class class26 {
                while (class236.field3164 < 200 && class236.field3171 > 0) {
                   class232_4 = (class232) class236.field3170.method4792();
                   class300_5 = new class300(4);
-                  class300_5.method5655(0);
+                  class300_5.writeByte2(0);
                   class300_5.method5480((int)class232_4.field2113);
                   class236.field3176.vmethod5829(class300_5.field3730, 0, 4, -1696227994);
                   class232_4.method3597();
@@ -341,9 +341,9 @@ public class class26 {
                      if (class226.field3071 == null) {
                         class236.field3174.field3732 = 0;
                         i_8 = class236.field3174.method5504();
-                        i_9 = class236.field3174.method5496();
+                        i_9 = class236.field3174.readShortUBigEndian();
                         int i_10 = class236.field3174.method5504();
-                        i_11 = class236.field3174.method5499();
+                        i_11 = class236.field3174.readIntMedEndian();
                         long long_12 = (long)(i_9 + (i_8 << 16));
                         class232 class232_14 = (class232) class236.field3167.method5952(long_12);
                         class215.field2545 = true;
@@ -359,7 +359,7 @@ public class class26 {
                         int i_15 = i_10 == 0 ? 5 : 9;
                         class226.field3071 = class232_14;
                         class240.field3209 = new class300(i_15 + i_11 + class226.field3071.field3122);
-                        class240.field3209.method5655(i_10);
+                        class240.field3209.writeByte2(i_10);
                         class240.field3209.method5481(i_11);
                         class236.field3175 = 8;
                         class236.field3174.field3732 = 0;
@@ -399,8 +399,8 @@ public class class26 {
                               class235 class235_18 = class236.field3173[i_9];
                               if (class235_18 != null) {
                                  class322.field3882.field3732 = i_9 * 8 + 5;
-                                 i_11 = class322.field3882.method5499();
-                                 int i_19 = class322.field3882.method5499();
+                                 i_11 = class322.field3882.readIntMedEndian();
+                                 int i_19 = class322.field3882.readIntMedEndian();
                                  class235_18.method4262(i_11, i_19, 1381214916);
                               }
                            }
@@ -481,9 +481,9 @@ public class class26 {
          int i_6 = class300_0.method5567();
          Object obj_7;
          if (bool_8) {
-            obj_7 = new class176(class300_0.method5503());
+            obj_7 = new class176(class300_0.readNullTermString());
          } else {
-            obj_7 = new class179(class300_0.method5499());
+            obj_7 = new class179(class300_0.readIntMedEndian());
          }
 
          class316_1.method5938((class180) obj_7, (long)i_6);

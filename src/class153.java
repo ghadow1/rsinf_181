@@ -26,7 +26,7 @@ public class class153 extends class275 {
       if (!bool_2 || i_0 != class48.field418 || class128.field1747 != i_1) {
          class48.field418 = i_0;
          class128.field1747 = i_1;
-         class96.method2265(25, (short) -26833);
+         class96.method2265(25);
          class281.method5180("Loading - please wait.", true, -2090803826);
          int i_4 = class196.field2389;
          int i_5 = class1.field1;

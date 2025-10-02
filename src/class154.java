@@ -36,7 +36,7 @@ public class class154 extends class275 {
    static void method3406(short s_0) {
       class85.field1180 = class85.field1180.trim();
       if (class85.field1180.length() == 0) {
-         class268.method4988("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.", 1513070190);
+         class268.loginResponseMessages("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.");
       } else {
          long long_2;
          try {
@@ -80,7 +80,7 @@ public class class154 extends class275 {
             class300 class300_27 = new class300(128);
             class300 class300_10 = new class300(128);
             int[] ints_11 = new int[] {random_37.nextInt(), random_37.nextInt(), (int)(long_2 >> 32), (int)long_2};
-            class300_27.method5655(10);
+            class300_27.writeByte2(10);
 
             int i_12;
             for (i_12 = 0; i_12 < 4; i_12++) {
@@ -97,7 +97,7 @@ public class class154 extends class275 {
             }
 
             class300_27.method5517(class80.field1140, class80.field1141);
-            class300_10.method5655(10);
+            class300_10.writeByte2(10);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
                class300_10.method5481(random_37.nextInt());
@@ -141,12 +141,12 @@ public class class154 extends class275 {
             class300 class300_38 = new class300(i_12);
             class300_38.method5485(string_36);
             class300_38.field3732 = i_12;
-            class300_38.method5513(ints_11, -1108447488);
+            class300_38.method5513(ints_11);
             class300 class300_28 = new class300(class300_10.field3732 + class300_27.field3732 + class300_38.field3732 + 5);
-            class300_28.method5655(2);
-            class300_28.method5655(class300_27.field3732);
+            class300_28.writeByte2(2);
+            class300_28.writeByte2(class300_27.field3732);
             class300_28.method5488(class300_27.field3730, 0, class300_27.field3732);
-            class300_28.method5655(class300_10.field3732);
+            class300_28.writeByte2(class300_10.field3732);
             class300_28.method5488(class300_10.field3730, 0, class300_10.field3732);
             class300_28.method5479(class300_38.field3732);
             class300_28.method5488(class300_38.field3730, 0, class300_38.field3732);
@@ -215,30 +215,30 @@ public class class154 extends class275 {
 
          switch(b_1) {
          case 2:
-            class268.method4988(class224.field2942, class224.field3027, class224.field2768, 1770098146);
+            class268.loginResponseMessages(class224.field2942, class224.field3027, class224.field2768);
             class85.field1209 = 6;
             break;
          case 3:
-            class268.method4988("", "Error connecting to server.", "", 1583382407);
+            class268.loginResponseMessages("", "Error connecting to server.", "");
             break;
          case 4:
-            class268.method4988("The part of the website you are trying", "to connect to is offline at the moment.", "Please try again later.", 1419246291);
+            class268.loginResponseMessages("The part of the website you are trying", "to connect to is offline at the moment.", "Please try again later.");
             break;
          case 5:
-            class268.method4988("Sorry, there was an error trying to", "log you in to this part of the website.", "Please try again later.", 1754024429);
+            class268.loginResponseMessages("Sorry, there was an error trying to", "log you in to this part of the website.", "Please try again later.");
             break;
          case 6:
-            class268.method4988("", "Error connecting to server.", "", 1577796324);
+            class268.loginResponseMessages("", "Error connecting to server.", "");
             break;
          case 7:
-            class268.method4988("You must enter a valid login to proceed. For accounts", "created after 24th November 2010, please use your", "email address. Otherwise please use your username.", 1687216376);
+            class268.loginResponseMessages("You must enter a valid login to proceed. For accounts", "created after 24th November 2010, please use your", "email address. Otherwise please use your username.");
          }
 
       }
    }
 
    static String method3407(class217 class217_0, int i_1, short s_2) {
-      int i_4 = class268.method4987(class217_0, 1691679814);
+      int i_4 = class268.method4987(class217_0);
       boolean bool_3 = (i_4 >> i_1 + 1 & 0x1) != 0;
       return !bool_3 && class217_0.field2656 == null ? null : (class217_0.field2644 != null && class217_0.field2644.length > i_1 && class217_0.field2644[i_1] != null && class217_0.field2644[i_1].trim().length() != 0 ? class217_0.field2644[i_1] : null);
    }

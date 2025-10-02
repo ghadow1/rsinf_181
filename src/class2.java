@@ -37,7 +37,7 @@ final class class2 implements class0 {
    static final void method26(class217[] arr_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, short s_8) {
       for (int i_9 = 0; i_9 < arr_0.length; i_9++) {
          class217 class217_10 = arr_0[i_9];
-         if (class217_10 != null && class217_10.field2583 == i_1 && (!class217_10.field2563 || class217_10.field2566 == 0 || class217_10.field2551 || class268.method4987(class217_10, 1856805483) != 0 || class217_10 == client.field829 || class217_10.field2568 == 1338)) {
+         if (class217_10 != null && class217_10.field2583 == i_1 && (!class217_10.field2563 || class217_10.field2566 == 0 || class217_10.field2551 || class268.method4987(class217_10) != 0 || class217_10 == client.field829 || class217_10.field2568 == 1338)) {
             if (class217_10.field2563) {
                if (class62.method1133(class217_10, 2063123103)) {
                   continue;
@@ -208,7 +208,7 @@ final class class2 implements class0 {
                               class91.method2163(i_21 + 1, class217_10.field2688, class217_10.field2565, class217_10.field2690, "", (byte) 120);
                            } else if (i_21 == 10) {
                               class31.method542(613868218);
-                              class87.method2053(class217_10.field2688, class217_10.field2565, class78.method1957(class268.method4987(class217_10, 1985168728), (byte) 4), class217_10.field2690, 96373324);
+                              class87.method2053(class217_10.field2688, class217_10.field2565, class78.method1957(class268.method4987(class217_10), (byte) 4), class217_10.field2690, 96373324);
                               client.field813 = class292.method5318(class217_10, (byte) 44);
                               if (client.field813 == null) {
                                  client.field813 = "null";
@@ -268,7 +268,7 @@ final class class2 implements class0 {
                         class136.field1875.method6301(i_18, i_19, bool_34 & bool_35, bool_34 & bool_22, (byte) 24);
                      }
 
-                     if (client.field828 != null && class217_10 != client.field828 && bool_34 && class23.method295(class268.method4987(class217_10, 1437922511), 1515733926)) {
+                     if (client.field828 != null && class217_10 != client.field828 && bool_34 && class23.method295(class268.method4987(class217_10), 1515733926)) {
                         client.field832 = class217_10;
                      }
 

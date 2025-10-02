@@ -19,7 +19,7 @@ public final class class131 {
    }
 
    public static class325[] method3062(class233 class233_0, int i_1, int i_2, int i_3) {
-      if (!class284.method5220(class233_0, i_1, i_2, (byte) -6)) {
+      if (!class284.method5220(class233_0, i_1, i_2)) {
          return null;
       } else {
          class325[] arr_5 = new class325[class326.field3911];

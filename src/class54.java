@@ -46,7 +46,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
          field480 = 0;
          field490 = mouseevent_1.getX();
          field491 = mouseevent_1.getY();
-         field500 = class206.method3939();
+         field500 = class206.getAdjustedTimeMillis();
          field489 = this.method1007(mouseevent_1, -1900631244);
          if (field489 != 0) {
             field481 = field489;
@@ -125,7 +125,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
 
    static final void method1037(class299 class299_0, int i_1) {
       int i_2 = 0;
-      class299_0.method5438(1540541733);
+      class299_0.method5438();
 
       int i_3;
       int i_4;
@@ -137,7 +137,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                --i_2;
                class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
             } else {
-               i_5 = class299_0.method5445(1, -1730782565);
+               i_5 = class299_0.method5445(1);
                if (i_5 == 0) {
                   i_2 = class71.method1686(class299_0, (byte) 80);
                   class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
@@ -148,11 +148,11 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
          }
       }
 
-      class299_0.method5446((byte) -119);
+      class299_0.method5446();
       if (i_2 != 0) {
          throw new RuntimeException();
       } else {
-         class299_0.method5438(1934464615);
+         class299_0.method5438();
 
          for (i_3 = 0; i_3 < class89.field1255; i_3++) {
             i_4 = class89.field1257[i_3];
@@ -161,7 +161,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                   --i_2;
                   class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                } else {
-                  i_5 = class299_0.method5445(1, -1734437584);
+                  i_5 = class299_0.method5445(1);
                   if (i_5 == 0) {
                      i_2 = class71.method1686(class299_0, (byte) 6);
                      class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
@@ -172,11 +172,11 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
             }
          }
 
-         class299_0.method5446((byte) -58);
+         class299_0.method5446();
          if (i_2 != 0) {
             throw new RuntimeException();
          } else {
-            class299_0.method5438(1206908309);
+            class299_0.method5438();
 
             for (i_3 = 0; i_3 < class89.field1251; i_3++) {
                i_4 = class89.field1258[i_3];
@@ -185,7 +185,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                      --i_2;
                      class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                   } else {
-                     i_5 = class299_0.method5445(1, -1482444063);
+                     i_5 = class299_0.method5445(1);
                      if (i_5 == 0) {
                         i_2 = class71.method1686(class299_0, (byte) 17);
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
@@ -196,11 +196,11 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                }
             }
 
-            class299_0.method5446((byte) -91);
+            class299_0.method5446();
             if (i_2 != 0) {
                throw new RuntimeException();
             } else {
-               class299_0.method5438(1684556711);
+               class299_0.method5438();
 
                for (i_3 = 0; i_3 < class89.field1251; i_3++) {
                   i_4 = class89.field1258[i_3];
@@ -209,7 +209,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                         --i_2;
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                      } else {
-                        i_5 = class299_0.method5445(1, -1545816612);
+                        i_5 = class299_0.method5445(1);
                         if (i_5 == 0) {
                            i_2 = class71.method1686(class299_0, (byte) 103);
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
@@ -220,7 +220,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                   }
                }
 
-               class299_0.method5446((byte) -117);
+               class299_0.method5446();
                if (i_2 != 0) {
                   throw new RuntimeException();
                } else {
@@ -245,7 +245,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
 
    static void method1039(byte b_0) {
       class85.field1209 = 24;
-      class268.method4988("The game servers are currently being updated.", "Please wait a few minutes and try again.", "", 1352350048);
+      class268.loginResponseMessages("The game servers are currently being updated.", "Please wait a few minutes and try again.", "");
    }
 
    static final int method1021(int i_0, int i_1, int i_2) {

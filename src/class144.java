@@ -139,8 +139,8 @@ public class class144 {
       class128.field1756 = class233_1;
       class216.field2547 = class233_2;
       class206.field2498 = class233_3;
-      class217.field2556 = new class217[class217.field2557.method4232(-953283657)][];
-      class128.field1755 = new boolean[class217.field2557.method4232(-1883624136)];
+      class217.field2556 = new class217[class217.field2557.method4232()][];
+      class128.field1755 = new boolean[class217.field2557.method4232()];
    }
 
 }

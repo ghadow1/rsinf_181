@@ -10,7 +10,7 @@ final class class5 implements Comparator {
       if (class240_2 != null) {
          return class240_2;
       } else {
-         byte[] bytes_3 = class240.field3204.method4144(16, i_0, -1662747817);
+         byte[] bytes_3 = class240.field3204.method4144(16, i_0);
          class240_2 = new class240();
          if (bytes_3 != null) {
             class240_2.method4353(new class300(bytes_3), -927981442);

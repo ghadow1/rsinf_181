@@ -65,7 +65,7 @@ final class class1 implements class0 {
             int i_40;
             if (class185.field2316 == class185_0) {
                i_3 = class299_2.method5525() * 4;
-               i_4 = class299_2.method5496();
+               i_4 = class299_2.readShortUBigEndian();
                i_5 = class299_2.method5518();
                i_6 = class299_2.method5525() * 4;
                i_7 = class299_2.method5535();
@@ -156,7 +156,7 @@ final class class1 implements class0 {
                   i_4 = class299_2.readShort();
                   byte b_39 = class299_2.method5527();
                   i_6 = class299_2.method5518();
-                  i_7 = class299_2.method5496();
+                  i_7 = class299_2.readShortUBigEndian();
                   i_8 = class299_2.readByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
@@ -238,7 +238,7 @@ final class class1 implements class0 {
                   }
 
                } else if (class185.field2317 == class185_0) {
-                  i_3 = class299_2.method5496();
+                  i_3 = class299_2.readShortUBigEndian();
                   i_4 = class299_2.readByte();
                   i_5 = class299_2.method5518();
                   i_6 = class299_2.method5504();
@@ -259,7 +259,7 @@ final class class1 implements class0 {
                   i_7 = class299_2.method5524();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;
-                  i_10 = class299_2.method5496();
+                  i_10 = class299_2.readShortUBigEndian();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
                         class136 class136_37 = class5.field22.method3088(class42.field372, i_8, i_9);
@@ -323,7 +323,7 @@ final class class1 implements class0 {
    }
 
    public Object vmethod42(class300 class300_1, int i_2) {
-      return Integer.valueOf(class300_1.method5499());
+      return Integer.valueOf(class300_1.readIntMedEndian());
    }
 
    static boolean method5(int i_0, int i_1) {

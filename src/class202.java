@@ -145,7 +145,7 @@ public class class202 extends class115 {
       return 0;
    }
 
-   static void method3911(class71 class71_0, byte b_1) {
+   static void method3911(class71 class71_0) {
       if (class71_0.method1680((byte) 0) != client.field655) {
          client.field655 = class71_0.method1680((byte) 0);
          boolean bool_2 = class71_0.method1680((byte) 0);
@@ -165,7 +165,7 @@ public class class202 extends class115 {
       class90.field1266 = class190.field2358;
    }
 
-   static final void method3912(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
+   static final void method3912(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5) {
       int i_7 = i_2 - i_0;
       int i_8 = i_3 - i_1;
       int i_9 = i_7 >= 0 ? i_7 : -i_7;

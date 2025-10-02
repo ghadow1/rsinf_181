@@ -7,7 +7,7 @@ public class class239 extends class175 {
 
    void method4340(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 2) {
-         this.field3201 = class300_1.method5496();
+         this.field3201 = class300_1.readShortUBigEndian();
       }
 
    }

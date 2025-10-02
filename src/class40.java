@@ -612,11 +612,11 @@ public class class40 {
                   class294.field3697 = class217_0;
                   if (class217_0.field2560[i_14] > 0) {
                      class254 class254_9 = class26.method404(class217_0.field2560[i_14] - 1);
-                     if (client.field900 == 1 && class92.method2185(class268.method4987(class217_0, 2033009534), (byte) -58)) {
+                     if (client.field900 == 1 && class92.method2185(class268.method4987(class217_0))) {
                         if (class217_0.field2688 != class63.field594 || i_14 != class23.field182) {
                            class188.method3644("Use", client.field738 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 31, class254_9.field3410, i_14, class217_0.field2688, -1926139785);
                         }
-                     } else if (client.field810 && class92.method2185(class268.method4987(class217_0, 1908310285), (byte) -59)) {
+                     } else if (client.field810 && class92.method2185(class268.method4987(class217_0))) {
                         if ((class35.field301 & 0x10) == 16) {
                            class188.method3644(client.field813, client.field814 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 32, class254_9.field3410, i_14, class217_0.field2688, -1736041216);
                         }
@@ -631,7 +631,7 @@ public class class40 {
                         }
 
                         int i_17;
-                        if (class92.method2185(class268.method4987(class217_0, 1782878994), (byte) -92)) {
+                        if (class92.method2185(class268.method4987(class217_0))) {
                            for (i_17 = 4; i_17 >= 3; --i_17) {
                               if (i_17 != i_11) {
                                  class22.method276(class217_0, class254_9, i_14, i_17, false, 212040129);
@@ -639,11 +639,11 @@ public class class40 {
                            }
                         }
 
-                        if (class195.method3685(class268.method4987(class217_0, 1749047295), (byte) -18)) {
+                        if (class195.method3685(class268.method4987(class217_0))) {
                            class188.method3644("Use", class73.method1756(16748608, -844505624) + class254_9.field3449, 38, class254_9.field3410, i_14, class217_0.field2688, 1888076482);
                         }
 
-                        if (class92.method2185(class268.method4987(class217_0, 1380371743), (byte) -53)) {
+                        if (class92.method2185(class268.method4987(class217_0))) {
                            for (i_17 = 2; i_17 >= 0; --i_17) {
                               if (i_11 != i_17) {
                                  class22.method276(class217_0, class254_9, i_14, i_17, false, 1577647186);
@@ -697,7 +697,7 @@ public class class40 {
 
       if (class217_0.field2563) {
          if (client.field810) {
-            if (class96.method2266(class268.method4987(class217_0, 1630962531), -2113880295) && (class35.field301 & 0x20) == 32) {
+            if (class96.method2266(class268.method4987(class217_0), -2113880295) && (class35.field301 & 0x20) == 32) {
                class188.method3644(client.field813, client.field814 + " " + "->" + " " + class217_0.field2643, 58, 0, class217_0.field2565, class217_0.field2688, 148926542);
             }
          } else {
@@ -720,7 +720,7 @@ public class class40 {
                }
             }
 
-            if (class61.method1119(class268.method4987(class217_0, 1502461449), -673878359)) {
+            if (class61.method1119(class268.method4987(class217_0), -673878359)) {
                class188.method3644("Continue", "", 30, 0, class217_0.field2565, class217_0.field2688, 1867560144);
             }
          }

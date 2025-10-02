@@ -116,7 +116,7 @@ public final class class86 extends class135 {
       if (class252_2 != null) {
          return class252_2;
       } else {
-         byte[] bytes_3 = class252.field3327.method4144(32, i_0, 1474728982);
+         byte[] bytes_3 = class252.field3327.method4144(32, i_0);
          class252_2 = new class252();
          if (bytes_3 != null) {
             class252_2.method4552(new class300(bytes_3), (byte) 1);

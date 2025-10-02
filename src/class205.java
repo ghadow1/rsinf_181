@@ -4,12 +4,12 @@ public abstract class class205 {
 
    abstract byte[] vmethod3935(int var1);
 
-   static final void method3933(byte[] bytes_0, int i_1, int i_2, class133 class133_3, class172[] arr_4, int i_5) {
+   static final void method3933(byte[] bytes_0, int i_1, int i_2, class133 class133_3, class172[] arr_4) {
       class300 class300_6 = new class300(bytes_0);
       int i_7 = -1;
 
       while (true) {
-         int i_8 = class300_6.method5509(-692269668);
+         int i_8 = class300_6.method5509();
          if (i_8 == 0) {
             return;
          }

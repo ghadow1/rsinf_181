@@ -23,24 +23,24 @@ public abstract class class233 {
       this.field3130 = bool_2;
    }
 
-   public int[] method4153(int i_1, int i_2) {
+   public int[] method4153(int i_1) {
       return i_1 >= 0 && i_1 < this.field3137.length ? this.field3137[i_1] : null;
    }
 
-   public byte[] method4181(int i_1, int i_2, int[] ints_3, int i_4) {
+   public byte[] method4181(int i_1, int i_2, int[] ints_3) {
       if (i_1 >= 0 && i_1 < this.field3138.length && this.field3138[i_1] != null && i_2 >= 0 && i_2 < this.field3138[i_1].length) {
          if (this.field3138[i_1][i_2] == null) {
-            boolean bool_5 = this.method4235(i_1, ints_3, -1546414650);
+            boolean bool_5 = this.method4235(i_1, ints_3);
             if (!bool_5) {
                this.vmethod4260(i_1, (short) 5225);
-               bool_5 = this.method4235(i_1, ints_3, 1844700750);
+               bool_5 = this.method4235(i_1, ints_3);
                if (!bool_5) {
                   return null;
                }
             }
          }
 
-         byte[] bytes_6 = class308.method5873(this.field3138[i_1][i_2], false, 991854443);
+         byte[] bytes_6 = class308.method5873(this.field3138[i_1][i_2], false);
          if (this.field3130) {
             this.field3138[i_1][i_2] = null;
          }
@@ -51,41 +51,41 @@ public abstract class class233 {
       }
    }
 
-   public int method4232(int i_1) {
+   public int method4232() {
       return this.field3138.length;
    }
 
-   public byte[] method4208(int i_1, int i_2) {
+   public byte[] method4208(int i_1) {
       if (this.field3138.length == 1) {
-         return this.method4144(0, i_1, -2026497327);
+         return this.method4144(0, i_1);
       } else if (this.field3138[i_1].length == 1) {
-         return this.method4144(i_1, 0, 208414749);
+         return this.method4144(i_1, 0);
       } else {
          throw new RuntimeException();
       }
    }
 
-   public byte[] method4150(int i_1, int i_2, int i_3) {
+   public byte[] method4150(int i_1, int i_2) {
       if (i_1 >= 0 && i_1 < this.field3138.length && this.field3138[i_1] != null && i_2 >= 0 && i_2 < this.field3138[i_1].length) {
          if (this.field3138[i_1][i_2] == null) {
-            boolean bool_4 = this.method4235(i_1, (int[]) null, 1582538468);
+            boolean bool_4 = this.method4235(i_1, (int[]) null);
             if (!bool_4) {
                this.vmethod4260(i_1, (short) 27347);
-               bool_4 = this.method4235(i_1, (int[]) null, -1007432382);
+               bool_4 = this.method4235(i_1, (int[]) null);
                if (!bool_4) {
                   return null;
                }
             }
          }
 
-         byte[] bytes_5 = class308.method5873(this.field3138[i_1][i_2], false, 991854443);
+         byte[] bytes_5 = class308.method5873(this.field3138[i_1][i_2], false);
          return bytes_5;
       } else {
          return null;
       }
    }
 
-   public boolean method4146(int i_1, int i_2, int i_3) {
+   public boolean method4146(int i_1, int i_2) {
       if (i_1 >= 0 && i_1 < this.field3138.length && this.field3138[i_1] != null && i_2 >= 0 && i_2 < this.field3138[i_1].length) {
          if (this.field3138[i_1][i_2] != null) {
             return true;
@@ -100,18 +100,18 @@ public abstract class class233 {
       }
    }
 
-   public byte[] method4144(int i_1, int i_2, int i_3) {
-      return this.method4181(i_1, i_2, (int[]) null, -1770602757);
+   public byte[] method4144(int i_1, int i_2) {
+      return this.method4181(i_1, i_2, (int[]) null);
    }
 
    void vmethod4260(int i_1, short s_2) {
    }
 
-   public byte[] method4216(int i_1, int i_2) {
+   public byte[] method4216(int i_1) {
       if (this.field3138.length == 1) {
-         return this.method4150(0, i_1, -377229485);
+         return this.method4150(0, i_1);
       } else if (this.field3138[i_1].length == 1) {
-         return this.method4150(i_1, 0, -377229485);
+         return this.method4150(i_1, 0);
       } else {
          throw new RuntimeException();
       }
@@ -133,14 +133,14 @@ public abstract class class233 {
       int i_6 = class300_5.method5504();
       if (i_6 >= 5 && i_6 <= 7) {
          if (i_6 >= 6) {
-            class300_5.method5499();
+            class300_5.readIntMedEndian();
          }
 
          int i_7 = class300_5.method5504();
          if (i_6 >= 7) {
             this.field3142 = class300_5.method5685();
          } else {
-            this.field3142 = class300_5.method5496();
+            this.field3142 = class300_5.readShortUBigEndian();
          }
 
          int i_8 = 0;
@@ -156,7 +156,7 @@ public abstract class class233 {
             }
          } else {
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3128[i_10] = i_8 += class300_5.method5496();
+               this.field3128[i_10] = i_8 += class300_5.readShortUBigEndian();
                if (this.field3128[i_10] > i_9) {
                   i_9 = this.field3128[i_10];
                }
@@ -173,22 +173,22 @@ public abstract class class233 {
             this.field3129 = new int[i_9 + 1];
 
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3129[this.field3128[i_10]] = class300_5.method5499();
+               this.field3129[this.field3128[i_10]] = class300_5.readIntMedEndian();
             }
 
             this.field3135 = new class335(this.field3129);
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3131[this.field3128[i_10]] = class300_5.method5499();
+            this.field3131[this.field3128[i_10]] = class300_5.readIntMedEndian();
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3132[this.field3128[i_10]] = class300_5.method5499();
+            this.field3132[this.field3128[i_10]] = class300_5.readIntMedEndian();
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3133[this.field3128[i_10]] = class300_5.method5496();
+            this.field3133[this.field3128[i_10]] = class300_5.readShortUBigEndian();
          }
 
          int i_11;
@@ -222,7 +222,7 @@ public abstract class class233 {
                this.field3137[i_11] = new int[i_12];
 
                for (i_14 = 0; i_14 < i_12; i_14++) {
-                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.method5496();
+                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.readShortUBigEndian();
                   if (i_15 > i_13) {
                      i_13 = i_15;
                   }
@@ -242,7 +242,7 @@ public abstract class class233 {
                this.field3127[i_11] = new int[this.field3138[i_11].length];
 
                for (i_13 = 0; i_13 < i_12; i_13++) {
-                  this.field3127[i_11][this.field3137[i_11][i_13]] = class300_5.method5499();
+                  this.field3127[i_11][this.field3137[i_11][i_13]] = class300_5.readIntMedEndian();
                }
 
                this.field3140[i_11] = new class335(this.field3127[i_11]);
@@ -259,7 +259,7 @@ public abstract class class233 {
       string_2 = string_2.toLowerCase();
       int i_4 = this.field3135.method6501(class12.method148(string_1, (byte) 65), 1528091447);
       int i_5 = this.field3140[i_4].method6501(class12.method148(string_2, (byte) -37), 1528091447);
-      return this.method4146(i_4, i_5, -416813220);
+      return this.method4146(i_4, i_5);
    }
 
    void vmethod4278(int i_1, int i_2) {
@@ -296,17 +296,17 @@ public abstract class class233 {
       return this.field3140[i_1].method6501(class12.method148(string_2, (byte) 16), 1528091447);
    }
 
-   public boolean method4147(int i_1, int i_2) {
+   public boolean method4147(int i_1) {
       if (this.field3138.length == 1) {
-         return this.method4146(0, i_1, -416813220);
+         return this.method4146(0, i_1);
       } else if (this.field3138[i_1].length == 1) {
-         return this.method4146(i_1, 0, -416813220);
+         return this.method4146(i_1, 0);
       } else {
          throw new RuntimeException();
       }
    }
 
-   boolean method4235(int i_1, int[] ints_2, int i_3) {
+   boolean method4235(int i_1, int[] ints_2) {
       if (this.field3126[i_1] == null) {
          return false;
       } else {
@@ -327,9 +327,9 @@ public abstract class class233 {
          } else {
             byte[] bytes_22;
             if (ints_2 == null || ints_2[0] == 0 && ints_2[1] == 0 && ints_2[2] == 0 && ints_2[3] == 0) {
-               bytes_22 = class308.method5873(this.field3126[i_1], false, 991854443);
+               bytes_22 = class308.method5873(this.field3126[i_1], false);
             } else {
-               bytes_22 = class308.method5873(this.field3126[i_1], true, 991854443);
+               bytes_22 = class308.method5873(this.field3126[i_1], true);
                class300 class300_9 = new class300(bytes_22);
                class300_9.method5703(ints_2, 5, class300_9.field3730.length);
             }
@@ -355,7 +355,7 @@ public abstract class class233 {
                   i_15 = 0;
 
                   for (i_16 = 0; i_16 < i_4; i_16++) {
-                     i_15 += class300_12.method5499();
+                     i_15 += class300_12.readIntMedEndian();
                      ints_13[i_16] += i_15;
                   }
                }
@@ -375,7 +375,7 @@ public abstract class class233 {
                   int i_17 = 0;
 
                   for (i_18 = 0; i_18 < i_4; i_18++) {
-                     i_17 += class300_12.method5499();
+                     i_17 += class300_12.readIntMedEndian();
                      System.arraycopy(bytes_26, i_15, bytes_24[i_18], ints_13[i_18], i_17);
                      ints_13[i_18] += i_17;
                      i_15 += i_17;
@@ -430,7 +430,7 @@ public abstract class class233 {
       string_2 = string_2.toLowerCase();
       int i_4 = this.field3135.method6501(class12.method148(string_1, (byte) -63), 1528091447);
       int i_5 = this.field3140[i_4].method6501(class12.method148(string_2, (byte) -24), 1528091447);
-      return this.method4144(i_4, i_5, -921088130);
+      return this.method4144(i_4, i_5);
    }
 
    public void method4156(int i_1) {

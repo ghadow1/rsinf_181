@@ -25,24 +25,24 @@ public class class258 extends class175 {
       int i_4;
       int i_5;
       if (i_2 == 1) {
-         i_4 = class300_1.method5496();
+         i_4 = class300_1.readShortUBigEndian();
          this.field3522 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3522[i_5] = class300_1.method5496();
+            this.field3522[i_5] = class300_1.readShortUBigEndian();
          }
 
          this.field3520 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3520[i_5] = class300_1.method5496();
+            this.field3520[i_5] = class300_1.readShortUBigEndian();
          }
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3520[i_5] += class300_1.method5496() << 16;
+            this.field3520[i_5] += class300_1.readShortUBigEndian() << 16;
          }
       } else if (i_2 == 2) {
-         this.field3515 = class300_1.method5496();
+         this.field3515 = class300_1.readShortUBigEndian();
       } else if (i_2 == 3) {
          i_4 = class300_1.method5504();
          this.field3518 = new int[i_4 + 1];
@@ -57,9 +57,9 @@ public class class258 extends class175 {
       } else if (i_2 == 5) {
          this.field3533 = class300_1.method5504();
       } else if (i_2 == 6) {
-         this.field3528 = class300_1.method5496();
+         this.field3528 = class300_1.readShortUBigEndian();
       } else if (i_2 == 7) {
-         this.field3521 = class300_1.method5496();
+         this.field3521 = class300_1.readShortUBigEndian();
       } else if (i_2 == 8) {
          this.field3535 = class300_1.method5504();
       } else if (i_2 == 9) {
@@ -73,11 +73,11 @@ public class class258 extends class175 {
          this.field3530 = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3530[i_5] = class300_1.method5496();
+            this.field3530[i_5] = class300_1.readShortUBigEndian();
          }
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3530[i_5] += class300_1.method5496() << 16;
+            this.field3530[i_5] += class300_1.readShortUBigEndian() << 16;
          }
       } else if (i_2 == 13) {
          i_4 = class300_1.method5504();

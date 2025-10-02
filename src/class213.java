@@ -52,13 +52,13 @@ public class class213 {
       return this.method3975(",", -1242820641);
    }
 
-   public static void method3989(int i_0) {
+   public static void method3989() {
       class249.field3301.method3323();
    }
 
-   static void method3990(byte b_0) {
+   static void disconnectMessage() {
       class85.field1209 = 24;
-      class268.method4988("", "You were disconnected from the server.", "", 1786715078);
+      class268.loginResponseMessages("", "You were disconnected from the server.", "");
    }
 
 }

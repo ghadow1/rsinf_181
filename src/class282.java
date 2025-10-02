@@ -13,20 +13,20 @@ public class class282 extends class277 {
       while (true) {
          if (class300_1.field3732 < i_2) {
             boolean bool_4 = class300_1.method5504() == 1;
-            class283 class283_5 = new class283(class300_1.method5503(), this.field3640);
-            class283 class283_6 = new class283(class300_1.method5503(), this.field3640);
-            int i_7 = class300_1.method5496();
+            class283 class283_5 = new class283(class300_1.readNullTermString(), this.field3640);
+            class283 class283_6 = new class283(class300_1.readNullTermString(), this.field3640);
+            int i_7 = class300_1.readShortUBigEndian();
             int i_8 = class300_1.method5504();
             int i_9 = class300_1.method5504();
             boolean bool_10 = (i_9 & 0x2) != 0;
             boolean bool_11 = (i_9 & 0x1) != 0;
             if (i_7 > 0) {
-               class300_1.method5503();
+               class300_1.readNullTermString();
                class300_1.method5504();
-               class300_1.method5499();
+               class300_1.readIntMedEndian();
             }
 
-            class300_1.method5503();
+            class300_1.readNullTermString();
             if (class283_5 != null && class283_5.method5205((byte) -122)) {
                class284 class284_12 = (class284) this.method5138(class283_5, 2083171527);
                if (bool_4) {

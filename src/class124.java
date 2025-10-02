@@ -13,7 +13,7 @@ public class class124 extends class180 {
    static int[] field1628;
 
    class124(class300 class300_1) {
-      this.field1623 = class300_1.method5496();
+      this.field1623 = class300_1.readShortUBigEndian();
       this.field1624 = class300_1.method5504() == 1;
       int i_2 = class300_1.method5504();
       if (i_2 >= 1 && i_2 <= 4) {
@@ -21,7 +21,7 @@ public class class124 extends class180 {
 
          int i_3;
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            this.field1632[i_3] = class300_1.method5496();
+            this.field1632[i_3] = class300_1.readShortUBigEndian();
          }
 
          if (i_2 > 1) {
@@ -43,7 +43,7 @@ public class class124 extends class180 {
          this.field1619 = new int[i_2];
 
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            this.field1619[i_3] = class300_1.method5499();
+            this.field1619[i_3] = class300_1.readIntMedEndian();
          }
 
          this.field1629 = class300_1.method5504();
@@ -61,7 +61,7 @@ public class class124 extends class180 {
    boolean method2846(double d_1, int i_3, class233 class233_4) {
       int i_5;
       for (i_5 = 0; i_5 < this.field1632.length; i_5++) {
-         if (class233_4.method4216(this.field1632[i_5], -1915975799) == null) {
+         if (class233_4.method4216(this.field1632[i_5]) == null) {
             return false;
          }
       }

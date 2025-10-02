@@ -19,7 +19,7 @@ public class class206 extends class205 {
       return bytes_2;
    }
 
-   public static final synchronized long method3939() {
+   public static final synchronized long getAdjustedTimeMillis() {
       long long_1 = System.currentTimeMillis();
       if (long_1 < class46.field416) {
          class2.field4 += class46.field416 - long_1;

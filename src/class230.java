@@ -21,7 +21,7 @@ public class class230 implements class194 {
    static int method4137(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       class217 class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       if (i_0 == 1800) {
-         class76.field1098[++class70.field1014 - 1] = class78.method1957(class268.method4987(class217_4, 1593960996), (byte) 52);
+         class76.field1098[++class70.field1014 - 1] = class78.method1957(class268.method4987(class217_4), (byte) 52);
          return 1;
       } else if (i_0 != 1801) {
          if (i_0 == 1802) {

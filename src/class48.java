@@ -31,7 +31,7 @@ public final class class48 extends Canvas {
                   class62 class62_5 = new class62();
                   class62_5.field575 = class217_4;
                   class62_5.field581 = class217_4.field2630;
-                  class96.method2267(class62_5, 5000000, -806238798);
+                  class96.method2267(class62_5, 5000000);
                }
             }
 

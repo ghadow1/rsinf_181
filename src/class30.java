@@ -52,23 +52,23 @@ public class class30 {
 
             class187 class187_13 = class235.method4265(class183.field2220, client.field880.field1313, 1775123545);
             class187_13.field2333.method5481(i_11);
-            client.field880.method2219(class187_13);
+            client.field880.copy(class187_13);
             return 1;
          } else {
             class187 class187_15;
             if (i_0 == 3105) {
                string_4 = class76.field1093[--class221.field2747];
                class187_15 = class235.method4265(class183.field2298, client.field880.field1313, 1775123545);
-               class187_15.field2333.method5655(string_4.length() + 1);
+               class187_15.field2333.writeByte2(string_4.length() + 1);
                class187_15.field2333.method5485(string_4);
-               client.field880.method2219(class187_15);
+               client.field880.copy(class187_15);
                return 1;
             } else if (i_0 == 3106) {
                string_4 = class76.field1093[--class221.field2747];
                class187_15 = class235.method4265(class183.field2211, client.field880.field1313, 1775123545);
-               class187_15.field2333.method5655(string_4.length() + 1);
+               class187_15.field2333.writeByte2(string_4.length() + 1);
                class187_15.field2333.method5485(string_4);
-               client.field880.method2219(class187_15);
+               client.field880.copy(class187_15);
                return 1;
             } else {
                String string_8;
@@ -112,7 +112,7 @@ public class class30 {
                   i_16 = class76.field1098[--class70.field1014];
                   class187_15 = class235.method4265(class183.field2245, client.field880.field1313, 1775123545);
                   class187_15.field2333.method5479(i_16);
-                  client.field880.method2219(class187_15);
+                  client.field880.copy(class187_15);
                   return 1;
                } else if (i_0 == 3116) {
                   i_16 = class76.field1098[--class70.field1014];
@@ -127,9 +127,9 @@ public class class30 {
                      class187 class187_7 = class235.method4265(class183.field2219, client.field880.field1313, 1775123545);
                      class187_7.field2333.method5479(1 + class209.method3945(string_8, 1335773085) + class209.method3945(string_6, 1835999943));
                      class187_7.field2333.method5485(string_8);
-                     class187_7.field2333.method5655(i_16);
+                     class187_7.field2333.writeByte2(i_16);
                      class187_7.field2333.method5485(string_6);
-                     client.field880.method2219(class187_7);
+                     client.field880.copy(class187_7);
                      return 1;
                   }
                } else if (i_0 == 3117) {

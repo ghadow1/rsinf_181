@@ -207,7 +207,7 @@ public final class class66 extends class69 {
             i_8 = class300_1.method5504();
             ints_5[i_6] = i_8 + (i_7 << 8);
             if (i_6 == 0 && ints_5[0] == 65535) {
-               i_4 = class300_1.method5496();
+               i_4 = class300_1.readShortUBigEndian();
                break;
             }
 
@@ -231,43 +231,43 @@ public final class class66 extends class69 {
          ints_10[i_7] = i_8;
       }
 
-      super.field1004 = class300_1.method5496();
+      super.field1004 = class300_1.readShortUBigEndian();
       if (super.field1004 == 65535) {
          super.field1004 = -1;
       }
 
-      super.field955 = class300_1.method5496();
+      super.field955 = class300_1.readShortUBigEndian();
       if (super.field955 == 65535) {
          super.field955 = -1;
       }
 
       super.field956 = super.field955;
-      super.field957 = class300_1.method5496();
+      super.field957 = class300_1.readShortUBigEndian();
       if (super.field957 == 65535) {
          super.field957 = -1;
       }
 
-      super.field958 = class300_1.method5496();
+      super.field958 = class300_1.readShortUBigEndian();
       if (super.field958 == 65535) {
          super.field958 = -1;
       }
 
-      super.field959 = class300_1.method5496();
+      super.field959 = class300_1.readShortUBigEndian();
       if (super.field959 == 65535) {
          super.field959 = -1;
       }
 
-      super.field960 = class300_1.method5496();
+      super.field960 = class300_1.readShortUBigEndian();
       if (super.field960 == 65535) {
          super.field960 = -1;
       }
 
-      super.field961 = class300_1.method5496();
+      super.field961 = class300_1.readShortUBigEndian();
       if (super.field961 == 65535) {
          super.field961 = -1;
       }
 
-      this.field621 = new class283(class300_1.method5503(), class40.field353);
+      this.field621 = new class283(class300_1.readNullTermString(), class40.field353);
       this.method1182((byte) -29);
       this.method1185(-202982507);
       if (this == client.field657) {
@@ -275,7 +275,7 @@ public final class class66 extends class69 {
       }
 
       this.field618 = class300_1.method5504();
-      this.field617 = class300_1.method5496();
+      this.field617 = class300_1.readShortUBigEndian();
       this.field628 = class300_1.method5504() == 1;
       if (client.field703 == 0 && client.field890 >= 2) {
          this.field628 = false;

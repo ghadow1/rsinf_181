@@ -52,14 +52,14 @@ public class class300 extends class180 {
    }
 
    public long method5531() {
-      long long_2 = (long) this.method5499() & 0xffffffffL;
-      long long_4 = (long) this.method5499() & 0xffffffffL;
+      long long_2 = (long) this.readIntMedEndian() & 0xffffffffL;
+      long long_4 = (long) this.readIntMedEndian() & 0xffffffffL;
       return long_4 + (long_2 << 32);
    }
 
    public int method5508() {
       int i_2 = this.field3730[this.field3732] & 0xff;
-      return i_2 < 128 ? this.method5504() : this.method5496() - 32768;
+      return i_2 < 128 ? this.method5504() : this.readShortUBigEndian() - 32768;
    }
 
    public void method5485(String string_1) {
@@ -72,7 +72,8 @@ public class class300 extends class180 {
       }
    }
 
-   public String method5503() {
+   //..null-terminated string
+   public String readNullTermString() {
       int i_2 = this.field3732;
 
       while (this.field3730[++this.field3732 - 1] != 0) {
@@ -83,12 +84,12 @@ public class class300 extends class180 {
       return i_3 == 0 ? "" : class74.method1820(this.field3730, i_2, i_3, (byte) 5);
    }
 
-   public int method5499() {
+   public int readIntMedEndian() {
       this.field3732 += 4;
       return ((this.field3730[this.field3732 - 3] & 0xff) << 16) + (this.field3730[this.field3732 - 1] & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8) + ((this.field3730[this.field3732 - 4] & 0xff) << 24);
    }
 
-   public void method5655(int i_1) {
+   public void writeByte2(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)i_1;
    }
 
@@ -114,9 +115,9 @@ public class class300 extends class180 {
 
    public int method5511() {
       if (this.field3730[this.field3732] < 0) {
-         return this.method5499() & 0x7fffffff;
+         return this.readIntMedEndian() & 0x7fffffff;
       } else {
-         int i_2 = this.method5496();
+         int i_2 = this.readShortUBigEndian();
          return i_2 == 32767 ? -1 : i_2;
       }
    }
@@ -143,7 +144,7 @@ public class class300 extends class180 {
       this.field3730[++this.field3732 - 1] = (byte)i_1;
    }
 
-   public int method5496() {
+   public int readShortUBigEndian() {
       this.field3732 += 2;
       return (this.field3730[this.field3732 - 1] & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8);
    }
@@ -191,19 +192,19 @@ public class class300 extends class180 {
          if ((i_1 & ~0x3fff) != 0) {
             if ((i_1 & ~0x1fffff) != 0) {
                if ((i_1 & ~0xfffffff) != 0) {
-                  this.method5655(i_1 >>> 28 | 0x80);
+                  this.writeByte2(i_1 >>> 28 | 0x80);
                }
 
-               this.method5655(i_1 >>> 21 | 0x80);
+               this.writeByte2(i_1 >>> 21 | 0x80);
             }
 
-            this.method5655(i_1 >>> 14 | 0x80);
+            this.writeByte2(i_1 >>> 14 | 0x80);
          }
 
-         this.method5655(i_1 >>> 7 | 0x80);
+         this.writeByte2(i_1 >>> 7 | 0x80);
       }
 
-      this.method5655(i_1 & 0x7f);
+      this.writeByte2(i_1 & 0x7f);
    }
 
    public void method5488(byte[] bytes_1, int i_2, int i_3) {
@@ -214,7 +215,7 @@ public class class300 extends class180 {
    }
 
    public int method5685() {
-      return this.field3730[this.field3732] < 0 ? this.method5499() & 0x7fffffff : this.method5496();
+      return this.field3730[this.field3732] < 0 ? this.readIntMedEndian() & 0x7fffffff : this.readShortUBigEndian();
    }
 
    public void method5703(int[] ints_1, int i_2, int i_3) {
@@ -223,8 +224,8 @@ public class class300 extends class180 {
       int i_6 = (i_3 - i_2) / 8;
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
-         int i_8 = this.method5499();
-         int i_9 = this.method5499();
+         int i_8 = this.readIntMedEndian();
+         int i_9 = this.readIntMedEndian();
          int i_10 = -957401312;
          int i_11 = -1640531527;
 
@@ -242,7 +243,7 @@ public class class300 extends class180 {
    }
 
    public void method5484(boolean bool_1) {
-      this.method5655(bool_1 ? 1 : 0);
+      this.writeByte2(bool_1 ? 1 : 0);
    }
 
    public void method5477() {
@@ -264,7 +265,7 @@ public class class300 extends class180 {
          ++this.field3732;
          return null;
       } else {
-         return this.method5503();
+         return this.readNullTermString();
       }
    }
 
@@ -274,7 +275,7 @@ public class class300 extends class180 {
 
    public int method5507() {
       int i_2 = this.field3730[this.field3732] & 0xff;
-      return i_2 < 128 ? this.method5504() - 64 : this.method5496() - 49152;
+      return i_2 < 128 ? this.method5504() - 64 : this.readShortUBigEndian() - 49152;
    }
 
    public void method5486(String string_1) {
@@ -310,7 +311,8 @@ public class class300 extends class180 {
       return 128 - this.field3730[++this.field3732 - 1] & 0xff;
    }
 
-   public void method5539(int i_1) {
+   //..writes a 32-bit integer
+   public void write32IntReverse(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
       this.field3730[++this.field3732 - 1] = (byte)i_1;
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 24);
@@ -368,7 +370,7 @@ public class class300 extends class180 {
       return (byte)(0 - this.field3730[++this.field3732 - 1]);
    }
 
-   public void method5521(int i_1) {
+   public void writeByte(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)(0 - i_1);
    }
 
@@ -397,7 +399,7 @@ public class class300 extends class180 {
       return (this.field3730[this.field3732 - 3] & 0xff) + ((this.field3730[this.field3732 - 2] & 0xff) << 8) + ((this.field3730[this.field3732 - 1] & 0xff) << 16);
    }
 
-   public int method5509(int i_1) {
+   public int method5509() {
       int i_2 = 0;
 
       int i_3;
@@ -409,7 +411,7 @@ public class class300 extends class180 {
       return i_2;
    }
 
-   public void method5538(int i_1) {
+   public void write32IntLittleEndian(int i_1) {
       this.field3730[++this.field3732 - 1] = (byte)i_1;
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 8);
       this.field3730[++this.field3732 - 1] = (byte)(i_1 >> 16);
@@ -526,20 +528,20 @@ public class class300 extends class180 {
       this.field3730[++this.field3732 - 1] = (byte)((int)long_1);
    }
 
-   public boolean method5519(int i_1) {
+   public boolean method5519() {
       this.field3732 -= 4;
       int i_2 = class2.method18(this.field3730, 0, this.field3732, 308040594);
-      int i_3 = this.method5499();
+      int i_3 = this.readIntMedEndian();
       return i_2 == i_3;
    }
 
-   public void method5513(int[] ints_1, int i_2) {
+   public void method5513(int[] ints_1) {
       int i_3 = this.field3732 / 8;
       this.field3732 = 0;
 
       for (int i_4 = 0; i_4 < i_3; i_4++) {
-         int i_5 = this.method5499();
-         int i_6 = this.method5499();
+         int i_5 = this.readIntMedEndian();
+         int i_6 = this.readIntMedEndian();
          int i_7 = 0;
          int i_8 = -1640531527;
 
@@ -557,7 +559,7 @@ public class class300 extends class180 {
 
    public void method5492(int i_1, byte b_2) {
       if (i_1 >= 0 && i_1 < 128) {
-         this.method5655(i_1);
+         this.writeByte2(i_1);
       } else if (i_1 >= 0 && i_1 < 32768) {
          this.method5479(i_1 + 32768);
       } else {
@@ -570,8 +572,8 @@ public class class300 extends class180 {
       this.field3732 = 0;
 
       for (int i_4 = 0; i_4 < i_3; i_4++) {
-         int i_5 = this.method5499();
-         int i_6 = this.method5499();
+         int i_5 = this.readIntMedEndian();
+         int i_6 = this.readIntMedEndian();
          int i_7 = -957401312;
          int i_8 = -1640531527;
 
@@ -593,8 +595,8 @@ public class class300 extends class180 {
       int i_6 = (i_3 - i_2) / 8;
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
-         int i_8 = this.method5499();
-         int i_9 = this.method5499();
+         int i_8 = this.readIntMedEndian();
+         int i_9 = this.readIntMedEndian();
          int i_10 = 0;
          int i_11 = -1640531527;
 

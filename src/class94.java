@@ -89,7 +89,7 @@ public class class94 {
    public static void method2213(class300 class300_0, int i_1, byte b_2) {
       class97 class97_3 = new class97();
       class97_3.field1330 = class300_0.method5504();
-      class97_3.field1340 = class300_0.method5499();
+      class97_3.field1340 = class300_0.readIntMedEndian();
       class97_3.field1331 = new int[class97_3.field1330];
       class97_3.field1332 = new int[class97_3.field1330];
       class97_3.field1333 = new Field[class97_3.field1330];
@@ -105,21 +105,21 @@ public class class94 {
             int i_8;
             if (i_5 != 0 && i_5 != 1 && i_5 != 2) {
                if (i_5 == 3 || i_5 == 4) {
-                  string_6 = class300_0.method5503();
-                  string_7 = class300_0.method5503();
+                  string_6 = class300_0.readNullTermString();
+                  string_7 = class300_0.readNullTermString();
                   i_8 = class300_0.method5504();
                   String[] arr_9 = new String[i_8];
 
                   for (int i_10 = 0; i_10 < i_8; i_10++) {
-                     arr_9[i_10] = class300_0.method5503();
+                     arr_9[i_10] = class300_0.readNullTermString();
                   }
 
-                  String string_21 = class300_0.method5503();
+                  String string_21 = class300_0.readNullTermString();
                   byte[][] bytes_11 = new byte[i_8][];
                   int i_13;
                   if (i_5 == 3) {
                      for (int i_12 = 0; i_12 < i_8; i_12++) {
-                        i_13 = class300_0.method5499();
+                        i_13 = class300_0.readIntMedEndian();
                         bytes_11[i_12] = new byte[i_13];
                         class300_0.method5697(bytes_11[i_12], 0, i_13);
                      }
@@ -164,11 +164,11 @@ public class class94 {
                   class97_3.field1336[i_4] = bytes_11;
                }
             } else {
-               string_6 = class300_0.method5503();
-               string_7 = class300_0.method5503();
+               string_6 = class300_0.readNullTermString();
+               string_7 = class300_0.readNullTermString();
                i_8 = 0;
                if (i_5 == 1) {
-                  i_8 = class300_0.method5499();
+                  i_8 = class300_0.readIntMedEndian();
                }
 
                class97_3.field1331[i_4] = i_5;

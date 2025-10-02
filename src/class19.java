@@ -64,16 +64,16 @@ public class class19 implements class37 {
    public void vmethod743(class300 class300_1, int i_2) {
       this.field132 = class300_1.method5504();
       this.field130 = class300_1.method5504();
-      this.field131 = class300_1.method5496();
+      this.field131 = class300_1.readShortUBigEndian();
       this.field140 = class300_1.method5504();
       this.field137 = class300_1.method5504();
-      this.field136 = class300_1.method5496();
+      this.field136 = class300_1.readShortUBigEndian();
       this.field143 = class300_1.method5504();
       this.field138 = class300_1.method5504();
-      this.field133 = class300_1.method5496();
+      this.field133 = class300_1.readShortUBigEndian();
       this.field139 = class300_1.method5504();
       this.field129 = class300_1.method5504();
-      this.field134 = class300_1.method5496();
+      this.field134 = class300_1.readShortUBigEndian();
       this.field141 = class300_1.method5504();
       this.field142 = class300_1.method5504();
       this.method211(35507364);

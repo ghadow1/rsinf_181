@@ -105,7 +105,7 @@ public class class29 {
          if (class34_13 != null && class34_13.method578(-1274004046)) {
             class34_13.field296 = i_11;
             class34_13.field295 = i_12;
-            class241 class241_14 = class222.method4118(class34_13.vmethod597(-2000175293), -673469339);
+            class241 class241_14 = class222.method4118(class34_13.vmethod597(-2000175293));
             if (!hashset_3.contains(Integer.valueOf(class241_14.method4373((byte) 95)))) {
                this.method445(class34_13, i_11, i_12, f_6, (byte) -89);
             }
@@ -181,7 +181,7 @@ public class class29 {
          if (class257_13 != null) {
             class257_12 = class257_13;
          } else {
-            byte[] bytes_14 = class257.field3505.method4144(4, i_8, 1585019675);
+            byte[] bytes_14 = class257.field3505.method4144(4, i_8);
             class257_13 = new class257();
             if (bytes_14 != null) {
                class257_13.method4744(new class300(bytes_14), i_8, (byte) -104);
@@ -341,7 +341,7 @@ public class class29 {
       while (iterator_5.hasNext()) {
          class34 class34_6 = (class34) iterator_5.next();
          if (class34_6.method578(-1274004046)) {
-            class241 class241_7 = class222.method4118(class34_6.vmethod597(1091186624), -673469339);
+            class241 class241_7 = class222.method4118(class34_6.vmethod597(1091186624));
             if (class241_7 != null && hashset_1.contains(Integer.valueOf(class241_7.method4373((byte) 74)))) {
                this.method493(class241_7, class34_6.field296, class34_6.field295, i_2, i_3, (byte) 90);
             }
@@ -360,7 +360,7 @@ public class class29 {
             if (class257_11 != null) {
                class257_10 = class257_11;
             } else {
-               byte[] bytes_12 = class257.field3505.method4144(4, i_7, 1902143305);
+               byte[] bytes_12 = class257.field3505.method4144(4, i_7);
                class257_11 = new class257();
                if (bytes_12 != null) {
                   class257_11.method4744(new class300(bytes_12), i_7, (byte) -90);
@@ -566,7 +566,7 @@ public class class29 {
    }
 
    class28 method502(int i_1, int i_2) {
-      class241 class241_3 = class222.method4118(i_1, -673469339);
+      class241 class241_3 = class222.method4118(i_1);
       return this.method451(class241_3, 1686665284);
    }
 
@@ -588,7 +588,7 @@ public class class29 {
       if (class253_1.field3391 != null) {
          obj_11 = new class23(class213_8, class213_7, class253_1.field3357, this);
       } else {
-         class241 class241_10 = class222.method4118(class253_1.field3378, -673469339);
+         class241 class241_10 = class222.method4118(class253_1.field3378);
          obj_11 = new class18(class213_8, class213_7, class241_10.field3213, this.method451(class241_10, 1686665284));
       }
 
@@ -620,7 +620,7 @@ public class class29 {
    }
 
    void method445(class34 class34_1, int i_2, int i_3, float f_4, byte b_5) {
-      class241 class241_6 = class222.method4118(class34_1.vmethod597(879841304), -673469339);
+      class241 class241_6 = class222.method4118(class34_1.vmethod597(879841304));
       this.method446(class241_6, i_2, i_3, 1065739105);
       this.method447(class34_1, class241_6, i_2, i_3, f_4, -1918014118);
    }
@@ -633,7 +633,7 @@ public class class29 {
          if (class34_6.method578(-1274004046)) {
             int i_7 = class34_6.vmethod597(-72715581);
             if (hashset_1.contains(Integer.valueOf(i_7))) {
-               class241 class241_8 = class222.method4118(i_7, -673469339);
+               class241 class241_8 = class222.method4118(i_7);
                this.method493(class241_8, class34_6.field296, class34_6.field295, i_2, i_3, (byte) 14);
             }
          }
@@ -781,7 +781,7 @@ public class class29 {
 
             bool_7 &= class233_5.method4199(i_9, 507984999);
             if (bool_7) {
-               byte[] bytes_8 = class233_5.method4208(i_9, 1034279223);
+               byte[] bytes_8 = class233_5.method4208(i_9);
                class27 class27_10;
                if (bytes_8 == null) {
                   class27_10 = new class27();

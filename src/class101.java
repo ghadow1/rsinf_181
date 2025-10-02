@@ -14,8 +14,8 @@ public class class101 {
          }
       }
 
-      this.field1353 = class300_1.method5496();
-      this.field1354 = class300_1.method5496();
+      this.field1353 = class300_1.readShortUBigEndian();
+      this.field1354 = class300_1.readShortUBigEndian();
    }
 
    final byte[] method2332() {
@@ -93,7 +93,7 @@ public class class101 {
    }
 
    public static class101 method2334(class233 class233_0, int i_1, int i_2) {
-      byte[] bytes_3 = class233_0.method4144(i_1, i_2, 1799203450);
+      byte[] bytes_3 = class233_0.method4144(i_1, i_2);
       return bytes_3 == null ? null : new class101(new class300(bytes_3));
    }
 

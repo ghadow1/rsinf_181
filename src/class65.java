@@ -8,7 +8,7 @@ public class class65 extends class174 {
    }
 
    public static class325 method1178(class233 class233_0, int i_1, int i_2, int i_3) {
-      if (!class284.method5220(class233_0, i_1, i_2, (byte) -3)) {
+      if (!class284.method5220(class233_0, i_1, i_2)) {
          return null;
       } else {
          class325 class325_5 = new class325();
@@ -389,9 +389,9 @@ public class class65 extends class174 {
    static final void method1170(String string_0, int i_1) {
       if (!string_0.equals("")) {
          class187 class187_2 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
-         class187_2.field2333.method5655(class209.method3945(string_0, -557080149));
+         class187_2.field2333.writeByte2(class209.method3945(string_0, -557080149));
          class187_2.field2333.method5485(string_0);
-         client.field880.method2219(class187_2);
+         client.field880.copy(class187_2);
       }
    }
 

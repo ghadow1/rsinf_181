@@ -459,18 +459,18 @@ public class class121 extends class135 {
       class300 class300_7 = new class300(bytes_1);
       class300 class300_8 = new class300(bytes_1);
       class300_4.field3732 = bytes_1.length - 18;
-      int i_9 = class300_4.method5496();
-      int i_10 = class300_4.method5496();
+      int i_9 = class300_4.readShortUBigEndian();
+      int i_10 = class300_4.readShortUBigEndian();
       int i_11 = class300_4.method5504();
       int i_12 = class300_4.method5504();
       int i_13 = class300_4.method5504();
       int i_14 = class300_4.method5504();
       int i_15 = class300_4.method5504();
       int i_16 = class300_4.method5504();
-      int i_17 = class300_4.method5496();
-      int i_18 = class300_4.method5496();
-      int i_19 = class300_4.method5496();
-      int i_20 = class300_4.method5496();
+      int i_17 = class300_4.readShortUBigEndian();
+      int i_18 = class300_4.readShortUBigEndian();
+      int i_19 = class300_4.readShortUBigEndian();
+      int i_20 = class300_4.readShortUBigEndian();
       byte b_21 = 0;
       int i_45 = b_21 + i_9;
       int i_23 = i_45;
@@ -601,7 +601,7 @@ public class class121 extends class135 {
       class300_8.field3732 = i_25;
 
       for (i_38 = 0; i_38 < i_10; i_38++) {
-         this.field1561[i_38] = (short)class300_4.method5496();
+         this.field1561[i_38] = (short)class300_4.readShortUBigEndian();
          if (i_12 == 1) {
             i_39 = class300_5.method5504();
             if ((i_39 & 0x1) == 1) {
@@ -692,9 +692,9 @@ public class class121 extends class135 {
 
       for (i_42 = 0; i_42 < i_11; i_42++) {
          this.field1565[i_42] = 0;
-         this.field1566[i_42] = (short)class300_4.method5496();
-         this.field1567[i_42] = (short)class300_4.method5496();
-         this.field1568[i_42] = (short)class300_4.method5496();
+         this.field1566[i_42] = (short)class300_4.readShortUBigEndian();
+         this.field1567[i_42] = (short)class300_4.readShortUBigEndian();
+         this.field1568[i_42] = (short)class300_4.readShortUBigEndian();
       }
 
       if (this.field1560 != null) {
@@ -928,8 +928,8 @@ public class class121 extends class135 {
       class300 class300_7 = new class300(bytes_1);
       class300 class300_8 = new class300(bytes_1);
       class300_2.field3732 = bytes_1.length - 23;
-      int i_9 = class300_2.method5496();
-      int i_10 = class300_2.method5496();
+      int i_9 = class300_2.readShortUBigEndian();
+      int i_10 = class300_2.readShortUBigEndian();
       int i_11 = class300_2.method5504();
       int i_12 = class300_2.method5504();
       int i_13 = class300_2.method5504();
@@ -937,11 +937,11 @@ public class class121 extends class135 {
       int i_15 = class300_2.method5504();
       int i_16 = class300_2.method5504();
       int i_17 = class300_2.method5504();
-      int i_18 = class300_2.method5496();
-      int i_19 = class300_2.method5496();
-      int i_20 = class300_2.method5496();
-      int i_21 = class300_2.method5496();
-      int i_22 = class300_2.method5496();
+      int i_18 = class300_2.readShortUBigEndian();
+      int i_19 = class300_2.readShortUBigEndian();
+      int i_20 = class300_2.readShortUBigEndian();
+      int i_21 = class300_2.readShortUBigEndian();
+      int i_22 = class300_2.readShortUBigEndian();
       int i_23 = 0;
       int i_24 = 0;
       int i_25 = 0;
@@ -1120,7 +1120,7 @@ public class class121 extends class135 {
       class300_8.field3732 = i_36;
 
       for (i_51 = 0; i_51 < i_10; i_51++) {
-         this.field1561[i_51] = (short)class300_2.method5496();
+         this.field1561[i_51] = (short)class300_2.readShortUBigEndian();
          if (i_12 == 1) {
             this.field1557[i_51] = class300_3.method5495();
          }
@@ -1138,7 +1138,7 @@ public class class121 extends class135 {
          }
 
          if (i_16 == 1) {
-            this.field1562[i_51] = (short)(class300_7.method5496() - 1);
+            this.field1562[i_51] = (short)(class300_7.readShortUBigEndian() - 1);
          }
 
          if (this.field1560 != null && this.field1562[i_51] != -1) {
@@ -1206,9 +1206,9 @@ public class class121 extends class135 {
       for (i_55 = 0; i_55 < i_11; i_55++) {
          i_56 = this.field1565[i_55] & 0xff;
          if (i_56 == 0) {
-            this.field1566[i_55] = (short)class300_2.method5496();
-            this.field1567[i_55] = (short)class300_2.method5496();
-            this.field1568[i_55] = (short)class300_2.method5496();
+            this.field1566[i_55] = (short)class300_2.readShortUBigEndian();
+            this.field1567[i_55] = (short)class300_2.readShortUBigEndian();
+            this.field1568[i_55] = (short)class300_2.readShortUBigEndian();
          }
       }
 
@@ -1216,10 +1216,10 @@ public class class121 extends class135 {
       i_55 = class300_2.method5504();
       if (i_55 != 0) {
          new class134();
-         class300_2.method5496();
-         class300_2.method5496();
-         class300_2.method5496();
-         class300_2.method5499();
+         class300_2.readShortUBigEndian();
+         class300_2.readShortUBigEndian();
+         class300_2.readShortUBigEndian();
+         class300_2.readIntMedEndian();
       }
 
    }
@@ -1468,7 +1468,7 @@ public class class121 extends class135 {
    }
 
    public static class121 method2769(class233 class233_0, int i_1, int i_2) {
-      byte[] bytes_3 = class233_0.method4144(i_1, i_2, 1505846141);
+      byte[] bytes_3 = class233_0.method4144(i_1, i_2);
       return bytes_3 == null ? null : new class121(bytes_3);
    }
 

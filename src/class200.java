@@ -61,16 +61,16 @@ public class class200 {
    void method3877(byte[] bytes_1) {
       this.field2470.field3730 = bytes_1;
       this.field2470.field3732 = 10;
-      int i_2 = this.field2470.method5496();
-      this.field2463 = this.field2470.method5496();
+      int i_2 = this.field2470.readShortUBigEndian();
+      this.field2463 = this.field2470.readShortUBigEndian();
       this.field2460 = 500000;
       this.field2461 = new int[i_2];
 
       int i_3;
       int i_5;
       for (i_3 = 0; i_3 < i_2; this.field2470.field3732 += i_5) {
-         int i_4 = this.field2470.method5499();
-         i_5 = this.field2470.method5499();
+         int i_4 = this.field2470.readIntMedEndian();
+         i_5 = this.field2470.readIntMedEndian();
          if (i_4 == 1297379947) {
             this.field2461[i_3] = this.field2470.field3732;
             ++i_3;

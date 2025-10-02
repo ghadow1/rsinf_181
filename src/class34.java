@@ -16,7 +16,7 @@ public abstract class class34 {
       if (!this.method578(-1274004046)) {
          return false;
       } else {
-         class241 class241_4 = class222.method4118(this.vmethod597(-602867254), -673469339);
+         class241 class241_4 = class222.method4118(this.vmethod597(-602867254));
          int i_5 = this.vmethod577((byte) 14);
          int i_6 = this.vmethod593((byte) 1);
          switch(class241_4.field3226.field3459) {

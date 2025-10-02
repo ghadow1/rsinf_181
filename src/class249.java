@@ -28,11 +28,11 @@ public class class249 extends class175 {
          char var_4 = (char)i_6;
          this.field3306 = var_4;
       } else if (i_2 == 2) {
-         this.field3302 = class300_1.method5499();
+         this.field3302 = class300_1.readIntMedEndian();
       } else if (i_2 == 4) {
          this.field3305 = false;
       } else if (i_2 == 5) {
-         this.field3303 = class300_1.method5503();
+         this.field3303 = class300_1.readNullTermString();
       }
 
    }
@@ -60,7 +60,7 @@ public class class249 extends class175 {
       if (class250_2 != null) {
          return class250_2;
       } else {
-         byte[] bytes_3 = class250.field3309.method4144(34, i_0, -82564548);
+         byte[] bytes_3 = class250.field3309.method4144(34, i_0);
          class250_2 = new class250();
          if (bytes_3 != null) {
             class250_2.method4516(new class300(bytes_3), 1347797517);

@@ -37,7 +37,7 @@ public class class70 extends class180 {
    static final byte[] method1678(byte[] bytes_0, int i_1) {
       class300 class300_2 = new class300(bytes_0);
       int i_3 = class300_2.method5504();
-      int i_4 = class300_2.method5499();
+      int i_4 = class300_2.readIntMedEndian();
       if (i_4 < 0 || class233.field3143 != 0 && i_4 > class233.field3143) {
          throw new RuntimeException();
       } else if (i_3 == 0) {
@@ -45,7 +45,7 @@ public class class70 extends class180 {
          class300_2.method5697(bytes_5, 0, i_4);
          return bytes_5;
       } else {
-         int i_7 = class300_2.method5499();
+         int i_7 = class300_2.readIntMedEndian();
          if (i_7 < 0 || class233.field3143 != 0 && i_7 > class233.field3143) {
             throw new RuntimeException();
          } else {
@@ -69,7 +69,7 @@ public class class70 extends class180 {
 
          for (int i_4 = 0; i_4 < class97_2.field1330; i_4++) {
             if (class97_2.field1332[i_4] != 0) {
-               class299_0.method5655(class97_2.field1332[i_4]);
+               class299_0.writeByte2(class97_2.field1332[i_4]);
             } else {
                try {
                   int i_5 = class97_2.field1331[i_4];
@@ -78,16 +78,16 @@ public class class70 extends class180 {
                   if (i_5 == 0) {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getInt((Object) null);
-                     class299_0.method5655(0);
+                     class299_0.writeByte2(0);
                      class299_0.method5481(i_7);
                   } else if (i_5 == 1) {
                      field_6 = class97_2.field1333[i_4];
                      field_6.setInt((Object) null, class97_2.field1329[i_4]);
-                     class299_0.method5655(0);
+                     class299_0.writeByte2(0);
                   } else if (i_5 == 2) {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getModifiers();
-                     class299_0.method5655(0);
+                     class299_0.writeByte2(0);
                      class299_0.method5481(i_7);
                   }
 
@@ -96,7 +96,7 @@ public class class70 extends class180 {
                      if (i_5 == 4) {
                         method_26 = class97_2.field1335[i_4];
                         i_7 = method_26.getModifiers();
-                        class299_0.method5655(0);
+                        class299_0.writeByte2(0);
                         class299_0.method5481(i_7);
                      }
                   } else {
@@ -111,41 +111,41 @@ public class class70 extends class180 {
 
                      Object object_12 = method_26.invoke((Object) null, arr_8);
                      if (object_12 == null) {
-                        class299_0.method5655(0);
+                        class299_0.writeByte2(0);
                      } else if (object_12 instanceof Number) {
-                        class299_0.method5655(1);
+                        class299_0.writeByte2(1);
                         class299_0.method5483(((Number) object_12).longValue());
                      } else if (object_12 instanceof String) {
-                        class299_0.method5655(2);
+                        class299_0.writeByte2(2);
                         class299_0.method5485((String) object_12);
                      } else {
-                        class299_0.method5655(4);
+                        class299_0.writeByte2(4);
                      }
                   }
                } catch (ClassNotFoundException classnotfoundexception_14) {
-                  class299_0.method5655(-10);
+                  class299_0.writeByte2(-10);
                } catch (InvalidClassException invalidclassexception_15) {
-                  class299_0.method5655(-11);
+                  class299_0.writeByte2(-11);
                } catch (StreamCorruptedException streamcorruptedexception_16) {
-                  class299_0.method5655(-12);
+                  class299_0.writeByte2(-12);
                } catch (OptionalDataException optionaldataexception_17) {
-                  class299_0.method5655(-13);
+                  class299_0.writeByte2(-13);
                } catch (IllegalAccessException illegalaccessexception_18) {
-                  class299_0.method5655(-14);
+                  class299_0.writeByte2(-14);
                } catch (IllegalArgumentException illegalargumentexception_19) {
-                  class299_0.method5655(-15);
+                  class299_0.writeByte2(-15);
                } catch (InvocationTargetException invocationtargetexception_20) {
-                  class299_0.method5655(-16);
+                  class299_0.writeByte2(-16);
                } catch (SecurityException securityexception_21) {
-                  class299_0.method5655(-17);
+                  class299_0.writeByte2(-17);
                } catch (IOException ioexception_22) {
-                  class299_0.method5655(-18);
+                  class299_0.writeByte2(-18);
                } catch (NullPointerException nullpointerexception_23) {
-                  class299_0.method5655(-19);
+                  class299_0.writeByte2(-19);
                } catch (Exception exception_24) {
-                  class299_0.method5655(-20);
+                  class299_0.writeByte2(-20);
                } catch (Throwable throwable_25) {
-                  class299_0.method5655(-21);
+                  class299_0.writeByte2(-21);
                }
             }
          }
@@ -157,10 +157,10 @@ public class class70 extends class180 {
 
    static void method1677(int i_0) {
       class187 class187_1 = class235.method4265(class183.field2238, client.field880.field1313, 1775123545);
-      class187_1.field2333.method5655(class34.method598((byte) -18));
+      class187_1.field2333.writeByte2(class34.method598((byte) -18));
       class187_1.field2333.method5479(class7.field46);
       class187_1.field2333.method5479(class249.field3308);
-      client.field880.method2219(class187_1);
+      client.field880.copy(class187_1);
    }
 
    static boolean method1676(String string_0, int i_1) {

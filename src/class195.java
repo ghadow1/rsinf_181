@@ -6,7 +6,7 @@ public class class195 {
       new HashMap();
    }
 
-   public static String method3683(int i_0, boolean bool_1, int i_2) {
+   public static String method3683(int i_0, boolean bool_1) {
       if (bool_1 && i_0 >= 0) {
          int i_4 = i_0;
          String string_3;
@@ -42,7 +42,7 @@ public class class195 {
       }
    }
 
-   public static boolean method3685(int i_0, byte b_1) {
+   public static boolean method3685(int i_0) {
       return (i_0 >> 31 & 0x1) != 0;
    }
 

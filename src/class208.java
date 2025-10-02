@@ -21,7 +21,7 @@ public class class208 {
          } else if (i_0 == 4102) {
             string_4 = class76.field1093[--class221.field2747];
             i_5 = class76.field1098[--class70.field1014];
-            class76.field1093[++class221.field2747 - 1] = string_4 + class195.method3683(i_5, true, -808579598);
+            class76.field1093[++class221.field2747 - 1] = string_4 + class195.method3683(i_5, true);
             return 1;
          } else if (i_0 == 4103) {
             string_4 = class76.field1093[--class221.field2747];
@@ -57,7 +57,7 @@ public class class208 {
                      class70.field1014 -= 2;
                      i_5 = class76.field1098[class70.field1014];
                      i_6 = class76.field1098[class70.field1014 + 1];
-                     bytes_14 = class2.field6.method4144(i_6, 0, -1205433816);
+                     bytes_14 = class2.field6.method4144(i_6, 0);
                      class295_15 = new class295(bytes_14);
                      class76.field1098[++class70.field1014 - 1] = class295_15.method5390(string_4, i_5);
                      return 1;
@@ -66,7 +66,7 @@ public class class208 {
                      class70.field1014 -= 2;
                      i_5 = class76.field1098[class70.field1014];
                      i_6 = class76.field1098[class70.field1014 + 1];
-                     bytes_14 = class2.field6.method4144(i_6, 0, -1861029539);
+                     bytes_14 = class2.field6.method4144(i_6, 0);
                      class295_15 = new class295(bytes_14);
                      class76.field1098[++class70.field1014 - 1] = class295_15.method5343(string_4, i_5);
                      return 1;

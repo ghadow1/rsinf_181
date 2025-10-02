@@ -16,7 +16,7 @@ public final class class142 {
    int field1942 = 0;
 
    public static class295 method3294(class233 class233_0, class233 class233_1, int i_2, int i_3, int i_4) {
-      return !class284.method5220(class233_0, i_2, i_3, (byte) 38) ? null : class141.method3293(class233_1.method4144(i_2, i_3, -1871534988), 107452813);
+      return !class284.method5220(class233_0, i_2, i_3) ? null : class141.method3293(class233_1.method4144(i_2, i_3), 107452813);
    }
 
 }

@@ -18,7 +18,7 @@ public class class128 {
       if (class253_2 != null) {
          return class253_2;
       } else {
-         byte[] bytes_3 = class253.field3395.method4144(6, i_0, 685793726);
+         byte[] bytes_3 = class253.field3395.method4144(6, i_0);
          class253_2 = new class253();
          class253_2.field3357 = i_0;
          if (bytes_3 != null) {
@@ -93,7 +93,7 @@ public class class128 {
       if (class92_2 != null) {
          return class92_2;
       } else {
-         byte[] bytes_3 = class151.field1971.method4144(i_0, 0, -1417193997);
+         byte[] bytes_3 = class151.field1971.method4144(i_0, 0);
          if (bytes_3 == null) {
             return null;
          } else {

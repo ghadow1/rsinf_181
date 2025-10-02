@@ -41,16 +41,16 @@ public class class102 extends class180 {
 
    void method2346(byte[] bytes_1) {
       class300 class300_2 = new class300(bytes_1);
-      this.field1356 = class300_2.method5499();
-      this.field1357 = class300_2.method5499();
-      this.field1358 = class300_2.method5499();
-      this.field1359 = class300_2.method5499();
+      this.field1356 = class300_2.readIntMedEndian();
+      this.field1357 = class300_2.readIntMedEndian();
+      this.field1358 = class300_2.readIntMedEndian();
+      this.field1359 = class300_2.readIntMedEndian();
       if (this.field1359 < 0) {
          this.field1359 = ~this.field1359;
          this.field1364 = true;
       }
 
-      int i_3 = class300_2.method5499();
+      int i_3 = class300_2.readIntMedEndian();
       this.field1366 = new byte[i_3][];
 
       for (int i_4 = 0; i_4 < i_3; i_4++) {
@@ -407,7 +407,7 @@ public class class102 extends class180 {
 
    static boolean method2349(class233 class233_0) {
       if (!field1372) {
-         byte[] bytes_1 = class233_0.method4144(0, 0, -70468213);
+         byte[] bytes_1 = class233_0.method4144(0, 0);
          if (bytes_1 == null) {
             return false;
          }
@@ -421,10 +421,10 @@ public class class102 extends class180 {
 
    static class102 method2355(class233 class233_0, int i_1, int i_2) {
       if (!method2349(class233_0)) {
-         class233_0.method4146(i_1, i_2, -416813220);
+         class233_0.method4146(i_1, i_2);
          return null;
       } else {
-         byte[] bytes_3 = class233_0.method4144(i_1, i_2, -1613934274);
+         byte[] bytes_3 = class233_0.method4144(i_1, i_2);
          return bytes_3 == null ? null : new class102(bytes_3);
       }
    }

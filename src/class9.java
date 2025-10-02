@@ -13,11 +13,11 @@ public class class9 {
 
    public class9(class300 class300_1, boolean bool_2) {
       this.field62 = class300_1.method5495();
-      this.field59 = class300_1.method5496();
-      this.field60 = class300_1.method5499();
-      this.field61 = class300_1.method5499();
-      this.field58 = class300_1.method5499();
-      this.field63 = class300_1.method5499();
+      this.field59 = class300_1.readShortUBigEndian();
+      this.field60 = class300_1.readIntMedEndian();
+      this.field61 = class300_1.readIntMedEndian();
+      this.field58 = class300_1.readIntMedEndian();
+      this.field63 = class300_1.readIntMedEndian();
    }
 
    void method115(int i_1, byte b_2) {
@@ -346,7 +346,7 @@ public class class9 {
                                  class241 class241_7;
                                  if (i_0 == 6693) {
                                     i_4 = class76.field1098[--class70.field1014];
-                                    class241_7 = class222.method4118(i_4, -673469339);
+                                    class241_7 = class222.method4118(i_4);
                                     if (class241_7.field3216 == null) {
                                        class76.field1093[++class221.field2747 - 1] = "";
                                     } else {
@@ -356,12 +356,12 @@ public class class9 {
                                     return 1;
                                  } else if (i_0 == 6694) {
                                     i_4 = class76.field1098[--class70.field1014];
-                                    class241_7 = class222.method4118(i_4, -673469339);
+                                    class241_7 = class222.method4118(i_4);
                                     class76.field1098[++class70.field1014 - 1] = class241_7.field3218;
                                     return 1;
                                  } else if (i_0 == 6695) {
                                     i_4 = class76.field1098[--class70.field1014];
-                                    class241_7 = class222.method4118(i_4, -673469339);
+                                    class241_7 = class222.method4118(i_4);
                                     if (class241_7 == null) {
                                        class76.field1098[++class70.field1014 - 1] = -1;
                                     } else {
@@ -371,7 +371,7 @@ public class class9 {
                                     return 1;
                                  } else if (i_0 == 6696) {
                                     i_4 = class76.field1098[--class70.field1014];
-                                    class241_7 = class222.method4118(i_4, -673469339);
+                                    class241_7 = class222.method4118(i_4);
                                     if (class241_7 == null) {
                                        class76.field1098[++class70.field1014 - 1] = -1;
                                     } else {

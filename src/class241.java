@@ -60,7 +60,7 @@ public class class241 extends class175 {
       } else if (i_2 == 2) {
          this.field3212 = class300_1.method5511();
       } else if (i_2 == 3) {
-         this.field3216 = class300_1.method5503();
+         this.field3216 = class300_1.readNullTermString();
       } else if (i_2 == 4) {
          this.field3217 = class300_1.method5567();
       } else if (i_2 == 5) {
@@ -81,7 +81,7 @@ public class class241 extends class175 {
          } else if (i_2 == 8) {
             class300_1.method5504();
          } else if (i_2 >= 10 && i_2 <= 14) {
-            this.field3210[i_2 - 10] = class300_1.method5503();
+            this.field3210[i_2 - 10] = class300_1.readNullTermString();
          } else if (i_2 == 15) {
             i_4 = class300_1.method5504();
             this.field3221 = new int[i_4 * 2];
@@ -91,13 +91,13 @@ public class class241 extends class175 {
                this.field3221[i_5] = class300_1.method5606();
             }
 
-            class300_1.method5499();
+            class300_1.readIntMedEndian();
             i_5 = class300_1.method5504();
             this.field3228 = new int[i_5];
 
             int i_6;
             for (i_6 = 0; i_6 < this.field3228.length; i_6++) {
-               this.field3228[i_6] = class300_1.method5499();
+               this.field3228[i_6] = class300_1.readIntMedEndian();
             }
 
             this.field3214 = new byte[i_4];
@@ -107,15 +107,15 @@ public class class241 extends class175 {
             }
          } else if (i_2 != 16) {
             if (i_2 == 17) {
-               this.field3211 = class300_1.method5503();
+               this.field3211 = class300_1.readNullTermString();
             } else if (i_2 == 18) {
                class300_1.method5511();
             } else if (i_2 == 19) {
-               this.field3230 = class300_1.method5496();
+               this.field3230 = class300_1.readShortUBigEndian();
             } else if (i_2 == 21) {
-               class300_1.method5499();
+               class300_1.readIntMedEndian();
             } else if (i_2 == 22) {
-               class300_1.method5499();
+               class300_1.readIntMedEndian();
             } else if (i_2 == 23) {
                class300_1.method5504();
                class300_1.method5504();
@@ -180,7 +180,7 @@ public class class241 extends class175 {
          client.field880.field1319 = 0;
          if (!client.field701 && client.field880.method2223() != null) {
             class187 class187_2 = class235.method4265(class183.field2225, client.field880.field1313, 1775123545);
-            client.field880.method2219(class187_2);
+            client.field880.copy(class187_2);
 
             try {
                client.field880.method2234();

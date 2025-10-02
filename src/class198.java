@@ -287,7 +287,7 @@ public class class198 extends class115 {
          int i_9 = (int)class177_8.field2113;
          class201 class201_10 = (class201) this.field2417.method5952((long)i_9);
          if (class201_10 == null) {
-            byte[] bytes_12 = class233_2.method4208(i_9, 1034279223);
+            byte[] bytes_12 = class233_2.method4208(i_9);
             class201 class201_11;
             if (bytes_12 == null) {
                class201_11 = null;

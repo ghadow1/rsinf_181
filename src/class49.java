@@ -32,7 +32,7 @@ public class class49 {
          if (i_5 == -1) {
             return null;
          } else {
-            byte[] bytes_6 = class151.field1971.method4208(i_5, 1034279223);
+            byte[] bytes_6 = class151.field1971.method4208(i_5);
             if (bytes_6 != null) {
                if (bytes_6.length <= 1) {
                   return null;

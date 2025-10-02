@@ -30,12 +30,12 @@ public final class class55 {
       if (!client.field798) {
          i_3 = class299_1.readShort();
          i_4 = class299_1.method5518();
-         int i_5 = class299_1.method5496();
+         int i_5 = class299_1.readShortUBigEndian();
          class29.field255 = new int[i_5][4];
 
          for (i_6 = 0; i_6 < i_5; i_6++) {
             for (i_7 = 0; i_7 < 4; i_7++) {
-               class29.field255[i_6][i_7] = class299_1.method5499();
+               class29.field255[i_6][i_7] = class299_1.readIntMedEndian();
             }
          }
 
@@ -72,16 +72,16 @@ public final class class55 {
          i_3 = class299_1.method5518();
          i_4 = class299_1.readShort();
          boolean bool_16 = class299_1.method5504() == 1;
-         i_6 = class299_1.method5496();
-         class299_1.method5438(1273494550);
+         i_6 = class299_1.readShortUBigEndian();
+         class299_1.method5438();
 
          int i_10;
          for (i_7 = 0; i_7 < 4; i_7++) {
             for (i_8 = 0; i_8 < 13; i_8++) {
                for (i_9 = 0; i_9 < 13; i_9++) {
-                  i_10 = class299_1.method5445(1, -1916324015);
+                  i_10 = class299_1.method5445(1);
                   if (i_10 == 1) {
-                     client.field712[i_7][i_8][i_9] = class299_1.method5445(26, -2133965880);
+                     client.field712[i_7][i_8][i_9] = class299_1.method5445(26);
                   } else {
                      client.field712[i_7][i_8][i_9] = -1;
                   }
@@ -89,12 +89,12 @@ public final class class55 {
             }
          }
 
-         class299_1.method5446((byte) -68);
+         class299_1.method5446();
          class29.field255 = new int[i_6][4];
 
          for (i_7 = 0; i_7 < i_6; i_7++) {
             for (i_8 = 0; i_8 < 4; i_8++) {
-               class29.field255[i_7][i_8] = class299_1.method5499();
+               class29.field255[i_7][i_8] = class299_1.readIntMedEndian();
             }
          }
 

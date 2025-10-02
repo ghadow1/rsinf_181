@@ -22,11 +22,11 @@ public class class28 {
 
    public static void method418(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
       class187 class187_5 = class235.method4265(class183.field2296, client.field880.field1313, 1775123545);
-      class187_5.field2333.method5539(bool_3 ? client.field855 : 0);
+      class187_5.field2333.write32IntReverse(bool_3 ? client.field855 : 0);
       class187_5.field2333.method5634(i_1);
-      class187_5.field2333.method5521(i_2);
+      class187_5.field2333.writeByte(i_2);
       class187_5.field2333.method5479(i_0);
-      client.field880.method2219(class187_5);
+      client.field880.copy(class187_5);
    }
 
    static final void method419(class300 class300_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {

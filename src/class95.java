@@ -10,7 +10,7 @@ public class class95 {
    int field1311 = 0;
    class300 field1312 = new class300(5000);
    class299 field1314 = new class299(40000);
-   ServerPacketProt field1310 = null;
+   ServerPacketProt inPacketType = null;
    int field1315 = 0;
    boolean field1322 = true;
    int field1318 = 0;
@@ -38,7 +38,7 @@ public class class95 {
       this.field1311 = 0;
    }
 
-   public final void method2219(class187 class187_1) {
+   public final void copy(class187 class187_1) {
       this.field1316.method4819(class187_1);
       class187_1.field2331 = class187_1.field2333.field3732;
       class187_1.field2333.field3732 = 0;

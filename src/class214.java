@@ -313,26 +313,26 @@ public class class214 {
    }
 
    public void method3995(class300 class300_1, int i_2) {
-      class300_1.method5655(this.field2535 ? 1 : 0);
+      class300_1.writeByte2(this.field2535 ? 1 : 0);
 
       int i_3;
       for (i_3 = 0; i_3 < 7; i_3++) {
          int i_4 = this.field2534[field2538[i_3]];
          if (i_4 == 0) {
-            class300_1.method5655(-1);
+            class300_1.writeByte2(-1);
          } else {
-            class300_1.method5655(i_4 - 256);
+            class300_1.writeByte2(i_4 - 256);
          }
       }
 
       for (i_3 = 0; i_3 < 5; i_3++) {
-         class300_1.method5655(this.field2533[i_3]);
+         class300_1.writeByte2(this.field2533[i_3]);
       }
 
    }
 
    public static boolean method4020(class233 class233_0, int i_1, int i_2) {
-      byte[] bytes_3 = class233_0.method4208(i_1, 1034279223);
+      byte[] bytes_3 = class233_0.method4208(i_1);
       if (bytes_3 == null) {
          return false;
       } else {

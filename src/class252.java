@@ -44,7 +44,7 @@ public class class252 extends class175 {
       } else if (i_2 == 8) {
          this.field3342 = class300_1.method5512();
       } else if (i_2 == 9) {
-         this.field3344 = class300_1.method5496();
+         this.field3344 = class300_1.readShortUBigEndian();
       } else if (i_2 == 10) {
          this.field3340 = class300_1.method5606();
       } else if (i_2 == 11) {
@@ -54,21 +54,21 @@ public class class252 extends class175 {
       } else if (i_2 == 13) {
          this.field3328 = class300_1.method5606();
       } else if (i_2 == 14) {
-         this.field3341 = class300_1.method5496();
+         this.field3341 = class300_1.readShortUBigEndian();
       } else if (i_2 == 17 || i_2 == 18) {
-         this.field3346 = class300_1.method5496();
+         this.field3346 = class300_1.readShortUBigEndian();
          if (this.field3346 == 65535) {
             this.field3346 = -1;
          }
 
-         this.field3347 = class300_1.method5496();
+         this.field3347 = class300_1.readShortUBigEndian();
          if (this.field3347 == 65535) {
             this.field3347 = -1;
          }
 
          int i_4 = -1;
          if (i_2 == 18) {
-            i_4 = class300_1.method5496();
+            i_4 = class300_1.readShortUBigEndian();
             if (i_4 == 65535) {
                i_4 = -1;
             }
@@ -78,7 +78,7 @@ public class class252 extends class175 {
          this.field3345 = new int[i_5 + 2];
 
          for (int i_6 = 0; i_6 <= i_5; i_6++) {
-            this.field3345[i_6] = class300_1.method5496();
+            this.field3345[i_6] = class300_1.readShortUBigEndian();
             if (this.field3345[i_6] == 65535) {
                this.field3345[i_6] = -1;
             }
@@ -202,10 +202,10 @@ public class class252 extends class175 {
             class233 class233_5 = field3326;
             int i_6 = this.field3332;
             class295 class295_3;
-            if (!class284.method5220(class233_4, i_6, 0, (byte) -15)) {
+            if (!class284.method5220(class233_4, i_6, 0)) {
                class295_3 = null;
             } else {
-               class295_3 = class141.method3293(class233_5.method4144(i_6, 0, 91165966), 107452813);
+               class295_3 = class141.method3293(class233_5.method4144(i_6, 0), 107452813);
             }
 
             if (class295_3 != null) {
@@ -226,7 +226,7 @@ public class class252 extends class175 {
             return string_3;
          }
 
-         string_3 = string_3.substring(0, i_4) + class195.method3683(i_1, false, -819650523) + string_3.substring(i_4 + 2);
+         string_3 = string_3.substring(0, i_4) + class195.method3683(i_1, false) + string_3.substring(i_4 + 2);
       }
    }
 

@@ -13,7 +13,7 @@ public class class312 {
    public int field3822 = -1;
 
    public void method5903(class233 class233_1, byte b_2) {
-      byte[] bytes_3 = class233_1.method4208(class311.field3821.field3820, 1034279223);
+      byte[] bytes_3 = class233_1.method4208(class311.field3821.field3820);
       class300 class300_4 = new class300(bytes_3);
 
       while (true) {

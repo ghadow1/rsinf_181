@@ -20,7 +20,7 @@ public class class6 {
    }
 
    public class6(class300 class300_1, boolean bool_2) {
-      int i_3 = class300_1.method5496();
+      int i_3 = class300_1.readShortUBigEndian();
       boolean bool_4 = class300_1.method5504() == 1;
       byte b_5;
       if (bool_4) {
@@ -29,7 +29,7 @@ public class class6 {
          b_5 = 0;
       }
 
-      int i_6 = class300_1.method5496();
+      int i_6 = class300_1.readShortUBigEndian();
       this.field36 = new ArrayList(i_6);
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
@@ -166,7 +166,7 @@ public class class6 {
                      if (class244_47 != null) {
                         class244_48 = class244_47;
                      } else {
-                        byte[] bytes_49 = class244.field3255.method4144(1, i_18, -2092383479);
+                        byte[] bytes_49 = class244.field3255.method4144(1, i_18);
                         class244_47 = new class244();
                         if (bytes_49 != null) {
                            class244_47.method4418(new class300(bytes_49), i_18, 1618503924);
@@ -263,7 +263,7 @@ public class class6 {
                               if (class257_36 != null) {
                                  class257_50 = class257_36;
                               } else {
-                                 byte[] bytes_37 = class257.field3505.method4144(4, i_35, -1727091861);
+                                 byte[] bytes_37 = class257.field3505.method4144(4, i_35);
                                  class257_36 = new class257();
                                  if (bytes_37 != null) {
                                     class257_36.method4744(new class300(bytes_37), i_35, (byte) -108);
@@ -299,7 +299,7 @@ public class class6 {
                            if (class257_38 != null) {
                               class257_36 = class257_38;
                            } else {
-                              byte[] bytes_39 = class257.field3505.method4144(4, i_51, -685140278);
+                              byte[] bytes_39 = class257.field3505.method4144(4, i_51);
                               class257_38 = new class257();
                               if (bytes_39 != null) {
                                  class257_38.method4744(new class300(bytes_39), i_51, (byte) -93);

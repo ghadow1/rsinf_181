@@ -20,9 +20,9 @@ public class class276 extends class277 {
          if (class300_1.field3732 < i_2) {
             int i_4 = class300_1.method5504();
             boolean bool_5 = (i_4 & 0x1) == 1;
-            class283 class283_6 = new class283(class300_1.method5503(), this.field3618);
-            class283 class283_7 = new class283(class300_1.method5503(), this.field3618);
-            class300_1.method5503();
+            class283 class283_6 = new class283(class300_1.readNullTermString(), this.field3618);
+            class283 class283_7 = new class283(class300_1.readNullTermString(), this.field3618);
+            class300_1.readNullTermString();
             if (class283_6 != null && class283_6.method5205((byte) -76)) {
                class278 class278_8 = (class278) this.method5138(class283_6, 2083171527);
                if (bool_5) {

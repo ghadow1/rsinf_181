@@ -18,12 +18,12 @@ public class class119 implements class139 {
       this.field1533 = this.field1530;
       this.field1534 = d_4;
       this.field1535 = i_6;
-      int[] ints_7 = class233_1.method4153(0, 1269467416);
+      int[] ints_7 = class233_1.method4153(0);
       int i_8 = ints_7.length;
       this.field1531 = new class124[class233_1.method4154(0, -2013902268)];
 
       for (int i_9 = 0; i_9 < i_8; i_9++) {
-         class300 class300_10 = new class300(class233_1.method4144(0, ints_7[i_9], -935400065));
+         class300 class300_10 = new class300(class233_1.method4144(0, ints_7[i_9]));
          this.field1531[ints_7[i_9]] = new class124(class300_10);
       }
 
@@ -97,7 +97,7 @@ public class class119 implements class139 {
 
             for (int i_8 = 0; i_8 < ints_7.length; i_8++) {
                int i_9 = ints_7[i_8];
-               if (this.field1536.method4147(i_9, 1060538444)) {
+               if (this.field1536.method4147(i_9)) {
                   ++i_3;
                }
             }
@@ -239,8 +239,8 @@ public class class119 implements class139 {
          try {
             class343 class343_26 = new class343(class167.field2038, "rw", 10000L);
             class300 class300_27 = new class300(500);
-            class300_27.method5655(3);
-            class300_27.method5655(0);
+            class300_27.writeByte2(3);
+            class300_27.writeByte2(0);
             class300_27.method5487(file_23.getPath());
 
             class343_26.method6561(class300_27.field3730, 0, class300_27.field3732, 793801547);

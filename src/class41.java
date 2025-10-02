@@ -95,7 +95,7 @@ public class class41 {
          class66_2.field983 = class299_0.method5528();
          class66_2.field995 = class299_0.method5518() + client.field881;
          class66_2.field996 = class299_0.method5532() + client.field881;
-         class66_2.field997 = class299_0.method5496();
+         class66_2.field997 = class299_0.readShortUBigEndian();
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
             class66_2.field993 += class66_2.field640;
@@ -114,7 +114,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x20) != 0) {
-         class66_2.field977 = class299_0.method5503();
+         class66_2.field977 = class299_0.readNullTermString();
          if (class66_2.field977.charAt(0) == 126) {
             class66_2.field977 = class66_2.field977.substring(1);
             class62.method1132(2, class66_2.field621.method5197((byte) 51), class66_2.field977, -2101795865);
@@ -198,12 +198,12 @@ public class class41 {
 
       if ((i_3 & 0x100) != 0) {
          for (i_6 = 0; i_6 < 3; i_6++) {
-            class66_2.field619[i_6] = class299_0.method5503();
+            class66_2.field619[i_6] = class299_0.readNullTermString();
          }
       }
 
       if ((i_3 & 0x80) != 0) {
-         i_6 = class299_0.method5496();
+         i_6 = class299_0.readShortUBigEndian();
          if (i_6 == 65535) {
             i_6 = -1;
          }

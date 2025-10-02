@@ -53,7 +53,7 @@ public class class107 implements Runnable {
       return null;
    }
 
-   protected static int method2479() {
+   protected static int garbageCollector() {
       int i_1 = 0;
       if (class43.field378 == null || !class43.field378.isValid()) {
          try {
@@ -73,7 +73,7 @@ public class class107 implements Runnable {
       }
 
       if (class43.field378 != null) {
-         long long_10 = class206.method3939();
+         long long_10 = class206.getAdjustedTimeMillis();
          long long_4 = class43.field378.getCollectionTime();
          if (class53.field458 != -1L) {
             long long_6 = long_4 - class53.field458;

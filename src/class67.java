@@ -38,7 +38,7 @@ public class class67 implements Comparator {
       if (class248_3 != null) {
          class248_2 = class248_3;
       } else {
-         byte[] bytes_8 = class248.field3298.method4144(14, i_0, 775405797);
+         byte[] bytes_8 = class248.field3298.method4144(14, i_0);
          class248_3 = new class248();
          if (bytes_8 != null) {
             class248_3.method4485(new class300(bytes_8), -1936267259);

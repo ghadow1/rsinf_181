@@ -9,28 +9,28 @@ public class class299 extends class300 {
       super(i_1);
    }
 
-   public boolean method5441(int i_1) {
+   public boolean method5441() {
       int i_2 = super.field3730[super.field3732] - this.field3725.method6254((byte) 7) & 0xff;
       return i_2 >= 128;
    }
 
-   public void method5442(class328 class328_1, byte b_2) {
+   public void method5442(class328 class328_1) {
       this.field3725 = class328_1;
    }
 
-   public void method5473(int i_1, int i_2) {
+   public void method5473(int i_1) {
       super.field3730[++super.field3732 - 1] = (byte)(i_1 + this.field3725.method6246((byte) 75));
    }
 
-   public void method5438(int i_1) {
+   public void method5438() {
       this.field3726 = super.field3732 * 8;
    }
 
-   public void method5446(byte b_1) {
+   public void method5446() {
       super.field3732 = (this.field3726 + 7) / 8;
    }
 
-   public int method5445(int i_1, int i_2) {
+   public int method5445(int i_1) {
       int i_3 = this.field3726 >> 3;
       int i_4 = 8 - (this.field3726 & 0x7);
       int i_5 = 0;
@@ -49,32 +49,32 @@ public class class299 extends class300 {
       return i_5;
    }
 
-   public void method5443(byte[] bytes_1, int i_2, int i_3, int i_4) {
+   public void method5443(byte[] bytes_1, int i_2, int i_3) {
       for (int i_5 = 0; i_5 < i_3; i_5++) {
          bytes_1[i_5 + i_2] = (byte)(super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 74));
       }
 
    }
 
-   public int method5461(int i_1, short s_2) {
+   public int method5461(int i_1) {
       return i_1 * 8 - this.field3726;
    }
 
-   public int method5451(int i_1) {
+   public int method5451() {
       int i_2 = super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 118) & 0xff;
       return i_2 < 128 ? i_2 : (i_2 - 128 << 8) + (super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 13) & 0xff);
    }
 
-   public int method5440(int i_1) {
+   public int method5440() {
       return super.field3730[++super.field3732 - 1] - this.field3725.method6246((byte) 15) & 0xff;
    }
 
-   public void method5437(int[] ints_1, int i_2) {
+   public void method5437(int[] ints_1) {
       this.field3725 = new class328(ints_1);
    }
 
-   static class324 method5474(class233 class233_0, int i_1, int i_2, int i_3) {
-      if (!class284.method5220(class233_0, i_1, i_2, (byte) -34)) {
+   static class324 method5474(class233 class233_0, int i_1, int i_2) {
+      if (!class284.method5220(class233_0, i_1, i_2)) {
          return null;
       } else {
          class324 class324_5 = new class324();

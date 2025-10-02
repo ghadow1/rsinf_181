@@ -281,7 +281,7 @@ public final class class308 {
       return "" + this.field3805;
    }
 
-   public static byte[] method5873(Object object_0, boolean bool_1, int i_2) {
+   public static byte[] method5873(Object object_0, boolean bool_1) {
       if (object_0 == null) {
          return null;
       } else if (object_0 instanceof byte[]) {

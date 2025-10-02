@@ -11,10 +11,10 @@ public class class56 {
 
    static final void method1090(int i_0) {
       if (client.field700 > 0) {
-         class174.method3593(1403573360);
+         class174.disconnectGame();
       } else {
          client.field797.method4993(-602398430);
-         class96.method2265(40, (short) -28103);
+         class96.method2265(40);
          class269.field3563 = client.field880.method2223();
          client.field880.method2224();
       }
@@ -39,8 +39,8 @@ public class class56 {
       int i_8;
       int i_9;
       int i_10;
-      while (class299_1.method5461(client.field880.field1315, (short) 4225) >= 27) {
-         i_3 = class299_1.method5445(15, -1832053520);
+      while (class299_1.method5461(client.field880.field1315) >= 27) {
+         i_3 = class299_1.method5445(15);
          if (i_3 == 32767) {
             break;
          }
@@ -55,41 +55,41 @@ public class class56 {
          client.field696[++client.field695 - 1] = i_3;
          class79_5.field973 = client.field881;
          if (bool_0) {
-            i_6 = class299_1.method5445(8, -1702898281);
+            i_6 = class299_1.method5445(8);
             if (i_6 > 127) {
                i_6 -= 256;
             }
          } else {
-            i_6 = class299_1.method5445(5, -1974486374);
+            i_6 = class299_1.method5445(5);
             if (i_6 > 15) {
                i_6 -= 32;
             }
          }
 
-         i_7 = class299_1.method5445(1, -2058066389);
-         i_8 = client.field780[class299_1.method5445(3, -1820438251)];
+         i_7 = class299_1.method5445(1);
+         i_8 = client.field780[class299_1.method5445(3)];
          if (bool_4) {
             class79_5.field1000 = class79_5.field950 = i_8;
          }
 
-         i_9 = class299_1.method5445(1, -1867401853);
+         i_9 = class299_1.method5445(1);
          if (i_9 == 1) {
             client.field859[++client.field697 - 1] = i_3;
          }
 
          if (bool_0) {
-            i_10 = class299_1.method5445(8, -1657435452);
+            i_10 = class299_1.method5445(8);
             if (i_10 > 127) {
                i_10 -= 256;
             }
          } else {
-            i_10 = class299_1.method5445(5, -1618169243);
+            i_10 = class299_1.method5445(5);
             if (i_10 > 15) {
                i_10 -= 32;
             }
          }
 
-         class79_5.field1134 = class53.method1005(class299_1.method5445(14, -1787515405), (byte) -3);
+         class79_5.field1134 = class53.method1005(class299_1.method5445(14), (byte) -3);
          class79_5.field952 = class79_5.field1134.field3469;
          class79_5.field948 = class79_5.field1134.field3492;
          if (class79_5.field948 == 0) {
@@ -106,7 +106,7 @@ public class class56 {
          class79_5.method1963(client.field657.field994[0] + i_6, client.field657.field962[0] + i_10, i_7 == 1, (short) 128);
       }
 
-      class299_1.method5446((byte) -35);
+      class299_1.method5446();
 
       int i_15;
       for (i_3 = 0; i_3 < client.field697; i_3++) {
@@ -131,7 +131,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x20) != 0) {
-            i_7 = class299_1.method5496();
+            i_7 = class299_1.readShortUBigEndian();
             if (i_7 == 65535) {
                i_7 = -1;
             }
@@ -160,7 +160,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = class53.method1005(class299_1.method5496(), (byte) -91);
+            class79_5.field1134 = class53.method1005(class299_1.readShortUBigEndian(), (byte) -91);
             class79_5.field952 = class79_5.field1134.field3469;
             class79_5.field948 = class79_5.field1134.field3492;
             class79_5.field957 = class79_5.field1134.field3475;
@@ -233,7 +233,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x2) != 0) {
-            class79_5.field977 = class299_1.method5503();
+            class79_5.field977 = class299_1.readNullTermString();
             class79_5.field1002 = 100;
          }
       }
@@ -288,13 +288,13 @@ public class class56 {
       class187 class187_3 = class235.method4265(class183.field2273, client.field880.field1313, 1775123545);
       class187_3.field2333.method5540(i_0);
       class187_3.field2333.method5530(i_1);
-      client.field880.method2219(class187_3);
+      client.field880.copy(class187_3);
    }
 
    static final void method1089(byte b_0) {
       class187 class187_1 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
-      class187_1.field2333.method5655(0);
-      client.field880.method2219(class187_1);
+      class187_1.field2333.writeByte2(0);
+      client.field880.copy(class187_1);
    }
 
 }

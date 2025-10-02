@@ -48,8 +48,8 @@ public class class250 extends class175 {
 
    static final void method4530(int i_0) {
       class299 class299_1 = client.field880.field1314;
-      class299_1.method5438(1320560608);
-      int i_2 = class299_1.method5445(8, -2001792229);
+      class299_1.method5438();
+      int i_2 = class299_1.method5445(8);
       int i_3;
       if (i_2 < client.field695) {
          for (i_3 = i_2; i_3 < client.field695; i_3++) {
@@ -65,12 +65,12 @@ public class class250 extends class175 {
          for (i_3 = 0; i_3 < i_2; i_3++) {
             int i_4 = client.field696[i_3];
             class79 class79_5 = client.field694[i_4];
-            int i_6 = class299_1.method5445(1, -1606860560);
+            int i_6 = class299_1.method5445(1);
             if (i_6 == 0) {
                client.field696[++client.field695 - 1] = i_4;
                class79_5.field973 = client.field881;
             } else {
-               int i_7 = class299_1.method5445(2, -2014399255);
+               int i_7 = class299_1.method5445(2);
                if (i_7 == 0) {
                   client.field696[++client.field695 - 1] = i_4;
                   class79_5.field973 = client.field881;
@@ -81,20 +81,20 @@ public class class250 extends class175 {
                   if (i_7 == 1) {
                      client.field696[++client.field695 - 1] = i_4;
                      class79_5.field973 = client.field881;
-                     i_8 = class299_1.method5445(3, -1523067271);
+                     i_8 = class299_1.method5445(3);
                      class79_5.method1974(i_8, (byte) 1, 1156693210);
-                     i_9 = class299_1.method5445(1, -1866509057);
+                     i_9 = class299_1.method5445(1);
                      if (i_9 == 1) {
                         client.field859[++client.field697 - 1] = i_4;
                      }
                   } else if (i_7 == 2) {
                      client.field696[++client.field695 - 1] = i_4;
                      class79_5.field973 = client.field881;
-                     i_8 = class299_1.method5445(3, -1348664616);
+                     i_8 = class299_1.method5445(3);
                      class79_5.method1974(i_8, (byte) 2, -620961202);
-                     i_9 = class299_1.method5445(3, -1357369727);
+                     i_9 = class299_1.method5445(3);
                      class79_5.method1974(i_9, (byte) 2, -747750658);
-                     int i_10 = class299_1.method5445(1, -1387606124);
+                     int i_10 = class299_1.method5445(1);
                      if (i_10 == 1) {
                         client.field859[++client.field697 - 1] = i_4;
                      }
@@ -316,7 +316,7 @@ public class class250 extends class175 {
          class69_0.method1658(-2042789311);
       }
 
-      class284.method5226(class69_0, 230469601);
+      class284.method5226(class69_0);
       class69_0.field967 = false;
       if (class69_0.field978 != -1) {
          class258_12 = class7.method81(class69_0.field978, (byte) 1);

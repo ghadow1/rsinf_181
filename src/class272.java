@@ -13,7 +13,7 @@ public class class272 {
 
    public void method5014(byte b_1) {
       if (this.field3602 != -1L) {
-         this.field3607 = class206.method3939() - this.field3602;
+         this.field3607 = class206.getAdjustedTimeMillis() - this.field3602;
          this.field3602 = -1L;
       }
 
@@ -23,19 +23,19 @@ public class class272 {
 
    public void method4993(int i_1) {
       if (this.field3603 != -1L) {
-         this.field3604 = class206.method3939() - this.field3603;
+         this.field3604 = class206.getAdjustedTimeMillis() - this.field3603;
          this.field3603 = -1L;
       }
 
    }
 
    public void method4996(int i_1, int i_2) {
-      this.field3602 = class206.method3939();
+      this.field3602 = class206.getAdjustedTimeMillis();
       this.field3608 = i_1;
    }
 
    public void method5005(int i_1) {
-      this.field3603 = class206.method3939();
+      this.field3603 = class206.getAdjustedTimeMillis();
    }
 
    public void method4999(class300 class300_1, int i_2) {
@@ -270,7 +270,7 @@ public class class272 {
                } else {
                   class85.field1189 = "Loaded title screen";
                   class85.field1188 = 50;
-                  class96.method2265(5, (short) -12345);
+                  class96.method2265(5);
                   client.field680 = 70;
                }
             } else if (client.field680 == 70) {
@@ -337,7 +337,7 @@ public class class272 {
                      class241.field3219 = new class241[class314.field3846];
 
                      for (int i_23 = 0; i_23 < class314.field3846; i_23++) {
-                        byte[] bytes_24 = class235_21.method4144(35, i_23, -1152099404);
+                        byte[] bytes_24 = class235_21.method4144(35, i_23);
                         class241.field3219[i_23] = new class241(i_23);
                         if (bytes_24 != null) {
                            class241.field3219[i_23].method4369(new class300(bytes_24), -2108629289);
@@ -499,7 +499,7 @@ public class class272 {
                   client.field680 = 150;
                }
             } else if (client.field680 == 150) {
-               class96.method2265(10, (short) -12079);
+               class96.method2265(10);
             }
          }
       }

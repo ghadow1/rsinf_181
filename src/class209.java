@@ -286,7 +286,7 @@ public class class209 {
 
       label71:
       while (true) {
-         int i_7 = class300_5.method5509(-1079482456);
+         int i_7 = class300_5.method5509();
          if (i_7 == 0) {
             return bool_4;
          }

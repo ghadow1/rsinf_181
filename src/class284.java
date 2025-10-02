@@ -15,8 +15,8 @@ public class class284 extends class279 {
       return this.method5219((class284) object_1, -1814764429);
    }
 
-   public static boolean method5220(class233 class233_0, int i_1, int i_2, byte b_3) {
-      byte[] bytes_4 = class233_0.method4144(i_1, i_2, 1462208687);
+   public static boolean method5220(class233 class233_0, int i_1, int i_2) {
+      byte[] bytes_4 = class233_0.method4144(i_1, i_2);
       if (bytes_4 == null) {
          return false;
       } else {
@@ -25,7 +25,7 @@ public class class284 extends class279 {
       }
    }
 
-   static final void method5226(class69 class69_0, int i_1) {
+   static final void method5226(class69 class69_0) {
       if (class69_0.field948 != 0) {
          if (class69_0.field975 != -1) {
             Object obj_2 = null;

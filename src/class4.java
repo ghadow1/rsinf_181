@@ -8,7 +8,7 @@ final class class4 implements class0 {
    }
 
    public Object vmethod42(class300 class300_1, int i_2) {
-      return class300_1.method5503();
+      return class300_1.readNullTermString();
    }
 
    public void vmethod43(Object object_1, class300 class300_2, int i_3) {

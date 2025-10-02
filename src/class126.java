@@ -79,9 +79,9 @@ public final class class126 extends class180 {
    static final void method2856(String string_0, int i_1) {
       if (class46.field410 != null) {
          class187 class187_2 = class235.method4265(class183.field2216, client.field880.field1313, 1775123545);
-         class187_2.field2333.method5655(class209.method3945(string_0, 1874729993));
+         class187_2.field2333.writeByte2(class209.method3945(string_0, 1874729993));
          class187_2.field2333.method5485(string_0);
-         client.field880.method2219(class187_2);
+         client.field880.copy(class187_2);
       }
    }
 

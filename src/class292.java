@@ -622,7 +622,7 @@ public class class292 {
                                     if (class217_11.field2597 == 1) {
                                        class321.method6014(i_20, i_21, i_22, i_23, class217_11.field2695);
                                     } else {
-                                       class202.method3912(i_20, i_21, i_22, i_23, class217_11.field2695, class217_11.field2597, 2095922546);
+                                       class202.method3912(i_20, i_21, i_22, i_23, class217_11.field2695, class217_11.field2597);
                                     }
                                  }
                               }
@@ -642,7 +642,7 @@ public class class292 {
    }
 
    static String method5318(class217 class217_0, byte b_1) {
-      return class78.method1957(class268.method4987(class217_0, 1464442611), (byte) -30) == 0 ? null : (class217_0.field2657 != null && class217_0.field2657.trim().length() != 0 ? class217_0.field2657 : null);
+      return class78.method1957(class268.method4987(class217_0), (byte) -30) == 0 ? null : (class217_0.field2657 != null && class217_0.field2657.trim().length() != 0 ? class217_0.field2657 : null);
    }
 
    static int method5316(int i_0, class92 class92_1, boolean bool_2, int i_3) {

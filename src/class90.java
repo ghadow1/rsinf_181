@@ -25,7 +25,7 @@ public class class90 {
          if (class242_4 != null) {
             class242_3 = class242_4;
          } else {
-            byte[] bytes_5 = class242.field3233.method4144(19, i_2, 837279805);
+            byte[] bytes_5 = class242.field3233.method4144(19, i_2);
             class242_4 = new class242();
             if (bytes_5 != null) {
                class242_4.method4401(new class300(bytes_5), (byte) 22);
@@ -84,7 +84,7 @@ public class class90 {
                }
 
                class300 class300_32 = new class300(i_3);
-               class300_32.method5655(2);
+               class300_32.writeByte2(2);
                class300_32.method5479(i_4);
                Iterator iterator_33 = this.field1271.entrySet().iterator();
 
@@ -115,7 +115,7 @@ public class class90 {
                         ++i_14;
                      }
 
-                     class300_32.method5655(class3_10.field11);
+                     class300_32.writeByte2(class3_10.field11);
                      class3.method30(object_9, class300_32, (byte) 1);
                   }
                }
@@ -152,7 +152,7 @@ public class class90 {
       }
 
       this.field1270 = false;
-      this.field1272 = class206.method3939();
+      this.field1272 = class206.getAdjustedTimeMillis();
    }
 
    void method2104(byte b_1) {
@@ -197,7 +197,7 @@ public class class90 {
                      int i_10;
                      int i_18;
                      if (i_17 >= 2) {
-                        i_18 = class300_16.method5496();
+                        i_18 = class300_16.readShortUBigEndian();
                         i_8 = 0;
 
                         while (true) {
@@ -206,7 +206,7 @@ public class class90 {
                               break;
                            }
 
-                           i_9 = class300_16.method5496();
+                           i_9 = class300_16.readShortUBigEndian();
                            i_10 = class300_16.method5504();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
                            class3 class3_12 = (class3) class107.method2476(arr_11, i_10);
@@ -218,21 +218,21 @@ public class class90 {
                            ++i_8;
                         }
                      } else {
-                        i_18 = class300_16.method5496();
+                        i_18 = class300_16.readShortUBigEndian();
 
                         for (i_8 = 0; i_8 < i_18; i_8++) {
-                           i_9 = class300_16.method5496();
-                           i_10 = class300_16.method5499();
+                           i_9 = class300_16.readShortUBigEndian();
+                           i_10 = class300_16.readIntMedEndian();
                            if (this.field1268[i_9]) {
                               this.field1271.put(Integer.valueOf(i_9), Integer.valueOf(i_10));
                            }
                         }
 
-                        i_8 = class300_16.method5496();
+                        i_8 = class300_16.readShortUBigEndian();
 
                         for (i_9 = 0; i_9 < i_8; i_9++) {
-                           class300_16.method5496();
-                           class300_16.method5503();
+                           class300_16.readShortUBigEndian();
+                           class300_16.readNullTermString();
                         }
 
                         bool_26 = false;
@@ -333,7 +333,7 @@ public class class90 {
    }
 
    void method2105(int i_1) {
-      if (this.field1270 && this.field1272 < class206.method3939() - 60000L) {
+      if (this.field1270 && this.field1272 < class206.getAdjustedTimeMillis() - 60000L) {
          this.method2100(2110118383);
       }
 

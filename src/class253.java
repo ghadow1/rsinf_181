@@ -83,13 +83,13 @@ public class class253 extends class175 {
                this.field3362 = new int[i_4];
 
                for (i_5 = 0; i_5 < i_4; i_5++) {
-                  this.field3362[i_5] = class300_1.method5496();
+                  this.field3362[i_5] = class300_1.readShortUBigEndian();
                   this.field3359[i_5] = class300_1.method5504();
                }
             }
          }
       } else if (i_2 == 2) {
-         this.field3360 = class300_1.method5503();
+         this.field3360 = class300_1.readNullTermString();
       } else if (i_2 == 5) {
          i_4 = class300_1.method5504();
          if (i_4 > 0) {
@@ -100,7 +100,7 @@ public class class253 extends class175 {
                this.field3362 = new int[i_4];
 
                for (i_5 = 0; i_5 < i_4; i_5++) {
-                  this.field3362[i_5] = class300_1.method5496();
+                  this.field3362[i_5] = class300_1.readShortUBigEndian();
                }
             }
          }
@@ -122,7 +122,7 @@ public class class253 extends class175 {
       } else if (i_2 == 23) {
          this.field3372 = true;
       } else if (i_2 == 24) {
-         this.field3373 = class300_1.method5496();
+         this.field3373 = class300_1.readShortUBigEndian();
          if (this.field3373 == 65535) {
             this.field3373 = -1;
          }
@@ -135,7 +135,7 @@ public class class253 extends class175 {
       } else if (i_2 == 39) {
          this.field3380 = class300_1.method5495() * 25;
       } else if (i_2 >= 30 && i_2 < 35) {
-         this.field3377[i_2 - 30] = class300_1.method5503();
+         this.field3377[i_2 - 30] = class300_1.readNullTermString();
          if (this.field3377[i_2 - 30].equalsIgnoreCase("Hidden")) {
             this.field3377[i_2 - 30] = null;
          }
@@ -145,8 +145,8 @@ public class class253 extends class175 {
          this.field3353 = new short[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3375[i_5] = (short)class300_1.method5496();
-            this.field3353[i_5] = (short)class300_1.method5496();
+            this.field3375[i_5] = (short)class300_1.readShortUBigEndian();
+            this.field3353[i_5] = (short)class300_1.readShortUBigEndian();
          }
       } else if (i_2 == 41) {
          i_4 = class300_1.method5504();
@@ -154,21 +154,21 @@ public class class253 extends class175 {
          this.field3364 = new short[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3363[i_5] = (short)class300_1.method5496();
-            this.field3364[i_5] = (short)class300_1.method5496();
+            this.field3363[i_5] = (short)class300_1.readShortUBigEndian();
+            this.field3364[i_5] = (short)class300_1.readShortUBigEndian();
          }
       } else if (i_2 == 62) {
          this.field3358 = true;
       } else if (i_2 == 64) {
          this.field3356 = false;
       } else if (i_2 == 65) {
-         this.field3381 = class300_1.method5496();
+         this.field3381 = class300_1.readShortUBigEndian();
       } else if (i_2 == 66) {
-         this.field3383 = class300_1.method5496();
+         this.field3383 = class300_1.readShortUBigEndian();
       } else if (i_2 == 67) {
-         this.field3384 = class300_1.method5496();
+         this.field3384 = class300_1.readShortUBigEndian();
       } else if (i_2 == 68) {
-         this.field3379 = class300_1.method5496();
+         this.field3379 = class300_1.readShortUBigEndian();
       } else if (i_2 == 69) {
          class300_1.method5504();
       } else if (i_2 == 70) {
@@ -185,39 +185,39 @@ public class class253 extends class175 {
          this.field3361 = class300_1.method5504();
       } else if (i_2 != 77 && i_2 != 92) {
          if (i_2 == 78) {
-            this.field3394 = class300_1.method5496();
+            this.field3394 = class300_1.readShortUBigEndian();
             this.field3399 = class300_1.method5504();
          } else if (i_2 == 79) {
-            this.field3392 = class300_1.method5496();
-            this.field3397 = class300_1.method5496();
+            this.field3392 = class300_1.readShortUBigEndian();
+            this.field3397 = class300_1.readShortUBigEndian();
             this.field3399 = class300_1.method5504();
             i_4 = class300_1.method5504();
             this.field3367 = new int[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3367[i_5] = class300_1.method5496();
+               this.field3367[i_5] = class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 81) {
             this.field3370 = class300_1.method5504() * 256;
          } else if (i_2 == 82) {
-            this.field3378 = class300_1.method5496();
+            this.field3378 = class300_1.readShortUBigEndian();
          } else if (i_2 == 249) {
             this.field3396 = class26.method403(class300_1, this.field3396, -2066495425);
          }
       } else {
-         this.field3349 = class300_1.method5496();
+         this.field3349 = class300_1.readShortUBigEndian();
          if (this.field3349 == 65535) {
             this.field3349 = -1;
          }
 
-         this.field3393 = class300_1.method5496();
+         this.field3393 = class300_1.readShortUBigEndian();
          if (this.field3393 == 65535) {
             this.field3393 = -1;
          }
 
          i_4 = -1;
          if (i_2 == 92) {
-            i_4 = class300_1.method5496();
+            i_4 = class300_1.readShortUBigEndian();
             if (i_4 == 65535) {
                i_4 = -1;
             }
@@ -227,7 +227,7 @@ public class class253 extends class175 {
          this.field3391 = new int[i_5 + 2];
 
          for (int i_6 = 0; i_6 <= i_5; i_6++) {
-            this.field3391[i_6] = class300_1.method5496();
+            this.field3391[i_6] = class300_1.readShortUBigEndian();
             if (this.field3391[i_6] == 65535) {
                this.field3391[i_6] = -1;
             }
@@ -444,7 +444,7 @@ public class class253 extends class175 {
       if (this.field3359 != null) {
          for (int i_5 = 0; i_5 < this.field3359.length; i_5++) {
             if (this.field3359[i_5] == i_1) {
-               return field3351.method4146(this.field3362[i_5] & 0xffff, 0, -416813220);
+               return field3351.method4146(this.field3362[i_5] & 0xffff, 0);
             }
          }
 
@@ -457,7 +457,7 @@ public class class253 extends class175 {
          boolean bool_3 = true;
 
          for (int i_4 = 0; i_4 < this.field3362.length; i_4++) {
-            bool_3 &= field3351.method4146(this.field3362[i_4] & 0xffff, 0, -416813220);
+            bool_3 &= field3351.method4146(this.field3362[i_4] & 0xffff, 0);
          }
 
          return bool_3;
@@ -471,7 +471,7 @@ public class class253 extends class175 {
          boolean bool_2 = true;
 
          for (int i_3 = 0; i_3 < this.field3362.length; i_3++) {
-            bool_2 &= field3351.method4146(this.field3362[i_3] & 0xffff, 0, -416813220);
+            bool_2 &= field3351.method4146(this.field3362[i_3] & 0xffff, 0);
          }
 
          return bool_2;

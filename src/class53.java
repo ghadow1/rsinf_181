@@ -75,7 +75,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
    public final synchronized void paint(Graphics graphics_1) {
       if (this == field442 && !field445) {
          this.field464 = true;
-         if (class206.method3939() - this.field468 > 1000L) {
+         if (class206.getAdjustedTimeMillis() - this.field468 > 1000L) {
             Rectangle rectangle_2 = graphics_1.getClipBounds();
             if (rectangle_2 == null || rectangle_2.width >= class7.field46 && rectangle_2.height >= class249.field3308) {
                this.field467 = true;
@@ -113,7 +113,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
 
    public final void destroy() {
       if (this == field442 && !field445) {
-         field444 = class206.method3939();
+         field444 = class206.getAdjustedTimeMillis();
          class251.method4550(5000L);
          this.method891((byte) 19);
       }
@@ -231,7 +231,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       }
 
       this.field467 = false;
-      this.field468 = class206.method3939();
+      this.field468 = class206.getAdjustedTimeMillis();
    }
 
    protected abstract void vmethod1608(int var1);
@@ -332,7 +332,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
 
    void method910(int i_1) {
       Container container_2 = this.method902(343418165);
-      long long_3 = class206.method3939();
+      long long_3 = class206.getAdjustedTimeMillis();
       long long_5 = field452[class238.field3192];
       field452[class238.field3192] = long_3;
       class238.field3192 = class238.field3192 + 1 & 0x1f;
@@ -368,7 +368,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
    }
 
    void method953(int i_1) {
-      long long_2 = class206.method3939();
+      long long_2 = class206.getAdjustedTimeMillis();
       long long_4 = field453[class243.field3248];
       field453[class243.field3248] = long_2;
       class243.field3248 = class243.field3248 + 1 & 0x1f;
@@ -602,7 +602,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
          this.vmethod1243(2070235141);
          field447 = class173.method3589(-1483717574);
 
-         while (field444 == 0L || class206.method3939() < field444) {
+         while (field444 == 0L || class206.getAdjustedTimeMillis() < field444) {
             field449 = field447.vmethod3506(field448, field443, -333181863);
 
             for (int i_5 = 0; i_5 < field449; i_5++) {
@@ -631,7 +631,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
 
    public final void stop() {
       if (this == field442 && !field445) {
-         field444 = class206.method3939() + 4000L;
+         field444 = class206.getAdjustedTimeMillis() + 4000L;
       }
    }
 
@@ -674,7 +674,7 @@ public abstract class class53 extends Applet implements Runnable, FocusListener,
       if (class256_2 != null) {
          return class256_2;
       } else {
-         byte[] bytes_3 = class256.field3484.method4144(9, i_0, 2068472412);
+         byte[] bytes_3 = class256.field3484.method4144(9, i_0);
          class256_2 = new class256();
          class256_2.field3467 = i_0;
          if (bytes_3 != null) {

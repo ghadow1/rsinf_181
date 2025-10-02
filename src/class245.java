@@ -23,7 +23,7 @@ public class class245 extends class175 {
             this.field3266 = new int[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3266[i_5] = class300_1.method5496();
+               this.field3266[i_5] = class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 3) {
             this.field3272 = true;
@@ -33,8 +33,8 @@ public class class245 extends class175 {
             this.field3264 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3267[i_5] = (short)class300_1.method5496();
-               this.field3264[i_5] = (short)class300_1.method5496();
+               this.field3267[i_5] = (short)class300_1.readShortUBigEndian();
+               this.field3264[i_5] = (short)class300_1.readShortUBigEndian();
             }
          } else if (i_2 == 41) {
             i_4 = class300_1.method5504();
@@ -42,11 +42,11 @@ public class class245 extends class175 {
             this.field3270 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3269[i_5] = (short)class300_1.method5496();
-               this.field3270[i_5] = (short)class300_1.method5496();
+               this.field3269[i_5] = (short)class300_1.readShortUBigEndian();
+               this.field3270[i_5] = (short)class300_1.readShortUBigEndian();
             }
          } else if (i_2 >= 60 && i_2 < 70) {
-            this.field3262[i_2 - 60] = class300_1.method5496();
+            this.field3262[i_2 - 60] = class300_1.readShortUBigEndian();
          }
       }
 
@@ -56,7 +56,7 @@ public class class245 extends class175 {
       boolean bool_2 = true;
 
       for (int i_3 = 0; i_3 < 5; i_3++) {
-         if (this.field3262[i_3] != -1 && !class288.field3665.method4146(this.field3262[i_3], 0, -416813220)) {
+         if (this.field3262[i_3] != -1 && !class288.field3665.method4146(this.field3262[i_3], 0)) {
             bool_2 = false;
          }
       }
@@ -98,7 +98,7 @@ public class class245 extends class175 {
          boolean bool_2 = true;
 
          for (int i_3 = 0; i_3 < this.field3266.length; i_3++) {
-            if (!class288.field3665.method4146(this.field3266[i_3], 0, -416813220)) {
+            if (!class288.field3665.method4146(this.field3266[i_3], 0)) {
                bool_2 = false;
             }
          }

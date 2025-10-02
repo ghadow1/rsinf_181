@@ -24,17 +24,17 @@ public class class157 extends class275 {
          } else if (class71.field1027.method3307(1792198908)) {
             byte[] bytes_1 = class71.field1027.method3308(-338757002);
             class300 class300_2 = new class300(bytes_1);
-            class300_2.method5499();
-            class71.field1022 = class300_2.method5496();
+            class300_2.readIntMedEndian();
+            class71.field1022 = class300_2.readShortUBigEndian();
             class71.field1031 = new class71[class71.field1022];
 
             class71 class71_4;
             for (int i_3 = 0; i_3 < class71.field1022; class71_4.field1034 = i_3++) {
                class71_4 = class71.field1031[i_3] = new class71();
-               class71_4.field1025 = class300_2.method5496();
-               class71_4.field1023 = class300_2.method5499();
-               class71_4.field1029 = class300_2.method5503();
-               class71_4.field1028 = class300_2.method5503();
+               class71_4.field1025 = class300_2.readShortUBigEndian();
+               class71_4.field1023 = class300_2.readIntMedEndian();
+               class71_4.field1029 = class300_2.readNullTermString();
+               class71_4.field1028 = class300_2.readNullTermString();
                class71_4.field1032 = class300_2.method5504();
                class71_4.field1030 = class300_2.method5606();
             }
