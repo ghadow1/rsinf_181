@@ -17,7 +17,7 @@ public class class41 {
       class62.method1132(30, "", str_1, -2087358273);
    }
 
-   static final void method736(class299 class299_0, int i_1, class66 class66_2, int i_3, int i_4) {
+   static final void method736(Buffer_3 buffer3_0, int i_1, class66 class66_2, int i_3, int i_4) {
       byte b_5 = -1;
       int i_6;
       int i_7;
@@ -25,7 +25,7 @@ public class class41 {
       int i_10;
       int i_13;
       if ((i_3 & 0x40) != 0) {
-         i_6 = class299_0.readOffsetUnsignedByte();
+         i_6 = buffer3_0.readOffsetUnsignedByte();
          int i_8;
          int i_11;
          int i_12;
@@ -34,32 +34,32 @@ public class class41 {
                i_9 = -1;
                i_10 = -1;
                i_11 = -1;
-               i_8 = class299_0.readSmartInt();
+               i_8 = buffer3_0.readSmartInt();
                if (i_8 == 32767) {
-                  i_8 = class299_0.readSmartInt();
-                  i_10 = class299_0.readSmartInt();
-                  i_9 = class299_0.readSmartInt();
-                  i_11 = class299_0.readSmartInt();
+                  i_8 = buffer3_0.readSmartInt();
+                  i_10 = buffer3_0.readSmartInt();
+                  i_9 = buffer3_0.readSmartInt();
+                  i_11 = buffer3_0.readSmartInt();
                } else if (i_8 != 32766) {
-                  i_10 = class299_0.readSmartInt();
+                  i_10 = buffer3_0.readSmartInt();
                } else {
                   i_8 = -1;
                }
 
-               i_12 = class299_0.readSmartInt();
+               i_12 = buffer3_0.readSmartInt();
                class66_2.method1657(i_8, i_10, i_9, i_11, Client.field881, i_12, -13467582);
             }
          }
 
-         i_7 = class299_0.readNegatedUnsignedByte();
+         i_7 = buffer3_0.readNegatedUnsignedByte();
          if (i_7 > 0) {
             for (i_8 = 0; i_8 < i_7; i_8++) {
-               i_9 = class299_0.readSmartInt();
-               i_10 = class299_0.readSmartInt();
+               i_9 = buffer3_0.readSmartInt();
+               i_10 = buffer3_0.readSmartInt();
                if (i_10 != 32767) {
-                  i_11 = class299_0.readSmartInt();
-                  i_12 = class299_0.readOffsetUnsignedByte();
-                  i_13 = i_10 > 0 ? class299_0.readUnsignedByte() : i_12;
+                  i_11 = buffer3_0.readSmartInt();
+                  i_12 = buffer3_0.readOffsetUnsignedByte();
+                  i_13 = i_10 > 0 ? buffer3_0.readUnsignedByte() : i_12;
                   class66_2.method1655(i_9, Client.field881, i_10, i_11, i_12, i_13, (byte) 52);
                } else {
                   class66_2.method1659(i_9, 1541896355);
@@ -69,8 +69,8 @@ public class class41 {
       }
 
       if ((i_3 & 0x200) != 0) {
-         class66_2.field986 = class299_0.readShortWithOffset2();
-         i_6 = class299_0.readIntCustomOrder2();
+         class66_2.field986 = buffer3_0.readShortWithOffset2();
+         i_6 = buffer3_0.readIntCustomOrder2();
          class66_2.field990 = i_6 >> 16;
          class66_2.field989 = (i_6 & 0xffff) + Client.field881;
          class66_2.field987 = 0;
@@ -85,17 +85,17 @@ public class class41 {
       }
 
       if ((i_3 & 0x1000) != 0) {
-         b_5 = class299_0.readOffsetByte();
+         b_5 = buffer3_0.readOffsetByte();
       }
 
       if ((i_3 & 0x400) != 0) {
-         class66_2.field991 = class299_0.readInvertedByte();
-         class66_2.field993 = class299_0.readOffsetByte();
-         class66_2.field992 = class299_0.readOffsetByte();
-         class66_2.field983 = class299_0.readInvertedByte();
-         class66_2.field995 = class299_0.readShortWithOffset() + Client.field881;
-         class66_2.field996 = class299_0.readShortLittleEndian() + Client.field881;
-         class66_2.field997 = class299_0.readUnsignedShortBigEndian();
+         class66_2.field991 = buffer3_0.readInvertedByte();
+         class66_2.field993 = buffer3_0.readOffsetByte();
+         class66_2.field992 = buffer3_0.readOffsetByte();
+         class66_2.field983 = buffer3_0.readInvertedByte();
+         class66_2.field995 = buffer3_0.readShortWithOffset() + Client.field881;
+         class66_2.field996 = buffer3_0.readShortLittleEndian() + Client.field881;
+         class66_2.field997 = buffer3_0.readUnsignedShortBigEndian();
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
             class66_2.field993 += class66_2.field640;
@@ -114,7 +114,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x20) != 0) {
-         class66_2.field977 = class299_0.readNullTerminatedString();
+         class66_2.field977 = buffer3_0.readNullTerminatedString();
          if (class66_2.field977.charAt(0) == 126) {
             class66_2.field977 = class66_2.field977.substring(1);
             class62.method1132(2, class66_2.field621.method5197((byte) 51), class66_2.field977, -2101795865);
@@ -129,7 +129,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x4) != 0) {
-         class66_2.field976 = class299_0.readShortLittleEndian();
+         class66_2.field976 = buffer3_0.readShortLittleEndian();
          if (class66_2.field1003 == 0) {
             class66_2.field1000 = class66_2.field976;
             class66_2.field976 = -1;
@@ -137,31 +137,31 @@ public class class41 {
       }
 
       if ((i_3 & 0x1) != 0) {
-         i_6 = class299_0.readInvertedUnsignedByte();
+         i_6 = buffer3_0.readInvertedUnsignedByte();
          byte[] bytes_14 = new byte[i_6];
          ByteBuffer class300_15 = new ByteBuffer(bytes_14);
-         class299_0.readBytesWithOffset(bytes_14, 0, i_6);
+         buffer3_0.readBytesWithOffset(bytes_14, 0, i_6);
          class89.field1254[i_1] = class300_15;
          class66_2.method1179(class300_15, -776146380);
       }
 
       if ((i_3 & 0x2) != 0) {
-         class66_2.field975 = class299_0.readShortWithOffset();
+         class66_2.field975 = buffer3_0.readShortWithOffset();
          if (class66_2.field975 == 65535) {
             class66_2.field975 = -1;
          }
       }
 
       if ((i_3 & 0x800) != 0) {
-         class89.field1250[i_1] = class299_0.readOffsetByte();
+         class89.field1250[i_1] = buffer3_0.readOffsetByte();
       }
 
       if ((i_3 & 0x10) != 0) {
-         i_6 = class299_0.readShortWithOffset();
-         GameState gameState_20 = (GameState) MemoryManager.findById(PriorityComparator.getGameStates(), class299_0.readUnsignedByte());
-         boolean bool_18 = class299_0.readNegatedUnsignedByte() == 1;
-         i_9 = class299_0.readUnsignedByte();
-         i_10 = class299_0.position;
+         i_6 = buffer3_0.readShortWithOffset();
+         GameState gameState_20 = (GameState) MemoryManager.findById(PriorityComparator.getGameStates(), buffer3_0.readUnsignedByte());
+         boolean bool_18 = buffer3_0.readNegatedUnsignedByte() == 1;
+         i_9 = buffer3_0.readUnsignedByte();
+         i_10 = buffer3_0.position;
          if (class66_2.field621 != null && class66_2.field613 != null) {
             boolean bool_19 = false;
             if (gameState_20.field3092 && class58.field546.method1765(class66_2.field621, (byte) -1)) {
@@ -170,7 +170,7 @@ public class class41 {
 
             if (!bool_19 && Client.field767 == 0 && !class66_2.field628) {
                class89.field1264.position = 0;
-               class299_0.readBytes(class89.field1264.buffer, 0, i_9);
+               buffer3_0.readBytes(class89.field1264.buffer, 0, i_9);
                class89.field1264.position = 0;
                String string_16 = class296.method5362(class1.method17(class311.method5898(class89.field1264, (byte) 23), (byte) -16));
                class66_2.field977 = string_16.trim();
@@ -193,22 +193,22 @@ public class class41 {
             }
          }
 
-         class299_0.position = i_10 + i_9;
+         buffer3_0.position = i_10 + i_9;
       }
 
       if ((i_3 & 0x100) != 0) {
          for (i_6 = 0; i_6 < 3; i_6++) {
-            class66_2.field619[i_6] = class299_0.readNullTerminatedString();
+            class66_2.field619[i_6] = buffer3_0.readNullTerminatedString();
          }
       }
 
       if ((i_3 & 0x80) != 0) {
-         i_6 = class299_0.readUnsignedShortBigEndian();
+         i_6 = buffer3_0.readUnsignedShortBigEndian();
          if (i_6 == 65535) {
             i_6 = -1;
          }
 
-         i_7 = class299_0.readUnsignedByte();
+         i_7 = buffer3_0.readUnsignedByte();
          class63.method1139(class66_2, i_6, i_7, (byte) -124);
       }
 

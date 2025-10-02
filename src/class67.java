@@ -52,7 +52,7 @@ public class class67 implements Comparator {
       int i_5 = class248_2.field3297;
       int i_6 = class248_2.field3295;
       int i_7 = class212.field2527[i_6 - i_5];
-      return class212.field2525[i_4] >> i_5 & i_7;
+      return class212.var_configurations[i_4] >> i_5 & i_7;
    }
 
    public static boolean method1231(char var_0, int i_1) {

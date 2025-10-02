@@ -13,7 +13,7 @@ public class class32 {
    static final void method544(int i_0, int i_1, int i_2, int i_3) {
       if (i_0 >= 128 && i_1 >= 128 && i_0 <= 13056 && i_1 <= 13056) {
          int i_4 = class62.method1130(i_0, i_1, class42.field372) - i_2;
-         i_0 -= class299.field3727;
+         i_0 -= Buffer_3.field3727;
          i_4 -= GCMonitor.field383;
          i_1 -= class1.field3;
          int i_5 = class130.field1787[class11.field77];

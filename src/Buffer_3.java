@@ -1,11 +1,11 @@
-public class class299 extends ByteBuffer {
+public class Buffer_3 extends ByteBuffer {
 
    static int field3727;
    static final int[] field3724 = new int[] {0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1};
    class328 field3725;
    int field3726;
 
-   public class299(int i_1) {
+   public Buffer_3(int i_1) {
       super(i_1);
    }
 

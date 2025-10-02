@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class class70 extends LinkedListNode {
 
-   static class305 field1015;
+   static Stream field1015;
    static int field1017;
    static int field1014;
    int field1016;
@@ -61,15 +61,15 @@ public class class70 extends LinkedListNode {
       }
    }
 
-   public static void method1671(class299 class299_0) {
+   public static void method1671(Buffer_3 buffer3_0) {
       class97 class97_2 = (class97) class96.field1324.method4838();
       if (class97_2 != null) {
-         int i_3 = class299_0.position;
-         class299_0.writeIntBigEndian(class97_2.field1340);
+         int i_3 = buffer3_0.position;
+         buffer3_0.writeIntBigEndian(class97_2.field1340);
 
          for (int i_4 = 0; i_4 < class97_2.field1330; i_4++) {
             if (class97_2.field1332[i_4] != 0) {
-               class299_0.writeByte(class97_2.field1332[i_4]);
+               buffer3_0.writeByte(class97_2.field1332[i_4]);
             } else {
                try {
                   int i_5 = class97_2.field1331[i_4];
@@ -78,17 +78,17 @@ public class class70 extends LinkedListNode {
                   if (i_5 == 0) {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getInt((Object) null);
-                     class299_0.writeByte(0);
-                     class299_0.writeIntBigEndian(i_7);
+                     buffer3_0.writeByte(0);
+                     buffer3_0.writeIntBigEndian(i_7);
                   } else if (i_5 == 1) {
                      field_6 = class97_2.field1333[i_4];
                      field_6.setInt((Object) null, class97_2.field1329[i_4]);
-                     class299_0.writeByte(0);
+                     buffer3_0.writeByte(0);
                   } else if (i_5 == 2) {
                      field_6 = class97_2.field1333[i_4];
                      i_7 = field_6.getModifiers();
-                     class299_0.writeByte(0);
-                     class299_0.writeIntBigEndian(i_7);
+                     buffer3_0.writeByte(0);
+                     buffer3_0.writeIntBigEndian(i_7);
                   }
 
                   Method method_26;
@@ -96,8 +96,8 @@ public class class70 extends LinkedListNode {
                      if (i_5 == 4) {
                         method_26 = class97_2.field1335[i_4];
                         i_7 = method_26.getModifiers();
-                        class299_0.writeByte(0);
-                        class299_0.writeIntBigEndian(i_7);
+                        buffer3_0.writeByte(0);
+                        buffer3_0.writeIntBigEndian(i_7);
                      }
                   } else {
                      method_26 = class97_2.field1335[i_4];
@@ -111,56 +111,56 @@ public class class70 extends LinkedListNode {
 
                      Object object_12 = method_26.invoke((Object) null, arr_8);
                      if (object_12 == null) {
-                        class299_0.writeByte(0);
+                        buffer3_0.writeByte(0);
                      } else if (object_12 instanceof Number) {
-                        class299_0.writeByte(1);
-                        class299_0.writeLongBigEndian(((Number) object_12).longValue());
+                        buffer3_0.writeByte(1);
+                        buffer3_0.writeLongBigEndian(((Number) object_12).longValue());
                      } else if (object_12 instanceof String) {
-                        class299_0.writeByte(2);
-                        class299_0.writeNullTerminatedString((String) object_12);
+                        buffer3_0.writeByte(2);
+                        buffer3_0.writeNullTerminatedString((String) object_12);
                      } else {
-                        class299_0.writeByte(4);
+                        buffer3_0.writeByte(4);
                      }
                   }
                } catch (ClassNotFoundException classnotfoundexception_14) {
-                  class299_0.writeByte(-10);
+                  buffer3_0.writeByte(-10);
                } catch (InvalidClassException invalidclassexception_15) {
-                  class299_0.writeByte(-11);
+                  buffer3_0.writeByte(-11);
                } catch (StreamCorruptedException streamcorruptedexception_16) {
-                  class299_0.writeByte(-12);
+                  buffer3_0.writeByte(-12);
                } catch (OptionalDataException optionaldataexception_17) {
-                  class299_0.writeByte(-13);
+                  buffer3_0.writeByte(-13);
                } catch (IllegalAccessException illegalaccessexception_18) {
-                  class299_0.writeByte(-14);
+                  buffer3_0.writeByte(-14);
                } catch (IllegalArgumentException illegalargumentexception_19) {
-                  class299_0.writeByte(-15);
+                  buffer3_0.writeByte(-15);
                } catch (InvocationTargetException invocationtargetexception_20) {
-                  class299_0.writeByte(-16);
+                  buffer3_0.writeByte(-16);
                } catch (SecurityException securityexception_21) {
-                  class299_0.writeByte(-17);
+                  buffer3_0.writeByte(-17);
                } catch (IOException ioexception_22) {
-                  class299_0.writeByte(-18);
+                  buffer3_0.writeByte(-18);
                } catch (NullPointerException nullpointerexception_23) {
-                  class299_0.writeByte(-19);
+                  buffer3_0.writeByte(-19);
                } catch (Exception exception_24) {
-                  class299_0.writeByte(-20);
+                  buffer3_0.writeByte(-20);
                } catch (Throwable throwable_25) {
-                  class299_0.writeByte(-21);
+                  buffer3_0.writeByte(-21);
                }
             }
          }
 
-         class299_0.writeCRC32Checksum(i_3);
+         buffer3_0.writeCRC32Checksum(i_3);
          class97_2.unlink();
       }
    }
 
    static void writeOutgoingWindowMode() {
-      class187 class187_1 = class235.method4265(class183.WINDOW_STATUS, Client.field880.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(class183.WINDOW_STATUS, Client.data.field1313, 1775123545);
       class187_1.outBuffer.writeByte(class34.method598()); //..Display Mode
       class187_1.outBuffer.writeShortBigEndian(class7.field46);
       class187_1.outBuffer.writeShortBigEndian(class249.field3308);
-      Client.field880.copy(class187_1);
+      Client.data.copy(class187_1);
    }
 
    static boolean method1676(String string_0, int i_1) {

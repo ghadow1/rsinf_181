@@ -3,7 +3,7 @@ import java.lang.reflect.Method;
 
 public class class94 {
 
-   static int field1306;
+   static int localSceneY;
    class64[] field1303 = new class64[100];
    int field1304;
 

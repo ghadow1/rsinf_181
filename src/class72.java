@@ -404,7 +404,7 @@ public class class72 {
          i_11 = i_16;
       }
 
-      class299.field3727 = i_0 - i_11;
+      Buffer_3.field3727 = i_0 - i_11;
       GCMonitor.field383 = i_1 - i_12;
       class1.field3 = i_2 - i_13;
       class11.field77 = i_3;

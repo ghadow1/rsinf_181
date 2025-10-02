@@ -38,17 +38,17 @@ public class class71 {
       return (0x20000000 & this.field1023) != 0;
    }
 
-   static int method1686(class299 class299_0) {
-      int i_2 = class299_0.method5445(2);
+   static int method1686(Buffer_3 buffer3_0) {
+      int i_2 = buffer3_0.method5445(2);
       int i_3;
       if (i_2 == 0) {
          i_3 = 0;
       } else if (i_2 == 1) {
-         i_3 = class299_0.method5445(5);
+         i_3 = buffer3_0.method5445(5);
       } else if (i_2 == 2) {
-         i_3 = class299_0.method5445(8);
+         i_3 = buffer3_0.method5445(8);
       } else {
-         i_3 = class299_0.method5445(11);
+         i_3 = buffer3_0.method5445(11);
       }
 
       return i_3;

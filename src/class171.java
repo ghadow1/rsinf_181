@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public final class class171 extends class305 implements Runnable {
+public final class class171 extends Stream implements Runnable {
 
    boolean field2061 = false;
    int field2065 = 0;
@@ -243,7 +243,7 @@ public final class class171 extends class305 implements Runnable {
       }
 
       i_8 <<= i_6;
-      class212.field2525[i_5] = class212.field2525[i_5] & ~i_8 | i_1 << i_6 & i_8;
+      class212.var_configurations[i_5] = class212.var_configurations[i_5] & ~i_8 | i_1 << i_6 & i_8;
    }
 
    public static class239 method3546(int i_0, int i_1) {

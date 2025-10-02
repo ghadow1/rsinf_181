@@ -52,8 +52,8 @@ public class class7 {
    }
 
    static final void method73(int i_0) {
-      class187 class187_1 = class235.method4265(class183.field2223, Client.field880.field1313, 1775123545);
-      Client.field880.copy(class187_1);
+      class187 class187_1 = class235.method4265(class183.field2223, Client.data.field1313, 1775123545);
+      Client.data.copy(class187_1);
 
       for (class61 class61_2 = (class61) Client.field816.method5950(); class61_2 != null; class61_2 = (class61) Client.field816.method5953()) {
          if (class61_2.field569 == 0 || class61_2.field569 == 3) {

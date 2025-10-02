@@ -143,9 +143,9 @@ final class class12 implements Comparator {
          }
 
          if (i_2 == 326) {
-            class187 class187_5 = class235.method4265(class183.field2215, Client.field880.field1313, 1775123545);
+            class187 class187_5 = class235.method4265(class183.field2215, Client.data.field1313, 1775123545);
             Client.field918.method3995(class187_5.outBuffer, 318518244);
-            Client.field880.copy(class187_5);
+            Client.data.copy(class187_5);
             return true;
          } else {
             return false;

@@ -57,7 +57,7 @@ public class class253 extends class175 {
       if (this.field3349 != -1) {
          i_2 = class67.method1237(this.field3349, -836499887);
       } else if (this.field3393 != -1) {
-         i_2 = class212.field2525[this.field3393];
+         i_2 = class212.var_configurations[this.field3393];
       }
 
       int i_3;

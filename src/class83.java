@@ -10,8 +10,8 @@ public class class83 {
       if (class17.field117.field1060) {
          return class42.field372;
       } else {
-         int i_1 = class62.method1130(class299.field3727, class1.field3, class42.field372);
-         return i_1 - GCMonitor.field383 < 800 && (class55.field502[class42.field372][class299.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? class42.field372 : 3;
+         int i_1 = class62.method1130(Buffer_3.field3727, class1.field3, class42.field372);
+         return i_1 - GCMonitor.field383 < 800 && (class55.field502[class42.field372][Buffer_3.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? class42.field372 : 3;
       }
    }
 

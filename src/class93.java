@@ -98,7 +98,7 @@ public class class93 extends class135 {
       }
    }
 
-   public static void method2193(class305 class305_0, boolean bool_1, short s_2) {
+   public static void method2193(Stream class305_0, boolean bool_1, short s_2) {
       if (class236.field3176 != null) {
          try {
             class236.field3176.vmethod5830(234953470);

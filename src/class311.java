@@ -1,6 +1,6 @@
 public class class311 {
 
-   static int field3819;
+   static int localSceneX;
    static final class311 field3821 = new class311(3);
    final int field3820;
 

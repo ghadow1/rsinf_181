@@ -38,7 +38,7 @@ final class class4 implements class0 {
       }
 
       class29.method497(false, -1807867865);
-      class95.method2245();
+      InBuffer.method2245();
       class22.method275(205706610);
       class144.method3318(i_0, i_1, i_2, i_3, true, (byte) -69);
       i_0 = Client.field913;
@@ -86,7 +86,7 @@ final class class4 implements class0 {
                         i_9 = Client.field657.field949 >> 7;
                      }
 
-                     i_10 = class299.field3727 >> 7;
+                     i_10 = Buffer_3.field3727 >> 7;
                      i_11 = class1.field3 >> 7;
                      if (i_10 >= 0 && i_11 >= 0 && i_10 < 104 && i_11 < 104) {
                         if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
@@ -200,7 +200,7 @@ final class class4 implements class0 {
          i_5 = class83.method1995(1224050195);
       }
 
-      i_29 = class299.field3727;
+      i_29 = Buffer_3.field3727;
       i_7 = GCMonitor.field383;
       i_8 = class1.field3;
       i_9 = class11.field77;
@@ -210,7 +210,7 @@ final class class4 implements class0 {
          if (Client.field886[i_11]) {
             i_12 = (int)(Math.random() * (double)(Client.field901[i_11] * 2 + 1) - (double) Client.field901[i_11] + Math.sin((double) Client.field903[i_11] / 100.0D * (double) Client.field904[i_11]) * (double) Client.field902[i_11]);
             if (i_11 == 0) {
-               class299.field3727 += i_12;
+               Buffer_3.field3727 += i_12;
             }
 
             if (i_11 == 1) {
@@ -262,7 +262,7 @@ final class class4 implements class0 {
       class186.method3619((byte) 8);
       i_13 = class130.field1773;
       class130.field1773 = Client.field917;
-      class5.field22.method3092(class299.field3727, GCMonitor.field383, class1.field3, class11.field77, class76.field1112, i_5);
+      class5.field22.method3092(Buffer_3.field3727, GCMonitor.field383, class1.field3, class11.field77, class76.field1112, i_5);
       class130.field1773 = i_13;
       class186.method3619((byte) 124);
       class5.field22.method3115();
@@ -426,7 +426,7 @@ final class class4 implements class0 {
 
       ((class119) class130.field1781).method2736(Client.field718);
       class21.method273(i_0, i_1, i_2, i_3, -2108015148);
-      class299.field3727 = i_29;
+      Buffer_3.field3727 = i_29;
       GCMonitor.field383 = i_7;
       class1.field3 = i_8;
       class11.field77 = i_9;

@@ -114,7 +114,7 @@ public class class153 extends ChainedComparator {
 
          Client.field893 = 0;
          Client.field899 = false;
-         class299.field3727 -= i_6 << 7;
+         Buffer_3.field3727 -= i_6 << 7;
          class1.field3 -= i_7 << 7;
          class54.field499 -= i_6 << 7;
          class26.field227 -= i_7 << 7;

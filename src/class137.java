@@ -39,14 +39,14 @@ public class class137 {
       Client.field667 = true;
       Client.field879 = -1L;
       class192.method3678();
-      Client.field880.method2218();
-      Client.field880.field1314.position = 0;
-      Client.field880.inPacketType = null;
-      Client.field880.field1309 = null;
-      Client.field880.field1321 = null;
-      Client.field880.field1317 = null;
-      Client.field880.field1315 = 0;
-      Client.field880.field1318 = 0;
+      Client.data.method2218();
+      Client.data.field1314.position = 0;
+      Client.data.packet = null;
+      Client.data.field1309 = null;
+      Client.data.field1321 = null;
+      Client.data.field1317 = null;
+      Client.data.field1315 = 0;
+      Client.data.field1318 = 0;
       Client.field669 = 0;
       Client.field700 = 0;
       Client.field708 = 0;
@@ -105,7 +105,7 @@ public class class137 {
          class240 class240_4 = class5.method61(i_1);
          if (class240_4 != null) {
             class212.field2524[i_1] = 0;
-            class212.field2525[i_1] = 0;
+            class212.var_configurations[i_1] = 0;
          }
       }
 

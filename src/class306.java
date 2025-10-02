@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.net.Socket;
 
-public class class306 extends class305 {
+public class class306 extends Stream {
 
    Socket field3791;
    class309 field3789;

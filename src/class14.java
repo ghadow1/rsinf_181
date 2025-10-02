@@ -64,11 +64,11 @@ public class class14 {
    }
 
    static final void method159(String string_0, int i_1) {
-      class187 class187_3 = class235.method4265(class183.field2280, Client.field880.field1313, 1775123545);
+      class187 class187_3 = class235.method4265(class183.field2280, Client.data.field1313, 1775123545);
       class187_3.outBuffer.writeByte(class209.method3945(string_0) + 1);
       class187_3.outBuffer.writeNullTerminatedString(string_0);
       class187_3.outBuffer.writeByte(i_1);
-      Client.field880.copy(class187_3);
+      Client.data.copy(class187_3);
    }
 
 }

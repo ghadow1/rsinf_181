@@ -16,12 +16,12 @@ public class class20 implements UnknownT {
       return this.field151;
    }
 
-   static final void method238(class299 class299_0, byte b_1) {
-      class299_0.method5438();
+   static final void method238(Buffer_3 buffer3_0, byte b_1) {
+      buffer3_0.method5438();
       int i_2 = Client.field770;
       class66 class66_3 = Client.field657 = Client.field909[i_2] = new class66();
       class66_3.field637 = i_2;
-      int i_4 = class299_0.method5445(30);
+      int i_4 = buffer3_0.method5445(30);
       byte b_5 = (byte)(i_4 >> 28);
       int i_6 = i_4 >> 14 & 0x3fff;
       int i_7 = i_4 & 0x3fff;
@@ -41,7 +41,7 @@ public class class20 implements UnknownT {
 
       for (int i_8 = 1; i_8 < 2048; i_8++) {
          if (i_8 != i_2) {
-            int i_9 = class299_0.method5445(18);
+            int i_9 = buffer3_0.method5445(18);
             int i_10 = i_9 >> 16;
             int i_11 = i_9 >> 8 & 0x255;
             int i_12 = i_9 & 0x255;
@@ -53,7 +53,7 @@ public class class20 implements UnknownT {
          }
       }
 
-      class299_0.method5446();
+      buffer3_0.method5446();
    }
 
    static int method239(int i_0, class92 class92_1, boolean bool_2, byte b_3) {

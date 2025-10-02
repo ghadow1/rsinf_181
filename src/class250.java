@@ -47,9 +47,9 @@ public class class250 extends class175 {
    }
 
    static final void method4530() {
-      class299 class299_1 = Client.field880.field1314;
-      class299_1.method5438();
-      int i_2 = class299_1.method5445(8);
+      Buffer_3 buffer3_1 = Client.data.field1314;
+      buffer3_1.method5438();
+      int i_2 = buffer3_1.method5445(8);
       int i_3;
       if (i_2 < Client.field695) {
          for (i_3 = i_2; i_3 < Client.field695; i_3++) {
@@ -65,12 +65,12 @@ public class class250 extends class175 {
          for (i_3 = 0; i_3 < i_2; i_3++) {
             int i_4 = Client.field696[i_3];
             class79 class79_5 = Client.field694[i_4];
-            int i_6 = class299_1.method5445(1);
+            int i_6 = buffer3_1.method5445(1);
             if (i_6 == 0) {
                Client.field696[++Client.field695 - 1] = i_4;
                class79_5.field973 = Client.field881;
             } else {
-               int i_7 = class299_1.method5445(2);
+               int i_7 = buffer3_1.method5445(2);
                if (i_7 == 0) {
                   Client.field696[++Client.field695 - 1] = i_4;
                   class79_5.field973 = Client.field881;
@@ -81,20 +81,20 @@ public class class250 extends class175 {
                   if (i_7 == 1) {
                      Client.field696[++Client.field695 - 1] = i_4;
                      class79_5.field973 = Client.field881;
-                     i_8 = class299_1.method5445(3);
+                     i_8 = buffer3_1.method5445(3);
                      class79_5.method1974(i_8, (byte) 1);
-                     i_9 = class299_1.method5445(1);
+                     i_9 = buffer3_1.method5445(1);
                      if (i_9 == 1) {
                         Client.field859[++Client.field697 - 1] = i_4;
                      }
                   } else if (i_7 == 2) {
                      Client.field696[++Client.field695 - 1] = i_4;
                      class79_5.field973 = Client.field881;
-                     i_8 = class299_1.method5445(3);
+                     i_8 = buffer3_1.method5445(3);
                      class79_5.method1974(i_8, (byte) 2);
-                     i_9 = class299_1.method5445(3);
+                     i_9 = buffer3_1.method5445(3);
                      class79_5.method1974(i_9, (byte) 2);
-                     int i_10 = class299_1.method5445(1);
+                     int i_10 = buffer3_1.method5445(1);
                      if (i_10 == 1) {
                         Client.field859[++Client.field697 - 1] = i_4;
                      }

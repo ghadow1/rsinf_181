@@ -162,11 +162,11 @@ public class class73 {
          }
 
          Client.field872 = class76.field1098[class70.field1014 + 2];
-         class187 class187_19 = class235.method4265(class183.field2294, Client.field880.field1313, 1775123545);
+         class187 class187_19 = class235.method4265(class183.field2294, Client.data.field1313, 1775123545);
          class187_19.outBuffer.writeByte(Client.field907);
          class187_19.outBuffer.writeByte(class226.field3072.field3815);
          class187_19.outBuffer.writeByte(Client.field872);
-         Client.field880.copy(class187_19);
+         Client.data.copy(class187_19);
          return 1;
       } else {
          String string_4;
@@ -176,12 +176,12 @@ public class class73 {
             class70.field1014 -= 2;
             i_5 = class76.field1098[class70.field1014];
             int i_6 = class76.field1098[class70.field1014 + 1];
-            class187 class187_7 = class235.method4265(class183.field2205, Client.field880.field1313, 1775123545);
+            class187 class187_7 = class235.method4265(class183.field2205, Client.data.field1313, 1775123545);
             class187_7.outBuffer.writeByte(class209.method3945(string_4) + 2);
             class187_7.outBuffer.writeNullTerminatedString(string_4);
             class187_7.outBuffer.writeByte(i_5 - 1);
             class187_7.outBuffer.writeByte(i_6);
-            Client.field880.copy(class187_7);
+            Client.data.copy(class187_7);
             return 1;
          } else {
             int i_11;
@@ -352,7 +352,7 @@ public class class73 {
                   }
                }
 
-               class187 class187_9 = class235.method4265(class183.MESSAGE_PUBLIC, Client.field880.field1313, 1775123545);
+               class187 class187_9 = class235.method4265(class183.MESSAGE_PUBLIC, Client.data.field1313, 1775123545);
                class187_9.outBuffer.writeByte(0);
                int i_10 = class187_9.outBuffer.position;
                class187_9.outBuffer.writeByte(i_5);
@@ -360,19 +360,19 @@ public class class73 {
                class187_9.outBuffer.writeByte(b_8);
                class132.method3063(class187_9.outBuffer, string_4, -730620007);
                class187_9.outBuffer.writeSizeAtOffset(class187_9.outBuffer.position - i_10);
-               Client.field880.copy(class187_9);
+               Client.data.copy(class187_9);
                return 1;
             } else if (i_0 == 5009) {
                class221.field2747 -= 2;
                string_4 = class76.field1093[class221.field2747];
                String string_13 = class76.field1093[class221.field2747 + 1];
-               class187 class187_12 = class235.method4265(class183.field2228, Client.field880.field1313, 1775123545);
+               class187 class187_12 = class235.method4265(class183.field2228, Client.data.field1313, 1775123545);
                class187_12.outBuffer.writeShortBigEndian(0);
                int i_14 = class187_12.outBuffer.position;
                class187_12.outBuffer.writeNullTerminatedString(string_4);
                class132.method3063(class187_12.outBuffer, string_13, 845593608);
                class187_12.outBuffer.writeShortSizeAtOffset(class187_12.outBuffer.position - i_14);
-               Client.field880.copy(class187_12);
+               Client.data.copy(class187_12);
                return 1;
             } else if (i_0 != 5015) {
                if (i_0 == 5016) {

@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public abstract class class305 {
+public abstract class Stream {
 
    public abstract void vmethod5830(int var1);
 

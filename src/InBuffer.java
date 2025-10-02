@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class class95 {
+public class InBuffer {
 
    ServerPacketProt field1321;
    ServerPacketProt field1317;
@@ -9,15 +9,15 @@ public class class95 {
    class260 field1316 = new class260();
    int field1311 = 0;
    ByteBuffer field1312 = new ByteBuffer(5000);
-   class299 field1314 = new class299(40000);
-   ServerPacketProt inPacketType = null;
+   Buffer_3 field1314 = new Buffer_3(40000);
+   ServerPacketProt packet = null;
    int field1315 = 0;
    boolean field1322 = true;
    int field1318 = 0;
    int field1319 = 0;
-   class305 field1320;
+   Stream field1320;
 
-   class305 method2223() {
+   Stream method2223() {
       return this.field1320;
    }
 
@@ -45,7 +45,7 @@ public class class95 {
       this.field1311 += class187_1.field2331;
    }
 
-   void method2221(class305 class305_1) {
+   void method2221(Stream class305_1) {
       this.field1320 = class305_1;
    }
 

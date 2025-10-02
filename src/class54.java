@@ -123,9 +123,9 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
       }
    }
 
-   static final void method1037(class299 class299_0) {
+   static final void method1037(Buffer_3 buffer3_0) {
       int i_2 = 0;
-      class299_0.method5438();
+      buffer3_0.method5438();
 
       int i_3;
       int i_4;
@@ -137,22 +137,22 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                --i_2;
                class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
             } else {
-               i_5 = class299_0.method5445(1);
+               i_5 = buffer3_0.method5445(1);
                if (i_5 == 0) {
-                  i_2 = class71.method1686(class299_0);
+                  i_2 = class71.method1686(buffer3_0);
                   class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                } else {
-                  class18.method210(class299_0, i_4, 164873785);
+                  class18.method210(buffer3_0, i_4, 164873785);
                }
             }
          }
       }
 
-      class299_0.method5446();
+      buffer3_0.method5446();
       if (i_2 != 0) {
          throw new RuntimeException();
       } else {
-         class299_0.method5438();
+         buffer3_0.method5438();
 
          for (i_3 = 0; i_3 < class89.field1255; i_3++) {
             i_4 = class89.field1257[i_3];
@@ -161,22 +161,22 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                   --i_2;
                   class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                } else {
-                  i_5 = class299_0.method5445(1);
+                  i_5 = buffer3_0.method5445(1);
                   if (i_5 == 0) {
-                     i_2 = class71.method1686(class299_0);
+                     i_2 = class71.method1686(buffer3_0);
                      class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                   } else {
-                     class18.method210(class299_0, i_4, 164873785);
+                     class18.method210(buffer3_0, i_4, 164873785);
                   }
                }
             }
          }
 
-         class299_0.method5446();
+         buffer3_0.method5446();
          if (i_2 != 0) {
             throw new RuntimeException();
          } else {
-            class299_0.method5438();
+            buffer3_0.method5438();
 
             for (i_3 = 0; i_3 < class89.field1251; i_3++) {
                i_4 = class89.field1258[i_3];
@@ -185,22 +185,22 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                      --i_2;
                      class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                   } else {
-                     i_5 = class299_0.method5445(1);
+                     i_5 = buffer3_0.method5445(1);
                      if (i_5 == 0) {
-                        i_2 = class71.method1686(class299_0);
+                        i_2 = class71.method1686(buffer3_0);
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
-                     } else if (class226.method4123(class299_0, i_4, -352047926)) {
+                     } else if (class226.method4123(buffer3_0, i_4, -352047926)) {
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                      }
                   }
                }
             }
 
-            class299_0.method5446();
+            buffer3_0.method5446();
             if (i_2 != 0) {
                throw new RuntimeException();
             } else {
-               class299_0.method5438();
+               buffer3_0.method5438();
 
                for (i_3 = 0; i_3 < class89.field1251; i_3++) {
                   i_4 = class89.field1258[i_3];
@@ -209,18 +209,18 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                         --i_2;
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                      } else {
-                        i_5 = class299_0.method5445(1);
+                        i_5 = buffer3_0.method5445(1);
                         if (i_5 == 0) {
-                           i_2 = class71.method1686(class299_0);
+                           i_2 = class71.method1686(buffer3_0);
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
-                        } else if (class226.method4123(class299_0, i_4, -352047926)) {
+                        } else if (class226.method4123(buffer3_0, i_4, -352047926)) {
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                         }
                      }
                   }
                }
 
-               class299_0.method5446();
+               buffer3_0.method5446();
                if (i_2 != 0) {
                   throw new RuntimeException();
                } else {

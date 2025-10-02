@@ -45,7 +45,7 @@ public class class256 extends class175 {
       if (this.field3494 != -1) {
          i_2 = class67.method1237(this.field3494, -836499887);
       } else if (this.field3495 != -1) {
-         i_2 = class212.field2525[this.field3495];
+         i_2 = class212.var_configurations[this.field3495];
       }
 
       int i_3;
@@ -316,7 +316,7 @@ public class class256 extends class175 {
          if (this.field3494 != -1) {
             i_2 = class67.method1237(this.field3494, -836499887);
          } else if (this.field3495 != -1) {
-            i_2 = class212.field2525[this.field3495];
+            i_2 = class212.var_configurations[this.field3495];
          }
 
          return i_2 >= 0 && i_2 < this.field3476.length ? this.field3476[i_2] != -1 : this.field3476[this.field3476.length - 1] != -1;

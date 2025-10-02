@@ -10,7 +10,7 @@ public class class46 implements class99 {
    }
 
    static void method805(byte b_0) {
-      Client.field880.copy(class235.method4265(class183.field2240, Client.field880.field1313, 1775123545));
+      Client.data.copy(class235.method4265(class183.field2240, Client.data.field1313, 1775123545));
       Client.field727 = 0;
    }
 

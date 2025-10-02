@@ -3,8 +3,8 @@ public class class226 {
    static class232 field3071;
    static class310 field3072;
 
-   static boolean method4123(class299 class299_0, int i_1, int i_2) {
-      int i_3 = class299_0.method5445(2);
+   static boolean method4123(Buffer_3 buffer3_0, int i_1, int i_2) {
+      int i_3 = buffer3_0.method5445(2);
       int i_4;
       int i_5;
       int i_8;
@@ -12,13 +12,13 @@ public class class226 {
       int i_10;
       int i_11;
       if (i_3 == 0) {
-         if (class299_0.method5445(1) != 0) {
-            method4123(class299_0, i_1, -352047926);
+         if (buffer3_0.method5445(1) != 0) {
+            method4123(buffer3_0, i_1, -352047926);
          }
 
-         i_4 = class299_0.method5445(13);
-         i_5 = class299_0.method5445(13);
-         boolean bool_13 = class299_0.method5445(1) == 1;
+         i_4 = buffer3_0.method5445(13);
+         i_5 = buffer3_0.method5445(13);
+         boolean bool_13 = buffer3_0.method5445(1) == 1;
          if (bool_13) {
             class89.field1256[++class89.field1262 - 1] = i_1;
          }
@@ -45,7 +45,7 @@ public class class226 {
             return true;
          }
       } else if (i_3 == 1) {
-         i_4 = class299_0.method5445(2);
+         i_4 = buffer3_0.method5445(2);
          i_5 = class89.field1253[i_1];
          class89.field1253[i_1] = (((i_5 >> 28) + i_4 & 0x3) << 28) + (i_5 & 0xfffffff);
          return false;
@@ -53,7 +53,7 @@ public class class226 {
          int i_6;
          int i_12;
          if (i_3 == 2) {
-            i_4 = class299_0.method5445(5);
+            i_4 = buffer3_0.method5445(5);
             i_5 = i_4 >> 3;
             i_6 = i_4 & 0x7;
             i_12 = class89.field1253[i_1];
@@ -99,7 +99,7 @@ public class class226 {
             class89.field1253[i_1] = (i_9 << 14) + i_10 + (i_8 << 28);
             return false;
          } else {
-            i_4 = class299_0.method5445(18);
+            i_4 = buffer3_0.method5445(18);
             i_5 = i_4 >> 16;
             i_6 = i_4 >> 8 & 0xff;
             i_12 = i_4 & 0xff;

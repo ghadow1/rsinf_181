@@ -3,7 +3,7 @@ import java.util.zip.CRC32;
 public class class236 {
 
    static long field3169;
-   public static class305 field3176;
+   public static Stream field3176;
    static int field3163 = 0;
    static class318 field3165 = new class318(4096);
    public static int field3166 = 0;

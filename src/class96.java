@@ -123,10 +123,10 @@ public class class96 {
                      class76.field1098[++class70.field1014 - 1] = ints_7[i_18];
                   } else if (i_30 == 1) {
                      i_12 = ints_7[i_18];
-                     class76.field1098[++class70.field1014 - 1] = class212.field2525[i_12];
+                     class76.field1098[++class70.field1014 - 1] = class212.var_configurations[i_12];
                   } else if (i_30 == 2) {
                      i_12 = ints_7[i_18];
-                     class212.field2525[i_12] = class76.field1098[--class70.field1014];
+                     class212.var_configurations[i_12] = class76.field1098[--class70.field1014];
                      class10.method124(i_12);
                   } else if (i_30 == 3) {
                      class76.field1093[++class221.field2747 - 1] = class92_4.field1286[i_18];

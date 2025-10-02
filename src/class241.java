@@ -175,15 +175,15 @@ public class class241 extends class175 {
 
    static final void method4368(boolean bool_0) {
       class186.method3619((byte) 13);
-      ++Client.field880.field1319;
-      if (Client.field880.field1319 >= 50 || bool_0) {
-         Client.field880.field1319 = 0;
-         if (!Client.field701 && Client.field880.method2223() != null) {
-            class187 class187_2 = class235.method4265(class183.field2225, Client.field880.field1313, 1775123545);
-            Client.field880.copy(class187_2);
+      ++Client.data.field1319;
+      if (Client.data.field1319 >= 50 || bool_0) {
+         Client.data.field1319 = 0;
+         if (!Client.field701 && Client.data.method2223() != null) {
+            class187 class187_2 = class235.method4265(class183.field2225, Client.data.field1313, 1775123545);
+            Client.data.copy(class187_2);
 
             try {
-               Client.field880.method2234();
+               Client.data.method2234();
             } catch (IOException ioexception_4) {
                Client.field701 = true;
             }

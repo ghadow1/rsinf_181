@@ -71,10 +71,10 @@ public class class74 {
                   string_5 = stringbuilder_10000.append(" from your ignore list first").toString();
                   class62.method1132(30, "", string_5, -2140395376);
                } else {
-                  class187 class187_4 = class235.method4265(class183.field2291, Client.field880.field1313, 1775123545);
+                  class187 class187_4 = class235.method4265(class183.field2291, Client.data.field1313, 1775123545);
                   class187_4.outBuffer.writeByte(class209.method3945(string_1));
                   class187_4.outBuffer.writeNullTerminatedString(string_1);
-                  Client.field880.copy(class187_4);
+                  Client.data.copy(class187_4);
                }
             }
          }
@@ -87,10 +87,10 @@ public class class74 {
          if (class283_3.method5205((byte) -114)) {
             if (this.field1070.method5085(class283_3, (byte) 38)) {
                Client.field672 = Client.field673;
-               class187 class187_4 = class235.method4265(class183.field2224, Client.field880.field1313, 1775123545);
+               class187 class187_4 = class235.method4265(class183.field2224, Client.data.field1313, 1775123545);
                class187_4.outBuffer.writeByte(class209.method3945(string_1));
                class187_4.outBuffer.writeNullTerminatedString(string_1);
-               Client.field880.copy(class187_4);
+               Client.data.copy(class187_4);
             }
 
             class129.method2972((byte) 6);
@@ -125,10 +125,10 @@ public class class74 {
          if (class283_3.method5205((byte) -26)) {
             if (this.field1071.method5085(class283_3, (byte) 63)) {
                Client.field672 = Client.field673;
-               class187 class187_4 = class235.method4265(class183.field2231, Client.field880.field1313, 1775123545);
+               class187 class187_4 = class235.method4265(class183.field2231, Client.data.field1313, 1775123545);
                class187_4.outBuffer.writeByte(class209.method3945(string_1));
                class187_4.outBuffer.writeNullTerminatedString(string_1);
-               Client.field880.copy(class187_4);
+               Client.data.copy(class187_4);
             }
 
             class2.method28(-1824777685);

@@ -9,7 +9,7 @@ public abstract class class174 {
    public abstract boolean vmethod3594(int var1, int var2, int var3, class172 var4, int var5);
 
    static final void disconnectGame() {
-      Client.field880.method2233();
+      Client.data.method2233();
       class197.method3688();
       class244.field3254.method3323();
       class245.field3273.method3323();

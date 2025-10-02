@@ -1,5 +1,5 @@
 public class class269 {
 
-   static class305 field3563;
+   static Stream field3563;
 
 }

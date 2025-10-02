@@ -3,7 +3,7 @@ public class class212 {
    public static int[] field2523;
    static int[] field2527 = new int[32];
    public static int[] field2524;
-   public static int[] field2525;
+   public static int[] var_configurations;
 
    static {
       int i_0 = 2;
@@ -14,7 +14,7 @@ public class class212 {
       }
 
       field2524 = new int[4000];
-      field2525 = new int[4000];
+      var_configurations = new int[4000];
    }
 
    static final int method3969(class217 class217_0, int i_1, int i_2) {
@@ -64,7 +64,7 @@ public class class212 {
                }
 
                if (i_7 == 5) {
-                  i_8 = field2525[ints_3[i_5++]];
+                  i_8 = var_configurations[ints_3[i_5++]];
                }
 
                if (i_7 == 6) {
@@ -72,7 +72,7 @@ public class class212 {
                }
 
                if (i_7 == 7) {
-                  i_8 = field2525[ints_3[i_5++]] * 100 / 46875;
+                  i_8 = var_configurations[ints_3[i_5++]] * 100 / 46875;
                }
 
                if (i_7 == 8) {
@@ -111,7 +111,7 @@ public class class212 {
                }
 
                if (i_7 == 13) {
-                  i_10 = field2525[ints_3[i_5++]];
+                  i_10 = var_configurations[ints_3[i_5++]];
                   int i_14 = ints_3[i_5++];
                   i_8 = (i_10 & 1 << i_14) != 0 ? 1 : 0;
                }
