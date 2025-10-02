@@ -89,7 +89,7 @@ public class class143 implements Runnable {
 
             }
          } catch (Exception exception_17) {
-            class252.method4556((String) null, exception_17, (byte) 35);
+            ErrorHandler.logError((String) null, exception_17, (byte) 35);
          }
       }
 

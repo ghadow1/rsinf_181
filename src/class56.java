@@ -30,7 +30,7 @@ public class class56 {
    static final void method1087(boolean bool_0, class299 class299_1) {
       client.field775 = 0;
       client.field697 = 0;
-      class250.method4530(-1674693758);
+      class250.method4530();
 
       int i_3;
       class79 class79_5;
@@ -89,7 +89,7 @@ public class class56 {
             }
          }
 
-         class79_5.field1134 = class53.method1005(class299_1.method5445(14), (byte) -3);
+         class79_5.field1134 = GCMonitor_2.method1005(class299_1.method5445(14), (byte) -3);
          class79_5.field952 = class79_5.field1134.field3469;
          class79_5.field948 = class79_5.field1134.field3492;
          if (class79_5.field948 == 0) {
@@ -160,7 +160,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = class53.method1005(class299_1.readUnsignedShortBigEndian(), (byte) -91);
+            class79_5.field1134 = GCMonitor_2.method1005(class299_1.readUnsignedShortBigEndian(), (byte) -91);
             class79_5.field952 = class79_5.field1134.field3469;
             class79_5.field948 = class79_5.field1134.field3492;
             class79_5.field957 = class79_5.field1134.field3475;

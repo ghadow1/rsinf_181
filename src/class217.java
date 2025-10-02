@@ -721,7 +721,7 @@ public class class217 extends LinkedListNode {
          if (class295_2 != null) {
             return class295_2;
          } else {
-            class295_2 = class142.method3294(class216.field2547, class206.field2498, this.field2624, 0, -1252480817);
+            class295_2 = class142.method3294(class216.field2547, TimeUtils.field2498, this.field2624, 0, -1252480817);
             if (class295_2 != null) {
                field2696.method3322(class295_2, (long)this.field2624);
             } else {
@@ -764,7 +764,7 @@ public class class217 extends LinkedListNode {
             }
 
             if (i_6 == 2) {
-               class121_9 = class53.method1005(i_7, (byte) -54).method4708((byte) 87);
+               class121_9 = GCMonitor_2.method1005(i_7, (byte) -54).method4708((byte) 87);
                if (class121_9 == null) {
                   field2562 = true;
                   return null;

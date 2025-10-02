@@ -46,7 +46,7 @@ public class class17 {
    }
 
    static final void method175(int i_0, int i_1, int i_2) {
-      if (class162.method3445(i_0, 1772418873)) {
+      if (class162.method3445(i_0)) {
          class31.method539(class217.field2556[i_0], i_1, (short) 28886);
       }
    }

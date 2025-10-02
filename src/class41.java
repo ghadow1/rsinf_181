@@ -158,7 +158,7 @@ public class class41 {
 
       if ((i_3 & 0x10) != 0) {
          i_6 = class299_0.readShortWithOffset();
-         class228 class228_20 = (class228) class107.method2476(class156.method3419(390349850), class299_0.readUnsignedByte());
+         class228 class228_20 = (class228) MemoryManager.findById(class156.method3419(390349850), class299_0.readUnsignedByte());
          boolean bool_18 = class299_0.readNegatedUnsignedByte() == 1;
          i_9 = class299_0.readUnsignedByte();
          i_10 = class299_0.position;

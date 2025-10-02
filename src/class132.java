@@ -30,7 +30,7 @@ public class class132 extends LinkedListNode {
 
    }
 
-   static int method3064(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method3064(int i_0, boolean bool_2) {
       int i_4;
       int i_5;
       if (i_0 == 100) {

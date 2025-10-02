@@ -16,7 +16,7 @@ public class class13 {
          class217 class217_7 = arr_0[i_6];
          if (class217_7 != null && class217_7.field2583 == i_1) {
             class219.method4112(class217_7, i_2, i_3, bool_4, 302564713);
-            class105.method2441(class217_7, i_2, i_3, (byte) -41);
+            ResourceHandler.method2441(class217_7, i_2, i_3, (byte) -41);
             if (class217_7.field2585 > class217_7.field2687 - class217_7.field2579) {
                class217_7.field2585 = class217_7.field2687 - class217_7.field2579;
             }

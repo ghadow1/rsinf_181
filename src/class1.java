@@ -264,7 +264,7 @@ final class class1 implements class0 {
                      if (i_6 == 0) {
                         class136 class136_37 = class5.field22.method3088(class42.field372, i_8, i_9);
                         if (class136_37 != null) {
-                           i_40 = class43.method770(class136_37.field1882);
+                           i_40 = GCMonitor.method770(class136_37.field1882);
                            if (i_4 == 2) {
                               class136_37.field1884 = new class93(i_40, 2, i_5 + 4, class42.field372, i_8, i_9, i_10, false, class136_37.field1884);
                               class136_37.field1881 = new class93(i_40, 2, i_5 + 1 & 0x3, class42.field372, i_8, i_9, i_10, false, class136_37.field1881);
@@ -277,7 +277,7 @@ final class class1 implements class0 {
                      if (i_6 == 1) {
                         class141 class141_44 = class5.field22.method3118(class42.field372, i_8, i_9);
                         if (class141_44 != null) {
-                           i_40 = class43.method770(class141_44.field1917);
+                           i_40 = GCMonitor.method770(class141_44.field1917);
                            if (i_4 != 4 && i_4 != 5) {
                               if (i_4 == 6) {
                                  class141_44.field1924 = new class93(i_40, 4, i_5 + 4, class42.field372, i_8, i_9, i_10, false, class141_44.field1924);
@@ -300,14 +300,14 @@ final class class1 implements class0 {
                         }
 
                         if (class142_45 != null) {
-                           class142_45.field1933 = new class93(class43.method770(class142_45.field1941), i_4, i_5, class42.field372, i_8, i_9, i_10, false, class142_45.field1933);
+                           class142_45.field1933 = new class93(GCMonitor.method770(class142_45.field1941), i_4, i_5, class42.field372, i_8, i_9, i_10, false, class142_45.field1933);
                         }
                      }
 
                      if (i_6 == 3) {
                         class123 class123_46 = class5.field22.method3091(class42.field372, i_8, i_9);
                         if (class123_46 != null) {
-                           class123_46.field1614 = new class93(class43.method770(class123_46.field1617), 22, i_5, class42.field372, i_8, i_9, i_10, false, class123_46.field1614);
+                           class123_46.field1614 = new class93(GCMonitor.method770(class123_46.field1617), 22, i_5, class42.field372, i_8, i_9, i_10, false, class123_46.field1614);
                         }
                      }
                   }

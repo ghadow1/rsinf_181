@@ -1,4 +1,4 @@
-public class class84 implements class194 {
+public class class84 implements UnknownT {
 
    static class112 field1177;
    static final class84 field1173 = new class84(0);
@@ -11,7 +11,7 @@ public class class84 implements class194 {
       this.field1171 = i_1;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field1171;
    }
 

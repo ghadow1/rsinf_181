@@ -61,7 +61,7 @@ public class class243 extends class175 {
    public final class127 method4406(int i_1, int i_2) {
       class127 class127_3 = (class127) field3240.method3320((long)this.field3241);
       if (class127_3 == null) {
-         class121 class121_4 = class121.method2769(class43.field379, this.field3242, 0);
+         class121 class121_4 = class121.method2769(GCMonitor.field379, this.field3242, 0);
          if (class121_4 == null) {
             return null;
          }

@@ -1,7 +1,7 @@
 import java.io.DataInputStream;
 import java.net.URL;
 
-public class class252 extends class175 {
+public class ErrorHandler extends class175 {
 
    public static class233 field3327;
    public static class233 field3343;
@@ -100,7 +100,7 @@ public class class252 extends class175 {
       }
    }
 
-   public final class252 method4554(byte b_1) {
+   public final ErrorHandler method4554(byte b_1) {
       int i_2 = -1;
       if (this.field3346 != -1) {
          i_2 = class67.method1237(this.field3346, -836499887);
@@ -230,7 +230,7 @@ public class class252 extends class175 {
       }
    }
 
-   public static void method4556(String string_0, Throwable throwable_1, byte b_2) {
+   public static void logError(String string_0, Throwable throwable_1, byte b_2) {
       try {
          String str_3 = "";
          if (throwable_1 != null) {

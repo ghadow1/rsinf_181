@@ -1,9 +1,9 @@
-public class class105 {
+public class ResourceHandler {
 
    static int field1407;
    int field1414;
    int field1406 = 32;
-   long field1412 = class206.getAdjustedTimeMillis();
+   long field1412 = TimeUtils.getAdjustedTimeMillis();
    long field1416 = 0L;
    int field1417 = 0;
    int field1418 = 0;
@@ -24,9 +24,9 @@ public class class105 {
    protected void vmethod2438(byte b_1) {
    }
 
-   public final synchronized void method2443(int i_1) {
+   public final synchronized void cleanup() {
       if (this.field1415 != null) {
-         long long_2 = class206.getAdjustedTimeMillis();
+         long long_2 = TimeUtils.getAdjustedTimeMillis();
 
          try {
             if (this.field1416 != 0L) {
@@ -125,7 +125,7 @@ public class class105 {
          this.vmethod2418(-313753219);
       } catch (Exception exception_3) {
          this.vmethod2438((byte) 66);
-         this.field1416 = class206.getAdjustedTimeMillis() + 2000L;
+         this.field1416 = TimeUtils.getAdjustedTimeMillis() + 2000L;
       }
 
    }
@@ -147,11 +147,11 @@ public class class105 {
          boolean bool_2 = true;
 
          for (int i_3 = 0; i_3 < 2; i_3++) {
-            if (this == class88.field1246.field1438[i_3]) {
-               class88.field1246.field1438[i_3] = null;
+            if (this == class88.field1246.handlers[i_3]) {
+               class88.field1246.handlers[i_3] = null;
             }
 
-            if (class88.field1246.field1438[i_3] != null) {
+            if (class88.field1246.handlers[i_3] != null) {
                bool_2 = false;
             }
          }
@@ -289,7 +289,7 @@ public class class105 {
          this.field1410.vmethod3893(ints_1, 0, i_2);
       }
 
-      this.field1412 = class206.getAdjustedTimeMillis();
+      this.field1412 = TimeUtils.getAdjustedTimeMillis();
    }
 
    protected void vmethod2404() throws Exception {

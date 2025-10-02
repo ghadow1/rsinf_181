@@ -11,7 +11,7 @@ public class class83 {
          return class42.field372;
       } else {
          int i_1 = class62.method1130(class299.field3727, class1.field3, class42.field372);
-         return i_1 - class43.field383 < 800 && (class55.field502[class42.field372][class299.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? class42.field372 : 3;
+         return i_1 - GCMonitor.field383 < 800 && (class55.field502[class42.field372][class299.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? class42.field372 : 3;
       }
    }
 
@@ -175,7 +175,7 @@ public class class83 {
             return 1;
          } else if (i_0 == 1125) {
             i_9 = class76.field1098[--class70.field1014];
-            class323 class323_7 = (class323) class107.method2476(class105.method2405((byte) 69), i_9);
+            class323 class323_7 = (class323) MemoryManager.findById(ResourceHandler.method2405((byte) 69), i_9);
             if (class323_7 != null) {
                class217_4.field2693 = class323_7;
                class224.method4120(class217_4);

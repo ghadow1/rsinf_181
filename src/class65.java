@@ -34,7 +34,7 @@ public class class65 extends class174 {
    static void method1176(byte b_0) {
       for (class61 class61_1 = (class61) client.field816.method5950(); class61_1 != null; class61_1 = (class61) client.field816.method5953()) {
          int i_2 = class61_1.field571;
-         if (class162.method3445(i_2, 1772418873)) {
+         if (class162.method3445(i_2)) {
             boolean bool_3 = true;
             class217[] arr_4 = class217.field2556[i_2];
 

@@ -126,7 +126,7 @@ public class class292 {
                      if (class217_11.field2568 == 1336) {
                         if (client.field884) {
                            i_14 += 15;
-                           class169.field2054.method5348("Fps:" + class53.field462, i_13 + class217_11.field2579, i_14, 16776960, -1);
+                           class169.field2054.method5348("Fps:" + GCMonitor_2.field462, i_13 + class217_11.field2579, i_14, 16776960, -1);
                            i_14 += 15;
                            Runtime runtime_43 = Runtime.getRuntime();
                            i_21 = (int)((runtime_43.totalMemory() - runtime_43.freeMemory()) / 1024L);

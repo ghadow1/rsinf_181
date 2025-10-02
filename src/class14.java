@@ -41,7 +41,7 @@ public class class14 {
             string_4 = string_4 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
          } else {
             String string_5 = string_4 + "; Expires=";
-            long long_7 = class206.getAdjustedTimeMillis() + 94608000000L;
+            long long_7 = TimeUtils.getAdjustedTimeMillis() + 94608000000L;
             class207.field2504.setTime(new Date(long_7));
             int i_9 = class207.field2504.get(7);
             int i_10 = class207.field2504.get(5);

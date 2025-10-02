@@ -63,10 +63,10 @@ public class class249 extends class175 {
          byte[] bytes_3 = class250.field3309.method4144(34, i_0);
          class250_2 = new class250();
          if (bytes_3 != null) {
-            class250_2.method4516(new ByteBuffer(bytes_3), 1347797517);
+            class250_2.method4516(new ByteBuffer(bytes_3));
          }
 
-         class250_2.method4512((short) 9298);
+         class250_2.method4512();
          class250.field3311.method3322(class250_2, (long)i_0);
          return class250_2;
       }

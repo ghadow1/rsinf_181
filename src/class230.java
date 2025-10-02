@@ -1,4 +1,4 @@
-public class class230 implements class194 {
+public class class230 implements UnknownT {
 
    public static final class230 field3107 = new class230("runescape", "RuneScape", 0);
    public static final class230 field3106 = new class230("stellardawn", "Stellar Dawn", 1);
@@ -14,7 +14,7 @@ public class class230 implements class194 {
       this.field3105 = i_3;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field3105;
    }
 

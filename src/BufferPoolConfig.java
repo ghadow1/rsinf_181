@@ -1,6 +1,6 @@
-public class class189 {
+public class BufferPoolConfig {
 
-   public static byte[][][] field2343;
+   public static byte[][][] customPools;
 
    static void method3654(class295 class295_0, class295 class295_1, class295 class295_2, byte b_3) {
       class85.field1208 = (class7.field46 - 765) / 2;

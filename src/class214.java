@@ -72,7 +72,7 @@ public class class214 {
 
    public class127 method3997(class258 class258_1, int i_2, class258 class258_3, int i_4, byte b_5) {
       if (this.field2532 != -1) {
-         return class53.method1005(this.field2532, (byte) -67).method4707(class258_1, i_2, class258_3, i_4, (byte) 27);
+         return GCMonitor_2.method1005(this.field2532, (byte) -67).method4707(class258_1, i_2, class258_3, i_4, (byte) 27);
       } else {
          long long_6 = this.field2539;
          int[] ints_8 = this.field2534;
@@ -180,7 +180,7 @@ public class class214 {
 
    class121 method3998(int i_1) {
       if (this.field2532 != -1) {
-         return class53.method1005(this.field2532, (byte) 34).method4708((byte) 91);
+         return GCMonitor_2.method1005(this.field2532, (byte) 34).method4708((byte) 91);
       } else {
          boolean bool_2 = false;
 
@@ -239,7 +239,7 @@ public class class214 {
    }
 
    public int method3994(int i_1) {
-      return this.field2532 == -1 ? (this.field2534[0] << 15) + this.field2534[1] + (this.field2534[11] << 5) + (this.field2534[8] << 10) + (this.field2533[0] << 25) + (this.field2533[4] << 20) : 305419896 + class53.method1005(this.field2532, (byte) -49).field3467;
+      return this.field2532 == -1 ? (this.field2534[0] << 15) + this.field2534[1] + (this.field2534[11] << 5) + (this.field2534[8] << 10) + (this.field2533[0] << 25) + (this.field2533[4] << 20) : 305419896 + GCMonitor_2.method1005(this.field2532, (byte) -49).field3467;
    }
 
    public void method3992(int i_1, boolean bool_2, short s_3) {

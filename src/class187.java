@@ -49,8 +49,8 @@ public class class187 extends LinkedListNode {
          for (i_2 = 0; i_2 < class13.field90.length; i_2++) {
             byte[] bytes_3 = class80.field1145[i_2];
             if (bytes_3 != null) {
-               i_4 = (class206.field2501[i_2] >> 8) * 64 - class196.field2389;
-               i_5 = (class206.field2501[i_2] & 0xff) * 64 - class1.field1;
+               i_4 = (TimeUtils.field2501[i_2] >> 8) * 64 - class196.field2389;
+               i_5 = (TimeUtils.field2501[i_2] & 0xff) * 64 - class1.field1;
                if (client.field798) {
                   i_4 = 10;
                   i_5 = 10;
@@ -123,8 +123,8 @@ public class class187 extends LinkedListNode {
             if (!client.field798) {
                byte[] bytes_6;
                for (i_50 = 0; i_50 < i_2; i_50++) {
-                  i_4 = (class206.field2501[i_50] >> 8) * 64 - class196.field2389;
-                  i_5 = (class206.field2501[i_50] & 0xff) * 64 - class1.field1;
+                  i_4 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
+                  i_5 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
                   bytes_6 = class13.field90[i_50];
                   if (bytes_6 != null) {
                      class186.method3619((byte) 50);
@@ -155,8 +155,8 @@ public class class187 extends LinkedListNode {
                }
 
                for (i_50 = 0; i_50 < i_2; i_50++) {
-                  i_4 = (class206.field2501[i_50] >> 8) * 64 - class196.field2389;
-                  i_5 = (class206.field2501[i_50] & 0xff) * 64 - class1.field1;
+                  i_4 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
+                  i_5 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
                   bytes_6 = class13.field90[i_50];
                   if (bytes_6 == null && class128.field1747 < 800) {
                      class186.method3619((byte) 58);
@@ -169,8 +169,8 @@ public class class187 extends LinkedListNode {
                for (i_50 = 0; i_50 < i_2; i_50++) {
                   byte[] bytes_54 = class80.field1145[i_50];
                   if (bytes_54 != null) {
-                     i_5 = (class206.field2501[i_50] >> 8) * 64 - class196.field2389;
-                     i_52 = (class206.field2501[i_50] & 0xff) * 64 - class1.field1;
+                     i_5 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
+                     i_52 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
                      class186.method3619((byte) 75);
                      class205.method3933(bytes_54, i_5, i_52, class5.field22, client.field710);
                   }
@@ -193,8 +193,8 @@ public class class187 extends LinkedListNode {
                            i_11 = i_7 >> 3 & 0x7ff;
                            i_12 = (i_10 / 8 << 8) + i_11 / 8;
 
-                           for (i_13 = 0; i_13 < class206.field2501.length; i_13++) {
-                              if (class206.field2501[i_13] == i_12 && class13.field90[i_13] != null) {
+                           for (i_13 = 0; i_13 < TimeUtils.field2501.length; i_13++) {
+                              if (TimeUtils.field2501[i_13] == i_12 && class13.field90[i_13] != null) {
                                  class56.method1088(class13.field90[i_13], i_50, i_4 * 8, i_5 * 8, i_8, (i_10 & 0x7) * 8, (i_11 & 0x7) * 8, i_53, client.field710, (byte) 66);
                                  bool_57 = true;
                                  break;
@@ -262,8 +262,8 @@ public class class187 extends LinkedListNode {
                            i_10 = i_52 >> 3 & 0x7ff;
                            i_11 = (i_53 / 8 << 8) + i_10 / 8;
 
-                           for (i_12 = 0; i_12 < class206.field2501.length; i_12++) {
-                              if (class206.field2501[i_12] == i_11 && class80.field1145[i_12] != null) {
+                           for (i_12 = 0; i_12 < TimeUtils.field2501.length; i_12++) {
+                              if (TimeUtils.field2501[i_12] == i_11 && class80.field1145[i_12] != null) {
                                  byte[] bytes_55 = class80.field1145[i_12];
                                  int i_14 = i_4 * 8;
                                  int i_15 = i_5 * 8;

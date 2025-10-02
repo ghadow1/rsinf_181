@@ -194,7 +194,7 @@ public final class class171 extends class305 implements Runnable {
             break;
          }
       } catch (Exception exception_12) {
-         class252.method4556((String) null, exception_12, (byte) 6);
+         ErrorHandler.logError((String) null, exception_12, (byte) 6);
       }
 
    }

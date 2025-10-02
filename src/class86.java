@@ -111,19 +111,19 @@ public final class class86 extends class135 {
       }
    }
 
-   public static class252 method2046(int i_0, byte b_1) {
-      class252 class252_2 = (class252) class252.field3325.method3320((long)i_0);
-      if (class252_2 != null) {
-         return class252_2;
+   public static ErrorHandler method2046(int i_0, byte b_1) {
+      ErrorHandler errorHandler_2 = (ErrorHandler) ErrorHandler.field3325.method3320((long)i_0);
+      if (errorHandler_2 != null) {
+         return errorHandler_2;
       } else {
-         byte[] bytes_3 = class252.field3327.method4144(32, i_0);
-         class252_2 = new class252();
+         byte[] bytes_3 = ErrorHandler.field3327.method4144(32, i_0);
+         errorHandler_2 = new ErrorHandler();
          if (bytes_3 != null) {
-            class252_2.method4552(new ByteBuffer(bytes_3), (byte) 1);
+            errorHandler_2.method4552(new ByteBuffer(bytes_3), (byte) 1);
          }
 
-         class252.field3325.method3322(class252_2, (long)i_0);
-         return class252_2;
+         ErrorHandler.field3325.method3322(errorHandler_2, (long)i_0);
+         return errorHandler_2;
       }
    }
 

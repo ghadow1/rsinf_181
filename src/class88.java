@@ -5,7 +5,7 @@ import java.util.concurrent.Future;
 
 public class class88 {
 
-   static class107 field1246;
+   static MemoryManager field1246;
    static int[] field1248;
    ExecutorService field1249 = Executors.newSingleThreadExecutor();
    Future field1247;

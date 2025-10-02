@@ -50,7 +50,7 @@ public class class294 {
 
       if (long_2 != 0L) {
          int i_7 = class5.field22.method3096(class68_0.field943, class68_0.field937, class68_0.field934, long_2);
-         i_4 = class43.method770(long_2);
+         i_4 = GCMonitor.method770(long_2);
          i_5 = i_7 & 0x1f;
          i_6 = i_7 >> 6 & 0x3;
       }

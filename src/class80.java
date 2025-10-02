@@ -3,7 +3,7 @@ import java.math.BigInteger;
 public class class80 {
 
    static int field1143;
-   static class105 field1144;
+   static ResourceHandler field1144;
    static byte[][] field1145;
    static final BigInteger field1140 = new BigInteger("80782894952180643741752986186714059433953886149239752893425047584684715842049");
    static final BigInteger field1141 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
@@ -12,7 +12,7 @@ public class class80 {
       int i_2 = i_0 >> 16;
       int i_3 = i_0 & 0xffff;
       if (class217.field2556[i_2] == null || class217.field2556[i_2][i_3] == null) {
-         boolean bool_4 = class162.method3445(i_2, 1772418873);
+         boolean bool_4 = class162.method3445(i_2);
          if (!bool_4) {
             return null;
          }

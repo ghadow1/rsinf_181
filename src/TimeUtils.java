@@ -1,6 +1,6 @@
 import java.nio.ByteBuffer;
 
-public class class206 extends class205 {
+public class TimeUtils extends class205 {
 
    static class233 field2498;
    static int[] field2501;
@@ -58,7 +58,7 @@ public class class206 extends class205 {
          int i_13;
          if (long_8 != 0L) {
             i_13 = class5.field22.method3096(i_0, i_2, i_3, long_8);
-            int i_15 = class43.method770(long_8);
+            int i_15 = GCMonitor.method770(long_8);
             int i_16 = i_13 & 0x1f;
             int i_17 = i_13 >> 6 & 0x3;
             class253 class253_14;

@@ -32,7 +32,7 @@ public class class272 {
          class197.field2405 = class65.method1169(0, false, true, true, (byte) 6);
          class167.field2049 = class65.method1169(1, false, true, true, (byte) 6);
          class215.field2544 = class65.method1169(2, true, false, true, (byte) 6);
-         class43.field382 = class65.method1169(3, false, true, true, (byte) 6);
+         GCMonitor.field382 = class65.method1169(3, false, true, true, (byte) 6);
          class13.field89 = class65.method1169(4, false, true, true, (byte) 6);
          class35.field307 = class65.method1169(5, true, true, true, (byte) 6);
          class29.field253 = class65.method1169(6, true, true, true, (byte) 6);
@@ -57,7 +57,7 @@ public class class272 {
          i_1 = b_31 + class197.field2405.method4259() * 4 / 100;
          i_1 += class167.field2049.method4259() * 4 / 100;
          i_1 += class215.field2544.method4259() * 2 / 100;
-         i_1 += class43.field382.method4259() * 2 / 100;
+         i_1 += GCMonitor.field382.method4259() * 2 / 100;
          i_1 += class13.field89.method4259() * 6 / 100;
          i_1 += class35.field307.method4259() * 4 / 100;
          i_1 += class29.field253.method4259() * 2 / 100;
@@ -104,10 +104,10 @@ public class class272 {
          class126.method2853(22050, !client.field656, 2, -1363278802);
          class198 class198_34 = new class198();
          class198_34.method3720(9, 128, -1686884768);
-         class80.field1144 = class234.method4256(class53.field463, 0, 22050, 2015059645);
+         class80.field1144 = class234.method4256(GCMonitor_2.field463, 0, 22050, 2015059645);
          class80.field1144.method2424(class198_34, 750974673);
          class58.method1094(class67.field650, class126.field1647, class13.field89, class198_34, (byte) 14);
-         class190.field2361 = class234.method4256(class53.field463, 1, 2048, 2054660994);
+         class190.field2361 = class234.method4256(GCMonitor_2.field463, 1, 2048, 2054660994);
          class57.field532 = new class98();
          class190.field2361.method2424(class57.field532, -1975857573);
          class84.field1177 = new class112(22050, class172.field2078);
@@ -238,11 +238,11 @@ public class class272 {
                   class235 class235_12 = class215.field2544;
                   class235 class235_13 = class256.field3500;
                   class243.field3247 = class235_12;
-                  class43.field379 = class235_13;
+                  GCMonitor.field379 = class235_13;
                   class235 class235_14 = class215.field2544;
                   class248.field3298 = class235_14;
                   class6.method68(class215.field2544);
-                  class144.method3317(class43.field382, class256.field3500, client.field683, class2.field6, -354587299);
+                  class144.method3317(GCMonitor.field382, class256.field3500, client.field683, class2.field6, -354587299);
                   class15.method173(class215.field2544, -1590503408);
                   class235 class235_15 = class215.field2544;
                   class251.field3314 = class235_15;
@@ -252,9 +252,9 @@ public class class272 {
                   class235 class235_16 = class215.field2544;
                   class235 class235_17 = client.field683;
                   class235 class235_18 = class2.field6;
-                  class252.field3327 = class235_16;
-                  class252.field3343 = class235_17;
-                  class252.field3326 = class235_18;
+                  ErrorHandler.field3327 = class235_16;
+                  ErrorHandler.field3343 = class235_17;
+                  ErrorHandler.field3326 = class235_18;
                   class235 class235_19 = class215.field2544;
                   class235 class235_20 = client.field683;
                   class246.field3281 = class235_19;
@@ -385,7 +385,7 @@ public class class272 {
                }
             } else if (client.field680 == 110) {
                class40.field348 = new class63();
-               class53.field463.method3472(class40.field348, 10, 1809900382);
+               GCMonitor_2.field463.method3472(class40.field348, 10, 1809900382);
                class85.field1189 = "Loaded input handler";
                class85.field1188 = 92;
                client.field680 = 120;
@@ -401,8 +401,8 @@ public class class272 {
                   client.field680 = 130;
                }
             } else if (client.field680 == 130) {
-               if (!class43.field382.method4148(1613307654)) {
-                  class85.field1189 = "Loading interfaces - " + class43.field382.method4257(258439292) * 4 / 5 + "%";
+               if (!GCMonitor.field382.method4148(1613307654)) {
+                  class85.field1189 = "Loading interfaces - " + GCMonitor.field382.method4257(258439292) * 4 / 5 + "%";
                   class85.field1188 = 96;
                } else if (!class151.field1971.method4148(-666909078)) {
                   class85.field1189 = "Loading interfaces - " + (80 + class151.field1971.method4257(-1810289941) / 6) + "%";
@@ -437,7 +437,7 @@ public class class272 {
 
    public void method5014() {
       if (this.field3602 != -1L) {
-         this.field3607 = class206.getAdjustedTimeMillis() - this.field3602;
+         this.field3607 = TimeUtils.getAdjustedTimeMillis() - this.field3602;
          this.field3602 = -1L;
       }
 
@@ -447,19 +447,19 @@ public class class272 {
 
    public void method4993() {
       if (this.field3603 != -1L) {
-         this.field3604 = class206.getAdjustedTimeMillis() - this.field3603;
+         this.field3604 = TimeUtils.getAdjustedTimeMillis() - this.field3603;
          this.field3603 = -1L;
       }
 
    }
 
    public void method4996(int i_1) {
-      this.field3602 = class206.getAdjustedTimeMillis();
+      this.field3602 = TimeUtils.getAdjustedTimeMillis();
       this.field3608 = i_1;
    }
 
    public void method5005() {
-      this.field3603 = class206.getAdjustedTimeMillis();
+      this.field3603 = TimeUtils.getAdjustedTimeMillis();
    }
 
    public void method4998(int i_1) {

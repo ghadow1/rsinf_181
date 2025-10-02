@@ -23,18 +23,18 @@ public final class class141 {
    }
 
    protected static final void method3291() {
-      class53.field447.vmethod3513(-1402657312);
+      GCMonitor_2.field447.vmethod3513(-1402657312);
 
       int i_1;
       for (i_1 = 0; i_1 < 32; i_1++) {
-         class53.field452[i_1] = 0L;
+         GCMonitor_2.field452[i_1] = 0L;
       }
 
       for (i_1 = 0; i_1 < 32; i_1++) {
-         class53.field453[i_1] = 0L;
+         GCMonitor_2.field453[i_1] = 0L;
       }
 
-      class53.field449 = 0;
+      GCMonitor_2.field449 = 0;
    }
 
    public static int method3292(int i_0, int i_1) {

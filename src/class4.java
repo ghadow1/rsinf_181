@@ -201,7 +201,7 @@ final class class4 implements class0 {
       }
 
       i_29 = class299.field3727;
-      i_7 = class43.field383;
+      i_7 = GCMonitor.field383;
       i_8 = class1.field3;
       i_9 = class11.field77;
       i_10 = class76.field1112;
@@ -214,7 +214,7 @@ final class class4 implements class0 {
             }
 
             if (i_11 == 1) {
-               class43.field383 += i_12;
+               GCMonitor.field383 += i_12;
             }
 
             if (i_11 == 2) {
@@ -262,7 +262,7 @@ final class class4 implements class0 {
       class186.method3619((byte) 8);
       i_13 = class130.field1773;
       class130.field1773 = client.field917;
-      class5.field22.method3092(class299.field3727, class43.field383, class1.field3, class11.field77, class76.field1112, i_5);
+      class5.field22.method3092(class299.field3727, GCMonitor.field383, class1.field3, class11.field77, class76.field1112, i_5);
       class130.field1773 = i_13;
       class186.method3619((byte) 124);
       class5.field22.method3115();
@@ -427,7 +427,7 @@ final class class4 implements class0 {
       ((class119) class130.field1781).method2736(client.field718);
       class21.method273(i_0, i_1, i_2, i_3, -2108015148);
       class299.field3727 = i_29;
-      class43.field383 = i_7;
+      GCMonitor.field383 = i_7;
       class1.field3 = i_8;
       class11.field77 = i_9;
       class76.field1112 = i_10;

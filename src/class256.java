@@ -55,7 +55,7 @@ public class class256 extends class175 {
          i_3 = this.field3476[this.field3476.length - 1];
       }
 
-      return i_3 != -1 ? class53.method1005(i_3, (byte) -74) : null;
+      return i_3 != -1 ? GCMonitor_2.method1005(i_3, (byte) -74) : null;
    }
 
    void method4713(ByteBuffer class300_1, int i_2, byte b_3) {

@@ -49,7 +49,7 @@ public class class82 {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2639;
          return 1;
       } else if (i_0 == 1613) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2693.vmethod6084(2003391553);
+         class76.field1098[++class70.field1014 - 1] = class217_4.field2693.getId(2003391553);
          return 1;
       } else if (i_0 == 1614) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2564 ? 1 : 0;

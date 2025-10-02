@@ -251,7 +251,7 @@ public class class333 {
    final void method6305(int i_1, int i_2, boolean bool_3, int i_4) {
       this.field3990 = i_1;
       this.field3999 = i_2;
-      class206.getAdjustedTimeMillis();
+      TimeUtils.getAdjustedTimeMillis();
       if (bool_3) {
          this.method6306((byte) 1);
       }
@@ -580,7 +580,7 @@ public class class333 {
    }
 
    public void method6301(int i_1, int i_2, boolean bool_3, boolean bool_4, byte b_5) {
-      long long_6 = class206.getAdjustedTimeMillis();
+      long long_6 = TimeUtils.getAdjustedTimeMillis();
       this.method6302(i_1, i_2, bool_4, long_6);
       if (!this.method6307(-1798677301) && (bool_4 || bool_3)) {
          if (bool_4) {

@@ -5,7 +5,7 @@ public class class46 implements class99 {
    static boolean field413;
    static int field412;
 
-   public class105 vmethod2314(byte b_1) {
+   public ResourceHandler vmethod2314(byte b_1) {
       return new class50();
    }
 

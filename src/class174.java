@@ -24,9 +24,9 @@ public abstract class class174 {
       class243.field3240.method3323();
       class201.method3888((byte) 1);
       class57.method1093(1843458331);
-      class252.field3325.method3323();
-      class252.field3329.method3323();
-      class252.field3330.method3323();
+      ErrorHandler.field3325.method3323();
+      ErrorHandler.field3329.method3323();
+      ErrorHandler.field3330.method3323();
       class23.method286(536238322);
       class250.field3311.method3323();
       class213.method3989();
@@ -37,7 +37,7 @@ public abstract class class174 {
       class92.field1291.method3323();
       class197.field2405.method4158(-1559971076);
       class167.field2049.method4158(-420803493);
-      class43.field382.method4158(-240256360);
+      GCMonitor.field382.method4158(-240256360);
       class13.field89.method4158(-1816789816);
       class35.field307.method4158(468299296);
       class29.field253.method4158(-678416824);

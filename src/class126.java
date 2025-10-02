@@ -70,7 +70,7 @@ public final class class126 extends LinkedListNode {
       if (i_0 >= 8000 && i_0 <= 48000) {
          class172.field2078 = i_0;
          class169.field2053 = bool_1;
-         class105.field1407 = i_2;
+         ResourceHandler.field1407 = i_2;
       } else {
          throw new IllegalArgumentException();
       }

@@ -779,7 +779,7 @@ public class class29 {
                i_9 = ((class21) this.field242.getFirst()).field161;
             }
 
-            bool_7 &= class233_5.method4199(i_9, 507984999);
+            bool_7 &= class233_5.method4199(i_9);
             if (bool_7) {
                byte[] bytes_8 = class233_5.method4208(i_9);
                class27 class27_10;

@@ -1,4 +1,4 @@
-public class class3 implements class194 {
+public class class3 implements UnknownT {
 
    public static final class3 field7 = new class3(2, 0, Integer.class, new class1());
    public static final class3 field9 = new class3(1, 1, Long.class, new class2());
@@ -15,7 +15,7 @@ public class class3 implements class194 {
       this.field13 = class0_4;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field11;
    }
 
@@ -85,7 +85,7 @@ public class class3 implements class194 {
 
          int[] ints_20 = class174.field2102.field3908;
          i_27 = i_1 * 4 + (103 - i_2) * 2048 + 24624;
-         i_15 = class43.method770(long_6);
+         i_15 = GCMonitor.method770(long_6);
          class253 class253_16 = class128.method2970(i_15, (short) 4095);
          if (class253_16.field3379 != -1) {
             class324 class324_17 = class285.field3660[class253_16.field3379];
@@ -162,7 +162,7 @@ public class class3 implements class194 {
          i_8 = class5.field22.method3096(i_0, i_1, i_2, long_6);
          i_9 = i_8 >> 6 & 0x3;
          i_10 = i_8 & 0x1f;
-         i_11 = class43.method770(long_6);
+         i_11 = GCMonitor.method770(long_6);
          class253 class253_21 = class128.method2970(i_11, (short) 4095);
          if (class253_21.field3379 != -1) {
             class324 class324_29 = class285.field3660[class253_21.field3379];
@@ -201,7 +201,7 @@ public class class3 implements class194 {
 
       long_6 = class5.field22.method3095(i_0, i_1, i_2);
       if (long_6 != 0L) {
-         i_8 = class43.method770(long_6);
+         i_8 = GCMonitor.method770(long_6);
          class253 class253_22 = class128.method2970(i_8, (short) 4095);
          if (class253_22.field3379 != -1) {
             class324 class324_23 = class285.field3660[class253_22.field3379];

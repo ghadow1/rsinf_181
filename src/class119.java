@@ -123,7 +123,7 @@ public class class119 implements class139 {
    }
 
    public static synchronized byte[] method2729(int i_0) {
-      return class302.method5761(i_0, false, (byte) 58);
+      return BufferPool.method5761(i_0, false, (byte) 58);
    }
 
    static File method2760(String string_0, String string_1, int i_2) {
@@ -301,7 +301,7 @@ public class class119 implements class139 {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2639;
          return 1;
       } else if (i_0 == 2613) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2693.vmethod6084(1137104764);
+         class76.field1098[++class70.field1014 - 1] = class217_4.field2693.getId(1137104764);
          return 1;
       } else if (i_0 == 2614) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2564 ? 1 : 0;

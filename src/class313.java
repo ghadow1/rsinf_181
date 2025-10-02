@@ -1,6 +1,6 @@
 import java.awt.Font;
 
-public class class313 implements class194 {
+public class class313 implements UnknownT {
 
    static Font field3844;
    public static final class313 field3837 = new class313(3, 0);
@@ -20,7 +20,7 @@ public class class313 implements class194 {
       this.field3836 = i_2;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field3836;
    }
 

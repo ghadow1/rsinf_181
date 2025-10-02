@@ -1,9 +1,9 @@
 public class class162 implements class161 {
 
-   public static boolean method3445(int i_0, int i_1) {
+   public static boolean method3445(int i_0) {
       if (class128.field1755[i_0]) {
          return true;
-      } else if (!class217.field2557.method4199(i_0, 194128149)) {
+      } else if (!class217.field2557.method4199(i_0)) {
          return false;
       } else {
          int i_2 = class217.field2557.method4154(i_0, -959720772);

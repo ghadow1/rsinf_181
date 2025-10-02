@@ -316,7 +316,7 @@ public class class67 implements Comparator {
                         i_29 = 16;
                         long_32 = class133_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
-                           i_29 = class128.method2970(class43.method770(long_32), (short) 4095).field3374;
+                           i_29 = class128.method2970(GCMonitor.method770(long_32), (short) 4095).field3374;
                         }
 
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
@@ -330,7 +330,7 @@ public class class67 implements Comparator {
                         i_29 = 8;
                         long_32 = class133_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
-                           i_29 = class128.method2970(class43.method770(long_32), (short) 4095).field3374 / 2;
+                           i_29 = class128.method2970(GCMonitor.method770(long_32), (short) 4095).field3374 / 2;
                         }
 
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
@@ -353,7 +353,7 @@ public class class67 implements Comparator {
                         i_29 = 8;
                         long_32 = class133_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
-                           i_29 = class128.method2970(class43.method770(long_32), (short) 4095).field3374 / 2;
+                           i_29 = class128.method2970(GCMonitor.method770(long_32), (short) 4095).field3374 / 2;
                         }
 
                         int i_28 = i_4 + 2 & 0x3;

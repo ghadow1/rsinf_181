@@ -5,11 +5,11 @@ public class class186 {
 
    static final void method3619(byte b_0) {
       if (class190.field2361 != null) {
-         class190.field2361.method2443(697162530);
+         class190.field2361.cleanup();
       }
 
       if (class80.field1144 != null) {
-         class80.field1144.method2443(-495628528);
+         class80.field1144.cleanup();
       }
 
    }

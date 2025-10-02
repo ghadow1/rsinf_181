@@ -1,4 +1,4 @@
-public class class160 implements class194 {
+public class class160 implements UnknownT {
 
    public static final class160 field2005 = new class160(0, 0);
    public static final class160 field2004 = new class160(1, 1);
@@ -12,7 +12,7 @@ public class class160 implements class194 {
       this.field2000 = i_2;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field2000;
    }
 

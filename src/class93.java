@@ -160,7 +160,7 @@ public class class93 extends class135 {
                   }
 
                   class236.field3163 = 0;
-                  class236.field3169 = class206.getAdjustedTimeMillis();
+                  class236.field3169 = TimeUtils.getAdjustedTimeMillis();
                   return;
                }
 

@@ -152,7 +152,7 @@ public class class90 {
       }
 
       this.field1270 = false;
-      this.field1272 = class206.getAdjustedTimeMillis();
+      this.field1272 = TimeUtils.getAdjustedTimeMillis();
    }
 
    void method2104(byte b_1) {
@@ -209,7 +209,7 @@ public class class90 {
                            i_9 = class300_16.readUnsignedShortBigEndian();
                            i_10 = class300_16.readUnsignedByte();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
-                           class3 class3_12 = (class3) class107.method2476(arr_11, i_10);
+                           class3 class3_12 = (class3) MemoryManager.findById(arr_11, i_10);
                            Object object_13 = class3_12.method34(class300_16, -25501823);
                            if (this.field1268[i_9]) {
                               this.field1271.put(Integer.valueOf(i_9), object_13);
@@ -333,7 +333,7 @@ public class class90 {
    }
 
    void method2105(int i_1) {
-      if (this.field1270 && this.field1272 < class206.getAdjustedTimeMillis() - 60000L) {
+      if (this.field1270 && this.field1272 < TimeUtils.getAdjustedTimeMillis() - 60000L) {
          this.method2100(2110118383);
       }
 

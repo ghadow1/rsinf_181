@@ -4,14 +4,14 @@ public class class250 extends class175 {
    public static class145 field3311 = new class145(64);
    class316 field3310;
 
-   void method4513(ByteBuffer class300_1, int i_2, int i_3) {
+   void method4513(ByteBuffer class300_1, int i_2) {
       if (i_2 == 249) {
          this.field3310 = class26.method403(class300_1, this.field3310, -412721913);
       }
 
    }
 
-   public int method4514(int i_1, int i_2, int i_3) {
+   public int method4514(int i_1, int i_2) {
       class316 class316_5 = this.field3310;
       int i_4;
       if (class316_5 == null) {
@@ -28,25 +28,25 @@ public class class250 extends class175 {
       return i_4;
    }
 
-   public String method4515(int i_1, String string_2, int i_3) {
+   public String method4515(int i_1, String string_2) {
       return class5.method54(this.field3310, i_1, string_2, (byte) -34);
    }
 
-   void method4512(short s_1) {
+   void method4512() {
    }
 
-   void method4516(ByteBuffer class300_1, int i_2) {
+   void method4516(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4513(class300_1, i_3, -629371367);
+         this.method4513(class300_1, i_3);
       }
    }
 
-   static final void method4530(int i_0) {
+   static final void method4530() {
       class299 class299_1 = client.field880.field1314;
       class299_1.method5438();
       int i_2 = class299_1.method5445(8);
@@ -82,7 +82,7 @@ public class class250 extends class175 {
                      client.field696[++client.field695 - 1] = i_4;
                      class79_5.field973 = client.field881;
                      i_8 = class299_1.method5445(3);
-                     class79_5.method1974(i_8, (byte) 1, 1156693210);
+                     class79_5.method1974(i_8, (byte) 1);
                      i_9 = class299_1.method5445(1);
                      if (i_9 == 1) {
                         client.field859[++client.field697 - 1] = i_4;
@@ -91,9 +91,9 @@ public class class250 extends class175 {
                      client.field696[++client.field695 - 1] = i_4;
                      class79_5.field973 = client.field881;
                      i_8 = class299_1.method5445(3);
-                     class79_5.method1974(i_8, (byte) 2, -620961202);
+                     class79_5.method1974(i_8, (byte) 2);
                      i_9 = class299_1.method5445(3);
-                     class79_5.method1974(i_9, (byte) 2, -747750658);
+                     class79_5.method1974(i_9, (byte) 2);
                      int i_10 = class299_1.method5445(1);
                      if (i_10 == 1) {
                         client.field859[++client.field697 - 1] = i_4;

@@ -1,9 +1,9 @@
 import java.util.Locale;
 
-public class class190 implements class194 {
+public class class190 implements UnknownT {
 
    static int field2358;
-   static class105 field2361;
+   static ResourceHandler field2361;
    static int field2345;
    public static final class190 field2348;
    static final class190 field2351;
@@ -56,7 +56,7 @@ public class class190 implements class194 {
       return this.field2353;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field2354;
    }
 

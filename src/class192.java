@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class class192 implements class194 {
+public class class192 implements UnknownT {
 
    static long field2382;
    static final class192 field2375;
@@ -52,7 +52,7 @@ public class class192 implements class194 {
       this.field2379 = i_2;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field2379;
    }
 

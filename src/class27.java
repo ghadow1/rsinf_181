@@ -17,7 +17,7 @@ public final class class27 {
    }
 
    static final void method416(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
-      if (class162.method3445(i_0, 1772418873)) {
+      if (class162.method3445(i_0)) {
          class13.method150(class217.field2556[i_0], -1, i_1, i_2, bool_3, 2021485815);
       }
    }

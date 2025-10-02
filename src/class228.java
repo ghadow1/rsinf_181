@@ -1,4 +1,4 @@
-public class class228 implements class194 {
+public class class228 implements UnknownT {
 
    static String field3095;
    static final class228 field3087 = new class228(0, -1, true, false, true);
@@ -19,7 +19,7 @@ public class class228 implements class194 {
       this.field3092 = bool_5;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field3089;
    }
 

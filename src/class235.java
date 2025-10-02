@@ -178,7 +178,7 @@ public class class235 extends class233 {
             if (bytes_3 == null) {
                obj_10 = null;
             } else if (bytes_3.length > 136) {
-               class206 class206_11 = new class206();
+               TimeUtils class206_11 = new TimeUtils();
                class206_11.vmethod3934(bytes_3, 594076777);
                obj_10 = class206_11;
             } else {
@@ -243,7 +243,7 @@ public class class235 extends class233 {
             if (bytes_2 == null) {
                obj_8 = null;
             } else if (bytes_2.length > 136) {
-               class206 class206_9 = new class206();
+               TimeUtils class206_9 = new TimeUtils();
                class206_9.vmethod3934(bytes_2, -404058899);
                obj_8 = class206_9;
             } else {
@@ -281,7 +281,7 @@ public class class235 extends class233 {
    }
 
    static final void method4269(int i_0, byte b_1) {
-      if (class162.method3445(i_0, 1772418873)) {
+      if (class162.method3445(i_0)) {
          class225.method4122(class217.field2556[i_0], -1, -1666853879);
       }
    }

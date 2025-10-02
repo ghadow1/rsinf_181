@@ -180,9 +180,9 @@ public class class197 {
                      i_9 = class76.field1098[class70.field1014 + 1];
                      class249_10 = class18.method209(i_9, (byte) 4);
                      if (class249_10.method4499(715128499)) {
-                        class76.field1093[++class221.field2747 - 1] = class53.method1005(i_8, (byte) -48).method4740(i_9, class249_10.field3303, -1901190491);
+                        class76.field1093[++class221.field2747 - 1] = GCMonitor_2.method1005(i_8, (byte) -48).method4740(i_9, class249_10.field3303, -1901190491);
                      } else {
-                        class76.field1098[++class70.field1014 - 1] = class53.method1005(i_8, (byte) 106).method4711(i_9, class249_10.field3302);
+                        class76.field1098[++class70.field1014 - 1] = GCMonitor_2.method1005(i_8, (byte) 106).method4711(i_9, class249_10.field3302);
                      }
 
                      return 1;
@@ -216,9 +216,9 @@ public class class197 {
                      i_9 = class76.field1098[class70.field1014 + 1];
                      class249_10 = class18.method209(i_9, (byte) 4);
                      if (class249_10.method4499(715128499)) {
-                        class76.field1093[++class221.field2747 - 1] = class249.method4510(i_8, 1544024361).method4515(i_9, class249_10.field3303, -1883536215);
+                        class76.field1093[++class221.field2747 - 1] = class249.method4510(i_8, 1544024361).method4515(i_9, class249_10.field3303);
                      } else {
-                        class76.field1098[++class70.field1014 - 1] = class249.method4510(i_8, 1491402359).method4514(i_9, class249_10.field3302, -1469740156);
+                        class76.field1098[++class70.field1014 - 1] = class249.method4510(i_8, 1491402359).method4514(i_9, class249_10.field3302);
                      }
 
                      return 1;

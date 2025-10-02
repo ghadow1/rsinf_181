@@ -1,4 +1,4 @@
-public class class255 implements class194 {
+public class class255 implements UnknownT {
 
    static final class255 field3461 = new class255(0, 0);
    static final class255 field3458 = new class255(2, 1);
@@ -11,7 +11,7 @@ public class class255 implements class194 {
       this.field3462 = i_2;
    }
 
-   public int vmethod6084(int i_1) {
+   public int getId(int i_1) {
       return this.field3462;
    }
 

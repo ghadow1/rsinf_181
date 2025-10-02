@@ -326,18 +326,18 @@ public class class112 {
          for (int i_78 = 0; i_78 < 4; i_78++) {
             int i_97 = class69_0.field971[i_78];
             int i_98 = class69_0.field969[i_78];
-            class252 class252_96 = null;
+            ErrorHandler errorHandler_96 = null;
             int i_99 = 0;
             if (i_98 >= 0) {
                if (i_97 <= client.field881) {
                   continue;
                }
 
-               class252_96 = class86.method2046(class69_0.field969[i_78], (byte) 0);
-               i_99 = class252_96.field3344;
-               if (class252_96 != null && class252_96.field3345 != null) {
-                  class252_96 = class252_96.method4554((byte) 0);
-                  if (class252_96 == null) {
+               errorHandler_96 = class86.method2046(class69_0.field969[i_78], (byte) 0);
+               i_99 = errorHandler_96.field3344;
+               if (errorHandler_96 != null && errorHandler_96.field3345 != null) {
+                  errorHandler_96 = errorHandler_96.method4554((byte) 0);
+                  if (errorHandler_96 == null) {
                      class69_0.field971[i_78] = -1;
                      continue;
                   }
@@ -347,16 +347,16 @@ public class class112 {
             }
 
             i_16 = class69_0.field972[i_78];
-            class252 class252_82 = null;
+            ErrorHandler errorHandler_82 = null;
             if (i_16 >= 0) {
-               class252_82 = class86.method2046(i_16, (byte) 0);
-               if (class252_82 != null && class252_82.field3345 != null) {
-                  class252_82 = class252_82.method4554((byte) 0);
+               errorHandler_82 = class86.method2046(i_16, (byte) 0);
+               if (errorHandler_82 != null && errorHandler_82.field3345 != null) {
+                  errorHandler_82 = errorHandler_82.method4554((byte) 0);
                }
             }
 
             if (i_97 - i_99 <= client.field881) {
-               if (class252_96 == null) {
+               if (errorHandler_96 == null) {
                   class69_0.field971[i_78] = -1;
                } else {
                   class219.method4113(class69_0, class69_0.field999 / 2, 1386416846);
@@ -400,7 +400,7 @@ public class class112 {
                      int i_41 = 0;
                      int i_42 = 0;
                      int i_43 = 0;
-                     class325_83 = class252_96.method4551(-1354583226);
+                     class325_83 = errorHandler_96.method4551(-1354583226);
                      int i_44;
                      if (class325_83 != null) {
                         i_23 = class325_83.field3899;
@@ -412,7 +412,7 @@ public class class112 {
                         i_27 = class325_83.field3901;
                      }
 
-                     class325_84 = class252_96.method4557(-2099712719);
+                     class325_84 = errorHandler_96.method4557(-2099712719);
                      if (class325_84 != null) {
                         i_24 = class325_84.field3899;
                         i_44 = class325_84.field3900;
@@ -423,7 +423,7 @@ public class class112 {
                         i_28 = class325_84.field3901;
                      }
 
-                     class325_85 = class252_96.method4558((byte) -48);
+                     class325_85 = errorHandler_96.method4558((byte) -48);
                      if (class325_85 != null) {
                         i_25 = class325_85.field3899;
                         i_44 = class325_85.field3900;
@@ -434,7 +434,7 @@ public class class112 {
                         i_29 = class325_85.field3901;
                      }
 
-                     class325_86 = class252_96.method4583(-1606516448);
+                     class325_86 = errorHandler_96.method4583(-1606516448);
                      if (class325_86 != null) {
                         i_26 = class325_86.field3899;
                         i_44 = class325_86.field3900;
@@ -445,8 +445,8 @@ public class class112 {
                         i_30 = class325_86.field3901;
                      }
 
-                     if (class252_82 != null) {
-                        class325_31 = class252_82.method4551(1324383932);
+                     if (errorHandler_82 != null) {
+                        class325_31 = errorHandler_82.method4551(1324383932);
                         if (class325_31 != null) {
                            i_35 = class325_31.field3899;
                            i_44 = class325_31.field3900;
@@ -457,7 +457,7 @@ public class class112 {
                            i_39 = class325_31.field3901;
                         }
 
-                        class325_32 = class252_82.method4557(-2096560428);
+                        class325_32 = errorHandler_82.method4557(-2096560428);
                         if (class325_32 != null) {
                            i_36 = class325_32.field3899;
                            i_44 = class325_32.field3900;
@@ -468,7 +468,7 @@ public class class112 {
                            i_40 = class325_32.field3901;
                         }
 
-                        class325_33 = class252_82.method4558((byte) -120);
+                        class325_33 = errorHandler_82.method4558((byte) -120);
                         if (class325_33 != null) {
                            i_37 = class325_33.field3899;
                            i_44 = class325_33.field3900;
@@ -479,7 +479,7 @@ public class class112 {
                            i_41 = class325_33.field3901;
                         }
 
-                        class325_34 = class252_82.method4583(-1606516448);
+                        class325_34 = errorHandler_82.method4583(-1606516448);
                         if (class325_34 != null) {
                            i_38 = class325_34.field3899;
                            i_44 = class325_34.field3900;
@@ -491,14 +491,14 @@ public class class112 {
                         }
                      }
 
-                     class295 class295_87 = class252_96.method4565(-1472977599);
+                     class295 class295_87 = errorHandler_96.method4565(-1472977599);
                      if (class295_87 == null) {
                         class295_87 = class213.field2529;
                      }
 
                      class295 class295_45;
-                     if (class252_82 != null) {
-                        class295_45 = class252_82.method4565(-1472977599);
+                     if (errorHandler_82 != null) {
+                        class295_45 = errorHandler_82.method4565(-1472977599);
                         if (class295_45 == null) {
                            class295_45 = class213.field2529;
                         }
@@ -510,10 +510,10 @@ public class class112 {
                      String string_47 = null;
                      boolean bool_48 = false;
                      int i_49 = 0;
-                     string_46 = class252_96.method4555(class69_0.field980[i_78], -1319187584);
+                     string_46 = errorHandler_96.method4555(class69_0.field980[i_78], -1319187584);
                      int i_95 = class295_87.method5417(string_46);
-                     if (class252_82 != null) {
-                        string_47 = class252_82.method4555(class69_0.field970[i_78], -1319187584);
+                     if (errorHandler_82 != null) {
+                        string_47 = errorHandler_82.method4555(class69_0.field970[i_78], -1319187584);
                         i_49 = class295_45.method5417(string_47);
                      }
 
@@ -527,7 +527,7 @@ public class class112 {
                         }
                      }
 
-                     if (class252_82 != null && i_36 > 0) {
+                     if (errorHandler_82 != null && i_36 > 0) {
                         if (class325_33 == null && class325_34 == null) {
                            i_51 = 1;
                         } else {
@@ -569,7 +569,7 @@ public class class112 {
                      int i_61 = 0;
                      int i_62 = 0;
                      int i_63;
-                     if (class252_82 != null) {
+                     if (errorHandler_82 != null) {
                         i_52 += 2;
                         i_58 = i_52;
                         if (i_35 > 0) {
@@ -599,13 +599,13 @@ public class class112 {
                      }
 
                      i_63 = class69_0.field971[i_78] - client.field881;
-                     int i_64 = class252_96.field3335 - i_63 * class252_96.field3335 / class252_96.field3344;
-                     int i_65 = i_63 * class252_96.field3340 / class252_96.field3344 + -class252_96.field3340;
+                     int i_64 = errorHandler_96.field3335 - i_63 * errorHandler_96.field3335 / errorHandler_96.field3344;
+                     int i_65 = i_63 * errorHandler_96.field3340 / errorHandler_96.field3344 + -errorHandler_96.field3340;
                      int i_66 = i_64 + (i_2 + client.field752 - (i_52 >> 1));
                      int i_67 = i_3 + client.field753 - 12 + i_65;
                      int i_68 = i_67;
                      int i_69 = i_43 + i_67;
-                     int i_70 = i_67 + class252_96.field3328 + 15;
+                     int i_70 = i_67 + errorHandler_96.field3328 + 15;
                      int i_71 = i_70 - class295_87.field3714;
                      int i_72 = i_70 + class295_87.field3707;
                      if (i_71 < i_67) {
@@ -619,8 +619,8 @@ public class class112 {
                      int i_73 = 0;
                      int i_74;
                      int i_75;
-                     if (class252_82 != null) {
-                        i_73 = i_67 + class252_82.field3328 + 15;
+                     if (errorHandler_82 != null) {
+                        i_73 = i_67 + errorHandler_82.field3328 + 15;
                         i_74 = i_73 - class295_45.field3714;
                         i_75 = i_73 + class295_45.field3707;
                         if (i_74 < i_68) {
@@ -633,8 +633,8 @@ public class class112 {
                      }
 
                      i_74 = 255;
-                     if (class252_96.field3341 >= 0) {
-                        i_74 = (i_63 << 8) / (class252_96.field3344 - class252_96.field3341);
+                     if (errorHandler_96.field3341 >= 0) {
+                        i_74 = (i_63 << 8) / (errorHandler_96.field3344 - errorHandler_96.field3341);
                      }
 
                      if (i_74 >= 0 && i_74 < 255) {
@@ -656,8 +656,8 @@ public class class112 {
                            class325_86.method6129(i_57 + i_66 - i_30, i_67, i_74);
                         }
 
-                        class295_87.method5347(string_46, i_56 + i_66, i_70, class252_96.field3333, 0, i_74);
-                        if (class252_82 != null) {
+                        class295_87.method5347(string_46, i_56 + i_66, i_70, errorHandler_96.field3333, 0, i_74);
+                        if (errorHandler_82 != null) {
                            if (class325_31 != null) {
                               class325_31.method6129(i_66 + i_58 - i_39, i_67, i_74);
                            }
@@ -676,7 +676,7 @@ public class class112 {
                               class325_34.method6129(i_61 + i_66 - i_42, i_67, i_74);
                            }
 
-                           class295_45.method5347(string_47, i_66 + i_62, i_73, class252_82.field3333, 0, i_74);
+                           class295_45.method5347(string_47, i_66 + i_62, i_73, errorHandler_82.field3333, 0, i_74);
                         }
                      } else {
                         if (class325_83 != null) {
@@ -697,8 +697,8 @@ public class class112 {
                            class325_86.method6126(i_66 + i_57 - i_30, i_67);
                         }
 
-                        class295_87.method5346(string_46, i_66 + i_56, i_70, class252_96.field3333 | ~0xffffff, 0);
-                        if (class252_82 != null) {
+                        class295_87.method5346(string_46, i_66 + i_56, i_70, errorHandler_96.field3333 | ~0xffffff, 0);
+                        if (errorHandler_82 != null) {
                            if (class325_31 != null) {
                               class325_31.method6126(i_58 + i_66 - i_39, i_67);
                            }
@@ -717,7 +717,7 @@ public class class112 {
                               class325_34.method6126(i_61 + i_66 - i_42, i_67);
                            }
 
-                           class295_45.method5346(string_47, i_62 + i_66, i_73, class252_82.field3333 | ~0xffffff, 0);
+                           class295_45.method5346(string_47, i_62 + i_66, i_73, errorHandler_82.field3333 | ~0xffffff, 0);
                         }
                      }
                   }

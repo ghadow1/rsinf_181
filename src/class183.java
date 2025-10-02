@@ -271,7 +271,7 @@ public class class183 implements class181 {
                   i_30 = 16;
                   long_31 = class133_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
-                     i_30 = class128.method2970(class43.method770(long_31), (short) 4095).field3374;
+                     i_30 = class128.method2970(GCMonitor.method770(long_31), (short) 4095).field3374;
                   }
 
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
@@ -285,7 +285,7 @@ public class class183 implements class181 {
                   i_30 = 8;
                   long_31 = class133_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
-                     i_30 = class128.method2970(class43.method770(long_31), (short) 4095).field3374 / 2;
+                     i_30 = class128.method2970(GCMonitor.method770(long_31), (short) 4095).field3374 / 2;
                   }
 
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
@@ -308,7 +308,7 @@ public class class183 implements class181 {
                   i_30 = 8;
                   long_31 = class133_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
-                     i_30 = class128.method2970(class43.method770(long_31), (short) 4095).field3374 / 2;
+                     i_30 = class128.method2970(GCMonitor.method770(long_31), (short) 4095).field3374 / 2;
                   }
 
                   int i_29 = i_5 + 2 & 0x3;

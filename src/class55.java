@@ -39,7 +39,7 @@ public final class class55 {
             }
          }
 
-         class206.field2501 = new int[i_5];
+         TimeUtils.field2501 = new int[i_5];
          class88.field1248 = new int[i_5];
          class22.field178 = new int[i_5];
          class13.field90 = new byte[i_5][];
@@ -59,7 +59,7 @@ public final class class55 {
             for (i_8 = (i_3 - 6) / 8; i_8 <= (i_3 + 6) / 8; i_8++) {
                i_9 = i_8 + (i_7 << 8);
                if (!bool_17 || i_8 != 49 && i_8 != 149 && i_8 != 147 && i_7 != 50 && (i_7 != 49 || i_8 != 47)) {
-                  class206.field2501[i_5] = i_9;
+                  TimeUtils.field2501[i_5] = i_9;
                   class88.field1248[i_5] = class35.field307.method4160("m" + i_7 + "_" + i_8);
                   class22.field178[i_5] = class35.field307.method4160("l" + i_7 + "_" + i_8);
                   ++i_5;
@@ -98,7 +98,7 @@ public final class class55 {
             }
          }
 
-         class206.field2501 = new int[i_6];
+         TimeUtils.field2501 = new int[i_6];
          class88.field1248 = new int[i_6];
          class22.field178 = new int[i_6];
          class13.field90 = new byte[i_6][];
@@ -116,14 +116,14 @@ public final class class55 {
 
                      int i_14;
                      for (i_14 = 0; i_14 < i_6; i_14++) {
-                        if (class206.field2501[i_14] == i_13) {
+                        if (TimeUtils.field2501[i_14] == i_13) {
                            i_13 = -1;
                            break;
                         }
                      }
 
                      if (i_13 != -1) {
-                        class206.field2501[i_6] = i_13;
+                        TimeUtils.field2501[i_6] = i_13;
                         i_14 = i_13 >> 8 & 0xff;
                         int i_15 = i_13 & 0xff;
                         class88.field1248[i_6] = class35.field307.method4160("m" + i_14 + "_" + i_15);

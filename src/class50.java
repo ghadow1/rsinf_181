@@ -4,7 +4,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.DataLine.Info;
 
-public class class50 extends class105 {
+public class class50 extends ResourceHandler {
 
    SourceDataLine field429;
    int field430;

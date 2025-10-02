@@ -26,7 +26,7 @@ public class class335 {
 
    }
 
-   public int method6501(int i_1, int i_2) {
+   public int method6501(int i_1) {
       int i_3 = (this.field4033.length >> 1) - 1;
       int i_4 = i_1 & i_3;
 

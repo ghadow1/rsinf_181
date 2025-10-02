@@ -135,7 +135,7 @@ public final class class66 extends class69 {
    }
 
    int method1187(int i_1) {
-      return this.field613 != null && this.field613.field2532 != -1 ? class53.method1005(this.field613.field2532, (byte) -28).field3469 : 1;
+      return this.field613 != null && this.field613.field2532 != -1 ? GCMonitor_2.method1005(this.field613.field2532, (byte) -28).field3469 : 1;
    }
 
    void method1182(byte b_1) {

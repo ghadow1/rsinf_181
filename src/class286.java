@@ -1,6 +1,6 @@
 public class class286 extends class178 {
 
-   public int field3661 = (int)(class206.getAdjustedTimeMillis() / 1000L);
+   public int field3661 = (int)(TimeUtils.getAdjustedTimeMillis() / 1000L);
    public class283 field3662;
    public short field3663;
 

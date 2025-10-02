@@ -59,11 +59,11 @@ public class class234 implements Runnable {
             }
          }
       } catch (Exception exception_13) {
-         class252.method4556((String) null, exception_13, (byte) 70);
+         ErrorHandler.logError((String) null, exception_13, (byte) 70);
       }
    }
 
-   public static final class105 method4256(class166 class166_0, int i_1, int i_2, int i_3) {
+   public static final ResourceHandler method4256(class166 class166_0, int i_1, int i_2, int i_3) {
       if (class172.field2078 == 0) {
          throw new IllegalStateException();
       } else if (i_1 >= 0 && i_1 < 2) {
@@ -72,33 +72,33 @@ public class class234 implements Runnable {
          }
 
          try {
-            class105 class105_4 = class32.field277.vmethod2314((byte) 1);
-            class105_4.field1415 = new int[256 * (class169.field2053 ? 2 : 1)];
-            class105_4.field1414 = i_2;
-            class105_4.vmethod2413(-1518489339);
-            class105_4.field1424 = (i_2 & ~0x3ff) + 1024;
-            if (class105_4.field1424 > 16384) {
-               class105_4.field1424 = 16384;
+            ResourceHandler resourceHandler_4 = class32.field277.vmethod2314((byte) 1);
+            resourceHandler_4.field1415 = new int[256 * (class169.field2053 ? 2 : 1)];
+            resourceHandler_4.field1414 = i_2;
+            resourceHandler_4.vmethod2413(-1518489339);
+            resourceHandler_4.field1424 = (i_2 & ~0x3ff) + 1024;
+            if (resourceHandler_4.field1424 > 16384) {
+               resourceHandler_4.field1424 = 16384;
             }
 
-            class105_4.vmethod2414(class105_4.field1424, (byte) 51);
-            if (class105.field1407 > 0 && class88.field1246 == null) {
-               class88.field1246 = new class107();
+            resourceHandler_4.vmethod2414(resourceHandler_4.field1424, (byte) 51);
+            if (ResourceHandler.field1407 > 0 && class88.field1246 == null) {
+               class88.field1246 = new MemoryManager();
                class14.field97 = Executors.newScheduledThreadPool(1);
                class14.field97.scheduleAtFixedRate(class88.field1246, 0L, 10L, TimeUnit.MILLISECONDS);
             }
 
             if (class88.field1246 != null) {
-               if (class88.field1246.field1438[i_1] != null) {
+               if (class88.field1246.handlers[i_1] != null) {
                   throw new IllegalArgumentException();
                }
 
-               class88.field1246.field1438[i_1] = class105_4;
+               class88.field1246.handlers[i_1] = resourceHandler_4;
             }
 
-            return class105_4;
+            return resourceHandler_4;
          } catch (Throwable throwable_5) {
-            return new class105();
+            return new ResourceHandler();
          }
       } else {
          throw new IllegalArgumentException();

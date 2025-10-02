@@ -283,7 +283,7 @@ public class ByteBuffer extends LinkedListNode {
    //..Releases the buffer (returns it to a pool, presumably)
    public void release() {
       if (this.buffer != null) {
-         class107.method2478(this.buffer, (byte) 103);
+         MemoryManager.returnBufferToPool(this.buffer);
       }
       this.buffer = null;
    }

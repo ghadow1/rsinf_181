@@ -129,10 +129,10 @@ public class class241 extends class175 {
                class300_1.readUnsignedByte();
             } else if (i_2 == 29) {
                class255[] arr_7 = new class255[] {class255.field3461, class255.field3460, class255.field3458};
-               this.field3226 = (class255) class107.method2476(arr_7, class300_1.readUnsignedByte());
+               this.field3226 = (class255) MemoryManager.findById(arr_7, class300_1.readUnsignedByte());
             } else if (i_2 == 30) {
                class238[] arr_8 = new class238[] {class238.field3193, class238.field3195, class238.field3194};
-               this.field3227 = (class238) class107.method2476(arr_8, class300_1.readUnsignedByte());
+               this.field3227 = (class238) MemoryManager.findById(arr_8, class300_1.readUnsignedByte());
             }
          }
       }

@@ -142,10 +142,10 @@ public class class248 extends class175 {
 
          if (client.field662 != 5) {
             if (class85.field1193 == -1L) {
-               class85.field1193 = class206.getAdjustedTimeMillis() + 1000L;
+               class85.field1193 = TimeUtils.getAdjustedTimeMillis() + 1000L;
             }
 
-            long long_12 = class206.getAdjustedTimeMillis();
+            long long_12 = TimeUtils.getAdjustedTimeMillis();
             if (class190.method3667(1477910272) && class85.field1211 == -1L) {
                class85.field1211 = long_12;
                if (class85.field1211 > class85.field1193) {

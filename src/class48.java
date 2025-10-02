@@ -22,7 +22,7 @@ public final class class48 extends Canvas {
 
    static void method813(int i_0, int i_1) {
       if (i_0 != -1) {
-         if (class162.method3445(i_0, 1772418873)) {
+         if (class162.method3445(i_0)) {
             class217[] arr_2 = class217.field2556[i_0];
 
             for (int i_3 = 0; i_3 < arr_2.length; i_3++) {

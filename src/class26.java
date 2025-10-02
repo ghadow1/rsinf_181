@@ -153,7 +153,7 @@ public class class26 {
    class37 method327(ByteBuffer class300_1) {
       int i_3 = class300_1.readUnsignedByte();
       class20[] arr_4 = new class20[] {class20.field147, class20.field149, class20.field148, class20.field146};
-      class20 class20_5 = (class20) class107.method2476(arr_4, i_3);
+      class20 class20_5 = (class20) MemoryManager.findById(arr_4, i_3);
       Object obj_6 = null;
       switch(class20_5.field150) {
       case 0:
@@ -256,7 +256,7 @@ public class class26 {
    }
 
    public static boolean method365(int i_0) {
-      long long_1 = class206.getAdjustedTimeMillis();
+      long long_1 = TimeUtils.getAdjustedTimeMillis();
       int i_3 = (int)(long_1 - class236.field3169);
       class236.field3169 = long_1;
       if (i_3 > 200) {

@@ -303,7 +303,7 @@ public class class96 {
                }
 
                stringbuilder_25.append("").append(b_8);
-               class252.method4556(stringbuilder_25.toString(), exception_28, (byte) 123);
+               ErrorHandler.logError(stringbuilder_25.toString(), exception_28, (byte) 123);
             }
          } finally {
             if (class76.field1104) {

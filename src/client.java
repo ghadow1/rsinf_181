@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public final class client extends class53 implements class280 {
+public final class client extends GCMonitor_2 implements class280 {
 
    static class235 field683;
    static class235 field684;
@@ -641,17 +641,17 @@ public final class client extends class53 implements class280 {
       int[] ints_2 = new int[] {20, 260, 10000};
       int[] ints_3 = new int[] {1000, 100, 500};
       if (ints_2 != null && ints_3 != null) {
-         class302.field3740 = ints_2;
-         class43.field381 = new int[ints_2.length];
-         class189.field2343 = new byte[ints_2.length][][];
+         BufferPool.customSizes = ints_2;
+         GCMonitor.customPoolCounts = new int[ints_2.length];
+         BufferPoolConfig.customPools = new byte[ints_2.length][][];
 
-         for (int i_4 = 0; i_4 < class302.field3740.length; i_4++) {
-            class189.field2343[i_4] = new byte[ints_3[i_4]][];
+         for (int i_4 = 0; i_4 < BufferPool.customSizes.length; i_4++) {
+            BufferPoolConfig.customPools[i_4] = new byte[ints_3[i_4]][];
          }
       } else {
-         class302.field3740 = null;
-         class43.field381 = null;
-         class189.field2343 = null;
+         BufferPool.customSizes = null;
+         GCMonitor.customPoolCounts = null;
+         BufferPoolConfig.customPools = null;
       }
 
       class190.field2358 = field703 == 0 ? 43594 : field807 + 40000;
@@ -1011,7 +1011,7 @@ public final class client extends class53 implements class280 {
                   i_6 = class30.field259 * 128 + 64;
                   i_18 = class62.method1130(i_17, i_6, class42.field372) - class31.field268;
                   i_8 = i_17 - class299.field3727;
-                  i_21 = i_18 - class43.field383;
+                  i_21 = i_18 - GCMonitor.field383;
                   i_10 = i_6 - class1.field3;
                   i_11 = (int)Math.sqrt((double)(i_10 * i_10 + i_8 * i_8));
                   class11.field77 = (int)(Math.atan2((double)i_21, (double)i_11) * 325.949D) & 0x7ff;
@@ -1220,7 +1220,7 @@ public final class client extends class53 implements class280 {
                long_24 = class299_4.readLongFromMediumEndian();
                long_26 = (long)class299_4.readUnsignedShortBigEndian();
                long_22 = (long)class299_4.read24BitInt();
-               class228 class228_12 = (class228) class107.method2476(class156.method3419(-1282154756), class299_4.readUnsignedByte());
+               class228 class228_12 = (class228) MemoryManager.findById(class156.method3419(-1282154756), class299_4.readUnsignedByte());
                long_13 = (long_26 << 32) + long_22;
                boolean bool_50 = false;
 
@@ -1334,7 +1334,7 @@ public final class client extends class53 implements class280 {
                if (class96.field1327 >= 100) {
                   class299.field3727 = class46.field412 * 128 + 64;
                   class1.field3 = class210.field2516 * 128 + 64;
-                  class43.field383 = class62.method1130(class299.field3727, class1.field3, class42.field372) - class190.field2345;
+                  GCMonitor.field383 = class62.method1130(class299.field3727, class1.field3, class42.field372) - class190.field2345;
                }
 
                class95_1.inPacketType = null;
@@ -1566,10 +1566,10 @@ public final class client extends class53 implements class280 {
             if (ServerPacketProt.field2184 == class95_1.inPacketType) {
                i_17 = class299_4.readIntMedEndian();
                i_6 = class299_4.readIntMedEndian();
-               i_18 = class107.garbageCollector();
+               i_18 = MemoryManager.getGCPercentage();
                class187 class187_57 = class235.method4265(class183.field2236, field880.field1313, 1775123545);
                class187_57.field2333.writeNegatedByte(i_18);
-               class187_57.field2333.writeByte(class53.field462);
+               class187_57.field2333.writeByte(GCMonitor_2.field462);
                class187_57.field2333.writeIntReversed(i_17);
                class187_57.field2333.writeIntLittleEndian(i_6);
                field880.copy(class187_57);
@@ -1858,7 +1858,7 @@ public final class client extends class53 implements class280 {
             if (ServerPacketProt.field2135 == class95_1.inPacketType) {
                bool_51 = class299_4.readUnsignedByte() == 1;
                if (bool_51) {
-                  class279.field3632 = class206.getAdjustedTimeMillis() - class299_4.readLongFromMediumEndian();
+                  class279.field3632 = TimeUtils.getAdjustedTimeMillis() - class299_4.readLongFromMediumEndian();
                   class68.field942 = new class6(class299_4, true);
                } else {
                   class68.field942 = null;
@@ -1939,7 +1939,7 @@ public final class client extends class53 implements class280 {
                string_38 = class299_4.readNullTerminatedString();
                long_24 = (long)class299_4.readUnsignedShortBigEndian();
                long_26 = (long)class299_4.read24BitInt();
-               class228 class228_31 = (class228) class107.method2476(class156.method3419(562234979), class299_4.readUnsignedByte());
+               class228 class228_31 = (class228) MemoryManager.findById(class156.method3419(562234979), class299_4.readUnsignedByte());
                long long_32 = (long_24 << 32) + long_26;
                boolean bool_34 = false;
 
@@ -2067,7 +2067,7 @@ public final class client extends class53 implements class280 {
                return true;
             }
 
-            class252.method4556("" + (class95_1.inPacketType != null ? class95_1.inPacketType.field2201 : -1) + "," + (class95_1.field1321 != null ? class95_1.field1321.field2201 : -1) + "," + (class95_1.field1317 != null ? class95_1.field1317.field2201 : -1) + "," + class95_1.field1315, (Throwable) null, (byte) 116);
+            ErrorHandler.logError("" + (class95_1.inPacketType != null ? class95_1.inPacketType.field2201 : -1) + "," + (class95_1.field1321 != null ? class95_1.field1321.field2201 : -1) + "," + (class95_1.field1317 != null ? class95_1.field1317.field2201 : -1) + "," + class95_1.field1315, (Throwable) null, (byte) 116);
             class174.disconnectGame();
          } catch (IOException ioexception_36) {
             class56.method1090();
@@ -2078,7 +2078,7 @@ public final class client extends class53 implements class280 {
                string_19 = string_19 + class299_4.buffer[i_18] + ",";
             }
 
-            class252.method4556(string_19, exception_37, (byte) 36);
+            ErrorHandler.logError(string_19, exception_37, (byte) 36);
             class174.disconnectGame();
          }
 
@@ -2266,7 +2266,7 @@ public final class client extends class53 implements class280 {
    }
 
    protected final void vmethod1252(int i_1) {
-      field868 = class206.getAdjustedTimeMillis() + 500L;
+      field868 = TimeUtils.getAdjustedTimeMillis() + 500L;
       this.method1253(-1617101116);
       if (field905 != -1) {
          this.method1293(true, 831397747);
@@ -2423,7 +2423,7 @@ public final class client extends class53 implements class280 {
          if (--field682 + 1 <= 0) {
             try {
                if (field681 == 0) {
-                  class191.field2363 = class53.field463.method3478(class73.field1068, class90.field1266);
+                  class191.field2363 = GCMonitor_2.field463.method3478(class73.field1068, class90.field1266);
                   ++field681;
                }
 
@@ -2442,7 +2442,7 @@ public final class client extends class53 implements class280 {
                   if (field815) {
                      class70.field1015 = class303.method5770((Socket) class191.field2363.field2025, 40000, 5000, (byte) 10);
                   } else {
-                     class70.field1015 = new class171((Socket) class191.field2363.field2025, class53.field463, 5000);
+                     class70.field1015 = new class171((Socket) class191.field2363.field2025, GCMonitor_2.field463, 5000);
                   }
 
                   ByteBuffer class300_2 = new ByteBuffer(5);
@@ -2450,7 +2450,7 @@ public final class client extends class53 implements class280 {
                   class300_2.writeIntBigEndian(181);
                   class70.field1015.vmethod5829(class300_2.buffer, 0, 5, -1696227994);
                   ++field681;
-                  class192.field2382 = class206.getAdjustedTimeMillis();
+                  class192.field2382 = TimeUtils.getAdjustedTimeMillis();
                }
 
                if (field681 == 3) {
@@ -2462,7 +2462,7 @@ public final class client extends class53 implements class280 {
                      }
 
                      ++field681;
-                  } else if (class206.getAdjustedTimeMillis() - class192.field2382 > 30000L) {
+                  } else if (TimeUtils.getAdjustedTimeMillis() - class192.field2382 > 30000L) {
                      this.method1249(-2);
                      return;
                   }
@@ -2528,7 +2528,7 @@ public final class client extends class53 implements class280 {
          class80.field1144.method2408(1267599868);
       }
 
-      if ((field662 == 10 || field662 == 20 || field662 == 30) && field868 != 0L && class206.getAdjustedTimeMillis() > field868) {
+      if ((field662 == 10 || field662 == 20 || field662 == 30) && field868 != 0L && TimeUtils.getAdjustedTimeMillis() > field868) {
          class170.method3515(class34.method598((byte) -72));
       }
 
@@ -2542,10 +2542,10 @@ public final class client extends class53 implements class280 {
       if (field662 == 0) {
          this.method899(class85.field1188, class85.field1189, bool_1, (byte) -111);
       } else if (field662 == 5) {
-         class189.method3654(class23.field193, class213.field2529, class169.field2054, (byte) 49);
+         BufferPoolConfig.method3654(class23.field193, class213.field2529, class169.field2054, (byte) 49);
       } else if (field662 != 10 && field662 != 11) {
          if (field662 == 20) {
-            class189.method3654(class23.field193, class213.field2529, class169.field2054, (byte) 2);
+            BufferPoolConfig.method3654(class23.field193, class213.field2529, class169.field2054, (byte) 2);
          } else if (field662 == 25) {
             if (field709 == 1) {
                if (field705 > field706) {
@@ -2572,7 +2572,7 @@ public final class client extends class53 implements class280 {
             class281.method5180("Please wait...", false, -1401707149);
          }
       } else {
-         class189.method3654(class23.field193, class213.field2529, class169.field2054, (byte) 36);
+         BufferPoolConfig.method3654(class23.field193, class213.field2529, class169.field2054, (byte) 36);
       }
 
       if (field662 == 30 && field768 == 0 && !bool_1 && !field869) {
@@ -2781,7 +2781,7 @@ public final class client extends class53 implements class280 {
                class187_16 = class235.method4265(class183.field2270, field880.field1313, 1775123545);
                class187_16.field2333.writeShortBigEndian(0);
                i_3 = class187_16.field2333.position;
-               long long_21 = class206.getAdjustedTimeMillis();
+               long long_21 = TimeUtils.getAdjustedTimeMillis();
 
                for (i_6 = 0; i_6 < class45.field386; i_6++) {
                   long long_23 = long_21 - field879;
@@ -2883,7 +2883,7 @@ public final class client extends class53 implements class280 {
                   for (i_8 = 0; i_8 < 104; i_8++) {
                      long long_25 = class5.field22.method3095(class42.field372, i_7, i_8);
                      if (long_25 != 0L) {
-                        i_11 = class43.method770(long_25);
+                        i_11 = GCMonitor.method770(long_25);
                         i_12 = class128.method2970(i_11, (short) 4095).field3378;
                         if (i_12 >= 0) {
                            field786[field730] = class222.method4118(i_12).method4379();
@@ -2906,7 +2906,7 @@ public final class client extends class53 implements class280 {
 
                   if (class68_37.field931 == 0) {
                      if (class68_37.field935 < 0 || class89.method2091(class68_37.field935, class68_37.field933, 2142202681)) {
-                        class206.method3938(class68_37.field943, class68_37.field932, class68_37.field937, class68_37.field934, class68_37.field935, class68_37.field936, class68_37.field933);
+                        TimeUtils.method3938(class68_37.field943, class68_37.field932, class68_37.field937, class68_37.field934, class68_37.field935, class68_37.field936, class68_37.field933);
                         class68_37.unlink();
                      }
                   } else {
@@ -2915,7 +2915,7 @@ public final class client extends class53 implements class280 {
                      }
 
                      if (class68_37.field941 == 0 && class68_37.field937 >= 1 && class68_37.field934 >= 1 && class68_37.field937 <= 102 && class68_37.field934 <= 102 && (class68_37.field938 < 0 || class89.method2091(class68_37.field938, class68_37.field940, 2036595705))) {
-                        class206.method3938(class68_37.field943, class68_37.field932, class68_37.field937, class68_37.field934, class68_37.field938, class68_37.field939, class68_37.field940);
+                        TimeUtils.method3938(class68_37.field943, class68_37.field932, class68_37.field937, class68_37.field934, class68_37.field938, class68_37.field939, class68_37.field940);
                         class68_37.field941 = -1;
                         if (class68_37.field938 == class68_37.field935 && class68_37.field935 == -1) {
                            class68_37.unlink();
@@ -3155,17 +3155,17 @@ public final class client extends class53 implements class280 {
                                                    }
                                                 }
 
-                                                if (class43.field383 < i_7) {
-                                                   class43.field383 = (i_7 - class43.field383) * class96.field1327 / 1000 + class43.field383 + class83.field1166;
-                                                   if (class43.field383 > i_7) {
-                                                      class43.field383 = i_7;
+                                                if (GCMonitor.field383 < i_7) {
+                                                   GCMonitor.field383 = (i_7 - GCMonitor.field383) * class96.field1327 / 1000 + GCMonitor.field383 + class83.field1166;
+                                                   if (GCMonitor.field383 > i_7) {
+                                                      GCMonitor.field383 = i_7;
                                                    }
                                                 }
 
-                                                if (class43.field383 > i_7) {
-                                                   class43.field383 -= class96.field1327 * (class43.field383 - i_7) / 1000 + class83.field1166;
-                                                   if (class43.field383 < i_7) {
-                                                      class43.field383 = i_7;
+                                                if (GCMonitor.field383 > i_7) {
+                                                   GCMonitor.field383 -= class96.field1327 * (GCMonitor.field383 - i_7) / 1000 + class83.field1166;
+                                                   if (GCMonitor.field383 < i_7) {
+                                                      GCMonitor.field383 = i_7;
                                                    }
                                                 }
 
@@ -3187,7 +3187,7 @@ public final class client extends class53 implements class280 {
                                                 i_6 = class30.field259 * 128 + 64;
                                                 i_7 = class62.method1130(i_5, i_6, class42.field372) - class31.field268;
                                                 i_8 = i_5 - class299.field3727;
-                                                i_9 = i_7 - class43.field383;
+                                                i_9 = i_7 - GCMonitor.field383;
                                                 i_10 = i_6 - class1.field3;
                                                 i_11 = (int)Math.sqrt((double)(i_8 * i_8 + i_10 * i_10));
                                                 i_12 = (int)(Math.atan2((double)i_9, (double)i_11) * 325.949D) & 0x7ff;
@@ -3345,7 +3345,7 @@ public final class client extends class53 implements class280 {
 
          if (field686 == 1) {
             if (class278.field3628 == null) {
-               class278.field3628 = class53.field463.method3478(class73.field1068, class90.field1266);
+               class278.field3628 = GCMonitor_2.field463.method3478(class73.field1068, class90.field1266);
             }
 
             if (class278.field3628.field2022 == 2) {
@@ -3356,7 +3356,7 @@ public final class client extends class53 implements class280 {
                if (field815) {
                   obj_2 = class303.method5770((Socket) class278.field3628.field2025, 40000, 5000, (byte) 10);
                } else {
-                  obj_2 = new class171((Socket) class278.field3628.field2025, class53.field463, 5000);
+                  obj_2 = new class171((Socket) class278.field3628.field2025, GCMonitor_2.field463, 5000);
                }
 
                field880.method2221((class305) obj_2);
@@ -3463,7 +3463,7 @@ public final class client extends class53 implements class280 {
                class299_4.writeIntBigEndian(class74.field1074[2]);
                class299_4.writeIntBigEndian(class74.field1074[3]);
             } else {
-               class299_4.writeByte(field690.vmethod6084(1559391851));
+               class299_4.writeByte(field690.getId(1559391851));
                switch(field690.field2003) {
                case 0:
                   class299_4.writeIntBigEndian(((Integer) class17.field117.field1067.get(Integer.valueOf(class128.method2971(class85.field1180, -1418597327)))).intValue());
@@ -3477,7 +3477,7 @@ public final class client extends class53 implements class280 {
                   class299_4.position += 4;
                }
 
-               class299_4.writeByte(class313.field3837.vmethod6084(777984683));
+               class299_4.writeByte(class313.field3837.getId(777984683));
                class299_4.writeNullTerminatedString(class85.field1198);
             }
 
@@ -3549,7 +3549,7 @@ public final class client extends class53 implements class280 {
             class187_7.field2333.writeIntBigEndian(class197.field2405.field3136);
             class187_7.field2333.writeIntBigEndian(class167.field2049.field3136);
             class187_7.field2333.writeIntBigEndian(class215.field2544.field3136);
-            class187_7.field2333.writeIntBigEndian(class43.field382.field3136);
+            class187_7.field2333.writeIntBigEndian(GCMonitor.field382.field3136);
             class187_7.field2333.writeIntBigEndian(class13.field89.field3136);
             class187_7.field2333.writeIntBigEndian(class35.field307.field3136);
             class187_7.field2333.writeIntBigEndian(class29.field253.field3136);
@@ -3984,7 +3984,7 @@ public final class client extends class53 implements class280 {
       }
 
       class219.method4112(class217_1, i_4, i_5, false, -2103568814);
-      class105.method2441(class217_1, i_4, i_5, (byte) -55);
+      ResourceHandler.method2441(class217_1, i_4, i_5, (byte) -55);
    }
 
    final void method1641(byte b_1) {
@@ -4155,7 +4155,7 @@ public final class client extends class53 implements class280 {
                   break;
                case 10:
                   class230[] arr_5 = new class230[] {class230.field3110, class230.field3107, class230.field3109, class230.field3106, class230.field3108, class230.field3112};
-                  class29.field248 = (class230) class107.method2476(arr_5, Integer.parseInt(string_4));
+                  class29.field248 = (class230) MemoryManager.findById(arr_5, Integer.parseInt(string_4));
                   if (class29.field248 == class230.field3110) {
                      class40.field353 = class338.field4052;
                   } else {
@@ -4185,7 +4185,7 @@ public final class client extends class53 implements class280 {
          try {
             class159.method3440("oldschool", string_8, b_9, 21, 491873255);
          } catch (Exception exception_7) {
-            class252.method4556((String) null, exception_7, (byte) 125);
+            ErrorHandler.logError((String) null, exception_7, (byte) 125);
          }
 
          class27.field233 = this;
