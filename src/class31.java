@@ -30,7 +30,7 @@ public class class31 {
          }
 
          client.field810 = false;
-         class224.method4120(class217_1, -1624310266);
+         class224.method4120(class217_1);
       }
    }
 

@@ -17,39 +17,39 @@ public class class185 {
    static void method3617(byte[] bytes_0, byte b_1) {
       class300 class300_2 = new class300(bytes_0);
       class300_2.field3732 = bytes_0.length - 2;
-      class326.field3911 = class300_2.method5496(-1459053594);
+      class326.field3911 = class300_2.method5496();
       class212.field2523 = new int[class326.field3911];
       class326.field3915 = new int[class326.field3911];
       class326.field3914 = new int[class326.field3911];
       class216.field2548 = new int[class326.field3911];
       class326.field3912 = new byte[class326.field3911][];
       class300_2.field3732 = bytes_0.length - 7 - class326.field3911 * 8;
-      class326.field3913 = class300_2.method5496(-1459053594);
-      class326.field3910 = class300_2.method5496(-1459053594);
-      int i_3 = (class300_2.method5504((byte) 78) & 0xff) + 1;
+      class326.field3913 = class300_2.method5496();
+      class326.field3910 = class300_2.method5496();
+      int i_3 = (class300_2.method5504() & 0xff) + 1;
 
       int i_4;
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class212.field2523[i_4] = class300_2.method5496(-1459053594);
+         class212.field2523[i_4] = class300_2.method5496();
       }
 
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class326.field3915[i_4] = class300_2.method5496(-1459053594);
+         class326.field3915[i_4] = class300_2.method5496();
       }
 
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class326.field3914[i_4] = class300_2.method5496(-1459053594);
+         class326.field3914[i_4] = class300_2.method5496();
       }
 
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class216.field2548[i_4] = class300_2.method5496(-1459053594);
+         class216.field2548[i_4] = class300_2.method5496();
       }
 
       class300_2.field3732 = bytes_0.length - 7 - class326.field3911 * 8 - (i_3 - 1) * 3;
       class138.field1895 = new int[i_3];
 
       for (i_4 = 1; i_4 < i_3; i_4++) {
-         class138.field1895[i_4] = class300_2.method5567(640609062);
+         class138.field1895[i_4] = class300_2.method5567();
          if (class138.field1895[i_4] == 0) {
             class138.field1895[i_4] = 1;
          }
@@ -63,7 +63,7 @@ public class class185 {
          int i_7 = i_6 * i_5;
          byte[] bytes_8 = new byte[i_7];
          class326.field3912[i_4] = bytes_8;
-         int i_9 = class300_2.method5504((byte) 112);
+         int i_9 = class300_2.method5504();
          int i_10;
          if (i_9 == 0) {
             for (i_10 = 0; i_10 < i_7; i_10++) {

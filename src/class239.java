@@ -7,14 +7,14 @@ public class class239 extends class175 {
 
    void method4340(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 2) {
-         this.field3201 = class300_1.method5496(-1459053594);
+         this.field3201 = class300_1.method5496();
       }
 
    }
 
    void method4350(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 125);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

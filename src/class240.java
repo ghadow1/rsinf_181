@@ -9,14 +9,14 @@ public class class240 extends class175 {
 
    void method4354(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 5) {
-         this.field3206 = class300_1.method5496(-1459053594);
+         this.field3206 = class300_1.method5496();
       }
 
    }
 
    void method4353(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 24);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

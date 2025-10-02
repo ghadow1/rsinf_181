@@ -64,10 +64,10 @@ public class class14 {
 
    static final void method159(String string_0, int i_1, int i_2) {
       class187 class187_3 = class235.method4265(class183.field2280, client.field880.field1313, 1775123545);
-      class187_3.field2333.method5655(class209.method3945(string_0, 319235587) + 1, 399975898);
-      class187_3.field2333.method5485(string_0, 2117369174);
-      class187_3.field2333.method5655(i_1, 1818323261);
-      client.field880.method2219(class187_3, 2067459847);
+      class187_3.field2333.method5655(class209.method3945(string_0, 319235587) + 1);
+      class187_3.field2333.method5485(string_0);
+      class187_3.field2333.method5655(i_1);
+      client.field880.method2219(class187_3);
    }
 
 }

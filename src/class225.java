@@ -35,7 +35,7 @@ public class class225 {
                   if (i_6 != -1) {
                      class258 class258_7 = class7.method81(i_6, (byte) 1);
 
-                     for (class217_4.field2584 += client.field718; class217_4.field2584 > class258_7.field3522[class217_4.field2692]; class224.method4120(class217_4, 34922260)) {
+                     for (class217_4.field2584 += client.field718; class217_4.field2584 > class258_7.field3522[class217_4.field2692]; class224.method4120(class217_4)) {
                         class217_4.field2584 -= class258_7.field3522[class217_4.field2692];
                         ++class217_4.field2692;
                         if (class217_4.field2692 >= class258_7.field3520.length) {
@@ -55,7 +55,7 @@ public class class225 {
                   i_6 *= client.field718;
                   class217_4.field2615 = i_9 + class217_4.field2615 & 0x7ff;
                   class217_4.field2616 = i_6 + class217_4.field2616 & 0x7ff;
-                  class224.method4120(class217_4, 887666946);
+                  class224.method4120(class217_4);
                }
             }
          }

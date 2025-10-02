@@ -14,32 +14,32 @@ public class class251 extends class175 {
 
    void method4537(class300 class300_1, int i_2, byte b_3) {
       if (i_2 == 1) {
-         this.field3317 = (char)class300_1.method5504((byte) 76);
+         this.field3317 = (char)class300_1.method5504();
       } else if (i_2 == 2) {
-         this.field3321 = (char)class300_1.method5504((byte) 57);
+         this.field3321 = (char)class300_1.method5504();
       } else if (i_2 == 3) {
-         this.field3318 = class300_1.method5503(-231155257);
+         this.field3318 = class300_1.method5503();
       } else if (i_2 == 4) {
-         this.field3319 = class300_1.method5499((byte) -57);
+         this.field3319 = class300_1.method5499();
       } else {
          int i_4;
          if (i_2 == 5) {
-            this.field3320 = class300_1.method5496(-1459053594);
+            this.field3320 = class300_1.method5496();
             this.field3316 = new int[this.field3320];
             this.field3323 = new String[this.field3320];
 
             for (i_4 = 0; i_4 < this.field3320; i_4++) {
-               this.field3316[i_4] = class300_1.method5499((byte) -66);
-               this.field3323[i_4] = class300_1.method5503(-231155257);
+               this.field3316[i_4] = class300_1.method5499();
+               this.field3323[i_4] = class300_1.method5503();
             }
          } else if (i_2 == 6) {
-            this.field3320 = class300_1.method5496(-1459053594);
+            this.field3320 = class300_1.method5496();
             this.field3316 = new int[this.field3320];
             this.field3322 = new int[this.field3320];
 
             for (i_4 = 0; i_4 < this.field3320; i_4++) {
-               this.field3316[i_4] = class300_1.method5499((byte) -88);
-               this.field3322[i_4] = class300_1.method5499((byte) -98);
+               this.field3316[i_4] = class300_1.method5499();
+               this.field3322[i_4] = class300_1.method5499();
             }
          }
       }
@@ -52,7 +52,7 @@ public class class251 extends class175 {
 
    void method4533(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 15);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

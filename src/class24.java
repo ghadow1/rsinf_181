@@ -58,16 +58,16 @@ public class class24 implements class37 {
    }
 
    public void vmethod743(class300 class300_1, int i_2) {
-      this.field197 = class300_1.method5504((byte) 115);
-      this.field196 = class300_1.method5504((byte) 16);
-      this.field200 = class300_1.method5496(-1459053594);
-      this.field199 = class300_1.method5496(-1459053594);
-      this.field207 = class300_1.method5496(-1459053594);
-      this.field201 = class300_1.method5496(-1459053594);
-      this.field202 = class300_1.method5496(-1459053594);
-      this.field203 = class300_1.method5496(-1459053594);
-      this.field204 = class300_1.method5496(-1459053594);
-      this.field205 = class300_1.method5496(-1459053594);
+      this.field197 = class300_1.method5504();
+      this.field196 = class300_1.method5504();
+      this.field200 = class300_1.method5496();
+      this.field199 = class300_1.method5496();
+      this.field207 = class300_1.method5496();
+      this.field201 = class300_1.method5496();
+      this.field202 = class300_1.method5496();
+      this.field203 = class300_1.method5496();
+      this.field204 = class300_1.method5496();
+      this.field205 = class300_1.method5496();
       this.method305((byte) -39);
    }
 

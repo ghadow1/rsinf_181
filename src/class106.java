@@ -20,9 +20,9 @@ public class class106 {
    }
 
    final void method2464(class300 class300_1) {
-      this.field1430 = class300_1.method5504((byte) 68);
-      this.field1436 = class300_1.method5499((byte) -104);
-      this.field1431 = class300_1.method5499((byte) -45);
+      this.field1430 = class300_1.method5504();
+      this.field1436 = class300_1.method5499();
+      this.field1431 = class300_1.method5499();
       this.method2469(class300_1);
    }
 
@@ -35,13 +35,13 @@ public class class106 {
    }
 
    final void method2469(class300 class300_1) {
-      this.field1428 = class300_1.method5504((byte) 74);
+      this.field1428 = class300_1.method5504();
       this.field1437 = new int[this.field1428];
       this.field1429 = new int[this.field1428];
 
       for (int i_2 = 0; i_2 < this.field1428; i_2++) {
-         this.field1437[i_2] = class300_1.method5496(-1459053594);
-         this.field1429[i_2] = class300_1.method5496(-1459053594);
+         this.field1437[i_2] = class300_1.method5496();
+         this.field1429[i_2] = class300_1.method5496();
       }
 
    }

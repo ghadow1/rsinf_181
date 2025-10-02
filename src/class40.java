@@ -716,7 +716,7 @@ public class class40 {
             for (i_5 = 4; i_5 >= 0; --i_5) {
                String string_16 = class154.method3407(class217_0, i_5, (short) 255);
                if (string_16 != null) {
-                  class135.method3260(string_16, class217_0.field2643, 57, i_5 + 1, class217_0.field2565, class217_0.field2688, class217_0.field2691, -224975698);
+                  class135.method3260(string_16, class217_0.field2643, 57, i_5 + 1, class217_0.field2565, class217_0.field2688, class217_0.field2691);
                }
             }
 

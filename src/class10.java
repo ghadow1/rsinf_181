@@ -25,7 +25,7 @@ final class class10 implements Comparator {
          }
       }
 
-      int i_5 = class5.method61(i_0, -1961052460).field3206;
+      int i_5 = class5.method61(i_0).field3206;
       if (i_5 != 0) {
          int i_3 = class212.field2525[i_0];
          if (i_5 == 1) {

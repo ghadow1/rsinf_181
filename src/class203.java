@@ -5,8 +5,8 @@ public class class203 extends class180 {
 
    class203(class300 class300_1) {
       class300_1.field3732 = class300_1.field3730.length - 3;
-      int i_2 = class300_1.method5504((byte) 74);
-      int i_3 = class300_1.method5496(-1459053594);
+      int i_2 = class300_1.method5504();
+      int i_3 = class300_1.method5496();
       int i_4 = i_2 * 10 + 14;
       class300_1.field3732 = 0;
       int i_5 = 0;
@@ -25,7 +25,7 @@ public class class203 extends class180 {
          i_14 = -1;
 
          while (true) {
-            i_15 = class300_1.method5504((byte) 115);
+            i_15 = class300_1.method5504();
             if (i_15 != i_14) {
                ++i_4;
             }
@@ -66,7 +66,7 @@ public class class203 extends class180 {
       i_14 = i_2 + i_5 + i_6 + i_7 + i_8 + i_9 + i_10 + i_11 + i_12;
 
       for (i_15 = 0; i_15 < i_14; i_15++) {
-         class300_1.method5657((byte) 46);
+         class300_1.method5657();
       }
 
       i_4 += class300_1.field3732 - i_13;
@@ -87,7 +87,7 @@ public class class203 extends class180 {
 
       int i_29;
       for (i_29 = 0; i_29 < i_6; i_29++) {
-         i_28 = i_28 + class300_1.method5504((byte) 112) & 0x7f;
+         i_28 = i_28 + class300_1.method5504() & 0x7f;
          if (i_28 != 0 && i_28 != 32) {
             if (i_28 == 1) {
                ++i_16;
@@ -166,9 +166,9 @@ public class class203 extends class180 {
       class300 class300_51 = new class300(this.field2491);
       class300_51.method5481(1297377380);
       class300_51.method5481(6);
-      class300_51.method5479(i_2 > 1 ? 1 : 0, (byte) -49);
-      class300_51.method5479(i_2, (byte) -87);
-      class300_51.method5479(i_3, (byte) 33);
+      class300_51.method5479(i_2 > 1 ? 1 : 0);
+      class300_51.method5479(i_2);
+      class300_51.method5479(i_3);
       class300_1.field3732 = i_13;
       int i_52 = 0;
       int i_53 = 0;
@@ -189,59 +189,59 @@ public class class203 extends class180 {
 
          while (true) {
             while (true) {
-               int i_63 = class300_1.method5657((byte) 35);
-               class300_51.method5603(i_63, -1186433377);
+               int i_63 = class300_1.method5657();
+               class300_51.method5603(i_63);
                int i_64 = class300_1.field3730[i_29++] & 0xff;
                boolean bool_65 = i_64 != i_62;
                i_62 = i_64 & 0xf;
                if (i_64 == 7) {
                   if (bool_65) {
-                     class300_51.method5655(255, 291233392);
+                     class300_51.method5655(255);
                   }
 
-                  class300_51.method5655(47, 955699508);
-                  class300_51.method5655(0, 1713251277);
-                  class300_51.method5489(class300_51.field3732 - i_61, -1846433239);
+                  class300_51.method5655(47);
+                  class300_51.method5655(0);
+                  class300_51.method5489(class300_51.field3732 - i_61);
                   continue label235;
                }
 
                if (i_64 == 23) {
                   if (bool_65) {
-                     class300_51.method5655(255, 1569747082);
+                     class300_51.method5655(255);
                   }
 
-                  class300_51.method5655(81, 763247308);
-                  class300_51.method5655(3, 1039111078);
-                  class300_51.method5655(class300_1.field3730[i_50++], 1545784548);
-                  class300_51.method5655(class300_1.field3730[i_50++], 840659094);
-                  class300_51.method5655(class300_1.field3730[i_50++], 906831865);
+                  class300_51.method5655(81);
+                  class300_51.method5655(3);
+                  class300_51.method5655(class300_1.field3730[i_50++]);
+                  class300_51.method5655(class300_1.field3730[i_50++]);
+                  class300_51.method5655(class300_1.field3730[i_50++]);
                } else {
                   i_52 ^= i_64 >> 4;
                   if (i_62 == 0) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 144, 386612606);
+                        class300_51.method5655(i_52 + 144);
                      }
 
                      i_53 += class300_1.field3730[i_37++];
                      i_54 += class300_1.field3730[i_38++];
-                     class300_51.method5655(i_53 & 0x7f, 732389109);
-                     class300_51.method5655(i_54 & 0x7f, 1364006297);
+                     class300_51.method5655(i_53 & 0x7f);
+                     class300_51.method5655(i_54 & 0x7f);
                   } else if (i_62 == 1) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 128, 1745462229);
+                        class300_51.method5655(i_52 + 128);
                      }
 
                      i_53 += class300_1.field3730[i_37++];
                      i_55 += class300_1.field3730[i_40++];
-                     class300_51.method5655(i_53 & 0x7f, 910098018);
-                     class300_51.method5655(i_55 & 0x7f, 1064938707);
+                     class300_51.method5655(i_53 & 0x7f);
+                     class300_51.method5655(i_55 & 0x7f);
                   } else if (i_62 == 2) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 176, 228698113);
+                        class300_51.method5655(i_52 + 176);
                      }
 
                      i_28 = i_28 + class300_1.field3730[i_15++] & 0x7f;
-                     class300_51.method5655(i_28, 1444795229);
+                     class300_51.method5655(i_28);
                      byte b_66;
                      if (i_28 != 0 && i_28 != 32) {
                         if (i_28 == 1) {
@@ -275,42 +275,42 @@ public class class203 extends class180 {
 
                      int i_67 = b_66 + ints_59[i_28];
                      ints_59[i_28] = i_67;
-                     class300_51.method5655(i_67 & 0x7f, 2029992045);
+                     class300_51.method5655(i_67 & 0x7f);
                   } else if (i_62 == 3) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 224, 946777970);
+                        class300_51.method5655(i_52 + 224);
                      }
 
                      i_56 += class300_1.field3730[i_45++];
                      i_56 += class300_1.field3730[i_33++] << 7;
-                     class300_51.method5655(i_56 & 0x7f, 288754187);
-                     class300_51.method5655(i_56 >> 7 & 0x7f, 766760781);
+                     class300_51.method5655(i_56 & 0x7f);
+                     class300_51.method5655(i_56 >> 7 & 0x7f);
                   } else if (i_62 == 4) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 208, 2137578388);
+                        class300_51.method5655(i_52 + 208);
                      }
 
                      i_57 += class300_1.field3730[i_32++];
-                     class300_51.method5655(i_57 & 0x7f, 899269979);
+                     class300_51.method5655(i_57 & 0x7f);
                   } else if (i_62 == 5) {
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 160, 1408674166);
+                        class300_51.method5655(i_52 + 160);
                      }
 
                      i_53 += class300_1.field3730[i_37++];
                      i_58 += class300_1.field3730[i_31++];
-                     class300_51.method5655(i_53 & 0x7f, 1952872287);
-                     class300_51.method5655(i_58 & 0x7f, 1056136741);
+                     class300_51.method5655(i_53 & 0x7f);
+                     class300_51.method5655(i_58 & 0x7f);
                   } else {
                      if (i_62 != 6) {
                         throw new RuntimeException();
                      }
 
                      if (bool_65) {
-                        class300_51.method5655(i_52 + 192, 254225805);
+                        class300_51.method5655(i_52 + 192);
                      }
 
-                     class300_51.method5655(class300_1.field3730[i_44++], 944893766);
+                     class300_51.method5655(class300_1.field3730[i_44++]);
                   }
                }
             }

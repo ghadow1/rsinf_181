@@ -371,8 +371,8 @@ public class class96 {
                if (class236.field3176 != null) {
                   try {
                      class300 class300_2 = new class300(4);
-                     class300_2.method5655(2, 1625550451);
-                     class300_2.method5480(0, -392225994);
+                     class300_2.method5655(2);
+                     class300_2.method5480(0);
                      class236.field3176.vmethod5829(class300_2.field3730, 0, 4, -1696227994);
                   } catch (IOException ioexception_5) {
                      try {

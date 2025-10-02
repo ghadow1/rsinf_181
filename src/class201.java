@@ -68,7 +68,7 @@ public class class201 extends class180 {
          i_12 = 2;
 
          for (i_14 = 2; i_14 < i_9; i_14++) {
-            int i_15 = class300_2.method5504((byte) 71);
+            int i_15 = class300_2.method5504();
             if (i_15 == 0) {
                i_13 = i_12++;
             } else {
@@ -90,21 +90,21 @@ public class class201 extends class180 {
       class196 class196_38;
       for (i_14 = 0; i_14 < arr_37.length; i_14++) {
          class196_38 = arr_37[i_14] = new class196();
-         int i_16 = class300_2.method5504((byte) 116);
+         int i_16 = class300_2.method5504();
          if (i_16 > 0) {
             class196_38.field2387 = new byte[i_16 * 2];
          }
 
-         i_16 = class300_2.method5504((byte) 115);
+         i_16 = class300_2.method5504();
          if (i_16 > 0) {
             class196_38.field2388 = new byte[i_16 * 2 + 2];
             class196_38.field2388[1] = 64;
          }
       }
 
-      i_14 = class300_2.method5504((byte) 112);
+      i_14 = class300_2.method5504();
       byte[] bytes_45 = i_14 > 0 ? new byte[i_14 * 2] : null;
-      i_14 = class300_2.method5504((byte) 108);
+      i_14 = class300_2.method5504();
       byte[] bytes_39 = i_14 > 0 ? new byte[i_14 * 2] : null;
 
       int i_17;
@@ -125,14 +125,14 @@ public class class201 extends class180 {
 
       int i_20;
       for (i_20 = 0; i_20 < 128; i_20++) {
-         i_19 += class300_2.method5504((byte) 104);
+         i_19 += class300_2.method5504();
          this.field2482[i_20] = (short)i_19;
       }
 
       i_19 = 0;
 
       for (i_20 = 0; i_20 < 128; i_20++) {
-         i_19 += class300_2.method5504((byte) 39);
+         i_19 += class300_2.method5504();
          this.field2482[i_20] = (short)(this.field2482[i_20] + (i_19 << 8));
       }
 
@@ -149,7 +149,7 @@ public class class201 extends class180 {
                i_20 = -1;
             }
 
-            i_22 = class300_2.method5657((byte) -15);
+            i_22 = class300_2.method5657();
          }
 
          this.field2482[i_23] = (short)(this.field2482[i_23] + ((i_22 - 1 & 0x2) << 14));
@@ -235,7 +235,7 @@ public class class201 extends class180 {
             }
 
             if (this.field2480[i_27] > 0) {
-               i_26 = class300_2.method5504((byte) 122) + 1;
+               i_26 = class300_2.method5504() + 1;
             }
          }
 
@@ -243,7 +243,7 @@ public class class201 extends class180 {
          --i_20;
       }
 
-      this.field2475 = class300_2.method5504((byte) 99) + 1;
+      this.field2475 = class300_2.method5504() + 1;
 
       class196 class196_28;
       int i_29;
@@ -280,7 +280,7 @@ public class class201 extends class180 {
             i_19 = 0;
 
             for (i_29 = 2; i_29 < class196_28.field2388.length; i_29 += 2) {
-               i_19 = i_19 + 1 + class300_2.method5504((byte) 110);
+               i_19 = i_19 + 1 + class300_2.method5504();
                class196_28.field2388[i_29] = (byte)i_19;
             }
          }
@@ -292,7 +292,7 @@ public class class201 extends class180 {
             i_19 = 0;
 
             for (i_29 = 2; i_29 < class196_28.field2387.length; i_29 += 2) {
-               i_19 = i_19 + 1 + class300_2.method5504((byte) 118);
+               i_19 = i_19 + 1 + class300_2.method5504();
                class196_28.field2387[i_29] = (byte)i_19;
             }
          }
@@ -305,11 +305,11 @@ public class class201 extends class180 {
       int i_42;
       byte b_44;
       if (bytes_45 != null) {
-         i_19 = class300_2.method5504((byte) 61);
+         i_19 = class300_2.method5504();
          bytes_45[0] = (byte)i_19;
 
          for (i_27 = 2; i_27 < bytes_45.length; i_27 += 2) {
-            i_19 = i_19 + 1 + class300_2.method5504((byte) 120);
+            i_19 = i_19 + 1 + class300_2.method5504();
             bytes_45[i_27] = (byte)i_19;
          }
 
@@ -343,11 +343,11 @@ public class class201 extends class180 {
       }
 
       if (bytes_39 != null) {
-         i_19 = class300_2.method5504((byte) 70);
+         i_19 = class300_2.method5504();
          bytes_39[0] = (byte)i_19;
 
          for (i_27 = 2; i_27 < bytes_39.length; i_27 += 2) {
-            i_19 = 1 + i_19 + class300_2.method5504((byte) 19);
+            i_19 = 1 + i_19 + class300_2.method5504();
             bytes_39[i_27] = (byte)i_19;
          }
 
@@ -409,39 +409,39 @@ public class class201 extends class180 {
       }
 
       for (i_27 = 0; i_27 < i_12; i_27++) {
-         arr_37[i_27].field2392 = class300_2.method5504((byte) 33);
+         arr_37[i_27].field2392 = class300_2.method5504();
       }
 
       for (i_27 = 0; i_27 < i_12; i_27++) {
          class196_28 = arr_37[i_27];
          if (class196_28.field2387 != null) {
-            class196_28.field2390 = class300_2.method5504((byte) 23);
+            class196_28.field2390 = class300_2.method5504();
          }
 
          if (class196_28.field2388 != null) {
-            class196_28.field2398 = class300_2.method5504((byte) 99);
+            class196_28.field2398 = class300_2.method5504();
          }
 
          if (class196_28.field2392 > 0) {
-            class196_28.field2391 = class300_2.method5504((byte) 127);
+            class196_28.field2391 = class300_2.method5504();
          }
       }
 
       for (i_27 = 0; i_27 < i_12; i_27++) {
-         arr_37[i_27].field2394 = class300_2.method5504((byte) 53);
+         arr_37[i_27].field2394 = class300_2.method5504();
       }
 
       for (i_27 = 0; i_27 < i_12; i_27++) {
          class196_28 = arr_37[i_27];
          if (class196_28.field2394 > 0) {
-            class196_28.field2393 = class300_2.method5504((byte) 11);
+            class196_28.field2393 = class300_2.method5504();
          }
       }
 
       for (i_27 = 0; i_27 < i_12; i_27++) {
          class196_28 = arr_37[i_27];
          if (class196_28.field2393 > 0) {
-            class196_28.field2395 = class300_2.method5504((byte) 109);
+            class196_28.field2395 = class300_2.method5504();
          }
       }
 

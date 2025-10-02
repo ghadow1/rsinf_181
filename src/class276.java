@@ -18,11 +18,11 @@ public class class276 extends class277 {
    public void method5075(class300 class300_1, int i_2, int i_3) {
       while (true) {
          if (class300_1.field3732 < i_2) {
-            int i_4 = class300_1.method5504((byte) 8);
+            int i_4 = class300_1.method5504();
             boolean bool_5 = (i_4 & 0x1) == 1;
-            class283 class283_6 = new class283(class300_1.method5503(-231155257), this.field3618);
-            class283 class283_7 = new class283(class300_1.method5503(-231155257), this.field3618);
-            class300_1.method5503(-231155257);
+            class283 class283_6 = new class283(class300_1.method5503(), this.field3618);
+            class283 class283_7 = new class283(class300_1.method5503(), this.field3618);
+            class300_1.method5503();
             if (class283_6 != null && class283_6.method5205((byte) -76)) {
                class278 class278_8 = (class278) this.method5138(class283_6, 2083171527);
                if (bool_5) {

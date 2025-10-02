@@ -50,7 +50,7 @@ public class class65 extends class174 {
                i_5 = (int)class61_1.field2113;
                class217 class217_6 = class80.method1978(i_5);
                if (class217_6 != null) {
-                  class224.method4120(class217_6, 907151235);
+                  class224.method4120(class217_6);
                }
             }
          }
@@ -389,9 +389,9 @@ public class class65 extends class174 {
    static final void method1170(String string_0, int i_1) {
       if (!string_0.equals("")) {
          class187 class187_2 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
-         class187_2.field2333.method5655(class209.method3945(string_0, -557080149), 1162225143);
-         class187_2.field2333.method5485(string_0, 2145825112);
-         client.field880.method2219(class187_2, 2067459847);
+         class187_2.field2333.method5655(class209.method3945(string_0, -557080149));
+         class187_2.field2333.method5485(string_0);
+         client.field880.method2219(class187_2);
       }
    }
 

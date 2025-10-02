@@ -67,36 +67,36 @@ public class class331 extends class180 {
    }
 
    public void method6281(class300 class300_1, int i_2) {
-      class300_1.method5655(8, 1985300584);
-      class300_1.method5655(this.field3938, 1870945765);
-      class300_1.method5655(this.field3939 ? 1 : 0, 575687755);
-      class300_1.method5479(this.field3953, (byte) -28);
-      class300_1.method5655(this.field3941, 2112664039);
-      class300_1.method5655(this.field3942, 1188552352);
-      class300_1.method5655(this.field3961, 373192428);
-      class300_1.method5655(this.field3944, 342644875);
-      class300_1.method5655(this.field3945 ? 1 : 0, 690375833);
-      class300_1.method5479(this.field3962, (byte) -98);
-      class300_1.method5655(this.field3943, 1041630099);
-      class300_1.method5480(this.field3948, -2056426270);
-      class300_1.method5479(this.field3949, (byte) -44);
-      class300_1.method5486(this.field3934, 160692340);
-      class300_1.method5486(this.field3951, 326265001);
-      class300_1.method5486(this.field3952, -350638022);
-      class300_1.method5486(this.field3946, 1314896620);
-      class300_1.method5655(this.field3955, 1363771778);
-      class300_1.method5479(this.field3936, (byte) -93);
-      class300_1.method5486(this.field3947, 1605314535);
-      class300_1.method5486(this.field3959, 1513027024);
-      class300_1.method5655(this.field3956, 263489310);
-      class300_1.method5655(this.field3957, 1730851184);
+      class300_1.method5655(8);
+      class300_1.method5655(this.field3938);
+      class300_1.method5655(this.field3939 ? 1 : 0);
+      class300_1.method5479(this.field3953);
+      class300_1.method5655(this.field3941);
+      class300_1.method5655(this.field3942);
+      class300_1.method5655(this.field3961);
+      class300_1.method5655(this.field3944);
+      class300_1.method5655(this.field3945 ? 1 : 0);
+      class300_1.method5479(this.field3962);
+      class300_1.method5655(this.field3943);
+      class300_1.method5480(this.field3948);
+      class300_1.method5479(this.field3949);
+      class300_1.method5486(this.field3934);
+      class300_1.method5486(this.field3951);
+      class300_1.method5486(this.field3952);
+      class300_1.method5486(this.field3946);
+      class300_1.method5655(this.field3955);
+      class300_1.method5479(this.field3936);
+      class300_1.method5486(this.field3947);
+      class300_1.method5486(this.field3959);
+      class300_1.method5655(this.field3956);
+      class300_1.method5655(this.field3957);
 
       for (int i_3 = 0; i_3 < this.field3960.length; i_3++) {
          class300_1.method5481(this.field3960[i_3]);
       }
 
       class300_1.method5481(this.field3935);
-      class300_1.method5486(this.field3931, 1411654389);
+      class300_1.method5486(this.field3931);
    }
 
 }

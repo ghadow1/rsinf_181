@@ -56,21 +56,21 @@ public class class241 extends class175 {
 
    void method4371(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3220 = class300_1.method5511((byte) 64);
+         this.field3220 = class300_1.method5511();
       } else if (i_2 == 2) {
-         this.field3212 = class300_1.method5511((byte) 92);
+         this.field3212 = class300_1.method5511();
       } else if (i_2 == 3) {
-         this.field3216 = class300_1.method5503(-231155257);
+         this.field3216 = class300_1.method5503();
       } else if (i_2 == 4) {
-         this.field3217 = class300_1.method5567(1505854097);
+         this.field3217 = class300_1.method5567();
       } else if (i_2 == 5) {
-         class300_1.method5567(-1468252810);
+         class300_1.method5567();
       } else if (i_2 == 6) {
-         this.field3218 = class300_1.method5504((byte) 20);
+         this.field3218 = class300_1.method5504();
       } else {
          int i_4;
          if (i_2 == 7) {
-            i_4 = class300_1.method5504((byte) 41);
+            i_4 = class300_1.method5504();
             if ((i_4 & 0x1) == 0) {
                ;
             }
@@ -79,25 +79,25 @@ public class class241 extends class175 {
                ;
             }
          } else if (i_2 == 8) {
-            class300_1.method5504((byte) 28);
+            class300_1.method5504();
          } else if (i_2 >= 10 && i_2 <= 14) {
-            this.field3210[i_2 - 10] = class300_1.method5503(-231155257);
+            this.field3210[i_2 - 10] = class300_1.method5503();
          } else if (i_2 == 15) {
-            i_4 = class300_1.method5504((byte) 35);
+            i_4 = class300_1.method5504();
             this.field3221 = new int[i_4 * 2];
 
             int i_5;
             for (i_5 = 0; i_5 < i_4 * 2; i_5++) {
-               this.field3221[i_5] = class300_1.method5606(-1327508233);
+               this.field3221[i_5] = class300_1.method5606();
             }
 
-            class300_1.method5499((byte) -14);
-            i_5 = class300_1.method5504((byte) 49);
+            class300_1.method5499();
+            i_5 = class300_1.method5504();
             this.field3228 = new int[i_5];
 
             int i_6;
             for (i_6 = 0; i_6 < this.field3228.length; i_6++) {
-               this.field3228[i_6] = class300_1.method5499((byte) -30);
+               this.field3228[i_6] = class300_1.method5499();
             }
 
             this.field3214 = new byte[i_4];
@@ -107,32 +107,32 @@ public class class241 extends class175 {
             }
          } else if (i_2 != 16) {
             if (i_2 == 17) {
-               this.field3211 = class300_1.method5503(-231155257);
+               this.field3211 = class300_1.method5503();
             } else if (i_2 == 18) {
-               class300_1.method5511((byte) -26);
+               class300_1.method5511();
             } else if (i_2 == 19) {
-               this.field3230 = class300_1.method5496(-1459053594);
+               this.field3230 = class300_1.method5496();
             } else if (i_2 == 21) {
-               class300_1.method5499((byte) -58);
+               class300_1.method5499();
             } else if (i_2 == 22) {
-               class300_1.method5499((byte) -52);
+               class300_1.method5499();
             } else if (i_2 == 23) {
-               class300_1.method5504((byte) 21);
-               class300_1.method5504((byte) 46);
-               class300_1.method5504((byte) 80);
+               class300_1.method5504();
+               class300_1.method5504();
+               class300_1.method5504();
             } else if (i_2 == 24) {
-               class300_1.method5606(-1327508233);
-               class300_1.method5606(-1327508233);
+               class300_1.method5606();
+               class300_1.method5606();
             } else if (i_2 == 25) {
-               class300_1.method5511((byte) -12);
+               class300_1.method5511();
             } else if (i_2 == 28) {
-               class300_1.method5504((byte) 58);
+               class300_1.method5504();
             } else if (i_2 == 29) {
                class255[] arr_7 = new class255[] {class255.field3461, class255.field3460, class255.field3458};
-               this.field3226 = (class255) class107.method2476(arr_7, class300_1.method5504((byte) 61));
+               this.field3226 = (class255) class107.method2476(arr_7, class300_1.method5504());
             } else if (i_2 == 30) {
                class238[] arr_8 = new class238[] {class238.field3193, class238.field3195, class238.field3194};
-               this.field3227 = (class238) class107.method2476(arr_8, class300_1.method5504((byte) 89));
+               this.field3227 = (class238) class107.method2476(arr_8, class300_1.method5504());
             }
          }
       }
@@ -145,7 +145,7 @@ public class class241 extends class175 {
 
    public void method4369(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 29);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }
@@ -178,12 +178,12 @@ public class class241 extends class175 {
       ++client.field880.field1319;
       if (client.field880.field1319 >= 50 || bool_0) {
          client.field880.field1319 = 0;
-         if (!client.field701 && client.field880.method2223((short) 9950) != null) {
+         if (!client.field701 && client.field880.method2223() != null) {
             class187 class187_2 = class235.method4265(class183.field2225, client.field880.field1313, 1775123545);
-            client.field880.method2219(class187_2, 2067459847);
+            client.field880.method2219(class187_2);
 
             try {
-               client.field880.method2234(294803591);
+               client.field880.method2234();
             } catch (IOException ioexception_4) {
                client.field701 = true;
             }

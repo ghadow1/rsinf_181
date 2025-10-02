@@ -21,14 +21,14 @@ public class class26 {
 
    public void method344(class300 class300_1, int i_2, byte b_3) {
       this.field221 = i_2;
-      this.field214 = class300_1.method5503(-231155257);
-      this.field219 = class300_1.method5503(-231155257);
-      this.field218 = new class213(class300_1.method5499((byte) -117));
-      this.field216 = class300_1.method5499((byte) -49);
-      class300_1.method5504((byte) 19);
-      this.field215 = class300_1.method5504((byte) 30) == 1;
-      this.field228 = class300_1.method5504((byte) 19);
-      int i_4 = class300_1.method5504((byte) 63);
+      this.field214 = class300_1.method5503();
+      this.field219 = class300_1.method5503();
+      this.field218 = new class213(class300_1.method5499());
+      this.field216 = class300_1.method5499();
+      class300_1.method5504();
+      this.field215 = class300_1.method5504() == 1;
+      this.field228 = class300_1.method5504();
+      int i_4 = class300_1.method5504();
       this.field224 = new LinkedList();
 
       for (int i_5 = 0; i_5 < i_4; i_5++) {
@@ -151,7 +151,7 @@ public class class26 {
    }
 
    class37 method327(class300 class300_1) {
-      int i_3 = class300_1.method5504((byte) 34);
+      int i_3 = class300_1.method5504();
       class20[] arr_4 = new class20[] {class20.field147, class20.field149, class20.field148, class20.field146};
       class20 class20_5 = (class20) class107.method2476(arr_4, i_3);
       Object obj_6 = null;
@@ -278,8 +278,8 @@ public class class26 {
                while (class236.field3168 < 200 && class236.field3166 > 0) {
                   class232_4 = (class232) class236.field3165.method5950();
                   class300_5 = new class300(4);
-                  class300_5.method5655(1, 200081631);
-                  class300_5.method5480((int)class232_4.field2113, -749645352);
+                  class300_5.method5655(1);
+                  class300_5.method5480((int)class232_4.field2113);
                   class236.field3176.vmethod5829(class300_5.field3730, 0, 4, -1696227994);
                   class236.field3167.method5951(class232_4, class232_4.field2113);
                   --class236.field3166;
@@ -289,8 +289,8 @@ public class class26 {
                while (class236.field3164 < 200 && class236.field3171 > 0) {
                   class232_4 = (class232) class236.field3170.method4792();
                   class300_5 = new class300(4);
-                  class300_5.method5655(0, 1944499343);
-                  class300_5.method5480((int)class232_4.field2113, 782328072);
+                  class300_5.method5655(0);
+                  class300_5.method5480((int)class232_4.field2113);
                   class236.field3176.vmethod5829(class300_5.field3730, 0, 4, -1696227994);
                   class232_4.method3597();
                   class236.field3172.method5951(class232_4, class232_4.field2113);
@@ -340,10 +340,10 @@ public class class26 {
 
                      if (class226.field3071 == null) {
                         class236.field3174.field3732 = 0;
-                        i_8 = class236.field3174.method5504((byte) 92);
-                        i_9 = class236.field3174.method5496(-1459053594);
-                        int i_10 = class236.field3174.method5504((byte) 32);
-                        i_11 = class236.field3174.method5499((byte) -35);
+                        i_8 = class236.field3174.method5504();
+                        i_9 = class236.field3174.method5496();
+                        int i_10 = class236.field3174.method5504();
+                        i_11 = class236.field3174.method5499();
                         long long_12 = (long)(i_9 + (i_8 << 16));
                         class232 class232_14 = (class232) class236.field3167.method5952(long_12);
                         class215.field2545 = true;
@@ -359,7 +359,7 @@ public class class26 {
                         int i_15 = i_10 == 0 ? 5 : 9;
                         class226.field3071 = class232_14;
                         class240.field3209 = new class300(i_15 + i_11 + class226.field3071.field3122);
-                        class240.field3209.method5655(i_10, 255539407);
+                        class240.field3209.method5655(i_10);
                         class240.field3209.method5481(i_11);
                         class236.field3175 = 8;
                         class236.field3174.field3732 = 0;
@@ -399,8 +399,8 @@ public class class26 {
                               class235 class235_18 = class236.field3173[i_9];
                               if (class235_18 != null) {
                                  class322.field3882.field3732 = i_9 * 8 + 5;
-                                 i_11 = class322.field3882.method5499((byte) -68);
-                                 int i_19 = class322.field3882.method5499((byte) -21);
+                                 i_11 = class322.field3882.method5499();
+                                 int i_19 = class322.field3882.method5499();
                                  class235_18.method4262(i_11, i_19, 1381214916);
                               }
                            }
@@ -463,7 +463,7 @@ public class class26 {
    }
 
    static final class316 method403(class300 class300_0, class316 class316_1, int i_2) {
-      int i_3 = class300_0.method5504((byte) 48);
+      int i_3 = class300_0.method5504();
       int i_4;
       if (class316_1 == null) {
          int i_5 = i_3 - 1;
@@ -477,13 +477,13 @@ public class class26 {
       }
 
       for (i_4 = 0; i_4 < i_3; i_4++) {
-         boolean bool_8 = class300_0.method5504((byte) 108) == 1;
-         int i_6 = class300_0.method5567(1025932413);
+         boolean bool_8 = class300_0.method5504() == 1;
+         int i_6 = class300_0.method5567();
          Object obj_7;
          if (bool_8) {
-            obj_7 = new class176(class300_0.method5503(-231155257));
+            obj_7 = new class176(class300_0.method5503());
          } else {
-            obj_7 = new class179(class300_0.method5499((byte) -42));
+            obj_7 = new class179(class300_0.method5499());
          }
 
          class316_1.method5938((class180) obj_7, (long)i_6);

@@ -17,14 +17,14 @@ public class class125 {
       class300 class300_3 = new class300(bytes_1);
       class300 class300_4 = new class300(bytes_1);
       class300_3.field3732 = 2;
-      int i_5 = class300_3.method5504((byte) 56);
+      int i_5 = class300_3.method5504();
       int i_6 = -1;
       int i_7 = 0;
       class300_4.field3732 = i_5 + class300_3.field3732;
 
       int i_8;
       for (i_8 = 0; i_8 < i_5; i_8++) {
-         int i_9 = class300_3.method5504((byte) 117);
+         int i_9 = class300_3.method5504();
          if (i_9 > 0) {
             if (this.field1634.field1798[i_8] != 0) {
                for (int i_10 = i_8 - 1; i_10 > i_6; --i_10) {
@@ -46,19 +46,19 @@ public class class125 {
             }
 
             if ((i_9 & 0x1) != 0) {
-               field1639[i_7] = class300_4.method5507(2007436322);
+               field1639[i_7] = class300_4.method5507();
             } else {
                field1639[i_7] = s_11;
             }
 
             if ((i_9 & 0x2) != 0) {
-               field1636[i_7] = class300_4.method5507(1203276131);
+               field1636[i_7] = class300_4.method5507();
             } else {
                field1636[i_7] = s_11;
             }
 
             if ((i_9 & 0x4) != 0) {
-               field1635[i_7] = class300_4.method5507(368529403);
+               field1635[i_7] = class300_4.method5507();
             } else {
                field1635[i_7] = s_11;
             }

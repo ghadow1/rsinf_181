@@ -9,16 +9,16 @@ public class class248 extends class175 {
 
    void method4489(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3296 = class300_1.method5496(-1459053594);
-         this.field3297 = class300_1.method5504((byte) 12);
-         this.field3295 = class300_1.method5504((byte) 126);
+         this.field3296 = class300_1.method5496();
+         this.field3297 = class300_1.method5504();
+         this.field3295 = class300_1.method5504();
       }
 
    }
 
    public void method4485(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 76);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }
@@ -197,7 +197,7 @@ public class class248 extends class175 {
                   i_8 = class62.field585 - 80;
                   s_9 = 291;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
-                     class5.method50(class190.method3666("secure", true, -1044311329) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false, -1344972354);
+                     class5.method50(class190.method3666("secure", true, -1044311329) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
                   }
 
                   i_8 = class62.field585 + 80;
@@ -276,7 +276,7 @@ public class class248 extends class175 {
                                  class85.field1209 = 5;
                                  return;
                               case 2:
-                                 class5.method50("https://support.runescape.com/hc/en-gb", true, false, -1612857410);
+                                 class5.method50("https://support.runescape.com/hc/en-gb", true, false);
                               }
                            }
                         }
@@ -444,7 +444,7 @@ public class class248 extends class175 {
                            }
 
                            if (i_4 == 1 && i_16 >= class85.field1187 + 180 - 34 && i_16 <= class85.field1187 + 34 + 180 && i_17 >= 351 && i_17 <= 363) {
-                              class5.method50(class190.method3666("secure", true, -1044311329) + "m=totp-authenticator/disableTOTPRequest", true, false, -1450264168);
+                              class5.method50(class190.method3666("secure", true, -1044311329) + "m=totp-authenticator/disableTOTPRequest", true, false);
                            }
 
                            i_19 = class85.field1187 + 180 + 80;
@@ -514,7 +514,7 @@ public class class248 extends class175 {
                            if (class38.field332 != null) {
                               i_23 = class38.field332.field3865 / 2;
                               if (i_4 == 1 && i_16 >= class38.field332.field3863 - i_23 && i_16 <= i_23 + class38.field332.field3863 && i_17 >= s_9 - 15 && i_17 < s_9) {
-                                 class5.method50(class190.method3666("secure", true, -1044311329) + "m=weblogin/g=oldscape/cant_log_in", true, false, -1634651769);
+                                 class5.method50(class190.method3666("secure", true, -1044311329) + "m=weblogin/g=oldscape/cant_log_in", true, false);
                               }
                            }
 
@@ -564,7 +564,7 @@ public class class248 extends class175 {
                            i_19 = class85.field1187 + 180 - 80;
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                              class5.method50(class190.method3666("secure", true, -1044311329) + "m=dob/set_dob.ws", true, false, -1518948113);
+                              class5.method50(class190.method3666("secure", true, -1044311329) + "m=dob/set_dob.ws", true, false);
                               class268.method4988("", "Page has opened in a new window.", "(Please check your popup blocker.)", 2084098439);
                               class85.field1209 = 6;
                               return;
@@ -578,7 +578,7 @@ public class class248 extends class175 {
                            i_19 = class85.field1187 + 180 - 80;
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                              class5.method50("https://www.jagex.com/terms/privacy/#eight", true, false, -1775878538);
+                              class5.method50("https://www.jagex.com/terms/privacy/#eight", true, false);
                               class268.method4988("", "Page has opened in a new window.", "(Please check your popup blocker.)", 1864087916);
                               class85.field1209 = 6;
                               return;
@@ -604,7 +604,7 @@ public class class248 extends class175 {
                            i_8 = class85.field1187 + 180;
                            s_9 = 276;
                            if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
-                              class5.method50(str_15, true, false, -1751871284);
+                              class5.method50(str_15, true, false);
                               class268.method4988("", "Page has opened in a new window.", "(Please check your popup blocker.)", 1579449635);
                               class85.field1209 = 6;
                               return;

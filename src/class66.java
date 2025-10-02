@@ -190,7 +190,7 @@ public final class class66 extends class69 {
 
    final void method1179(class300 class300_1, int i_2) {
       class300_1.field3732 = 0;
-      int i_3 = class300_1.method5504((byte) 86);
+      int i_3 = class300_1.method5504();
       this.field635 = class300_1.method5495();
       this.field615 = class300_1.method5495();
       int i_4 = -1;
@@ -200,14 +200,14 @@ public final class class66 extends class69 {
       int i_7;
       int i_8;
       for (int i_6 = 0; i_6 < 12; i_6++) {
-         i_7 = class300_1.method5504((byte) 26);
+         i_7 = class300_1.method5504();
          if (i_7 == 0) {
             ints_5[i_6] = 0;
          } else {
-            i_8 = class300_1.method5504((byte) 74);
+            i_8 = class300_1.method5504();
             ints_5[i_6] = i_8 + (i_7 << 8);
             if (i_6 == 0 && ints_5[0] == 65535) {
-               i_4 = class300_1.method5496(-1459053594);
+               i_4 = class300_1.method5496();
                break;
             }
 
@@ -223,7 +223,7 @@ public final class class66 extends class69 {
       int[] ints_10 = new int[5];
 
       for (i_7 = 0; i_7 < 5; i_7++) {
-         i_8 = class300_1.method5504((byte) 121);
+         i_8 = class300_1.method5504();
          if (i_8 < 0 || i_8 >= class247.field3291[i_7].length) {
             i_8 = 0;
          }
@@ -231,52 +231,52 @@ public final class class66 extends class69 {
          ints_10[i_7] = i_8;
       }
 
-      super.field1004 = class300_1.method5496(-1459053594);
+      super.field1004 = class300_1.method5496();
       if (super.field1004 == 65535) {
          super.field1004 = -1;
       }
 
-      super.field955 = class300_1.method5496(-1459053594);
+      super.field955 = class300_1.method5496();
       if (super.field955 == 65535) {
          super.field955 = -1;
       }
 
       super.field956 = super.field955;
-      super.field957 = class300_1.method5496(-1459053594);
+      super.field957 = class300_1.method5496();
       if (super.field957 == 65535) {
          super.field957 = -1;
       }
 
-      super.field958 = class300_1.method5496(-1459053594);
+      super.field958 = class300_1.method5496();
       if (super.field958 == 65535) {
          super.field958 = -1;
       }
 
-      super.field959 = class300_1.method5496(-1459053594);
+      super.field959 = class300_1.method5496();
       if (super.field959 == 65535) {
          super.field959 = -1;
       }
 
-      super.field960 = class300_1.method5496(-1459053594);
+      super.field960 = class300_1.method5496();
       if (super.field960 == 65535) {
          super.field960 = -1;
       }
 
-      super.field961 = class300_1.method5496(-1459053594);
+      super.field961 = class300_1.method5496();
       if (super.field961 == 65535) {
          super.field961 = -1;
       }
 
-      this.field621 = new class283(class300_1.method5503(-231155257), class40.field353);
+      this.field621 = new class283(class300_1.method5503(), class40.field353);
       this.method1182((byte) -29);
       this.method1185(-202982507);
       if (this == client.field657) {
          class10.field69 = this.field621.method5197((byte) 76);
       }
 
-      this.field618 = class300_1.method5504((byte) 83);
-      this.field617 = class300_1.method5496(-1459053594);
-      this.field628 = class300_1.method5504((byte) 77) == 1;
+      this.field618 = class300_1.method5504();
+      this.field617 = class300_1.method5496();
+      this.field628 = class300_1.method5504() == 1;
       if (client.field703 == 0 && client.field890 >= 2) {
          this.field628 = false;
       }

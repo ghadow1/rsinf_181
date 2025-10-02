@@ -39,7 +39,7 @@ public class class137 {
       client.field667 = true;
       client.field879 = -1L;
       class192.method3678((byte) 46);
-      client.field880.method2218(19166064);
+      client.field880.method2218();
       client.field880.field1314.field3732 = 0;
       client.field880.field1310 = null;
       client.field880.field1309 = null;
@@ -50,7 +50,7 @@ public class class137 {
       client.field669 = 0;
       client.field700 = 0;
       client.field708 = 0;
-      class224.method4121(1503358455);
+      class224.method4121();
       class54.field480 = 0;
       class91.field1279.clear();
       class91.field1277.method5926();
@@ -102,7 +102,7 @@ public class class137 {
       class58.field546.method1780((short) 487);
 
       for (i_1 = 0; i_1 < class240.field3203; i_1++) {
-         class240 class240_4 = class5.method61(i_1, -1961052460);
+         class240 class240_4 = class5.method61(i_1);
          if (class240_4 != null) {
             class212.field2524[i_1] = 0;
             class212.field2525[i_1] = 0;
@@ -144,7 +144,7 @@ public class class137 {
       client.field905 = -1;
       client.field816 = new class318(8);
       client.field850 = null;
-      class224.method4121(-1510999970);
+      class224.method4121();
       client.field918.method4009((int[]) null, new int[] {0, 0, 0, 0, 0}, false, -1, 646936980);
 
       for (i_1 = 0; i_1 < 8; i_1++) {

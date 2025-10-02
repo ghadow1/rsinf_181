@@ -4,11 +4,11 @@ final class class4 implements class0 {
    static class235 field18;
 
    void method40(String string_1, class300 class300_2, byte b_3) {
-      class300_2.method5485(string_1, 2039737469);
+      class300_2.method5485(string_1);
    }
 
    public Object vmethod42(class300 class300_1, int i_2) {
-      return class300_1.method5503(-231155257);
+      return class300_1.method5503();
    }
 
    public void vmethod43(Object object_1, class300 class300_2, int i_3) {
@@ -38,7 +38,7 @@ final class class4 implements class0 {
       }
 
       class29.method497(false, -1807867865);
-      class95.method2245((byte) -107);
+      class95.method2245();
       class22.method275(205706610);
       class144.method3318(i_0, i_1, i_2, i_3, true, (byte) -69);
       i_0 = client.field913;

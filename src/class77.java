@@ -57,7 +57,7 @@ public final class class77 extends class135 {
    }
 
    static void method1945(int i_0) {
-      class224.method4121(1012773710);
+      class224.method4121();
       client.field796[0] = "Cancel";
       client.field668[0] = "";
       client.field794[0] = 1006;

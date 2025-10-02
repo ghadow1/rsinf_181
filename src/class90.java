@@ -84,15 +84,15 @@ public class class90 {
                }
 
                class300 class300_32 = new class300(i_3);
-               class300_32.method5655(2, 876340587);
-               class300_32.method5479(i_4, (byte) 0);
+               class300_32.method5655(2);
+               class300_32.method5479(i_4);
                Iterator iterator_33 = this.field1271.entrySet().iterator();
 
                while (iterator_33.hasNext()) {
                   Entry map$entry_18 = (Entry) iterator_33.next();
                   int i_19 = ((Integer) map$entry_18.getKey()).intValue();
                   if (this.field1268[i_19]) {
-                     class300_32.method5479(i_19, (byte) -98);
+                     class300_32.method5479(i_19);
                      Object object_9 = map$entry_18.getValue();
                      Class class_11 = object_9.getClass();
                      class3[] arr_12 = new class3[] {class3.field9, class3.field14, class3.field7};
@@ -115,7 +115,7 @@ public class class90 {
                         ++i_14;
                      }
 
-                     class300_32.method5655(class3_10.field11, 1101389494);
+                     class300_32.method5655(class3_10.field11);
                      class3.method30(object_9, class300_32, (byte) 1);
                   }
                }
@@ -181,7 +181,7 @@ public class class90 {
                         break label236;
                      }
 
-                     int i_17 = class300_16.method5504((byte) 98);
+                     int i_17 = class300_16.method5504();
                      if (i_17 < 0) {
                         bool_26 = false;
                         break label238;
@@ -197,7 +197,7 @@ public class class90 {
                      int i_10;
                      int i_18;
                      if (i_17 >= 2) {
-                        i_18 = class300_16.method5496(-1459053594);
+                        i_18 = class300_16.method5496();
                         i_8 = 0;
 
                         while (true) {
@@ -206,8 +206,8 @@ public class class90 {
                               break;
                            }
 
-                           i_9 = class300_16.method5496(-1459053594);
-                           i_10 = class300_16.method5504((byte) 127);
+                           i_9 = class300_16.method5496();
+                           i_10 = class300_16.method5504();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
                            class3 class3_12 = (class3) class107.method2476(arr_11, i_10);
                            Object object_13 = class3_12.method34(class300_16, -25501823);
@@ -218,21 +218,21 @@ public class class90 {
                            ++i_8;
                         }
                      } else {
-                        i_18 = class300_16.method5496(-1459053594);
+                        i_18 = class300_16.method5496();
 
                         for (i_8 = 0; i_8 < i_18; i_8++) {
-                           i_9 = class300_16.method5496(-1459053594);
-                           i_10 = class300_16.method5499((byte) -13);
+                           i_9 = class300_16.method5496();
+                           i_10 = class300_16.method5499();
                            if (this.field1268[i_9]) {
                               this.field1271.put(Integer.valueOf(i_9), Integer.valueOf(i_10));
                            }
                         }
 
-                        i_8 = class300_16.method5496(-1459053594);
+                        i_8 = class300_16.method5496();
 
                         for (i_9 = 0; i_9 < i_8; i_9++) {
-                           class300_16.method5496(-1459053594);
-                           class300_16.method5503(-231155257);
+                           class300_16.method5496();
+                           class300_16.method5503();
                         }
 
                         bool_26 = false;

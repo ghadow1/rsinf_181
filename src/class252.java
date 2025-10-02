@@ -28,57 +28,57 @@ public class class252 extends class175 {
 
    void method4553(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3332 = class300_1.method5511((byte) 52);
+         this.field3332 = class300_1.method5511();
       } else if (i_2 == 2) {
-         this.field3333 = class300_1.method5567(-1115288187);
+         this.field3333 = class300_1.method5567();
       } else if (i_2 == 3) {
-         this.field3334 = class300_1.method5511((byte) 7);
+         this.field3334 = class300_1.method5511();
       } else if (i_2 == 4) {
-         this.field3337 = class300_1.method5511((byte) -9);
+         this.field3337 = class300_1.method5511();
       } else if (i_2 == 5) {
-         this.field3336 = class300_1.method5511((byte) 97);
+         this.field3336 = class300_1.method5511();
       } else if (i_2 == 6) {
-         this.field3338 = class300_1.method5511((byte) -3);
+         this.field3338 = class300_1.method5511();
       } else if (i_2 == 7) {
-         this.field3335 = class300_1.method5606(-1327508233);
+         this.field3335 = class300_1.method5606();
       } else if (i_2 == 8) {
-         this.field3342 = class300_1.method5512(1753557478);
+         this.field3342 = class300_1.method5512();
       } else if (i_2 == 9) {
-         this.field3344 = class300_1.method5496(-1459053594);
+         this.field3344 = class300_1.method5496();
       } else if (i_2 == 10) {
-         this.field3340 = class300_1.method5606(-1327508233);
+         this.field3340 = class300_1.method5606();
       } else if (i_2 == 11) {
          this.field3341 = 0;
       } else if (i_2 == 12) {
-         this.field3348 = class300_1.method5504((byte) 88);
+         this.field3348 = class300_1.method5504();
       } else if (i_2 == 13) {
-         this.field3328 = class300_1.method5606(-1327508233);
+         this.field3328 = class300_1.method5606();
       } else if (i_2 == 14) {
-         this.field3341 = class300_1.method5496(-1459053594);
+         this.field3341 = class300_1.method5496();
       } else if (i_2 == 17 || i_2 == 18) {
-         this.field3346 = class300_1.method5496(-1459053594);
+         this.field3346 = class300_1.method5496();
          if (this.field3346 == 65535) {
             this.field3346 = -1;
          }
 
-         this.field3347 = class300_1.method5496(-1459053594);
+         this.field3347 = class300_1.method5496();
          if (this.field3347 == 65535) {
             this.field3347 = -1;
          }
 
          int i_4 = -1;
          if (i_2 == 18) {
-            i_4 = class300_1.method5496(-1459053594);
+            i_4 = class300_1.method5496();
             if (i_4 == 65535) {
                i_4 = -1;
             }
          }
 
-         int i_5 = class300_1.method5504((byte) 117);
+         int i_5 = class300_1.method5504();
          this.field3345 = new int[i_5 + 2];
 
          for (int i_6 = 0; i_6 <= i_5; i_6++) {
-            this.field3345[i_6] = class300_1.method5496(-1459053594);
+            this.field3345[i_6] = class300_1.method5496();
             if (this.field3345[i_6] == 65535) {
                this.field3345[i_6] = -1;
             }
@@ -91,7 +91,7 @@ public class class252 extends class175 {
 
    void method4552(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 100);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

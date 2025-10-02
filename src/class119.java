@@ -147,25 +147,25 @@ public class class119 implements class139 {
             }
 
             class300_9.field3732 = 0;
-            i_10 = class300_9.method5504((byte) 25);
+            i_10 = class300_9.method5504();
             if (i_10 < 1 || i_10 > 3) {
                throw new IOException("" + i_10);
             }
 
             int i_11 = 0;
             if (i_10 > 1) {
-               i_11 = class300_9.method5504((byte) 30);
+               i_11 = class300_9.method5504();
             }
 
             if (i_10 <= 2) {
-               string_5 = class300_9.method5512(1224856688);
+               string_5 = class300_9.method5512();
                if (i_11 == 1) {
-                  string_6 = class300_9.method5512(1988993429);
+                  string_6 = class300_9.method5512();
                }
             } else {
-               string_5 = class300_9.method5505(-534152321);
+               string_5 = class300_9.method5505();
                if (i_11 == 1) {
-                  string_6 = class300_9.method5505(188267802);
+                  string_6 = class300_9.method5505();
                }
             }
 
@@ -239,9 +239,9 @@ public class class119 implements class139 {
          try {
             class343 class343_26 = new class343(class167.field2038, "rw", 10000L);
             class300 class300_27 = new class300(500);
-            class300_27.method5655(3, 534610428);
-            class300_27.method5655(0, 1087397583);
-            class300_27.method5487(file_23.getPath(), 1643646908);
+            class300_27.method5655(3);
+            class300_27.method5655(0);
+            class300_27.method5487(file_23.getPath());
 
             class343_26.method6561(class300_27.field3730, 0, class300_27.field3732, 793801547);
             class343_26.method6550(-638608856);

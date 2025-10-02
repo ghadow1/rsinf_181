@@ -23,7 +23,7 @@ public final class class87 extends class135 {
       class41.field359 = i_0;
       client.field848 = i_1;
       class35.field301 = i_2;
-      class224.method4120(class217_5, -327345726);
+      class224.method4120(class217_5);
    }
 
    public static void method2054(class233 class233_0, byte b_1) {

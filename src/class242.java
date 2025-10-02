@@ -13,7 +13,7 @@ public class class242 extends class175 {
 
    public void method4401(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 88);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

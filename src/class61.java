@@ -12,9 +12,9 @@ public class class61 extends class180 {
       for (int i_4 = 0; i_4 < class89.field1262; i_4++) {
          int i_5 = class89.field1256[i_4];
          class66 class66_6 = client.field909[i_5];
-         int i_7 = class299_0.method5504((byte) 12);
+         int i_7 = class299_0.method5504();
          if ((i_7 & 0x8) != 0) {
-            i_7 += class299_0.method5504((byte) 60) << 8;
+            i_7 += class299_0.method5504() << 8;
          }
 
          class41.method736(class299_0, i_5, class66_6, i_7, 158563963);

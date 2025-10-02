@@ -55,7 +55,7 @@ public final class class22 {
       }
 
       if (b_7 != -1 && str_8 != null) {
-         class135.method3260(str_8, class73.method1756(16748608, -844505624) + class254_1.field3449, b_7, class254_1.field3410, i_2, class217_0.field2688, bool_4, -1108148104);
+         class135.method3260(str_8, class73.method1756(16748608, -844505624) + class254_1.field3449, b_7, class254_1.field3410, i_2, class217_0.field2688, bool_4);
       }
 
    }

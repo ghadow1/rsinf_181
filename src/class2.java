@@ -8,7 +8,7 @@ final class class2 implements class0 {
    }
 
    public Object vmethod42(class300 class300_1, int i_2) {
-      return Long.valueOf(class300_1.method5531((byte) 44));
+      return Long.valueOf(class300_1.method5531());
    }
 
    public void vmethod43(Object object_1, class300 class300_2, int i_3) {
@@ -188,7 +188,7 @@ final class class2 implements class0 {
                                  bool_25 = class45.field395[class217_10.field2650[i_21][i_24]];
                               }
 
-                              if (class95.method2244(class217_10.field2650[i_21][i_24], -1368328511) || bool_25) {
+                              if (class95.method2244(class217_10.field2650[i_21][i_24]) || bool_25) {
                                  bool_22 = true;
                                  if (class217_10.field2578 != null && class217_10.field2578[i_21] > client.field881) {
                                     break;

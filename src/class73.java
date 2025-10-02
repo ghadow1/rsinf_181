@@ -19,36 +19,36 @@ public class class73 {
 
    class73(class300 class300_1) {
       if (class300_1 != null && class300_1.field3730 != null) {
-         int i_2 = class300_1.method5504((byte) 25);
+         int i_2 = class300_1.method5504();
          if (i_2 >= 0 && i_2 <= field1062) {
-            if (class300_1.method5504((byte) 124) == 1) {
+            if (class300_1.method5504() == 1) {
                this.field1060 = true;
             }
 
             if (i_2 > 1) {
-               this.field1063 = class300_1.method5504((byte) 45) == 1;
+               this.field1063 = class300_1.method5504() == 1;
             }
 
             if (i_2 > 3) {
-               this.field1064 = class300_1.method5504((byte) 72);
+               this.field1064 = class300_1.method5504();
             }
 
             if (i_2 > 2) {
-               int i_3 = class300_1.method5504((byte) 77);
+               int i_3 = class300_1.method5504();
 
                for (int i_4 = 0; i_4 < i_3; i_4++) {
-                  int i_5 = class300_1.method5499((byte) -107);
-                  int i_6 = class300_1.method5499((byte) -117);
+                  int i_5 = class300_1.method5499();
+                  int i_6 = class300_1.method5499();
                   this.field1067.put(Integer.valueOf(i_5), Integer.valueOf(i_6));
                }
             }
 
             if (i_2 > 4) {
-               this.field1065 = class300_1.method5476(-289262260);
+               this.field1065 = class300_1.method5476();
             }
 
             if (i_2 > 5) {
-               this.field1066 = class300_1.method5698((short) 12452);
+               this.field1066 = class300_1.method5698();
             }
          } else {
             this.method1749(true, (short) -31921);
@@ -64,11 +64,11 @@ public class class73 {
 
    class300 method1746(int i_1) {
       class300 class300_2 = new class300(100);
-      class300_2.method5655(field1062, 1890893634);
-      class300_2.method5655(this.field1060 ? 1 : 0, 914489734);
-      class300_2.method5655(this.field1063 ? 1 : 0, 1935954450);
-      class300_2.method5655(this.field1064, 1666221111);
-      class300_2.method5655(this.field1067.size(), 248218671);
+      class300_2.method5655(field1062);
+      class300_2.method5655(this.field1060 ? 1 : 0);
+      class300_2.method5655(this.field1063 ? 1 : 0);
+      class300_2.method5655(this.field1064);
+      class300_2.method5655(this.field1067.size());
       Iterator iterator_3 = this.field1067.entrySet().iterator();
 
       while (iterator_3.hasNext()) {
@@ -77,8 +77,8 @@ public class class73 {
          class300_2.method5481(((Integer) map$entry_4.getValue()).intValue());
       }
 
-      class300_2.method5485(this.field1065 != null ? this.field1065 : "", 1759387252);
-      class300_2.method5484(this.field1066, -1376620834);
+      class300_2.method5485(this.field1065 != null ? this.field1065 : "");
+      class300_2.method5484(this.field1066);
       return class300_2;
    }
 
@@ -163,10 +163,10 @@ public class class73 {
 
          client.field872 = class76.field1098[class70.field1014 + 2];
          class187 class187_19 = class235.method4265(class183.field2294, client.field880.field1313, 1775123545);
-         class187_19.field2333.method5655(client.field907, 1923336227);
-         class187_19.field2333.method5655(class226.field3072.field3815, 1721596437);
-         class187_19.field2333.method5655(client.field872, 2004032571);
-         client.field880.method2219(class187_19, 2067459847);
+         class187_19.field2333.method5655(client.field907);
+         class187_19.field2333.method5655(class226.field3072.field3815);
+         class187_19.field2333.method5655(client.field872);
+         client.field880.method2219(class187_19);
          return 1;
       } else {
          String string_4;
@@ -177,11 +177,11 @@ public class class73 {
             i_5 = class76.field1098[class70.field1014];
             int i_6 = class76.field1098[class70.field1014 + 1];
             class187 class187_7 = class235.method4265(class183.field2205, client.field880.field1313, 1775123545);
-            class187_7.field2333.method5655(class209.method3945(string_4, 501855513) + 2, 1339942735);
-            class187_7.field2333.method5485(string_4, 887439692);
-            class187_7.field2333.method5655(i_5 - 1, 253421943);
-            class187_7.field2333.method5655(i_6, 1764522594);
-            client.field880.method2219(class187_7, 2067459847);
+            class187_7.field2333.method5655(class209.method3945(string_4, 501855513) + 2);
+            class187_7.field2333.method5485(string_4);
+            class187_7.field2333.method5655(i_5 - 1);
+            class187_7.field2333.method5655(i_6);
+            client.field880.method2219(class187_7);
             return 1;
          } else {
             int i_11;
@@ -353,26 +353,26 @@ public class class73 {
                }
 
                class187 class187_9 = class235.method4265(class183.field2258, client.field880.field1313, 1775123545);
-               class187_9.field2333.method5655(0, 261859981);
+               class187_9.field2333.method5655(0);
                int i_10 = class187_9.field2333.field3732;
-               class187_9.field2333.method5655(i_5, 1997108890);
-               class187_9.field2333.method5655(b_18, 1747012134);
-               class187_9.field2333.method5655(b_8, 1004290074);
+               class187_9.field2333.method5655(i_5);
+               class187_9.field2333.method5655(b_18);
+               class187_9.field2333.method5655(b_8);
                class132.method3063(class187_9.field2333, string_4, -730620007);
-               class187_9.field2333.method5491(class187_9.field2333.field3732 - i_10, -925478676);
-               client.field880.method2219(class187_9, 2067459847);
+               class187_9.field2333.method5491(class187_9.field2333.field3732 - i_10);
+               client.field880.method2219(class187_9);
                return 1;
             } else if (i_0 == 5009) {
                class221.field2747 -= 2;
                string_4 = class76.field1093[class221.field2747];
                String string_13 = class76.field1093[class221.field2747 + 1];
                class187 class187_12 = class235.method4265(class183.field2228, client.field880.field1313, 1775123545);
-               class187_12.field2333.method5479(0, (byte) 3);
+               class187_12.field2333.method5479(0);
                int i_14 = class187_12.field2333.field3732;
-               class187_12.field2333.method5485(string_4, 1094268885);
+               class187_12.field2333.method5485(string_4);
                class132.method3063(class187_12.field2333, string_13, 845593608);
-               class187_12.field2333.method5490(class187_12.field2333.field3732 - i_14, -1554559120);
-               client.field880.method2219(class187_12, 2067459847);
+               class187_12.field2333.method5490(class187_12.field2333.field3732 - i_14);
+               client.field880.method2219(class187_12);
                return 1;
             } else if (i_0 != 5015) {
                if (i_0 == 5016) {

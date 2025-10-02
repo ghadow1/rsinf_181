@@ -49,7 +49,7 @@ public class class197 {
 
       class217 class217_9 = class80.method1978(i_4);
       if (class217_9 != null) {
-         class224.method4120(class217_9, -1689064001);
+         class224.method4120(class217_9);
       }
 
       for (i_6 = 0; i_6 < client.field791; i_6++) {

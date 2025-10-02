@@ -284,7 +284,7 @@ public class class187 extends class180 {
                                     int i_23 = 0;
 
                                     while (true) {
-                                       int i_24 = class300_20.method5508(497319136);
+                                       int i_24 = class300_20.method5508();
                                        if (i_24 == 0) {
                                           break;
                                        }
@@ -293,7 +293,7 @@ public class class187 extends class180 {
                                        int i_25 = i_23 & 0x3f;
                                        int i_26 = i_23 >> 6 & 0x3f;
                                        int i_27 = i_23 >> 12;
-                                       int i_28 = class300_20.method5504((byte) 12);
+                                       int i_28 = class300_20.method5504();
                                        int i_29 = i_28 >> 2;
                                        int i_30 = i_28 & 0x3;
                                        if (i_7 == i_27 && i_26 >= i_16 && i_26 < i_16 + 8 && i_25 >= i_17 && i_25 < i_17 + 8) {
@@ -391,7 +391,7 @@ public class class187 extends class180 {
 
             for (i_4 = 0; i_4 < 104; i_4++) {
                for (i_5 = 0; i_5 < 104; i_5++) {
-                  class5.method60(i_4, i_5, (byte) -51);
+                  class5.method60(i_4, i_5);
                }
             }
 
@@ -411,7 +411,7 @@ public class class187 extends class180 {
             if (class27.field233.method931(285080873)) {
                class187_59 = class235.method4265(class183.field2212, client.field880.field1313, 1775123545);
                class187_59.field2333.method5481(1057001181);
-               client.field880.method2219(class187_59, 2067459847);
+               client.field880.method2219(class187_59);
             }
 
             if (!client.field798) {
@@ -434,7 +434,7 @@ public class class187 extends class180 {
             class186.method3619((byte) 70);
             class45.method787(337917094);
             class187_59 = class235.method4265(class183.field2279, client.field880.field1313, 1775123545);
-            client.field880.method2219(class187_59, 2067459847);
+            client.field880.method2219(class187_59);
             class141.method3291(1597788723);
          }
       }

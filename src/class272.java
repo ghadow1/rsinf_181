@@ -47,7 +47,7 @@ public class class272 {
          long_3 = 65535L;
       }
 
-      class300_1.method5479((int)long_3, (byte) 9);
+      class300_1.method5479((int)long_3);
       long long_5 = this.field3607;
       long_5 /= 10L;
       if (long_5 < 0L) {
@@ -56,7 +56,7 @@ public class class272 {
          long_5 = 65535L;
       }
 
-      class300_1.method5479((int)long_5, (byte) 21);
+      class300_1.method5479((int)long_5);
       long long_7 = this.field3606;
       long_7 /= 10L;
       if (long_7 < 0L) {
@@ -65,11 +65,11 @@ public class class272 {
          long_7 = 65535L;
       }
 
-      class300_1.method5479((int)long_7, (byte) -100);
-      class300_1.method5479(this.field3608, (byte) 32);
-      class300_1.method5479(this.field3609, (byte) -46);
-      class300_1.method5479(this.field3601, (byte) -17);
-      class300_1.method5479(this.field3610, (byte) -10);
+      class300_1.method5479((int)long_7);
+      class300_1.method5479(this.field3608);
+      class300_1.method5479(this.field3609);
+      class300_1.method5479(this.field3601);
+      class300_1.method5479(this.field3610);
    }
 
    public void method4998(int i_1) {
@@ -316,7 +316,7 @@ public class class272 {
                   class15.method173(class215.field2544, -1590503408);
                   class235 class235_15 = class215.field2544;
                   class251.field3314 = class235_15;
-                  class5.method62(class215.field2544, (byte) 0);
+                  class5.method62(class215.field2544);
                   class45.method794(class215.field2544, -939658474);
                   class170.field2057 = new class90();
                   class235 class235_16 = class215.field2544;

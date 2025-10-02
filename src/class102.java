@@ -41,16 +41,16 @@ public class class102 extends class180 {
 
    void method2346(byte[] bytes_1) {
       class300 class300_2 = new class300(bytes_1);
-      this.field1356 = class300_2.method5499((byte) -41);
-      this.field1357 = class300_2.method5499((byte) -18);
-      this.field1358 = class300_2.method5499((byte) -5);
-      this.field1359 = class300_2.method5499((byte) -60);
+      this.field1356 = class300_2.method5499();
+      this.field1357 = class300_2.method5499();
+      this.field1358 = class300_2.method5499();
+      this.field1359 = class300_2.method5499();
       if (this.field1359 < 0) {
          this.field1359 = ~this.field1359;
          this.field1364 = true;
       }
 
-      int i_3 = class300_2.method5499((byte) -117);
+      int i_3 = class300_2.method5499();
       this.field1366 = new byte[i_3][];
 
       for (int i_4 = 0; i_4 < i_3; i_4++) {
@@ -58,12 +58,12 @@ public class class102 extends class180 {
 
          int i_6;
          do {
-            i_6 = class300_2.method5504((byte) 39);
+            i_6 = class300_2.method5504();
             i_5 += i_6;
          } while (i_6 >= 255);
 
          byte[] bytes_7 = new byte[i_5];
-         class300_2.method5697(bytes_7, 0, i_5, (byte) 1);
+         class300_2.method5697(bytes_7, 0, i_5);
          this.field1366[i_4] = bytes_7;
       }
 

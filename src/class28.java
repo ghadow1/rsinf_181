@@ -25,8 +25,8 @@ public class class28 {
       class187_5.field2333.method5539(bool_3 ? client.field855 : 0);
       class187_5.field2333.method5634(i_1);
       class187_5.field2333.method5521(i_2);
-      class187_5.field2333.method5479(i_0, (byte) -90);
-      client.field880.method2219(class187_5, 2067459847);
+      class187_5.field2333.method5479(i_0);
+      client.field880.method2219(class187_5);
    }
 
    static final void method419(class300 class300_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
@@ -35,7 +35,7 @@ public class class28 {
          class55.field502[i_1][i_2][i_3] = 0;
 
          while (true) {
-            i_8 = class300_0.method5504((byte) 122);
+            i_8 = class300_0.method5504();
             if (i_8 == 0) {
                if (i_1 == 0) {
                   class55.field516[0][i_2][i_3] = -class1.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5, (byte) 84) * 8;
@@ -46,7 +46,7 @@ public class class28 {
             }
 
             if (i_8 == 1) {
-               int i_9 = class300_0.method5504((byte) 122);
+               int i_9 = class300_0.method5504();
                if (i_9 == 1) {
                   i_9 = 0;
                }
@@ -71,18 +71,18 @@ public class class28 {
          }
       } else {
          while (true) {
-            i_8 = class300_0.method5504((byte) 38);
+            i_8 = class300_0.method5504();
             if (i_8 == 0) {
                break;
             }
 
             if (i_8 == 1) {
-               class300_0.method5504((byte) 93);
+               class300_0.method5504();
                break;
             }
 
             if (i_8 <= 49) {
-               class300_0.method5504((byte) 108);
+               class300_0.method5504();
             }
          }
       }

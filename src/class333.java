@@ -237,7 +237,7 @@ public class class333 {
                if (bool_9) {
                   class187 class187_12 = class235.method4265(class183.field2248, client.field880.field1313, 1775123545);
                   class187_12.field2333.method5539(this.field4024.method3971(1080399232));
-                  client.field880.method2219(class187_12, 2067459847);
+                  client.field880.method2219(class187_12);
                   this.field3982 = 0L;
                }
             }

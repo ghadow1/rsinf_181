@@ -71,9 +71,9 @@ public class class314 implements Comparator {
       }
 
       class187 class187_2 = class235.method4265(class183.field2263, client.field880.field1313, 1775123545);
-      class187_2.field2333.method5655(string_0.length() + 1, 1142874378);
-      class187_2.field2333.method5485(string_0, 2137173444);
-      client.field880.method2219(class187_2, 2067459847);
+      class187_2.field2333.method5655(string_0.length() + 1);
+      class187_2.field2333.method5485(string_0);
+      client.field880.method2219(class187_2);
    }
 
 }

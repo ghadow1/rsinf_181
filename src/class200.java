@@ -31,7 +31,7 @@ public class class200 {
       if (i_5 != 240 && i_5 != 247) {
          return this.method3840(i_1, i_5);
       } else {
-         int i_3 = this.field2470.method5657((byte) 18);
+         int i_3 = this.field2470.method5657();
          if (i_5 == 247 && i_3 > 0) {
             int i_4 = this.field2470.field3730[this.field2470.field3732] & 0xff;
             if (i_4 >= 241 && i_4 <= 243 || i_4 == 246 || i_4 == 248 || i_4 >= 250 && i_4 <= 252 || i_4 == 254) {
@@ -61,16 +61,16 @@ public class class200 {
    void method3877(byte[] bytes_1) {
       this.field2470.field3730 = bytes_1;
       this.field2470.field3732 = 10;
-      int i_2 = this.field2470.method5496(-1459053594);
-      this.field2463 = this.field2470.method5496(-1459053594);
+      int i_2 = this.field2470.method5496();
+      this.field2463 = this.field2470.method5496();
       this.field2460 = 500000;
       this.field2461 = new int[i_2];
 
       int i_3;
       int i_5;
       for (i_3 = 0; i_3 < i_2; this.field2470.field3732 += i_5) {
-         int i_4 = this.field2470.method5499((byte) -117);
-         i_5 = this.field2470.method5499((byte) -112);
+         int i_4 = this.field2470.method5499();
+         i_5 = this.field2470.method5499();
          if (i_4 == 1297379947) {
             this.field2461[i_3] = this.field2470.field3732;
             ++i_3;
@@ -117,20 +117,20 @@ public class class200 {
    }
 
    void method3865(int i_1) {
-      int i_2 = this.field2470.method5657((byte) 75);
+      int i_2 = this.field2470.method5657();
       this.field2465[i_1] += i_2;
    }
 
    int method3840(int i_1, int i_2) {
       int i_4;
       if (i_2 == 255) {
-         int i_7 = this.field2470.method5504((byte) 26);
-         i_4 = this.field2470.method5657((byte) 58);
+         int i_7 = this.field2470.method5504();
+         i_4 = this.field2470.method5657();
          if (i_7 == 47) {
             this.field2470.field3732 += i_4;
             return 1;
          } else if (i_7 == 81) {
-            int i_5 = this.field2470.method5567(2031584542);
+            int i_5 = this.field2470.method5567();
             i_4 -= 3;
             int i_6 = this.field2465[i_1];
             this.field2472 += (long)i_6 * (long)(this.field2460 - i_5);
@@ -145,11 +145,11 @@ public class class200 {
          byte b_3 = field2468[i_2 - 128];
          i_4 = i_2;
          if (b_3 >= 1) {
-            i_4 = i_2 | this.field2470.method5504((byte) 18) << 8;
+            i_4 = i_2 | this.field2470.method5504() << 8;
          }
 
          if (b_3 >= 2) {
-            i_4 |= this.field2470.method5504((byte) 118) << 16;
+            i_4 |= this.field2470.method5504() << 16;
          }
 
          return i_4;

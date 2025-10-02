@@ -5,28 +5,7 @@ final class class5 implements Comparator {
    static class133 field22;
    static class325 field23;
 
-   int method51(class7 class7_1, class7 class7_2, int i_3) {
-      return class7_1.field51 < class7_2.field51 ? -1 : (class7_2.field51 == class7_1.field51 ? 0 : 1);
-   }
-
-   public int compare(Object object_1, Object object_2) {
-      return this.method51((class7) object_1, (class7) object_2, 1850890964);
-   }
-
-   public boolean equals(Object object_1) {
-      return super.equals(object_1);
-   }
-
-   static String method54(class316 class316_0, int i_1, String string_2, byte b_3) {
-      if (class316_0 == null) {
-         return string_2;
-      } else {
-         class176 class176_4 = (class176) class316_0.method5924((long)i_1);
-         return class176_4 == null ? string_2 : (String) class176_4.field2107;
-      }
-   }
-
-   public static class240 method61(int i_0, int i_1) {
+   public static class240 method61(int i_0) {
       class240 class240_2 = (class240) class240.field3205.method3320((long)i_0);
       if (class240_2 != null) {
          return class240_2;
@@ -42,7 +21,7 @@ final class class5 implements Comparator {
       }
    }
 
-   static final void method60(int i_0, int i_1, byte b_2) {
+   static final void method60(int i_0, int i_1) {
       class261 class261_3 = client.field887[class42.field372][i_0][i_1];
       if (class261_3 == null) {
          field22.method3087(class42.field372, i_0, i_1);
@@ -89,15 +68,24 @@ final class class5 implements Comparator {
       }
    }
 
-   public static void method50(String string_0, boolean bool_1, boolean bool_2, int i_3) {
+   static String method54(class316 class316_0, int i_1, String string_2, byte b_3) {
+      if (class316_0 == null) {
+         return string_2;
+      } else {
+         class176 class176_4 = (class176) class316_0.method5924((long) i_1);
+         return class176_4 == null ? string_2 : (String) class176_4.field2107;
+      }
+   }
+
+   public static void method50(String string_0, boolean bool_1, boolean bool_2) {
       class326.method6243(string_0, bool_1, "openjs", bool_2, (byte) 38);
    }
 
-   public static void method62(class233 class233_0, byte b_1) {
+   public static void method62(class233 class233_0) {
       class242.field3233 = class233_0;
    }
 
-   public static String method63(CharSequence charsequence_0, int i_1) {
+   public static String method63(CharSequence charsequence_0) {
       int i_2 = charsequence_0.length();
       StringBuilder stringbuilder_3 = new StringBuilder(i_2);
 
@@ -129,6 +117,18 @@ final class class5 implements Comparator {
       }
 
       return stringbuilder_3.toString();
+   }
+
+   public boolean equals(Object object_1) {
+      return super.equals(object_1);
+   }
+
+   int method51(class7 class7_1, class7 class7_2) {
+      return class7_1.field51 < class7_2.field51 ? -1 : (class7_2.field51 == class7_1.field51 ? 0 : 1);
+   }
+
+   public int compare(Object object_1, Object object_2) {
+      return this.method51((class7) object_1, (class7) object_2);
    }
 
 }

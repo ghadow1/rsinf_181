@@ -81,7 +81,7 @@ public class class244 extends class175 {
 
    void method4432(class300 class300_1, int i_2, int i_3, byte b_4) {
       if (i_2 == 1) {
-         this.field3256 = class300_1.method5567(1995087556);
+         this.field3256 = class300_1.method5567();
       }
 
    }
@@ -92,7 +92,7 @@ public class class244 extends class175 {
 
    public void method4418(class300 class300_1, int i_2, int i_3) {
       while (true) {
-         int i_4 = class300_1.method5504((byte) 22);
+         int i_4 = class300_1.method5504();
          if (i_4 == 0) {
             return;
          }

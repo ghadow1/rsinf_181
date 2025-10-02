@@ -20,8 +20,8 @@ public class class6 {
    }
 
    public class6(class300 class300_1, boolean bool_2) {
-      int i_3 = class300_1.method5496(-1459053594);
-      boolean bool_4 = class300_1.method5504((byte) 57) == 1;
+      int i_3 = class300_1.method5496();
+      boolean bool_4 = class300_1.method5504() == 1;
       byte b_5;
       if (bool_4) {
          b_5 = 1;
@@ -29,7 +29,7 @@ public class class6 {
          b_5 = 0;
       }
 
-      int i_6 = class300_1.method5496(-1459053594);
+      int i_6 = class300_1.method5496();
       this.field36 = new ArrayList(i_6);
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
@@ -564,10 +564,10 @@ public class class6 {
       if (class54.field485 == 1 || !class46.field413 && class54.field485 == 4) {
          if (i_5 >= i_1 && i_5 < i_1 + 16 && i_6 >= i_2 && i_6 < i_2 + 16) {
             class217_0.field2586 -= 4;
-            class224.method4120(class217_0, -1277499877);
+            class224.method4120(class217_0);
          } else if (i_5 >= i_1 && i_5 < i_1 + 16 && i_6 >= i_3 + i_2 - 16 && i_6 < i_3 + i_2) {
             class217_0.field2586 += 4;
-            class224.method4120(class217_0, -1211763175);
+            class224.method4120(class217_0);
          } else if (i_5 >= i_1 - client.field882 && i_5 < client.field882 + i_1 + 16 && i_6 >= i_2 + 16 && i_6 < i_3 + i_2 - 16) {
             i_8 = i_3 * (i_3 - 32) / i_4;
             if (i_8 < 8) {
@@ -577,7 +577,7 @@ public class class6 {
             int i_9 = i_6 - i_2 - 16 - i_8 / 2;
             int i_10 = i_3 - 32 - i_8;
             class217_0.field2586 = i_9 * (i_4 - i_3) / i_10;
-            class224.method4120(class217_0, -1463204917);
+            class224.method4120(class217_0);
             client.field719 = true;
          }
       }
@@ -586,7 +586,7 @@ public class class6 {
          i_8 = class217_0.field2579;
          if (i_5 >= i_1 - i_8 && i_6 >= i_2 && i_5 < i_1 + 16 && i_6 <= i_3 + i_2) {
             class217_0.field2586 += client.field853 * 45;
-            class224.method4120(class217_0, -1275229269);
+            class224.method4120(class217_0);
          }
       }
 

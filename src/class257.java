@@ -16,13 +16,13 @@ public class class257 extends class175 {
 
    void method4745(class300 class300_1, int i_2, int i_3, byte b_4) {
       if (i_2 == 1) {
-         this.field3512 = class300_1.method5567(1167842684);
+         this.field3512 = class300_1.method5567();
       } else if (i_2 == 2) {
-         this.field3508 = class300_1.method5504((byte) 49);
+         this.field3508 = class300_1.method5504();
       } else if (i_2 == 5) {
          this.field3506 = false;
       } else if (i_2 == 7) {
-         this.field3507 = class300_1.method5567(-920094419);
+         this.field3507 = class300_1.method5567();
       } else if (i_2 == 8) {
          ;
       }
@@ -103,7 +103,7 @@ public class class257 extends class175 {
 
    public void method4744(class300 class300_1, int i_2, byte b_3) {
       while (true) {
-         int i_4 = class300_1.method5504((byte) 111);
+         int i_4 = class300_1.method5504();
          if (i_4 == 0) {
             return;
          }

@@ -318,7 +318,7 @@ public class class18 extends class34 {
 
    static String method194(class300 class300_0, int i_1, int i_2) {
       try {
-         int i_3 = class300_0.method5508(497319136);
+         int i_3 = class300_0.method5508();
          if (i_3 > i_1) {
             i_3 = i_1;
          }
@@ -353,21 +353,21 @@ public class class18 extends class34 {
                int i_12 = i_10 + client.field657.field1005 >> 7;
                int i_13 = client.field657.field949 - i_11 >> 7;
                class187 class187_14 = class235.method4265(class183.field2262, client.field880.field1313, 1775123545);
-               class187_14.field2333.method5655(18, 1611392441);
+               class187_14.field2333.method5655(18);
                class187_14.field2333.method5530(i_13 + class1.field1);
                class187_14.field2333.method5530(i_12 + class196.field2389);
-               class187_14.field2333.method5520(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0, 526550401);
-               class187_14.field2333.method5655(i_5, 996668205);
-               class187_14.field2333.method5655(i_6, 1647404371);
-               class187_14.field2333.method5479(client.field722, (byte) -22);
-               class187_14.field2333.method5655(57, 743937357);
-               class187_14.field2333.method5655(0, 1817735339);
-               class187_14.field2333.method5655(0, 1775765686);
-               class187_14.field2333.method5655(89, 798189011);
-               class187_14.field2333.method5479(client.field657.field1005, (byte) 60);
-               class187_14.field2333.method5479(client.field657.field949, (byte) -13);
-               class187_14.field2333.method5655(63, 1989635246);
-               client.field880.method2219(class187_14, 2067459847);
+               class187_14.field2333.method5520(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
+               class187_14.field2333.method5655(i_5);
+               class187_14.field2333.method5655(i_6);
+               class187_14.field2333.method5479(client.field722);
+               class187_14.field2333.method5655(57);
+               class187_14.field2333.method5655(0);
+               class187_14.field2333.method5655(0);
+               class187_14.field2333.method5655(89);
+               class187_14.field2333.method5479(client.field657.field1005);
+               class187_14.field2333.method5479(client.field657.field949);
+               class187_14.field2333.method5655(63);
+               client.field880.method2219(class187_14);
                client.field885 = i_12;
                client.field842 = i_13;
             }

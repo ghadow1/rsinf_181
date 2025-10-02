@@ -68,28 +68,28 @@ public class class114 {
    }
 
    final void method2680(class300 class300_1, class106 class106_2) {
-      int i_3 = class300_1.method5504((byte) 20);
+      int i_3 = class300_1.method5504();
       this.field1490[0] = i_3 >> 4;
       this.field1490[1] = i_3 & 0xf;
       if (i_3 != 0) {
-         this.field1487[0] = class300_1.method5496(-1459053594);
-         this.field1487[1] = class300_1.method5496(-1459053594);
-         int i_4 = class300_1.method5504((byte) 93);
+         this.field1487[0] = class300_1.method5496();
+         this.field1487[1] = class300_1.method5496();
+         int i_4 = class300_1.method5504();
 
          int i_5;
          int i_6;
          for (i_5 = 0; i_5 < 2; i_5++) {
             for (i_6 = 0; i_6 < this.field1490[i_5]; i_6++) {
-               this.field1494[i_5][0][i_6] = class300_1.method5496(-1459053594);
-               this.field1486[i_5][0][i_6] = class300_1.method5496(-1459053594);
+               this.field1494[i_5][0][i_6] = class300_1.method5496();
+               this.field1486[i_5][0][i_6] = class300_1.method5496();
             }
          }
 
          for (i_5 = 0; i_5 < 2; i_5++) {
             for (i_6 = 0; i_6 < this.field1490[i_5]; i_6++) {
                if ((i_4 & 1 << i_5 * 4 << i_6) != 0) {
-                  this.field1494[i_5][1][i_6] = class300_1.method5496(-1459053594);
-                  this.field1486[i_5][1][i_6] = class300_1.method5496(-1459053594);
+                  this.field1494[i_5][1][i_6] = class300_1.method5496();
+                  this.field1486[i_5][1][i_6] = class300_1.method5496();
                } else {
                   this.field1494[i_5][1][i_6] = this.field1494[i_5][0][i_6];
                   this.field1486[i_5][1][i_6] = this.field1486[i_5][0][i_6];

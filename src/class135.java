@@ -17,7 +17,7 @@ public abstract class class135 extends class175 {
 
    }
 
-   static final void method3260(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5, boolean bool_6, int i_7) {
+   static final void method3260(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5, boolean bool_6) {
       if (!client.field674) {
          if (client.field791 < 500) {
             client.field796[client.field791] = string_0;

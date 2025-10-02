@@ -459,18 +459,18 @@ public class class121 extends class135 {
       class300 class300_7 = new class300(bytes_1);
       class300 class300_8 = new class300(bytes_1);
       class300_4.field3732 = bytes_1.length - 18;
-      int i_9 = class300_4.method5496(-1459053594);
-      int i_10 = class300_4.method5496(-1459053594);
-      int i_11 = class300_4.method5504((byte) 113);
-      int i_12 = class300_4.method5504((byte) 74);
-      int i_13 = class300_4.method5504((byte) 103);
-      int i_14 = class300_4.method5504((byte) 76);
-      int i_15 = class300_4.method5504((byte) 36);
-      int i_16 = class300_4.method5504((byte) 111);
-      int i_17 = class300_4.method5496(-1459053594);
-      int i_18 = class300_4.method5496(-1459053594);
-      int i_19 = class300_4.method5496(-1459053594);
-      int i_20 = class300_4.method5496(-1459053594);
+      int i_9 = class300_4.method5496();
+      int i_10 = class300_4.method5496();
+      int i_11 = class300_4.method5504();
+      int i_12 = class300_4.method5504();
+      int i_13 = class300_4.method5504();
+      int i_14 = class300_4.method5504();
+      int i_15 = class300_4.method5504();
+      int i_16 = class300_4.method5504();
+      int i_17 = class300_4.method5496();
+      int i_18 = class300_4.method5496();
+      int i_19 = class300_4.method5496();
+      int i_20 = class300_4.method5496();
       byte b_21 = 0;
       int i_45 = b_21 + i_9;
       int i_23 = i_45;
@@ -567,20 +567,20 @@ public class class121 extends class135 {
       int i_41;
       int i_42;
       for (i_38 = 0; i_38 < i_9; i_38++) {
-         i_39 = class300_4.method5504((byte) 79);
+         i_39 = class300_4.method5504();
          i_40 = 0;
          if ((i_39 & 0x1) != 0) {
-            i_40 = class300_5.method5507(-1492503696);
+            i_40 = class300_5.method5507();
          }
 
          i_41 = 0;
          if ((i_39 & 0x2) != 0) {
-            i_41 = class300_6.method5507(631668402);
+            i_41 = class300_6.method5507();
          }
 
          i_42 = 0;
          if ((i_39 & 0x4) != 0) {
-            i_42 = class300_7.method5507(-1275106213);
+            i_42 = class300_7.method5507();
          }
 
          this.field1576[i_38] = i_35 + i_40;
@@ -590,7 +590,7 @@ public class class121 extends class135 {
          i_36 = this.field1550[i_38];
          i_37 = this.field1552[i_38];
          if (i_16 == 1) {
-            this.field1569[i_38] = class300_8.method5504((byte) 19);
+            this.field1569[i_38] = class300_8.method5504();
          }
       }
 
@@ -601,9 +601,9 @@ public class class121 extends class135 {
       class300_8.field3732 = i_25;
 
       for (i_38 = 0; i_38 < i_10; i_38++) {
-         this.field1561[i_38] = (short)class300_4.method5496(-1459053594);
+         this.field1561[i_38] = (short)class300_4.method5496();
          if (i_12 == 1) {
-            i_39 = class300_5.method5504((byte) 35);
+            i_39 = class300_5.method5504();
             if ((i_39 & 0x1) == 1) {
                this.field1557[i_38] = 1;
                bool_2 = true;
@@ -633,7 +633,7 @@ public class class121 extends class135 {
          }
 
          if (i_15 == 1) {
-            this.field1553[i_38] = class300_8.method5504((byte) 94);
+            this.field1553[i_38] = class300_8.method5504();
          }
       }
 
@@ -647,11 +647,11 @@ public class class121 extends class135 {
       int i_43;
       int i_44;
       for (i_42 = 0; i_42 < i_10; i_42++) {
-         i_43 = class300_5.method5504((byte) 62);
+         i_43 = class300_5.method5504();
          if (i_43 == 1) {
-            i_38 = class300_4.method5507(-483568757) + i_41;
-            i_39 = class300_4.method5507(358017274) + i_38;
-            i_40 = class300_4.method5507(1748322867) + i_39;
+            i_38 = class300_4.method5507() + i_41;
+            i_39 = class300_4.method5507() + i_38;
+            i_40 = class300_4.method5507() + i_39;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_39;
@@ -660,7 +660,7 @@ public class class121 extends class135 {
 
          if (i_43 == 2) {
             i_39 = i_40;
-            i_40 = class300_4.method5507(-1810057238) + i_41;
+            i_40 = class300_4.method5507() + i_41;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_39;
@@ -669,7 +669,7 @@ public class class121 extends class135 {
 
          if (i_43 == 3) {
             i_38 = i_40;
-            i_40 = class300_4.method5507(1103662623) + i_41;
+            i_40 = class300_4.method5507() + i_41;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_39;
@@ -680,7 +680,7 @@ public class class121 extends class135 {
             i_44 = i_38;
             i_38 = i_39;
             i_39 = i_44;
-            i_40 = class300_4.method5507(-1339737702) + i_41;
+            i_40 = class300_4.method5507() + i_41;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_44;
@@ -692,9 +692,9 @@ public class class121 extends class135 {
 
       for (i_42 = 0; i_42 < i_11; i_42++) {
          this.field1565[i_42] = 0;
-         this.field1566[i_42] = (short)class300_4.method5496(-1459053594);
-         this.field1567[i_42] = (short)class300_4.method5496(-1459053594);
-         this.field1568[i_42] = (short)class300_4.method5496(-1459053594);
+         this.field1566[i_42] = (short)class300_4.method5496();
+         this.field1567[i_42] = (short)class300_4.method5496();
+         this.field1568[i_42] = (short)class300_4.method5496();
       }
 
       if (this.field1560 != null) {
@@ -928,20 +928,20 @@ public class class121 extends class135 {
       class300 class300_7 = new class300(bytes_1);
       class300 class300_8 = new class300(bytes_1);
       class300_2.field3732 = bytes_1.length - 23;
-      int i_9 = class300_2.method5496(-1459053594);
-      int i_10 = class300_2.method5496(-1459053594);
-      int i_11 = class300_2.method5504((byte) 10);
-      int i_12 = class300_2.method5504((byte) 97);
-      int i_13 = class300_2.method5504((byte) 126);
-      int i_14 = class300_2.method5504((byte) 109);
-      int i_15 = class300_2.method5504((byte) 66);
-      int i_16 = class300_2.method5504((byte) 86);
-      int i_17 = class300_2.method5504((byte) 38);
-      int i_18 = class300_2.method5496(-1459053594);
-      int i_19 = class300_2.method5496(-1459053594);
-      int i_20 = class300_2.method5496(-1459053594);
-      int i_21 = class300_2.method5496(-1459053594);
-      int i_22 = class300_2.method5496(-1459053594);
+      int i_9 = class300_2.method5496();
+      int i_10 = class300_2.method5496();
+      int i_11 = class300_2.method5504();
+      int i_12 = class300_2.method5504();
+      int i_13 = class300_2.method5504();
+      int i_14 = class300_2.method5504();
+      int i_15 = class300_2.method5504();
+      int i_16 = class300_2.method5504();
+      int i_17 = class300_2.method5504();
+      int i_18 = class300_2.method5496();
+      int i_19 = class300_2.method5496();
+      int i_20 = class300_2.method5496();
+      int i_21 = class300_2.method5496();
+      int i_22 = class300_2.method5496();
       int i_23 = 0;
       int i_24 = 0;
       int i_25 = 0;
@@ -1084,20 +1084,20 @@ public class class121 extends class135 {
       int i_54;
       int i_55;
       for (i_51 = 0; i_51 < i_9; i_51++) {
-         i_52 = class300_2.method5504((byte) 88);
+         i_52 = class300_2.method5504();
          i_53 = 0;
          if ((i_52 & 0x1) != 0) {
-            i_53 = class300_3.method5507(-1498684837);
+            i_53 = class300_3.method5507();
          }
 
          i_54 = 0;
          if ((i_52 & 0x2) != 0) {
-            i_54 = class300_4.method5507(1346891896);
+            i_54 = class300_4.method5507();
          }
 
          i_55 = 0;
          if ((i_52 & 0x4) != 0) {
-            i_55 = class300_5.method5507(-458359277);
+            i_55 = class300_5.method5507();
          }
 
          this.field1576[i_51] = i_48 + i_53;
@@ -1107,7 +1107,7 @@ public class class121 extends class135 {
          i_49 = this.field1550[i_51];
          i_50 = this.field1552[i_51];
          if (i_17 == 1) {
-            this.field1569[i_51] = class300_6.method5504((byte) 104);
+            this.field1569[i_51] = class300_6.method5504();
          }
       }
 
@@ -1120,7 +1120,7 @@ public class class121 extends class135 {
       class300_8.field3732 = i_36;
 
       for (i_51 = 0; i_51 < i_10; i_51++) {
-         this.field1561[i_51] = (short)class300_2.method5496(-1459053594);
+         this.field1561[i_51] = (short)class300_2.method5496();
          if (i_12 == 1) {
             this.field1557[i_51] = class300_3.method5495();
          }
@@ -1134,15 +1134,15 @@ public class class121 extends class135 {
          }
 
          if (i_15 == 1) {
-            this.field1553[i_51] = class300_6.method5504((byte) 99);
+            this.field1553[i_51] = class300_6.method5504();
          }
 
          if (i_16 == 1) {
-            this.field1562[i_51] = (short)(class300_7.method5496(-1459053594) - 1);
+            this.field1562[i_51] = (short)(class300_7.method5496() - 1);
          }
 
          if (this.field1560 != null && this.field1562[i_51] != -1) {
-            this.field1560[i_51] = (byte)(class300_8.method5504((byte) 34) - 1);
+            this.field1560[i_51] = (byte)(class300_8.method5504() - 1);
          }
       }
 
@@ -1155,11 +1155,11 @@ public class class121 extends class135 {
 
       int i_56;
       for (i_55 = 0; i_55 < i_10; i_55++) {
-         i_56 = class300_3.method5504((byte) 93);
+         i_56 = class300_3.method5504();
          if (i_56 == 1) {
-            i_51 = class300_2.method5507(411260576) + i_54;
-            i_52 = class300_2.method5507(1900298618) + i_51;
-            i_53 = class300_2.method5507(-116966930) + i_52;
+            i_51 = class300_2.method5507() + i_54;
+            i_52 = class300_2.method5507() + i_51;
+            i_53 = class300_2.method5507() + i_52;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_52;
@@ -1168,7 +1168,7 @@ public class class121 extends class135 {
 
          if (i_56 == 2) {
             i_52 = i_53;
-            i_53 = class300_2.method5507(-1565546536) + i_54;
+            i_53 = class300_2.method5507() + i_54;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_52;
@@ -1177,7 +1177,7 @@ public class class121 extends class135 {
 
          if (i_56 == 3) {
             i_51 = i_53;
-            i_53 = class300_2.method5507(1751217754) + i_54;
+            i_53 = class300_2.method5507() + i_54;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_52;
@@ -1188,7 +1188,7 @@ public class class121 extends class135 {
             int i_57 = i_51;
             i_51 = i_52;
             i_52 = i_57;
-            i_53 = class300_2.method5507(-188928163) + i_54;
+            i_53 = class300_2.method5507() + i_54;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_57;
@@ -1206,20 +1206,20 @@ public class class121 extends class135 {
       for (i_55 = 0; i_55 < i_11; i_55++) {
          i_56 = this.field1565[i_55] & 0xff;
          if (i_56 == 0) {
-            this.field1566[i_55] = (short)class300_2.method5496(-1459053594);
-            this.field1567[i_55] = (short)class300_2.method5496(-1459053594);
-            this.field1568[i_55] = (short)class300_2.method5496(-1459053594);
+            this.field1566[i_55] = (short)class300_2.method5496();
+            this.field1567[i_55] = (short)class300_2.method5496();
+            this.field1568[i_55] = (short)class300_2.method5496();
          }
       }
 
       class300_2.field3732 = i_26;
-      i_55 = class300_2.method5504((byte) 105);
+      i_55 = class300_2.method5504();
       if (i_55 != 0) {
          new class134();
-         class300_2.method5496(-1459053594);
-         class300_2.method5496(-1459053594);
-         class300_2.method5496(-1459053594);
-         class300_2.method5499((byte) -40);
+         class300_2.method5496();
+         class300_2.method5496();
+         class300_2.method5496();
+         class300_2.method5499();
       }
 
    }

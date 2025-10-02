@@ -30,12 +30,12 @@ public final class class55 {
       if (!client.field798) {
          i_3 = class299_1.readShort();
          i_4 = class299_1.method5518();
-         int i_5 = class299_1.method5496(-1459053594);
+         int i_5 = class299_1.method5496();
          class29.field255 = new int[i_5][4];
 
          for (i_6 = 0; i_6 < i_5; i_6++) {
             for (i_7 = 0; i_7 < 4; i_7++) {
-               class29.field255[i_6][i_7] = class299_1.method5499((byte) -17);
+               class29.field255[i_6][i_7] = class299_1.method5499();
             }
          }
 
@@ -71,8 +71,8 @@ public final class class55 {
       } else {
          i_3 = class299_1.method5518();
          i_4 = class299_1.readShort();
-         boolean bool_16 = class299_1.method5504((byte) 73) == 1;
-         i_6 = class299_1.method5496(-1459053594);
+         boolean bool_16 = class299_1.method5504() == 1;
+         i_6 = class299_1.method5496();
          class299_1.method5438(1273494550);
 
          int i_10;
@@ -94,7 +94,7 @@ public final class class55 {
 
          for (i_7 = 0; i_7 < i_6; i_7++) {
             for (i_8 = 0; i_8 < 4; i_8++) {
-               class29.field255[i_7][i_8] = class299_1.method5499((byte) -84);
+               class29.field255[i_7][i_8] = class299_1.method5499();
             }
          }
 

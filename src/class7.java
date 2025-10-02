@@ -10,12 +10,12 @@ public class class7 {
    public final class9 field53;
 
    class7(class300 class300_1, byte b_2, int i_3) {
-      this.field44 = class300_1.method5503(-231155257);
-      this.field45 = class300_1.method5503(-231155257);
-      this.field51 = class300_1.method5496(-1459053594);
-      this.field42 = class300_1.method5531((byte) 97);
-      int i_4 = class300_1.method5499((byte) -121);
-      int i_5 = class300_1.method5499((byte) -24);
+      this.field44 = class300_1.method5503();
+      this.field45 = class300_1.method5503();
+      this.field51 = class300_1.method5496();
+      this.field42 = class300_1.method5531();
+      int i_4 = class300_1.method5499();
+      int i_5 = class300_1.method5499();
       this.field53 = new class9();
       this.field53.method115(2, (byte) 126);
       this.field53.method100(b_2, 874487771);
@@ -53,7 +53,7 @@ public class class7 {
 
    static final void method73(int i_0) {
       class187 class187_1 = class235.method4265(class183.field2223, client.field880.field1313, 1775123545);
-      client.field880.method2219(class187_1, 2067459847);
+      client.field880.method2219(class187_1);
 
       for (class61 class61_2 = (class61) client.field816.method5950(); class61_2 != null; class61_2 = (class61) client.field816.method5953()) {
          if (class61_2.field569 == 0 || class61_2.field569 == 3) {
@@ -62,7 +62,7 @@ public class class7 {
       }
 
       if (client.field850 != null) {
-         class224.method4120(client.field850, -64988010);
+         class224.method4120(client.field850);
          client.field850 = null;
       }
 

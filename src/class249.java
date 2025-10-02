@@ -28,11 +28,11 @@ public class class249 extends class175 {
          char var_4 = (char)i_6;
          this.field3306 = var_4;
       } else if (i_2 == 2) {
-         this.field3302 = class300_1.method5499((byte) -36);
+         this.field3302 = class300_1.method5499();
       } else if (i_2 == 4) {
          this.field3305 = false;
       } else if (i_2 == 5) {
-         this.field3303 = class300_1.method5503(-231155257);
+         this.field3303 = class300_1.method5503();
       }
 
    }
@@ -46,7 +46,7 @@ public class class249 extends class175 {
 
    void method4497(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 92);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

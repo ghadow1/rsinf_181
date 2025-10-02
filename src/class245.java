@@ -14,39 +14,39 @@ public class class245 extends class175 {
 
    void method4436(class300 class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3265 = class300_1.method5504((byte) 55);
+         this.field3265 = class300_1.method5504();
       } else {
          int i_4;
          int i_5;
          if (i_2 == 2) {
-            i_4 = class300_1.method5504((byte) 63);
+            i_4 = class300_1.method5504();
             this.field3266 = new int[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3266[i_5] = class300_1.method5496(-1459053594);
+               this.field3266[i_5] = class300_1.method5496();
             }
          } else if (i_2 == 3) {
             this.field3272 = true;
          } else if (i_2 == 40) {
-            i_4 = class300_1.method5504((byte) 85);
+            i_4 = class300_1.method5504();
             this.field3267 = new short[i_4];
             this.field3264 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3267[i_5] = (short)class300_1.method5496(-1459053594);
-               this.field3264[i_5] = (short)class300_1.method5496(-1459053594);
+               this.field3267[i_5] = (short)class300_1.method5496();
+               this.field3264[i_5] = (short)class300_1.method5496();
             }
          } else if (i_2 == 41) {
-            i_4 = class300_1.method5504((byte) 51);
+            i_4 = class300_1.method5504();
             this.field3269 = new short[i_4];
             this.field3270 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3269[i_5] = (short)class300_1.method5496(-1459053594);
-               this.field3270[i_5] = (short)class300_1.method5496(-1459053594);
+               this.field3269[i_5] = (short)class300_1.method5496();
+               this.field3270[i_5] = (short)class300_1.method5496();
             }
          } else if (i_2 >= 60 && i_2 < 70) {
-            this.field3262[i_2 - 60] = class300_1.method5496(-1459053594);
+            this.field3262[i_2 - 60] = class300_1.method5496();
          }
       }
 
@@ -109,7 +109,7 @@ public class class245 extends class175 {
 
    void method4449(class300 class300_1, int i_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 12);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

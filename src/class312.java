@@ -17,27 +17,27 @@ public class class312 {
       class300 class300_4 = new class300(bytes_3);
 
       while (true) {
-         int i_5 = class300_4.method5504((byte) 114);
+         int i_5 = class300_4.method5504();
          if (i_5 == 0) {
             return;
          }
 
          switch(i_5) {
          case 1:
-            class300_4.method5567(-1182668344);
+            class300_4.method5567();
             break;
          case 2:
-            this.field3826 = class300_4.method5511((byte) 4);
-            this.field3823 = class300_4.method5511((byte) 18);
-            this.field3824 = class300_4.method5511((byte) 77);
-            this.field3825 = class300_4.method5511((byte) -92);
-            this.field3830 = class300_4.method5511((byte) 30);
-            this.field3827 = class300_4.method5511((byte) 41);
-            this.field3828 = class300_4.method5511((byte) 32);
-            this.field3829 = class300_4.method5511((byte) -72);
-            this.field3832 = class300_4.method5511((byte) 12);
-            this.field3831 = class300_4.method5511((byte) 14);
-            this.field3822 = class300_4.method5511((byte) 16);
+            this.field3826 = class300_4.method5511();
+            this.field3823 = class300_4.method5511();
+            this.field3824 = class300_4.method5511();
+            this.field3825 = class300_4.method5511();
+            this.field3830 = class300_4.method5511();
+            this.field3827 = class300_4.method5511();
+            this.field3828 = class300_4.method5511();
+            this.field3829 = class300_4.method5511();
+            this.field3832 = class300_4.method5511();
+            this.field3831 = class300_4.method5511();
+            this.field3822 = class300_4.method5511();
          }
       }
    }

@@ -114,8 +114,8 @@ public class class93 extends class135 {
       if (class236.field3176 != null) {
          try {
             class300_3 = new class300(4);
-            class300_3.method5655(bool_1 ? 2 : 3, 1442673518);
-            class300_3.method5480(0, 1389806729);
+            class300_3.method5655(bool_1 ? 2 : 3);
+            class300_3.method5480(0);
             class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
          } catch (IOException ioexception_8) {
             try {
@@ -143,9 +143,9 @@ public class class93 extends class135 {
                   if (class236.field3181 != 0) {
                      try {
                         class300_3 = new class300(4);
-                        class300_3.method5655(4, 1939982253);
-                        class300_3.method5655(class236.field3181, 387942803);
-                        class300_3.method5479(0, (byte) 16);
+                        class300_3.method5655(4);
+                        class300_3.method5655(class236.field3181);
+                        class300_3.method5479(0);
                         class236.field3176.vmethod5829(class300_3.field3730, 0, 4, -1696227994);
                      } catch (IOException ioexception_6) {
                         try {

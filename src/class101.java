@@ -6,7 +6,7 @@ public class class101 {
 
    class101(class300 class300_1) {
       for (int i_2 = 0; i_2 < 10; i_2++) {
-         int i_3 = class300_1.method5504((byte) 83);
+         int i_3 = class300_1.method5504();
          if (i_3 != 0) {
             --class300_1.field3732;
             this.field1351[i_2] = new class117();
@@ -14,8 +14,8 @@ public class class101 {
          }
       }
 
-      this.field1353 = class300_1.method5496(-1459053594);
-      this.field1354 = class300_1.method5496(-1459053594);
+      this.field1353 = class300_1.method5496();
+      this.field1354 = class300_1.method5496();
    }
 
    final byte[] method2332() {

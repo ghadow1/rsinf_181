@@ -15,8 +15,8 @@ public class class56 {
       } else {
          client.field797.method4993(-602398430);
          class96.method2265(40, (short) -28103);
-         class269.field3563 = client.field880.method2223((short) -15491);
-         client.field880.method2224((byte) 94);
+         class269.field3563 = client.field880.method2223();
+         client.field880.method2224();
       }
    }
 
@@ -112,7 +112,7 @@ public class class56 {
       for (i_3 = 0; i_3 < client.field697; i_3++) {
          i_15 = client.field859[i_3];
          class79_5 = client.field694[i_15];
-         i_6 = class299_1.method5504((byte) 42);
+         i_6 = class299_1.method5504();
          if ((i_6 & 0x1) != 0) {
             class79_5.field975 = class299_1.method5532();
             if (class79_5.field975 == 65535) {
@@ -131,7 +131,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x20) != 0) {
-            i_7 = class299_1.method5496(-1459053594);
+            i_7 = class299_1.method5496();
             if (i_7 == 65535) {
                i_7 = -1;
             }
@@ -160,7 +160,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = class53.method1005(class299_1.method5496(-1459053594), (byte) -91);
+            class79_5.field1134 = class53.method1005(class299_1.method5496(), (byte) -91);
             class79_5.field952 = class79_5.field1134.field3469;
             class79_5.field948 = class79_5.field1134.field3492;
             class79_5.field957 = class79_5.field1134.field3475;
@@ -182,19 +182,19 @@ public class class56 {
                   i_10 = -1;
                   i_11 = -1;
                   i_12 = -1;
-                  i_9 = class299_1.method5508(497319136);
+                  i_9 = class299_1.method5508();
                   if (i_9 == 32767) {
-                     i_9 = class299_1.method5508(497319136);
-                     i_11 = class299_1.method5508(497319136);
-                     i_10 = class299_1.method5508(497319136);
-                     i_12 = class299_1.method5508(497319136);
+                     i_9 = class299_1.method5508();
+                     i_11 = class299_1.method5508();
+                     i_10 = class299_1.method5508();
+                     i_12 = class299_1.method5508();
                   } else if (i_9 != 32766) {
-                     i_11 = class299_1.method5508(497319136);
+                     i_11 = class299_1.method5508();
                   } else {
                      i_9 = -1;
                   }
 
-                  i_13 = class299_1.method5508(497319136);
+                  i_13 = class299_1.method5508();
                   class79_5.method1657(i_9, i_11, i_10, i_12, client.field881, i_13, 295125263);
                }
             }
@@ -202,11 +202,11 @@ public class class56 {
             i_8 = class299_1.readByte();
             if (i_8 > 0) {
                for (i_9 = 0; i_9 < i_8; i_9++) {
-                  i_10 = class299_1.method5508(497319136);
-                  i_11 = class299_1.method5508(497319136);
+                  i_10 = class299_1.method5508();
+                  i_11 = class299_1.method5508();
                   if (i_11 != 32767) {
-                     i_12 = class299_1.method5508(497319136);
-                     i_13 = class299_1.method5504((byte) 74);
+                     i_12 = class299_1.method5508();
+                     i_13 = class299_1.method5504();
                      int i_14 = i_11 > 0 ? class299_1.method5525() : i_13;
                      class79_5.method1655(i_10, client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
@@ -233,7 +233,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x2) != 0) {
-            class79_5.field977 = class299_1.method5503(-231155257);
+            class79_5.field977 = class299_1.method5503();
             class79_5.field1002 = 100;
          }
       }
@@ -286,15 +286,15 @@ public class class56 {
 
    static void method1086(int i_0, int i_1, int i_2) {
       class187 class187_3 = class235.method4265(class183.field2273, client.field880.field1313, 1775123545);
-      class187_3.field2333.method5540(i_0, 703583712);
+      class187_3.field2333.method5540(i_0);
       class187_3.field2333.method5530(i_1);
-      client.field880.method2219(class187_3, 2067459847);
+      client.field880.method2219(class187_3);
    }
 
    static final void method1089(byte b_0) {
       class187 class187_1 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
-      class187_1.field2333.method5655(0, 246102595);
-      client.field880.method2219(class187_1, 2067459847);
+      class187_1.field2333.method5655(0);
+      client.field880.method2219(class187_1);
    }
 
 }

@@ -22,8 +22,8 @@ public class class235 extends class233 {
       int i_8 = this.field3154;
       if (class322.field3882 != null) {
          class322.field3882.field3732 = i_8 * 8 + 5;
-         int i_9 = class322.field3882.method5499((byte) -117);
-         int i_10 = class322.field3882.method5499((byte) -101);
+         int i_9 = class322.field3882.method5499();
+         int i_10 = class322.field3882.method5499();
          this.method4262(i_9, i_10, 238802641);
       } else {
          class128.method2961((class235) null, 255, 255, 0, (byte) 0, true, -913325342);
@@ -127,14 +127,14 @@ public class class235 extends class233 {
          }
 
          class300 class300_12 = new class300(class70.method1678(bytes_3, -303237660));
-         int i_13 = class300_12.method5504((byte) 106);
+         int i_13 = class300_12.method5504();
          if (i_13 != 5 && i_13 != 6) {
             throw new RuntimeException(i_13 + "," + this.field3154 + "," + i_2);
          }
 
          int i_9 = 0;
          if (i_13 >= 6) {
-            i_9 = class300_12.method5499((byte) -8);
+            i_9 = class300_12.method5499();
          }
 
          if (i_9 != this.field3161) {

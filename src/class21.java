@@ -43,18 +43,18 @@ public abstract class class21 {
       int i_6 = ((i_4 & 0x18) >> 3) + 1;
       boolean bool_7 = (i_4 & 0x2) != 0;
       boolean bool_8 = (i_4 & 0x4) != 0;
-      this.field163[0][i_1][i_2] = (short)class300_3.method5504((byte) 66);
+      this.field163[0][i_1][i_2] = (short)class300_3.method5504();
       int i_9;
       int i_10;
       int i_12;
       if (bool_7) {
-         i_9 = class300_3.method5504((byte) 74);
+         i_9 = class300_3.method5504();
 
          for (i_10 = 0; i_10 < i_9; i_10++) {
-            int i_11 = class300_3.method5504((byte) 43);
+            int i_11 = class300_3.method5504();
             if (i_11 != 0) {
                this.field170[i_10][i_1][i_2] = (short)i_11;
-               i_12 = class300_3.method5504((byte) 100);
+               i_12 = class300_3.method5504();
                this.field165[i_10][i_1][i_2] = (byte)(i_12 >> 2);
                this.field166[i_10][i_1][i_2] = (byte)(i_12 & 0x3);
             }
@@ -63,13 +63,13 @@ public abstract class class21 {
 
       if (bool_8) {
          for (i_9 = 0; i_9 < i_6; i_9++) {
-            i_10 = class300_3.method5504((byte) 105);
+            i_10 = class300_3.method5504();
             if (i_10 != 0) {
                class25[] arr_15 = this.field164[i_9][i_1][i_2] = new class25[i_10];
 
                for (i_12 = 0; i_12 < i_10; i_12++) {
-                  int i_13 = class300_3.method5511((byte) -34);
-                  int i_14 = class300_3.method5504((byte) 20);
+                  int i_13 = class300_3.method5511();
+                  int i_14 = class300_3.method5504();
                   arr_15[i_12] = new class25(i_13, i_14 >> 2, i_14 & 0x3);
                }
             }
@@ -81,10 +81,10 @@ public abstract class class21 {
    void method258(int i_1, int i_2, class300 class300_3, int i_4, byte b_5) {
       boolean bool_6 = (i_4 & 0x2) != 0;
       if (bool_6) {
-         this.field170[0][i_1][i_2] = (short)class300_3.method5504((byte) 56);
+         this.field170[0][i_1][i_2] = (short)class300_3.method5504();
       }
 
-      this.field163[0][i_1][i_2] = (short)class300_3.method5504((byte) 9);
+      this.field163[0][i_1][i_2] = (short)class300_3.method5504();
    }
 
    void method245(class233 class233_1, int i_2) {
@@ -110,7 +110,7 @@ public abstract class class21 {
    abstract void vmethod679(class300 var1, int var2);
 
    void method247(int i_1, int i_2, class300 class300_3, int i_4) {
-      int i_5 = class300_3.method5504((byte) 11);
+      int i_5 = class300_3.method5504();
       if (i_5 != 0) {
          if ((i_5 & 0x1) != 0) {
             this.method258(i_1, i_2, class300_3, i_5, (byte) 0);

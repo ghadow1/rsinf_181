@@ -10,15 +10,7 @@ final class class1 implements class0 {
       class300_2.method5481(integer_1.intValue());
    }
 
-   public Object vmethod42(class300 class300_1, int i_2) {
-      return Integer.valueOf(class300_1.method5499((byte) -5));
-   }
-
-   public void vmethod43(Object object_1, class300 class300_2, int i_3) {
-      this.method6((Integer) object_1, class300_2, 982248566);
-   }
-
-   static final void method10(class185 class185_0, int i_1) {
+   static final void method10(class185 class185_0) {
       class299 class299_2 = client.field880.field1314;
       int i_3;
       int i_4;
@@ -60,7 +52,7 @@ final class class1 implements class0 {
                      client.field887[class42.field372][i_4][i_5] = null;
                   }
 
-                  class5.method60(i_4, i_5, (byte) -7);
+                  class5.method60(i_4, i_5);
                }
             }
 
@@ -73,11 +65,11 @@ final class class1 implements class0 {
             int i_40;
             if (class185.field2316 == class185_0) {
                i_3 = class299_2.method5525() * 4;
-               i_4 = class299_2.method5496(-1459053594);
+               i_4 = class299_2.method5496();
                i_5 = class299_2.method5518();
                i_6 = class299_2.method5525() * 4;
                i_7 = class299_2.method5535();
-               i_8 = class299_2.method5504((byte) 23);
+               i_8 = class299_2.method5504();
                i_9 = class299_2.method5525();
                i_10 = class299_2.method5532();
                i_11 = class299_2.readByte();
@@ -114,7 +106,7 @@ final class class1 implements class0 {
                         }
                      }
 
-                     class5.method60(i_7, i_8, (byte) -92);
+                     class5.method60(i_7, i_8);
                   }
                }
 
@@ -133,12 +125,12 @@ final class class1 implements class0 {
                   }
 
                   client.field887[class42.field372][i_6][i_7].method4917(class87_33);
-                  class5.method60(i_6, i_7, (byte) -99);
+                  class5.method60(i_6, i_7);
                }
 
             } else {
                if (class185.field2319 == class185_0) {
-                  i_3 = class299_2.method5504((byte) 14);
+                  i_3 = class299_2.method5504();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
                   i_6 = class299_2.method5525();
@@ -164,7 +156,7 @@ final class class1 implements class0 {
                   i_4 = class299_2.readShort();
                   byte b_39 = class299_2.method5527();
                   i_6 = class299_2.method5518();
-                  i_7 = class299_2.method5496(-1459053594);
+                  i_7 = class299_2.method5496();
                   i_8 = class299_2.readByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
@@ -246,10 +238,10 @@ final class class1 implements class0 {
                   }
 
                } else if (class185.field2317 == class185_0) {
-                  i_3 = class299_2.method5496(-1459053594);
+                  i_3 = class299_2.method5496();
                   i_4 = class299_2.readByte();
                   i_5 = class299_2.method5518();
-                  i_6 = class299_2.method5504((byte) 43);
+                  i_6 = class299_2.method5504();
                   i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                   i_8 = (i_6 & 0x7) + class94.field1306;
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
@@ -267,7 +259,7 @@ final class class1 implements class0 {
                   i_7 = class299_2.method5524();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;
-                  i_10 = class299_2.method5496(-1459053594);
+                  i_10 = class299_2.method5496();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
                         class136 class136_37 = class5.field22.method3088(class42.field372, i_8, i_9);
@@ -324,6 +316,14 @@ final class class1 implements class0 {
             }
          }
       }
+   }
+
+   public void vmethod43(Object object_1, class300 class300_2, int i_3) {
+      this.method6((Integer) object_1, class300_2, 982248566);
+   }
+
+   public Object vmethod42(class300 class300_1, int i_2) {
+      return Integer.valueOf(class300_1.method5499());
    }
 
    static boolean method5(int i_0, int i_1) {

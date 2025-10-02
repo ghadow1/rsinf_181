@@ -2,26 +2,26 @@ import java.io.IOException;
 
 public class class95 {
 
-   class182 field1321;
-   class182 field1317;
+   ServerPacketProt field1321;
+   ServerPacketProt field1317;
    public class328 field1313;
-   class182 field1309;
+   ServerPacketProt field1309;
    class260 field1316 = new class260();
    int field1311 = 0;
    class300 field1312 = new class300(5000);
    class299 field1314 = new class299(40000);
-   class182 field1310 = null;
+   ServerPacketProt field1310 = null;
    int field1315 = 0;
    boolean field1322 = true;
    int field1318 = 0;
    int field1319 = 0;
    class305 field1320;
 
-   class305 method2223(short s_1) {
+   class305 method2223() {
       return this.field1320;
    }
 
-   void method2233(short s_1) {
+   void method2233() {
       if (this.field1320 != null) {
          this.field1320.vmethod5830(-768440649);
          this.field1320 = null;
@@ -29,27 +29,27 @@ public class class95 {
 
    }
 
-   void method2224(byte b_1) {
+   void method2224() {
       this.field1320 = null;
    }
 
-   final void method2218(int i_1) {
+   final void method2218() {
       this.field1316.method4803();
       this.field1311 = 0;
    }
 
-   public final void method2219(class187 class187_1, int i_2) {
+   public final void method2219(class187 class187_1) {
       this.field1316.method4819(class187_1);
       class187_1.field2331 = class187_1.field2333.field3732;
       class187_1.field2333.field3732 = 0;
       this.field1311 += class187_1.field2331;
    }
 
-   void method2221(class305 class305_1, int i_2) {
+   void method2221(class305 class305_1) {
       this.field1320 = class305_1;
    }
 
-   final void method2234(int i_1) throws IOException {
+   final void method2234() throws IOException {
       if (this.field1320 != null && this.field1311 > 0) {
          this.field1312.field3732 = 0;
 
@@ -61,17 +61,17 @@ public class class95 {
                break;
             }
 
-            this.field1312.method5488(class187_2.field2333.field3730, 0, class187_2.field2331, 910134597);
+            this.field1312.method5488(class187_2.field2333.field3730, 0, class187_2.field2331);
             this.field1311 -= class187_2.field2331;
             class187_2.method3607();
-            class187_2.field2333.method5477(581390013);
+            class187_2.field2333.method5477();
             class187_2.method3620((byte) -108);
          }
       }
 
    }
 
-   static final void method2245(byte b_0) {
+   static final void method2245() {
       for (class86 class86_1 = (class86) client.field670.method4892(); class86_1 != null; class86_1 = (class86) client.field670.method4894()) {
          if (class86_1.field1215 == class42.field372 && client.field881 <= class86_1.field1240) {
             if (client.field881 >= class86_1.field1217) {
@@ -106,7 +106,7 @@ public class class95 {
 
    }
 
-   static boolean method2244(int i_0, int i_1) {
+   static boolean method2244(int i_0) {
       for (int i_2 = 0; i_2 < client.field754; i_2++) {
          if (client.field921[i_2] == i_0) {
             return true;

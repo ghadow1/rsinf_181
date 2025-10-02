@@ -74,7 +74,7 @@ public class class253 extends class175 {
       int i_4;
       int i_5;
       if (i_2 == 1) {
-         i_4 = class300_1.method5504((byte) 46);
+         i_4 = class300_1.method5504();
          if (i_4 > 0) {
             if (this.field3362 != null && !field3352) {
                class300_1.field3732 += 3 * i_4;
@@ -83,15 +83,15 @@ public class class253 extends class175 {
                this.field3362 = new int[i_4];
 
                for (i_5 = 0; i_5 < i_4; i_5++) {
-                  this.field3362[i_5] = class300_1.method5496(-1459053594);
-                  this.field3359[i_5] = class300_1.method5504((byte) 74);
+                  this.field3362[i_5] = class300_1.method5496();
+                  this.field3359[i_5] = class300_1.method5504();
                }
             }
          }
       } else if (i_2 == 2) {
-         this.field3360 = class300_1.method5503(-231155257);
+         this.field3360 = class300_1.method5503();
       } else if (i_2 == 5) {
-         i_4 = class300_1.method5504((byte) 103);
+         i_4 = class300_1.method5504();
          if (i_4 > 0) {
             if (this.field3362 != null && !field3352) {
                class300_1.field3732 += i_4 * 2;
@@ -100,21 +100,21 @@ public class class253 extends class175 {
                this.field3362 = new int[i_4];
 
                for (i_5 = 0; i_5 < i_4; i_5++) {
-                  this.field3362[i_5] = class300_1.method5496(-1459053594);
+                  this.field3362[i_5] = class300_1.method5496();
                }
             }
          }
       } else if (i_2 == 14) {
-         this.field3365 = class300_1.method5504((byte) 22);
+         this.field3365 = class300_1.method5504();
       } else if (i_2 == 15) {
-         this.field3366 = class300_1.method5504((byte) 96);
+         this.field3366 = class300_1.method5504();
       } else if (i_2 == 17) {
          this.field3382 = 0;
          this.field3368 = false;
       } else if (i_2 == 18) {
          this.field3368 = false;
       } else if (i_2 == 19) {
-         this.field3369 = class300_1.method5504((byte) 54);
+         this.field3369 = class300_1.method5504();
       } else if (i_2 == 21) {
          this.field3370 = 0;
       } else if (i_2 == 22) {
@@ -122,112 +122,112 @@ public class class253 extends class175 {
       } else if (i_2 == 23) {
          this.field3372 = true;
       } else if (i_2 == 24) {
-         this.field3373 = class300_1.method5496(-1459053594);
+         this.field3373 = class300_1.method5496();
          if (this.field3373 == 65535) {
             this.field3373 = -1;
          }
       } else if (i_2 == 27) {
          this.field3382 = 1;
       } else if (i_2 == 28) {
-         this.field3374 = class300_1.method5504((byte) 108);
+         this.field3374 = class300_1.method5504();
       } else if (i_2 == 29) {
          this.field3350 = class300_1.method5495();
       } else if (i_2 == 39) {
          this.field3380 = class300_1.method5495() * 25;
       } else if (i_2 >= 30 && i_2 < 35) {
-         this.field3377[i_2 - 30] = class300_1.method5503(-231155257);
+         this.field3377[i_2 - 30] = class300_1.method5503();
          if (this.field3377[i_2 - 30].equalsIgnoreCase("Hidden")) {
             this.field3377[i_2 - 30] = null;
          }
       } else if (i_2 == 40) {
-         i_4 = class300_1.method5504((byte) 10);
+         i_4 = class300_1.method5504();
          this.field3375 = new short[i_4];
          this.field3353 = new short[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3375[i_5] = (short)class300_1.method5496(-1459053594);
-            this.field3353[i_5] = (short)class300_1.method5496(-1459053594);
+            this.field3375[i_5] = (short)class300_1.method5496();
+            this.field3353[i_5] = (short)class300_1.method5496();
          }
       } else if (i_2 == 41) {
-         i_4 = class300_1.method5504((byte) 110);
+         i_4 = class300_1.method5504();
          this.field3363 = new short[i_4];
          this.field3364 = new short[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3363[i_5] = (short)class300_1.method5496(-1459053594);
-            this.field3364[i_5] = (short)class300_1.method5496(-1459053594);
+            this.field3363[i_5] = (short)class300_1.method5496();
+            this.field3364[i_5] = (short)class300_1.method5496();
          }
       } else if (i_2 == 62) {
          this.field3358 = true;
       } else if (i_2 == 64) {
          this.field3356 = false;
       } else if (i_2 == 65) {
-         this.field3381 = class300_1.method5496(-1459053594);
+         this.field3381 = class300_1.method5496();
       } else if (i_2 == 66) {
-         this.field3383 = class300_1.method5496(-1459053594);
+         this.field3383 = class300_1.method5496();
       } else if (i_2 == 67) {
-         this.field3384 = class300_1.method5496(-1459053594);
+         this.field3384 = class300_1.method5496();
       } else if (i_2 == 68) {
-         this.field3379 = class300_1.method5496(-1459053594);
+         this.field3379 = class300_1.method5496();
       } else if (i_2 == 69) {
-         class300_1.method5504((byte) 33);
+         class300_1.method5504();
       } else if (i_2 == 70) {
-         this.field3385 = class300_1.method5606(-1327508233);
+         this.field3385 = class300_1.method5606();
       } else if (i_2 == 71) {
-         this.field3386 = class300_1.method5606(-1327508233);
+         this.field3386 = class300_1.method5606();
       } else if (i_2 == 72) {
-         this.field3376 = class300_1.method5606(-1327508233);
+         this.field3376 = class300_1.method5606();
       } else if (i_2 == 73) {
          this.field3388 = true;
       } else if (i_2 == 74) {
          this.field3389 = true;
       } else if (i_2 == 75) {
-         this.field3361 = class300_1.method5504((byte) 60);
+         this.field3361 = class300_1.method5504();
       } else if (i_2 != 77 && i_2 != 92) {
          if (i_2 == 78) {
-            this.field3394 = class300_1.method5496(-1459053594);
-            this.field3399 = class300_1.method5504((byte) 68);
+            this.field3394 = class300_1.method5496();
+            this.field3399 = class300_1.method5504();
          } else if (i_2 == 79) {
-            this.field3392 = class300_1.method5496(-1459053594);
-            this.field3397 = class300_1.method5496(-1459053594);
-            this.field3399 = class300_1.method5504((byte) 93);
-            i_4 = class300_1.method5504((byte) 70);
+            this.field3392 = class300_1.method5496();
+            this.field3397 = class300_1.method5496();
+            this.field3399 = class300_1.method5504();
+            i_4 = class300_1.method5504();
             this.field3367 = new int[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3367[i_5] = class300_1.method5496(-1459053594);
+               this.field3367[i_5] = class300_1.method5496();
             }
          } else if (i_2 == 81) {
-            this.field3370 = class300_1.method5504((byte) 36) * 256;
+            this.field3370 = class300_1.method5504() * 256;
          } else if (i_2 == 82) {
-            this.field3378 = class300_1.method5496(-1459053594);
+            this.field3378 = class300_1.method5496();
          } else if (i_2 == 249) {
             this.field3396 = class26.method403(class300_1, this.field3396, -2066495425);
          }
       } else {
-         this.field3349 = class300_1.method5496(-1459053594);
+         this.field3349 = class300_1.method5496();
          if (this.field3349 == 65535) {
             this.field3349 = -1;
          }
 
-         this.field3393 = class300_1.method5496(-1459053594);
+         this.field3393 = class300_1.method5496();
          if (this.field3393 == 65535) {
             this.field3393 = -1;
          }
 
          i_4 = -1;
          if (i_2 == 92) {
-            i_4 = class300_1.method5496(-1459053594);
+            i_4 = class300_1.method5496();
             if (i_4 == 65535) {
                i_4 = -1;
             }
          }
 
-         i_5 = class300_1.method5504((byte) 42);
+         i_5 = class300_1.method5504();
          this.field3391 = new int[i_5 + 2];
 
          for (int i_6 = 0; i_6 <= i_5; i_6++) {
-            this.field3391[i_6] = class300_1.method5496(-1459053594);
+            this.field3391[i_6] = class300_1.method5496();
             if (this.field3391[i_6] == 65535) {
                this.field3391[i_6] = -1;
             }
@@ -395,7 +395,7 @@ public class class253 extends class175 {
 
    void method4625(class300 class300_1, byte b_2) {
       while (true) {
-         int i_3 = class300_1.method5504((byte) 99);
+         int i_3 = class300_1.method5504();
          if (i_3 == 0) {
             return;
          }

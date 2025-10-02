@@ -58,22 +58,22 @@ public class class71 {
       class92 class92_2 = new class92();
       class300 class300_3 = new class300(bytes_0);
       class300_3.field3732 = class300_3.field3730.length - 2;
-      int i_4 = class300_3.method5496(-1459053594);
+      int i_4 = class300_3.method5496();
       int i_5 = class300_3.field3730.length - 2 - i_4 - 12;
       class300_3.field3732 = i_5;
-      int i_6 = class300_3.method5499((byte) -116);
-      class92_2.field1283 = class300_3.method5496(-1459053594);
-      class92_2.field1285 = class300_3.method5496(-1459053594);
-      class92_2.field1289 = class300_3.method5496(-1459053594);
-      class92_2.field1290 = class300_3.method5496(-1459053594);
-      int i_7 = class300_3.method5504((byte) 23);
+      int i_6 = class300_3.method5499();
+      class92_2.field1283 = class300_3.method5496();
+      class92_2.field1285 = class300_3.method5496();
+      class92_2.field1289 = class300_3.method5496();
+      class92_2.field1290 = class300_3.method5496();
+      int i_7 = class300_3.method5504();
       int i_8;
       int i_9;
       if (i_7 > 0) {
          class92_2.field1287 = class92_2.method2182(i_7, (byte) 45);
 
          for (i_8 = 0; i_8 < i_7; i_8++) {
-            i_9 = class300_3.method5496(-1459053594);
+            i_9 = class300_3.method5496();
             int i_10;
             int i_12;
             if (i_9 > 0) {
@@ -93,27 +93,27 @@ public class class71 {
             class92_2.field1287[i_8] = class316_14;
 
             while (i_9-- > 0) {
-               i_12 = class300_3.method5499((byte) -2);
-               int i_13 = class300_3.method5499((byte) -66);
+               i_12 = class300_3.method5499();
+               int i_13 = class300_3.method5499();
                class316_14.method5938(new class179(i_13), (long)i_12);
             }
          }
       }
 
       class300_3.field3732 = 0;
-      class300_3.method5476(464045050);
+      class300_3.method5476();
       class92_2.field1284 = new int[i_6];
       class92_2.field1288 = new int[i_6];
       class92_2.field1286 = new String[i_6];
 
       for (i_8 = 0; class300_3.field3732 < i_5; class92_2.field1284[i_8++] = i_9) {
-         i_9 = class300_3.method5496(-1459053594);
+         i_9 = class300_3.method5496();
          if (i_9 == 3) {
-            class92_2.field1286[i_8] = class300_3.method5503(-231155257);
+            class92_2.field1286[i_8] = class300_3.method5503();
          } else if (i_9 < 100 && i_9 != 21 && i_9 != 38 && i_9 != 39) {
-            class92_2.field1288[i_8] = class300_3.method5499((byte) -52);
+            class92_2.field1288[i_8] = class300_3.method5499();
          } else {
-            class92_2.field1288[i_8] = class300_3.method5504((byte) 105);
+            class92_2.field1288[i_8] = class300_3.method5504();
          }
       }
 

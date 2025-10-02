@@ -72,9 +72,9 @@ public class class74 {
                   class62.method1132(30, "", string_5, -2140395376);
                } else {
                   class187 class187_4 = class235.method4265(class183.field2291, client.field880.field1313, 1775123545);
-                  class187_4.field2333.method5655(class209.method3945(string_1, -281208097), 1108543831);
-                  class187_4.field2333.method5485(string_1, 723743835);
-                  client.field880.method2219(class187_4, 2067459847);
+                  class187_4.field2333.method5655(class209.method3945(string_1, -281208097));
+                  class187_4.field2333.method5485(string_1);
+                  client.field880.method2219(class187_4);
                }
             }
          }
@@ -88,9 +88,9 @@ public class class74 {
             if (this.field1070.method5085(class283_3, (byte) 38)) {
                client.field672 = client.field673;
                class187 class187_4 = class235.method4265(class183.field2224, client.field880.field1313, 1775123545);
-               class187_4.field2333.method5655(class209.method3945(string_1, -1072525203), 946764044);
-               class187_4.field2333.method5485(string_1, 296919549);
-               client.field880.method2219(class187_4, 2067459847);
+               class187_4.field2333.method5655(class209.method3945(string_1, -1072525203));
+               class187_4.field2333.method5485(string_1);
+               client.field880.method2219(class187_4);
             }
 
             class129.method2972((byte) 6);
@@ -126,9 +126,9 @@ public class class74 {
             if (this.field1071.method5085(class283_3, (byte) 63)) {
                client.field672 = client.field673;
                class187 class187_4 = class235.method4265(class183.field2231, client.field880.field1313, 1775123545);
-               class187_4.field2333.method5655(class209.method3945(string_1, 627883145), 703475290);
-               class187_4.field2333.method5485(string_1, 1518183036);
-               client.field880.method2219(class187_4, 2067459847);
+               class187_4.field2333.method5655(class209.method3945(string_1, 627883145));
+               class187_4.field2333.method5485(string_1);
+               client.field880.method2219(class187_4);
             }
 
             class2.method28(-1824777685);

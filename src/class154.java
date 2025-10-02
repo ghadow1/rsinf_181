@@ -56,7 +56,7 @@ public class class154 extends class275 {
                int i_9 = inputstream_7.read(class300_8.field3730, class300_8.field3732, 1000 - class300_8.field3732);
                if (i_9 == -1) {
                   class300_8.field3732 = 0;
-                  long long_23 = class300_8.method5531((byte) 75);
+                  long long_23 = class300_8.method5531();
                   long_2 = long_23;
                   break;
                }
@@ -80,7 +80,7 @@ public class class154 extends class275 {
             class300 class300_27 = new class300(128);
             class300 class300_10 = new class300(128);
             int[] ints_11 = new int[] {random_37.nextInt(), random_37.nextInt(), (int)(long_2 >> 32), (int)long_2};
-            class300_27.method5655(10, 1492983816);
+            class300_27.method5655(10);
 
             int i_12;
             for (i_12 = 0; i_12 < 4; i_12++) {
@@ -96,8 +96,8 @@ public class class154 extends class275 {
                class300_27.method5481(random_37.nextInt());
             }
 
-            class300_27.method5517(class80.field1140, class80.field1141, (byte) -74);
-            class300_10.method5655(10, 660232089);
+            class300_27.method5517(class80.field1140, class80.field1141);
+            class300_10.method5655(10);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
                class300_10.method5481(random_37.nextInt());
@@ -106,7 +106,7 @@ public class class154 extends class275 {
             class300_10.method5483(random_37.nextLong());
             class300_10.method5482(random_37.nextLong());
             if (client.field693 != null) {
-               class300_10.method5488(client.field693, 0, client.field693.length, 910134597);
+               class300_10.method5488(client.field693, 0, client.field693.length);
             } else {
                byte[] bytes_13 = new byte[24];
 
@@ -128,28 +128,28 @@ public class class154 extends class275 {
                   }
                }
 
-               class300_10.method5488(bytes_13, 0, bytes_13.length, 910134597);
+               class300_10.method5488(bytes_13, 0, bytes_13.length);
             }
 
             class300_10.method5483(random_37.nextLong());
-            class300_10.method5517(class80.field1140, class80.field1141, (byte) -15);
+            class300_10.method5517(class80.field1140, class80.field1141);
             i_12 = class209.method3945(string_36, 547195601);
             if (i_12 % 8 != 0) {
                i_12 += 8 - i_12 % 8;
             }
 
             class300 class300_38 = new class300(i_12);
-            class300_38.method5485(string_36, 709529816);
+            class300_38.method5485(string_36);
             class300_38.field3732 = i_12;
             class300_38.method5513(ints_11, -1108447488);
             class300 class300_28 = new class300(class300_10.field3732 + class300_27.field3732 + class300_38.field3732 + 5);
-            class300_28.method5655(2, 1581585446);
-            class300_28.method5655(class300_27.field3732, 1571782674);
-            class300_28.method5488(class300_27.field3730, 0, class300_27.field3732, 910134597);
-            class300_28.method5655(class300_10.field3732, 628088123);
-            class300_28.method5488(class300_10.field3730, 0, class300_10.field3732, 910134597);
-            class300_28.method5479(class300_38.field3732, (byte) -36);
-            class300_28.method5488(class300_38.field3730, 0, class300_38.field3732, 910134597);
+            class300_28.method5655(2);
+            class300_28.method5655(class300_27.field3732);
+            class300_28.method5488(class300_27.field3730, 0, class300_27.field3732);
+            class300_28.method5655(class300_10.field3732);
+            class300_28.method5488(class300_10.field3730, 0, class300_10.field3732);
+            class300_28.method5479(class300_38.field3732);
+            class300_28.method5488(class300_38.field3730, 0, class300_38.field3732);
             byte[] bytes_16 = class300_28.field3730;
             String string_30 = class217.method4092(bytes_16, 0, bytes_16.length, 1305438411);
             String string_17 = string_30;
@@ -162,7 +162,7 @@ public class class154 extends class275 {
                urlconnection_19.setDoOutput(true);
                urlconnection_19.setConnectTimeout(5000);
                OutputStreamWriter outputstreamwriter_20 = new OutputStreamWriter(urlconnection_19.getOutputStream());
-               outputstreamwriter_20.write("data2=" + class5.method63(string_17, -2102370448) + "&dest=" + class5.method63("passwordchoice.ws", -1834709193));
+               outputstreamwriter_20.write("data2=" + class5.method63(string_17) + "&dest=" + class5.method63("passwordchoice.ws"));
                outputstreamwriter_20.flush();
                InputStream inputstream_21 = urlconnection_19.getInputStream();
                class300_28 = new class300(new byte[1000]);
@@ -190,7 +190,7 @@ public class class154 extends class275 {
 
                         string_32 = new String(class300_28.field3730, 0, class300_28.field3732);
                         if (class70.method1676(string_32, -1155103111)) {
-                           class5.method50(string_32, true, false, -1641232850);
+                           class5.method50(string_32, true, false);
                            b_31 = 2;
                         } else {
                            b_31 = 5;

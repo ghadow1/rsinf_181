@@ -274,39 +274,39 @@ public class class217 extends class180 {
 
    void method4031(class300 class300_1, byte b_2) {
       this.field2563 = false;
-      this.field2566 = class300_1.method5504((byte) 70);
-      this.field2567 = class300_1.method5504((byte) 63);
-      this.field2568 = class300_1.method5496(-1459053594);
-      this.field2651 = class300_1.method5606(-1327508233);
-      this.field2574 = class300_1.method5606(-1327508233);
-      this.field2670 = class300_1.method5496(-1459053594);
-      this.field2576 = class300_1.method5496(-1459053594);
-      this.field2595 = class300_1.method5504((byte) 50);
-      this.field2583 = class300_1.method5496(-1459053594);
+      this.field2566 = class300_1.method5504();
+      this.field2567 = class300_1.method5504();
+      this.field2568 = class300_1.method5496();
+      this.field2651 = class300_1.method5606();
+      this.field2574 = class300_1.method5606();
+      this.field2670 = class300_1.method5496();
+      this.field2576 = class300_1.method5496();
+      this.field2595 = class300_1.method5504();
+      this.field2583 = class300_1.method5496();
       if (this.field2583 == 65535) {
          this.field2583 = -1;
       } else {
          this.field2583 += this.field2688 & ~0xffff;
       }
 
-      this.field2685 = class300_1.method5496(-1459053594);
+      this.field2685 = class300_1.method5496();
       if (this.field2685 == 65535) {
          this.field2685 = -1;
       }
 
-      int i_3 = class300_1.method5504((byte) 125);
+      int i_3 = class300_1.method5504();
       int i_4;
       if (i_3 > 0) {
          this.field2683 = new int[i_3];
          this.field2684 = new int[i_3];
 
          for (i_4 = 0; i_4 < i_3; i_4++) {
-            this.field2683[i_4] = class300_1.method5504((byte) 119);
-            this.field2684[i_4] = class300_1.method5496(-1459053594);
+            this.field2683[i_4] = class300_1.method5504();
+            this.field2684[i_4] = class300_1.method5496();
          }
       }
 
-      i_4 = class300_1.method5504((byte) 108);
+      i_4 = class300_1.method5504();
       int i_5;
       int i_6;
       int i_7;
@@ -314,11 +314,11 @@ public class class217 extends class180 {
          this.field2682 = new int[i_4][];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            i_6 = class300_1.method5496(-1459053594);
+            i_6 = class300_1.method5496();
             this.field2682[i_5] = new int[i_6];
 
             for (i_7 = 0; i_7 < i_6; i_7++) {
-               this.field2682[i_5][i_7] = class300_1.method5496(-1459053594);
+               this.field2682[i_5][i_7] = class300_1.method5496();
                if (this.field2682[i_5][i_7] == 65535) {
                   this.field2682[i_5][i_7] = -1;
                }
@@ -327,51 +327,51 @@ public class class217 extends class180 {
       }
 
       if (this.field2566 == 0) {
-         this.field2569 = class300_1.method5496(-1459053594);
-         this.field2706 = class300_1.method5504((byte) 101) == 1;
+         this.field2569 = class300_1.method5496();
+         this.field2706 = class300_1.method5504() == 1;
       }
 
       if (this.field2566 == 1) {
-         class300_1.method5496(-1459053594);
-         class300_1.method5504((byte) 107);
+         class300_1.method5496();
+         class300_1.method5504();
       }
 
       if (this.field2566 == 2) {
          this.field2560 = new int[this.field2576 * this.field2670];
          this.field2705 = new int[this.field2576 * this.field2670];
-         i_5 = class300_1.method5504((byte) 84);
+         i_5 = class300_1.method5504();
          if (i_5 == 1) {
             this.field2669 |= 0x10000000;
          }
 
-         i_6 = class300_1.method5504((byte) 113);
+         i_6 = class300_1.method5504();
          if (i_6 == 1) {
             this.field2669 |= 0x40000000;
          }
 
-         i_7 = class300_1.method5504((byte) 54);
+         i_7 = class300_1.method5504();
          if (i_7 == 1) {
             this.field2669 |= ~0x7fffffff;
          }
 
-         int i_8 = class300_1.method5504((byte) 107);
+         int i_8 = class300_1.method5504();
          if (i_8 == 1) {
             this.field2669 |= 0x20000000;
          }
 
-         this.field2631 = class300_1.method5504((byte) 76);
-         this.field2632 = class300_1.method5504((byte) 38);
+         this.field2631 = class300_1.method5504();
+         this.field2632 = class300_1.method5504();
          this.field2633 = new int[20];
          this.field2634 = new int[20];
          this.field2635 = new int[20];
 
          int i_9;
          for (i_9 = 0; i_9 < 20; i_9++) {
-            int i_10 = class300_1.method5504((byte) 44);
+            int i_10 = class300_1.method5504();
             if (i_10 == 1) {
-               this.field2633[i_9] = class300_1.method5606(-1327508233);
-               this.field2634[i_9] = class300_1.method5606(-1327508233);
-               this.field2635[i_9] = class300_1.method5499((byte) -96);
+               this.field2633[i_9] = class300_1.method5606();
+               this.field2634[i_9] = class300_1.method5606();
+               this.field2635[i_9] = class300_1.method5499();
             } else {
                this.field2635[i_9] = -1;
             }
@@ -380,7 +380,7 @@ public class class217 extends class180 {
          this.field2680 = new String[5];
 
          for (i_9 = 0; i_9 < 5; i_9++) {
-            String string_12 = class300_1.method5503(-231155257);
+            String string_12 = class300_1.method5503();
             if (string_12.length() > 0) {
                this.field2680[i_9] = string_12;
                this.field2669 |= 1 << i_9 + 23;
@@ -389,83 +389,83 @@ public class class217 extends class180 {
       }
 
       if (this.field2566 == 3) {
-         this.field2571 = class300_1.method5504((byte) 82) == 1;
+         this.field2571 = class300_1.method5504() == 1;
       }
 
       if (this.field2566 == 4 || this.field2566 == 1) {
-         this.field2628 = class300_1.method5504((byte) 51);
-         this.field2629 = class300_1.method5504((byte) 51);
-         this.field2627 = class300_1.method5504((byte) 9);
-         this.field2624 = class300_1.method5496(-1459053594);
+         this.field2628 = class300_1.method5504();
+         this.field2629 = class300_1.method5504();
+         this.field2627 = class300_1.method5504();
+         this.field2624 = class300_1.method5496();
          if (this.field2624 == 65535) {
             this.field2624 = -1;
          }
 
-         this.field2659 = class300_1.method5504((byte) 109) == 1;
+         this.field2659 = class300_1.method5504() == 1;
       }
 
       if (this.field2566 == 4) {
-         this.field2601 = class300_1.method5503(-231155257);
-         this.field2590 = class300_1.method5503(-231155257);
+         this.field2601 = class300_1.method5503();
+         this.field2590 = class300_1.method5503();
       }
 
       if (this.field2566 == 1 || this.field2566 == 3 || this.field2566 == 4) {
-         this.field2695 = class300_1.method5499((byte) -78);
+         this.field2695 = class300_1.method5499();
       }
 
       if (this.field2566 == 3 || this.field2566 == 4) {
-         this.field2639 = class300_1.method5499((byte) -106);
-         this.field2587 = class300_1.method5499((byte) -28);
-         this.field2663 = class300_1.method5499((byte) -102);
+         this.field2639 = class300_1.method5499();
+         this.field2587 = class300_1.method5499();
+         this.field2663 = class300_1.method5499();
       }
 
       if (this.field2566 == 5) {
-         this.field2599 = class300_1.method5499((byte) -118);
-         this.field2600 = class300_1.method5499((byte) -12);
+         this.field2599 = class300_1.method5499();
+         this.field2600 = class300_1.method5499();
       }
 
       if (this.field2566 == 6) {
          this.field2607 = 1;
-         this.field2649 = class300_1.method5496(-1459053594);
+         this.field2649 = class300_1.method5496();
          if (this.field2649 == 65535) {
             this.field2649 = -1;
          }
 
          this.field2609 = 1;
-         this.field2610 = class300_1.method5496(-1459053594);
+         this.field2610 = class300_1.method5496();
          if (this.field2610 == 65535) {
             this.field2610 = -1;
          }
 
-         this.field2611 = class300_1.method5496(-1459053594);
+         this.field2611 = class300_1.method5496();
          if (this.field2611 == 65535) {
             this.field2611 = -1;
          }
 
-         this.field2612 = class300_1.method5496(-1459053594);
+         this.field2612 = class300_1.method5496();
          if (this.field2612 == 65535) {
             this.field2612 = -1;
          }
 
-         this.field2618 = class300_1.method5496(-1459053594);
-         this.field2615 = class300_1.method5496(-1459053594);
-         this.field2616 = class300_1.method5496(-1459053594);
+         this.field2618 = class300_1.method5496();
+         this.field2615 = class300_1.method5496();
+         this.field2616 = class300_1.method5496();
       }
 
       if (this.field2566 == 7) {
          this.field2560 = new int[this.field2670 * this.field2576];
          this.field2705 = new int[this.field2576 * this.field2670];
-         this.field2628 = class300_1.method5504((byte) 15);
-         this.field2624 = class300_1.method5496(-1459053594);
+         this.field2628 = class300_1.method5504();
+         this.field2624 = class300_1.method5496();
          if (this.field2624 == 65535) {
             this.field2624 = -1;
          }
 
-         this.field2659 = class300_1.method5504((byte) 17) == 1;
-         this.field2695 = class300_1.method5499((byte) -64);
-         this.field2631 = class300_1.method5606(-1327508233);
-         this.field2632 = class300_1.method5606(-1327508233);
-         i_5 = class300_1.method5504((byte) 22);
+         this.field2659 = class300_1.method5504() == 1;
+         this.field2695 = class300_1.method5499();
+         this.field2631 = class300_1.method5606();
+         this.field2632 = class300_1.method5606();
+         i_5 = class300_1.method5504();
          if (i_5 == 1) {
             this.field2669 |= 0x40000000;
          }
@@ -473,7 +473,7 @@ public class class217 extends class180 {
          this.field2680 = new String[5];
 
          for (i_6 = 0; i_6 < 5; i_6++) {
-            String string_11 = class300_1.method5503(-231155257);
+            String string_11 = class300_1.method5503();
             if (string_11.length() > 0) {
                this.field2680[i_6] = string_11;
                this.field2669 |= 1 << i_6 + 23;
@@ -482,18 +482,18 @@ public class class217 extends class180 {
       }
 
       if (this.field2566 == 8) {
-         this.field2601 = class300_1.method5503(-231155257);
+         this.field2601 = class300_1.method5503();
       }
 
       if (this.field2567 == 2 || this.field2566 == 2) {
-         this.field2657 = class300_1.method5503(-231155257);
-         this.field2686 = class300_1.method5503(-231155257);
-         i_5 = class300_1.method5496(-1459053594) & 0x3f;
+         this.field2657 = class300_1.method5503();
+         this.field2686 = class300_1.method5503();
+         i_5 = class300_1.method5496() & 0x3f;
          this.field2669 |= i_5 << 11;
       }
 
       if (this.field2567 == 1 || this.field2567 == 4 || this.field2567 == 5 || this.field2567 == 6) {
-         this.field2573 = class300_1.method5503(-231155257);
+         this.field2573 = class300_1.method5503();
          if (this.field2573.length() == 0) {
             if (this.field2567 == 1) {
                this.field2573 = "Ok";
@@ -524,118 +524,118 @@ public class class217 extends class180 {
    }
 
    void method4088(class300 class300_1, byte b_2) {
-      class300_1.method5504((byte) 127);
+      class300_1.method5504();
       this.field2563 = true;
-      this.field2566 = class300_1.method5504((byte) 49);
-      this.field2568 = class300_1.method5496(-1459053594);
-      this.field2651 = class300_1.method5606(-1327508233);
-      this.field2574 = class300_1.method5606(-1327508233);
-      this.field2670 = class300_1.method5496(-1459053594);
+      this.field2566 = class300_1.method5504();
+      this.field2568 = class300_1.method5496();
+      this.field2651 = class300_1.method5606();
+      this.field2574 = class300_1.method5606();
+      this.field2670 = class300_1.method5496();
       if (this.field2566 == 9) {
-         this.field2576 = class300_1.method5606(-1327508233);
+         this.field2576 = class300_1.method5606();
       } else {
-         this.field2576 = class300_1.method5496(-1459053594);
+         this.field2576 = class300_1.method5496();
       }
 
       this.field2638 = class300_1.method5495();
       this.field2572 = class300_1.method5495();
       this.field2694 = class300_1.method5495();
       this.field2570 = class300_1.method5495();
-      this.field2583 = class300_1.method5496(-1459053594);
+      this.field2583 = class300_1.method5496();
       if (this.field2583 == 65535) {
          this.field2583 = -1;
       } else {
          this.field2583 += this.field2688 & ~0xffff;
       }
 
-      this.field2706 = class300_1.method5504((byte) 80) == 1;
+      this.field2706 = class300_1.method5504() == 1;
       if (this.field2566 == 0) {
-         this.field2687 = class300_1.method5496(-1459053594);
-         this.field2569 = class300_1.method5496(-1459053594);
-         this.field2580 = class300_1.method5504((byte) 101) == 1;
+         this.field2687 = class300_1.method5496();
+         this.field2569 = class300_1.method5496();
+         this.field2580 = class300_1.method5504() == 1;
       }
 
       if (this.field2566 == 5) {
-         this.field2599 = class300_1.method5499((byte) -48);
-         this.field2591 = class300_1.method5496(-1459053594);
-         this.field2613 = class300_1.method5504((byte) 70) == 1;
-         this.field2595 = class300_1.method5504((byte) 125);
-         this.field2559 = class300_1.method5504((byte) 89);
-         this.field2604 = class300_1.method5499((byte) -62);
-         this.field2605 = class300_1.method5504((byte) 85) == 1;
-         this.field2606 = class300_1.method5504((byte) 72) == 1;
+         this.field2599 = class300_1.method5499();
+         this.field2591 = class300_1.method5496();
+         this.field2613 = class300_1.method5504() == 1;
+         this.field2595 = class300_1.method5504();
+         this.field2559 = class300_1.method5504();
+         this.field2604 = class300_1.method5499();
+         this.field2605 = class300_1.method5504() == 1;
+         this.field2606 = class300_1.method5504() == 1;
       }
 
       if (this.field2566 == 6) {
          this.field2607 = 1;
-         this.field2649 = class300_1.method5496(-1459053594);
+         this.field2649 = class300_1.method5496();
          if (this.field2649 == 65535) {
             this.field2649 = -1;
          }
 
-         this.field2593 = class300_1.method5606(-1327508233);
-         this.field2614 = class300_1.method5606(-1327508233);
-         this.field2615 = class300_1.method5496(-1459053594);
-         this.field2616 = class300_1.method5496(-1459053594);
-         this.field2640 = class300_1.method5496(-1459053594);
-         this.field2618 = class300_1.method5496(-1459053594);
-         this.field2611 = class300_1.method5496(-1459053594);
+         this.field2593 = class300_1.method5606();
+         this.field2614 = class300_1.method5606();
+         this.field2615 = class300_1.method5496();
+         this.field2616 = class300_1.method5496();
+         this.field2640 = class300_1.method5496();
+         this.field2618 = class300_1.method5496();
+         this.field2611 = class300_1.method5496();
          if (this.field2611 == 65535) {
             this.field2611 = -1;
          }
 
-         this.field2621 = class300_1.method5504((byte) 8) == 1;
-         class300_1.method5496(-1459053594);
+         this.field2621 = class300_1.method5504() == 1;
+         class300_1.method5496();
          if (this.field2638 != 0) {
-            this.field2619 = class300_1.method5496(-1459053594);
+            this.field2619 = class300_1.method5496();
          }
 
          if (this.field2572 != 0) {
-            class300_1.method5496(-1459053594);
+            class300_1.method5496();
          }
       }
 
       if (this.field2566 == 4) {
-         this.field2624 = class300_1.method5496(-1459053594);
+         this.field2624 = class300_1.method5496();
          if (this.field2624 == 65535) {
             this.field2624 = -1;
          }
 
-         this.field2601 = class300_1.method5503(-231155257);
-         this.field2627 = class300_1.method5504((byte) 88);
-         this.field2628 = class300_1.method5504((byte) 99);
-         this.field2629 = class300_1.method5504((byte) 9);
-         this.field2659 = class300_1.method5504((byte) 89) == 1;
-         this.field2695 = class300_1.method5499((byte) -96);
+         this.field2601 = class300_1.method5503();
+         this.field2627 = class300_1.method5504();
+         this.field2628 = class300_1.method5504();
+         this.field2629 = class300_1.method5504();
+         this.field2659 = class300_1.method5504() == 1;
+         this.field2695 = class300_1.method5499();
       }
 
       if (this.field2566 == 3) {
-         this.field2695 = class300_1.method5499((byte) -20);
-         this.field2571 = class300_1.method5504((byte) 14) == 1;
-         this.field2595 = class300_1.method5504((byte) 28);
+         this.field2695 = class300_1.method5499();
+         this.field2571 = class300_1.method5504() == 1;
+         this.field2595 = class300_1.method5504();
       }
 
       if (this.field2566 == 9) {
-         this.field2597 = class300_1.method5504((byte) 119);
-         this.field2695 = class300_1.method5499((byte) -22);
-         this.field2598 = class300_1.method5504((byte) 107) == 1;
+         this.field2597 = class300_1.method5504();
+         this.field2695 = class300_1.method5499();
+         this.field2598 = class300_1.method5504() == 1;
       }
 
-      this.field2669 = class300_1.method5567(1794705501);
-      this.field2643 = class300_1.method5503(-231155257);
-      int i_3 = class300_1.method5504((byte) 65);
+      this.field2669 = class300_1.method5567();
+      this.field2643 = class300_1.method5503();
+      int i_3 = class300_1.method5504();
       if (i_3 > 0) {
          this.field2644 = new String[i_3];
 
          for (int i_4 = 0; i_4 < i_3; i_4++) {
-            this.field2644[i_4] = class300_1.method5503(-231155257);
+            this.field2644[i_4] = class300_1.method5503();
          }
       }
 
-      this.field2646 = class300_1.method5504((byte) 57);
-      this.field2647 = class300_1.method5504((byte) 12);
-      this.field2648 = class300_1.method5504((byte) 45) == 1;
-      this.field2657 = class300_1.method5503(-231155257);
+      this.field2646 = class300_1.method5504();
+      this.field2647 = class300_1.method5504();
+      this.field2648 = class300_1.method5504() == 1;
+      this.field2657 = class300_1.method5503();
       this.field2630 = this.method4081(class300_1, (byte) -58);
       this.field2608 = this.method4081(class300_1, (byte) 53);
       this.field2658 = this.method4081(class300_1, (byte) 2);
@@ -836,18 +836,18 @@ public class class217 extends class180 {
    }
 
    Object[] method4081(class300 class300_1, byte b_2) {
-      int i_3 = class300_1.method5504((byte) 103);
+      int i_3 = class300_1.method5504();
       if (i_3 == 0) {
          return null;
       } else {
          Object[] arr_4 = new Object[i_3];
 
          for (int i_5 = 0; i_5 < i_3; i_5++) {
-            int i_6 = class300_1.method5504((byte) 34);
+            int i_6 = class300_1.method5504();
             if (i_6 == 0) {
-               arr_4[i_5] = new Integer(class300_1.method5499((byte) -109));
+               arr_4[i_5] = new Integer(class300_1.method5499());
             } else if (i_6 == 1) {
-               arr_4[i_5] = class300_1.method5503(-231155257);
+               arr_4[i_5] = class300_1.method5503();
             }
          }
 
@@ -881,14 +881,14 @@ public class class217 extends class180 {
    }
 
    int[] method4034(class300 class300_1, byte b_2) {
-      int i_3 = class300_1.method5504((byte) 34);
+      int i_3 = class300_1.method5504();
       if (i_3 == 0) {
          return null;
       } else {
          int[] ints_4 = new int[i_3];
 
          for (int i_5 = 0; i_5 < i_3; i_5++) {
-            ints_4[i_5] = class300_1.method5499((byte) -24);
+            ints_4[i_5] = class300_1.method5499();
          }
 
          return ints_4;

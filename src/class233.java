@@ -130,17 +130,17 @@ public abstract class class233 {
       int i_3 = class2.method18(bytes_1, 0, i_4, 1766587749);
       this.field3136 = i_3;
       class300 class300_5 = new class300(class70.method1678(bytes_1, -303237660));
-      int i_6 = class300_5.method5504((byte) 79);
+      int i_6 = class300_5.method5504();
       if (i_6 >= 5 && i_6 <= 7) {
          if (i_6 >= 6) {
-            class300_5.method5499((byte) -76);
+            class300_5.method5499();
          }
 
-         int i_7 = class300_5.method5504((byte) 29);
+         int i_7 = class300_5.method5504();
          if (i_6 >= 7) {
-            this.field3142 = class300_5.method5685((byte) 55);
+            this.field3142 = class300_5.method5685();
          } else {
-            this.field3142 = class300_5.method5496(-1459053594);
+            this.field3142 = class300_5.method5496();
          }
 
          int i_8 = 0;
@@ -149,14 +149,14 @@ public abstract class class233 {
          int i_10;
          if (i_6 >= 7) {
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3128[i_10] = i_8 += class300_5.method5685((byte) 25);
+               this.field3128[i_10] = i_8 += class300_5.method5685();
                if (this.field3128[i_10] > i_9) {
                   i_9 = this.field3128[i_10];
                }
             }
          } else {
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3128[i_10] = i_8 += class300_5.method5496(-1459053594);
+               this.field3128[i_10] = i_8 += class300_5.method5496();
                if (this.field3128[i_10] > i_9) {
                   i_9 = this.field3128[i_10];
                }
@@ -173,22 +173,22 @@ public abstract class class233 {
             this.field3129 = new int[i_9 + 1];
 
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3129[this.field3128[i_10]] = class300_5.method5499((byte) -2);
+               this.field3129[this.field3128[i_10]] = class300_5.method5499();
             }
 
             this.field3135 = new class335(this.field3129);
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3131[this.field3128[i_10]] = class300_5.method5499((byte) -120);
+            this.field3131[this.field3128[i_10]] = class300_5.method5499();
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3132[this.field3128[i_10]] = class300_5.method5499((byte) -127);
+            this.field3132[this.field3128[i_10]] = class300_5.method5499();
          }
 
          for (i_10 = 0; i_10 < this.field3142; i_10++) {
-            this.field3133[this.field3128[i_10]] = class300_5.method5496(-1459053594);
+            this.field3133[this.field3128[i_10]] = class300_5.method5496();
          }
 
          int i_11;
@@ -205,7 +205,7 @@ public abstract class class233 {
                this.field3137[i_11] = new int[i_12];
 
                for (i_14 = 0; i_14 < i_12; i_14++) {
-                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.method5685((byte) 33);
+                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.method5685();
                   if (i_15 > i_13) {
                      i_13 = i_15;
                   }
@@ -222,7 +222,7 @@ public abstract class class233 {
                this.field3137[i_11] = new int[i_12];
 
                for (i_14 = 0; i_14 < i_12; i_14++) {
-                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.method5496(-1459053594);
+                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.method5496();
                   if (i_15 > i_13) {
                      i_13 = i_15;
                   }
@@ -242,7 +242,7 @@ public abstract class class233 {
                this.field3127[i_11] = new int[this.field3138[i_11].length];
 
                for (i_13 = 0; i_13 < i_12; i_13++) {
-                  this.field3127[i_11][this.field3137[i_11][i_13]] = class300_5.method5499((byte) -60);
+                  this.field3127[i_11][this.field3137[i_11][i_13]] = class300_5.method5499();
                }
 
                this.field3140[i_11] = new class335(this.field3127[i_11]);
@@ -331,7 +331,7 @@ public abstract class class233 {
             } else {
                bytes_22 = class308.method5873(this.field3126[i_1], true, 991854443);
                class300 class300_9 = new class300(bytes_22);
-               class300_9.method5703(ints_2, 5, class300_9.field3730.length, 1963802752);
+               class300_9.method5703(ints_2, 5, class300_9.field3730.length);
             }
 
             byte[] bytes_26 = class70.method1678(bytes_22, -303237660);
@@ -355,7 +355,7 @@ public abstract class class233 {
                   i_15 = 0;
 
                   for (i_16 = 0; i_16 < i_4; i_16++) {
-                     i_15 += class300_12.method5499((byte) -70);
+                     i_15 += class300_12.method5499();
                      ints_13[i_16] += i_15;
                   }
                }
@@ -375,7 +375,7 @@ public abstract class class233 {
                   int i_17 = 0;
 
                   for (i_18 = 0; i_18 < i_4; i_18++) {
-                     i_17 += class300_12.method5499((byte) -51);
+                     i_17 += class300_12.method5499();
                      System.arraycopy(bytes_26, i_15, bytes_24[i_18], ints_13[i_18], i_17);
                      ints_13[i_18] += i_17;
                      i_15 += i_17;

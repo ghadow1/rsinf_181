@@ -13,11 +13,11 @@ public class class9 {
 
    public class9(class300 class300_1, boolean bool_2) {
       this.field62 = class300_1.method5495();
-      this.field59 = class300_1.method5496(-1459053594);
-      this.field60 = class300_1.method5499((byte) -8);
-      this.field61 = class300_1.method5499((byte) -59);
-      this.field58 = class300_1.method5499((byte) -85);
-      this.field63 = class300_1.method5499((byte) -81);
+      this.field59 = class300_1.method5496();
+      this.field60 = class300_1.method5499();
+      this.field61 = class300_1.method5499();
+      this.field58 = class300_1.method5499();
+      this.field63 = class300_1.method5499();
    }
 
    void method115(int i_1, byte b_2) {

@@ -13,22 +13,22 @@ public class class124 extends class180 {
    static int[] field1628;
 
    class124(class300 class300_1) {
-      this.field1623 = class300_1.method5496(-1459053594);
-      this.field1624 = class300_1.method5504((byte) 61) == 1;
-      int i_2 = class300_1.method5504((byte) 24);
+      this.field1623 = class300_1.method5496();
+      this.field1624 = class300_1.method5504() == 1;
+      int i_2 = class300_1.method5504();
       if (i_2 >= 1 && i_2 <= 4) {
          this.field1632 = new int[i_2];
 
          int i_3;
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            this.field1632[i_3] = class300_1.method5496(-1459053594);
+            this.field1632[i_3] = class300_1.method5496();
          }
 
          if (i_2 > 1) {
             this.field1626 = new int[i_2 - 1];
 
             for (i_3 = 0; i_3 < i_2 - 1; i_3++) {
-               this.field1626[i_3] = class300_1.method5504((byte) 32);
+               this.field1626[i_3] = class300_1.method5504();
             }
          }
 
@@ -36,18 +36,18 @@ public class class124 extends class180 {
             this.field1627 = new int[i_2 - 1];
 
             for (i_3 = 0; i_3 < i_2 - 1; i_3++) {
-               this.field1627[i_3] = class300_1.method5504((byte) 52);
+               this.field1627[i_3] = class300_1.method5504();
             }
          }
 
          this.field1619 = new int[i_2];
 
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            this.field1619[i_3] = class300_1.method5499((byte) -121);
+            this.field1619[i_3] = class300_1.method5499();
          }
 
-         this.field1629 = class300_1.method5504((byte) 120);
-         this.field1630 = class300_1.method5504((byte) 98);
+         this.field1629 = class300_1.method5504();
+         this.field1630 = class300_1.method5504();
          this.field1631 = null;
       } else {
          throw new RuntimeException();

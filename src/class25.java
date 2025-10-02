@@ -20,7 +20,7 @@ public class class25 {
          class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       }
 
-      class224.method4120(class217_4, -593655354);
+      class224.method4120(class217_4);
       if (i_0 != 1200 && i_0 != 1205 && i_0 != 1212) {
          if (i_0 == 1201) {
             class217_4.field2607 = 2;

@@ -298,7 +298,7 @@ public class class209 {
          while (true) {
             int i_10;
             while (!bool_9) {
-               i_10 = class300_5.method5508(497319136);
+               i_10 = class300_5.method5508();
                if (i_10 == 0) {
                   continue label71;
                }
@@ -306,7 +306,7 @@ public class class209 {
                i_8 += i_10 - 1;
                int i_11 = i_8 & 0x3f;
                int i_12 = i_8 >> 6 & 0x3f;
-               int i_13 = class300_5.method5504((byte) 121) >> 2;
+               int i_13 = class300_5.method5504() >> 2;
                int i_14 = i_12 + i_1;
                int i_15 = i_11 + i_2;
                if (i_14 > 0 && i_15 > 0 && i_14 < 103 && i_15 < 103) {
@@ -322,12 +322,12 @@ public class class209 {
                }
             }
 
-            i_10 = class300_5.method5508(497319136);
+            i_10 = class300_5.method5508();
             if (i_10 == 0) {
                break;
             }
 
-            class300_5.method5504((byte) 86);
+            class300_5.method5504();
          }
       }
    }

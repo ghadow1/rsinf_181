@@ -55,7 +55,7 @@ public class class134 {
          class217_5.field2574 = class76.field1098[class70.field1014 + 1];
          class217_5.field2694 = class76.field1098[class70.field1014 + 2];
          class217_5.field2570 = class76.field1098[class70.field1014 + 3];
-         class224.method4120(class217_5, -629795054);
+         class224.method4120(class217_5);
          class27.field233.method1260(class217_5, 2120964597);
          if (i_4 != -1 && class217_5.field2566 == 0) {
             class27.method413(class217.field2556[i_4 >> 16], class217_5, false, 870375054);
@@ -68,7 +68,7 @@ public class class134 {
          class217_5.field2576 = class76.field1098[class70.field1014 + 1];
          class217_5.field2638 = class76.field1098[class70.field1014 + 2];
          class217_5.field2572 = class76.field1098[class70.field1014 + 3];
-         class224.method4120(class217_5, 774894262);
+         class224.method4120(class217_5);
          class27.field233.method1260(class217_5, 2120964597);
          if (i_4 != -1 && class217_5.field2566 == 0) {
             class27.method413(class217.field2556[i_4 >> 16], class217_5, false, 768291879);
@@ -79,7 +79,7 @@ public class class134 {
          boolean bool_6 = class76.field1098[--class70.field1014] == 1;
          if (bool_6 != class217_5.field2706) {
             class217_5.field2706 = bool_6;
-            class224.method4120(class217_5, 473075932);
+            class224.method4120(class217_5);
          }
 
          return 1;
