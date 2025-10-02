@@ -12,10 +12,14 @@ public final class class328 {
          this.field3918[i_2] = ints_1[i_2];
       }
 
-      this.method6247((byte) 2);
+      this.method6247();
    }
 
-   final void method6248(int i_1) {
+   static class229[] method6256() {
+      return new class229[]{class229.field3099, class229.field3101, class229.field3102, class229.field3098};
+   }
+
+   final void method6248() {
       this.field3917 += ++this.field3924;
 
       for (int i_2 = 0; i_2 < 256; i_2++) {
@@ -40,16 +44,16 @@ public final class class328 {
 
    }
 
-   public final int method6254(byte b_1) {
+   public final int method6254() {
       if (this.field3919 == 0) {
-         this.method6248(-1611184076);
+         this.method6248();
          this.field3919 = 256;
       }
 
       return this.field3918[this.field3919 - 1];
    }
 
-   final void method6247(byte b_1) {
+   final void method6247() {
       int i_10 = -1640531527;
       int i_9 = -1640531527;
       int i_8 = -1640531527;
@@ -173,21 +177,17 @@ public final class class328 {
          this.field3921[i_2 + 7] = i_10;
       }
 
-      this.method6248(-1888611260);
+      this.method6248();
       this.field3919 = 256;
    }
 
-   public final int method6246(byte b_1) {
+   public final int method6246() {
       if (this.field3919 == 0) {
-         this.method6248(-1392321309);
+         this.method6248();
          this.field3919 = 256;
       }
 
       return this.field3918[--this.field3919];
-   }
-
-   static class229[] method6256(int i_0) {
-      return new class229[] {class229.field3099, class229.field3101, class229.field3102, class229.field3098};
    }
 
 }

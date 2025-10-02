@@ -355,7 +355,7 @@ public final class class66 extends class69 {
          }
       } else if (i_1 == 1) {
          try {
-            Object object_11 = class47.method806(class51.field437, string_2, new Object[] {(new URL(class51.field437.getCodeBase(), string_0)).toString()}, -1678230547);
+            Object object_11 = class47.method806(class51.field437, string_2, new Object[] {(new URL(class51.field437.getCodeBase(), string_0)).toString()});
             return object_11 != null;
          } catch (Throwable throwable_7) {
             return false;

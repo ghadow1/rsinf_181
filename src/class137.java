@@ -159,7 +159,7 @@ public class class137 {
          Client.field843[i_1] = true;
       }
 
-      class70.method1677(-2137853836);
+      class70.writeOutgoingWindowMode();
       class46.field410 = null;
 
       for (i_1 = 0; i_1 < 8; i_1++) {

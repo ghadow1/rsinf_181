@@ -72,8 +72,8 @@ public class class74 {
                   class62.method1132(30, "", string_5, -2140395376);
                } else {
                   class187 class187_4 = class235.method4265(class183.field2291, Client.field880.field1313, 1775123545);
-                  class187_4.field2333.writeByte(class209.method3945(string_1));
-                  class187_4.field2333.writeNullTerminatedString(string_1);
+                  class187_4.outBuffer.writeByte(class209.method3945(string_1));
+                  class187_4.outBuffer.writeNullTerminatedString(string_1);
                   Client.field880.copy(class187_4);
                }
             }
@@ -88,8 +88,8 @@ public class class74 {
             if (this.field1070.method5085(class283_3, (byte) 38)) {
                Client.field672 = Client.field673;
                class187 class187_4 = class235.method4265(class183.field2224, Client.field880.field1313, 1775123545);
-               class187_4.field2333.writeByte(class209.method3945(string_1));
-               class187_4.field2333.writeNullTerminatedString(string_1);
+               class187_4.outBuffer.writeByte(class209.method3945(string_1));
+               class187_4.outBuffer.writeNullTerminatedString(string_1);
                Client.field880.copy(class187_4);
             }
 
@@ -126,8 +126,8 @@ public class class74 {
             if (this.field1071.method5085(class283_3, (byte) 63)) {
                Client.field672 = Client.field673;
                class187 class187_4 = class235.method4265(class183.field2231, Client.field880.field1313, 1775123545);
-               class187_4.field2333.writeByte(class209.method3945(string_1));
-               class187_4.field2333.writeNullTerminatedString(string_1);
+               class187_4.outBuffer.writeByte(class209.method3945(string_1));
+               class187_4.outBuffer.writeNullTerminatedString(string_1);
                Client.field880.copy(class187_4);
             }
 
@@ -176,7 +176,7 @@ public class class74 {
       return i_0;
    }
 
-   public static String method1820(byte[] bytes_0, int i_1, int i_2, byte b_3) {
+   public static String method1820(byte[] bytes_0, int i_1, int i_2) {
       char[] arr_4 = new char[i_2];
       int i_5 = 0;
 

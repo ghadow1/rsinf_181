@@ -36,7 +36,7 @@ public class class183 implements class181 {
    public static final class183 field2235 = new class183(32, 8);
    public static final class183 field2254 = new class183(33, 3);
    public static final class183 field2237 = new class183(34, -1);
-   public static final class183 field2238 = new class183(35, 5);
+   public static final class183 WINDOW_STATUS = new class183(35, 5);
    public static final class183 field2244 = new class183(36, 2);
    public static final class183 field2240 = new class183(37, 0);
    public static final class183 field2205 = new class183(38, -1);
@@ -98,7 +98,7 @@ public class class183 implements class181 {
    public static final class183 field2226 = new class183(94, 7);
    public static final class183 field2298 = new class183(95, -1);
    public static final class183 field2299 = new class183(96, -1);
-   public static final class183 field2258 = new class183(97, -1);
+   public static final class183 MESSAGE_PUBLIC = new class183(97, -1);
    public static final class183 field2239 = new class183(98, 8);
    static final class183 field2302 = new class183(99, 7);
    final int field2297;

@@ -22,10 +22,10 @@ public class class28 {
 
    public static void method418(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
       class187 class187_5 = class235.method4265(class183.field2296, Client.field880.field1313, 1775123545);
-      class187_5.field2333.writeIntReversed(bool_3 ? Client.field855 : 0);
-      class187_5.field2333.writeShortLittleEndian(i_1);
-      class187_5.field2333.writeNegatedByte(i_2);
-      class187_5.field2333.writeShortBigEndian(i_0);
+      class187_5.outBuffer.writeIntReversed(bool_3 ? Client.field855 : 0);
+      class187_5.outBuffer.writeShortLittleEndian(i_1);
+      class187_5.outBuffer.writeNegatedByte(i_2);
+      class187_5.outBuffer.writeShortBigEndian(i_0);
       Client.field880.copy(class187_5);
    }
 

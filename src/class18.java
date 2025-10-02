@@ -325,7 +325,7 @@ public class class18 extends class34 {
 
          byte[] bytes_4 = new byte[i_3];
          class300_0.position += class210.field2515.method3944(class300_0.buffer, class300_0.position, bytes_4, 0, i_3, 2122202814);
-         String string_5 = class74.method1820(bytes_4, 0, i_3, (byte) 90);
+         String string_5 = class74.method1820(bytes_4, 0, i_3);
          return string_5;
       } catch (Exception exception_7) {
          return "Cabbage";
@@ -353,20 +353,20 @@ public class class18 extends class34 {
                int i_12 = i_10 + Client.field657.field1005 >> 7;
                int i_13 = Client.field657.field949 - i_11 >> 7;
                class187 class187_14 = class235.method4265(class183.field2262, Client.field880.field1313, 1775123545);
-               class187_14.field2333.writeByte(18);
-               class187_14.field2333.writeShortWithOffset2(i_13 + class1.field1);
-               class187_14.field2333.writeShortWithOffset2(i_12 + class196.field2389);
-               class187_14.field2333.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
-               class187_14.field2333.writeByte(i_5);
-               class187_14.field2333.writeByte(i_6);
-               class187_14.field2333.writeShortBigEndian(Client.field722);
-               class187_14.field2333.writeByte(57);
-               class187_14.field2333.writeByte(0);
-               class187_14.field2333.writeByte(0);
-               class187_14.field2333.writeByte(89);
-               class187_14.field2333.writeShortBigEndian(Client.field657.field1005);
-               class187_14.field2333.writeShortBigEndian(Client.field657.field949);
-               class187_14.field2333.writeByte(63);
+               class187_14.outBuffer.writeByte(18);
+               class187_14.outBuffer.writeShortWithOffset2(i_13 + class1.field1);
+               class187_14.outBuffer.writeShortWithOffset2(i_12 + class196.field2389);
+               class187_14.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
+               class187_14.outBuffer.writeByte(i_5);
+               class187_14.outBuffer.writeByte(i_6);
+               class187_14.outBuffer.writeShortBigEndian(Client.field722);
+               class187_14.outBuffer.writeByte(57);
+               class187_14.outBuffer.writeByte(0);
+               class187_14.outBuffer.writeByte(0);
+               class187_14.outBuffer.writeByte(89);
+               class187_14.outBuffer.writeShortBigEndian(Client.field657.field1005);
+               class187_14.outBuffer.writeShortBigEndian(Client.field657.field949);
+               class187_14.outBuffer.writeByte(63);
                Client.field880.copy(class187_14);
                Client.field885 = i_12;
                Client.field842 = i_13;

@@ -297,19 +297,19 @@ public class class235 extends class233 {
       class187_3.field2338 = class183_0;
       class187_3.field2332 = class183_0.field2275;
       if (class187_3.field2332 == -1) {
-         class187_3.field2333 = new class299(260);
+         class187_3.outBuffer = new class299(260);
       } else if (class187_3.field2332 == -2) {
-         class187_3.field2333 = new class299(10000);
+         class187_3.outBuffer = new class299(10000);
       } else if (class187_3.field2332 <= 18) {
-         class187_3.field2333 = new class299(20);
+         class187_3.outBuffer = new class299(20);
       } else if (class187_3.field2332 <= 98) {
-         class187_3.field2333 = new class299(100);
+         class187_3.outBuffer = new class299(100);
       } else {
-         class187_3.field2333 = new class299(260);
+         class187_3.outBuffer = new class299(260);
       }
 
-      class187_3.field2333.method5442(class328_1);
-      class187_3.field2333.method5473(class187_3.field2338.field2297);
+      class187_3.outBuffer.method5442(class328_1);
+      class187_3.outBuffer.method5473(class187_3.field2338.field2297);
       class187_3.field2331 = 0;
       return class187_3;
    }

@@ -77,7 +77,7 @@ public abstract class class34 {
       return this.method579(i_1, i_2, 406020312) ? true : this.method585(i_1, i_2, -1252480817);
    }
 
-   static int method598(byte b_0) {
+   static int method598() {
       return Client.field869 ? 2 : 1;
    }
 

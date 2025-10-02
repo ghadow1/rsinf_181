@@ -42,8 +42,8 @@ public class class219 {
 
    static final void method4111(String string_0, int i_1) {
       class187 class187_2 = class235.method4265(class183.field2210, Client.field880.field1313, 1775123545);
-      class187_2.field2333.writeByte(class209.method3945(string_0));
-      class187_2.field2333.writeNullTerminatedString(string_0);
+      class187_2.outBuffer.writeByte(class209.method3945(string_0));
+      class187_2.outBuffer.writeNullTerminatedString(string_0);
       Client.field880.copy(class187_2);
    }
 

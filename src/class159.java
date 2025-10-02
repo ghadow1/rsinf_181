@@ -146,7 +146,7 @@ public class class159 extends ChainedComparator {
 
    static int method3436(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       if (i_0 == 5306) {
-         class76.field1098[++class70.field1014 - 1] = class34.method598((byte) -120);
+         class76.field1098[++class70.field1014 - 1] = class34.method598();
          return 1;
       } else {
          int i_4;

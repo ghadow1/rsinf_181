@@ -40,8 +40,8 @@ public class class95 {
 
    public final void copy(class187 class187_1) {
       this.field1316.method4819(class187_1);
-      class187_1.field2331 = class187_1.field2333.position;
-      class187_1.field2333.position = 0;
+      class187_1.field2331 = class187_1.outBuffer.position;
+      class187_1.outBuffer.position = 0;
       this.field1311 += class187_1.field2331;
    }
 
@@ -61,10 +61,10 @@ public class class95 {
                break;
             }
 
-            this.field1312.writeBytes(class187_2.field2333.buffer, 0, class187_2.field2331);
+            this.field1312.writeBytes(class187_2.outBuffer.buffer, 0, class187_2.field2331);
             this.field1311 -= class187_2.field2331;
             class187_2.unlink();
-            class187_2.field2333.release();
+            class187_2.outBuffer.release();
             class187_2.method3620((byte) -108);
          }
       }

@@ -14,14 +14,14 @@ public abstract class class170 {
          Client.field869 = false;
       }
 
-      if (class34.method598((byte) -108) == 1) {
+      if (class34.method598() == 1) {
          class27.field233.method988(765, 503);
       } else {
          class27.field233.method988(7680, 2160);
       }
 
       if (Client.field662 >= 25) {
-         class70.method1677(-1624187030);
+         class70.writeOutgoingWindowMode();
       }
 
    }

@@ -92,7 +92,7 @@ public class ByteBuffer extends LinkedListNode {
          // Continue until null terminator
       }
       int length = this.position - start - 1;
-      return length == 0 ? "" : class74.method1820(this.buffer, start, length, (byte) 5);
+      return length == 0 ? "" : class74.method1820(this.buffer, start, length);
    }
 
    //..Reads a 32-bit integer in medium-endian byte order (custom order)
@@ -104,6 +104,13 @@ public class ByteBuffer extends LinkedListNode {
               ((this.buffer[this.position - 4] & 0xff) << 24);
    }
 
+   //..Writes a 32-bit integer in medium-endian byte order (custom order)
+   public void write32IntBigEndian(int value) {
+      this.buffer[++this.position - 1] = (byte) (value >> 24);
+      this.buffer[++this.position - 1] = (byte) (value >> 16);
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
+      this.buffer[++this.position - 1] = (byte) value;
+   }
    //..Writes a single byte
    public void writeByte(int value) {
       this.buffer[++this.position - 1] = (byte) value;
@@ -216,7 +223,7 @@ public class ByteBuffer extends LinkedListNode {
          // Continue until null terminator
       }
       int length = this.position - start - 1;
-      return length == 0 ? "" : class74.method1820(this.buffer, start, length, (byte) 52);
+      return length == 0 ? "" : class74.method1820(this.buffer, start, length);
    }
 
    //..Writes a variable-length integer (VLQ encoding)

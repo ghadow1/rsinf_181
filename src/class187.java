@@ -1,7 +1,7 @@
 public class class187 extends LinkedListNode {
 
    static class229 field2337;
-   public class299 field2333;
+   public class299 outBuffer;
    public int field2331;
    public class183 field2338;
    public int field2332;
@@ -410,7 +410,7 @@ public class class187 extends LinkedListNode {
             class187 class187_59;
             if (class27.field233.method931(285080873)) {
                class187_59 = class235.method4265(class183.field2212, Client.field880.field1313, 1775123545);
-               class187_59.field2333.writeIntBigEndian(1057001181);
+               class187_59.outBuffer.writeIntBigEndian(1057001181);
                Client.field880.copy(class187_59);
             }
 
