@@ -72,7 +72,7 @@ public class class198 extends class115 {
                this.field2427[class199_3.field2440][class199_3.field2450] = null;
             }
 
-            class199_3.method3607();
+            class199_3.unlink();
          }
       }
 
@@ -284,7 +284,7 @@ public class class198 extends class115 {
       }
 
       for (class177 class177_8 = (class177) class203_1.field2492.method5950(); class177_8 != null; class177_8 = (class177) class203_1.field2492.method5953()) {
-         int i_9 = (int)class177_8.field2113;
+         int i_9 = (int)class177_8.hash;
          class201 class201_10 = (class201) this.field2417.method5952((long)i_9);
          if (class201_10 == null) {
             byte[] bytes_12 = class233_2.method4208(i_9);
@@ -319,7 +319,7 @@ public class class198 extends class115 {
    boolean method3739(class199 class199_1, int i_2) {
       if (class199_1.field2454 == null) {
          if (class199_1.field2436 >= 0) {
-            class199_1.method3607();
+            class199_1.unlink();
             if (class199_1.field2438 > 0 && class199_1 == this.field2428[class199_1.field2440][class199_1.field2438]) {
                this.field2428[class199_1.field2440][class199_1.field2438] = null;
             }
@@ -556,7 +556,7 @@ public class class198 extends class115 {
 
    public synchronized void method3710(int i_1) {
       for (class201 class201_2 = (class201) this.field2417.method5950(); class201_2 != null; class201_2 = (class201) this.field2417.method5953()) {
-         class201_2.method3607();
+         class201_2.unlink();
       }
 
    }
@@ -652,7 +652,7 @@ public class class198 extends class115 {
 
             class199_1.method3826((byte) -23);
             if (class199_1.field2436 >= 0) {
-               class199_1.method3607();
+               class199_1.unlink();
                if (class199_1.field2438 > 0 && class199_1 == this.field2428[class199_1.field2440][class199_1.field2438]) {
                   this.field2428[class199_1.field2440][class199_1.field2438] = null;
                }
@@ -665,7 +665,7 @@ public class class198 extends class115 {
          }
       } else {
          class199_1.method3826((byte) -18);
-         class199_1.method3607();
+         class199_1.unlink();
          if (class199_1.field2438 > 0 && class199_1 == this.field2428[class199_1.field2440][class199_1.field2438]) {
             this.field2428[class199_1.field2440][class199_1.field2438] = null;
          }

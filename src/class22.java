@@ -19,13 +19,13 @@ public final class class22 {
             if (client.field881 >= class77_1.field1114) {
                class77_1.method1938(client.field718, (byte) 4);
                if (class77_1.field1122) {
-                  class77_1.method3607();
+                  class77_1.unlink();
                } else {
                   class5.field22.method3077(class77_1.field1124, class77_1.field1117, class77_1.field1113, class77_1.field1118, 60, class77_1, 0, -1L, false);
                }
             }
          } else {
-            class77_1.method3607();
+            class77_1.unlink();
          }
       }
 

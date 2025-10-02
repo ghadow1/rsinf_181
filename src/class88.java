@@ -38,7 +38,7 @@ public class class88 {
       class261 class261_5 = class234.field3146;
       synchronized(class234.field3146) {
          for (class231 class231_6 = (class231) class234.field3146.method4892(); class231_6 != null; class231_6 = (class231) class234.field3146.method4894()) {
-            if ((long)i_0 == class231_6.field2113 && class308_1 == class231_6.field3116 && class231_6.field3118 == 0) {
+            if ((long)i_0 == class231_6.hash && class308_1 == class231_6.field3116 && class231_6.field3118 == 0) {
                bytes_4 = class231_6.field3115;
                break;
             }

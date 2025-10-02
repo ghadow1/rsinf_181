@@ -1,4 +1,4 @@
-public class class217 extends class180 {
+public class class217 extends LinkedListNode {
 
    public static class217[][] field2556;
    public static class233 field2557;

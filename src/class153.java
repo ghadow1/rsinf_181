@@ -103,7 +103,7 @@ public class class153 extends class275 {
             class68_20.field937 -= i_6;
             class68_20.field934 -= i_7;
             if (class68_20.field937 < 0 || class68_20.field934 < 0 || class68_20.field937 >= 104 || class68_20.field934 >= 104) {
-               class68_20.method3607();
+               class68_20.unlink();
             }
          }
 

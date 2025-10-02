@@ -60,7 +60,7 @@ public class class108 {
          if (class103_8 == null) {
             return null;
          } else {
-            class102_9.method3607();
+            class102_9.unlink();
             this.field1441.method5951(class103_8, long_6);
             return class103_8;
          }

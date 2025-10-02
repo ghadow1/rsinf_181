@@ -294,10 +294,10 @@ public class class256 extends class175 {
       }
    }
 
-   void method4704(int i_1) {
+   void method4704() {
    }
 
-   void method4703(ByteBuffer class300_1, int i_2) {
+   void method4703(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
@@ -308,7 +308,7 @@ public class class256 extends class175 {
       }
    }
 
-   public boolean method4710(byte b_1) {
+   public boolean method4710() {
       if (this.field3476 == null) {
          return true;
       } else {
@@ -323,7 +323,7 @@ public class class256 extends class175 {
       }
    }
 
-   public int method4711(int i_1, int i_2, int i_3) {
+   public int method4711(int i_1, int i_2) {
       class316 class316_5 = this.field3487;
       int i_4;
       if (class316_5 == null) {

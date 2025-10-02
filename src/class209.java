@@ -272,7 +272,7 @@ public class class209 {
 
    static int method3948(int i_0, int i_1) {
       long long_3 = (long)((i_0 << 16) + i_1);
-      return class226.field3071 != null && class226.field3071.field2113 == long_3 ? class240.field3209.position * 99 / (class240.field3209.buffer.length - class226.field3071.field3122) + 1 : 0;
+      return class226.field3071 != null && class226.field3071.hash == long_3 ? class240.field3209.position * 99 / (class240.field3209.buffer.length - class226.field3071.field3122) + 1 : 0;
    }
 
    public static int method3945(String string_0) {

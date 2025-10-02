@@ -5,9 +5,9 @@ import java.math.BigInteger;
  * with support for various byte orders and encoding schemes.
  * Extends class180 (likely a base buffer class).
  *
- * @author conditions
+ * @author jagex, refactored by conditions
  */
-public class ByteBuffer extends class180 {
+public class ByteBuffer extends LinkedListNode {
 
    //..CRC32 lookup table for checksum calculations
    static int[] crc32Table = new int[256];

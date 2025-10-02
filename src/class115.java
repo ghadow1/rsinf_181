@@ -1,4 +1,4 @@
-public abstract class class115 extends class180 {
+public abstract class class115 extends LinkedListNode {
 
    class118 field1497;
    class115 field1495;

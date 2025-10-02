@@ -6,7 +6,7 @@ public class class294 {
    static void method5328(int i_0, byte[] bytes_1, class308 class308_2, int i_3) {
       class231 class231_4 = new class231();
       class231_4.field3118 = 0;
-      class231_4.field2113 = (long)i_0;
+      class231_4.hash = (long)i_0;
       class231_4.field3115 = bytes_1;
       class231_4.field3116 = class308_2;
       class261 class261_5 = class234.field3146;

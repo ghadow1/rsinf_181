@@ -63,7 +63,7 @@ public class class95 {
 
             this.field1312.writeBytes(class187_2.field2333.buffer, 0, class187_2.field2331);
             this.field1311 -= class187_2.field2331;
-            class187_2.method3607();
+            class187_2.unlink();
             class187_2.field2333.release();
             class187_2.method3620((byte) -108);
          }
@@ -100,7 +100,7 @@ public class class95 {
                class5.field22.method3077(class42.field372, (int)class86_1.field1218, (int)class86_1.field1227, (int)class86_1.field1228, 60, class86_1, class86_1.field1234, -1L, false);
             }
          } else {
-            class86_1.method3607();
+            class86_1.unlink();
          }
       }
 

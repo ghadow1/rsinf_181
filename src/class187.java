@@ -1,4 +1,4 @@
-public class class187 extends class180 {
+public class class187 extends LinkedListNode {
 
    static class229 field2337;
    public class299 field2333;
@@ -402,7 +402,7 @@ public class class187 extends class180 {
                   class68_58.field941 = 0;
                   class294.method5327(class68_58, -938277055);
                } else {
-                  class68_58.method3607();
+                  class68_58.unlink();
                }
             }
 

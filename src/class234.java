@@ -21,13 +21,13 @@ public class class234 implements Runnable {
             Object object_14;
             if (class231_1 != null) {
                if (class231_1.field3118 == 0) {
-                  class231_1.field3116.method5866((int)class231_1.field2113, class231_1.field3115, class231_1.field3115.length, -1155409189);
+                  class231_1.field3116.method5866((int)class231_1.hash, class231_1.field3115, class231_1.field3115.length, -1155409189);
                   class261_2 = field3146;
                   synchronized(field3146) {
-                     class231_1.method3607();
+                     class231_1.unlink();
                   }
                } else if (class231_1.field3118 == 1) {
-                  class231_1.field3115 = class231_1.field3116.method5865((int)class231_1.field2113, -8739933);
+                  class231_1.field3115 = class231_1.field3116.method5865((int)class231_1.hash, -8739933);
                   class261_2 = field3146;
                   synchronized(field3146) {
                      field3145.method4917(class231_1);

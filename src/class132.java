@@ -1,4 +1,4 @@
-public class class132 extends class180 {
+public class class132 extends LinkedListNode {
 
    static int field1800;
    int field1799;

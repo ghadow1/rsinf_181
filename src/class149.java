@@ -22,15 +22,15 @@ public final class class149 {
       for (class148 class148_2 = (class148) this.field1968.method4953(); class148_2 != null; class148_2 = (class148) this.field1968.method4983()) {
          if (class148_2.vmethod3371()) {
             if (class148_2.vmethod3370() == null) {
-               class148_2.method3607();
+               class148_2.unlink();
                class148_2.method3597();
                this.field1967 += class148_2.field1964;
             }
          } else if (++class148_2.field2105 > (long)i_1) {
             class150 class150_3 = new class150(class148_2.vmethod3370(), class148_2.field1964);
-            this.field1965.method5938(class150_3, class148_2.field2113);
+            this.field1965.method5938(class150_3, class148_2.hash);
             class265.method4958(class150_3, class148_2);
-            class148_2.method3607();
+            class148_2.unlink();
             class148_2.method3597();
          }
       }
@@ -44,7 +44,7 @@ public final class class149 {
 
    void method3347(class148 class148_1) {
       if (class148_1 != null) {
-         class148_1.method3607();
+         class148_1.unlink();
          class148_1.method3597();
          this.field1967 += class148_1.field1964;
       }
@@ -58,17 +58,17 @@ public final class class149 {
       } else {
          Object object_4 = class148_3.vmethod3370();
          if (object_4 == null) {
-            class148_3.method3607();
+            class148_3.unlink();
             class148_3.method3597();
             this.field1967 += class148_3.field1964;
             return null;
          } else {
             if (class148_3.vmethod3371()) {
                class147 class147_5 = new class147(object_4, class148_3.field1964);
-               this.field1965.method5938(class147_5, class148_3.field2113);
+               this.field1965.method5938(class147_5, class148_3.hash);
                this.field1968.method4950(class147_5);
                class147_5.field2105 = 0L;
-               class148_3.method3607();
+               class148_3.unlink();
                class148_3.method3597();
             } else {
                this.field1968.method4950(class148_3);

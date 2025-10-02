@@ -67,7 +67,7 @@ public class class235 extends class233 {
                class308 class308_3 = this.field3156;
                class231 class231_5 = new class231();
                class231_5.field3118 = 1;
-               class231_5.field2113 = (long)i_2;
+               class231_5.hash = (long)i_2;
                class231_5.field3116 = class308_3;
                class231_5.field3117 = this;
                class261 class261_6 = class234.field3146;

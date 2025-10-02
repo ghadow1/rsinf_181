@@ -1,7 +1,7 @@
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class class97 extends class180 {
+public class class97 extends LinkedListNode {
 
    public static int field1338;
    int field1340;

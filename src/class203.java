@@ -1,4 +1,4 @@
-public class class203 extends class180 {
+public class class203 extends LinkedListNode {
 
    byte[] field2491;
    class318 field2492;

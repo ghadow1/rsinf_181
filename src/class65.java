@@ -47,7 +47,7 @@ public class class65 extends class174 {
             }
 
             if (!bool_3) {
-               i_5 = (int)class61_1.field2113;
+               i_5 = (int)class61_1.hash;
                class217 class217_6 = class80.fetchSomething(i_5);
                if (class217_6 != null) {
                   class224.method4120(class217_6);

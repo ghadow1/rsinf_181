@@ -1,4 +1,4 @@
-public class class201 extends class180 {
+public class class201 extends LinkedListNode {
 
    class103[] field2474 = new class103[128];
    short[] field2482 = new short[128];

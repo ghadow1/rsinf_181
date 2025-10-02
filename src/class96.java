@@ -296,10 +296,10 @@ public class class96 {
                }
             } catch (Exception exception_28) {
                StringBuilder stringbuilder_25 = new StringBuilder(30);
-               stringbuilder_25.append("").append(class92_4.field2113).append(" ");
+               stringbuilder_25.append("").append(class92_4.hash).append(" ");
 
                for (i_11 = class76.field1109 - 1; i_11 >= 0; --i_11) {
-                  stringbuilder_25.append("").append(class76.field1101[i_11].field523.field2113).append(" ");
+                  stringbuilder_25.append("").append(class76.field1101[i_11].field523.hash).append(" ");
                }
 
                stringbuilder_25.append("").append(b_8);

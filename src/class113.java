@@ -117,7 +117,7 @@ public class class113 extends class115 {
          if (this.field1471 < 0) {
             if (this.field1469 <= 0) {
                this.method2647();
-               this.method3607();
+               this.unlink();
                return;
             }
 
@@ -127,7 +127,7 @@ public class class113 extends class115 {
          if (this.field1471 >= i_7) {
             if (this.field1469 >= 0) {
                this.method2647();
-               this.method3607();
+               this.unlink();
                return;
             }
 
@@ -264,14 +264,14 @@ public class class113 extends class115 {
                if (this.field1471 < 0) {
                   this.field1471 = -1;
                   this.method2647();
-                  this.method3607();
+                  this.unlink();
                }
             } else {
                this.method2543(ints_1, i_9, i_7, i_3, 0);
                if (this.field1471 >= i_7) {
                   this.field1471 = i_7;
                   this.method2647();
-                  this.method3607();
+                  this.unlink();
                }
             }
 
@@ -287,7 +287,7 @@ public class class113 extends class115 {
                this.field1474 = 0;
                this.field1482 = 0;
                this.field1472 = 0;
-               this.method3607();
+               this.unlink();
                i_1 = this.field1479;
             }
 
@@ -313,7 +313,7 @@ public class class113 extends class115 {
       if (this.field1471 < 0) {
          if (this.field1469 <= 0) {
             this.method2647();
-            this.method3607();
+            this.unlink();
             return;
          }
 
@@ -323,7 +323,7 @@ public class class113 extends class115 {
       if (this.field1471 >= i_5) {
          if (this.field1469 >= 0) {
             this.method2647();
-            this.method3607();
+            this.unlink();
             return;
          }
 
@@ -442,12 +442,12 @@ public class class113 extends class115 {
             if (this.field1471 < 0) {
                this.field1471 = -1;
                this.method2647();
-               this.method3607();
+               this.unlink();
             }
          } else if (this.field1471 >= i_5) {
             this.field1471 = i_5;
             this.method2647();
-            this.method3607();
+            this.unlink();
          }
 
       }
@@ -492,12 +492,12 @@ public class class113 extends class115 {
    public synchronized void method2540(int i_1) {
       if (i_1 == 0) {
          this.method2607(0);
-         this.method3607();
+         this.unlink();
       } else if (this.field1482 == 0 && this.field1474 == 0) {
          this.field1479 = 0;
          this.field1470 = 0;
          this.field1472 = 0;
-         this.method3607();
+         this.unlink();
       } else {
          int i_2 = -this.field1472;
          if (this.field1472 > i_2) {
@@ -641,7 +641,7 @@ public class class113 extends class115 {
             this.field1474 = 0;
             this.field1482 = 0;
             this.field1472 = 0;
-            this.method3607();
+            this.unlink();
             return true;
          } else {
             this.method2525();

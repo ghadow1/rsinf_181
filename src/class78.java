@@ -1,4 +1,4 @@
-public class class78 extends class180 {
+public class class78 extends LinkedListNode {
 
    public static class295 field1129;
    class260 field1130 = new class260();
@@ -32,7 +32,7 @@ public class class78 extends class180 {
       } else {
          class260.method4816(new class70(i_1, i_2, i_3, i_4), class70_6);
          if (i_7 >= 4) {
-            this.field1130.method4838().method3607();
+            this.field1130.method4838().unlink();
          }
 
       }
@@ -42,14 +42,14 @@ public class class78 extends class180 {
       class70 class70_3 = (class70) this.field1130.method4838();
       if (class70_3 != null && class70_3.field1016 <= i_1) {
          for (class70 class70_4 = (class70) this.field1130.method4808(); class70_4 != null && class70_4.field1016 <= i_1; class70_4 = (class70) this.field1130.method4808()) {
-            class70_3.method3607();
+            class70_3.unlink();
             class70_3 = class70_4;
          }
 
          if (this.field1128.field3285 + class70_3.field1016 + class70_3.field1010 > i_1) {
             return class70_3;
          } else {
-            class70_3.method3607();
+            class70_3.unlink();
             return null;
          }
       } else {

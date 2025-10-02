@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class class70 extends class180 {
+public class class70 extends LinkedListNode {
 
    static class305 field1015;
    static int field1017;
@@ -151,7 +151,7 @@ public class class70 extends class180 {
          }
 
          class299_0.writeCRC32Checksum(i_3);
-         class97_2.method3607();
+         class97_2.unlink();
       }
    }
 

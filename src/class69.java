@@ -146,7 +146,7 @@ public abstract class class69 extends class135 {
 
       for (class78 class78_4 = (class78) this.field954.method4838(); class78_4 != null; class78_4 = (class78) this.field954.method4808()) {
          if (class246_3 == class78_4.field1128) {
-            class78_4.method3607();
+            class78_4.unlink();
             return;
          }
       }
@@ -188,7 +188,7 @@ public abstract class class69 extends class135 {
 
          class78_13.method1949(i_2 + i_4, i_5, i_6, i_3, (byte) 56);
          if (i_12 >= 4) {
-            class78_10.method3607();
+            class78_10.unlink();
          }
 
       }

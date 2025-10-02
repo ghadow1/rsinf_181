@@ -176,7 +176,7 @@ public class class112 {
                class70 class70_90 = class78_89.method1950(client.field881, (byte) 41);
                if (class70_90 == null) {
                   if (class78_89.method1960(-16711936)) {
-                     class78_89.method3607();
+                     class78_89.unlink();
                   }
                } else {
                   class246 class246_92 = class78_89.field1128;

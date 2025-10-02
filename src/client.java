@@ -1100,9 +1100,9 @@ public final class client extends class53 implements class280 {
 
                for (i_21 = i_8; i_21 <= i_6; i_21++) {
                   long_22 = (long)i_21 + ((long)i_18 << 32);
-                  class180 class180_47 = field857.method5952(long_22);
-                  if (class180_47 != null) {
-                     class180_47.method3607();
+                  LinkedListNode linkedListNode_47 = field857.method5952(long_22);
+                  if (linkedListNode_47 != null) {
+                     linkedListNode_47.unlink();
                   }
 
                   field857.method5951(new class179(i_17), long_22);
@@ -1912,7 +1912,7 @@ public final class client extends class53 implements class280 {
                }
 
                if (class61_42 != null) {
-                  class61_42.method3607();
+                  class61_42.unlink();
                   field816.method5951(class61_42, (long)i_17);
                }
 
@@ -2244,7 +2244,7 @@ public final class client extends class53 implements class280 {
                   }
                } else {
                   class75_6.field1084.method2527(i_8);
-                  if (!class75_6.field1084.method3606()) {
+                  if (!class75_6.field1084.isLinked()) {
                      class75_6.field1084 = null;
                   }
                }
@@ -2400,7 +2400,7 @@ public final class client extends class53 implements class280 {
             return;
          }
 
-         class231_2.field3117.method4264(class231_2.field3116, (int) class231_2.field2113, class231_2.field3115, false);
+         class231_2.field3117.method4264(class231_2.field3116, (int) class231_2.hash, class231_2.field3115, false);
       }
    }
 
@@ -2907,7 +2907,7 @@ public final class client extends class53 implements class280 {
                   if (class68_37.field931 == 0) {
                      if (class68_37.field935 < 0 || class89.method2091(class68_37.field935, class68_37.field933, 2142202681)) {
                         class206.method3938(class68_37.field943, class68_37.field932, class68_37.field937, class68_37.field934, class68_37.field935, class68_37.field936, class68_37.field933);
-                        class68_37.method3607();
+                        class68_37.unlink();
                      }
                   } else {
                      if (class68_37.field941 > 0) {
@@ -2918,9 +2918,9 @@ public final class client extends class53 implements class280 {
                         class206.method3938(class68_37.field943, class68_37.field932, class68_37.field937, class68_37.field934, class68_37.field938, class68_37.field939, class68_37.field940);
                         class68_37.field941 = -1;
                         if (class68_37.field938 == class68_37.field935 && class68_37.field935 == -1) {
-                           class68_37.method3607();
+                           class68_37.unlink();
                         } else if (class68_37.field935 == class68_37.field938 && class68_37.field936 == class68_37.field939 && class68_37.field933 == class68_37.field940) {
-                           class68_37.method3607();
+                           class68_37.unlink();
                         }
                      }
                   }

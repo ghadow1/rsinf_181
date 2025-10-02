@@ -30,11 +30,11 @@ public final class class145 {
    public void method3322(class175 class175_1, long long_2) {
       if (this.field1960 == 0) {
          class175 class175_4 = this.field1962.method4952();
-         class175_4.method3607();
+         class175_4.unlink();
          class175_4.method3597();
          if (class175_4 == this.field1959) {
             class175_4 = this.field1962.method4952();
-            class175_4.method3607();
+            class175_4.unlink();
             class175_4.method3597();
          }
       } else {
@@ -55,7 +55,7 @@ public final class class145 {
    public void method3328(long long_1) {
       class175 class175_3 = (class175) this.field1958.method5924(long_1);
       if (class175_3 != null) {
-         class175_3.method3607();
+         class175_3.unlink();
          class175_3.method3597();
          ++this.field1960;
       }

@@ -46,7 +46,7 @@ public class class98 extends class115 {
                this.method2274(class110_5);
             } else {
                class110_5.field1452 = i_7;
-               this.method2273(class110_5.field2114, class110_5);
+               this.method2273(class110_5.next, class110_5);
             }
          }
       } while (i_3 != 0);
@@ -79,7 +79,7 @@ public class class98 extends class115 {
                this.method2274(class110_3);
             } else {
                class110_3.field1452 = i_5;
-               this.method2273(class110_3.field2114, class110_3);
+               this.method2273(class110_3.next, class110_3);
             }
          }
       } while (i_1 != 0);
@@ -111,28 +111,28 @@ public class class98 extends class115 {
    }
 
    public final synchronized void method2293(class115 class115_1) {
-      class115_1.method3607();
+      class115_1.unlink();
    }
 
    void method2274(class110 class110_1) {
-      class110_1.method3607();
+      class110_1.unlink();
       class110_1.method2493();
-      class180 class180_2 = this.field1342.field3540.field2114;
-      if (class180_2 == this.field1342.field3540) {
+      LinkedListNode linkedListNode_2 = this.field1342.field3540.next;
+      if (linkedListNode_2 == this.field1342.field3540) {
          this.field1344 = -1;
       } else {
-         this.field1344 = ((class110) class180_2).field1452;
+         this.field1344 = ((class110) linkedListNode_2).field1452;
       }
 
    }
 
-   void method2273(class180 class180_1, class110 class110_2) {
-      while (this.field1342.field3540 != class180_1 && ((class110) class180_1).field1452 <= class110_2.field1452) {
-         class180_1 = class180_1.field2114;
+   void method2273(LinkedListNode linkedListNode_1, class110 class110_2) {
+      while (this.field1342.field3540 != linkedListNode_1 && ((class110) linkedListNode_1).field1452 <= class110_2.field1452) {
+         linkedListNode_1 = linkedListNode_1.next;
       }
 
-      class261.method4889(class110_2, class180_1);
-      this.field1344 = ((class110) this.field1342.field3540.field2114).field1452;
+      class261.method4889(class110_2, linkedListNode_1);
+      this.field1344 = ((class110) this.field1342.field3540.next).field1452;
    }
 
    protected int vmethod3892() {

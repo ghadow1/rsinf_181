@@ -1,4 +1,4 @@
-public class class179 extends class180 {
+public class class179 extends LinkedListNode {
 
    public int field2111;
 

@@ -43,7 +43,7 @@ final class class1 implements class0 {
                if (class261_32 != null) {
                   for (class87_33 = (class87) class261_32.method4892(); class87_33 != null; class87_33 = (class87) class261_32.method4894()) {
                      if ((i_6 & 0x7fff) == class87_33.field1244) {
-                        class87_33.method3607();
+                        class87_33.unlink();
                         break;
                      }
                   }

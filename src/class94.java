@@ -19,7 +19,7 @@ public class class94 {
       if (class64_6 == null) {
          class64_6 = new class64(i_1, string_2, string_4, string_3);
       } else {
-         class64_6.method3607();
+         class64_6.unlink();
          class64_6.method3597();
          class64_6.method1143(i_1, string_2, string_4, string_3, (byte) -46);
       }

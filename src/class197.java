@@ -15,8 +15,8 @@ public class class197 {
 
    static final void method3697(class61 class61_0, boolean bool_1) {
       int i_3 = class61_0.field571;
-      int i_4 = (int)class61_0.field2113;
-      class61_0.method3607();
+      int i_4 = (int)class61_0.hash;
+      class61_0.unlink();
       int i_6;
       if (bool_1 && i_3 != -1 && class128.field1755[i_3]) {
          class217.field2557.method4157(i_3, 513084306);
@@ -42,8 +42,8 @@ public class class197 {
       }
 
       for (class179 class179_5 = (class179) client.field857.method5950(); class179_5 != null; class179_5 = (class179) client.field857.method5953()) {
-         if ((class179_5.field2113 >> 48 & 0xffffL) == (long)i_3) {
-            class179_5.method3607();
+         if ((class179_5.hash >> 48 & 0xffffL) == (long)i_3) {
+            class179_5.unlink();
          }
       }
 
@@ -182,7 +182,7 @@ public class class197 {
                      if (class249_10.method4499(715128499)) {
                         class76.field1093[++class221.field2747 - 1] = class53.method1005(i_8, (byte) -48).method4740(i_9, class249_10.field3303, -1901190491);
                      } else {
-                        class76.field1098[++class70.field1014 - 1] = class53.method1005(i_8, (byte) 106).method4711(i_9, class249_10.field3302, -696362374);
+                        class76.field1098[++class70.field1014 - 1] = class53.method1005(i_8, (byte) 106).method4711(i_9, class249_10.field3302);
                      }
 
                      return 1;
