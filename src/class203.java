@@ -201,7 +201,7 @@ public class class203 extends class180 {
 
                   class300_51.writeByte(47);
                   class300_51.writeByte(0);
-                  class300_51.writeMiddleEndianInt(class300_51.position - i_61);
+                  class300_51.writeIntAtOffset(class300_51.position - i_61);
                   continue label235;
                }
 

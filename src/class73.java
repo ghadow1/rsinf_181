@@ -371,7 +371,7 @@ public class class73 {
                int i_14 = class187_12.field2333.position;
                class187_12.field2333.writeNullTerminatedString(string_4);
                class132.method3063(class187_12.field2333, string_13, 845593608);
-               class187_12.field2333.method5490(class187_12.field2333.position - i_14);
+               class187_12.field2333.writeShortSizeAtOffset(class187_12.field2333.position - i_14);
                client.field880.copy(class187_12);
                return 1;
             } else if (i_0 != 5015) {

@@ -9,7 +9,7 @@ public abstract class class205 {
       int i_7 = -1;
 
       while (true) {
-         int i_8 = class300_6.method5509();
+         int i_8 = class300_6.readExtendedSmartInt();
          if (i_8 == 0) {
             return;
          }

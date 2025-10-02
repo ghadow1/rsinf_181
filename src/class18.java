@@ -354,9 +354,9 @@ public class class18 extends class34 {
                int i_13 = client.field657.field949 - i_11 >> 7;
                class187 class187_14 = class235.method4265(class183.field2262, client.field880.field1313, 1775123545);
                class187_14.field2333.writeByte(18);
-               class187_14.field2333.method5530(i_13 + class1.field1);
-               class187_14.field2333.method5530(i_12 + class196.field2389);
-               class187_14.field2333.method5520(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
+               class187_14.field2333.writeShortWithOffset2(i_13 + class1.field1);
+               class187_14.field2333.writeShortWithOffset2(i_12 + class196.field2389);
+               class187_14.field2333.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.field2333.writeByte(i_5);
                class187_14.field2333.writeByte(i_6);
                class187_14.field2333.writeShortBigEndian(client.field722);

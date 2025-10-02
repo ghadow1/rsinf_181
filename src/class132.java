@@ -195,7 +195,7 @@ public class class132 extends class180 {
          }
       }
 
-      class300_0.method5492(bytes_6.length, (byte) 38);
+      class300_0.writeSmartShort(bytes_6.length);
       class300_0.position += class210.field2515.method3942(bytes_6, 0, bytes_6.length, class300_0.buffer, class300_0.position, -1706453276);
       return class300_0.position - i_3;
    }

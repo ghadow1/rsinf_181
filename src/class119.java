@@ -163,9 +163,9 @@ public class class119 implements class139 {
                   string_6 = class300_9.readPrefixedNullTerminatedString();
                }
             } else {
-               string_5 = class300_9.method5505();
+               string_5 = class300_9.readLengthPrefixedString();
                if (i_11 == 1) {
-                  string_6 = class300_9.method5505();
+                  string_6 = class300_9.readLengthPrefixedString();
                }
             }
 
@@ -241,7 +241,7 @@ public class class119 implements class139 {
             ByteBuffer class300_27 = new ByteBuffer(500);
             class300_27.writeByte(3);
             class300_27.writeByte(0);
-            class300_27.method5487(file_23.getPath());
+            class300_27.writeUTF8String(file_23.getPath());
 
             class343_26.method6561(class300_27.buffer, 0, class300_27.position);
             class343_26.method6550();

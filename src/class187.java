@@ -275,7 +275,7 @@ public class class187 extends class180 {
                                  int i_21 = -1;
 
                                  while (true) {
-                                    int i_22 = class300_20.method5509();
+                                    int i_22 = class300_20.readExtendedSmartInt();
                                     if (i_22 == 0) {
                                        continue label447;
                                     }

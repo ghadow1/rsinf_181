@@ -4,6 +4,8 @@ import java.math.BigInteger;
  * A custom buffer implementation for reading and writing binary data
  * with support for various byte orders and encoding schemes.
  * Extends class180 (likely a base buffer class).
+ *
+ * @author conditions
  */
 public class ByteBuffer extends class180 {
 
@@ -432,243 +434,273 @@ public class ByteBuffer extends class180 {
       this.buffer[++this.position - 1] = (byte)(0 - value);
    }
 
-   public int read32IntBigEndian() {
+   //..Reads a 32-bit integer in custom byte order
+   public int readIntCustomOrder() {
       this.position += 4;
-      return ((this.buffer[this.position - 1] & 0xff) << 8) + ((this.buffer[this.position - 4] & 0xff) << 16) + (this.buffer[this.position - 2] & 0xff) + ((this.buffer[this.position - 3] & 0xff) << 24);
+      return ((this.buffer[this.position - 1] & 0xff) << 8) +
+              ((this.buffer[this.position - 4] & 0xff) << 16) +
+              (this.buffer[this.position - 2] & 0xff) +
+              ((this.buffer[this.position - 3] & 0xff) << 24);
    }
 
-   public void method5530(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
-      this.buffer[++this.position - 1] = (byte) (i_1 + 128);
+   //..Writes a short with second byte offset
+   public void writeShortWithOffset2(int value) {
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
+      this.buffer[++this.position - 1] = (byte) (value + 128);
    }
 
-   public int method5541() {
+   //..Reads a 32-bit integer in little-endian
+   public int readIntLittleEndian() {
       this.position += 4;
-      return (this.buffer[this.position - 4] & 0xff) + ((this.buffer[this.position - 3] & 0xff) << 8) + ((this.buffer[this.position - 2] & 0xff) << 16) + ((this.buffer[this.position - 1] & 0xff) << 24);
+      return (this.buffer[this.position - 4] & 0xff) +
+              ((this.buffer[this.position - 3] & 0xff) << 8) +
+              ((this.buffer[this.position - 2] & 0xff) << 16) +
+              ((this.buffer[this.position - 1] & 0xff) << 24);
    }
 
-   public int readInt() {
+   //..Reads a 32-bit integer in another custom order
+   public int readIntCustomOrder2() {
       this.position += 4;
-      return ((this.buffer[this.position - 2] & 0xff) << 24) + ((this.buffer[this.position - 4] & 0xff) << 8) + (this.buffer[this.position - 3] & 0xff) + ((this.buffer[this.position - 1] & 0xff) << 16);
+      return ((this.buffer[this.position - 2] & 0xff) << 24) +
+              ((this.buffer[this.position - 4] & 0xff) << 8) +
+              (this.buffer[this.position - 3] & 0xff) +
+              ((this.buffer[this.position - 1] & 0xff) << 16);
    }
 
-   public int method5591() {
+   //..Reads a 24-bit integer in little-endian
+   public int read24BitIntLittleEndian() {
       this.position += 3;
-      return (this.buffer[this.position - 3] & 0xff) + ((this.buffer[this.position - 2] & 0xff) << 8) + ((this.buffer[this.position - 1] & 0xff) << 16);
+      return (this.buffer[this.position - 3] & 0xff) +
+              ((this.buffer[this.position - 2] & 0xff) << 8) +
+              ((this.buffer[this.position - 1] & 0xff) << 16);
    }
 
-   public int method5509() {
-      int i_2 = 0;
+   //..Reads an extended smart integer (accumulates 32767 values)
+   public int readExtendedSmartInt() {
+      int total = 0;
+      int value;
 
-      int i_3;
-      for (i_3 = this.readSmartInt(); i_3 == 32767; i_3 = this.readSmartInt()) {
-         i_2 += 32767;
+      for (value = this.readSmartInt(); value == 32767; value = this.readSmartInt()) {
+         total += 32767;
       }
-
-      i_2 += i_3;
-      return i_2;
+      total += value;
+      return total;
    }
 
-   public void write32IntLittleEndian(int i_1) {
-      this.buffer[++this.position - 1] = (byte) i_1;
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 16);
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 24);
+   //..Writes a 32-bit integer in little-endian
+   public void writeIntLittleEndian(int value) {
+      this.buffer[++this.position - 1] = (byte) value;
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
+      this.buffer[++this.position - 1] = (byte) (value >> 16);
+      this.buffer[++this.position - 1] = (byte) (value >> 24);
    }
 
-   public String method5505() {
-      byte b_2 = this.buffer[++this.position - 1];
-      if (b_2 != 0) {
-         throw new IllegalStateException("");
-      } else {
-         int i_3 = this.readVarInt();
-         if (i_3 + this.position > this.buffer.length) {
-            throw new IllegalStateException("");
-         } else {
-            String string_4 = class73.method1755(this.buffer, this.position, i_3, 917330802);
-            this.position += i_3;
-            return string_4;
-         }
+   //..Reads a length-prefixed string
+   public String readLengthPrefixedString() {
+      byte prefix = this.buffer[++this.position - 1];
+      if (prefix != 0) {
+         throw new IllegalStateException("Expected zero prefix");
       }
+      int length = this.readVarInt();
+      if (length + this.position > this.buffer.length) {
+         throw new IllegalStateException("String length exceeds buffer");
+      }
+      String result = class73.method1755(this.buffer, this.position, length, 917330802);
+      this.position += length;
+      return result;
    }
 
-   public void method5487(CharSequence charsequence_1) {
-      int i_4 = charsequence_1.length();
-      int i_5 = 0;
+   //..Writes a UTF-8 encoded string with length prefix
+   public void writeUTF8String(CharSequence str) {
+      int length = str.length();
+      int byteCount = 0;
 
-      for (int i_6 = 0; i_6 < i_4; i_6++) {
-         char var_7 = charsequence_1.charAt(i_6);
-         if (var_7 <= 127) {
-            ++i_5;
-         } else if (var_7 <= 2047) {
-            i_5 += 2;
+      //..Calculate byte count for UTF-8 encoding
+      for (int i = 0; i < length; i++) {
+         char c = str.charAt(i);
+         if (c <= 127) {
+            ++byteCount;
+         } else if (c <= 2047) {
+            byteCount += 2;
          } else {
-            i_5 += 3;
+            byteCount += 3;
          }
       }
 
       this.buffer[++this.position - 1] = 0;
-      this.writeVarInt(i_5);
-      this.position += class80.method1979(this.buffer, this.position, charsequence_1);
+      this.writeVarInt(byteCount);
+      this.position += class80.method1979(this.buffer, this.position, str);
    }
 
-   public void method5490(int i_1) {
-      if (i_1 >= 0 && i_1 <= 65535) {
-         this.buffer[this.position - i_1 - 2] = (byte) (i_1 >> 8);
-         this.buffer[this.position - i_1 - 1] = (byte) i_1;
+   //..Writes a short size at offset
+   public void writeShortSizeAtOffset(int offset) {
+      if (offset >= 0 && offset <= 65535) {
+         this.buffer[this.position - offset - 2] = (byte) (offset >> 8);
+         this.buffer[this.position - offset - 1] = (byte) offset;
       } else {
-         throw new IllegalArgumentException();
+         throw new IllegalArgumentException("Size out of short range");
       }
    }
 
-   public byte method5528() {
+   //..Reads an inverted signed byte
+   public byte readInvertedByte() {
       return (byte) (128 - this.buffer[++this.position - 1]);
    }
 
-   public void method5517(BigInteger biginteger_1, BigInteger biginteger_2) {
-      int i_4 = this.position;
+   //..RSA encryption/decryption using BigInteger
+   public void encryptRSA(BigInteger exponent, BigInteger modulus) {
+      int length = this.position;
       this.position = 0;
-      byte[] bytes_5 = new byte[i_4];
-      this.readBytes(bytes_5, 0, i_4);
-      BigInteger biginteger_6 = new BigInteger(bytes_5);
-      BigInteger biginteger_7 = biginteger_6.modPow(biginteger_1, biginteger_2);
-      byte[] bytes_8 = biginteger_7.toByteArray();
+      byte[] data = new byte[length];
+      this.readBytes(data, 0, length);
+
+      BigInteger message = new BigInteger(data);
+      BigInteger encrypted = message.modPow(exponent, modulus);
+      byte[] result = encrypted.toByteArray();
+
       this.position = 0;
-      this.writeShortBigEndian(bytes_8.length);
-      this.writeBytes(bytes_8, 0, bytes_8.length);
+      this.writeShortBigEndian(result.length);
+      this.writeBytes(result, 0, result.length);
    }
 
-   public void method5520(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (i_1 + 128);
+   //..Writes an offset byte
+   public void writeOffsetByte(int value) {
+      this.buffer[++this.position - 1] = (byte) (value + 128);
    }
 
-   public void writeMiddleEndianInt(int i_1) {
-      if (i_1 < 0) {
-         throw new IllegalArgumentException();
-      } else {
-         this.buffer[this.position - i_1 - 4] = (byte) (i_1 >> 24);
-         this.buffer[this.position - i_1 - 3] = (byte) (i_1 >> 16);
-         this.buffer[this.position - i_1 - 2] = (byte) (i_1 >> 8);
-         this.buffer[this.position - i_1 - 1] = (byte) i_1;
+   //..Writes an integer at offset (medium-endian)
+   public void writeIntAtOffset(int value) {
+      if (value < 0) {
+         throw new IllegalArgumentException("Value must be non-negative");
       }
+      this.buffer[this.position - value - 4] = (byte) (value >> 24);
+      this.buffer[this.position - value - 3] = (byte) (value >> 16);
+      this.buffer[this.position - value - 2] = (byte) (value >> 8);
+      this.buffer[this.position - value - 1] = (byte) value;
    }
 
-   public void method5540(int i_1) {
+   //..Writes a 32-bit integer in custom order
+   public void writeIntCustomOrder(int i_1) {
       this.buffer[++this.position - 1] = (byte) (i_1 >> 16);
       this.buffer[++this.position - 1] = (byte) (i_1 >> 24);
       this.buffer[++this.position - 1] = (byte) i_1;
       this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
    }
 
-   public int method5500() {
+   //..Reads a signed short with offset
+   public int readSignedShortWithOffset() {
       this.position += 2;
-      int i_2 = ((this.buffer[this.position - 1] & 0xff) << 8) + (this.buffer[this.position - 2] - 128 & 0xff);
-      if (i_2 > 32767) {
-         i_2 -= 65536;
+      int value = ((this.buffer[this.position - 1] & 0xff) << 8) +
+              (this.buffer[this.position - 2] - 128 & 0xff);
+      if (value > 32767) {
+         value -= 65536;
       }
-
-      return i_2;
+      return value;
    }
 
-   public void method5544(byte[] bytes_1, int i_2, int i_3) {
-      for (int i_5 = i_2; i_5 < i_3 + i_2; i_5++) {
-         bytes_1[i_5] = (byte) (this.buffer[++this.position - 1] - 128);
+   //..Reads bytes with offset transformation
+   public void readBytesWithOffset(byte[] dest, int offset, int length) {
+      for (int i = offset; i < length + offset; i++) {
+         dest[i] = (byte) (this.buffer[++this.position - 1] - 128);
       }
-
    }
 
-   public void method5482(long long_1) {
-      this.buffer[++this.position - 1] = (byte) ((int) (long_1 >> 40));
-      this.buffer[++this.position - 1] = (byte) ((int) (long_1 >> 32));
-      this.buffer[++this.position - 1] = (byte) ((int) (long_1 >> 24));
-      this.buffer[++this.position - 1] = (byte) ((int) (long_1 >> 16));
-      this.buffer[++this.position - 1] = (byte) ((int) (long_1 >> 8));
-      this.buffer[++this.position - 1] = (byte) ((int) long_1);
+   //..Writes a 48-bit long (6 bytes)
+   public void write48BitLong(long value) {
+      this.buffer[++this.position - 1] = (byte) ((int) (value >> 40));
+      this.buffer[++this.position - 1] = (byte) ((int) (value >> 32));
+      this.buffer[++this.position - 1] = (byte) ((int) (value >> 24));
+      this.buffer[++this.position - 1] = (byte) ((int) (value >> 16));
+      this.buffer[++this.position - 1] = (byte) ((int) (value >> 8));
+      this.buffer[++this.position - 1] = (byte) ((int) value);
    }
 
-   public boolean method5519() {
+   //..Verifies CRC32 checksum
+   public boolean verifyCRC32() {
       this.position -= 4;
-      int i_2 = class2.method18(this.buffer, 0, this.position, 308040594);
-      int i_3 = this.readIntMedEndian();
-      return i_2 == i_3;
+      int calculated = class2.method18(this.buffer, 0, this.position, 308040594);
+      int stored = this.readIntMedEndian();
+      return calculated == stored;
    }
 
-   public void method5513(int[] ints_1) {
-      int i_3 = this.position / 8;
+   //..TEA encryption
+   public void encryptTEA(int[] key) {
+      int blockCount = this.position / 8;
       this.position = 0;
 
-      for (int i_4 = 0; i_4 < i_3; i_4++) {
-         int i_5 = this.readIntMedEndian();
-         int i_6 = this.readIntMedEndian();
-         int i_7 = 0;
-         int i_8 = -1640531527;
+      for (int i = 0; i < blockCount; i++) {
+         int v0 = this.readIntMedEndian();
+         int v1 = this.readIntMedEndian();
+         int sum = 0;
+         int delta = -1640531527;
 
-         for (int i_9 = 32; i_9-- > 0; i_6 += i_5 + (i_5 << 4 ^ i_5 >>> 5) ^ ints_1[i_7 >>> 11 & 0x3] + i_7) {
-            i_5 += i_6 + (i_6 << 4 ^ i_6 >>> 5) ^ i_7 + ints_1[i_7 & 0x3];
-            i_7 += i_8;
+         for (int round = 32; round-- > 0; v1 += v0 + (v0 << 4 ^ v0 >>> 5) ^ key[sum >>> 11 & 0x3] + sum) {
+            v0 += v1 + (v1 << 4 ^ v1 >>> 5) ^ sum + key[sum & 0x3];
+            sum += delta;
          }
 
          this.position -= 8;
-         this.writeIntBigEndian(i_5);
-         this.writeIntBigEndian(i_6);
+         this.writeIntBigEndian(v0);
+         this.writeIntBigEndian(v1);
       }
-
    }
 
-   public void method5492(int i_1, byte b_2) {
-      if (i_1 >= 0 && i_1 < 128) {
-         this.writeByte(i_1);
-      } else if (i_1 >= 0 && i_1 < 32768) {
-         this.writeShortBigEndian(i_1 + 32768);
+   //..Writes a smart short (1-2 bytes)
+   public void writeSmartShort(int value) {
+      if (value >= 0 && value < 128) {
+         this.writeByte(value);
+      } else if (value >= 0 && value < 32768) {
+         this.writeShortBigEndian(value + 32768);
       } else {
-         throw new IllegalArgumentException();
+         throw new IllegalArgumentException("Value out of smart short range");
       }
    }
 
-   public void method5514(int[] ints_1, int i_2) {
-      int i_3 = this.position / 8;
+   //..TEA decryption (alternative method signature)
+   public void decryptTEA(int[] key) {
+      int blockCount = this.position / 8;
       this.position = 0;
 
-      for (int i_4 = 0; i_4 < i_3; i_4++) {
-         int i_5 = this.readIntMedEndian();
-         int i_6 = this.readIntMedEndian();
-         int i_7 = -957401312;
-         int i_8 = -1640531527;
+      for (int i = 0; i < blockCount; i++) {
+         int v0 = this.readIntMedEndian();
+         int v1 = this.readIntMedEndian();
+         int sum = -957401312;
+         int delta = -1640531527;
 
-         for (int i_9 = 32; i_9-- > 0; i_5 -= i_6 + (i_6 << 4 ^ i_6 >>> 5) ^ i_7 + ints_1[i_7 & 0x3]) {
-            i_6 -= i_5 + (i_5 << 4 ^ i_5 >>> 5) ^ ints_1[i_7 >>> 11 & 0x3] + i_7;
-            i_7 -= i_8;
+         for (int round = 32; round-- > 0; v0 -= v1 + (v1 << 4 ^ v1 >>> 5) ^ sum + key[sum & 0x3]) {
+            v1 -= v0 + (v0 << 4 ^ v0 >>> 5) ^ key[sum >>> 11 & 0x3] + sum;
+            sum -= delta;
          }
 
          this.position -= 8;
-         this.writeIntBigEndian(i_5);
-         this.writeIntBigEndian(i_6);
+         this.writeIntBigEndian(v0);
+         this.writeIntBigEndian(v1);
       }
-
    }
 
-   public void method5691(int[] ints_1, int i_2, int i_3) {
-      int i_5 = this.position;
-      this.position = i_2;
-      int i_6 = (i_3 - i_2) / 8;
+   //..TEA encryption with range
+   public void encryptTEA(int[] key, int startOffset, int endOffset) {
+      int savedPosition = this.position;
+      this.position = startOffset;
+      int blockCount = (endOffset - startOffset) / 8;
 
-      for (int i_7 = 0; i_7 < i_6; i_7++) {
-         int i_8 = this.readIntMedEndian();
-         int i_9 = this.readIntMedEndian();
-         int i_10 = 0;
-         int i_11 = -1640531527;
+      for (int i = 0; i < blockCount; i++) {
+         int v0 = this.readIntMedEndian();
+         int v1 = this.readIntMedEndian();
+         int sum = 0;
+         int delta = -1640531527;
 
-         for (int i_12 = 32; i_12-- > 0; i_9 += i_8 + (i_8 << 4 ^ i_8 >>> 5) ^ ints_1[i_10 >>> 11 & 0x3] + i_10) {
-            i_8 += i_9 + (i_9 << 4 ^ i_9 >>> 5) ^ i_10 + ints_1[i_10 & 0x3];
-            i_10 += i_11;
+         for (int round = 32; round-- > 0; v1 += v0 + (v0 << 4 ^ v0 >>> 5) ^ key[sum >>> 11 & 0x3] + sum) {
+            v0 += v1 + (v1 << 4 ^ v1 >>> 5) ^ sum + key[sum & 0x3];
+            sum += delta;
          }
 
          this.position -= 8;
-         this.writeIntBigEndian(i_8);
-         this.writeIntBigEndian(i_9);
+         this.writeIntBigEndian(v0);
+         this.writeIntBigEndian(v1);
       }
 
-      this.position = i_5;
+      this.position = savedPosition;
    }
 
 }

@@ -96,7 +96,7 @@ public class class154 extends class275 {
                class300_27.writeIntBigEndian(random_37.nextInt());
             }
 
-            class300_27.method5517(class80.field1140, class80.field1141);
+            class300_27.encryptRSA(class80.field1140, class80.field1141);
             class300_10.writeByte(10);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
@@ -104,7 +104,7 @@ public class class154 extends class275 {
             }
 
             class300_10.writeLongBigEndian(random_37.nextLong());
-            class300_10.method5482(random_37.nextLong());
+            class300_10.write48BitLong(random_37.nextLong());
             if (client.field693 != null) {
                class300_10.writeBytes(client.field693, 0, client.field693.length);
             } else {
@@ -132,7 +132,7 @@ public class class154 extends class275 {
             }
 
             class300_10.writeLongBigEndian(random_37.nextLong());
-            class300_10.method5517(class80.field1140, class80.field1141);
+            class300_10.encryptRSA(class80.field1140, class80.field1141);
             i_12 = class209.method3945(string_36);
             if (i_12 % 8 != 0) {
                i_12 += 8 - i_12 % 8;
@@ -141,7 +141,7 @@ public class class154 extends class275 {
             ByteBuffer class300_38 = new ByteBuffer(i_12);
             class300_38.writeNullTerminatedString(string_36);
             class300_38.position = i_12;
-            class300_38.method5513(ints_11);
+            class300_38.encryptTEA(ints_11);
             ByteBuffer class300_28 = new ByteBuffer(class300_10.position + class300_27.position + class300_38.position + 5);
             class300_28.writeByte(2);
             class300_28.writeByte(class300_27.position);
@@ -182,7 +182,7 @@ public class class154 extends class275 {
                      } else if (string_32.startsWith("Not permitted for social network accounts.")) {
                         b_31 = 6;
                      } else {
-                        class300_28.method5514(ints_11, 2019803853);
+                        class300_28.decryptTEA(ints_11);
 
                         while (class300_28.position > 0 && class300_28.buffer[class300_28.position - 1] == 0) {
                            --class300_28.position;

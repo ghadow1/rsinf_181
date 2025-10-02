@@ -218,7 +218,7 @@ public class class56 {
 
          if ((i_6 & 0x8) != 0) {
             class79_5.field986 = class299_1.readShortLittleEndian();
-            i_7 = class299_1.readInt();
+            i_7 = class299_1.readIntCustomOrder2();
             class79_5.field990 = i_7 >> 16;
             class79_5.field989 = (i_7 & 0xffff) + client.field881;
             class79_5.field987 = 0;
@@ -286,8 +286,8 @@ public class class56 {
 
    static void method1086(int i_0, int i_1, int i_2) {
       class187 class187_3 = class235.method4265(class183.field2273, client.field880.field1313, 1775123545);
-      class187_3.field2333.method5540(i_0);
-      class187_3.field2333.method5530(i_1);
+      class187_3.field2333.writeIntCustomOrder(i_0);
+      class187_3.field2333.writeShortWithOffset2(i_1);
       client.field880.copy(class187_3);
    }
 

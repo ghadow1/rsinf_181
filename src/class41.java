@@ -70,7 +70,7 @@ public class class41 {
 
       if ((i_3 & 0x200) != 0) {
          class66_2.field986 = class299_0.readShortWithOffset2();
-         i_6 = class299_0.readInt();
+         i_6 = class299_0.readIntCustomOrder2();
          class66_2.field990 = i_6 >> 16;
          class66_2.field989 = (i_6 & 0xffff) + client.field881;
          class66_2.field987 = 0;
@@ -89,10 +89,10 @@ public class class41 {
       }
 
       if ((i_3 & 0x400) != 0) {
-         class66_2.field991 = class299_0.method5528();
+         class66_2.field991 = class299_0.readInvertedByte();
          class66_2.field993 = class299_0.readOffsetByte();
          class66_2.field992 = class299_0.readOffsetByte();
-         class66_2.field983 = class299_0.method5528();
+         class66_2.field983 = class299_0.readInvertedByte();
          class66_2.field995 = class299_0.readShortWithOffset() + client.field881;
          class66_2.field996 = class299_0.readShortLittleEndian() + client.field881;
          class66_2.field997 = class299_0.readUnsignedShortBigEndian();
@@ -140,7 +140,7 @@ public class class41 {
          i_6 = class299_0.readInvertedUnsignedByte();
          byte[] bytes_14 = new byte[i_6];
          ByteBuffer class300_15 = new ByteBuffer(bytes_14);
-         class299_0.method5544(bytes_14, 0, i_6);
+         class299_0.readBytesWithOffset(bytes_14, 0, i_6);
          class89.field1254[i_1] = class300_15;
          class66_2.method1179(class300_15, -776146380);
       }

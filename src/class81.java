@@ -42,7 +42,7 @@ public class class81 {
                client.field880.copy(class187_9);
             } else if (i_0 == 6) {
                class187_9 = class235.method4265(class183.field2257, client.field880.field1313, 1775123545);
-               class187_9.field2333.method5530(ints_4[i_7]);
+               class187_9.field2333.writeShortWithOffset2(ints_4[i_7]);
                class187_9.field2333.writeInvertedByte(0);
                client.field880.copy(class187_9);
             } else if (i_0 == 7) {
