@@ -46,19 +46,19 @@ public class class125 {
             }
 
             if ((i_9 & 0x1) != 0) {
-               field1639[i_7] = class300_4.method5507();
+               field1639[i_7] = class300_4.readSmartSignedInt();
             } else {
                field1639[i_7] = s_11;
             }
 
             if ((i_9 & 0x2) != 0) {
-               field1636[i_7] = class300_4.method5507();
+               field1636[i_7] = class300_4.readSmartSignedInt();
             } else {
                field1636[i_7] = s_11;
             }
 
             if ((i_9 & 0x4) != 0) {
-               field1635[i_7] = class300_4.method5507();
+               field1635[i_7] = class300_4.readSmartSignedInt();
             } else {
                field1635[i_7] = s_11;
             }

@@ -61,10 +61,10 @@ public class class95 {
                break;
             }
 
-            this.field1312.method5488(class187_2.field2333.buffer, 0, class187_2.field2331);
+            this.field1312.writeBytes(class187_2.field2333.buffer, 0, class187_2.field2331);
             this.field1311 -= class187_2.field2331;
             class187_2.method3607();
-            class187_2.field2333.method5477();
+            class187_2.field2333.release();
             class187_2.method3620((byte) -108);
          }
       }

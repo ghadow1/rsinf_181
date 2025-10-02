@@ -103,8 +103,7 @@ public class ByteBuffer extends class180 {
    }
 
    //..Writes a single byte
-   //..TODO - writeByte
-   public void writeByte2(int value) {
+   public void writeByte(int value) {
       this.buffer[++this.position - 1] = (byte) value;
    }
 
@@ -218,77 +217,84 @@ public class ByteBuffer extends class180 {
       return length == 0 ? "" : class74.method1820(this.buffer, start, length, (byte) 52);
    }
 
-   // Writes a variable-length integer (VLQ encoding)
+   //..Writes a variable-length integer (VLQ encoding)
    public void writeVarInt(int value) {
       if ((value & ~0x7f) != 0) {
          if ((value & ~0x3fff) != 0) {
             if ((value & ~0x1fffff) != 0) {
                if ((value & ~0xfffffff) != 0) {
-                  this.writeByte2(value >>> 28 | 0x80);
+                  this.writeByte(value >>> 28 | 0x80);
                }
-               this.writeByte2(value >>> 21 | 0x80);
+               this.writeByte(value >>> 21 | 0x80);
             }
-            this.writeByte2(value >>> 14 | 0x80);
+            this.writeByte(value >>> 14 | 0x80);
          }
-         this.writeByte2(value >>> 7 | 0x80);
+         this.writeByte(value >>> 7 | 0x80);
       }
-      this.writeByte2(value & 0x7f);
+      this.writeByte(value & 0x7f);
    }
 
-   public void method5488(byte[] bytes_1, int i_2, int i_3) {
-      for (int i_5 = i_2; i_5 < i_3 + i_2; i_5++) {
-         this.buffer[++this.position - 1] = bytes_1[i_5];
+   //..Writes bytes from source array to buffer
+   public void writeBytes(byte[] src, int offset, int length) {
+      for (int i = offset; i < length + offset; i++) {
+         this.buffer[++this.position - 1] = src[i];
       }
-
    }
 
-   public int method5685() {
-      return this.buffer[this.position] < 0 ? this.readIntMedEndian() & 0x7fffffff : this.readUnsignedShortBigEndian();
+   //..Reads a smart short (1-2 bytes, unsigned)
+   public int readUnsignedSmartShort() {
+      return this.buffer[this.position] < 0 ?
+              this.readIntMedEndian() & 0x7fffffff :
+              this.readUnsignedShortBigEndian();
    }
 
-   public void method5703(int[] ints_1, int i_2, int i_3) {
-      int i_5 = this.position;
-      this.position = i_2;
-      int i_6 = (i_3 - i_2) / 8;
+   //..TEA (Tiny Encryption Algorithm) decryption
+   public void decryptTEA(int[] key, int startOffset, int endOffset) {
+      int savedPosition = this.position;
+      this.position = startOffset;
+      int blockCount = (endOffset - startOffset) / 8;
 
-      for (int i_7 = 0; i_7 < i_6; i_7++) {
-         int i_8 = this.readIntMedEndian();
-         int i_9 = this.readIntMedEndian();
-         int i_10 = -957401312;
-         int i_11 = -1640531527;
+      for (int i = 0; i < blockCount; i++) {
+         int v0 = this.readIntMedEndian();
+         int v1 = this.readIntMedEndian();
+         int sum = -957401312;
+         int delta = -1640531527;
 
-         for (int i_12 = 32; i_12-- > 0; i_8 -= i_9 + (i_9 << 4 ^ i_9 >>> 5) ^ i_10 + ints_1[i_10 & 0x3]) {
-            i_9 -= i_8 + (i_8 << 4 ^ i_8 >>> 5) ^ ints_1[i_10 >>> 11 & 0x3] + i_10;
-            i_10 -= i_11;
+         for (int round = 32; round-- > 0; v0 -= v1 + (v1 << 4 ^ v1 >>> 5) ^ sum + key[sum & 0x3]) {
+            v1 -= v0 + (v0 << 4 ^ v0 >>> 5) ^ key[sum >>> 11 & 0x3] + sum;
+            sum -= delta;
          }
 
          this.position -= 8;
-         this.writeIntBigEndian(i_8);
-         this.writeIntBigEndian(i_9);
+         this.writeIntBigEndian(v0);
+         this.writeIntBigEndian(v1);
       }
 
-      this.position = i_5;
+      this.position = savedPosition;
    }
 
-   public void method5484(boolean bool_1) {
-      this.writeByte2(bool_1 ? 1 : 0);
+   //..Writes a boolean as a byte (1 or 0)
+   public void writeBoolean(boolean value) {
+      this.writeNegatedByte(value ? 1 : 0);
    }
 
-   public void method5477() {
+   //..Releases the buffer (returns it to a pool, presumably)
+   public void release() {
       if (this.buffer != null) {
          class107.method2478(this.buffer, (byte) 103);
       }
-
       this.buffer = null;
    }
 
-   public void method5480(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 16);
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
-      this.buffer[++this.position - 1] = (byte) i_1;
+   //..Writes a 24-bit integer (3 bytes)
+   public void write24BitInt(int value) {
+      this.buffer[++this.position - 1] = (byte) (value >> 16);
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
+      this.buffer[++this.position - 1] = (byte) value;
    }
 
-   public String method5476() {
+   //..Reads a nullable null-terminated string (returns null if starts with 0)
+   public String readNullableString() {
       if (this.buffer[this.position] == 0) {
          ++this.position;
          return null;
@@ -297,109 +303,133 @@ public class ByteBuffer extends class180 {
       }
    }
 
-   public boolean method5698() {
+   //..Reads a boolean (checks if LSB is 1)
+   public boolean readBoolean() {
       return (this.readUnsignedByte() & 0x1) == 1;
    }
 
-   public int method5507() {
-      int i_2 = this.buffer[this.position] & 0xff;
-      return i_2 < 128 ? this.readUnsignedByte() - 64 : this.readUnsignedShortBigEndian() - 49152;
+   //..Reads a smart signed integer (offset by 64 or 49152)
+   public int readSmartSignedInt() {
+      int peek = this.buffer[this.position] & 0xff;
+      return peek < 128 ? this.readUnsignedByte() - 64 : this.readUnsignedShortBigEndian() - 49152;
    }
 
-   public void method5486(String string_1) {
-      int i_3 = string_1.indexOf(0);
-      if (i_3 >= 0) {
-         throw new IllegalArgumentException("");
+   //..Writes a string with zero prefix and suffix
+   public void writeWrappedString(String str) {
+      int nullIndex = str.indexOf(0);
+      if (nullIndex >= 0) {
+         throw new IllegalArgumentException("String contains null character");
+      }
+      this.buffer[++this.position - 1] = 0;
+      this.position += class19.method237(str, 0, str.length(), this.buffer, this.position, (byte) 1);
+      this.buffer[++this.position - 1] = 0;
+   }
+
+   //..Writes a size byte at a previous position
+   public void writeSizeAtOffset(int offset) {
+      if (offset >= 0 && offset <= 255) {
+         this.buffer[this.position - offset - 1] = (byte) offset;
       } else {
-         this.buffer[++this.position - 1] = 0;
-         this.position += class19.method237(string_1, 0, string_1.length(), this.buffer, this.position, (byte) 1);
-         this.buffer[++this.position - 1] = 0;
+         throw new IllegalArgumentException("Size out of byte range");
       }
    }
 
-   public void method5491(int i_1) {
-      if (i_1 >= 0 && i_1 <= 255) {
-         this.buffer[this.position - i_1 - 1] = (byte) i_1;
-      } else {
-         throw new IllegalArgumentException();
-      }
+   //..Computes and writes a CRC32 checksum
+   public int writeCRC32Checksum(int startOffset) {
+      int crc = class2.method18(this.buffer, startOffset, this.position, 2112627434);
+      this.writeIntBigEndian(crc);
+      return crc;
    }
 
-   public int method5529(int i_1) {
-      int i_3 = class2.method18(this.buffer, i_1, this.position, 2112627434);
-      this.writeIntBigEndian(i_3);
-      return i_3;
-   }
-
-   public byte readSByte() {
+   //..Reads a signed byte with 128 offset
+   public byte readOffsetByte() {
       return (byte) (this.buffer[++this.position - 1] - 128);
    }
 
-   public int readByteInverse() {
+   //..Reads an inverted unsigned byte
+   public int readInvertedUnsignedByte() {
       return 128 - this.buffer[++this.position - 1] & 0xff;
    }
 
-   //..writes a 32-bit integer
-   public void write32IntReverse(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
-      this.buffer[++this.position - 1] = (byte) i_1;
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 24);
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 16);
+   //..Writes a 32-bit integer in reversed byte order
+   public void writeIntReversed(int value) {
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
+      this.buffer[++this.position - 1] = (byte) value;
+      this.buffer[++this.position - 1] = (byte) (value >> 24);
+      this.buffer[++this.position - 1] = (byte) (value >> 16);
    }
 
-   public int readShortBigEndian() {
+   // Additional read/write methods with various transformations
+   // (The remaining methods follow similar patterns with byte order variations
+   // and offset transformations - names reflect their operations)
+
+   //..Reads a 16-bit short with offset on first byte
+   public int readShortWithOffset() {
       this.position += 2;
-      return (this.buffer[this.position - 1] - 128 & 0xff) + ((this.buffer[this.position - 2] & 0xff) << 8);
+      return (this.buffer[this.position - 1] - 128 & 0xff) +
+              ((this.buffer[this.position - 2] & 0xff) << 8);
    }
 
-   public int readByteUNeg() {
+   //..Reads a negated unsigned byte
+   public int readNegatedUnsignedByte() {
       return 0 - this.buffer[++this.position - 1] & 0xff;
    }
 
-   public int readByte() {
+   //..Reads an offset unsigned byte
+   public int readOffsetUnsignedByte() {
       return this.buffer[++this.position - 1] - 128 & 0xff;
    }
 
+   //..Reads a 16-bit short in little-endian byte order
    public int readShortLittleEndian() {
       this.position += 2;
-      return ((this.buffer[this.position - 1] & 0xff) << 8) + (this.buffer[this.position - 2] & 0xff);
+      return ((this.buffer[this.position - 1] & 0xff) << 8) +
+              (this.buffer[this.position - 2] & 0xff);
    }
 
-   public void method5475(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (i_1 + 128);
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
+   //..Writes a short with first byte offset
+   public void writeShortWithOffset(int value) {
+      this.buffer[++this.position - 1] = (byte) (value + 128);
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
    }
 
-   public int readShort() {
+   //..Reads a short with offset on second byte
+   public int readShortWithOffset2() {
       this.position += 2;
-      return ((this.buffer[this.position - 1] & 0xff) << 8) + (this.buffer[this.position - 2] - 128 & 0xff);
+      return ((this.buffer[this.position - 1] & 0xff) << 8) +
+              (this.buffer[this.position - 2] - 128 & 0xff);
    }
 
-   public void method5634(int i_1) {
-      this.buffer[++this.position - 1] = (byte) i_1;
-      this.buffer[++this.position - 1] = (byte) (i_1 >> 8);
+   //..Writes a short in little-endian
+   public void writeShortLittleEndian(int value) {
+      this.buffer[++this.position - 1] = (byte) value;
+      this.buffer[++this.position - 1] = (byte) (value >> 8);
    }
 
-   public void method5502(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (128 - i_1);
+   //..Writes an inverted byte
+   public void writeInvertedByte(int value) {
+      this.buffer[++this.position - 1] = (byte) (128 - value);
    }
 
-   public int method5535() {
+   //..Reads a signed short in little-endian
+   public int readSignedShortLittleEndian() {
       this.position += 2;
-      int i_2 = ((this.buffer[this.position - 1] & 0xff) << 8) + (this.buffer[this.position - 2] & 0xff);
-      if (i_2 > 32767) {
-         i_2 -= 65536;
+      int value = ((this.buffer[this.position - 1] & 0xff) << 8) +
+              (this.buffer[this.position - 2] & 0xff);
+      if (value > 32767) {
+         value -= 65536;
       }
-
-      return i_2;
+      return value;
    }
 
-   public byte method5527() {
-      return (byte) (0 - this.buffer[++this.position - 1]);
+   //..Reads a negated signed byte
+   public byte readNegatedByte() {
+      return (byte)(0 - this.buffer[++this.position - 1]);
    }
 
-   public void writeByte(int i_1) {
-      this.buffer[++this.position - 1] = (byte) (0 - i_1);
+   //..Writes a negated byte
+   public void writeNegatedByte(int value) {
+      this.buffer[++this.position - 1] = (byte)(0 - value);
    }
 
    public int read32IntBigEndian() {
@@ -505,7 +535,7 @@ public class ByteBuffer extends class180 {
       byte[] bytes_8 = biginteger_7.toByteArray();
       this.position = 0;
       this.writeShortBigEndian(bytes_8.length);
-      this.method5488(bytes_8, 0, bytes_8.length);
+      this.writeBytes(bytes_8, 0, bytes_8.length);
    }
 
    public void method5520(int i_1) {
@@ -587,7 +617,7 @@ public class ByteBuffer extends class180 {
 
    public void method5492(int i_1, byte b_2) {
       if (i_1 >= 0 && i_1 < 128) {
-         this.writeByte2(i_1);
+         this.writeByte(i_1);
       } else if (i_1 >= 0 && i_1 < 32768) {
          this.writeShortBigEndian(i_1 + 32768);
       } else {

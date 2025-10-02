@@ -238,8 +238,8 @@ public class class309 implements Runnable {
          if (class236.field3176 != null) {
             try {
                ByteBuffer class300_11 = new ByteBuffer(4);
-               class300_11.writeByte2(3);
-               class300_11.method5480(0);
+               class300_11.writeByte(3);
+               class300_11.write24BitInt(0);
                class236.field3176.vmethod5829(class300_11.buffer, 0, 4, -1696227994);
             } catch (IOException ioexception_14) {
                try {

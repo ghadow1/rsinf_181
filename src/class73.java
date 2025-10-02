@@ -44,11 +44,11 @@ public class class73 {
             }
 
             if (i_2 > 4) {
-               this.field1065 = class300_1.method5476();
+               this.field1065 = class300_1.readNullableString();
             }
 
             if (i_2 > 5) {
-               this.field1066 = class300_1.method5698();
+               this.field1066 = class300_1.readBoolean();
             }
          } else {
             this.method1749(true, (short) -31921);
@@ -64,11 +64,11 @@ public class class73 {
 
    ByteBuffer method1746(int i_1) {
       ByteBuffer class300_2 = new ByteBuffer(100);
-      class300_2.writeByte2(field1062);
-      class300_2.writeByte2(this.field1060 ? 1 : 0);
-      class300_2.writeByte2(this.field1063 ? 1 : 0);
-      class300_2.writeByte2(this.field1064);
-      class300_2.writeByte2(this.field1067.size());
+      class300_2.writeByte(field1062);
+      class300_2.writeByte(this.field1060 ? 1 : 0);
+      class300_2.writeByte(this.field1063 ? 1 : 0);
+      class300_2.writeByte(this.field1064);
+      class300_2.writeByte(this.field1067.size());
       Iterator iterator_3 = this.field1067.entrySet().iterator();
 
       while (iterator_3.hasNext()) {
@@ -78,7 +78,7 @@ public class class73 {
       }
 
       class300_2.writeNullTerminatedString(this.field1065 != null ? this.field1065 : "");
-      class300_2.method5484(this.field1066);
+      class300_2.writeBoolean(this.field1066);
       return class300_2;
    }
 
@@ -163,9 +163,9 @@ public class class73 {
 
          client.field872 = class76.field1098[class70.field1014 + 2];
          class187 class187_19 = class235.method4265(class183.field2294, client.field880.field1313, 1775123545);
-         class187_19.field2333.writeByte2(client.field907);
-         class187_19.field2333.writeByte2(class226.field3072.field3815);
-         class187_19.field2333.writeByte2(client.field872);
+         class187_19.field2333.writeByte(client.field907);
+         class187_19.field2333.writeByte(class226.field3072.field3815);
+         class187_19.field2333.writeByte(client.field872);
          client.field880.copy(class187_19);
          return 1;
       } else {
@@ -177,10 +177,10 @@ public class class73 {
             i_5 = class76.field1098[class70.field1014];
             int i_6 = class76.field1098[class70.field1014 + 1];
             class187 class187_7 = class235.method4265(class183.field2205, client.field880.field1313, 1775123545);
-            class187_7.field2333.writeByte2(class209.method3945(string_4) + 2);
+            class187_7.field2333.writeByte(class209.method3945(string_4) + 2);
             class187_7.field2333.writeNullTerminatedString(string_4);
-            class187_7.field2333.writeByte2(i_5 - 1);
-            class187_7.field2333.writeByte2(i_6);
+            class187_7.field2333.writeByte(i_5 - 1);
+            class187_7.field2333.writeByte(i_6);
             client.field880.copy(class187_7);
             return 1;
          } else {
@@ -353,13 +353,13 @@ public class class73 {
                }
 
                class187 class187_9 = class235.method4265(class183.field2258, client.field880.field1313, 1775123545);
-               class187_9.field2333.writeByte2(0);
+               class187_9.field2333.writeByte(0);
                int i_10 = class187_9.field2333.position;
-               class187_9.field2333.writeByte2(i_5);
-               class187_9.field2333.writeByte2(b_18);
-               class187_9.field2333.writeByte2(b_8);
+               class187_9.field2333.writeByte(i_5);
+               class187_9.field2333.writeByte(b_18);
+               class187_9.field2333.writeByte(b_8);
                class132.method3063(class187_9.field2333, string_4, -730620007);
-               class187_9.field2333.method5491(class187_9.field2333.position - i_10);
+               class187_9.field2333.writeSizeAtOffset(class187_9.field2333.position - i_10);
                client.field880.copy(class187_9);
                return 1;
             } else if (i_0 == 5009) {

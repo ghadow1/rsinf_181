@@ -89,7 +89,7 @@ public class class117 {
          }
 
          this.field1523[i_3] = i_4;
-         this.field1512[i_3] = class300_1.method5507();
+         this.field1512[i_3] = class300_1.readSmartSignedInt();
          this.field1521[i_3] = class300_1.readSmartInt();
       }
 

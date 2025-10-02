@@ -239,8 +239,8 @@ public class class119 implements class139 {
          try {
             class343 class343_26 = new class343(class167.field2038, "rw", 10000L);
             ByteBuffer class300_27 = new ByteBuffer(500);
-            class300_27.writeByte2(3);
-            class300_27.writeByte2(0);
+            class300_27.writeByte(3);
+            class300_27.writeByte(0);
             class300_27.method5487(file_23.getPath());
 
             class343_26.method6561(class300_27.buffer, 0, class300_27.position);

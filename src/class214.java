@@ -313,20 +313,20 @@ public class class214 {
    }
 
    public void method3995(ByteBuffer class300_1, int i_2) {
-      class300_1.writeByte2(this.field2535 ? 1 : 0);
+      class300_1.writeByte(this.field2535 ? 1 : 0);
 
       int i_3;
       for (i_3 = 0; i_3 < 7; i_3++) {
          int i_4 = this.field2534[field2538[i_3]];
          if (i_4 == 0) {
-            class300_1.writeByte2(-1);
+            class300_1.writeByte(-1);
          } else {
-            class300_1.writeByte2(i_4 - 256);
+            class300_1.writeByte(i_4 - 256);
          }
       }
 
       for (i_3 = 0; i_3 < 5; i_3++) {
-         class300_1.writeByte2(this.field2533[i_3]);
+         class300_1.writeByte(this.field2533[i_3]);
       }
 
    }

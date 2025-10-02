@@ -101,7 +101,7 @@ public class class71 {
       }
 
       class300_3.position = 0;
-      class300_3.method5476();
+      class300_3.readNullableString();
       class92_2.field1284 = new int[i_6];
       class92_2.field1288 = new int[i_6];
       class92_2.field1286 = new String[i_6];

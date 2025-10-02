@@ -20,11 +20,11 @@ final class class1 implements class0 {
       int i_8;
       int i_9;
       if (class185.field2320 == class185_0) {
-         i_3 = class299_2.readByteInverse();
+         i_3 = class299_2.readInvertedUnsignedByte();
          i_4 = i_3 >> 2;
          i_5 = i_3 & 0x3;
          i_6 = client.field713[i_4];
-         i_7 = class299_2.readByteInverse();
+         i_7 = class299_2.readInvertedUnsignedByte();
          i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
          i_9 = (i_7 & 0x7) + class94.field1306;
          if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
@@ -34,10 +34,10 @@ final class class1 implements class0 {
       } else {
          class87 class87_33;
          if (class185.field2321 == class185_0) {
-            i_3 = class299_2.readByte();
+            i_3 = class299_2.readOffsetUnsignedByte();
             i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
             i_5 = (i_3 & 0x7) + class94.field1306;
-            i_6 = class299_2.readShort();
+            i_6 = class299_2.readShortWithOffset2();
             if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                class261 class261_32 = client.field887[class42.field372][i_4][i_5];
                if (class261_32 != null) {
@@ -64,19 +64,19 @@ final class class1 implements class0 {
             int i_15;
             int i_40;
             if (class185.field2316 == class185_0) {
-               i_3 = class299_2.readByteInverse() * 4;
+               i_3 = class299_2.readInvertedUnsignedByte() * 4;
                i_4 = class299_2.readUnsignedShortBigEndian();
-               i_5 = class299_2.readShortBigEndian();
-               i_6 = class299_2.readByteInverse() * 4;
-               i_7 = class299_2.method5535();
+               i_5 = class299_2.readShortWithOffset();
+               i_6 = class299_2.readInvertedUnsignedByte() * 4;
+               i_7 = class299_2.readSignedShortLittleEndian();
                i_8 = class299_2.readUnsignedByte();
-               i_9 = class299_2.readByteInverse();
+               i_9 = class299_2.readInvertedUnsignedByte();
                i_10 = class299_2.readShortLittleEndian();
-               i_11 = class299_2.readByte();
+               i_11 = class299_2.readOffsetUnsignedByte();
                i_40 = (i_11 >> 4 & 0x7) + class311.field3819;
                i_13 = (i_11 & 0x7) + class94.field1306;
-               b_14 = class299_2.readSByte();
-               byte b_41 = class299_2.method5527();
+               b_14 = class299_2.readOffsetByte();
+               byte b_41 = class299_2.readNegatedByte();
                i_15 = b_41 + i_40;
                int i_42 = b_14 + i_13;
                if (i_40 >= 0 && i_13 >= 0 && i_40 < 104 && i_13 < 104 && i_15 >= 0 && i_42 >= 0 && i_15 < 104 && i_42 < 104 && i_5 != 65535) {
@@ -91,9 +91,9 @@ final class class1 implements class0 {
 
             } else if (class185.field2322 == class185_0) {
                i_3 = class299_2.readShortLittleEndian();
-               i_4 = class299_2.readShort();
+               i_4 = class299_2.readShortWithOffset2();
                i_5 = class299_2.readShortLittleEndian();
-               i_6 = class299_2.readByte();
+               i_6 = class299_2.readOffsetUnsignedByte();
                i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                i_8 = (i_6 & 0x7) + class94.field1306;
                if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
@@ -111,9 +111,9 @@ final class class1 implements class0 {
                }
 
             } else if (class185.field2315 == class185_0) {
-               i_3 = class299_2.readShortBigEndian();
-               i_4 = class299_2.readShort();
-               i_5 = class299_2.readByte();
+               i_3 = class299_2.readShortWithOffset();
+               i_4 = class299_2.readShortWithOffset2();
+               i_5 = class299_2.readOffsetUnsignedByte();
                i_6 = (i_5 >> 4 & 0x7) + class311.field3819;
                i_7 = (i_5 & 0x7) + class94.field1306;
                if (i_6 >= 0 && i_7 >= 0 && i_6 < 104 && i_7 < 104) {
@@ -133,11 +133,11 @@ final class class1 implements class0 {
                   i_3 = class299_2.readUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
-                  i_6 = class299_2.readByteInverse();
-                  i_7 = class299_2.readByte();
+                  i_6 = class299_2.readInvertedUnsignedByte();
+                  i_7 = class299_2.readOffsetUnsignedByte();
                   i_8 = i_7 >> 4 & 0xf;
                   i_9 = i_7 & 0x7;
-                  i_10 = class299_2.readShort();
+                  i_10 = class299_2.readShortWithOffset2();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      i_11 = i_8 + 1;
                      if (client.field657.field994[0] >= i_4 - i_11 && client.field657.field994[0] <= i_4 + i_11 && client.field657.field962[0] >= i_5 - i_11 && client.field657.field962[0] <= i_5 + i_11 && client.field892 != 0 && i_9 > 0 && client.field893 < 50) {
@@ -152,19 +152,19 @@ final class class1 implements class0 {
                }
 
                if (class185.field2318 == class185_0) {
-                  byte b_38 = class299_2.method5527();
-                  i_4 = class299_2.readShort();
-                  byte b_39 = class299_2.method5527();
-                  i_6 = class299_2.readShortBigEndian();
+                  byte b_38 = class299_2.readNegatedByte();
+                  i_4 = class299_2.readShortWithOffset2();
+                  byte b_39 = class299_2.readNegatedByte();
+                  i_6 = class299_2.readShortWithOffset();
                   i_7 = class299_2.readUnsignedShortBigEndian();
-                  i_8 = class299_2.readByte();
+                  i_8 = class299_2.readOffsetUnsignedByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
                   i_11 = client.field713[i_9];
-                  byte b_12 = class299_2.readSByte();
+                  byte b_12 = class299_2.readOffsetByte();
                   i_13 = class299_2.readShortLittleEndian();
-                  b_14 = class299_2.method5527();
-                  i_15 = class299_2.readByteUNeg();
+                  b_14 = class299_2.readNegatedByte();
+                  i_15 = class299_2.readNegatedUnsignedByte();
                   int i_36 = (i_15 >> 4 & 0x7) + class311.field3819;
                   int i_17 = (i_15 & 0x7) + class94.field1306;
                   class66 class66_18;
@@ -225,22 +225,22 @@ final class class1 implements class0 {
                }
 
                if (class185.field2323 == class185_0) {
-                  i_3 = class299_2.readByte();
+                  i_3 = class299_2.readOffsetUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.field3819;
                   i_5 = (i_3 & 0x7) + class94.field1306;
-                  i_6 = class299_2.readByteInverse();
+                  i_6 = class299_2.readInvertedUnsignedByte();
                   i_7 = i_6 >> 2;
                   i_8 = i_6 & 0x3;
                   i_9 = client.field713[i_7];
-                  i_10 = class299_2.readShortBigEndian();
+                  i_10 = class299_2.readShortWithOffset();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      class201.method3885(class42.field372, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
                   }
 
                } else if (class185.field2317 == class185_0) {
                   i_3 = class299_2.readUnsignedShortBigEndian();
-                  i_4 = class299_2.readByte();
-                  i_5 = class299_2.readShortBigEndian();
+                  i_4 = class299_2.readOffsetUnsignedByte();
+                  i_5 = class299_2.readShortWithOffset();
                   i_6 = class299_2.readUnsignedByte();
                   i_7 = (i_6 >> 4 & 0x7) + class311.field3819;
                   i_8 = (i_6 & 0x7) + class94.field1306;
@@ -252,11 +252,11 @@ final class class1 implements class0 {
                   }
 
                } else if (class185.field2324 == class185_0) {
-                  i_3 = class299_2.readByteInverse();
+                  i_3 = class299_2.readInvertedUnsignedByte();
                   i_4 = i_3 >> 2;
                   i_5 = i_3 & 0x3;
                   i_6 = client.field713[i_4];
-                  i_7 = class299_2.readByteUNeg();
+                  i_7 = class299_2.readNegatedUnsignedByte();
                   i_8 = (i_7 >> 4 & 0x7) + class311.field3819;
                   i_9 = (i_7 & 0x7) + class94.field1306;
                   i_10 = class299_2.readUnsignedShortBigEndian();

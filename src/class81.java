@@ -33,22 +33,22 @@ public class class81 {
             if (i_0 == 1) {
                class187_9 = class235.method4265(class183.field2250, client.field880.field1313, 1775123545);
                class187_9.field2333.writeShortBigEndian(ints_4[i_7]);
-               class187_9.field2333.writeByte(0);
+               class187_9.field2333.writeNegatedByte(0);
                client.field880.copy(class187_9);
             } else if (i_0 == 4) {
                class187_9 = class235.method4265(class183.field2230, client.field880.field1313, 1775123545);
-               class187_9.field2333.method5475(ints_4[i_7]);
-               class187_9.field2333.writeByte(0);
+               class187_9.field2333.writeShortWithOffset(ints_4[i_7]);
+               class187_9.field2333.writeNegatedByte(0);
                client.field880.copy(class187_9);
             } else if (i_0 == 6) {
                class187_9 = class235.method4265(class183.field2257, client.field880.field1313, 1775123545);
                class187_9.field2333.method5530(ints_4[i_7]);
-               class187_9.field2333.method5502(0);
+               class187_9.field2333.writeInvertedByte(0);
                client.field880.copy(class187_9);
             } else if (i_0 == 7) {
                class187_9 = class235.method4265(class183.field2278, client.field880.field1313, 1775123545);
-               class187_9.field2333.method5502(0);
-               class187_9.field2333.method5634(ints_4[i_7]);
+               class187_9.field2333.writeInvertedByte(0);
+               class187_9.field2333.writeShortLittleEndian(ints_4[i_7]);
                client.field880.copy(class187_9);
             }
 

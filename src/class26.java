@@ -278,8 +278,8 @@ public class class26 {
                while (class236.field3168 < 200 && class236.field3166 > 0) {
                   class232_4 = (class232) class236.field3165.method5950();
                   class300_5 = new ByteBuffer(4);
-                  class300_5.writeByte2(1);
-                  class300_5.method5480((int)class232_4.field2113);
+                  class300_5.writeByte(1);
+                  class300_5.write24BitInt((int)class232_4.field2113);
                   class236.field3176.vmethod5829(class300_5.buffer, 0, 4, -1696227994);
                   class236.field3167.method5951(class232_4, class232_4.field2113);
                   --class236.field3166;
@@ -289,8 +289,8 @@ public class class26 {
                while (class236.field3164 < 200 && class236.field3171 > 0) {
                   class232_4 = (class232) class236.field3170.method4792();
                   class300_5 = new ByteBuffer(4);
-                  class300_5.writeByte2(0);
-                  class300_5.method5480((int)class232_4.field2113);
+                  class300_5.writeByte(0);
+                  class300_5.write24BitInt((int)class232_4.field2113);
                   class236.field3176.vmethod5829(class300_5.buffer, 0, 4, -1696227994);
                   class232_4.method3597();
                   class236.field3172.method5951(class232_4, class232_4.field2113);
@@ -359,7 +359,7 @@ public class class26 {
                         int i_15 = i_10 == 0 ? 5 : 9;
                         class226.field3071 = class232_14;
                         class240.field3209 = new ByteBuffer(i_15 + i_11 + class226.field3071.field3122);
-                        class240.field3209.writeByte2(i_10);
+                        class240.field3209.writeByte(i_10);
                         class240.field3209.writeIntBigEndian(i_11);
                         class236.field3175 = 8;
                         class236.field3174.position = 0;

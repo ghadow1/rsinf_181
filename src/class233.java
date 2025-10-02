@@ -138,7 +138,7 @@ public abstract class class233 {
 
          int i_7 = class300_5.readUnsignedByte();
          if (i_6 >= 7) {
-            this.field3142 = class300_5.method5685();
+            this.field3142 = class300_5.readUnsignedSmartShort();
          } else {
             this.field3142 = class300_5.readUnsignedShortBigEndian();
          }
@@ -149,7 +149,7 @@ public abstract class class233 {
          int i_10;
          if (i_6 >= 7) {
             for (i_10 = 0; i_10 < this.field3142; i_10++) {
-               this.field3128[i_10] = i_8 += class300_5.method5685();
+               this.field3128[i_10] = i_8 += class300_5.readUnsignedSmartShort();
                if (this.field3128[i_10] > i_9) {
                   i_9 = this.field3128[i_10];
                }
@@ -205,7 +205,7 @@ public abstract class class233 {
                this.field3137[i_11] = new int[i_12];
 
                for (i_14 = 0; i_14 < i_12; i_14++) {
-                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.method5685();
+                  i_15 = this.field3137[i_11][i_14] = i_8 += class300_5.readUnsignedSmartShort();
                   if (i_15 > i_13) {
                      i_13 = i_15;
                   }
@@ -331,7 +331,7 @@ public abstract class class233 {
             } else {
                bytes_22 = class308.method5873(this.field3126[i_1], true);
                ByteBuffer class300_9 = new ByteBuffer(bytes_22);
-               class300_9.method5703(ints_2, 5, class300_9.buffer.length);
+               class300_9.decryptTEA(ints_2, 5, class300_9.buffer.length);
             }
 
             byte[] bytes_26 = class70.method1678(bytes_22);

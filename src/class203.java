@@ -196,52 +196,52 @@ public class class203 extends class180 {
                i_62 = i_64 & 0xf;
                if (i_64 == 7) {
                   if (bool_65) {
-                     class300_51.writeByte2(255);
+                     class300_51.writeByte(255);
                   }
 
-                  class300_51.writeByte2(47);
-                  class300_51.writeByte2(0);
+                  class300_51.writeByte(47);
+                  class300_51.writeByte(0);
                   class300_51.writeMiddleEndianInt(class300_51.position - i_61);
                   continue label235;
                }
 
                if (i_64 == 23) {
                   if (bool_65) {
-                     class300_51.writeByte2(255);
+                     class300_51.writeByte(255);
                   }
 
-                  class300_51.writeByte2(81);
-                  class300_51.writeByte2(3);
-                  class300_51.writeByte2(class300_1.buffer[i_50++]);
-                  class300_51.writeByte2(class300_1.buffer[i_50++]);
-                  class300_51.writeByte2(class300_1.buffer[i_50++]);
+                  class300_51.writeByte(81);
+                  class300_51.writeByte(3);
+                  class300_51.writeByte(class300_1.buffer[i_50++]);
+                  class300_51.writeByte(class300_1.buffer[i_50++]);
+                  class300_51.writeByte(class300_1.buffer[i_50++]);
                } else {
                   i_52 ^= i_64 >> 4;
                   if (i_62 == 0) {
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 144);
+                        class300_51.writeByte(i_52 + 144);
                      }
 
                      i_53 += class300_1.buffer[i_37++];
                      i_54 += class300_1.buffer[i_38++];
-                     class300_51.writeByte2(i_53 & 0x7f);
-                     class300_51.writeByte2(i_54 & 0x7f);
+                     class300_51.writeByte(i_53 & 0x7f);
+                     class300_51.writeByte(i_54 & 0x7f);
                   } else if (i_62 == 1) {
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 128);
+                        class300_51.writeByte(i_52 + 128);
                      }
 
                      i_53 += class300_1.buffer[i_37++];
                      i_55 += class300_1.buffer[i_40++];
-                     class300_51.writeByte2(i_53 & 0x7f);
-                     class300_51.writeByte2(i_55 & 0x7f);
+                     class300_51.writeByte(i_53 & 0x7f);
+                     class300_51.writeByte(i_55 & 0x7f);
                   } else if (i_62 == 2) {
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 176);
+                        class300_51.writeByte(i_52 + 176);
                      }
 
                      i_28 = i_28 + class300_1.buffer[i_15++] & 0x7f;
-                     class300_51.writeByte2(i_28);
+                     class300_51.writeByte(i_28);
                      byte b_66;
                      if (i_28 != 0 && i_28 != 32) {
                         if (i_28 == 1) {
@@ -275,42 +275,42 @@ public class class203 extends class180 {
 
                      int i_67 = b_66 + ints_59[i_28];
                      ints_59[i_28] = i_67;
-                     class300_51.writeByte2(i_67 & 0x7f);
+                     class300_51.writeByte(i_67 & 0x7f);
                   } else if (i_62 == 3) {
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 224);
+                        class300_51.writeByte(i_52 + 224);
                      }
 
                      i_56 += class300_1.buffer[i_45++];
                      i_56 += class300_1.buffer[i_33++] << 7;
-                     class300_51.writeByte2(i_56 & 0x7f);
-                     class300_51.writeByte2(i_56 >> 7 & 0x7f);
+                     class300_51.writeByte(i_56 & 0x7f);
+                     class300_51.writeByte(i_56 >> 7 & 0x7f);
                   } else if (i_62 == 4) {
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 208);
+                        class300_51.writeByte(i_52 + 208);
                      }
 
                      i_57 += class300_1.buffer[i_32++];
-                     class300_51.writeByte2(i_57 & 0x7f);
+                     class300_51.writeByte(i_57 & 0x7f);
                   } else if (i_62 == 5) {
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 160);
+                        class300_51.writeByte(i_52 + 160);
                      }
 
                      i_53 += class300_1.buffer[i_37++];
                      i_58 += class300_1.buffer[i_31++];
-                     class300_51.writeByte2(i_53 & 0x7f);
-                     class300_51.writeByte2(i_58 & 0x7f);
+                     class300_51.writeByte(i_53 & 0x7f);
+                     class300_51.writeByte(i_58 & 0x7f);
                   } else {
                      if (i_62 != 6) {
                         throw new RuntimeException();
                      }
 
                      if (bool_65) {
-                        class300_51.writeByte2(i_52 + 192);
+                        class300_51.writeByte(i_52 + 192);
                      }
 
-                     class300_51.writeByte2(class300_1.buffer[i_44++]);
+                     class300_51.writeByte(class300_1.buffer[i_44++]);
                   }
                }
             }

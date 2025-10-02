@@ -114,8 +114,8 @@ public class class93 extends class135 {
       if (class236.field3176 != null) {
          try {
             class300_3 = new ByteBuffer(4);
-            class300_3.writeByte2(bool_1 ? 2 : 3);
-            class300_3.method5480(0);
+            class300_3.writeByte(bool_1 ? 2 : 3);
+            class300_3.write24BitInt(0);
             class236.field3176.vmethod5829(class300_3.buffer, 0, 4, -1696227994);
          } catch (IOException ioexception_8) {
             try {
@@ -143,8 +143,8 @@ public class class93 extends class135 {
                   if (class236.field3181 != 0) {
                      try {
                         class300_3 = new ByteBuffer(4);
-                        class300_3.writeByte2(4);
-                        class300_3.writeByte2(class236.field3181);
+                        class300_3.writeByte(4);
+                        class300_3.writeByte(class236.field3181);
                         class300_3.writeShortBigEndian(0);
                         class236.field3176.vmethod5829(class300_3.buffer, 0, 4, -1696227994);
                      } catch (IOException ioexception_6) {

@@ -236,7 +236,7 @@ public class class333 {
 
                if (bool_9) {
                   class187 class187_12 = class235.method4265(class183.field2248, client.field880.field1313, 1775123545);
-                  class187_12.field2333.write32IntReverse(this.field4024.method3971(1080399232));
+                  class187_12.field2333.writeIntReversed(this.field4024.method3971(1080399232));
                   client.field880.copy(class187_12);
                   this.field3982 = 0L;
                }

@@ -84,7 +84,7 @@ public class class90 {
                }
 
                ByteBuffer class300_32 = new ByteBuffer(i_3);
-               class300_32.writeByte2(2);
+               class300_32.writeByte(2);
                class300_32.writeShortBigEndian(i_4);
                Iterator iterator_33 = this.field1271.entrySet().iterator();
 
@@ -115,7 +115,7 @@ public class class90 {
                         ++i_14;
                      }
 
-                     class300_32.writeByte2(class3_10.field11);
+                     class300_32.writeByte(class3_10.field11);
                      class3.method30(object_9, class300_32, (byte) 1);
                   }
                }

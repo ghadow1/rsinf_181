@@ -371,8 +371,8 @@ public class class96 {
                if (class236.field3176 != null) {
                   try {
                      ByteBuffer class300_2 = new ByteBuffer(4);
-                     class300_2.writeByte2(2);
-                     class300_2.method5480(0);
+                     class300_2.writeByte(2);
+                     class300_2.write24BitInt(0);
                      class236.field3176.vmethod5829(class300_2.buffer, 0, 4, -1696227994);
                   } catch (IOException ioexception_5) {
                      try {

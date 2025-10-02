@@ -80,7 +80,7 @@ public class class154 extends class275 {
             ByteBuffer class300_27 = new ByteBuffer(128);
             ByteBuffer class300_10 = new ByteBuffer(128);
             int[] ints_11 = new int[] {random_37.nextInt(), random_37.nextInt(), (int)(long_2 >> 32), (int)long_2};
-            class300_27.writeByte2(10);
+            class300_27.writeByte(10);
 
             int i_12;
             for (i_12 = 0; i_12 < 4; i_12++) {
@@ -97,7 +97,7 @@ public class class154 extends class275 {
             }
 
             class300_27.method5517(class80.field1140, class80.field1141);
-            class300_10.writeByte2(10);
+            class300_10.writeByte(10);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
                class300_10.writeIntBigEndian(random_37.nextInt());
@@ -106,7 +106,7 @@ public class class154 extends class275 {
             class300_10.writeLongBigEndian(random_37.nextLong());
             class300_10.method5482(random_37.nextLong());
             if (client.field693 != null) {
-               class300_10.method5488(client.field693, 0, client.field693.length);
+               class300_10.writeBytes(client.field693, 0, client.field693.length);
             } else {
                byte[] bytes_13 = new byte[24];
 
@@ -128,7 +128,7 @@ public class class154 extends class275 {
                   }
                }
 
-               class300_10.method5488(bytes_13, 0, bytes_13.length);
+               class300_10.writeBytes(bytes_13, 0, bytes_13.length);
             }
 
             class300_10.writeLongBigEndian(random_37.nextLong());
@@ -143,13 +143,13 @@ public class class154 extends class275 {
             class300_38.position = i_12;
             class300_38.method5513(ints_11);
             ByteBuffer class300_28 = new ByteBuffer(class300_10.position + class300_27.position + class300_38.position + 5);
-            class300_28.writeByte2(2);
-            class300_28.writeByte2(class300_27.position);
-            class300_28.method5488(class300_27.buffer, 0, class300_27.position);
-            class300_28.writeByte2(class300_10.position);
-            class300_28.method5488(class300_10.buffer, 0, class300_10.position);
+            class300_28.writeByte(2);
+            class300_28.writeByte(class300_27.position);
+            class300_28.writeBytes(class300_27.buffer, 0, class300_27.position);
+            class300_28.writeByte(class300_10.position);
+            class300_28.writeBytes(class300_10.buffer, 0, class300_10.position);
             class300_28.writeShortBigEndian(class300_38.position);
-            class300_28.method5488(class300_38.buffer, 0, class300_38.position);
+            class300_28.writeBytes(class300_38.buffer, 0, class300_38.position);
             byte[] bytes_16 = class300_28.buffer;
             String string_30 = class217.method4092(bytes_16, 0, bytes_16.length, 1305438411);
             String string_17 = string_30;

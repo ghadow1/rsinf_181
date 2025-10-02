@@ -825,8 +825,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.varpSmallMessage == class95_1.inPacketType) {
-               byte b_61 = class299_4.readSByte();
-               i_6 = class299_4.readShortBigEndian();
+               byte b_61 = class299_4.readOffsetByte();
+               i_6 = class299_4.readShortWithOffset();
                class212.field2524[i_6] = b_61;
                if (class212.field2525[i_6] != b_61) {
                   class212.field2525[i_6] = b_61;
@@ -839,8 +839,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.updateZonePartialFollowsMessage == class95_1.inPacketType) {
-               class311.field3819 = class299_4.readByteUNeg();
-               class94.field1306 = class299_4.readByteInverse();
+               class311.field3819 = class299_4.readNegatedUnsignedByte();
+               class94.field1306 = class299_4.readInvertedUnsignedByte();
                class95_1.inPacketType = null;
                return true;
             }
@@ -876,9 +876,9 @@ public final class client extends class53 implements class280 {
             int i_8;
             class217 class217_9;
             if (ServerPacketProt.field2123 == class95_1.inPacketType) {
-               i_17 = class299_4.readShort();
-               i_6 = class299_4.readShort();
-               i_18 = class299_4.readShort();
+               i_17 = class299_4.readShortWithOffset2();
+               i_6 = class299_4.readShortWithOffset2();
+               i_18 = class299_4.readShortWithOffset2();
                i_8 = class299_4.read32IntBigEndian();
                class217_9 = class80.fetchSomething(i_8);
                if (i_17 != class217_9.field2615 || i_18 != class217_9.field2616 || i_6 != class217_9.field2618) {
@@ -893,8 +893,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.updateZonePartialEnclosedMessage == class95_1.inPacketType) {
-               class94.field1306 = class299_4.readByteInverse();
-               class311.field3819 = class299_4.readByteUNeg();
+               class94.field1306 = class299_4.readInvertedUnsignedByte();
+               class311.field3819 = class299_4.readNegatedUnsignedByte();
 
                while (class299_4.position < class95_1.field1315) {
                   i_17 = class299_4.readUnsignedByte();
@@ -1063,7 +1063,7 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2145 == class95_1.inPacketType) {
                i_17 = class299_4.read32IntBigEndian();
-               i_6 = class299_4.readShort();
+               i_6 = class299_4.readShortWithOffset2();
                class217_7 = class80.fetchSomething(i_17);
                if (class217_7 != null && class217_7.field2566 == 0) {
                   if (i_6 > class217_7.field2569 - class217_7.field2667) {
@@ -1087,7 +1087,7 @@ public final class client extends class53 implements class280 {
             long long_22;
             if (ServerPacketProt.ifSetEventsMessage == class95_1.inPacketType) {
                i_17 = class299_4.method5541();
-               i_6 = class299_4.readShortBigEndian();
+               i_6 = class299_4.readShortWithOffset();
                if (i_6 == 65535) {
                   i_6 = -1;
                }
@@ -1140,9 +1140,9 @@ public final class client extends class53 implements class280 {
 
             class61 class61_53;
             if (ServerPacketProt.ifOpenSubMessage == class95_1.inPacketType) {
-               i_17 = class299_4.readByte();
+               i_17 = class299_4.readOffsetUnsignedByte();
                i_6 = class299_4.readInt();
-               i_18 = class299_4.readShort();
+               i_18 = class299_4.readShortWithOffset2();
                class61_53 = (class61) field816.method5952((long)i_6);
                if (class61_53 != null) {
                   class197.method3697(class61_53, i_18 != class61_53.field571);
@@ -1160,7 +1160,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.midiSongMessage == class95_1.inPacketType) {
-               i_17 = class299_4.readShort();
+               i_17 = class299_4.readShortWithOffset2();
                if (i_17 == 65535) {
                   i_17 = -1;
                }
@@ -1172,7 +1172,7 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2155 == class95_1.inPacketType) {
                i_17 = class299_4.method5591();
-               i_6 = class299_4.readShortBigEndian();
+               i_6 = class299_4.readShortWithOffset();
                if (i_6 == 65535) {
                   i_6 = -1;
                }
@@ -1368,7 +1368,7 @@ public final class client extends class53 implements class280 {
             if (ServerPacketProt.updateStatMessage == class95_1.inPacketType) {
                class65.method1176((byte) 65);
                i_17 = class299_4.method5541();
-               i_6 = class299_4.readByteUNeg();
+               i_6 = class299_4.readNegatedUnsignedByte();
                i_18 = class299_4.readUnsignedByte();
                field788[i_6] = i_17;
                field760[i_6] = i_18;
@@ -1404,8 +1404,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.setOpPlayerMessage == class95_1.inPacketType) {
-               i_17 = class299_4.readByte();
-               i_6 = class299_4.readByte();
+               i_17 = class299_4.readOffsetUnsignedByte();
+               i_6 = class299_4.readOffsetUnsignedByte();
                str_45 = class299_4.readNullTerminatedString();
                if (i_6 >= 1 && i_6 <= 8) {
                   if (str_45.equalsIgnoreCase("null")) {
@@ -1465,7 +1465,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.ifSetNpcHeadMessage == class95_1.inPacketType) {
-               i_17 = class299_4.readShort();
+               i_17 = class299_4.readShortWithOffset2();
                i_6 = class299_4.read32IntBigEndian();
                class217_7 = class80.fetchSomething(i_6);
                if (class217_7.field2607 != 2 || i_17 != class217_7.field2649) {
@@ -1481,7 +1481,7 @@ public final class client extends class53 implements class280 {
             if (ServerPacketProt.field2174 == class95_1.inPacketType) {
                i_17 = class299_4.readInt();
                i_6 = class299_4.method5500();
-               i_18 = class299_4.method5535();
+               i_18 = class299_4.readSignedShortLittleEndian();
                class217_20 = class80.fetchSomething(i_17);
                if (i_18 != class217_20.field2651 || i_6 != class217_20.field2574 || class217_20.field2694 != 0 || class217_20.field2570 != 0) {
                   class217_20.field2651 = i_18;
@@ -1541,7 +1541,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2140 == class95_1.inPacketType) {
-               class94.field1306 = class299_4.readByteUNeg();
+               class94.field1306 = class299_4.readNegatedUnsignedByte();
                class311.field3819 = class299_4.readUnsignedByte();
 
                for (i_17 = class311.field3819; i_17 < class311.field3819 + 8; i_17++) {
@@ -1568,9 +1568,9 @@ public final class client extends class53 implements class280 {
                i_6 = class299_4.readIntMedEndian();
                i_18 = class107.garbageCollector();
                class187 class187_57 = class235.method4265(class183.field2236, field880.field1313, 1775123545);
-               class187_57.field2333.writeByte(i_18);
-               class187_57.field2333.writeByte2(class53.field462);
-               class187_57.field2333.write32IntReverse(i_17);
+               class187_57.field2333.writeNegatedByte(i_18);
+               class187_57.field2333.writeByte(class53.field462);
+               class187_57.field2333.writeIntReversed(i_17);
                class187_57.field2333.write32IntLittleEndian(i_6);
                field880.copy(class187_57);
                class95_1.inPacketType = null;
@@ -1578,7 +1578,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.ifOpenTopMessage == class95_1.inPacketType) {
-               i_17 = class299_4.readShort();
+               i_17 = class299_4.readShortWithOffset2();
                field905 = i_17;
                this.method1293(false, 831397747);
                class12.method146(i_17, -2136228205);
@@ -1812,8 +1812,8 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2195 == class95_1.inPacketType) {
-               field872 = class299_4.readByteUNeg();
-               field907 = class299_4.readByteUNeg();
+               field872 = class299_4.readNegatedUnsignedByte();
+               field907 = class299_4.readNegatedUnsignedByte();
                class95_1.inPacketType = null;
                return true;
             }
@@ -1842,7 +1842,7 @@ public final class client extends class53 implements class280 {
 
             boolean bool_51;
             if (ServerPacketProt.field2131 == class95_1.inPacketType) {
-               bool_51 = class299_4.method5698();
+               bool_51 = class299_4.readBoolean();
                if (bool_51) {
                   if (class68.field944 == null) {
                      class68.field944 = new class237();
@@ -1871,7 +1871,7 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2139 == class95_1.inPacketType) {
                i_17 = class299_4.readInt();
-               i_6 = class299_4.readShortBigEndian();
+               i_6 = class299_4.readShortWithOffset();
                i_18 = i_6 >> 10 & 0x1f;
                i_8 = i_6 >> 5 & 0x1f;
                i_21 = i_6 & 0x1f;
@@ -1983,7 +1983,7 @@ public final class client extends class53 implements class280 {
             }
 
             if (ServerPacketProt.field2156 == class95_1.inPacketType) {
-               i_17 = class299_4.readShortBigEndian();
+               i_17 = class299_4.readShortWithOffset();
                i_6 = class299_4.readShortLittleEndian();
                i_18 = class299_4.readInt();
                class217_20 = class80.fetchSomething(i_18);
@@ -2001,7 +2001,7 @@ public final class client extends class53 implements class280 {
 
             if (ServerPacketProt.field2175 == class95_1.inPacketType) {
                i_17 = class299_4.read32IntBigEndian();
-               i_6 = class299_4.readShort();
+               i_6 = class299_4.readShortWithOffset2();
                class217_7 = class80.fetchSomething(i_17);
                if (class217_7.field2607 != 1 || i_6 != class217_7.field2649) {
                   class217_7.field2607 = 1;
@@ -2446,7 +2446,7 @@ public final class client extends class53 implements class280 {
                   }
 
                   ByteBuffer class300_2 = new ByteBuffer(5);
-                  class300_2.writeByte2(15);
+                  class300_2.writeByte(15);
                   class300_2.writeIntBigEndian(181);
                   class70.field1015.vmethod5829(class300_2.buffer, 0, 5, -1696227994);
                   ++field681;
@@ -2619,19 +2619,19 @@ public final class client extends class53 implements class280 {
             class187 class187_16;
             while (class198.method3811(1881799127)) {
                class187_16 = class235.method4265(class183.field2252, field880.field1313, 1775123545);
-               class187_16.field2333.writeByte2(0);
+               class187_16.field2333.writeByte(0);
                i_3 = class187_16.field2333.position;
                class70.method1671(class187_16.field2333);
-               class187_16.field2333.method5491(class187_16.field2333.position - i_3);
+               class187_16.field2333.writeSizeAtOffset(class187_16.field2333.position - i_3);
                field880.copy(class187_16);
             }
 
             if (field797.field3605) {
                class187_16 = class235.method4265(class183.field2217, field880.field1313, 1775123545);
-               class187_16.field2333.writeByte2(0);
+               class187_16.field2333.writeByte(0);
                i_3 = class187_16.field2333.position;
                field797.method4999(class187_16.field2333);
-               class187_16.field2333.method5491(class187_16.field2333.position - i_3);
+               class187_16.field2333.writeSizeAtOffset(class187_16.field2333.position - i_3);
                field880.copy(class187_16);
                field797.method4998(-481288218);
             }
@@ -2676,7 +2676,7 @@ public final class client extends class53 implements class280 {
                      if (i_10 != field717 || i_9 != field665) {
                         if (class187_17 == null) {
                            class187_17 = class235.method4265(class183.field2237, field880.field1313, 1775123545);
-                           class187_17.field2333.writeByte2(0);
+                           class187_17.field2333.writeByte(0);
                            i_4 = class187_17.field2333.position;
                            class187_17.field2333.position += 2;
                            i_6 = 0;
@@ -2703,10 +2703,10 @@ public final class client extends class53 implements class280 {
                         } else if (i_13 < 32 && i_11 >= -128 && i_11 <= 127 && i_12 >= -128 && i_12 <= 127) {
                            i_11 += 128;
                            i_12 += 128;
-                           class187_17.field2333.writeByte2(i_13 + 128);
+                           class187_17.field2333.writeByte(i_13 + 128);
                            class187_17.field2333.writeShortBigEndian(i_12 + (i_11 << 8));
                         } else if (i_13 < 32) {
-                           class187_17.field2333.writeByte2(i_13 + 192);
+                           class187_17.field2333.writeByte(i_13 + 192);
                            if (i_10 != -1 && i_9 != -1) {
                               class187_17.field2333.writeIntBigEndian(i_10 | i_9 << 16);
                            } else {
@@ -2727,11 +2727,11 @@ public final class client extends class53 implements class280 {
                   }
 
                   if (class187_17 != null) {
-                     class187_17.field2333.method5491(class187_17.field2333.position - i_4);
+                     class187_17.field2333.writeSizeAtOffset(class187_17.field2333.position - i_4);
                      i_8 = class187_17.field2333.position;
                      class187_17.field2333.position = i_4;
-                     class187_17.field2333.writeByte2(i_6 / i_7);
-                     class187_17.field2333.writeByte2(i_6 % i_7);
+                     class187_17.field2333.writeByte(i_6 / i_7);
+                     class187_17.field2333.writeByte(i_6 % i_7);
                      class187_17.field2333.position = i_8;
                      field880.copy(class187_17);
                   }
@@ -2790,8 +2790,8 @@ public final class client extends class53 implements class280 {
                   }
 
                   field879 = long_21;
-                  class187_16.field2333.writeByte(class45.field401[i_6]);
-                  class187_16.field2333.method5480((int)long_23);
+                  class187_16.field2333.writeNegatedByte(class45.field401[i_6]);
+                  class187_16.field2333.write24BitInt((int)long_23);
                }
 
                class187_16.field2333.method5490(class187_16.field2333.position - i_3);
@@ -2810,22 +2810,22 @@ public final class client extends class53 implements class280 {
                field822 = 20;
                field878 = false;
                class187_16 = class235.method4265(class183.field2242, field880.field1313, 1775123545);
-               class187_16.field2333.method5475(field721);
-               class187_16.field2333.method5634(field722);
+               class187_16.field2333.writeShortWithOffset(field721);
+               class187_16.field2333.writeShortLittleEndian(field722);
                field880.copy(class187_16);
             }
 
             if (class267.field3557 && !field667) {
                field667 = true;
                class187_16 = class235.method4265(class183.field2276, field880.field1313, 1775123545);
-               class187_16.field2333.writeByte2(1);
+               class187_16.field2333.writeByte(1);
                field880.copy(class187_16);
             }
 
             if (!class267.field3557 && field667) {
                field667 = false;
                class187_16 = class235.method4265(class183.field2276, field880.field1313, 1775123545);
-               class187_16.field2333.writeByte2(0);
+               class187_16.field2333.writeByte(0);
                field880.copy(class187_16);
             }
 
@@ -3064,9 +3064,9 @@ public final class client extends class53 implements class280 {
 
                                                          class187_20 = class235.method4265(class183.field2283, field880.field1313, 1775123545);
                                                          class187_20.field2333.writeShortBigEndian(field764);
-                                                         class187_20.field2333.method5634(field765);
+                                                         class187_20.field2333.writeShortLittleEndian(field765);
                                                          class187_20.field2333.writeIntBigEndian(class18.field127.field2688);
-                                                         class187_20.field2333.writeByte(b_35);
+                                                         class187_20.field2333.writeNegatedByte(b_35);
                                                          field880.copy(class187_20);
                                                       }
                                                    } else if (this.method1257(-246080062)) {
@@ -3091,7 +3091,7 @@ public final class client extends class53 implements class280 {
                                                 i_5 = class133.field1850;
                                                 i_6 = class133.field1837;
                                                 class187_20 = class235.method4265(class183.field2299, field880.field1313, 1775123545);
-                                                class187_20.field2333.writeByte2(5);
+                                                class187_20.field2333.writeByte(5);
                                                 class187_20.field2333.method5530(i_6 + class1.field1);
                                                 class187_20.field2333.method5530(i_5 + class196.field2389);
                                                 class187_20.field2333.method5520(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
@@ -3377,7 +3377,7 @@ public final class client extends class53 implements class280 {
             class187_5.field2338 = null;
             class187_5.field2332 = 0;
             class187_5.field2333 = new class299(5000);
-            class187_5.field2333.writeByte2(class184.field2306.field2313);
+            class187_5.field2333.writeByte(class184.field2306.field2313);
             field880.copy(class187_5);
             field880.method2234();
             class299_3.position = 0;
@@ -3448,7 +3448,7 @@ public final class client extends class53 implements class280 {
             int[] ints_25 = new int[] {class23.field187.nextInt(), class23.field187.nextInt(), class23.field187.nextInt(), class23.field187.nextInt()};
             class299_4.position = 0;
 
-            class299_4.writeByte2(1);
+            class299_4.writeByte(1);
             //..Keys
             class299_4.writeIntBigEndian(ints_25[0]);
             class299_4.writeIntBigEndian(ints_25[1]);
@@ -3463,21 +3463,21 @@ public final class client extends class53 implements class280 {
                class299_4.writeIntBigEndian(class74.field1074[2]);
                class299_4.writeIntBigEndian(class74.field1074[3]);
             } else {
-               class299_4.writeByte2(field690.vmethod6084(1559391851));
+               class299_4.writeByte(field690.vmethod6084(1559391851));
                switch(field690.field2003) {
                case 0:
                   class299_4.writeIntBigEndian(((Integer) class17.field117.field1067.get(Integer.valueOf(class128.method2971(class85.field1180, -1418597327)))).intValue());
                   break;
                case 1:
                case 2:
-                  class299_4.method5480(class9.field65);
+                  class299_4.write24BitInt(class9.field65);
                   ++class299_4.position;
                   break;
                case 3:
                   class299_4.position += 4;
                }
 
-               class299_4.writeByte2(class313.field3837.vmethod6084(777984683));
+               class299_4.writeByte(class313.field3837.vmethod6084(777984683));
                class299_4.writeNullTerminatedString(class85.field1198);
             }
 
@@ -3495,9 +3495,9 @@ public final class client extends class53 implements class280 {
             class187_7.field2333 = new class299(5000);
             class187_7.field2333.position = 0;
             if (field662 == 40) {
-               class187_7.field2333.writeByte2(class184.field2311.field2313);
+               class187_7.field2333.writeByte(class184.field2311.field2313);
             } else {
-               class187_7.field2333.writeByte2(class184.field2308.field2313);
+               class187_7.field2333.writeByte(class184.field2308.field2313);
             }
 
             class187_7.field2333.writeShortBigEndian(0);
@@ -3505,17 +3505,17 @@ public final class client extends class53 implements class280 {
             int i_17 = class187_7.field2333.position;
             class187_7.field2333.writeIntBigEndian(181); //..Version
             class187_7.field2333.writeIntBigEndian(1);
-            class187_7.field2333.writeByte2(field761);
-            class187_7.field2333.method5488(class299_4.buffer, 0, class299_4.position);
+            class187_7.field2333.writeByte(field761);
+            class187_7.field2333.writeBytes(class299_4.buffer, 0, class299_4.position);
             int i_9 = class187_7.field2333.position;
             class187_7.field2333.writeNullTerminatedString(class85.field1180);
-            class187_7.field2333.writeByte2((field869 ? 1 : 0) << 1 | (field656 ? 1 : 0));
+            class187_7.field2333.writeByte((field869 ? 1 : 0) << 1 | (field656 ? 1 : 0));
             class187_7.field2333.writeShortBigEndian(class7.field46);
             class187_7.field2333.writeShortBigEndian(class249.field3308);
             class299 class299_10 = class187_7.field2333;
             int i_13;
             if (field693 != null) {
-               class299_10.method5488(field693, 0, field693.length);
+               class299_10.writeBytes(field693, 0, field693.length);
             } else {
                byte[] bytes_12 = new byte[24];
 
@@ -3536,15 +3536,15 @@ public final class client extends class53 implements class280 {
                   }
                }
 
-               class299_10.method5488(bytes_12, 0, bytes_12.length);
+               class299_10.writeBytes(bytes_12, 0, bytes_12.length);
             }
 
             class187_7.field2333.writeNullTerminatedString(class294.field3695);
             class187_7.field2333.writeIntBigEndian(class239.field3199);
             ByteBuffer class300_11 = new ByteBuffer(class22.field174.method6282((byte) -5));
             class22.field174.method6281(class300_11, -1667072289);
-            class187_7.field2333.method5488(class300_11.buffer, 0, class300_11.buffer.length);
-            class187_7.field2333.writeByte2(field761);
+            class187_7.field2333.writeBytes(class300_11.buffer, 0, class300_11.buffer.length);
+            class187_7.field2333.writeByte(field761);
             class187_7.field2333.writeIntBigEndian(0);
             class187_7.field2333.writeIntBigEndian(class197.field2405.field3136);
             class187_7.field2333.writeIntBigEndian(class167.field2049.field3136);
@@ -4073,7 +4073,7 @@ public final class client extends class53 implements class280 {
                      class187_17.field2333.method5530(field832.field2690);
                      class187_17.field2333.writeShortBigEndian(field832.field2565);
                      class187_17.field2333.write32IntLittleEndian(field828.field2688);
-                     class187_17.field2333.write32IntReverse(field832.field2688);
+                     class187_17.field2333.writeIntReversed(field832.field2688);
                      class187_17.field2333.writeShortBigEndian(field828.field2690);
                      field880.copy(class187_17);
                   }

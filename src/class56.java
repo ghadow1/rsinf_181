@@ -121,8 +121,8 @@ public class class56 {
          }
 
          if ((i_6 & 0x40) != 0) {
-            i_7 = class299_1.readShort();
-            i_8 = class299_1.readShort();
+            i_7 = class299_1.readShortWithOffset2();
+            i_8 = class299_1.readShortWithOffset2();
             i_9 = class79_5.field1005 - (i_7 - class196.field2389 - class196.field2389) * 64;
             i_10 = class79_5.field949 - (i_8 - class1.field1 - class1.field1) * 64;
             if (i_9 != 0 || i_10 != 0) {
@@ -136,7 +136,7 @@ public class class56 {
                i_7 = -1;
             }
 
-            i_8 = class299_1.readByteInverse();
+            i_8 = class299_1.readInvertedUnsignedByte();
             if (i_7 == class79_5.field981 && i_7 != -1) {
                i_9 = class7.method81(i_7, (byte) 1).field3529;
                if (i_9 == 1) {
@@ -173,7 +173,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x10) != 0) {
-            i_7 = class299_1.readByteUNeg();
+            i_7 = class299_1.readNegatedUnsignedByte();
             int i_11;
             int i_12;
             int i_13;
@@ -199,7 +199,7 @@ public class class56 {
                }
             }
 
-            i_8 = class299_1.readByte();
+            i_8 = class299_1.readOffsetUnsignedByte();
             if (i_8 > 0) {
                for (i_9 = 0; i_9 < i_8; i_9++) {
                   i_10 = class299_1.readSmartInt();
@@ -207,7 +207,7 @@ public class class56 {
                   if (i_11 != 32767) {
                      i_12 = class299_1.readSmartInt();
                      i_13 = class299_1.readUnsignedByte();
-                     int i_14 = i_11 > 0 ? class299_1.readByteInverse() : i_13;
+                     int i_14 = i_11 > 0 ? class299_1.readInvertedUnsignedByte() : i_13;
                      class79_5.method1655(i_10, client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
                      class79_5.method1659(i_10, 1541896355);
@@ -293,7 +293,7 @@ public class class56 {
 
    static final void method1089(byte b_0) {
       class187 class187_1 = class235.method4265(class183.field2286, client.field880.field1313, 1775123545);
-      class187_1.field2333.writeByte2(0);
+      class187_1.field2333.writeByte(0);
       client.field880.copy(class187_1);
    }
 

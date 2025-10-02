@@ -570,17 +570,17 @@ public class class121 extends class135 {
          i_39 = class300_4.readUnsignedByte();
          i_40 = 0;
          if ((i_39 & 0x1) != 0) {
-            i_40 = class300_5.method5507();
+            i_40 = class300_5.readSmartSignedInt();
          }
 
          i_41 = 0;
          if ((i_39 & 0x2) != 0) {
-            i_41 = class300_6.method5507();
+            i_41 = class300_6.readSmartSignedInt();
          }
 
          i_42 = 0;
          if ((i_39 & 0x4) != 0) {
-            i_42 = class300_7.method5507();
+            i_42 = class300_7.readSmartSignedInt();
          }
 
          this.field1576[i_38] = i_35 + i_40;
@@ -649,9 +649,9 @@ public class class121 extends class135 {
       for (i_42 = 0; i_42 < i_10; i_42++) {
          i_43 = class300_5.readUnsignedByte();
          if (i_43 == 1) {
-            i_38 = class300_4.method5507() + i_41;
-            i_39 = class300_4.method5507() + i_38;
-            i_40 = class300_4.method5507() + i_39;
+            i_38 = class300_4.readSmartSignedInt() + i_41;
+            i_39 = class300_4.readSmartSignedInt() + i_38;
+            i_40 = class300_4.readSmartSignedInt() + i_39;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_39;
@@ -660,7 +660,7 @@ public class class121 extends class135 {
 
          if (i_43 == 2) {
             i_39 = i_40;
-            i_40 = class300_4.method5507() + i_41;
+            i_40 = class300_4.readSmartSignedInt() + i_41;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_39;
@@ -669,7 +669,7 @@ public class class121 extends class135 {
 
          if (i_43 == 3) {
             i_38 = i_40;
-            i_40 = class300_4.method5507() + i_41;
+            i_40 = class300_4.readSmartSignedInt() + i_41;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_39;
@@ -680,7 +680,7 @@ public class class121 extends class135 {
             i_44 = i_38;
             i_38 = i_39;
             i_39 = i_44;
-            i_40 = class300_4.method5507() + i_41;
+            i_40 = class300_4.readSmartSignedInt() + i_41;
             i_41 = i_40;
             this.field1549[i_42] = i_38;
             this.field1583[i_42] = i_44;
@@ -1087,17 +1087,17 @@ public class class121 extends class135 {
          i_52 = class300_2.readUnsignedByte();
          i_53 = 0;
          if ((i_52 & 0x1) != 0) {
-            i_53 = class300_3.method5507();
+            i_53 = class300_3.readSmartSignedInt();
          }
 
          i_54 = 0;
          if ((i_52 & 0x2) != 0) {
-            i_54 = class300_4.method5507();
+            i_54 = class300_4.readSmartSignedInt();
          }
 
          i_55 = 0;
          if ((i_52 & 0x4) != 0) {
-            i_55 = class300_5.method5507();
+            i_55 = class300_5.readSmartSignedInt();
          }
 
          this.field1576[i_51] = i_48 + i_53;
@@ -1157,9 +1157,9 @@ public class class121 extends class135 {
       for (i_55 = 0; i_55 < i_10; i_55++) {
          i_56 = class300_3.readUnsignedByte();
          if (i_56 == 1) {
-            i_51 = class300_2.method5507() + i_54;
-            i_52 = class300_2.method5507() + i_51;
-            i_53 = class300_2.method5507() + i_52;
+            i_51 = class300_2.readSmartSignedInt() + i_54;
+            i_52 = class300_2.readSmartSignedInt() + i_51;
+            i_53 = class300_2.readSmartSignedInt() + i_52;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_52;
@@ -1168,7 +1168,7 @@ public class class121 extends class135 {
 
          if (i_56 == 2) {
             i_52 = i_53;
-            i_53 = class300_2.method5507() + i_54;
+            i_53 = class300_2.readSmartSignedInt() + i_54;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_52;
@@ -1177,7 +1177,7 @@ public class class121 extends class135 {
 
          if (i_56 == 3) {
             i_51 = i_53;
-            i_53 = class300_2.method5507() + i_54;
+            i_53 = class300_2.readSmartSignedInt() + i_54;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_52;
@@ -1188,7 +1188,7 @@ public class class121 extends class135 {
             int i_57 = i_51;
             i_51 = i_52;
             i_52 = i_57;
-            i_53 = class300_2.method5507() + i_54;
+            i_53 = class300_2.readSmartSignedInt() + i_54;
             i_54 = i_53;
             this.field1549[i_55] = i_51;
             this.field1583[i_55] = i_57;
