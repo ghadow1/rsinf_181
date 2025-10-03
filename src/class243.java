@@ -61,25 +61,25 @@ public class class243 extends class175 {
    public final class127 method4406(int i_1, int i_2) {
       class127 class127_3 = (class127) field3240.method3320((long)this.field3241);
       if (class127_3 == null) {
-         class121 class121_4 = class121.method2769(GCMonitor.field379, this.field3242, 0);
-         if (class121_4 == null) {
+         Model model_4 = Model.method2769(GCMonitor.field379, this.field3242, 0);
+         if (model_4 == null) {
             return null;
          }
 
          int i_5;
          if (this.field3244 != null) {
             for (i_5 = 0; i_5 < this.field3244.length; i_5++) {
-               class121_4.method2783(this.field3244[i_5], this.field3243[i_5]);
+               model_4.method2783(this.field3244[i_5], this.field3243[i_5]);
             }
          }
 
          if (this.field3246 != null) {
             for (i_5 = 0; i_5 < this.field3246.length; i_5++) {
-               class121_4.method2784(this.field3246[i_5], this.field3245[i_5]);
+               model_4.method2784(this.field3246[i_5], this.field3245[i_5]);
             }
          }
 
-         class127_3 = class121_4.method2802(this.field3251 + 64, this.field3253 + 850, -30, -50, -30);
+         class127_3 = model_4.applyLighting(this.field3251 + 64, this.field3253 + 850, -30, -50, -30);
          field3240.method3322(class127_3, (long)this.field3241);
       }
 

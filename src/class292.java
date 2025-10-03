@@ -126,7 +126,7 @@ public class class292 {
                      if (class217_11.field2568 == 1336) {
                         if (Client.field884) {
                            i_14 += 15;
-                           class169.field2054.method5348("Fps:" + GCMonitor_2.field462, i_13 + class217_11.field2579, i_14, 16776960, -1);
+                           class169.field2054.method5348("Fps:" + GameApplet.field462, i_13 + class217_11.field2579, i_14, 16776960, -1);
                            i_14 += 15;
                            Runtime runtime_43 = Runtime.getRuntime();
                            i_21 = (int)((runtime_43.totalMemory() - runtime_43.freeMemory()) / 1024L);
@@ -151,7 +151,7 @@ public class class292 {
                      }
 
                      if (class217_11.field2568 == 1338) {
-                        class58.method1098(class217_11, i_13, i_14, i_12, (byte) 94);
+                        class58.method1098(class217_11, i_13, i_14, i_12);
                         class321.method5997(i_2, i_3, i_4, i_5);
                         continue;
                      }
@@ -464,7 +464,7 @@ public class class292 {
                                  if (class217_11.field2690 != -1) {
                                     class254_34 = class26.method404(class217_11.field2690);
                                     if (class254_34 != null) {
-                                       class254_34 = class254_34.method4656(class217_11.field2655, (byte) -52);
+                                       class254_34 = class254_34.method4656(class217_11.field2655);
                                        class127_42 = class254_34.method4644(1, -682416240);
                                        if (class127_42 != null) {
                                           class127_42.method2899();
@@ -475,7 +475,7 @@ public class class292 {
                                     }
                                  } else if (class217_11.field2607 == 5) {
                                     if (class217_11.field2649 == 0) {
-                                       class127_42 = Client.field918.method3997((class258) null, -1, (class258) null, -1, (byte) -15);
+                                       class127_42 = Client.field918.method3997((class258) null, -1, (class258) null, -1);
                                     } else {
                                        class127_42 = Client.field657.vmethod3253(759381421);
                                     }

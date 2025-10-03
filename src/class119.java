@@ -20,7 +20,7 @@ public class class119 implements class139 {
       this.field1535 = i_6;
       int[] ints_7 = class233_1.method4153(0);
       int i_8 = ints_7.length;
-      this.field1531 = new class124[class233_1.method4154(0, -2013902268)];
+      this.field1531 = new class124[class233_1.method4154(0)];
 
       for (int i_9 = 0; i_9 < i_8; i_9++) {
          ByteBuffer class300_10 = new ByteBuffer(class233_1.method4144(0, ints_7[i_9]));

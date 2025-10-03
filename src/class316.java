@@ -73,17 +73,17 @@ public final class class316 implements Iterable {
       this.field3852 = null;
    }
 
-   public void method5938(LinkedListNode linkedListNode_1, long long_2) {
+   public void method5938(LinkedListNode linkedListNode_1, long hash) {
       if (linkedListNode_1.previous != null) {
          linkedListNode_1.unlink();
       }
 
-      LinkedListNode linkedListNode_4 = this.field3850[(int)(long_2 & (long)(this.field3851 - 1))];
+      LinkedListNode linkedListNode_4 = this.field3850[(int)(hash & (long)(this.field3851 - 1))];
       linkedListNode_1.previous = linkedListNode_4.previous;
       linkedListNode_1.next = linkedListNode_4;
       linkedListNode_1.previous.next = linkedListNode_1;
       linkedListNode_1.next.previous = linkedListNode_1;
-      linkedListNode_1.hash = long_2;
+      linkedListNode_1.hash = hash;
    }
 
    public Iterator iterator() {

@@ -6,13 +6,13 @@ public class TimeUtils extends class205 {
    static int[] field2501;
    ByteBuffer field2499;
 
-   public void vmethod3934(byte[] bytes_1, int i_2) {
+   public void vmethod3934(byte[] bytes_1) {
       this.field2499 = ByteBuffer.allocateDirect(bytes_1.length);
       this.field2499.position(0);
       this.field2499.put(bytes_1);
    }
 
-   byte[] vmethod3935(int i_1) {
+   byte[] vmethod3935() {
       byte[] bytes_2 = new byte[this.field2499.capacity()];
       this.field2499.position(0);
       this.field2499.get(bytes_2);
@@ -64,7 +64,7 @@ public class TimeUtils extends class205 {
             class253 class253_14;
             if (i_1 == 0) {
                class5.field22.method3208(i_0, i_2, i_3);
-               class253_14 = class128.method2970(i_15, (short) 4095);
+               class253_14 = class128.method2970(i_15);
                if (class253_14.field3382 != 0) {
                   Client.field710[i_0].method3564(i_2, i_3, i_16, i_17, class253_14.field3368, -1166825819);
                }
@@ -76,7 +76,7 @@ public class TimeUtils extends class205 {
 
             if (i_1 == 2) {
                class5.field22.method3154(i_0, i_2, i_3);
-               class253_14 = class128.method2970(i_15, (short) 4095);
+               class253_14 = class128.method2970(i_15);
                if (i_2 + class253_14.field3365 > 103 || i_3 + class253_14.field3365 > 103 || i_2 + class253_14.field3366 > 103 || i_3 + class253_14.field3366 > 103) {
                   return;
                }
@@ -88,7 +88,7 @@ public class TimeUtils extends class205 {
 
             if (i_1 == 3) {
                class5.field22.method3201(i_0, i_2, i_3);
-               class253_14 = class128.method2970(i_15, (short) 4095);
+               class253_14 = class128.method2970(i_15);
                if (class253_14.field3382 == 1) {
                   Client.field710[i_0].method3567(i_2, i_3);
                }
@@ -101,7 +101,7 @@ public class TimeUtils extends class205 {
                i_13 = i_0 + 1;
             }
 
-            ClientPacketProt.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, Client.field710[i_0], 1078750200);
+            ClientPacketProt.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, Client.field710[i_0]);
          }
       }
 

@@ -12,7 +12,7 @@ public class class245 extends class175 {
    short[] field3269;
    short[] field3270;
 
-   void method4436(ByteBuffer class300_1, int i_2, int i_3) {
+   void method4436(ByteBuffer class300_1, int i_2) {
       if (i_2 == 1) {
          this.field3265 = class300_1.readUnsignedByte();
       } else {
@@ -64,31 +64,31 @@ public class class245 extends class175 {
       return bool_2;
    }
 
-   public class121 method4441(byte b_1) {
-      class121[] arr_2 = new class121[5];
+   public Model method4441() {
+      Model[] arr_2 = new Model[5];
       int i_3 = 0;
 
       for (int i_4 = 0; i_4 < 5; i_4++) {
          if (this.field3262[i_4] != -1) {
-            arr_2[i_3++] = class121.method2769(class288.field3665, this.field3262[i_4], 0);
+            arr_2[i_3++] = Model.method2769(class288.field3665, this.field3262[i_4], 0);
          }
       }
 
-      class121 class121_6 = new class121(arr_2, i_3);
+      Model model_6 = new Model(arr_2, i_3);
       int i_5;
       if (this.field3267 != null) {
          for (i_5 = 0; i_5 < this.field3267.length; i_5++) {
-            class121_6.method2783(this.field3267[i_5], this.field3264[i_5]);
+            model_6.method2783(this.field3267[i_5], this.field3264[i_5]);
          }
       }
 
       if (this.field3269 != null) {
          for (i_5 = 0; i_5 < this.field3269.length; i_5++) {
-            class121_6.method2784(this.field3269[i_5], this.field3270[i_5]);
+            model_6.method2784(this.field3269[i_5], this.field3270[i_5]);
          }
       }
 
-      return class121_6;
+      return model_6;
    }
 
    public boolean method4440(int i_1) {
@@ -107,48 +107,48 @@ public class class245 extends class175 {
       }
    }
 
-   void method4449(ByteBuffer class300_1, int i_2) {
+   void method4449(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4436(class300_1, i_3, -1946344058);
+         this.method4436(class300_1, i_3);
       }
    }
 
-   public class121 method4439(int i_1) {
+   public Model method4439() {
       if (this.field3266 == null) {
          return null;
       } else {
-         class121[] arr_2 = new class121[this.field3266.length];
+         Model[] arr_2 = new Model[this.field3266.length];
 
          for (int i_3 = 0; i_3 < this.field3266.length; i_3++) {
-            arr_2[i_3] = class121.method2769(class288.field3665, this.field3266[i_3], 0);
+            arr_2[i_3] = Model.method2769(class288.field3665, this.field3266[i_3], 0);
          }
 
-         class121 class121_5;
+         Model model_5;
          if (arr_2.length == 1) {
-            class121_5 = arr_2[0];
+            model_5 = arr_2[0];
          } else {
-            class121_5 = new class121(arr_2, arr_2.length);
+            model_5 = new Model(arr_2, arr_2.length);
          }
 
          int i_4;
          if (this.field3267 != null) {
             for (i_4 = 0; i_4 < this.field3267.length; i_4++) {
-               class121_5.method2783(this.field3267[i_4], this.field3264[i_4]);
+               model_5.method2783(this.field3267[i_4], this.field3264[i_4]);
             }
          }
 
          if (this.field3269 != null) {
             for (i_4 = 0; i_4 < this.field3269.length; i_4++) {
-               class121_5.method2784(this.field3269[i_4], this.field3270[i_4]);
+               model_5.method2784(this.field3269[i_4], this.field3270[i_4]);
             }
          }
 
-         return class121_5;
+         return model_5;
       }
    }
 

@@ -626,7 +626,7 @@ public class class40 {
                         if (Client.field800) {
                            boolean bool_12 = Client.flag_23 || class45.field395[81];
                            if (bool_12) {
-                              i_11 = class254_9.method4652((byte) 19);
+                              i_11 = class254_9.method4652();
                            }
                         }
 

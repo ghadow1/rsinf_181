@@ -168,7 +168,7 @@ public class class192 implements UnknownT {
 
       class71.field1026 = ints_3;
       class71.field1018 = ints_4;
-      Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018, (byte) -109);
+      Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018);
    }
 
    public static void method3678() {

@@ -108,12 +108,12 @@ public final class class45 implements KeyListener, FocusListener {
    static final void method801(int i_0) {
       if (class7.field49) {
          if (class46.field410 != null) {
-            class46.field410.method5133((short) 128);
+            class46.field410.method5133();
          }
 
          for (int i_1 = 0; i_1 < class89.field1255; i_1++) {
             class66 class66_2 = Client.field909[class89.field1257[i_1]];
-            class66_2.method1185(-2115191954);
+            class66_2.method1185();
          }
 
          class7.field49 = false;

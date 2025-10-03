@@ -146,9 +146,9 @@ public class class202 extends class115 {
    }
 
    static void method3911(class71 class71_0) {
-      if (class71_0.method1680((byte) 0) != Client.field655) {
-         Client.field655 = class71_0.method1680((byte) 0);
-         boolean bool_2 = class71_0.method1680((byte) 0);
+      if (class71_0.method1680() != Client.field655) {
+         Client.field655 = class71_0.method1680();
+         boolean bool_2 = class71_0.method1680();
          if (bool_2 != class134.field1868) {
             class254.field3407.method3323();
             class254.field3408.method3323();

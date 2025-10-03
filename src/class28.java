@@ -12,7 +12,7 @@ public class class28 {
       this.field239 = class17_4;
    }
 
-   static String method417(int i_0, byte b_1) {
+   static String method417(int i_0) {
       return i_0 < 0 ? "" : (Client.field668[i_0].length() > 0 ? Client.field796[i_0] + " " + Client.field668[i_0] : Client.field796[i_0]);
    }
 
@@ -21,7 +21,7 @@ public class class28 {
    }
 
    public static void method418(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
-      class187 class187_5 = class235.method4265(ClientPacketProt.field2296, Client.data.field1313, 1775123545);
+      class187 class187_5 = class235.method4265(ClientPacketProt.field2296, Client.data.field1313);
       class187_5.outBuffer.writeIntReversed(bool_3 ? Client.field855 : 0);
       class187_5.outBuffer.writeShortLittleEndian(i_1);
       class187_5.outBuffer.writeNegatedByte(i_2);
@@ -38,7 +38,7 @@ public class class28 {
             i_8 = class300_0.readUnsignedByte();
             if (i_8 == 0) {
                if (i_1 == 0) {
-                  class55.field516[0][i_2][i_3] = -class1.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5, (byte) 84) * 8;
+                  class55.field516[0][i_2][i_3] = -class1.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5) * 8;
                } else {
                   class55.field516[i_1][i_2][i_3] = class55.field516[i_1 - 1][i_2][i_3] - 240;
                }

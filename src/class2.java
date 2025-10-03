@@ -15,7 +15,7 @@ final class class2 implements class0 {
       this.method19((Long) object_1, class300_2, -338982282);
    }
 
-   public static int method18(byte[] bytes_0, int i_1, int i_2, int i_3) {
+   public static int method18(byte[] bytes_0, int i_1, int i_2) {
       int i_4 = -1;
 
       for (int i_5 = i_1; i_5 < i_2; i_5++) {
@@ -26,10 +26,10 @@ final class class2 implements class0 {
       return i_4;
    }
 
-   static final void method28(int i_0) {
-      class154.method3405(-1807078732);
+   static final void method28() {
+      class154.method3405();
       if (class46.field410 != null) {
-         class46.field410.method5235(17638925);
+         class46.field410.method5235();
       }
 
    }

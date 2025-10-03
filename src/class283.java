@@ -5,18 +5,18 @@ public class class283 implements Comparable {
 
    public class283(String string_1, class338 class338_2) {
       this.field3647 = string_1;
-      this.field3646 = class291.method5315(string_1, class338_2, -1894833715);
+      this.field3646 = class291.method5315(string_1, class338_2);
    }
 
-   public int method5198(class283 class283_1, byte b_2) {
+   public int method5198(class283 class283_1) {
       return this.field3646 == null ? (class283_1.field3646 == null ? 0 : 1) : (class283_1.field3646 == null ? -1 : this.field3646.compareTo(class283_1.field3646));
    }
 
-   public String method5197(byte b_1) {
+   public String method5197() {
       return this.field3647;
    }
 
-   public boolean method5205(byte b_1) {
+   public boolean method5205() {
       return this.field3646 != null;
    }
 
@@ -34,11 +34,11 @@ public class class283 implements Comparable {
    }
 
    public int compareTo(Object object_1) {
-      return this.method5198((class283) object_1, (byte) -67);
+      return this.method5198((class283) object_1);
    }
 
    public String toString() {
-      return this.method5197((byte) 118);
+      return this.method5197();
    }
 
    public static final int method5217(double d_0, double d_2, double d_4) {

@@ -27,7 +27,7 @@ public class class248 extends class175 {
       }
    }
 
-   public static int method4493(CharSequence charsequence_0, int i_1, int i_2) {
+   public static int method4493(CharSequence charsequence_0, int i_1) {
       return class33.method554(charsequence_0, i_1);
    }
 
@@ -36,7 +36,7 @@ public class class248 extends class175 {
       int i_16;
       if (class85.field1205) {
          while (true) {
-            if (!class218.method4109(458367917)) {
+            if (!class218.method4109()) {
                if (class54.field493 != 1 && (class46.field413 || class54.field493 != 4)) {
                   break;
                }
@@ -146,7 +146,7 @@ public class class248 extends class175 {
             }
 
             long long_12 = TimeUtils.getAdjustedTimeMillis();
-            if (class190.method3667(1477910272) && class85.field1211 == -1L) {
+            if (class190.method3667() && class85.field1211 == -1L) {
                class85.field1211 = long_12;
                if (class85.field1211 > class85.field1193) {
                   class85.field1193 = class85.field1211;
@@ -188,7 +188,7 @@ public class class248 extends class175 {
                if (class85.field1209 == 0) {
                   boolean bool_18 = false;
 
-                  while (class218.method4109(2096519485)) {
+                  while (class218.method4109()) {
                      if (class97.field1338 == 84) {
                         bool_18 = true;
                      }
@@ -197,7 +197,7 @@ public class class248 extends class175 {
                   i_8 = class62.field585 - 80;
                   s_9 = 291;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
-                     class5.method50(class190.method3666("secure", true, -1044311329) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
+                     class5.method50(class190.someConnectionType("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
                   }
 
                   i_8 = class62.field585 + 80;
@@ -341,7 +341,7 @@ public class class248 extends class175 {
                         }
 
                         while (true) {
-                           while (class218.method4109(1593311170)) {
+                           while (class218.method4109()) {
                               bool_10 = false;
 
                               for (i_11 = 0; i_11 < "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| ".length(); i_11++) {
@@ -444,7 +444,7 @@ public class class248 extends class175 {
                            }
 
                            if (i_4 == 1 && i_16 >= class85.field1187 + 180 - 34 && i_16 <= class85.field1187 + 34 + 180 && i_17 >= 351 && i_17 <= 363) {
-                              class5.method50(class190.method3666("secure", true, -1044311329) + "m=totp-authenticator/disableTOTPRequest", true, false);
+                              class5.method50(class190.someConnectionType("secure", true) + "m=totp-authenticator/disableTOTPRequest", true, false);
                            }
 
                            i_19 = class85.field1187 + 180 + 80;
@@ -456,7 +456,7 @@ public class class248 extends class175 {
                               class36.field328 = "";
                            }
 
-                           while (class218.method4109(1958142063)) {
+                           while (class218.method4109()) {
                               boolean bool_22 = false;
 
                               for (i_23 = 0; i_23 < "1234567890".length(); i_23++) {
@@ -514,11 +514,11 @@ public class class248 extends class175 {
                            if (class38.field332 != null) {
                               i_23 = class38.field332.field3865 / 2;
                               if (i_4 == 1 && i_16 >= class38.field332.field3863 - i_23 && i_16 <= i_23 + class38.field332.field3863 && i_17 >= s_9 - 15 && i_17 < s_9) {
-                                 class5.method50(class190.method3666("secure", true, -1044311329) + "m=weblogin/g=oldscape/cant_log_in", true, false);
+                                 class5.method50(class190.someConnectionType("secure", true) + "m=weblogin/g=oldscape/cant_log_in", true, false);
                               }
                            }
 
-                           while (class218.method4109(2108077927)) {
+                           while (class218.method4109()) {
                               bool_10 = false;
 
                               for (i_11 = 0; i_11 < "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| ".length(); i_11++) {
@@ -548,7 +548,7 @@ public class class248 extends class175 {
                         } else if (class85.field1209 == 6) {
                            while (true) {
                               do {
-                                 if (!class218.method4109(573828821)) {
+                                 if (!class218.method4109()) {
                                     s_20 = 321;
                                     if (i_4 == 1 && i_17 >= s_20 - 20 && i_17 <= s_20 + 20) {
                                        class137.method3266(true, -235772870);
@@ -564,7 +564,7 @@ public class class248 extends class175 {
                            i_19 = class85.field1187 + 180 - 80;
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                              class5.method50(class190.method3666("secure", true, -1044311329) + "m=dob/set_dob.ws", true, false);
+                              class5.method50(class190.someConnectionType("secure", true) + "m=dob/set_dob.ws", true, false);
                               class268.loginResponseMessages("", "Page has opened in a new window.", "(Please check your popup blocker.)");
                               class85.field1209 = 6;
                               return;
@@ -624,7 +624,7 @@ public class class248 extends class175 {
                         }
                      }
                   } else {
-                     while (class218.method4109(838187525)) {
+                     while (class218.method4109()) {
                         if (class97.field1338 == 84) {
                            class137.method3266(false, -545171198);
                         } else if (class97.field1338 == 13) {

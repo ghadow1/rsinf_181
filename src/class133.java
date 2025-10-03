@@ -284,7 +284,7 @@ public class class133 {
       return false;
    }
 
-   void method3099(class121 class121_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
+   void method3099(Model model_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       boolean bool_7 = true;
       int i_8 = i_3;
       int i_9 = i_3 + i_5;
@@ -302,25 +302,25 @@ public class class133 {
                            int i_16 = (this.field1857[i_12][i_13 + 1][i_14] + this.field1857[i_12][i_13 + 1][i_14 + 1] + this.field1857[i_12][i_13][i_14] + this.field1857[i_12][i_13][i_14 + 1]) / 4 - (this.field1857[i_2][i_3 + 1][i_4] + this.field1857[i_2][i_3][i_4] + this.field1857[i_2][i_3 + 1][i_4 + 1] + this.field1857[i_2][i_3][i_4 + 1]) / 4;
                            class136 class136_17 = class126_15.field1656;
                            if (class136_17 != null) {
-                              class121 class121_18;
-                              if (class136_17.field1884 instanceof class121) {
-                                 class121_18 = (class121) class136_17.field1884;
-                                 class121.method2790(class121_1, class121_18, (1 - i_5) * 64 + (i_13 - i_3) * 128, i_16, (i_14 - i_4) * 128 + (1 - i_6) * 64, bool_7);
+                              Model model_18;
+                              if (class136_17.field1884 instanceof Model) {
+                                 model_18 = (Model) class136_17.field1884;
+                                 Model.method2790(model_1, model_18, (1 - i_5) * 64 + (i_13 - i_3) * 128, i_16, (i_14 - i_4) * 128 + (1 - i_6) * 64, bool_7);
                               }
 
-                              if (class136_17.field1881 instanceof class121) {
-                                 class121_18 = (class121) class136_17.field1881;
-                                 class121.method2790(class121_1, class121_18, (1 - i_5) * 64 + (i_13 - i_3) * 128, i_16, (i_14 - i_4) * 128 + (1 - i_6) * 64, bool_7);
+                              if (class136_17.field1881 instanceof Model) {
+                                 model_18 = (Model) class136_17.field1881;
+                                 Model.method2790(model_1, model_18, (1 - i_5) * 64 + (i_13 - i_3) * 128, i_16, (i_14 - i_4) * 128 + (1 - i_6) * 64, bool_7);
                               }
                            }
 
                            for (int i_23 = 0; i_23 < class126_15.field1655; i_23++) {
                               class142 class142_19 = class126_15.field1663[i_23];
-                              if (class142_19 != null && class142_19.field1933 instanceof class121) {
-                                 class121 class121_20 = (class121) class142_19.field1933;
+                              if (class142_19 != null && class142_19.field1933 instanceof Model) {
+                                 Model model_20 = (Model) class142_19.field1933;
                                  int i_21 = class142_19.field1936 - class142_19.field1935 + 1;
                                  int i_22 = class142_19.field1938 - class142_19.field1930 + 1;
-                                 class121.method2790(class121_1, class121_20, (i_21 - i_5) * 64 + (class142_19.field1935 - i_3) * 128, i_16, (class142_19.field1930 - i_4) * 128 + (i_22 - i_6) * 64, bool_7);
+                                 Model.method2790(model_1, model_20, (i_21 - i_5) * 64 + (class142_19.field1935 - i_3) * 128, i_16, (class142_19.field1930 - i_4) * 128 + (i_22 - i_6) * 64, bool_7);
                               }
                            }
                         }
@@ -660,38 +660,38 @@ public class class133 {
 
    }
 
-   void method3120(class121 class121_1, int i_2, int i_3, int i_4) {
+   void method3120(Model model_1, int i_2, int i_3, int i_4) {
       class126 class126_5;
-      class121 class121_6;
+      Model model_6;
       if (i_3 < this.field1803) {
          class126_5 = this.field1853[i_2][i_3 + 1][i_4];
-         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof class121) {
-            class121_6 = (class121) class126_5.field1664.field1614;
-            class121.method2790(class121_1, class121_6, 128, 0, 0, true);
+         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof Model) {
+            model_6 = (Model) class126_5.field1664.field1614;
+            Model.method2790(model_1, model_6, 128, 0, 0, true);
          }
       }
 
       if (i_4 < this.field1803) {
          class126_5 = this.field1853[i_2][i_3][i_4 + 1];
-         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof class121) {
-            class121_6 = (class121) class126_5.field1664.field1614;
-            class121.method2790(class121_1, class121_6, 0, 0, 128, true);
+         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof Model) {
+            model_6 = (Model) class126_5.field1664.field1614;
+            Model.method2790(model_1, model_6, 0, 0, 128, true);
          }
       }
 
       if (i_3 < this.field1803 && i_4 < this.field1804) {
          class126_5 = this.field1853[i_2][i_3 + 1][i_4 + 1];
-         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof class121) {
-            class121_6 = (class121) class126_5.field1664.field1614;
-            class121.method2790(class121_1, class121_6, 128, 0, 128, true);
+         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof Model) {
+            model_6 = (Model) class126_5.field1664.field1614;
+            Model.method2790(model_1, model_6, 128, 0, 128, true);
          }
       }
 
       if (i_3 < this.field1803 && i_4 > 0) {
          class126_5 = this.field1853[i_2][i_3 + 1][i_4 - 1];
-         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof class121) {
-            class121_6 = (class121) class126_5.field1664.field1614;
-            class121.method2790(class121_1, class121_6, 128, 0, -128, true);
+         if (class126_5 != null && class126_5.field1664 != null && class126_5.field1664.field1614 instanceof Model) {
+            model_6 = (Model) class126_5.field1664.field1614;
+            Model.method2790(model_1, model_6, 128, 0, -128, true);
          }
       }
 
@@ -2016,34 +2016,34 @@ public class class133 {
                class126 class126_7 = this.field1853[i_4][i_5][i_6];
                if (class126_7 != null) {
                   class136 class136_8 = class126_7.field1656;
-                  class121 class121_10;
-                  if (class136_8 != null && class136_8.field1884 instanceof class121) {
-                     class121 class121_9 = (class121) class136_8.field1884;
-                     this.method3099(class121_9, i_4, i_5, i_6, 1, 1);
-                     if (class136_8.field1881 instanceof class121) {
-                        class121_10 = (class121) class136_8.field1881;
-                        this.method3099(class121_10, i_4, i_5, i_6, 1, 1);
-                        class121.method2790(class121_9, class121_10, 0, 0, 0, false);
-                        class136_8.field1881 = class121_10.method2802(class121_10.field1580, class121_10.field1577, i_1, i_2, i_3);
+                  Model model_10;
+                  if (class136_8 != null && class136_8.field1884 instanceof Model) {
+                     Model model_9 = (Model) class136_8.field1884;
+                     this.method3099(model_9, i_4, i_5, i_6, 1, 1);
+                     if (class136_8.field1881 instanceof Model) {
+                        model_10 = (Model) class136_8.field1881;
+                        this.method3099(model_10, i_4, i_5, i_6, 1, 1);
+                        Model.method2790(model_9, model_10, 0, 0, 0, false);
+                        class136_8.field1881 = model_10.applyLighting(model_10.field1580, model_10.field1577, i_1, i_2, i_3);
                      }
 
-                     class136_8.field1884 = class121_9.method2802(class121_9.field1580, class121_9.field1577, i_1, i_2, i_3);
+                     class136_8.field1884 = model_9.applyLighting(model_9.field1580, model_9.field1577, i_1, i_2, i_3);
                   }
 
                   for (int i_12 = 0; i_12 < class126_7.field1655; i_12++) {
                      class142 class142_14 = class126_7.field1663[i_12];
-                     if (class142_14 != null && class142_14.field1933 instanceof class121) {
-                        class121 class121_11 = (class121) class142_14.field1933;
-                        this.method3099(class121_11, i_4, i_5, i_6, class142_14.field1936 - class142_14.field1935 + 1, class142_14.field1938 - class142_14.field1930 + 1);
-                        class142_14.field1933 = class121_11.method2802(class121_11.field1580, class121_11.field1577, i_1, i_2, i_3);
+                     if (class142_14 != null && class142_14.field1933 instanceof Model) {
+                        Model model_11 = (Model) class142_14.field1933;
+                        this.method3099(model_11, i_4, i_5, i_6, class142_14.field1936 - class142_14.field1935 + 1, class142_14.field1938 - class142_14.field1930 + 1);
+                        class142_14.field1933 = model_11.applyLighting(model_11.field1580, model_11.field1577, i_1, i_2, i_3);
                      }
                   }
 
                   class123 class123_13 = class126_7.field1664;
-                  if (class123_13 != null && class123_13.field1614 instanceof class121) {
-                     class121_10 = (class121) class123_13.field1614;
-                     this.method3120(class121_10, i_4, i_5, i_6);
-                     class123_13.field1614 = class121_10.method2802(class121_10.field1580, class121_10.field1577, i_1, i_2, i_3);
+                  if (class123_13 != null && class123_13.field1614 instanceof Model) {
+                     model_10 = (Model) class123_13.field1614;
+                     this.method3120(model_10, i_4, i_5, i_6);
+                     class123_13.field1614 = model_10.applyLighting(model_10.field1580, model_10.field1577, i_1, i_2, i_3);
                   }
                }
             }

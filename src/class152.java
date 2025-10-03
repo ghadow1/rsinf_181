@@ -7,7 +7,7 @@ public class class152 extends ChainedComparator {
    }
 
    int method3384(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
-      return Client.field807 == categorizable_1.category && categorizable_2.category == Client.field807 ? (this.field1975 ? categorizable_1.method5041(-156755920).method5198(categorizable_2.method5041(-156755920), (byte) -28) : categorizable_2.method5041(-156755920).method5198(categorizable_1.method5041(-156755920), (byte) -73)) : this.compareWithNext(categorizable_1, categorizable_2);
+      return Client.field807 == categorizable_1.category && categorizable_2.category == Client.field807 ? (this.field1975 ? categorizable_1.method5041().method5198(categorizable_2.method5041()) : categorizable_2.method5041().method5198(categorizable_1.method5041())) : this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
@@ -33,7 +33,7 @@ public class class152 extends ChainedComparator {
       if (i_0 == 1300) {
          i_12 = class76.field1098[--class70.field1014] - 1;
          if (i_12 >= 0 && i_12 <= 9) {
-            class217_5.method4041(i_12, class76.field1093[--class221.field2747], (short) -20428);
+            class217_5.method4041(i_12, class76.field1093[--class221.field2747]);
             return 1;
          } else {
             --class221.field2747;
@@ -45,7 +45,7 @@ public class class152 extends ChainedComparator {
             class70.field1014 -= 2;
             i_12 = class76.field1098[class70.field1014];
             i_7 = class76.field1098[class70.field1014 + 1];
-            class217_5.field2645 = Client.method1649(i_12, i_7, -1376178564);
+            class217_5.field2645 = Client.method1649(i_12, i_7);
             return 1;
          } else if (i_0 == 1302) {
             class217_5.field2648 = class76.field1098[--class70.field1014] == 1;

@@ -39,7 +39,7 @@ public class class157 extends ChainedComparator {
                class71_4.field1030 = class300_2.readSignedShortBigEndian();
             }
 
-            Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018, (byte) -62);
+            Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018);
             class71.field1027 = null;
             return true;
          }

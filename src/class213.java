@@ -28,28 +28,28 @@ public class class213 {
 
    }
 
-   String method3975(String string_1, int i_2) {
+   String method3975(String string_1) {
       return this.field2531 + string_1 + (this.field2530 >> 6) + string_1 + (this.field2528 >> 6) + string_1 + (this.field2530 & 0x3f) + string_1 + (this.field2528 & 0x3f);
    }
 
-   public int method3971(int i_1) {
+   public int method3971() {
       return this.field2531 << 28 | this.field2530 << 14 | this.field2528;
    }
 
-   boolean method3973(class213 class213_1, int i_2) {
+   boolean method3973(class213 class213_1) {
       return this.field2531 != class213_1.field2531 ? false : (this.field2530 != class213_1.field2530 ? false : this.field2528 == class213_1.field2528);
    }
 
    public int hashCode() {
-      return this.method3971(-1529444039);
+      return this.method3971();
    }
 
    public boolean equals(Object object_1) {
-      return this == object_1 ? true : (!(object_1 instanceof class213) ? false : this.method3973((class213) object_1, 2096599249));
+      return this == object_1 ? true : (!(object_1 instanceof class213) ? false : this.method3973((class213) object_1));
    }
 
    public String toString() {
-      return this.method3975(",", -1242820641);
+      return this.method3975(",");
    }
 
    public static void method3989() {

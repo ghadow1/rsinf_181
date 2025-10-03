@@ -1,4 +1,4 @@
-public class class285 extends class277 {
+public class class285 extends UserList {
 
    static class324[] field3660;
    public String field3655 = null;
@@ -19,7 +19,7 @@ public class class285 extends class277 {
       this.field3656 = class242.method4403(string_1, (short) -32757);
    }
 
-   class274 vmethod5229(int i_1) {
+   User vmethod5229() {
       return new class273();
    }
 
@@ -27,26 +27,26 @@ public class class285 extends class277 {
       this.field3655 = class242.method4403(string_1, (short) -21709);
    }
 
-   class274[] vmethod5230(int i_1, int i_2) {
+   User[] vmethod5230(int i_1) {
       return new class273[i_1];
    }
 
-   public final void method5228(int i_1) {
-      for (int i_2 = 0; i_2 < this.method5079(436582529); i_2++) {
-         ((class273) this.method5151(i_2, 497000028)).method5018(1319461047);
+   public final void method5228() {
+      for (int i_2 = 0; i_2 < this.method5079(); i_2++) {
+         ((class273) this.method5151(i_2)).method5018();
       }
 
    }
 
-   public final void method5235(int i_1) {
-      for (int i_2 = 0; i_2 < this.method5079(258332919); i_2++) {
-         ((class273) this.method5151(i_2, -1818852723)).method5020(-1980920067);
+   public final void method5235() {
+      for (int i_2 = 0; i_2 < this.method5079(); i_2++) {
+         ((class273) this.method5151(i_2)).method5020();
       }
 
    }
 
-   final void method5237(class273 class273_1, int i_2) {
-      if (class273_1.method5041(-156755920).equals(this.field3652.vmethod5179((byte) -19))) {
+   final void method5237(class273 class273_1) {
+      if (class273_1.method5041().equals(this.field3652.vmethod5179((byte) -19))) {
          this.field3653 = class273_1.field3634;
       }
 
@@ -59,15 +59,15 @@ public class class285 extends class277 {
       this.field3657 = class300_1.readSignedByte();
       int i_5 = class300_1.readUnsignedByte();
       if (i_5 != 255) {
-         this.method5096(1361883918);
+         this.method5096();
 
          for (int i_6 = 0; i_6 < i_5; i_6++) {
-            class273 class273_7 = (class273) this.method5087(new class283(class300_1.readNullTerminatedString(), this.field3658), (byte) -19);
+            class273 class273_7 = (class273) this.method5087(new class283(class300_1.readNullTerminatedString(), this.field3658));
             int i_8 = class300_1.readUnsignedShortBigEndian();
             class273_7.method5163(i_8, ++this.field3659 - 1, -1729653997);
             class273_7.field3634 = class300_1.readSignedByte();
             class300_1.readNullTerminatedString();
-            this.method5237(class273_7, 1755545327);
+            this.method5237(class273_7);
          }
 
       }
@@ -84,28 +84,28 @@ public class class285 extends class277 {
 
       class273 class273_7;
       if (bool_6) {
-         if (this.method5079(1572254134) == 0) {
+         if (this.method5079() == 0) {
             return;
          }
 
-         class273_7 = (class273) this.method5138(class283_3, 2083171527);
+         class273_7 = (class273) this.method5138(class283_3);
          if (class273_7 != null && class273_7.method5164(212736889) == i_4) {
-            this.method5086(class273_7, 951866693);
+            this.removeEntry(class273_7);
          }
       } else {
          class300_1.readNullTerminatedString();
-         class273_7 = (class273) this.method5138(class283_3, 2083171527);
+         class273_7 = (class273) this.method5138(class283_3);
          if (class273_7 == null) {
-            if (this.method5079(598016373) > super.field3627) {
+            if (this.method5079() > super.capacity) {
                return;
             }
 
-            class273_7 = (class273) this.method5087(class283_3, (byte) -80);
+            class273_7 = (class273) this.method5087(class283_3);
          }
 
          class273_7.method5163(i_4, ++this.field3659 - 1, -235684888);
          class273_7.field3634 = b_5;
-         this.method5237(class273_7, 1755545327);
+         this.method5237(class273_7);
       }
 
    }

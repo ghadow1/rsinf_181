@@ -56,13 +56,13 @@ public class class331 extends LinkedListNode {
 
    public int method6282(byte b_1) {
       byte b_2 = 39;
-      int i_3 = b_2 + class13.method152(this.field3934, -1481103738);
-      i_3 += class13.method152(this.field3951, -823541977);
-      i_3 += class13.method152(this.field3952, -37033018);
-      i_3 += class13.method152(this.field3946, 733877796);
-      i_3 += class13.method152(this.field3947, -421259903);
-      i_3 += class13.method152(this.field3959, -907434845);
-      i_3 += class13.method152(this.field3931, -660047524);
+      int i_3 = b_2 + class13.method152(this.field3934);
+      i_3 += class13.method152(this.field3951);
+      i_3 += class13.method152(this.field3952);
+      i_3 += class13.method152(this.field3946);
+      i_3 += class13.method152(this.field3947);
+      i_3 += class13.method152(this.field3959);
+      i_3 += class13.method152(this.field3931);
       return i_3;
    }
 

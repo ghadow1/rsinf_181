@@ -13,7 +13,7 @@ public class class229 {
       this.field3097 = i_2;
    }
 
-   public static class229 method4133(int i_0, int i_1) {
+   public static class229 method4133(int i_0) {
       class229[] arr_2 = class328.method6256();
 
       for (int i_3 = 0; i_3 < arr_2.length; i_3++) {

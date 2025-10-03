@@ -14,7 +14,7 @@ public class class90 {
    long field1272;
 
    class90() {
-      int i_1 = class215.field2544.method4154(19, -1308599305);
+      int i_1 = class215.field2544.method4154(19);
       this.field1271 = new HashMap();
       this.field1268 = new boolean[i_1];
 
@@ -40,23 +40,23 @@ public class class90 {
 
       i_2 = 0;
       if (class215.field2544.method4268(15, (byte) 0)) {
-         i_2 = class215.field2544.method4154(15, -1999468647);
+         i_2 = class215.field2544.method4154(15);
       }
 
       this.field1269 = new String[i_2];
-      this.method2104((byte) -5);
+      this.method2104();
    }
 
-   class343 method2102(boolean bool_1, int i_2) {
-      return class18.method207("2", class29.field248.field3111, bool_1, -924083635);
+   class343 method2102(boolean bool_1) {
+      return class18.userPrefSave("2", class29.field248.field3111, bool_1);
    }
 
-   boolean method2099(int i_1) {
+   boolean method2099() {
       return this.field1270;
    }
 
-   void method2100(int i_1) {
-      class343 class343_2 = this.method2102(true, 195746057);
+   void method2100() {
+      class343 class343_2 = this.method2102(true);
       boolean bool_26 = false;
 
       label165: {
@@ -155,8 +155,8 @@ public class class90 {
       this.field1272 = TimeUtils.getAdjustedTimeMillis();
    }
 
-   void method2104(byte b_1) {
-      class343 class343_2 = this.method2102(false, 813176222);
+   void method2104() {
+      class343 class343_2 = this.method2102(false);
       boolean bool_26 = false;
 
       label238: {
@@ -210,7 +210,7 @@ public class class90 {
                            i_10 = class300_16.readUnsignedByte();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
                            class3 class3_12 = (class3) MemoryManager.findById(arr_11, i_10);
-                           Object object_13 = class3_12.method34(class300_16, -25501823);
+                           Object object_13 = class3_12.method34(class300_16);
                            if (this.field1268[i_9]) {
                               this.field1271.put(Integer.valueOf(i_9), object_13);
                            }
@@ -334,7 +334,7 @@ public class class90 {
 
    void method2105(int i_1) {
       if (this.field1270 && this.field1272 < TimeUtils.getAdjustedTimeMillis() - 60000L) {
-         this.method2100(2110118383);
+         this.method2100();
       }
 
    }

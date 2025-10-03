@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public final class Client extends GCMonitor_2 implements class280 {
+public final class Client extends GameApplet implements class280 {
+
+   static boolean packetDebugging = true;
 
    static class235 field683;
    static class235 field684;
@@ -539,7 +541,7 @@ public final class Client extends GCMonitor_2 implements class280 {
       field930 = new int[50];
    }
 
-   public static class217 method1649(int i_0, int i_1, int i_2) {
+   public static class217 method1649(int i_0, int i_1) {
       class217 class217_3 = class80.fetchSomething(i_0);
       return i_1 == -1 ? class217_3 : (class217_3 != null && class217_3.field2675 != null && i_1 < class217_3.field2675.length ? class217_3.field2675[i_1] : null);
    }
@@ -548,7 +550,119 @@ public final class Client extends GCMonitor_2 implements class280 {
       return field657 != null ? field657.field621 : null;
    }
 
-   void method1253(int i_1) {
+   static final void method1650(String string_0) {
+      StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
+      String string_2 = stringbuilder_10000.append(" is already on your ignore list").toString();
+      class62.method1132(30, "", string_2);
+   }
+
+   static void method1651(class71[] arr_0, int i_1, int i_2, int[] ints_3, int[] ints_4) {
+      if (i_1 < i_2) {
+         int i_6 = i_1 - 1;
+         int i_7 = i_2 + 1;
+         int i_8 = (i_2 + i_1) / 2;
+         class71 class71_9 = arr_0[i_8];
+         arr_0[i_8] = arr_0[i_1];
+         arr_0[i_1] = class71_9;
+
+         while (i_6 < i_7) {
+            boolean bool_10 = true;
+
+            int i_11;
+            int i_12;
+            int i_13;
+            do {
+               --i_7;
+
+               for (i_11 = 0; i_11 < 4; i_11++) {
+                  if (ints_3[i_11] == 2) {
+                     i_12 = arr_0[i_7].field1034;
+                     i_13 = class71_9.field1034;
+                  } else if (ints_3[i_11] == 1) {
+                     i_12 = arr_0[i_7].field1030;
+                     i_13 = class71_9.field1030;
+                     if (i_12 == -1 && ints_4[i_11] == 1) {
+                        i_12 = 2001;
+                     }
+
+                     if (i_13 == -1 && ints_4[i_11] == 1) {
+                        i_13 = 2001;
+                     }
+                  } else if (ints_3[i_11] == 3) {
+                     i_12 = arr_0[i_7].method1680() ? 1 : 0;
+                     i_13 = class71_9.method1680() ? 1 : 0;
+                  } else {
+                     i_12 = arr_0[i_7].field1025;
+                     i_13 = class71_9.field1025;
+                  }
+
+                  if (i_13 != i_12) {
+                     if ((ints_4[i_11] != 1 || i_12 <= i_13) && (ints_4[i_11] != 0 || i_12 >= i_13)) {
+                        bool_10 = false;
+                     }
+                     break;
+                  }
+
+                  if (i_11 == 3) {
+                     bool_10 = false;
+                  }
+               }
+            } while (bool_10);
+
+            bool_10 = true;
+
+            do {
+               ++i_6;
+
+               for (i_11 = 0; i_11 < 4; i_11++) {
+                  if (ints_3[i_11] == 2) {
+                     i_12 = arr_0[i_6].field1034;
+                     i_13 = class71_9.field1034;
+                  } else if (ints_3[i_11] == 1) {
+                     i_12 = arr_0[i_6].field1030;
+                     i_13 = class71_9.field1030;
+                     if (i_12 == -1 && ints_4[i_11] == 1) {
+                        i_12 = 2001;
+                     }
+
+                     if (i_13 == -1 && ints_4[i_11] == 1) {
+                        i_13 = 2001;
+                     }
+                  } else if (ints_3[i_11] == 3) {
+                     i_12 = arr_0[i_6].method1680() ? 1 : 0;
+                     i_13 = class71_9.method1680() ? 1 : 0;
+                  } else {
+                     i_12 = arr_0[i_6].field1025;
+                     i_13 = class71_9.field1025;
+                  }
+
+                  if (i_12 != i_13) {
+                     if ((ints_4[i_11] != 1 || i_12 >= i_13) && (ints_4[i_11] != 0 || i_12 <= i_13)) {
+                        bool_10 = false;
+                     }
+                     break;
+                  }
+
+                  if (i_11 == 3) {
+                     bool_10 = false;
+                  }
+               }
+            } while (bool_10);
+
+            if (i_6 < i_7) {
+               class71 class71_14 = arr_0[i_6];
+               arr_0[i_6] = arr_0[i_7];
+               arr_0[i_7] = class71_14;
+            }
+         }
+
+         method1651(arr_0, i_1, i_7, ints_3, ints_4);
+         method1651(arr_0, i_7 + 1, i_2, ints_3, ints_4);
+      }
+
+   }
+
+   void method1253() {
       int i_2 = class7.field46;
       int i_3 = class249.field3308;
       if (super.field454 < i_2) {
@@ -569,9 +683,9 @@ public final class Client extends GCMonitor_2 implements class280 {
 
    }
 
-   protected final void vmethod1608(int i_1) {
-      if (class170.field2057.method2099(-1650912685)) {
-         class170.field2057.method2100(2043030213);
+   protected final void vmethod1608() {
+      if (class170.field2057.method2099()) {
+         class170.field2057.method2100();
       }
 
       if (class40.field348 != null) {
@@ -581,7 +695,7 @@ public final class Client extends GCMonitor_2 implements class280 {
       class40.field348 = null;
       data.method2233();
       class123.method2842((short) 3762);
-      class217.method4091((byte) 0);
+      class217.method4091();
       class36.field329 = null;
       if (class80.field1144 != null) {
          class80.field1144.method2434((byte) 2);
@@ -602,30 +716,23 @@ public final class Client extends GCMonitor_2 implements class280 {
       }
 
       try {
-         class167.field2042.method6540((byte) 41);
+         class167.field2042.method6540();
 
          for (int i_2 = 0; i_2 < class40.field350; i_2++) {
-            class167.field2041[i_2].method6540((byte) 3);
+            class167.field2041[i_2].method6540();
          }
 
-         class167.field2039.method6540((byte) -11);
-         class167.field2040.method6540((byte) 45);
+         class167.field2039.method6540();
+         class167.field2040.method6540();
       } catch (Exception exception_4) {
          ;
       }
 
    }
 
-   static final void method1650(String string_0, int i_1) {
-      StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
-      Object obj_10001 = null;
-      String string_2 = stringbuilder_10000.append(" is already on your ignore list").toString();
-      class62.method1132(30, "", string_2, -2140749974);
-   }
-
-   void method1247(int i_1) {
+   void method1247() {
       if (field662 != 1000) {
-         boolean bool_2 = class26.method365(-296796650);
+         boolean bool_2 = class26.method365();
          if (!bool_2) {
             this.method1248();
          }
@@ -633,8 +740,8 @@ public final class Client extends GCMonitor_2 implements class280 {
       }
    }
 
-   final void method1293(boolean bool_1, int i_2) {
-      class27.method416(field905, class7.field46, class249.field3308, bool_1, -2132885563);
+   final void method1293(boolean bool_1) {
+      class27.method416(field905, class7.field46, class249.field3308, bool_1);
    }
 
    protected final void vmethod1243(int i_1) {
@@ -662,24 +769,19 @@ public final class Client extends GCMonitor_2 implements class280 {
       class35.field309 = class215.field2542;
       class64.field604 = class215.field2546;
       class258.field3534 = new class143();
-      this.method972(-454668122);
-      this.method932(-1746094131);
-      class36.field329 = this.method877((byte) 24);
+      this.method972();
+      this.method932();
+      class36.field329 = this.method877();
       class62.field573 = new class308(255, class167.field2042, class167.field2039, 500000);
-      class17.field117 = class134.method3249(1887842280);
+      class17.field117 = class134.method3249();
       this.method878();
-      class218.method4110(this, class60.field566, -1987450780);
+      class218.method4110(this, class60.field566);
       if (field703 != 0) {
          field884 = true;
       }
 
       class170.method3515(class17.field117.field1064);
       class58.field546 = new class74(class40.field353);
-   }
-
-   final boolean method1257(int i_1) {
-      int i_2 = class13.method151(246973533);
-      return (field789 == 1 && field791 > 2 || class76.method1936(i_2)) && !field769[i_2];
    }
 
    protected final void vmethod1273(int i_1) {
@@ -715,6 +817,11 @@ public final class Client extends GCMonitor_2 implements class280 {
          }
       }
 
+   }
+
+   final boolean method1257(int i_1) {
+      int i_2 = class13.method151();
+      return (field789 == 1 && field791 > 2 || class76.method1936(i_2)) && !field769[i_2];
    }
 
    final boolean parsePacket() {
@@ -814,7 +921,7 @@ public final class Client extends GCMonitor_2 implements class280 {
 
             if (ServerPacketProt.field2200 == Client.data.packet) {
                i_17 = jagbuf.readUnsignedByte();
-               class108.method2491(i_17, 1967203322);
+               class108.method2491(i_17);
                Client.data.packet = null;
                return false;
             }
@@ -1200,7 +1307,7 @@ public final class Client extends GCMonitor_2 implements class280 {
 
             if (ServerPacketProt.field2147 == Client.data.packet) {
                class58.field546.field1071.method5075(jagbuf, Client.data.field1315, -726342746);
-               class2.method28(-949997341);
+               class2.method28();
                field672 = field673;
                Client.data.packet = null;
                return true;
@@ -1232,7 +1339,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   }
                }
 
-               if (gameState_12.field3092 && class58.field546.method1765(new class283(string_38, class40.field353), (byte) -1)) {
+               if (gameState_12.field3092 && class58.field546.method1765(new class283(string_38, class40.field353))) {
                   bool_50 = true;
                }
 
@@ -1241,7 +1348,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   field875 = (field875 + 1) % 100;
                   String string_28 = class296.method5362(class1.method17(class311.method5898(jagbuf, (byte) 39), (byte) -89));
                   if (gameState_12.field3090 != -1) {
-                     class14.method157(9, class33.method556(gameState_12.field3090, (byte) -57) + string_38, string_28, class215.method4023(long_24));
+                     class14.method157(9, class33.iconTag(gameState_12.field3090) + string_38, string_28, class215.method4023(long_24));
                   } else {
                      class14.method157(9, string_38, string_28, class215.method4023(long_24));
                   }
@@ -1266,7 +1373,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                arr_58[0] = new Integer(jagbuf.readIntMedEndian());
                class62 class62_49 = new class62();
                class62_49.field581 = arr_58;
-               class184.method3613(class62_49, (byte) -121);
+               class184.method3613(class62_49);
                Client.data.packet = null;
                return true;
             }
@@ -1360,7 +1467,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
 
             if (ServerPacketProt.field2144 == Client.data.packet) {
-               class58.field546.method1760(2033101779);
+               class58.field546.method1760();
                field672 = field673;
                Client.data.packet = null;
                return true;
@@ -1490,9 +1597,9 @@ public final class Client extends GCMonitor_2 implements class280 {
                   class217_20.field2694 = 0;
                   class217_20.field2570 = 0;
                   class224.method4120(class217_20);
-                  this.method1260(class217_20, 2120964597);
+                  this.method1260(class217_20);
                   if (class217_20.field2566 == 0) {
-                     class27.method413(class217.field2556[i_17 >> 16], class217_20, false, 280712117);
+                     class27.method413(class217.field2556[i_17 >> 16], class217_20, false);
                   }
                }
 
@@ -1507,20 +1614,28 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
 
             if (ServerPacketProt.messageGameMessage == Client.data.packet) {
+               //..Decode
                i_17 = jagbuf.readSmartInt();
                bool_48 = jagbuf.readUnsignedByte() == 1;
                str_45 = "";
                boolean bool_46 = false;
                if (bool_48) {
                   str_45 = jagbuf.readNullTerminatedString();
-                  if (class58.field546.method1765(new class283(str_45, class40.field353), (byte) -1)) {
+                  if (class58.field546.method1765(new class283(str_45, class40.field353))) {
                      bool_46 = true;
                   }
                }
 
                String string_43 = jagbuf.readNullTerminatedString();
+               if (packetDebugging) {
+                  System.out.println("======= messageGameMessage =======");
+                  System.out.println("i_17 : " + i_17);
+                  System.out.println("bool_48 : " + bool_48);
+                  System.out.println("Client Game Message : " + string_43);
+                  System.out.println("======= end_messageGameMessage =======");
+               }
                if (!bool_46) {
-                  class62.method1132(i_17, str_45, string_43, -2135238303);
+                  class62.method1132(i_17, str_45, string_43);
                }
 
                Client.data.packet = null;
@@ -1568,9 +1683,9 @@ public final class Client extends GCMonitor_2 implements class280 {
                i_17 = jagbuf.readIntMedEndian();
                i_6 = jagbuf.readIntMedEndian();
                i_18 = MemoryManager.getGCPercentage();
-               class187 class187_57 = class235.method4265(ClientPacketProt.field2236, data.field1313, 1775123545);
+               class187 class187_57 = class235.method4265(ClientPacketProt.field2236, data.field1313);
                class187_57.outBuffer.writeNegatedByte(i_18);
-               class187_57.outBuffer.writeByte(GCMonitor_2.field462);
+               class187_57.outBuffer.writeByte(GameApplet.field462);
                class187_57.outBuffer.writeIntReversed(i_17);
                class187_57.outBuffer.writeIntLittleEndian(i_6);
                data.copy(class187_57);
@@ -1581,8 +1696,8 @@ public final class Client extends GCMonitor_2 implements class280 {
             if (ServerPacketProt.ifOpenTopMessage == Client.data.packet) {
                i_17 = jagbuf.readShortWithOffset2();
                field905 = i_17;
-               this.method1293(false, 831397747);
-               class12.method146(i_17, -2136228205);
+               this.method1293(false);
+               class12.method146(i_17);
                class48.method813(field905, 1705541685);
 
                for (i_6 = 0; i_6 < 100; i_6++) {
@@ -1597,7 +1712,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                i_17 = jagbuf.readIntCustomOrder();
                class217_54 = class80.fetchSomething(i_17);
                class217_54.field2607 = 3;
-               class217_54.field2649 = field657.field613.method3994(-1943102032);
+               class217_54.field2649 = field657.field613.method3994();
                class224.method4120(class217_54);
                Client.data.packet = null;
                return true;
@@ -1606,7 +1721,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             if (ServerPacketProt.field2180 == Client.data.packet) {
                string_38 = jagbuf.readNullTerminatedString();
                string_19 = class296.method5362(class1.method17(class311.method5898(jagbuf, (byte) 54), (byte) -70));
-               class62.method1132(6, string_38, string_19, -2080121976);
+               class62.method1132(6, string_38, string_19);
                Client.data.packet = null;
                return true;
             }
@@ -1690,8 +1805,8 @@ public final class Client extends GCMonitor_2 implements class280 {
                i_18 = jagbuf.readUnsignedShortBigEndian();
                if (i_6 != field905) {
                   field905 = i_6;
-                  this.method1293(false, 831397747);
-                  class12.method146(field905, -2134504940);
+                  this.method1293(false);
+                  class12.method146(field905);
                   class48.method813(field905, 1801594515);
 
                   for (i_8 = 0; i_8 < 100; i_8++) {
@@ -1761,7 +1876,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   }
                }
 
-               class12.method144(i_6, 1192487451);
+               class12.method144(i_6);
                i_8 = jagbuf.readUnsignedShortBigEndian();
 
                for (i_21 = 0; i_21 < i_8; i_21++) {
@@ -1776,7 +1891,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                      class217_7.field2705[i_21] = i_11;
                   }
 
-                  class12.method134(i_6, i_21, i_10 - 1, i_11, -1058025130);
+                  class12.method134(i_6, i_21, i_10 - 1, i_11);
                }
 
                if (class217_7 != null) {
@@ -1925,7 +2040,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                class217_9 = class80.fetchSomething(i_17);
                if (class217_9 != null) {
                   class224.method4120(class217_9);
-                  class27.method413(class217.field2556[class217_9.field2688 >>> 16], class217_9, true, -1513497710);
+                  class27.method413(class217.field2556[class217_9.field2688 >>> 16], class217_9, true);
                }
 
                if (field905 != -1) {
@@ -1951,7 +2066,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   }
                }
 
-               if (class58.field546.method1765(new class283(string_38, class40.field353), (byte) -1)) {
+               if (class58.field546.method1765(new class283(string_38, class40.field353))) {
                   bool_34 = true;
                }
 
@@ -1967,9 +2082,9 @@ public final class Client extends GCMonitor_2 implements class280 {
                   }
 
                   if (gameState_31.field3090 != -1) {
-                     class62.method1132(b_15, class33.method556(gameState_31.field3090, (byte) -86) + string_38, string_35, -2081158306);
+                     class62.method1132(b_15, class33.iconTag(gameState_31.field3090) + string_38, string_35);
                   } else {
-                     class62.method1132(b_15, string_38, string_35, -2140168948);
+                     class62.method1132(b_15, string_38, string_35);
                   }
                }
 
@@ -2027,7 +2142,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   class217_7 = null;
                }
 
-               for (; jagbuf.position < Client.data.field1315; class12.method134(i_6, i_8, i_21 - 1, i_10, -1058025130)) {
+               for (; jagbuf.position < Client.data.field1315; class12.method134(i_6, i_8, i_21 - 1, i_10)) {
                   i_8 = jagbuf.readSmartInt();
                   i_21 = jagbuf.readUnsignedShortBigEndian();
                   i_10 = 0;
@@ -2088,14 +2203,14 @@ public final class Client extends GCMonitor_2 implements class280 {
    }
 
    final void method1274(int i_1, int i_2, int i_3) {
-      class236.method4312(i_1, i_2, -1775821653);
+      class236.method4312(i_1, i_2);
       class5.field22.method3103(class42.field372, i_1, i_2, false);
       field674 = true;
    }
 
    final void method1254(int i_1) {
       if (field905 != -1) {
-         class235.method4269(field905, (byte) 35);
+         class235.method4269(field905);
       }
 
       int i_2;
@@ -2160,7 +2275,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                i_17 = 16776960;
             }
 
-            class23.field193.method5346(class28.method417(i_14, (byte) 108), i_2 + 3, i_16, i_17, 0);
+            class23.field193.method5346(class28.method417(i_14), i_2 + 3, i_16, i_17, 0);
          }
 
          i_14 = class247.field3292;
@@ -2266,18 +2381,18 @@ public final class Client extends GCMonitor_2 implements class280 {
       field718 = 0;
    }
 
-   protected final void vmethod1252(int i_1) {
+   protected final void vmethod1252() {
       field868 = TimeUtils.getAdjustedTimeMillis() + 500L;
-      this.method1253(-1617101116);
+      this.method1253();
       if (field905 != -1) {
-         this.method1293(true, 831397747);
+         this.method1293(true);
       }
 
    }
 
-   protected final void vmethod1599(byte b_1) {
+   protected final void vmethod1599() {
       ++field881;
-      this.method1247(1600104353);
+      this.method1247();
 
       while (true) {
          class261 class261_3 = class234.field3146;
@@ -2405,85 +2520,6 @@ public final class Client extends GCMonitor_2 implements class280 {
       }
    }
 
-   void method1248() {
-      if (class236.field3179 >= 4) {
-         this.loadingError("js5crc");
-         field662 = 1000;
-      } else {
-         if (class236.field3178 >= 4) {
-            if (field662 <= 5) {
-               this.loadingError("js5io");
-               field662 = 1000;
-               return;
-            }
-
-            field682 = 3000;
-            class236.field3178 = 3;
-         }
-
-         if (--field682 + 1 <= 0) {
-            try {
-               if (field681 == 0) {
-                  class191.field2363 = GCMonitor_2.field463.method3478(class73.field1068, class90.field1266);
-                  ++field681;
-               }
-
-               if (field681 == 1) {
-                  if (class191.field2363.field2022 == 2) {
-                     this.method1249(-1);
-                     return;
-                  }
-
-                  if (class191.field2363.field2022 == 1) {
-                     ++field681;
-                  }
-               }
-
-               if (field681 == 2) {
-                  if (field815) {
-                     class70.field1015 = class303.method5770((Socket) class191.field2363.field2025, 40000, 5000, (byte) 10);
-                  } else {
-                     class70.field1015 = new class171((Socket) class191.field2363.field2025, GCMonitor_2.field463, 5000);
-                  }
-
-                  ByteBuffer class300_2 = new ByteBuffer(5);
-                  class300_2.writeByte(15);
-                  class300_2.writeIntBigEndian(181);
-                  class70.field1015.vmethod5829(class300_2.buffer, 0, 5, -1696227994);
-                  ++field681;
-                  class192.field2382 = TimeUtils.getAdjustedTimeMillis();
-               }
-
-               if (field681 == 3) {
-                  if (class70.field1015.vmethod5826((byte) 28) > 0 || !field815 && field662 <= 5) {
-                     int i_3 = class70.field1015.vmethod5825((byte) 2);
-                     if (i_3 != 0) {
-                        this.method1249(i_3);
-                        return;
-                     }
-
-                     ++field681;
-                  } else if (TimeUtils.getAdjustedTimeMillis() - class192.field2382 > 30000L) {
-                     this.method1249(-2);
-                     return;
-                  }
-               }
-
-               if (field681 == 4) {
-                  class93.method2193(class70.field1015, field662 > 20, (short) -31468);
-                  class191.field2363 = null;
-                  class70.field1015 = null;
-                  field681 = 0;
-                  field685 = 0;
-               }
-            } catch (IOException ioexception_4) {
-               this.method1249(-3);
-            }
-
-         }
-      }
-   }
-
    protected final void vmethod1493(boolean bool_1, byte b_2) {
       boolean bool_3;
       label168: {
@@ -2593,6 +2629,85 @@ public final class Client extends GCMonitor_2 implements class280 {
 
    }
 
+   void method1248() {
+      if (class236.field3179 >= 4) {
+         this.loadingError("js5crc");
+         field662 = 1000;
+      } else {
+         if (class236.field3178 >= 4) {
+            if (field662 <= 5) {
+               this.loadingError("js5io");
+               field662 = 1000;
+               return;
+            }
+
+            field682 = 3000;
+            class236.field3178 = 3;
+         }
+
+         if (--field682 + 1 <= 0) {
+            try {
+               if (field681 == 0) {
+                  class191.field2363 = GameApplet.field463.method3478(class73.field1068, class90.field1266);
+                  ++field681;
+               }
+
+               if (field681 == 1) {
+                  if (class191.field2363.field2022 == 2) {
+                     this.method1249(-1);
+                     return;
+                  }
+
+                  if (class191.field2363.field2022 == 1) {
+                     ++field681;
+                  }
+               }
+
+               if (field681 == 2) {
+                  if (field815) {
+                     class70.field1015 = class303.method5770((Socket) class191.field2363.field2025, 40000, 5000, (byte) 10);
+                  } else {
+                     class70.field1015 = new class171((Socket) class191.field2363.field2025, GameApplet.field463, 5000);
+                  }
+
+                  ByteBuffer class300_2 = new ByteBuffer(5);
+                  class300_2.writeByte(15);
+                  class300_2.writeIntBigEndian(181);
+                  class70.field1015.vmethod5829(class300_2.buffer, 0, 5, -1696227994);
+                  ++field681;
+                  class192.field2382 = TimeUtils.getAdjustedTimeMillis();
+               }
+
+               if (field681 == 3) {
+                  if (class70.field1015.vmethod5826((byte) 28) > 0 || !field815 && field662 <= 5) {
+                     int i_3 = class70.field1015.vmethod5825((byte) 2);
+                     if (i_3 != 0) {
+                        this.method1249(i_3);
+                        return;
+                     }
+
+                     ++field681;
+                  } else if (TimeUtils.getAdjustedTimeMillis() - class192.field2382 > 30000L) {
+                     this.method1249(-2);
+                     return;
+                  }
+               }
+
+               if (field681 == 4) {
+                  class93.method2193(class70.field1015, field662 > 20, (short) -31468);
+                  class191.field2363 = null;
+                  class70.field1015 = null;
+                  field681 = 0;
+                  field685 = 0;
+               }
+            } catch (IOException ioexception_4) {
+               this.method1249(-3);
+            }
+
+         }
+      }
+   }
+
    final void method1251() {
       if (field669 > 1) {
          --field669;
@@ -2619,7 +2734,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             int i_3;
             class187 class187_16;
             while (class198.method3811(1881799127)) {
-               class187_16 = class235.method4265(ClientPacketProt.field2252, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2252, data.field1313);
                class187_16.outBuffer.writeByte(0);
                i_3 = class187_16.outBuffer.position;
                class70.method1671(class187_16.outBuffer);
@@ -2628,7 +2743,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
 
             if (field797.field3605) {
-               class187_16 = class235.method4265(ClientPacketProt.field2217, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2217, data.field1313);
                class187_16.outBuffer.writeByte(0);
                i_3 = class187_16.outBuffer.position;
                field797.method4999(class187_16.outBuffer);
@@ -2676,7 +2791,7 @@ public final class Client extends GCMonitor_2 implements class280 {
 
                      if (i_10 != field717 || i_9 != field665) {
                         if (class187_17 == null) {
-                           class187_17 = class235.method4265(ClientPacketProt.field2237, data.field1313, 1775123545);
+                           class187_17 = class235.method4265(ClientPacketProt.field2237, data.field1313);
                            class187_17.outBuffer.writeByte(0);
                            i_4 = class187_17.outBuffer.position;
                            class187_17.outBuffer.position += 2;
@@ -2771,7 +2886,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                }
 
                i_6 = (int)long_18;
-               class187_20 = class235.method4265(ClientPacketProt.field2234, data.field1313, 1775123545);
+               class187_20 = class235.method4265(ClientPacketProt.field2234, data.field1313);
                class187_20.outBuffer.writeShortBigEndian((class54.field493 == 2 ? 1 : 0) + (i_6 << 1));
                class187_20.outBuffer.writeShortBigEndian(i_5);
                class187_20.outBuffer.writeShortBigEndian(i_4);
@@ -2779,7 +2894,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
 
             if (class45.field386 > 0) {
-               class187_16 = class235.method4265(ClientPacketProt.field2270, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2270, data.field1313);
                class187_16.outBuffer.writeShortBigEndian(0);
                i_3 = class187_16.outBuffer.position;
                long long_21 = TimeUtils.getAdjustedTimeMillis();
@@ -2810,7 +2925,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             if (field878 && field822 <= 0) {
                field822 = 20;
                field878 = false;
-               class187_16 = class235.method4265(ClientPacketProt.field2242, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2242, data.field1313);
                class187_16.outBuffer.writeShortWithOffset(field721);
                class187_16.outBuffer.writeShortLittleEndian(field722);
                data.copy(class187_16);
@@ -2818,20 +2933,20 @@ public final class Client extends GCMonitor_2 implements class280 {
 
             if (class267.field3557 && !field667) {
                field667 = true;
-               class187_16 = class235.method4265(ClientPacketProt.field2276, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2276, data.field1313);
                class187_16.outBuffer.writeByte(1);
                data.copy(class187_16);
             }
 
             if (!class267.field3557 && field667) {
                field667 = false;
-               class187_16 = class235.method4265(ClientPacketProt.field2276, data.field1313, 1775123545);
+               class187_16 = class235.method4265(ClientPacketProt.field2276, data.field1313);
                class187_16.outBuffer.writeByte(0);
                data.copy(class187_16);
             }
 
             if (class136.field1875 != null) {
-               class136.field1875.method6299(1654811924);
+               class136.field1875.method6299();
             }
 
             class45.method801(-2003037366);
@@ -2869,11 +2984,11 @@ public final class Client extends GCMonitor_2 implements class280 {
                for (i_7 = 1; i_7 < 103; i_7++) {
                   for (i_8 = 1; i_8 < 103; i_8++) {
                      if ((class55.field502[i_2][i_8][i_7] & 0x18) == 0) {
-                        class3.method37(i_2, i_8, i_7, i_5, i_6, -890922875);
+                        class3.method37(i_2, i_8, i_7, i_5, i_6);
                      }
 
                      if (i_2 < 3 && (class55.field502[i_2 + 1][i_8][i_7] & 0x8) != 0) {
-                        class3.method37(i_2 + 1, i_8, i_7, i_5, i_6, 1971770746);
+                        class3.method37(i_2 + 1, i_8, i_7, i_5, i_6);
                      }
                   }
                }
@@ -2885,7 +3000,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                      long long_25 = class5.field22.method3095(class42.field372, i_7, i_8);
                      if (long_25 != 0L) {
                         i_11 = GCMonitor.method770(long_25);
-                        i_12 = class128.method2970(i_11, (short) 4095).field3378;
+                        i_12 = class128.method2970(i_11).field3378;
                         if (i_12 >= 0) {
                            field786[field730] = class222.method4118(i_12).method4379();
                            field664[field730] = i_7;
@@ -2969,7 +3084,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   field873 = false;
                   field754 = 0;
 
-                  while (class218.method4109(-205887653) && field754 < 128) {
+                  while (class218.method4109() && field754 < 128) {
                      if (field890 >= 2 && class45.field395[82] && class97.field1338 == 66) {
                         String string_28 = class143.method3305(1670821408);
                         class27.field233.method879(string_28, (byte) 54);
@@ -3020,7 +3135,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                                              this.method1333((byte) 116);
                                              class243.method4415(-1672246120);
                                              if (field828 != null) {
-                                                this.method1641((byte) 41);
+                                                this.method1641();
                                              }
 
                                              if (class18.field127 != null) {
@@ -3052,18 +3167,18 @@ public final class Client extends GCMonitor_2 implements class280 {
 
                                                             while (i_7 != i_8) {
                                                                if (i_7 > i_8) {
-                                                                  class217_44.method4063(i_7 - 1, i_7, 2142727340);
+                                                                  class217_44.method4063(i_7 - 1, i_7);
                                                                   --i_7;
                                                                } else if (i_7 < i_8) {
-                                                                  class217_44.method4063(i_7 + 1, i_7, -1098494849);
+                                                                  class217_44.method4063(i_7 + 1, i_7);
                                                                   ++i_7;
                                                                }
                                                             }
                                                          } else {
-                                                            class217_44.method4063(field764, field765, 572956178);
+                                                            class217_44.method4063(field764, field765);
                                                          }
 
-                                                         class187_20 = class235.method4265(ClientPacketProt.field2283, data.field1313, 1775123545);
+                                                         class187_20 = class235.method4265(ClientPacketProt.field2283, data.field1313);
                                                          class187_20.outBuffer.writeShortBigEndian(field764);
                                                          class187_20.outBuffer.writeShortLittleEndian(field765);
                                                          class187_20.outBuffer.writeIntBigEndian(class18.field127.field2688);
@@ -3091,7 +3206,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                                              if (class133.method3105()) {
                                                 i_5 = class133.field1850;
                                                 i_6 = class133.field1837;
-                                                class187_20 = class235.method4265(ClientPacketProt.field2299, data.field1313, 1775123545);
+                                                class187_20 = class235.method4265(ClientPacketProt.field2299, data.field1313);
                                                 class187_20.outBuffer.writeByte(5);
                                                 class187_20.outBuffer.writeShortWithOffset2(i_6 + class1.field1);
                                                 class187_20.outBuffer.writeShortWithOffset2(i_5 + class196.field2389);
@@ -3259,14 +3374,14 @@ public final class Client extends GCMonitor_2 implements class280 {
                                              if (i_5 > 15000 && i_7 > 15000) {
                                                 field700 = 250;
                                                 class54.field480 = 14500;
-                                                class187_31 = class235.method4265(ClientPacketProt.field2300, data.field1313, 1775123545);
+                                                class187_31 = class235.method4265(ClientPacketProt.field2300, data.field1313);
                                                 data.copy(class187_31);
                                              }
 
                                              class58.field546.method1762((byte) 9);
                                              ++data.field1319;
                                              if (data.field1319 > 50) {
-                                                class187_31 = class235.method4265(ClientPacketProt.field2225, data.field1313, 1775123545);
+                                                class187_31 = class235.method4265(ClientPacketProt.field2225, data.field1313);
                                                 data.copy(class187_31);
                                              }
 
@@ -3287,7 +3402,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                                           class217_41 = class80.fetchSomething(class217_29.field2583);
                                        } while (class217_41 == null || class217_41.field2675 == null || class217_29.field2565 >= class217_41.field2675.length || class217_29 != class217_41.field2675[class217_29.field2565]);
 
-                                       class184.method3613(class62_43, (byte) -43);
+                                       class184.method3613(class62_43);
                                     }
                                  }
 
@@ -3299,7 +3414,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                                  class217_41 = class80.fetchSomething(class217_29.field2583);
                               } while (class217_41 == null || class217_41.field2675 == null || class217_29.field2565 >= class217_41.field2675.length || class217_29 != class217_41.field2675[class217_29.field2565]);
 
-                              class184.method3613(class62_43, (byte) -26);
+                              class184.method3613(class62_43);
                            }
                         }
 
@@ -3311,7 +3426,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                         class217_41 = class80.fetchSomething(class217_29.field2583);
                      } while (class217_41 == null || class217_41.field2675 == null || class217_29.field2565 >= class217_41.field2675.length || class217_29 != class217_41.field2675[class217_29.field2565]);
 
-                     class184.method3613(class62_43, (byte) -119);
+                     class184.method3613(class62_43);
                   }
                }
             }
@@ -3346,7 +3461,7 @@ public final class Client extends GCMonitor_2 implements class280 {
 
          if (field686 == 1) {
             if (class278.field3628 == null) {
-               class278.field3628 = GCMonitor_2.field463.method3478(class73.field1068, class90.field1266);
+               class278.field3628 = GameApplet.field463.method3478(class73.field1068, class90.field1266);
             }
 
             if (class278.field3628.field2022 == 2) {
@@ -3357,7 +3472,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                if (field815) {
                   obj_2 = class303.method5770((Socket) class278.field3628.field2025, 40000, 5000, (byte) 10);
                } else {
-                  obj_2 = new class171((Socket) class278.field3628.field2025, GCMonitor_2.field463, 5000);
+                  obj_2 = new class171((Socket) class278.field3628.field2025, GameApplet.field463, 5000);
                }
 
                data.method2221((Stream) obj_2);
@@ -3522,7 +3637,7 @@ public final class Client extends GCMonitor_2 implements class280 {
 
                try {
                   class167.field2040.method6521(0L);
-                  class167.field2040.method6547(bytes_12, -981743247);
+                  class167.field2040.method6547(bytes_12);
 
                   for (i_13 = 0; i_13 < 24 && bytes_12[i_13] == 0; i_13++) {
                      ;
@@ -3901,7 +4016,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                }
             } else {
                label281: {
-                  i_3 = class13.method151(246973533);
+                  i_3 = class13.method151();
                   if ((i_21 == 1 || !class46.field413 && i_21 == 4) && i_3 >= 0) {
                      i_15 = field794[i_3];
                      if (i_15 == 39 || i_15 == 40 || i_15 == 41 || i_15 == 42 || i_15 == 43 || i_15 == 33 || i_15 == 34 || i_15 == 35 || i_15 == 36 || i_15 == 37 || i_15 == 38 || i_15 == 1005) {
@@ -3972,7 +4087,7 @@ public final class Client extends GCMonitor_2 implements class280 {
       }
    }
 
-   void method1260(class217 class217_1, int i_2) {
+   void method1260(class217 class217_1) {
       class217 class217_3 = class217_1.field2583 == -1 ? null : class80.fetchSomething(class217_1.field2583);
       int i_4;
       int i_5;
@@ -3984,11 +4099,11 @@ public final class Client extends GCMonitor_2 implements class280 {
          i_5 = class217_3.field2667;
       }
 
-      class219.method4112(class217_1, i_4, i_5, false, -2103568814);
+      class219.method4112(class217_1, i_4, i_5, false);
       ResourceHandler.method2441(class217_1, i_4, i_5, (byte) -55);
    }
 
-   final void method1641(byte b_1) {
+   final void method1641() {
       class224.method4120(field828);
       ++class80.field1143;
       if (field745 && field873) {
@@ -4028,7 +4143,7 @@ public final class Client extends GCMonitor_2 implements class280 {
             class62_9.field576 = i_7;
             class62_9.field577 = i_8;
             class62_9.field581 = field828.field2620;
-            class184.method3613(class62_9, (byte) -98);
+            class184.method3613(class62_9);
          }
 
          if (class54.field485 == 0) {
@@ -4040,12 +4155,12 @@ public final class Client extends GCMonitor_2 implements class280 {
                   class62_9.field577 = i_8;
                   class62_9.field579 = field832;
                   class62_9.field581 = field828.field2660;
-                  class184.method3613(class62_9, (byte) -70);
+                  class184.method3613(class62_9);
                }
 
                if (field832 != null) {
                   class217 class217_10 = field828;
-                  int i_11 = class32.method545(class268.method4987(class217_10), -914576641);
+                  int i_11 = class32.method545(class268.method4987(class217_10));
                   class217 class217_16;
                   if (i_11 == 0) {
                      class217_16 = null;
@@ -4069,7 +4184,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   }
 
                   if (class217_16 != null) {
-                     class187 class187_17 = class235.method4265(ClientPacketProt.field2260, data.field1313, 1775123545);
+                     class187 class187_17 = class235.method4265(ClientPacketProt.field2260, data.field1313);
                      class187_17.outBuffer.writeShortWithOffset2(field828.field2565);
                      class187_17.outBuffer.writeShortWithOffset2(field832.field2690);
                      class187_17.outBuffer.writeShortBigEndian(field832.field2565);
@@ -4144,7 +4259,7 @@ public final class Client extends GCMonitor_2 implements class280 {
                   class56.field528 = class190_10;
                   break;
                case 7:
-                  class187.field2337 = class229.method4133(Integer.parseInt(string_4), -1180809125);
+                  class187.field2337 = class229.method4133(Integer.parseInt(string_4));
                   break;
                case 8:
                   if (string_4.equalsIgnoreCase("true")) {
@@ -4178,127 +4293,21 @@ public final class Client extends GCMonitor_2 implements class280 {
             }
          }
 
-         class215.method4022(-1461227743);
+         class215.method4022();
          class73.field1068 = this.getCodeBase().getHost();
          String string_8 = class187.field2337.field3100;
          byte b_9 = 0;
 
          try {
-            class159.method3440("oldschool", string_8, b_9, 21, 491873255);
+            class159.method3440("oldschool", string_8, b_9, 21);
          } catch (Exception exception_7) {
             ErrorHandler.logError((String) null, exception_7, (byte) 125);
          }
 
          class27.field233 = this;
          class341.field4066 = field761;
-         this.method996(765, 503, 181, -1542260379);
+         this.method996(765, 503, 181);
       }
-   }
-
-   static void method1651(class71[] arr_0, int i_1, int i_2, int[] ints_3, int[] ints_4, byte b_5) {
-      if (i_1 < i_2) {
-         int i_6 = i_1 - 1;
-         int i_7 = i_2 + 1;
-         int i_8 = (i_2 + i_1) / 2;
-         class71 class71_9 = arr_0[i_8];
-         arr_0[i_8] = arr_0[i_1];
-         arr_0[i_1] = class71_9;
-
-         while (i_6 < i_7) {
-            boolean bool_10 = true;
-
-            int i_11;
-            int i_12;
-            int i_13;
-            do {
-               --i_7;
-
-               for (i_11 = 0; i_11 < 4; i_11++) {
-                  if (ints_3[i_11] == 2) {
-                     i_12 = arr_0[i_7].field1034;
-                     i_13 = class71_9.field1034;
-                  } else if (ints_3[i_11] == 1) {
-                     i_12 = arr_0[i_7].field1030;
-                     i_13 = class71_9.field1030;
-                     if (i_12 == -1 && ints_4[i_11] == 1) {
-                        i_12 = 2001;
-                     }
-
-                     if (i_13 == -1 && ints_4[i_11] == 1) {
-                        i_13 = 2001;
-                     }
-                  } else if (ints_3[i_11] == 3) {
-                     i_12 = arr_0[i_7].method1680((byte) 0) ? 1 : 0;
-                     i_13 = class71_9.method1680((byte) 0) ? 1 : 0;
-                  } else {
-                     i_12 = arr_0[i_7].field1025;
-                     i_13 = class71_9.field1025;
-                  }
-
-                  if (i_13 != i_12) {
-                     if ((ints_4[i_11] != 1 || i_12 <= i_13) && (ints_4[i_11] != 0 || i_12 >= i_13)) {
-                        bool_10 = false;
-                     }
-                     break;
-                  }
-
-                  if (i_11 == 3) {
-                     bool_10 = false;
-                  }
-               }
-            } while (bool_10);
-
-            bool_10 = true;
-
-            do {
-               ++i_6;
-
-               for (i_11 = 0; i_11 < 4; i_11++) {
-                  if (ints_3[i_11] == 2) {
-                     i_12 = arr_0[i_6].field1034;
-                     i_13 = class71_9.field1034;
-                  } else if (ints_3[i_11] == 1) {
-                     i_12 = arr_0[i_6].field1030;
-                     i_13 = class71_9.field1030;
-                     if (i_12 == -1 && ints_4[i_11] == 1) {
-                        i_12 = 2001;
-                     }
-
-                     if (i_13 == -1 && ints_4[i_11] == 1) {
-                        i_13 = 2001;
-                     }
-                  } else if (ints_3[i_11] == 3) {
-                     i_12 = arr_0[i_6].method1680((byte) 0) ? 1 : 0;
-                     i_13 = class71_9.method1680((byte) 0) ? 1 : 0;
-                  } else {
-                     i_12 = arr_0[i_6].field1025;
-                     i_13 = class71_9.field1025;
-                  }
-
-                  if (i_12 != i_13) {
-                     if ((ints_4[i_11] != 1 || i_12 >= i_13) && (ints_4[i_11] != 0 || i_12 <= i_13)) {
-                        bool_10 = false;
-                     }
-                     break;
-                  }
-
-                  if (i_11 == 3) {
-                     bool_10 = false;
-                  }
-               }
-            } while (bool_10);
-
-            if (i_6 < i_7) {
-               class71 class71_14 = arr_0[i_6];
-               arr_0[i_6] = arr_0[i_7];
-               arr_0[i_7] = class71_14;
-            }
-         }
-
-         method1651(arr_0, i_1, i_7, ints_3, ints_4, (byte) 13);
-         method1651(arr_0, i_7 + 1, i_2, ints_3, ints_4, (byte) 78);
-      }
-
    }
 
 }

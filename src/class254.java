@@ -195,28 +195,28 @@ public class class254 extends class175 {
       if (class127_6 != null) {
          return class127_6;
       } else {
-         class121 class121_7 = class121.method2769(field3405, this.field3411, 0);
-         if (class121_7 == null) {
+         Model model_7 = Model.method2769(field3405, this.field3411, 0);
+         if (model_7 == null) {
             return null;
          } else {
             if (this.field3451 != 128 || this.field3446 != 128 || this.field3404 != 128) {
-               class121_7.method2786(this.field3451, this.field3446, this.field3404);
+               model_7.method2786(this.field3451, this.field3446, this.field3404);
             }
 
             int i_5;
             if (this.field3424 != null) {
                for (i_5 = 0; i_5 < this.field3424.length; i_5++) {
-                  class121_7.method2783(this.field3424[i_5], this.field3414[i_5]);
+                  model_7.method2783(this.field3424[i_5], this.field3414[i_5]);
                }
             }
 
             if (this.field3415 != null) {
                for (i_5 = 0; i_5 < this.field3415.length; i_5++) {
-                  class121_7.method2784(this.field3415[i_5], this.field3416[i_5]);
+                  model_7.method2784(this.field3415[i_5], this.field3416[i_5]);
                }
             }
 
-            class127_6 = class121_7.method2802(this.field3448 + 64, this.field3419 * 5 + 768, -50, -10, -50);
+            class127_6 = model_7.applyLighting(this.field3448 + 64, this.field3419 * 5 + 768, -50, -10, -50);
             class127_6.field1730 = true;
             field3408.method3322(class127_6, (long)this.field3410);
             return class127_6;
@@ -224,7 +224,7 @@ public class class254 extends class175 {
       }
    }
 
-   public final class121 method4643(int i_1, int i_2) {
+   public final Model method4643(int i_1) {
       int i_4;
       if (this.field3441 != null && i_1 > 1) {
          int i_3 = -1;
@@ -236,38 +236,38 @@ public class class254 extends class175 {
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3).method4643(1, 2115855556);
+            return class26.method404(i_3).method4643(1);
          }
       }
 
-      class121 class121_5 = class121.method2769(field3405, this.field3411, 0);
-      if (class121_5 == null) {
+      Model model_5 = Model.method2769(field3405, this.field3411, 0);
+      if (model_5 == null) {
          return null;
       } else {
          if (this.field3451 != 128 || this.field3446 != 128 || this.field3404 != 128) {
-            class121_5.method2786(this.field3451, this.field3446, this.field3404);
+            model_5.method2786(this.field3451, this.field3446, this.field3404);
          }
 
          if (this.field3424 != null) {
             for (i_4 = 0; i_4 < this.field3424.length; i_4++) {
-               class121_5.method2783(this.field3424[i_4], this.field3414[i_4]);
+               model_5.method2783(this.field3424[i_4], this.field3414[i_4]);
             }
          }
 
          if (this.field3415 != null) {
             for (i_4 = 0; i_4 < this.field3415.length; i_4++) {
-               class121_5.method2784(this.field3415[i_4], this.field3416[i_4]);
+               model_5.method2784(this.field3415[i_4], this.field3416[i_4]);
             }
          }
 
-         return class121_5;
+         return model_5;
       }
    }
 
-   void method4637(int i_1) {
+   void method4637() {
    }
 
-   public final boolean method4683(boolean bool_1, int i_2) {
+   public final boolean method4683(boolean bool_1) {
       int i_3 = this.field3436;
       int i_4 = this.field3438;
       if (bool_1) {
@@ -291,7 +291,7 @@ public class class254 extends class175 {
       }
    }
 
-   public final class121 method4649(boolean bool_1, byte b_2) {
+   public final Model method4649(boolean bool_1, byte b_2) {
       int i_3 = this.field3436;
       int i_4 = this.field3438;
       if (bool_1) {
@@ -302,27 +302,27 @@ public class class254 extends class175 {
       if (i_3 == -1) {
          return null;
       } else {
-         class121 class121_5 = class121.method2769(field3405, i_3, 0);
+         Model model_5 = Model.method2769(field3405, i_3, 0);
          if (i_4 != -1) {
-            class121 class121_6 = class121.method2769(field3405, i_4, 0);
-            class121[] arr_7 = new class121[] {class121_5, class121_6};
-            class121_5 = new class121(arr_7, 2);
+            Model model_6 = Model.method2769(field3405, i_4, 0);
+            Model[] arr_7 = new Model[] {model_5, model_6};
+            model_5 = new Model(arr_7, 2);
          }
 
          int i_8;
          if (this.field3424 != null) {
             for (i_8 = 0; i_8 < this.field3424.length; i_8++) {
-               class121_5.method2783(this.field3424[i_8], this.field3414[i_8]);
+               model_5.method2783(this.field3424[i_8], this.field3414[i_8]);
             }
          }
 
          if (this.field3415 != null) {
             for (i_8 = 0; i_8 < this.field3415.length; i_8++) {
-               class121_5.method2784(this.field3415[i_8], this.field3416[i_8]);
+               model_5.method2784(this.field3415[i_8], this.field3416[i_8]);
             }
          }
 
-         return class121_5;
+         return model_5;
       }
    }
 
@@ -367,7 +367,7 @@ public class class254 extends class175 {
       }
    }
 
-   public final class121 method4694(boolean bool_1, byte b_2) {
+   public final Model method4694(boolean bool_1, byte b_2) {
       int i_3 = this.field3456;
       int i_4 = this.field3437;
       int i_5 = this.field3435;
@@ -380,45 +380,45 @@ public class class254 extends class175 {
       if (i_3 == -1) {
          return null;
       } else {
-         class121 class121_6 = class121.method2769(field3405, i_3, 0);
+         Model model_6 = Model.method2769(field3405, i_3, 0);
          if (i_4 != -1) {
-            class121 class121_7 = class121.method2769(field3405, i_4, 0);
+            Model model_7 = Model.method2769(field3405, i_4, 0);
             if (i_5 != -1) {
-               class121 class121_8 = class121.method2769(field3405, i_5, 0);
-               class121[] arr_9 = new class121[] {class121_6, class121_7, class121_8};
-               class121_6 = new class121(arr_9, 3);
+               Model model_8 = Model.method2769(field3405, i_5, 0);
+               Model[] arr_9 = new Model[] {model_6, model_7, model_8};
+               model_6 = new Model(arr_9, 3);
             } else {
-               class121[] arr_11 = new class121[] {class121_6, class121_7};
-               class121_6 = new class121(arr_11, 2);
+               Model[] arr_11 = new Model[] {model_6, model_7};
+               model_6 = new Model(arr_11, 2);
             }
          }
 
          if (!bool_1 && this.field3431 != 0) {
-            class121_6.method2782(0, this.field3431, 0);
+            model_6.method2782(0, this.field3431, 0);
          }
 
          if (bool_1 && this.field3434 != 0) {
-            class121_6.method2782(0, this.field3434, 0);
+            model_6.method2782(0, this.field3434, 0);
          }
 
          int i_10;
          if (this.field3424 != null) {
             for (i_10 = 0; i_10 < this.field3424.length; i_10++) {
-               class121_6.method2783(this.field3424[i_10], this.field3414[i_10]);
+               model_6.method2783(this.field3424[i_10], this.field3414[i_10]);
             }
          }
 
          if (this.field3415 != null) {
             for (i_10 = 0; i_10 < this.field3415.length; i_10++) {
-               class121_6.method2784(this.field3415[i_10], this.field3416[i_10]);
+               model_6.method2784(this.field3415[i_10], this.field3416[i_10]);
             }
          }
 
-         return class121_6;
+         return model_6;
       }
    }
 
-   void method4666(class254 class254_1, class254 class254_2, int i_3) {
+   void method4666(class254 class254_1, class254 class254_2) {
       this.field3411 = class254_1.field3411;
       this.field3422 = class254_1.field3422;
       this.field3418 = class254_1.field3418;
@@ -436,7 +436,7 @@ public class class254 extends class175 {
       this.field3423 = 1;
    }
 
-   void method4641(class254 class254_1, class254 class254_2, byte b_3) {
+   void method4641(class254 class254_1, class254 class254_2) {
       this.field3411 = class254_1.field3411;
       this.field3422 = class254_1.field3422;
       this.field3418 = class254_1.field3418;
@@ -474,7 +474,7 @@ public class class254 extends class175 {
       this.field3428 = 0;
    }
 
-   void method4689(class254 class254_1, class254 class254_2, byte b_3) {
+   void method4689(class254 class254_1, class254 class254_2) {
       this.field3411 = class254_1.field3411;
       this.field3422 = class254_1.field3422;
       this.field3418 = class254_1.field3418;
@@ -493,7 +493,7 @@ public class class254 extends class175 {
       this.field3452 = false;
    }
 
-   public class254 method4656(int i_1, byte b_2) {
+   public class254 method4656(int i_1) {
       if (this.field3441 != null && i_1 > 1) {
          int i_3 = -1;
 
@@ -511,32 +511,7 @@ public class class254 extends class175 {
       return this;
    }
 
-   public int method4652(byte b_1) {
-      return this.field3403 != -1 && this.field3427 != null ? (this.field3403 >= 0 ? (this.field3427[this.field3403] != null ? this.field3403 : -1) : ("Drop".equalsIgnoreCase(this.field3427[4]) ? 4 : -1)) : -1;
-   }
-
-   public String method4648(int i_1, String string_2, int i_3) {
-      return class5.method54(this.field3409, i_1, string_2, (byte) -115);
-   }
-
-   public int method4650(int i_1, int i_2, byte b_3) {
-      class316 class316_5 = this.field3409;
-      int i_4;
-      if (class316_5 == null) {
-         i_4 = i_2;
-      } else {
-         class179 class179_6 = (class179) class316_5.method5924((long)i_1);
-         if (class179_6 == null) {
-            i_4 = i_2;
-         } else {
-            i_4 = class179_6.field2111;
-         }
-      }
-
-      return i_4;
-   }
-
-   public static byte method4699(char var_0, short s_1) {
+   public static byte method4699(char var_0) {
       byte b_2;
       if (var_0 > 0 && var_0 < 128 || var_0 >= 160 && var_0 <= 255) {
          b_2 = (byte)var_0;
@@ -599,6 +574,31 @@ public class class254 extends class175 {
       }
 
       return b_2;
+   }
+
+   public int method4652() {
+      return this.field3403 != -1 && this.field3427 != null ? (this.field3403 >= 0 ? (this.field3427[this.field3403] != null ? this.field3403 : -1) : ("Drop".equalsIgnoreCase(this.field3427[4]) ? 4 : -1)) : -1;
+   }
+
+   public String method4648(int i_1, String string_2) {
+      return class5.method54(this.field3409, i_1, string_2, (byte) -115);
+   }
+
+   public int method4650(int i_1, int i_2) {
+      class316 class316_5 = this.field3409;
+      int i_4;
+      if (class316_5 == null) {
+         i_4 = i_2;
+      } else {
+         class179 class179_6 = (class179) class316_5.method5924((long) i_1);
+         if (class179_6 == null) {
+            i_4 = i_2;
+         } else {
+            i_4 = class179_6.field2111;
+         }
+      }
+
+      return i_4;
    }
 
 }

@@ -2,7 +2,7 @@ public class class225 {
 
    static class324[] field3062;
 
-   static final void method4122(class217[] arr_0, int i_1, int i_2) {
+   static final void method4122(class217[] arr_0, int i_1) {
       for (int i_3 = 0; i_3 < arr_0.length; i_3++) {
          class217 class217_4 = arr_0[i_3];
          if (class217_4 != null && class217_4.field2583 == i_1 && (!class217_4.field2563 || !class62.method1133(class217_4))) {
@@ -11,14 +11,14 @@ public class class225 {
                   continue;
                }
 
-               method4122(arr_0, class217_4.field2688, -1666853879);
+               method4122(arr_0, class217_4.field2688);
                if (class217_4.field2675 != null) {
-                  method4122(class217_4.field2675, class217_4.field2688, -1666853879);
+                  method4122(class217_4.field2675, class217_4.field2688);
                }
 
                class61 class61_5 = (class61) Client.field816.method5952((long)class217_4.field2688);
                if (class61_5 != null) {
-                  class235.method4269(class61_5.field571, (byte) 41);
+                  class235.method4269(class61_5.field571);
                }
             }
 

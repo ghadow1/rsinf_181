@@ -28,7 +28,7 @@ public class class25 {
             return 1;
          } else if (i_0 == 1202) {
             class217_4.field2607 = 3;
-            class217_4.field2649 = Client.field657.field613.method3994(-2004710202);
+            class217_4.field2649 = Client.field657.field613.method3994();
             return 1;
          } else {
             return 2;

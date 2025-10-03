@@ -6,7 +6,7 @@ public class class162 implements class161 {
       } else if (!class217.field2557.method4199(i_0)) {
          return false;
       } else {
-         int i_2 = class217.field2557.method4154(i_0, -959720772);
+         int i_2 = class217.field2557.method4154(i_0);
          if (i_2 == 0) {
             class128.field1755[i_0] = true;
             return true;

@@ -16,15 +16,15 @@ public class class62 extends LinkedListNode {
    int field584 = 76;
    Object[] field581;
 
-   public void method1131(Object[] arr_1, byte b_2) {
+   public void method1131(Object[] arr_1) {
       this.field581 = arr_1;
    }
 
-   public void method1123(int i_1, int i_2) {
+   public void method1123(int i_1) {
       this.field584 = i_1;
    }
 
-   static void method1132(int i_0, String string_1, String string_2, int i_3) {
+   static void method1132(int i_0, String string_1, String string_2) {
       class14.method157(i_0, string_1, string_2, (String) null);
    }
 
@@ -51,11 +51,11 @@ public class class62 extends LinkedListNode {
       }
    }
 
-   static int method1121(int i_0) {
+   static int method1121() {
       return 11;
    }
 
-   static int method1127(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method1127(int i_0) {
       class217 class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
       if (i_0 == 2500) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2577;

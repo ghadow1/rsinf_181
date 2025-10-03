@@ -53,17 +53,11 @@ public class class33 implements class37 {
       }
    }
 
-   void method571(int i_1) {
+   static String iconTag(int i_0) {
+      return "<img=" + i_0 + ">";
    }
 
-   public void vmethod743(ByteBuffer class300_1, int i_2) {
-      this.field293 = class300_1.readUnsignedByte();
-      this.field286 = class300_1.readUnsignedByte();
-      this.field294 = class300_1.readUnsignedShortBigEndian();
-      this.field288 = class300_1.readUnsignedShortBigEndian();
-      this.field287 = class300_1.readUnsignedShortBigEndian();
-      this.field290 = class300_1.readUnsignedShortBigEndian();
-      this.method571(-209894164);
+   void method571() {
    }
 
    static int method554(CharSequence charsequence_0, int i_1) {
@@ -126,8 +120,14 @@ public class class33 implements class37 {
       }
    }
 
-   static String method556(int i_0, byte b_1) {
-      return "<img=" + i_0 + ">";
+   public void vmethod743(ByteBuffer class300_1, int i_2) {
+      this.field293 = class300_1.readUnsignedByte();
+      this.field286 = class300_1.readUnsignedByte();
+      this.field294 = class300_1.readUnsignedShortBigEndian();
+      this.field288 = class300_1.readUnsignedShortBigEndian();
+      this.field287 = class300_1.readUnsignedShortBigEndian();
+      this.field290 = class300_1.readUnsignedShortBigEndian();
+      this.method571();
    }
 
 }

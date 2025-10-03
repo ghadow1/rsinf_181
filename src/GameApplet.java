@@ -1,32 +1,19 @@
 import java.applet.Applet;
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.EventQueue;
-import java.awt.Font;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.Insets;
-import java.awt.LayoutManager;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.StringSelection;
-import java.awt.event.ActionEvent;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
+import java.awt.event.*;
 import java.awt.image.ImageObserver;
 import java.net.URL;
 
-public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListener, WindowListener {
+public abstract class GameApplet extends Applet implements Runnable, FocusListener, WindowListener {
 
-   Frame field441;
+
+   static GameApplet applet = null;
    int field476;
    int field459;
-   static GCMonitor_2 field442 = null;
+   Frame applicationFrame;
    static int field466 = 0;
    static long field444 = 0L;
    static boolean field445 = false;
@@ -58,7 +45,7 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
    static class170 field447;
    static int field449;
 
-   protected GCMonitor_2() {
+   protected GameApplet() {
       EventQueue eventqueue_1 = null;
 
       try {
@@ -72,16 +59,21 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       class32.field277 = class46_2;
    }
 
-   public final synchronized void paint(Graphics graphics_1) {
-      if (this == field442 && !field445) {
-         this.field464 = true;
-         if (TimeUtils.getAdjustedTimeMillis() - this.field468 > 1000L) {
-            Rectangle rectangle_2 = graphics_1.getClipBounds();
-            if (rectangle_2 == null || rectangle_2.width >= class7.field46 && rectangle_2.height >= class249.field3308) {
-               this.field467 = true;
-            }
+   public static class256 method1005(int i_0) {
+      class256 class256_2 = (class256) class256.field3465.method3320((long) i_0);
+      if (class256_2 != null) {
+         return class256_2;
+      } else {
+         byte[] bytes_3 = class256.field3484.method4144(9, i_0);
+         class256_2 = new class256();
+         class256_2.field3467 = i_0;
+         if (bytes_3 != null) {
+            class256_2.method4703(new ByteBuffer(bytes_3));
          }
 
+         class256_2.method4704();
+         class256.field3465.method3322(class256_2, (long) i_0);
+         return class256_2;
       }
    }
 
@@ -111,8 +103,21 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       }
    }
 
+   public final synchronized void paint(Graphics graphics_1) {
+      if (this == applet && !field445) {
+         this.field464 = true;
+         if (TimeUtils.getAdjustedTimeMillis() - this.field468 > 1000L) {
+            Rectangle rectangle_2 = graphics_1.getClipBounds();
+            if (rectangle_2 == null || rectangle_2.width >= class7.field46 && rectangle_2.height >= class249.field3308) {
+               this.field467 = true;
+            }
+         }
+
+      }
+   }
+
    public final void destroy() {
-      if (this == field442 && !field445) {
+      if (this == applet && !field445) {
          field444 = TimeUtils.getAdjustedTimeMillis();
          class251.method4550(5000L);
          this.method891();
@@ -123,17 +128,13 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       Container container_2 = this.method902();
       int i_3 = Math.max(container_2.getWidth(), this.field476);
       int i_4 = Math.max(container_2.getHeight(), this.field459);
-      if (this.field441 != null) {
-         Insets insets_5 = this.field441.getInsets();
+      if (this.applicationFrame != null) {
+         Insets insets_5 = this.applicationFrame.getInsets();
          i_3 -= insets_5.left + insets_5.right;
          i_4 -= insets_5.bottom + insets_5.top;
       }
 
       return new class319(i_3, i_4);
-   }
-
-   Container method902() {
-      return (Container) (this.field441 != null ? this.field441 : this) ;
    }
 
    protected void loadingError(String string_1) {
@@ -154,6 +155,10 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       this.field450 = true;
    }
 
+   Container method902() {
+      return (Container) (this.applicationFrame != null ? this.applicationFrame : this);
+   }
+
    final synchronized void method891() {
       if (!field445) {
          field445 = true;
@@ -165,12 +170,12 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
          }
 
          try {
-            this.vmethod1608(1344457794);
+            this.vmethod1608();
          } catch (Exception exception_5) {
             ;
          }
 
-         if (this.field441 != null) {
+         if (this.applicationFrame != null) {
             try {
                System.exit(0);
             } catch (Throwable throwable_4) {
@@ -190,6 +195,8 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       }
    }
 
+   protected abstract void vmethod1608();
+
    final synchronized void method1003() {
       Container container_2 = this.method902();
       if (this.field460 != null) {
@@ -200,8 +207,8 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       class7.field46 = Math.max(container_2.getWidth(), this.field476);
       class249.field3308 = Math.max(container_2.getHeight(), this.field459);
       Insets insets_3;
-      if (this.field441 != null) {
-         insets_3 = this.field441.getInsets();
+      if (this.applicationFrame != null) {
+         insets_3 = this.applicationFrame.getInsets();
          class7.field46 -= insets_3.right + insets_3.left;
          class249.field3308 -= insets_3.top + insets_3.bottom;
       }
@@ -213,8 +220,8 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       this.field460.setSize(class7.field46, class249.field3308);
       this.field460.setVisible(true);
       this.field460.setBackground(Color.BLACK);
-      if (container_2 == this.field441) {
-         insets_3 = this.field441.getInsets();
+      if (container_2 == this.applicationFrame) {
+         insets_3 = this.applicationFrame.getInsets();
          this.field460.setLocation(this.field456 + insets_3.left, insets_3.top + this.field451);
       } else {
          this.field460.setLocation(this.field456, this.field451);
@@ -232,40 +239,6 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
 
       this.field467 = false;
       this.field468 = TimeUtils.getAdjustedTimeMillis();
-   }
-
-   protected abstract void vmethod1608(int var1);
-
-   final void method882(int i_1) {
-      Container container_2 = this.method902();
-      if (container_2 != null) {
-         class319 class319_3 = this.method903();
-         this.field454 = Math.max(class319_3.field3865, this.field476);
-         this.field455 = Math.max(class319_3.field3866, this.field459);
-         if (this.field454 <= 0) {
-            this.field454 = 1;
-         }
-
-         if (this.field455 <= 0) {
-            this.field455 = 1;
-         }
-
-         class7.field46 = Math.min(this.field454, this.field473);
-         class249.field3308 = Math.min(this.field455, this.field461);
-         this.field456 = (this.field454 - class7.field46) / 2;
-         this.field451 = 0;
-         this.field460.setSize(class7.field46, class249.field3308);
-         class202.field2486 = new class52(class7.field46, class249.field3308, this.field460);
-         if (container_2 == this.field441) {
-            Insets insets_4 = this.field441.getInsets();
-            this.field460.setLocation(insets_4.left + this.field456, this.field451 + insets_4.top);
-         } else {
-            this.field460.setLocation(this.field456, this.field451);
-         }
-
-         this.field464 = true;
-         this.vmethod1252(869486116);
-      }
    }
 
    protected abstract void vmethod1243(int var1);
@@ -328,7 +301,68 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
 
    }
 
-   protected abstract void vmethod1599(byte var1);
+   protected abstract void vmethod1599();
+
+   final void method882() {
+      Container container_2 = this.method902();
+      if (container_2 != null) {
+         class319 class319_3 = this.method903();
+         this.field454 = Math.max(class319_3.field3865, this.field476);
+         this.field455 = Math.max(class319_3.field3866, this.field459);
+         if (this.field454 <= 0) {
+            this.field454 = 1;
+         }
+
+         if (this.field455 <= 0) {
+            this.field455 = 1;
+         }
+
+         class7.field46 = Math.min(this.field454, this.field473);
+         class249.field3308 = Math.min(this.field455, this.field461);
+         this.field456 = (this.field454 - class7.field46) / 2;
+         this.field451 = 0;
+         this.field460.setSize(class7.field46, class249.field3308);
+         class202.field2486 = new class52(class7.field46, class249.field3308, this.field460);
+         if (container_2 == this.applicationFrame) {
+            Insets insets_4 = this.applicationFrame.getInsets();
+            this.field460.setLocation(insets_4.left + this.field456, this.field451 + insets_4.top);
+         } else {
+            this.field460.setLocation(this.field456, this.field451);
+         }
+
+         this.field464 = true;
+         this.vmethod1252();
+      }
+   }
+
+   void method953() {
+      long long_2 = TimeUtils.getAdjustedTimeMillis();
+      long long_4 = field453[class243.field3248];
+      field453[class243.field3248] = long_2;
+      class243.field3248 = class243.field3248 + 1 & 0x1f;
+      if (long_4 != 0L && long_2 > long_4) {
+         ;
+      }
+
+      synchronized (this) {
+         class267.field3557 = field472;
+      }
+
+      this.vmethod1599();
+   }
+
+   final void method968(Object object_1, int i_2) {
+      if (this.field471 != null) {
+         for (int i_3 = 0; i_3 < 50 && this.field471.peekEvent() != null; i_3++) {
+            class251.method4550(1L);
+         }
+
+         if (object_1 != null) {
+            this.field471.postEvent(new ActionEvent(object_1, 1001, "dummy"));
+         }
+
+      }
+   }
 
    void method910(int i_1) {
       Container container_2 = this.method902();
@@ -346,8 +380,8 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
          this.field464 = true;
          this.field460.setSize(class7.field46, class249.field3308);
          this.field460.setVisible(true);
-         if (container_2 == this.field441) {
-            Insets insets_8 = this.field441.getInsets();
+         if (container_2 == this.applicationFrame) {
+            Insets insets_8 = this.applicationFrame.getInsets();
             this.field460.setLocation(this.field456 + insets_8.left, insets_8.top + this.field451);
          } else {
             this.field460.setLocation(this.field456, this.field451);
@@ -367,36 +401,7 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       this.field464 = false;
    }
 
-   void method953(int i_1) {
-      long long_2 = TimeUtils.getAdjustedTimeMillis();
-      long long_4 = field453[class243.field3248];
-      field453[class243.field3248] = long_2;
-      class243.field3248 = class243.field3248 + 1 & 0x1f;
-      if (long_4 != 0L && long_2 > long_4) {
-         ;
-      }
-
-      synchronized(this) {
-         class267.field3557 = field472;
-      }
-
-      this.vmethod1599((byte) -3);
-   }
-
-   final void method968(Object object_1, int i_2) {
-      if (this.field471 != null) {
-         for (int i_3 = 0; i_3 < 50 && this.field471.peekEvent() != null; i_3++) {
-            class251.method4550(1L);
-         }
-
-         if (object_1 != null) {
-            this.field471.postEvent(new ActionEvent(object_1, 1001, "dummy"));
-         }
-
-      }
-   }
-
-   protected final void method972(int i_1) {
+   protected final void method972() {
       if (class166.field2029.toLowerCase().indexOf("microsoft") != -1) {
          class45.field407[186] = 57;
          class45.field407[187] = 27;
@@ -428,11 +433,11 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       class81.method1990(this.field460);
    }
 
-   protected final void method932(int i_1) {
-      class18.method200(this.field460, (byte) 103);
+   protected final void method932() {
+      class18.method200(this.field460);
    }
 
-   protected class168 method877(byte b_1) {
+   protected class168 method877() {
       if (this.field469 == null) {
          this.field469 = new class44();
          this.field469.method772(this.field460, (byte) 31);
@@ -441,9 +446,24 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       return this.field469;
    }
 
-   protected final void method996(int i_1, int i_2, int i_3, int i_4) {
+   protected void method878() {
+      this.field470 = this.getToolkit().getSystemClipboard();
+   }
+
+   protected final void method988(int i_1, int i_2) {
+      if (this.field473 != i_1 || i_2 != this.field461) {
+         this.method890();
+      }
+
+      this.field473 = i_1;
+      this.field461 = i_2;
+   }
+
+   protected abstract void vmethod1252();
+
+   protected final void method996(int i_1, int i_2, int i_3) {
       try {
-         if (field442 != null) {
+         if (applet != null) {
             ++field466;
             if (field466 >= 3) {
                this.loadingError("alreadyloaded");
@@ -454,7 +474,7 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
             return;
          }
 
-         field442 = this;
+         applet = this;
          class7.field46 = i_1;
          class249.field3308 = i_2;
          class341.field4065 = i_3;
@@ -471,20 +491,16 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
 
    }
 
-   protected void method878() {
-      this.field470 = this.getToolkit().getSystemClipboard();
-   }
-
-   protected final void method988(int i_1, int i_2) {
-      if (this.field473 != i_1 || i_2 != this.field461) {
-         this.method890();
+   final void method970(int i_1) {
+      class319 class319_2 = this.method903();
+      if (this.field454 != class319_2.field3865 || class319_2.field3866 != this.field455 || this.field450) {
+         this.method882();
+         this.field450 = false;
       }
 
-      this.field473 = i_1;
-      this.field461 = i_2;
    }
 
-   protected abstract void vmethod1252(int var1);
+   protected abstract void vmethod1493(boolean var1, byte var2);
 
    final void method908() {
       Canvas canvas_2 = this.field460;
@@ -502,7 +518,7 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
 
       this.method1003();
       class81.method1990(this.field460);
-      class18.method200(this.field460, (byte) 109);
+      class18.method200(this.field460);
       if (this.field469 != null) {
          this.field469.method772(this.field460, (byte) 13);
       }
@@ -510,16 +526,9 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       this.method890();
    }
 
-   final void method970(int i_1) {
-      class319 class319_2 = this.method903();
-      if (this.field454 != class319_2.field3865 || class319_2.field3866 != this.field455 || this.field450) {
-         this.method882(-517749579);
-         this.field450 = false;
-      }
-
+   protected void method879(String string_1, byte b_2) {
+      this.field470.setContents(new StringSelection(string_1), (ClipboardOwner) null);
    }
-
-   protected abstract void vmethod1493(boolean var1, byte var2);
 
    void method927(byte b_1) {
       int i_2 = this.field456;
@@ -531,8 +540,8 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
             Container container_6 = this.method902();
             int i_7 = 0;
             int i_8 = 0;
-            if (container_6 == this.field441) {
-               Insets insets_9 = this.field441.getInsets();
+            if (container_6 == this.applicationFrame) {
+               Insets insets_9 = this.applicationFrame.getInsets();
                i_7 = insets_9.left;
                i_8 = insets_9.top;
             }
@@ -561,12 +570,11 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
 
    }
 
-   protected void method879(String string_1, byte b_2) {
-      this.field470.setContents(new StringSelection(string_1), (ClipboardOwner) null);
+   protected final boolean method931(int i_1) {
+      return this.applicationFrame != null;
    }
 
-   protected final boolean method931(int i_1) {
-      return this.field441 != null;
+   public final void windowDeiconified(WindowEvent windowevent_1) {
    }
 
    public void run() {
@@ -587,7 +595,7 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
                   }
 
                   String string_4 = string_2.substring(6, i_3);
-                  if (class192.method3677(string_4) && class3.method38(string_4, (byte) 0) < 10) {
+                  if (class192.method3677(string_4) && class3.method38(string_4) < 10) {
                      this.loadingError("wrongjava");
                      return;
                   }
@@ -606,7 +614,7 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
             field449 = field447.vmethod3506(field448, field443, -333181863);
 
             for (int i_5 = 0; i_5 < field449; i_5++) {
-               this.method953(-1989434416);
+               this.method953();
             }
 
             this.method910(-1190727122);
@@ -620,18 +628,9 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
       this.method891();
    }
 
-   public final void windowDeiconified(WindowEvent windowevent_1) {
-   }
-
    public final void start() {
-      if (this == field442 && !field445) {
+      if (this == applet && !field445) {
          field444 = 0L;
-      }
-   }
-
-   public final void stop() {
-      if (this == field442 && !field445) {
-         field444 = TimeUtils.getAdjustedTimeMillis() + 4000L;
       }
    }
 
@@ -669,21 +668,9 @@ public abstract class GCMonitor_2 extends Applet implements Runnable, FocusListe
 
    public abstract void init();
 
-   public static class256 method1005(int i_0, byte b_1) {
-      class256 class256_2 = (class256) class256.field3465.method3320((long)i_0);
-      if (class256_2 != null) {
-         return class256_2;
-      } else {
-         byte[] bytes_3 = class256.field3484.method4144(9, i_0);
-         class256_2 = new class256();
-         class256_2.field3467 = i_0;
-         if (bytes_3 != null) {
-            class256_2.method4703(new ByteBuffer(bytes_3));
-         }
-
-         class256_2.method4704();
-         class256.field3465.method3322(class256_2, (long)i_0);
-         return class256_2;
+   public final void stop() {
+      if (this == applet && !field445) {
+         field444 = TimeUtils.getAdjustedTimeMillis() + 4000L;
       }
    }
 

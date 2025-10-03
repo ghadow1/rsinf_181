@@ -10,7 +10,7 @@ public class class96 {
       Object[] arr_3 = class62_0.field581;
       class92 class92_4;
       int i_18;
-      if (class187.method3627(class62_0.field584, 729695552)) {
+      if (class187.method3627(class62_0.field584)) {
          class18.field121 = (class41) arr_3[0];
          class241 class241_5 = class222.method4118(class18.field121.field355);
          class92_4 = class75.method1828(class62_0.field584, class241_5.field3213, class241_5.field3230, (short) 17061);
@@ -166,7 +166,7 @@ public class class96 {
                      class334.field4032 = class56_35.field525;
                   } else if (i_30 == 25) {
                      i_12 = ints_7[i_18];
-                     class76.field1098[++class70.field1014 - 1] = class67.method1237(i_12, -836499887);
+                     class76.field1098[++class70.field1014 - 1] = class67.method1237(i_12);
                   } else if (i_30 == 27) {
                      i_12 = ints_7[i_18];
                      class171.method3554(i_12, class76.field1098[--class70.field1014], 691418621);

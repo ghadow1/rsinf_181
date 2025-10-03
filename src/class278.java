@@ -1,4 +1,4 @@
-public class class278 extends class274 {
+public class class278 extends User {
 
    static class165 field3628;
    static class72 field3631;
@@ -8,8 +8,8 @@ public class class278 extends class274 {
       return this.field3630 - class278_1.field3630;
    }
 
-   public int vmethod5221(class274 class274_1, int i_2) {
-      return this.method5155((class278) class274_1, -585814173);
+   public int vmethod5221(User user_1, int i_2) {
+      return this.method5155((class278) user_1, -585814173);
    }
 
    public int compareTo(Object object_1) {

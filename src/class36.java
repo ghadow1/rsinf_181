@@ -210,7 +210,7 @@ public final class class36 {
 
          System.nanoTime();
          System.nanoTime();
-         if (class233_1.method4162(class35.field303.field306, string_2, (byte) 14)) {
+         if (class233_1.method4162(class35.field303.field306, string_2)) {
             byte[] bytes_21 = class233_1.method4163(class35.field303.field306, string_2, -1408492249);
             this.field313 = class158.method3435(bytes_21, (byte) -56);
          }
@@ -324,7 +324,7 @@ public final class class36 {
       StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
       Object obj_10001 = null;
       String string_2 = stringbuilder_10000.append(" is already on your friend list").toString();
-      class62.method1132(30, "", string_2, -2139884342);
+      class62.method1132(30, "", string_2);
    }
 
    public static int method625(int i_0, int i_1, int i_2, int i_3) {

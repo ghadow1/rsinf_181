@@ -129,15 +129,15 @@ public class class94 {
                   Class[] arr_22 = new Class[i_8];
 
                   for (i_13 = 0; i_13 < i_8; i_13++) {
-                     arr_22[i_13] = class274.method5059(arr_9[i_13], -811282980);
+                     arr_22[i_13] = User.method5059(arr_9[i_13]);
                   }
 
-                  Class class_23 = class274.method5059(string_21, -811282980);
-                  if (class274.method5059(string_6, -811282980).getClassLoader() == null) {
+                  Class class_23 = User.method5059(string_21);
+                  if (User.method5059(string_6).getClassLoader() == null) {
                      throw new SecurityException();
                   }
 
-                  Method[] arr_14 = class274.method5059(string_6, -811282980).getDeclaredMethods();
+                  Method[] arr_14 = User.method5059(string_6).getDeclaredMethods();
                   Method[] arr_15 = arr_14;
 
                   for (int i_16 = 0; i_16 < arr_15.length; i_16++) {
@@ -173,11 +173,11 @@ public class class94 {
 
                class97_3.field1331[i_4] = i_5;
                class97_3.field1329[i_4] = i_8;
-               if (class274.method5059(string_6, -811282980).getClassLoader() == null) {
+               if (User.method5059(string_6).getClassLoader() == null) {
                   throw new SecurityException();
                }
 
-               class97_3.field1333[i_4] = class274.method5059(string_6, -811282980).getDeclaredField(string_7);
+               class97_3.field1333[i_4] = User.method5059(string_6).getDeclaredField(string_7);
             }
          } catch (ClassNotFoundException classnotfoundexception_25) {
             class97_3.field1332[i_4] = -1;

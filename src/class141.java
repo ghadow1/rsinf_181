@@ -23,18 +23,18 @@ public final class class141 {
    }
 
    protected static final void method3291() {
-      GCMonitor_2.field447.vmethod3513(-1402657312);
+      GameApplet.field447.vmethod3513(-1402657312);
 
       int i_1;
       for (i_1 = 0; i_1 < 32; i_1++) {
-         GCMonitor_2.field452[i_1] = 0L;
+         GameApplet.field452[i_1] = 0L;
       }
 
       for (i_1 = 0; i_1 < 32; i_1++) {
-         GCMonitor_2.field453[i_1] = 0L;
+         GameApplet.field453[i_1] = 0L;
       }
 
-      GCMonitor_2.field449 = 0;
+      GameApplet.field449 = 0;
    }
 
    public static int method3292(int i_0, int i_1) {

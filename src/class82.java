@@ -124,8 +124,8 @@ public class class82 {
          }
 
          b_9 = b_13;
-         var_10 = class187.method3623(var_10, class190_2, 1821592074);
-         var_11 = class187.method3623(var_11, class190_2, -1778806139);
+         var_10 = class187.method3623(var_10, class190_2);
+         var_11 = class187.method3623(var_11, class190_2);
          if (var_11 != var_10 && Character.toUpperCase(var_10) != Character.toUpperCase(var_11)) {
             var_10 = Character.toLowerCase(var_10);
             var_11 = Character.toLowerCase(var_11);

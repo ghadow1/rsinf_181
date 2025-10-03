@@ -11,7 +11,7 @@ public final class class136 {
    public long field1882 = 0L;
    int field1883 = 0;
 
-   public static class138 method3262(class233 class233_0, class233 class233_1, int i_2, boolean bool_3, byte b_4) {
+   public static class138 method3262(class233 class233_0, class233 class233_1, int i_2, boolean bool_3) {
       boolean bool_5 = true;
       int[] ints_6 = class233_0.method4153(i_2);
 

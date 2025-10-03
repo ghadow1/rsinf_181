@@ -27,7 +27,7 @@ public abstract class ChainedComparator implements Comparator {
     * @param obj2 Second object to compare
     * @return 0 if no next comparator exists, otherwise the result from the next comparator
     */
-   protected final int compareWithNext(class274 obj1, class274 obj2) {
+   protected final int compareWithNext(User obj1, User obj2) {
       return this.nextComparator == null ? 0 : this.nextComparator.compare(obj1, obj2);
    }
 

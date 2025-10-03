@@ -212,17 +212,17 @@ public class class26 {
             class254_2.method4638(new ByteBuffer(bytes_3), (byte) -39);
          }
 
-         class254_2.method4637(1271908540);
+         class254_2.method4637();
          if (class254_2.field3444 != -1) {
-            class254_2.method4666(method404(class254_2.field3444), method404(class254_2.field3443), -1452987438);
+            class254_2.method4666(method404(class254_2.field3444), method404(class254_2.field3443));
          }
 
          if (class254_2.field3454 != -1) {
-            class254_2.method4641(method404(class254_2.field3454), method404(class254_2.field3453), (byte) 0);
+            class254_2.method4641(method404(class254_2.field3454), method404(class254_2.field3453));
          }
 
          if (class254_2.field3439 != -1) {
-            class254_2.method4689(method404(class254_2.field3439), method404(class254_2.field3400), (byte) 109);
+            class254_2.method4689(method404(class254_2.field3439), method404(class254_2.field3400));
          }
 
          if (!class134.field1868 && class254_2.field3425) {
@@ -255,7 +255,7 @@ public class class26 {
       }
    }
 
-   public static boolean method365(int i_0) {
+   public static boolean method365() {
       long long_1 = TimeUtils.getAdjustedTimeMillis();
       int i_3 = (int)(long_1 - class236.field3169);
       class236.field3169 = long_1;

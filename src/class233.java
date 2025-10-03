@@ -117,17 +117,17 @@ public abstract class class233 {
       }
    }
 
-   public int method4154(int i_1, int i_2) {
+   public int method4154(int i_1) {
       return this.field3138[i_1].length;
    }
 
-   int vmethod4266(int i_1, byte b_2) {
+   int vmethod4266(int i_1) {
       return this.field3126[i_1] != null ? 100 : 0;
    }
 
-   void method4142(byte[] bytes_1, int i_2) {
+   void method4142(byte[] bytes_1) {
       int i_4 = bytes_1.length;
-      int i_3 = class2.method18(bytes_1, 0, i_4, 1766587749);
+      int i_3 = class2.method18(bytes_1, 0, i_4);
       this.field3136 = i_3;
       ByteBuffer class300_5 = new ByteBuffer(class70.method1678(bytes_1));
       int i_6 = class300_5.readUnsignedByte();
@@ -254,15 +254,15 @@ public abstract class class233 {
       }
    }
 
-   public boolean method4164(String string_1, String string_2, int i_3) {
+   public boolean method4164(String string_1, String string_2) {
       string_1 = string_1.toLowerCase();
       string_2 = string_2.toLowerCase();
-      int i_4 = this.field3135.method6501(class12.method148(string_1, (byte) 65));
-      int i_5 = this.field3140[i_4].method6501(class12.method148(string_2, (byte) -37));
+      int i_4 = this.field3135.method6501(class12.method148(string_1));
+      int i_5 = this.field3140[i_4].method6501(class12.method148(string_2));
       return this.method4146(i_4, i_5);
    }
 
-   void vmethod4278(int i_1, int i_2) {
+   void vmethod4278(int i_1) {
    }
 
    public boolean method4199(int i_1) {
@@ -274,26 +274,26 @@ public abstract class class233 {
       }
    }
 
-   public boolean method4162(String string_1, String string_2, byte b_3) {
+   public boolean method4162(String string_1, String string_2) {
       string_1 = string_1.toLowerCase();
       string_2 = string_2.toLowerCase();
-      int i_4 = this.field3135.method6501(class12.method148(string_1, (byte) -27));
+      int i_4 = this.field3135.method6501(class12.method148(string_1));
       if (i_4 < 0) {
          return false;
       } else {
-         int i_5 = this.field3140[i_4].method6501(class12.method148(string_2, (byte) 37));
+         int i_5 = this.field3140[i_4].method6501(class12.method148(string_2));
          return i_5 >= 0;
       }
    }
 
    public int method4160(String string_1) {
       string_1 = string_1.toLowerCase();
-      return this.field3135.method6501(class12.method148(string_1, (byte) -78));
+      return this.field3135.method6501(class12.method148(string_1));
    }
 
    public int method4161(int i_1, String string_2) {
       string_2 = string_2.toLowerCase();
-      return this.field3140[i_1].method6501(class12.method148(string_2, (byte) 16));
+      return this.field3140[i_1].method6501(class12.method148(string_2));
    }
 
    public boolean method4147(int i_1) {
@@ -391,7 +391,7 @@ public abstract class class233 {
                         obj_19 = null;
                      } else if (bytes_20.length > 136) {
                         TimeUtils class206_21 = new TimeUtils();
-                        class206_21.vmethod3934(bytes_20, 273645110);
+                        class206_21.vmethod3934(bytes_20);
                         obj_19 = class206_21;
                      } else {
                         obj_19 = bytes_20;
@@ -409,7 +409,7 @@ public abstract class class233 {
                   obj_27 = null;
                } else if (bytes_26.length > 136) {
                   TimeUtils class206_28 = new TimeUtils();
-                  class206_28.vmethod3934(bytes_26, 1190005446);
+                  class206_28.vmethod3934(bytes_26);
                   obj_27 = class206_28;
                } else {
                   obj_27 = bytes_26;
@@ -428,8 +428,8 @@ public abstract class class233 {
    public byte[] method4163(String string_1, String string_2, int i_3) {
       string_1 = string_1.toLowerCase();
       string_2 = string_2.toLowerCase();
-      int i_4 = this.field3135.method6501(class12.method148(string_1, (byte) -63));
-      int i_5 = this.field3140[i_4].method6501(class12.method148(string_2, (byte) -24));
+      int i_4 = this.field3135.method6501(class12.method148(string_1));
+      int i_5 = this.field3140[i_4].method6501(class12.method148(string_2));
       return this.method4144(i_4, i_5);
    }
 
@@ -469,14 +469,14 @@ public abstract class class233 {
 
    public boolean method4165(String string_1, int i_2) {
       string_1 = string_1.toLowerCase();
-      int i_3 = this.field3135.method6501(class12.method148(string_1, (byte) 72));
+      int i_3 = this.field3135.method6501(class12.method148(string_1));
       return this.method4199(i_3);
    }
 
    public int method4238(String string_1, byte b_2) {
       string_1 = string_1.toLowerCase();
-      int i_3 = this.field3135.method6501(class12.method148(string_1, (byte) 36));
-      return this.vmethod4266(i_3, (byte) 0);
+      int i_3 = this.field3135.method6501(class12.method148(string_1));
+      return this.vmethod4266(i_3);
    }
 
    public void method4157(int i_1, int i_2) {
@@ -488,9 +488,9 @@ public abstract class class233 {
 
    public void method4166(String string_1, byte b_2) {
       string_1 = string_1.toLowerCase();
-      int i_3 = this.field3135.method6501(class12.method148(string_1, (byte) 88));
+      int i_3 = this.field3135.method6501(class12.method148(string_1));
       if (i_3 >= 0) {
-         this.vmethod4278(i_3, 2144523901);
+         this.vmethod4278(i_3);
       }
    }
 

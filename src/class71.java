@@ -14,27 +14,27 @@ public class class71 {
    static int[] field1018 = new int[] {1, 1, 1, 1};
    static int[] field1026 = new int[] {0, 1, 2, 3};
 
-   boolean method1680(byte b_1) {
+   boolean method1680() {
       return (0x1 & this.field1023) != 0;
    }
 
-   boolean method1698(int i_1) {
+   boolean method1698() {
       return (0x8 & this.field1023) != 0;
    }
 
-   boolean method1682(int i_1) {
+   boolean method1682() {
       return (0x2 & this.field1023) != 0;
    }
 
-   boolean method1718(int i_1) {
+   boolean method1718() {
       return (0x4 & this.field1023) != 0;
    }
 
-   boolean method1688(int i_1) {
+   boolean method1688() {
       return (0x2000000 & this.field1023) != 0;
    }
 
-   boolean method1684(int i_1) {
+   boolean method1684() {
       return (0x20000000 & this.field1023) != 0;
    }
 

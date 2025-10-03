@@ -20,18 +20,18 @@ public class class129 {
    static final void method2972(byte b_0) {
       for (int i_1 = 0; i_1 < class89.field1255; i_1++) {
          class66 class66_2 = Client.field909[class89.field1257[i_1]];
-         class66_2.method1182((byte) -80);
+         class66_2.method1182();
       }
 
       Iterator iterator_3 = class91.field1277.iterator();
 
       while (iterator_3.hasNext()) {
          class64 class64_4 = (class64) iterator_3.next();
-         class64_4.method1158(1828914917);
+         class64_4.method1158();
       }
 
       if (class46.field410 != null) {
-         class46.field410.method5228(-415731818);
+         class46.field410.method5228();
       }
 
    }

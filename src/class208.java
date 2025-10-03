@@ -96,7 +96,7 @@ public class class208 {
                      return 1;
                   } else if (i_0 == 4114) {
                      i_11 = class76.field1098[--class70.field1014];
-                     class76.field1098[++class70.field1014 - 1] = class67.method1231((char)i_11, -1187847794) ? 1 : 0;
+                     class76.field1098[++class70.field1014 - 1] = class67.method1231((char)i_11) ? 1 : 0;
                      return 1;
                   } else if (i_0 == 4115) {
                      i_11 = class76.field1098[--class70.field1014];

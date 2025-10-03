@@ -160,7 +160,7 @@ public class class187 extends LinkedListNode {
                   bytes_6 = class13.field90[i_50];
                   if (bytes_6 == null && class128.field1747 < 800) {
                      class186.method3619((byte) 58);
-                     class89.method2092(i_4, i_5, 64, 64, (byte) -86);
+                     class89.method2092(i_4, i_5, 64, 64);
                   }
                }
 
@@ -241,7 +241,7 @@ public class class187 extends LinkedListNode {
                   for (i_4 = 0; i_4 < 13; i_4++) {
                      i_5 = Client.field712[0][i_50][i_4];
                      if (i_5 == -1) {
-                        class89.method2092(i_50 * 8, i_4 * 8, 8, 8, (byte) -116);
+                        class89.method2092(i_50 * 8, i_4 * 8, 8, 8);
                      }
                   }
                }
@@ -297,7 +297,7 @@ public class class187 extends LinkedListNode {
                                        int i_29 = i_28 >> 2;
                                        int i_30 = i_28 & 0x3;
                                        if (i_7 == i_27 && i_26 >= i_16 && i_26 < i_16 + 8 && i_25 >= i_17 && i_25 < i_17 + 8) {
-                                          class253 class253_31 = class128.method2970(i_21, (short) 4095);
+                                          class253 class253_31 = class128.method2970(i_21);
                                           int i_34 = i_26 & 0x7;
                                           int i_35 = i_25 & 0x7;
                                           int i_37 = class253_31.field3365;
@@ -357,7 +357,7 @@ public class class187 extends LinkedListNode {
                                                 class172_49 = arr_19[i_48];
                                              }
 
-                                             class67.method1236(i_50, i_39, i_47, i_21, i_30 + i_8 & 0x3, i_29, class133_18, class172_49, (short) -19782);
+                                             class67.method1236(i_50, i_39, i_47, i_21, i_30 + i_8 & 0x3, i_29, class133_18, class172_49);
                                           }
                                        }
                                     }
@@ -409,7 +409,7 @@ public class class187 extends LinkedListNode {
             class253.field3387.method3323();
             class187 class187_59;
             if (class27.field233.method931(285080873)) {
-               class187_59 = class235.method4265(ClientPacketProt.field2212, Client.data.field1313, 1775123545);
+               class187_59 = class235.method4265(ClientPacketProt.field2212, Client.data.field1313);
                class187_59.outBuffer.writeIntBigEndian(1057001181);
                Client.data.copy(class187_59);
             }
@@ -433,18 +433,18 @@ public class class187 extends LinkedListNode {
             class96.method2265(30);
             class186.method3619((byte) 70);
             class45.method787(337917094);
-            class187_59 = class235.method4265(ClientPacketProt.field2279, Client.data.field1313, 1775123545);
+            class187_59 = class235.method4265(ClientPacketProt.field2279, Client.data.field1313);
             Client.data.copy(class187_59);
             class141.method3291();
          }
       }
    }
 
-   public static boolean method3627(int i_0, int i_1) {
+   public static boolean method3627(int i_0) {
       return i_0 == 10 || i_0 == 11 || i_0 == 12 || i_0 == 13 || i_0 == 14 || i_0 == 15 || i_0 == 16 || i_0 == 17;
    }
 
-   static char method3623(char var_0, class190 class190_1, int i_2) {
+   static char method3623(char var_0, class190 class190_1) {
       if (var_0 >= 192 && var_0 <= 255) {
          if (var_0 >= 192 && var_0 <= 198) {
             return 'A';

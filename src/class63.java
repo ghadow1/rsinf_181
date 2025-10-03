@@ -26,7 +26,7 @@ public class class63 implements Runnable {
    static final void method1138(int i_0) {
       Object obj_10000 = null;
       String str_1 = "Your friend list is full. Max of 200 for free users, and 400 for members";
-      class62.method1132(30, "", str_1, -2132622496);
+      class62.method1132(30, "", str_1);
    }
 
    static void method1137(int i_0, int i_1) {

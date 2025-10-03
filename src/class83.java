@@ -152,7 +152,7 @@ public class class83 {
             class217_4.field2569 = class76.field1098[class70.field1014 + 1];
             class224.method4120(class217_4);
             if (i_5 != -1 && class217_4.field2566 == 0) {
-               class27.method413(class217.field2556[i_5 >> 16], class217_4, false, -2043799095);
+               class27.method413(class217.field2556[i_5 >> 16], class217_4, false);
             }
 
             return 1;

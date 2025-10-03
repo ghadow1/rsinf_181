@@ -198,13 +198,13 @@ public class class309 implements Runnable {
          class5.field23 = class158.method3435(bytes_5, (byte) -3);
          class79.field1135 = class5.field23.method6112();
          if ((Client.field653 & 0x20000000) != 0) {
-            class87.field1243 = class215.method4021(class233_1, "logo_deadman_mode", "", -1167154349);
+            class87.field1243 = class215.method4021(class233_1, "logo_deadman_mode", "");
          } else {
-            class87.field1243 = class215.method4021(class233_1, "logo", "", -1167154349);
+            class87.field1243 = class215.method4021(class233_1, "logo", "");
          }
 
-         class85.field1194 = class215.method4021(class233_1, "titlebox", "", -1167154349);
-         class240.field3207 = class215.method4021(class233_1, "titlebutton", "", -1167154349);
+         class85.field1194 = class215.method4021(class233_1, "titlebox", "");
+         class240.field3207 = class215.method4021(class233_1, "titlebutton", "");
          int i_7 = class233_1.method4160("runes");
          int i_8 = class233_1.method4161(i_7, "");
          class324[] arr_6 = class289.method5281(class233_1, i_7, i_8, 1740775565);
@@ -213,10 +213,10 @@ public class class309 implements Runnable {
          int i_9 = class233_1.method4161(i_8, "");
          class324[] arr_10 = class289.method5281(class233_1, i_8, i_9, 1982525323);
          class85.field1183 = arr_10;
-         class85.field1178 = class215.method4021(class233_1, "options_radio_buttons,0", "", -1167154349);
-         class64.field606 = class215.method4021(class233_1, "options_radio_buttons,4", "", -1167154349);
-         class112.field1466 = class215.method4021(class233_1, "options_radio_buttons,2", "", -1167154349);
-         class85.field1185 = class215.method4021(class233_1, "options_radio_buttons,6", "", -1167154349);
+         class85.field1178 = class215.method4021(class233_1, "options_radio_buttons,0", "");
+         class64.field606 = class215.method4021(class233_1, "options_radio_buttons,4", "");
+         class112.field1466 = class215.method4021(class233_1, "options_radio_buttons,2", "");
+         class85.field1185 = class215.method4021(class233_1, "options_radio_buttons,6", "");
          class237.field3191 = class85.field1178.field3897;
          class25.field212 = class85.field1178.field3893;
          class278.field3631 = new class72(class85.field1181);

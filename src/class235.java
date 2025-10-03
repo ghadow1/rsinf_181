@@ -45,7 +45,7 @@ public class class235 extends class233 {
       return this.method4153(i_1) != null;
    }
 
-   int vmethod4266(int i_1, byte b_2) {
+   int vmethod4266(int i_1) {
       return super.field3126[i_1] != null ? 100 : (this.field3160[i_1] ? 100 : class209.method3948(this.field3154, i_1));
    }
 
@@ -98,7 +98,7 @@ public class class235 extends class233 {
       }
    }
 
-   void vmethod4278(int i_1, int i_2) {
+   void vmethod4278(int i_1) {
       class68.method1653(this.field3154, i_1);
    }
 
@@ -142,7 +142,7 @@ public class class235 extends class233 {
             return;
          }
 
-         this.method4142(bytes_3, 1973415514);
+         this.method4142(bytes_3);
          this.method4270(-72081442);
       } else {
          if (!bool_4 && i_2 == this.field3152) {
@@ -179,7 +179,7 @@ public class class235 extends class233 {
                obj_10 = null;
             } else if (bytes_3.length > 136) {
                TimeUtils class206_11 = new TimeUtils();
-               class206_11.vmethod3934(bytes_3, 594076777);
+               class206_11.vmethod3934(bytes_3);
                obj_10 = class206_11;
             } else {
                obj_10 = bytes_3;
@@ -227,7 +227,7 @@ public class class235 extends class233 {
             class294.method5328(this.field3154, bytes_2, this.field3153, -457807436);
          }
 
-         this.method4142(bytes_2, 2030381352);
+         this.method4142(bytes_2);
          this.method4270(2071532960);
       } else {
          bytes_2[bytes_2.length - 2] = (byte)(super.field3132[i_1] >> 8);
@@ -244,7 +244,7 @@ public class class235 extends class233 {
                obj_8 = null;
             } else if (bytes_2.length > 136) {
                TimeUtils class206_9 = new TimeUtils();
-               class206_9.vmethod3934(bytes_2, -404058899);
+               class206_9.vmethod3934(bytes_2);
                obj_8 = class206_9;
             } else {
                obj_8 = bytes_2;
@@ -264,7 +264,7 @@ public class class235 extends class233 {
       for (i_4 = 0; i_4 < super.field3126.length; i_4++) {
          if (super.field3133[i_4] > 0) {
             i_2 += 100;
-            i_3 += this.vmethod4266(i_4, (byte) 0);
+            i_3 += this.vmethod4266(i_4);
          }
       }
 
@@ -276,17 +276,17 @@ public class class235 extends class233 {
       }
    }
 
-   public boolean method4258(byte b_1) {
+   public boolean method4258() {
       return this.field3155;
    }
 
-   static final void method4269(int i_0, byte b_1) {
+   static final void method4269(int i_0) {
       if (class162.method3445(i_0)) {
-         class225.method4122(class217.field2556[i_0], -1, -1666853879);
+         class225.method4122(class217.field2556[i_0], -1);
       }
    }
 
-   public static class187 method4265(ClientPacketProt clientPacketProt_0, class328 class328_1, int i_2) {
+   public static class187 method4265(ClientPacketProt packet, class328 class328_1) {
       class187 class187_3;
       if (class187.field2336 == 0) {
          class187_3 = new class187();
@@ -294,8 +294,8 @@ public class class235 extends class233 {
          class187_3 = class187.field2335[--class187.field2336];
       }
 
-      class187_3.field2338 = clientPacketProt_0;
-      class187_3.field2332 = clientPacketProt_0.field2275;
+      class187_3.field2338 = packet;
+      class187_3.field2332 = packet.length;
       if (class187_3.field2332 == -1) {
          class187_3.outBuffer = new Buffer_3(260);
       } else if (class187_3.field2332 == -2) {
@@ -309,7 +309,7 @@ public class class235 extends class233 {
       }
 
       class187_3.outBuffer.method5442(class328_1);
-      class187_3.outBuffer.method5473(class187_3.field2338.field2297);
+      class187_3.outBuffer.method5473(class187_3.field2338.opcode);
       class187_3.field2331 = 0;
       return class187_3;
    }

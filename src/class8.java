@@ -2,24 +2,24 @@ import java.util.Comparator;
 
 final class class8 implements Comparator {
 
-   int method83(class7 class7_1, class7 class7_2, int i_3) {
+   int method83(class7 class7_1, class7 class7_2) {
       return class7_1.field53.field61 < class7_2.field53.field61 ? -1 : (class7_2.field53.field61 == class7_1.field53.field61 ? 0 : 1);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method83((class7) object_1, (class7) object_2, -918016039);
+      return this.method83((class7) object_1, (class7) object_2);
    }
 
    public boolean equals(Object object_1) {
       return super.equals(object_1);
    }
 
-   static String method94(String string_0, int i_1) {
+   static String method94(String string_0) {
       GameState[] arr_2 = PriorityComparator.getGameStates();
 
       for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
          GameState gameState_4 = arr_2[i_3];
-         if (gameState_4.field3090 != -1 && string_0.startsWith(class33.method556(gameState_4.field3090, (byte) -20))) {
+         if (gameState_4.field3090 != -1 && string_0.startsWith(class33.iconTag(gameState_4.field3090))) {
             string_0 = string_0.substring(6 + Integer.toString(gameState_4.field3090).length());
             break;
          }

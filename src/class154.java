@@ -23,12 +23,12 @@ public class class154 extends ChainedComparator {
       return this.method3401((Categorizable) object_1, (Categorizable) object_2, 1029227971);
    }
 
-   static void method3405(int i_0) {
+   static void method3405() {
       Iterator iterator_1 = class91.field1277.iterator();
 
       while (iterator_1.hasNext()) {
          class64 class64_2 = (class64) iterator_1.next();
-         class64_2.method1146(-391302038);
+         class64_2.method1146();
       }
 
    }
@@ -40,7 +40,7 @@ public class class154 extends ChainedComparator {
       } else {
          long long_2;
          try {
-            URL url_4 = new URL(class190.method3666("services", false, -1044311329) + "m=accountappeal/login.ws");
+            URL url_4 = new URL(class190.someConnectionType("services", false) + "m=accountappeal/login.ws");
             URLConnection urlconnection_5 = url_4.openConnection();
             urlconnection_5.setRequestProperty("connection", "close");
             urlconnection_5.setDoInput(true);
@@ -112,7 +112,7 @@ public class class154 extends ChainedComparator {
 
                try {
                   class167.field2040.method6521(0L);
-                  class167.field2040.method6547(bytes_13, 488085699);
+                  class167.field2040.method6547(bytes_13);
 
                   int i_14;
                   for (i_14 = 0; i_14 < 24 && bytes_13[i_14] == 0; i_14++) {
@@ -151,12 +151,12 @@ public class class154 extends ChainedComparator {
             class300_28.writeShortBigEndian(class300_38.position);
             class300_28.writeBytes(class300_38.buffer, 0, class300_38.position);
             byte[] bytes_16 = class300_28.buffer;
-            String string_30 = class217.method4092(bytes_16, 0, bytes_16.length, 1305438411);
+            String string_30 = class217.method4092(bytes_16, 0, bytes_16.length);
             String string_17 = string_30;
 
             byte b_31;
             try {
-               URL url_18 = new URL(class190.method3666("services", false, -1044311329) + "m=accountappeal/login.ws");
+               URL url_18 = new URL(class190.someConnectionType("services", false) + "m=accountappeal/login.ws");
                URLConnection urlconnection_19 = url_18.openConnection();
                urlconnection_19.setDoInput(true);
                urlconnection_19.setDoOutput(true);

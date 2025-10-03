@@ -189,7 +189,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                      if (i_5 == 0) {
                         i_2 = class71.method1686(buffer3_0);
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
-                     } else if (class226.method4123(buffer3_0, i_4, -352047926)) {
+                     } else if (class226.method4123(buffer3_0, i_4)) {
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                      }
                   }
@@ -213,7 +213,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                         if (i_5 == 0) {
                            i_2 = class71.method1686(buffer3_0);
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
-                        } else if (class226.method4123(buffer3_0, i_4, -352047926)) {
+                        } else if (class226.method4123(buffer3_0, i_4)) {
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                         }
                      }
@@ -243,12 +243,12 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
       }
    }
 
-   static void method1039(byte b_0) {
+   static void method1039() {
       class85.field1209 = 24;
       class268.loginResponseMessages("The game servers are currently being updated.", "Please wait a few minutes and try again.", "");
    }
 
-   static final int method1021(int i_0, int i_1, int i_2) {
+   static final int method1021(int i_0, int i_1) {
       int i_3 = i_0 + i_1 * 57;
       i_3 ^= i_3 << 13;
       int i_4 = (i_3 * i_3 * 15731 + 789221) * i_3 + 1376312589 & 0x7fffffff;

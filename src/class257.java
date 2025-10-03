@@ -112,15 +112,15 @@ public class class257 extends class175 {
       }
    }
 
-   static final int method4757(int i_0, int i_1, int i_2, byte b_3) {
+   static final int method4757(int i_0, int i_1, int i_2) {
       int i_4 = i_0 / i_2;
       int i_5 = i_0 & i_2 - 1;
       int i_6 = i_1 / i_2;
       int i_7 = i_1 & i_2 - 1;
-      int i_8 = class120.method2765(i_4, i_6, 1314012151);
-      int i_9 = class120.method2765(i_4 + 1, i_6, -668341707);
-      int i_10 = class120.method2765(i_4, i_6 + 1, 1046723298);
-      int i_11 = class120.method2765(i_4 + 1, i_6 + 1, 2107267254);
+      int i_8 = class120.method2765(i_4, i_6);
+      int i_9 = class120.method2765(i_4 + 1, i_6);
+      int i_10 = class120.method2765(i_4, i_6 + 1);
+      int i_11 = class120.method2765(i_4 + 1, i_6 + 1);
       int i_12 = class4.method49(i_8, i_9, i_5, i_2, 16711935);
       int i_13 = class4.method49(i_10, i_11, i_5, i_2, 16711935);
       return class4.method49(i_12, i_13, i_7, i_2, 16711935);

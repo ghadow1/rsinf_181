@@ -11,15 +11,15 @@ public class class159 extends ChainedComparator {
       this.field1997 = bool_1;
    }
 
-   int method3442(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
-      return categorizable_1.category != 0 && categorizable_2.category != 0 ? (this.field1997 ? categorizable_1.method5041(-156755920).method5198(categorizable_2.method5041(-156755920), (byte) -119) : categorizable_2.method5041(-156755920).method5198(categorizable_1.method5041(-156755920), (byte) -6)) : this.compareWithNext(categorizable_1, categorizable_2);
+   int method3442(Categorizable categorizable_1, Categorizable categorizable_2) {
+      return categorizable_1.category != 0 && categorizable_2.category != 0 ? (this.field1997 ? categorizable_1.method5041().method5198(categorizable_2.method5041()) : categorizable_2.method5041().method5198(categorizable_1.method5041())) : this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method3442((Categorizable) object_1, (Categorizable) object_2, 660153035);
+      return this.method3442((Categorizable) object_1, (Categorizable) object_2);
    }
 
-   public static void method3440(String string_0, String string_1, int i_2, int i_3, int i_4) throws IOException {
+   public static void method3440(String string_0, String string_1, int i_2, int i_3) throws IOException {
       class40.field350 = i_3;
       class119.field1539 = i_2;
 

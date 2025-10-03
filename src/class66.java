@@ -56,7 +56,7 @@ public final class class66 extends class69 {
       } else {
          class258 class258_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981, (byte) 1) : null;
          class258 class258_3 = super.field978 != -1 && !this.field634 && (super.field978 != super.field1004 || class258_2 == null) ? class7.method81(super.field978, (byte) 1) : null;
-         class127 class127_4 = this.field613.method3997(class258_2, super.field951, class258_3, super.field979, (byte) -18);
+         class127 class127_4 = this.field613.method3997(class258_2, super.field951, class258_3, super.field979);
          if (class127_4 == null) {
             return null;
          } else {
@@ -116,7 +116,7 @@ public final class class66 extends class69 {
    }
 
    void method1186(int i_1) {
-      this.field631 = class46.field410 != null && class46.field410.method5081(this.field621, 1475988015) ? class281.field3638 : class281.field3639;
+      this.field631 = class46.field410 != null && class46.field410.method5081(this.field621) ? class281.field3638 : class281.field3639;
    }
 
    void method1220(int i_1) {
@@ -129,20 +129,20 @@ public final class class66 extends class69 {
       super.field1007 = 0;
       super.field994[0] = i_1;
       super.field962[0] = i_2;
-      int i_4 = this.method1187(-1116736107);
+      int i_4 = this.method1187();
       super.field1005 = super.field994[0] * 128 + i_4 * 64;
       super.field949 = i_4 * 64 + super.field962[0] * 128;
    }
 
-   int method1187(int i_1) {
-      return this.field613 != null && this.field613.field2532 != -1 ? GCMonitor_2.method1005(this.field613.field2532, (byte) -28).field3469 : 1;
+   int method1187() {
+      return this.field613 != null && this.field613.field2532 != -1 ? GameApplet.method1005(this.field613.field2532).field3469 : 1;
    }
 
-   void method1182(byte b_1) {
+   void method1182() {
       this.field636 = class281.field3637;
    }
 
-   final void method1191(int i_1, int i_2, byte b_3, byte b_4) {
+   final void method1191(int i_1, int i_2, byte b_3) {
       if (super.field1003 < 9) {
          ++super.field1003;
       }
@@ -158,7 +158,7 @@ public final class class66 extends class69 {
       super.field1006[0] = b_3;
    }
 
-   void method1185(int i_1) {
+   void method1185() {
       this.field631 = class281.field3637;
    }
 
@@ -166,7 +166,7 @@ public final class class66 extends class69 {
       return this.field613 != null;
    }
 
-   final void method1189(int i_1, int i_2, byte b_3, short s_4) {
+   final void method1189(int i_1, int i_2, byte b_3) {
       if (super.field981 != -1 && class7.method81(super.field981, (byte) 1).field3532 == 1) {
          super.field981 = -1;
       }
@@ -175,10 +175,10 @@ public final class class66 extends class69 {
       if (i_1 >= 0 && i_1 < 104 && i_2 >= 0 && i_2 < 104) {
          if (super.field994[0] >= 0 && super.field994[0] < 104 && super.field962[0] >= 0 && super.field962[0] < 104) {
             if (b_3 == 2) {
-               class217.method4056(this, i_1, i_2, (byte) 2, 310839135);
+               class217.method4056(this, i_1, i_2, (byte) 2);
             }
 
-            this.method1191(i_1, i_2, b_3, (byte) 1);
+            this.method1191(i_1, i_2, b_3);
          } else {
             this.method1205(i_1, i_2, 1558444576);
          }
@@ -188,7 +188,7 @@ public final class class66 extends class69 {
 
    }
 
-   final void method1179(ByteBuffer class300_1, int i_2) {
+   final void method1179(ByteBuffer class300_1) {
       class300_1.position = 0;
       int i_3 = class300_1.readUnsignedByte();
       this.field635 = class300_1.readSignedByte();
@@ -268,10 +268,10 @@ public final class class66 extends class69 {
       }
 
       this.field621 = new class283(class300_1.readNullTerminatedString(), class40.field353);
-      this.method1182((byte) -29);
-      this.method1185(-202982507);
+      this.method1182();
+      this.method1185();
       if (this == Client.field657) {
-         class10.field69 = this.field621.method5197((byte) 76);
+         class10.field69 = this.field621.method5197();
       }
 
       this.field618 = class300_1.readUnsignedByte();

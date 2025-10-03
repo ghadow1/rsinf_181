@@ -11,7 +11,7 @@ public class class60 {
             Client.field831 = i_2;
             class80.field1143 = 0;
             Client.field839 = false;
-            int i_4 = class13.method151(246973533);
+            int i_4 = class13.method151();
             if (i_4 != -1) {
                class112.method2510(i_4, -1929645984);
             }

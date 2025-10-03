@@ -1,6 +1,6 @@
 public class class219 {
 
-   static void method4112(class217 class217_0, int i_1, int i_2, boolean bool_3, int i_4) {
+   static void method4112(class217 class217_0, int i_1, int i_2, boolean bool_3) {
       int i_5 = class217_0.field2579;
       int i_6 = class217_0.field2667;
       if (class217_0.field2638 == 0) {
@@ -40,15 +40,15 @@ public class class219 {
 
    }
 
-   static final void method4111(String string_0, int i_1) {
-      class187 class187_2 = class235.method4265(ClientPacketProt.field2210, Client.data.field1313, 1775123545);
+   static final void method4111(String string_0) {
+      class187 class187_2 = class235.method4265(ClientPacketProt.field2210, Client.data.field1313);
       class187_2.outBuffer.writeByte(class209.method3945(string_0));
       class187_2.outBuffer.writeNullTerminatedString(string_0);
       Client.data.copy(class187_2);
    }
 
-   static final void method4113(class69 class69_0, int i_1, int i_2) {
-      class32.method544(class69_0.field1005, class69_0.field949, i_1, 1846683803);
+   static final void method4113(class69 class69_0, int i_1) {
+      class32.method544(class69_0.field1005, class69_0.field949, i_1);
    }
 
 }

@@ -3,7 +3,7 @@ public class class226 {
    static class232 field3071;
    static class310 field3072;
 
-   static boolean method4123(Buffer_3 buffer3_0, int i_1, int i_2) {
+   static boolean method4123(Buffer_3 buffer3_0, int i_1) {
       int i_3 = buffer3_0.method5445(2);
       int i_4;
       int i_5;
@@ -13,7 +13,7 @@ public class class226 {
       int i_11;
       if (i_3 == 0) {
          if (buffer3_0.method5445(1) != 0) {
-            method4123(buffer3_0, i_1, -352047926);
+            method4123(buffer3_0, i_1);
          }
 
          i_4 = buffer3_0.method5445(13);
@@ -29,7 +29,7 @@ public class class226 {
             class66 class66_7 = Client.field909[i_1] = new class66();
             class66_7.field637 = i_1;
             if (class89.field1254[i_1] != null) {
-               class66_7.method1179(class89.field1254[i_1], 51836787);
+               class66_7.method1179(class89.field1254[i_1]);
             }
 
             class66_7.field1000 = class89.field1260[i_1];

@@ -53,8 +53,8 @@ public class MemoryManager implements Runnable {
                GarbageCollectorMXBean bean = (GarbageCollectorMXBean) iterator.next();
                if (bean.isValid()) {
                   GCMonitor.gcBean = bean;
-                  GCMonitor_2.lastCheckTime = -1L;
-                  GCMonitor_2.lastGCTime = -1L;
+                  GameApplet.lastCheckTime = -1L;
+                  GameApplet.lastGCTime = -1L;
                }
             }
          } catch (Throwable throwable_12) {
@@ -65,16 +65,16 @@ public class MemoryManager implements Runnable {
       if (GCMonitor.gcBean != null) {
          long currentTime = TimeUtils.getAdjustedTimeMillis();
          long currentGCTime = GCMonitor.gcBean.getCollectionTime();
-         if (GCMonitor_2.lastGCTime != -1L) {
-            long gcTimeDelta = currentGCTime - GCMonitor_2.lastGCTime;
-            long realTimeDelta = currentTime - GCMonitor_2.lastCheckTime;
+         if (GameApplet.lastGCTime != -1L) {
+            long gcTimeDelta = currentGCTime - GameApplet.lastGCTime;
+            long realTimeDelta = currentTime - GameApplet.lastCheckTime;
             if (realTimeDelta != 0L) {
                gcPercentage = (int) (100L * gcTimeDelta / realTimeDelta);
             }
          }
 
-         GCMonitor_2.lastGCTime = currentGCTime;
-         GCMonitor_2.lastCheckTime = currentTime;
+         GameApplet.lastGCTime = currentGCTime;
+         GameApplet.lastCheckTime = currentTime;
       }
 
       return gcPercentage;

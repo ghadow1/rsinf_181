@@ -13,7 +13,7 @@ public class class128 {
    public static int field1748 = 0;
    public static long[] field1750 = new long[1000];
 
-   public static class253 method2970(int i_0, short s_1) {
+   public static class253 method2970(int i_0) {
       class253 class253_2 = (class253) class253.field3390.method3320((long)i_0);
       if (class253_2 != null) {
          return class253_2;
@@ -22,10 +22,10 @@ public class class128 {
          class253_2 = new class253();
          class253_2.field3357 = i_0;
          if (bytes_3 != null) {
-            class253_2.method4625(new ByteBuffer(bytes_3), (byte) 82);
+            class253_2.method4625(new ByteBuffer(bytes_3));
          }
 
-         class253_2.method4586(-583792962);
+         class253_2.method4586();
          if (class253_2.field3389) {
             class253_2.field3382 = 0;
             class253_2.field3368 = false;

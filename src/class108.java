@@ -11,7 +11,7 @@ public class class108 {
       this.field1449 = class233_2;
    }
 
-   class103 method2481(int i_1, int i_2, int[] ints_3, byte b_4) {
+   class103 method2481(int i_1, int i_2, int[] ints_3) {
       int i_5 = i_2 ^ (i_1 << 4 & 0xffff | i_1 >>> 12);
       i_5 |= i_1 << 16;
       long long_6 = (long)i_5;
@@ -36,7 +36,7 @@ public class class108 {
       }
    }
 
-   class103 method2486(int i_1, int i_2, int[] ints_3, int i_4) {
+   class103 method2486(int i_1, int i_2, int[] ints_3) {
       int i_5 = i_2 ^ (i_1 << 4 & 0xffff | i_1 >>> 12);
       i_5 |= i_1 << 16;
       long long_6 = (long)i_5 ^ 0x100000000L;
@@ -67,34 +67,34 @@ public class class108 {
       }
    }
 
-   public class103 method2483(int i_1, int[] ints_2, byte b_3) {
+   public class103 method2483(int i_1, int[] ints_2) {
       if (this.field1446.method4232() == 1) {
-         return this.method2481(0, i_1, ints_2, (byte) 60);
-      } else if (this.field1446.method4154(i_1, -1029639441) == 1) {
-         return this.method2481(i_1, 0, ints_2, (byte) 49);
+         return this.method2481(0, i_1, ints_2);
+      } else if (this.field1446.method4154(i_1) == 1) {
+         return this.method2481(i_1, 0, ints_2);
       } else {
          throw new RuntimeException();
       }
    }
 
-   public class103 method2484(int i_1, int[] ints_2, int i_3) {
+   public class103 method2484(int i_1, int[] ints_2) {
       if (this.field1449.method4232() == 1) {
-         return this.method2486(0, i_1, ints_2, 1581933102);
-      } else if (this.field1449.method4154(i_1, -1618278527) == 1) {
-         return this.method2486(i_1, 0, ints_2, -998034610);
+         return this.method2486(0, i_1, ints_2);
+      } else if (this.field1449.method4154(i_1) == 1) {
+         return this.method2486(i_1, 0, ints_2);
       } else {
          throw new RuntimeException();
       }
    }
 
-   static final void method2491(int i_0, int i_1) {
+   static final void method2491(int i_0) {
       class174.disconnectGame();
       switch(i_0) {
       case 1:
          class213.disconnectMessage();
          break;
       case 2:
-         class54.method1039((byte) -37);
+         class54.method1039();
       }
 
    }

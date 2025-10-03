@@ -22,13 +22,13 @@ public class class236 {
    public static int field3179 = 0;
    public static int field3178 = 0;
 
-   static void method4312(int i_0, int i_1, int i_2) {
+   static void method4312(int i_0, int i_1) {
       int i_3 = class23.field193.method5417("Choose Option");
 
       int i_4;
       int i_5;
       for (i_4 = 0; i_4 < Client.field791; i_4++) {
-         i_5 = class23.field193.method5417(class28.method417(i_4, (byte) 42));
+         i_5 = class23.field193.method5417(class28.method417(i_4));
          if (i_5 > i_3) {
             i_3 = i_5;
          }

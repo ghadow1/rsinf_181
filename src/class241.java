@@ -179,7 +179,7 @@ public class class241 extends class175 {
       if (Client.data.field1319 >= 50 || bool_0) {
          Client.data.field1319 = 0;
          if (!Client.field701 && Client.data.method2223() != null) {
-            class187 class187_2 = class235.method4265(ClientPacketProt.field2225, Client.data.field1313, 1775123545);
+            class187 class187_2 = class235.method4265(ClientPacketProt.field2225, Client.data.field1313);
             Client.data.copy(class187_2);
 
             try {

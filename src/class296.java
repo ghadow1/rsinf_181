@@ -87,7 +87,7 @@ public abstract class class296 extends class321 {
                      if (!string_7.equals("gt")) {
                         if (string_7.startsWith("img=")) {
                            try {
-                              int i_8 = class3.method38(string_7.substring(4), (byte) 0);
+                              int i_8 = class3.method38(string_7.substring(4));
                               i_4 += field3720[i_8].field3896;
                               i_3 = -1;
                            } catch (Exception exception_10) {
@@ -106,7 +106,7 @@ public abstract class class296 extends class321 {
                }
 
                if (i_2 == -1) {
-                  i_4 += this.field3700[(char)(class254.method4699(var_6, (short) 11190) & 0xff)];
+                  i_4 += this.field3700[(char)(class254.method4699(var_6) & 0xff)];
                   if (this.field3712 != null && i_3 != -1) {
                      i_4 += this.field3712[var_6 + (i_3 << 8)];
                   }
@@ -169,7 +169,7 @@ public abstract class class296 extends class321 {
                      var_11 = 62;
                   } else if (string_16.startsWith("img=")) {
                      try {
-                        int i_17 = class3.method38(string_16.substring(4), (byte) 0);
+                        int i_17 = class3.method38(string_16.substring(4));
                         i_4 += field3720[i_17].field3896;
                         var_11 = 0;
                      } catch (Exception exception_20) {
@@ -231,7 +231,7 @@ public abstract class class296 extends class321 {
 
       for (int i_6 = 0; i_6 < string_1.length(); i_6++) {
          if (string_1.charAt(i_6) != 0) {
-            char var_7 = (char)(class254.method4699(string_1.charAt(i_6), (short) 6813) & 0xff);
+            char var_7 = (char)(class254.method4699(string_1.charAt(i_6)) & 0xff);
             if (var_7 == 60) {
                i_4 = i_6;
             } else {
@@ -245,7 +245,7 @@ public abstract class class296 extends class321 {
                      if (!string_8.equals("gt")) {
                         if (string_8.startsWith("img=")) {
                            try {
-                              i_9 = class3.method38(string_8.substring(4), (byte) 0);
+                              i_9 = class3.method38(string_8.substring(4));
                               class324 class324_10 = field3720[i_9];
                               class324_10.method6101(i_2, i_3 + this.field3709 - class324_10.field3894);
                               i_2 += class324_10.field3896;
@@ -391,7 +391,7 @@ public abstract class class296 extends class321 {
 
       for (int i_9 = 0; i_9 < string_1.length(); i_9++) {
          if (string_1.charAt(i_9) != 0) {
-            char var_10 = (char)(class254.method4699(string_1.charAt(i_9), (short) 2471) & 0xff);
+            char var_10 = (char)(class254.method4699(string_1.charAt(i_9)) & 0xff);
             if (var_10 == 60) {
                i_6 = i_9;
             } else {
@@ -420,7 +420,7 @@ public abstract class class296 extends class321 {
                               }
 
                               ++i_8;
-                              i_14 = class3.method38(string_11.substring(4), (byte) 0);
+                              i_14 = class3.method38(string_11.substring(4));
                               class324 class324_15 = field3720[i_14];
                               class324_15.method6101(i_12 + i_2, i_13 + (i_3 + this.field3709 - class324_15.field3894));
                               i_2 += class324_15.field3896;
@@ -505,7 +505,7 @@ public abstract class class296 extends class321 {
          var_1 = 32;
       }
 
-      return this.field3700[class254.method4699(var_1, (short) 19951) & 0xff];
+      return this.field3700[class254.method4699(var_1) & 0xff];
    }
 
    public int method5390(String string_1, int i_2) {
@@ -515,23 +515,23 @@ public abstract class class296 extends class321 {
    void method5376(String string_1) {
       try {
          if (string_1.startsWith("col=")) {
-            field3715 = class248.method4493(string_1.substring(4), 16, 508851632);
+            field3715 = class248.method4493(string_1.substring(4), 16);
          } else if (string_1.equals("/col")) {
             field3715 = field3708;
          } else if (string_1.startsWith("str=")) {
-            field3710 = class248.method4493(string_1.substring(4), 16, -487806402);
+            field3710 = class248.method4493(string_1.substring(4), 16);
          } else if (string_1.equals("str")) {
             field3710 = 8388608;
          } else if (string_1.equals("/str")) {
             field3710 = -1;
          } else if (string_1.startsWith("u=")) {
-            field3711 = class248.method4493(string_1.substring(2), 16, 1969854248);
+            field3711 = class248.method4493(string_1.substring(2), 16);
          } else if (string_1.equals("u")) {
             field3711 = 0;
          } else if (string_1.equals("/u")) {
             field3711 = -1;
          } else if (string_1.startsWith("shad=")) {
-            field3713 = class248.method4493(string_1.substring(5), 16, -851918096);
+            field3713 = class248.method4493(string_1.substring(5), 16);
          } else if (string_1.equals("shad")) {
             field3713 = 0;
          } else if (string_1.equals("/shad")) {

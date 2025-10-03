@@ -62,7 +62,7 @@ final class class5 implements Comparator {
                }
             }
 
-            long long_10 = class126.method2854(i_0, i_1, 3, false, 0, -1948443569);
+            long long_10 = class126.method2854(i_0, i_1, 3, false, 0);
             field22.method3073(class42.field372, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, class42.field372), class87_6, long_10, class87_13, class87_12);
          }
       }
@@ -95,7 +95,7 @@ final class class5 implements Comparator {
             if (var_5 == 32) {
                stringbuilder_3.append('+');
             } else {
-               byte b_6 = class254.method4699(var_5, (short) -340);
+               byte b_6 = class254.method4699(var_5);
                stringbuilder_3.append('%');
                int i_7 = b_6 >> 4 & 0xf;
                if (i_7 >= 10) {

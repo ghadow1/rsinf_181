@@ -8,7 +8,7 @@ public class class249 extends class175 {
    char field3306;
    public String field3303;
 
-   void method4498(ByteBuffer class300_1, int i_2, int i_3) {
+   void method4498(ByteBuffer class300_1, int i_2) {
       if (i_2 == 1) {
          byte b_5 = class300_1.readSignedByte();
          int i_6 = b_5 & 0xff;
@@ -37,21 +37,21 @@ public class class249 extends class175 {
 
    }
 
-   public boolean method4499(int i_1) {
+   public boolean method4499() {
       return this.field3306 == 115;
    }
 
-   void method4496(byte b_1) {
+   void method4496() {
    }
 
-   void method4497(ByteBuffer class300_1, byte b_2) {
+   void method4497(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4498(class300_1, i_3, 506424646);
+         this.method4498(class300_1, i_3);
       }
    }
 

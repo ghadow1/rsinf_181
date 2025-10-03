@@ -53,11 +53,11 @@ public class class188 {
       }
 
       if (class85.field1206 == null) {
-         class85.field1206 = class215.method4021(Client.field683, "leftarrow", "", -1167154349);
+         class85.field1206 = class215.method4021(Client.field683, "leftarrow", "");
       }
 
       if (class256.field3490 == null) {
-         class256.field3490 = class215.method4021(Client.field683, "rightarrow", "", -1167154349);
+         class256.field3490 = class215.method4021(Client.field683, "rightarrow", "");
       }
 
       class321.method6012(class85.field1208, 23, 765, 480, 0);
@@ -200,26 +200,26 @@ public class class188 {
 
             int i_22 = 0;
             byte b_21;
-            if (class71_25.method1688(1648546006)) {
-               if (class71_25.method1680((byte) 0)) {
+            if (class71_25.method1688()) {
+               if (class71_25.method1680()) {
                   b_21 = 7;
                } else {
                   b_21 = 6;
                }
-            } else if (class71_25.method1684(-2068007512)) {
+            } else if (class71_25.method1684()) {
                i_22 = 16711680;
-               if (class71_25.method1680((byte) 0)) {
+               if (class71_25.method1680()) {
                   b_21 = 5;
                } else {
                   b_21 = 4;
                }
-            } else if (class71_25.method1718(-1353649797)) {
-               if (class71_25.method1680((byte) 0)) {
+            } else if (class71_25.method1718()) {
+               if (class71_25.method1680()) {
                   b_21 = 3;
                } else {
                   b_21 = 2;
                }
-            } else if (class71_25.method1680((byte) 0)) {
+            } else if (class71_25.method1680()) {
                b_21 = 1;
             } else {
                b_21 = 0;
@@ -234,7 +234,7 @@ public class class188 {
             }
 
             if (class57.field533 != null) {
-               class57.field533[(class71_25.method1680((byte) 0) ? 8 : 0) + class71_25.field1032].method6101(i_13 + 29, i_12);
+               class57.field533[(class71_25.method1680() ? 8 : 0) + class71_25.field1032].method6101(i_13 + 29, i_12);
             }
 
             class295_0.method5341(Integer.toString(class71_25.field1025), i_13 + 15, b_29 / 2 + i_12 + 5, i_22, -1);

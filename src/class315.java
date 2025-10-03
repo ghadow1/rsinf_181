@@ -8,12 +8,12 @@ public class class315 implements Comparator {
       this.field3847 = bool_1;
    }
 
-   int method5918(class274 class274_1, class274 class274_2, byte b_3) {
-      return this.field3847 ? class274_1.method5041(-156755920).method5198(class274_2.method5041(-156755920), (byte) -109) : class274_2.method5041(-156755920).method5198(class274_1.method5041(-156755920), (byte) -127);
+   int method5918(User user_1, User user_2, byte b_3) {
+      return this.field3847 ? user_1.method5041().method5198(user_2.method5041()) : user_2.method5041().method5198(user_1.method5041());
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method5918((class274) object_1, (class274) object_2, (byte) -66);
+      return this.method5918((User) object_1, (User) object_2, (byte) -66);
    }
 
    public boolean equals(Object object_1) {

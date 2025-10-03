@@ -54,12 +54,12 @@ public class class6 {
    public static void method66(class233 class233_0, class233 class233_1) {
       class245.field3274 = class233_0;
       class288.field3665 = class233_1;
-      class245.field3263 = class245.field3274.method4154(3, -946844151);
+      class245.field3263 = class245.field3274.method4154(3);
    }
 
    public static void method68(class233 class233_0) {
       class240.field3204 = class233_0;
-      class240.field3203 = class240.field3204.method4154(16, -1659066369);
+      class240.field3203 = class240.field3204.method4154(16);
    }
 
    static final void method72(class133 class133_0, class172[] arr_1) {

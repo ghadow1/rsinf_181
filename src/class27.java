@@ -12,27 +12,23 @@ public final class class27 {
       this.field230 = ints_1;
    }
 
-   final int method408(int i_1, int i_2, byte b_3) {
-      return this.field230[i_2 * 64 + i_1];
-   }
-
-   static final void method416(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
+   static final void method416(int i_0, int i_1, int i_2, boolean bool_3) {
       if (class162.method3445(i_0)) {
-         class13.method150(class217.field2556[i_0], -1, i_1, i_2, bool_3, 2021485815);
+         class13.method150(class217.field2556[i_0], -1, i_1, i_2, bool_3);
       }
    }
 
    static final void method412(int i_0, int i_1, int i_2) {
       if (Client.field791 >= 2 || Client.field900 != 0 || Client.field810) {
          if (Client.field802) {
-            int i_3 = class13.method151(246973533);
+            int i_3 = class13.method151();
             String string_4;
             if (Client.field900 == 1 && Client.field791 < 2) {
                string_4 = "Use" + " " + Client.field738 + " " + "->";
             } else if (Client.field810 && Client.field791 < 2) {
                string_4 = Client.field813 + " " + Client.field814 + " " + "->";
             } else {
-               string_4 = class28.method417(i_3, (byte) 36);
+               string_4 = class28.method417(i_3);
             }
 
             if (Client.field791 > 2) {
@@ -44,27 +40,31 @@ public final class class27 {
       }
    }
 
-   public static void method414(class233 class233_0, int i_1) {
-      class244.field3255 = class233_0;
-   }
-
-   static void method413(class217[] arr_0, class217 class217_1, boolean bool_2, int i_3) {
+   static void method413(class217[] arr_0, class217 class217_1, boolean bool_2) {
       int i_4 = class217_1.field2687 != 0 ? class217_1.field2687 : class217_1.field2579;
       int i_5 = class217_1.field2569 != 0 ? class217_1.field2569 : class217_1.field2667;
-      class13.method150(arr_0, class217_1.field2688, i_4, i_5, bool_2, 1879036172);
+      class13.method150(arr_0, class217_1.field2688, i_4, i_5, bool_2);
       if (class217_1.field2675 != null) {
-         class13.method150(class217_1.field2675, class217_1.field2688, i_4, i_5, bool_2, 1726959826);
+         class13.method150(class217_1.field2675, class217_1.field2688, i_4, i_5, bool_2);
       }
 
       class61 class61_6 = (class61) Client.field816.method5952((long)class217_1.field2688);
       if (class61_6 != null) {
-         method416(class61_6.field571, i_4, i_5, bool_2, -2115353122);
+         method416(class61_6.field571, i_4, i_5, bool_2);
       }
 
       if (class217_1.field2568 == 1337) {
          ;
       }
 
+   }
+
+   public static void method414(class233 class233_0, int i_1) {
+      class244.field3255 = class233_0;
+   }
+
+   final int method408(int i_1, int i_2) {
+      return this.field230[i_2 * 64 + i_1];
    }
 
    static void method407(ByteBuffer class300_0, int i_1, int i_2) {
@@ -77,7 +77,7 @@ public final class class27 {
       if (class167.field2040 != null) {
          try {
             class167.field2040.method6521(0L);
-            class167.field2040.method6524(class300_0.buffer, i_1, 24, -966965622);
+            class167.field2040.method6524(class300_0.buffer, i_1, 24);
          } catch (Exception exception_5) {
             ;
          }

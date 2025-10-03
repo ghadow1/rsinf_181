@@ -1,4 +1,4 @@
-public class Categorizable extends class274 {
+public class Categorizable extends User {
 
    static long field3632;
    public int field3634;

@@ -10,7 +10,7 @@ public class class58 {
       this.field539 = class235_1.method4232();
    }
 
-   boolean method1095(byte b_1) {
+   boolean method1095() {
       this.field542 = 0;
 
       for (int i_2 = 0; i_2 < this.field539; i_2++) {
@@ -22,9 +22,9 @@ public class class58 {
       return this.field542 >= this.field539;
    }
 
-   static final void method1098(class217 class217_0, int i_1, int i_2, int i_3, byte b_4) {
+   static final void method1098(class217 class217_0, int i_1, int i_2, int i_3) {
       class186.method3619((byte) 39);
-      class211 class211_5 = class217_0.method4040(false, (byte) 0);
+      class211 class211_5 = class217_0.method4040(false);
       if (class211_5 != null) {
          class321.method5997(i_1, i_2, class211_5.field2519 + i_1, i_2 + class211_5.field2522);
          if (Client.field652 != 2 && Client.field652 != 5) {
@@ -176,7 +176,7 @@ public class class58 {
 
    static class217 method1099(class217 class217_0, int i_1) {
       class217 class217_3 = class217_0;
-      int i_4 = class32.method545(class268.method4987(class217_0), -1017590998);
+      int i_4 = class32.method545(class268.method4987(class217_0));
       class217 class217_2;
       if (i_4 == 0) {
          class217_2 = null;

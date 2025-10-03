@@ -8,7 +8,7 @@ public class class253 extends class175 {
    public static class145 field3387 = new class145(500);
    static class145 field3354 = new class145(30);
    static class145 field3355 = new class145(30);
-   static class121[] field3398 = new class121[4];
+   static Model[] field3398 = new Model[4];
    public String field3360 = "null";
    public int field3365 = 1;
    public int field3366 = 1;
@@ -55,7 +55,7 @@ public class class253 extends class175 {
    public final class253 method4595() {
       int i_2 = -1;
       if (this.field3349 != -1) {
-         i_2 = class67.method1237(this.field3349, -836499887);
+         i_2 = class67.method1237(this.field3349);
       } else if (this.field3393 != -1) {
          i_2 = class212.var_configurations[this.field3393];
       }
@@ -67,7 +67,7 @@ public class class253 extends class175 {
          i_3 = this.field3391[this.field3391.length - 1];
       }
 
-      return i_3 != -1 ? class128.method2970(i_3, (short) 4095) : null;
+      return i_3 != -1 ? class128.method2970(i_3) : null;
    }
 
    void method4628(ByteBuffer class300_1, int i_2) {
@@ -238,8 +238,8 @@ public class class253 extends class175 {
 
    }
 
-   final class121 method4594(int i_1, int i_2, int i_3) {
-      class121 class121_4 = null;
+   final Model method4594(int i_1, int i_2) {
+      Model model_4 = null;
       boolean bool_5;
       int i_6;
       int i_8;
@@ -265,27 +265,27 @@ public class class253 extends class175 {
                i_8 += 65536;
             }
 
-            class121_4 = (class121) field3387.method3320((long)i_8);
-            if (class121_4 == null) {
-               class121_4 = class121.method2769(field3351, i_8 & 0xffff, 0);
-               if (class121_4 == null) {
+            model_4 = (Model) field3387.method3320((long)i_8);
+            if (model_4 == null) {
+               model_4 = Model.method2769(field3351, i_8 & 0xffff, 0);
+               if (model_4 == null) {
                   return null;
                }
 
                if (bool_5) {
-                  class121_4.method2785();
+                  model_4.method2785();
                }
 
-               field3387.method3322(class121_4, (long)i_8);
+               field3387.method3322(model_4, (long)i_8);
             }
 
             if (i_6 > 1) {
-               field3398[i_7] = class121_4;
+               field3398[i_7] = model_4;
             }
          }
 
          if (i_6 > 1) {
-            class121_4 = new class121(field3398, i_6);
+            model_4 = new Model(field3398, i_6);
          }
       } else {
          int i_10 = -1;
@@ -307,18 +307,18 @@ public class class253 extends class175 {
             i_6 += 65536;
          }
 
-         class121_4 = (class121) field3387.method3320((long)i_6);
-         if (class121_4 == null) {
-            class121_4 = class121.method2769(field3351, i_6 & 0xffff, 0);
-            if (class121_4 == null) {
+         model_4 = (Model) field3387.method3320((long)i_6);
+         if (model_4 == null) {
+            model_4 = Model.method2769(field3351, i_6 & 0xffff, 0);
+            if (model_4 == null) {
                return null;
             }
 
             if (bool_11) {
-               class121_4.method2785();
+               model_4.method2785();
             }
 
-            field3387.method3322(class121_4, (long)i_6);
+            field3387.method3322(model_4, (long)i_6);
          }
       }
 
@@ -335,45 +335,45 @@ public class class253 extends class175 {
          bool_12 = true;
       }
 
-      class121 class121_9 = new class121(class121_4, i_2 == 0 && !bool_5 && !bool_12, this.field3375 == null, this.field3363 == null, true);
+      Model model_9 = new Model(model_4, i_2 == 0 && !bool_5 && !bool_12, this.field3375 == null, this.field3363 == null);
       if (i_1 == 4 && i_2 > 3) {
-         class121_9.method2781(256);
-         class121_9.method2782(45, 0, -45);
+         model_9.method2781(256);
+         model_9.method2782(45, 0, -45);
       }
 
       i_2 &= 0x3;
       if (i_2 == 1) {
-         class121_9.method2778();
+         model_9.method2778();
       } else if (i_2 == 2) {
-         class121_9.method2797();
+         model_9.method2797();
       } else if (i_2 == 3) {
-         class121_9.method2780();
+         model_9.method2780();
       }
 
       if (this.field3375 != null) {
          for (i_8 = 0; i_8 < this.field3375.length; i_8++) {
-            class121_9.method2783(this.field3375[i_8], this.field3353[i_8]);
+            model_9.method2783(this.field3375[i_8], this.field3353[i_8]);
          }
       }
 
       if (this.field3363 != null) {
          for (i_8 = 0; i_8 < this.field3363.length; i_8++) {
-            class121_9.method2784(this.field3363[i_8], this.field3364[i_8]);
+            model_9.method2784(this.field3363[i_8], this.field3364[i_8]);
          }
       }
 
       if (bool_5) {
-         class121_9.method2786(this.field3381, this.field3383, this.field3384);
+         model_9.method2786(this.field3381, this.field3383, this.field3384);
       }
 
       if (bool_12) {
-         class121_9.method2782(this.field3385, this.field3386, this.field3376);
+         model_9.method2782(this.field3385, this.field3386, this.field3376);
       }
 
-      return class121_9;
+      return model_9;
    }
 
-   void method4586(int i_1) {
+   void method4586() {
       if (this.field3369 == -1) {
          this.field3369 = 0;
          if (this.field3362 != null && (this.field3359 == null || this.field3359[0] == 10)) {
@@ -393,7 +393,7 @@ public class class253 extends class175 {
 
    }
 
-   void method4625(ByteBuffer class300_1, byte b_2) {
+   void method4625(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
@@ -404,7 +404,7 @@ public class class253 extends class175 {
       }
    }
 
-   public final class127 method4614(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, class258 class258_7, int i_8, byte b_9) {
+   public final class127 method4614(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, class258 class258_7, int i_8) {
       long long_10;
       if (this.field3359 == null) {
          long_10 = (long)(i_2 + (this.field3357 << 10));
@@ -414,12 +414,12 @@ public class class253 extends class175 {
 
       class127 class127_12 = (class127) field3355.method3320(long_10);
       if (class127_12 == null) {
-         class121 class121_13 = this.method4594(i_1, i_2, 1716615766);
-         if (class121_13 == null) {
+         Model model_13 = this.method4594(i_1, i_2);
+         if (model_13 == null) {
             return null;
          }
 
-         class127_12 = class121_13.method2802(this.field3350 + 64, this.field3380 + 768, -50, -10, -50);
+         class127_12 = model_13.applyLighting(this.field3350 + 64, this.field3380 + 768, -50, -10, -50);
          field3355.method3322(class127_12, long_10);
       }
 
@@ -427,7 +427,7 @@ public class class253 extends class175 {
          return class127_12;
       } else {
          if (class258_7 != null) {
-            class127_12 = class258_7.method4763(class127_12, i_8, i_2, (byte) -68);
+            class127_12 = class258_7.method4763(class127_12, i_8, i_2);
          } else {
             class127_12 = class127_12.method2859(true);
          }
@@ -440,7 +440,7 @@ public class class253 extends class175 {
       }
    }
 
-   public final boolean method4589(int i_1, int i_2) {
+   public final boolean method4589(int i_1) {
       if (this.field3359 != null) {
          for (int i_5 = 0; i_5 < this.field3359.length; i_5++) {
             if (this.field3359[i_5] == i_1) {
@@ -488,12 +488,12 @@ public class class253 extends class175 {
 
       class127 class127_10 = (class127) field3355.method3320(long_8);
       if (class127_10 == null) {
-         class121 class121_11 = this.method4594(i_1, i_2, -1141866504);
-         if (class121_11 == null) {
+         Model model_11 = this.method4594(i_1, i_2);
+         if (model_11 == null) {
             return null;
          }
 
-         class127_10 = class121_11.method2802(this.field3350 + 64, this.field3380 + 768, -50, -10, -50);
+         class127_10 = model_11.applyLighting(this.field3350 + 64, this.field3380 + 768, -50, -10, -50);
          field3355.method3322(class127_10, long_8);
       }
 
@@ -510,7 +510,7 @@ public class class253 extends class175 {
       } else {
          for (int i_2 = 0; i_2 < this.field3391.length; i_2++) {
             if (this.field3391[i_2] != -1) {
-               class253 class253_3 = class128.method2970(this.field3391[i_2], (short) 4095);
+               class253 class253_3 = class128.method2970(this.field3391[i_2]);
                if (class253_3.field3394 != -1 || class253_3.field3367 != null) {
                   return true;
                }
@@ -531,32 +531,32 @@ public class class253 extends class175 {
 
       Object obj_10 = (class135) field3354.method3320(long_8);
       if (obj_10 == null) {
-         class121 class121_11 = this.method4594(i_1, i_2, 828225621);
-         if (class121_11 == null) {
+         Model model_11 = this.method4594(i_1, i_2);
+         if (model_11 == null) {
             return null;
          }
 
          if (!this.field3371) {
-            obj_10 = class121_11.method2802(this.field3350 + 64, this.field3380 + 768, -50, -10, -50);
+            obj_10 = model_11.applyLighting(this.field3350 + 64, this.field3380 + 768, -50, -10, -50);
          } else {
-            class121_11.field1580 = (short)(this.field3350 + 64);
-            class121_11.field1577 = (short)(this.field3380 + 768);
-            class121_11.method2787();
-            obj_10 = class121_11;
+            model_11.field1580 = (short)(this.field3350 + 64);
+            model_11.field1577 = (short)(this.field3380 + 768);
+            model_11.method2787();
+            obj_10 = model_11;
          }
 
          field3354.method3322((class175) obj_10, long_8);
       }
 
       if (this.field3371) {
-         obj_10 = ((class121) obj_10).method2775();
+         obj_10 = ((Model) obj_10).method2775();
       }
 
       if (this.field3370 >= 0) {
          if (obj_10 instanceof class127) {
             obj_10 = ((class127) obj_10).method2858(ints_3, i_4, i_5, i_6, true, this.field3370);
-         } else if (obj_10 instanceof class121) {
-            obj_10 = ((class121) obj_10).method2776(ints_3, i_4, i_5, i_6, true, this.field3370);
+         } else if (obj_10 instanceof Model) {
+            obj_10 = ((Model) obj_10).method2776(ints_3, i_4, i_5, i_6, this.field3370);
          }
       }
 

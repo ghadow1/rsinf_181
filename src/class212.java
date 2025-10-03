@@ -118,7 +118,7 @@ public class class212 {
 
                if (i_7 == 14) {
                   i_10 = ints_3[i_5++];
-                  i_8 = class67.method1237(i_10, -836499887);
+                  i_8 = class67.method1237(i_10);
                }
 
                if (i_7 == 15) {

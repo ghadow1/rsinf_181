@@ -1,4 +1,4 @@
-public class class121 extends class135 {
+public class Model extends class135 {
 
    static int[] field1584 = new int[10000];
    static int[] field1585 = new int[10000];
@@ -46,10 +46,10 @@ public class class121 extends class135 {
       field1588 = class130.field1784;
    }
 
-   class121() {
+   Model() {
    }
 
-   public class121(class121[] arr_1, int i_2) {
+   public Model(Model[] arr_1, int i_2) {
       boolean bool_3 = false;
       boolean bool_4 = false;
       boolean bool_5 = false;
@@ -62,30 +62,30 @@ public class class121 extends class135 {
       this.field1563 = -1;
 
       int i_9;
-      class121 class121_10;
+      Model model_10;
       for (i_9 = 0; i_9 < i_2; i_9++) {
-         class121_10 = arr_1[i_9];
-         if (class121_10 != null) {
-            this.field1558 += class121_10.field1558;
-            this.field1551 += class121_10.field1551;
-            this.field1555 += class121_10.field1555;
-            if (class121_10.field1559 != null) {
+         model_10 = arr_1[i_9];
+         if (model_10 != null) {
+            this.field1558 += model_10.field1558;
+            this.field1551 += model_10.field1551;
+            this.field1555 += model_10.field1555;
+            if (model_10.field1559 != null) {
                bool_4 = true;
             } else {
                if (this.field1563 == -1) {
-                  this.field1563 = class121_10.field1563;
+                  this.field1563 = model_10.field1563;
                }
 
-               if (this.field1563 != class121_10.field1563) {
+               if (this.field1563 != model_10.field1563) {
                   bool_4 = true;
                }
             }
 
-            bool_3 |= class121_10.field1557 != null;
-            bool_5 |= class121_10.field1587 != null;
-            bool_6 |= class121_10.field1553 != null;
-            bool_7 |= class121_10.field1562 != null;
-            bool_8 |= class121_10.field1560 != null;
+            bool_3 |= model_10.field1557 != null;
+            bool_5 |= model_10.field1587 != null;
+            bool_6 |= model_10.field1553 != null;
+            bool_7 |= model_10.field1562 != null;
+            bool_8 |= model_10.field1560 != null;
          }
       }
 
@@ -133,59 +133,59 @@ public class class121 extends class135 {
       this.field1555 = 0;
 
       for (i_9 = 0; i_9 < i_2; i_9++) {
-         class121_10 = arr_1[i_9];
-         if (class121_10 != null) {
+         model_10 = arr_1[i_9];
+         if (model_10 != null) {
             int i_11;
-            for (i_11 = 0; i_11 < class121_10.field1551; i_11++) {
-               if (bool_3 && class121_10.field1557 != null) {
-                  this.field1557[this.field1551] = class121_10.field1557[i_11];
+            for (i_11 = 0; i_11 < model_10.field1551; i_11++) {
+               if (bool_3 && model_10.field1557 != null) {
+                  this.field1557[this.field1551] = model_10.field1557[i_11];
                }
 
                if (bool_4) {
-                  if (class121_10.field1559 != null) {
-                     this.field1559[this.field1551] = class121_10.field1559[i_11];
+                  if (model_10.field1559 != null) {
+                     this.field1559[this.field1551] = model_10.field1559[i_11];
                   } else {
-                     this.field1559[this.field1551] = class121_10.field1563;
+                     this.field1559[this.field1551] = model_10.field1563;
                   }
                }
 
-               if (bool_5 && class121_10.field1587 != null) {
-                  this.field1587[this.field1551] = class121_10.field1587[i_11];
+               if (bool_5 && model_10.field1587 != null) {
+                  this.field1587[this.field1551] = model_10.field1587[i_11];
                }
 
-               if (bool_6 && class121_10.field1553 != null) {
-                  this.field1553[this.field1551] = class121_10.field1553[i_11];
+               if (bool_6 && model_10.field1553 != null) {
+                  this.field1553[this.field1551] = model_10.field1553[i_11];
                }
 
                if (bool_7) {
-                  if (class121_10.field1562 != null) {
-                     this.field1562[this.field1551] = class121_10.field1562[i_11];
+                  if (model_10.field1562 != null) {
+                     this.field1562[this.field1551] = model_10.field1562[i_11];
                   } else {
                      this.field1562[this.field1551] = -1;
                   }
                }
 
                if (bool_8) {
-                  if (class121_10.field1560 != null && class121_10.field1560[i_11] != -1) {
-                     this.field1560[this.field1551] = (byte)(this.field1555 + class121_10.field1560[i_11]);
+                  if (model_10.field1560 != null && model_10.field1560[i_11] != -1) {
+                     this.field1560[this.field1551] = (byte) (this.field1555 + model_10.field1560[i_11]);
                   } else {
                      this.field1560[this.field1551] = -1;
                   }
                }
 
-               this.field1561[this.field1551] = class121_10.field1561[i_11];
-               this.field1549[this.field1551] = this.method2816(class121_10, class121_10.field1549[i_11]);
-               this.field1583[this.field1551] = this.method2816(class121_10, class121_10.field1583[i_11]);
-               this.field1556[this.field1551] = this.method2816(class121_10, class121_10.field1556[i_11]);
+               this.field1561[this.field1551] = model_10.field1561[i_11];
+               this.field1549[this.field1551] = this.method2816(model_10, model_10.field1549[i_11]);
+               this.field1583[this.field1551] = this.method2816(model_10, model_10.field1583[i_11]);
+               this.field1556[this.field1551] = this.method2816(model_10, model_10.field1556[i_11]);
                ++this.field1551;
             }
 
-            for (i_11 = 0; i_11 < class121_10.field1555; i_11++) {
-               byte b_12 = this.field1565[this.field1555] = class121_10.field1565[i_11];
+            for (i_11 = 0; i_11 < model_10.field1555; i_11++) {
+               byte b_12 = this.field1565[this.field1555] = model_10.field1565[i_11];
                if (b_12 == 0) {
-                  this.field1566[this.field1555] = (short)this.method2816(class121_10, class121_10.field1566[i_11]);
-                  this.field1567[this.field1555] = (short)this.method2816(class121_10, class121_10.field1567[i_11]);
-                  this.field1568[this.field1555] = (short)this.method2816(class121_10, class121_10.field1568[i_11]);
+                  this.field1566[this.field1555] = (short) this.method2816(model_10, model_10.field1566[i_11]);
+                  this.field1567[this.field1555] = (short) this.method2816(model_10, model_10.field1567[i_11]);
+                  this.field1568[this.field1555] = (short) this.method2816(model_10, model_10.field1568[i_11]);
                }
 
                ++this.field1555;
@@ -195,7 +195,7 @@ public class class121 extends class135 {
 
    }
 
-   class121(byte[] bytes_1) {
+   Model(byte[] bytes_1) {
       if (bytes_1[bytes_1.length - 1] == -1 && bytes_1[bytes_1.length - 2] == -1) {
          this.method2770(bytes_1);
       } else {
@@ -204,68 +204,68 @@ public class class121 extends class135 {
 
    }
 
-   public class121(class121 class121_1, boolean bool_2, boolean bool_3, boolean bool_4, boolean bool_5) {
-      this.field1558 = class121_1.field1558;
-      this.field1551 = class121_1.field1551;
-      this.field1555 = class121_1.field1555;
+   public Model(Model model_1, boolean bool_2, boolean bool_3, boolean bool_4) {
+      this.field1558 = model_1.field1558;
+      this.field1551 = model_1.field1551;
+      this.field1555 = model_1.field1555;
       int i_6;
       if (bool_2) {
-         this.field1576 = class121_1.field1576;
-         this.field1550 = class121_1.field1550;
-         this.field1552 = class121_1.field1552;
+         this.field1576 = model_1.field1576;
+         this.field1550 = model_1.field1550;
+         this.field1552 = model_1.field1552;
       } else {
          this.field1576 = new int[this.field1558];
          this.field1550 = new int[this.field1558];
          this.field1552 = new int[this.field1558];
 
          for (i_6 = 0; i_6 < this.field1558; i_6++) {
-            this.field1576[i_6] = class121_1.field1576[i_6];
-            this.field1550[i_6] = class121_1.field1550[i_6];
-            this.field1552[i_6] = class121_1.field1552[i_6];
+            this.field1576[i_6] = model_1.field1576[i_6];
+            this.field1550[i_6] = model_1.field1550[i_6];
+            this.field1552[i_6] = model_1.field1552[i_6];
          }
       }
 
       if (bool_3) {
-         this.field1561 = class121_1.field1561;
+         this.field1561 = model_1.field1561;
       } else {
          this.field1561 = new short[this.field1551];
 
          for (i_6 = 0; i_6 < this.field1551; i_6++) {
-            this.field1561[i_6] = class121_1.field1561[i_6];
+            this.field1561[i_6] = model_1.field1561[i_6];
          }
       }
 
-      if (!bool_4 && class121_1.field1562 != null) {
+      if (!bool_4 && model_1.field1562 != null) {
          this.field1562 = new short[this.field1551];
 
          for (i_6 = 0; i_6 < this.field1551; i_6++) {
-            this.field1562[i_6] = class121_1.field1562[i_6];
+            this.field1562[i_6] = model_1.field1562[i_6];
          }
       } else {
-         this.field1562 = class121_1.field1562;
+         this.field1562 = model_1.field1562;
       }
 
-      this.field1587 = class121_1.field1587;
-      this.field1549 = class121_1.field1549;
-      this.field1583 = class121_1.field1583;
-      this.field1556 = class121_1.field1556;
-      this.field1557 = class121_1.field1557;
-      this.field1559 = class121_1.field1559;
-      this.field1560 = class121_1.field1560;
-      this.field1563 = class121_1.field1563;
-      this.field1565 = class121_1.field1565;
-      this.field1566 = class121_1.field1566;
-      this.field1567 = class121_1.field1567;
-      this.field1568 = class121_1.field1568;
-      this.field1569 = class121_1.field1569;
-      this.field1553 = class121_1.field1553;
-      this.field1571 = class121_1.field1571;
-      this.field1572 = class121_1.field1572;
-      this.field1574 = class121_1.field1574;
-      this.field1573 = class121_1.field1573;
-      this.field1581 = class121_1.field1581;
-      this.field1580 = class121_1.field1580;
-      this.field1577 = class121_1.field1577;
+      this.field1587 = model_1.field1587;
+      this.field1549 = model_1.field1549;
+      this.field1583 = model_1.field1583;
+      this.field1556 = model_1.field1556;
+      this.field1557 = model_1.field1557;
+      this.field1559 = model_1.field1559;
+      this.field1560 = model_1.field1560;
+      this.field1563 = model_1.field1563;
+      this.field1565 = model_1.field1565;
+      this.field1566 = model_1.field1566;
+      this.field1567 = model_1.field1567;
+      this.field1568 = model_1.field1568;
+      this.field1569 = model_1.field1569;
+      this.field1553 = model_1.field1553;
+      this.field1571 = model_1.field1571;
+      this.field1572 = model_1.field1572;
+      this.field1574 = model_1.field1574;
+      this.field1573 = model_1.field1573;
+      this.field1581 = model_1.field1581;
+      this.field1580 = model_1.field1580;
+      this.field1577 = model_1.field1577;
    }
 
    void method2789() {
@@ -391,44 +391,9 @@ public class class121 extends class135 {
       this.field1578 = false;
    }
 
-   public class121 method2775() {
-      class121 class121_1 = new class121();
-      if (this.field1557 != null) {
-         class121_1.field1557 = new byte[this.field1551];
-
-         for (int i_2 = 0; i_2 < this.field1551; i_2++) {
-            class121_1.field1557[i_2] = this.field1557[i_2];
-         }
-      }
-
-      class121_1.field1558 = this.field1558;
-      class121_1.field1551 = this.field1551;
-      class121_1.field1555 = this.field1555;
-      class121_1.field1576 = this.field1576;
-      class121_1.field1550 = this.field1550;
-      class121_1.field1552 = this.field1552;
-      class121_1.field1549 = this.field1549;
-      class121_1.field1583 = this.field1583;
-      class121_1.field1556 = this.field1556;
-      class121_1.field1559 = this.field1559;
-      class121_1.field1587 = this.field1587;
-      class121_1.field1560 = this.field1560;
-      class121_1.field1561 = this.field1561;
-      class121_1.field1562 = this.field1562;
-      class121_1.field1563 = this.field1563;
-      class121_1.field1565 = this.field1565;
-      class121_1.field1566 = this.field1566;
-      class121_1.field1567 = this.field1567;
-      class121_1.field1568 = this.field1568;
-      class121_1.field1569 = this.field1569;
-      class121_1.field1553 = this.field1553;
-      class121_1.field1571 = this.field1571;
-      class121_1.field1572 = this.field1572;
-      class121_1.field1574 = this.field1574;
-      class121_1.field1573 = this.field1573;
-      class121_1.field1580 = this.field1580;
-      class121_1.field1577 = this.field1577;
-      return class121_1;
+   public static Model method2769(class233 class233_0, int i_1, int i_2) {
+      byte[] bytes_3 = class233_0.method4144(i_1, i_2);
+      return bytes_3 == null ? null : new Model(bytes_3);
    }
 
    public void method2783(short s_1, short s_2) {
@@ -737,186 +702,88 @@ public class class121 extends class135 {
       }
    }
 
-   public final class127 method2802(int i_1, int i_2, int i_3, int i_4, int i_5) {
-      this.method2787();
-      int i_6 = (int)Math.sqrt((double)(i_5 * i_5 + i_3 * i_3 + i_4 * i_4));
-      int i_7 = i_6 * i_2 >> 8;
-      class127 class127_8 = new class127();
-      class127_8.field1697 = new int[this.field1551];
-      class127_8.field1684 = new int[this.field1551];
-      class127_8.field1685 = new int[this.field1551];
-      if (this.field1555 > 0 && this.field1560 != null) {
-         int[] ints_9 = new int[this.field1555];
+   static void method2790(Model model_0, Model model_1, int i_2, int i_3, int i_4, boolean bool_5) {
+      model_0.method2789();
+      model_0.method2787();
+      model_1.method2789();
+      model_1.method2787();
+      ++field1586;
+      int i_6 = 0;
+      int[] ints_7 = model_1.field1576;
+      int i_8 = model_1.field1558;
 
-         int i_10;
-         for (i_10 = 0; i_10 < this.field1551; i_10++) {
-            if (this.field1560[i_10] != -1) {
-               ++ints_9[this.field1560[i_10] & 0xff];
-            }
-         }
+      int i_9;
+      for (i_9 = 0; i_9 < model_0.field1558; i_9++) {
+         class129 class129_10 = model_0.field1574[i_9];
+         if (class129_10.field1761 != 0) {
+            int i_11 = model_0.field1550[i_9] - i_3;
+            if (i_11 <= model_1.field1579) {
+               int i_12 = model_0.field1576[i_9] - i_2;
+               if (i_12 >= model_1.field1575 && i_12 <= model_1.field1564) {
+                  int i_13 = model_0.field1552[i_9] - i_4;
+                  if (i_13 >= model_1.field1554 && i_13 <= model_1.field1582) {
+                     for (int i_14 = 0; i_14 < i_8; i_14++) {
+                        class129 class129_15 = model_1.field1574[i_14];
+                        if (i_12 == ints_7[i_14] && i_13 == model_1.field1552[i_14] && i_11 == model_1.field1550[i_14] && class129_15.field1761 != 0) {
+                           if (model_0.field1581 == null) {
+                              model_0.field1581 = new class129[model_0.field1558];
+                           }
 
-         class127_8.field1691 = 0;
+                           if (model_1.field1581 == null) {
+                              model_1.field1581 = new class129[i_8];
+                           }
 
-         for (i_10 = 0; i_10 < this.field1555; i_10++) {
-            if (ints_9[i_10] > 0 && this.field1565[i_10] == 0) {
-               ++class127_8.field1691;
-            }
-         }
+                           class129 class129_16 = model_0.field1581[i_9];
+                           if (class129_16 == null) {
+                              class129_16 = model_0.field1581[i_9] = new class129(class129_10);
+                           }
 
-         class127_8.field1692 = new int[class127_8.field1691];
-         class127_8.field1693 = new int[class127_8.field1691];
-         class127_8.field1694 = new int[class127_8.field1691];
-         i_10 = 0;
+                           class129 class129_17 = model_1.field1581[i_14];
+                           if (class129_17 == null) {
+                              class129_17 = model_1.field1581[i_14] = new class129(class129_15);
+                           }
 
-         int i_11;
-         for (i_11 = 0; i_11 < this.field1555; i_11++) {
-            if (ints_9[i_11] > 0 && this.field1565[i_11] == 0) {
-               class127_8.field1692[i_10] = this.field1566[i_11] & 0xffff;
-               class127_8.field1693[i_10] = this.field1567[i_11] & 0xffff;
-               class127_8.field1694[i_10] = this.field1568[i_11] & 0xffff;
-               ints_9[i_11] = i_10++;
-            } else {
-               ints_9[i_11] = -1;
-            }
-         }
-
-         class127_8.field1688 = new byte[this.field1551];
-
-         for (i_11 = 0; i_11 < this.field1551; i_11++) {
-            if (this.field1560[i_11] != -1) {
-               class127_8.field1688[i_11] = (byte)ints_9[this.field1560[i_11] & 0xff];
-            } else {
-               class127_8.field1688[i_11] = -1;
+                           class129_16.field1759 += class129_15.field1759;
+                           class129_16.field1760 += class129_15.field1760;
+                           class129_16.field1758 += class129_15.field1758;
+                           class129_16.field1761 += class129_15.field1761;
+                           class129_17.field1759 += class129_10.field1759;
+                           class129_17.field1760 += class129_10.field1760;
+                           class129_17.field1758 += class129_10.field1758;
+                           class129_17.field1761 += class129_10.field1761;
+                           ++i_6;
+                           field1584[i_9] = field1586;
+                           field1585[i_14] = field1586;
+                        }
+                     }
+                  }
+               }
             }
          }
       }
 
-      for (int i_16 = 0; i_16 < this.field1551; i_16++) {
-         byte b_17;
-         if (this.field1557 == null) {
-            b_17 = 0;
-         } else {
-            b_17 = this.field1557[i_16];
-         }
-
-         byte b_18;
-         if (this.field1587 == null) {
-            b_18 = 0;
-         } else {
-            b_18 = this.field1587[i_16];
-         }
-
-         short s_12;
-         if (this.field1562 == null) {
-            s_12 = -1;
-         } else {
-            s_12 = this.field1562[i_16];
-         }
-
-         if (b_18 == -2) {
-            b_17 = 3;
-         }
-
-         if (b_18 == -1) {
-            b_17 = 2;
-         }
-
-         class129 class129_13;
-         int i_14;
-         class137 class137_19;
-         if (s_12 == -1) {
-            if (b_17 != 0) {
-               if (b_17 == 1) {
-                  class137_19 = this.field1573[i_16];
-                  i_14 = (i_4 * class137_19.field1890 + i_5 * class137_19.field1888 + i_3 * class137_19.field1889) / (i_7 / 2 + i_7) + i_1;
-                  class127_8.field1697[i_16] = method2792(this.field1561[i_16] & 0xffff, i_14);
-                  class127_8.field1685[i_16] = -1;
-               } else if (b_17 == 3) {
-                  class127_8.field1697[i_16] = 128;
-                  class127_8.field1685[i_16] = -1;
-               } else {
-                  class127_8.field1685[i_16] = -2;
-               }
-            } else {
-               int i_15 = this.field1561[i_16] & 0xffff;
-               if (this.field1581 != null && this.field1581[this.field1549[i_16]] != null) {
-                  class129_13 = this.field1581[this.field1549[i_16]];
-               } else {
-                  class129_13 = this.field1574[this.field1549[i_16]];
+      if (i_6 >= 3 && bool_5) {
+         for (i_9 = 0; i_9 < model_0.field1551; i_9++) {
+            if (field1584[model_0.field1549[i_9]] == field1586 && field1584[model_0.field1583[i_9]] == field1586 && field1584[model_0.field1556[i_9]] == field1586) {
+               if (model_0.field1557 == null) {
+                  model_0.field1557 = new byte[model_0.field1551];
                }
 
-               i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
-               class127_8.field1697[i_16] = method2792(i_15, i_14);
-               if (this.field1581 != null && this.field1581[this.field1583[i_16]] != null) {
-                  class129_13 = this.field1581[this.field1583[i_16]];
-               } else {
-                  class129_13 = this.field1574[this.field1583[i_16]];
-               }
-
-               i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
-               class127_8.field1684[i_16] = method2792(i_15, i_14);
-               if (this.field1581 != null && this.field1581[this.field1556[i_16]] != null) {
-                  class129_13 = this.field1581[this.field1556[i_16]];
-               } else {
-                  class129_13 = this.field1574[this.field1556[i_16]];
-               }
-
-               i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
-               class127_8.field1685[i_16] = method2792(i_15, i_14);
+               model_0.field1557[i_9] = 2;
             }
-         } else if (b_17 != 0) {
-            if (b_17 == 1) {
-               class137_19 = this.field1573[i_16];
-               i_14 = (i_4 * class137_19.field1890 + i_5 * class137_19.field1888 + i_3 * class137_19.field1889) / (i_7 / 2 + i_7) + i_1;
-               class127_8.field1697[i_16] = method2818(i_14);
-               class127_8.field1685[i_16] = -1;
-            } else {
-               class127_8.field1685[i_16] = -2;
-            }
-         } else {
-            if (this.field1581 != null && this.field1581[this.field1549[i_16]] != null) {
-               class129_13 = this.field1581[this.field1549[i_16]];
-            } else {
-               class129_13 = this.field1574[this.field1549[i_16]];
-            }
-
-            i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
-            class127_8.field1697[i_16] = method2818(i_14);
-            if (this.field1581 != null && this.field1581[this.field1583[i_16]] != null) {
-               class129_13 = this.field1581[this.field1583[i_16]];
-            } else {
-               class129_13 = this.field1574[this.field1583[i_16]];
-            }
-
-            i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
-            class127_8.field1684[i_16] = method2818(i_14);
-            if (this.field1581 != null && this.field1581[this.field1556[i_16]] != null) {
-               class129_13 = this.field1581[this.field1556[i_16]];
-            } else {
-               class129_13 = this.field1574[this.field1556[i_16]];
-            }
-
-            i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
-            class127_8.field1685[i_16] = method2818(i_14);
          }
+
+         for (i_9 = 0; i_9 < model_1.field1551; i_9++) {
+            if (field1586 == field1585[model_1.field1549[i_9]] && field1586 == field1585[model_1.field1583[i_9]] && field1586 == field1585[model_1.field1556[i_9]]) {
+               if (model_1.field1557 == null) {
+                  model_1.field1557 = new byte[model_1.field1551];
+               }
+
+               model_1.field1557[i_9] = 2;
+            }
+         }
+
       }
-
-      this.method2777();
-      class127_8.field1675 = this.field1558;
-      class127_8.field1676 = this.field1576;
-      class127_8.field1677 = this.field1550;
-      class127_8.field1678 = this.field1552;
-      class127_8.field1679 = this.field1551;
-      class127_8.field1680 = this.field1549;
-      class127_8.field1681 = this.field1583;
-      class127_8.field1682 = this.field1556;
-      class127_8.field1712 = this.field1559;
-      class127_8.field1687 = this.field1587;
-      class127_8.field1690 = this.field1563;
-      class127_8.field1695 = this.field1571;
-      class127_8.field1709 = this.field1572;
-      class127_8.field1689 = this.field1562;
-      return class127_8;
    }
 
    void method2770(byte[] bytes_1) {
@@ -1224,94 +1091,44 @@ public class class121 extends class135 {
 
    }
 
-   public class121 method2776(int[][] ints_1, int i_2, int i_3, int i_4, boolean bool_5, int i_6) {
-      this.method2789();
-      int i_7 = i_2 + this.field1575;
-      int i_8 = i_2 + this.field1564;
-      int i_9 = i_4 + this.field1554;
-      int i_10 = i_4 + this.field1582;
-      if (i_7 >= 0 && i_8 + 128 >> 7 < ints_1.length && i_9 >= 0 && i_10 + 128 >> 7 < ints_1[0].length) {
-         i_7 >>= 7;
-         i_8 = i_8 + 127 >> 7;
-         i_9 >>= 7;
-         i_10 = i_10 + 127 >> 7;
-         if (i_3 == ints_1[i_7][i_9] && i_3 == ints_1[i_8][i_9] && i_3 == ints_1[i_7][i_10] && i_3 == ints_1[i_8][i_10]) {
-            return this;
-         } else {
-            class121 class121_11 = new class121();
-            class121_11.field1558 = this.field1558;
-            class121_11.field1551 = this.field1551;
-            class121_11.field1555 = this.field1555;
-            class121_11.field1576 = this.field1576;
-            class121_11.field1552 = this.field1552;
-            class121_11.field1549 = this.field1549;
-            class121_11.field1583 = this.field1583;
-            class121_11.field1556 = this.field1556;
-            class121_11.field1557 = this.field1557;
-            class121_11.field1559 = this.field1559;
-            class121_11.field1587 = this.field1587;
-            class121_11.field1560 = this.field1560;
-            class121_11.field1561 = this.field1561;
-            class121_11.field1562 = this.field1562;
-            class121_11.field1563 = this.field1563;
-            class121_11.field1565 = this.field1565;
-            class121_11.field1566 = this.field1566;
-            class121_11.field1567 = this.field1567;
-            class121_11.field1568 = this.field1568;
-            class121_11.field1569 = this.field1569;
-            class121_11.field1553 = this.field1553;
-            class121_11.field1571 = this.field1571;
-            class121_11.field1572 = this.field1572;
-            class121_11.field1580 = this.field1580;
-            class121_11.field1577 = this.field1577;
-            class121_11.field1550 = new int[class121_11.field1558];
-            int i_12;
-            int i_13;
-            int i_14;
-            int i_15;
-            int i_16;
-            int i_17;
-            int i_18;
-            int i_19;
-            int i_20;
-            int i_21;
-            if (i_6 == 0) {
-               for (i_12 = 0; i_12 < class121_11.field1558; i_12++) {
-                  i_13 = i_2 + this.field1576[i_12];
-                  i_14 = i_4 + this.field1552[i_12];
-                  i_15 = i_13 & 0x7f;
-                  i_16 = i_14 & 0x7f;
-                  i_17 = i_13 >> 7;
-                  i_18 = i_14 >> 7;
-                  i_19 = ints_1[i_17][i_18] * (128 - i_15) + ints_1[i_17 + 1][i_18] * i_15 >> 7;
-                  i_20 = ints_1[i_17][i_18 + 1] * (128 - i_15) + i_15 * ints_1[i_17 + 1][i_18 + 1] >> 7;
-                  i_21 = i_19 * (128 - i_16) + i_20 * i_16 >> 7;
-                  class121_11.field1550[i_12] = i_21 + this.field1550[i_12] - i_3;
-               }
-            } else {
-               for (i_12 = 0; i_12 < class121_11.field1558; i_12++) {
-                  i_13 = (-this.field1550[i_12] << 16) / super.field1873;
-                  if (i_13 < i_6) {
-                     i_14 = i_2 + this.field1576[i_12];
-                     i_15 = i_4 + this.field1552[i_12];
-                     i_16 = i_14 & 0x7f;
-                     i_17 = i_15 & 0x7f;
-                     i_18 = i_14 >> 7;
-                     i_19 = i_15 >> 7;
-                     i_20 = ints_1[i_18][i_19] * (128 - i_16) + ints_1[i_18 + 1][i_19] * i_16 >> 7;
-                     i_21 = ints_1[i_18][i_19 + 1] * (128 - i_16) + i_16 * ints_1[i_18 + 1][i_19 + 1] >> 7;
-                     int i_22 = i_20 * (128 - i_17) + i_21 * i_17 >> 7;
-                     class121_11.field1550[i_12] = (i_6 - i_13) * (i_22 - i_3) / i_6 + this.field1550[i_12];
-                  }
-               }
-            }
+   public Model method2775() {
+      Model model_1 = new Model();
+      if (this.field1557 != null) {
+         model_1.field1557 = new byte[this.field1551];
 
-            class121_11.method2788();
-            return class121_11;
+         for (int i_2 = 0; i_2 < this.field1551; i_2++) {
+            model_1.field1557[i_2] = this.field1557[i_2];
          }
-      } else {
-         return this;
       }
+
+      model_1.field1558 = this.field1558;
+      model_1.field1551 = this.field1551;
+      model_1.field1555 = this.field1555;
+      model_1.field1576 = this.field1576;
+      model_1.field1550 = this.field1550;
+      model_1.field1552 = this.field1552;
+      model_1.field1549 = this.field1549;
+      model_1.field1583 = this.field1583;
+      model_1.field1556 = this.field1556;
+      model_1.field1559 = this.field1559;
+      model_1.field1587 = this.field1587;
+      model_1.field1560 = this.field1560;
+      model_1.field1561 = this.field1561;
+      model_1.field1562 = this.field1562;
+      model_1.field1563 = this.field1563;
+      model_1.field1565 = this.field1565;
+      model_1.field1566 = this.field1566;
+      model_1.field1567 = this.field1567;
+      model_1.field1568 = this.field1568;
+      model_1.field1569 = this.field1569;
+      model_1.field1553 = this.field1553;
+      model_1.field1571 = this.field1571;
+      model_1.field1572 = this.field1572;
+      model_1.field1574 = this.field1574;
+      model_1.field1573 = this.field1573;
+      model_1.field1580 = this.field1580;
+      model_1.field1577 = this.field1577;
+      return model_1;
    }
 
    public void method2782(int i_1, int i_2, int i_3) {
@@ -1440,11 +1257,283 @@ public class class121 extends class135 {
       this.method2788();
    }
 
-   final int method2816(class121 class121_1, int i_2) {
+   public final class127 applyLighting(int i_1, int i_2, int i_3, int i_4, int i_5) {
+      this.method2787();
+      int i_6 = (int) Math.sqrt((double) (i_5 * i_5 + i_3 * i_3 + i_4 * i_4));
+      int i_7 = i_6 * i_2 >> 8;
+      class127 class127_8 = new class127();
+      class127_8.field1697 = new int[this.field1551];
+      class127_8.field1684 = new int[this.field1551];
+      class127_8.field1685 = new int[this.field1551];
+      if (this.field1555 > 0 && this.field1560 != null) {
+         int[] ints_9 = new int[this.field1555];
+
+         int i_10;
+         for (i_10 = 0; i_10 < this.field1551; i_10++) {
+            if (this.field1560[i_10] != -1) {
+               ++ints_9[this.field1560[i_10] & 0xff];
+            }
+         }
+
+         class127_8.field1691 = 0;
+
+         for (i_10 = 0; i_10 < this.field1555; i_10++) {
+            if (ints_9[i_10] > 0 && this.field1565[i_10] == 0) {
+               ++class127_8.field1691;
+            }
+         }
+
+         class127_8.field1692 = new int[class127_8.field1691];
+         class127_8.field1693 = new int[class127_8.field1691];
+         class127_8.field1694 = new int[class127_8.field1691];
+         i_10 = 0;
+
+         int i_11;
+         for (i_11 = 0; i_11 < this.field1555; i_11++) {
+            if (ints_9[i_11] > 0 && this.field1565[i_11] == 0) {
+               class127_8.field1692[i_10] = this.field1566[i_11] & 0xffff;
+               class127_8.field1693[i_10] = this.field1567[i_11] & 0xffff;
+               class127_8.field1694[i_10] = this.field1568[i_11] & 0xffff;
+               ints_9[i_11] = i_10++;
+            } else {
+               ints_9[i_11] = -1;
+            }
+         }
+
+         class127_8.field1688 = new byte[this.field1551];
+
+         for (i_11 = 0; i_11 < this.field1551; i_11++) {
+            if (this.field1560[i_11] != -1) {
+               class127_8.field1688[i_11] = (byte) ints_9[this.field1560[i_11] & 0xff];
+            } else {
+               class127_8.field1688[i_11] = -1;
+            }
+         }
+      }
+
+      for (int i_16 = 0; i_16 < this.field1551; i_16++) {
+         byte b_17;
+         if (this.field1557 == null) {
+            b_17 = 0;
+         } else {
+            b_17 = this.field1557[i_16];
+         }
+
+         byte b_18;
+         if (this.field1587 == null) {
+            b_18 = 0;
+         } else {
+            b_18 = this.field1587[i_16];
+         }
+
+         short s_12;
+         if (this.field1562 == null) {
+            s_12 = -1;
+         } else {
+            s_12 = this.field1562[i_16];
+         }
+
+         if (b_18 == -2) {
+            b_17 = 3;
+         }
+
+         if (b_18 == -1) {
+            b_17 = 2;
+         }
+
+         class129 class129_13;
+         int i_14;
+         class137 class137_19;
+         if (s_12 == -1) {
+            if (b_17 != 0) {
+               if (b_17 == 1) {
+                  class137_19 = this.field1573[i_16];
+                  i_14 = (i_4 * class137_19.field1890 + i_5 * class137_19.field1888 + i_3 * class137_19.field1889) / (i_7 / 2 + i_7) + i_1;
+                  class127_8.field1697[i_16] = method2792(this.field1561[i_16] & 0xffff, i_14);
+                  class127_8.field1685[i_16] = -1;
+               } else if (b_17 == 3) {
+                  class127_8.field1697[i_16] = 128;
+                  class127_8.field1685[i_16] = -1;
+               } else {
+                  class127_8.field1685[i_16] = -2;
+               }
+            } else {
+               int i_15 = this.field1561[i_16] & 0xffff;
+               if (this.field1581 != null && this.field1581[this.field1549[i_16]] != null) {
+                  class129_13 = this.field1581[this.field1549[i_16]];
+               } else {
+                  class129_13 = this.field1574[this.field1549[i_16]];
+               }
+
+               i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
+               class127_8.field1697[i_16] = method2792(i_15, i_14);
+               if (this.field1581 != null && this.field1581[this.field1583[i_16]] != null) {
+                  class129_13 = this.field1581[this.field1583[i_16]];
+               } else {
+                  class129_13 = this.field1574[this.field1583[i_16]];
+               }
+
+               i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
+               class127_8.field1684[i_16] = method2792(i_15, i_14);
+               if (this.field1581 != null && this.field1581[this.field1556[i_16]] != null) {
+                  class129_13 = this.field1581[this.field1556[i_16]];
+               } else {
+                  class129_13 = this.field1574[this.field1556[i_16]];
+               }
+
+               i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
+               class127_8.field1685[i_16] = method2792(i_15, i_14);
+            }
+         } else if (b_17 != 0) {
+            if (b_17 == 1) {
+               class137_19 = this.field1573[i_16];
+               i_14 = (i_4 * class137_19.field1890 + i_5 * class137_19.field1888 + i_3 * class137_19.field1889) / (i_7 / 2 + i_7) + i_1;
+               class127_8.field1697[i_16] = method2818(i_14);
+               class127_8.field1685[i_16] = -1;
+            } else {
+               class127_8.field1685[i_16] = -2;
+            }
+         } else {
+            if (this.field1581 != null && this.field1581[this.field1549[i_16]] != null) {
+               class129_13 = this.field1581[this.field1549[i_16]];
+            } else {
+               class129_13 = this.field1574[this.field1549[i_16]];
+            }
+
+            i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
+            class127_8.field1697[i_16] = method2818(i_14);
+            if (this.field1581 != null && this.field1581[this.field1583[i_16]] != null) {
+               class129_13 = this.field1581[this.field1583[i_16]];
+            } else {
+               class129_13 = this.field1574[this.field1583[i_16]];
+            }
+
+            i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
+            class127_8.field1684[i_16] = method2818(i_14);
+            if (this.field1581 != null && this.field1581[this.field1556[i_16]] != null) {
+               class129_13 = this.field1581[this.field1556[i_16]];
+            } else {
+               class129_13 = this.field1574[this.field1556[i_16]];
+            }
+
+            i_14 = (i_4 * class129_13.field1760 + i_5 * class129_13.field1758 + i_3 * class129_13.field1759) / (i_7 * class129_13.field1761) + i_1;
+            class127_8.field1685[i_16] = method2818(i_14);
+         }
+      }
+
+      this.method2777();
+      class127_8.field1675 = this.field1558;
+      class127_8.field1676 = this.field1576;
+      class127_8.field1677 = this.field1550;
+      class127_8.field1678 = this.field1552;
+      class127_8.field1679 = this.field1551;
+      class127_8.field1680 = this.field1549;
+      class127_8.field1681 = this.field1583;
+      class127_8.field1682 = this.field1556;
+      class127_8.field1712 = this.field1559;
+      class127_8.field1687 = this.field1587;
+      class127_8.field1690 = this.field1563;
+      class127_8.field1695 = this.field1571;
+      class127_8.field1709 = this.field1572;
+      class127_8.field1689 = this.field1562;
+      return class127_8;
+   }
+
+   public Model method2776(int[][] ints_1, int i_2, int i_3, int i_4, int i_6) {
+      this.method2789();
+      int i_7 = i_2 + this.field1575;
+      int i_8 = i_2 + this.field1564;
+      int i_9 = i_4 + this.field1554;
+      int i_10 = i_4 + this.field1582;
+      if (i_7 >= 0 && i_8 + 128 >> 7 < ints_1.length && i_9 >= 0 && i_10 + 128 >> 7 < ints_1[0].length) {
+         i_7 >>= 7;
+         i_8 = i_8 + 127 >> 7;
+         i_9 >>= 7;
+         i_10 = i_10 + 127 >> 7;
+         if (i_3 == ints_1[i_7][i_9] && i_3 == ints_1[i_8][i_9] && i_3 == ints_1[i_7][i_10] && i_3 == ints_1[i_8][i_10]) {
+            return this;
+         } else {
+            Model model_11 = new Model();
+            model_11.field1558 = this.field1558;
+            model_11.field1551 = this.field1551;
+            model_11.field1555 = this.field1555;
+            model_11.field1576 = this.field1576;
+            model_11.field1552 = this.field1552;
+            model_11.field1549 = this.field1549;
+            model_11.field1583 = this.field1583;
+            model_11.field1556 = this.field1556;
+            model_11.field1557 = this.field1557;
+            model_11.field1559 = this.field1559;
+            model_11.field1587 = this.field1587;
+            model_11.field1560 = this.field1560;
+            model_11.field1561 = this.field1561;
+            model_11.field1562 = this.field1562;
+            model_11.field1563 = this.field1563;
+            model_11.field1565 = this.field1565;
+            model_11.field1566 = this.field1566;
+            model_11.field1567 = this.field1567;
+            model_11.field1568 = this.field1568;
+            model_11.field1569 = this.field1569;
+            model_11.field1553 = this.field1553;
+            model_11.field1571 = this.field1571;
+            model_11.field1572 = this.field1572;
+            model_11.field1580 = this.field1580;
+            model_11.field1577 = this.field1577;
+            model_11.field1550 = new int[model_11.field1558];
+            int i_12;
+            int i_13;
+            int i_14;
+            int i_15;
+            int i_16;
+            int i_17;
+            int i_18;
+            int i_19;
+            int i_20;
+            int i_21;
+            if (i_6 == 0) {
+               for (i_12 = 0; i_12 < model_11.field1558; i_12++) {
+                  i_13 = i_2 + this.field1576[i_12];
+                  i_14 = i_4 + this.field1552[i_12];
+                  i_15 = i_13 & 0x7f;
+                  i_16 = i_14 & 0x7f;
+                  i_17 = i_13 >> 7;
+                  i_18 = i_14 >> 7;
+                  i_19 = ints_1[i_17][i_18] * (128 - i_15) + ints_1[i_17 + 1][i_18] * i_15 >> 7;
+                  i_20 = ints_1[i_17][i_18 + 1] * (128 - i_15) + i_15 * ints_1[i_17 + 1][i_18 + 1] >> 7;
+                  i_21 = i_19 * (128 - i_16) + i_20 * i_16 >> 7;
+                  model_11.field1550[i_12] = i_21 + this.field1550[i_12] - i_3;
+               }
+            } else {
+               for (i_12 = 0; i_12 < model_11.field1558; i_12++) {
+                  i_13 = (-this.field1550[i_12] << 16) / super.field1873;
+                  if (i_13 < i_6) {
+                     i_14 = i_2 + this.field1576[i_12];
+                     i_15 = i_4 + this.field1552[i_12];
+                     i_16 = i_14 & 0x7f;
+                     i_17 = i_15 & 0x7f;
+                     i_18 = i_14 >> 7;
+                     i_19 = i_15 >> 7;
+                     i_20 = ints_1[i_18][i_19] * (128 - i_16) + ints_1[i_18 + 1][i_19] * i_16 >> 7;
+                     i_21 = ints_1[i_18][i_19 + 1] * (128 - i_16) + i_16 * ints_1[i_18 + 1][i_19 + 1] >> 7;
+                     int i_22 = i_20 * (128 - i_17) + i_21 * i_17 >> 7;
+                     model_11.field1550[i_12] = (i_6 - i_13) * (i_22 - i_3) / i_6 + this.field1550[i_12];
+                  }
+               }
+            }
+
+            model_11.method2788();
+            return model_11;
+         }
+      } else {
+         return this;
+      }
+   }
+
+   final int method2816(Model model_1, int i_2) {
       int i_3 = -1;
-      int i_4 = class121_1.field1576[i_2];
-      int i_5 = class121_1.field1550[i_2];
-      int i_6 = class121_1.field1552[i_2];
+      int i_4 = model_1.field1576[i_2];
+      int i_5 = model_1.field1550[i_2];
+      int i_6 = model_1.field1552[i_2];
 
       for (int i_7 = 0; i_7 < this.field1558; i_7++) {
          if (i_4 == this.field1576[i_7] && i_5 == this.field1550[i_7] && i_6 == this.field1552[i_7]) {
@@ -1457,103 +1546,14 @@ public class class121 extends class135 {
          this.field1576[this.field1558] = i_4;
          this.field1550[this.field1558] = i_5;
          this.field1552[this.field1558] = i_6;
-         if (class121_1.field1569 != null) {
-            this.field1569[this.field1558] = class121_1.field1569[i_2];
+         if (model_1.field1569 != null) {
+            this.field1569[this.field1558] = model_1.field1569[i_2];
          }
 
          i_3 = this.field1558++;
       }
 
       return i_3;
-   }
-
-   public static class121 method2769(class233 class233_0, int i_1, int i_2) {
-      byte[] bytes_3 = class233_0.method4144(i_1, i_2);
-      return bytes_3 == null ? null : new class121(bytes_3);
-   }
-
-   static void method2790(class121 class121_0, class121 class121_1, int i_2, int i_3, int i_4, boolean bool_5) {
-      class121_0.method2789();
-      class121_0.method2787();
-      class121_1.method2789();
-      class121_1.method2787();
-      ++field1586;
-      int i_6 = 0;
-      int[] ints_7 = class121_1.field1576;
-      int i_8 = class121_1.field1558;
-
-      int i_9;
-      for (i_9 = 0; i_9 < class121_0.field1558; i_9++) {
-         class129 class129_10 = class121_0.field1574[i_9];
-         if (class129_10.field1761 != 0) {
-            int i_11 = class121_0.field1550[i_9] - i_3;
-            if (i_11 <= class121_1.field1579) {
-               int i_12 = class121_0.field1576[i_9] - i_2;
-               if (i_12 >= class121_1.field1575 && i_12 <= class121_1.field1564) {
-                  int i_13 = class121_0.field1552[i_9] - i_4;
-                  if (i_13 >= class121_1.field1554 && i_13 <= class121_1.field1582) {
-                     for (int i_14 = 0; i_14 < i_8; i_14++) {
-                        class129 class129_15 = class121_1.field1574[i_14];
-                        if (i_12 == ints_7[i_14] && i_13 == class121_1.field1552[i_14] && i_11 == class121_1.field1550[i_14] && class129_15.field1761 != 0) {
-                           if (class121_0.field1581 == null) {
-                              class121_0.field1581 = new class129[class121_0.field1558];
-                           }
-
-                           if (class121_1.field1581 == null) {
-                              class121_1.field1581 = new class129[i_8];
-                           }
-
-                           class129 class129_16 = class121_0.field1581[i_9];
-                           if (class129_16 == null) {
-                              class129_16 = class121_0.field1581[i_9] = new class129(class129_10);
-                           }
-
-                           class129 class129_17 = class121_1.field1581[i_14];
-                           if (class129_17 == null) {
-                              class129_17 = class121_1.field1581[i_14] = new class129(class129_15);
-                           }
-
-                           class129_16.field1759 += class129_15.field1759;
-                           class129_16.field1760 += class129_15.field1760;
-                           class129_16.field1758 += class129_15.field1758;
-                           class129_16.field1761 += class129_15.field1761;
-                           class129_17.field1759 += class129_10.field1759;
-                           class129_17.field1760 += class129_10.field1760;
-                           class129_17.field1758 += class129_10.field1758;
-                           class129_17.field1761 += class129_10.field1761;
-                           ++i_6;
-                           field1584[i_9] = field1586;
-                           field1585[i_14] = field1586;
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      }
-
-      if (i_6 >= 3 && bool_5) {
-         for (i_9 = 0; i_9 < class121_0.field1551; i_9++) {
-            if (field1584[class121_0.field1549[i_9]] == field1586 && field1584[class121_0.field1583[i_9]] == field1586 && field1584[class121_0.field1556[i_9]] == field1586) {
-               if (class121_0.field1557 == null) {
-                  class121_0.field1557 = new byte[class121_0.field1551];
-               }
-
-               class121_0.field1557[i_9] = 2;
-            }
-         }
-
-         for (i_9 = 0; i_9 < class121_1.field1551; i_9++) {
-            if (field1586 == field1585[class121_1.field1549[i_9]] && field1586 == field1585[class121_1.field1583[i_9]] && field1586 == field1585[class121_1.field1556[i_9]]) {
-               if (class121_1.field1557 == null) {
-                  class121_1.field1557 = new byte[class121_1.field1551];
-               }
-
-               class121_1.field1557[i_9] = 2;
-            }
-         }
-
-      }
    }
 
    static final int method2818(int i_0) {

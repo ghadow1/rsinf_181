@@ -16,17 +16,17 @@ public class class31 {
       stringbuilder_10000 = stringbuilder_10000.append("Please remove ").append(string_0);
       obj_10001 = null;
       String string_2 = stringbuilder_10000.append(" from your friend list first").toString();
-      class62.method1132(30, "", string_2, -2136270955);
+      class62.method1132(30, "", string_2);
    }
 
    static void method542(int i_0) {
       if (Client.field810) {
-         class217 class217_1 = Client.method1649(class41.field359, Client.field848, -970013539);
+         class217 class217_1 = Client.method1649(class41.field359, Client.field848);
          if (class217_1 != null && class217_1.field2662 != null) {
             class62 class62_2 = new class62();
             class62_2.field575 = class217_1;
             class62_2.field581 = class217_1.field2662;
-            class184.method3613(class62_2, (byte) 11);
+            class184.method3613(class62_2);
          }
 
          Client.field810 = false;
@@ -54,7 +54,7 @@ public class class31 {
                class62_6 = new class62();
                class62_6.field575 = class217_4;
                class62_6.field581 = class217_4.field2677;
-               class184.method3613(class62_6, (byte) -108);
+               class184.method3613(class62_6);
             }
 
             if (i_1 == 1 && class217_4.field2678 != null) {
@@ -68,7 +68,7 @@ public class class31 {
                class62_6 = new class62();
                class62_6.field575 = class217_4;
                class62_6.field581 = class217_4.field2678;
-               class184.method3613(class62_6, (byte) -70);
+               class184.method3613(class62_6);
             }
          }
       }
@@ -98,7 +98,7 @@ public class class31 {
             class70.field1014 -= 2;
             i_4 = class76.field1098[class70.field1014];
             i_5 = class76.field1098[class70.field1014 + 1];
-            class76.field1098[++class70.field1014 - 1] = class342.method6528(i_4, i_5, -1560259071);
+            class76.field1098[++class70.field1014 - 1] = class342.method6528(i_4, i_5);
             return 1;
          } else if (i_0 == 3304) {
             i_4 = class76.field1098[--class70.field1014];
@@ -155,7 +155,7 @@ public class class31 {
                class70.field1014 -= 2;
                i_4 = class76.field1098[class70.field1014] + 32768;
                i_5 = class76.field1098[class70.field1014 + 1];
-               class76.field1098[++class70.field1014 - 1] = class342.method6528(i_4, i_5, 736449403);
+               class76.field1098[++class70.field1014 - 1] = class342.method6528(i_4, i_5);
                return 1;
             } else if (i_0 == 3316) {
                if (Client.field890 >= 2) {

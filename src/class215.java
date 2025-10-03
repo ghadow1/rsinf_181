@@ -40,12 +40,12 @@ public class class215 {
       }
    }
 
-   static final void method4022(int i_0) {
+   static final void method4022() {
       class133.field1848 = false;
       Client.field656 = false;
    }
 
-   public static class324 method4021(class233 class233_0, String string_1, String string_2, int i_3) {
+   public static class324 method4021(class233 class233_0, String string_1, String string_2) {
       int i_4 = class233_0.method4160(string_1);
       int i_5 = class233_0.method4161(i_4, string_2);
       return Buffer_3.method5474(class233_0, i_4, i_5);

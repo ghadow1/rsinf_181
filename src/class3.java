@@ -19,20 +19,20 @@ public class class3 implements UnknownT {
       return this.field11;
    }
 
-   public Object method34(ByteBuffer class300_1, int i_2) {
+   public Object method34(ByteBuffer class300_1) {
       return this.field13.vmethod42(class300_1, -408972538);
    }
 
-   public static int method38(CharSequence charsequence_0, byte b_1) {
+   public static int method38(CharSequence charsequence_0) {
       return class33.method554(charsequence_0, 10);
    }
 
    public static void method30(Object object_0, ByteBuffer class300_1, byte b_2) {
-      class0 class0_3 = method31(object_0.getClass(), -961366401);
+      class0 class0_3 = method31(object_0.getClass());
       class0_3.vmethod43(object_0, class300_1, 1977897097);
    }
 
-   static class0 method31(Class class_0, int i_1) {
+   static class0 method31(Class class_0) {
       class3[] arr_3 = new class3[] {field9, field14, field7};
       class3[] arr_4 = arr_3;
       int i_5 = 0;
@@ -60,7 +60,7 @@ public class class3 implements UnknownT {
       }
    }
 
-   static final void method37(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5) {
+   static final void method37(int i_0, int i_1, int i_2, int i_3, int i_4) {
       long long_6 = class5.field22.method3130(i_0, i_1, i_2);
       int i_8;
       int i_9;
@@ -86,7 +86,7 @@ public class class3 implements UnknownT {
          int[] ints_20 = class174.field2102.field3908;
          i_27 = i_1 * 4 + (103 - i_2) * 2048 + 24624;
          i_15 = GCMonitor.method770(long_6);
-         class253 class253_16 = class128.method2970(i_15, (short) 4095);
+         class253 class253_16 = class128.method2970(i_15);
          if (class253_16.field3379 != -1) {
             class324 class324_17 = class285.field3660[class253_16.field3379];
             if (class324_17 != null) {
@@ -163,7 +163,7 @@ public class class3 implements UnknownT {
          i_9 = i_8 >> 6 & 0x3;
          i_10 = i_8 & 0x1f;
          i_11 = GCMonitor.method770(long_6);
-         class253 class253_21 = class128.method2970(i_11, (short) 4095);
+         class253 class253_21 = class128.method2970(i_11);
          if (class253_21.field3379 != -1) {
             class324 class324_29 = class285.field3660[class253_21.field3379];
             if (class324_29 != null) {
@@ -202,7 +202,7 @@ public class class3 implements UnknownT {
       long_6 = class5.field22.method3095(i_0, i_1, i_2);
       if (long_6 != 0L) {
          i_8 = GCMonitor.method770(long_6);
-         class253 class253_22 = class128.method2970(i_8, (short) 4095);
+         class253 class253_22 = class128.method2970(i_8);
          if (class253_22.field3379 != -1) {
             class324 class324_23 = class285.field3660[class253_22.field3379];
             if (class324_23 != null) {

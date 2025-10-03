@@ -463,9 +463,9 @@ public class class201 extends LinkedListNode {
                if (i_9 != i_6) {
                   i_6 = i_9--;
                   if ((i_9 & 0x1) == 0) {
-                     class103_7 = class108_1.method2483(i_9 >> 2, ints_3, (byte) 127);
+                     class103_7 = class108_1.method2483(i_9 >> 2, ints_3);
                   } else {
-                     class103_7 = class108_1.method2484(i_9 >> 2, ints_3, 724127180);
+                     class103_7 = class108_1.method2484(i_9 >> 2, ints_3);
                   }
 
                   if (class103_7 == null) {

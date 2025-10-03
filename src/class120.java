@@ -28,10 +28,10 @@ public final class class120 {
       return (i_0 + i_3) / i_1 - i_3;
    }
 
-   static final int method2765(int i_0, int i_1, int i_2) {
-      int i_3 = class54.method1021(i_0 - 1, i_1 - 1, 1793626495) + class54.method1021(1 + i_0, i_1 - 1, 1793626495) + class54.method1021(i_0 - 1, 1 + i_1, 1793626495) + class54.method1021(1 + i_0, 1 + i_1, 1793626495);
-      int i_4 = class54.method1021(i_0 - 1, i_1, 1793626495) + class54.method1021(i_0 + 1, i_1, 1793626495) + class54.method1021(i_0, i_1 - 1, 1793626495) + class54.method1021(i_0, i_1 + 1, 1793626495);
-      int i_5 = class54.method1021(i_0, i_1, 1793626495);
+   static final int method2765(int i_0, int i_1) {
+      int i_3 = class54.method1021(i_0 - 1, i_1 - 1) + class54.method1021(1 + i_0, i_1 - 1) + class54.method1021(i_0 - 1, 1 + i_1) + class54.method1021(1 + i_0, 1 + i_1);
+      int i_4 = class54.method1021(i_0 - 1, i_1) + class54.method1021(i_0 + 1, i_1) + class54.method1021(i_0, i_1 - 1) + class54.method1021(i_0, i_1 + 1);
+      int i_5 = class54.method1021(i_0, i_1);
       return i_3 / 16 + i_4 / 8 + i_5 / 4;
    }
 

@@ -5,7 +5,7 @@ public class class138 extends class175 {
 
    class138(class233 class233_1, class233 class233_2, int i_3, boolean bool_4) {
       class261 class261_5 = new class261();
-      int i_6 = class233_1.method4154(i_3, -1771537388);
+      int i_6 = class233_1.method4154(i_3);
       this.field1893 = new class125[i_6];
       int[] ints_7 = class233_1.method4153(i_3);
 

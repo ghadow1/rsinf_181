@@ -31,7 +31,7 @@ public class class89 {
    }
 
    static final boolean method2091(int i_0, int i_1, int i_2) {
-      class253 class253_3 = class128.method2970(i_0, (short) 4095);
+      class253 class253_3 = class128.method2970(i_0);
       if (i_1 == 11) {
          i_1 = 10;
       }
@@ -40,10 +40,10 @@ public class class89 {
          i_1 = 4;
       }
 
-      return class253_3.method4589(i_1, -672143890);
+      return class253_3.method4589(i_1);
    }
 
-   static final void method2092(int i_0, int i_1, int i_2, int i_3, byte b_4) {
+   static final void method2092(int i_0, int i_1, int i_2, int i_3) {
       for (int i_5 = i_1; i_5 <= i_3 + i_1; i_5++) {
          for (int i_6 = i_0; i_6 <= i_0 + i_2; i_6++) {
             if (i_6 >= 0 && i_6 < 104 && i_5 >= 0 && i_5 < 104) {

@@ -89,7 +89,7 @@ public class class56 {
             }
          }
 
-         class79_5.field1134 = GCMonitor_2.method1005(buffer3_1.method5445(14), (byte) -3);
+         class79_5.field1134 = GameApplet.method1005(buffer3_1.method5445(14));
          class79_5.field952 = class79_5.field1134.field3469;
          class79_5.field948 = class79_5.field1134.field3492;
          if (class79_5.field948 == 0) {
@@ -160,7 +160,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = GCMonitor_2.method1005(buffer3_1.readUnsignedShortBigEndian(), (byte) -91);
+            class79_5.field1134 = GameApplet.method1005(buffer3_1.readUnsignedShortBigEndian());
             class79_5.field952 = class79_5.field1134.field3469;
             class79_5.field948 = class79_5.field1134.field3492;
             class79_5.field957 = class79_5.field1134.field3475;
@@ -285,14 +285,14 @@ public class class56 {
    }
 
    static void method1086(int i_0, int i_1, int i_2) {
-      class187 class187_3 = class235.method4265(ClientPacketProt.field2273, Client.data.field1313, 1775123545);
+      class187 class187_3 = class235.method4265(ClientPacketProt.field2273, Client.data.field1313);
       class187_3.outBuffer.writeIntCustomOrder(i_0);
       class187_3.outBuffer.writeShortWithOffset2(i_1);
       Client.data.copy(class187_3);
    }
 
    static final void method1089(byte b_0) {
-      class187 class187_1 = class235.method4265(ClientPacketProt.field2286, Client.data.field1313, 1775123545);
+      class187 class187_1 = class235.method4265(ClientPacketProt.field2286, Client.data.field1313);
       class187_1.outBuffer.writeByte(0);
       Client.data.copy(class187_1);
    }

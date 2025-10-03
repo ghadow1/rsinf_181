@@ -15,7 +15,7 @@ public class class255 implements UnknownT {
       return this.field3462;
    }
 
-   static int method4701(int i_0) {
+   static int method4701() {
       return ++class91.field1282 - 1;
    }
 

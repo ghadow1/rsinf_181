@@ -14,27 +14,27 @@ public class class74 {
    }
 
    final boolean method1781(class283 class283_1, int i_2) {
-      class284 class284_3 = (class284) this.field1070.method5082(class283_1, (byte) -97);
+      class284 class284_3 = (class284) this.field1070.method5082(class283_1);
       return class284_3 != null && class284_3.method5168((byte) -4);
    }
 
-   final boolean method1767(int i_1) {
-      return this.field1070.method5106(-1711155206) || this.field1070.method5079(490154495) >= 200 && Client.field771 != 1;
+   final boolean method1767() {
+      return this.field1070.method5106() || this.field1070.method5079() >= 200 && Client.field771 != 1;
    }
 
-   final boolean method1778(int i_1) {
-      return this.field1071.method5106(-1049157499) || this.field1071.method5079(165548181) >= 100 && Client.field771 != 1;
+   final boolean method1778() {
+      return this.field1071.method5106() || this.field1071.method5079() >= 100 && Client.field771 != 1;
    }
 
-   final boolean method1764(class283 class283_1, boolean bool_2, int i_3) {
+   final boolean method1764(class283 class283_1, boolean bool_2) {
       return class283_1 == null ? false : (class283_1.equals(Client.field657.field621) ? true : this.field1070.method5183(class283_1, bool_2, 547540517));
    }
 
-   final boolean method1765(class283 class283_1, byte b_2) {
-      return class283_1 == null ? false : this.field1071.method5081(class283_1, -416985799);
+   final boolean method1765(class283 class283_1) {
+      return class283_1 == null ? false : this.field1071.method5081(class283_1);
    }
 
-   final void method1760(int i_1) {
+   final void method1760() {
       this.field1076 = 1;
    }
 
@@ -44,15 +44,15 @@ public class class74 {
       class129.method2972((byte) 6);
    }
 
-   boolean method1791(int i_1) {
+   boolean method1791() {
       return this.field1076 == 2;
    }
 
-   final void method1810(String string_1, int i_2) {
+   final void method1810(String string_1) {
       if (string_1 != null) {
          class283 class283_3 = new class283(string_1, this.field1075);
-         if (class283_3.method5205((byte) -113)) {
-            if (this.method1767(-1832843555)) {
+         if (class283_3.method5205()) {
+            if (this.method1767()) {
                class63.method1138(234130562);
             } else {
                StringBuilder stringbuilder_10000;
@@ -60,18 +60,18 @@ public class class74 {
                if (Client.field657.field621.equals(class283_3)) {
                   stringbuilder_10000 = null;
                   string_5 = "You can\'t add yourself to your own friend list";
-                  class62.method1132(30, "", string_5, -2116801880);
-               } else if (this.method1764(class283_3, false, 1439459017)) {
+                  class62.method1132(30, "", string_5);
+               } else if (this.method1764(class283_3, false)) {
                   class36.method633(string_1, -1454512266);
-               } else if (this.method1765(class283_3, (byte) -1)) {
+               } else if (this.method1765(class283_3)) {
                   stringbuilder_10000 = new StringBuilder();
                   Object obj_10001 = null;
                   stringbuilder_10000 = stringbuilder_10000.append("Please remove ").append(string_1);
                   obj_10001 = null;
                   string_5 = stringbuilder_10000.append(" from your ignore list first").toString();
-                  class62.method1132(30, "", string_5, -2140395376);
+                  class62.method1132(30, "", string_5);
                } else {
-                  class187 class187_4 = class235.method4265(ClientPacketProt.field2291, Client.data.field1313, 1775123545);
+                  class187 class187_4 = class235.method4265(ClientPacketProt.field2291, Client.data.field1313);
                   class187_4.outBuffer.writeByte(class209.method3945(string_1));
                   class187_4.outBuffer.writeNullTerminatedString(string_1);
                   Client.data.copy(class187_4);
@@ -84,10 +84,10 @@ public class class74 {
    final void method1770(String string_1, int i_2) {
       if (string_1 != null) {
          class283 class283_3 = new class283(string_1, this.field1075);
-         if (class283_3.method5205((byte) -114)) {
-            if (this.field1070.method5085(class283_3, (byte) 38)) {
+         if (class283_3.method5205()) {
+            if (this.field1070.method5085(class283_3)) {
                Client.field672 = Client.field673;
-               class187 class187_4 = class235.method4265(ClientPacketProt.field2224, Client.data.field1313, 1775123545);
+               class187 class187_4 = class235.method4265(ClientPacketProt.field2224, Client.data.field1313);
                class187_4.outBuffer.writeByte(class209.method3945(string_1));
                class187_4.outBuffer.writeNullTerminatedString(string_1);
                Client.data.copy(class187_4);
@@ -101,19 +101,19 @@ public class class74 {
    final void method1768(String string_1, byte b_2) {
       if (string_1 != null) {
          class283 class283_3 = new class283(string_1, this.field1075);
-         if (class283_3.method5205((byte) -89)) {
-            if (this.method1778(-81479393)) {
+         if (class283_3.method5205()) {
+            if (this.method1778()) {
                Object obj_10000 = null;
                String str_4 = "Your ignore list is full. Max of 100 for free users, and 400 for members";
-               class62.method1132(30, "", str_4, -2083856339);
+               class62.method1132(30, "", str_4);
             } else if (Client.field657.field621.equals(class283_3)) {
                class41.method737(-1659690111);
-            } else if (this.method1765(class283_3, (byte) -1)) {
-               Client.method1650(string_1, 1487250543);
-            } else if (this.method1764(class283_3, false, -2137454249)) {
+            } else if (this.method1765(class283_3)) {
+               Client.method1650(string_1);
+            } else if (this.method1764(class283_3, false)) {
                class31.method541(string_1, (byte) -37);
             } else {
-               class219.method4111(string_1, -444030041);
+               class219.method4111(string_1);
             }
          }
       }
@@ -122,35 +122,35 @@ public class class74 {
    final void method1771(String string_1, byte b_2) {
       if (string_1 != null) {
          class283 class283_3 = new class283(string_1, this.field1075);
-         if (class283_3.method5205((byte) -26)) {
-            if (this.field1071.method5085(class283_3, (byte) 63)) {
+         if (class283_3.method5205()) {
+            if (this.field1071.method5085(class283_3)) {
                Client.field672 = Client.field673;
-               class187 class187_4 = class235.method4265(ClientPacketProt.field2231, Client.data.field1313, 1775123545);
+               class187 class187_4 = class235.method4265(ClientPacketProt.field2231, Client.data.field1313);
                class187_4.outBuffer.writeByte(class209.method3945(string_1));
                class187_4.outBuffer.writeNullTerminatedString(string_1);
                Client.data.copy(class187_4);
             }
 
-            class2.method28(-1824777685);
+            class2.method28();
          }
       }
    }
 
    final void method1780(short s_1) {
       this.field1076 = 0;
-      this.field1070.method5096(580363942);
-      this.field1071.method5096(1653618630);
+      this.field1070.method5096();
+      this.field1071.method5096();
    }
 
    final void method1762(byte b_1) {
       for (class286 class286_2 = (class286) this.field1070.field3642.method4922(); class286_2 != null; class286_2 = (class286) this.field1070.field3642.method4923()) {
          if ((long)class286_2.field3661 < TimeUtils.getAdjustedTimeMillis() / 1000L - 5L) {
             if (class286_2.field3663 > 0) {
-               class62.method1132(5, "", class286_2.field3662 + " has logged in.", -2103264112);
+               class62.method1132(5, "", class286_2.field3662 + " has logged in.");
             }
 
             if (class286_2.field3663 == 0) {
-               class62.method1132(5, "", class286_2.field3662 + " has logged out.", -2084696687);
+               class62.method1132(5, "", class286_2.field3662 + " has logged out.");
             }
 
             class286_2.method3602();

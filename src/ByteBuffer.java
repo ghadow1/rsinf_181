@@ -345,7 +345,7 @@ public class ByteBuffer extends LinkedListNode {
 
    //..Computes and writes a CRC32 checksum
    public int writeCRC32Checksum(int startOffset) {
-      int crc = class2.method18(this.buffer, startOffset, this.position, 2112627434);
+      int crc = class2.method18(this.buffer, startOffset, this.position);
       this.writeIntBigEndian(crc);
       return crc;
    }
@@ -625,7 +625,7 @@ public class ByteBuffer extends LinkedListNode {
    //..Verifies CRC32 checksum
    public boolean verifyCRC32() {
       this.position -= 4;
-      int calculated = class2.method18(this.buffer, 0, this.position, 308040594);
+      int calculated = class2.method18(this.buffer, 0, this.position);
       int stored = this.readIntMedEndian();
       return calculated == stored;
    }

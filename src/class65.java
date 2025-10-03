@@ -139,7 +139,7 @@ public class class65 extends class174 {
                int i_18 = class3.method33(i_9, (byte) -12);
                int i_19 = class74.method1784(i_9, -77884497);
                if (i_18 == 2 && class5.field22.method3096(class42.field372, i_16, i_17, long_26) >= 0) {
-                  class253 class253_20 = class128.method2970(i_19, (short) 4095);
+                  class253 class253_20 = class128.method2970(i_19);
                   if (class253_20.field3391 != null) {
                      class253_20 = class253_20.method4595();
                   }
@@ -388,7 +388,7 @@ public class class65 extends class174 {
 
    static final void method1170(String string_0, int i_1) {
       if (!string_0.equals("")) {
-         class187 class187_2 = class235.method4265(ClientPacketProt.field2286, Client.data.field1313, 1775123545);
+         class187 class187_2 = class235.method4265(ClientPacketProt.field2286, Client.data.field1313);
          class187_2.outBuffer.writeByte(class209.method3945(string_0));
          class187_2.outBuffer.writeNullTerminatedString(string_0);
          Client.data.copy(class187_2);

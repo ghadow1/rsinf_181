@@ -110,7 +110,7 @@ public class class132 extends LinkedListNode {
             class70.field1014 -= 2;
             i_4 = class76.field1098[class70.field1014];
             i_5 = class76.field1098[class70.field1014 + 1];
-            class217 class217_12 = Client.method1649(i_4, i_5, -1082310666);
+            class217 class217_12 = Client.method1649(i_4, i_5);
             if (class217_12 != null && i_5 != -1) {
                class76.field1098[++class70.field1014 - 1] = 1;
                if (bool_2) {

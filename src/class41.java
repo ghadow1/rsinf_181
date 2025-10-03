@@ -14,7 +14,7 @@ public class class41 {
    static final void method737(int i_0) {
       Object obj_10000 = null;
       String str_1 = "You can\'t add yourself to your own ignore list";
-      class62.method1132(30, "", str_1, -2087358273);
+      class62.method1132(30, "", str_1);
    }
 
    static final void method736(Buffer_3 buffer3_0, int i_1, class66 class66_2, int i_3, int i_4) {
@@ -117,9 +117,9 @@ public class class41 {
          class66_2.field977 = buffer3_0.readNullTerminatedString();
          if (class66_2.field977.charAt(0) == 126) {
             class66_2.field977 = class66_2.field977.substring(1);
-            class62.method1132(2, class66_2.field621.method5197((byte) 51), class66_2.field977, -2101795865);
+            class62.method1132(2, class66_2.field621.method5197(), class66_2.field977);
          } else if (class66_2 == Client.field657) {
-            class62.method1132(2, class66_2.field621.method5197((byte) 62), class66_2.field977, -2114277383);
+            class62.method1132(2, class66_2.field621.method5197(), class66_2.field977);
          }
 
          class66_2.field963 = false;
@@ -142,7 +142,7 @@ public class class41 {
          ByteBuffer class300_15 = new ByteBuffer(bytes_14);
          buffer3_0.readBytesWithOffset(bytes_14, 0, i_6);
          class89.field1254[i_1] = class300_15;
-         class66_2.method1179(class300_15, -776146380);
+         class66_2.method1179(class300_15);
       }
 
       if ((i_3 & 0x2) != 0) {
@@ -164,7 +164,7 @@ public class class41 {
          i_10 = buffer3_0.position;
          if (class66_2.field621 != null && class66_2.field613 != null) {
             boolean bool_19 = false;
-            if (gameState_20.field3092 && class58.field546.method1765(class66_2.field621, (byte) -1)) {
+            if (gameState_20.field3092 && class58.field546.method1765(class66_2.field621)) {
                bool_19 = true;
             }
 
@@ -186,9 +186,9 @@ public class class41 {
                }
 
                if (gameState_20.field3090 != -1) {
-                  class62.method1132(i_13, class33.method556(gameState_20.field3090, (byte) 66) + class66_2.field621.method5197((byte) 113), string_16, -2085086030);
+                  class62.method1132(i_13, class33.iconTag(gameState_20.field3090) + class66_2.field621.method5197(), string_16);
                } else {
-                  class62.method1132(i_13, class66_2.field621.method5197((byte) 121), string_16, -2116827582);
+                  class62.method1132(i_13, class66_2.field621.method5197(), string_16);
                }
             }
          }
@@ -223,7 +223,7 @@ public class class41 {
                b_17 = class89.field1250[i_1];
             }
 
-            class66_2.method1189(class66_2.field639, class66_2.field640, b_17, (short) -30153);
+            class66_2.method1189(class66_2.field639, class66_2.field640, b_17);
          }
       }
 

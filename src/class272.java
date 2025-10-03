@@ -73,7 +73,7 @@ public class class272 {
          i_1 += class254.field3457.method4259() / 100;
          i_1 += Client.field684.method4259() / 100;
          i_1 += class135.field1874.method4259() / 100;
-         i_1 += class27.field232.method4258((byte) 44) && class27.field232.method4148(741322871) ? 1 : 0;
+         i_1 += class27.field232.method4258() && class27.field232.method4148(741322871) ? 1 : 0;
          if (i_1 != 100) {
             if (i_1 != 0) {
                class85.field1189 = "Checking for updates - " + i_1 + "%";
@@ -101,13 +101,13 @@ public class class272 {
             Client.field680 = 45;
          }
       } else if (Client.field680 == 45) {
-         class126.method2853(22050, !Client.field656, 2, -1363278802);
+         class126.method2853(22050, !Client.field656, 2);
          class198 class198_34 = new class198();
          class198_34.method3720(9, 128, -1686884768);
-         class80.field1144 = class234.method4256(GCMonitor_2.field463, 0, 22050, 2015059645);
+         class80.field1144 = class234.method4256(GameApplet.field463, 0, 22050, 2015059645);
          class80.field1144.method2424(class198_34, 750974673);
          class58.method1094(class67.field650, class126.field1647, class13.field89, class198_34, (byte) 14);
-         class190.field2361 = class234.method4256(GCMonitor_2.field463, 1, 2048, 2054660994);
+         class190.field2361 = class234.method4256(GameApplet.field463, 1, 2048, 2054660994);
          class57.field532 = new class98();
          class190.field2361.method2424(class57.field532, -1975857573);
          class84.field1177 = new class112(22050, class172.field2078);
@@ -144,56 +144,56 @@ public class class272 {
                class235_26 = class17.field110;
                class235_3 = Client.field683;
                i_27 = 0;
-               if (class235_26.method4164("title.jpg", "", -1918711245)) {
+               if (class235_26.method4164("title.jpg", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("logo", "", -1918711245)) {
+               if (class235_3.method4164("logo", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("logo_deadman_mode", "", -1918711245)) {
+               if (class235_3.method4164("logo_deadman_mode", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("titlebox", "", -1918711245)) {
+               if (class235_3.method4164("titlebox", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("titlebutton", "", -1918711245)) {
+               if (class235_3.method4164("titlebutton", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("runes", "", -1918711245)) {
+               if (class235_3.method4164("runes", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("title_mute", "", -1918711245)) {
+               if (class235_3.method4164("title_mute", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("options_radio_buttons,0", "", -1918711245)) {
+               if (class235_3.method4164("options_radio_buttons,0", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("options_radio_buttons,2", "", -1918711245)) {
+               if (class235_3.method4164("options_radio_buttons,2", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("options_radio_buttons,4", "", -1918711245)) {
+               if (class235_3.method4164("options_radio_buttons,4", "")) {
                   ++i_27;
                }
 
-               if (class235_3.method4164("options_radio_buttons,6", "", -1918711245)) {
+               if (class235_3.method4164("options_radio_buttons,6", "")) {
                   ++i_27;
                }
 
-               class235_3.method4164("sl_back", "", -1918711245);
-               class235_3.method4164("sl_flags", "", -1918711245);
-               class235_3.method4164("sl_arrows", "", -1918711245);
-               class235_3.method4164("sl_stars", "", -1918711245);
-               class235_3.method4164("sl_button", "", -1918711245);
-               i_5 = class62.method1121(2123129182);
+               class235_3.method4164("sl_back", "");
+               class235_3.method4164("sl_flags", "");
+               class235_3.method4164("sl_arrows", "");
+               class235_3.method4164("sl_stars", "");
+               class235_3.method4164("sl_button", "");
+               i_5 = class62.method1121();
                if (i_27 < i_5) {
                   class85.field1189 = "Loading title screen - " + i_27 * 100 / i_5 + "%";
                   class85.field1188 = 50;
@@ -227,7 +227,7 @@ public class class272 {
                   class91.field1276 = class235_28;
                   class254.field3405 = class235_6;
                   class134.field1868 = bool_7;
-                  class254.field3455 = class91.field1276.method4154(10, -1116420622);
+                  class254.field3455 = class91.field1276.method4154(10);
                   class78.field1129 = class295_8;
                   class235 class235_9 = class215.field2544;
                   class235 class235_10 = class197.field2405;
@@ -263,7 +263,7 @@ public class class272 {
                   class235 class235_22 = Client.field683;
                   class241.field3225 = class235_22;
                   if (class235_21.method4148(-443186285)) {
-                     class314.field3846 = class235_21.method4154(35, -1168959068);
+                     class314.field3846 = class235_21.method4154(35);
                      class241.field3219 = new class241[class314.field3846];
 
                      for (int i_23 = 0; i_23 < class314.field3846; i_23++) {
@@ -385,12 +385,12 @@ public class class272 {
                }
             } else if (Client.field680 == 110) {
                class40.field348 = new class63();
-               GCMonitor_2.field463.method3472(class40.field348, 10, 1809900382);
+               GameApplet.field463.method3472(class40.field348, 10, 1809900382);
                class85.field1189 = "Loaded input handler";
                class85.field1188 = 92;
                Client.field680 = 120;
             } else if (Client.field680 == 120) {
-               if (!class17.field110.method4164("huffman", "", -1918711245)) {
+               if (!class17.field110.method4164("huffman", "")) {
                   class85.field1189 = "Loading wordpack - " + 0 + "%";
                   class85.field1188 = 94;
                } else {

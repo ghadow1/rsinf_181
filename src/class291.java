@@ -1,6 +1,6 @@
 public final class class291 {
 
-   public static String method5315(CharSequence charsequence_0, class338 class338_1, int i_2) {
+   public static String method5315(CharSequence charsequence_0, class338 class338_1) {
       if (charsequence_0 == null) {
          return null;
       } else {
@@ -50,7 +50,7 @@ public final class class291 {
                   boolean bool_9;
                   if (Character.isISOControl(var_8)) {
                      bool_9 = false;
-                  } else if (class67.method1231(var_8, 81197967)) {
+                  } else if (class67.method1231(var_8)) {
                      bool_9 = true;
                   } else {
                      char[] arr_14 = class339.field4061;

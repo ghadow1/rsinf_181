@@ -57,7 +57,7 @@ public final class class126 extends LinkedListNode {
       }
    }
 
-   public static long method2854(int i_0, int i_1, int i_2, boolean bool_3, int i_4, int i_5) {
+   public static long method2854(int i_0, int i_1, int i_2, boolean bool_3, int i_4) {
       long long_6 = (long)((i_0 & 0x7f) << 0 | (i_1 & 0x7f) << 7 | (i_2 & 0x3) << 14) | ((long)i_4 & 0xffffffffL) << 17;
       if (bool_3) {
          long_6 |= 0x10000L;
@@ -66,7 +66,7 @@ public final class class126 extends LinkedListNode {
       return long_6;
    }
 
-   public static final void method2853(int i_0, boolean bool_1, int i_2, int i_3) {
+   public static final void method2853(int i_0, boolean bool_1, int i_2) {
       if (i_0 >= 8000 && i_0 <= 48000) {
          class172.field2078 = i_0;
          class169.field2053 = bool_1;
@@ -76,9 +76,9 @@ public final class class126 extends LinkedListNode {
       }
    }
 
-   static final void method2856(String string_0, int i_1) {
+   static final void method2856(String string_0) {
       if (class46.field410 != null) {
-         class187 class187_2 = class235.method4265(ClientPacketProt.field2216, Client.data.field1313, 1775123545);
+         class187 class187_2 = class235.method4265(ClientPacketProt.field2216, Client.data.field1313);
          class187_2.outBuffer.writeByte(class209.method3945(string_0));
          class187_2.outBuffer.writeNullTerminatedString(string_0);
          Client.data.copy(class187_2);

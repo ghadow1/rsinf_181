@@ -18,14 +18,14 @@ public class class190 implements UnknownT {
    final int field2354;
 
    static {
-      field2348 = new class190("EN", "en", "English", class192.field2375, 0, "GB");
-      field2351 = new class190("DE", "de", "German", class192.field2375, 1, "DE");
-      field2347 = new class190("FR", "fr", "French", class192.field2375, 2, "FR");
-      field2352 = new class190("PT", "pt", "Portuguese", class192.field2375, 3, "BR");
-      field2349 = new class190("NL", "nl", "Dutch", class192.field2381, 4, "NL");
-      field2350 = new class190("ES", "es", "Spanish", class192.field2381, 5, "ES");
-      field2360 = new class190("ES_MX", "es-mx", "Spanish (Latin American)", class192.field2375, 6, "MX");
-      class190[] arr_0 = method3664((byte) 99);
+      field2348 = new class190("EN", "en", 0, "GB");
+      field2351 = new class190("DE", "de", 1, "DE");
+      field2347 = new class190("FR", "fr", 2, "FR");
+      field2352 = new class190("PT", "pt", 3, "BR");
+      field2349 = new class190("NL", "nl", 4, "NL");
+      field2350 = new class190("ES", "es", 5, "ES");
+      field2360 = new class190("ES_MX", "es-mx", 6, "MX");
+      class190[] arr_0 = method3664();
       field2355 = new class190[arr_0.length];
       class190[] arr_1 = arr_0;
 
@@ -40,7 +40,7 @@ public class class190 implements UnknownT {
 
    }
 
-   class190(String string_1, String string_2, String string_3, class192 class192_4, int i_5, String string_6) {
+   class190(String string_1, String string_2, int i_5, String string_6) {
       this.field2346 = string_1;
       this.field2353 = string_2;
       this.field2354 = i_5;
@@ -52,27 +52,19 @@ public class class190 implements UnknownT {
 
    }
 
-   String method3656(int i_1) {
-      return this.field2353;
+   static class190[] method3664() {
+      return new class190[]{field2351, field2349, field2347, field2350, field2348, field2360, field2352};
    }
 
    public int getId(int i_1) {
       return this.field2354;
    }
 
-   public String toString() {
-      return this.method3656(1097353533).toLowerCase(Locale.ENGLISH);
-   }
-
-   static class190[] method3664(byte b_0) {
-      return new class190[] {field2351, field2349, field2347, field2350, field2348, field2360, field2352};
-   }
-
-   static boolean method3667(int i_0) {
+   static boolean method3667() {
       if (Client.field925 != null && Client.field926 < Client.field925.size()) {
          while (Client.field926 < Client.field925.size()) {
             class58 class58_1 = (class58) Client.field925.get(Client.field926);
-            if (!class58_1.method1095((byte) -30)) {
+            if (!class58_1.method1095()) {
                return false;
             }
 
@@ -85,7 +77,7 @@ public class class190 implements UnknownT {
       }
    }
 
-   static String method3666(String string_0, boolean bool_1, int i_2) {
+   static String someConnectionType(String string_0, boolean bool_1) {
       String str_3 = bool_1 ? "https://" : "http://";
       if (Client.field703 == 1) {
          string_0 = string_0 + "-wtrc";
@@ -108,9 +100,17 @@ public class class190 implements UnknownT {
       return str_3 + string_0 + "." + str_5 + "/l=" + class56.field528 + "/a=" + class239.field3199 + str_4 + "/";
    }
 
-   public static final void method3665(int i_0) {
+   public static final void method3665() {
       class128.field1753 = false;
       class128.field1748 = 0;
+   }
+
+   String method3656() {
+      return this.field2353;
+   }
+
+   public String toString() {
+      return this.method3656().toLowerCase(Locale.ENGLISH);
    }
 
 }

@@ -162,7 +162,7 @@ public class class73 {
          }
 
          Client.field872 = class76.field1098[class70.field1014 + 2];
-         class187 class187_19 = class235.method4265(ClientPacketProt.field2294, Client.data.field1313, 1775123545);
+         class187 class187_19 = class235.method4265(ClientPacketProt.field2294, Client.data.field1313);
          class187_19.outBuffer.writeByte(Client.field907);
          class187_19.outBuffer.writeByte(class226.field3072.field3815);
          class187_19.outBuffer.writeByte(Client.field872);
@@ -176,7 +176,7 @@ public class class73 {
             class70.field1014 -= 2;
             i_5 = class76.field1098[class70.field1014];
             int i_6 = class76.field1098[class70.field1014 + 1];
-            class187 class187_7 = class235.method4265(ClientPacketProt.field2205, Client.data.field1313, 1775123545);
+            class187 class187_7 = class235.method4265(ClientPacketProt.field2205, Client.data.field1313);
             class187_7.outBuffer.writeByte(class209.method3945(string_4) + 2);
             class187_7.outBuffer.writeNullTerminatedString(string_4);
             class187_7.outBuffer.writeByte(i_5 - 1);
@@ -196,7 +196,7 @@ public class class73 {
                   class76.field1093[++class221.field2747 - 1] = class64_16.field599 != null ? class64_16.field599 : "";
                   class76.field1093[++class221.field2747 - 1] = class64_16.field597 != null ? class64_16.field597 : "";
                   class76.field1093[++class221.field2747 - 1] = class64_16.field605 != null ? class64_16.field605 : "";
-                  class76.field1098[++class70.field1014 - 1] = class64_16.method1144(1322141944) ? 1 : (class64_16.method1147(1146765519) ? 2 : 0);
+                  class76.field1098[++class70.field1014 - 1] = class64_16.method1144() ? 1 : (class64_16.method1147() ? 2 : 0);
                } else {
                   class76.field1098[++class70.field1014 - 1] = -1;
                   class76.field1098[++class70.field1014 - 1] = 0;
@@ -216,7 +216,7 @@ public class class73 {
                   class76.field1093[++class221.field2747 - 1] = class64_17.field599 != null ? class64_17.field599 : "";
                   class76.field1093[++class221.field2747 - 1] = class64_17.field597 != null ? class64_17.field597 : "";
                   class76.field1093[++class221.field2747 - 1] = class64_17.field605 != null ? class64_17.field605 : "";
-                  class76.field1098[++class70.field1014 - 1] = class64_17.method1144(1470919339) ? 1 : (class64_17.method1147(376572179) ? 2 : 0);
+                  class76.field1098[++class70.field1014 - 1] = class64_17.method1144() ? 1 : (class64_17.method1147() ? 2 : 0);
                } else {
                   class76.field1098[++class70.field1014 - 1] = -1;
                   class76.field1098[++class70.field1014 - 1] = 0;
@@ -352,7 +352,7 @@ public class class73 {
                   }
                }
 
-               class187 class187_9 = class235.method4265(ClientPacketProt.MESSAGE_PUBLIC, Client.data.field1313, 1775123545);
+               class187 class187_9 = class235.method4265(ClientPacketProt.MESSAGE_PUBLIC, Client.data.field1313);
                class187_9.outBuffer.writeByte(0);
                int i_10 = class187_9.outBuffer.position;
                class187_9.outBuffer.writeByte(i_5);
@@ -366,7 +366,7 @@ public class class73 {
                class221.field2747 -= 2;
                string_4 = class76.field1093[class221.field2747];
                String string_13 = class76.field1093[class221.field2747 + 1];
-               class187 class187_12 = class235.method4265(ClientPacketProt.field2228, Client.data.field1313, 1775123545);
+               class187 class187_12 = class235.method4265(ClientPacketProt.field2228, Client.data.field1313);
                class187_12.outBuffer.writeShortBigEndian(0);
                int i_14 = class187_12.outBuffer.position;
                class187_12.outBuffer.writeNullTerminatedString(string_4);
@@ -409,7 +409,7 @@ public class class73 {
                }
             } else {
                if (Client.field657 != null && Client.field657.field621 != null) {
-                  string_4 = Client.field657.field621.method5197((byte) 56);
+                  string_4 = Client.field657.field621.method5197();
                } else {
                   string_4 = "";
                }

@@ -175,7 +175,7 @@ final class class1 implements class0 {
                   }
 
                   if (class66_18 != null) {
-                     class253 class253_19 = class128.method2970(i_6, (short) 4095);
+                     class253 class253_19 = class128.method2970(i_6);
                      int i_20;
                      int i_21;
                      if (i_10 != 1 && i_10 != 3) {
@@ -370,8 +370,8 @@ final class class1 implements class0 {
       return new String(arr_3);
    }
 
-   static final int method14(int i_0, int i_1, byte b_2) {
-      int i_3 = class257.method4757(45365 + i_0, 91923 + i_1, 4, (byte) 127) - 128 + (class257.method4757(i_0 + 10294, i_1 + 37821, 2, (byte) 124) - 128 >> 1) + (class257.method4757(i_0, i_1, 1, (byte) 94) - 128 >> 2);
+   static final int method14(int i_0, int i_1) {
+      int i_3 = class257.method4757(45365 + i_0, 91923 + i_1, 4) - 128 + (class257.method4757(i_0 + 10294, i_1 + 37821, 2) - 128 >> 1) + (class257.method4757(i_0, i_1, 1) - 128 >> 2);
       i_3 = (int)((double)i_3 * 0.3D) + 35;
       if (i_3 < 10) {
          i_3 = 10;

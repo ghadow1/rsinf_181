@@ -92,7 +92,7 @@ public class class258 extends class175 {
 
    public class127 method4784(class127 class127_1, int i_2, int i_3) {
       i_2 = this.field3520[i_2];
-      class138 class138_4 = class30.method537(i_2 >> 16, (short) -5354);
+      class138 class138_4 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_4 == null) {
          return class127_1.method2859(true);
@@ -105,13 +105,13 @@ public class class258 extends class175 {
 
    public class127 method4765(class127 class127_1, int i_2, class258 class258_3, int i_4, int i_5) {
       i_2 = this.field3520[i_2];
-      class138 class138_6 = class30.method537(i_2 >> 16, (short) -15133);
+      class138 class138_6 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_6 == null) {
          return class258_3.method4784(class127_1, i_4, 1790643125);
       } else {
          i_4 = class258_3.field3520[i_4];
-         class138 class138_7 = class30.method537(i_4 >> 16, (short) -25301);
+         class138 class138_7 = class30.method537(i_4 >> 16);
          i_4 &= 0xffff;
          class127 class127_8;
          if (class138_7 == null) {
@@ -126,9 +126,9 @@ public class class258 extends class175 {
       }
    }
 
-   class127 method4763(class127 class127_1, int i_2, int i_3, byte b_4) {
+   class127 method4763(class127 class127_1, int i_2, int i_3) {
       i_2 = this.field3520[i_2];
-      class138 class138_5 = class30.method537(i_2 >> 16, (short) -14626);
+      class138 class138_5 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_5 == null) {
          return class127_1.method2859(true);
@@ -158,7 +158,7 @@ public class class258 extends class175 {
 
    class127 method4787(class127 class127_1, int i_2, int i_3) {
       i_2 = this.field3520[i_2];
-      class138 class138_4 = class30.method537(i_2 >> 16, (short) -9683);
+      class138 class138_4 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_4 == null) {
          return class127_1.method2860(true);
@@ -171,7 +171,7 @@ public class class258 extends class175 {
 
    public class127 method4767(class127 class127_1, int i_2, int i_3) {
       int i_4 = this.field3520[i_2];
-      class138 class138_5 = class30.method537(i_4 >> 16, (short) -17997);
+      class138 class138_5 = class30.method537(i_4 >> 16);
       i_4 &= 0xffff;
       if (class138_5 == null) {
          return class127_1.method2859(true);
@@ -180,7 +180,7 @@ public class class258 extends class175 {
          int i_7 = 0;
          if (this.field3530 != null && i_2 < this.field3530.length) {
             i_7 = this.field3530[i_2];
-            class138_6 = class30.method537(i_7 >> 16, (short) -10000);
+            class138_6 = class30.method537(i_7 >> 16);
             i_7 &= 0xffff;
          }
 

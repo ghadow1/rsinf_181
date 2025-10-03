@@ -1,4 +1,4 @@
-public class class282 extends class277 {
+public class class282 extends UserList {
 
    int field3643 = 1;
    public class262 field3642 = new class262();
@@ -27,13 +27,13 @@ public class class282 extends class277 {
             }
 
             class300_1.readNullTerminatedString();
-            if (class283_5 != null && class283_5.method5205((byte) -122)) {
-               class284 class284_12 = (class284) this.method5138(class283_5, 2083171527);
+            if (class283_5 != null && class283_5.method5205()) {
+               class284 class284_12 = (class284) this.method5138(class283_5);
                if (bool_4) {
-                  class284 class284_13 = (class284) this.method5138(class283_6, 2083171527);
+                  class284 class284_13 = (class284) this.method5138(class283_6);
                   if (class284_13 != null && class284_12 != class284_13) {
                      if (class284_12 != null) {
-                        this.method5086(class284_13, 951866693);
+                        this.removeEntry(class284_13);
                      } else {
                         class284_12 = class284_13;
                      }
@@ -41,7 +41,7 @@ public class class282 extends class277 {
                }
 
                if (class284_12 != null) {
-                  this.method5083(class284_12, class283_5, class283_6, 336541548);
+                  this.method5083(class284_12, class283_5, class283_6);
                   if (i_7 != class284_12.category) {
                      boolean bool_15 = true;
 
@@ -62,11 +62,11 @@ public class class282 extends class277 {
                      }
                   }
                } else {
-                  if (this.method5079(1265799893) >= 400) {
+                  if (this.method5079() >= 400) {
                      continue;
                   }
 
-                  class284_12 = (class284) this.method5088(class283_5, class283_6, (byte) -26);
+                  class284_12 = (class284) this.method5088(class283_5, class283_6);
                }
 
                if (i_7 != class284_12.category) {
@@ -87,21 +87,21 @@ public class class282 extends class277 {
             throw new IllegalStateException();
          }
 
-         this.method5133((short) 128);
+         this.method5133();
          return;
       }
    }
 
-   class274 vmethod5229(int i_1) {
+   User vmethod5229() {
       return new class284();
    }
 
    public boolean method5183(class283 class283_1, boolean bool_2, int i_3) {
-      class284 class284_4 = (class284) this.method5082(class283_1, (byte) -108);
+      class284 class284_4 = (class284) this.method5082(class283_1);
       return class284_4 == null ? false : !bool_2 || class284_4.category != 0;
    }
 
-   class274[] vmethod5230(int i_1, int i_2) {
+   User[] vmethod5230(int i_1) {
       return new class284[i_1];
    }
 

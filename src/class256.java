@@ -43,7 +43,7 @@ public class class256 extends class175 {
    public final class256 method4709(int i_1) {
       int i_2 = -1;
       if (this.field3494 != -1) {
-         i_2 = class67.method1237(this.field3494, -836499887);
+         i_2 = class67.method1237(this.field3494);
       } else if (this.field3495 != -1) {
          i_2 = class212.var_configurations[this.field3495];
       }
@@ -55,7 +55,7 @@ public class class256 extends class175 {
          i_3 = this.field3476[this.field3476.length - 1];
       }
 
-      return i_3 != -1 ? GCMonitor_2.method1005(i_3, (byte) -74) : null;
+      return i_3 != -1 ? GameApplet.method1005(i_3) : null;
    }
 
    void method4713(ByteBuffer class300_1, int i_2, byte b_3) {
@@ -177,7 +177,7 @@ public class class256 extends class175 {
 
    }
 
-   public final class121 method4708(byte b_1) {
+   public final Model method4708(byte b_1) {
       if (this.field3476 != null) {
          class256 class256_2 = this.method4709(942859640);
          return class256_2 == null ? null : class256_2.method4708((byte) 103);
@@ -195,33 +195,33 @@ public class class256 extends class175 {
          if (bool_6) {
             return null;
          } else {
-            class121[] arr_7 = new class121[this.field3463.length];
+            Model[] arr_7 = new Model[this.field3463.length];
 
             for (int i_4 = 0; i_4 < this.field3463.length; i_4++) {
-               arr_7[i_4] = class121.method2769(field3464, this.field3463[i_4], 0);
+               arr_7[i_4] = Model.method2769(field3464, this.field3463[i_4], 0);
             }
 
-            class121 class121_8;
+            Model model_8;
             if (arr_7.length == 1) {
-               class121_8 = arr_7[0];
+               model_8 = arr_7[0];
             } else {
-               class121_8 = new class121(arr_7, arr_7.length);
+               model_8 = new Model(arr_7, arr_7.length);
             }
 
             int i_5;
             if (this.field3479 != null) {
                for (i_5 = 0; i_5 < this.field3479.length; i_5++) {
-                  class121_8.method2783(this.field3479[i_5], this.field3480[i_5]);
+                  model_8.method2783(this.field3479[i_5], this.field3480[i_5]);
                }
             }
 
             if (this.field3471 != null) {
                for (i_5 = 0; i_5 < this.field3471.length; i_5++) {
-                  class121_8.method2784(this.field3471[i_5], this.field3481[i_5]);
+                  model_8.method2784(this.field3471[i_5], this.field3481[i_5]);
                }
             }
 
-            return class121_8;
+            return model_8;
          }
       }
    }
@@ -245,33 +245,33 @@ public class class256 extends class175 {
                return null;
             }
 
-            class121[] arr_9 = new class121[this.field3470.length];
+            Model[] arr_9 = new Model[this.field3470.length];
 
             int i_10;
             for (i_10 = 0; i_10 < this.field3470.length; i_10++) {
-               arr_9[i_10] = class121.method2769(field3464, this.field3470[i_10], 0);
+               arr_9[i_10] = Model.method2769(field3464, this.field3470[i_10], 0);
             }
 
-            class121 class121_12;
+            Model model_12;
             if (arr_9.length == 1) {
-               class121_12 = arr_9[0];
+               model_12 = arr_9[0];
             } else {
-               class121_12 = new class121(arr_9, arr_9.length);
+               model_12 = new Model(arr_9, arr_9.length);
             }
 
             if (this.field3479 != null) {
                for (i_10 = 0; i_10 < this.field3479.length; i_10++) {
-                  class121_12.method2783(this.field3479[i_10], this.field3480[i_10]);
+                  model_12.method2783(this.field3479[i_10], this.field3480[i_10]);
                }
             }
 
             if (this.field3471 != null) {
                for (i_10 = 0; i_10 < this.field3471.length; i_10++) {
-                  class121_12.method2784(this.field3471[i_10], this.field3481[i_10]);
+                  model_12.method2784(this.field3471[i_10], this.field3481[i_10]);
                }
             }
 
-            class127_6 = class121_12.method2802(this.field3489 + 64, this.field3477 + 850, -30, -50, -30);
+            class127_6 = model_12.applyLighting(this.field3489 + 64, this.field3477 + 850, -30, -50, -30);
             field3466.method3322(class127_6, (long)this.field3467);
          }
 
@@ -314,7 +314,7 @@ public class class256 extends class175 {
       } else {
          int i_2 = -1;
          if (this.field3494 != -1) {
-            i_2 = class67.method1237(this.field3494, -836499887);
+            i_2 = class67.method1237(this.field3494);
          } else if (this.field3495 != -1) {
             i_2 = class212.var_configurations[this.field3495];
          }

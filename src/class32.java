@@ -6,11 +6,11 @@ public class class32 {
    static byte[][][] field282;
    static int field280;
 
-   public static int method545(int i_0, int i_1) {
+   public static int method545(int i_0) {
       return i_0 >> 17 & 0x7;
    }
 
-   static final void method544(int i_0, int i_1, int i_2, int i_3) {
+   static final void method544(int i_0, int i_1, int i_2) {
       if (i_0 >= 128 && i_1 >= 128 && i_0 <= 13056 && i_1 <= 13056) {
          int i_4 = class62.method1130(i_0, i_1, class42.field372) - i_2;
          i_0 -= Buffer_3.field3727;

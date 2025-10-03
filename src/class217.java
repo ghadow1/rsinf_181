@@ -636,30 +636,30 @@ public class class217 extends LinkedListNode {
       this.field2647 = class300_1.readUnsignedByte();
       this.field2648 = class300_1.readUnsignedByte() == 1;
       this.field2657 = class300_1.readNullTerminatedString();
-      this.field2630 = this.method4081(class300_1, (byte) -58);
-      this.field2608 = this.method4081(class300_1, (byte) 53);
-      this.field2658 = this.method4081(class300_1, (byte) 2);
-      this.field2662 = this.method4081(class300_1, (byte) 8);
-      this.field2661 = this.method4081(class300_1, (byte) 97);
-      this.field2626 = this.method4081(class300_1, (byte) -72);
-      this.field2665 = this.method4081(class300_1, (byte) 61);
-      this.field2594 = this.method4081(class300_1, (byte) -77);
-      this.field2602 = this.method4081(class300_1, (byte) 2);
-      this.field2656 = this.method4081(class300_1, (byte) -101);
-      this.field2581 = this.method4081(class300_1, (byte) 69);
-      this.field2652 = this.method4081(class300_1, (byte) -91);
-      this.field2653 = this.method4081(class300_1, (byte) -4);
-      this.field2654 = this.method4081(class300_1, (byte) -68);
-      this.field2637 = this.method4081(class300_1, (byte) -19);
-      this.field2620 = this.method4081(class300_1, (byte) -3);
-      this.field2660 = this.method4081(class300_1, (byte) -45);
-      this.field2671 = this.method4081(class300_1, (byte) 22);
-      this.field2664 = this.method4034(class300_1, (byte) 104);
-      this.field2666 = this.method4034(class300_1, (byte) 104);
-      this.field2668 = this.method4034(class300_1, (byte) 104);
+      this.field2630 = this.method4081(class300_1);
+      this.field2608 = this.method4081(class300_1);
+      this.field2658 = this.method4081(class300_1);
+      this.field2662 = this.method4081(class300_1);
+      this.field2661 = this.method4081(class300_1);
+      this.field2626 = this.method4081(class300_1);
+      this.field2665 = this.method4081(class300_1);
+      this.field2594 = this.method4081(class300_1);
+      this.field2602 = this.method4081(class300_1);
+      this.field2656 = this.method4081(class300_1);
+      this.field2581 = this.method4081(class300_1);
+      this.field2652 = this.method4081(class300_1);
+      this.field2653 = this.method4081(class300_1);
+      this.field2654 = this.method4081(class300_1);
+      this.field2637 = this.method4081(class300_1);
+      this.field2620 = this.method4081(class300_1);
+      this.field2660 = this.method4081(class300_1);
+      this.field2671 = this.method4081(class300_1);
+      this.field2664 = this.method4034(class300_1);
+      this.field2666 = this.method4034(class300_1);
+      this.field2668 = this.method4034(class300_1);
    }
 
-   public class211 method4040(boolean bool_1, byte b_2) {
+   public class211 method4040(boolean bool_1) {
       if (this.field2600 == -1) {
          bool_1 = false;
       }
@@ -752,25 +752,25 @@ public class class217 extends LinkedListNode {
       } else {
          class127 class127_8 = (class127) field2698.method3320((long)(i_7 + (i_6 << 16)));
          if (class127_8 == null) {
-            class121 class121_9;
+            Model model_23;
             if (i_6 == 1) {
-               class121_9 = class121.method2769(class128.field1756, i_7, 0);
-               if (class121_9 == null) {
+               model_23 = Model.method2769(class128.field1756, i_7, 0);
+               if (model_23 == null) {
                   field2562 = true;
                   return null;
                }
 
-               class127_8 = class121_9.method2802(64, 768, -50, -10, -50);
+               class127_8 = model_23.applyLighting(64, 768, -50, -10, -50);
             }
 
             if (i_6 == 2) {
-               class121_9 = GCMonitor_2.method1005(i_7, (byte) -54).method4708((byte) 87);
-               if (class121_9 == null) {
+               model_23 = GameApplet.method1005(i_7).method4708((byte) 87);
+               if (model_23 == null) {
                   field2562 = true;
                   return null;
                }
 
-               class127_8 = class121_9.method2802(64, 768, -50, -10, -50);
+               class127_8 = model_23.applyLighting(64, 768, -50, -10, -50);
             }
 
             if (i_6 == 3) {
@@ -778,24 +778,24 @@ public class class217 extends LinkedListNode {
                   return null;
                }
 
-               class121_9 = class214_4.method3998(-1659019882);
-               if (class121_9 == null) {
+               model_23 = class214_4.method3998(-1659019882);
+               if (model_23 == null) {
                   field2562 = true;
                   return null;
                }
 
-               class127_8 = class121_9.method2802(64, 768, -50, -10, -50);
+               class127_8 = model_23.applyLighting(64, 768, -50, -10, -50);
             }
 
             if (i_6 == 4) {
                class254 class254_10 = class26.method404(i_7);
-               class121_9 = class254_10.method4643(10, 1813353109);
-               if (class121_9 == null) {
+               model_23 = class254_10.method4643(10);
+               if (model_23 == null) {
                   field2562 = true;
                   return null;
                }
 
-               class127_8 = class121_9.method2802(class254_10.field3448 + 64, class254_10.field3419 * 5 + 768, -50, -10, -50);
+               class127_8 = model_23.applyLighting(class254_10.field3448 + 64, class254_10.field3419 * 5 + 768, -50, -10, -50);
             }
 
             field2698.method3322(class127_8, (long)(i_7 + (i_6 << 16)));
@@ -835,7 +835,7 @@ public class class217 extends LinkedListNode {
       }
    }
 
-   Object[] method4081(ByteBuffer class300_1, byte b_2) {
+   Object[] method4081(ByteBuffer class300_1) {
       int i_3 = class300_1.readUnsignedByte();
       if (i_3 == 0) {
          return null;
@@ -856,7 +856,7 @@ public class class217 extends LinkedListNode {
       }
    }
 
-   public void method4041(int i_1, String string_2, short s_3) {
+   public void method4041(int i_1, String string_2) {
       if (this.field2644 == null || this.field2644.length <= i_1) {
          String[] arr_4 = new String[i_1 + 1];
          if (this.field2644 != null) {
@@ -871,7 +871,7 @@ public class class217 extends LinkedListNode {
       this.field2644[i_1] = string_2;
    }
 
-   public void method4063(int i_1, int i_2, int i_3) {
+   public void method4063(int i_1, int i_2) {
       int i_4 = this.field2560[i_2];
       this.field2560[i_2] = this.field2560[i_1];
       this.field2560[i_1] = i_4;
@@ -880,7 +880,7 @@ public class class217 extends LinkedListNode {
       this.field2705[i_1] = i_4;
    }
 
-   int[] method4034(ByteBuffer class300_1, byte b_2) {
+   int[] method4034(ByteBuffer class300_1) {
       int i_3 = class300_1.readUnsignedByte();
       if (i_3 == 0) {
          return null;
@@ -895,11 +895,11 @@ public class class217 extends LinkedListNode {
       }
    }
 
-   static long method4089(int i_0, int i_1, int i_2, int i_3) {
+   static long method4089(int i_0, int i_1, int i_2) {
       return (long)(i_2 << 16 | i_0 << 8 | i_1);
    }
 
-   public static void method4091(byte b_0) {
+   public static void method4091() {
       if (class54.field479 != null) {
          class54 class54_1 = class54.field479;
          synchronized(class54.field479) {
@@ -909,13 +909,13 @@ public class class217 extends LinkedListNode {
 
    }
 
-   static final void method4056(class66 class66_0, int i_1, int i_2, byte b_3, int i_4) {
+   static final void method4056(class66 class66_0, int i_1, int i_2, byte b_3) {
       int i_5 = class66_0.field994[0];
       int i_6 = class66_0.field962[0];
-      int i_7 = class66_0.method1187(-1116736107);
+      int i_7 = class66_0.method1187();
       if (i_5 >= i_7 && i_5 < 104 - i_7 && i_6 >= i_7 && i_6 < 104 - i_7) {
          if (i_1 >= i_7 && i_1 < 104 - i_7 && i_2 >= i_7 && i_2 < 104 - i_7) {
-            int i_9 = class66_0.method1187(-1116736107);
+            int i_9 = class66_0.method1187();
             class174 class174_10 = class38.method667(i_1, i_2, 2134464513);
             class172 class172_11 = Client.field710[class66_0.field629];
             int[] ints_12 = Client.field929;
@@ -1359,7 +1359,7 @@ public class class217 extends LinkedListNode {
             i_14 = i_8;
             if (i_8 >= 1) {
                for (i_15 = 0; i_15 < i_14 - 1; i_15++) {
-                  class66_0.method1191(Client.field929[i_15], Client.field930[i_15], b_3, (byte) 1);
+                  class66_0.method1191(Client.field929[i_15], Client.field930[i_15], b_3);
                }
 
             }
@@ -1387,7 +1387,7 @@ public class class217 extends LinkedListNode {
 
    }
 
-   public static String method4092(byte[] bytes_0, int i_1, int i_2, int i_3) {
+   public static String method4092(byte[] bytes_0, int i_1, int i_2) {
       StringBuilder stringbuilder_4 = new StringBuilder();
 
       for (int i_5 = i_1; i_5 < i_2 + i_1; i_5 += 3) {

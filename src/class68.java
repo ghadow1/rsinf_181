@@ -28,7 +28,7 @@ public final class class68 extends LinkedListNode {
       class61_4.field571 = i_1;
       class61_4.field569 = i_2;
       Client.field816.method5951(class61_4, (long)i_0);
-      class12.method146(i_1, -2080937521);
+      class12.method146(i_1);
       class217 class217_5 = class80.fetchSomething(i_0);
       class224.method4120(class217_5);
       if (Client.field850 != null) {
@@ -55,8 +55,8 @@ public final class class68 extends LinkedListNode {
          }
       }
 
-      class12.method145((byte) 107);
-      class27.method413(class217.field2556[i_0 >> 16], class217_5, false, 1377168714);
+      class12.method145();
+      class27.method413(class217.field2556[i_0 >> 16], class217_5, false);
       class48.method813(i_1, 1924602779);
       if (Client.field905 != -1) {
          class17.method175(Client.field905, 1, -1199742641);

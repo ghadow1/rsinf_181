@@ -103,7 +103,7 @@ public class ErrorHandler extends class175 {
    public final ErrorHandler method4554(byte b_1) {
       int i_2 = -1;
       if (this.field3346 != -1) {
-         i_2 = class67.method1237(this.field3346, -836499887);
+         i_2 = class67.method1237(this.field3346);
       } else if (this.field3347 != -1) {
          i_2 = class212.var_configurations[this.field3347];
       }

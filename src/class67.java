@@ -32,7 +32,7 @@ public class class67 implements Comparator {
       return this.method1228((class7) object_1, (class7) object_2, 150441453);
    }
 
-   public static int method1237(int i_0, int i_1) {
+   public static int method1237(int i_0) {
       class248 class248_3 = (class248) class248.field3294.method3320((long)i_0);
       class248 class248_2;
       if (class248_3 != null) {
@@ -55,17 +55,17 @@ public class class67 implements Comparator {
       return class212.var_configurations[i_4] >> i_5 & i_7;
    }
 
-   public static boolean method1231(char var_0, int i_1) {
+   public static boolean method1231(char var_0) {
       return var_0 >= 48 && var_0 <= 57 || var_0 >= 65 && var_0 <= 90 || var_0 >= 97 && var_0 <= 122;
    }
 
-   static final void method1236(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, class133 class133_6, class172 class172_7, short s_8) {
+   static final void method1236(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, class133 class133_6, class172 class172_7) {
       if (!Client.field656 || (class55.field502[0][i_1][i_2] & 0x2) != 0 || (class55.field502[i_0][i_1][i_2] & 0x10) == 0) {
          if (i_0 < class55.field503) {
             class55.field503 = i_0;
          }
 
-         class253 class253_9 = class128.method2970(i_3, (short) 4095);
+         class253 class253_9 = class128.method2970(i_3);
          int i_10;
          int i_11;
          if (i_4 != 1 && i_4 != 3) {
@@ -100,7 +100,7 @@ public class class67 implements Comparator {
          int i_17 = ints_16[i_12][i_15] + ints_16[i_13][i_14] + ints_16[i_12][i_14] + ints_16[i_13][i_15] >> 2;
          int i_18 = (i_1 << 7) + (i_10 << 6);
          int i_19 = (i_2 << 7) + (i_11 << 6);
-         long long_20 = class126.method2854(i_1, i_2, 2, class253_9.field3369 == 0, i_3, -1677941085);
+         long long_20 = class126.method2854(i_1, i_2, 2, class253_9.field3369 == 0, i_3);
          int i_22 = i_5 + (i_4 << 6);
          if (class253_9.field3361 == 1) {
             i_22 += 256;
@@ -316,7 +316,7 @@ public class class67 implements Comparator {
                         i_29 = 16;
                         long_32 = class133_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
-                           i_29 = class128.method2970(GCMonitor.method770(long_32), (short) 4095).field3374;
+                           i_29 = class128.method2970(GCMonitor.method770(long_32)).field3374;
                         }
 
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
@@ -330,7 +330,7 @@ public class class67 implements Comparator {
                         i_29 = 8;
                         long_32 = class133_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
-                           i_29 = class128.method2970(GCMonitor.method770(long_32), (short) 4095).field3374 / 2;
+                           i_29 = class128.method2970(GCMonitor.method770(long_32)).field3374 / 2;
                         }
 
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
@@ -353,7 +353,7 @@ public class class67 implements Comparator {
                         i_29 = 8;
                         long_32 = class133_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
-                           i_29 = class128.method2970(GCMonitor.method770(long_32), (short) 4095).field3374 / 2;
+                           i_29 = class128.method2970(GCMonitor.method770(long_32)).field3374 / 2;
                         }
 
                         int i_28 = i_4 + 2 & 0x3;

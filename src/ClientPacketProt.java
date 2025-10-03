@@ -101,15 +101,15 @@ public class ClientPacketProt implements class181 {
    public static final ClientPacketProt field2239 = new ClientPacketProt(98, 8);
    static final ClientPacketProt field2246 = new ClientPacketProt(43, -1);
    static final ClientPacketProt field2302 = new ClientPacketProt(99, 7);
-   final int field2297;
-   final int field2275;
+   final int opcode;
+   final int length;
 
-   ClientPacketProt(int i_1, int i_2) {
-      this.field2297 = i_1;
-      this.field2275 = i_2;
+   ClientPacketProt(int opcode, int length) {
+      this.opcode = opcode;
+      this.length = length;
    }
 
-   public static String method3612(CharSequence charsequence_0, int i_1) {
+   public static String method3612(CharSequence charsequence_0) {
       int i_3 = charsequence_0.length();
       char[] arr_4 = new char[i_3];
 
@@ -121,8 +121,8 @@ public class ClientPacketProt implements class181 {
       return string_2;
    }
 
-   static final void method3611(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, class133 class133_7, class172 class172_8, int i_9) {
-      class253 class253_10 = class128.method2970(i_4, (short) 4095);
+   static final void method3611(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, class133 class133_7, class172 class172_8) {
+      class253 class253_10 = class128.method2970(i_4);
       int i_11;
       int i_12;
       if (i_5 != 1 && i_5 != 3) {
@@ -157,7 +157,7 @@ public class ClientPacketProt implements class181 {
       int i_18 = ints_17[i_13][i_15] + ints_17[i_14][i_15] + ints_17[i_13][i_16] + ints_17[i_14][i_16] >> 2;
       int i_19 = (i_2 << 7) + (i_11 << 6);
       int i_20 = (i_3 << 7) + (i_12 << 6);
-      long long_21 = class126.method2854(i_2, i_3, 2, class253_10.field3369 == 0, i_4, -1514963766);
+      long long_21 = class126.method2854(i_2, i_3, 2, class253_10.field3369 == 0, i_4);
       int i_23 = (i_5 << 6) + i_6;
       if (class253_10.field3361 == 1) {
          i_23 += 256;
@@ -271,7 +271,7 @@ public class ClientPacketProt implements class181 {
                   i_30 = 16;
                   long_31 = class133_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
-                     i_30 = class128.method2970(GCMonitor.method770(long_31), (short) 4095).field3374;
+                     i_30 = class128.method2970(GCMonitor.method770(long_31)).field3374;
                   }
 
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
@@ -285,7 +285,7 @@ public class ClientPacketProt implements class181 {
                   i_30 = 8;
                   long_31 = class133_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
-                     i_30 = class128.method2970(GCMonitor.method770(long_31), (short) 4095).field3374 / 2;
+                     i_30 = class128.method2970(GCMonitor.method770(long_31)).field3374 / 2;
                   }
 
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
@@ -308,7 +308,7 @@ public class ClientPacketProt implements class181 {
                   i_30 = 8;
                   long_31 = class133_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
-                     i_30 = class128.method2970(GCMonitor.method770(long_31), (short) 4095).field3374 / 2;
+                     i_30 = class128.method2970(GCMonitor.method770(long_31)).field3374 / 2;
                   }
 
                   int i_29 = i_5 + 2 & 0x3;

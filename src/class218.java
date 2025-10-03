@@ -4,7 +4,7 @@ public class class218 {
 
    public static int field2707;
 
-   public static void method4110(Applet applet_0, String string_1, int i_2) {
+   public static void method4110(Applet applet_0, String string_1) {
       class51.field437 = applet_0;
       if (string_1 != null) {
          class51.field434 = string_1;
@@ -12,9 +12,8 @@ public class class218 {
 
    }
 
-   public static final boolean method4109(int i_0) {
-      class45 class45_1 = class45.field392;
-      synchronized(class45.field392) {
+   public static final boolean method4109() {
+       synchronized(class45.field392) {
          if (class45.field385 == class45.field396) {
             return false;
          } else {

@@ -254,7 +254,7 @@ final class class4 implements class0 {
          class128.field1748 = 0;
          class128.field1744 = false;
       } else {
-         class190.method3665(-1942171448);
+         class190.method3665();
       }
 
       class186.method3619((byte) 95);
@@ -418,7 +418,7 @@ final class class4 implements class0 {
       }
 
       if (Client.field708 == 2) {
-         class32.method544((Client.field737 - class196.field2389 << 7) + Client.field821, (Client.field777 - class1.field1 << 7) + Client.field677, Client.field675 * 2, 994421183);
+         class32.method544((Client.field737 - class196.field2389 << 7) + Client.field821, (Client.field777 - class1.field1 << 7) + Client.field677, Client.field675 * 2);
          if (Client.field752 > -1 && Client.field881 % 20 < 10) {
             class173.field2096[0].method6126(i_0 + Client.field752 - 12, Client.field753 + i_1 - 28);
          }

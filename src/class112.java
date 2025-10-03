@@ -156,10 +156,10 @@ public class class112 {
             if (bool_10) {
                class66 class66_12 = (class66) class69_0;
                if (i_1 < i_76) {
-                  class219.method4113(class69_0, class69_0.field999 + 15, 1386416846);
+                  class219.method4113(class69_0, class69_0.field999 + 15);
                   class296 class296_13 = (class296) Client.field704.get(class292.field3677);
                   byte b_93 = 9;
-                  class296_13.method5341(class66_12.field621.method5197((byte) 112), i_2 + Client.field752, i_3 + Client.field753 - b_93, 16777215, 0);
+                  class296_13.method5341(class66_12.field621.method5197(), i_2 + Client.field752, i_3 + Client.field753 - b_93, 16777215, 0);
                   b_9 = 18;
                }
             }
@@ -170,7 +170,7 @@ public class class112 {
          int i_23;
          int i_24;
          if (!class69_0.field954.method4810()) {
-            class219.method4113(class69_0, class69_0.field999 + 15, 1386416846);
+            class219.method4113(class69_0, class69_0.field999 + 15);
 
             for (class78 class78_89 = (class78) class69_0.field954.method4838(); class78_89 != null; class78_89 = (class78) class69_0.field954.method4808()) {
                class70 class70_90 = class78_89.method1950(Client.field881, (byte) 41);
@@ -266,7 +266,7 @@ public class class112 {
             }
 
             if (class66_11.field635 != -1 || class66_11.field615 != -1) {
-               class219.method4113(class69_0, class69_0.field999 + 15, 1386416846);
+               class219.method4113(class69_0, class69_0.field999 + 15);
                if (Client.field752 > -1) {
                   if (class66_11.field635 != -1) {
                      i_88 += 25;
@@ -281,7 +281,7 @@ public class class112 {
             }
 
             if (i_1 >= 0 && Client.field708 == 10 && ints_8[i_1] == Client.field689) {
-               class219.method4113(class69_0, class69_0.field999 + 15, 1386416846);
+               class219.method4113(class69_0, class69_0.field999 + 15);
                if (Client.field752 > -1) {
                   i_88 += class173.field2096[1].field3900;
                   class173.field2096[1].method6126(i_2 + Client.field752 - 12, i_3 + Client.field753 - i_88);
@@ -294,14 +294,14 @@ public class class112 {
             }
 
             if (class256_91.field3491 >= 0 && class256_91.field3491 < class108.field1442.length) {
-               class219.method4113(class69_0, class69_0.field999 + 15, 1386416846);
+               class219.method4113(class69_0, class69_0.field999 + 15);
                if (Client.field752 > -1) {
                   class108.field1442[class256_91.field3491].method6126(i_2 + Client.field752 - 12, i_3 + Client.field753 - 30);
                }
             }
 
             if (Client.field708 == 1 && Client.field696[i_1 - i_76] == Client.field824 && Client.field881 % 20 < 10) {
-               class219.method4113(class69_0, class69_0.field999 + 15, 1386416846);
+               class219.method4113(class69_0, class69_0.field999 + 15);
                if (Client.field752 > -1) {
                   class173.field2096[0].method6126(i_2 + Client.field752 - 12, i_3 + Client.field753 - 28);
                }
@@ -309,7 +309,7 @@ public class class112 {
          }
 
          if (class69_0.field977 != null && (i_1 >= i_76 || !class69_0.field998 && (Client.field907 == 4 || !class69_0.field963 && (Client.field907 == 0 || Client.field907 == 3 || Client.field907 == 1 && ((class66) class69_0).method1181(-1900430541))))) {
-            class219.method4113(class69_0, class69_0.field999, 1386416846);
+            class219.method4113(class69_0, class69_0.field999);
             if (Client.field752 > -1 && Client.field740 < Client.field867) {
                Client.field676[Client.field740] = class23.field193.method5417(class69_0.field977) / 2;
                Client.field744[Client.field740] = class23.field193.field3709;
@@ -359,7 +359,7 @@ public class class112 {
                if (errorHandler_96 == null) {
                   class69_0.field971[i_78] = -1;
                } else {
-                  class219.method4113(class69_0, class69_0.field999 / 2, 1386416846);
+                  class219.method4113(class69_0, class69_0.field999 / 2);
                   if (Client.field752 > -1) {
                      if (i_78 == 1) {
                         Client.field753 -= 20;

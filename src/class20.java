@@ -26,12 +26,12 @@ public class class20 implements UnknownT {
       int i_6 = i_4 >> 14 & 0x3fff;
       int i_7 = i_4 & 0x3fff;
       class66_3.field994[0] = i_6 - class196.field2389;
-      class66_3.field1005 = (class66_3.field994[0] << 7) + (class66_3.method1187(-1116736107) << 6);
+      class66_3.field1005 = (class66_3.field994[0] << 7) + (class66_3.method1187() << 6);
       class66_3.field962[0] = i_7 - class1.field1;
-      class66_3.field949 = (class66_3.field962[0] << 7) + (class66_3.method1187(-1116736107) << 6);
+      class66_3.field949 = (class66_3.field962[0] << 7) + (class66_3.method1187() << 6);
       class42.field372 = class66_3.field629 = b_5;
       if (class89.field1254[i_2] != null) {
-         class66_3.method1179(class89.field1254[i_2], -641392846);
+         class66_3.method1179(class89.field1254[i_2]);
       }
 
       class89.field1255 = 0;

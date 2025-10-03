@@ -23,7 +23,7 @@ public class class342 {
       this.field4072 = 0L;
    }
 
-   public void method6522(byte[] bytes_1, int i_2, int i_3, int i_4) throws IOException {
+   public void method6522(byte[] bytes_1, int i_2, int i_3) throws IOException {
       try {
          if (i_3 + i_2 > bytes_1.length) {
             throw new ArrayIndexOutOfBoundsException(i_3 + i_2 - bytes_1.length);
@@ -64,7 +64,7 @@ public class class342 {
                i_2 += i_9;
             }
          } else if (i_3 > 0) {
-            this.method6518(-364747525);
+            this.method6518();
             i_9 = i_3;
             if (i_3 > this.field4073) {
                i_9 = this.field4073;
@@ -123,7 +123,7 @@ public class class342 {
       }
    }
 
-   void method6523(int i_1) throws IOException {
+   void method6523() throws IOException {
       if (this.field4077 != -1L) {
          if (this.field4077 != this.field4080) {
             this.field4070.method6551(this.field4077);
@@ -161,7 +161,7 @@ public class class342 {
 
    }
 
-   public long method6520(short s_1) {
+   public long method6520() {
       return this.field4079;
    }
 
@@ -173,14 +173,14 @@ public class class342 {
       }
    }
 
-   public void method6524(byte[] bytes_1, int i_2, int i_3, int i_4) throws IOException {
+   public void method6524(byte[] bytes_1, int i_2, int i_3) throws IOException {
       try {
          if (this.field4072 + (long)i_3 > this.field4079) {
             this.field4079 = this.field4072 + (long)i_3;
          }
 
          if (this.field4077 != -1L && (this.field4072 < this.field4077 || this.field4072 > (long)this.field4076 + this.field4077)) {
-            this.method6523(2095113071);
+            this.method6523();
          }
 
          if (this.field4077 != -1L && this.field4072 + (long)i_3 > this.field4077 + (long)this.field4075.length) {
@@ -190,7 +190,7 @@ public class class342 {
             i_2 += i_5;
             i_3 -= i_5;
             this.field4076 = this.field4075.length;
-            this.method6523(1384161636);
+            this.method6523();
          }
 
          if (i_3 <= this.field4075.length) {
@@ -245,7 +245,7 @@ public class class342 {
       }
    }
 
-   void method6518(int i_1) throws IOException {
+   void method6518() throws IOException {
       this.field4073 = 0;
       if (this.field4072 != this.field4080) {
          this.field4070.method6551(this.field4072);
@@ -269,16 +269,16 @@ public class class342 {
 
    }
 
-   public void method6540(byte b_1) throws IOException {
-      this.method6523(813445771);
+   public void method6540() throws IOException {
+      this.method6523();
       this.field4070.method6550();
    }
 
-   public void method6547(byte[] bytes_1, int i_2) throws IOException {
-      this.method6522(bytes_1, 0, bytes_1.length, 1346906762);
+   public void method6547(byte[] bytes_1) throws IOException {
+      this.method6522(bytes_1, 0, bytes_1.length);
    }
 
-   static int method6528(int i_0, int i_1, int i_2) {
+   static int method6528(int i_0, int i_1) {
       class59 class59_3 = (class59) class59.field552.method5952((long)i_0);
       if (class59_3 == null) {
          return 0;

@@ -10,12 +10,12 @@ public final class class87 extends class135 {
    }
 
    static void method2053(int i_0, int i_1, int i_2, int i_3, int i_4) {
-      class217 class217_5 = Client.method1649(i_0, i_1, -1559906415);
+      class217 class217_5 = Client.method1649(i_0, i_1);
       if (class217_5 != null && class217_5.field2661 != null) {
          class62 class62_6 = new class62();
          class62_6.field575 = class217_5;
          class62_6.field581 = class217_5.field2661;
-         class184.method3613(class62_6, (byte) -101);
+         class184.method3613(class62_6);
       }
 
       Client.field812 = i_3;

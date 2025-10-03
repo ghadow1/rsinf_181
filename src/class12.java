@@ -6,7 +6,7 @@ final class class12 implements Comparator {
    static FontMetrics field80;
    static class324[] field82;
 
-   int method135(class7 class7_1, class7 class7_2, int i_3) {
+   int method135(class7 class7_1, class7 class7_2) {
       return class7_1.field42 < class7_2.field42 ? -1 : (class7_2.field42 == class7_1.field42 ? 0 : 1);
    }
 
@@ -15,21 +15,21 @@ final class class12 implements Comparator {
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method135((class7) object_1, (class7) object_2, -502692128);
+      return this.method135((class7) object_1, (class7) object_2);
    }
 
-   public static int method148(CharSequence charsequence_0, byte b_1) {
+   public static int method148(CharSequence charsequence_0) {
       int i_2 = charsequence_0.length();
       int i_3 = 0;
 
       for (int i_4 = 0; i_4 < i_2; i_4++) {
-         i_3 = (i_3 << 5) - i_3 + class254.method4699(charsequence_0.charAt(i_4), (short) -4166);
+         i_3 = (i_3 << 5) - i_3 + class254.method4699(charsequence_0.charAt(i_4));
       }
 
       return i_3;
    }
 
-   static final void method146(int i_0, int i_1) {
+   static final void method146(int i_0) {
       if (class162.method3445(i_0)) {
          class217[] arr_2 = class217.field2556[i_0];
 
@@ -44,11 +44,11 @@ final class class12 implements Comparator {
       }
    }
 
-   static void method145(byte b_0) {
-      class236.method4312(class42.field373 / 2 + class247.field3292, class30.field267, -690667518);
+   static void method145() {
+      class236.method4312(class42.field373 / 2 + class247.field3292, class30.field267);
    }
 
-   static void method144(int i_0, int i_1) {
+   static void method144(int i_0) {
       class59 class59_2 = (class59) class59.field552.method5952((long)i_0);
       if (class59_2 != null) {
          for (int i_3 = 0; i_3 < class59_2.field550.length; i_3++) {
@@ -59,7 +59,7 @@ final class class12 implements Comparator {
       }
    }
 
-   static int method147(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method147(int i_0, boolean bool_2) {
       class217 class217_4 = bool_2 ? class76.field1111 : class207.field2507;
       if (i_0 == 1500) {
          class76.field1098[++class70.field1014 - 1] = class217_4.field2577;
@@ -84,7 +84,7 @@ final class class12 implements Comparator {
       }
    }
 
-   static void method134(int i_0, int i_1, int i_2, int i_3, int i_4) {
+   static void method134(int i_0, int i_1, int i_2, int i_3) {
       class59 class59_5 = (class59) class59.field552.method5952((long)i_0);
       if (class59_5 == null) {
          class59_5 = new class59();
@@ -114,7 +114,7 @@ final class class12 implements Comparator {
       class59_5.field551[i_1] = i_3;
    }
 
-   static final boolean method149(class217 class217_0, byte b_1) {
+   static final boolean method149(class217 class217_0) {
       int i_2 = class217_0.field2568;
       if (i_2 == 205) {
          Client.field700 = 250;
@@ -125,7 +125,7 @@ final class class12 implements Comparator {
          if (i_2 >= 300 && i_2 <= 313) {
             i_3 = (i_2 - 300) / 2;
             i_4 = i_2 & 0x1;
-            Client.field918.method3992(i_3, i_4 == 1, (short) 7431);
+            Client.field918.method3992(i_3, i_4 == 1);
          }
 
          if (i_2 >= 314 && i_2 <= 323) {
@@ -143,7 +143,7 @@ final class class12 implements Comparator {
          }
 
          if (i_2 == 326) {
-            class187 class187_5 = class235.method4265(ClientPacketProt.field2215, Client.data.field1313, 1775123545);
+            class187 class187_5 = class235.method4265(ClientPacketProt.field2215, Client.data.field1313);
             Client.field918.method3995(class187_5.outBuffer, 318518244);
             Client.data.copy(class187_5);
             return true;

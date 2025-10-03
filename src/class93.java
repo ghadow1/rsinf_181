@@ -68,7 +68,7 @@ public class class93 extends class135 {
          this.field1300 = Client.field881 - i_2;
       }
 
-      class253 class253_13 = class128.method2970(this.field1297, (short) 4095);
+      class253 class253_13 = class128.method2970(this.field1297);
       if (class253_13.field3391 != null) {
          class253_13 = class253_13.method4595();
       }
@@ -94,7 +94,7 @@ public class class93 extends class135 {
          int i_10 = ints_9[i_5][i_7] + ints_9[i_6][i_7] + ints_9[i_5][i_8] + ints_9[i_6][i_8] >> 2;
          int i_11 = (this.field1296 << 7) + (i_3 << 6);
          int i_12 = (this.field1299 << 7) + (i_4 << 6);
-         return class253_13.method4614(this.field1294, this.field1292, ints_9, i_11, i_10, i_12, this.field1293, this.field1298, (byte) 5);
+         return class253_13.method4614(this.field1294, this.field1292, ints_9, i_11, i_10, i_12, this.field1293, this.field1298);
       }
    }
 
@@ -198,7 +198,7 @@ public class class93 extends class135 {
 
          return i_5 - i_6;
       } else {
-         return i_2 == 2 ? class71_0.field1032 - class71_1.field1032 : (i_2 == 3 ? (class71_0.field1028.equals("-") ? (class71_1.field1028.equals("-") ? 0 : (bool_3 ? -1 : 1)) : (class71_1.field1028.equals("-") ? (bool_3 ? 1 : -1) : class71_0.field1028.compareTo(class71_1.field1028))) : (i_2 == 4 ? (class71_0.method1698(1749102436) ? (class71_1.method1698(1070404726) ? 0 : 1) : (class71_1.method1698(518274049) ? -1 : 0)) : (i_2 == 5 ? (class71_0.method1682(2029214211) ? (class71_1.method1682(2029214211) ? 0 : 1) : (class71_1.method1682(2029214211) ? -1 : 0)) : (i_2 == 6 ? (class71_0.method1718(-1353649797) ? (class71_1.method1718(-1353649797) ? 0 : 1) : (class71_1.method1718(-1353649797) ? -1 : 0)) : (i_2 == 7 ? (class71_0.method1680((byte) 0) ? (class71_1.method1680((byte) 0) ? 0 : 1) : (class71_1.method1680((byte) 0) ? -1 : 0)) : class71_0.field1025 - class71_1.field1025)))));
+         return i_2 == 2 ? class71_0.field1032 - class71_1.field1032 : (i_2 == 3 ? (class71_0.field1028.equals("-") ? (class71_1.field1028.equals("-") ? 0 : (bool_3 ? -1 : 1)) : (class71_1.field1028.equals("-") ? (bool_3 ? 1 : -1) : class71_0.field1028.compareTo(class71_1.field1028))) : (i_2 == 4 ? (class71_0.method1698() ? (class71_1.method1698() ? 0 : 1) : (class71_1.method1698() ? -1 : 0)) : (i_2 == 5 ? (class71_0.method1682() ? (class71_1.method1682() ? 0 : 1) : (class71_1.method1682() ? -1 : 0)) : (i_2 == 6 ? (class71_0.method1718() ? (class71_1.method1718() ? 0 : 1) : (class71_1.method1718() ? -1 : 0)) : (i_2 == 7 ? (class71_0.method1680() ? (class71_1.method1680() ? 0 : 1) : (class71_1.method1680() ? -1 : 0)) : class71_0.field1025 - class71_1.field1025)))));
       }
    }
 
