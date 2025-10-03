@@ -178,20 +178,17 @@ public class Scene {
    }
 
    static boolean testPoint(int x, int y, int z) {
-      int px = ((x * cosEyeYaw) + (z * sinEyeYaw)) >> 16;
-      int tmp = ((z * cosEyeYaw) - (x * sinEyeYaw)) >> 16;
-      int pz = ((tmp * cosEyePitch) + (y * sinEyePitch)) >> 16;
-      int py = ((y * cosEyePitch) - (tmp * sinEyePitch)) >> 16;
-
-      if ((pz < 50) || (pz > 3500)) {
+      int px = x * cosEyeYaw + z * sinEyeYaw >> 16;
+      int tmp = z * cosEyeYaw - x * sinEyeYaw >> 16;
+      int i_5 = tmp * cosEyePitch + sinEyePitch * y >> 16;
+      int i_6 = cosEyePitch * y - tmp * sinEyePitch >> 16;
+      if (i_5 >= 50 && i_5 <= 3500) {
+         int viewportX = px * 128 / i_5 + viewportCenterX;
+         int viewportY = i_6 * 128 / i_5 + viewportCenterY;
+         return viewportX >= viewportLeft && viewportX <= viewportRight && viewportY >= viewportTop && viewportY <= viewportBottom;
+      } else {
          return false;
       }
-
-      int viewportX = viewportCenterX + ((px << 9) / pz);
-      int viewportY = viewportCenterY + ((py << 9) / pz);
-
-      return (viewportX >= viewportLeft) && (viewportX <= viewportRight)
-              && (viewportY >= viewportTop) && (viewportY <= viewportBottom);
    }
 
    public static boolean method3105() {
