@@ -17,7 +17,7 @@ public class class41 {
       class62.method1132(30, "", str_1);
    }
 
-   static final void method736(Buffer_3 buffer3_0, int i_1, class66 class66_2, int i_3, int i_4) {
+   static final void method736(PacketBuffer buffer3_0, int i_1, class66 class66_2, int i_3, int i_4) {
       byte b_5 = -1;
       int i_6;
       int i_7;
@@ -95,7 +95,7 @@ public class class41 {
          class66_2.field983 = buffer3_0.readInvertedByte();
          class66_2.field995 = buffer3_0.readShortWithOffset() + Client.field881;
          class66_2.field996 = buffer3_0.readShortLittleEndian() + Client.field881;
-         class66_2.field997 = buffer3_0.readUnsignedShortBigEndian();
+         class66_2.field997 = buffer3_0.readUnsignedShort();
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
             class66_2.field993 += class66_2.field640;
@@ -164,7 +164,7 @@ public class class41 {
          i_10 = buffer3_0.position;
          if (class66_2.field621 != null && class66_2.field613 != null) {
             boolean bool_19 = false;
-            if (gameState_20.field3092 && class58.field546.method1765(class66_2.field621)) {
+            if (gameState_20.field3092 && class58.field546.isIgnored(class66_2.field621)) {
                bool_19 = true;
             }
 
@@ -172,7 +172,7 @@ public class class41 {
                class89.field1264.position = 0;
                buffer3_0.readBytes(class89.field1264.buffer, 0, i_9);
                class89.field1264.position = 0;
-               String string_16 = class296.method5362(class1.method17(class311.method5898(class89.field1264, (byte) 23), (byte) -16));
+               String string_16 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(class89.field1264, (byte) 23), (byte) -16));
                class66_2.field977 = string_16.trim();
                class66_2.field966 = i_6 >> 8;
                class66_2.field982 = i_6 & 0xff;
@@ -185,8 +185,8 @@ public class class41 {
                   i_13 = bool_18 ? 90 : 2;
                }
 
-               if (gameState_20.field3090 != -1) {
-                  class62.method1132(i_13, class33.iconTag(gameState_20.field3090) + class66_2.field621.method5197(), string_16);
+               if (gameState_20.modIcon != -1) {
+                  class62.method1132(i_13, AbstractWorldMapData.iconTag(gameState_20.modIcon) + class66_2.field621.method5197(), string_16);
                } else {
                   class62.method1132(i_13, class66_2.field621.method5197(), string_16);
                }
@@ -203,7 +203,7 @@ public class class41 {
       }
 
       if ((i_3 & 0x80) != 0) {
-         i_6 = buffer3_0.readUnsignedShortBigEndian();
+         i_6 = buffer3_0.readUnsignedShort();
          if (i_6 == 65535) {
             i_6 = -1;
          }

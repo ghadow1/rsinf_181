@@ -1,4 +1,4 @@
-public class class64 extends class175 {
+public class Message extends DualNode {
 
    public static short[][] field604;
    static class325 field607;
@@ -11,12 +11,12 @@ public class class64 extends class175 {
    String field599;
    String field597;
    String field605;
-   class283 field601;
+   Username field601;
 
-   class64(int i_1, String string_2, String string_3, String string_4) {
+   Message(int i_1, String string_2, String string_3, String string_4) {
       this.field608 = class281.field3637;
       this.field603 = class281.field3637;
-      this.method1143(i_1, string_2, string_3, string_4, (byte) 4);
+      this.set(i_1, string_2, string_3, string_4);
    }
 
    void method1145() {
@@ -27,7 +27,7 @@ public class class64 extends class175 {
       this.field603 = class58.field546.field1071.method5081(this.field601) ? class281.field3638 : class281.field3639;
    }
 
-   void method1143(int i_1, String string_2, String string_3, String string_4, byte b_5) {
+   void set(int i_1, String string_2, String string_3, String string_4) {
       this.field600 = class255.method4701();
       this.field598 = Client.field881;
       this.field602 = i_1;
@@ -41,7 +41,7 @@ public class class64 extends class175 {
 
    final void method1164() {
       if (this.field599 != null) {
-         this.field601 = new class283(class8.method94(this.field599), class40.field353);
+         this.field601 = new Username(class8.method94(this.field599), FontName.loginType);
       } else {
          this.field601 = null;
       }

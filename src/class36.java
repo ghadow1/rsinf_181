@@ -148,7 +148,7 @@ public final class class36 {
                   class34 class34_13 = (class34) iterator_12.next();
                   int i_14 = i_3 * (class34_13.field297.field2530 - this.field319) / this.field314;
                   int i_15 = i_4 - (class34_13.field297.field2528 - this.field325) * i_4 / this.field324;
-                  class321.method6025(i_14 + i_1, i_15 + i_2, 2, 16776960, 256);
+                  class321.drawCircleAlpha2D(i_14 + i_1, i_15 + i_2, 2, 16776960, 256);
                }
             }
          }
@@ -160,10 +160,10 @@ public final class class36 {
          this.field321 = false;
          this.field311 = true;
          System.nanoTime();
-         int i_5 = class233_1.method4160(class35.field308.field306);
+         int i_5 = class233_1.method4160(WorldMapCacheName.field308.field306);
          int i_6 = class233_1.method4161(i_5, string_2);
-         ByteBuffer class300_7 = new ByteBuffer(class233_1.method4163(class35.field308.field306, string_2, 794658484));
-         ByteBuffer class300_8 = new ByteBuffer(class233_1.method4163(class35.field302.field306, string_2, 529639123));
+         ByteBuffer class300_7 = new ByteBuffer(class233_1.method4163(WorldMapCacheName.field308.field306, string_2, 794658484));
+         ByteBuffer class300_8 = new ByteBuffer(class233_1.method4163(WorldMapCacheName.field302.field306, string_2, 529639123));
          System.nanoTime();
          System.nanoTime();
          this.field312 = new class38();
@@ -210,8 +210,8 @@ public final class class36 {
 
          System.nanoTime();
          System.nanoTime();
-         if (class233_1.method4162(class35.field303.field306, string_2)) {
-            byte[] bytes_21 = class233_1.method4163(class35.field303.field306, string_2, -1408492249);
+         if (class233_1.method4162(WorldMapCacheName.field303.field306, string_2)) {
+            byte[] bytes_21 = class233_1.method4163(WorldMapCacheName.field303.field306, string_2, -1408492249);
             this.field313 = class158.method3435(bytes_21, (byte) -56);
          }
 
@@ -251,9 +251,9 @@ public final class class36 {
    }
 
    public final void method604(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, byte b_9) {
-      int[] ints_10 = class321.field3869;
-      int i_11 = class321.field3875;
-      int i_12 = class321.field3871;
+      int[] ints_10 = class321.Rasterizer2D_pixels;
+      int i_11 = class321.Rasterizer2D_width;
+      int i_12 = class321.Rasterizer2D_height;
       int[] ints_13 = new int[4];
       class321.method5999(ints_13);
       class22 class22_14 = this.method641(i_1, i_2, i_3, i_4, 1998978959);
@@ -261,9 +261,9 @@ public final class class36 {
       int i_16 = (int)Math.ceil((double)f_15);
       this.field310 = i_16;
       if (!this.field317.containsKey(Integer.valueOf(i_16))) {
-         class40 class40_17 = new class40(i_16);
-         class40_17.method719((byte) 4);
-         this.field317.put(Integer.valueOf(i_16), class40_17);
+         FontName fontName_17 = new FontName(i_16);
+         fontName_17.method719((byte) 4);
+         this.field317.put(Integer.valueOf(i_16), fontName_17);
       }
 
       int i_24 = class22_14.field180 + class22_14.field175 - 1;
@@ -273,7 +273,7 @@ public final class class36 {
       int i_20;
       for (i_19 = class22_14.field175; i_19 <= i_24; i_19++) {
          for (i_20 = class22_14.field177; i_20 <= i_18; i_20++) {
-            this.field315[i_19][i_20].method473(i_16, (class40) this.field317.get(Integer.valueOf(i_16)), this.field320, this.field318, this.field323, -1781579709);
+            this.field315[i_19][i_20].method473(i_16, (FontName) this.field317.get(Integer.valueOf(i_16)), this.field320, this.field318, this.field323, -1781579709);
          }
       }
 
@@ -334,7 +334,7 @@ public final class class36 {
 
    static final void method601(class66 class66_0, int i_1, int i_2, int i_3, byte b_4) {
       if (Client.field657 != class66_0) {
-         if (Client.field791 < 400) {
+         if (Client.menuOptionsCount < 400) {
             String string_5;
             int i_8;
             if (class66_0.field617 == 0) {
@@ -344,23 +344,23 @@ public final class class36 {
                int i_10 = i_9 - i_8;
                String string_7;
                if (i_10 < -9) {
-                  string_7 = class73.method1756(16711680, -844505624);
+                  string_7 = class73.colorStartTag(16711680);
                } else if (i_10 < -6) {
-                  string_7 = class73.method1756(16723968, -844505624);
+                  string_7 = class73.colorStartTag(16723968);
                } else if (i_10 < -3) {
-                  string_7 = class73.method1756(16740352, -844505624);
+                  string_7 = class73.colorStartTag(16740352);
                } else if (i_10 < 0) {
-                  string_7 = class73.method1756(16756736, -844505624);
+                  string_7 = class73.colorStartTag(16756736);
                } else if (i_10 > 9) {
-                  string_7 = class73.method1756(65280, -844505624);
+                  string_7 = class73.colorStartTag(65280);
                } else if (i_10 > 6) {
-                  string_7 = class73.method1756(4259584, -844505624);
+                  string_7 = class73.colorStartTag(4259584);
                } else if (i_10 > 3) {
-                  string_7 = class73.method1756(8453888, -844505624);
+                  string_7 = class73.colorStartTag(8453888);
                } else if (i_10 > 0) {
-                  string_7 = class73.method1756(12648192, -844505624);
+                  string_7 = class73.colorStartTag(12648192);
                } else {
-                  string_7 = class73.method1756(16776960, -844505624);
+                  string_7 = class73.colorStartTag(16776960);
                }
 
                string_5 = string_6 + string_7 + " " + " (" + "level-" + class66_0.field618 + ")" + class66_0.field619[2];
@@ -369,11 +369,11 @@ public final class class36 {
             }
 
             int i_11;
-            if (Client.field900 == 1) {
-               class188.method3644("Use", Client.field738 + " " + "->" + " " + class73.method1756(16777215, -844505624) + string_5, 14, i_1, i_2, i_3, -1599303692);
-            } else if (Client.field810) {
-               if ((class35.field301 & 0x8) == 8) {
-                  class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class73.method1756(16777215, -844505624) + string_5, 15, i_1, i_2, i_3, 1801868715);
+            if (Client.isItemSelected == 1) {
+               class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16777215) + string_5, 14, i_1, i_2, i_3, -1599303692);
+            } else if (Client.isSpellSelected) {
+               if ((WorldMapCacheName.field301 & 0x8) == 8) {
+                  class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16777215) + string_5, 15, i_1, i_2, i_3, 1801868715);
                }
             } else {
                for (i_11 = 7; i_11 >= 0; --i_11) {
@@ -401,14 +401,14 @@ public final class class36 {
 
                      boolean bool_13 = false;
                      i_8 = Client.field811[i_11] + s_12;
-                     class188.method3644(Client.field778[i_11], class73.method1756(16777215, -844505624) + string_5, i_8, i_1, i_2, i_3, 209520680);
+                     class188.method3644(Client.field778[i_11], class73.colorStartTag(16777215) + string_5, i_8, i_1, i_2, i_3, 209520680);
                   }
                }
             }
 
-            for (i_11 = 0; i_11 < Client.field791; i_11++) {
+            for (i_11 = 0; i_11 < Client.menuOptionsCount; i_11++) {
                if (Client.field794[i_11] == 23) {
-                  Client.field668[i_11] = class73.method1756(16777215, -844505624) + string_5;
+                  Client.field668[i_11] = class73.colorStartTag(16777215) + string_5;
                   break;
                }
             }

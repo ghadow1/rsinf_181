@@ -5,24 +5,24 @@ public class class137 {
    int field1890;
    int field1888;
 
-   public static class271[] method3265(int i_0) {
+   public static class271[] method3265() {
       return new class271[] {class271.field3593, class271.field3589, class271.field3594, class271.field3591, class271.field3600, class271.field3599, class271.field3592, class271.field3595, class271.field3585, class271.field3587, class271.field3582, class271.field3586, class271.field3581, class271.field3598, class271.field3590, class271.field3588, class271.field3584, class271.field3596, class271.field3583};
    }
 
-   static void method3266(boolean bool_0, int i_1) {
-      class85.field1210 = "";
-      class85.field1195 = "Enter your username/email & password.";
-      class85.field1196 = "";
-      class85.field1209 = 2;
+   static void method3266(boolean bool_0) {
+      Login.Login_response1 = "";
+      Login.Login_response2 = "Enter your username/email & password.";
+      Login.Login_response3 = "";
+      Login.loginIndex = 2;
       if (bool_0) {
-         class85.field1198 = "";
+         Login.Login_password = "";
       }
 
-      class49.method815((short) 135);
-      if (Client.field691 && class85.field1180 != null && class85.field1180.length() > 0) {
-         class85.field1202 = 1;
+      ItemContainer.method815();
+      if (Client.field691 && Login.field1180 != null && Login.field1180.length() > 0) {
+         Login.field1202 = 1;
       } else {
-         class85.field1202 = 0;
+         Login.field1202 = 0;
       }
 
    }
@@ -34,30 +34,30 @@ public class class137 {
 
    static void method3264(int i_0) {
       Client.field663 = 1L;
-      class40.field348.field592 = 0;
+      FontName.field348.field592 = 0;
       class267.field3557 = true;
       Client.field667 = true;
       Client.field879 = -1L;
       class192.method3678();
       Client.data.method2218();
-      Client.data.field1314.position = 0;
-      Client.data.packet = null;
+      Client.data.packetBuffer.position = 0;
+      Client.data.serverPacket = null;
       Client.data.field1309 = null;
       Client.data.field1321 = null;
       Client.data.field1317 = null;
-      Client.data.field1315 = 0;
+      Client.data.serverPacketLength = 0;
       Client.data.field1318 = 0;
       Client.field669 = 0;
       Client.field700 = 0;
       Client.field708 = 0;
-      class224.method4121();
-      class54.field480 = 0;
+      FriendSystem.method4121();
+      MouseHandler.field480 = 0;
       class91.field1279.clear();
       class91.field1277.method5926();
       class91.field1278.method4949();
       class91.field1282 = 0;
-      Client.field900 = 0;
-      Client.field810 = false;
+      Client.isItemSelected = 0;
+      Client.isSpellSelected = false;
       Client.field893 = 0;
       Client.field722 = 0;
       Client.field727 = 0;
@@ -114,14 +114,14 @@ public class class137 {
       if (Client.field905 != -1) {
          i_1 = Client.field905;
          if (i_1 != -1 && class128.field1755[i_1]) {
-            class217.field2557.method4157(i_1, 513084306);
-            if (class217.field2556[i_1] != null) {
+            Widget.field2557.method4157(i_1, 513084306);
+            if (Widget.field2556[i_1] != null) {
                boolean bool_6 = true;
 
-               for (i_3 = 0; i_3 < class217.field2556[i_1].length; i_3++) {
-                  if (class217.field2556[i_1][i_3] != null) {
-                     if (class217.field2556[i_1][i_3].field2566 != 2) {
-                        class217.field2556[i_1][i_3] = null;
+               for (i_3 = 0; i_3 < Widget.field2556[i_1].length; i_3++) {
+                  if (Widget.field2556[i_1][i_3] != null) {
+                     if (Widget.field2556[i_1][i_3].field2566 != 2) {
+                        Widget.field2556[i_1][i_3] = null;
                      } else {
                         bool_6 = false;
                      }
@@ -129,7 +129,7 @@ public class class137 {
                }
 
                if (bool_6) {
-                  class217.field2556[i_1] = null;
+                  Widget.field2556[i_1] = null;
                }
 
                class128.field1755[i_1] = false;
@@ -144,7 +144,7 @@ public class class137 {
       Client.field905 = -1;
       Client.field816 = new class318(8);
       Client.field850 = null;
-      class224.method4121();
+      FriendSystem.method4121();
       Client.field918.method4009((int[]) null, new int[] {0, 0, 0, 0, 0}, false, -1, 646936980);
 
       for (i_1 = 0; i_1 < 8; i_1++) {

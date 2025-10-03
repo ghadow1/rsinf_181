@@ -98,41 +98,41 @@ public class class143 implements Runnable {
    static String method3305(int i_0) {
       String str_1 = "";
 
-      class64 class64_3;
-      for (Iterator iterator_2 = class91.field1277.iterator(); iterator_2.hasNext(); str_1 = str_1 + class64_3.field599 + ':' + class64_3.field605 + '\n') {
-         class64_3 = (class64) iterator_2.next();
+      Message message_3;
+      for (Iterator iterator_2 = class91.field1277.iterator(); iterator_2.hasNext(); str_1 = str_1 + message_3.field599 + ':' + message_3.field605 + '\n') {
+         message_3 = (Message) iterator_2.next();
       }
 
       return str_1;
    }
 
    static int method3306(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4;
+      Widget widget_4;
       if (i_0 == 2700) {
-         class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2690;
+         widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2690;
          return 1;
       } else if (i_0 == 2701) {
-         class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
-         if (class217_4.field2690 != -1) {
-            class76.field1098[++class70.field1014 - 1] = class217_4.field2655;
+         widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
+         if (widget_4.field2690 != -1) {
+            MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2655;
          } else {
-            class76.field1098[++class70.field1014 - 1] = 0;
+            MouseRecorder.field1098[++class70.field1014 - 1] = 0;
          }
 
          return 1;
       } else if (i_0 == 2702) {
-         int i_6 = class76.field1098[--class70.field1014];
+         int i_6 = MouseRecorder.field1098[--class70.field1014];
          class61 class61_5 = (class61) Client.field816.method5952((long)i_6);
          if (class61_5 != null) {
-            class76.field1098[++class70.field1014 - 1] = 1;
+            MouseRecorder.field1098[++class70.field1014 - 1] = 1;
          } else {
-            class76.field1098[++class70.field1014 - 1] = 0;
+            MouseRecorder.field1098[++class70.field1014 - 1] = 0;
          }
 
          return 1;
       } else if (i_0 == 2706) {
-         class76.field1098[++class70.field1014 - 1] = Client.field905;
+         MouseRecorder.field1098[++class70.field1014 - 1] = Client.field905;
          return 1;
       } else {
          return 2;

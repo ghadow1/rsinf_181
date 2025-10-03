@@ -26,8 +26,8 @@ public class class129 {
       Iterator iterator_3 = class91.field1277.iterator();
 
       while (iterator_3.hasNext()) {
-         class64 class64_4 = (class64) iterator_3.next();
-         class64_4.method1158();
+         Message message_4 = (Message) iterator_3.next();
+         message_4.method1158();
       }
 
       if (class46.field410 != null) {

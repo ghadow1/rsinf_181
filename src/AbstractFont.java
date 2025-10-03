@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class class296 extends class321 {
+public abstract class AbstractFont extends class321 {
 
    public static class324[] field3720;
    static int field3710 = -1;
@@ -25,7 +25,7 @@ public abstract class class296 extends class321 {
    int[] field3700;
    byte[] field3712;
 
-   class296(byte[] bytes_1, int[] ints_2, int[] ints_3, int[] ints_4, int[] ints_5, int[] ints_6, byte[][] bytes_7) {
+   AbstractFont(byte[] bytes_1, int[] ints_2, int[] ints_3, int[] ints_4, int[] ints_5, int[] ints_6, byte[][] bytes_7) {
       this.field3703 = ints_2;
       this.field3717 = ints_3;
       this.field3701 = ints_4;
@@ -49,7 +49,7 @@ public abstract class class296 extends class321 {
       this.field3707 = i_9 - this.field3709;
    }
 
-   class296(byte[] bytes_1) {
+   AbstractFont(byte[] bytes_1) {
       this.method5372(bytes_1);
    }
 
@@ -106,7 +106,7 @@ public abstract class class296 extends class321 {
                }
 
                if (i_2 == -1) {
-                  i_4 += this.field3700[(char)(class254.method4699(var_6) & 0xff)];
+                  i_4 += this.field3700[(char)(ItemDefinition.encodeStringCp1252(var_6) & 0xff)];
                   if (this.field3712 != null && i_3 != -1) {
                      i_4 += this.field3712[var_6 + (i_3 << 8)];
                   }
@@ -231,7 +231,7 @@ public abstract class class296 extends class321 {
 
       for (int i_6 = 0; i_6 < string_1.length(); i_6++) {
          if (string_1.charAt(i_6) != 0) {
-            char var_7 = (char)(class254.method4699(string_1.charAt(i_6)) & 0xff);
+            char var_7 = (char)(ItemDefinition.encodeStringCp1252(string_1.charAt(i_6)) & 0xff);
             if (var_7 == 60) {
                i_4 = i_6;
             } else {
@@ -391,7 +391,7 @@ public abstract class class296 extends class321 {
 
       for (int i_9 = 0; i_9 < string_1.length(); i_9++) {
          if (string_1.charAt(i_9) != 0) {
-            char var_10 = (char)(class254.method4699(string_1.charAt(i_9)) & 0xff);
+            char var_10 = (char)(ItemDefinition.encodeStringCp1252(string_1.charAt(i_9)) & 0xff);
             if (var_10 == 60) {
                i_6 = i_9;
             } else {
@@ -505,7 +505,7 @@ public abstract class class296 extends class321 {
          var_1 = 32;
       }
 
-      return this.field3700[class254.method4699(var_1) & 0xff];
+      return this.field3700[ItemDefinition.encodeStringCp1252(var_1) & 0xff];
    }
 
    public int method5390(String string_1, int i_2) {
@@ -650,7 +650,7 @@ public abstract class class296 extends class321 {
       }
    }
 
-   public void method5349(String string_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
+   public void drawRandomAlphaAndSpacing(String string_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       if (string_1 != null) {
          this.method5355(i_4, i_5);
          field3719.setSeed((long)i_6);
@@ -669,7 +669,7 @@ public abstract class class296 extends class321 {
       }
    }
 
-   public void method5346(String string_1, int i_2, int i_3, int i_4, int i_5) {
+   public void draw(String string_1, int i_2, int i_3, int i_4, int i_5) {
       if (string_1 != null) {
          this.method5355(i_4, i_5);
          this.method5358(string_1, i_2, i_3);
@@ -773,42 +773,42 @@ public abstract class class296 extends class321 {
    }
 
    static void method5416(byte[] bytes_0, int i_1, int i_2, int i_3, int i_4, int i_5) {
-      int i_6 = i_1 + i_2 * class321.field3875;
-      int i_7 = class321.field3875 - i_3;
+      int i_6 = i_1 + i_2 * class321.Rasterizer2D_width;
+      int i_7 = class321.Rasterizer2D_width - i_3;
       int i_8 = 0;
       int i_9 = 0;
       int i_10;
-      if (i_2 < class321.field3870) {
-         i_10 = class321.field3870 - i_2;
+      if (i_2 < class321.Rasterizer2D_yClipStart) {
+         i_10 = class321.Rasterizer2D_yClipStart - i_2;
          i_4 -= i_10;
-         i_2 = class321.field3870;
+         i_2 = class321.Rasterizer2D_yClipStart;
          i_9 += i_3 * i_10;
-         i_6 += i_10 * class321.field3875;
+         i_6 += i_10 * class321.Rasterizer2D_width;
       }
 
-      if (i_2 + i_4 > class321.field3873) {
-         i_4 -= i_2 + i_4 - class321.field3873;
+      if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
+         i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.field3874) {
-         i_10 = class321.field3874 - i_1;
+      if (i_1 < class321.Rasterizer2D_xClipStart) {
+         i_10 = class321.Rasterizer2D_xClipStart - i_1;
          i_3 -= i_10;
-         i_1 = class321.field3874;
+         i_1 = class321.Rasterizer2D_xClipStart;
          i_9 += i_10;
          i_6 += i_10;
          i_8 += i_10;
          i_7 += i_10;
       }
 
-      if (i_3 + i_1 > class321.field3872) {
-         i_10 = i_3 + i_1 - class321.field3872;
+      if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
+         i_10 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
          i_3 -= i_10;
          i_8 += i_10;
          i_7 += i_10;
       }
 
       if (i_3 > 0 && i_4 > 0) {
-         method5380(class321.field3869, bytes_0, i_5, i_9, i_6, i_3, i_4, i_7, i_8);
+         method5380(class321.Rasterizer2D_pixels, bytes_0, i_5, i_9, i_6, i_3, i_4, i_7, i_8);
       }
    }
 
@@ -879,46 +879,46 @@ public abstract class class296 extends class321 {
    }
 
    static void method5364(byte[] bytes_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
-      int i_7 = i_1 + i_2 * class321.field3875;
-      int i_8 = class321.field3875 - i_3;
+      int i_7 = i_1 + i_2 * class321.Rasterizer2D_width;
+      int i_8 = class321.Rasterizer2D_width - i_3;
       int i_9 = 0;
       int i_10 = 0;
       int i_11;
-      if (i_2 < class321.field3870) {
-         i_11 = class321.field3870 - i_2;
+      if (i_2 < class321.Rasterizer2D_yClipStart) {
+         i_11 = class321.Rasterizer2D_yClipStart - i_2;
          i_4 -= i_11;
-         i_2 = class321.field3870;
+         i_2 = class321.Rasterizer2D_yClipStart;
          i_10 += i_3 * i_11;
-         i_7 += i_11 * class321.field3875;
+         i_7 += i_11 * class321.Rasterizer2D_width;
       }
 
-      if (i_2 + i_4 > class321.field3873) {
-         i_4 -= i_2 + i_4 - class321.field3873;
+      if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
+         i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.field3874) {
-         i_11 = class321.field3874 - i_1;
+      if (i_1 < class321.Rasterizer2D_xClipStart) {
+         i_11 = class321.Rasterizer2D_xClipStart - i_1;
          i_3 -= i_11;
-         i_1 = class321.field3874;
+         i_1 = class321.Rasterizer2D_xClipStart;
          i_10 += i_11;
          i_7 += i_11;
          i_9 += i_11;
          i_8 += i_11;
       }
 
-      if (i_3 + i_1 > class321.field3872) {
-         i_11 = i_3 + i_1 - class321.field3872;
+      if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
+         i_11 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
          i_3 -= i_11;
          i_9 += i_11;
          i_8 += i_11;
       }
 
       if (i_3 > 0 && i_4 > 0) {
-         method5365(class321.field3869, bytes_0, i_5, i_10, i_7, i_3, i_4, i_8, i_9, i_6);
+         method5365(class321.Rasterizer2D_pixels, bytes_0, i_5, i_10, i_7, i_3, i_4, i_8, i_9, i_6);
       }
    }
 
-   public static String method5362(String string_0) {
+   public static String escapeBrackets(String string_0) {
       int i_1 = string_0.length();
       int i_2 = 0;
 

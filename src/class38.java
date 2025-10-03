@@ -11,7 +11,7 @@ public class class38 extends class26 {
 
    void method670(ByteBuffer class300_1, boolean bool_2, int i_3) {
       this.field331 = new LinkedList();
-      int i_4 = class300_1.readUnsignedShortBigEndian();
+      int i_4 = class300_1.readUnsignedShort();
 
       for (int i_5 = 0; i_5 < i_4; i_5++) {
          int i_6 = class300_1.readNullableShort();
@@ -26,7 +26,7 @@ public class class38 extends class26 {
 
    void method666(ByteBuffer class300_1, ByteBuffer class300_2, int i_3, boolean bool_4, byte b_5) {
       this.method344(class300_1, i_3, (byte) 0);
-      int i_6 = class300_2.readUnsignedShortBigEndian();
+      int i_6 = class300_2.readUnsignedShort();
       this.field333 = new HashSet(i_6);
 
       int i_7;
@@ -42,7 +42,7 @@ public class class38 extends class26 {
          this.field333.add(class15_8);
       }
 
-      i_7 = class300_2.readUnsignedShortBigEndian();
+      i_7 = class300_2.readUnsignedShort();
       this.field330 = new HashSet(i_7);
 
       for (int i_11 = 0; i_11 < i_7; i_11++) {

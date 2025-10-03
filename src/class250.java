@@ -1,4 +1,4 @@
-public class class250 extends class175 {
+public class class250 extends DualNode {
 
    static class233 field3309;
    public static class145 field3311 = new class145(64);
@@ -47,7 +47,7 @@ public class class250 extends class175 {
    }
 
    static final void method4530() {
-      Buffer_3 buffer3_1 = Client.data.field1314;
+      PacketBuffer buffer3_1 = Client.data.packetBuffer;
       buffer3_1.method5438();
       int i_2 = buffer3_1.method5445(8);
       int i_3;

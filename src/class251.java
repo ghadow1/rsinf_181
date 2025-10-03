@@ -1,4 +1,4 @@
-public class class251 extends class175 {
+public class class251 extends DualNode {
 
    static int field3324;
    public static class233 field3314;
@@ -24,7 +24,7 @@ public class class251 extends class175 {
       } else {
          int i_4;
          if (i_2 == 5) {
-            this.field3320 = class300_1.readUnsignedShortBigEndian();
+            this.field3320 = class300_1.readUnsignedShort();
             this.field3316 = new int[this.field3320];
             this.field3323 = new String[this.field3320];
 
@@ -33,7 +33,7 @@ public class class251 extends class175 {
                this.field3323[i_4] = class300_1.readNullTerminatedString();
             }
          } else if (i_2 == 6) {
-            this.field3320 = class300_1.readUnsignedShortBigEndian();
+            this.field3320 = class300_1.readUnsignedShort();
             this.field3316 = new int[this.field3320];
             this.field3322 = new int[this.field3320];
 
@@ -93,134 +93,134 @@ public class class251 extends class175 {
       int i_5;
       if (i_0 == 4000) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_5 + i_4;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_5 + i_4;
          return 1;
       } else if (i_0 == 4001) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 - i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 - i_5;
          return 1;
       } else if (i_0 == 4002) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 * i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 * i_5;
          return 1;
       } else if (i_0 == 4003) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 / i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 / i_5;
          return 1;
       } else if (i_0 == 4004) {
-         i_4 = class76.field1098[--class70.field1014];
-         class76.field1098[++class70.field1014 - 1] = (int)(Math.random() * (double)i_4);
+         i_4 = MouseRecorder.field1098[--class70.field1014];
+         MouseRecorder.field1098[++class70.field1014 - 1] = (int)(Math.random() * (double)i_4);
          return 1;
       } else if (i_0 == 4005) {
-         i_4 = class76.field1098[--class70.field1014];
-         class76.field1098[++class70.field1014 - 1] = (int)(Math.random() * (double)(i_4 + 1));
+         i_4 = MouseRecorder.field1098[--class70.field1014];
+         MouseRecorder.field1098[++class70.field1014 - 1] = (int)(Math.random() * (double)(i_4 + 1));
          return 1;
       } else if (i_0 == 4006) {
          class70.field1014 -= 5;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         int i_6 = class76.field1098[class70.field1014 + 2];
-         int i_7 = class76.field1098[class70.field1014 + 3];
-         int i_8 = class76.field1098[class70.field1014 + 4];
-         class76.field1098[++class70.field1014 - 1] = i_4 + (i_8 - i_6) * (i_5 - i_4) / (i_7 - i_6);
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         int i_6 = MouseRecorder.field1098[class70.field1014 + 2];
+         int i_7 = MouseRecorder.field1098[class70.field1014 + 3];
+         int i_8 = MouseRecorder.field1098[class70.field1014 + 4];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 + (i_8 - i_6) * (i_5 - i_4) / (i_7 - i_6);
          return 1;
       } else if (i_0 == 4007) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 + i_5 * i_4 / 100;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 + i_5 * i_4 / 100;
          return 1;
       } else if (i_0 == 4008) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 | 1 << i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 | 1 << i_5;
          return 1;
       } else if (i_0 == 4009) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 & -1 - (1 << i_5);
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 & -1 - (1 << i_5);
          return 1;
       } else if (i_0 == 4010) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = (i_4 & 1 << i_5) != 0 ? 1 : 0;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = (i_4 & 1 << i_5) != 0 ? 1 : 0;
          return 1;
       } else if (i_0 == 4011) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 % i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 % i_5;
          return 1;
       } else if (i_0 == 4012) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
          if (i_4 == 0) {
-            class76.field1098[++class70.field1014 - 1] = 0;
+            MouseRecorder.field1098[++class70.field1014 - 1] = 0;
          } else {
-            class76.field1098[++class70.field1014 - 1] = (int)Math.pow((double)i_4, (double)i_5);
+            MouseRecorder.field1098[++class70.field1014 - 1] = (int)Math.pow((double)i_4, (double)i_5);
          }
 
          return 1;
       } else if (i_0 == 4013) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
          if (i_4 == 0) {
-            class76.field1098[++class70.field1014 - 1] = 0;
+            MouseRecorder.field1098[++class70.field1014 - 1] = 0;
             return 1;
          } else {
             switch(i_5) {
             case 0:
-               class76.field1098[++class70.field1014 - 1] = Integer.MAX_VALUE;
+               MouseRecorder.field1098[++class70.field1014 - 1] = Integer.MAX_VALUE;
                break;
             case 1:
-               class76.field1098[++class70.field1014 - 1] = i_4;
+               MouseRecorder.field1098[++class70.field1014 - 1] = i_4;
                break;
             case 2:
-               class76.field1098[++class70.field1014 - 1] = (int)Math.sqrt((double)i_4);
+               MouseRecorder.field1098[++class70.field1014 - 1] = (int)Math.sqrt((double)i_4);
                break;
             case 3:
-               class76.field1098[++class70.field1014 - 1] = (int)Math.cbrt((double)i_4);
+               MouseRecorder.field1098[++class70.field1014 - 1] = (int)Math.cbrt((double)i_4);
                break;
             case 4:
-               class76.field1098[++class70.field1014 - 1] = (int)Math.sqrt(Math.sqrt((double)i_4));
+               MouseRecorder.field1098[++class70.field1014 - 1] = (int)Math.sqrt(Math.sqrt((double)i_4));
                break;
             default:
-               class76.field1098[++class70.field1014 - 1] = (int)Math.pow((double)i_4, 1.0D / (double)i_5);
+               MouseRecorder.field1098[++class70.field1014 - 1] = (int)Math.pow((double)i_4, 1.0D / (double)i_5);
             }
 
             return 1;
          }
       } else if (i_0 == 4014) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 & i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 & i_5;
          return 1;
       } else if (i_0 == 4015) {
          class70.field1014 -= 2;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         class76.field1098[++class70.field1014 - 1] = i_4 | i_5;
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         MouseRecorder.field1098[++class70.field1014 - 1] = i_4 | i_5;
          return 1;
       } else if (i_0 == 4018) {
          class70.field1014 -= 3;
-         long long_10 = (long)class76.field1098[class70.field1014];
-         long long_12 = (long)class76.field1098[class70.field1014 + 1];
-         long long_14 = (long)class76.field1098[class70.field1014 + 2];
-         class76.field1098[++class70.field1014 - 1] = (int)(long_14 * long_10 / long_12);
+         long long_10 = (long) MouseRecorder.field1098[class70.field1014];
+         long long_12 = (long) MouseRecorder.field1098[class70.field1014 + 1];
+         long long_14 = (long) MouseRecorder.field1098[class70.field1014 + 2];
+         MouseRecorder.field1098[++class70.field1014 - 1] = (int)(long_14 * long_10 / long_12);
          return 1;
       } else {
          return 2;

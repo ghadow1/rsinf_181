@@ -122,7 +122,7 @@ public abstract class class21 {
    }
 
    static final void method272(class256 class256_0, int i_1, int i_2, int i_3, int i_4) {
-      if (Client.field791 < 400) {
+      if (Client.menuOptionsCount < 400) {
          if (class256_0.field3476 != null) {
             class256_0 = class256_0.method4709(942859640);
          }
@@ -139,37 +139,37 @@ public abstract class class21 {
                      int i_10 = i_9 - i_8;
                      String string_7;
                      if (i_10 < -9) {
-                        string_7 = class73.method1756(16711680, -844505624);
+                        string_7 = class73.colorStartTag(16711680);
                      } else if (i_10 < -6) {
-                        string_7 = class73.method1756(16723968, -844505624);
+                        string_7 = class73.colorStartTag(16723968);
                      } else if (i_10 < -3) {
-                        string_7 = class73.method1756(16740352, -844505624);
+                        string_7 = class73.colorStartTag(16740352);
                      } else if (i_10 < 0) {
-                        string_7 = class73.method1756(16756736, -844505624);
+                        string_7 = class73.colorStartTag(16756736);
                      } else if (i_10 > 9) {
-                        string_7 = class73.method1756(65280, -844505624);
+                        string_7 = class73.colorStartTag(65280);
                      } else if (i_10 > 6) {
-                        string_7 = class73.method1756(4259584, -844505624);
+                        string_7 = class73.colorStartTag(4259584);
                      } else if (i_10 > 3) {
-                        string_7 = class73.method1756(8453888, -844505624);
+                        string_7 = class73.colorStartTag(8453888);
                      } else if (i_10 > 0) {
-                        string_7 = class73.method1756(12648192, -844505624);
+                        string_7 = class73.colorStartTag(12648192);
                      } else {
-                        string_7 = class73.method1756(16776960, -844505624);
+                        string_7 = class73.colorStartTag(16776960);
                      }
 
                      string_5 = string_5 + string_7 + " " + " (" + "level-" + class256_0.field3478 + ")";
                   }
 
                   if (class256_0.field3498 && Client.field799) {
-                     class188.method3644("Examine", class73.method1756(16776960, -844505624) + string_5, 1003, i_1, i_2, i_3, 1154358453);
+                     class188.method3644("Examine", class73.colorStartTag(16776960) + string_5, 1003, i_1, i_2, i_3, 1154358453);
                   }
 
-                  if (Client.field900 == 1) {
-                     class188.method3644("Use", Client.field738 + " " + "->" + " " + class73.method1756(16776960, -844505624) + string_5, 7, i_1, i_2, i_3, 1492323075);
-                  } else if (Client.field810) {
-                     if ((class35.field301 & 0x2) == 2) {
-                        class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class73.method1756(16776960, -844505624) + string_5, 8, i_1, i_2, i_3, 1830552502);
+                  if (Client.isItemSelected == 1) {
+                     class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16776960) + string_5, 7, i_1, i_2, i_3, 1492323075);
+                  } else if (Client.isSpellSelected) {
+                     if ((WorldMapCacheName.field301 & 0x2) == 2) {
+                        class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16776960) + string_5, 8, i_1, i_2, i_3, 1830552502);
                      }
                   } else {
                      int i_11 = class256_0.field3498 && Client.field799 ? 2000 : 0;
@@ -198,7 +198,7 @@ public abstract class class21 {
                                  i_9 = i_11 + 13;
                               }
 
-                              class188.method3644(arr_12[i_8], class73.method1756(16776960, -844505624) + string_5, i_9, i_1, i_2, i_3, 906687769);
+                              class188.method3644(arr_12[i_8], class73.colorStartTag(16776960) + string_5, i_9, i_1, i_2, i_3, 906687769);
                            }
                         }
                      }
@@ -233,14 +233,14 @@ public abstract class class21 {
                                     i_9 = s_13 + 13;
                                  }
 
-                                 class188.method3644(arr_12[i_8], class73.method1756(16776960, -844505624) + string_5, i_9, i_1, i_2, i_3, -555124761);
+                                 class188.method3644(arr_12[i_8], class73.colorStartTag(16776960) + string_5, i_9, i_1, i_2, i_3, -555124761);
                               }
                            }
                         }
                      }
 
                      if (!class256_0.field3498 || !Client.field799) {
-                        class188.method3644("Examine", class73.method1756(16776960, -844505624) + string_5, 1003, i_1, i_2, i_3, -1913385031);
+                        class188.method3644("Examine", class73.colorStartTag(16776960) + string_5, 1003, i_1, i_2, i_3, -1913385031);
                      }
                   }
 

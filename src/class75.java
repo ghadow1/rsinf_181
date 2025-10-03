@@ -57,12 +57,12 @@ public final class class75 extends LinkedListNode {
 
    static class92 method1828(int i_0, int i_1, int i_2, short s_3) {
       int i_4 = (i_1 << 8) + i_0;
-      class92 class92_6 = class49.method821(i_4);
+      class92 class92_6 = ItemContainer.method821(i_4);
       if (class92_6 != null) {
          return class92_6;
       } else {
          int i_5 = class312.method5899(i_2, i_0, (byte) -122);
-         class92_6 = class49.method821(i_5);
+         class92_6 = ItemContainer.method821(i_5);
          return class92_6 != null ? class92_6 : null;
       }
    }

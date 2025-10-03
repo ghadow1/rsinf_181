@@ -20,7 +20,7 @@ public class class100 {
          i_2 = 0;
 
          for (i_3 = class102.method2345(5) + 1; i_2 < this.field1349; i_3++) {
-            int i_4 = class102.method2345(class144.method3316(this.field1349 - i_2, -1388955087));
+            int i_4 = class102.method2345(class144.method3316(this.field1349 - i_2));
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
                this.field1347[i_2++] = i_3;
@@ -207,7 +207,7 @@ public class class100 {
 
    static int method2327(int i_0, int i_1) {
       int i_2;
-      for (i_2 = (int)Math.pow((double)i_0, 1.0D / (double)i_1) + 1; class54.method1009(i_2, i_1) > i_0; --i_2) {
+      for (i_2 = (int)Math.pow((double)i_0, 1.0D / (double)i_1) + 1; MouseHandler.method1009(i_2, i_1) > i_0; --i_2) {
          ;
       }
 

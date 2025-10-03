@@ -13,7 +13,7 @@ public class class124 extends LinkedListNode {
    static int[] field1628;
 
    class124(ByteBuffer class300_1) {
-      this.field1623 = class300_1.readUnsignedShortBigEndian();
+      this.field1623 = class300_1.readUnsignedShort();
       this.field1624 = class300_1.readUnsignedByte() == 1;
       int i_2 = class300_1.readUnsignedByte();
       if (i_2 >= 1 && i_2 <= 4) {
@@ -21,7 +21,7 @@ public class class124 extends LinkedListNode {
 
          int i_3;
          for (i_3 = 0; i_3 < i_2; i_3++) {
-            this.field1632[i_3] = class300_1.readUnsignedShortBigEndian();
+            this.field1632[i_3] = class300_1.readUnsignedShort();
          }
 
          if (i_2 > 1) {

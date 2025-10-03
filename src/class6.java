@@ -6,7 +6,7 @@ import java.util.List;
 public class class6 {
 
    static class119 field40;
-   public static Comparator field29 = new class12();
+   public static Comparator field29 = new HealthBarUpdate();
    public static Comparator field30;
    public static Comparator field28;
    public static Comparator field32;
@@ -20,7 +20,7 @@ public class class6 {
    }
 
    public class6(ByteBuffer class300_1, boolean bool_2) {
-      int i_3 = class300_1.readUnsignedShortBigEndian();
+      int i_3 = class300_1.readUnsignedShort();
       boolean bool_4 = class300_1.readUnsignedByte() == 1;
       byte b_5;
       if (bool_4) {
@@ -29,7 +29,7 @@ public class class6 {
          b_5 = 0;
       }
 
-      int i_6 = class300_1.readUnsignedShortBigEndian();
+      int i_6 = class300_1.readUnsignedShort();
       this.field36 = new ArrayList(i_6);
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
@@ -161,7 +161,7 @@ public class class6 {
                   i_16 = class55.field504[i_3][i_15][i_13] & 0xff;
                   if (i_16 > 0) {
                      i_18 = i_16 - 1;
-                     class244 class244_47 = (class244) class244.field3254.method3320((long)i_18);
+                     class244 class244_47 = (class244) class244.field3254.get((long)i_18);
                      class244 class244_48;
                      if (class244_47 != null) {
                         class244_48 = class244_47;
@@ -173,7 +173,7 @@ public class class6 {
                         }
 
                         class244_47.method4417(-165448710);
-                        class244.field3254.method3322(class244_47, (long)i_18);
+                        class244.field3254.put(class244_47, (long)i_18);
                         class244_48 = class244_47;
                      }
 
@@ -258,7 +258,7 @@ public class class6 {
 
                            if (i_22 > 0) {
                               i_35 = i_22 - 1;
-                              class257_36 = (class257) class257.field3503.method3320((long)i_35);
+                              class257_36 = (class257) class257.field3503.get((long)i_35);
                               class257 class257_50;
                               if (class257_36 != null) {
                                  class257_50 = class257_36;
@@ -270,7 +270,7 @@ public class class6 {
                                  }
 
                                  class257_36.method4743(1977976880);
-                                 class257.field3503.method3322(class257_36, (long)i_35);
+                                 class257.field3503.put(class257_36, (long)i_35);
                                  class257_50 = class257_36;
                               }
 
@@ -295,7 +295,7 @@ public class class6 {
                            i_34 = class55.field506[i_3][i_12][i_18] + 1;
                            byte b_55 = class268.field3561[i_3][i_12][i_18];
                            int i_51 = i_22 - 1;
-                           class257 class257_38 = (class257) class257.field3503.method3320((long)i_51);
+                           class257 class257_38 = (class257) class257.field3503.get((long)i_51);
                            if (class257_38 != null) {
                               class257_36 = class257_38;
                            } else {
@@ -306,7 +306,7 @@ public class class6 {
                               }
 
                               class257_38.method4743(-866326245);
-                              class257.field3503.method3322(class257_38, (long)i_51);
+                              class257.field3503.put(class257_38, (long)i_51);
                               class257_36 = class257_38;
                            }
 
@@ -552,7 +552,7 @@ public class class6 {
 
    }
 
-   static final void method71(class217 class217_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
+   static final void method71(Widget widget_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
       if (Client.field719) {
          Client.field882 = 32;
       } else {
@@ -561,13 +561,13 @@ public class class6 {
 
       Client.field719 = false;
       int i_8;
-      if (class54.field485 == 1 || !class46.field413 && class54.field485 == 4) {
+      if (MouseHandler.field485 == 1 || !class46.field413 && MouseHandler.field485 == 4) {
          if (i_5 >= i_1 && i_5 < i_1 + 16 && i_6 >= i_2 && i_6 < i_2 + 16) {
-            class217_0.field2586 -= 4;
-            class224.method4120(class217_0);
+            widget_0.field2586 -= 4;
+            FriendSystem.invalidateWidget(widget_0);
          } else if (i_5 >= i_1 && i_5 < i_1 + 16 && i_6 >= i_3 + i_2 - 16 && i_6 < i_3 + i_2) {
-            class217_0.field2586 += 4;
-            class224.method4120(class217_0);
+            widget_0.field2586 += 4;
+            FriendSystem.invalidateWidget(widget_0);
          } else if (i_5 >= i_1 - Client.field882 && i_5 < Client.field882 + i_1 + 16 && i_6 >= i_2 + 16 && i_6 < i_3 + i_2 - 16) {
             i_8 = i_3 * (i_3 - 32) / i_4;
             if (i_8 < 8) {
@@ -576,17 +576,17 @@ public class class6 {
 
             int i_9 = i_6 - i_2 - 16 - i_8 / 2;
             int i_10 = i_3 - 32 - i_8;
-            class217_0.field2586 = i_9 * (i_4 - i_3) / i_10;
-            class224.method4120(class217_0);
+            widget_0.field2586 = i_9 * (i_4 - i_3) / i_10;
+            FriendSystem.invalidateWidget(widget_0);
             Client.field719 = true;
          }
       }
 
       if (Client.field853 != 0) {
-         i_8 = class217_0.field2579;
+         i_8 = widget_0.field2579;
          if (i_5 >= i_1 - i_8 && i_6 >= i_2 && i_5 < i_1 + 16 && i_6 <= i_3 + i_2) {
-            class217_0.field2586 += Client.field853 * 45;
-            class224.method4120(class217_0);
+            widget_0.field2586 += Client.field853 * 45;
+            FriendSystem.invalidateWidget(widget_0);
          }
       }
 

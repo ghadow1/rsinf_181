@@ -14,8 +14,8 @@ public class class56 {
          class174.disconnectGame();
       } else {
          Client.field797.method4993();
-         class96.method2265(40);
-         class269.field3563 = Client.data.method2223();
+         class96.updateGameState(40);
+         class269.field3563 = Client.data.getSocket();
          Client.data.method2224();
       }
    }
@@ -27,7 +27,7 @@ public class class56 {
 
    }
 
-   static final void method1087(boolean bool_0, Buffer_3 buffer3_1) {
+   static final void method1087(boolean bool_0, PacketBuffer buffer3_1) {
       Client.field775 = 0;
       Client.field697 = 0;
       class250.method4530();
@@ -39,7 +39,7 @@ public class class56 {
       int i_8;
       int i_9;
       int i_10;
-      while (buffer3_1.method5461(Client.data.field1315) >= 27) {
+      while (buffer3_1.method5461(Client.data.serverPacketLength) >= 27) {
          i_3 = buffer3_1.method5445(15);
          if (i_3 == 32767) {
             break;
@@ -131,7 +131,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x20) != 0) {
-            i_7 = buffer3_1.readUnsignedShortBigEndian();
+            i_7 = buffer3_1.readUnsignedShort();
             if (i_7 == 65535) {
                i_7 = -1;
             }
@@ -160,7 +160,7 @@ public class class56 {
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = GameApplet.method1005(buffer3_1.readUnsignedShortBigEndian());
+            class79_5.field1134 = GameApplet.method1005(buffer3_1.readUnsignedShort());
             class79_5.field952 = class79_5.field1134.field3469;
             class79_5.field948 = class79_5.field1134.field3492;
             class79_5.field957 = class79_5.field1134.field3475;
@@ -246,8 +246,8 @@ public class class56 {
          }
       }
 
-      if (buffer3_1.position != Client.data.field1315) {
-         throw new RuntimeException(buffer3_1.position + "," + Client.data.field1315);
+      if (buffer3_1.position != Client.data.serverPacketLength) {
+         throw new RuntimeException(buffer3_1.position + "," + Client.data.serverPacketLength);
       } else {
          for (i_3 = 0; i_3 < Client.field695; i_3++) {
             if (Client.field694[Client.field696[i_3]] == null) {

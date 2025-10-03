@@ -42,7 +42,7 @@ public final class class303 {
    int[][] field3763 = new int[6][258];
    int[] field3744 = new int[6];
 
-   public static Stream method5770(Socket socket_0, int i_1, int i_2, byte b_3) throws IOException {
+   public static AbstractSocket method5770(Socket socket_0, int i_1, int i_2, byte b_3) throws IOException {
       return new class306(socket_0, i_1, i_2);
    }
 

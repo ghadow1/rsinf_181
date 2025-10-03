@@ -1,9 +1,9 @@
 public class class226 {
 
-   static class232 field3071;
+   static GrandExchangeOfferUnitPriceComparator field3071;
    static class310 field3072;
 
-   static boolean method4123(Buffer_3 buffer3_0, int i_1) {
+   static boolean method4123(PacketBuffer buffer3_0, int i_1) {
       int i_3 = buffer3_0.method5445(2);
       int i_4;
       int i_5;

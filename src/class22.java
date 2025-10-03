@@ -31,8 +31,8 @@ public final class class22 {
 
    }
 
-   static final void method276(class217 class217_0, class254 class254_1, int i_2, int i_3, boolean bool_4, int i_5) {
-      String[] arr_6 = class254_1.field3427;
+   static final void method276(Widget widget_0, ItemDefinition itemDefinition_1, int i_2, int i_3, boolean bool_4, int i_5) {
+      String[] arr_6 = itemDefinition_1.inventoryActions;
       byte b_7 = -1;
       String str_8 = null;
       if (arr_6 != null && arr_6[i_3] != null) {
@@ -55,7 +55,7 @@ public final class class22 {
       }
 
       if (b_7 != -1 && str_8 != null) {
-         class135.method3260(str_8, class73.method1756(16748608, -844505624) + class254_1.field3449, b_7, class254_1.field3410, i_2, class217_0.field2688, bool_4);
+         class135.method3260(str_8, class73.colorStartTag(16748608) + itemDefinition_1.name, b_7, itemDefinition_1.field3410, i_2, widget_0.field2688, bool_4);
       }
 
    }

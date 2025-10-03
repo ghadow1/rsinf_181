@@ -61,8 +61,8 @@ public class class200 {
    void method3877(byte[] bytes_1) {
       this.field2470.buffer = bytes_1;
       this.field2470.position = 10;
-      int i_2 = this.field2470.readUnsignedShortBigEndian();
-      this.field2463 = this.field2470.readUnsignedShortBigEndian();
+      int i_2 = this.field2470.readUnsignedShort();
+      this.field2463 = this.field2470.readUnsignedShort();
       this.field2460 = 500000;
       this.field2461 = new int[i_2];
 

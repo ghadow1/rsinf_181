@@ -17,7 +17,7 @@ public class class237 {
 
       int i_4;
       for (byte b_3 = 12; i_1 < 16; i_2 -= b_3) {
-         i_4 = class283.method5217((double)((float)i_2 / 360.0F), 0.9998999834060669D, (double)(0.425F * (float)i_1 / 16.0F + 0.075F));
+         i_4 = Username.method5217((double)((float)i_2 / 360.0F), 0.9998999834060669D, (double)(0.425F * (float)i_1 / 16.0F + 0.075F));
          field3189[i_1] = i_4;
          ++i_1;
       }
@@ -27,7 +27,7 @@ public class class237 {
       for (int i_6 = i_2 / 6; i_1 < field3189.length; i_2 -= i_6) {
          i_4 = i_1 * 2;
 
-         for (int i_5 = class283.method5217((double)((float)i_2 / 360.0F), 0.9998999834060669D, 0.5D); i_1 < i_4 && i_1 < field3189.length; i_1++) {
+         for (int i_5 = Username.method5217((double)((float)i_2 / 360.0F), 0.9998999834060669D, 0.5D); i_1 < i_4 && i_1 < field3189.length; i_1++) {
             field3189[i_1] = i_5;
          }
       }

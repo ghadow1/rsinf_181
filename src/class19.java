@@ -64,25 +64,25 @@ public class class19 implements class37 {
    public void vmethod743(ByteBuffer class300_1, int i_2) {
       this.field132 = class300_1.readUnsignedByte();
       this.field130 = class300_1.readUnsignedByte();
-      this.field131 = class300_1.readUnsignedShortBigEndian();
+      this.field131 = class300_1.readUnsignedShort();
       this.field140 = class300_1.readUnsignedByte();
       this.field137 = class300_1.readUnsignedByte();
-      this.field136 = class300_1.readUnsignedShortBigEndian();
+      this.field136 = class300_1.readUnsignedShort();
       this.field143 = class300_1.readUnsignedByte();
       this.field138 = class300_1.readUnsignedByte();
-      this.field133 = class300_1.readUnsignedShortBigEndian();
+      this.field133 = class300_1.readUnsignedShort();
       this.field139 = class300_1.readUnsignedByte();
       this.field129 = class300_1.readUnsignedByte();
-      this.field134 = class300_1.readUnsignedShortBigEndian();
+      this.field134 = class300_1.readUnsignedShort();
       this.field141 = class300_1.readUnsignedByte();
       this.field142 = class300_1.readUnsignedByte();
-      this.method211(35507364);
+      this.method211();
    }
 
-   void method211(int i_1) {
+   void method211() {
    }
 
-   public static int method237(CharSequence charsequence_0, int i_1, int i_2, byte[] bytes_3, int i_4, byte b_5) {
+   public static int encodeStringCp1252(CharSequence charsequence_0, int i_1, int i_2, byte[] bytes_3, int i_4, byte b_5) {
       int i_6 = i_2 - i_1;
 
       for (int i_7 = 0; i_7 < i_6; i_7++) {
@@ -161,52 +161,52 @@ public class class19 implements class37 {
       long long_7 = ((long)i_3 << 42) + ((long)i_4 << 40) + ((long)i_2 << 38) + ((long)i_1 << 16) + (long)i_0;
       class325 class325_9;
       if (!bool_5) {
-         class325_9 = (class325) class254.field3445.method3320(long_7);
+         class325_9 = (class325) ItemDefinition.field3445.get(long_7);
          if (class325_9 != null) {
             return class325_9;
          }
       }
 
-      class254 class254_10 = class26.method404(i_0);
-      if (i_1 > 1 && class254_10.field3441 != null) {
+      ItemDefinition itemDefinition_10 = class26.method404(i_0);
+      if (i_1 > 1 && itemDefinition_10.field3441 != null) {
          int i_11 = -1;
 
          for (int i_12 = 0; i_12 < 10; i_12++) {
-            if (i_1 >= class254_10.field3442[i_12] && class254_10.field3442[i_12] != 0) {
-               i_11 = class254_10.field3441[i_12];
+            if (i_1 >= itemDefinition_10.field3442[i_12] && itemDefinition_10.field3442[i_12] != 0) {
+               i_11 = itemDefinition_10.field3441[i_12];
             }
          }
 
          if (i_11 != -1) {
-            class254_10 = class26.method404(i_11);
+            itemDefinition_10 = class26.method404(i_11);
          }
       }
 
-      class127 class127_22 = class254_10.method4644(1, -1148524262);
+      class127 class127_22 = itemDefinition_10.method4644(1);
       if (class127_22 == null) {
          return null;
       } else {
          class325 class325_23 = null;
-         if (class254_10.field3444 != -1) {
-            class325_23 = method236(class254_10.field3443, 10, 1, 0, 0, true, 2024001124);
+         if (itemDefinition_10.field3444 != -1) {
+            class325_23 = method236(itemDefinition_10.field3443, 10, 1, 0, 0, true, 2024001124);
             if (class325_23 == null) {
                return null;
             }
-         } else if (class254_10.field3454 != -1) {
-            class325_23 = method236(class254_10.field3453, i_1, i_2, i_3, 0, false, 2024001124);
+         } else if (itemDefinition_10.field3454 != -1) {
+            class325_23 = method236(itemDefinition_10.field3453, i_1, i_2, i_3, 0, false, 2024001124);
             if (class325_23 == null) {
                return null;
             }
-         } else if (class254_10.field3439 != -1) {
-            class325_23 = method236(class254_10.field3400, i_1, 0, 0, 0, false, 2024001124);
+         } else if (itemDefinition_10.field3439 != -1) {
+            class325_23 = method236(itemDefinition_10.field3400, i_1, 0, 0, 0, false, 2024001124);
             if (class325_23 == null) {
                return null;
             }
          }
 
-         int[] ints_13 = class321.field3869;
-         int i_14 = class321.field3875;
-         int i_15 = class321.field3871;
+         int[] ints_13 = class321.Rasterizer2D_pixels;
+         int i_14 = class321.Rasterizer2D_width;
+         int i_15 = class321.Rasterizer2D_height;
          int[] ints_16 = new int[4];
          class321.method5999(ints_16);
          class325_9 = new class325(36, 32);
@@ -215,22 +215,22 @@ public class class19 implements class37 {
          class130.method3051();
          class130.method2976(16, 16);
          class130.field1768 = false;
-         if (class254_10.field3439 != -1) {
+         if (itemDefinition_10.field3439 != -1) {
             class325_23.method6126(0, 0);
          }
 
-         int i_17 = class254_10.field3422;
+         int i_17 = itemDefinition_10.zoom2d;
          if (bool_5) {
             i_17 = (int)((double)i_17 * 1.5D);
          } else if (i_2 == 2) {
             i_17 = (int)(1.04D * (double)i_17);
          }
 
-         int i_18 = i_17 * class130.field1787[class254_10.field3418] >> 16;
-         int i_19 = i_17 * class130.field1784[class254_10.field3418] >> 16;
+         int i_18 = i_17 * class130.field1787[itemDefinition_10.xan2d] >> 16;
+         int i_19 = i_17 * class130.field1784[itemDefinition_10.xan2d] >> 16;
          class127_22.method2899();
-         class127_22.method2866(0, class254_10.field3447, class254_10.field3420, class254_10.field3418, class254_10.field3406, class127_22.field1873 / 2 + i_18 + class254_10.field3421, i_19 + class254_10.field3421);
-         if (class254_10.field3454 != -1) {
+         class127_22.method2866(0, itemDefinition_10.yan2d, itemDefinition_10.field3420, itemDefinition_10.xan2d, itemDefinition_10.offsetX2d, class127_22.field1873 / 2 + i_18 + itemDefinition_10.offsetY2d, i_19 + itemDefinition_10.offsetY2d);
+         if (itemDefinition_10.field3454 != -1) {
             class325_23.method6126(0, 0);
          }
 
@@ -247,12 +247,12 @@ public class class19 implements class37 {
          }
 
          class321.method6033(class325_9.field3908, 36, 32);
-         if (class254_10.field3444 != -1) {
+         if (itemDefinition_10.field3444 != -1) {
             class325_23.method6126(0, 0);
          }
 
-         if (i_4 == 1 || i_4 == 2 && class254_10.field3423 == 1) {
-            class295 class295_20 = class78.field1129;
+         if (i_4 == 1 || i_4 == 2 && itemDefinition_10.isStackable == 1) {
+            Font font_20 = class78.field1129;
             String string_21;
             if (i_1 < 100000) {
                string_21 = "<col=ffff00>" + i_1 + "</col>";
@@ -262,11 +262,11 @@ public class class19 implements class37 {
                string_21 = "<col=00ff80>" + i_1 / 1000000 + "M" + "</col>";
             }
 
-            class295_20.method5346(string_21, 0, 9, 16776960, 1);
+            font_20.draw(string_21, 0, 9, 16776960, 1);
          }
 
          if (!bool_5) {
-            class254.field3445.method3322(class325_9, long_7);
+            ItemDefinition.field3445.put(class325_9, long_7);
          }
 
          class321.method6033(ints_13, i_14, i_15);

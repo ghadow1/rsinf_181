@@ -1,6 +1,6 @@
 public class class213 {
 
-   static class295 field2529;
+   static Font field2529;
    public int field2531;
    public int field2530;
    public int field2528;
@@ -57,7 +57,7 @@ public class class213 {
    }
 
    static void disconnectMessage() {
-      class85.field1209 = 24;
+      Login.loginIndex = 24;
       class268.loginResponseMessages("", "You were disconnected from the server.", "");
    }
 

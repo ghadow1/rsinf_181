@@ -40,54 +40,54 @@ public class class134 {
 
    static int method3250(int i_0, boolean bool_2) {
       int i_4 = -1;
-      class217 class217_5;
+      Widget widget_5;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         i_4 = class76.field1098[--class70.field1014];
-         class217_5 = class80.fetchSomething(i_4);
+         i_4 = MouseRecorder.field1098[--class70.field1014];
+         widget_5 = WorldMapElement.getWidget(i_4);
       } else {
-         class217_5 = bool_2 ? class76.field1111 : class207.field2507;
+         widget_5 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       }
 
       if (i_0 == 1000) {
          class70.field1014 -= 4;
-         class217_5.field2651 = class76.field1098[class70.field1014];
-         class217_5.field2574 = class76.field1098[class70.field1014 + 1];
-         class217_5.field2694 = class76.field1098[class70.field1014 + 2];
-         class217_5.field2570 = class76.field1098[class70.field1014 + 3];
-         class224.method4120(class217_5);
-         class27.field233.method1260(class217_5);
-         if (i_4 != -1 && class217_5.field2566 == 0) {
-            class27.method413(class217.field2556[i_4 >> 16], class217_5, false);
+         widget_5.field2651 = MouseRecorder.field1098[class70.field1014];
+         widget_5.field2574 = MouseRecorder.field1098[class70.field1014 + 1];
+         widget_5.field2694 = MouseRecorder.field1098[class70.field1014 + 2];
+         widget_5.field2570 = MouseRecorder.field1098[class70.field1014 + 3];
+         FriendSystem.invalidateWidget(widget_5);
+         WorldMapID.client.method1260(widget_5);
+         if (i_4 != -1 && widget_5.field2566 == 0) {
+            WorldMapID.method413(Widget.field2556[i_4 >> 16], widget_5, false);
          }
 
          return 1;
       } else if (i_0 == 1001) {
          class70.field1014 -= 4;
-         class217_5.field2670 = class76.field1098[class70.field1014];
-         class217_5.field2576 = class76.field1098[class70.field1014 + 1];
-         class217_5.field2638 = class76.field1098[class70.field1014 + 2];
-         class217_5.field2572 = class76.field1098[class70.field1014 + 3];
-         class224.method4120(class217_5);
-         class27.field233.method1260(class217_5);
-         if (i_4 != -1 && class217_5.field2566 == 0) {
-            class27.method413(class217.field2556[i_4 >> 16], class217_5, false);
+         widget_5.field2670 = MouseRecorder.field1098[class70.field1014];
+         widget_5.field2576 = MouseRecorder.field1098[class70.field1014 + 1];
+         widget_5.field2638 = MouseRecorder.field1098[class70.field1014 + 2];
+         widget_5.field2572 = MouseRecorder.field1098[class70.field1014 + 3];
+         FriendSystem.invalidateWidget(widget_5);
+         WorldMapID.client.method1260(widget_5);
+         if (i_4 != -1 && widget_5.field2566 == 0) {
+            WorldMapID.method413(Widget.field2556[i_4 >> 16], widget_5, false);
          }
 
          return 1;
       } else if (i_0 == 1003) {
-         boolean bool_6 = class76.field1098[--class70.field1014] == 1;
-         if (bool_6 != class217_5.field2706) {
-            class217_5.field2706 = bool_6;
-            class224.method4120(class217_5);
+         boolean bool_6 = MouseRecorder.field1098[--class70.field1014] == 1;
+         if (bool_6 != widget_5.field2706) {
+            widget_5.field2706 = bool_6;
+            FriendSystem.invalidateWidget(widget_5);
          }
 
          return 1;
       } else if (i_0 == 1005) {
-         class217_5.field2580 = class76.field1098[--class70.field1014] == 1;
+         widget_5.field2580 = MouseRecorder.field1098[--class70.field1014] == 1;
          return 1;
       } else if (i_0 == 1006) {
-         class217_5.field2697 = class76.field1098[--class70.field1014] == 1;
+         widget_5.field2697 = MouseRecorder.field1098[--class70.field1014] == 1;
          return 1;
       } else {
          return 2;

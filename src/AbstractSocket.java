@@ -1,12 +1,12 @@
 import java.io.IOException;
 
-public abstract class Stream {
+public abstract class AbstractSocket {
 
-   public abstract void vmethod5830(int var1);
+   public abstract void close();
 
-   public abstract boolean vmethod5847(int var1, int var2) throws IOException;
+   public abstract boolean isAvailable(int var1) throws IOException;
 
-   public abstract int vmethod5828(byte[] var1, int var2, int var3, byte var4) throws IOException;
+   public abstract int read(byte[] var1, int var2, int var3) throws IOException;
 
    public abstract void vmethod5829(byte[] var1, int var2, int var3, int var4) throws IOException;
 

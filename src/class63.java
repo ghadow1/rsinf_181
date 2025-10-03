@@ -13,9 +13,9 @@ public class class63 implements Runnable {
          Object object_1 = this.field589;
          synchronized(this.field589) {
             if (this.field592 < 500) {
-               this.field591[this.field592] = class54.field492;
-               this.field588[this.field592] = class54.field487;
-               this.field593[this.field592] = class54.field482;
+               this.field591[this.field592] = MouseHandler.MouseHandler_x;
+               this.field588[this.field592] = MouseHandler.MouseHandler_y;
+               this.field593[this.field592] = MouseHandler.field482;
                ++this.field592;
             }
          }
@@ -30,8 +30,8 @@ public class class63 implements Runnable {
    }
 
    static void method1137(int i_0, int i_1) {
-      class85.field1209 = 12;
-      class85.field1182 = i_0;
+      Login.loginIndex = 12;
+      Login.field1182 = i_0;
    }
 
    public static void method1134(byte b_0) {

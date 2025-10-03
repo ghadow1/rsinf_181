@@ -11,7 +11,7 @@ final class class1 implements class0 {
    }
 
    static final void method10(class185 class185_0) {
-      Buffer_3 buffer3_2 = Client.data.field1314;
+      PacketBuffer buffer3_2 = Client.data.packetBuffer;
       int i_3;
       int i_4;
       int i_5;
@@ -26,7 +26,7 @@ final class class1 implements class0 {
          i_6 = Client.field713[i_4];
          i_7 = buffer3_2.readInvertedUnsignedByte();
          i_8 = (i_7 >> 4 & 0x7) + class311.localSceneX;
-         i_9 = (i_7 & 0x7) + class94.localSceneY;
+         i_9 = (i_7 & 0x7) + UserComparator10.localSceneY;
          if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
             class201.method3885(class42.field372, i_8, i_9, i_6, -1, i_4, i_5, 0, -1, -1700353173);
          }
@@ -36,7 +36,7 @@ final class class1 implements class0 {
          if (class185.field2321 == class185_0) {
             i_3 = buffer3_2.readOffsetUnsignedByte();
             i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
-            i_5 = (i_3 & 0x7) + class94.localSceneY;
+            i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
             i_6 = buffer3_2.readShortWithOffset2();
             if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                class261 class261_32 = Client.field887[class42.field372][i_4][i_5];
@@ -65,7 +65,7 @@ final class class1 implements class0 {
             int i_40;
             if (class185.field2316 == class185_0) {
                i_3 = buffer3_2.readInvertedUnsignedByte() * 4;
-               i_4 = buffer3_2.readUnsignedShortBigEndian();
+               i_4 = buffer3_2.readUnsignedShort();
                i_5 = buffer3_2.readShortWithOffset();
                i_6 = buffer3_2.readInvertedUnsignedByte() * 4;
                i_7 = buffer3_2.readSignedShortLittleEndian();
@@ -74,7 +74,7 @@ final class class1 implements class0 {
                i_10 = buffer3_2.readShortLittleEndian();
                i_11 = buffer3_2.readOffsetUnsignedByte();
                i_40 = (i_11 >> 4 & 0x7) + class311.localSceneX;
-               i_13 = (i_11 & 0x7) + class94.localSceneY;
+               i_13 = (i_11 & 0x7) + UserComparator10.localSceneY;
                b_14 = buffer3_2.readOffsetByte();
                byte b_41 = buffer3_2.readNegatedByte();
                i_15 = b_41 + i_40;
@@ -95,7 +95,7 @@ final class class1 implements class0 {
                i_5 = buffer3_2.readShortLittleEndian();
                i_6 = buffer3_2.readOffsetUnsignedByte();
                i_7 = (i_6 >> 4 & 0x7) + class311.localSceneX;
-               i_8 = (i_6 & 0x7) + class94.localSceneY;
+               i_8 = (i_6 & 0x7) + UserComparator10.localSceneY;
                if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
                   class261 class261_43 = Client.field887[class42.field372][i_7][i_8];
                   if (class261_43 != null) {
@@ -115,7 +115,7 @@ final class class1 implements class0 {
                i_4 = buffer3_2.readShortWithOffset2();
                i_5 = buffer3_2.readOffsetUnsignedByte();
                i_6 = (i_5 >> 4 & 0x7) + class311.localSceneX;
-               i_7 = (i_5 & 0x7) + class94.localSceneY;
+               i_7 = (i_5 & 0x7) + UserComparator10.localSceneY;
                if (i_6 >= 0 && i_7 >= 0 && i_6 < 104 && i_7 < 104) {
                   class87_33 = new class87();
                   class87_33.field1244 = i_4;
@@ -132,7 +132,7 @@ final class class1 implements class0 {
                if (class185.field2319 == class185_0) {
                   i_3 = buffer3_2.readUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
-                  i_5 = (i_3 & 0x7) + class94.localSceneY;
+                  i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
                   i_6 = buffer3_2.readInvertedUnsignedByte();
                   i_7 = buffer3_2.readOffsetUnsignedByte();
                   i_8 = i_7 >> 4 & 0xf;
@@ -156,7 +156,7 @@ final class class1 implements class0 {
                   i_4 = buffer3_2.readShortWithOffset2();
                   byte b_39 = buffer3_2.readNegatedByte();
                   i_6 = buffer3_2.readShortWithOffset();
-                  i_7 = buffer3_2.readUnsignedShortBigEndian();
+                  i_7 = buffer3_2.readUnsignedShort();
                   i_8 = buffer3_2.readOffsetUnsignedByte();
                   i_9 = i_8 >> 2;
                   i_10 = i_8 & 0x3;
@@ -166,7 +166,7 @@ final class class1 implements class0 {
                   b_14 = buffer3_2.readNegatedByte();
                   i_15 = buffer3_2.readNegatedUnsignedByte();
                   int i_36 = (i_15 >> 4 & 0x7) + class311.localSceneX;
-                  int i_17 = (i_15 & 0x7) + class94.localSceneY;
+                  int i_17 = (i_15 & 0x7) + UserComparator10.localSceneY;
                   class66 class66_18;
                   if (i_13 == Client.field770) {
                      class66_18 = Client.field657;
@@ -227,7 +227,7 @@ final class class1 implements class0 {
                if (class185.field2323 == class185_0) {
                   i_3 = buffer3_2.readOffsetUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
-                  i_5 = (i_3 & 0x7) + class94.localSceneY;
+                  i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
                   i_6 = buffer3_2.readInvertedUnsignedByte();
                   i_7 = i_6 >> 2;
                   i_8 = i_6 & 0x3;
@@ -238,12 +238,12 @@ final class class1 implements class0 {
                   }
 
                } else if (class185.field2317 == class185_0) {
-                  i_3 = buffer3_2.readUnsignedShortBigEndian();
+                  i_3 = buffer3_2.readUnsignedShort();
                   i_4 = buffer3_2.readOffsetUnsignedByte();
                   i_5 = buffer3_2.readShortWithOffset();
                   i_6 = buffer3_2.readUnsignedByte();
                   i_7 = (i_6 >> 4 & 0x7) + class311.localSceneX;
-                  i_8 = (i_6 & 0x7) + class94.localSceneY;
+                  i_8 = (i_6 & 0x7) + UserComparator10.localSceneY;
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
                      i_7 = i_7 * 128 + 64;
                      i_8 = i_8 * 128 + 64;
@@ -258,8 +258,8 @@ final class class1 implements class0 {
                   i_6 = Client.field713[i_4];
                   i_7 = buffer3_2.readNegatedUnsignedByte();
                   i_8 = (i_7 >> 4 & 0x7) + class311.localSceneX;
-                  i_9 = (i_7 & 0x7) + class94.localSceneY;
-                  i_10 = buffer3_2.readUnsignedShortBigEndian();
+                  i_9 = (i_7 & 0x7) + UserComparator10.localSceneY;
+                  i_10 = buffer3_2.readUnsignedShort();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
                         class136 class136_37 = class5.field22.method3088(class42.field372, i_8, i_9);
@@ -294,13 +294,13 @@ final class class1 implements class0 {
                      }
 
                      if (i_6 == 2) {
-                        class142 class142_45 = class5.field22.method3195(class42.field372, i_8, i_9);
+                        FileSystem fileSystem_45 = class5.field22.method3195(class42.field372, i_8, i_9);
                         if (i_4 == 11) {
                            i_4 = 10;
                         }
 
-                        if (class142_45 != null) {
-                           class142_45.field1933 = new class93(GCMonitor.method770(class142_45.field1941), i_4, i_5, class42.field372, i_8, i_9, i_10, false, class142_45.field1933);
+                        if (fileSystem_45 != null) {
+                           fileSystem_45.field1933 = new class93(GCMonitor.method770(fileSystem_45.field1941), i_4, i_5, class42.field372, i_8, i_9, i_10, false, fileSystem_45.field1933);
                         }
                      }
 

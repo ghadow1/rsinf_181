@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class class241 extends class175 {
+public class class241 extends DualNode {
 
    public static class241[] field3219;
    public static class233 field3225;
@@ -40,13 +40,13 @@ public class class241 extends class175 {
       if (i_1 < 0) {
          return null;
       } else {
-         class325 class325_3 = (class325) field3215.method3320((long)i_1);
+         class325 class325_3 = (class325) field3215.get((long)i_1);
          if (class325_3 != null) {
             return class325_3;
          } else {
             class325_3 = class65.method1178(field3225, i_1, 0, -1315452392);
             if (class325_3 != null) {
-               field3215.method3322(class325_3, (long)i_1);
+               field3215.put(class325_3, (long)i_1);
             }
 
             return class325_3;
@@ -111,7 +111,7 @@ public class class241 extends class175 {
             } else if (i_2 == 18) {
                class300_1.readNullableShort();
             } else if (i_2 == 19) {
-               this.field3230 = class300_1.readUnsignedShortBigEndian();
+               this.field3230 = class300_1.readUnsignedShort();
             } else if (i_2 == 21) {
                class300_1.readIntMedEndian();
             } else if (i_2 == 22) {
@@ -178,7 +178,7 @@ public class class241 extends class175 {
       ++Client.data.field1319;
       if (Client.data.field1319 >= 50 || bool_0) {
          Client.data.field1319 = 0;
-         if (!Client.field701 && Client.data.method2223() != null) {
+         if (!Client.field701 && Client.data.getSocket() != null) {
             class187 class187_2 = class235.method4265(ClientPacketProt.field2225, Client.data.field1313);
             Client.data.copy(class187_2);
 

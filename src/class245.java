@@ -1,4 +1,4 @@
-public class class245 extends class175 {
+public class class245 extends DualNode {
 
    public static int field3263;
    static class233 field3274;
@@ -23,7 +23,7 @@ public class class245 extends class175 {
             this.field3266 = new int[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3266[i_5] = class300_1.readUnsignedShortBigEndian();
+               this.field3266[i_5] = class300_1.readUnsignedShort();
             }
          } else if (i_2 == 3) {
             this.field3272 = true;
@@ -33,8 +33,8 @@ public class class245 extends class175 {
             this.field3264 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3267[i_5] = (short)class300_1.readUnsignedShortBigEndian();
-               this.field3264[i_5] = (short)class300_1.readUnsignedShortBigEndian();
+               this.field3267[i_5] = (short)class300_1.readUnsignedShort();
+               this.field3264[i_5] = (short)class300_1.readUnsignedShort();
             }
          } else if (i_2 == 41) {
             i_4 = class300_1.readUnsignedByte();
@@ -42,11 +42,11 @@ public class class245 extends class175 {
             this.field3270 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3269[i_5] = (short)class300_1.readUnsignedShortBigEndian();
-               this.field3270[i_5] = (short)class300_1.readUnsignedShortBigEndian();
+               this.field3269[i_5] = (short)class300_1.readUnsignedShort();
+               this.field3270[i_5] = (short)class300_1.readUnsignedShort();
             }
          } else if (i_2 >= 60 && i_2 < 70) {
-            this.field3262[i_2 - 60] = class300_1.readUnsignedShortBigEndian();
+            this.field3262[i_2 - 60] = class300_1.readUnsignedShort();
          }
       }
 
@@ -228,7 +228,7 @@ public class class245 extends class175 {
          if (class197.field2402 != 0) {
             bool_13 = true;
          } else {
-            bool_13 = class76.field1099.method3713(-1920160);
+            bool_13 = MouseRecorder.field1099.method3713(-1920160);
          }
 
          if (!bool_13) {

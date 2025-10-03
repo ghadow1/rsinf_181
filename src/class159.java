@@ -20,7 +20,7 @@ public class class159 extends ChainedComparator {
    }
 
    public static void method3440(String string_0, String string_1, int i_2, int i_3) throws IOException {
-      class40.field350 = i_3;
+      FontName.field350 = i_3;
       class119.field1539 = i_2;
 
       try {
@@ -135,9 +135,9 @@ public class class159 extends ChainedComparator {
 
          class167.field2042 = new class342(new class343(class65.method1177("main_file_cache.dat2", -46052492), "rw", 1048576000L), 5200, 0);
          class167.field2039 = new class342(new class343(class65.method1177("main_file_cache.idx255", -46052492), "rw", 1048576L), 6000, 0);
-         class167.field2041 = new class342[class40.field350];
+         class167.field2041 = new class342[FontName.field350];
 
-         for (int i_12 = 0; i_12 < class40.field350; i_12++) {
+         for (int i_12 = 0; i_12 < FontName.field350; i_12++) {
             class167.field2041[i_12] = new class342(new class343(class65.method1177("main_file_cache.idx" + i_12, -46052492), "rw", 1048576L), 6000, 0);
          }
 
@@ -146,19 +146,19 @@ public class class159 extends ChainedComparator {
 
    static int method3436(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       if (i_0 == 5306) {
-         class76.field1098[++class70.field1014 - 1] = class34.method598();
+         MouseRecorder.field1098[++class70.field1014 - 1] = class34.method598();
          return 1;
       } else {
          int i_4;
          if (i_0 == 5307) {
-            i_4 = class76.field1098[--class70.field1014];
+            i_4 = MouseRecorder.field1098[--class70.field1014];
             if (i_4 == 1 || i_4 == 2) {
                class170.method3515(i_4);
             }
 
             return 1;
          } else if (i_0 == 5308) {
-            class76.field1098[++class70.field1014 - 1] = class17.field117.field1064;
+            MouseRecorder.field1098[++class70.field1014 - 1] = class17.field117.field1064;
             return 1;
          } else if (i_0 != 5309) {
             if (i_0 == 5310) {
@@ -168,7 +168,7 @@ public class class159 extends ChainedComparator {
                return 2;
             }
          } else {
-            i_4 = class76.field1098[--class70.field1014];
+            i_4 = MouseRecorder.field1098[--class70.field1014];
             if (i_4 == 1 || i_4 == 2) {
                class17.field117.field1064 = i_4;
                class97.method2268(2084017992);

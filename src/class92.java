@@ -1,4 +1,4 @@
-public class class92 extends class175 {
+public class class92 extends DualNode {
 
    int[] field1284;
    int[] field1288;

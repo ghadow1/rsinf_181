@@ -15,9 +15,9 @@ public abstract class class174 {
       class245.field3273.method3323();
       class120.method2766((byte) 76);
       class34.method599(1908697951);
-      class254.field3407.method3323();
-      class254.field3408.method3323();
-      class254.field3445.method3323();
+      ItemDefinition.field3407.method3323();
+      ItemDefinition.field3408.method3323();
+      ItemDefinition.field3445.method3323();
       class258.field3524.method3323();
       class258.field3519.method3323();
       class243.field3239.method3323();
@@ -39,7 +39,7 @@ public abstract class class174 {
       class167.field2049.method4158(-420803493);
       GCMonitor.field382.method4158(-240256360);
       class13.field89.method4158(-1816789816);
-      class35.field307.method4158(468299296);
+      WorldMapCacheName.field307.method4158(468299296);
       class29.field253.method4158(-678416824);
       class256.field3500.method4158(-1208530808);
       Client.field683.method4158(-487246667);
@@ -54,7 +54,7 @@ public abstract class class174 {
       }
 
       System.gc();
-      class40.method729(2, (byte) -32);
+      FontName.method729(2, (byte) -32);
       Client.field889 = -1;
       Client.field699 = false;
 
@@ -71,7 +71,7 @@ public abstract class class174 {
       }
 
       class75.field1080.method4886();
-      class96.method2265(10);
+      class96.updateGameState(10);
    }
 
 }

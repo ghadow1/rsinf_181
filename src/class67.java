@@ -33,7 +33,7 @@ public class class67 implements Comparator {
    }
 
    public static int method1237(int i_0) {
-      class248 class248_3 = (class248) class248.field3294.method3320((long)i_0);
+      class248 class248_3 = (class248) class248.field3294.get((long)i_0);
       class248 class248_2;
       if (class248_3 != null) {
          class248_2 = class248_3;
@@ -44,7 +44,7 @@ public class class67 implements Comparator {
             class248_3.method4485(new ByteBuffer(bytes_8), -1936267259);
          }
 
-         class248.field3294.method3322(class248_3, (long)i_0);
+         class248.field3294.put(class248_3, (long)i_0);
          class248_2 = class248_3;
       }
 

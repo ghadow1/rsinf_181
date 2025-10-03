@@ -55,7 +55,7 @@ public class class333 {
    class233 field4029;
    class233 field3976;
    class233 field4010;
-   class295 field3981;
+   Font field3981;
    HashMap field4021;
    class332 field4028;
    HashMap field3992;
@@ -287,9 +287,9 @@ public class class333 {
       byte b_7 = 20;
       int i_8 = i_3 / 2 + i_1;
       int i_9 = i_4 / 2 + i_2 - 18 - b_7;
-      class321.method6012(i_1, i_2, i_3, i_4, -16777216);
-      class321.method6008(i_8 - 152, i_9, 304, 34, -65536);
-      class321.method6012(i_8 - 150, i_9 + 2, i_5 * 3, 30, -65536);
+      class321.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
+      class321.drawRectangle(i_8 - 152, i_9, 304, 34, -65536);
+      class321.fillRectangle(i_8 - 150, i_9 + 2, i_5 * 3, 30, -65536);
       this.field3981.method5341("Loading...", i_8, b_7 + i_9, -1, -1);
    }
 
@@ -335,7 +335,7 @@ public class class333 {
       int[] ints_7 = new int[4];
       class321.method5999(ints_7);
       class321.method5997(i_1, i_2, i_3 + i_1, i_2 + i_4);
-      class321.method6012(i_1, i_2, i_3, i_4, -16777216);
+      class321.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
       int i_8 = this.field4028.method6284(-805069530);
       if (i_8 < 100) {
          this.method6322(i_1, i_2, i_3, i_4, i_8, 1955930802);
@@ -376,7 +376,7 @@ public class class333 {
          this.method6319(i_1, i_2, i_3, i_4, i_9, i_10, (byte) -125);
          bool_11 = Client.field890 >= 2;
          if (bool_11 && this.field4025 && this.field4024 != null) {
-            this.field3981.method5346("Coord: " + this.field4024, class321.field3874 + 10, class321.field3870 + 20, 16776960, -1);
+            this.field3981.draw("Coord: " + this.field4024, class321.Rasterizer2D_xClipStart + 10, class321.Rasterizer2D_yClipStart + 20, 16776960, -1);
          }
 
          this.field3996 = i_9;
@@ -428,18 +428,18 @@ public class class333 {
       class184.method3613(class62_6);
    }
 
-   public void method6298(class233 class233_1, class233 class233_2, class233 class233_3, class295 class295_4, HashMap hashmap_5, class324[] arr_6, int i_7) {
+   public void method6298(class233 class233_1, class233 class233_2, class233 class233_3, Font font_4, HashMap hashmap_5, class324[] arr_6, int i_7) {
       this.field3983 = arr_6;
       this.field4029 = class233_1;
       this.field3976 = class233_2;
       this.field4010 = class233_3;
-      this.field3981 = class295_4;
+      this.field3981 = font_4;
       this.field4021 = new HashMap();
       this.field4021.put(class17.field113, hashmap_5.get(field3978));
       this.field4021.put(class17.field118, hashmap_5.get(field3979));
       this.field4021.put(class17.field116, hashmap_5.get(field3980));
       this.field4028 = new class332(class233_1);
-      int i_8 = this.field4029.method4160(class35.field308.field306);
+      int i_8 = this.field4029.method4160(WorldMapCacheName.field308.field306);
       int[] ints_9 = this.field4029.method4153(i_8);
       this.field3992 = new HashMap(ints_9.length);
 

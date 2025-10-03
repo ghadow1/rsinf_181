@@ -15,10 +15,10 @@ public final class class123 {
 
    static String method2843(Throwable throwable_0, byte b_1) throws IOException {
       String str_2;
-      if (throwable_0 instanceof class341) {
-         class341 class341_3 = (class341) throwable_0;
-         str_2 = class341_3.field4067 + " | ";
-         throwable_0 = class341_3.field4068;
+      if (throwable_0 instanceof GZipDecompressor) {
+         GZipDecompressor GZipDecompressor_3 = (GZipDecompressor) throwable_0;
+         str_2 = GZipDecompressor_3.field4067 + " | ";
+         throwable_0 = GZipDecompressor_3.field4068;
       } else {
          str_2 = "";
       }

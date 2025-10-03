@@ -12,13 +12,13 @@ public final class class141 {
    public long field1917 = 0L;
    int field1921 = 0;
 
-   public static class295 method3293(byte[] bytes_0, int i_1) {
+   public static Font method3293(byte[] bytes_0, int i_1) {
       if (bytes_0 == null) {
          return null;
       } else {
-         class295 class295_2 = new class295(bytes_0, class212.field2523, class326.field3915, class326.field3914, class216.field2548, class138.field1895, class326.field3912);
+         Font font_2 = new Font(bytes_0, class212.field2523, class326.field3915, class326.field3914, class216.field2548, class138.field1895, class326.field3912);
          class16.method174();
-         return class295_2;
+         return font_2;
       }
    }
 

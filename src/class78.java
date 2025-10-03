@@ -1,6 +1,6 @@
 public class class78 extends LinkedListNode {
 
-   public static class295 field1129;
+   public static Font field1129;
    class260 field1130 = new class260();
    class246 field1128;
 

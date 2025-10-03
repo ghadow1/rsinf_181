@@ -19,8 +19,8 @@ final class class8 implements Comparator {
 
       for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
          GameState gameState_4 = arr_2[i_3];
-         if (gameState_4.field3090 != -1 && string_0.startsWith(class33.iconTag(gameState_4.field3090))) {
-            string_0 = string_0.substring(6 + Integer.toString(gameState_4.field3090).length());
+         if (gameState_4.modIcon != -1 && string_0.startsWith(AbstractWorldMapData.iconTag(gameState_4.modIcon))) {
+            string_0 = string_0.substring(6 + Integer.toString(gameState_4.modIcon).length());
             break;
          }
       }
@@ -28,46 +28,46 @@ final class class8 implements Comparator {
       return string_0;
    }
 
-   static final void method85(class217 class217_0, int i_1) {
-      int i_2 = class217_0.field2568;
+   static final void method85(Widget widget_0, int i_1) {
+      int i_2 = widget_0.field2568;
       if (i_2 == 324) {
          if (Client.field919 == -1) {
-            Client.field919 = class217_0.field2599;
-            Client.field920 = class217_0.field2600;
+            Client.field919 = widget_0.field2599;
+            Client.field920 = widget_0.field2600;
          }
 
          if (Client.field918.field2535) {
-            class217_0.field2599 = Client.field919;
+            widget_0.field2599 = Client.field919;
          } else {
-            class217_0.field2599 = Client.field920;
+            widget_0.field2599 = Client.field920;
          }
 
       } else if (i_2 == 325) {
          if (Client.field919 == -1) {
-            Client.field919 = class217_0.field2599;
-            Client.field920 = class217_0.field2600;
+            Client.field919 = widget_0.field2599;
+            Client.field920 = widget_0.field2600;
          }
 
          if (Client.field918.field2535) {
-            class217_0.field2599 = Client.field920;
+            widget_0.field2599 = Client.field920;
          } else {
-            class217_0.field2599 = Client.field919;
+            widget_0.field2599 = Client.field919;
          }
 
       } else if (i_2 == 327) {
-         class217_0.field2615 = 150;
-         class217_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
-         class217_0.field2607 = 5;
-         class217_0.field2649 = 0;
+         widget_0.field2615 = 150;
+         widget_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
+         widget_0.field2607 = 5;
+         widget_0.field2649 = 0;
       } else if (i_2 == 328) {
-         class217_0.field2615 = 150;
-         class217_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
-         class217_0.field2607 = 5;
-         class217_0.field2649 = 1;
+         widget_0.field2615 = 150;
+         widget_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
+         widget_0.field2607 = 5;
+         widget_0.field2649 = 1;
       }
    }
 
-   static String method92(String string_0, class217 class217_1, int i_2) {
+   static String method92(String string_0, Widget widget_1, int i_2) {
       if (string_0.indexOf("%") != -1) {
          for (int i_3 = 1; i_3 <= 5; i_3++) {
             while (true) {
@@ -77,7 +77,7 @@ final class class8 implements Comparator {
                }
 
                String string_5 = string_0.substring(0, i_4);
-               int i_7 = class212.method3969(class217_1, i_3 - 1, 1942801827);
+               int i_7 = class212.method3969(widget_1, i_3 - 1);
                String str_6;
                if (i_7 < 999999999) {
                   str_6 = Integer.toString(i_7);

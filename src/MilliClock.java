@@ -3,29 +3,29 @@ import netscape.javascript.JSObject;
 import java.util.Date;
 import java.util.concurrent.ScheduledExecutorService;
 
-public class class14 {
+public class MilliClock {
 
    static ScheduledExecutorService field97;
 
    static void method157(int i_0, String string_1, String string_2, String string_3) {
-      class94 class94_5 = (class94) class91.field1279.get(Integer.valueOf(i_0));
-      if (class94_5 == null) {
-         class94_5 = new class94();
-         class91.field1279.put(Integer.valueOf(i_0), class94_5);
+      UserComparator10 userComparator10_5 = (UserComparator10) class91.field1279.get(Integer.valueOf(i_0));
+      if (userComparator10_5 == null) {
+         userComparator10_5 = new UserComparator10();
+         class91.field1279.put(Integer.valueOf(i_0), userComparator10_5);
       }
 
-      class64 class64_6 = class94_5.method2202(i_0, string_1, string_2, string_3, (byte) 0);
-      class91.field1277.method5938(class64_6, (long)class64_6.field600);
-      class91.field1278.method4950(class64_6);
+      Message message_6 = userComparator10_5.addMessage(i_0, string_1, string_2, string_3);
+      class91.field1277.method5938(message_6, (long) message_6.field600);
+      class91.field1278.method4950(message_6);
       Client.field847 = Client.field673;
    }
 
-   static final void method153(class217 class217_0, int i_1, int i_2, int i_3) {
-      if (class217_0.field2641 == null) {
+   static final void method153(Widget widget_0, int i_1, int i_2, int i_3) {
+      if (widget_0.field2641 == null) {
          throw new RuntimeException();
       } else {
-         class217_0.field2641[i_1] = i_2;
-         class217_0.field2588[i_1] = i_3;
+         widget_0.field2641[i_1] = i_2;
+         widget_0.field2588[i_1] = i_3;
       }
    }
 
@@ -33,8 +33,8 @@ public class class14 {
       class294.field3695 = string_0;
 
       try {
-         String string_2 = class27.field233.getParameter(class271.field3587.field3597);
-         String string_3 = class27.field233.getParameter(class271.field3594.field3597);
+         String string_2 = WorldMapID.client.getParameter(class271.field3587.field3597);
+         String string_3 = WorldMapID.client.getParameter(class271.field3594.field3597);
          String string_4 = string_2 + "settings=" + string_0 + "; version=1; path=/; domain=" + string_3;
          String string_6;
          if (string_0.length() == 0) {
@@ -54,7 +54,7 @@ public class class14 {
             string_4 = string_5 + string_6 + "; Max-Age=" + 94608000L;
          }
 
-         Client client_17 = class27.field233;
+         Client client_17 = WorldMapID.client;
          string_6 = "document.cookie=\"" + string_4 + "\"";
          JSObject.getWindow(client_17).eval(string_6);
       } catch (Throwable throwable_16) {

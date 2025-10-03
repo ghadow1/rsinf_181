@@ -12,7 +12,7 @@ public class class7 {
    class7(ByteBuffer class300_1, byte b_2, int i_3) {
       this.field44 = class300_1.readNullTerminatedString();
       this.field45 = class300_1.readNullTerminatedString();
-      this.field51 = class300_1.readUnsignedShortBigEndian();
+      this.field51 = class300_1.readUnsignedShort();
       this.field42 = class300_1.readLongFromMediumEndian();
       int i_4 = class300_1.readIntMedEndian();
       int i_5 = class300_1.readIntMedEndian();
@@ -35,7 +35,7 @@ public class class7 {
    }
 
    public static class258 method81(int i_0, byte b_1) {
-      class258 class258_2 = (class258) class258.field3524.method3320((long)i_0);
+      class258 class258_2 = (class258) class258.field3524.get((long)i_0);
       if (class258_2 != null) {
          return class258_2;
       } else {
@@ -46,7 +46,7 @@ public class class7 {
          }
 
          class258_2.method4761(806874502);
-         class258.field3524.method3322(class258_2, (long)i_0);
+         class258.field3524.put(class258_2, (long)i_0);
          return class258_2;
       }
    }
@@ -62,7 +62,7 @@ public class class7 {
       }
 
       if (Client.field850 != null) {
-         class224.method4120(Client.field850);
+         FriendSystem.invalidateWidget(Client.field850);
          Client.field850 = null;
       }
 

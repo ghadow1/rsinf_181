@@ -18,17 +18,17 @@ public abstract class UserList {
       this.second_key = new HashMap(size / 8);
    }
 
-   public User method5082(class283 class283_1) {
-      User user_3 = this.method5138(class283_1);
-      return user_3 != null ? user_3 : this.method5084(class283_1);
+   public User method5082(Username username_1) {
+      User user_3 = this.method5138(username_1);
+      return user_3 != null ? user_3 : this.method5084(username_1);
    }
 
-   User method5088(class283 class283_1, class283 class283_2) {
-      if (this.method5138(class283_1) != null) {
+   User method5088(Username username_1, Username username_2) {
+      if (this.method5138(username_1) != null) {
          throw new IllegalStateException();
       } else {
          User user_4 = this.vmethod5229();
-         user_4.method5048(class283_1, class283_2);
+         user_4.method5048(username_1, username_2);
          this.method5129(user_4);
          this.method5095(user_4);
          return user_4;
@@ -56,8 +56,8 @@ public abstract class UserList {
       }
    }
 
-   User method5138(class283 class283_1) {
-      return !class283_1.method5205() ? null : (User) this.first_key.get(class283_1);
+   User method5138(Username username_1) {
+      return !username_1.method5205() ? null : (User) this.first_key.get(username_1);
    }
 
    public int method5079() {
@@ -77,12 +77,12 @@ public abstract class UserList {
 
    }
 
-   public boolean method5081(class283 class283_1) {
-      return !class283_1.method5205() ? false : (this.first_key.containsKey(class283_1) ? true : this.second_key.containsKey(class283_1));
+   public boolean method5081(Username username_1) {
+      return !username_1.method5205() ? false : (this.first_key.containsKey(username_1) ? true : this.second_key.containsKey(username_1));
    }
 
-   User method5084(class283 class283_1) {
-      return !class283_1.method5205() ? null : (User) this.second_key.get(class283_1);
+   User method5084(Username username_1) {
+      return !username_1.method5205() ? null : (User) this.second_key.get(username_1);
    }
 
    abstract User vmethod5229();
@@ -131,8 +131,8 @@ public abstract class UserList {
 
    abstract User[] vmethod5230(int var1);
 
-   public final boolean method5085(class283 class283_1) {
-      User user_3 = this.method5138(class283_1);
+   public final boolean method5085(Username username_1) {
+      User user_3 = this.method5138(username_1);
       if (user_3 == null) {
          return false;
       } else {
@@ -145,13 +145,13 @@ public abstract class UserList {
       this.user_list[++this.positionCount - 1] = user_1;
    }
 
-   User method5087(class283 class283_1) {
-      return this.method5088(class283_1, (class283) null);
+   User method5087(Username username_1) {
+      return this.method5088(username_1, (Username) null);
    }
 
-   final void method5083(User user_1, class283 class283_2, class283 class283_3) {
+   final void method5083(User user_1, Username username_2, Username username_3) {
       this.method5093(user_1);
-      user_1.method5048(class283_2, class283_3);
+      user_1.method5048(username_2, username_3);
       this.method5095(user_1);
    }
 

@@ -1,40 +1,40 @@
 public class class219 {
 
-   static void method4112(class217 class217_0, int i_1, int i_2, boolean bool_3) {
-      int i_5 = class217_0.field2579;
-      int i_6 = class217_0.field2667;
-      if (class217_0.field2638 == 0) {
-         class217_0.field2579 = class217_0.field2670;
-      } else if (class217_0.field2638 == 1) {
-         class217_0.field2579 = i_1 - class217_0.field2670;
-      } else if (class217_0.field2638 == 2) {
-         class217_0.field2579 = class217_0.field2670 * i_1 >> 14;
+   static void method4112(Widget widget_0, int i_1, int i_2, boolean bool_3) {
+      int i_5 = widget_0.field2579;
+      int i_6 = widget_0.field2667;
+      if (widget_0.field2638 == 0) {
+         widget_0.field2579 = widget_0.field2670;
+      } else if (widget_0.field2638 == 1) {
+         widget_0.field2579 = i_1 - widget_0.field2670;
+      } else if (widget_0.field2638 == 2) {
+         widget_0.field2579 = widget_0.field2670 * i_1 >> 14;
       }
 
-      if (class217_0.field2572 == 0) {
-         class217_0.field2667 = class217_0.field2576;
-      } else if (class217_0.field2572 == 1) {
-         class217_0.field2667 = i_2 - class217_0.field2576;
-      } else if (class217_0.field2572 == 2) {
-         class217_0.field2667 = i_2 * class217_0.field2576 >> 14;
+      if (widget_0.field2572 == 0) {
+         widget_0.field2667 = widget_0.field2576;
+      } else if (widget_0.field2572 == 1) {
+         widget_0.field2667 = i_2 - widget_0.field2576;
+      } else if (widget_0.field2572 == 2) {
+         widget_0.field2667 = i_2 * widget_0.field2576 >> 14;
       }
 
-      if (class217_0.field2638 == 4) {
-         class217_0.field2579 = class217_0.field2636 * class217_0.field2667 / class217_0.field2582;
+      if (widget_0.field2638 == 4) {
+         widget_0.field2579 = widget_0.field2636 * widget_0.field2667 / widget_0.field2582;
       }
 
-      if (class217_0.field2572 == 4) {
-         class217_0.field2667 = class217_0.field2582 * class217_0.field2579 / class217_0.field2636;
+      if (widget_0.field2572 == 4) {
+         widget_0.field2667 = widget_0.field2582 * widget_0.field2579 / widget_0.field2636;
       }
 
-      if (class217_0.field2568 == 1337) {
-         Client.field827 = class217_0;
+      if (widget_0.field2568 == 1337) {
+         Client.field827 = widget_0;
       }
 
-      if (bool_3 && class217_0.field2679 != null && (i_5 != class217_0.field2579 || i_6 != class217_0.field2667)) {
+      if (bool_3 && widget_0.field2679 != null && (i_5 != widget_0.field2579 || i_6 != widget_0.field2667)) {
          class62 class62_7 = new class62();
-         class62_7.field575 = class217_0;
-         class62_7.field581 = class217_0.field2679;
+         class62_7.field575 = widget_0;
+         class62_7.field581 = widget_0.field2679;
          Client.field854.method4917(class62_7);
       }
 

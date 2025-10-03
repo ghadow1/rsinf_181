@@ -23,14 +23,14 @@ public final class class48 extends Canvas {
    static void method813(int i_0, int i_1) {
       if (i_0 != -1) {
          if (class162.method3445(i_0)) {
-            class217[] arr_2 = class217.field2556[i_0];
+            Widget[] arr_2 = Widget.field2556[i_0];
 
             for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
-               class217 class217_4 = arr_2[i_3];
-               if (class217_4.field2630 != null) {
+               Widget widget_4 = arr_2[i_3];
+               if (widget_4.field2630 != null) {
                   class62 class62_5 = new class62();
-                  class62_5.field575 = class217_4;
-                  class62_5.field581 = class217_4.field2630;
+                  class62_5.field575 = widget_4;
+                  class62_5.field581 = widget_4.field2630;
                   class96.method2267(class62_5, 5000000);
                }
             }
@@ -54,13 +54,13 @@ public final class class48 extends Canvas {
          byte b_18 = 20;
          class151.field1972.method6193(i_16 + (i_0 + class211_5.field2519 / 2 - b_18 / 2), class211_5.field2522 / 2 + i_1 - b_18 / 2 - i_17 - 10, b_18, b_18, 15, 15, d_13, 256);
       } else {
-         class76.method1935(i_0, i_1, i_2, i_3, class325_4, class211_5, (byte) 73);
+         MouseRecorder.method1935(i_0, i_1, i_2, i_3, class325_4, class211_5, (byte) 73);
       }
 
    }
 
-   static class71 method812(int i_0) {
-      return class71.field1024 < class71.field1022 ? class71.field1031[++class71.field1024 - 1] : null;
+   static World method812(int i_0) {
+      return World.field1024 < World.field1022 ? World.field1031[++World.field1024 - 1] : null;
    }
 
 }

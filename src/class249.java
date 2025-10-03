@@ -1,4 +1,4 @@
-public class class249 extends class175 {
+public class class249 extends DualNode {
 
    public static int field3308;
    static class233 field3307;
@@ -56,7 +56,7 @@ public class class249 extends class175 {
    }
 
    public static class250 method4510(int i_0, int i_1) {
-      class250 class250_2 = (class250) class250.field3311.method3320((long)i_0);
+      class250 class250_2 = (class250) class250.field3311.get((long)i_0);
       if (class250_2 != null) {
          return class250_2;
       } else {
@@ -67,7 +67,7 @@ public class class249 extends class175 {
          }
 
          class250_2.method4512();
-         class250.field3311.method3322(class250_2, (long)i_0);
+         class250.field3311.put(class250_2, (long)i_0);
          return class250_2;
       }
    }

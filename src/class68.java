@@ -17,9 +17,9 @@ public final class class68 extends LinkedListNode {
 
    static void method1653(int i_0, int i_1) {
       long long_3 = (long)((i_0 << 16) + i_1);
-      class232 class232_5 = (class232) class236.field3180.method5952(long_3);
-      if (class232_5 != null) {
-         class236.field3170.method4793(class232_5);
+      GrandExchangeOfferUnitPriceComparator grandExchangeOfferUnitPriceComparator_5 = (GrandExchangeOfferUnitPriceComparator) class236.field3180.method5952(long_3);
+      if (grandExchangeOfferUnitPriceComparator_5 != null) {
+         class236.field3170.method4793(grandExchangeOfferUnitPriceComparator_5);
       }
    }
 
@@ -28,18 +28,18 @@ public final class class68 extends LinkedListNode {
       class61_4.field571 = i_1;
       class61_4.field569 = i_2;
       Client.field816.method5951(class61_4, (long)i_0);
-      class12.method146(i_1);
-      class217 class217_5 = class80.fetchSomething(i_0);
-      class224.method4120(class217_5);
+      HealthBarUpdate.method146(i_1);
+      Widget widget_5 = WorldMapElement.getWidget(i_0);
+      FriendSystem.invalidateWidget(widget_5);
       if (Client.field850 != null) {
-         class224.method4120(Client.field850);
+         FriendSystem.invalidateWidget(Client.field850);
          Client.field850 = null;
       }
 
-      for (int i_6 = 0; i_6 < Client.field791; i_6++) {
+      for (int i_6 = 0; i_6 < Client.menuOptionsCount; i_6++) {
          if (class1.method5(Client.field794[i_6], -2073640894)) {
-            if (i_6 < Client.field791 - 1) {
-               for (int i_7 = i_6; i_7 < Client.field791 - 1; i_7++) {
+            if (i_6 < Client.menuOptionsCount - 1) {
+               for (int i_7 = i_6; i_7 < Client.menuOptionsCount - 1; i_7++) {
                   Client.field796[i_7] = Client.field796[i_7 + 1];
                   Client.field668[i_7] = Client.field668[i_7 + 1];
                   Client.field794[i_7] = Client.field794[i_7 + 1];
@@ -51,12 +51,12 @@ public final class class68 extends LinkedListNode {
             }
 
             --i_6;
-            --Client.field791;
+            --Client.menuOptionsCount;
          }
       }
 
-      class12.method145();
-      class27.method413(class217.field2556[i_0 >> 16], class217_5, false);
+      HealthBarUpdate.method145();
+      WorldMapID.method413(Widget.field2556[i_0 >> 16], widget_5, false);
       class48.method813(i_1, 1924602779);
       if (Client.field905 != -1) {
          class17.method175(Client.field905, 1, -1199742641);

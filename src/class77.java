@@ -57,12 +57,12 @@ public final class class77 extends class135 {
    }
 
    static void method1945(int i_0) {
-      class224.method4121();
+      FriendSystem.method4121();
       Client.field796[0] = "Cancel";
       Client.field668[0] = "";
       Client.field794[0] = 1006;
       Client.field769[0] = false;
-      Client.field791 = 1;
+      Client.menuOptionsCount = 1;
    }
 
    static final void method1947(class115 class115_0, int i_1) {
@@ -78,20 +78,20 @@ public final class class77 extends class135 {
    }
 
    static int method1943(int i_0, class92 class92_1, boolean bool_2, short s_3) {
-      class217 class217_4;
+      Widget widget_4;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
+         widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
       } else {
-         class217_4 = bool_2 ? class76.field1111 : class207.field2507;
+         widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       }
 
-      String string_5 = class76.field1093[--class221.field2747];
+      String string_5 = MouseRecorder.field1093[--class221.field2747];
       int[] ints_6 = null;
       if (string_5.length() > 0 && string_5.charAt(string_5.length() - 1) == 89) {
-         int i_7 = class76.field1098[--class70.field1014];
+         int i_7 = MouseRecorder.field1098[--class70.field1014];
          if (i_7 > 0) {
-            for (ints_6 = new int[i_7]; i_7-- > 0; ints_6[i_7] = class76.field1098[--class70.field1014]) {
+            for (ints_6 = new int[i_7]; i_7-- > 0; ints_6[i_7] = MouseRecorder.field1098[--class70.field1014]) {
                ;
             }
          }
@@ -104,13 +104,13 @@ public final class class77 extends class135 {
       int i_8;
       for (i_8 = arr_9.length - 1; i_8 >= 1; --i_8) {
          if (string_5.charAt(i_8 - 1) == 115) {
-            arr_9[i_8] = class76.field1093[--class221.field2747];
+            arr_9[i_8] = MouseRecorder.field1093[--class221.field2747];
          } else {
-            arr_9[i_8] = new Integer(class76.field1098[--class70.field1014]);
+            arr_9[i_8] = new Integer(MouseRecorder.field1098[--class70.field1014]);
          }
       }
 
-      i_8 = class76.field1098[--class70.field1014];
+      i_8 = MouseRecorder.field1098[--class70.field1014];
       if (i_8 != -1) {
          arr_9[0] = new Integer(i_8);
       } else {
@@ -118,69 +118,69 @@ public final class class77 extends class135 {
       }
 
       if (i_0 == 1400) {
-         class217_4.field2652 = arr_9;
+         widget_4.field2652 = arr_9;
       } else if (i_0 == 1401) {
-         class217_4.field2637 = arr_9;
+         widget_4.field2637 = arr_9;
       } else if (i_0 == 1402) {
-         class217_4.field2654 = arr_9;
+         widget_4.field2654 = arr_9;
       } else if (i_0 == 1403) {
-         class217_4.field2608 = arr_9;
+         widget_4.field2608 = arr_9;
       } else if (i_0 == 1404) {
-         class217_4.field2658 = arr_9;
+         widget_4.field2658 = arr_9;
       } else if (i_0 == 1405) {
-         class217_4.field2620 = arr_9;
+         widget_4.field2620 = arr_9;
       } else if (i_0 == 1406) {
-         class217_4.field2662 = arr_9;
+         widget_4.field2662 = arr_9;
       } else if (i_0 == 1407) {
-         class217_4.field2626 = arr_9;
-         class217_4.field2664 = ints_6;
+         widget_4.field2626 = arr_9;
+         widget_4.field2664 = ints_6;
       } else if (i_0 == 1408) {
-         class217_4.field2602 = arr_9;
+         widget_4.field2602 = arr_9;
       } else if (i_0 == 1409) {
-         class217_4.field2656 = arr_9;
+         widget_4.field2656 = arr_9;
       } else if (i_0 == 1410) {
-         class217_4.field2660 = arr_9;
+         widget_4.field2660 = arr_9;
       } else if (i_0 == 1411) {
-         class217_4.field2653 = arr_9;
+         widget_4.field2653 = arr_9;
       } else if (i_0 == 1412) {
-         class217_4.field2581 = arr_9;
+         widget_4.field2581 = arr_9;
       } else if (i_0 == 1414) {
-         class217_4.field2665 = arr_9;
-         class217_4.field2666 = ints_6;
+         widget_4.field2665 = arr_9;
+         widget_4.field2666 = ints_6;
       } else if (i_0 == 1415) {
-         class217_4.field2594 = arr_9;
-         class217_4.field2668 = ints_6;
+         widget_4.field2594 = arr_9;
+         widget_4.field2668 = ints_6;
       } else if (i_0 == 1416) {
-         class217_4.field2661 = arr_9;
+         widget_4.field2661 = arr_9;
       } else if (i_0 == 1417) {
-         class217_4.field2671 = arr_9;
+         widget_4.field2671 = arr_9;
       } else if (i_0 == 1418) {
-         class217_4.field2672 = arr_9;
+         widget_4.field2672 = arr_9;
       } else if (i_0 == 1419) {
-         class217_4.field2673 = arr_9;
+         widget_4.field2673 = arr_9;
       } else if (i_0 == 1420) {
-         class217_4.field2674 = arr_9;
+         widget_4.field2674 = arr_9;
       } else if (i_0 == 1421) {
-         class217_4.field2623 = arr_9;
+         widget_4.field2623 = arr_9;
       } else if (i_0 == 1422) {
-         class217_4.field2676 = arr_9;
+         widget_4.field2676 = arr_9;
       } else if (i_0 == 1423) {
-         class217_4.field2677 = arr_9;
+         widget_4.field2677 = arr_9;
       } else if (i_0 == 1424) {
-         class217_4.field2678 = arr_9;
+         widget_4.field2678 = arr_9;
       } else if (i_0 == 1425) {
-         class217_4.field2622 = arr_9;
+         widget_4.field2622 = arr_9;
       } else if (i_0 == 1426) {
-         class217_4.field2681 = arr_9;
+         widget_4.field2681 = arr_9;
       } else {
          if (i_0 != 1427) {
             return 2;
          }
 
-         class217_4.field2679 = arr_9;
+         widget_4.field2679 = arr_9;
       }
 
-      class217_4.field2551 = true;
+      widget_4.field2551 = true;
       return 1;
    }
 

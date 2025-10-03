@@ -15,9 +15,9 @@ public abstract class class170 {
       }
 
       if (class34.method598() == 1) {
-         class27.field233.method988(765, 503);
+         WorldMapID.client.method988(765, 503);
       } else {
-         class27.field233.method988(7680, 2160);
+         WorldMapID.client.method988(7680, 2160);
       }
 
       if (Client.field662 >= 25) {

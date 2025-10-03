@@ -17,32 +17,32 @@ public class class185 {
    static void method3617(byte[] bytes_0, byte b_1) {
       ByteBuffer class300_2 = new ByteBuffer(bytes_0);
       class300_2.position = bytes_0.length - 2;
-      class326.field3911 = class300_2.readUnsignedShortBigEndian();
+      class326.field3911 = class300_2.readUnsignedShort();
       class212.field2523 = new int[class326.field3911];
       class326.field3915 = new int[class326.field3911];
       class326.field3914 = new int[class326.field3911];
       class216.field2548 = new int[class326.field3911];
       class326.field3912 = new byte[class326.field3911][];
       class300_2.position = bytes_0.length - 7 - class326.field3911 * 8;
-      class326.field3913 = class300_2.readUnsignedShortBigEndian();
-      class326.field3910 = class300_2.readUnsignedShortBigEndian();
+      class326.field3913 = class300_2.readUnsignedShort();
+      class326.field3910 = class300_2.readUnsignedShort();
       int i_3 = (class300_2.readUnsignedByte() & 0xff) + 1;
 
       int i_4;
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class212.field2523[i_4] = class300_2.readUnsignedShortBigEndian();
+         class212.field2523[i_4] = class300_2.readUnsignedShort();
       }
 
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class326.field3915[i_4] = class300_2.readUnsignedShortBigEndian();
+         class326.field3915[i_4] = class300_2.readUnsignedShort();
       }
 
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class326.field3914[i_4] = class300_2.readUnsignedShortBigEndian();
+         class326.field3914[i_4] = class300_2.readUnsignedShort();
       }
 
       for (i_4 = 0; i_4 < class326.field3911; i_4++) {
-         class216.field2548[i_4] = class300_2.readUnsignedShortBigEndian();
+         class216.field2548[i_4] = class300_2.readUnsignedShort();
       }
 
       class300_2.position = bytes_0.length - 7 - class326.field3911 * 8 - (i_3 - 1) * 3;

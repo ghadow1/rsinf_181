@@ -1,6 +1,6 @@
 public class class72 {
 
-   static class217 field1059;
+   static Widget field1059;
    int[] field1042 = new int[256];
    int field1058 = 0;
    int field1048 = 0;
@@ -125,8 +125,8 @@ public class class72 {
 
          for (int i_10 = i_7; i_10 < i_8; i_10++) {
             int i_11 = this.field1039[i_3++];
-            int i_12 = i_9 % class321.field3875;
-            if (i_11 != 0 && i_12 >= class321.field3874 && i_12 < class321.field3872) {
+            int i_12 = i_9 % class321.Rasterizer2D_width;
+            if (i_11 != 0 && i_12 >= class321.Rasterizer2D_xClipStart && i_12 < class321.Rasterizer2D_xClipEnd) {
                int i_13 = i_11;
                int i_14 = 256 - i_11;
                i_11 = this.field1044[i_11];
@@ -404,14 +404,14 @@ public class class72 {
          i_11 = i_16;
       }
 
-      Buffer_3.field3727 = i_0 - i_11;
+      PacketBuffer.field3727 = i_0 - i_11;
       GCMonitor.field383 = i_1 - i_12;
       class1.field3 = i_2 - i_13;
       class11.field77 = i_3;
-      class76.field1112 = i_4;
-      if (Client.field727 == 1 && Client.field890 >= 2 && Client.field881 % 50 == 0 && (class54.field499 >> 7 != Client.field657.field1005 >> 7 || class26.field227 >> 7 != Client.field657.field949 >> 7)) {
+      MouseRecorder.field1112 = i_4;
+      if (Client.field727 == 1 && Client.field890 >= 2 && Client.field881 % 50 == 0 && (MouseHandler.field499 >> 7 != Client.field657.field1005 >> 7 || class26.field227 >> 7 != Client.field657.field949 >> 7)) {
          i_14 = Client.field657.field629;
-         i_15 = (class54.field499 >> 7) + class196.field2389;
+         i_15 = (MouseHandler.field499 >> 7) + class196.field2389;
          i_16 = (class26.field227 >> 7) + class1.field1;
          class28.method418(i_15, i_16, i_14, true, 1931276581);
       }
@@ -419,8 +419,8 @@ public class class72 {
    }
 
    static int method1744(int i_0, int i_1) {
-      class94 class94_2 = (class94) class91.field1279.get(Integer.valueOf(i_0));
-      return class94_2 == null ? 0 : class94_2.method2204(-410884165);
+      UserComparator10 userComparator10_2 = (UserComparator10) class91.field1279.get(Integer.valueOf(i_0));
+      return userComparator10_2 == null ? 0 : userComparator10_2.size();
    }
 
 }

@@ -8,8 +8,8 @@ public class class186 {
          class190.field2361.cleanup();
       }
 
-      if (class80.field1144 != null) {
-         class80.field1144.cleanup();
+      if (WorldMapElement.field1144 != null) {
+         WorldMapElement.field1144.cleanup();
       }
 
    }

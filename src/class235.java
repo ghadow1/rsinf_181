@@ -217,14 +217,14 @@ public class class235 extends class233 {
       }
    }
 
-   void method4263(int i_1, byte[] bytes_2, boolean bool_3, boolean bool_4, byte b_5) {
+   void method4263(int i_1, byte[] bytes_2, boolean bool_3, boolean bool_4) {
       if (bool_3) {
          if (this.field3155) {
             throw new RuntimeException();
          }
 
          if (this.field3153 != null) {
-            class294.method5328(this.field3154, bytes_2, this.field3153, -457807436);
+            class294.method5328(this.field3154, bytes_2, this.field3153);
          }
 
          this.method4142(bytes_2);
@@ -233,7 +233,7 @@ public class class235 extends class233 {
          bytes_2[bytes_2.length - 2] = (byte)(super.field3132[i_1] >> 8);
          bytes_2[bytes_2.length - 1] = (byte)super.field3132[i_1];
          if (this.field3156 != null) {
-            class294.method5328(i_1, bytes_2, this.field3156, -966151502);
+            class294.method5328(i_1, bytes_2, this.field3156);
             this.field3160[i_1] = true;
          }
 
@@ -256,7 +256,7 @@ public class class235 extends class233 {
 
    }
 
-   public int method4257(int i_1) {
+   public int method4257() {
       int i_2 = 0;
       int i_3 = 0;
 
@@ -282,7 +282,7 @@ public class class235 extends class233 {
 
    static final void method4269(int i_0) {
       if (class162.method3445(i_0)) {
-         class225.method4122(class217.field2556[i_0], -1);
+         class225.method4122(Widget.field2556[i_0], -1);
       }
    }
 
@@ -297,15 +297,15 @@ public class class235 extends class233 {
       class187_3.field2338 = packet;
       class187_3.field2332 = packet.length;
       if (class187_3.field2332 == -1) {
-         class187_3.outBuffer = new Buffer_3(260);
+         class187_3.outBuffer = new PacketBuffer(260);
       } else if (class187_3.field2332 == -2) {
-         class187_3.outBuffer = new Buffer_3(10000);
+         class187_3.outBuffer = new PacketBuffer(10000);
       } else if (class187_3.field2332 <= 18) {
-         class187_3.outBuffer = new Buffer_3(20);
+         class187_3.outBuffer = new PacketBuffer(20);
       } else if (class187_3.field2332 <= 98) {
-         class187_3.outBuffer = new Buffer_3(100);
+         class187_3.outBuffer = new PacketBuffer(100);
       } else {
-         class187_3.outBuffer = new Buffer_3(260);
+         class187_3.outBuffer = new PacketBuffer(260);
       }
 
       class187_3.outBuffer.method5442(class328_1);

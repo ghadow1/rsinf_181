@@ -1,61 +1,28 @@
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class class94 {
+public class UserComparator10 {
 
    static int localSceneY;
-   class64[] field1303 = new class64[100];
-   int field1304;
+   Message[] messages = new Message[100];
+   int count;
 
-   class64 method2202(int i_1, String string_2, String string_3, String string_4, byte b_5) {
-      class64 class64_6 = this.field1303[99];
-
-      for (int i_7 = this.field1304; i_7 > 0; --i_7) {
-         if (i_7 != 100) {
-            this.field1303[i_7] = this.field1303[i_7 - 1];
-         }
-      }
-
-      if (class64_6 == null) {
-         class64_6 = new class64(i_1, string_2, string_4, string_3);
-      } else {
-         class64_6.unlink();
-         class64_6.method3597();
-         class64_6.method1143(i_1, string_2, string_4, string_3, (byte) -46);
-      }
-
-      this.field1303[0] = class64_6;
-      if (this.field1304 < 100) {
-         ++this.field1304;
-      }
-
-      return class64_6;
-   }
-
-   class64 method2203(int i_1, int i_2) {
-      return i_1 >= 0 && i_1 < this.field1304 ? this.field1303[i_1] : null;
-   }
-
-   int method2204(int i_1) {
-      return this.field1304;
-   }
-
-   static final boolean method2207(class217 class217_0, int i_1) {
-      if (class217_0.field2683 == null) {
+   static final boolean runCs1(Widget widget_0) {
+      if (widget_0.field2683 == null) {
          return false;
       } else {
-         for (int i_2 = 0; i_2 < class217_0.field2683.length; i_2++) {
-            int i_3 = class212.method3969(class217_0, i_2, 1546167720);
-            int i_4 = class217_0.field2684[i_2];
-            if (class217_0.field2683[i_2] == 2) {
+         for (int i_2 = 0; i_2 < widget_0.field2683.length; i_2++) {
+            int i_3 = class212.method3969(widget_0, i_2);
+            int i_4 = widget_0.field2684[i_2];
+            if (widget_0.field2683[i_2] == 2) {
                if (i_3 >= i_4) {
                   return false;
                }
-            } else if (class217_0.field2683[i_2] == 3) {
+            } else if (widget_0.field2683[i_2] == 3) {
                if (i_3 <= i_4) {
                   return false;
                }
-            } else if (class217_0.field2683[i_2] == 4) {
+            } else if (widget_0.field2683[i_2] == 4) {
                if (i_3 == i_4) {
                   return false;
                }
@@ -68,7 +35,7 @@ public class class94 {
       }
    }
 
-   static final void method2215(int i_0, int i_1, int i_2, int i_3, int i_4) {
+   static final void method2215(int i_0, int i_1, int i_2, int i_3) {
       for (int i_5 = 0; i_5 < Client.field858; i_5++) {
          if (Client.field808[i_5] + Client.field865[i_5] > i_0 && Client.field808[i_5] < i_0 + i_2 && Client.field860[i_5] + Client.field864[i_5] > i_1 && Client.field864[i_5] < i_3 + i_1) {
             Client.field843[i_5] = true;
@@ -77,16 +44,16 @@ public class class94 {
 
    }
 
-   static void method2214(byte b_0) {
-      if (class157.method3428(1010038987)) {
-         class85.field1205 = true;
-         class85.field1190 = 0;
-         class85.field1186 = 0;
+   static void method2214() {
+      if (class157.method3428()) {
+         Login.field1205 = true;
+         Login.field1190 = 0;
+         Login.field1186 = 0;
       }
 
    }
 
-   public static void method2213(ByteBuffer class300_0, int i_1, byte b_2) {
+   public static void method2213(ByteBuffer class300_0) {
       class97 class97_3 = new class97();
       class97_3.field1330 = class300_0.readUnsignedByte();
       class97_3.field1340 = class300_0.readIntMedEndian();
@@ -193,6 +160,39 @@ public class class94 {
       }
 
       class96.field1324.method4819(class97_3);
+   }
+
+   Message addMessage(int i_1, String string_2, String string_3, String string_4) {
+      Message message_6 = this.messages[99];
+
+      for (int i_7 = this.count; i_7 > 0; --i_7) {
+         if (i_7 != 100) {
+            this.messages[i_7] = this.messages[i_7 - 1];
+         }
+      }
+
+      if (message_6 == null) {
+         message_6 = new Message(i_1, string_2, string_4, string_3);
+      } else {
+         message_6.unlink();
+         message_6.removeDual();
+         message_6.set(i_1, string_2, string_4, string_3);
+      }
+
+      this.messages[0] = message_6;
+      if (this.count < 100) {
+         ++this.count;
+      }
+
+      return message_6;
+   }
+
+   Message getMessage(int i_1) {
+      return i_1 >= 0 && i_1 < this.count ? this.messages[i_1] : null;
+   }
+
+   int size() {
+      return this.count;
    }
 
 }

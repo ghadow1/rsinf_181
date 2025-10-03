@@ -10,15 +10,15 @@ public class class144 {
       this.field1952 = url_1;
    }
 
-   public boolean method3307(int i_1) {
+   public boolean method3307() {
       return this.field1957;
    }
 
-   public byte[] method3308(int i_1) {
+   public byte[] method3308() {
       return this.field1951;
    }
 
-   public static int method3316(int i_0, int i_1) {
+   public static int method3316(int i_0) {
       int i_2 = 0;
       if (i_0 < 0 || i_0 >= 65536) {
          i_0 >>>= 16;
@@ -48,7 +48,7 @@ public class class144 {
       return i_0 + i_2;
    }
 
-   static final void method3318(int i_0, int i_1, int i_2, int i_3, boolean bool_4, byte b_5) {
+   static final void method3318(int i_0, int i_1, int i_2, int i_3, boolean bool_4) {
       if (i_2 < 1) {
          i_2 = 1;
       }
@@ -80,8 +80,8 @@ public class class144 {
             i_10 = (i_2 - i_9) / 2;
             if (bool_4) {
                class321.method5996();
-               class321.method6012(i_0, i_1, i_10, i_3, -16777216);
-               class321.method6012(i_0 + i_2 - i_10, i_1, i_10, i_3, -16777216);
+               class321.fillRectangle(i_0, i_1, i_10, i_3, -16777216);
+               class321.fillRectangle(i_0 + i_2 - i_10, i_1, i_10, i_3, -16777216);
             }
 
             i_0 += i_10;
@@ -96,8 +96,8 @@ public class class144 {
             i_10 = (i_3 - i_9) / 2;
             if (bool_4) {
                class321.method5996();
-               class321.method6012(i_0, i_1, i_2, i_10, -16777216);
-               class321.method6012(i_0, i_3 + i_1 - i_10, i_2, i_10, -16777216);
+               class321.fillRectangle(i_0, i_1, i_2, i_10, -16777216);
+               class321.fillRectangle(i_0, i_3 + i_1 - i_10, i_2, i_10, -16777216);
             }
 
             i_1 += i_10;
@@ -111,7 +111,7 @@ public class class144 {
 
          for (i_10 = 0; i_10 < ints_17.length; i_10++) {
             int i_11 = i_10 * 32 + 15 + 128;
-            int i_12 = class40.method700(i_11, (byte) -12);
+            int i_12 = FontName.method700(i_11, (byte) -12);
             int i_13 = class130.field1787[i_11];
             int i_15 = i_3 - 334;
             if (i_15 < 0) {
@@ -135,12 +135,12 @@ public class class144 {
    }
 
    public static void method3317(class233 class233_0, class233 class233_1, class233 class233_2, class233 class233_3, int i_4) {
-      class217.field2557 = class233_0;
+      Widget.field2557 = class233_0;
       class128.field1756 = class233_1;
       class216.field2547 = class233_2;
       TimeUtils.field2498 = class233_3;
-      class217.field2556 = new class217[class217.field2557.method4232()][];
-      class128.field1755 = new boolean[class217.field2557.method4232()];
+      Widget.field2556 = new Widget[Widget.field2557.method4232()][];
+      class128.field1755 = new boolean[Widget.field2557.method4232()];
    }
 
 }

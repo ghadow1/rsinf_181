@@ -19,7 +19,7 @@ public final class class55 {
    static int field519 = (int)(Math.random() * 17.0D) - 8;
    static int field510 = (int)(Math.random() * 33.0D) - 16;
 
-   static final void method1084(boolean bool_0, Buffer_3 buffer3_1) {
+   static final void method1084(boolean bool_0, PacketBuffer buffer3_1) {
       Client.field798 = bool_0;
       int i_3;
       int i_4;
@@ -30,7 +30,7 @@ public final class class55 {
       if (!Client.field798) {
          i_3 = buffer3_1.readShortWithOffset2();
          i_4 = buffer3_1.readShortWithOffset();
-         int i_5 = buffer3_1.readUnsignedShortBigEndian();
+         int i_5 = buffer3_1.readUnsignedShort();
          class29.field255 = new int[i_5][4];
 
          for (i_6 = 0; i_6 < i_5; i_6++) {
@@ -43,7 +43,7 @@ public final class class55 {
          class88.field1248 = new int[i_5];
          class22.field178 = new int[i_5];
          class13.field90 = new byte[i_5][];
-         class80.field1145 = new byte[i_5][];
+         WorldMapElement.field1145 = new byte[i_5][];
          boolean bool_17 = false;
          if ((i_4 / 8 == 48 || i_4 / 8 == 49) && i_3 / 8 == 48) {
             bool_17 = true;
@@ -60,8 +60,8 @@ public final class class55 {
                i_9 = i_8 + (i_7 << 8);
                if (!bool_17 || i_8 != 49 && i_8 != 149 && i_8 != 147 && i_7 != 50 && (i_7 != 49 || i_8 != 47)) {
                   TimeUtils.field2501[i_5] = i_9;
-                  class88.field1248[i_5] = class35.field307.method4160("m" + i_7 + "_" + i_8);
-                  class22.field178[i_5] = class35.field307.method4160("l" + i_7 + "_" + i_8);
+                  class88.field1248[i_5] = WorldMapCacheName.field307.method4160("m" + i_7 + "_" + i_8);
+                  class22.field178[i_5] = WorldMapCacheName.field307.method4160("l" + i_7 + "_" + i_8);
                   ++i_5;
                }
             }
@@ -72,7 +72,7 @@ public final class class55 {
          i_3 = buffer3_1.readShortWithOffset();
          i_4 = buffer3_1.readShortWithOffset2();
          boolean bool_16 = buffer3_1.readUnsignedByte() == 1;
-         i_6 = buffer3_1.readUnsignedShortBigEndian();
+         i_6 = buffer3_1.readUnsignedShort();
          buffer3_1.method5438();
 
          int i_10;
@@ -102,7 +102,7 @@ public final class class55 {
          class88.field1248 = new int[i_6];
          class22.field178 = new int[i_6];
          class13.field90 = new byte[i_6][];
-         class80.field1145 = new byte[i_6][];
+         WorldMapElement.field1145 = new byte[i_6][];
          i_6 = 0;
 
          for (i_7 = 0; i_7 < 4; i_7++) {
@@ -126,8 +126,8 @@ public final class class55 {
                         TimeUtils.field2501[i_6] = i_13;
                         i_14 = i_13 >> 8 & 0xff;
                         int i_15 = i_13 & 0xff;
-                        class88.field1248[i_6] = class35.field307.method4160("m" + i_14 + "_" + i_15);
-                        class22.field178[i_6] = class35.field307.method4160("l" + i_14 + "_" + i_15);
+                        class88.field1248[i_6] = WorldMapCacheName.field307.method4160("m" + i_14 + "_" + i_15);
+                        class22.field178[i_6] = WorldMapCacheName.field307.method4160("l" + i_14 + "_" + i_15);
                         ++i_6;
                      }
                   }

@@ -23,15 +23,15 @@ public final class class149 {
          if (class148_2.vmethod3371()) {
             if (class148_2.vmethod3370() == null) {
                class148_2.unlink();
-               class148_2.method3597();
+               class148_2.removeDual();
                this.field1967 += class148_2.field1964;
             }
-         } else if (++class148_2.field2105 > (long)i_1) {
+         } else if (++class148_2.keyDual > (long)i_1) {
             class150 class150_3 = new class150(class148_2.vmethod3370(), class148_2.field1964);
             this.field1965.method5938(class150_3, class148_2.hash);
             class265.method4958(class150_3, class148_2);
             class148_2.unlink();
-            class148_2.method3597();
+            class148_2.removeDual();
          }
       }
 
@@ -45,7 +45,7 @@ public final class class149 {
    void method3347(class148 class148_1) {
       if (class148_1 != null) {
          class148_1.unlink();
-         class148_1.method3597();
+         class148_1.removeDual();
          this.field1967 += class148_1.field1964;
       }
 
@@ -59,7 +59,7 @@ public final class class149 {
          Object object_4 = class148_3.vmethod3370();
          if (object_4 == null) {
             class148_3.unlink();
-            class148_3.method3597();
+            class148_3.removeDual();
             this.field1967 += class148_3.field1964;
             return null;
          } else {
@@ -67,12 +67,12 @@ public final class class149 {
                class147 class147_5 = new class147(object_4, class148_3.field1964);
                this.field1965.method5938(class147_5, class148_3.hash);
                this.field1968.method4950(class147_5);
-               class147_5.field2105 = 0L;
+               class147_5.keyDual = 0L;
                class148_3.unlink();
-               class148_3.method3597();
+               class148_3.removeDual();
             } else {
                this.field1968.method4950(class148_3);
-               class148_3.field2105 = 0L;
+               class148_3.keyDual = 0L;
             }
 
             return object_4;
@@ -106,7 +106,7 @@ public final class class149 {
          class147 class147_6 = new class147(object_1, i_4);
          this.field1965.method5938(class147_6, long_2);
          this.field1968.method4950(class147_6);
-         class147_6.field2105 = 0L;
+         class147_6.keyDual = 0L;
       }
    }
 

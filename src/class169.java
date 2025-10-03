@@ -4,7 +4,7 @@ import java.util.Hashtable;
 public class class169 {
 
    protected static boolean field2053;
-   static class295 field2054;
+   static Font field2054;
    static class293 field2056;
    static File field2050;
    static boolean field2055 = false;
@@ -21,20 +21,20 @@ public class class169 {
    }
 
    static int method3501(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = bool_2 ? class76.field1111 : class207.field2507;
+      Widget widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       if (i_0 == 1700) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2690;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2690;
          return 1;
       } else if (i_0 == 1701) {
-         if (class217_4.field2690 != -1) {
-            class76.field1098[++class70.field1014 - 1] = class217_4.field2655;
+         if (widget_4.field2690 != -1) {
+            MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2655;
          } else {
-            class76.field1098[++class70.field1014 - 1] = 0;
+            MouseRecorder.field1098[++class70.field1014 - 1] = 0;
          }
 
          return 1;
       } else if (i_0 == 1702) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2565;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2565;
          return 1;
       } else {
          return 2;

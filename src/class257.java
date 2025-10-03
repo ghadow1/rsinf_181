@@ -1,4 +1,4 @@
-public class class257 extends class175 {
+public class class257 extends DualNode {
 
    public static class233 field3505;
    static int field3502;
@@ -126,33 +126,33 @@ public class class257 extends class175 {
       return class4.method49(i_12, i_13, i_7, i_2, 16711935);
    }
 
-   static final void method4756(class217 class217_0, int i_1, byte[] bytes_2, byte[] bytes_3, int i_4) {
-      if (class217_0.field2650 == null) {
+   static final void method4756(Widget widget_0, int i_1, byte[] bytes_2, byte[] bytes_3, int i_4) {
+      if (widget_0.field2650 == null) {
          if (bytes_2 == null) {
             return;
          }
 
-         class217_0.field2650 = new byte[11][];
-         class217_0.field2625 = new byte[11][];
-         class217_0.field2641 = new int[11];
-         class217_0.field2588 = new int[11];
+         widget_0.field2650 = new byte[11][];
+         widget_0.field2625 = new byte[11][];
+         widget_0.field2641 = new int[11];
+         widget_0.field2588 = new int[11];
       }
 
-      class217_0.field2650[i_1] = bytes_2;
+      widget_0.field2650[i_1] = bytes_2;
       if (bytes_2 != null) {
-         class217_0.field2704 = true;
+         widget_0.field2704 = true;
       } else {
-         class217_0.field2704 = false;
+         widget_0.field2704 = false;
 
-         for (int i_5 = 0; i_5 < class217_0.field2650.length; i_5++) {
-            if (class217_0.field2650[i_5] != null) {
-               class217_0.field2704 = true;
+         for (int i_5 = 0; i_5 < widget_0.field2650.length; i_5++) {
+            if (widget_0.field2650[i_5] != null) {
+               widget_0.field2704 = true;
                break;
             }
          }
       }
 
-      class217_0.field2625[i_1] = bytes_3;
+      widget_0.field2625[i_1] = bytes_3;
    }
 
 }

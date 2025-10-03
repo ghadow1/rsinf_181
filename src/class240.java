@@ -1,4 +1,4 @@
-public class class240 extends class175 {
+public class class240 extends DualNode {
 
    static ByteBuffer field3209;
    static class324 field3207;
@@ -9,7 +9,7 @@ public class class240 extends class175 {
 
    void method4354(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 5) {
-         this.field3206 = class300_1.readUnsignedShortBigEndian();
+         this.field3206 = class300_1.readUnsignedShort();
       }
 
    }

@@ -30,7 +30,7 @@ public final class class66 extends class69 {
    class281 field631;
    boolean field638;
    class127 field626;
-   class283 field621;
+   Username field621;
    class214 field613;
 
    class66() {
@@ -175,7 +175,7 @@ public final class class66 extends class69 {
       if (i_1 >= 0 && i_1 < 104 && i_2 >= 0 && i_2 < 104) {
          if (super.field994[0] >= 0 && super.field994[0] < 104 && super.field962[0] >= 0 && super.field962[0] < 104) {
             if (b_3 == 2) {
-               class217.method4056(this, i_1, i_2, (byte) 2);
+               Widget.method4056(this, i_1, i_2, (byte) 2);
             }
 
             this.method1191(i_1, i_2, b_3);
@@ -207,7 +207,7 @@ public final class class66 extends class69 {
             i_8 = class300_1.readUnsignedByte();
             ints_5[i_6] = i_8 + (i_7 << 8);
             if (i_6 == 0 && ints_5[0] == 65535) {
-               i_4 = class300_1.readUnsignedShortBigEndian();
+               i_4 = class300_1.readUnsignedShort();
                break;
             }
 
@@ -231,43 +231,43 @@ public final class class66 extends class69 {
          ints_10[i_7] = i_8;
       }
 
-      super.field1004 = class300_1.readUnsignedShortBigEndian();
+      super.field1004 = class300_1.readUnsignedShort();
       if (super.field1004 == 65535) {
          super.field1004 = -1;
       }
 
-      super.field955 = class300_1.readUnsignedShortBigEndian();
+      super.field955 = class300_1.readUnsignedShort();
       if (super.field955 == 65535) {
          super.field955 = -1;
       }
 
       super.field956 = super.field955;
-      super.field957 = class300_1.readUnsignedShortBigEndian();
+      super.field957 = class300_1.readUnsignedShort();
       if (super.field957 == 65535) {
          super.field957 = -1;
       }
 
-      super.field958 = class300_1.readUnsignedShortBigEndian();
+      super.field958 = class300_1.readUnsignedShort();
       if (super.field958 == 65535) {
          super.field958 = -1;
       }
 
-      super.field959 = class300_1.readUnsignedShortBigEndian();
+      super.field959 = class300_1.readUnsignedShort();
       if (super.field959 == 65535) {
          super.field959 = -1;
       }
 
-      super.field960 = class300_1.readUnsignedShortBigEndian();
+      super.field960 = class300_1.readUnsignedShort();
       if (super.field960 == 65535) {
          super.field960 = -1;
       }
 
-      super.field961 = class300_1.readUnsignedShortBigEndian();
+      super.field961 = class300_1.readUnsignedShort();
       if (super.field961 == 65535) {
          super.field961 = -1;
       }
 
-      this.field621 = new class283(class300_1.readNullTerminatedString(), class40.field353);
+      this.field621 = new Username(class300_1.readNullTerminatedString(), FontName.loginType);
       this.method1182();
       this.method1185();
       if (this == Client.field657) {
@@ -275,7 +275,7 @@ public final class class66 extends class69 {
       }
 
       this.field618 = class300_1.readUnsignedByte();
-      this.field617 = class300_1.readUnsignedShortBigEndian();
+      this.field617 = class300_1.readUnsignedShort();
       this.field628 = class300_1.readUnsignedByte() == 1;
       if (Client.field703 == 0 && Client.field890 >= 2) {
          this.field628 = false;

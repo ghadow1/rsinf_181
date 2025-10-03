@@ -95,8 +95,8 @@ public class class117 {
 
       this.field1524 = class300_1.readSmartInt();
       this.field1515 = class300_1.readSmartInt();
-      this.field1518 = class300_1.readUnsignedShortBigEndian();
-      this.field1514 = class300_1.readUnsignedShortBigEndian();
+      this.field1518 = class300_1.readUnsignedShort();
+      this.field1514 = class300_1.readUnsignedShort();
       this.field1516 = new class114();
       this.field1517 = new class106();
       this.field1516.method2680(class300_1, this.field1517);

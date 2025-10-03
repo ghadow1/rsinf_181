@@ -145,23 +145,23 @@ public class class73 {
       return i_3;
    }
 
-   static String method1756(int i_0, int i_1) {
+   static String colorStartTag(int i_0) {
       return "<col=" + Integer.toHexString(i_0) + ">";
    }
 
-   static int method1753(int i_0, class92 class92_1, boolean bool_2, byte b_3) {
+   static int method1753(int i_0) {
       if (i_0 == 5000) {
-         class76.field1098[++class70.field1014 - 1] = Client.field907;
+         MouseRecorder.field1098[++class70.field1014 - 1] = Client.field907;
          return 1;
       } else if (i_0 == 5001) {
          class70.field1014 -= 3;
-         Client.field907 = class76.field1098[class70.field1014];
-         class226.field3072 = class171.method3530(class76.field1098[class70.field1014 + 1], 1440546072);
+         Client.field907 = MouseRecorder.field1098[class70.field1014];
+         class226.field3072 = class171.method3530(MouseRecorder.field1098[class70.field1014 + 1]);
          if (class226.field3072 == null) {
             class226.field3072 = class310.field3816;
          }
 
-         Client.field872 = class76.field1098[class70.field1014 + 2];
+         Client.field872 = MouseRecorder.field1098[class70.field1014 + 2];
          class187 class187_19 = class235.method4265(ClientPacketProt.field2294, Client.data.field1313);
          class187_19.outBuffer.writeByte(Client.field907);
          class187_19.outBuffer.writeByte(class226.field3072.field3815);
@@ -172,10 +172,10 @@ public class class73 {
          String string_4;
          int i_5;
          if (i_0 == 5002) {
-            string_4 = class76.field1093[--class221.field2747];
+            string_4 = MouseRecorder.field1093[--class221.field2747];
             class70.field1014 -= 2;
-            i_5 = class76.field1098[class70.field1014];
-            int i_6 = class76.field1098[class70.field1014 + 1];
+            i_5 = MouseRecorder.field1098[class70.field1014];
+            int i_6 = MouseRecorder.field1098[class70.field1014 + 1];
             class187 class187_7 = class235.method4265(ClientPacketProt.field2205, Client.data.field1313);
             class187_7.outBuffer.writeByte(class209.method3945(string_4) + 2);
             class187_7.outBuffer.writeNullTerminatedString(string_4);
@@ -187,57 +187,57 @@ public class class73 {
             int i_11;
             if (i_0 == 5003) {
                class70.field1014 -= 2;
-               i_11 = class76.field1098[class70.field1014];
-               i_5 = class76.field1098[class70.field1014 + 1];
-               class64 class64_16 = class87.method2049(i_11, i_5, 308740376);
-               if (class64_16 != null) {
-                  class76.field1098[++class70.field1014 - 1] = class64_16.field600;
-                  class76.field1098[++class70.field1014 - 1] = class64_16.field598;
-                  class76.field1093[++class221.field2747 - 1] = class64_16.field599 != null ? class64_16.field599 : "";
-                  class76.field1093[++class221.field2747 - 1] = class64_16.field597 != null ? class64_16.field597 : "";
-                  class76.field1093[++class221.field2747 - 1] = class64_16.field605 != null ? class64_16.field605 : "";
-                  class76.field1098[++class70.field1014 - 1] = class64_16.method1144() ? 1 : (class64_16.method1147() ? 2 : 0);
+               i_11 = MouseRecorder.field1098[class70.field1014];
+               i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+               Message message_16 = class87.method2049(i_11, i_5, 308740376);
+               if (message_16 != null) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = message_16.field600;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = message_16.field598;
+                  MouseRecorder.field1093[++class221.field2747 - 1] = message_16.field599 != null ? message_16.field599 : "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = message_16.field597 != null ? message_16.field597 : "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = message_16.field605 != null ? message_16.field605 : "";
+                  MouseRecorder.field1098[++class70.field1014 - 1] = message_16.method1144() ? 1 : (message_16.method1147() ? 2 : 0);
                } else {
-                  class76.field1098[++class70.field1014 - 1] = -1;
-                  class76.field1098[++class70.field1014 - 1] = 0;
-                  class76.field1093[++class221.field2747 - 1] = "";
-                  class76.field1093[++class221.field2747 - 1] = "";
-                  class76.field1093[++class221.field2747 - 1] = "";
-                  class76.field1098[++class70.field1014 - 1] = 0;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = -1;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = 0;
+                  MouseRecorder.field1093[++class221.field2747 - 1] = "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = "";
+                  MouseRecorder.field1098[++class70.field1014 - 1] = 0;
                }
 
                return 1;
             } else if (i_0 == 5004) {
-               i_11 = class76.field1098[--class70.field1014];
-               class64 class64_17 = class23.method297(i_11, 377219115);
-               if (class64_17 != null) {
-                  class76.field1098[++class70.field1014 - 1] = class64_17.field602;
-                  class76.field1098[++class70.field1014 - 1] = class64_17.field598;
-                  class76.field1093[++class221.field2747 - 1] = class64_17.field599 != null ? class64_17.field599 : "";
-                  class76.field1093[++class221.field2747 - 1] = class64_17.field597 != null ? class64_17.field597 : "";
-                  class76.field1093[++class221.field2747 - 1] = class64_17.field605 != null ? class64_17.field605 : "";
-                  class76.field1098[++class70.field1014 - 1] = class64_17.method1144() ? 1 : (class64_17.method1147() ? 2 : 0);
+               i_11 = MouseRecorder.field1098[--class70.field1014];
+               Message message_17 = class23.method297(i_11, 377219115);
+               if (message_17 != null) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = message_17.field602;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = message_17.field598;
+                  MouseRecorder.field1093[++class221.field2747 - 1] = message_17.field599 != null ? message_17.field599 : "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = message_17.field597 != null ? message_17.field597 : "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = message_17.field605 != null ? message_17.field605 : "";
+                  MouseRecorder.field1098[++class70.field1014 - 1] = message_17.method1144() ? 1 : (message_17.method1147() ? 2 : 0);
                } else {
-                  class76.field1098[++class70.field1014 - 1] = -1;
-                  class76.field1098[++class70.field1014 - 1] = 0;
-                  class76.field1093[++class221.field2747 - 1] = "";
-                  class76.field1093[++class221.field2747 - 1] = "";
-                  class76.field1093[++class221.field2747 - 1] = "";
-                  class76.field1098[++class70.field1014 - 1] = 0;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = -1;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = 0;
+                  MouseRecorder.field1093[++class221.field2747 - 1] = "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = "";
+                  MouseRecorder.field1093[++class221.field2747 - 1] = "";
+                  MouseRecorder.field1098[++class70.field1014 - 1] = 0;
                }
 
                return 1;
             } else if (i_0 == 5005) {
                if (class226.field3072 == null) {
-                  class76.field1098[++class70.field1014 - 1] = -1;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = -1;
                } else {
-                  class76.field1098[++class70.field1014 - 1] = class226.field3072.field3815;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class226.field3072.field3815;
                }
 
                return 1;
             } else if (i_0 == 5008) {
-               string_4 = class76.field1093[--class221.field2747];
-               i_5 = class76.field1098[--class70.field1014];
+               string_4 = MouseRecorder.field1093[--class221.field2747];
+               i_5 = MouseRecorder.field1098[--class70.field1014];
                String string_15 = string_4.toLowerCase();
                byte b_18 = 0;
                if (string_15.startsWith("yellow:")) {
@@ -358,50 +358,50 @@ public class class73 {
                class187_9.outBuffer.writeByte(i_5);
                class187_9.outBuffer.writeByte(b_18);
                class187_9.outBuffer.writeByte(b_8);
-               class132.method3063(class187_9.outBuffer, string_4, -730620007);
+               class132.encodeStringCp1252(class187_9.outBuffer, string_4, -730620007);
                class187_9.outBuffer.writeSizeAtOffset(class187_9.outBuffer.position - i_10);
                Client.data.copy(class187_9);
                return 1;
             } else if (i_0 == 5009) {
                class221.field2747 -= 2;
-               string_4 = class76.field1093[class221.field2747];
-               String string_13 = class76.field1093[class221.field2747 + 1];
+               string_4 = MouseRecorder.field1093[class221.field2747];
+               String string_13 = MouseRecorder.field1093[class221.field2747 + 1];
                class187 class187_12 = class235.method4265(ClientPacketProt.field2228, Client.data.field1313);
                class187_12.outBuffer.writeShortBigEndian(0);
                int i_14 = class187_12.outBuffer.position;
                class187_12.outBuffer.writeNullTerminatedString(string_4);
-               class132.method3063(class187_12.outBuffer, string_13, 845593608);
+               class132.encodeStringCp1252(class187_12.outBuffer, string_13, 845593608);
                class187_12.outBuffer.writeShortSizeAtOffset(class187_12.outBuffer.position - i_14);
                Client.data.copy(class187_12);
                return 1;
             } else if (i_0 != 5015) {
                if (i_0 == 5016) {
-                  class76.field1098[++class70.field1014 - 1] = Client.field872;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = Client.field872;
                   return 1;
                } else if (i_0 == 5017) {
-                  i_11 = class76.field1098[--class70.field1014];
-                  class76.field1098[++class70.field1014 - 1] = class72.method1744(i_11, -1877742024);
+                  i_11 = MouseRecorder.field1098[--class70.field1014];
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class72.method1744(i_11, -1877742024);
                   return 1;
                } else if (i_0 == 5018) {
-                  i_11 = class76.field1098[--class70.field1014];
-                  class76.field1098[++class70.field1014 - 1] = class196.method3686(i_11, (short) 17338);
+                  i_11 = MouseRecorder.field1098[--class70.field1014];
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class196.method3686(i_11, (short) 17338);
                   return 1;
                } else if (i_0 == 5019) {
-                  i_11 = class76.field1098[--class70.field1014];
-                  class76.field1098[++class70.field1014 - 1] = class192.method3669(i_11);
+                  i_11 = MouseRecorder.field1098[--class70.field1014];
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class192.method3669(i_11);
                   return 1;
                } else if (i_0 == 5020) {
-                  string_4 = class76.field1093[--class221.field2747];
+                  string_4 = MouseRecorder.field1093[--class221.field2747];
                   class314.method5907(string_4, 199301274);
                   return 1;
                } else if (i_0 == 5021) {
-                  Client.field762 = class76.field1093[--class221.field2747].toLowerCase().trim();
+                  Client.field762 = MouseRecorder.field1093[--class221.field2747].toLowerCase().trim();
                   return 1;
                } else if (i_0 == 5022) {
-                  class76.field1093[++class221.field2747 - 1] = Client.field762;
+                  MouseRecorder.field1093[++class221.field2747 - 1] = Client.field762;
                   return 1;
                } else if (i_0 == 5023) {
-                  string_4 = class76.field1093[--class221.field2747];
+                  string_4 = MouseRecorder.field1093[--class221.field2747];
                   System.out.println(string_4);
                   return 1;
                } else {
@@ -414,7 +414,7 @@ public class class73 {
                   string_4 = "";
                }
 
-               class76.field1093[++class221.field2747 - 1] = string_4;
+               MouseRecorder.field1093[++class221.field2747 - 1] = string_4;
                return 1;
             }
          }

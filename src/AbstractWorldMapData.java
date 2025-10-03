@@ -1,4 +1,4 @@
-public class class33 implements class37 {
+public class AbstractWorldMapData implements class37 {
 
    int field293;
    int field286;
@@ -123,10 +123,10 @@ public class class33 implements class37 {
    public void vmethod743(ByteBuffer class300_1, int i_2) {
       this.field293 = class300_1.readUnsignedByte();
       this.field286 = class300_1.readUnsignedByte();
-      this.field294 = class300_1.readUnsignedShortBigEndian();
-      this.field288 = class300_1.readUnsignedShortBigEndian();
-      this.field287 = class300_1.readUnsignedShortBigEndian();
-      this.field290 = class300_1.readUnsignedShortBigEndian();
+      this.field294 = class300_1.readUnsignedShort();
+      this.field288 = class300_1.readUnsignedShort();
+      this.field287 = class300_1.readUnsignedShort();
+      this.field290 = class300_1.readUnsignedShort();
       this.method571();
    }
 

@@ -1,12 +1,12 @@
-public class class40 {
+public class FontName {
 
    static class63 field348;
-   static class338 field353;
+   static class338 loginType;
    public static int field350;
    int field344;
    byte[][][] field343;
 
-   class40(int i_1) {
+   FontName(int i_1) {
       this.field344 = i_1;
    }
 
@@ -564,98 +564,98 @@ public class class40 {
       return i_0 * 3 + 600;
    }
 
-   static final void method703(class217 class217_0, int i_1, int i_2, int i_3) {
-      if (class217_0.field2567 == 1) {
-         class188.method3644(class217_0.field2573, "", 24, 0, 0, class217_0.field2688, -952173886);
+   static final void method703(Widget widget_0, int i_1, int i_2, int i_3) {
+      if (widget_0.field2567 == 1) {
+         class188.method3644(widget_0.field2573, "", 24, 0, 0, widget_0.field2688, -952173886);
       }
 
       String string_4;
-      if (class217_0.field2567 == 2 && !Client.field810) {
-         string_4 = class292.method5318(class217_0, (byte) 126);
+      if (widget_0.field2567 == 2 && !Client.isSpellSelected) {
+         string_4 = class292.method5318(widget_0, (byte) 126);
          if (string_4 != null) {
-            class188.method3644(string_4, class73.method1756(65280, -844505624) + class217_0.field2686, 25, 0, -1, class217_0.field2688, 1431395202);
+            class188.method3644(string_4, class73.colorStartTag(65280) + widget_0.field2686, 25, 0, -1, widget_0.field2688, 1431395202);
          }
       }
 
-      if (class217_0.field2567 == 3) {
-         class188.method3644("Close", "", 26, 0, 0, class217_0.field2688, 931812202);
+      if (widget_0.field2567 == 3) {
+         class188.method3644("Close", "", 26, 0, 0, widget_0.field2688, 931812202);
       }
 
-      if (class217_0.field2567 == 4) {
-         class188.method3644(class217_0.field2573, "", 28, 0, 0, class217_0.field2688, -887464512);
+      if (widget_0.field2567 == 4) {
+         class188.method3644(widget_0.field2573, "", 28, 0, 0, widget_0.field2688, -887464512);
       }
 
-      if (class217_0.field2567 == 5) {
-         class188.method3644(class217_0.field2573, "", 29, 0, 0, class217_0.field2688, -119888586);
+      if (widget_0.field2567 == 5) {
+         class188.method3644(widget_0.field2573, "", 29, 0, 0, widget_0.field2688, -119888586);
       }
 
-      if (class217_0.field2567 == 6 && Client.field850 == null) {
-         class188.method3644(class217_0.field2573, "", 30, 0, -1, class217_0.field2688, -1987811730);
+      if (widget_0.field2567 == 6 && Client.field850 == null) {
+         class188.method3644(widget_0.field2573, "", 30, 0, -1, widget_0.field2688, -1987811730);
       }
 
       int i_5;
       int i_14;
-      if (class217_0.field2566 == 2) {
+      if (widget_0.field2566 == 2) {
          i_14 = 0;
 
-         for (i_5 = 0; i_5 < class217_0.field2667; i_5++) {
-            for (int i_6 = 0; i_6 < class217_0.field2579; i_6++) {
-               int i_7 = (class217_0.field2631 + 32) * i_6;
-               int i_8 = (class217_0.field2632 + 32) * i_5;
+         for (i_5 = 0; i_5 < widget_0.field2667; i_5++) {
+            for (int i_6 = 0; i_6 < widget_0.field2579; i_6++) {
+               int i_7 = (widget_0.field2631 + 32) * i_6;
+               int i_8 = (widget_0.field2632 + 32) * i_5;
                if (i_14 < 20) {
-                  i_7 += class217_0.field2633[i_14];
-                  i_8 += class217_0.field2634[i_14];
+                  i_7 += widget_0.field2633[i_14];
+                  i_8 += widget_0.field2634[i_14];
                }
 
                if (i_1 >= i_7 && i_2 >= i_8 && i_1 < i_7 + 32 && i_2 < i_8 + 32) {
                   Client.field764 = i_14;
-                  class294.field3697 = class217_0;
-                  if (class217_0.field2560[i_14] > 0) {
-                     class254 class254_9 = class26.method404(class217_0.field2560[i_14] - 1);
-                     if (Client.field900 == 1 && class92.method2185(class268.method4987(class217_0))) {
-                        if (class217_0.field2688 != class63.field594 || i_14 != class23.field182) {
-                           class188.method3644("Use", Client.field738 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 31, class254_9.field3410, i_14, class217_0.field2688, -1926139785);
+                  class294.field3697 = widget_0;
+                  if (widget_0.field2560[i_14] > 0) {
+                     ItemDefinition itemDefinition_9 = class26.method404(widget_0.field2560[i_14] - 1);
+                     if (Client.isItemSelected == 1 && class92.method2185(class268.method4987(widget_0))) {
+                        if (widget_0.field2688 != class63.field594 || i_14 != class23.field182) {
+                           class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 31, itemDefinition_9.field3410, i_14, widget_0.field2688, -1926139785);
                         }
-                     } else if (Client.field810 && class92.method2185(class268.method4987(class217_0))) {
-                        if ((class35.field301 & 0x10) == 16) {
-                           class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class73.method1756(16748608, -844505624) + class254_9.field3449, 32, class254_9.field3410, i_14, class217_0.field2688, -1736041216);
+                     } else if (Client.isSpellSelected && class92.method2185(class268.method4987(widget_0))) {
+                        if ((WorldMapCacheName.field301 & 0x10) == 16) {
+                           class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 32, itemDefinition_9.field3410, i_14, widget_0.field2688, -1736041216);
                         }
                      } else {
-                        String[] arr_10 = class254_9.field3427;
+                        String[] arr_10 = itemDefinition_9.inventoryActions;
                         int i_11 = -1;
                         if (Client.field800) {
                            boolean bool_12 = Client.flag_23 || class45.field395[81];
                            if (bool_12) {
-                              i_11 = class254_9.method4652();
+                              i_11 = itemDefinition_9.method4652();
                            }
                         }
 
                         int i_17;
-                        if (class92.method2185(class268.method4987(class217_0))) {
+                        if (class92.method2185(class268.method4987(widget_0))) {
                            for (i_17 = 4; i_17 >= 3; --i_17) {
                               if (i_17 != i_11) {
-                                 class22.method276(class217_0, class254_9, i_14, i_17, false, 212040129);
+                                 class22.method276(widget_0, itemDefinition_9, i_14, i_17, false, 212040129);
                               }
                            }
                         }
 
-                        if (class195.method3685(class268.method4987(class217_0))) {
-                           class188.method3644("Use", class73.method1756(16748608, -844505624) + class254_9.field3449, 38, class254_9.field3410, i_14, class217_0.field2688, 1888076482);
+                        if (class195.method3685(class268.method4987(widget_0))) {
+                           class188.method3644("Use", class73.colorStartTag(16748608) + itemDefinition_9.name, 38, itemDefinition_9.field3410, i_14, widget_0.field2688, 1888076482);
                         }
 
-                        if (class92.method2185(class268.method4987(class217_0))) {
+                        if (class92.method2185(class268.method4987(widget_0))) {
                            for (i_17 = 2; i_17 >= 0; --i_17) {
                               if (i_11 != i_17) {
-                                 class22.method276(class217_0, class254_9, i_14, i_17, false, 1577647186);
+                                 class22.method276(widget_0, itemDefinition_9, i_14, i_17, false, 1577647186);
                               }
                            }
 
                            if (i_11 >= 0) {
-                              class22.method276(class217_0, class254_9, i_14, i_11, true, 106659698);
+                              class22.method276(widget_0, itemDefinition_9, i_14, i_11, true, 106659698);
                            }
                         }
 
-                        arr_10 = class217_0.field2680;
+                        arr_10 = widget_0.field2680;
                         if (arr_10 != null) {
                            for (i_17 = 4; i_17 >= 0; --i_17) {
                               if (arr_10[i_17] != null) {
@@ -680,12 +680,12 @@ public class class40 {
                                     b_13 = 43;
                                  }
 
-                                 class188.method3644(arr_10[i_17], class73.method1756(16748608, -844505624) + class254_9.field3449, b_13, class254_9.field3410, i_14, class217_0.field2688, -1772751404);
+                                 class188.method3644(arr_10[i_17], class73.colorStartTag(16748608) + itemDefinition_9.name, b_13, itemDefinition_9.field3410, i_14, widget_0.field2688, -1772751404);
                               }
                            }
                         }
 
-                        class188.method3644("Examine", class73.method1756(16748608, -844505624) + class254_9.field3449, 1005, class254_9.field3410, i_14, class217_0.field2688, -1955913083);
+                        class188.method3644("Examine", class73.colorStartTag(16748608) + itemDefinition_9.name, 1005, itemDefinition_9.field3410, i_14, widget_0.field2688, -1955913083);
                      }
                   }
                }
@@ -695,33 +695,33 @@ public class class40 {
          }
       }
 
-      if (class217_0.field2563) {
-         if (Client.field810) {
-            if (class96.method2266(class268.method4987(class217_0), -2113880295) && (class35.field301 & 0x20) == 32) {
-               class188.method3644(Client.field813, Client.field814 + " " + "->" + " " + class217_0.field2643, 58, 0, class217_0.field2565, class217_0.field2688, 148926542);
+      if (widget_0.field2563) {
+         if (Client.isSpellSelected) {
+            if (class96.method2266(class268.method4987(widget_0), -2113880295) && (WorldMapCacheName.field301 & 0x20) == 32) {
+               class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + widget_0.field2643, 58, 0, widget_0.field2565, widget_0.field2688, 148926542);
             }
          } else {
             for (i_14 = 9; i_14 >= 5; --i_14) {
-               String string_15 = class154.method3407(class217_0, i_14, (short) 255);
+               String string_15 = class154.method3407(widget_0, i_14, (short) 255);
                if (string_15 != null) {
-                  class188.method3644(string_15, class217_0.field2643, 1007, i_14 + 1, class217_0.field2565, class217_0.field2688, -1059740776);
+                  class188.method3644(string_15, widget_0.field2643, 1007, i_14 + 1, widget_0.field2565, widget_0.field2688, -1059740776);
                }
             }
 
-            string_4 = class292.method5318(class217_0, (byte) 86);
+            string_4 = class292.method5318(widget_0, (byte) 86);
             if (string_4 != null) {
-               class188.method3644(string_4, class217_0.field2643, 25, 0, class217_0.field2565, class217_0.field2688, -1033230881);
+               class188.method3644(string_4, widget_0.field2643, 25, 0, widget_0.field2565, widget_0.field2688, -1033230881);
             }
 
             for (i_5 = 4; i_5 >= 0; --i_5) {
-               String string_16 = class154.method3407(class217_0, i_5, (short) 255);
+               String string_16 = class154.method3407(widget_0, i_5, (short) 255);
                if (string_16 != null) {
-                  class135.method3260(string_16, class217_0.field2643, 57, i_5 + 1, class217_0.field2565, class217_0.field2688, class217_0.field2691);
+                  class135.method3260(string_16, widget_0.field2643, 57, i_5 + 1, widget_0.field2565, widget_0.field2688, widget_0.field2691);
                }
             }
 
-            if (class61.method1119(class268.method4987(class217_0), -673878359)) {
-               class188.method3644("Continue", "", 30, 0, class217_0.field2565, class217_0.field2688, 1867560144);
+            if (class61.method1119(class268.method4987(widget_0), -673878359)) {
+               class188.method3644("Continue", "", 30, 0, widget_0.field2565, widget_0.field2688, 1867560144);
             }
          }
       }

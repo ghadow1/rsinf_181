@@ -54,12 +54,12 @@ public class class39 extends class21 {
       } else {
          super.field159 = class300_1.readUnsignedByte();
          super.field160 = class300_1.readUnsignedByte();
-         super.field167 = class300_1.readUnsignedShortBigEndian();
-         super.field156 = class300_1.readUnsignedShortBigEndian();
+         super.field167 = class300_1.readUnsignedShort();
+         super.field156 = class300_1.readUnsignedShort();
          this.field340 = class300_1.readUnsignedByte();
          this.field335 = class300_1.readUnsignedByte();
-         super.field157 = class300_1.readUnsignedShortBigEndian();
-         super.field158 = class300_1.readUnsignedShortBigEndian();
+         super.field157 = class300_1.readUnsignedShort();
+         super.field158 = class300_1.readUnsignedShort();
          this.field337 = class300_1.readUnsignedByte();
          this.field338 = class300_1.readUnsignedByte();
          super.field161 = class300_1.readNullableShort();

@@ -159,16 +159,16 @@ public class class192 implements UnknownT {
       int i_5 = 1;
 
       for (int i_6 = 0; i_6 < 4; i_6++) {
-         if (class71.field1026[i_6] != i_0) {
-            ints_3[i_5] = class71.field1026[i_6];
-            ints_4[i_5] = class71.field1018[i_6];
+         if (World.field1026[i_6] != i_0) {
+            ints_3[i_5] = World.field1026[i_6];
+            ints_4[i_5] = World.field1018[i_6];
             ++i_5;
          }
       }
 
-      class71.field1026 = ints_3;
-      class71.field1018 = ints_4;
-      Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018);
+      World.field1026 = ints_3;
+      World.field1018 = ints_4;
+      Client.method1651(World.field1031, 0, World.field1031.length - 1, World.field1026, World.field1018);
    }
 
    public static void method3678() {
@@ -176,8 +176,8 @@ public class class192 implements UnknownT {
    }
 
    static int method3669(int i_0) {
-      class64 class64_2 = (class64) class91.field1277.method5924((long)i_0);
-      return class64_2 == null ? -1 : (class64_2.field2106 == class91.field1278.field3551 ? -1 : ((class64) class64_2.field2106).field600);
+      Message message_2 = (Message) class91.field1277.method5924((long)i_0);
+      return message_2 == null ? -1 : (message_2.nextDual == class91.field1278.field3551 ? -1 : ((Message) message_2.nextDual).field600);
    }
 
 }

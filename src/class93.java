@@ -98,10 +98,10 @@ public class class93 extends class135 {
       }
    }
 
-   public static void method2193(Stream class305_0, boolean bool_1, short s_2) {
+   public static void method2193(AbstractSocket class305_0, boolean bool_1, short s_2) {
       if (class236.field3176 != null) {
          try {
-            class236.field3176.vmethod5830(234953470);
+            class236.field3176.close();
          } catch (Exception exception_9) {
             ;
          }
@@ -119,7 +119,7 @@ public class class93 extends class135 {
             class236.field3176.vmethod5829(class300_3.buffer, 0, 4, -1696227994);
          } catch (IOException ioexception_8) {
             try {
-               class236.field3176.vmethod5830(1987296931);
+               class236.field3176.close();
             } catch (Exception exception_7) {
                ;
             }
@@ -135,11 +135,11 @@ public class class93 extends class135 {
       class236.field3175 = 0;
 
       while (true) {
-         class232 class232_10 = (class232) class236.field3167.method5950();
-         if (class232_10 == null) {
+         GrandExchangeOfferUnitPriceComparator grandExchangeOfferUnitPriceComparator_10 = (GrandExchangeOfferUnitPriceComparator) class236.field3167.method5950();
+         if (grandExchangeOfferUnitPriceComparator_10 == null) {
             while (true) {
-               class232_10 = (class232) class236.field3172.method5950();
-               if (class232_10 == null) {
+               grandExchangeOfferUnitPriceComparator_10 = (GrandExchangeOfferUnitPriceComparator) class236.field3172.method5950();
+               if (grandExchangeOfferUnitPriceComparator_10 == null) {
                   if (class236.field3181 != 0) {
                      try {
                         class300_3 = new ByteBuffer(4);
@@ -149,7 +149,7 @@ public class class93 extends class135 {
                         class236.field3176.vmethod5829(class300_3.buffer, 0, 4, -1696227994);
                      } catch (IOException ioexception_6) {
                         try {
-                           class236.field3176.vmethod5830(-1353478313);
+                           class236.field3176.close();
                         } catch (Exception exception_5) {
                            ;
                         }
@@ -164,28 +164,28 @@ public class class93 extends class135 {
                   return;
                }
 
-               class236.field3170.method4793(class232_10);
-               class236.field3180.method5951(class232_10, class232_10.hash);
+               class236.field3170.method4793(grandExchangeOfferUnitPriceComparator_10);
+               class236.field3180.method5951(grandExchangeOfferUnitPriceComparator_10, grandExchangeOfferUnitPriceComparator_10.hash);
                ++class236.field3171;
                --class236.field3164;
             }
          }
 
-         class236.field3165.method5951(class232_10, class232_10.hash);
+         class236.field3165.method5951(grandExchangeOfferUnitPriceComparator_10, grandExchangeOfferUnitPriceComparator_10.hash);
          ++class236.field3166;
          --class236.field3168;
       }
    }
 
-   static class71 method2197(int i_0) {
-      class71.field1024 = 0;
+   static World method2197(int i_0) {
+      World.field1024 = 0;
       return class48.method812(-777854264);
    }
 
-   static int method2200(class71 class71_0, class71 class71_1, int i_2, boolean bool_3, byte b_4) {
+   static int method2200(World world_0, World world_1, int i_2, boolean bool_3, byte b_4) {
       if (i_2 == 1) {
-         int i_5 = class71_0.field1030;
-         int i_6 = class71_1.field1030;
+         int i_5 = world_0.field1030;
+         int i_6 = world_1.field1030;
          if (!bool_3) {
             if (i_5 == -1) {
                i_5 = 2001;
@@ -198,7 +198,7 @@ public class class93 extends class135 {
 
          return i_5 - i_6;
       } else {
-         return i_2 == 2 ? class71_0.field1032 - class71_1.field1032 : (i_2 == 3 ? (class71_0.field1028.equals("-") ? (class71_1.field1028.equals("-") ? 0 : (bool_3 ? -1 : 1)) : (class71_1.field1028.equals("-") ? (bool_3 ? 1 : -1) : class71_0.field1028.compareTo(class71_1.field1028))) : (i_2 == 4 ? (class71_0.method1698() ? (class71_1.method1698() ? 0 : 1) : (class71_1.method1698() ? -1 : 0)) : (i_2 == 5 ? (class71_0.method1682() ? (class71_1.method1682() ? 0 : 1) : (class71_1.method1682() ? -1 : 0)) : (i_2 == 6 ? (class71_0.method1718() ? (class71_1.method1718() ? 0 : 1) : (class71_1.method1718() ? -1 : 0)) : (i_2 == 7 ? (class71_0.method1680() ? (class71_1.method1680() ? 0 : 1) : (class71_1.method1680() ? -1 : 0)) : class71_0.field1025 - class71_1.field1025)))));
+         return i_2 == 2 ? world_0.field1032 - world_1.field1032 : (i_2 == 3 ? (world_0.field1028.equals("-") ? (world_1.field1028.equals("-") ? 0 : (bool_3 ? -1 : 1)) : (world_1.field1028.equals("-") ? (bool_3 ? 1 : -1) : world_0.field1028.compareTo(world_1.field1028))) : (i_2 == 4 ? (world_0.method1698() ? (world_1.method1698() ? 0 : 1) : (world_1.method1698() ? -1 : 0)) : (i_2 == 5 ? (world_0.method1682() ? (world_1.method1682() ? 0 : 1) : (world_1.method1682() ? -1 : 0)) : (i_2 == 6 ? (world_0.method1718() ? (world_1.method1718() ? 0 : 1) : (world_1.method1718() ? -1 : 0)) : (i_2 == 7 ? (world_0.method1680() ? (world_1.method1680() ? 0 : 1) : (world_1.method1680() ? -1 : 0)) : world_0.id - world_1.id)))));
       }
    }
 

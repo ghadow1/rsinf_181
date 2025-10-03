@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public final class class171 extends Stream implements Runnable {
+public final class class171 extends AbstractSocket implements Runnable {
 
    boolean field2061 = false;
    int field2065 = 0;
@@ -61,7 +61,7 @@ public final class class171 extends Stream implements Runnable {
       }
    }
 
-   public void vmethod5830(int i_1) {
+   public void close() {
       if (!this.field2061) {
          synchronized(this) {
             this.field2061 = true;
@@ -86,11 +86,11 @@ public final class class171 extends Stream implements Runnable {
       }
    }
 
-   public boolean vmethod5847(int i_1, int i_2) throws IOException {
+   public boolean isAvailable(int i_1) throws IOException {
       return this.field2061 ? false : this.field2068.available() >= i_1;
    }
 
-   public int vmethod5828(byte[] bytes_1, int i_2, int i_3, byte b_4) throws IOException {
+   public int read(byte[] bytes_1, int i_2, int i_3) throws IOException {
       if (this.field2061) {
          return 0;
       } else {
@@ -122,7 +122,7 @@ public final class class171 extends Stream implements Runnable {
    }
 
    protected void finalize() {
-      this.vmethod5830(-1144636612);
+      this.close();
    }
 
    public void run() {
@@ -200,13 +200,13 @@ public final class class171 extends Stream implements Runnable {
    }
 
    public static void method3553(int i_0) {
-      class76.field1099.method3712();
+      MouseRecorder.field1099.method3712();
       class197.field2402 = 1;
       class11.field76 = null;
    }
 
-   public static class310 method3530(int i_0, int i_1) {
-      class310[] arr_2 = class152.method3383(-445895559);
+   public static class310 method3530(int i_0) {
+      class310[] arr_2 = class152.method3383();
 
       for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
          class310 class310_4 = arr_2[i_3];
@@ -219,7 +219,7 @@ public final class class171 extends Stream implements Runnable {
    }
 
    public static void method3554(int i_0, int i_1, int i_2) {
-      class248 class248_4 = (class248) class248.field3294.method3320((long)i_0);
+      class248 class248_4 = (class248) class248.field3294.get((long)i_0);
       class248 class248_3;
       if (class248_4 != null) {
          class248_3 = class248_4;
@@ -230,7 +230,7 @@ public final class class171 extends Stream implements Runnable {
             class248_4.method4485(new ByteBuffer(bytes_9), -1509826882);
          }
 
-         class248.field3294.method3322(class248_4, (long)i_0);
+         class248.field3294.put(class248_4, (long)i_0);
          class248_3 = class248_4;
       }
 
@@ -247,7 +247,7 @@ public final class class171 extends Stream implements Runnable {
    }
 
    public static class239 method3546(int i_0, int i_1) {
-      class239 class239_2 = (class239) class239.field3202.method3320((long)i_0);
+      class239 class239_2 = (class239) class239.field3202.get((long)i_0);
       if (class239_2 != null) {
          return class239_2;
       } else {
@@ -257,7 +257,7 @@ public final class class171 extends Stream implements Runnable {
             class239_2.method4350(new ByteBuffer(bytes_3), -1922259569);
          }
 
-         class239.field3202.method3322(class239_2, (long)i_0);
+         class239.field3202.put(class239_2, (long)i_0);
          return class239_2;
       }
    }

@@ -1,9 +1,9 @@
 import java.awt.FontMetrics;
 import java.util.Comparator;
 
-final class class12 implements Comparator {
+final class HealthBarUpdate implements Comparator {
 
-   static FontMetrics field80;
+   static FontMetrics loginScreenFontMetrics;
    static class324[] field82;
 
    int method135(class7 class7_1, class7 class7_2) {
@@ -23,7 +23,7 @@ final class class12 implements Comparator {
       int i_3 = 0;
 
       for (int i_4 = 0; i_4 < i_2; i_4++) {
-         i_3 = (i_3 << 5) - i_3 + class254.method4699(charsequence_0.charAt(i_4));
+         i_3 = (i_3 << 5) - i_3 + ItemDefinition.encodeStringCp1252(charsequence_0.charAt(i_4));
       }
 
       return i_3;
@@ -31,13 +31,13 @@ final class class12 implements Comparator {
 
    static final void method146(int i_0) {
       if (class162.method3445(i_0)) {
-         class217[] arr_2 = class217.field2556[i_0];
+         Widget[] arr_2 = Widget.field2556[i_0];
 
          for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
-            class217 class217_4 = arr_2[i_3];
-            if (class217_4 != null) {
-               class217_4.field2692 = 0;
-               class217_4.field2584 = 0;
+            Widget widget_4 = arr_2[i_3];
+            if (widget_4 != null) {
+               widget_4.field2692 = 0;
+               widget_4.field2584 = 0;
             }
          }
 
@@ -60,24 +60,24 @@ final class class12 implements Comparator {
    }
 
    static int method147(int i_0, boolean bool_2) {
-      class217 class217_4 = bool_2 ? class76.field1111 : class207.field2507;
+      Widget widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       if (i_0 == 1500) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2577;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2577;
          return 1;
       } else if (i_0 == 1501) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2699;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2699;
          return 1;
       } else if (i_0 == 1502) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2579;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2579;
          return 1;
       } else if (i_0 == 1503) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2667;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2667;
          return 1;
       } else if (i_0 == 1504) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2706 ? 1 : 0;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2706 ? 1 : 0;
          return 1;
       } else if (i_0 == 1505) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2583;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2583;
          return 1;
       } else {
          return 2;
@@ -114,8 +114,8 @@ final class class12 implements Comparator {
       class59_5.field551[i_1] = i_3;
    }
 
-   static final boolean method149(class217 class217_0) {
-      int i_2 = class217_0.field2568;
+   static final boolean method149(Widget widget_0) {
+      int i_2 = widget_0.field2568;
       if (i_2 == 205) {
          Client.field700 = 250;
          return true;

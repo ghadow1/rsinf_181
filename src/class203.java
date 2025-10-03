@@ -6,7 +6,7 @@ public class class203 extends LinkedListNode {
    class203(ByteBuffer class300_1) {
       class300_1.position = class300_1.buffer.length - 3;
       int i_2 = class300_1.readUnsignedByte();
-      int i_3 = class300_1.readUnsignedShortBigEndian();
+      int i_3 = class300_1.readUnsignedShort();
       int i_4 = i_2 * 10 + 14;
       class300_1.position = 0;
       int i_5 = 0;

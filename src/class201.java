@@ -485,7 +485,7 @@ public class class201 extends LinkedListNode {
    }
 
    public static class243 method3887(int i_0, byte b_1) {
-      class243 class243_2 = (class243) class243.field3239.method3320((long)i_0);
+      class243 class243_2 = (class243) class243.field3239.get((long)i_0);
       if (class243_2 != null) {
          return class243_2;
       } else {
@@ -496,7 +496,7 @@ public class class201 extends LinkedListNode {
             class243_2.method4407(new ByteBuffer(bytes_3), 65111702);
          }
 
-         class243.field3239.method3322(class243_2, (long)i_0);
+         class243.field3239.put(class243_2, (long)i_0);
          return class243_2;
       }
    }
@@ -521,7 +521,7 @@ public class class201 extends LinkedListNode {
          class68_10.field932 = i_3;
          class68_10.field937 = i_1;
          class68_10.field934 = i_2;
-         class294.method5327(class68_10, -813349979);
+         class294.method5327(class68_10);
          Client.field783.method4917(class68_10);
       }
 

@@ -343,12 +343,12 @@ public class class91 {
                }
             } else {
                class187 class187_11;
-               class217 class217_17;
+               Widget widget_17;
                if (i_2 == 24) {
-                  class217_17 = class80.fetchSomething(i_1);
+                  widget_17 = WorldMapElement.getWidget(i_1);
                   boolean bool_13 = true;
-                  if (class217_17.field2568 > 0) {
-                     bool_13 = class12.method149(class217_17);
+                  if (widget_17.field2568 > 0) {
+                     bool_13 = HealthBarUpdate.method149(widget_17);
                   }
 
                   if (bool_13) {
@@ -358,20 +358,20 @@ public class class91 {
                   }
                } else {
                   if (i_2 == 25) {
-                     class217_17 = Client.method1649(i_1, i_0);
-                     if (class217_17 != null) {
+                     widget_17 = Client.method1649(i_1, i_0);
+                     if (widget_17 != null) {
                         class31.method542(-456020317);
-                        class87.method2053(i_1, i_0, class78.method1957(class268.method4987(class217_17), (byte) 35), class217_17.field2690, 96373324);
-                        Client.field900 = 0;
-                        Client.field813 = class292.method5318(class217_17, (byte) 70);
+                        class87.method2053(i_1, i_0, class78.method1957(class268.method4987(widget_17), (byte) 35), widget_17.field2690, 96373324);
+                        Client.isItemSelected = 0;
+                        Client.field813 = class292.method5318(widget_17, (byte) 70);
                         if (Client.field813 == null) {
                            Client.field813 = "null";
                         }
 
-                        if (class217_17.field2563) {
-                           Client.field814 = class217_17.field2643 + class73.method1756(16777215, -844505624);
+                        if (widget_17.field2563) {
+                           Client.selectedSpellName = widget_17.field2643 + class73.colorStartTag(16777215);
                         } else {
-                           Client.field814 = class73.method1756(65280, -844505624) + class217_17.field2686 + class73.method1756(16777215, -844505624);
+                           Client.selectedSpellName = class73.colorStartTag(65280) + widget_17.field2686 + class73.colorStartTag(16777215);
                         }
                      }
 
@@ -382,14 +382,14 @@ public class class91 {
                      class7.method73(-583790135);
                   } else {
                      int i_12;
-                     class217 class217_15;
+                     Widget widget_15;
                      if (i_2 == 28) {
                         class187_9 = class235.method4265(ClientPacketProt.field2272, Client.data.field1313);
                         class187_9.outBuffer.writeIntBigEndian(i_1);
                         Client.data.copy(class187_9);
-                        class217_15 = class80.fetchSomething(i_1);
-                        if (class217_15.field2682 != null && class217_15.field2682[0][0] == 5) {
-                           i_12 = class217_15.field2682[0][1];
+                        widget_15 = WorldMapElement.getWidget(i_1);
+                        if (widget_15.field2682 != null && widget_15.field2682[0][0] == 5) {
+                           i_12 = widget_15.field2682[0][1];
                            class212.var_configurations[i_12] = 1 - class212.var_configurations[i_12];
                            class10.method124(i_12);
                         }
@@ -397,11 +397,11 @@ public class class91 {
                         class187_9 = class235.method4265(ClientPacketProt.field2272, Client.data.field1313);
                         class187_9.outBuffer.writeIntBigEndian(i_1);
                         Client.data.copy(class187_9);
-                        class217_15 = class80.fetchSomething(i_1);
-                        if (class217_15.field2682 != null && class217_15.field2682[0][0] == 5) {
-                           i_12 = class217_15.field2682[0][1];
-                           if (class212.var_configurations[i_12] != class217_15.field2684[0]) {
-                              class212.var_configurations[i_12] = class217_15.field2684[0];
+                        widget_15 = WorldMapElement.getWidget(i_1);
+                        if (widget_15.field2682 != null && widget_15.field2682[0][0] == 5) {
+                           i_12 = widget_15.field2682[0][1];
+                           if (class212.var_configurations[i_12] != widget_15.field2684[0]) {
+                              class212.var_configurations[i_12] = widget_15.field2684[0];
                               class10.method124(i_12);
                            }
                         }
@@ -409,7 +409,7 @@ public class class91 {
                         if (Client.field850 == null) {
                            class56.method1086(i_1, i_0, -881674814);
                            Client.field850 = Client.method1649(i_1, i_0);
-                           class224.method4120(Client.field850);
+                           FriendSystem.invalidateWidget(Client.field850);
                         }
                      } else if (i_2 == 31) {
                         class187_9 = class235.method4265(ClientPacketProt.field2266, Client.data.field1313);
@@ -421,7 +421,7 @@ public class class91 {
                         class187_9.outBuffer.writeShortWithOffset(i_3);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else if (i_2 == 32) {
                         class187_9 = class235.method4265(ClientPacketProt.field2232, Client.data.field1313);
@@ -432,7 +432,7 @@ public class class91 {
                         class187_9.outBuffer.writeShortLittleEndian(Client.field848);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else if (i_2 == 33) {
                         class187_9 = class235.method4265(ClientPacketProt.field2290, Client.data.field1313);
@@ -441,7 +441,7 @@ public class class91 {
                         class187_9.outBuffer.writeShortBigEndian(i_0);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else if (i_2 == 34) {
                         class187_9 = class235.method4265(ClientPacketProt.field2239, Client.data.field1313);
@@ -450,7 +450,7 @@ public class class91 {
                         class187_9.outBuffer.writeShortWithOffset(i_0);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else if (i_2 == 35) {
                         class187_9 = class235.method4265(ClientPacketProt.field2265, Client.data.field1313);
@@ -459,7 +459,7 @@ public class class91 {
                         class187_9.outBuffer.writeShortWithOffset(i_3);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else if (i_2 == 36) {
                         class187_9 = class235.method4265(ClientPacketProt.field2281, Client.data.field1313);
@@ -468,7 +468,7 @@ public class class91 {
                         class187_9.outBuffer.writeShortWithOffset(i_0);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else if (i_2 == 37) {
                         class187_9 = class235.method4265(ClientPacketProt.field2261, Client.data.field1313);
@@ -477,20 +477,20 @@ public class class91 {
                         class187_9.outBuffer.writeShortBigEndian(i_3);
                         Client.data.copy(class187_9);
                         Client.field759 = 0;
-                        class59.field549 = class80.fetchSomething(i_1);
+                        class59.field549 = WorldMapElement.getWidget(i_1);
                         Client.field698 = i_0;
                      } else {
                         if (i_2 == 38) {
                            class31.method542(-339786927);
-                           class217_17 = class80.fetchSomething(i_1);
-                           Client.field900 = 1;
+                           widget_17 = WorldMapElement.getWidget(i_1);
+                           Client.isItemSelected = 1;
                            class23.field182 = i_0;
                            class63.field594 = i_1;
                            class4.field19 = i_3;
-                           class224.method4120(class217_17);
-                           Client.field738 = class73.method1756(16748608, -844505624) + class26.method404(i_3).field3449 + class73.method1756(16777215, -844505624);
-                           if (Client.field738 == null) {
-                              Client.field738 = "null";
+                           FriendSystem.invalidateWidget(widget_17);
+                           Client.selectedItemName = class73.colorStartTag(16748608) + class26.method404(i_3).name + class73.colorStartTag(16777215);
+                           if (Client.selectedItemName == null) {
+                              Client.selectedItemName = "null";
                            }
 
                            return;
@@ -503,7 +503,7 @@ public class class91 {
                            class187_9.outBuffer.writeShortLittleEndian(i_0);
                            Client.data.copy(class187_9);
                            Client.field759 = 0;
-                           class59.field549 = class80.fetchSomething(i_1);
+                           class59.field549 = WorldMapElement.getWidget(i_1);
                            Client.field698 = i_0;
                         } else if (i_2 == 40) {
                            class187_9 = class235.method4265(ClientPacketProt.field2229, Client.data.field1313);
@@ -512,7 +512,7 @@ public class class91 {
                            class187_9.outBuffer.writeShortWithOffset2(i_3);
                            Client.data.copy(class187_9);
                            Client.field759 = 0;
-                           class59.field549 = class80.fetchSomething(i_1);
+                           class59.field549 = WorldMapElement.getWidget(i_1);
                            Client.field698 = i_0;
                         } else if (i_2 == 41) {
                            class187_9 = class235.method4265(ClientPacketProt.field2268, Client.data.field1313);
@@ -521,7 +521,7 @@ public class class91 {
                            class187_9.outBuffer.writeShortBigEndian(i_3);
                            Client.data.copy(class187_9);
                            Client.field759 = 0;
-                           class59.field549 = class80.fetchSomething(i_1);
+                           class59.field549 = WorldMapElement.getWidget(i_1);
                            Client.field698 = i_0;
                         } else if (i_2 == 42) {
                            class187_9 = class235.method4265(ClientPacketProt.field2267, Client.data.field1313);
@@ -530,7 +530,7 @@ public class class91 {
                            class187_9.outBuffer.writeShortBigEndian(i_3);
                            Client.data.copy(class187_9);
                            Client.field759 = 0;
-                           class59.field549 = class80.fetchSomething(i_1);
+                           class59.field549 = WorldMapElement.getWidget(i_1);
                            Client.field698 = i_0;
                         } else if (i_2 == 43) {
                            class187_9 = class235.method4265(ClientPacketProt.field2235, Client.data.field1313);
@@ -539,7 +539,7 @@ public class class91 {
                            class187_9.outBuffer.writeShortBigEndian(i_0);
                            Client.data.copy(class187_9);
                            Client.field759 = 0;
-                           class59.field549 = class80.fetchSomething(i_1);
+                           class59.field549 = WorldMapElement.getWidget(i_1);
                            Client.field698 = i_0;
                         } else if (i_2 == 44) {
                            class66_16 = Client.field909[i_3];
@@ -657,15 +657,15 @@ public class class91 {
                            label926: {
                               if (i_2 != 57) {
                                  if (i_2 == 58) {
-                                    class217_17 = Client.method1649(i_1, i_0);
-                                    if (class217_17 != null) {
+                                    widget_17 = Client.method1649(i_1, i_0);
+                                    if (widget_17 != null) {
                                        class187_10 = class235.method4265(ClientPacketProt.field2285, Client.data.field1313);
                                        class187_10.outBuffer.writeShortLittleEndian(Client.field848);
                                        class187_10.outBuffer.writeIntCustomOrder(i_1);
                                        class187_10.outBuffer.writeShortLittleEndian(Client.field812);
                                        class187_10.outBuffer.writeShortWithOffset(i_0);
                                        class187_10.outBuffer.writeIntBigEndian(class41.field359);
-                                       class187_10.outBuffer.writeShortWithOffset(class217_17.field2690);
+                                       class187_10.outBuffer.writeShortWithOffset(widget_17.field2690);
                                        Client.data.copy(class187_10);
                                     }
                                     break label926;
@@ -731,9 +731,9 @@ public class class91 {
                                  }
 
                                  if (i_2 == 1005) {
-                                    class217_17 = class80.fetchSomething(i_1);
-                                    if (class217_17 != null && class217_17.field2705[i_0] >= 100000) {
-                                       class62.method1132(27, "", class217_17.field2705[i_0] + " x " + class26.method404(i_3).field3449);
+                                    widget_17 = WorldMapElement.getWidget(i_1);
+                                    if (widget_17 != null && widget_17.field2705[i_0] >= 100000) {
+                                       class62.method1132(27, "", widget_17.field2705[i_0] + " x " + class26.method404(i_3).name);
                                     } else {
                                        class187_10 = class235.method4265(ClientPacketProt.field2227, Client.data.field1313);
                                        class187_10.outBuffer.writeShortLittleEndian(i_3);
@@ -741,7 +741,7 @@ public class class91 {
                                     }
 
                                     Client.field759 = 0;
-                                    class59.field549 = class80.fetchSomething(i_1);
+                                    class59.field549 = WorldMapElement.getWidget(i_1);
                                     Client.field698 = i_0;
                                     break label926;
                                  }
@@ -754,9 +754,9 @@ public class class91 {
                                  }
                               }
 
-                              class217_17 = Client.method1649(i_1, i_0);
-                              if (class217_17 != null) {
-                                 method2163(i_3, i_1, i_0, class217_17.field2690, string_5, (byte) 48);
+                              widget_17 = Client.method1649(i_1, i_0);
+                              if (widget_17 != null) {
+                                 method2163(i_3, i_1, i_0, widget_17.field2690, string_5, (byte) 48);
                               }
                            }
                         }
@@ -767,17 +767,17 @@ public class class91 {
          }
       }
 
-      if (Client.field900 != 0) {
-         Client.field900 = 0;
-         class224.method4120(class80.fetchSomething(class63.field594));
+      if (Client.isItemSelected != 0) {
+         Client.isItemSelected = 0;
+         FriendSystem.invalidateWidget(WorldMapElement.getWidget(class63.field594));
       }
 
-      if (Client.field810) {
+      if (Client.isSpellSelected) {
          class31.method542(-102545378);
       }
 
       if (class59.field549 != null && Client.field759 == 0) {
-         class224.method4120(class59.field549);
+         FriendSystem.invalidateWidget(class59.field549);
       }
 
    }
@@ -789,24 +789,24 @@ public class class91 {
    }
 
    static void method2163(int i_0, int i_1, int i_2, int i_3, String string_4, byte b_5) {
-      class217 class217_6 = Client.method1649(i_1, i_2);
-      if (class217_6 != null) {
-         if (class217_6.field2656 != null) {
+      Widget widget_6 = Client.method1649(i_1, i_2);
+      if (widget_6 != null) {
+         if (widget_6.field2656 != null) {
             class62 class62_7 = new class62();
-            class62_7.field575 = class217_6;
+            class62_7.field575 = widget_6;
             class62_7.field578 = i_0;
             class62_7.field582 = string_4;
-            class62_7.field581 = class217_6.field2656;
+            class62_7.field581 = widget_6.field2656;
             class184.method3613(class62_7);
          }
 
          boolean bool_12 = true;
-         if (class217_6.field2568 > 0) {
-            bool_12 = class12.method149(class217_6);
+         if (widget_6.field2568 > 0) {
+            bool_12 = HealthBarUpdate.method149(widget_6);
          }
 
          if (bool_12) {
-            int i_9 = class268.method4987(class217_6);
+            int i_9 = class268.method4987(widget_6);
             int i_10 = i_0 - 1;
             boolean bool_8 = (i_9 >> i_10 + 1 & 0x1) != 0;
             if (bool_8) {

@@ -35,71 +35,71 @@ public class class132 extends LinkedListNode {
       int i_5;
       if (i_0 == 100) {
          class70.field1014 -= 3;
-         i_4 = class76.field1098[class70.field1014];
-         i_5 = class76.field1098[class70.field1014 + 1];
-         int i_6 = class76.field1098[class70.field1014 + 2];
+         i_4 = MouseRecorder.field1098[class70.field1014];
+         i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+         int i_6 = MouseRecorder.field1098[class70.field1014 + 2];
          if (i_5 == 0) {
             throw new RuntimeException();
          } else {
-            class217 class217_7 = class80.fetchSomething(i_4);
-            if (class217_7.field2675 == null) {
-               class217_7.field2675 = new class217[i_6 + 1];
+            Widget widget_7 = WorldMapElement.getWidget(i_4);
+            if (widget_7.field2675 == null) {
+               widget_7.field2675 = new Widget[i_6 + 1];
             }
 
-            if (class217_7.field2675.length <= i_6) {
-               class217[] arr_8 = new class217[i_6 + 1];
+            if (widget_7.field2675.length <= i_6) {
+               Widget[] arr_8 = new Widget[i_6 + 1];
 
-               for (int i_9 = 0; i_9 < class217_7.field2675.length; i_9++) {
-                  arr_8[i_9] = class217_7.field2675[i_9];
+               for (int i_9 = 0; i_9 < widget_7.field2675.length; i_9++) {
+                  arr_8[i_9] = widget_7.field2675[i_9];
                }
 
-               class217_7.field2675 = arr_8;
+               widget_7.field2675 = arr_8;
             }
 
-            if (i_6 > 0 && class217_7.field2675[i_6 - 1] == null) {
+            if (i_6 > 0 && widget_7.field2675[i_6 - 1] == null) {
                throw new RuntimeException("" + (i_6 - 1));
             } else {
-               class217 class217_13 = new class217();
-               class217_13.field2566 = i_5;
-               class217_13.field2583 = class217_13.field2688 = class217_7.field2688;
-               class217_13.field2565 = i_6;
-               class217_13.field2563 = true;
-               class217_7.field2675[i_6] = class217_13;
+               Widget widget_13 = new Widget();
+               widget_13.field2566 = i_5;
+               widget_13.field2583 = widget_13.field2688 = widget_7.field2688;
+               widget_13.field2565 = i_6;
+               widget_13.field2563 = true;
+               widget_7.field2675[i_6] = widget_13;
                if (bool_2) {
-                  class76.field1111 = class217_13;
+                  MouseRecorder.field1111 = widget_13;
                } else {
-                  class207.field2507 = class217_13;
+                  class207.field2507 = widget_13;
                }
 
-               class224.method4120(class217_7);
+               FriendSystem.invalidateWidget(widget_7);
                return 1;
             }
          }
       } else {
-         class217 class217_10;
+         Widget widget_10;
          if (i_0 == 101) {
-            class217_10 = bool_2 ? class76.field1111 : class207.field2507;
-            class217 class217_11 = class80.fetchSomething(class217_10.field2688);
-            class217_11.field2675[class217_10.field2565] = null;
-            class224.method4120(class217_11);
+            widget_10 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
+            Widget widget_11 = WorldMapElement.getWidget(widget_10.field2688);
+            widget_11.field2675[widget_10.field2565] = null;
+            FriendSystem.invalidateWidget(widget_11);
             return 1;
          } else if (i_0 == 102) {
-            class217_10 = class80.fetchSomething(class76.field1098[--class70.field1014]);
-            class217_10.field2675 = null;
-            class224.method4120(class217_10);
+            widget_10 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
+            widget_10.field2675 = null;
+            FriendSystem.invalidateWidget(widget_10);
             return 1;
          } else if (i_0 != 200) {
             if (i_0 == 201) {
-               class217_10 = class80.fetchSomething(class76.field1098[--class70.field1014]);
-               if (class217_10 != null) {
-                  class76.field1098[++class70.field1014 - 1] = 1;
+               widget_10 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
+               if (widget_10 != null) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = 1;
                   if (bool_2) {
-                     class76.field1111 = class217_10;
+                     MouseRecorder.field1111 = widget_10;
                   } else {
-                     class207.field2507 = class217_10;
+                     class207.field2507 = widget_10;
                   }
                } else {
-                  class76.field1098[++class70.field1014 - 1] = 0;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = 0;
                }
 
                return 1;
@@ -108,18 +108,18 @@ public class class132 extends LinkedListNode {
             }
          } else {
             class70.field1014 -= 2;
-            i_4 = class76.field1098[class70.field1014];
-            i_5 = class76.field1098[class70.field1014 + 1];
-            class217 class217_12 = Client.method1649(i_4, i_5);
-            if (class217_12 != null && i_5 != -1) {
-               class76.field1098[++class70.field1014 - 1] = 1;
+            i_4 = MouseRecorder.field1098[class70.field1014];
+            i_5 = MouseRecorder.field1098[class70.field1014 + 1];
+            Widget widget_12 = Client.method1649(i_4, i_5);
+            if (widget_12 != null && i_5 != -1) {
+               MouseRecorder.field1098[++class70.field1014 - 1] = 1;
                if (bool_2) {
-                  class76.field1111 = class217_12;
+                  MouseRecorder.field1111 = widget_12;
                } else {
-                  class207.field2507 = class217_12;
+                  class207.field2507 = widget_12;
                }
             } else {
-               class76.field1098[++class70.field1014 - 1] = 0;
+               MouseRecorder.field1098[++class70.field1014 - 1] = 0;
             }
 
             return 1;
@@ -127,7 +127,7 @@ public class class132 extends LinkedListNode {
       }
    }
 
-   public static int method3063(ByteBuffer class300_0, String string_1, int i_2) {
+   public static int encodeStringCp1252(ByteBuffer class300_0, String string_1, int i_2) {
       int i_3 = class300_0.position;
       int i_5 = string_1.length();
       byte[] bytes_6 = new byte[i_5];
@@ -196,7 +196,7 @@ public class class132 extends LinkedListNode {
       }
 
       class300_0.writeSmartShort(bytes_6.length);
-      class300_0.position += class210.field2515.method3942(bytes_6, 0, bytes_6.length, class300_0.buffer, class300_0.position, -1706453276);
+      class300_0.position += class210.field2515.method3942(bytes_6, 0, bytes_6.length, class300_0.buffer, class300_0.position);
       return class300_0.position - i_3;
    }
 

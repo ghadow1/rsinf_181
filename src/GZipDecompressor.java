@@ -1,6 +1,6 @@
 import java.applet.Applet;
 
-public class class341 extends RuntimeException {
+public class GZipDecompressor extends RuntimeException {
 
    public static int field4065;
    public static Applet field4064;

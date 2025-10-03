@@ -84,8 +84,8 @@ public class class234 implements Runnable {
             resourceHandler_4.vmethod2414(resourceHandler_4.field1424, (byte) 51);
             if (ResourceHandler.field1407 > 0 && class88.field1246 == null) {
                class88.field1246 = new MemoryManager();
-               class14.field97 = Executors.newScheduledThreadPool(1);
-               class14.field97.scheduleAtFixedRate(class88.field1246, 0L, 10L, TimeUnit.MILLISECONDS);
+               MilliClock.field97 = Executors.newScheduledThreadPool(1);
+               MilliClock.field97.scheduleAtFixedRate(class88.field1246, 0L, 10L, TimeUnit.MILLISECONDS);
             }
 
             if (class88.field1246 != null) {

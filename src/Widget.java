@@ -1,8 +1,8 @@
-public class class217 extends LinkedListNode {
+public class Widget extends LinkedListNode {
 
-   public static class217[][] field2556;
+   public static Widget[][] field2556;
    public static class233 field2557;
-   public class217[] field2675;
+   public Widget[] field2675;
    public Object[] field2679;
    public byte[][] field2650;
    public int[] field2578;
@@ -20,7 +20,7 @@ public class class217 extends LinkedListNode {
    public Object[] field2681;
    static class145 field2558 = new class145(200);
    static class145 field2698 = new class145(50);
-   static class145 field2696 = new class145(20);
+   static class145 cachedFonts = new class145(20);
    static class145 field2561 = new class145(8);
    public static boolean field2562 = false;
    public boolean field2563 = false;
@@ -81,7 +81,7 @@ public class class217 extends LinkedListNode {
    public boolean field2621;
    public boolean field2564;
    public int field2703;
-   public int field2624;
+   public int fontId;
    public String field2601;
    public String field2590;
    public int field2627;
@@ -93,7 +93,7 @@ public class class217 extends LinkedListNode {
    public int field2669;
    public boolean field2704;
    public String field2643;
-   public class217 field2645;
+   public Widget field2645;
    public int field2646;
    public int field2647;
    public boolean field2648;
@@ -152,7 +152,7 @@ public class class217 extends LinkedListNode {
    public int[] field2666;
    public int[] field2668;
 
-   public class217() {
+   public Widget() {
       this.field2693 = class323.field3888;
       this.field2595 = 0;
       this.field2596 = 0;
@@ -181,7 +181,7 @@ public class class217 extends LinkedListNode {
       this.field2621 = false;
       this.field2564 = false;
       this.field2703 = 2;
-      this.field2624 = -1;
+      this.fontId = -1;
       this.field2601 = "";
       this.field2590 = "";
       this.field2627 = 0;
@@ -232,7 +232,7 @@ public class class217 extends LinkedListNode {
          return null;
       } else {
          long long_4 = ((this.field2605 ? 1L : 0L) << 38) + ((long)this.field2559 << 36) + (long)i_3 + ((this.field2606 ? 1L : 0L) << 39) + ((long)this.field2604 << 40);
-         class325 class325_6 = (class325) field2558.method3320(long_4);
+         class325 class325_6 = (class325) field2558.get(long_4);
          if (class325_6 != null) {
             return class325_6;
          } else {
@@ -265,7 +265,7 @@ public class class217 extends LinkedListNode {
                   class325_6.method6171(this.field2604);
                }
 
-               field2558.method3322(class325_6, long_4);
+               field2558.put(class325_6, long_4);
                return class325_6;
             }
          }
@@ -276,20 +276,20 @@ public class class217 extends LinkedListNode {
       this.field2563 = false;
       this.field2566 = class300_1.readUnsignedByte();
       this.field2567 = class300_1.readUnsignedByte();
-      this.field2568 = class300_1.readUnsignedShortBigEndian();
+      this.field2568 = class300_1.readUnsignedShort();
       this.field2651 = class300_1.readSignedShortBigEndian();
       this.field2574 = class300_1.readSignedShortBigEndian();
-      this.field2670 = class300_1.readUnsignedShortBigEndian();
-      this.field2576 = class300_1.readUnsignedShortBigEndian();
+      this.field2670 = class300_1.readUnsignedShort();
+      this.field2576 = class300_1.readUnsignedShort();
       this.field2595 = class300_1.readUnsignedByte();
-      this.field2583 = class300_1.readUnsignedShortBigEndian();
+      this.field2583 = class300_1.readUnsignedShort();
       if (this.field2583 == 65535) {
          this.field2583 = -1;
       } else {
          this.field2583 += this.field2688 & ~0xffff;
       }
 
-      this.field2685 = class300_1.readUnsignedShortBigEndian();
+      this.field2685 = class300_1.readUnsignedShort();
       if (this.field2685 == 65535) {
          this.field2685 = -1;
       }
@@ -302,7 +302,7 @@ public class class217 extends LinkedListNode {
 
          for (i_4 = 0; i_4 < i_3; i_4++) {
             this.field2683[i_4] = class300_1.readUnsignedByte();
-            this.field2684[i_4] = class300_1.readUnsignedShortBigEndian();
+            this.field2684[i_4] = class300_1.readUnsignedShort();
          }
       }
 
@@ -314,11 +314,11 @@ public class class217 extends LinkedListNode {
          this.field2682 = new int[i_4][];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            i_6 = class300_1.readUnsignedShortBigEndian();
+            i_6 = class300_1.readUnsignedShort();
             this.field2682[i_5] = new int[i_6];
 
             for (i_7 = 0; i_7 < i_6; i_7++) {
-               this.field2682[i_5][i_7] = class300_1.readUnsignedShortBigEndian();
+               this.field2682[i_5][i_7] = class300_1.readUnsignedShort();
                if (this.field2682[i_5][i_7] == 65535) {
                   this.field2682[i_5][i_7] = -1;
                }
@@ -327,12 +327,12 @@ public class class217 extends LinkedListNode {
       }
 
       if (this.field2566 == 0) {
-         this.field2569 = class300_1.readUnsignedShortBigEndian();
+         this.field2569 = class300_1.readUnsignedShort();
          this.field2706 = class300_1.readUnsignedByte() == 1;
       }
 
       if (this.field2566 == 1) {
-         class300_1.readUnsignedShortBigEndian();
+         class300_1.readUnsignedShort();
          class300_1.readUnsignedByte();
       }
 
@@ -396,9 +396,9 @@ public class class217 extends LinkedListNode {
          this.field2628 = class300_1.readUnsignedByte();
          this.field2629 = class300_1.readUnsignedByte();
          this.field2627 = class300_1.readUnsignedByte();
-         this.field2624 = class300_1.readUnsignedShortBigEndian();
-         if (this.field2624 == 65535) {
-            this.field2624 = -1;
+         this.fontId = class300_1.readUnsignedShort();
+         if (this.fontId == 65535) {
+            this.fontId = -1;
          }
 
          this.field2659 = class300_1.readUnsignedByte() == 1;
@@ -426,39 +426,39 @@ public class class217 extends LinkedListNode {
 
       if (this.field2566 == 6) {
          this.field2607 = 1;
-         this.field2649 = class300_1.readUnsignedShortBigEndian();
+         this.field2649 = class300_1.readUnsignedShort();
          if (this.field2649 == 65535) {
             this.field2649 = -1;
          }
 
          this.field2609 = 1;
-         this.field2610 = class300_1.readUnsignedShortBigEndian();
+         this.field2610 = class300_1.readUnsignedShort();
          if (this.field2610 == 65535) {
             this.field2610 = -1;
          }
 
-         this.field2611 = class300_1.readUnsignedShortBigEndian();
+         this.field2611 = class300_1.readUnsignedShort();
          if (this.field2611 == 65535) {
             this.field2611 = -1;
          }
 
-         this.field2612 = class300_1.readUnsignedShortBigEndian();
+         this.field2612 = class300_1.readUnsignedShort();
          if (this.field2612 == 65535) {
             this.field2612 = -1;
          }
 
-         this.field2618 = class300_1.readUnsignedShortBigEndian();
-         this.field2615 = class300_1.readUnsignedShortBigEndian();
-         this.field2616 = class300_1.readUnsignedShortBigEndian();
+         this.field2618 = class300_1.readUnsignedShort();
+         this.field2615 = class300_1.readUnsignedShort();
+         this.field2616 = class300_1.readUnsignedShort();
       }
 
       if (this.field2566 == 7) {
          this.field2560 = new int[this.field2670 * this.field2576];
          this.field2705 = new int[this.field2576 * this.field2670];
          this.field2628 = class300_1.readUnsignedByte();
-         this.field2624 = class300_1.readUnsignedShortBigEndian();
-         if (this.field2624 == 65535) {
-            this.field2624 = -1;
+         this.fontId = class300_1.readUnsignedShort();
+         if (this.fontId == 65535) {
+            this.fontId = -1;
          }
 
          this.field2659 = class300_1.readUnsignedByte() == 1;
@@ -488,7 +488,7 @@ public class class217 extends LinkedListNode {
       if (this.field2567 == 2 || this.field2566 == 2) {
          this.field2657 = class300_1.readNullTerminatedString();
          this.field2686 = class300_1.readNullTerminatedString();
-         i_5 = class300_1.readUnsignedShortBigEndian() & 0x3f;
+         i_5 = class300_1.readUnsignedShort() & 0x3f;
          this.field2669 |= i_5 << 11;
       }
 
@@ -527,21 +527,21 @@ public class class217 extends LinkedListNode {
       class300_1.readUnsignedByte();
       this.field2563 = true;
       this.field2566 = class300_1.readUnsignedByte();
-      this.field2568 = class300_1.readUnsignedShortBigEndian();
+      this.field2568 = class300_1.readUnsignedShort();
       this.field2651 = class300_1.readSignedShortBigEndian();
       this.field2574 = class300_1.readSignedShortBigEndian();
-      this.field2670 = class300_1.readUnsignedShortBigEndian();
+      this.field2670 = class300_1.readUnsignedShort();
       if (this.field2566 == 9) {
          this.field2576 = class300_1.readSignedShortBigEndian();
       } else {
-         this.field2576 = class300_1.readUnsignedShortBigEndian();
+         this.field2576 = class300_1.readUnsignedShort();
       }
 
       this.field2638 = class300_1.readSignedByte();
       this.field2572 = class300_1.readSignedByte();
       this.field2694 = class300_1.readSignedByte();
       this.field2570 = class300_1.readSignedByte();
-      this.field2583 = class300_1.readUnsignedShortBigEndian();
+      this.field2583 = class300_1.readUnsignedShort();
       if (this.field2583 == 65535) {
          this.field2583 = -1;
       } else {
@@ -550,14 +550,14 @@ public class class217 extends LinkedListNode {
 
       this.field2706 = class300_1.readUnsignedByte() == 1;
       if (this.field2566 == 0) {
-         this.field2687 = class300_1.readUnsignedShortBigEndian();
-         this.field2569 = class300_1.readUnsignedShortBigEndian();
+         this.field2687 = class300_1.readUnsignedShort();
+         this.field2569 = class300_1.readUnsignedShort();
          this.field2580 = class300_1.readUnsignedByte() == 1;
       }
 
       if (this.field2566 == 5) {
          this.field2599 = class300_1.readIntMedEndian();
-         this.field2591 = class300_1.readUnsignedShortBigEndian();
+         this.field2591 = class300_1.readUnsignedShort();
          this.field2613 = class300_1.readUnsignedByte() == 1;
          this.field2595 = class300_1.readUnsignedByte();
          this.field2559 = class300_1.readUnsignedByte();
@@ -568,37 +568,37 @@ public class class217 extends LinkedListNode {
 
       if (this.field2566 == 6) {
          this.field2607 = 1;
-         this.field2649 = class300_1.readUnsignedShortBigEndian();
+         this.field2649 = class300_1.readUnsignedShort();
          if (this.field2649 == 65535) {
             this.field2649 = -1;
          }
 
          this.field2593 = class300_1.readSignedShortBigEndian();
          this.field2614 = class300_1.readSignedShortBigEndian();
-         this.field2615 = class300_1.readUnsignedShortBigEndian();
-         this.field2616 = class300_1.readUnsignedShortBigEndian();
-         this.field2640 = class300_1.readUnsignedShortBigEndian();
-         this.field2618 = class300_1.readUnsignedShortBigEndian();
-         this.field2611 = class300_1.readUnsignedShortBigEndian();
+         this.field2615 = class300_1.readUnsignedShort();
+         this.field2616 = class300_1.readUnsignedShort();
+         this.field2640 = class300_1.readUnsignedShort();
+         this.field2618 = class300_1.readUnsignedShort();
+         this.field2611 = class300_1.readUnsignedShort();
          if (this.field2611 == 65535) {
             this.field2611 = -1;
          }
 
          this.field2621 = class300_1.readUnsignedByte() == 1;
-         class300_1.readUnsignedShortBigEndian();
+         class300_1.readUnsignedShort();
          if (this.field2638 != 0) {
-            this.field2619 = class300_1.readUnsignedShortBigEndian();
+            this.field2619 = class300_1.readUnsignedShort();
          }
 
          if (this.field2572 != 0) {
-            class300_1.readUnsignedShortBigEndian();
+            class300_1.readUnsignedShort();
          }
       }
 
       if (this.field2566 == 4) {
-         this.field2624 = class300_1.readUnsignedShortBigEndian();
-         if (this.field2624 == 65535) {
-            this.field2624 = -1;
+         this.fontId = class300_1.readUnsignedShort();
+         if (this.fontId == 65535) {
+            this.fontId = -1;
          }
 
          this.field2601 = class300_1.readNullTerminatedString();
@@ -669,7 +669,7 @@ public class class217 extends LinkedListNode {
          return null;
       } else {
          long long_4 = ((this.field2605 ? 1L : 0L) << 38) + (long)i_3 + ((long)this.field2559 << 36) + ((this.field2606 ? 1L : 0L) << 39) + ((long)this.field2604 << 40);
-         class211 class211_6 = (class211) field2561.method3320(long_4);
+         class211 class211_6 = (class211) field2561.get(long_4);
          if (class211_6 != null) {
             return class211_6;
          } else {
@@ -705,30 +705,30 @@ public class class217 extends LinkedListNode {
                }
 
                class211_6 = new class211(class325_8.field3899, class325_8.field3900, ints_10, ints_9, i_3);
-               field2561.method3322(class211_6, long_4);
+               field2561.put(class211_6, long_4);
                return class211_6;
             }
          }
       }
    }
 
-   public class295 method4037(int i_1) {
+   public Font getFont() {
       field2562 = false;
-      if (this.field2624 == -1) {
+      if (this.fontId == -1) {
          return null;
       } else {
-         class295 class295_2 = (class295) field2696.method3320((long)this.field2624);
-         if (class295_2 != null) {
-            return class295_2;
+         Font font_2 = (Font) cachedFonts.get((long)this.fontId);
+         if (font_2 != null) {
+            return font_2;
          } else {
-            class295_2 = class142.method3294(class216.field2547, TimeUtils.field2498, this.field2624, 0, -1252480817);
-            if (class295_2 != null) {
-               field2696.method3322(class295_2, (long)this.field2624);
+            font_2 = FileSystem.getFont(class216.field2547, TimeUtils.field2498, this.fontId, 0);
+            if (font_2 != null) {
+               cachedFonts.put(font_2, (long)this.fontId);
             } else {
                field2562 = true;
             }
 
-            return class295_2;
+            return font_2;
          }
       }
    }
@@ -750,7 +750,7 @@ public class class217 extends LinkedListNode {
       } else if (i_6 == 1 && i_7 == -1) {
          return null;
       } else {
-         class127 class127_8 = (class127) field2698.method3320((long)(i_7 + (i_6 << 16)));
+         class127 class127_8 = (class127) field2698.get((long)(i_7 + (i_6 << 16)));
          if (class127_8 == null) {
             Model model_23;
             if (i_6 == 1) {
@@ -788,17 +788,17 @@ public class class217 extends LinkedListNode {
             }
 
             if (i_6 == 4) {
-               class254 class254_10 = class26.method404(i_7);
-               model_23 = class254_10.method4643(10);
+               ItemDefinition itemDefinition_10 = class26.method404(i_7);
+               model_23 = itemDefinition_10.method4643(10);
                if (model_23 == null) {
                   field2562 = true;
                   return null;
                }
 
-               class127_8 = model_23.applyLighting(class254_10.field3448 + 64, class254_10.field3419 * 5 + 768, -50, -10, -50);
+               class127_8 = model_23.applyLighting(itemDefinition_10.ambient + 64, itemDefinition_10.contrast * 5 + 768, -50, -10, -50);
             }
 
-            field2698.method3322(class127_8, (long)(i_7 + (i_6 << 16)));
+            field2698.put(class127_8, (long)(i_7 + (i_6 << 16)));
          }
 
          if (class258_1 != null) {
@@ -816,13 +816,13 @@ public class class217 extends LinkedListNode {
          if (i_3 == -1) {
             return null;
          } else {
-            class325 class325_4 = (class325) field2558.method3320((long)i_3);
+            class325 class325_4 = (class325) field2558.get((long)i_3);
             if (class325_4 != null) {
                return class325_4;
             } else {
                class325_4 = class65.method1178(class216.field2547, i_3, 0, -1506119460);
                if (class325_4 != null) {
-                  field2558.method3322(class325_4, (long)i_3);
+                  field2558.put(class325_4, (long)i_3);
                } else {
                   field2562 = true;
                }
@@ -900,10 +900,10 @@ public class class217 extends LinkedListNode {
    }
 
    public static void method4091() {
-      if (class54.field479 != null) {
-         class54 class54_1 = class54.field479;
-         synchronized(class54.field479) {
-            class54.field479 = null;
+      if (MouseHandler.field479 != null) {
+         MouseHandler mouseHandler_1 = MouseHandler.field479;
+         synchronized(MouseHandler.field479) {
+            MouseHandler.field479 = null;
          }
       }
 
@@ -1375,7 +1375,7 @@ public class class217 extends LinkedListNode {
             return;
          }
 
-         class54.field499 = Client.field657.field1005;
+         MouseHandler.field499 = Client.field657.field1005;
          int i_3 = class62.method1130(Client.field657.field1005, Client.field657.field949, class42.field372) - Client.field728;
          if (i_3 < Client.field729) {
             Client.field729 = i_3;

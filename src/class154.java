@@ -27,15 +27,15 @@ public class class154 extends ChainedComparator {
       Iterator iterator_1 = class91.field1277.iterator();
 
       while (iterator_1.hasNext()) {
-         class64 class64_2 = (class64) iterator_1.next();
-         class64_2.method1146();
+         Message message_2 = (Message) iterator_1.next();
+         message_2.method1146();
       }
 
    }
 
    static void method3406(short s_0) {
-      class85.field1180 = class85.field1180.trim();
-      if (class85.field1180.length() == 0) {
+      Login.field1180 = Login.field1180.trim();
+      if (Login.field1180.length() == 0) {
          class268.loginResponseMessages("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.");
       } else {
          long long_2;
@@ -75,7 +75,7 @@ public class class154 extends ChainedComparator {
          if (long_2 == 0L) {
             b_1 = 5;
          } else {
-            String string_36 = class85.field1180;
+            String string_36 = Login.field1180;
             Random random_37 = new Random();
             ByteBuffer class300_27 = new ByteBuffer(128);
             ByteBuffer class300_10 = new ByteBuffer(128);
@@ -96,7 +96,7 @@ public class class154 extends ChainedComparator {
                class300_27.writeIntBigEndian(random_37.nextInt());
             }
 
-            class300_27.encryptRSA(class80.field1140, class80.field1141);
+            class300_27.encryptRSA(WorldMapElement.field1140, WorldMapElement.field1141);
             class300_10.writeByte(10);
 
             for (i_12 = 0; i_12 < 3; i_12++) {
@@ -132,7 +132,7 @@ public class class154 extends ChainedComparator {
             }
 
             class300_10.writeLongBigEndian(random_37.nextLong());
-            class300_10.encryptRSA(class80.field1140, class80.field1141);
+            class300_10.encryptRSA(WorldMapElement.field1140, WorldMapElement.field1141);
             i_12 = class209.method3945(string_36);
             if (i_12 % 8 != 0) {
                i_12 += 8 - i_12 % 8;
@@ -151,7 +151,7 @@ public class class154 extends ChainedComparator {
             class300_28.writeShortBigEndian(class300_38.position);
             class300_28.writeBytes(class300_38.buffer, 0, class300_38.position);
             byte[] bytes_16 = class300_28.buffer;
-            String string_30 = class217.method4092(bytes_16, 0, bytes_16.length);
+            String string_30 = Widget.method4092(bytes_16, 0, bytes_16.length);
             String string_17 = string_30;
 
             byte b_31;
@@ -215,8 +215,8 @@ public class class154 extends ChainedComparator {
 
          switch(b_1) {
          case 2:
-            class268.loginResponseMessages(class224.field2942, class224.field3027, class224.field2768);
-            class85.field1209 = 6;
+            class268.loginResponseMessages(FriendSystem.field2942, FriendSystem.field3027, FriendSystem.field2768);
+            Login.loginIndex = 6;
             break;
          case 3:
             class268.loginResponseMessages("", "Error connecting to server.", "");
@@ -237,10 +237,10 @@ public class class154 extends ChainedComparator {
       }
    }
 
-   static String method3407(class217 class217_0, int i_1, short s_2) {
-      int i_4 = class268.method4987(class217_0);
+   static String method3407(Widget widget_0, int i_1, short s_2) {
+      int i_4 = class268.method4987(widget_0);
       boolean bool_3 = (i_4 >> i_1 + 1 & 0x1) != 0;
-      return !bool_3 && class217_0.field2656 == null ? null : (class217_0.field2644 != null && class217_0.field2644.length > i_1 && class217_0.field2644[i_1] != null && class217_0.field2644[i_1].trim().length() != 0 ? class217_0.field2644[i_1] : null);
+      return !bool_3 && widget_0.field2656 == null ? null : (widget_0.field2644 != null && widget_0.field2644.length > i_1 && widget_0.field2644[i_1] != null && widget_0.field2644[i_1].trim().length() != 0 ? widget_0.field2644[i_1] : null);
    }
 
 }

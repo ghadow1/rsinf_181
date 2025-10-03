@@ -1,5 +1,5 @@
 public class class269 {
 
-   static Stream field3563;
+   static AbstractSocket field3563;
 
 }

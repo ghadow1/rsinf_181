@@ -87,7 +87,7 @@ public class class209 {
 
    }
 
-   int method3944(byte[] bytes_1, int i_2, byte[] bytes_3, int i_4, int i_5, int i_6) {
+   int method3944(byte[] bytes_1, int i_2, byte[] bytes_3, int i_4, int i_5) {
       if (i_5 == 0) {
          return 0;
       } else {
@@ -225,7 +225,7 @@ public class class209 {
       }
    }
 
-   int method3942(byte[] bytes_1, int i_2, int i_3, byte[] bytes_4, int i_5, int i_6) {
+   int method3942(byte[] bytes_1, int i_2, int i_3, byte[] bytes_4, int i_5) {
       int i_7 = 0;
       int i_8 = i_5 << 3;
 

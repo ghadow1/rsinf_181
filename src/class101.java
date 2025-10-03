@@ -14,8 +14,8 @@ public class class101 {
          }
       }
 
-      this.field1353 = class300_1.readUnsignedShortBigEndian();
-      this.field1354 = class300_1.readUnsignedShortBigEndian();
+      this.field1353 = class300_1.readUnsignedShort();
+      this.field1354 = class300_1.readUnsignedShort();
    }
 
    final byte[] method2332() {

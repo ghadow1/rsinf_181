@@ -47,13 +47,13 @@ public class class17 {
 
    static final void method175(int i_0, int i_1, int i_2) {
       if (class162.method3445(i_0)) {
-         class31.method539(class217.field2556[i_0], i_1, (short) 28886);
+         class31.method539(Widget.field2556[i_0], i_1, (short) 28886);
       }
    }
 
    static void method187(int i_0, boolean bool_1, int i_2, boolean bool_3, int i_4) {
-      if (class71.field1031 != null) {
-         class9.method112(0, class71.field1031.length - 1, i_0, bool_1, i_2, bool_3, (byte) 1);
+      if (World.field1031 != null) {
+         class9.method112(0, World.field1031.length - 1, i_0, bool_1, i_2, bool_3, (byte) 1);
       }
 
    }

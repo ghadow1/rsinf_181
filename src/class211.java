@@ -1,4 +1,4 @@
-public class class211 extends class175 {
+public class class211 extends DualNode {
 
    public final int field2519;
    public final int field2522;

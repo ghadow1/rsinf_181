@@ -1,4 +1,4 @@
-public abstract class class148 extends class175 {
+public abstract class class148 extends DualNode {
 
    final int field1964;
 

@@ -157,8 +157,8 @@ public class ResourceHandler {
          }
 
          if (bool_2) {
-            class14.field97.shutdownNow();
-            class14.field97 = null;
+            MilliClock.field97.shutdownNow();
+            MilliClock.field97 = null;
             class88.field1246 = null;
          }
       }
@@ -306,33 +306,33 @@ public class ResourceHandler {
    protected void vmethod2413(int i_1) throws Exception {
    }
 
-   static void method2441(class217 class217_0, int i_1, int i_2, byte b_3) {
-      if (class217_0.field2694 == 0) {
-         class217_0.field2577 = class217_0.field2651;
-      } else if (class217_0.field2694 == 1) {
-         class217_0.field2577 = class217_0.field2651 + (i_1 - class217_0.field2579) / 2;
-      } else if (class217_0.field2694 == 2) {
-         class217_0.field2577 = i_1 - class217_0.field2579 - class217_0.field2651;
-      } else if (class217_0.field2694 == 3) {
-         class217_0.field2577 = class217_0.field2651 * i_1 >> 14;
-      } else if (class217_0.field2694 == 4) {
-         class217_0.field2577 = (class217_0.field2651 * i_1 >> 14) + (i_1 - class217_0.field2579) / 2;
+   static void method2441(Widget widget_0, int i_1, int i_2, byte b_3) {
+      if (widget_0.field2694 == 0) {
+         widget_0.field2577 = widget_0.field2651;
+      } else if (widget_0.field2694 == 1) {
+         widget_0.field2577 = widget_0.field2651 + (i_1 - widget_0.field2579) / 2;
+      } else if (widget_0.field2694 == 2) {
+         widget_0.field2577 = i_1 - widget_0.field2579 - widget_0.field2651;
+      } else if (widget_0.field2694 == 3) {
+         widget_0.field2577 = widget_0.field2651 * i_1 >> 14;
+      } else if (widget_0.field2694 == 4) {
+         widget_0.field2577 = (widget_0.field2651 * i_1 >> 14) + (i_1 - widget_0.field2579) / 2;
       } else {
-         class217_0.field2577 = i_1 - class217_0.field2579 - (class217_0.field2651 * i_1 >> 14);
+         widget_0.field2577 = i_1 - widget_0.field2579 - (widget_0.field2651 * i_1 >> 14);
       }
 
-      if (class217_0.field2570 == 0) {
-         class217_0.field2699 = class217_0.field2574;
-      } else if (class217_0.field2570 == 1) {
-         class217_0.field2699 = (i_2 - class217_0.field2667) / 2 + class217_0.field2574;
-      } else if (class217_0.field2570 == 2) {
-         class217_0.field2699 = i_2 - class217_0.field2667 - class217_0.field2574;
-      } else if (class217_0.field2570 == 3) {
-         class217_0.field2699 = i_2 * class217_0.field2574 >> 14;
-      } else if (class217_0.field2570 == 4) {
-         class217_0.field2699 = (i_2 * class217_0.field2574 >> 14) + (i_2 - class217_0.field2667) / 2;
+      if (widget_0.field2570 == 0) {
+         widget_0.field2699 = widget_0.field2574;
+      } else if (widget_0.field2570 == 1) {
+         widget_0.field2699 = (i_2 - widget_0.field2667) / 2 + widget_0.field2574;
+      } else if (widget_0.field2570 == 2) {
+         widget_0.field2699 = i_2 - widget_0.field2667 - widget_0.field2574;
+      } else if (widget_0.field2570 == 3) {
+         widget_0.field2699 = i_2 * widget_0.field2574 >> 14;
+      } else if (widget_0.field2570 == 4) {
+         widget_0.field2699 = (i_2 * widget_0.field2574 >> 14) + (i_2 - widget_0.field2667) / 2;
       } else {
-         class217_0.field2699 = i_2 - class217_0.field2667 - (i_2 * class217_0.field2574 >> 14);
+         widget_0.field2699 = i_2 - widget_0.field2667 - (i_2 * widget_0.field2574 >> 14);
       }
 
    }

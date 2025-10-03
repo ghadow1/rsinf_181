@@ -157,9 +157,9 @@ public class class112 {
                class66 class66_12 = (class66) class69_0;
                if (i_1 < i_76) {
                   class219.method4113(class69_0, class69_0.field999 + 15);
-                  class296 class296_13 = (class296) Client.field704.get(class292.field3677);
+                  AbstractFont abstractFont_13 = (AbstractFont) Client.field704.get(class292.field3677);
                   byte b_93 = 9;
-                  class296_13.method5341(class66_12.field621.method5197(), i_2 + Client.field752, i_3 + Client.field753 - b_93, 16777215, 0);
+                  abstractFont_13.method5341(class66_12.field621.method5197(), i_2 + Client.field752, i_3 + Client.field753 - b_93, 16777215, 0);
                   b_9 = 18;
                }
             }
@@ -244,8 +244,8 @@ public class class112 {
                      if (Client.field752 > -1) {
                         i_22 = i_2 + Client.field752 - (i_16 >> 1);
                         i_23 = i_3 + Client.field753 - i_88;
-                        class321.method6012(i_22, i_23, i_94, 5, 65280);
-                        class321.method6012(i_22 + i_94, i_23, i_16 - i_94, 5, 16711680);
+                        class321.fillRectangle(i_22, i_23, i_94, 5, 65280);
+                        class321.fillRectangle(i_22 + i_94, i_23, i_16 - i_94, 5, 16711680);
                      }
 
                      i_88 += 2;
@@ -311,8 +311,8 @@ public class class112 {
          if (class69_0.field977 != null && (i_1 >= i_76 || !class69_0.field998 && (Client.field907 == 4 || !class69_0.field963 && (Client.field907 == 0 || Client.field907 == 3 || Client.field907 == 1 && ((class66) class69_0).method1181(-1900430541))))) {
             class219.method4113(class69_0, class69_0.field999);
             if (Client.field752 > -1 && Client.field740 < Client.field867) {
-               Client.field676[Client.field740] = class23.field193.method5417(class69_0.field977) / 2;
-               Client.field744[Client.field740] = class23.field193.field3709;
+               Client.field676[Client.field740] = class23.fontBold12.method5417(class69_0.field977) / 2;
+               Client.field744[Client.field740] = class23.fontBold12.field3709;
                Client.field742[Client.field740] = Client.field752;
                Client.field743[Client.field740] = Client.field753;
                Client.field702[Client.field740] = class69_0.field966;
@@ -491,19 +491,19 @@ public class class112 {
                         }
                      }
 
-                     class295 class295_87 = errorHandler_96.method4565(-1472977599);
-                     if (class295_87 == null) {
-                        class295_87 = class213.field2529;
+                     Font font_87 = errorHandler_96.method4565(-1472977599);
+                     if (font_87 == null) {
+                        font_87 = class213.field2529;
                      }
 
-                     class295 class295_45;
+                     Font font_45;
                      if (errorHandler_82 != null) {
-                        class295_45 = errorHandler_82.method4565(-1472977599);
-                        if (class295_45 == null) {
-                           class295_45 = class213.field2529;
+                        font_45 = errorHandler_82.method4565(-1472977599);
+                        if (font_45 == null) {
+                           font_45 = class213.field2529;
                         }
                      } else {
-                        class295_45 = class213.field2529;
+                        font_45 = class213.field2529;
                      }
 
                      String string_46 = null;
@@ -511,10 +511,10 @@ public class class112 {
                      boolean bool_48 = false;
                      int i_49 = 0;
                      string_46 = errorHandler_96.method4555(class69_0.field980[i_78], -1319187584);
-                     int i_95 = class295_87.method5417(string_46);
+                     int i_95 = font_87.method5417(string_46);
                      if (errorHandler_82 != null) {
                         string_47 = errorHandler_82.method4555(class69_0.field970[i_78], -1319187584);
-                        i_49 = class295_45.method5417(string_47);
+                        i_49 = font_45.method5417(string_47);
                      }
 
                      int i_50 = 0;
@@ -606,8 +606,8 @@ public class class112 {
                      int i_68 = i_67;
                      int i_69 = i_43 + i_67;
                      int i_70 = i_67 + errorHandler_96.field3328 + 15;
-                     int i_71 = i_70 - class295_87.field3714;
-                     int i_72 = i_70 + class295_87.field3707;
+                     int i_71 = i_70 - font_87.field3714;
+                     int i_72 = i_70 + font_87.field3707;
                      if (i_71 < i_67) {
                         i_68 = i_71;
                      }
@@ -621,8 +621,8 @@ public class class112 {
                      int i_75;
                      if (errorHandler_82 != null) {
                         i_73 = i_67 + errorHandler_82.field3328 + 15;
-                        i_74 = i_73 - class295_45.field3714;
-                        i_75 = i_73 + class295_45.field3707;
+                        i_74 = i_73 - font_45.field3714;
+                        i_75 = i_73 + font_45.field3707;
                         if (i_74 < i_68) {
                            ;
                         }
@@ -656,7 +656,7 @@ public class class112 {
                            class325_86.method6129(i_57 + i_66 - i_30, i_67, i_74);
                         }
 
-                        class295_87.method5347(string_46, i_56 + i_66, i_70, errorHandler_96.field3333, 0, i_74);
+                        font_87.method5347(string_46, i_56 + i_66, i_70, errorHandler_96.field3333, 0, i_74);
                         if (errorHandler_82 != null) {
                            if (class325_31 != null) {
                               class325_31.method6129(i_66 + i_58 - i_39, i_67, i_74);
@@ -676,7 +676,7 @@ public class class112 {
                               class325_34.method6129(i_61 + i_66 - i_42, i_67, i_74);
                            }
 
-                           class295_45.method5347(string_47, i_66 + i_62, i_73, errorHandler_82.field3333, 0, i_74);
+                           font_45.method5347(string_47, i_66 + i_62, i_73, errorHandler_82.field3333, 0, i_74);
                         }
                      } else {
                         if (class325_83 != null) {
@@ -697,7 +697,7 @@ public class class112 {
                            class325_86.method6126(i_66 + i_57 - i_30, i_67);
                         }
 
-                        class295_87.method5346(string_46, i_66 + i_56, i_70, errorHandler_96.field3333 | ~0xffffff, 0);
+                        font_87.draw(string_46, i_66 + i_56, i_70, errorHandler_96.field3333 | ~0xffffff, 0);
                         if (errorHandler_82 != null) {
                            if (class325_31 != null) {
                               class325_31.method6126(i_58 + i_66 - i_39, i_67);
@@ -717,7 +717,7 @@ public class class112 {
                               class325_34.method6126(i_61 + i_66 - i_42, i_67);
                            }
 
-                           class295_45.method5346(string_47, i_62 + i_66, i_73, errorHandler_82.field3333 | ~0xffffff, 0);
+                           font_45.draw(string_47, i_62 + i_66, i_73, errorHandler_82.field3333 | ~0xffffff, 0);
                         }
                      }
                   }

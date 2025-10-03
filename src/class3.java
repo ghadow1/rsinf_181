@@ -24,7 +24,7 @@ public class class3 implements UnknownT {
    }
 
    public static int method38(CharSequence charsequence_0) {
-      return class33.method554(charsequence_0, 10);
+      return AbstractWorldMapData.method554(charsequence_0, 10);
    }
 
    public static void method30(Object object_0, ByteBuffer class300_1, byte b_2) {

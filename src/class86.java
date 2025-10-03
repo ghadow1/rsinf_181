@@ -112,7 +112,7 @@ public final class class86 extends class135 {
    }
 
    public static ErrorHandler method2046(int i_0, byte b_1) {
-      ErrorHandler errorHandler_2 = (ErrorHandler) ErrorHandler.field3325.method3320((long)i_0);
+      ErrorHandler errorHandler_2 = (ErrorHandler) ErrorHandler.field3325.get((long)i_0);
       if (errorHandler_2 != null) {
          return errorHandler_2;
       } else {
@@ -122,7 +122,7 @@ public final class class86 extends class135 {
             errorHandler_2.method4552(new ByteBuffer(bytes_3), (byte) 1);
          }
 
-         ErrorHandler.field3325.method3322(errorHandler_2, (long)i_0);
+         ErrorHandler.field3325.put(errorHandler_2, (long)i_0);
          return errorHandler_2;
       }
    }

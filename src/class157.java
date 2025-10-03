@@ -9,43 +9,43 @@ public class class157 extends ChainedComparator {
       this.field1990 = bool_1;
    }
 
-   int method3422(Categorizable categorizable_1, Categorizable categorizable_2, int i_3) {
+   int method3422(Categorizable categorizable_1, Categorizable categorizable_2) {
       return categorizable_2.category != categorizable_1.category ? (this.field1990 ? categorizable_1.category - categorizable_2.category : categorizable_2.category - categorizable_1.category) : this.compareWithNext(categorizable_1, categorizable_2);
    }
 
    public int compare(Object object_1, Object object_2) {
-      return this.method3422((Categorizable) object_1, (Categorizable) object_2, 2060416979);
+      return this.method3422((Categorizable) object_1, (Categorizable) object_2);
    }
 
-   static boolean method3428(int i_0) {
+   static boolean method3428() {
       try {
-         if (class71.field1027 == null) {
-            class71.field1027 = class258.field3534.method3296(new URL(class26.field213), (byte) 78);
-         } else if (class71.field1027.method3307(1792198908)) {
-            byte[] bytes_1 = class71.field1027.method3308(-338757002);
+         if (World.field1027 == null) {
+            World.field1027 = class258.field3534.method3296(new URL(class26.field213), (byte) 78);
+         } else if (World.field1027.method3307()) {
+            byte[] bytes_1 = World.field1027.method3308();
             ByteBuffer class300_2 = new ByteBuffer(bytes_1);
             class300_2.readIntMedEndian();
-            class71.field1022 = class300_2.readUnsignedShortBigEndian();
-            class71.field1031 = new class71[class71.field1022];
+            World.field1022 = class300_2.readUnsignedShort();
+            World.field1031 = new World[World.field1022];
 
-            class71 class71_4;
-            for (int i_3 = 0; i_3 < class71.field1022; class71_4.field1034 = i_3++) {
-               class71_4 = class71.field1031[i_3] = new class71();
-               class71_4.field1025 = class300_2.readUnsignedShortBigEndian();
-               class71_4.field1023 = class300_2.readIntMedEndian();
-               class71_4.field1029 = class300_2.readNullTerminatedString();
-               class71_4.field1028 = class300_2.readNullTerminatedString();
-               class71_4.field1032 = class300_2.readUnsignedByte();
-               class71_4.field1030 = class300_2.readSignedShortBigEndian();
+            World world_4;
+            for (int i_3 = 0; i_3 < World.field1022; world_4.field1034 = i_3++) {
+               world_4 = World.field1031[i_3] = new World();
+               world_4.id = class300_2.readUnsignedShort();
+               world_4.properties = class300_2.readIntMedEndian();
+               world_4.host = class300_2.readNullTerminatedString();
+               world_4.field1028 = class300_2.readNullTerminatedString();
+               world_4.field1032 = class300_2.readUnsignedByte();
+               world_4.field1030 = class300_2.readSignedShortBigEndian();
             }
 
-            Client.method1651(class71.field1031, 0, class71.field1031.length - 1, class71.field1026, class71.field1018);
-            class71.field1027 = null;
+            Client.method1651(World.field1031, 0, World.field1031.length - 1, World.field1026, World.field1018);
+            World.field1027 = null;
             return true;
          }
       } catch (Exception exception_5) {
          exception_5.printStackTrace();
-         class71.field1027 = null;
+         World.field1027 = null;
       }
 
       return false;

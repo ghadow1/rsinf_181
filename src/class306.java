@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.net.Socket;
 
-public class class306 extends Stream {
+public class class306 extends AbstractSocket {
 
    Socket field3791;
    class309 field3789;
@@ -17,7 +17,7 @@ public class class306 extends Stream {
       this.field3790 = new class307(this.field3791.getOutputStream(), i_3);
    }
 
-   public void vmethod5830(int i_1) {
+   public void close() {
       this.field3790.method5853(1881137071);
 
       try {
@@ -29,11 +29,11 @@ public class class306 extends Stream {
       this.field3789.method5890(-1361407903);
    }
 
-   public boolean vmethod5847(int i_1, int i_2) throws IOException {
+   public boolean isAvailable(int i_1) throws IOException {
       return this.field3789.method5874(i_1, -1294773775);
    }
 
-   public int vmethod5828(byte[] bytes_1, int i_2, int i_3, byte b_4) throws IOException {
+   public int read(byte[] bytes_1, int i_2, int i_3) throws IOException {
       return this.field3789.method5879(bytes_1, i_2, i_3, (short) 28253);
    }
 
@@ -50,7 +50,7 @@ public class class306 extends Stream {
    }
 
    protected void finalize() {
-      this.vmethod5830(-1234856296);
+      this.close();
    }
 
 }

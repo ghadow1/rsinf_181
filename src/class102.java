@@ -121,7 +121,7 @@ public class class102 extends LinkedListNode {
    float[] method2348(int i_1) {
       method2352(this.field1366[i_1], 0);
       method2344();
-      int i_2 = method2345(class144.method3316(field1371.length - 1, -1541949649));
+      int i_2 = method2345(class144.method3316(field1371.length - 1));
       boolean bool_3 = field1360[i_2];
       int i_4 = bool_3 ? field1365 : field1375;
       boolean bool_5 = false;
@@ -231,7 +231,7 @@ public class class102 extends LinkedListNode {
             floats_43[i_25 * 4 + 1] = (f_27 - f_29) * f_30 + (f_26 - f_28) * f_31;
          }
 
-         i_25 = class144.method3316(i_4 - 1, -654918836);
+         i_25 = class144.method3316(i_4 - 1);
 
          int i_47;
          int i_48;
@@ -467,7 +467,7 @@ public class class102 extends LinkedListNode {
          }
 
          int[] ints_14 = new int[i_5];
-         int i_10 = class144.method3316(i_5 - 1, -1481251543);
+         int i_10 = class144.method3316(i_5 - 1);
 
          for (int i_11 = 0; i_11 < i_5; i_11++) {
             ints_14[i_11] = class73.method1757(i_11, i_10, (byte) -46);

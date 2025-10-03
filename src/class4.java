@@ -40,7 +40,7 @@ final class class4 implements class0 {
       class29.method497(false, -1807867865);
       InBuffer.method2245();
       class22.method275(205706610);
-      class144.method3318(i_0, i_1, i_2, i_3, true, (byte) -69);
+      class144.method3318(i_0, i_1, i_2, i_3, true);
       i_0 = Client.field913;
       i_1 = Client.field914;
       i_2 = Client.field746;
@@ -59,7 +59,7 @@ final class class4 implements class0 {
          }
 
          i_29 = Client.field722 & 0x7ff;
-         class72.method1724(class54.field499, Client.field729, class26.field227, i_5, i_29, class40.method700(i_5, (byte) -68), i_3, 806808180);
+         class72.method1724(MouseHandler.field499, Client.field729, class26.field227, i_5, i_29, FontName.method700(i_5, (byte) -68), i_3, 806808180);
       }
 
       int i_8;
@@ -79,14 +79,14 @@ final class class4 implements class0 {
                if (class11.field77 < 310) {
                   label559: {
                      if (Client.field727 == 1) {
-                        i_8 = class54.field499 >> 7;
+                        i_8 = MouseHandler.field499 >> 7;
                         i_9 = class26.field227 >> 7;
                      } else {
                         i_8 = Client.field657.field1005 >> 7;
                         i_9 = Client.field657.field949 >> 7;
                      }
 
-                     i_10 = Buffer_3.field3727 >> 7;
+                     i_10 = PacketBuffer.field3727 >> 7;
                      i_11 = class1.field3 >> 7;
                      if (i_10 >= 0 && i_11 >= 0 && i_10 < 104 && i_11 < 104) {
                         if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
@@ -200,17 +200,17 @@ final class class4 implements class0 {
          i_5 = class83.method1995(1224050195);
       }
 
-      i_29 = Buffer_3.field3727;
+      i_29 = PacketBuffer.field3727;
       i_7 = GCMonitor.field383;
       i_8 = class1.field3;
       i_9 = class11.field77;
-      i_10 = class76.field1112;
+      i_10 = MouseRecorder.field1112;
 
       for (i_11 = 0; i_11 < 5; i_11++) {
          if (Client.field886[i_11]) {
             i_12 = (int)(Math.random() * (double)(Client.field901[i_11] * 2 + 1) - (double) Client.field901[i_11] + Math.sin((double) Client.field903[i_11] / 100.0D * (double) Client.field904[i_11]) * (double) Client.field902[i_11]);
             if (i_11 == 0) {
-               Buffer_3.field3727 += i_12;
+               PacketBuffer.field3727 += i_12;
             }
 
             if (i_11 == 1) {
@@ -222,7 +222,7 @@ final class class4 implements class0 {
             }
 
             if (i_11 == 3) {
-               class76.field1112 = i_12 + class76.field1112 & 0x7ff;
+               MouseRecorder.field1112 = i_12 + MouseRecorder.field1112 & 0x7ff;
             }
 
             if (i_11 == 4) {
@@ -238,11 +238,11 @@ final class class4 implements class0 {
          }
       }
 
-      i_11 = class54.field492;
-      i_12 = class54.field487;
-      if (class54.field493 != 0) {
-         i_11 = class54.field483;
-         i_12 = class54.field495;
+      i_11 = MouseHandler.MouseHandler_x;
+      i_12 = MouseHandler.MouseHandler_y;
+      if (MouseHandler.field493 != 0) {
+         i_11 = MouseHandler.field483;
+         i_12 = MouseHandler.field495;
       }
 
       if (i_11 >= i_0 && i_11 < i_0 + i_2 && i_12 >= i_1 && i_12 < i_3 + i_1) {
@@ -258,11 +258,11 @@ final class class4 implements class0 {
       }
 
       class186.method3619((byte) 95);
-      class321.method6012(i_0, i_1, i_2, i_3, 0);
+      class321.fillRectangle(i_0, i_1, i_2, i_3, 0);
       class186.method3619((byte) 8);
       i_13 = class130.field1773;
       class130.field1773 = Client.field917;
-      class5.field22.method3092(Buffer_3.field3727, GCMonitor.field383, class1.field3, class11.field77, class76.field1112, i_5);
+      class5.field22.method3092(PacketBuffer.field3727, GCMonitor.field383, class1.field3, class11.field77, MouseRecorder.field1112, i_5);
       class130.field1773 = i_13;
       class186.method3619((byte) 124);
       class5.field22.method3115();
@@ -377,25 +377,25 @@ final class class4 implements class0 {
             }
 
             if (Client.field805[i_19] == 0) {
-               class23.field193.method5341(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0);
+               class23.fontBold12.method5341(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0);
             }
 
             if (Client.field805[i_19] == 1) {
-               class23.field193.method5351(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0, Client.field751);
+               class23.fontBold12.method5351(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0, Client.field751);
             }
 
             if (Client.field805[i_19] == 2) {
-               class23.field193.method5353(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0, Client.field751);
+               class23.fontBold12.method5353(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0, Client.field751);
             }
 
             if (Client.field805[i_19] == 3) {
-               class23.field193.method5373(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0, Client.field751, 150 - Client.field748[i_19]);
+               class23.fontBold12.method5373(string_31, i_0 + Client.field752, Client.field753 + i_1, i_26, 0, Client.field751, 150 - Client.field748[i_19]);
             }
 
             if (Client.field805[i_19] == 4) {
-               i_27 = (150 - Client.field748[i_19]) * (class23.field193.method5417(string_31) + 100) / 150;
+               i_27 = (150 - Client.field748[i_19]) * (class23.fontBold12.method5417(string_31) + 100) / 150;
                class321.method5998(i_0 + Client.field752 - 50, i_1, i_0 + Client.field752 + 50, i_3 + i_1);
-               class23.field193.method5346(string_31, i_0 + Client.field752 + 50 - i_27, Client.field753 + i_1, i_26, 0);
+               class23.fontBold12.draw(string_31, i_0 + Client.field752 + 50 - i_27, Client.field753 + i_1, i_26, 0);
                class321.method5997(i_0, i_1, i_0 + i_2, i_3 + i_1);
             }
 
@@ -408,12 +408,12 @@ final class class4 implements class0 {
                   i_28 = i_27 - 125;
                }
 
-               class321.method5998(i_0, Client.field753 + i_1 - class23.field193.field3709 - 1, i_0 + i_2, Client.field753 + i_1 + 5);
-               class23.field193.method5341(string_31, i_0 + Client.field752, i_28 + Client.field753 + i_1, i_26, 0);
+               class321.method5998(i_0, Client.field753 + i_1 - class23.fontBold12.field3709 - 1, i_0 + i_2, Client.field753 + i_1 + 5);
+               class23.fontBold12.method5341(string_31, i_0 + Client.field752, i_28 + Client.field753 + i_1, i_26, 0);
                class321.method5997(i_0, i_1, i_0 + i_2, i_3 + i_1);
             }
          } else {
-            class23.field193.method5341(string_31, i_0 + Client.field752, Client.field753 + i_1, 16776960, 0);
+            class23.fontBold12.method5341(string_31, i_0 + Client.field752, Client.field753 + i_1, 16776960, 0);
          }
       }
 
@@ -426,11 +426,11 @@ final class class4 implements class0 {
 
       ((class119) class130.field1781).method2736(Client.field718);
       class21.method273(i_0, i_1, i_2, i_3, -2108015148);
-      Buffer_3.field3727 = i_29;
+      PacketBuffer.field3727 = i_29;
       GCMonitor.field383 = i_7;
       class1.field3 = i_8;
       class11.field77 = i_9;
-      class76.field1112 = i_10;
+      MouseRecorder.field1112 = i_10;
       if (Client.field661) {
          byte b_33 = 0;
          i_15 = b_33 + class236.field3168 + class236.field3166;
@@ -440,7 +440,7 @@ final class class4 implements class0 {
       }
 
       if (Client.field661) {
-         class321.method6012(i_0, i_1, i_2, i_3, 0);
+         class321.fillRectangle(i_0, i_1, i_2, i_3, 0);
          class281.method5180("Loading - please wait.", false, -32623127);
       }
 

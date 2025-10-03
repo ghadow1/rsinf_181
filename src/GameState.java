@@ -8,13 +8,13 @@ public class GameState implements UnknownT {
    static final GameState field3096 = new GameState(4, 3, false, false, true);
    static final GameState field3088 = new GameState(5, 10, false, false, true);
    final int field3089;
-   public final int field3090;
+   public final int modIcon;
    public final boolean field3091;
    public final boolean field3092;
 
    GameState(int i_1, int i_2, boolean bool_3, boolean bool_4, boolean bool_5) {
       this.field3089 = i_1;
-      this.field3090 = i_2;
+      this.modIcon = i_2;
       this.field3091 = bool_4;
       this.field3092 = bool_5;
    }
@@ -24,7 +24,7 @@ public class GameState implements UnknownT {
    }
 
    static class325 method4130(int i_0, int i_1, int i_2, short s_3) {
-      return (class325) class29.field244.method3348(class217.method4089(i_0, i_1, i_2));
+      return (class325) class29.field244.method3348(Widget.method4089(i_0, i_1, i_2));
    }
 
 }

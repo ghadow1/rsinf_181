@@ -3,7 +3,7 @@ import java.util.zip.CRC32;
 public class class236 {
 
    static long field3169;
-   public static Stream field3176;
+   public static AbstractSocket field3176;
    static int field3163 = 0;
    static class318 field3165 = new class318(4096);
    public static int field3166 = 0;
@@ -23,19 +23,19 @@ public class class236 {
    public static int field3178 = 0;
 
    static void method4312(int i_0, int i_1) {
-      int i_3 = class23.field193.method5417("Choose Option");
+      int i_3 = class23.fontBold12.method5417("Choose Option");
 
       int i_4;
       int i_5;
-      for (i_4 = 0; i_4 < Client.field791; i_4++) {
-         i_5 = class23.field193.method5417(class28.method417(i_4));
+      for (i_4 = 0; i_4 < Client.menuOptionsCount; i_4++) {
+         i_5 = class23.fontBold12.method5417(class28.method417(i_4));
          if (i_5 > i_3) {
             i_3 = i_5;
          }
       }
 
       i_3 += 8;
-      i_4 = Client.field791 * 15 + 22;
+      i_4 = Client.menuOptionsCount * 15 + 22;
       i_5 = i_0 - i_3 / 2;
       if (i_3 + i_5 > class7.field46) {
          i_5 = class7.field46 - i_3;
@@ -57,7 +57,7 @@ public class class236 {
       class247.field3292 = i_5;
       class30.field267 = i_6;
       class42.field373 = i_3;
-      class75.field1092 = Client.field791 * 15 + 22;
+      class75.field1092 = Client.menuOptionsCount * 15 + 22;
    }
 
 }

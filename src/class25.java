@@ -12,52 +12,52 @@ public class class25 {
    }
 
    static int method324(int i_0, class92 class92_1, boolean bool_2, byte b_3) {
-      class217 class217_4;
+      Widget widget_4;
       if (i_0 >= 2000) {
          i_0 -= 1000;
-         class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
+         widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
       } else {
-         class217_4 = bool_2 ? class76.field1111 : class207.field2507;
+         widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       }
 
-      class224.method4120(class217_4);
+      FriendSystem.invalidateWidget(widget_4);
       if (i_0 != 1200 && i_0 != 1205 && i_0 != 1212) {
          if (i_0 == 1201) {
-            class217_4.field2607 = 2;
-            class217_4.field2649 = class76.field1098[--class70.field1014];
+            widget_4.field2607 = 2;
+            widget_4.field2649 = MouseRecorder.field1098[--class70.field1014];
             return 1;
          } else if (i_0 == 1202) {
-            class217_4.field2607 = 3;
-            class217_4.field2649 = Client.field657.field613.method3994();
+            widget_4.field2607 = 3;
+            widget_4.field2649 = Client.field657.field613.method3994();
             return 1;
          } else {
             return 2;
          }
       } else {
          class70.field1014 -= 2;
-         int i_5 = class76.field1098[class70.field1014];
-         int i_6 = class76.field1098[class70.field1014 + 1];
-         class217_4.field2690 = i_5;
-         class217_4.field2655 = i_6;
-         class254 class254_7 = class26.method404(i_5);
-         class217_4.field2615 = class254_7.field3418;
-         class217_4.field2616 = class254_7.field3447;
-         class217_4.field2640 = class254_7.field3420;
-         class217_4.field2593 = class254_7.field3406;
-         class217_4.field2614 = class254_7.field3421;
-         class217_4.field2618 = class254_7.field3422;
+         int i_5 = MouseRecorder.field1098[class70.field1014];
+         int i_6 = MouseRecorder.field1098[class70.field1014 + 1];
+         widget_4.field2690 = i_5;
+         widget_4.field2655 = i_6;
+         ItemDefinition itemDefinition_7 = class26.method404(i_5);
+         widget_4.field2615 = itemDefinition_7.xan2d;
+         widget_4.field2616 = itemDefinition_7.yan2d;
+         widget_4.field2640 = itemDefinition_7.field3420;
+         widget_4.field2593 = itemDefinition_7.offsetX2d;
+         widget_4.field2614 = itemDefinition_7.offsetY2d;
+         widget_4.field2618 = itemDefinition_7.zoom2d;
          if (i_0 == 1205) {
-            class217_4.field2703 = 0;
-         } else if (i_0 == 1212 | class254_7.field3423 == 1) {
-            class217_4.field2703 = 1;
+            widget_4.field2703 = 0;
+         } else if (i_0 == 1212 | itemDefinition_7.isStackable == 1) {
+            widget_4.field2703 = 1;
          } else {
-            class217_4.field2703 = 2;
+            widget_4.field2703 = 2;
          }
 
-         if (class217_4.field2619 > 0) {
-            class217_4.field2618 = class217_4.field2618 * 32 / class217_4.field2619;
-         } else if (class217_4.field2670 > 0) {
-            class217_4.field2618 = class217_4.field2618 * 32 / class217_4.field2670;
+         if (widget_4.field2619 > 0) {
+            widget_4.field2618 = widget_4.field2618 * 32 / widget_4.field2619;
+         } else if (widget_4.field2670 > 0) {
+            widget_4.field2618 = widget_4.field2618 * 32 / widget_4.field2670;
          }
 
          return 1;
@@ -69,9 +69,9 @@ public class class25 {
       short[] shorts_3 = new short[16];
       int i_4 = 0;
 
-      for (int i_5 = 0; i_5 < class254.field3455; i_5++) {
-         class254 class254_6 = class26.method404(i_5);
-         if ((!bool_1 || class254_6.field3452) && class254_6.field3444 == -1 && class254_6.field3449.toLowerCase().indexOf(string_0) != -1) {
+      for (int i_5 = 0; i_5 < ItemDefinition.field3455; i_5++) {
+         ItemDefinition itemDefinition_6 = class26.method404(i_5);
+         if ((!bool_1 || itemDefinition_6.field3452) && itemDefinition_6.field3444 == -1 && itemDefinition_6.name.toLowerCase().indexOf(string_0) != -1) {
             if (i_4 >= 250) {
                class257.field3502 = -1;
                class39.field336 = null;
@@ -98,7 +98,7 @@ public class class25 {
       String[] arr_9 = new String[class257.field3502];
 
       for (int i_10 = 0; i_10 < class257.field3502; i_10++) {
-         arr_9[i_10] = class26.method404(shorts_3[i_10]).field3449;
+         arr_9[i_10] = class26.method404(shorts_3[i_10]).name;
       }
 
       class82.method1991(arr_9, class39.field336, (short) -2750);

@@ -1,12 +1,12 @@
 public class class59 extends LinkedListNode {
 
-   static class217 field549;
+   static Widget field549;
    static class318 field552 = new class318(32);
    int[] field550 = new int[] {-1};
    int[] field551 = new int[] {0};
 
    public static class244 method1117(int i_0, byte b_1) {
-      class244 class244_2 = (class244) class244.field3254.method3320((long)i_0);
+      class244 class244_2 = (class244) class244.field3254.get((long)i_0);
       if (class244_2 != null) {
          return class244_2;
       } else {
@@ -17,7 +17,7 @@ public class class59 extends LinkedListNode {
          }
 
          class244_2.method4417(978427623);
-         class244.field3254.method3322(class244_2, (long)i_0);
+         class244.field3254.put(class244_2, (long)i_0);
          return class244_2;
       }
    }

@@ -22,10 +22,10 @@ public class class293 {
          if (this.field3690.containsKey(class292_6)) {
             hashmap_3.put(class292_6, this.field3690.get(class292_6));
          } else {
-            class295 class295_7 = class287.method5258(this.field3688, this.field3687, class292_6.field3682, "", -2097439358);
-            if (class295_7 != null) {
-               this.field3690.put(class292_6, class295_7);
-               hashmap_3.put(class292_6, class295_7);
+            Font font_7 = class287.method5258(this.field3688, this.field3687, class292_6.field3682, "", -2097439358);
+            if (font_7 != null) {
+               this.field3690.put(class292_6, font_7);
+               hashmap_3.put(class292_6, font_7);
             }
          }
       }

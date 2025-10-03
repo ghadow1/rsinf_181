@@ -6,7 +6,7 @@ final class class5 implements Comparator {
    static class325 field23;
 
    public static class240 method61(int i_0) {
-      class240 class240_2 = (class240) class240.field3205.method3320((long)i_0);
+      class240 class240_2 = (class240) class240.field3205.get((long)i_0);
       if (class240_2 != null) {
          return class240_2;
       } else {
@@ -16,7 +16,7 @@ final class class5 implements Comparator {
             class240_2.method4353(new ByteBuffer(bytes_3), -927981442);
          }
 
-         class240.field3205.method3322(class240_2, (long)i_0);
+         class240.field3205.put(class240_2, (long)i_0);
          return class240_2;
       }
    }
@@ -31,9 +31,9 @@ final class class5 implements Comparator {
 
          class87 class87_7;
          for (class87_7 = (class87) class261_3.method4892(); class87_7 != null; class87_7 = (class87) class261_3.method4894()) {
-            class254 class254_8 = class26.method404(class87_7.field1244);
-            long long_9 = (long)class254_8.field3428;
-            if (class254_8.field3423 == 1) {
+            ItemDefinition itemDefinition_8 = class26.method404(class87_7.field1244);
+            long long_9 = (long) itemDefinition_8.price;
+            if (itemDefinition_8.isStackable == 1) {
                long_9 *= (long)(class87_7.field1245 + 1);
             }
 
@@ -95,7 +95,7 @@ final class class5 implements Comparator {
             if (var_5 == 32) {
                stringbuilder_3.append('+');
             } else {
-               byte b_6 = class254.method4699(var_5);
+               byte b_6 = ItemDefinition.encodeStringCp1252(var_5);
                stringbuilder_3.append('%');
                int i_7 = b_6 >> 4 & 0xf;
                if (i_7 >= 10) {

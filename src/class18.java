@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class class18 extends class34 {
 
-   static class217 field127;
+   static Widget field127;
    static class41 field121;
    final int field125;
    final class28 field122;
@@ -44,9 +44,9 @@ public class class18 extends class34 {
    }
 
    static void method200(Component component_0) {
-      component_0.addMouseListener(class54.field479);
-      component_0.addMouseMotionListener(class54.field479);
-      component_0.addFocusListener(class54.field479);
+      component_0.addMouseListener(MouseHandler.field479);
+      component_0.addMouseMotionListener(MouseHandler.field479);
+      component_0.addFocusListener(MouseHandler.field479);
    }
 
    public static class343 userPrefSave(String string_0, String string_1, boolean bool_2) {
@@ -87,7 +87,7 @@ public class class18 extends class34 {
    }
 
    public static class249 method209(int i_0, byte b_1) {
-      class249 class249_2 = (class249) class249.field3301.method3320((long)i_0);
+      class249 class249_2 = (class249) class249.field3301.get((long)i_0);
       if (class249_2 != null) {
          return class249_2;
       } else {
@@ -98,12 +98,12 @@ public class class18 extends class34 {
          }
 
          class249_2.method4496();
-         class249.field3301.method3322(class249_2, (long)i_0);
+         class249.field3301.put(class249_2, (long)i_0);
          return class249_2;
       }
    }
 
-   static void method210(Buffer_3 buffer3_0, int i_1, int i_2) {
+   static void method210(PacketBuffer buffer3_0, int i_1, int i_2) {
       boolean bool_3 = buffer3_0.method5445(1) == 1;
       if (bool_3) {
          class89.field1256[++class89.field1262 - 1] = i_1;
@@ -304,11 +304,11 @@ public class class18 extends class34 {
       }
    }
 
-   static final void method205(class217 class217_0, int i_1, int i_2, int i_3, byte b_4) {
-      class211 class211_5 = class217_0.method4040(false);
+   static final void method205(Widget widget_0, int i_1, int i_2, int i_3, byte b_4) {
+      class211 class211_5 = widget_0.method4040(false);
       if (class211_5 != null) {
          if (Client.field652 < 3) {
-            class64.field607.method6140(i_1, i_2, class211_5.field2519, class211_5.field2522, 25, 25, Client.field722, 256, class211_5.field2521, class211_5.field2520);
+            Message.field607.method6140(i_1, i_2, class211_5.field2519, class211_5.field2522, 25, 25, Client.field722, 256, class211_5.field2521, class211_5.field2520);
          } else {
             class321.method6016(i_1, i_2, 0, class211_5.field2521, class211_5.field2520);
          }
@@ -324,7 +324,7 @@ public class class18 extends class34 {
          }
 
          byte[] bytes_4 = new byte[i_3];
-         class300_0.position += class210.field2515.method3944(class300_0.buffer, class300_0.position, bytes_4, 0, i_3, 2122202814);
+         class300_0.position += class210.field2515.method3944(class300_0.buffer, class300_0.position, bytes_4, 0, i_3);
          String string_5 = class74.method1820(bytes_4, 0, i_3);
          return string_5;
       } catch (Exception exception_7) {
@@ -332,16 +332,16 @@ public class class18 extends class34 {
       }
    }
 
-   static final void method208(class217 class217_0, int i_1, int i_2, int i_3) {
+   static final void method208(Widget widget_0, int i_1, int i_2, int i_3) {
       if (Client.field652 == 0 || Client.field652 == 3) {
-         if (!Client.field674 && (class54.field493 == 1 || !class46.field413 && class54.field493 == 4)) {
-            class211 class211_4 = class217_0.method4040(true);
+         if (!Client.field674 && (MouseHandler.field493 == 1 || !class46.field413 && MouseHandler.field493 == 4)) {
+            class211 class211_4 = widget_0.method4040(true);
             if (class211_4 == null) {
                return;
             }
 
-            int i_5 = class54.field483 - i_1;
-            int i_6 = class54.field495 - i_2;
+            int i_5 = MouseHandler.field483 - i_1;
+            int i_6 = MouseHandler.field495 - i_2;
             if (class211_4.method3959(i_5, i_6, (short) 25393)) {
                i_5 -= class211_4.field2519 / 2;
                i_6 -= class211_4.field2522 / 2;

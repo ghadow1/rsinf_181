@@ -4,18 +4,18 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-public class class54 implements MouseListener, MouseMotionListener, FocusListener {
+public class MouseHandler implements MouseListener, MouseMotionListener, FocusListener {
 
    static int field499;
-   public static class54 field479 = new class54();
+   public static MouseHandler field479 = new MouseHandler();
    public static volatile int field480 = 0;
    public static volatile int field481 = 0;
    public static volatile int field488 = -1;
    public static volatile int field477 = -1;
    public static volatile long field484 = -1L;
    public static int field485 = 0;
-   public static int field492 = 0;
-   public static int field487 = 0;
+   public static int MouseHandler_x = 0;
+   public static int MouseHandler_y = 0;
    public static long field482 = 0L;
    public static volatile int field489 = 0;
    public static volatile int field490 = 0;
@@ -123,7 +123,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
       }
    }
 
-   static final void method1037(Buffer_3 buffer3_0) {
+   static final void method1037(PacketBuffer buffer3_0) {
       int i_2 = 0;
       buffer3_0.method5438();
 
@@ -139,7 +139,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
             } else {
                i_5 = buffer3_0.method5445(1);
                if (i_5 == 0) {
-                  i_2 = class71.method1686(buffer3_0);
+                  i_2 = World.method1686(buffer3_0);
                   class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                } else {
                   class18.method210(buffer3_0, i_4, 164873785);
@@ -163,7 +163,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                } else {
                   i_5 = buffer3_0.method5445(1);
                   if (i_5 == 0) {
-                     i_2 = class71.method1686(buffer3_0);
+                     i_2 = World.method1686(buffer3_0);
                      class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                   } else {
                      class18.method210(buffer3_0, i_4, 164873785);
@@ -187,7 +187,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                   } else {
                      i_5 = buffer3_0.method5445(1);
                      if (i_5 == 0) {
-                        i_2 = class71.method1686(buffer3_0);
+                        i_2 = World.method1686(buffer3_0);
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                      } else if (class226.method4123(buffer3_0, i_4)) {
                         class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
@@ -211,7 +211,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
                      } else {
                         i_5 = buffer3_0.method5445(1);
                         if (i_5 == 0) {
-                           i_2 = class71.method1686(buffer3_0);
+                           i_2 = World.method1686(buffer3_0);
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                         } else if (class226.method4123(buffer3_0, i_4)) {
                            class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
@@ -244,7 +244,7 @@ public class class54 implements MouseListener, MouseMotionListener, FocusListene
    }
 
    static void method1039() {
-      class85.field1209 = 24;
+      Login.loginIndex = 24;
       class268.loginResponseMessages("The game servers are currently being updated.", "Please wait a few minutes and try again.", "");
    }
 

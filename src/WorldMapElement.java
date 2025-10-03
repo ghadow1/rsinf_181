@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class class80 {
+public class WorldMapElement {
 
    static int field1143;
    static ResourceHandler field1144;
@@ -8,17 +8,17 @@ public class class80 {
    static final BigInteger field1140 = new BigInteger("80782894952180643741752986186714059433953886149239752893425047584684715842049");
    static final BigInteger field1141 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
 
-   public static class217 fetchSomething(int i_0) {
+   public static Widget getWidget(int i_0) {
       int i_2 = i_0 >> 16;
       int i_3 = i_0 & 0xffff;
-      if (class217.field2556[i_2] == null || class217.field2556[i_2][i_3] == null) {
+      if (Widget.field2556[i_2] == null || Widget.field2556[i_2][i_3] == null) {
          boolean bool_4 = class162.method3445(i_2);
          if (!bool_4) {
             return null;
          }
       }
 
-      return class217.field2556[i_2][i_3];
+      return Widget.field2556[i_2][i_3];
    }
 
    public static int method1979(byte[] bytes_0, int i_1, CharSequence charsequence_2) {
@@ -52,22 +52,22 @@ public class class80 {
       if (Client.field727 == 0) {
          i_1 = Client.field657.field1005;
          i_2 = Client.field657.field949;
-         if (class54.field499 - i_1 < -500 || class54.field499 - i_1 > 500 || class26.field227 - i_2 < -500 || class26.field227 - i_2 > 500) {
-            class54.field499 = i_1;
+         if (MouseHandler.field499 - i_1 < -500 || MouseHandler.field499 - i_1 > 500 || class26.field227 - i_2 < -500 || class26.field227 - i_2 > 500) {
+            MouseHandler.field499 = i_1;
             class26.field227 = i_2;
          }
 
-         if (i_1 != class54.field499) {
-            class54.field499 += (i_1 - class54.field499) / 16;
+         if (i_1 != MouseHandler.field499) {
+            MouseHandler.field499 += (i_1 - MouseHandler.field499) / 16;
          }
 
          if (i_2 != class26.field227) {
             class26.field227 += (i_2 - class26.field227) / 16;
          }
 
-         i_3 = class54.field499 >> 7;
+         i_3 = MouseHandler.field499 >> 7;
          i_4 = class26.field227 >> 7;
-         i_5 = class62.method1130(class54.field499, class26.field227, class42.field372);
+         i_5 = class62.method1130(MouseHandler.field499, class26.field227, class42.field372);
          i_6 = 0;
          int i_7;
          if (i_3 > 3 && i_4 > 3 && i_3 < 100 && i_4 < 100) {
@@ -103,7 +103,7 @@ public class class80 {
 
          Client.field729 = class62.method1130(Client.field657.field1005, Client.field657.field949, class42.field372) - Client.field728;
       } else if (Client.field727 == 1) {
-         class217.method4090(-174761515);
+         Widget.method4090(-174761515);
          short s_11 = -1;
          if (class45.field395[33]) {
             s_11 = 0;
@@ -156,10 +156,10 @@ public class class80 {
          if (Client.field928 > 0) {
             i_4 = Client.field928 / 16;
             if (Client.field731 >= 0) {
-               i_1 = Client.field731 - class76.field1112 & 0x7ff;
+               i_1 = Client.field731 - MouseRecorder.field1112 & 0x7ff;
                i_5 = class130.field1787[i_1];
                i_6 = class130.field1784[i_1];
-               class54.field499 += i_4 * i_5 / 65536;
+               MouseHandler.field499 += i_4 * i_5 / 65536;
                class26.field227 += i_6 * i_4 / 65536;
             }
 
@@ -179,13 +179,13 @@ public class class80 {
          }
       }
 
-      if (class54.field485 == 4 && class46.field413) {
-         i_1 = class54.field487 - Client.field726;
+      if (MouseHandler.field485 == 4 && class46.field413) {
+         i_1 = MouseHandler.MouseHandler_y - Client.field726;
          Client.field724 = i_1 * 2;
-         Client.field726 = i_1 != -1 && i_1 != 1 ? (class54.field487 + Client.field726) / 2 : class54.field487;
-         i_2 = Client.field725 - class54.field492;
+         Client.field726 = i_1 != -1 && i_1 != 1 ? (MouseHandler.MouseHandler_y + Client.field726) / 2 : MouseHandler.MouseHandler_y;
+         i_2 = Client.field725 - MouseHandler.MouseHandler_x;
          Client.field723 = i_2 * 2;
-         Client.field725 = i_2 != -1 && i_2 != 1 ? (Client.field725 + class54.field492) / 2 : class54.field492;
+         Client.field725 = i_2 != -1 && i_2 != 1 ? (Client.field725 + MouseHandler.MouseHandler_x) / 2 : MouseHandler.MouseHandler_x;
       } else {
          if (class45.field395[96]) {
             Client.field723 += (-24 - Client.field723) / 2;
@@ -203,8 +203,8 @@ public class class80 {
             Client.field724 /= 2;
          }
 
-         Client.field726 = class54.field487;
-         Client.field725 = class54.field492;
+         Client.field726 = MouseHandler.MouseHandler_y;
+         Client.field725 = MouseHandler.MouseHandler_x;
       }
 
       Client.field722 = Client.field723 / 2 + Client.field722 & 0x7ff;

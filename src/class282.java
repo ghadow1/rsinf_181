@@ -13,9 +13,9 @@ public class class282 extends UserList {
       while (true) {
          if (class300_1.position < i_2) {
             boolean bool_4 = class300_1.readUnsignedByte() == 1;
-            class283 class283_5 = new class283(class300_1.readNullTerminatedString(), this.field3640);
-            class283 class283_6 = new class283(class300_1.readNullTerminatedString(), this.field3640);
-            int i_7 = class300_1.readUnsignedShortBigEndian();
+            Username username_5 = new Username(class300_1.readNullTerminatedString(), this.field3640);
+            Username username_6 = new Username(class300_1.readNullTerminatedString(), this.field3640);
+            int i_7 = class300_1.readUnsignedShort();
             int i_8 = class300_1.readUnsignedByte();
             int i_9 = class300_1.readUnsignedByte();
             boolean bool_10 = (i_9 & 0x2) != 0;
@@ -27,10 +27,10 @@ public class class282 extends UserList {
             }
 
             class300_1.readNullTerminatedString();
-            if (class283_5 != null && class283_5.method5205()) {
-               class284 class284_12 = (class284) this.method5138(class283_5);
+            if (username_5 != null && username_5.method5205()) {
+               class284 class284_12 = (class284) this.method5138(username_5);
                if (bool_4) {
-                  class284 class284_13 = (class284) this.method5138(class283_6);
+                  class284 class284_13 = (class284) this.method5138(username_6);
                   if (class284_13 != null && class284_12 != class284_13) {
                      if (class284_12 != null) {
                         this.removeEntry(class284_13);
@@ -41,12 +41,12 @@ public class class282 extends UserList {
                }
 
                if (class284_12 != null) {
-                  this.method5083(class284_12, class283_5, class283_6);
+                  this.method5083(class284_12, username_5, username_6);
                   if (i_7 != class284_12.category) {
                      boolean bool_15 = true;
 
                      for (class286 class286_14 = (class286) this.field3642.method4922(); class286_14 != null; class286_14 = (class286) this.field3642.method4923()) {
-                        if (class286_14.field3662.equals(class283_5)) {
+                        if (class286_14.field3662.equals(username_5)) {
                            if (i_7 != 0 && class286_14.field3663 == 0) {
                               class286_14.method3602();
                               bool_15 = false;
@@ -58,7 +58,7 @@ public class class282 extends UserList {
                      }
 
                      if (bool_15) {
-                        this.field3642.method4921(new class286(class283_5, i_7));
+                        this.field3642.method4921(new class286(username_5, i_7));
                      }
                   }
                } else {
@@ -66,7 +66,7 @@ public class class282 extends UserList {
                      continue;
                   }
 
-                  class284_12 = (class284) this.method5088(class283_5, class283_6);
+                  class284_12 = (class284) this.method5088(username_5, username_6);
                }
 
                if (i_7 != class284_12.category) {
@@ -96,8 +96,8 @@ public class class282 extends UserList {
       return new class284();
    }
 
-   public boolean method5183(class283 class283_1, boolean bool_2, int i_3) {
-      class284 class284_4 = (class284) this.method5082(class283_1);
+   public boolean method5183(Username username_1, boolean bool_2, int i_3) {
+      class284 class284_4 = (class284) this.method5082(username_1);
       return class284_4 == null ? false : !bool_2 || class284_4.category != 0;
    }
 

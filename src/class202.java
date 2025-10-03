@@ -145,23 +145,23 @@ public class class202 extends class115 {
       return 0;
    }
 
-   static void method3911(class71 class71_0) {
-      if (class71_0.method1680() != Client.field655) {
-         Client.field655 = class71_0.method1680();
-         boolean bool_2 = class71_0.method1680();
+   static void changeWorld(World world_0) {
+      if (world_0.method1680() != Client.field655) {
+         Client.field655 = world_0.method1680();
+         boolean bool_2 = world_0.method1680();
          if (bool_2 != class134.field1868) {
-            class254.field3407.method3323();
-            class254.field3408.method3323();
-            class254.field3445.method3323();
+            ItemDefinition.field3407.method3323();
+            ItemDefinition.field3408.method3323();
+            ItemDefinition.field3445.method3323();
             class134.field1868 = bool_2;
          }
       }
 
-      class73.field1068 = class71_0.field1029;
-      Client.field807 = class71_0.field1025;
-      Client.field653 = class71_0.field1023;
-      class190.field2358 = Client.field703 == 0 ? 43594 : class71_0.field1025 + 40000;
-      class132.field1800 = Client.field703 == 0 ? 443 : class71_0.field1025 + 50000;
+      class73.field1068 = world_0.host;
+      Client.field807 = world_0.id;
+      Client.field653 = world_0.properties;
+      class190.field2358 = Client.field703 == 0 ? 43594 : world_0.id + 40000;
+      class132.field1800 = Client.field703 == 0 ? 443 : world_0.id + 50000;
       class90.field1266 = class190.field2358;
    }
 
@@ -188,8 +188,8 @@ public class class202 extends class115 {
          int i_15 = i_5 * i_13 + 1 >> 17;
          int i_16 = i_5 * i_12 >> 17;
          int i_17 = i_5 * i_12 + 1 >> 17;
-         i_0 -= class321.field3874;
-         i_1 -= class321.field3870;
+         i_0 -= class321.Rasterizer2D_xClipStart;
+         i_1 -= class321.Rasterizer2D_yClipStart;
          int i_18 = i_0 + i_14;
          int i_19 = i_0 - i_15;
          int i_20 = i_0 + i_7 - i_15;

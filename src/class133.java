@@ -3,7 +3,7 @@ public class class133 {
    public static boolean field1848 = true;
    static int field1821 = 0;
    static int field1839 = 0;
-   static class142[] field1831 = new class142[100];
+   static FileSystem[] field1831 = new FileSystem[100];
    static boolean field1822 = false;
    static int field1833 = 0;
    static int field1825 = 0;
@@ -27,7 +27,7 @@ public class class133 {
    static boolean[][][][] field1860;
    int field1807 = 0;
    int field1859 = 0;
-   class142[] field1866 = new class142[5000];
+   FileSystem[] field1866 = new FileSystem[5000];
    int[][] field1858 = new int[][] {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1}, {1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0}, {0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1}, {0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0}, {1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1}, {1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1}};
    int[][] field1836 = new int[][] {{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}, {12, 8, 4, 0, 13, 9, 5, 1, 14, 10, 6, 2, 15, 11, 7, 3}, {15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}, {3, 7, 11, 15, 2, 6, 10, 14, 1, 5, 9, 13, 0, 4, 8, 12}};
    int field1802;
@@ -118,19 +118,19 @@ public class class133 {
          }
       }
 
-      class142 class142_21 = new class142();
-      class142_21.field1941 = long_12;
-      class142_21.field1942 = i_14;
-      class142_21.field1937 = i_1;
-      class142_21.field1931 = i_6;
-      class142_21.field1929 = i_7;
-      class142_21.field1932 = i_8;
-      class142_21.field1933 = class135_9;
-      class142_21.field1934 = i_10;
-      class142_21.field1935 = i_2;
-      class142_21.field1930 = i_3;
-      class142_21.field1936 = i_2 + i_4 - 1;
-      class142_21.field1938 = i_3 + i_5 - 1;
+      FileSystem fileSystem_21 = new FileSystem();
+      fileSystem_21.field1941 = long_12;
+      fileSystem_21.field1942 = i_14;
+      fileSystem_21.field1937 = i_1;
+      fileSystem_21.field1931 = i_6;
+      fileSystem_21.field1929 = i_7;
+      fileSystem_21.field1932 = i_8;
+      fileSystem_21.field1933 = class135_9;
+      fileSystem_21.field1934 = i_10;
+      fileSystem_21.field1935 = i_2;
+      fileSystem_21.field1930 = i_3;
+      fileSystem_21.field1936 = i_2 + i_4 - 1;
+      fileSystem_21.field1938 = i_3 + i_5 - 1;
 
       for (i_16 = i_2; i_16 < i_2 + i_4; i_16++) {
          for (int i_17 = i_3; i_17 < i_3 + i_5; i_17++) {
@@ -158,7 +158,7 @@ public class class133 {
             }
 
             class126 class126_23 = this.field1853[i_1][i_16][i_17];
-            class126_23.field1663[class126_23.field1655] = class142_21;
+            class126_23.field1663[class126_23.field1655] = fileSystem_21;
             class126_23.field1657[class126_23.field1655] = i_18;
             class126_23.field1658 |= i_18;
             ++class126_23.field1655;
@@ -166,20 +166,20 @@ public class class133 {
       }
 
       if (bool_11) {
-         this.field1866[this.field1859++] = class142_21;
+         this.field1866[this.field1859++] = fileSystem_21;
       }
 
       return true;
    }
 
-   void method3081(class142 class142_1) {
-      for (int i_2 = class142_1.field1935; i_2 <= class142_1.field1936; i_2++) {
-         for (int i_3 = class142_1.field1930; i_3 <= class142_1.field1938; i_3++) {
-            class126 class126_4 = this.field1853[class142_1.field1937][i_2][i_3];
+   void method3081(FileSystem fileSystem_1) {
+      for (int i_2 = fileSystem_1.field1935; i_2 <= fileSystem_1.field1936; i_2++) {
+         for (int i_3 = fileSystem_1.field1930; i_3 <= fileSystem_1.field1938; i_3++) {
+            class126 class126_4 = this.field1853[fileSystem_1.field1937][i_2][i_3];
             if (class126_4 != null) {
                int i_5;
                for (i_5 = 0; i_5 < class126_4.field1655; i_5++) {
-                  if (class126_4.field1663[i_5] == class142_1) {
+                  if (class126_4.field1663[i_5] == fileSystem_1) {
                      --class126_4.field1655;
 
                      for (int i_6 = i_5; i_6 < class126_4.field1655; i_6++) {
@@ -315,12 +315,12 @@ public class class133 {
                            }
 
                            for (int i_23 = 0; i_23 < class126_15.field1655; i_23++) {
-                              class142 class142_19 = class126_15.field1663[i_23];
-                              if (class142_19 != null && class142_19.field1933 instanceof Model) {
-                                 Model model_20 = (Model) class142_19.field1933;
-                                 int i_21 = class142_19.field1936 - class142_19.field1935 + 1;
-                                 int i_22 = class142_19.field1938 - class142_19.field1930 + 1;
-                                 Model.method2790(model_1, model_20, (i_21 - i_5) * 64 + (class142_19.field1935 - i_3) * 128, i_16, (class142_19.field1930 - i_4) * 128 + (i_22 - i_6) * 64, bool_7);
+                              FileSystem fileSystem_19 = class126_15.field1663[i_23];
+                              if (fileSystem_19 != null && fileSystem_19.field1933 instanceof Model) {
+                                 Model model_20 = (Model) fileSystem_19.field1933;
+                                 int i_21 = fileSystem_19.field1936 - fileSystem_19.field1935 + 1;
+                                 int i_22 = fileSystem_19.field1938 - fileSystem_19.field1930 + 1;
+                                 Model.method2790(model_1, model_20, (i_21 - i_5) * 64 + (fileSystem_19.field1935 - i_3) * 128, i_16, (fileSystem_19.field1930 - i_4) * 128 + (i_22 - i_6) * 64, bool_7);
                               }
                            }
                         }
@@ -951,11 +951,11 @@ public class class133 {
          return 0L;
       } else {
          for (int i_5 = 0; i_5 < class126_4.field1655; i_5++) {
-            class142 class142_6 = class126_4.field1663[i_5];
-            long long_8 = class142_6.field1941;
+            FileSystem fileSystem_6 = class126_4.field1663[i_5];
+            long long_8 = fileSystem_6.field1941;
             boolean bool_7 = class28.method420(long_8) == 2;
-            if (bool_7 && i_2 == class142_6.field1935 && i_3 == class142_6.field1930) {
-               return class142_6.field1941;
+            if (bool_7 && i_2 == fileSystem_6.field1935 && i_3 == fileSystem_6.field1930) {
+               return fileSystem_6.field1941;
             }
          }
 
@@ -988,7 +988,7 @@ public class class133 {
                         do {
                            while (true) {
                               class136 class136_10;
-                              class142 class142_12;
+                              FileSystem fileSystem_12;
                               int i_17;
                               int i_18;
                               boolean bool_20;
@@ -1067,9 +1067,9 @@ public class class133 {
                                     }
 
                                     for (i_11 = 0; i_11 < class126_9.field1655; i_11++) {
-                                       class142_12 = class126_9.field1663[i_11];
-                                       if (class142_12 != null) {
-                                          class142_12.field1933.vmethod3258(class142_12.field1934, field1827, field1801, field1829, field1830, class142_12.field1931 - field1824, class142_12.field1932 - field1816, class142_12.field1929 - field1826, class142_12.field1941);
+                                       fileSystem_12 = class126_9.field1663[i_11];
+                                       if (fileSystem_12 != null) {
+                                          fileSystem_12.field1933.vmethod3258(fileSystem_12.field1934, field1827, field1801, field1829, field1830, fileSystem_12.field1931 - field1824, fileSystem_12.field1932 - field1816, fileSystem_12.field1929 - field1826, fileSystem_12.field1941);
                                        }
                                     }
                                  }
@@ -1255,10 +1255,10 @@ public class class133 {
 
                                  label563:
                                  for (i_11 = 0; i_11 < i_34; i_11++) {
-                                    class142_12 = class126_3.field1663[i_11];
-                                    if (class142_12.field1940 != field1808) {
-                                       for (i_24 = class142_12.field1935; i_24 <= class142_12.field1936; i_24++) {
-                                          for (i_14 = class142_12.field1930; i_14 <= class142_12.field1938; i_14++) {
+                                    fileSystem_12 = class126_3.field1663[i_11];
+                                    if (fileSystem_12.field1940 != field1808) {
+                                       for (i_24 = fileSystem_12.field1935; i_24 <= fileSystem_12.field1936; i_24++) {
+                                          for (i_14 = fileSystem_12.field1930; i_14 <= fileSystem_12.field1938; i_14++) {
                                              class126_36 = arr_8[i_24][i_14];
                                              if (class126_36.field1660) {
                                                 class126_3.field1662 = true;
@@ -1267,19 +1267,19 @@ public class class133 {
 
                                              if (class126_36.field1654 != 0) {
                                                 i_16 = 0;
-                                                if (i_24 > class142_12.field1935) {
+                                                if (i_24 > fileSystem_12.field1935) {
                                                    ++i_16;
                                                 }
 
-                                                if (i_24 < class142_12.field1936) {
+                                                if (i_24 < fileSystem_12.field1936) {
                                                    i_16 += 4;
                                                 }
 
-                                                if (i_14 > class142_12.field1930) {
+                                                if (i_14 > fileSystem_12.field1930) {
                                                    i_16 += 8;
                                                 }
 
-                                                if (i_14 < class142_12.field1938) {
+                                                if (i_14 < fileSystem_12.field1938) {
                                                    i_16 += 2;
                                                 }
 
@@ -1291,19 +1291,19 @@ public class class133 {
                                           }
                                        }
 
-                                       field1831[i_21++] = class142_12;
-                                       i_24 = field1849 - class142_12.field1935;
-                                       i_14 = class142_12.field1936 - field1849;
+                                       field1831[i_21++] = fileSystem_12;
+                                       i_24 = field1849 - fileSystem_12.field1935;
+                                       i_14 = fileSystem_12.field1936 - field1849;
                                        if (i_14 > i_24) {
                                           i_24 = i_14;
                                        }
 
-                                       i_15 = field1823 - class142_12.field1930;
-                                       i_16 = class142_12.field1938 - field1823;
+                                       i_15 = field1823 - fileSystem_12.field1930;
+                                       i_16 = fileSystem_12.field1938 - field1823;
                                        if (i_16 > i_15) {
-                                          class142_12.field1939 = i_24 + i_16;
+                                          fileSystem_12.field1939 = i_24 + i_16;
                                        } else {
-                                          class142_12.field1939 = i_24 + i_15;
+                                          fileSystem_12.field1939 = i_24 + i_15;
                                        }
                                     }
                                  }
@@ -1313,14 +1313,14 @@ public class class133 {
                                     i_25 = -1;
 
                                     for (i_24 = 0; i_24 < i_21; i_24++) {
-                                       class142 class142_35 = field1831[i_24];
-                                       if (class142_35.field1940 != field1808) {
-                                          if (class142_35.field1939 > i_11) {
-                                             i_11 = class142_35.field1939;
+                                       FileSystem fileSystem_35 = field1831[i_24];
+                                       if (fileSystem_35.field1940 != field1808) {
+                                          if (fileSystem_35.field1939 > i_11) {
+                                             i_11 = fileSystem_35.field1939;
                                              i_25 = i_24;
-                                          } else if (i_11 == class142_35.field1939) {
-                                             i_15 = class142_35.field1931 - field1824;
-                                             i_16 = class142_35.field1929 - field1826;
+                                          } else if (i_11 == fileSystem_35.field1939) {
+                                             i_15 = fileSystem_35.field1931 - field1824;
+                                             i_16 = fileSystem_35.field1929 - field1826;
                                              i_17 = field1831[i_25].field1931 - field1824;
                                              i_18 = field1831[i_25].field1929 - field1826;
                                              if (i_15 * i_15 + i_16 * i_16 > i_17 * i_17 + i_18 * i_18) {
@@ -1334,14 +1334,14 @@ public class class133 {
                                        break;
                                     }
 
-                                    class142 class142_33 = field1831[i_25];
-                                    class142_33.field1940 = field1808;
-                                    if (!this.method3117(i_7, class142_33.field1935, class142_33.field1936, class142_33.field1930, class142_33.field1938, class142_33.field1933.field1873)) {
-                                       class142_33.field1933.vmethod3258(class142_33.field1934, field1827, field1801, field1829, field1830, class142_33.field1931 - field1824, class142_33.field1932 - field1816, class142_33.field1929 - field1826, class142_33.field1941);
+                                    FileSystem fileSystem_33 = field1831[i_25];
+                                    fileSystem_33.field1940 = field1808;
+                                    if (!this.method3117(i_7, fileSystem_33.field1935, fileSystem_33.field1936, fileSystem_33.field1930, fileSystem_33.field1938, fileSystem_33.field1933.field1873)) {
+                                       fileSystem_33.field1933.vmethod3258(fileSystem_33.field1934, field1827, field1801, field1829, field1830, fileSystem_33.field1931 - field1824, fileSystem_33.field1932 - field1816, fileSystem_33.field1929 - field1826, fileSystem_33.field1941);
                                     }
 
-                                    for (i_14 = class142_33.field1935; i_14 <= class142_33.field1936; i_14++) {
-                                       for (i_15 = class142_33.field1930; i_15 <= class142_33.field1938; i_15++) {
+                                    for (i_14 = fileSystem_33.field1935; i_14 <= fileSystem_33.field1936; i_14++) {
+                                       for (i_15 = fileSystem_33.field1930; i_15 <= fileSystem_33.field1938; i_15++) {
                                           class126 class126_26 = arr_8[i_14][i_15];
                                           if (class126_26.field1654 != 0) {
                                              field1846.method4917(class126_26);
@@ -1618,17 +1618,17 @@ public class class133 {
       return class126_4 == null ? null : class126_4.field1652;
    }
 
-   public class142 method3195(int i_1, int i_2, int i_3) {
+   public FileSystem method3195(int i_1, int i_2, int i_3) {
       class126 class126_4 = this.field1853[i_1][i_2][i_3];
       if (class126_4 == null) {
          return null;
       } else {
          for (int i_5 = 0; i_5 < class126_4.field1655; i_5++) {
-            class142 class142_6 = class126_4.field1663[i_5];
-            long long_8 = class142_6.field1941;
+            FileSystem fileSystem_6 = class126_4.field1663[i_5];
+            long long_8 = fileSystem_6.field1941;
             boolean bool_7 = class28.method420(long_8) == 2;
-            if (bool_7 && i_2 == class142_6.field1935 && i_3 == class142_6.field1930) {
-               return class142_6;
+            if (bool_7 && i_2 == fileSystem_6.field1935 && i_3 == fileSystem_6.field1930) {
+               return fileSystem_6;
             }
          }
 
@@ -1697,11 +1697,11 @@ public class class133 {
       class126 class126_4 = this.field1853[i_1][i_2][i_3];
       if (class126_4 != null) {
          for (int i_5 = 0; i_5 < class126_4.field1655; i_5++) {
-            class142 class142_6 = class126_4.field1663[i_5];
-            long long_8 = class142_6.field1941;
+            FileSystem fileSystem_6 = class126_4.field1663[i_5];
+            long long_8 = fileSystem_6.field1941;
             boolean bool_7 = class28.method420(long_8) == 2;
-            if (bool_7 && i_2 == class142_6.field1935 && i_3 == class142_6.field1930) {
-               this.method3081(class142_6);
+            if (bool_7 && i_2 == fileSystem_6.field1935 && i_3 == fileSystem_6.field1930) {
+               this.method3081(fileSystem_6);
                return;
             }
          }
@@ -2001,8 +2001,8 @@ public class class133 {
 
    public void method3115() {
       for (int i_1 = 0; i_1 < this.field1859; i_1++) {
-         class142 class142_2 = this.field1866[i_1];
-         this.method3081(class142_2);
+         FileSystem fileSystem_2 = this.field1866[i_1];
+         this.method3081(fileSystem_2);
          this.field1866[i_1] = null;
       }
 
@@ -2031,11 +2031,11 @@ public class class133 {
                   }
 
                   for (int i_12 = 0; i_12 < class126_7.field1655; i_12++) {
-                     class142 class142_14 = class126_7.field1663[i_12];
-                     if (class142_14 != null && class142_14.field1933 instanceof Model) {
-                        Model model_11 = (Model) class142_14.field1933;
-                        this.method3099(model_11, i_4, i_5, i_6, class142_14.field1936 - class142_14.field1935 + 1, class142_14.field1938 - class142_14.field1930 + 1);
-                        class142_14.field1933 = model_11.applyLighting(model_11.field1580, model_11.field1577, i_1, i_2, i_3);
+                     FileSystem fileSystem_14 = class126_7.field1663[i_12];
+                     if (fileSystem_14 != null && fileSystem_14.field1933 instanceof Model) {
+                        Model model_11 = (Model) fileSystem_14.field1933;
+                        this.method3099(model_11, i_4, i_5, i_6, fileSystem_14.field1936 - fileSystem_14.field1935 + 1, fileSystem_14.field1938 - fileSystem_14.field1930 + 1);
+                        fileSystem_14.field1933 = model_11.applyLighting(model_11.field1580, model_11.field1577, i_1, i_2, i_3);
                      }
                   }
 
@@ -2061,11 +2061,11 @@ public class class133 {
             --class126_5.field1670;
 
             for (int i_6 = 0; i_6 < class126_5.field1655; i_6++) {
-               class142 class142_7 = class126_5.field1663[i_6];
-               long long_9 = class142_7.field1941;
+               FileSystem fileSystem_7 = class126_5.field1663[i_6];
+               long long_9 = fileSystem_7.field1941;
                boolean bool_8 = class28.method420(long_9) == 2;
-               if (bool_8 && class142_7.field1935 == i_1 && i_2 == class142_7.field1930) {
-                  --class142_7.field1937;
+               if (bool_8 && fileSystem_7.field1935 == i_1 && i_2 == fileSystem_7.field1930) {
+                  --fileSystem_7.field1937;
                }
             }
          }

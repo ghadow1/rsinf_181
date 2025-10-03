@@ -72,7 +72,7 @@ public class ByteBuffer extends LinkedListNode {
    //..Reads a smart variable-length integer (1-2 bytes)
    public int readSmartInt() {
       int peek = this.buffer[this.position] & 0xff;
-      return peek < 128 ? this.readUnsignedByte() : this.readUnsignedShortBigEndian() - 32768;
+      return peek < 128 ? this.readUnsignedByte() : this.readUnsignedShort() - 32768;
    }
 
    //..Writes a null-terminated string
@@ -81,7 +81,7 @@ public class ByteBuffer extends LinkedListNode {
       if (nullIndex >= 0) {
          throw new IllegalArgumentException("String contains null character");
       }
-      this.position += class19.method237(str, 0, str.length(), this.buffer, this.position, (byte) 1);
+      this.position += class19.encodeStringCp1252(str, 0, str.length(), this.buffer, this.position, (byte) 1);
       this.buffer[++this.position - 1] = 0;
    }
 
@@ -146,7 +146,7 @@ public class ByteBuffer extends LinkedListNode {
       if (this.buffer[this.position] < 0) {
          return this.readIntMedEndian() & 0x7fffffff;
       } else {
-         int value = this.readUnsignedShortBigEndian();
+         int value = this.readUnsignedShort();
          return value == 32767 ? -1 : value;
       }
    }
@@ -180,7 +180,7 @@ public class ByteBuffer extends LinkedListNode {
    }
 
    //..Reads an unsigned 16-bit short in big-endian byte order
-   public int readUnsignedShortBigEndian() {
+   public int readUnsignedShort() {
       this.position += 2;
       return (this.buffer[this.position - 1] & 0xff) +
               ((this.buffer[this.position - 2] & 0xff) << 8);
@@ -254,7 +254,7 @@ public class ByteBuffer extends LinkedListNode {
    public int readUnsignedSmartShort() {
       return this.buffer[this.position] < 0 ?
               this.readIntMedEndian() & 0x7fffffff :
-              this.readUnsignedShortBigEndian();
+              this.readUnsignedShort();
    }
 
    //..TEA (Tiny Encryption Algorithm) decryption
@@ -320,7 +320,7 @@ public class ByteBuffer extends LinkedListNode {
    //..Reads a smart signed integer (offset by 64 or 49152)
    public int readSmartSignedInt() {
       int peek = this.buffer[this.position] & 0xff;
-      return peek < 128 ? this.readUnsignedByte() - 64 : this.readUnsignedShortBigEndian() - 49152;
+      return peek < 128 ? this.readUnsignedByte() - 64 : this.readUnsignedShort() - 49152;
    }
 
    //..Writes a string with zero prefix and suffix
@@ -330,7 +330,7 @@ public class ByteBuffer extends LinkedListNode {
          throw new IllegalArgumentException("String contains null character");
       }
       this.buffer[++this.position - 1] = 0;
-      this.position += class19.method237(str, 0, str.length(), this.buffer, this.position, (byte) 1);
+      this.position += class19.encodeStringCp1252(str, 0, str.length(), this.buffer, this.position, (byte) 1);
       this.buffer[++this.position - 1] = 0;
    }
 
@@ -536,7 +536,7 @@ public class ByteBuffer extends LinkedListNode {
 
       this.buffer[++this.position - 1] = 0;
       this.writeVarInt(byteCount);
-      this.position += class80.method1979(this.buffer, this.position, str);
+      this.position += WorldMapElement.method1979(this.buffer, this.position, str);
    }
 
    //..Writes a short size at offset

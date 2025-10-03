@@ -424,18 +424,18 @@ public class Model extends class135 {
       ByteBuffer class300_7 = new ByteBuffer(bytes_1);
       ByteBuffer class300_8 = new ByteBuffer(bytes_1);
       class300_4.position = bytes_1.length - 18;
-      int i_9 = class300_4.readUnsignedShortBigEndian();
-      int i_10 = class300_4.readUnsignedShortBigEndian();
+      int i_9 = class300_4.readUnsignedShort();
+      int i_10 = class300_4.readUnsignedShort();
       int i_11 = class300_4.readUnsignedByte();
       int i_12 = class300_4.readUnsignedByte();
       int i_13 = class300_4.readUnsignedByte();
       int i_14 = class300_4.readUnsignedByte();
       int i_15 = class300_4.readUnsignedByte();
       int i_16 = class300_4.readUnsignedByte();
-      int i_17 = class300_4.readUnsignedShortBigEndian();
-      int i_18 = class300_4.readUnsignedShortBigEndian();
-      int i_19 = class300_4.readUnsignedShortBigEndian();
-      int i_20 = class300_4.readUnsignedShortBigEndian();
+      int i_17 = class300_4.readUnsignedShort();
+      int i_18 = class300_4.readUnsignedShort();
+      int i_19 = class300_4.readUnsignedShort();
+      int i_20 = class300_4.readUnsignedShort();
       byte b_21 = 0;
       int i_45 = b_21 + i_9;
       int i_23 = i_45;
@@ -566,7 +566,7 @@ public class Model extends class135 {
       class300_8.position = i_25;
 
       for (i_38 = 0; i_38 < i_10; i_38++) {
-         this.field1561[i_38] = (short)class300_4.readUnsignedShortBigEndian();
+         this.field1561[i_38] = (short)class300_4.readUnsignedShort();
          if (i_12 == 1) {
             i_39 = class300_5.readUnsignedByte();
             if ((i_39 & 0x1) == 1) {
@@ -657,9 +657,9 @@ public class Model extends class135 {
 
       for (i_42 = 0; i_42 < i_11; i_42++) {
          this.field1565[i_42] = 0;
-         this.field1566[i_42] = (short)class300_4.readUnsignedShortBigEndian();
-         this.field1567[i_42] = (short)class300_4.readUnsignedShortBigEndian();
-         this.field1568[i_42] = (short)class300_4.readUnsignedShortBigEndian();
+         this.field1566[i_42] = (short)class300_4.readUnsignedShort();
+         this.field1567[i_42] = (short)class300_4.readUnsignedShort();
+         this.field1568[i_42] = (short)class300_4.readUnsignedShort();
       }
 
       if (this.field1560 != null) {
@@ -795,8 +795,8 @@ public class Model extends class135 {
       ByteBuffer class300_7 = new ByteBuffer(bytes_1);
       ByteBuffer class300_8 = new ByteBuffer(bytes_1);
       class300_2.position = bytes_1.length - 23;
-      int i_9 = class300_2.readUnsignedShortBigEndian();
-      int i_10 = class300_2.readUnsignedShortBigEndian();
+      int i_9 = class300_2.readUnsignedShort();
+      int i_10 = class300_2.readUnsignedShort();
       int i_11 = class300_2.readUnsignedByte();
       int i_12 = class300_2.readUnsignedByte();
       int i_13 = class300_2.readUnsignedByte();
@@ -804,11 +804,11 @@ public class Model extends class135 {
       int i_15 = class300_2.readUnsignedByte();
       int i_16 = class300_2.readUnsignedByte();
       int i_17 = class300_2.readUnsignedByte();
-      int i_18 = class300_2.readUnsignedShortBigEndian();
-      int i_19 = class300_2.readUnsignedShortBigEndian();
-      int i_20 = class300_2.readUnsignedShortBigEndian();
-      int i_21 = class300_2.readUnsignedShortBigEndian();
-      int i_22 = class300_2.readUnsignedShortBigEndian();
+      int i_18 = class300_2.readUnsignedShort();
+      int i_19 = class300_2.readUnsignedShort();
+      int i_20 = class300_2.readUnsignedShort();
+      int i_21 = class300_2.readUnsignedShort();
+      int i_22 = class300_2.readUnsignedShort();
       int i_23 = 0;
       int i_24 = 0;
       int i_25 = 0;
@@ -987,7 +987,7 @@ public class Model extends class135 {
       class300_8.position = i_36;
 
       for (i_51 = 0; i_51 < i_10; i_51++) {
-         this.field1561[i_51] = (short)class300_2.readUnsignedShortBigEndian();
+         this.field1561[i_51] = (short)class300_2.readUnsignedShort();
          if (i_12 == 1) {
             this.field1557[i_51] = class300_3.readSignedByte();
          }
@@ -1005,7 +1005,7 @@ public class Model extends class135 {
          }
 
          if (i_16 == 1) {
-            this.field1562[i_51] = (short)(class300_7.readUnsignedShortBigEndian() - 1);
+            this.field1562[i_51] = (short)(class300_7.readUnsignedShort() - 1);
          }
 
          if (this.field1560 != null && this.field1562[i_51] != -1) {
@@ -1073,9 +1073,9 @@ public class Model extends class135 {
       for (i_55 = 0; i_55 < i_11; i_55++) {
          i_56 = this.field1565[i_55] & 0xff;
          if (i_56 == 0) {
-            this.field1566[i_55] = (short)class300_2.readUnsignedShortBigEndian();
-            this.field1567[i_55] = (short)class300_2.readUnsignedShortBigEndian();
-            this.field1568[i_55] = (short)class300_2.readUnsignedShortBigEndian();
+            this.field1566[i_55] = (short)class300_2.readUnsignedShort();
+            this.field1567[i_55] = (short)class300_2.readUnsignedShort();
+            this.field1568[i_55] = (short)class300_2.readUnsignedShort();
          }
       }
 
@@ -1083,9 +1083,9 @@ public class Model extends class135 {
       i_55 = class300_2.readUnsignedByte();
       if (i_55 != 0) {
          new class134();
-         class300_2.readUnsignedShortBigEndian();
-         class300_2.readUnsignedShortBigEndian();
-         class300_2.readUnsignedShortBigEndian();
+         class300_2.readUnsignedShort();
+         class300_2.readUnsignedShort();
+         class300_2.readUnsignedShort();
          class300_2.readIntMedEndian();
       }
 

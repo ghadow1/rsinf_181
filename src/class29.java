@@ -165,18 +165,18 @@ public class class29 {
 
    }
 
-   void method426(int i_1, int i_2, class21 class21_3, class40 class40_4, class27 class27_5, int i_6) {
+   void method426(int i_1, int i_2, class21 class21_3, FontName fontName_4, WorldMapID worldMapID_5, int i_6) {
       int i_7 = class21_3.field163[0][i_1][i_2] - 1;
       int i_8 = class21_3.field170[0][i_1][i_2] - 1;
       if (i_7 == -1 && i_8 == -1) {
-         class321.method6012(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, this.field249);
+         class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, this.field249);
       }
 
       int i_9 = 16711935;
       int i_10;
       if (i_8 != -1) {
          int i_11 = this.field249;
-         class257 class257_13 = (class257) class257.field3503.method3320((long)i_8);
+         class257 class257_13 = (class257) class257.field3503.get((long)i_8);
          class257 class257_12;
          if (class257_13 != null) {
             class257_12 = class257_13;
@@ -188,7 +188,7 @@ public class class29 {
             }
 
             class257_13.method4743(2079651033);
-            class257.field3503.method3322(class257_13, (long)i_8);
+            class257.field3503.put(class257_13, (long)i_8);
             class257_12 = class257_13;
          }
 
@@ -262,13 +262,13 @@ public class class29 {
       }
 
       if (i_8 > -1 && class21_3.field165[0][i_1][i_2] == 0) {
-         class321.method6012(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_9);
+         class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_9);
       } else {
-         i_10 = this.method439(i_1, i_2, class21_3, class27_5, 23103860);
+         i_10 = this.method439(i_1, i_2, class21_3, worldMapID_5, 23103860);
          if (i_8 == -1) {
-            class321.method6012(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_10);
+            class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_10);
          } else {
-            class40_4.method698(this.field250 * i_1, this.field250 * (63 - i_2), i_10, i_9, this.field250, this.field250, class21_3.field165[0][i_1][i_2], class21_3.field166[0][i_1][i_2], 1804465340);
+            fontName_4.method698(this.field250 * i_1, this.field250 * (63 - i_2), i_10, i_9, this.field250, this.field250, class21_3.field165[0][i_1][i_2], class21_3.field166[0][i_1][i_2], 1804465340);
          }
       }
    }
@@ -297,7 +297,7 @@ public class class29 {
 
    }
 
-   void method436(int i_1, int i_2, class21 class21_3, class40 class40_4, class324[] arr_5, int i_6) {
+   void method436(int i_1, int i_2, class21 class21_3, FontName fontName_4, class324[] arr_5, int i_6) {
       this.method472(i_1, i_2, class21_3, (short) 4754);
       this.method463(i_1, i_2, class21_3, arr_5, 111952884);
    }
@@ -308,20 +308,20 @@ public class class29 {
          if (class17_3 == null) {
             return null;
          } else {
-            class295 class295_4 = (class295) this.field257.get(class17_3);
-            if (class295_4 == null) {
+            Font font_4 = (Font) this.field257.get(class17_3);
+            if (font_4 == null) {
                return null;
             } else {
-               int i_5 = class295_4.method5390(class241_1.field3216, 1000000);
+               int i_5 = font_4.method5390(class241_1.field3216, 1000000);
                String[] arr_6 = new String[i_5];
-               class295_4.method5342(class241_1.field3216, (int[]) null, arr_6);
-               int i_7 = arr_6.length * class295_4.field3709 / 2;
+               font_4.method5342(class241_1.field3216, (int[]) null, arr_6);
+               int i_7 = arr_6.length * font_4.field3709 / 2;
                int i_8 = 0;
                String[] arr_9 = arr_6;
 
                for (int i_10 = 0; i_10 < arr_9.length; i_10++) {
                   String string_11 = arr_9[i_10];
-                  int i_12 = class295_4.method5417(string_11);
+                  int i_12 = font_4.method5417(string_11);
                   if (i_12 > i_8) {
                      i_8 = i_12;
                   }
@@ -350,12 +350,12 @@ public class class29 {
 
    }
 
-   void method520(int i_1, int i_2, class21 class21_3, class40 class40_4, int i_5) {
+   void method520(int i_1, int i_2, class21 class21_3, FontName fontName_4, int i_5) {
       for (int i_6 = 1; i_6 < class21_3.field160; i_6++) {
          int i_7 = class21_3.field170[i_6][i_1][i_2] - 1;
          if (i_7 > -1) {
             int i_9 = this.field249;
-            class257 class257_11 = (class257) class257.field3503.method3320((long)i_7);
+            class257 class257_11 = (class257) class257.field3503.get((long)i_7);
             class257 class257_10;
             if (class257_11 != null) {
                class257_10 = class257_11;
@@ -367,7 +367,7 @@ public class class29 {
                }
 
                class257_11.method4743(-739254085);
-               class257.field3503.method3322(class257_11, (long)i_7);
+               class257.field3503.put(class257_11, (long)i_7);
                class257_10 = class257_11;
             }
 
@@ -439,9 +439,9 @@ public class class29 {
             }
 
             if (class21_3.field165[i_6][i_1][i_2] == 0) {
-               class321.method6012(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_8);
+               class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_8);
             } else {
-               class40_4.method698(this.field250 * i_1, this.field250 * (63 - i_2), 0, i_8, this.field250, this.field250, class21_3.field165[i_6][i_1][i_2], class21_3.field166[i_6][i_1][i_2], 1198458587);
+               fontName_4.method698(this.field250 * i_1, this.field250 * (63 - i_2), 0, i_8, this.field250, this.field250, class21_3.field165[i_6][i_1][i_2], class21_3.field166[i_6][i_1][i_2], 1198458587);
             }
          }
       }
@@ -473,8 +473,8 @@ public class class29 {
       class28 class28_7 = class34_1.vmethod575(1637590458);
       if (class28_7 != null) {
          if (class28_7.field239.method184(f_5, -927816948)) {
-            class295 class295_8 = (class295) this.field257.get(class28_7.field239);
-            class295_8.method5350(class28_7.field237, i_3 - class28_7.field236 / 2, i_4, class28_7.field236, class28_7.field238, ~0xffffff | class241_2.field3217, 0, 1, 0, class295_8.field3709 / 2);
+            Font font_8 = (Font) this.field257.get(class28_7.field239);
+            font_8.method5350(class28_7.field237, i_3 - class28_7.field236 / 2, i_4, class28_7.field236, class28_7.field238, ~0xffffff | class241_2.field3217, 0, 1, 0, font_8.field3709 / 2);
          }
       }
    }
@@ -570,8 +570,8 @@ public class class29 {
       return this.method451(class241_3, 1686665284);
    }
 
-   int method439(int i_1, int i_2, class21 class21_3, class27 class27_4, int i_5) {
-      return class21_3.field163[0][i_1][i_2] == 0 ? this.field249 : class27_4.method408(i_1, i_2);
+   int method439(int i_1, int i_2, class21 class21_3, WorldMapID worldMapID_4, int i_5) {
+      return class21_3.field163[0][i_1][i_2] == 0 ? this.field249 : worldMapID_4.method408(i_1, i_2);
    }
 
    void method444(class253 class253_1, int i_2, int i_3, int i_4, class21 class21_5, int i_6) {
@@ -600,8 +600,8 @@ public class class29 {
       if (class325_7 != null) {
          class325_7.method6126(i_2 - class325_7.field3899 / 2, i_3 - class325_7.field3900 / 2);
          if (i_4 % i_5 < i_5 / 2) {
-            class321.method6025(i_2, i_3, 15, 16776960, 128);
-            class321.method6025(i_2, i_3, 7, 16777215, 256);
+            class321.drawCircleAlpha2D(i_2, i_3, 15, 16776960, 128);
+            class321.drawCircleAlpha2D(i_2, i_3, 7, 16777215, 256);
          }
 
       }
@@ -642,25 +642,25 @@ public class class29 {
       this.method443(hashset_1, i_2, i_3, (byte) -45);
    }
 
-   void method434(class40 class40_1, class324[] arr_2, class27 class27_3, int i_4) {
+   void method434(FontName fontName_1, class324[] arr_2, WorldMapID worldMapID_3, int i_4) {
       int i_5;
       int i_6;
       for (i_5 = 0; i_5 < 64; i_5++) {
          for (i_6 = 0; i_6 < 64; i_6++) {
-            this.method426(i_5, i_6, this.field247, class40_1, class27_3, -1409851959);
-            this.method520(i_5, i_6, this.field247, class40_1, -272085910);
+            this.method426(i_5, i_6, this.field247, fontName_1, worldMapID_3, -1409851959);
+            this.method520(i_5, i_6, this.field247, fontName_1, -272085910);
          }
       }
 
       for (i_5 = 0; i_5 < 64; i_5++) {
          for (i_6 = 0; i_6 < 64; i_6++) {
-            this.method436(i_5, i_6, this.field247, class40_1, arr_2, 1019894341);
+            this.method436(i_5, i_6, this.field247, fontName_1, arr_2, 1019894341);
          }
       }
 
    }
 
-   void method435(class40 class40_1, class324[] arr_2, class27 class27_3, int i_4) {
+   void method435(FontName fontName_1, class324[] arr_2, WorldMapID worldMapID_3, int i_4) {
       Iterator iterator_5 = this.field242.iterator();
 
       class39 class39_6;
@@ -671,8 +671,8 @@ public class class29 {
 
          for (i_7 = class39_6.method685(-1641135365) * 8; i_7 < class39_6.method685(-1656234696) * 8 + 8; i_7++) {
             for (i_8 = class39_6.method680(-1829076552) * 8; i_8 < class39_6.method680(-1868477150) * 8 + 8; i_8++) {
-               this.method426(i_7, i_8, class39_6, class40_1, class27_3, -1127411208);
-               this.method520(i_7, i_8, class39_6, class40_1, 742440794);
+               this.method426(i_7, i_8, class39_6, fontName_1, worldMapID_3, -1127411208);
+               this.method520(i_7, i_8, class39_6, fontName_1, 742440794);
             }
          }
       }
@@ -684,7 +684,7 @@ public class class29 {
 
          for (i_7 = class39_6.method685(-1375964958) * 8; i_7 < class39_6.method685(-500534432) * 8 + 8; i_7++) {
             for (i_8 = class39_6.method680(-1257485196) * 8; i_8 < class39_6.method680(-1869880086) * 8 + 8; i_8++) {
-               this.method436(i_7, i_8, class39_6, class40_1, arr_2, 1899751971);
+               this.method436(i_7, i_8, class39_6, fontName_1, arr_2, 1899751971);
             }
          }
       }
@@ -766,7 +766,7 @@ public class class29 {
 
    }
 
-   void method473(int i_1, class40 class40_2, class324[] arr_3, class233 class233_4, class233 class233_5, int i_6) {
+   void method473(int i_1, FontName fontName_2, class324[] arr_3, class233 class233_4, class233 class233_5, int i_6) {
       this.field250 = i_1;
       if (this.field247 != null || !this.field242.isEmpty()) {
          if (GameState.method4130(this.field245, this.field246, i_1, (short) -4698) == null) {
@@ -782,25 +782,25 @@ public class class29 {
             bool_7 &= class233_5.method4199(i_9);
             if (bool_7) {
                byte[] bytes_8 = class233_5.method4208(i_9);
-               class27 class27_10;
+               WorldMapID worldMapID_10;
                if (bytes_8 == null) {
-                  class27_10 = new class27();
+                  worldMapID_10 = new WorldMapID();
                } else {
-                  class27_10 = new class27(class158.method3435(bytes_8, (byte) 61).field3908);
+                  worldMapID_10 = new WorldMapID(class158.method3435(bytes_8, (byte) 61).field3908);
                }
 
                class325 class325_12 = new class325(this.field250 * 64, this.field250 * 64);
                class325_12.method6114();
                if (this.field247 != null) {
-                  this.method434(class40_2, arr_3, class27_10, -5287364);
+                  this.method434(fontName_2, arr_3, worldMapID_10, -5287364);
                } else {
-                  this.method435(class40_2, arr_3, class27_10, 1494661478);
+                  this.method435(fontName_2, arr_3, worldMapID_10, 1494661478);
                }
 
                int i_13 = this.field245;
                int i_14 = this.field246;
                int i_15 = this.field250;
-               field244.method3351(class325_12, class217.method4089(i_13, i_14, i_15), class325_12.field3908.length * 4);
+               field244.method3351(class325_12, Widget.method4089(i_13, i_14, i_15), class325_12.field3908.length * 4);
                this.method429((short) 30233);
             }
          }

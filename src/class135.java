@@ -1,4 +1,4 @@
-public abstract class class135 extends class175 {
+public abstract class class135 extends DualNode {
 
    static long field1872;
    static class235 field1874;
@@ -19,15 +19,15 @@ public abstract class class135 extends class175 {
 
    static final void method3260(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5, boolean bool_6) {
       if (!Client.field674) {
-         if (Client.field791 < 500) {
-            Client.field796[Client.field791] = string_0;
-            Client.field668[Client.field791] = string_1;
-            Client.field794[Client.field791] = i_2;
-            Client.field795[Client.field791] = i_3;
-            Client.field792[Client.field791] = i_4;
-            Client.field793[Client.field791] = i_5;
-            Client.field769[Client.field791] = bool_6;
-            ++Client.field791;
+         if (Client.menuOptionsCount < 500) {
+            Client.field796[Client.menuOptionsCount] = string_0;
+            Client.field668[Client.menuOptionsCount] = string_1;
+            Client.field794[Client.menuOptionsCount] = i_2;
+            Client.field795[Client.menuOptionsCount] = i_3;
+            Client.field792[Client.menuOptionsCount] = i_4;
+            Client.field793[Client.menuOptionsCount] = i_5;
+            Client.field769[Client.menuOptionsCount] = bool_6;
+            ++Client.menuOptionsCount;
          }
 
       }

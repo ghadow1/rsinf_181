@@ -26,7 +26,7 @@ public class class153 extends ChainedComparator {
       if (!bool_2 || i_0 != class48.field418 || class128.field1747 != i_1) {
          class48.field418 = i_0;
          class128.field1747 = i_1;
-         class96.method2265(25);
+         class96.updateGameState(25);
          class281.method5180("Loading - please wait.", true, -2090803826);
          int i_4 = class196.field2389;
          int i_5 = class1.field1;
@@ -114,9 +114,9 @@ public class class153 extends ChainedComparator {
 
          Client.field893 = 0;
          Client.field899 = false;
-         Buffer_3.field3727 -= i_6 << 7;
+         PacketBuffer.field3727 -= i_6 << 7;
          class1.field3 -= i_7 << 7;
-         class54.field499 -= i_6 << 7;
+         MouseHandler.field499 -= i_6 << 7;
          class26.field227 -= i_7 << 7;
          Client.field747 = -1;
          Client.field785.method4886();

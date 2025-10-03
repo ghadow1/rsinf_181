@@ -1,9 +1,9 @@
 public class class294 {
 
-   static class217 field3697;
+   static Widget field3697;
    static String field3695;
 
-   static void method5328(int i_0, byte[] bytes_1, class308 class308_2, int i_3) {
+   static void method5328(int i_0, byte[] bytes_1, class308 class308_2) {
       class231 class231_4 = new class231();
       class231_4.field3118 = 0;
       class231_4.hash = (long)i_0;
@@ -27,7 +27,7 @@ public class class294 {
       }
    }
 
-   static final void method5327(class68 class68_0, int i_1) {
+   static final void method5327(class68 class68_0) {
       long long_2 = 0L;
       int i_4 = -1;
       int i_5 = 0;

@@ -40,8 +40,8 @@ public class class106 {
       this.field1429 = new int[this.field1428];
 
       for (int i_2 = 0; i_2 < this.field1428; i_2++) {
-         this.field1437[i_2] = class300_1.readUnsignedShortBigEndian();
-         this.field1429[i_2] = class300_1.readUnsignedShortBigEndian();
+         this.field1437[i_2] = class300_1.readUnsignedShort();
+         this.field1429[i_2] = class300_1.readUnsignedShort();
       }
 
    }

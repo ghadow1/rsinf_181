@@ -1,4 +1,4 @@
-public class class215 {
+public class SoundSystem {
 
    static class235 field2544;
    static boolean field2545;
@@ -7,7 +7,7 @@ public class class215 {
    public static final short[] field2542 = new short[] {(short) -10304, (short) 9104, (short) -1, (short) -1, (short) -1};
    public static final short[][] field2546 = new short[][] {{(short) 6554, (short) 115, (short) 10304, (short) 28, (short) 5702, (short) 7756, (short) 5681, (short) 4510, (short) -31835, (short) 22437, (short) 2859, (short) -11339, (short) 16, (short) 5157, (short) 10446, (short) 3658, (short) -27314, (short) -21965, (short) 472, (short) 580, (short) 784, (short) 21966, (short) 28950, (short) -15697, (short) -14002}, {(short) 9104, (short) 10275, (short) 7595, (short) 3610, (short) 7975, (short) 8526, (short) 918, (short) -26734, (short) 24466, (short) 10145, (short) -6882, (short) 5027, (short) 1457, (short) 16565, (short) -30545, (short) 25486, (short) 24, (short) 5392, (short) 10429, (short) 3673, (short) -27335, (short) -21957, (short) 192, (short) 687, (short) 412, (short) 21821, (short) 28835, (short) -15460, (short) -14019}, new short[0], new short[0], new short[0]};
 
-   public static String method4023(long long_0) {
+   public static String base37DecodeLong(long long_0) {
       if (long_0 > 0L && long_0 < 6582952005840035281L) {
          if (long_0 % 37L == 0L) {
             return null;
@@ -48,7 +48,7 @@ public class class215 {
    public static class324 method4021(class233 class233_0, String string_1, String string_2) {
       int i_4 = class233_0.method4160(string_1);
       int i_5 = class233_0.method4161(i_4, string_2);
-      return Buffer_3.method5474(class233_0, i_4, i_5);
+      return PacketBuffer.method5474(class233_0, i_4, i_5);
    }
 
 }

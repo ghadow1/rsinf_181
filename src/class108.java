@@ -94,7 +94,7 @@ public class class108 {
          class213.disconnectMessage();
          break;
       case 2:
-         class54.method1039();
+         MouseHandler.method1039();
       }
 
    }

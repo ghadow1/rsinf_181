@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class class70 extends LinkedListNode {
 
-   static Stream field1015;
+   static AbstractSocket field1015;
    static int field1017;
    static int field1014;
    int field1016;
@@ -61,7 +61,7 @@ public class class70 extends LinkedListNode {
       }
    }
 
-   public static void method1671(Buffer_3 buffer3_0) {
+   public static void method1671(PacketBuffer buffer3_0) {
       class97 class97_2 = (class97) class96.field1324.method4838();
       if (class97_2 != null) {
          int i_3 = buffer3_0.position;

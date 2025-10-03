@@ -8,51 +8,51 @@ public class class82 {
    String field1159;
 
    static int method1992(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = bool_2 ? class76.field1111 : class207.field2507;
+      Widget widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       if (i_0 == 1600) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2585;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2585;
          return 1;
       } else if (i_0 == 1601) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2586;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2586;
          return 1;
       } else if (i_0 == 1602) {
-         class76.field1093[++class221.field2747 - 1] = class217_4.field2601;
+         MouseRecorder.field1093[++class221.field2747 - 1] = widget_4.field2601;
          return 1;
       } else if (i_0 == 1603) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2687;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2687;
          return 1;
       } else if (i_0 == 1604) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2569;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2569;
          return 1;
       } else if (i_0 == 1605) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2618;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2618;
          return 1;
       } else if (i_0 == 1606) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2615;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2615;
          return 1;
       } else if (i_0 == 1607) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2640;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2640;
          return 1;
       } else if (i_0 == 1608) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2616;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2616;
          return 1;
       } else if (i_0 == 1609) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2595;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2595;
          return 1;
       } else if (i_0 == 1610) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2596;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2596;
          return 1;
       } else if (i_0 == 1611) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2695;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2695;
          return 1;
       } else if (i_0 == 1612) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2639;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2639;
          return 1;
       } else if (i_0 == 1613) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2693.getId(2003391553);
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2693.getId(2003391553);
          return 1;
       } else if (i_0 == 1614) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2564 ? 1 : 0;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2564 ? 1 : 0;
          return 1;
       } else {
          return 2;

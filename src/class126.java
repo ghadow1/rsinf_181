@@ -17,7 +17,7 @@ public final class class126 extends LinkedListNode {
    int field1651;
    int field1666;
    int field1665;
-   class142[] field1663 = new class142[5];
+   FileSystem[] field1663 = new FileSystem[5];
    int[] field1657 = new int[5];
    int field1658 = 0;
    int field1670;

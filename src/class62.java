@@ -3,10 +3,10 @@ public class class62 extends LinkedListNode {
    static int field585;
    static class308 field573;
    static String field586;
-   class217 field575;
+   Widget field575;
    int field576;
    int field577;
-   class217 field579;
+   Widget field579;
    int field583;
    String field582;
    boolean field574;
@@ -25,11 +25,11 @@ public class class62 extends LinkedListNode {
    }
 
    static void method1132(int i_0, String string_1, String string_2) {
-      class14.method157(i_0, string_1, string_2, (String) null);
+      MilliClock.method157(i_0, string_1, string_2, (String) null);
    }
 
-   static boolean method1133(class217 class217_0) {
-      return class217_0.field2706;
+   static boolean method1133(Widget widget_0) {
+      return widget_0.field2706;
    }
 
    static final int method1130(int i_0, int i_1, int i_2) {
@@ -56,24 +56,24 @@ public class class62 extends LinkedListNode {
    }
 
    static int method1127(int i_0) {
-      class217 class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
+      Widget widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
       if (i_0 == 2500) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2577;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2577;
          return 1;
       } else if (i_0 == 2501) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2699;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2699;
          return 1;
       } else if (i_0 == 2502) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2579;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2579;
          return 1;
       } else if (i_0 == 2503) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2667;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2667;
          return 1;
       } else if (i_0 == 2504) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2706 ? 1 : 0;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2706 ? 1 : 0;
          return 1;
       } else if (i_0 == 2505) {
-         class76.field1098[++class70.field1014 - 1] = class217_4.field2583;
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2583;
          return 1;
       } else {
          return 2;

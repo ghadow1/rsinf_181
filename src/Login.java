@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-public class class85 {
+public class Login {
 
    static boolean field1179;
    static class324 field1194;
@@ -15,13 +15,13 @@ public class class85 {
    static String field1189;
    static int field1182;
    static int field1212;
-   static int field1209;
+   static int loginIndex;
    static String field1197;
-   static String field1210;
-   static String field1195;
-   static String field1196;
+   static String Login_response1;
+   static String Login_response2;
+   static String Login_response3;
    static String field1180;
-   static String field1198;
+   static String Login_password;
    static boolean field1199;
    static boolean field1184;
    static boolean field1201;
@@ -39,13 +39,13 @@ public class class85 {
       field1189 = "";
       field1182 = -1;
       field1212 = 1;
-      field1209 = 0;
+      loginIndex = 0;
       field1197 = "";
-      field1210 = "";
-      field1195 = "";
-      field1196 = "";
+      Login_response1 = "";
+      Login_response2 = "";
+      Login_response3 = "";
       field1180 = "";
-      field1198 = "";
+      Login_password = "";
       field1199 = false;
       field1184 = false;
       field1201 = true;

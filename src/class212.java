@@ -17,10 +17,10 @@ public class class212 {
       var_configurations = new int[4000];
    }
 
-   static final int method3969(class217 class217_0, int i_1, int i_2) {
-      if (class217_0.field2682 != null && i_1 < class217_0.field2682.length) {
+   static final int method3969(Widget widget_0, int i_1) {
+      if (widget_0.field2682 != null && i_1 < widget_0.field2682.length) {
          try {
-            int[] ints_3 = class217_0.field2682[i_1];
+            int[] ints_3 = widget_0.field2682[i_1];
             int i_4 = 0;
             int i_5 = 0;
             byte b_6 = 0;
@@ -46,18 +46,18 @@ public class class212 {
                }
 
                int i_10;
-               class217 class217_11;
+               Widget widget_11;
                int i_12;
                int i_13;
                if (i_7 == 4) {
                   i_10 = ints_3[i_5++] << 16;
                   i_10 += ints_3[i_5++];
-                  class217_11 = class80.fetchSomething(i_10);
+                  widget_11 = WorldMapElement.getWidget(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || Client.field655)) {
-                     for (i_13 = 0; i_13 < class217_11.field2560.length; i_13++) {
-                        if (i_12 + 1 == class217_11.field2560[i_13]) {
-                           i_8 += class217_11.field2705[i_13];
+                  if (i_12 != -1 && (!class26.method404(i_12).isMembersOnly || Client.field655)) {
+                     for (i_13 = 0; i_13 < widget_11.field2560.length; i_13++) {
+                        if (i_12 + 1 == widget_11.field2560[i_13]) {
+                           i_8 += widget_11.field2705[i_13];
                         }
                      }
                   }
@@ -90,11 +90,11 @@ public class class212 {
                if (i_7 == 10) {
                   i_10 = ints_3[i_5++] << 16;
                   i_10 += ints_3[i_5++];
-                  class217_11 = class80.fetchSomething(i_10);
+                  widget_11 = WorldMapElement.getWidget(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12).field3425 || Client.field655)) {
-                     for (i_13 = 0; i_13 < class217_11.field2560.length; i_13++) {
-                        if (i_12 + 1 == class217_11.field2560[i_13]) {
+                  if (i_12 != -1 && (!class26.method404(i_12).isMembersOnly || Client.field655)) {
+                     for (i_13 = 0; i_13 < widget_11.field2560.length; i_13++) {
+                        if (i_12 + 1 == widget_11.field2560[i_13]) {
                            i_8 = 999999999;
                            break;
                         }

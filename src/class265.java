@@ -2,71 +2,71 @@ import java.util.Iterator;
 
 public class class265 implements Iterable {
 
-   public class175 field3551 = new class175();
-   class175 field3550;
+   public DualNode field3551 = new DualNode();
+   DualNode field3550;
 
    public class265() {
-      this.field3551.field2104 = this.field3551;
-      this.field3551.field2106 = this.field3551;
+      this.field3551.previousDual = this.field3551;
+      this.field3551.nextDual = this.field3551;
    }
 
-   class175 method4954(class175 class175_1) {
-      class175 class175_2;
-      if (class175_1 == null) {
-         class175_2 = this.field3551.field2104;
+   DualNode method4954(DualNode dualNode_1) {
+      DualNode dualNode_2;
+      if (dualNode_1 == null) {
+         dualNode_2 = this.field3551.previousDual;
       } else {
-         class175_2 = class175_1;
+         dualNode_2 = dualNode_1;
       }
 
-      if (class175_2 == this.field3551) {
+      if (dualNode_2 == this.field3551) {
          this.field3550 = null;
          return null;
       } else {
-         this.field3550 = class175_2.field2104;
-         return class175_2;
+         this.field3550 = dualNode_2.previousDual;
+         return dualNode_2;
       }
    }
 
-   public class175 method4953() {
-      return this.method4954((class175) null);
+   public DualNode method4953() {
+      return this.method4954((DualNode) null);
    }
 
    public void method4949() {
-      while (this.field3551.field2104 != this.field3551) {
-         this.field3551.field2104.method3597();
+      while (this.field3551.previousDual != this.field3551) {
+         this.field3551.previousDual.removeDual();
       }
 
    }
 
-   public class175 method4952() {
-      class175 class175_1 = this.field3551.field2104;
-      if (class175_1 == this.field3551) {
+   public DualNode method4952() {
+      DualNode dualNode_1 = this.field3551.previousDual;
+      if (dualNode_1 == this.field3551) {
          return null;
       } else {
-         class175_1.method3597();
-         return class175_1;
+         dualNode_1.removeDual();
+         return dualNode_1;
       }
    }
 
-   public void method4950(class175 class175_1) {
-      if (class175_1.field2106 != null) {
-         class175_1.method3597();
+   public void method4950(DualNode dualNode_1) {
+      if (dualNode_1.nextDual != null) {
+         dualNode_1.removeDual();
       }
 
-      class175_1.field2106 = this.field3551.field2106;
-      class175_1.field2104 = this.field3551;
-      class175_1.field2106.field2104 = class175_1;
-      class175_1.field2104.field2106 = class175_1;
+      dualNode_1.nextDual = this.field3551.nextDual;
+      dualNode_1.previousDual = this.field3551;
+      dualNode_1.nextDual.previousDual = dualNode_1;
+      dualNode_1.previousDual.nextDual = dualNode_1;
    }
 
-   public class175 method4983() {
-      class175 class175_1 = this.field3550;
-      if (class175_1 == this.field3551) {
+   public DualNode method4983() {
+      DualNode dualNode_1 = this.field3550;
+      if (dualNode_1 == this.field3551) {
          this.field3550 = null;
          return null;
       } else {
-         this.field3550 = class175_1.field2104;
-         return class175_1;
+         this.field3550 = dualNode_1.previousDual;
+         return dualNode_1;
       }
    }
 
@@ -74,15 +74,15 @@ public class class265 implements Iterable {
       return new class263(this);
    }
 
-   public static void method4958(class175 class175_0, class175 class175_1) {
-      if (class175_0.field2106 != null) {
-         class175_0.method3597();
+   public static void method4958(DualNode dualNode_0, DualNode dualNode_1) {
+      if (dualNode_0.nextDual != null) {
+         dualNode_0.removeDual();
       }
 
-      class175_0.field2106 = class175_1;
-      class175_0.field2104 = class175_1.field2104;
-      class175_0.field2106.field2104 = class175_0;
-      class175_0.field2104.field2106 = class175_0;
+      dualNode_0.nextDual = dualNode_1;
+      dualNode_0.previousDual = dualNode_1.previousDual;
+      dualNode_0.nextDual.previousDual = dualNode_0;
+      dualNode_0.previousDual.nextDual = dualNode_0;
    }
 
 }

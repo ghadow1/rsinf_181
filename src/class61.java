@@ -4,10 +4,10 @@ public class class61 extends LinkedListNode {
    int field569;
    boolean field567 = false;
 
-   static final void method1120(Buffer_3 buffer3_0, int i_1) {
+   static final void method1120(PacketBuffer buffer3_0, int i_1) {
       int i_3 = buffer3_0.position;
       class89.field1262 = 0;
-      class54.method1037(buffer3_0);
+      MouseHandler.method1037(buffer3_0);
 
       for (int i_4 = 0; i_4 < class89.field1262; i_4++) {
          int i_5 = class89.field1256[i_4];

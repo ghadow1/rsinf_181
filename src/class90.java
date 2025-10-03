@@ -14,13 +14,13 @@ public class class90 {
    long field1272;
 
    class90() {
-      int i_1 = class215.field2544.method4154(19);
+      int i_1 = SoundSystem.field2544.method4154(19);
       this.field1271 = new HashMap();
       this.field1268 = new boolean[i_1];
 
       int i_2;
       for (i_2 = 0; i_2 < i_1; i_2++) {
-         class242 class242_4 = (class242) class242.field3232.method3320((long)i_2);
+         class242 class242_4 = (class242) class242.field3232.get((long)i_2);
          class242 class242_3;
          if (class242_4 != null) {
             class242_3 = class242_4;
@@ -31,7 +31,7 @@ public class class90 {
                class242_4.method4401(new ByteBuffer(bytes_5), (byte) 22);
             }
 
-            class242.field3232.method3322(class242_4, (long)i_2);
+            class242.field3232.put(class242_4, (long)i_2);
             class242_3 = class242_4;
          }
 
@@ -39,8 +39,8 @@ public class class90 {
       }
 
       i_2 = 0;
-      if (class215.field2544.method4268(15, (byte) 0)) {
-         i_2 = class215.field2544.method4154(15);
+      if (SoundSystem.field2544.method4268(15, (byte) 0)) {
+         i_2 = SoundSystem.field2544.method4154(15);
       }
 
       this.field1269 = new String[i_2];
@@ -197,7 +197,7 @@ public class class90 {
                      int i_10;
                      int i_18;
                      if (i_17 >= 2) {
-                        i_18 = class300_16.readUnsignedShortBigEndian();
+                        i_18 = class300_16.readUnsignedShort();
                         i_8 = 0;
 
                         while (true) {
@@ -206,7 +206,7 @@ public class class90 {
                               break;
                            }
 
-                           i_9 = class300_16.readUnsignedShortBigEndian();
+                           i_9 = class300_16.readUnsignedShort();
                            i_10 = class300_16.readUnsignedByte();
                            class3[] arr_11 = new class3[] {class3.field9, class3.field14, class3.field7};
                            class3 class3_12 = (class3) MemoryManager.findById(arr_11, i_10);
@@ -218,20 +218,20 @@ public class class90 {
                            ++i_8;
                         }
                      } else {
-                        i_18 = class300_16.readUnsignedShortBigEndian();
+                        i_18 = class300_16.readUnsignedShort();
 
                         for (i_8 = 0; i_8 < i_18; i_8++) {
-                           i_9 = class300_16.readUnsignedShortBigEndian();
+                           i_9 = class300_16.readUnsignedShort();
                            i_10 = class300_16.readIntMedEndian();
                            if (this.field1268[i_9]) {
                               this.field1271.put(Integer.valueOf(i_9), Integer.valueOf(i_10));
                            }
                         }
 
-                        i_8 = class300_16.readUnsignedShortBigEndian();
+                        i_8 = class300_16.readUnsignedShort();
 
                         for (i_9 = 0; i_9 < i_8; i_9++) {
-                           class300_16.readUnsignedShortBigEndian();
+                           class300_16.readUnsignedShort();
                            class300_16.readNullTerminatedString();
                         }
 

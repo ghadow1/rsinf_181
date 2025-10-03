@@ -163,7 +163,7 @@ public class class104 {
          }
 
          i_3 = field1402[this.field1394 - 1];
-         int i_4 = class144.method3316(i_3 - 1, -1775911516);
+         int i_4 = class144.method3316(i_3 - 1);
          field1404[0] = class102.method2345(i_4);
          field1404[1] = class102.method2345(i_4);
          int i_5 = 2;

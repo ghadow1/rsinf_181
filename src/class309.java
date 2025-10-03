@@ -186,53 +186,53 @@ public class class309 implements Runnable {
    }
 
    static void method5892(class233 class233_0, class233 class233_1, boolean bool_2, int i_3, int i_4) {
-      if (class85.field1179) {
+      if (Login.field1179) {
          if (i_3 == 4) {
-            class85.field1209 = 4;
+            Login.loginIndex = 4;
          }
 
       } else {
-         class85.field1209 = i_3;
+         Login.loginIndex = i_3;
          class321.method6022();
          byte[] bytes_5 = class233_0.method4163("title.jpg", "", 1900657492);
          class5.field23 = class158.method3435(bytes_5, (byte) -3);
          class79.field1135 = class5.field23.method6112();
          if ((Client.field653 & 0x20000000) != 0) {
-            class87.field1243 = class215.method4021(class233_1, "logo_deadman_mode", "");
+            class87.field1243 = SoundSystem.method4021(class233_1, "logo_deadman_mode", "");
          } else {
-            class87.field1243 = class215.method4021(class233_1, "logo", "");
+            class87.field1243 = SoundSystem.method4021(class233_1, "logo", "");
          }
 
-         class85.field1194 = class215.method4021(class233_1, "titlebox", "");
-         class240.field3207 = class215.method4021(class233_1, "titlebutton", "");
+         Login.field1194 = SoundSystem.method4021(class233_1, "titlebox", "");
+         class240.field3207 = SoundSystem.method4021(class233_1, "titlebutton", "");
          int i_7 = class233_1.method4160("runes");
          int i_8 = class233_1.method4161(i_7, "");
          class324[] arr_6 = class289.method5281(class233_1, i_7, i_8, 1740775565);
-         class85.field1181 = arr_6;
+         Login.field1181 = arr_6;
          i_8 = class233_1.method4160("title_mute");
          int i_9 = class233_1.method4161(i_8, "");
          class324[] arr_10 = class289.method5281(class233_1, i_8, i_9, 1982525323);
-         class85.field1183 = arr_10;
-         class85.field1178 = class215.method4021(class233_1, "options_radio_buttons,0", "");
-         class64.field606 = class215.method4021(class233_1, "options_radio_buttons,4", "");
-         class112.field1466 = class215.method4021(class233_1, "options_radio_buttons,2", "");
-         class85.field1185 = class215.method4021(class233_1, "options_radio_buttons,6", "");
-         class237.field3191 = class85.field1178.field3897;
-         class25.field212 = class85.field1178.field3893;
-         class278.field3631 = new class72(class85.field1181);
+         Login.field1183 = arr_10;
+         Login.field1178 = SoundSystem.method4021(class233_1, "options_radio_buttons,0", "");
+         Message.field606 = SoundSystem.method4021(class233_1, "options_radio_buttons,4", "");
+         class112.field1466 = SoundSystem.method4021(class233_1, "options_radio_buttons,2", "");
+         Login.field1185 = SoundSystem.method4021(class233_1, "options_radio_buttons,6", "");
+         class237.field3191 = Login.field1178.field3897;
+         class25.field212 = Login.field1178.field3893;
+         class278.field3631 = new class72(Login.field1181);
          if (bool_2) {
-            class85.field1180 = "";
-            class85.field1198 = "";
+            Login.field1180 = "";
+            Login.Login_password = "";
          }
 
          class9.field65 = 0;
          class36.field328 = "";
-         class85.field1201 = true;
-         class85.field1205 = false;
+         Login.field1201 = true;
+         Login.field1205 = false;
          if (!class17.field117.field1063) {
             class29.method533(2, class29.field253, "scape main", "", 255, false, -2137956496);
          } else {
-            class40.method729(2, (byte) 65);
+            FontName.method729(2, (byte) 65);
          }
 
          if (class236.field3176 != null) {
@@ -243,7 +243,7 @@ public class class309 implements Runnable {
                class236.field3176.vmethod5829(class300_11.buffer, 0, 4, -1696227994);
             } catch (IOException ioexception_14) {
                try {
-                  class236.field3176.vmethod5830(274967727);
+                  class236.field3176.close();
                } catch (Exception exception_13) {
                   ;
                }
@@ -253,13 +253,13 @@ public class class309 implements Runnable {
             }
          }
 
-         class85.field1179 = true;
-         class85.field1208 = (class7.field46 - 765) / 2;
-         class85.field1187 = class85.field1208 + 202;
-         class62.field585 = class85.field1187 + 180;
-         class5.field23.method6121(class85.field1208, 0);
-         class79.field1135.method6121(class85.field1208 + 382, 0);
-         class87.field1243.method6101(class85.field1208 + 382 - class87.field1243.field3897 / 2, 18);
+         Login.field1179 = true;
+         Login.field1208 = (class7.field46 - 765) / 2;
+         Login.field1187 = Login.field1208 + 202;
+         class62.field585 = Login.field1187 + 180;
+         class5.field23.method6121(Login.field1208, 0);
+         class79.field1135.method6121(Login.field1208 + 382, 0);
+         class87.field1243.method6101(Login.field1208 + 382 - class87.field1243.field3897 / 2, 18);
       }
    }
 

@@ -6,7 +6,7 @@ public class class231 extends LinkedListNode {
    public class235 field3117;
 
    public static class245 method4138(int i_0) {
-      class245 class245_2 = (class245) class245.field3273.method3320((long)i_0);
+      class245 class245_2 = (class245) class245.field3273.get((long)i_0);
       if (class245_2 != null) {
          return class245_2;
       } else {
@@ -16,7 +16,7 @@ public class class231 extends LinkedListNode {
             class245_2.method4449(new ByteBuffer(bytes_3));
          }
 
-         class245.field3273.method3322(class245_2, (long)i_0);
+         class245.field3273.put(class245_2, (long)i_0);
          return class245_2;
       }
    }

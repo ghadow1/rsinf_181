@@ -11,7 +11,7 @@ public class class332 {
 
    int method6286() {
       if (this.field3967 < 33) {
-         if (!this.field3966.method4164(class35.field302.field306, this.field3964)) {
+         if (!this.field3966.method4164(WorldMapCacheName.field302.field306, this.field3964)) {
             return this.field3967;
          }
 
@@ -19,7 +19,7 @@ public class class332 {
       }
 
       if (this.field3967 == 33) {
-         if (this.field3966.method4162(class35.field303.field306, this.field3964) && !this.field3966.method4164(class35.field303.field306, this.field3964)) {
+         if (this.field3966.method4162(WorldMapCacheName.field303.field306, this.field3964) && !this.field3966.method4164(WorldMapCacheName.field303.field306, this.field3964)) {
             return this.field3967;
          }
 
@@ -27,7 +27,7 @@ public class class332 {
       }
 
       if (this.field3967 == 66) {
-         if (!this.field3966.method4164(this.field3964, class35.field305.field306)) {
+         if (!this.field3966.method4164(this.field3964, WorldMapCacheName.field305.field306)) {
             return this.field3967;
          }
 

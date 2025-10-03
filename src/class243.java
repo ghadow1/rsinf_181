@@ -1,4 +1,4 @@
-public class class243 extends class175 {
+public class class243 extends DualNode {
 
    public static class233 field3247;
    static int field3248;
@@ -19,15 +19,15 @@ public class class243 extends class175 {
 
    void method4410(ByteBuffer class300_1, int i_2, int i_3) {
       if (i_2 == 1) {
-         this.field3242 = class300_1.readUnsignedShortBigEndian();
+         this.field3242 = class300_1.readUnsignedShort();
       } else if (i_2 == 2) {
-         this.field3238 = class300_1.readUnsignedShortBigEndian();
+         this.field3238 = class300_1.readUnsignedShort();
       } else if (i_2 == 4) {
-         this.field3252 = class300_1.readUnsignedShortBigEndian();
+         this.field3252 = class300_1.readUnsignedShort();
       } else if (i_2 == 5) {
-         this.field3249 = class300_1.readUnsignedShortBigEndian();
+         this.field3249 = class300_1.readUnsignedShort();
       } else if (i_2 == 6) {
-         this.field3250 = class300_1.readUnsignedShortBigEndian();
+         this.field3250 = class300_1.readUnsignedShort();
       } else if (i_2 == 7) {
          this.field3251 = class300_1.readUnsignedByte();
       } else if (i_2 == 8) {
@@ -41,8 +41,8 @@ public class class243 extends class175 {
             this.field3243 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3244[i_5] = (short)class300_1.readUnsignedShortBigEndian();
-               this.field3243[i_5] = (short)class300_1.readUnsignedShortBigEndian();
+               this.field3244[i_5] = (short)class300_1.readUnsignedShort();
+               this.field3243[i_5] = (short)class300_1.readUnsignedShort();
             }
          } else if (i_2 == 41) {
             i_4 = class300_1.readUnsignedByte();
@@ -50,8 +50,8 @@ public class class243 extends class175 {
             this.field3245 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3246[i_5] = (short)class300_1.readUnsignedShortBigEndian();
-               this.field3245[i_5] = (short)class300_1.readUnsignedShortBigEndian();
+               this.field3246[i_5] = (short)class300_1.readUnsignedShort();
+               this.field3245[i_5] = (short)class300_1.readUnsignedShort();
             }
          }
       }
@@ -59,7 +59,7 @@ public class class243 extends class175 {
    }
 
    public final class127 method4406(int i_1, int i_2) {
-      class127 class127_3 = (class127) field3240.method3320((long)this.field3241);
+      class127 class127_3 = (class127) field3240.get((long)this.field3241);
       if (class127_3 == null) {
          Model model_4 = Model.method2769(GCMonitor.field379, this.field3242, 0);
          if (model_4 == null) {
@@ -80,7 +80,7 @@ public class class243 extends class175 {
          }
 
          class127_3 = model_4.applyLighting(this.field3251 + 64, this.field3253 + 850, -30, -50, -30);
-         field3240.method3322(class127_3, (long)this.field3241);
+         field3240.put(class127_3, (long)this.field3241);
       }
 
       class127 class127_6;

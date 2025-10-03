@@ -60,14 +60,14 @@ public class class24 implements class37 {
    public void vmethod743(ByteBuffer class300_1, int i_2) {
       this.field197 = class300_1.readUnsignedByte();
       this.field196 = class300_1.readUnsignedByte();
-      this.field200 = class300_1.readUnsignedShortBigEndian();
-      this.field199 = class300_1.readUnsignedShortBigEndian();
-      this.field207 = class300_1.readUnsignedShortBigEndian();
-      this.field201 = class300_1.readUnsignedShortBigEndian();
-      this.field202 = class300_1.readUnsignedShortBigEndian();
-      this.field203 = class300_1.readUnsignedShortBigEndian();
-      this.field204 = class300_1.readUnsignedShortBigEndian();
-      this.field205 = class300_1.readUnsignedShortBigEndian();
+      this.field200 = class300_1.readUnsignedShort();
+      this.field199 = class300_1.readUnsignedShort();
+      this.field207 = class300_1.readUnsignedShort();
+      this.field201 = class300_1.readUnsignedShort();
+      this.field202 = class300_1.readUnsignedShort();
+      this.field203 = class300_1.readUnsignedShort();
+      this.field204 = class300_1.readUnsignedShort();
+      this.field205 = class300_1.readUnsignedShort();
       this.method305((byte) -39);
    }
 

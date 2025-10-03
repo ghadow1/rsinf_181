@@ -47,7 +47,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt updateInvPartialMessage = new ServerPacketProt(44, -2);
    public static final ServerPacketProt field2189 = new ServerPacketProt(45, -1);
    public static final ServerPacketProt field2161 = new ServerPacketProt(46, 2);
-   public static final ServerPacketProt field2150 = new ServerPacketProt(47, -1);
+   public static final ServerPacketProt worldHopAction = new ServerPacketProt(47, -1);
    public static final ServerPacketProt ifSetEventsMessage = new ServerPacketProt(48, 12);
    public static final ServerPacketProt field2164 = new ServerPacketProt(49, 4);
    public static final ServerPacketProt field2123 = new ServerPacketProt(50, 10);
@@ -87,11 +87,11 @@ public class ServerPacketProt {
    public static final ServerPacketProt ifOpenTopMessage = new ServerPacketProt(84, 2);
    public static final ServerPacketProt field2200 = new ServerPacketProt(85, 1);
    public final int field2201;
-   public final int field2146;
+   public final int length;
 
    ServerPacketProt(int i_1, int i_2) {
       this.field2201 = i_1;
-      this.field2146 = i_2;
+      this.length = i_2;
    }
 
 }

@@ -62,8 +62,8 @@ public class class285 extends UserList {
          this.method5096();
 
          for (int i_6 = 0; i_6 < i_5; i_6++) {
-            class273 class273_7 = (class273) this.method5087(new class283(class300_1.readNullTerminatedString(), this.field3658));
-            int i_8 = class300_1.readUnsignedShortBigEndian();
+            class273 class273_7 = (class273) this.method5087(new Username(class300_1.readNullTerminatedString(), this.field3658));
+            int i_8 = class300_1.readUnsignedShort();
             class273_7.method5163(i_8, ++this.field3659 - 1, -1729653997);
             class273_7.field3634 = class300_1.readSignedByte();
             class300_1.readNullTerminatedString();
@@ -74,8 +74,8 @@ public class class285 extends UserList {
    }
 
    public final void method5234(ByteBuffer class300_1, int i_2) {
-      class283 class283_3 = new class283(class300_1.readNullTerminatedString(), this.field3658);
-      int i_4 = class300_1.readUnsignedShortBigEndian();
+      Username username_3 = new Username(class300_1.readNullTerminatedString(), this.field3658);
+      int i_4 = class300_1.readUnsignedShort();
       byte b_5 = class300_1.readSignedByte();
       boolean bool_6 = false;
       if (b_5 == -128) {
@@ -88,19 +88,19 @@ public class class285 extends UserList {
             return;
          }
 
-         class273_7 = (class273) this.method5138(class283_3);
+         class273_7 = (class273) this.method5138(username_3);
          if (class273_7 != null && class273_7.method5164(212736889) == i_4) {
             this.removeEntry(class273_7);
          }
       } else {
          class300_1.readNullTerminatedString();
-         class273_7 = (class273) this.method5138(class283_3);
+         class273_7 = (class273) this.method5138(username_3);
          if (class273_7 == null) {
             if (this.method5079() > super.capacity) {
                return;
             }
 
-            class273_7 = (class273) this.method5087(class283_3);
+            class273_7 = (class273) this.method5087(username_3);
          }
 
          class273_7.method5163(i_4, ++this.field3659 - 1, -235684888);

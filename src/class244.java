@@ -1,4 +1,4 @@
-public class class244 extends class175 {
+public class class244 extends DualNode {
 
    public static class233 field3255;
    public static class145 field3254 = new class145(64);
@@ -102,16 +102,16 @@ public class class244 extends class175 {
    }
 
    static int method4433(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      class217 class217_4 = class80.fetchSomething(class76.field1098[--class70.field1014]);
+      Widget widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
       if (i_0 == 2800) {
-         class76.field1098[++class70.field1014 - 1] = class78.method1957(class268.method4987(class217_4), (byte) 42);
+         MouseRecorder.field1098[++class70.field1014 - 1] = class78.method1957(class268.method4987(widget_4), (byte) 42);
          return 1;
       } else if (i_0 != 2801) {
          if (i_0 == 2802) {
-            if (class217_4.field2643 == null) {
-               class76.field1093[++class221.field2747 - 1] = "";
+            if (widget_4.field2643 == null) {
+               MouseRecorder.field1093[++class221.field2747 - 1] = "";
             } else {
-               class76.field1093[++class221.field2747 - 1] = class217_4.field2643;
+               MouseRecorder.field1093[++class221.field2747 - 1] = widget_4.field2643;
             }
 
             return 1;
@@ -119,12 +119,12 @@ public class class244 extends class175 {
             return 2;
          }
       } else {
-         int i_5 = class76.field1098[--class70.field1014];
+         int i_5 = MouseRecorder.field1098[--class70.field1014];
          --i_5;
-         if (class217_4.field2644 != null && i_5 < class217_4.field2644.length && class217_4.field2644[i_5] != null) {
-            class76.field1093[++class221.field2747 - 1] = class217_4.field2644[i_5];
+         if (widget_4.field2644 != null && i_5 < widget_4.field2644.length && widget_4.field2644[i_5] != null) {
+            MouseRecorder.field1093[++class221.field2747 - 1] = widget_4.field2644[i_5];
          } else {
-            class76.field1093[++class221.field2747 - 1] = "";
+            MouseRecorder.field1093[++class221.field2747 - 1] = "";
          }
 
          return 1;

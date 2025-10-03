@@ -163,7 +163,7 @@ public class class26 {
          obj_6 = new class24();
          break;
       case 2:
-         obj_6 = new class33();
+         obj_6 = new AbstractWorldMapData();
          break;
       case 3:
          obj_6 = new class42();
@@ -200,42 +200,42 @@ public class class26 {
       return new class213(this.field218);
    }
 
-   public static class254 method404(int i_0) {
-      class254 class254_2 = (class254) class254.field3407.method3320((long)i_0);
-      if (class254_2 != null) {
-         return class254_2;
+   public static ItemDefinition method404(int i_0) {
+      ItemDefinition itemDefinition_2 = (ItemDefinition) ItemDefinition.field3407.get((long)i_0);
+      if (itemDefinition_2 != null) {
+         return itemDefinition_2;
       } else {
          byte[] bytes_3 = class91.field1276.method4144(10, i_0);
-         class254_2 = new class254();
-         class254_2.field3410 = i_0;
+         itemDefinition_2 = new ItemDefinition();
+         itemDefinition_2.field3410 = i_0;
          if (bytes_3 != null) {
-            class254_2.method4638(new ByteBuffer(bytes_3), (byte) -39);
+            itemDefinition_2.method4638(new ByteBuffer(bytes_3));
          }
 
-         class254_2.method4637();
-         if (class254_2.field3444 != -1) {
-            class254_2.method4666(method404(class254_2.field3444), method404(class254_2.field3443));
+         itemDefinition_2.method4637();
+         if (itemDefinition_2.field3444 != -1) {
+            itemDefinition_2.method4666(method404(itemDefinition_2.field3444), method404(itemDefinition_2.field3443));
          }
 
-         if (class254_2.field3454 != -1) {
-            class254_2.method4641(method404(class254_2.field3454), method404(class254_2.field3453));
+         if (itemDefinition_2.field3454 != -1) {
+            itemDefinition_2.method4641(method404(itemDefinition_2.field3454), method404(itemDefinition_2.field3453));
          }
 
-         if (class254_2.field3439 != -1) {
-            class254_2.method4689(method404(class254_2.field3439), method404(class254_2.field3400));
+         if (itemDefinition_2.field3439 != -1) {
+            itemDefinition_2.method4689(method404(itemDefinition_2.field3439), method404(itemDefinition_2.field3400));
          }
 
-         if (!class134.field1868 && class254_2.field3425) {
-            class254_2.field3449 = "Members object";
-            class254_2.field3452 = false;
-            class254_2.field3426 = null;
-            class254_2.field3427 = null;
-            class254_2.field3403 = -1;
-            class254_2.field3450 = 0;
-            if (class254_2.field3409 != null) {
+         if (!class134.field1868 && itemDefinition_2.isMembersOnly) {
+            itemDefinition_2.name = "Members object";
+            itemDefinition_2.field3452 = false;
+            itemDefinition_2.groundActions = null;
+            itemDefinition_2.inventoryActions = null;
+            itemDefinition_2.field3403 = -1;
+            itemDefinition_2.field3450 = 0;
+            if (itemDefinition_2.field3409 != null) {
                boolean bool_4 = false;
 
-               for (LinkedListNode linkedListNode_5 = class254_2.field3409.method5927(); linkedListNode_5 != null; linkedListNode_5 = class254_2.field3409.method5928()) {
+               for (LinkedListNode linkedListNode_5 = itemDefinition_2.field3409.method5927(); linkedListNode_5 != null; linkedListNode_5 = itemDefinition_2.field3409.method5928()) {
                   class249 class249_6 = class18.method209((int) linkedListNode_5.hash, (byte) 4);
                   if (class249_6.field3305) {
                      linkedListNode_5.unlink();
@@ -245,13 +245,13 @@ public class class26 {
                }
 
                if (!bool_4) {
-                  class254_2.field3409 = null;
+                  itemDefinition_2.field3409 = null;
                }
             }
          }
 
-         class254.field3407.method3322(class254_2, (long)i_0);
-         return class254_2;
+         ItemDefinition.field3407.put(itemDefinition_2, (long)i_0);
+         return itemDefinition_2;
       }
    }
 
@@ -273,27 +273,27 @@ public class class26 {
             if (class236.field3163 > 30000) {
                throw new IOException();
             } else {
-               class232 class232_4;
+               GrandExchangeOfferUnitPriceComparator grandExchangeOfferUnitPriceComparator_4;
                ByteBuffer class300_5;
                while (class236.field3168 < 200 && class236.field3166 > 0) {
-                  class232_4 = (class232) class236.field3165.method5950();
+                  grandExchangeOfferUnitPriceComparator_4 = (GrandExchangeOfferUnitPriceComparator) class236.field3165.method5950();
                   class300_5 = new ByteBuffer(4);
                   class300_5.writeByte(1);
-                  class300_5.write24BitInt((int)class232_4.hash);
+                  class300_5.write24BitInt((int) grandExchangeOfferUnitPriceComparator_4.hash);
                   class236.field3176.vmethod5829(class300_5.buffer, 0, 4, -1696227994);
-                  class236.field3167.method5951(class232_4, class232_4.hash);
+                  class236.field3167.method5951(grandExchangeOfferUnitPriceComparator_4, grandExchangeOfferUnitPriceComparator_4.hash);
                   --class236.field3166;
                   ++class236.field3168;
                }
 
                while (class236.field3164 < 200 && class236.field3171 > 0) {
-                  class232_4 = (class232) class236.field3170.method4792();
+                  grandExchangeOfferUnitPriceComparator_4 = (GrandExchangeOfferUnitPriceComparator) class236.field3170.method4792();
                   class300_5 = new ByteBuffer(4);
                   class300_5.writeByte(0);
-                  class300_5.write24BitInt((int)class232_4.hash);
+                  class300_5.write24BitInt((int) grandExchangeOfferUnitPriceComparator_4.hash);
                   class236.field3176.vmethod5829(class300_5.buffer, 0, 4, -1696227994);
-                  class232_4.method3597();
-                  class236.field3172.method5951(class232_4, class232_4.hash);
+                  grandExchangeOfferUnitPriceComparator_4.removeDual();
+                  class236.field3172.method5951(grandExchangeOfferUnitPriceComparator_4, grandExchangeOfferUnitPriceComparator_4.hash);
                   --class236.field3171;
                   ++class236.field3164;
                }
@@ -326,7 +326,7 @@ public class class26 {
                         i_7 = i_17;
                      }
 
-                     class236.field3176.vmethod5828(class236.field3174.buffer, class236.field3174.position, i_7, (byte) -16);
+                     class236.field3176.read(class236.field3174.buffer, class236.field3174.position, i_7);
                      if (class236.field3181 != 0) {
                         for (i_8 = 0; i_8 < i_7; i_8++) {
                            class236.field3174.buffer[i_8 + class236.field3174.position] ^= class236.field3181;
@@ -341,23 +341,23 @@ public class class26 {
                      if (class226.field3071 == null) {
                         class236.field3174.position = 0;
                         i_8 = class236.field3174.readUnsignedByte();
-                        i_9 = class236.field3174.readUnsignedShortBigEndian();
+                        i_9 = class236.field3174.readUnsignedShort();
                         int i_10 = class236.field3174.readUnsignedByte();
                         i_11 = class236.field3174.readIntMedEndian();
                         long long_12 = (long)(i_9 + (i_8 << 16));
-                        class232 class232_14 = (class232) class236.field3167.method5952(long_12);
-                        class215.field2545 = true;
-                        if (class232_14 == null) {
-                           class232_14 = (class232) class236.field3172.method5952(long_12);
-                           class215.field2545 = false;
+                        GrandExchangeOfferUnitPriceComparator grandExchangeOfferUnitPriceComparator_14 = (GrandExchangeOfferUnitPriceComparator) class236.field3167.method5952(long_12);
+                        SoundSystem.field2545 = true;
+                        if (grandExchangeOfferUnitPriceComparator_14 == null) {
+                           grandExchangeOfferUnitPriceComparator_14 = (GrandExchangeOfferUnitPriceComparator) class236.field3172.method5952(long_12);
+                           SoundSystem.field2545 = false;
                         }
 
-                        if (class232_14 == null) {
+                        if (grandExchangeOfferUnitPriceComparator_14 == null) {
                            throw new IOException();
                         }
 
                         int i_15 = i_10 == 0 ? 5 : 9;
-                        class226.field3071 = class232_14;
+                        class226.field3071 = grandExchangeOfferUnitPriceComparator_14;
                         class240.field3209 = new ByteBuffer(i_15 + i_11 + class226.field3071.field3122);
                         class240.field3209.writeByte(i_10);
                         class240.field3209.writeIntBigEndian(i_11);
@@ -382,7 +382,7 @@ public class class26 {
                         i_8 = i_17;
                      }
 
-                     class236.field3176.vmethod5828(class240.field3209.buffer, class240.field3209.position, i_8, (byte) 23);
+                     class236.field3176.read(class240.field3209.buffer, class240.field3209.position, i_8);
                      if (class236.field3181 != 0) {
                         for (i_9 = 0; i_9 < i_8; i_9++) {
                            class240.field3209.buffer[class240.field3209.position + i_9] ^= class236.field3181;
@@ -410,7 +410,7 @@ public class class26 {
                            i_9 = (int)class236.field3177.getValue();
                            if (i_9 != class226.field3071.field3121) {
                               try {
-                                 class236.field3176.vmethod5830(-1253156928);
+                                 class236.field3176.close();
                               } catch (Exception exception_21) {
                                  ;
                               }
@@ -423,11 +423,11 @@ public class class26 {
 
                            class236.field3179 = 0;
                            class236.field3178 = 0;
-                           class226.field3071.field3124.method4263((int)(class226.field3071.hash & 0xffffL), class240.field3209.buffer, (class226.field3071.hash & 0xff0000L) == 16711680L, class215.field2545, (byte) -36);
+                           class226.field3071.field3124.method4263((int)(class226.field3071.hash & 0xffffL), class240.field3209.buffer, (class226.field3071.hash & 0xff0000L) == 16711680L, SoundSystem.field2545);
                         }
 
                         class226.field3071.unlink();
-                        if (class215.field2545) {
+                        if (SoundSystem.field2545) {
                            --class236.field3168;
                         } else {
                            --class236.field3164;
@@ -450,7 +450,7 @@ public class class26 {
             }
          } catch (IOException ioexception_22) {
             try {
-               class236.field3176.vmethod5830(917200570);
+               class236.field3176.close();
             } catch (Exception exception_20) {
                ;
             }

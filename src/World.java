@@ -1,10 +1,10 @@
-public class class71 {
+public class World {
 
-   static class71[] field1031;
+   static World[] field1031;
    static class144 field1027;
-   int field1023;
-   String field1029;
-   int field1025;
+   int properties;
+   String host;
+   int id;
    int field1034;
    int field1030;
    String field1028;
@@ -15,30 +15,30 @@ public class class71 {
    static int[] field1026 = new int[] {0, 1, 2, 3};
 
    boolean method1680() {
-      return (0x1 & this.field1023) != 0;
+      return (0x1 & this.properties) != 0;
    }
 
    boolean method1698() {
-      return (0x8 & this.field1023) != 0;
+      return (0x8 & this.properties) != 0;
    }
 
    boolean method1682() {
-      return (0x2 & this.field1023) != 0;
+      return (0x2 & this.properties) != 0;
    }
 
    boolean method1718() {
-      return (0x4 & this.field1023) != 0;
+      return (0x4 & this.properties) != 0;
    }
 
    boolean method1688() {
-      return (0x2000000 & this.field1023) != 0;
+      return (0x2000000 & this.properties) != 0;
    }
 
    boolean method1684() {
-      return (0x20000000 & this.field1023) != 0;
+      return (0x20000000 & this.properties) != 0;
    }
 
-   static int method1686(Buffer_3 buffer3_0) {
+   static int method1686(PacketBuffer buffer3_0) {
       int i_2 = buffer3_0.method5445(2);
       int i_3;
       if (i_2 == 0) {
@@ -58,14 +58,14 @@ public class class71 {
       class92 class92_2 = new class92();
       ByteBuffer class300_3 = new ByteBuffer(bytes_0);
       class300_3.position = class300_3.buffer.length - 2;
-      int i_4 = class300_3.readUnsignedShortBigEndian();
+      int i_4 = class300_3.readUnsignedShort();
       int i_5 = class300_3.buffer.length - 2 - i_4 - 12;
       class300_3.position = i_5;
       int i_6 = class300_3.readIntMedEndian();
-      class92_2.field1283 = class300_3.readUnsignedShortBigEndian();
-      class92_2.field1285 = class300_3.readUnsignedShortBigEndian();
-      class92_2.field1289 = class300_3.readUnsignedShortBigEndian();
-      class92_2.field1290 = class300_3.readUnsignedShortBigEndian();
+      class92_2.field1283 = class300_3.readUnsignedShort();
+      class92_2.field1285 = class300_3.readUnsignedShort();
+      class92_2.field1289 = class300_3.readUnsignedShort();
+      class92_2.field1290 = class300_3.readUnsignedShort();
       int i_7 = class300_3.readUnsignedByte();
       int i_8;
       int i_9;
@@ -73,7 +73,7 @@ public class class71 {
          class92_2.field1287 = class92_2.method2182(i_7);
 
          for (i_8 = 0; i_8 < i_7; i_8++) {
-            i_9 = class300_3.readUnsignedShortBigEndian();
+            i_9 = class300_3.readUnsignedShort();
             int i_10;
             int i_12;
             if (i_9 > 0) {
@@ -107,7 +107,7 @@ public class class71 {
       class92_2.field1286 = new String[i_6];
 
       for (i_8 = 0; class300_3.position < i_5; class92_2.field1284[i_8++] = i_9) {
-         i_9 = class300_3.readUnsignedShortBigEndian();
+         i_9 = class300_3.readUnsignedShort();
          if (i_9 == 3) {
             class92_2.field1286[i_8] = class300_3.readNullTerminatedString();
          } else if (i_9 < 100 && i_9 != 21 && i_9 != 38 && i_9 != 39) {

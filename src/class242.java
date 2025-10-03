@@ -1,4 +1,4 @@
-public class class242 extends class175 {
+public class class242 extends DualNode {
 
    public static class233 field3233;
    public static class145 field3232 = new class145(64);
@@ -46,7 +46,7 @@ public class class242 extends class175 {
          long_4 /= 37L;
       }
 
-      String string_9 = class215.method4023(long_4);
+      String string_9 = SoundSystem.base37DecodeLong(long_4);
       if (string_9 == null) {
          string_9 = "";
       }

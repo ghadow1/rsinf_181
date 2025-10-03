@@ -9,21 +9,21 @@ public class InBuffer {
    class260 field1316 = new class260();
    int field1311 = 0;
    ByteBuffer field1312 = new ByteBuffer(5000);
-   Buffer_3 field1314 = new Buffer_3(40000);
-   ServerPacketProt packet = null;
-   int field1315 = 0;
+   PacketBuffer packetBuffer = new PacketBuffer(40000);
+   ServerPacketProt serverPacket = null;
+   int serverPacketLength = 0;
    boolean field1322 = true;
    int field1318 = 0;
    int field1319 = 0;
-   Stream field1320;
+   AbstractSocket field1320;
 
-   Stream method2223() {
+   AbstractSocket getSocket() {
       return this.field1320;
    }
 
    void method2233() {
       if (this.field1320 != null) {
-         this.field1320.vmethod5830(-768440649);
+         this.field1320.close();
          this.field1320 = null;
       }
 
@@ -45,7 +45,7 @@ public class InBuffer {
       this.field1311 += class187_1.field2331;
    }
 
-   void method2221(Stream class305_1) {
+   void method2221(AbstractSocket class305_1) {
       this.field1320 = class305_1;
    }
 
