@@ -1698,7 +1698,7 @@ public final class Client extends GameApplet implements class280 {
                field905 = packet_integer_653;
                this.method1293(false);
                HealthBarUpdate.method146(packet_integer_653);
-               class48.method813(field905, 1705541685);
+               class48.method813(field905);
 
                for (i_6 = 0; i_6 < 100; i_6++) {
                   field843[i_6] = true;
@@ -1807,7 +1807,7 @@ public final class Client extends GameApplet implements class280 {
                   field905 = i_6;
                   this.method1293(false);
                   HealthBarUpdate.method146(field905);
-                  class48.method813(field905, 1801594515);
+                  class48.method813(field905);
 
                   for (i_8 = 0; i_8 < 100; i_8++) {
                      field843[i_8] = true;

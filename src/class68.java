@@ -57,7 +57,7 @@ public final class class68 extends LinkedListNode {
 
       HealthBarUpdate.method145();
       WorldMapID.method413(Widget.field2556[i_0 >> 16], widget_5, false);
-      class48.method813(i_1, 1924602779);
+      class48.method813(i_1);
       if (Client.field905 != -1) {
          class17.method175(Client.field905, 1, -1199742641);
       }

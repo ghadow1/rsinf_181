@@ -20,7 +20,7 @@ public final class class48 extends Canvas {
       this.field423.update(graphics_1);
    }
 
-   static void method813(int i_0, int i_1) {
+   static void method813(int i_0) {
       if (i_0 != -1) {
          if (class162.method3445(i_0)) {
             Widget[] arr_2 = Widget.field2556[i_0];

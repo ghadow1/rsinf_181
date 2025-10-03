@@ -42,39 +42,39 @@ public class class96 {
                for (i_11 = 1; i_11 < arr_3.length; i_11++) {
                   if (arr_3[i_11] instanceof Integer) {
                      i_12 = ((Integer) arr_3[i_11]).intValue();
-                     if (i_12 == -2147483647) {
+                     if (i_12 == 0x80000001) {
                         i_12 = class62_0.field576;
                      }
 
-                     if (i_12 == -2147483646) {
+                     if (i_12 == 0x80000002) {
                         i_12 = class62_0.field577;
                      }
 
-                     if (i_12 == -2147483645) {
+                     if (i_12 == 0x80000003) {
                         i_12 = class62_0.field575 != null ? class62_0.field575.field2688 : -1;
                      }
 
-                     if (i_12 == -2147483644) {
+                     if (i_12 == 0x80000004) {
                         i_12 = class62_0.field578;
                      }
 
-                     if (i_12 == -2147483643) {
+                     if (i_12 == 0x80000005) {
                         i_12 = class62_0.field575 != null ? class62_0.field575.field2565 : -1;
                      }
 
-                     if (i_12 == -2147483642) {
+                     if (i_12 == 0x80000006) {
                         i_12 = class62_0.field579 != null ? class62_0.field579.field2688 : -1;
                      }
 
-                     if (i_12 == -2147483641) {
+                     if (i_12 == 0x80000007) {
                         i_12 = class62_0.field579 != null ? class62_0.field579.field2565 : -1;
                      }
 
-                     if (i_12 == -2147483640) {
+                     if (i_12 == 0x80000008) {
                         i_12 = class62_0.field580;
                      }
 
-                     if (i_12 == -2147483639) {
+                     if (i_12 == 0x80000009) {
                         i_12 = class62_0.field587;
                      }
 
@@ -109,7 +109,7 @@ public class class96 {
                         bool_33 = false;
                      }
 
-                     i_21 = NPC.method1977(i_30, class92_4, bool_33, -1435183788);
+                     i_21 = NPC.method1977(i_30, class92_4, bool_33);
                      switch(i_21) {
                      case 0:
                         return;
