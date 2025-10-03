@@ -19,17 +19,17 @@ public class class20 implements UnknownT {
    static final void method238(PacketBuffer buffer3_0, byte b_1) {
       buffer3_0.method5438();
       int i_2 = Client.field770;
-      class66 class66_3 = Client.field657 = Client.field909[i_2] = new class66();
+      class66 class66_3 = Client.localPlayer = Client.field909[i_2] = new class66();
       class66_3.field637 = i_2;
       int i_4 = buffer3_0.method5445(30);
       byte b_5 = (byte)(i_4 >> 28);
       int i_6 = i_4 >> 14 & 0x3fff;
       int i_7 = i_4 & 0x3fff;
       class66_3.field994[0] = i_6 - class196.field2389;
-      class66_3.field1005 = (class66_3.field994[0] << 7) + (class66_3.method1187() << 6);
+      class66_3.x = (class66_3.field994[0] << 7) + (class66_3.method1187() << 6);
       class66_3.field962[0] = i_7 - class1.field1;
-      class66_3.field949 = (class66_3.field962[0] << 7) + (class66_3.method1187() << 6);
-      class42.field372 = class66_3.field629 = b_5;
+      class66_3.y = (class66_3.field962[0] << 7) + (class66_3.method1187() << 6);
+      ItemContainer_2.plane = class66_3.field629 = b_5;
       if (class89.field1254[i_2] != null) {
          class66_3.method1179(class89.field1254[i_2]);
       }
@@ -64,7 +64,7 @@ public class class20 implements UnknownT {
          int i_5 = MouseRecorder.field1098[class70.field1014 + 1];
          if (!Client.field899) {
             Client.field721 = i_4;
-            Client.field722 = i_5;
+            Client.camAngleY = i_5;
          }
 
          return 1;
@@ -72,7 +72,7 @@ public class class20 implements UnknownT {
          MouseRecorder.field1098[++class70.field1014 - 1] = Client.field721;
          return 1;
       } else if (i_0 == 5506) {
-         MouseRecorder.field1098[++class70.field1014 - 1] = Client.field722;
+         MouseRecorder.field1098[++class70.field1014 - 1] = Client.camAngleY;
          return 1;
       } else if (i_0 == 5530) {
          i_4 = MouseRecorder.field1098[--class70.field1014];

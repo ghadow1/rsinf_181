@@ -79,9 +79,9 @@ public class class144 {
             i_9 = i_3 * i_7 * 512 / (s_18 * 334);
             i_10 = (i_2 - i_9) / 2;
             if (bool_4) {
-               class321.method5996();
-               class321.fillRectangle(i_0, i_1, i_10, i_3, -16777216);
-               class321.fillRectangle(i_0 + i_2 - i_10, i_1, i_10, i_3, -16777216);
+               Rasterizer2D.method5996();
+               Rasterizer2D.fillRectangle(i_0, i_1, i_10, i_3, -16777216);
+               Rasterizer2D.fillRectangle(i_0 + i_2 - i_10, i_1, i_10, i_3, -16777216);
             }
 
             i_0 += i_10;
@@ -95,9 +95,9 @@ public class class144 {
             i_9 = s_18 * i_2 * 334 / (i_7 * 512);
             i_10 = (i_3 - i_9) / 2;
             if (bool_4) {
-               class321.method5996();
-               class321.fillRectangle(i_0, i_1, i_2, i_10, -16777216);
-               class321.fillRectangle(i_0, i_3 + i_1 - i_10, i_2, i_10, -16777216);
+               Rasterizer2D.method5996();
+               Rasterizer2D.fillRectangle(i_0, i_1, i_2, i_10, -16777216);
+               Rasterizer2D.fillRectangle(i_0, i_3 + i_1 - i_10, i_2, i_10, -16777216);
             }
 
             i_1 += i_10;

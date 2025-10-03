@@ -39,11 +39,11 @@ public class class63 implements Runnable {
    }
 
    static final void method1141(int i_0) {
-      for (int i_1 = 0; i_1 < Client.field695; i_1++) {
-         int i_2 = Client.field696[i_1];
-         class79 class79_3 = Client.field694[i_2];
-         if (class79_3 != null) {
-            class250.method4531(class79_3, class79_3.field1134.field3469, (byte) 16);
+      for (int i_1 = 0; i_1 < Client.npcCount; i_1++) {
+         int i_2 = Client.npcIndices[i_1];
+         NPC NPC_3 = Client.npcs[i_2];
+         if (NPC_3 != null) {
+            class250.method4531(NPC_3, NPC_3.definition.field3469, (byte) 16);
          }
       }
 

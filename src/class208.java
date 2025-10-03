@@ -164,7 +164,7 @@ public class class208 {
                class221.field2747 -= 2;
                string_4 = MouseRecorder.field1093[class221.field2747];
                string_10 = MouseRecorder.field1093[class221.field2747 + 1];
-               if (Client.field657.field613 != null && Client.field657.field613.field2535) {
+               if (Client.localPlayer.field613 != null && Client.localPlayer.field613.field2535) {
                   MouseRecorder.field1093[++class221.field2747 - 1] = string_10;
                } else {
                   MouseRecorder.field1093[++class221.field2747 - 1] = string_4;

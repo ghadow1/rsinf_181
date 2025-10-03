@@ -76,7 +76,7 @@ public class class212 {
                }
 
                if (i_7 == 8) {
-                  i_8 = Client.field657.field618;
+                  i_8 = Client.localPlayer.field618;
                }
 
                if (i_7 == 9) {
@@ -134,11 +134,11 @@ public class class212 {
                }
 
                if (i_7 == 18) {
-                  i_8 = (Client.field657.field1005 >> 7) + class196.field2389;
+                  i_8 = (Client.localPlayer.x >> 7) + class196.field2389;
                }
 
                if (i_7 == 19) {
-                  i_8 = (Client.field657.field949 >> 7) + class1.field1;
+                  i_8 = (Client.localPlayer.y >> 7) + class1.field1;
                }
 
                if (i_7 == 20) {

@@ -22,7 +22,7 @@ public abstract class class135 extends DualNode {
          if (Client.menuOptionsCount < 500) {
             Client.field796[Client.menuOptionsCount] = string_0;
             Client.field668[Client.menuOptionsCount] = string_1;
-            Client.field794[Client.menuOptionsCount] = i_2;
+            Client.menuOpcodes[Client.menuOptionsCount] = i_2;
             Client.field795[Client.menuOptionsCount] = i_3;
             Client.field792[Client.menuOptionsCount] = i_4;
             Client.field793[Client.menuOptionsCount] = i_5;

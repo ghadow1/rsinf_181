@@ -20,8 +20,8 @@ public class class91 {
          Client.field755 = i_7;
          Client.field757 = 2;
          Client.field756 = 0;
-         Client.field885 = i_0;
-         Client.field842 = i_1;
+         Client.destinationX = i_0;
+         Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2247, Client.data.field1313);
          class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1);
          class187_9.outBuffer.writeShortLittleEndian(class23.field182);
@@ -36,8 +36,8 @@ public class class91 {
          Client.field755 = i_7;
          Client.field757 = 2;
          Client.field756 = 0;
-         Client.field885 = i_0;
-         Client.field842 = i_1;
+         Client.destinationX = i_0;
+         Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2295, Client.data.field1313);
          class187_9.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
          class187_9.outBuffer.writeShortBigEndian(i_0 + class196.field2389);
@@ -51,8 +51,8 @@ public class class91 {
          Client.field755 = i_7;
          Client.field757 = 2;
          Client.field756 = 0;
-         Client.field885 = i_0;
-         Client.field842 = i_1;
+         Client.destinationX = i_0;
+         Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2213, Client.data.field1313);
          class187_9.outBuffer.writeShortBigEndian(class1.field1 + i_1);
          class187_9.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
@@ -64,8 +64,8 @@ public class class91 {
          Client.field755 = i_7;
          Client.field757 = 2;
          Client.field756 = 0;
-         Client.field885 = i_0;
-         Client.field842 = i_1;
+         Client.destinationX = i_0;
+         Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2282, Client.data.field1313);
          class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
          class187_9.outBuffer.writeShortBigEndian(i_3);
@@ -77,8 +77,8 @@ public class class91 {
          Client.field755 = i_7;
          Client.field757 = 2;
          Client.field756 = 0;
-         Client.field885 = i_0;
-         Client.field842 = i_1;
+         Client.destinationX = i_0;
+         Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2292, Client.data.field1313);
          class187_9.outBuffer.writeShortWithOffset(i_0 + class196.field2389);
          class187_9.outBuffer.writeShortWithOffset2(i_3);
@@ -90,8 +90,8 @@ public class class91 {
          Client.field755 = i_7;
          Client.field757 = 2;
          Client.field756 = 0;
-         Client.field885 = i_0;
-         Client.field842 = i_1;
+         Client.destinationX = i_0;
+         Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2259, Client.data.field1313);
          class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
          class187_9.outBuffer.writeShortWithOffset2(class1.field1 + i_1);
@@ -100,16 +100,16 @@ public class class91 {
          Client.data.copy(class187_9);
       } else {
          class187 class187_10;
-         class79 class79_14;
+         NPC NPC_14;
          if (i_2 == 7) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2207, Client.data.field1313);
                class187_10.outBuffer.writeShortWithOffset(class4.field19);
                class187_10.outBuffer.writeShortBigEndian(class23.field182);
@@ -119,14 +119,14 @@ public class class91 {
                Client.data.copy(class187_10);
             }
          } else if (i_2 == 8) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2304, Client.data.field1313);
                class187_10.outBuffer.writeShortWithOffset(i_3);
                class187_10.outBuffer.writeNegatedByte(class45.field395[82] ? 1 : 0);
@@ -135,70 +135,70 @@ public class class91 {
                Client.data.copy(class187_10);
             }
          } else if (i_2 == 9) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2274, Client.data.field1313);
                class187_10.outBuffer.writeNegatedByte(class45.field395[82] ? 1 : 0);
                class187_10.outBuffer.writeShortLittleEndian(i_3);
                Client.data.copy(class187_10);
             }
          } else if (i_2 == 10) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2204, Client.data.field1313);
                class187_10.outBuffer.writeShortWithOffset2(i_3);
                class187_10.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
                Client.data.copy(class187_10);
             }
          } else if (i_2 == 11) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2254, Client.data.field1313);
                class187_10.outBuffer.writeShortWithOffset(i_3);
                class187_10.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
                Client.data.copy(class187_10);
             }
          } else if (i_2 == 12) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2303, Client.data.field1313);
                class187_10.outBuffer.writeShortBigEndian(i_3);
                class187_10.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
                Client.data.copy(class187_10);
             }
          } else if (i_2 == 13) {
-            class79_14 = Client.field694[i_3];
-            if (class79_14 != null) {
+            NPC_14 = Client.npcs[i_3];
+            if (NPC_14 != null) {
                Client.field876 = i_6;
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_10 = class235.method4265(ClientPacketProt.field2214, Client.data.field1313);
                class187_10.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
                class187_10.outBuffer.writeShortWithOffset2(i_3);
@@ -213,8 +213,8 @@ public class class91 {
                   Client.field755 = i_7;
                   Client.field757 = 2;
                   Client.field756 = 0;
-                  Client.field885 = i_0;
-                  Client.field842 = i_1;
+                  Client.destinationX = i_0;
+                  Client.destinationY = i_1;
                   class187_10 = class235.method4265(ClientPacketProt.field2284, Client.data.field1313);
                   class187_10.outBuffer.writeShortWithOffset(class23.field182);
                   class187_10.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
@@ -230,8 +230,8 @@ public class class91 {
                   Client.field755 = i_7;
                   Client.field757 = 2;
                   Client.field756 = 0;
-                  Client.field885 = i_0;
-                  Client.field842 = i_1;
+                  Client.destinationX = i_0;
+                  Client.destinationY = i_1;
                   class187_10 = class235.method4265(ClientPacketProt.field2277, Client.data.field1313);
                   class187_10.outBuffer.writeIntCustomOrder(class41.field359);
                   class187_10.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
@@ -244,8 +244,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2221, Client.data.field1313);
                class187_9.outBuffer.writeIntReversed(class63.field594);
                class187_9.outBuffer.writeShortWithOffset(class4.field19);
@@ -260,8 +260,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2293, Client.data.field1313);
                class187_9.outBuffer.writeIntReversed(class41.field359);
                class187_9.outBuffer.writeShortBigEndian(Client.field848);
@@ -275,8 +275,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2208, Client.data.field1313);
                class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1);
                class187_9.outBuffer.writeShortLittleEndian(i_3);
@@ -288,8 +288,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2256, Client.data.field1313);
                class187_9.outBuffer.writeShortWithOffset(i_3);
                class187_9.outBuffer.writeShortWithOffset2(i_0 + class196.field2389);
@@ -301,8 +301,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2269, Client.data.field1313);
                class187_9.outBuffer.writeShortLittleEndian(class1.field1 + i_1);
                class187_9.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
@@ -314,8 +314,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2203, Client.data.field1313);
                class187_9.outBuffer.writeShortWithOffset2(class1.field1 + i_1);
                class187_9.outBuffer.writeShortLittleEndian(i_3);
@@ -327,8 +327,8 @@ public class class91 {
                Client.field755 = i_7;
                Client.field757 = 2;
                Client.field756 = 0;
-               Client.field885 = i_0;
-               Client.field842 = i_1;
+               Client.destinationX = i_0;
+               Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2218, Client.data.field1313);
                class187_9.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
                class187_9.outBuffer.writeShortWithOffset(i_3);
@@ -339,7 +339,7 @@ public class class91 {
                if (Client.field674) {
                   class5.field22.method3104();
                } else {
-                  class5.field22.method3103(class42.field372, i_0, i_1, true);
+                  class5.field22.method3103(ItemContainer_2.plane, i_0, i_1, true);
                }
             } else {
                class187 class187_11;
@@ -548,8 +548,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2250, Client.data.field1313);
                               class187_10.outBuffer.writeShortBigEndian(i_3);
                               class187_10.outBuffer.writeNegatedByte(class45.field395[82] ? 1 : 0);
@@ -562,8 +562,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2301, Client.data.field1313);
                               class187_10.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
                               class187_10.outBuffer.writeShortWithOffset2(i_3);
@@ -576,8 +576,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2209, Client.data.field1313);
                               class187_10.outBuffer.writeShortWithOffset2(i_3);
                               class187_10.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
@@ -590,8 +590,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2230, Client.data.field1313);
                               class187_10.outBuffer.writeShortWithOffset(i_3);
                               class187_10.outBuffer.writeNegatedByte(class45.field395[82] ? 1 : 0);
@@ -604,8 +604,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2241, Client.data.field1313);
                               class187_10.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
                               class187_10.outBuffer.writeShortWithOffset2(i_3);
@@ -618,8 +618,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2257, Client.data.field1313);
                               class187_10.outBuffer.writeShortWithOffset2(i_3);
                               class187_10.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
@@ -632,8 +632,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2278, Client.data.field1313);
                               class187_10.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
                               class187_10.outBuffer.writeShortLittleEndian(i_3);
@@ -646,8 +646,8 @@ public class class91 {
                               Client.field755 = i_7;
                               Client.field757 = 2;
                               Client.field756 = 0;
-                              Client.field885 = i_0;
-                              Client.field842 = i_1;
+                              Client.destinationX = i_0;
+                              Client.destinationY = i_1;
                               class187_10 = class235.method4265(ClientPacketProt.field2253, Client.data.field1313);
                               class187_10.outBuffer.writeNegatedByte(class45.field395[82] ? 1 : 0);
                               class187_10.outBuffer.writeShortWithOffset(i_3);
@@ -676,8 +676,8 @@ public class class91 {
                                     Client.field755 = i_7;
                                     Client.field757 = 2;
                                     Client.field756 = 0;
-                                    Client.field885 = i_0;
-                                    Client.field842 = i_1;
+                                    Client.destinationX = i_0;
+                                    Client.destinationY = i_1;
                                     class187_9 = class235.method4265(ClientPacketProt.field2226, Client.data.field1313);
                                     class187_9.outBuffer.writeShortBigEndian(i_3);
                                     class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
@@ -703,16 +703,16 @@ public class class91 {
                                     Client.field755 = i_7;
                                     Client.field757 = 2;
                                     Client.field756 = 0;
-                                    class79_14 = Client.field694[i_3];
-                                    if (class79_14 != null) {
-                                       class256 class256_18 = class79_14.field1134;
-                                       if (class256_18.field3476 != null) {
-                                          class256_18 = class256_18.method4709(942859640);
+                                    NPC_14 = Client.npcs[i_3];
+                                    if (NPC_14 != null) {
+                                       NPCDefinition NPCDefinition_18 = NPC_14.definition;
+                                       if (NPCDefinition_18.field3476 != null) {
+                                          NPCDefinition_18 = NPCDefinition_18.transform();
                                        }
 
-                                       if (class256_18 != null) {
+                                       if (NPCDefinition_18 != null) {
                                           class187_11 = class235.method4265(ClientPacketProt.field2233, Client.data.field1313);
-                                          class187_11.outBuffer.writeShortWithOffset2(class256_18.field3467);
+                                          class187_11.outBuffer.writeShortWithOffset2(NPCDefinition_18.field3467);
                                           Client.data.copy(class187_11);
                                        }
                                     }

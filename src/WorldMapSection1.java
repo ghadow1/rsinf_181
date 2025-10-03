@@ -1,6 +1,6 @@
-public class class39 extends class21 {
+public class WorldMapSection1 extends class21 {
 
-   static class325[] field342;
+   static class325[] mapMarkerSprites;
    static short[] field336;
    int field340;
    int field335;
@@ -72,11 +72,11 @@ public class class39 extends class21 {
    }
 
    public boolean equals(Object object_1) {
-      if (!(object_1 instanceof class39)) {
+      if (!(object_1 instanceof WorldMapSection1)) {
          return false;
       } else {
-         class39 class39_2 = (class39) object_1;
-         return class39_2.field157 == super.field157 && super.field158 == class39_2.field158 ? class39_2.field337 == this.field337 && class39_2.field338 == this.field338 : false;
+         WorldMapSection1 worldMapSection1_2 = (WorldMapSection1) object_1;
+         return worldMapSection1_2.field157 == super.field157 && super.field158 == worldMapSection1_2.field158 ? worldMapSection1_2.field337 == this.field337 && worldMapSection1_2.field338 == this.field338 : false;
       }
    }
 

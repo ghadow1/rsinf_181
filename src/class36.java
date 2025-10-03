@@ -148,7 +148,7 @@ public final class class36 {
                   class34 class34_13 = (class34) iterator_12.next();
                   int i_14 = i_3 * (class34_13.field297.field2530 - this.field319) / this.field314;
                   int i_15 = i_4 - (class34_13.field297.field2528 - this.field325) * i_4 / this.field324;
-                  class321.drawCircleAlpha2D(i_14 + i_1, i_15 + i_2, 2, 16776960, 256);
+                  Rasterizer2D.drawCircleAlpha2D(i_14 + i_1, i_15 + i_2, 2, 16776960, 256);
                }
             }
          }
@@ -251,11 +251,11 @@ public final class class36 {
    }
 
    public final void method604(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, byte b_9) {
-      int[] ints_10 = class321.Rasterizer2D_pixels;
-      int i_11 = class321.Rasterizer2D_width;
-      int i_12 = class321.Rasterizer2D_height;
+      int[] ints_10 = Rasterizer2D.Rasterizer2D_pixels;
+      int i_11 = Rasterizer2D.Rasterizer2D_width;
+      int i_12 = Rasterizer2D.Rasterizer2D_height;
       int[] ints_13 = new int[4];
-      class321.method5999(ints_13);
+      Rasterizer2D.getClipArray(ints_13);
       class22 class22_14 = this.method641(i_1, i_2, i_3, i_4, 1998978959);
       float f_15 = this.method612(i_7 - i_5, i_3 - i_1, -983856877);
       int i_16 = (int)Math.ceil((double)f_15);
@@ -277,8 +277,8 @@ public final class class36 {
          }
       }
 
-      class321.method6033(ints_10, i_11, i_12);
-      class321.method6013(ints_13);
+      Rasterizer2D.replace(ints_10, i_11, i_12);
+      Rasterizer2D.method6013(ints_13);
       i_19 = (int)(f_15 * 64.0F);
       i_20 = this.field319 + i_1;
       int i_21 = i_2 + this.field325;
@@ -333,14 +333,14 @@ public final class class36 {
    }
 
    static final void method601(class66 class66_0, int i_1, int i_2, int i_3, byte b_4) {
-      if (Client.field657 != class66_0) {
+      if (Client.localPlayer != class66_0) {
          if (Client.menuOptionsCount < 400) {
             String string_5;
             int i_8;
             if (class66_0.field617 == 0) {
                String string_6 = class66_0.field619[0] + class66_0.field621 + class66_0.field619[1];
                i_8 = class66_0.field618;
-               int i_9 = Client.field657.field618;
+               int i_9 = Client.localPlayer.field618;
                int i_10 = i_9 - i_8;
                String string_7;
                if (i_10 < -9) {
@@ -370,10 +370,10 @@ public final class class36 {
 
             int i_11;
             if (Client.isItemSelected == 1) {
-               class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16777215) + string_5, 14, i_1, i_2, i_3, -1599303692);
+               class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16777215) + string_5, 14, i_1, i_2, i_3);
             } else if (Client.isSpellSelected) {
                if ((WorldMapCacheName.field301 & 0x8) == 8) {
-                  class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16777215) + string_5, 15, i_1, i_2, i_3, 1801868715);
+                  class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16777215) + string_5, 15, i_1, i_2, i_3);
                }
             } else {
                for (i_11 = 7; i_11 >= 0; --i_11) {
@@ -384,12 +384,12 @@ public final class class36 {
                            continue;
                         }
 
-                        if (class84.field1167 == Client.field678 || class84.field1173 == Client.field678 && class66_0.field618 > Client.field657.field618) {
+                        if (class84.field1167 == Client.field678 || class84.field1173 == Client.field678 && class66_0.field618 > Client.localPlayer.field618) {
                            s_12 = 2000;
                         }
 
-                        if (Client.field657.field632 != 0 && class66_0.field632 != 0) {
-                           if (class66_0.field632 == Client.field657.field632) {
+                        if (Client.localPlayer.field632 != 0 && class66_0.field632 != 0) {
+                           if (class66_0.field632 == Client.localPlayer.field632) {
                               s_12 = 2000;
                            } else {
                               s_12 = 0;
@@ -401,13 +401,13 @@ public final class class36 {
 
                      boolean bool_13 = false;
                      i_8 = Client.field811[i_11] + s_12;
-                     class188.method3644(Client.field778[i_11], class73.colorStartTag(16777215) + string_5, i_8, i_1, i_2, i_3, 209520680);
+                     class188.method3644(Client.field778[i_11], class73.colorStartTag(16777215) + string_5, i_8, i_1, i_2, i_3);
                   }
                }
             }
 
             for (i_11 = 0; i_11 < Client.menuOptionsCount; i_11++) {
-               if (Client.field794[i_11] == 23) {
+               if (Client.menuOpcodes[i_11] == 23) {
                   Client.field668[i_11] = class73.colorStartTag(16777215) + string_5;
                   break;
                }

@@ -4,7 +4,7 @@ public class class138 extends DualNode {
    class125[] field1893;
 
    class138(class233 class233_1, class233 class233_2, int i_3, boolean bool_4) {
-      class261 class261_5 = new class261();
+      NodeDeque nodeDeque_5 = new NodeDeque();
       int i_6 = class233_1.method4154(i_3);
       this.field1893 = new class125[i_6];
       int[] ints_7 = class233_1.method4153(i_3);
@@ -14,7 +14,7 @@ public class class138 extends DualNode {
          class132 class132_10 = null;
          int i_11 = (bytes_9[0] & 0xff) << 8 | bytes_9[1] & 0xff;
 
-         for (class132 class132_12 = (class132) class261_5.method4892(); class132_12 != null; class132_12 = (class132) class261_5.method4894()) {
+         for (class132 class132_12 = (class132) nodeDeque_5.method4892(); class132_12 != null; class132_12 = (class132) nodeDeque_5.method4894()) {
             if (i_11 == class132_12.field1799) {
                class132_10 = class132_12;
                break;
@@ -30,7 +30,7 @@ public class class138 extends DualNode {
             }
 
             class132_10 = new class132(i_11, bytes_13);
-            class261_5.method4917(class132_10);
+            nodeDeque_5.method4917(class132_10);
          }
 
          this.field1893[ints_7[i_8]] = new class125(bytes_9, class132_10);
@@ -102,7 +102,7 @@ public class class138 extends DualNode {
       }
    }
 
-   public static final boolean method3267(int i_0, int i_1, class174 class174_2, class172 class172_3, int i_4) {
+   public static final boolean method3267(int i_0, int i_1, ParamDefinition paramDefinition_2, class172 class172_3, int i_4) {
       int i_5 = i_0;
       int i_6 = i_1;
       byte b_7 = 64;
@@ -127,7 +127,7 @@ public class class138 extends DualNode {
          int i_18 = i_6 - i_10;
          int i_14 = i_5 - class172_3.field2071;
          int i_15 = i_6 - class172_3.field2082;
-         if (class174_2.vmethod3594(2, i_5, i_6, class172_3, -1888775070)) {
+         if (paramDefinition_2.vmethod3594(2, i_5, i_6, class172_3, -1888775070)) {
             class173.field2088 = i_5;
             class218.field2707 = i_6;
             return true;

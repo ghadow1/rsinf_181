@@ -28,7 +28,7 @@ final class class1 implements class0 {
          i_8 = (i_7 >> 4 & 0x7) + class311.localSceneX;
          i_9 = (i_7 & 0x7) + UserComparator10.localSceneY;
          if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
-            class201.method3885(class42.field372, i_8, i_9, i_6, -1, i_4, i_5, 0, -1, -1700353173);
+            class201.method3885(ItemContainer_2.plane, i_8, i_9, i_6, -1, i_4, i_5, 0, -1, -1700353173);
          }
 
       } else {
@@ -39,17 +39,17 @@ final class class1 implements class0 {
             i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
             i_6 = buffer3_2.readShortWithOffset2();
             if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
-               class261 class261_32 = Client.field887[class42.field372][i_4][i_5];
-               if (class261_32 != null) {
-                  for (class87_33 = (class87) class261_32.method4892(); class87_33 != null; class87_33 = (class87) class261_32.method4894()) {
+               NodeDeque nodeDeque_32 = Client.groundItems[ItemContainer_2.plane][i_4][i_5];
+               if (nodeDeque_32 != null) {
+                  for (class87_33 = (class87) nodeDeque_32.method4892(); class87_33 != null; class87_33 = (class87) nodeDeque_32.method4894()) {
                      if ((i_6 & 0x7fff) == class87_33.field1244) {
                         class87_33.unlink();
                         break;
                      }
                   }
 
-                  if (class261_32.method4892() == null) {
-                     Client.field887[class42.field372][i_4][i_5] = null;
+                  if (nodeDeque_32.method4892() == null) {
+                     Client.groundItems[ItemContainer_2.plane][i_4][i_5] = null;
                   }
 
                   class5.method60(i_4, i_5);
@@ -84,8 +84,8 @@ final class class1 implements class0 {
                   i_13 = i_13 * 128 + 64;
                   i_15 = i_15 * 128 + 64;
                   i_42 = i_42 * 128 + 64;
-                  class86 class86_16 = new class86(i_5, class42.field372, i_40, i_13, class62.method1130(i_40, i_13, class42.field372) - i_6, i_10 + Client.field881, i_4 + Client.field881, i_8, i_9, i_7, i_3);
-                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, class42.field372) - i_3, i_10 + Client.field881, -2118689642);
+                  class86 class86_16 = new class86(i_5, ItemContainer_2.plane, i_40, i_13, class62.method1130(i_40, i_13, ItemContainer_2.plane) - i_6, i_10 + Client.field881, i_4 + Client.field881, i_8, i_9, i_7, i_3);
+                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, ItemContainer_2.plane) - i_3, i_10 + Client.field881, -2118689642);
                   Client.field670.method4917(class86_16);
                }
 
@@ -97,9 +97,9 @@ final class class1 implements class0 {
                i_7 = (i_6 >> 4 & 0x7) + class311.localSceneX;
                i_8 = (i_6 & 0x7) + UserComparator10.localSceneY;
                if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
-                  class261 class261_43 = Client.field887[class42.field372][i_7][i_8];
-                  if (class261_43 != null) {
-                     for (class87 class87_35 = (class87) class261_43.method4892(); class87_35 != null; class87_35 = (class87) class261_43.method4894()) {
+                  NodeDeque nodeDeque_43 = Client.groundItems[ItemContainer_2.plane][i_7][i_8];
+                  if (nodeDeque_43 != null) {
+                     for (class87 class87_35 = (class87) nodeDeque_43.method4892(); class87_35 != null; class87_35 = (class87) nodeDeque_43.method4894()) {
                         if ((i_3 & 0x7fff) == class87_35.field1244 && i_5 == class87_35.field1245) {
                            class87_35.field1245 = i_4;
                            break;
@@ -120,11 +120,11 @@ final class class1 implements class0 {
                   class87_33 = new class87();
                   class87_33.field1244 = i_4;
                   class87_33.field1245 = i_3;
-                  if (Client.field887[class42.field372][i_6][i_7] == null) {
-                     Client.field887[class42.field372][i_6][i_7] = new class261();
+                  if (Client.groundItems[ItemContainer_2.plane][i_6][i_7] == null) {
+                     Client.groundItems[ItemContainer_2.plane][i_6][i_7] = new NodeDeque();
                   }
 
-                  Client.field887[class42.field372][i_6][i_7].method4917(class87_33);
+                  Client.groundItems[ItemContainer_2.plane][i_6][i_7].method4917(class87_33);
                   class5.method60(i_6, i_7);
                }
 
@@ -140,7 +140,7 @@ final class class1 implements class0 {
                   i_10 = buffer3_2.readShortWithOffset2();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
                      i_11 = i_8 + 1;
-                     if (Client.field657.field994[0] >= i_4 - i_11 && Client.field657.field994[0] <= i_4 + i_11 && Client.field657.field962[0] >= i_5 - i_11 && Client.field657.field962[0] <= i_5 + i_11 && Client.field892 != 0 && i_9 > 0 && Client.field893 < 50) {
+                     if (Client.localPlayer.field994[0] >= i_4 - i_11 && Client.localPlayer.field994[0] <= i_4 + i_11 && Client.localPlayer.field962[0] >= i_5 - i_11 && Client.localPlayer.field962[0] <= i_5 + i_11 && Client.field892 != 0 && i_9 > 0 && Client.field893 < 50) {
                         Client.field894[Client.field893] = i_10;
                         Client.field895[Client.field893] = i_9;
                         Client.field897[Client.field893] = i_6;
@@ -169,7 +169,7 @@ final class class1 implements class0 {
                   int i_17 = (i_15 & 0x7) + UserComparator10.localSceneY;
                   class66 class66_18;
                   if (i_13 == Client.field770) {
-                     class66_18 = Client.field657;
+                     class66_18 = Client.localPlayer;
                   } else {
                      class66_18 = Client.field909[i_13];
                   }
@@ -190,13 +190,13 @@ final class class1 implements class0 {
                      int i_23 = i_36 + (i_20 + 1 >> 1);
                      int i_24 = i_17 + (i_21 >> 1);
                      int i_25 = i_17 + (i_21 + 1 >> 1);
-                     int[][] ints_26 = class55.field516[class42.field372];
+                     int[][] ints_26 = class55.field516[ItemContainer_2.plane];
                      int i_27 = ints_26[i_23][i_24] + ints_26[i_22][i_24] + ints_26[i_22][i_25] + ints_26[i_23][i_25] >> 2;
                      int i_28 = (i_36 << 7) + (i_20 << 6);
                      int i_29 = (i_17 << 7) + (i_21 << 6);
                      class127 class127_30 = class253_19.method4592(i_9, i_10, ints_26, i_28, i_27, i_29, -1160623337);
                      if (class127_30 != null) {
-                        class201.method3885(class42.field372, i_36, i_17, i_11, -1, 0, 0, i_7 + 1, i_4 + 1, -2048347982);
+                        class201.method3885(ItemContainer_2.plane, i_36, i_17, i_11, -1, 0, 0, i_7 + 1, i_4 + 1, -2048347982);
                         class66_18.field614 = i_7 + Client.field881;
                         class66_18.field622 = i_4 + Client.field881;
                         class66_18.field626 = class127_30;
@@ -234,7 +234,7 @@ final class class1 implements class0 {
                   i_9 = Client.field713[i_7];
                   i_10 = buffer3_2.readShortWithOffset();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
-                     class201.method3885(class42.field372, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
+                     class201.method3885(ItemContainer_2.plane, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
                   }
 
                } else if (class185.field2317 == class185_0) {
@@ -247,7 +247,7 @@ final class class1 implements class0 {
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
                      i_7 = i_7 * 128 + 64;
                      i_8 = i_8 * 128 + 64;
-                     class77 class77_34 = new class77(i_3, class42.field372, i_7, i_8, class62.method1130(i_7, i_8, class42.field372) - i_4, i_5, Client.field881);
+                     class77 class77_34 = new class77(i_3, ItemContainer_2.plane, i_7, i_8, class62.method1130(i_7, i_8, ItemContainer_2.plane) - i_4, i_5, Client.field881);
                      Client.field785.method4917(class77_34);
                   }
 
@@ -262,52 +262,52 @@ final class class1 implements class0 {
                   i_10 = buffer3_2.readUnsignedShort();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
-                        class136 class136_37 = class5.field22.method3088(class42.field372, i_8, i_9);
+                        class136 class136_37 = class5.field22.method3088(ItemContainer_2.plane, i_8, i_9);
                         if (class136_37 != null) {
                            i_40 = GCMonitor.method770(class136_37.field1882);
                            if (i_4 == 2) {
-                              class136_37.field1884 = new class93(i_40, 2, i_5 + 4, class42.field372, i_8, i_9, i_10, false, class136_37.field1884);
-                              class136_37.field1881 = new class93(i_40, 2, i_5 + 1 & 0x3, class42.field372, i_8, i_9, i_10, false, class136_37.field1881);
+                              class136_37.field1884 = new class93(i_40, 2, i_5 + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class136_37.field1884);
+                              class136_37.field1881 = new class93(i_40, 2, i_5 + 1 & 0x3, ItemContainer_2.plane, i_8, i_9, i_10, false, class136_37.field1881);
                            } else {
-                              class136_37.field1884 = new class93(i_40, i_4, i_5, class42.field372, i_8, i_9, i_10, false, class136_37.field1884);
+                              class136_37.field1884 = new class93(i_40, i_4, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, class136_37.field1884);
                            }
                         }
                      }
 
                      if (i_6 == 1) {
-                        class141 class141_44 = class5.field22.method3118(class42.field372, i_8, i_9);
+                        class141 class141_44 = class5.field22.method3118(ItemContainer_2.plane, i_8, i_9);
                         if (class141_44 != null) {
                            i_40 = GCMonitor.method770(class141_44.field1917);
                            if (i_4 != 4 && i_4 != 5) {
                               if (i_4 == 6) {
-                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, class42.field372, i_8, i_9, i_10, false, class141_44.field1924);
+                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
                               } else if (i_4 == 7) {
-                                 class141_44.field1924 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, class42.field372, i_8, i_9, i_10, false, class141_44.field1924);
+                                 class141_44.field1924 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
                               } else if (i_4 == 8) {
-                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, class42.field372, i_8, i_9, i_10, false, class141_44.field1924);
-                                 class141_44.field1925 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, class42.field372, i_8, i_9, i_10, false, class141_44.field1925);
+                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
+                                 class141_44.field1925 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1925);
                               }
                            } else {
-                              class141_44.field1924 = new class93(i_40, 4, i_5, class42.field372, i_8, i_9, i_10, false, class141_44.field1924);
+                              class141_44.field1924 = new class93(i_40, 4, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
                            }
                         }
                      }
 
                      if (i_6 == 2) {
-                        FileSystem fileSystem_45 = class5.field22.method3195(class42.field372, i_8, i_9);
+                        FileSystem fileSystem_45 = class5.field22.method3195(ItemContainer_2.plane, i_8, i_9);
                         if (i_4 == 11) {
                            i_4 = 10;
                         }
 
                         if (fileSystem_45 != null) {
-                           fileSystem_45.field1933 = new class93(GCMonitor.method770(fileSystem_45.field1941), i_4, i_5, class42.field372, i_8, i_9, i_10, false, fileSystem_45.field1933);
+                           fileSystem_45.field1933 = new class93(GCMonitor.method770(fileSystem_45.field1941), i_4, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, fileSystem_45.field1933);
                         }
                      }
 
                      if (i_6 == 3) {
-                        class123 class123_46 = class5.field22.method3091(class42.field372, i_8, i_9);
+                        class123 class123_46 = class5.field22.method3091(ItemContainer_2.plane, i_8, i_9);
                         if (class123_46 != null) {
-                           class123_46.field1614 = new class93(GCMonitor.method770(class123_46.field1617), 22, i_5, class42.field372, i_8, i_9, i_10, false, class123_46.field1614);
+                           class123_46.field1614 = new class93(GCMonitor.method770(class123_46.field1617), 22, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, class123_46.field1614);
                         }
                      }
                   }

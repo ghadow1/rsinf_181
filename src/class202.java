@@ -1,7 +1,7 @@
 public class class202 extends class115 {
 
    public static class322 field2486;
-   class261 field2484 = new class261();
+   NodeDeque field2484 = new NodeDeque();
    class98 field2487 = new class98();
    class198 field2485;
 
@@ -188,8 +188,8 @@ public class class202 extends class115 {
          int i_15 = i_5 * i_13 + 1 >> 17;
          int i_16 = i_5 * i_12 >> 17;
          int i_17 = i_5 * i_12 + 1 >> 17;
-         i_0 -= class321.Rasterizer2D_xClipStart;
-         i_1 -= class321.Rasterizer2D_yClipStart;
+         i_0 -= Rasterizer2D.Rasterizer2D_xClipStart;
+         i_1 -= Rasterizer2D.Rasterizer2D_yClipStart;
          int i_18 = i_0 + i_14;
          int i_19 = i_0 - i_15;
          int i_20 = i_0 + i_7 - i_15;

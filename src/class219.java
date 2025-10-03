@@ -48,7 +48,7 @@ public class class219 {
    }
 
    static final void method4113(class69 class69_0, int i_1) {
-      class32.method544(class69_0.field1005, class69_0.field949, i_1);
+      class32.method544(class69_0.x, class69_0.y, i_1);
    }
 
 }

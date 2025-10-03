@@ -408,8 +408,8 @@ public class class73 {
                   return 2;
                }
             } else {
-               if (Client.field657 != null && Client.field657.field621 != null) {
-                  string_4 = Client.field657.field621.method5197();
+               if (Client.localPlayer != null && Client.localPlayer.field621 != null) {
+                  string_4 = Client.localPlayer.field621.method5197();
                } else {
                   string_4 = "";
                }

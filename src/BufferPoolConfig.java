@@ -10,17 +10,17 @@ public class BufferPoolConfig {
          class188.method3643(font_0, font_1, (byte) 11);
       } else {
          class5.field23.method6121(Login.field1208, 0);
-         class79.field1135.method6121(Login.field1208 + 382, 0);
+         NPC.field1135.method6121(Login.field1208 + 382, 0);
          class87.field1243.method6101(Login.field1208 + 382 - class87.field1243.field3897 / 2, 18);
          int i_5;
          if (Client.field662 == 0 || Client.field662 == 5) {
             byte b_4 = 20;
             font_0.method5341("RuneScape is loading - please wait...", Login.field1187 + 180, 245 - b_4, 16777215, -1);
             i_5 = 253 - b_4;
-            class321.drawRectangle(Login.field1187 + 180 - 152, i_5, 304, 34, 9179409);
-            class321.drawRectangle(Login.field1187 + 180 - 151, i_5 + 1, 302, 32, 0);
-            class321.fillRectangle(Login.field1187 + 180 - 150, i_5 + 2, Login.field1188 * 3, 30, 9179409);
-            class321.fillRectangle(Login.field1188 * 3 + (Login.field1187 + 180 - 150), i_5 + 2, 300 - Login.field1188 * 3, 30, 0);
+            Rasterizer2D.drawRectangle(Login.field1187 + 180 - 152, i_5, 304, 34, 9179409);
+            Rasterizer2D.drawRectangle(Login.field1187 + 180 - 151, i_5 + 1, 302, 32, 0);
+            Rasterizer2D.fillRectangle(Login.field1187 + 180 - 150, i_5 + 2, Login.field1188 * 3, 30, 9179409);
+            Rasterizer2D.fillRectangle(Login.field1188 * 3 + (Login.field1187 + 180 - 150), i_5 + 2, 300 - Login.field1188 * 3, 30, 0);
             font_0.method5341(Login.field1189, Login.field1187 + 180, 276 - b_4, 16777215, -1);
          }
 
@@ -318,11 +318,11 @@ public class BufferPoolConfig {
 
          if (Client.field662 >= 10) {
             int[] ints_19 = new int[4];
-            class321.method5999(ints_19);
-            class321.method5997(Login.field1208, 0, Login.field1208 + 765, class249.field3308);
+            Rasterizer2D.getClipArray(ints_19);
+            Rasterizer2D.setClip(Login.field1208, 0, Login.field1208 + 765, class249.field3308);
             class278.field3631.method1735(Login.field1208 - 22, Client.field881, (byte) -86);
             class278.field3631.method1735(Login.field1208 + 22 + 765 - 128, Client.field881, (byte) -49);
-            class321.method6013(ints_19);
+            Rasterizer2D.method6013(ints_19);
          }
 
          Login.field1183[class17.field117.field1063 ? 1 : 0].method6101(Login.field1208 + 765 - 40, 463);

@@ -31,7 +31,7 @@ public class TimeUtils extends class205 {
 
    static final void method3938(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       if (i_2 >= 1 && i_3 >= 1 && i_2 <= 102 && i_3 <= 102) {
-         if (Client.field656 && i_0 != class42.field372) {
+         if (Client.field656 && i_0 != ItemContainer_2.plane) {
             return;
          }
 

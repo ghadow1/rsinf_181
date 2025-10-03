@@ -287,9 +287,9 @@ public class class333 {
       byte b_7 = 20;
       int i_8 = i_3 / 2 + i_1;
       int i_9 = i_4 / 2 + i_2 - 18 - b_7;
-      class321.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
-      class321.drawRectangle(i_8 - 152, i_9, 304, 34, -65536);
-      class321.fillRectangle(i_8 - 150, i_9 + 2, i_5 * 3, 30, -65536);
+      Rasterizer2D.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
+      Rasterizer2D.drawRectangle(i_8 - 152, i_9, 304, 34, -65536);
+      Rasterizer2D.fillRectangle(i_8 - 150, i_9 + 2, i_5 * 3, 30, -65536);
       this.field3981.method5341("Loading...", i_8, b_7 + i_9, -1, -1);
    }
 
@@ -321,7 +321,7 @@ public class class333 {
             i_15 = i_2 - this.field4019.field310 * (i_8 - (i_13 - this.field3998));
          }
 
-         class321.method6004(i_1, i_2, i_3, i_4, 0, 128);
+         Rasterizer2D.method6004(i_1, i_2, i_3, i_4, 0, 128);
          if (f_11 == 1.0F) {
             this.field4026.method6135(i_14, i_15, 192);
          } else {
@@ -333,9 +333,9 @@ public class class333 {
 
    public void method6317(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       int[] ints_7 = new int[4];
-      class321.method5999(ints_7);
-      class321.method5997(i_1, i_2, i_3 + i_1, i_2 + i_4);
-      class321.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
+      Rasterizer2D.getClipArray(ints_7);
+      Rasterizer2D.setClip(i_1, i_2, i_3 + i_1, i_2 + i_4);
+      Rasterizer2D.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
       int i_8 = this.field4028.method6284(-805069530);
       if (i_8 < 100) {
          this.method6322(i_1, i_2, i_3, i_4, i_8, 1955930802);
@@ -376,14 +376,14 @@ public class class333 {
          this.method6319(i_1, i_2, i_3, i_4, i_9, i_10, (byte) -125);
          bool_11 = Client.field890 >= 2;
          if (bool_11 && this.field4025 && this.field4024 != null) {
-            this.field3981.draw("Coord: " + this.field4024, class321.Rasterizer2D_xClipStart + 10, class321.Rasterizer2D_yClipStart + 20, 16776960, -1);
+            this.field3981.draw("Coord: " + this.field4024, Rasterizer2D.Rasterizer2D_xClipStart + 10, Rasterizer2D.Rasterizer2D_yClipStart + 20, 16776960, -1);
          }
 
          this.field3996 = i_9;
          this.field3997 = i_10;
          this.field3995 = i_1;
          this.field3975 = i_2;
-         class321.method6013(ints_7);
+         Rasterizer2D.method6013(ints_7);
       }
    }
 
@@ -549,7 +549,7 @@ public class class333 {
 
                for (int i_15 = this.field4020.length - 1; i_15 >= 0; --i_15) {
                   if (class241_13.field3210[i_15] != null) {
-                     class188.method3644(class241_13.field3210[i_15], class241_13.field3211, this.field4020[i_15], class34_12.vmethod597(-1665446524), class34_12.field298.method3971(), class34_12.field297.method3971(), 2114243607);
+                     class188.method3644(class241_13.field3210[i_15], class241_13.field3211, this.field4020[i_15], class34_12.vmethod597(-1665446524), class34_12.field298.method3971(), class34_12.field297.method3971());
                      bool_14 = true;
                   }
                }

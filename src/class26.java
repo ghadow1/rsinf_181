@@ -166,7 +166,7 @@ public class class26 {
          obj_6 = new AbstractWorldMapData();
          break;
       case 3:
-         obj_6 = new class42();
+         obj_6 = new ItemContainer_2();
          break;
       default:
          throw new IllegalStateException("");

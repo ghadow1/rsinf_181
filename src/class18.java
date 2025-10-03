@@ -161,7 +161,7 @@ public class class18 extends class34 {
                ++i_8;
             }
 
-            if (Client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
+            if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
                class66_5.method1205(i_7, i_8, 1226353499);
                class66_5.field638 = false;
             } else if (bool_3) {
@@ -223,7 +223,7 @@ public class class18 extends class34 {
                i_8 += 2;
             }
 
-            if (Client.field770 != i_1 || class66_5.field1005 >= 1536 && class66_5.field949 >= 1536 && class66_5.field1005 < 11776 && class66_5.field949 < 11776) {
+            if (Client.field770 != i_1 || class66_5.x >= 1536 && class66_5.y >= 1536 && class66_5.x < 11776 && class66_5.y < 11776) {
                if (bool_3) {
                   class66_5.field638 = true;
                   class66_5.field639 = i_7;
@@ -258,7 +258,7 @@ public class class18 extends class34 {
 
                i_11 = i_9 + class66_5.field994[0];
                i_12 = i_10 + class66_5.field962[0];
-               if (Client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
+               if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
                   class66_5.method1205(i_11, i_12, 1788073097);
                   class66_5.field638 = false;
                } else if (bool_3) {
@@ -272,7 +272,7 @@ public class class18 extends class34 {
 
                class66_5.field629 = (byte)(i_8 + class66_5.field629 & 0x3);
                if (Client.field770 == i_1) {
-                  class42.field372 = class66_5.field629;
+                  ItemContainer_2.plane = class66_5.field629;
                }
 
             } else {
@@ -282,7 +282,7 @@ public class class18 extends class34 {
                i_10 = i_7 & 0x3fff;
                i_11 = (i_9 + class196.field2389 + class66_5.field994[0] & 0x3fff) - class196.field2389;
                i_12 = (i_10 + class1.field1 + class66_5.field962[0] & 0x3fff) - class1.field1;
-               if (Client.field770 == i_1 && (class66_5.field1005 < 1536 || class66_5.field949 < 1536 || class66_5.field1005 >= 11776 || class66_5.field949 >= 11776)) {
+               if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
                   class66_5.method1205(i_11, i_12, 1045541896);
                   class66_5.field638 = false;
                } else if (bool_3) {
@@ -296,7 +296,7 @@ public class class18 extends class34 {
 
                class66_5.field629 = (byte)(i_8 + class66_5.field629 & 0x3);
                if (Client.field770 == i_1) {
-                  class42.field372 = class66_5.field629;
+                  ItemContainer_2.plane = class66_5.field629;
                }
 
             }
@@ -307,10 +307,10 @@ public class class18 extends class34 {
    static final void method205(Widget widget_0, int i_1, int i_2, int i_3, byte b_4) {
       class211 class211_5 = widget_0.method4040(false);
       if (class211_5 != null) {
-         if (Client.field652 < 3) {
-            Message.field607.method6140(i_1, i_2, class211_5.field2519, class211_5.field2522, 25, 25, Client.field722, 256, class211_5.field2521, class211_5.field2520);
+         if (Client.minimapState < 3) {
+            Message.field607.drawRotatedMaskedCenteredAround(i_1, i_2, class211_5.width, class211_5.height, 25, 25, Client.camAngleY, 256, class211_5.field2521, class211_5.field2520);
          } else {
-            class321.method6016(i_1, i_2, 0, class211_5.field2521, class211_5.field2520);
+            Rasterizer2D.fillMaskedRectangle(i_1, i_2, 0, class211_5.field2521, class211_5.field2520);
          }
 
       }
@@ -333,7 +333,7 @@ public class class18 extends class34 {
    }
 
    static final void method208(Widget widget_0, int i_1, int i_2, int i_3) {
-      if (Client.field652 == 0 || Client.field652 == 3) {
+      if (Client.minimapState == 0 || Client.minimapState == 3) {
          if (!Client.field674 && (MouseHandler.field493 == 1 || !class46.field413 && MouseHandler.field493 == 4)) {
             class211 class211_4 = widget_0.method4040(true);
             if (class211_4 == null) {
@@ -343,15 +343,15 @@ public class class18 extends class34 {
             int i_5 = MouseHandler.field483 - i_1;
             int i_6 = MouseHandler.field495 - i_2;
             if (class211_4.method3959(i_5, i_6, (short) 25393)) {
-               i_5 -= class211_4.field2519 / 2;
-               i_6 -= class211_4.field2522 / 2;
-               int i_7 = Client.field722 & 0x7ff;
+               i_5 -= class211_4.width / 2;
+               i_6 -= class211_4.height / 2;
+               int i_7 = Client.camAngleY & 0x7ff;
                int i_8 = class130.field1787[i_7];
                int i_9 = class130.field1784[i_7];
                int i_10 = i_5 * i_9 + i_6 * i_8 >> 11;
                int i_11 = i_6 * i_9 - i_8 * i_5 >> 11;
-               int i_12 = i_10 + Client.field657.field1005 >> 7;
-               int i_13 = Client.field657.field949 - i_11 >> 7;
+               int i_12 = i_10 + Client.localPlayer.x >> 7;
+               int i_13 = Client.localPlayer.y - i_11 >> 7;
                class187 class187_14 = class235.method4265(ClientPacketProt.field2262, Client.data.field1313);
                class187_14.outBuffer.writeByte(18);
                class187_14.outBuffer.writeShortWithOffset2(i_13 + class1.field1);
@@ -359,17 +359,17 @@ public class class18 extends class34 {
                class187_14.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.outBuffer.writeByte(i_5);
                class187_14.outBuffer.writeByte(i_6);
-               class187_14.outBuffer.writeShortBigEndian(Client.field722);
+               class187_14.outBuffer.writeShortBigEndian(Client.camAngleY);
                class187_14.outBuffer.writeByte(57);
                class187_14.outBuffer.writeByte(0);
                class187_14.outBuffer.writeByte(0);
                class187_14.outBuffer.writeByte(89);
-               class187_14.outBuffer.writeShortBigEndian(Client.field657.field1005);
-               class187_14.outBuffer.writeShortBigEndian(Client.field657.field949);
+               class187_14.outBuffer.writeShortBigEndian(Client.localPlayer.x);
+               class187_14.outBuffer.writeShortBigEndian(Client.localPlayer.y);
                class187_14.outBuffer.writeByte(63);
                Client.data.copy(class187_14);
-               Client.field885 = i_12;
-               Client.field842 = i_13;
+               Client.destinationX = i_12;
+               Client.destinationY = i_13;
             }
          }
 

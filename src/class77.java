@@ -60,7 +60,7 @@ public final class class77 extends class135 {
       FriendSystem.method4121();
       Client.field796[0] = "Cancel";
       Client.field668[0] = "";
-      Client.field794[0] = 1006;
+      Client.menuOpcodes[0] = 1006;
       Client.field769[0] = false;
       Client.menuOptionsCount = 1;
    }

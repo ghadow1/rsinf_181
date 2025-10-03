@@ -1,6 +1,6 @@
-public class class42 implements class37 {
+public class ItemContainer_2 implements class37 {
 
-   static int field372;
+   static int plane;
    static int field373;
    int field368;
    int field363;

@@ -1,4 +1,4 @@
-public class class130 extends class321 {
+public class class130 extends Rasterizer2D {
 
    static boolean field1763 = false;
    static boolean field1772 = false;
@@ -114,17 +114,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_5 >> 14, i_4 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_5 >> 14, i_4 >> 14);
                            i_5 += i_9;
                            i_4 += i_8;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_5 >> 14, i_3 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_5 >> 14, i_3 >> 14);
                      i_5 += i_9;
                      i_3 += i_7;
-                     i_0 += class321.Rasterizer2D_width;
+                     i_0 += Rasterizer2D.Rasterizer2D_width;
                   }
                } else {
                   i_2 -= i_1;
@@ -140,17 +140,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_4 >> 14, i_5 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_4 >> 14, i_5 >> 14);
                            i_5 += i_9;
                            i_4 += i_8;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_3 >> 14, i_5 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_3 >> 14, i_5 >> 14);
                      i_5 += i_9;
                      i_3 += i_7;
-                     i_0 += class321.Rasterizer2D_width;
+                     i_0 += Rasterizer2D.Rasterizer2D_width;
                   }
                }
             } else {
@@ -181,17 +181,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_3 >> 14, i_5 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_3 >> 14, i_5 >> 14);
                            i_5 += i_8;
                            i_3 += i_7;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_3 >> 14, i_4 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_3 >> 14, i_4 >> 14);
                      i_4 += i_9;
                      i_3 += i_7;
-                     i_0 += class321.Rasterizer2D_width;
+                     i_0 += Rasterizer2D.Rasterizer2D_width;
                   }
                } else {
                   i_1 -= i_2;
@@ -207,17 +207,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_5 >> 14, i_3 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_5 >> 14, i_3 >> 14);
                            i_5 += i_8;
                            i_3 += i_7;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_0, i_6, 0, i_4 >> 14, i_3 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_0, i_6, 0, i_4 >> 14, i_3 >> 14);
                      i_4 += i_9;
                      i_3 += i_7;
-                     i_0 += class321.Rasterizer2D_width;
+                     i_0 += Rasterizer2D.Rasterizer2D_width;
                   }
                }
             }
@@ -260,17 +260,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_3 >> 14, i_5 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_3 >> 14, i_5 >> 14);
                            i_3 += i_7;
                            i_5 += i_9;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_3 >> 14, i_4 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_3 >> 14, i_4 >> 14);
                      i_3 += i_7;
                      i_4 += i_8;
-                     i_1 += class321.Rasterizer2D_width;
+                     i_1 += Rasterizer2D.Rasterizer2D_width;
                   }
                } else {
                   i_0 -= i_2;
@@ -286,17 +286,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_5 >> 14, i_3 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_5 >> 14, i_3 >> 14);
                            i_3 += i_7;
                            i_5 += i_9;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_4 >> 14, i_3 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_4 >> 14, i_3 >> 14);
                      i_3 += i_7;
                      i_4 += i_8;
-                     i_1 += class321.Rasterizer2D_width;
+                     i_1 += Rasterizer2D.Rasterizer2D_width;
                   }
                }
             } else {
@@ -327,17 +327,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_3 >> 14, i_4 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_3 >> 14, i_4 >> 14);
                            i_3 += i_9;
                            i_4 += i_8;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_5 >> 14, i_4 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_5 >> 14, i_4 >> 14);
                      i_5 += i_7;
                      i_4 += i_8;
-                     i_1 += class321.Rasterizer2D_width;
+                     i_1 += Rasterizer2D.Rasterizer2D_width;
                   }
                } else {
                   i_2 -= i_0;
@@ -353,17 +353,17 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_4 >> 14, i_3 >> 14);
+                           method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_4 >> 14, i_3 >> 14);
                            i_3 += i_9;
                            i_4 += i_8;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2985(class321.Rasterizer2D_pixels, i_1, i_6, 0, i_4 >> 14, i_5 >> 14);
+                     method2985(Rasterizer2D.Rasterizer2D_pixels, i_1, i_6, 0, i_4 >> 14, i_5 >> 14);
                      i_5 += i_7;
                      i_4 += i_8;
-                     i_1 += class321.Rasterizer2D_width;
+                     i_1 += Rasterizer2D.Rasterizer2D_width;
                   }
                }
             }
@@ -405,17 +405,17 @@ public class class130 extends class321 {
                            return;
                         }
 
-                        method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_4 >> 14, i_3 >> 14);
+                        method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_4 >> 14, i_3 >> 14);
                         i_4 += i_8;
                         i_3 += i_7;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
 
-                  method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_4 >> 14, i_5 >> 14);
+                  method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_4 >> 14, i_5 >> 14);
                   i_4 += i_8;
                   i_5 += i_9;
-                  i_2 += class321.Rasterizer2D_width;
+                  i_2 += Rasterizer2D.Rasterizer2D_width;
                }
             } else {
                i_1 -= i_0;
@@ -431,17 +431,17 @@ public class class130 extends class321 {
                            return;
                         }
 
-                        method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_3 >> 14, i_4 >> 14);
+                        method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_3 >> 14, i_4 >> 14);
                         i_4 += i_8;
                         i_3 += i_7;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
 
-                  method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_5 >> 14, i_4 >> 14);
+                  method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_5 >> 14, i_4 >> 14);
                   i_4 += i_8;
                   i_5 += i_9;
-                  i_2 += class321.Rasterizer2D_width;
+                  i_2 += Rasterizer2D.Rasterizer2D_width;
                }
             }
          } else {
@@ -472,17 +472,17 @@ public class class130 extends class321 {
                            return;
                         }
 
-                        method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_4 >> 14, i_5 >> 14);
+                        method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_4 >> 14, i_5 >> 14);
                         i_4 += i_7;
                         i_5 += i_9;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
 
-                  method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_3 >> 14, i_5 >> 14);
+                  method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_3 >> 14, i_5 >> 14);
                   i_3 += i_8;
                   i_5 += i_9;
-                  i_2 += class321.Rasterizer2D_width;
+                  i_2 += Rasterizer2D.Rasterizer2D_width;
                }
             } else {
                i_0 -= i_1;
@@ -498,17 +498,17 @@ public class class130 extends class321 {
                            return;
                         }
 
-                        method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_5 >> 14, i_4 >> 14);
+                        method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_5 >> 14, i_4 >> 14);
                         i_4 += i_7;
                         i_5 += i_9;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
 
-                  method2985(class321.Rasterizer2D_pixels, i_2, i_6, 0, i_5 >> 14, i_3 >> 14);
+                  method2985(Rasterizer2D.Rasterizer2D_pixels, i_2, i_6, 0, i_5 >> 14, i_3 >> 14);
                   i_3 += i_8;
                   i_5 += i_9;
-                  i_2 += class321.Rasterizer2D_width;
+                  i_2 += Rasterizer2D.Rasterizer2D_width;
                }
             }
          }
@@ -587,19 +587,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_4 >> 14, i_5 >> 14, i_6, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_4 >> 14, i_5 >> 14, i_6, i_19);
                               i_5 += i_17;
                               i_4 += i_15;
                               i_6 += i_20;
-                              i_0 += class321.Rasterizer2D_width;
+                              i_0 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_3 >> 14, i_5 >> 14, i_6, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_3 >> 14, i_5 >> 14, i_6, i_19);
                         i_5 += i_17;
                         i_3 += i_16;
                         i_6 += i_20;
-                        i_0 += class321.Rasterizer2D_width;
+                        i_0 += Rasterizer2D.Rasterizer2D_width;
                      }
                   } else {
                      i_2 -= i_1;
@@ -615,19 +615,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_5 >> 14, i_4 >> 14, i_6, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_5 >> 14, i_4 >> 14, i_6, i_19);
                               i_5 += i_17;
                               i_4 += i_15;
                               i_6 += i_20;
-                              i_0 += class321.Rasterizer2D_width;
+                              i_0 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_5 >> 14, i_3 >> 14, i_6, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_5 >> 14, i_3 >> 14, i_6, i_19);
                         i_5 += i_17;
                         i_3 += i_16;
                         i_6 += i_20;
-                        i_0 += class321.Rasterizer2D_width;
+                        i_0 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
                } else {
@@ -659,19 +659,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_5 >> 14, i_3 >> 14, i_6, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_5 >> 14, i_3 >> 14, i_6, i_19);
                               i_5 += i_15;
                               i_3 += i_16;
                               i_6 += i_20;
-                              i_0 += class321.Rasterizer2D_width;
+                              i_0 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_4 >> 14, i_3 >> 14, i_6, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_4 >> 14, i_3 >> 14, i_6, i_19);
                         i_4 += i_17;
                         i_3 += i_16;
                         i_6 += i_20;
-                        i_0 += class321.Rasterizer2D_width;
+                        i_0 += Rasterizer2D.Rasterizer2D_width;
                      }
                   } else {
                      i_1 -= i_2;
@@ -687,19 +687,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_3 >> 14, i_5 >> 14, i_6, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_3 >> 14, i_5 >> 14, i_6, i_19);
                               i_5 += i_15;
                               i_3 += i_16;
                               i_6 += i_20;
-                              i_0 += class321.Rasterizer2D_width;
+                              i_0 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_0, 0, 0, i_3 >> 14, i_4 >> 14, i_6, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_0, 0, 0, i_3 >> 14, i_4 >> 14, i_6, i_19);
                         i_4 += i_17;
                         i_3 += i_16;
                         i_6 += i_20;
-                        i_0 += class321.Rasterizer2D_width;
+                        i_0 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
                }
@@ -744,19 +744,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_5 >> 14, i_3 >> 14, i_7, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_5 >> 14, i_3 >> 14, i_7, i_19);
                               i_3 += i_16;
                               i_5 += i_17;
                               i_7 += i_20;
-                              i_1 += class321.Rasterizer2D_width;
+                              i_1 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_4 >> 14, i_3 >> 14, i_7, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_4 >> 14, i_3 >> 14, i_7, i_19);
                         i_3 += i_16;
                         i_4 += i_15;
                         i_7 += i_20;
-                        i_1 += class321.Rasterizer2D_width;
+                        i_1 += Rasterizer2D.Rasterizer2D_width;
                      }
                   } else {
                      i_0 -= i_2;
@@ -772,19 +772,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_3 >> 14, i_5 >> 14, i_7, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_3 >> 14, i_5 >> 14, i_7, i_19);
                               i_3 += i_16;
                               i_5 += i_17;
                               i_7 += i_20;
-                              i_1 += class321.Rasterizer2D_width;
+                              i_1 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_3 >> 14, i_4 >> 14, i_7, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_3 >> 14, i_4 >> 14, i_7, i_19);
                         i_3 += i_16;
                         i_4 += i_15;
                         i_7 += i_20;
-                        i_1 += class321.Rasterizer2D_width;
+                        i_1 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
                } else {
@@ -816,19 +816,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_3 >> 14, i_4 >> 14, i_7, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_3 >> 14, i_4 >> 14, i_7, i_19);
                               i_3 += i_17;
                               i_4 += i_15;
                               i_7 += i_20;
-                              i_1 += class321.Rasterizer2D_width;
+                              i_1 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_5 >> 14, i_4 >> 14, i_7, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_5 >> 14, i_4 >> 14, i_7, i_19);
                         i_5 += i_16;
                         i_4 += i_15;
                         i_7 += i_20;
-                        i_1 += class321.Rasterizer2D_width;
+                        i_1 += Rasterizer2D.Rasterizer2D_width;
                      }
                   } else {
                      i_2 -= i_0;
@@ -844,19 +844,19 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_4 >> 14, i_3 >> 14, i_7, i_19);
+                              method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_4 >> 14, i_3 >> 14, i_7, i_19);
                               i_3 += i_17;
                               i_4 += i_15;
                               i_7 += i_20;
-                              i_1 += class321.Rasterizer2D_width;
+                              i_1 += Rasterizer2D.Rasterizer2D_width;
                            }
                         }
 
-                        method2977(class321.Rasterizer2D_pixels, i_1, 0, 0, i_4 >> 14, i_5 >> 14, i_7, i_19);
+                        method2977(Rasterizer2D.Rasterizer2D_pixels, i_1, 0, 0, i_4 >> 14, i_5 >> 14, i_7, i_19);
                         i_5 += i_16;
                         i_4 += i_15;
                         i_7 += i_20;
-                        i_1 += class321.Rasterizer2D_width;
+                        i_1 += Rasterizer2D.Rasterizer2D_width;
                      }
                   }
                }
@@ -900,19 +900,19 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_4 >> 14, i_3 >> 14, i_8, i_19);
+                           method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_4 >> 14, i_3 >> 14, i_8, i_19);
                            i_4 += i_15;
                            i_3 += i_16;
                            i_8 += i_20;
-                           i_2 += class321.Rasterizer2D_width;
+                           i_2 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_4 >> 14, i_5 >> 14, i_8, i_19);
+                     method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_4 >> 14, i_5 >> 14, i_8, i_19);
                      i_4 += i_15;
                      i_5 += i_17;
                      i_8 += i_20;
-                     i_2 += class321.Rasterizer2D_width;
+                     i_2 += Rasterizer2D.Rasterizer2D_width;
                   }
                } else {
                   i_1 -= i_0;
@@ -928,19 +928,19 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_3 >> 14, i_4 >> 14, i_8, i_19);
+                           method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_3 >> 14, i_4 >> 14, i_8, i_19);
                            i_4 += i_15;
                            i_3 += i_16;
                            i_8 += i_20;
-                           i_2 += class321.Rasterizer2D_width;
+                           i_2 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_5 >> 14, i_4 >> 14, i_8, i_19);
+                     method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_5 >> 14, i_4 >> 14, i_8, i_19);
                      i_4 += i_15;
                      i_5 += i_17;
                      i_8 += i_20;
-                     i_2 += class321.Rasterizer2D_width;
+                     i_2 += Rasterizer2D.Rasterizer2D_width;
                   }
                }
             } else {
@@ -972,19 +972,19 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_4 >> 14, i_5 >> 14, i_8, i_19);
+                           method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_4 >> 14, i_5 >> 14, i_8, i_19);
                            i_4 += i_16;
                            i_5 += i_17;
                            i_8 += i_20;
-                           i_2 += class321.Rasterizer2D_width;
+                           i_2 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_3 >> 14, i_5 >> 14, i_8, i_19);
+                     method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_3 >> 14, i_5 >> 14, i_8, i_19);
                      i_3 += i_15;
                      i_5 += i_17;
                      i_8 += i_20;
-                     i_2 += class321.Rasterizer2D_width;
+                     i_2 += Rasterizer2D.Rasterizer2D_width;
                   }
                } else {
                   i_0 -= i_1;
@@ -1000,19 +1000,19 @@ public class class130 extends class321 {
                               return;
                            }
 
-                           method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_5 >> 14, i_4 >> 14, i_8, i_19);
+                           method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_5 >> 14, i_4 >> 14, i_8, i_19);
                            i_4 += i_16;
                            i_5 += i_17;
                            i_8 += i_20;
-                           i_2 += class321.Rasterizer2D_width;
+                           i_2 += Rasterizer2D.Rasterizer2D_width;
                         }
                      }
 
-                     method2977(class321.Rasterizer2D_pixels, i_2, 0, 0, i_5 >> 14, i_3 >> 14, i_8, i_19);
+                     method2977(Rasterizer2D.Rasterizer2D_pixels, i_2, 0, 0, i_5 >> 14, i_3 >> 14, i_8, i_19);
                      i_3 += i_15;
                      i_5 += i_17;
                      i_8 += i_20;
-                     i_2 += class321.Rasterizer2D_width;
+                     i_2 += Rasterizer2D.Rasterizer2D_width;
                   }
                }
             }
@@ -1021,7 +1021,7 @@ public class class130 extends class321 {
    }
 
    public static final void method3051() {
-      method2975(class321.Rasterizer2D_xClipStart, class321.Rasterizer2D_yClipStart, class321.Rasterizer2D_xClipEnd, class321.Rasterizer2D_yClipEnd);
+      method2975(Rasterizer2D.Rasterizer2D_xClipStart, Rasterizer2D.Rasterizer2D_yClipStart, Rasterizer2D.Rasterizer2D_xClipEnd, Rasterizer2D.Rasterizer2D_yClipEnd);
    }
 
    static final void method2975(int i_0, int i_1, int i_2, int i_3) {
@@ -1042,11 +1042,11 @@ public class class130 extends class321 {
          field1782 = new int[i_4];
       }
 
-      i_4 = i_0 + class321.Rasterizer2D_width * i_1;
+      i_4 = i_0 + Rasterizer2D.Rasterizer2D_width * i_1;
 
       for (i_5 = 0; i_5 < field1776; i_5++) {
          field1782[i_5] = i_4;
-         i_4 += class321.Rasterizer2D_width;
+         i_4 += Rasterizer2D.Rasterizer2D_width;
       }
 
    }
@@ -1154,22 +1154,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_28;
                                  i_4 += i_27;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1188,22 +1188,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_28;
                                  i_4 += i_27;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1242,22 +1242,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_27;
                                  i_3 += i_26;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_4 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1276,22 +1276,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_27;
                                  i_3 += i_26;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_4 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1343,22 +1343,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_26;
                                  i_5 += i_28;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_3 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1377,22 +1377,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_26;
                                  i_5 += i_28;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_3 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1431,22 +1431,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_28;
                                  i_4 += i_27;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1465,22 +1465,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_28;
                                  i_4 += i_27;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1531,22 +1531,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_27;
                               i_3 += i_26;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_4 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -1565,22 +1565,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_27;
                               i_3 += i_26;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_4 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -1619,22 +1619,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_26;
                               i_5 += i_28;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_3 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -1653,22 +1653,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_26;
                               i_5 += i_28;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2987(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2987(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_3 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -1882,22 +1882,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_28;
                                  i_4 += i_27;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1916,22 +1916,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_28;
                                  i_4 += i_27;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -1970,22 +1970,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_5 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_27;
                                  i_3 += i_26;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_4 >> 14, i_3 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_4 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -2004,22 +2004,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_5 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_5 += i_27;
                                  i_3 += i_26;
                                  i_6 += i_31;
-                                 i_0 += class321.Rasterizer2D_width;
+                                 i_0 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_0, i_3 >> 14, i_4 >> 14, i_6, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_4 += i_28;
                            i_3 += i_26;
                            i_6 += i_31;
-                           i_0 += class321.Rasterizer2D_width;
+                           i_0 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -2071,22 +2071,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_26;
                                  i_5 += i_28;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_3 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -2105,22 +2105,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_26;
                                  i_5 += i_28;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_3 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -2159,22 +2159,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_3 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_28;
                                  i_4 += i_27;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_5 >> 14, i_4 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -2193,22 +2193,22 @@ public class class130 extends class321 {
                                     return;
                                  }
 
-                                 method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                                 method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_3 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                                  i_3 += i_28;
                                  i_4 += i_27;
                                  i_7 += i_31;
-                                 i_1 += class321.Rasterizer2D_width;
+                                 i_1 += Rasterizer2D.Rasterizer2D_width;
                                  i_32 += i_34;
                                  i_35 += i_37;
                                  i_38 += i_40;
                               }
                            }
 
-                           method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                           method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_1, i_4 >> 14, i_5 >> 14, i_7, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                            i_5 += i_26;
                            i_4 += i_27;
                            i_7 += i_31;
-                           i_1 += class321.Rasterizer2D_width;
+                           i_1 += Rasterizer2D.Rasterizer2D_width;
                            i_32 += i_34;
                            i_35 += i_37;
                            i_38 += i_40;
@@ -2259,22 +2259,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_27;
                               i_3 += i_26;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_4 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -2293,22 +2293,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_27;
                               i_3 += i_26;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_4 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -2347,22 +2347,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_4 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_26;
                               i_5 += i_28;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_3 >> 14, i_5 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_3 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -2381,22 +2381,22 @@ public class class130 extends class321 {
                                  return;
                               }
 
-                              method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                              method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_4 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                               i_4 += i_26;
                               i_5 += i_28;
                               i_8 += i_31;
-                              i_2 += class321.Rasterizer2D_width;
+                              i_2 += Rasterizer2D.Rasterizer2D_width;
                               i_32 += i_34;
                               i_35 += i_37;
                               i_38 += i_40;
                            }
                         }
 
-                        method2989(class321.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
+                        method2989(Rasterizer2D.Rasterizer2D_pixels, ints_19, 0, 0, i_2, i_5 >> 14, i_3 >> 14, i_8, i_30, i_32, i_35, i_38, i_33, i_36, i_39);
                         i_3 += i_27;
                         i_5 += i_28;
                         i_8 += i_31;
-                        i_2 += class321.Rasterizer2D_width;
+                        i_2 += Rasterizer2D.Rasterizer2D_width;
                         i_32 += i_34;
                         i_35 += i_37;
                         i_38 += i_40;
@@ -2608,8 +2608,8 @@ public class class130 extends class321 {
 
    public static final void method2976(int i_0, int i_1) {
       int i_2 = field1782[0];
-      int i_3 = i_2 / class321.Rasterizer2D_width;
-      int i_4 = i_2 - i_3 * class321.Rasterizer2D_width;
+      int i_3 = i_2 / Rasterizer2D.Rasterizer2D_width;
+      int i_4 = i_2 - i_3 * Rasterizer2D.Rasterizer2D_width;
       field1774 = i_0 - i_4;
       field1775 = i_1 - i_3;
       field1778 = -field1774;

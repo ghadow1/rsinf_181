@@ -20,7 +20,7 @@ public class class272 {
             Client.field710[i_1] = new class172(104, 104);
          }
 
-         class174.field2102 = new class325(512, 512);
+         ParamDefinition.sceneMinimapSprite = new class325(512, 512);
          Login.field1189 = "Starting game engine...";
          Login.field1188 = 5;
          Client.field680 = 20;
@@ -36,7 +36,7 @@ public class class272 {
          class13.field89 = class65.method1169(4, false, true, true, (byte) 6);
          WorldMapCacheName.field307 = class65.method1169(5, true, true, true, (byte) 6);
          class29.field253 = class65.method1169(6, true, true, true, (byte) 6);
-         class256.field3500 = class65.method1169(7, false, true, true, (byte) 6);
+         NPCDefinition.field3500 = class65.method1169(7, false, true, true, (byte) 6);
          Client.field683 = class65.method1169(8, false, true, true, (byte) 6);
          class4.field18 = class65.method1169(9, false, true, true, (byte) 6);
          class17.field110 = class65.method1169(10, false, true, true, (byte) 6);
@@ -61,7 +61,7 @@ public class class272 {
          i_1 += class13.field89.method4259() * 6 / 100;
          i_1 += WorldMapCacheName.field307.method4259() * 4 / 100;
          i_1 += class29.field253.method4259() * 2 / 100;
-         i_1 += class256.field3500.method4259() * 56 / 100;
+         i_1 += NPCDefinition.field3500.method4259() * 56 / 100;
          i_1 += Client.field683.method4259() * 2 / 100;
          i_1 += class4.field18.method4259() * 2 / 100;
          i_1 += class17.field110.method4259() * 2 / 100;
@@ -81,19 +81,19 @@ public class class272 {
 
             Login.field1188 = 30;
          } else {
-            class42.method763(class197.field2405, "Animations");
-            class42.method763(class167.field2049, "Skeletons");
-            class42.method763(class13.field89, "Sound FX");
-            class42.method763(WorldMapCacheName.field307, "Maps");
-            class42.method763(class29.field253, "Music Tracks");
-            class42.method763(class256.field3500, "Models");
-            class42.method763(Client.field683, "Sprites");
-            class42.method763(class32.field279, "Music Jingles");
-            class42.method763(class126.field1647, "Music Samples");
-            class42.method763(class67.field650, "Music Patches");
-            class42.method763(ItemDefinition.field3457, "World Map");
-            class42.method763(Client.field684, "World Map Geography");
-            class42.method763(class135.field1874, "World Map Ground");
+            ItemContainer_2.method763(class197.field2405, "Animations");
+            ItemContainer_2.method763(class167.field2049, "Skeletons");
+            ItemContainer_2.method763(class13.field89, "Sound FX");
+            ItemContainer_2.method763(WorldMapCacheName.field307, "Maps");
+            ItemContainer_2.method763(class29.field253, "Music Tracks");
+            ItemContainer_2.method763(NPCDefinition.field3500, "Models");
+            ItemContainer_2.method763(Client.field683, "Sprites");
+            ItemContainer_2.method763(class32.field279, "Music Jingles");
+            ItemContainer_2.method763(class126.field1647, "Music Samples");
+            ItemContainer_2.method763(class67.field650, "Music Patches");
+            ItemContainer_2.method763(ItemDefinition.field3457, "World Map");
+            ItemContainer_2.method763(Client.field684, "World Map Geography");
+            ItemContainer_2.method763(class135.field1874, "World Map Ground");
             class159.field1995 = new class312();
             class159.field1995.method5903(WorldMapID.field232, (byte) 104);
             Login.field1189 = "Loaded update list";
@@ -211,17 +211,17 @@ public class class272 {
                   class235 class235_32 = SoundSystem.field2544;
                   class257.field3505 = class235_32;
                   WorldMapID.method414(SoundSystem.field2544, -2096884458);
-                  class6.method66(SoundSystem.field2544, class256.field3500);
+                  class6.method66(SoundSystem.field2544, NPCDefinition.field3500);
                   class235_26 = SoundSystem.field2544;
-                  class235_3 = class256.field3500;
+                  class235_3 = NPCDefinition.field3500;
                   boolean bool_35 = Client.field656;
                   class253.field3395 = class235_26;
                   class253.field3351 = class235_3;
                   class253.field3352 = bool_35;
-                  class137.method3263(SoundSystem.field2544, class256.field3500, (byte) -92);
+                  class137.method3263(SoundSystem.field2544, NPCDefinition.field3500, (byte) -92);
                   class87.method2054(SoundSystem.field2544, (byte) 97);
                   class235 class235_28 = SoundSystem.field2544;
-                  class235 class235_6 = class256.field3500;
+                  class235 class235_6 = NPCDefinition.field3500;
                   boolean bool_7 = Client.field655;
                   Font font_8 = class213.field2529;
                   class91.field1276 = class235_28;
@@ -236,13 +236,13 @@ public class class272 {
                   class258.field3516 = class235_10;
                   class258.field3517 = class235_11;
                   class235 class235_12 = SoundSystem.field2544;
-                  class235 class235_13 = class256.field3500;
+                  class235 class235_13 = NPCDefinition.field3500;
                   class243.field3247 = class235_12;
                   GCMonitor.field379 = class235_13;
                   class235 class235_14 = SoundSystem.field2544;
                   class248.field3298 = class235_14;
                   class6.method68(SoundSystem.field2544);
-                  class144.method3317(GCMonitor.field382, class256.field3500, Client.field683, class2.field6, -354587299);
+                  class144.method3317(GCMonitor.field382, NPCDefinition.field3500, Client.field683, class2.field6, -354587299);
                   class15.method173(SoundSystem.field2544, -1590503408);
                   class235 class235_15 = SoundSystem.field2544;
                   class251.field3314 = class235_15;
@@ -318,8 +318,8 @@ public class class272 {
                   ++i_1;
                }
 
-               if (class39.field342 == null) {
-                  class39.field342 = class131.method3062(Client.field683, class159.field1995.field3828, 0, -14882219);
+               if (WorldMapSection1.mapMarkerSprites == null) {
+                  WorldMapSection1.mapMarkerSprites = class131.method3062(Client.field683, class159.field1995.field3828, 0, -14882219);
                } else {
                   ++i_1;
                }

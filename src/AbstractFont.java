@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class AbstractFont extends class321 {
+public abstract class AbstractFont extends Rasterizer2D {
 
    public static class324[] field3720;
    static int field3710 = -1;
@@ -296,11 +296,11 @@ public abstract class AbstractFont extends class321 {
 
                   int i_13 = this.field3700[var_7];
                   if (field3710 != -1) {
-                     class321.method6010(i_2, i_3 + (int)((double)this.field3709 * 0.7D), i_13, field3710);
+                     Rasterizer2D.method6010(i_2, i_3 + (int)((double)this.field3709 * 0.7D), i_13, field3710);
                   }
 
                   if (field3711 != -1) {
-                     class321.method6010(i_2, i_3 + this.field3709 + 1, i_13, field3711);
+                     Rasterizer2D.method6010(i_2, i_3 + this.field3709 + 1, i_13, field3711);
                   }
 
                   i_2 += i_13;
@@ -484,11 +484,11 @@ public abstract class AbstractFont extends class321 {
 
                   int i_18 = this.field3700[var_10];
                   if (field3710 != -1) {
-                     class321.method6010(i_2, i_3 + (int)((double)this.field3709 * 0.7D), i_18, field3710);
+                     Rasterizer2D.method6010(i_2, i_3 + (int)((double)this.field3709 * 0.7D), i_18, field3710);
                   }
 
                   if (field3711 != -1) {
-                     class321.method6010(i_2, i_3 + this.field3709, i_18, field3711);
+                     Rasterizer2D.method6010(i_2, i_3 + this.field3709, i_18, field3711);
                   }
 
                   i_2 += i_18;
@@ -773,42 +773,42 @@ public abstract class AbstractFont extends class321 {
    }
 
    static void method5416(byte[] bytes_0, int i_1, int i_2, int i_3, int i_4, int i_5) {
-      int i_6 = i_1 + i_2 * class321.Rasterizer2D_width;
-      int i_7 = class321.Rasterizer2D_width - i_3;
+      int i_6 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
+      int i_7 = Rasterizer2D.Rasterizer2D_width - i_3;
       int i_8 = 0;
       int i_9 = 0;
       int i_10;
-      if (i_2 < class321.Rasterizer2D_yClipStart) {
-         i_10 = class321.Rasterizer2D_yClipStart - i_2;
+      if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+         i_10 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
          i_4 -= i_10;
-         i_2 = class321.Rasterizer2D_yClipStart;
+         i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
          i_9 += i_3 * i_10;
-         i_6 += i_10 * class321.Rasterizer2D_width;
+         i_6 += i_10 * Rasterizer2D.Rasterizer2D_width;
       }
 
-      if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
-         i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
+      if (i_2 + i_4 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+         i_4 -= i_2 + i_4 - Rasterizer2D.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.Rasterizer2D_xClipStart) {
-         i_10 = class321.Rasterizer2D_xClipStart - i_1;
+      if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+         i_10 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
          i_3 -= i_10;
-         i_1 = class321.Rasterizer2D_xClipStart;
+         i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
          i_9 += i_10;
          i_6 += i_10;
          i_8 += i_10;
          i_7 += i_10;
       }
 
-      if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
-         i_10 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
+      if (i_3 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+         i_10 = i_3 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
          i_3 -= i_10;
          i_8 += i_10;
          i_7 += i_10;
       }
 
       if (i_3 > 0 && i_4 > 0) {
-         method5380(class321.Rasterizer2D_pixels, bytes_0, i_5, i_9, i_6, i_3, i_4, i_7, i_8);
+         method5380(Rasterizer2D.Rasterizer2D_pixels, bytes_0, i_5, i_9, i_6, i_3, i_4, i_7, i_8);
       }
    }
 
@@ -879,42 +879,42 @@ public abstract class AbstractFont extends class321 {
    }
 
    static void method5364(byte[] bytes_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
-      int i_7 = i_1 + i_2 * class321.Rasterizer2D_width;
-      int i_8 = class321.Rasterizer2D_width - i_3;
+      int i_7 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
+      int i_8 = Rasterizer2D.Rasterizer2D_width - i_3;
       int i_9 = 0;
       int i_10 = 0;
       int i_11;
-      if (i_2 < class321.Rasterizer2D_yClipStart) {
-         i_11 = class321.Rasterizer2D_yClipStart - i_2;
+      if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+         i_11 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
          i_4 -= i_11;
-         i_2 = class321.Rasterizer2D_yClipStart;
+         i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
          i_10 += i_3 * i_11;
-         i_7 += i_11 * class321.Rasterizer2D_width;
+         i_7 += i_11 * Rasterizer2D.Rasterizer2D_width;
       }
 
-      if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
-         i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
+      if (i_2 + i_4 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+         i_4 -= i_2 + i_4 - Rasterizer2D.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.Rasterizer2D_xClipStart) {
-         i_11 = class321.Rasterizer2D_xClipStart - i_1;
+      if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+         i_11 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
          i_3 -= i_11;
-         i_1 = class321.Rasterizer2D_xClipStart;
+         i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
          i_10 += i_11;
          i_7 += i_11;
          i_9 += i_11;
          i_8 += i_11;
       }
 
-      if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
-         i_11 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
+      if (i_3 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+         i_11 = i_3 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
          i_3 -= i_11;
          i_9 += i_11;
          i_8 += i_11;
       }
 
       if (i_3 > 0 && i_4 > 0) {
-         method5365(class321.Rasterizer2D_pixels, bytes_0, i_5, i_10, i_7, i_3, i_4, i_8, i_9, i_6);
+         method5365(Rasterizer2D.Rasterizer2D_pixels, bytes_0, i_5, i_10, i_7, i_3, i_4, i_8, i_9, i_6);
       }
    }
 

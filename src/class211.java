@@ -1,13 +1,13 @@
 public class class211 extends DualNode {
 
-   public final int field2519;
-   public final int field2522;
+   public final int width;
+   public final int height;
    public final int[] field2520;
    public final int[] field2521;
 
    class211(int i_1, int i_2, int[] ints_3, int[] ints_4, int i_5) {
-      this.field2519 = i_1;
-      this.field2522 = i_2;
+      this.width = i_1;
+      this.height = i_2;
       this.field2520 = ints_3;
       this.field2521 = ints_4;
    }

@@ -53,12 +53,12 @@ public class class197 {
       }
 
       for (i_6 = 0; i_6 < Client.menuOptionsCount; i_6++) {
-         if (class1.method5(Client.field794[i_6], 1662351965)) {
+         if (class1.method5(Client.menuOpcodes[i_6], 1662351965)) {
             if (i_6 < Client.menuOptionsCount - 1) {
                for (int i_7 = i_6; i_7 < Client.menuOptionsCount - 1; i_7++) {
                   Client.field796[i_7] = Client.field796[i_7 + 1];
                   Client.field668[i_7] = Client.field668[i_7 + 1];
-                  Client.field794[i_7] = Client.field794[i_7 + 1];
+                  Client.menuOpcodes[i_7] = Client.menuOpcodes[i_7 + 1];
                   Client.field795[i_7] = Client.field795[i_7 + 1];
                   Client.field792[i_7] = Client.field792[i_7 + 1];
                   Client.field793[i_7] = Client.field793[i_7 + 1];

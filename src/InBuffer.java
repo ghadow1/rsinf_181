@@ -73,12 +73,12 @@ public class InBuffer {
 
    static final void method2245() {
       for (class86 class86_1 = (class86) Client.field670.method4892(); class86_1 != null; class86_1 = (class86) Client.field670.method4894()) {
-         if (class86_1.field1215 == class42.field372 && Client.field881 <= class86_1.field1240) {
+         if (class86_1.field1215 == ItemContainer_2.plane && Client.field881 <= class86_1.field1240) {
             if (Client.field881 >= class86_1.field1217) {
                if (class86_1.field1224 > 0) {
-                  class79 class79_2 = Client.field694[class86_1.field1224 - 1];
-                  if (class79_2 != null && class79_2.field1005 >= 0 && class79_2.field1005 < 13312 && class79_2.field949 >= 0 && class79_2.field949 < 13312) {
-                     class86_1.method2033(class79_2.field1005, class79_2.field949, class62.method1130(class79_2.field1005, class79_2.field949, class86_1.field1215) - class86_1.field1225, Client.field881, -653530834);
+                  NPC NPC_2 = Client.npcs[class86_1.field1224 - 1];
+                  if (NPC_2 != null && NPC_2.x >= 0 && NPC_2.x < 13312 && NPC_2.y >= 0 && NPC_2.y < 13312) {
+                     class86_1.method2033(NPC_2.x, NPC_2.y, class62.method1130(NPC_2.x, NPC_2.y, class86_1.field1215) - class86_1.field1225, Client.field881, -653530834);
                   }
                }
 
@@ -86,18 +86,18 @@ public class InBuffer {
                   int i_3 = -class86_1.field1224 - 1;
                   class66 class66_4;
                   if (i_3 == Client.field770) {
-                     class66_4 = Client.field657;
+                     class66_4 = Client.localPlayer;
                   } else {
                      class66_4 = Client.field909[i_3];
                   }
 
-                  if (class66_4 != null && class66_4.field1005 >= 0 && class66_4.field1005 < 13312 && class66_4.field949 >= 0 && class66_4.field949 < 13312) {
-                     class86_1.method2033(class66_4.field1005, class66_4.field949, class62.method1130(class66_4.field1005, class66_4.field949, class86_1.field1215) - class86_1.field1225, Client.field881, -1906132151);
+                  if (class66_4 != null && class66_4.x >= 0 && class66_4.x < 13312 && class66_4.y >= 0 && class66_4.y < 13312) {
+                     class86_1.method2033(class66_4.x, class66_4.y, class62.method1130(class66_4.x, class66_4.y, class86_1.field1215) - class86_1.field1225, Client.field881, -1906132151);
                   }
                }
 
                class86_1.method2043(Client.field718, (byte) -4);
-               class5.field22.method3077(class42.field372, (int)class86_1.field1218, (int)class86_1.field1227, (int)class86_1.field1228, 60, class86_1, class86_1.field1234, -1L, false);
+               class5.field22.method3077(ItemContainer_2.plane, (int)class86_1.field1218, (int)class86_1.field1227, (int)class86_1.field1228, 60, class86_1, class86_1.field1234, -1L, false);
             }
          } else {
             class86_1.unlink();

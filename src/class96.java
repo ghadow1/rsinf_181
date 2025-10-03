@@ -109,7 +109,7 @@ public class class96 {
                         bool_33 = false;
                      }
 
-                     i_21 = class79.method1977(i_30, class92_4, bool_33, -1435183788);
+                     i_21 = NPC.method1977(i_30, class92_4, bool_33, -1435183788);
                      switch(i_21) {
                      case 0:
                         return;
@@ -356,7 +356,7 @@ public class class96 {
                class240.field3207 = null;
                Login.field1181 = null;
                class5.field23 = null;
-               class79.field1135 = null;
+               NPC.field1135 = null;
                class87.field1243 = null;
                Login.field1183 = null;
                Login.field1178 = null;

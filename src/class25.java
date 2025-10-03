@@ -28,7 +28,7 @@ public class class25 {
             return 1;
          } else if (i_0 == 1202) {
             widget_4.field2607 = 3;
-            widget_4.field2649 = Client.field657.field613.method3994();
+            widget_4.field2649 = Client.localPlayer.field613.method3994();
             return 1;
          } else {
             return 2;
@@ -74,7 +74,7 @@ public class class25 {
          if ((!bool_1 || itemDefinition_6.field3452) && itemDefinition_6.field3444 == -1 && itemDefinition_6.name.toLowerCase().indexOf(string_0) != -1) {
             if (i_4 >= 250) {
                class257.field3502 = -1;
-               class39.field336 = null;
+               WorldMapSection1.field336 = null;
                return;
             }
 
@@ -92,7 +92,7 @@ public class class25 {
          }
       }
 
-      class39.field336 = shorts_3;
+      WorldMapSection1.field336 = shorts_3;
       class32.field280 = 0;
       class257.field3502 = i_4;
       String[] arr_9 = new String[class257.field3502];
@@ -101,7 +101,7 @@ public class class25 {
          arr_9[i_10] = class26.method404(shorts_3[i_10]).name;
       }
 
-      class82.method1991(arr_9, class39.field336, (short) -2750);
+      class82.method1991(arr_9, WorldMapSection1.field336, (short) -2750);
    }
 
 }

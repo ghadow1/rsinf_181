@@ -40,15 +40,15 @@ public class class153 extends ChainedComparator {
          int i_8;
          int i_10;
          for (i_8 = 0; i_8 < 32768; i_8++) {
-            class79 class79_9 = Client.field694[i_8];
-            if (class79_9 != null) {
+            NPC NPC_9 = Client.npcs[i_8];
+            if (NPC_9 != null) {
                for (i_10 = 0; i_10 < 10; i_10++) {
-                  class79_9.field994[i_10] -= i_6;
-                  class79_9.field962[i_10] -= i_7;
+                  NPC_9.field994[i_10] -= i_6;
+                  NPC_9.field962[i_10] -= i_7;
                }
 
-               class79_9.field1005 -= i_6 * 128;
-               class79_9.field949 -= i_7 * 128;
+               NPC_9.x -= i_6 * 128;
+               NPC_9.y -= i_7 * 128;
             }
          }
 
@@ -60,8 +60,8 @@ public class class153 extends ChainedComparator {
                   class66_22.field962[i_10] -= i_7;
                }
 
-               class66_22.field1005 -= i_6 * 128;
-               class66_22.field949 -= i_7 * 128;
+               class66_22.x -= i_6 * 128;
+               class66_22.y -= i_7 * 128;
             }
          }
 
@@ -91,9 +91,9 @@ public class class153 extends ChainedComparator {
 
                for (int i_18 = 0; i_18 < 4; i_18++) {
                   if (i_16 >= 0 && i_17 >= 0 && i_16 < 104 && i_17 < 104) {
-                     Client.field887[i_18][i_14][i_15] = Client.field887[i_18][i_16][i_17];
+                     Client.groundItems[i_18][i_14][i_15] = Client.groundItems[i_18][i_16][i_17];
                   } else {
-                     Client.field887[i_18][i_14][i_15] = null;
+                     Client.groundItems[i_18][i_14][i_15] = null;
                   }
                }
             }
@@ -107,9 +107,9 @@ public class class153 extends ChainedComparator {
             }
          }
 
-         if (Client.field885 != 0) {
-            Client.field885 -= i_6;
-            Client.field842 -= i_7;
+         if (Client.destinationX != 0) {
+            Client.destinationX -= i_6;
+            Client.destinationY -= i_7;
          }
 
          Client.field893 = 0;

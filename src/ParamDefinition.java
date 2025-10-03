@@ -1,6 +1,6 @@
-public abstract class class174 {
+public abstract class ParamDefinition {
 
-   static class325 field2102;
+   static class325 sceneMinimapSprite;
    public int field2098;
    public int field2101;
    public int field2099;
@@ -41,7 +41,7 @@ public abstract class class174 {
       class13.field89.method4158(-1816789816);
       WorldMapCacheName.field307.method4158(468299296);
       class29.field253.method4158(-678416824);
-      class256.field3500.method4158(-1208530808);
+      NPCDefinition.field3500.method4158(-1208530808);
       Client.field683.method4158(-487246667);
       class4.field18.method4158(-1989731361);
       class17.field110.method4158(-1533856957);

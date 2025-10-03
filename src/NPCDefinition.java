@@ -1,4 +1,4 @@
-public class class256 extends DualNode {
+public class NPCDefinition extends DualNode {
 
    static class233 field3464;
    static class233 field3484;
@@ -40,7 +40,7 @@ public class class256 extends DualNode {
    public int[] field3476;
    class316 field3487;
 
-   public final class256 method4709(int i_1) {
+   public final NPCDefinition transform() {
       int i_2 = -1;
       if (this.field3494 != -1) {
          i_2 = class67.method1237(this.field3494);
@@ -179,8 +179,8 @@ public class class256 extends DualNode {
 
    public final Model method4708(byte b_1) {
       if (this.field3476 != null) {
-         class256 class256_2 = this.method4709(942859640);
-         return class256_2 == null ? null : class256_2.method4708((byte) 103);
+         NPCDefinition NPCDefinition_2 = this.transform();
+         return NPCDefinition_2 == null ? null : NPCDefinition_2.method4708((byte) 103);
       } else if (this.field3463 == null) {
          return null;
       } else {
@@ -228,8 +228,8 @@ public class class256 extends DualNode {
 
    public final class127 method4707(class258 class258_1, int i_2, class258 class258_3, int i_4, byte b_5) {
       if (this.field3476 != null) {
-         class256 class256_13 = this.method4709(942859640);
-         return class256_13 == null ? null : class256_13.method4707(class258_1, i_2, class258_3, i_4, (byte) 23);
+         NPCDefinition NPCDefinition_13 = this.transform();
+         return NPCDefinition_13 == null ? null : NPCDefinition_13.method4707(class258_1, i_2, class258_3, i_4, (byte) 23);
       } else {
          class127 class127_6 = (class127) field3466.get((long)this.field3467);
          if (class127_6 == null) {

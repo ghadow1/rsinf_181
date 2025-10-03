@@ -1,7 +1,7 @@
 public abstract class class69 extends class135 {
 
-   int field1005;
-   int field949;
+   int x;
+   int y;
    int field990;
    int field1000;
    int field989;

@@ -121,21 +121,21 @@ public abstract class class21 {
       }
    }
 
-   static final void method272(class256 class256_0, int i_1, int i_2, int i_3, int i_4) {
+   static final void method272(NPCDefinition NPCDefinition_0, int i_1, int i_2, int i_3, int i_4) {
       if (Client.menuOptionsCount < 400) {
-         if (class256_0.field3476 != null) {
-            class256_0 = class256_0.method4709(942859640);
+         if (NPCDefinition_0.field3476 != null) {
+            NPCDefinition_0 = NPCDefinition_0.transform();
          }
 
-         if (class256_0 != null) {
-            if (class256_0.field3496) {
-               if (!class256_0.field3498 || Client.field825 == i_1) {
-                  String string_5 = class256_0.field3468;
+         if (NPCDefinition_0 != null) {
+            if (NPCDefinition_0.field3496) {
+               if (!NPCDefinition_0.field3498 || Client.field825 == i_1) {
+                  String string_5 = NPCDefinition_0.field3468;
                   int i_8;
                   int i_9;
-                  if (class256_0.field3478 != 0) {
-                     i_8 = class256_0.field3478;
-                     i_9 = Client.field657.field618;
+                  if (NPCDefinition_0.field3478 != 0) {
+                     i_8 = NPCDefinition_0.field3478;
+                     i_9 = Client.localPlayer.field618;
                      int i_10 = i_9 - i_8;
                      String string_7;
                      if (i_10 < -9) {
@@ -158,22 +158,22 @@ public abstract class class21 {
                         string_7 = class73.colorStartTag(16776960);
                      }
 
-                     string_5 = string_5 + string_7 + " " + " (" + "level-" + class256_0.field3478 + ")";
+                     string_5 = string_5 + string_7 + " " + " (" + "level-" + NPCDefinition_0.field3478 + ")";
                   }
 
-                  if (class256_0.field3498 && Client.field799) {
-                     class188.method3644("Examine", class73.colorStartTag(16776960) + string_5, 1003, i_1, i_2, i_3, 1154358453);
+                  if (NPCDefinition_0.field3498 && Client.field799) {
+                     class188.method3644("Examine", class73.colorStartTag(16776960) + string_5, 1003, i_1, i_2, i_3);
                   }
 
                   if (Client.isItemSelected == 1) {
-                     class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16776960) + string_5, 7, i_1, i_2, i_3, 1492323075);
+                     class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16776960) + string_5, 7, i_1, i_2, i_3);
                   } else if (Client.isSpellSelected) {
                      if ((WorldMapCacheName.field301 & 0x2) == 2) {
-                        class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16776960) + string_5, 8, i_1, i_2, i_3, 1830552502);
+                        class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16776960) + string_5, 8, i_1, i_2, i_3);
                      }
                   } else {
-                     int i_11 = class256_0.field3498 && Client.field799 ? 2000 : 0;
-                     String[] arr_12 = class256_0.field3483;
+                     int i_11 = NPCDefinition_0.field3498 && Client.field799 ? 2000 : 0;
+                     String[] arr_12 = NPCDefinition_0.field3483;
                      if (arr_12 != null) {
                         for (i_8 = 4; i_8 >= 0; --i_8) {
                            if (arr_12[i_8] != null && !arr_12[i_8].equalsIgnoreCase("Attack")) {
@@ -198,7 +198,7 @@ public abstract class class21 {
                                  i_9 = i_11 + 13;
                               }
 
-                              class188.method3644(arr_12[i_8], class73.colorStartTag(16776960) + string_5, i_9, i_1, i_2, i_3, 906687769);
+                              class188.method3644(arr_12[i_8], class73.colorStartTag(16776960) + string_5, i_9, i_1, i_2, i_3);
                            }
                         }
                      }
@@ -208,7 +208,7 @@ public abstract class class21 {
                            if (arr_12[i_8] != null && arr_12[i_8].equalsIgnoreCase("Attack")) {
                               short s_13 = 0;
                               if (class84.field1170 != Client.field679) {
-                                 if (Client.field679 == class84.field1167 || class84.field1173 == Client.field679 && class256_0.field3478 > Client.field657.field618) {
+                                 if (Client.field679 == class84.field1167 || class84.field1173 == Client.field679 && NPCDefinition_0.field3478 > Client.localPlayer.field618) {
                                     s_13 = 2000;
                                  }
 
@@ -233,14 +233,14 @@ public abstract class class21 {
                                     i_9 = s_13 + 13;
                                  }
 
-                                 class188.method3644(arr_12[i_8], class73.colorStartTag(16776960) + string_5, i_9, i_1, i_2, i_3, -555124761);
+                                 class188.method3644(arr_12[i_8], class73.colorStartTag(16776960) + string_5, i_9, i_1, i_2, i_3);
                               }
                            }
                         }
                      }
 
-                     if (!class256_0.field3498 || !Client.field799) {
-                        class188.method3644("Examine", class73.colorStartTag(16776960) + string_5, 1003, i_1, i_2, i_3, -1913385031);
+                     if (!NPCDefinition_0.field3498 || !Client.field799) {
+                        class188.method3644("Examine", class73.colorStartTag(16776960) + string_5, 1003, i_1, i_2, i_3);
                      }
                   }
 

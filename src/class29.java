@@ -55,19 +55,19 @@ public class class29 {
 
                   if (class25_9.field209 == class220.field2721.field2723) {
                      if (class25_9.field210 == 0) {
-                        class321.method6010(this.field250 * i_1, this.field250 * (63 - i_2), 1, i_13);
+                        Rasterizer2D.method6010(this.field250 * i_1, this.field250 * (63 - i_2), 1, i_13);
                      }
 
                      if (class25_9.field210 == 1) {
-                        class321.method6010(this.field250 + this.field250 * i_1 - 1, this.field250 * (63 - i_2), 1, i_13);
+                        Rasterizer2D.method6010(this.field250 + this.field250 * i_1 - 1, this.field250 * (63 - i_2), 1, i_13);
                      }
 
                      if (class25_9.field210 == 2) {
-                        class321.method6010(this.field250 * i_1 + this.field250 - 1, this.field250 * (63 - i_2) + this.field250 - 1, 1, i_13);
+                        Rasterizer2D.method6010(this.field250 * i_1 + this.field250 - 1, this.field250 * (63 - i_2) + this.field250 - 1, 1, i_13);
                      }
 
                      if (class25_9.field210 == 3) {
-                        class321.method6010(this.field250 * i_1, this.field250 * (63 - i_2) + this.field250 - 1, 1, i_13);
+                        Rasterizer2D.method6010(this.field250 * i_1, this.field250 * (63 - i_2) + this.field250 - 1, 1, i_13);
                      }
                   }
 
@@ -76,11 +76,11 @@ public class class29 {
                      int i_15;
                      if (i_14 == 0) {
                         for (i_15 = 0; i_15 < this.field250; i_15++) {
-                           class321.method6010(i_15 + this.field250 * i_1, (64 - i_2) * this.field250 - 1 - i_15, 1, i_13);
+                           Rasterizer2D.method6010(i_15 + this.field250 * i_1, (64 - i_2) * this.field250 - 1 - i_15, 1, i_13);
                         }
                      } else {
                         for (i_15 = 0; i_15 < this.field250; i_15++) {
-                           class321.method6010(i_15 + this.field250 * i_1, i_15 + this.field250 * (63 - i_2), 1, i_13);
+                           Rasterizer2D.method6010(i_15 + this.field250 * i_1, i_15 + this.field250 * (63 - i_2), 1, i_13);
                         }
                      }
                   }
@@ -169,7 +169,7 @@ public class class29 {
       int i_7 = class21_3.field163[0][i_1][i_2] - 1;
       int i_8 = class21_3.field170[0][i_1][i_2] - 1;
       if (i_7 == -1 && i_8 == -1) {
-         class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, this.field249);
+         Rasterizer2D.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, this.field249);
       }
 
       int i_9 = 16711935;
@@ -262,11 +262,11 @@ public class class29 {
       }
 
       if (i_8 > -1 && class21_3.field165[0][i_1][i_2] == 0) {
-         class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_9);
+         Rasterizer2D.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_9);
       } else {
          i_10 = this.method439(i_1, i_2, class21_3, worldMapID_5, 23103860);
          if (i_8 == -1) {
-            class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_10);
+            Rasterizer2D.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_10);
          } else {
             fontName_4.method698(this.field250 * i_1, this.field250 * (63 - i_2), i_10, i_9, this.field250, this.field250, class21_3.field165[0][i_1][i_2], class21_3.field166[0][i_1][i_2], 1804465340);
          }
@@ -439,7 +439,7 @@ public class class29 {
             }
 
             if (class21_3.field165[i_6][i_1][i_2] == 0) {
-               class321.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_8);
+               Rasterizer2D.fillRectangle(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, this.field250, i_8);
             } else {
                fontName_4.method698(this.field250 * i_1, this.field250 * (63 - i_2), 0, i_8, this.field250, this.field250, class21_3.field165[i_6][i_1][i_2], class21_3.field166[i_6][i_1][i_2], 1198458587);
             }
@@ -453,7 +453,7 @@ public class class29 {
       if (class325_5 != null) {
          int i_6 = this.method455(class325_5, class241_1.field3226, 406251697);
          int i_7 = this.method450(class325_5, class241_1.field3227, (byte) 36);
-         class325_5.method6126(i_6 + i_2, i_3 + i_7);
+         class325_5.drawTransBgAt(i_6 + i_2, i_3 + i_7);
       }
 
    }
@@ -493,18 +493,18 @@ public class class29 {
          boolean bool_3 = true;
 
          Iterator iterator_4;
-         class39 class39_5;
-         for (iterator_4 = this.field242.iterator(); iterator_4.hasNext(); bool_3 &= class39_5.method244(-613524686)) {
-            class39_5 = (class39) iterator_4.next();
-            class39_5.method245(class233_1, 2013007718);
+         WorldMapSection1 worldMapSection1_5;
+         for (iterator_4 = this.field242.iterator(); iterator_4.hasNext(); bool_3 &= worldMapSection1_5.method244(-613524686)) {
+            worldMapSection1_5 = (WorldMapSection1) iterator_4.next();
+            worldMapSection1_5.method245(class233_1, 2013007718);
          }
 
          if (bool_3) {
             iterator_4 = this.field242.iterator();
 
             while (iterator_4.hasNext()) {
-               class39_5 = (class39) iterator_4.next();
-               this.method425(class39_5.method685(-1825008967) * 8, class39_5.method680(-1471448055) * 8, 8, 8, class39_5, 80305622);
+               worldMapSection1_5 = (WorldMapSection1) iterator_4.next();
+               this.method425(worldMapSection1_5.method685(-1825008967) * 8, worldMapSection1_5.method680(-1471448055) * 8, 8, 8, worldMapSection1_5, 80305622);
             }
          }
 
@@ -580,8 +580,8 @@ public class class29 {
       if (this.field247 != null) {
          class213_8 = new class213(this.field247.field159 + i_2, i_3 + this.field247.field167 * 64, i_4 + this.field247.field156 * 64);
       } else {
-         class39 class39_9 = (class39) class21_5;
-         class213_8 = new class213(i_2 + class39_9.field159, i_3 + class39_9.field167 * 64 + class39_9.method676(2082336179) * 8, i_4 + class39_9.field156 * 64 + class39_9.method678(-521684078) * 8);
+         WorldMapSection1 worldMapSection1_9 = (WorldMapSection1) class21_5;
+         class213_8 = new class213(i_2 + worldMapSection1_9.field159, i_3 + worldMapSection1_9.field167 * 64 + worldMapSection1_9.method676(2082336179) * 8, i_4 + worldMapSection1_9.field156 * 64 + worldMapSection1_9.method678(-521684078) * 8);
       }
 
       Object obj_11;
@@ -598,10 +598,10 @@ public class class29 {
    void method493(class241 class241_1, int i_2, int i_3, int i_4, int i_5, byte b_6) {
       class325 class325_7 = class241_1.method4379();
       if (class325_7 != null) {
-         class325_7.method6126(i_2 - class325_7.field3899 / 2, i_3 - class325_7.field3900 / 2);
+         class325_7.drawTransBgAt(i_2 - class325_7.field3899 / 2, i_3 - class325_7.field3900 / 2);
          if (i_4 % i_5 < i_5 / 2) {
-            class321.drawCircleAlpha2D(i_2, i_3, 15, 16776960, 128);
-            class321.drawCircleAlpha2D(i_2, i_3, 7, 16777215, 256);
+            Rasterizer2D.drawCircleAlpha2D(i_2, i_3, 15, 16776960, 128);
+            Rasterizer2D.drawCircleAlpha2D(i_2, i_3, 7, 16777215, 256);
          }
 
       }
@@ -663,16 +663,16 @@ public class class29 {
    void method435(FontName fontName_1, class324[] arr_2, WorldMapID worldMapID_3, int i_4) {
       Iterator iterator_5 = this.field242.iterator();
 
-      class39 class39_6;
+      WorldMapSection1 worldMapSection1_6;
       int i_7;
       int i_8;
       while (iterator_5.hasNext()) {
-         class39_6 = (class39) iterator_5.next();
+         worldMapSection1_6 = (WorldMapSection1) iterator_5.next();
 
-         for (i_7 = class39_6.method685(-1641135365) * 8; i_7 < class39_6.method685(-1656234696) * 8 + 8; i_7++) {
-            for (i_8 = class39_6.method680(-1829076552) * 8; i_8 < class39_6.method680(-1868477150) * 8 + 8; i_8++) {
-               this.method426(i_7, i_8, class39_6, fontName_1, worldMapID_3, -1127411208);
-               this.method520(i_7, i_8, class39_6, fontName_1, 742440794);
+         for (i_7 = worldMapSection1_6.method685(-1641135365) * 8; i_7 < worldMapSection1_6.method685(-1656234696) * 8 + 8; i_7++) {
+            for (i_8 = worldMapSection1_6.method680(-1829076552) * 8; i_8 < worldMapSection1_6.method680(-1868477150) * 8 + 8; i_8++) {
+               this.method426(i_7, i_8, worldMapSection1_6, fontName_1, worldMapID_3, -1127411208);
+               this.method520(i_7, i_8, worldMapSection1_6, fontName_1, 742440794);
             }
          }
       }
@@ -680,11 +680,11 @@ public class class29 {
       iterator_5 = this.field242.iterator();
 
       while (iterator_5.hasNext()) {
-         class39_6 = (class39) iterator_5.next();
+         worldMapSection1_6 = (WorldMapSection1) iterator_5.next();
 
-         for (i_7 = class39_6.method685(-1375964958) * 8; i_7 < class39_6.method685(-500534432) * 8 + 8; i_7++) {
-            for (i_8 = class39_6.method680(-1257485196) * 8; i_8 < class39_6.method680(-1869880086) * 8 + 8; i_8++) {
-               this.method436(i_7, i_8, class39_6, fontName_1, arr_2, 1899751971);
+         for (i_7 = worldMapSection1_6.method685(-1375964958) * 8; i_7 < worldMapSection1_6.method685(-500534432) * 8 + 8; i_7++) {
+            for (i_8 = worldMapSection1_6.method680(-1257485196) * 8; i_8 < worldMapSection1_6.method680(-1869880086) * 8 + 8; i_8++) {
+               this.method436(i_7, i_8, worldMapSection1_6, fontName_1, arr_2, 1899751971);
             }
          }
       }
@@ -694,19 +694,19 @@ public class class29 {
    void method454(int i_1, int i_2, int i_3, int i_4, int i_5) {
       i_3 %= 4;
       if (i_3 == 0) {
-         class321.method6000(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, i_4);
+         Rasterizer2D.method6000(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, i_4);
       }
 
       if (i_3 == 1) {
-         class321.method6010(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, i_4);
+         Rasterizer2D.method6010(this.field250 * i_1, this.field250 * (63 - i_2), this.field250, i_4);
       }
 
       if (i_3 == 2) {
-         class321.method6000(this.field250 * i_1 + this.field250 - 1, this.field250 * (63 - i_2), this.field250, i_4);
+         Rasterizer2D.method6000(this.field250 * i_1 + this.field250 - 1, this.field250 * (63 - i_2), this.field250, i_4);
       }
 
       if (i_3 == 3) {
-         class321.method6010(this.field250 * i_1, this.field250 * (63 - i_2) + this.field250 - 1, this.field250, i_4);
+         Rasterizer2D.method6010(this.field250 * i_1, this.field250 * (63 - i_2) + this.field250 - 1, this.field250, i_4);
       }
 
    }
@@ -759,8 +759,8 @@ public class class29 {
          Iterator iterator_2 = this.field242.iterator();
 
          while (iterator_2.hasNext()) {
-            class39 class39_3 = (class39) iterator_2.next();
-            class39_3.method246(1146093408);
+            WorldMapSection1 worldMapSection1_3 = (WorldMapSection1) iterator_2.next();
+            worldMapSection1_3.method246(1146093408);
          }
       }
 
@@ -800,7 +800,7 @@ public class class29 {
                int i_13 = this.field245;
                int i_14 = this.field246;
                int i_15 = this.field250;
-               field244.method3351(class325_12, Widget.method4089(i_13, i_14, i_15), class325_12.field3908.length * 4);
+               field244.method3351(class325_12, Widget.getWorldMapSpriteHash(i_13, i_14, i_15), class325_12.field3908.length * 4);
                this.method429((short) 30233);
             }
          }
@@ -830,9 +830,9 @@ public class class29 {
       Iterator iterator_4 = hashset_1.iterator();
 
       while (iterator_4.hasNext()) {
-         class39 class39_5 = (class39) iterator_4.next();
-         if (class39_5.method250(-121424149) == this.field245 && class39_5.method251(-1967751745) == this.field246) {
-            this.field242.add(class39_5);
+         WorldMapSection1 worldMapSection1_5 = (WorldMapSection1) iterator_4.next();
+         if (worldMapSection1_5.method250(-121424149) == this.field245 && worldMapSection1_5.method251(-1967751745) == this.field246) {
+            this.field242.add(worldMapSection1_5);
          }
       }
 
@@ -840,13 +840,13 @@ public class class29 {
    }
 
    static final void method497(boolean bool_0, int i_1) {
-      for (int i_2 = 0; i_2 < Client.field695; i_2++) {
-         class79 class79_3 = Client.field694[Client.field696[i_2]];
-         if (class79_3 != null && class79_3.vmethod1965() && class79_3.field1134.field3473 == bool_0 && class79_3.field1134.method4710()) {
-            int i_4 = class79_3.field1005 >> 7;
-            int i_5 = class79_3.field949 >> 7;
+      for (int i_2 = 0; i_2 < Client.npcCount; i_2++) {
+         NPC NPC_3 = Client.npcs[Client.npcIndices[i_2]];
+         if (NPC_3 != null && NPC_3.vmethod1965() && NPC_3.definition.field3473 == bool_0 && NPC_3.definition.method4710()) {
+            int i_4 = NPC_3.x >> 7;
+            int i_5 = NPC_3.y >> 7;
             if (i_4 >= 0 && i_4 < 104 && i_5 >= 0 && i_5 < 104) {
-               if (class79_3.field952 == 1 && (class79_3.field1005 & 0x7f) == 64 && (class79_3.field949 & 0x7f) == 64) {
+               if (NPC_3.field952 == 1 && (NPC_3.x & 0x7f) == 64 && (NPC_3.y & 0x7f) == 64) {
                   if (Client.field750[i_4][i_5] == Client.field751) {
                      continue;
                   }
@@ -854,9 +854,9 @@ public class class29 {
                   Client.field750[i_4][i_5] = Client.field751;
                }
 
-               long long_6 = class126.method2854(0, 0, 1, !class79_3.field1134.field3496, Client.field696[i_2]);
-               class79_3.field953 = Client.field881;
-               class5.field22.method3077(class42.field372, class79_3.field1005, class79_3.field949, class62.method1130(class79_3.field952 * 64 - 64 + class79_3.field1005, class79_3.field952 * 64 - 64 + class79_3.field949, class42.field372), class79_3.field952 * 64 - 64 + 60, class79_3, class79_3.field950, long_6, class79_3.field967);
+               long long_6 = class126.method2854(0, 0, 1, !NPC_3.definition.field3496, Client.npcIndices[i_2]);
+               NPC_3.field953 = Client.field881;
+               class5.field22.method3077(ItemContainer_2.plane, NPC_3.x, NPC_3.y, class62.method1130(NPC_3.field952 * 64 - 64 + NPC_3.x, NPC_3.field952 * 64 - 64 + NPC_3.y, ItemContainer_2.plane), NPC_3.field952 * 64 - 64 + 60, NPC_3, NPC_3.field950, long_6, NPC_3.field967);
             }
          }
       }

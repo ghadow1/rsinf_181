@@ -125,8 +125,8 @@ public class class72 {
 
          for (int i_10 = i_7; i_10 < i_8; i_10++) {
             int i_11 = this.field1039[i_3++];
-            int i_12 = i_9 % class321.Rasterizer2D_width;
-            if (i_11 != 0 && i_12 >= class321.Rasterizer2D_xClipStart && i_12 < class321.Rasterizer2D_xClipEnd) {
+            int i_12 = i_9 % Rasterizer2D.Rasterizer2D_width;
+            if (i_11 != 0 && i_12 >= Rasterizer2D.Rasterizer2D_xClipStart && i_12 < Rasterizer2D.Rasterizer2D_xClipEnd) {
                int i_13 = i_11;
                int i_14 = 256 - i_11;
                i_11 = this.field1044[i_11];
@@ -409,8 +409,8 @@ public class class72 {
       class1.field3 = i_2 - i_13;
       class11.field77 = i_3;
       MouseRecorder.field1112 = i_4;
-      if (Client.field727 == 1 && Client.field890 >= 2 && Client.field881 % 50 == 0 && (MouseHandler.field499 >> 7 != Client.field657.field1005 >> 7 || class26.field227 >> 7 != Client.field657.field949 >> 7)) {
-         i_14 = Client.field657.field629;
+      if (Client.field727 == 1 && Client.field890 >= 2 && Client.field881 % 50 == 0 && (MouseHandler.field499 >> 7 != Client.localPlayer.x >> 7 || class26.field227 >> 7 != Client.localPlayer.y >> 7)) {
+         i_14 = Client.localPlayer.field629;
          i_15 = (MouseHandler.field499 >> 7) + class196.field2389;
          i_16 = (class26.field227 >> 7) + class1.field1;
          class28.method418(i_15, i_16, i_14, true, 1931276581);

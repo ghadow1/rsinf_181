@@ -1,7 +1,7 @@
 public class class98 extends class115 {
 
-   class261 field1341 = new class261();
-   class261 field1342 = new class261();
+   NodeDeque field1341 = new NodeDeque();
+   NodeDeque field1342 = new NodeDeque();
    int field1343 = 0;
    int field1344 = -1;
 
@@ -131,7 +131,7 @@ public class class98 extends class115 {
          linkedListNode_1 = linkedListNode_1.next;
       }
 
-      class261.method4889(class110_2, linkedListNode_1);
+      NodeDeque.method4889(class110_2, linkedListNode_1);
       this.field1344 = ((class110) this.field1342.field3540.next).field1452;
    }
 

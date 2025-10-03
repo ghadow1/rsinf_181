@@ -22,15 +22,15 @@ final class class5 implements Comparator {
    }
 
    static final void method60(int i_0, int i_1) {
-      class261 class261_3 = Client.field887[class42.field372][i_0][i_1];
-      if (class261_3 == null) {
-         field22.method3087(class42.field372, i_0, i_1);
+      NodeDeque nodeDeque_3 = Client.groundItems[ItemContainer_2.plane][i_0][i_1];
+      if (nodeDeque_3 == null) {
+         field22.method3087(ItemContainer_2.plane, i_0, i_1);
       } else {
          long long_4 = -99999999L;
          class87 class87_6 = null;
 
          class87 class87_7;
-         for (class87_7 = (class87) class261_3.method4892(); class87_7 != null; class87_7 = (class87) class261_3.method4894()) {
+         for (class87_7 = (class87) nodeDeque_3.method4892(); class87_7 != null; class87_7 = (class87) nodeDeque_3.method4894()) {
             ItemDefinition itemDefinition_8 = class26.method404(class87_7.field1244);
             long long_9 = (long) itemDefinition_8.price;
             if (itemDefinition_8.isStackable == 1) {
@@ -44,13 +44,13 @@ final class class5 implements Comparator {
          }
 
          if (class87_6 == null) {
-            field22.method3087(class42.field372, i_0, i_1);
+            field22.method3087(ItemContainer_2.plane, i_0, i_1);
          } else {
-            class261_3.method4888(class87_6);
+            nodeDeque_3.method4888(class87_6);
             class87 class87_13 = null;
             class87 class87_12 = null;
 
-            for (class87_7 = (class87) class261_3.method4892(); class87_7 != null; class87_7 = (class87) class261_3.method4894()) {
+            for (class87_7 = (class87) nodeDeque_3.method4892(); class87_7 != null; class87_7 = (class87) nodeDeque_3.method4894()) {
                if (class87_6.field1244 != class87_7.field1244) {
                   if (class87_13 == null) {
                      class87_13 = class87_7;
@@ -63,7 +63,7 @@ final class class5 implements Comparator {
             }
 
             long long_10 = class126.method2854(i_0, i_1, 3, false, 0);
-            field22.method3073(class42.field372, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, class42.field372), class87_6, long_10, class87_13, class87_12);
+            field22.method3073(ItemContainer_2.plane, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, ItemContainer_2.plane), class87_6, long_10, class87_13, class87_12);
          }
       }
    }

@@ -173,13 +173,13 @@ public class class245 extends DualNode {
                if (Client.field841[i_1] != 0) {
                   int i_4 = (Client.field841[i_1] & 0xff) * 128;
                   int i_5 = Client.field841[i_1] >> 16 & 0xff;
-                  int i_6 = i_5 * 128 + 64 - Client.field657.field1005;
+                  int i_6 = i_5 * 128 + 64 - Client.localPlayer.x;
                   if (i_6 < 0) {
                      i_6 = -i_6;
                   }
 
                   int i_7 = Client.field841[i_1] >> 8 & 0xff;
-                  int i_8 = i_7 * 128 + 64 - Client.field657.field949;
+                  int i_8 = i_7 * 128 + 64 - Client.localPlayer.y;
                   if (i_8 < 0) {
                      i_8 = -i_8;
                   }

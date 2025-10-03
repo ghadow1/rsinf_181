@@ -895,7 +895,7 @@ public class Widget extends LinkedListNode {
       }
    }
 
-   static long method4089(int i_0, int i_1, int i_2) {
+   static long getWorldMapSpriteHash(int i_0, int i_1, int i_2) {
       return (long)(i_2 << 16 | i_0 << 8 | i_1);
    }
 
@@ -916,7 +916,7 @@ public class Widget extends LinkedListNode {
       if (i_5 >= i_7 && i_5 < 104 - i_7 && i_6 >= i_7 && i_6 < 104 - i_7) {
          if (i_1 >= i_7 && i_1 < 104 - i_7 && i_2 >= i_7 && i_2 < 104 - i_7) {
             int i_9 = class66_0.method1187();
-            class174 class174_10 = class38.method667(i_1, i_2, 2134464513);
+            ParamDefinition paramDefinition_10 = class38.method667(i_1, i_2, 2134464513);
             class172 class172_11 = Client.field710[class66_0.field629];
             int[] ints_12 = Client.field929;
             int[] ints_13 = Client.field930;
@@ -979,7 +979,7 @@ public class Widget extends LinkedListNode {
                   i_37 = i_17 - i_21;
                   i_25 = i_16 - class172_11.field2071;
                   i_26 = i_17 - class172_11.field2082;
-                  if (class174_10.vmethod3594(1, i_16, i_17, class172_11, -1217489379)) {
+                  if (paramDefinition_10.vmethod3594(1, i_16, i_17, class172_11, -1217489379)) {
                      class173.field2088 = i_16;
                      class218.field2707 = i_17;
                      bool_35 = true;
@@ -1054,7 +1054,7 @@ public class Widget extends LinkedListNode {
 
                bool_34 = bool_35;
             } else if (i_9 == 2) {
-               bool_34 = class138.method3267(i_5, i_6, class174_10, class172_11, 4377134);
+               bool_34 = class138.method3267(i_5, i_6, paramDefinition_10, class172_11, 4377134);
             } else {
                i_16 = i_5;
                i_17 = i_6;
@@ -1094,7 +1094,7 @@ public class Widget extends LinkedListNode {
                                  i_37 = i_17 - i_21;
                                  i_25 = i_16 - class172_11.field2071;
                                  i_26 = i_17 - class172_11.field2082;
-                                 if (class174_10.vmethod3594(i_9, i_16, i_17, class172_11, -2069995326)) {
+                                 if (paramDefinition_10.vmethod3594(i_9, i_16, i_17, class172_11, -2069995326)) {
                                     class173.field2088 = i_16;
                                     class218.field2707 = i_17;
                                     bool_35 = true;
@@ -1273,10 +1273,10 @@ public class Widget extends LinkedListNode {
                   i_37 = Integer.MAX_VALUE;
                   i_20 = Integer.MAX_VALUE;
                   byte b_38 = 10;
-                  i_39 = class174_10.field2098;
-                  i_23 = class174_10.field2101;
-                  int i_33 = class174_10.field2099;
-                  i_25 = class174_10.field2097;
+                  i_39 = paramDefinition_10.field2098;
+                  i_23 = paramDefinition_10.field2101;
+                  int i_33 = paramDefinition_10.field2099;
+                  i_25 = paramDefinition_10.field2097;
 
                   for (i_26 = i_39 - b_38; i_26 <= b_38 + i_39; i_26++) {
                      for (i_27 = i_23 - b_38; i_27 <= b_38 + i_23; i_27++) {
@@ -1368,20 +1368,20 @@ public class Widget extends LinkedListNode {
    }
 
    static void method4090(int i_0) {
-      if (Client.field736 && Client.field657 != null) {
-         int i_1 = Client.field657.field994[0];
-         int i_2 = Client.field657.field962[0];
+      if (Client.field736 && Client.localPlayer != null) {
+         int i_1 = Client.localPlayer.field994[0];
+         int i_2 = Client.localPlayer.field962[0];
          if (i_1 < 0 || i_2 < 0 || i_1 >= 104 || i_2 >= 104) {
             return;
          }
 
-         MouseHandler.field499 = Client.field657.field1005;
-         int i_3 = class62.method1130(Client.field657.field1005, Client.field657.field949, class42.field372) - Client.field728;
+         MouseHandler.field499 = Client.localPlayer.x;
+         int i_3 = class62.method1130(Client.localPlayer.x, Client.localPlayer.y, ItemContainer_2.plane) - Client.field728;
          if (i_3 < Client.field729) {
             Client.field729 = i_3;
          }
 
-         class26.field227 = Client.field657.field949;
+         class26.field227 = Client.localPlayer.y;
          Client.field736 = false;
       }
 

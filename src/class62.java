@@ -80,7 +80,7 @@ public class class62 extends LinkedListNode {
       }
    }
 
-   static boolean method1128(int i_0) {
+   static boolean method1128() {
       return Client.flag_23;
    }
 

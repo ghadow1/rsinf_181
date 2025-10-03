@@ -28,8 +28,8 @@ public class class137 {
    }
 
    public static void method3263(class233 class233_0, class233 class233_1, byte b_2) {
-      class256.field3484 = class233_0;
-      class256.field3464 = class233_1;
+      NPCDefinition.field3484 = class233_0;
+      NPCDefinition.field3464 = class233_1;
    }
 
    static void method3264(int i_0) {
@@ -59,16 +59,16 @@ public class class137 {
       Client.isItemSelected = 0;
       Client.isSpellSelected = false;
       Client.field893 = 0;
-      Client.field722 = 0;
+      Client.camAngleY = 0;
       Client.field727 = 0;
       class68.field944 = null;
-      Client.field652 = 0;
+      Client.minimapState = 0;
       Client.field747 = -1;
-      Client.field885 = 0;
-      Client.field842 = 0;
+      Client.destinationX = 0;
+      Client.destinationY = 0;
       Client.field678 = class84.field1170;
       Client.field679 = class84.field1170;
-      Client.field695 = 0;
+      Client.npcCount = 0;
       class89.field1255 = 0;
 
       int i_1;
@@ -82,7 +82,7 @@ public class class137 {
       }
 
       for (i_1 = 0; i_1 < 32768; i_1++) {
-         Client.field694[i_1] = null;
+         Client.npcs[i_1] = null;
       }
 
       Client.field781 = -1;
@@ -93,12 +93,12 @@ public class class137 {
       for (i_1 = 0; i_1 < 4; i_1++) {
          for (int i_2 = 0; i_2 < 104; i_2++) {
             for (i_3 = 0; i_3 < 104; i_3++) {
-               Client.field887[i_1][i_2][i_3] = null;
+               Client.groundItems[i_1][i_2][i_3] = null;
             }
          }
       }
 
-      Client.field783 = new class261();
+      Client.field783 = new NodeDeque();
       class58.field546.method1780((short) 487);
 
       for (i_1 = 0; i_1 < class240.field3203; i_1++) {

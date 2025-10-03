@@ -11,8 +11,8 @@ public class class281 {
          int i_5 = b_3 + 6;
          int i_6 = class169.field2054.method5343(string_0, 250);
          int i_7 = class169.field2054.method5390(string_0, 250) * 13;
-         class321.fillRectangle(i_4 - b_3, i_5 - b_3, b_3 + i_6 + b_3, i_7 + b_3 + b_3, 0);
-         class321.drawRectangle(i_4 - b_3, i_5 - b_3, i_6 + b_3 + b_3, i_7 + b_3 + b_3, 16777215);
+         Rasterizer2D.fillRectangle(i_4 - b_3, i_5 - b_3, b_3 + i_6 + b_3, i_7 + b_3 + b_3, 0);
+         Rasterizer2D.drawRectangle(i_4 - b_3, i_5 - b_3, i_6 + b_3 + b_3, i_7 + b_3 + b_3, 16777215);
          class169.field2054.method5350(string_0, i_4, i_5, i_6, i_7, 16777215, -1, 1, 1, 0);
          UserComparator10.method2215(i_4 - b_3, i_5 - b_3, b_3 + i_6 + b_3, b_3 + i_7 + b_3);
          if (bool_1) {

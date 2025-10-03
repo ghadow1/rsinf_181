@@ -158,7 +158,7 @@ final class class2 implements class0 {
                boolean bool_34 = i_18 >= i_13 && i_19 >= i_14 && i_18 < i_15 && i_19 < i_16;
                if (widget_10.field2568 == 1337) {
                   if (!Client.field661 && !Client.field674 && bool_34) {
-                     class65.method1174(i_18, i_19, i_13, i_14, -1548212436);
+                     class65.method1174(i_18, i_19, i_13, i_14);
                   }
                } else if (widget_10.field2568 == 1338) {
                   class18.method208(widget_10, i_11, i_12, 1919867373);

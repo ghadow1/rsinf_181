@@ -16,7 +16,7 @@ public class class133 {
    static class140[][] field1843;
    static int field1806;
    static class140[] field1845;
-   static class261 field1846;
+   static NodeDeque field1846;
    static final int[] field1847;
    static final int[] field1815;
    static final int[] field1809;
@@ -63,7 +63,7 @@ public class class133 {
       field1843 = new class140[field1841][500];
       field1806 = 0;
       field1845 = new class140[500];
-      field1846 = new class261();
+      field1846 = new NodeDeque();
       field1847 = new int[] {19, 55, 38, 155, 255, 110, 137, 205, 76};
       field1815 = new int[] {160, 192, 80, 96, 0, 144, 80, 48, 160};
       field1809 = new int[] {76, 8, 137, 4, 0, 1, 38, 2, 19};

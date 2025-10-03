@@ -1,4 +1,4 @@
-public class class321 extends DualNode {
+public class Rasterizer2D extends DualNode {
 
    public static int Rasterizer2D_yClipStart = 0;
    public static int Rasterizer2D_yClipEnd = 0;
@@ -8,18 +8,18 @@ public class class321 extends DualNode {
    public static int Rasterizer2D_width;
    public static int Rasterizer2D_height;
 
-   public static void method5999(int[] ints_0) {
-      ints_0[0] = Rasterizer2D_xClipStart;
-      ints_0[1] = Rasterizer2D_yClipStart;
-      ints_0[2] = Rasterizer2D_xClipEnd;
-      ints_0[3] = Rasterizer2D_yClipEnd;
+   public static void getClipArray(int[] var0) {
+      var0[0] = Rasterizer2D_xClipStart;
+      var0[1] = Rasterizer2D_yClipStart;
+      var0[2] = Rasterizer2D_xClipEnd;
+      var0[3] = Rasterizer2D_yClipEnd;
    }
 
-   public static void method6033(int[] ints_0, int i_1, int i_2) {
-      Rasterizer2D_pixels = ints_0;
-      Rasterizer2D_width = i_1;
-      Rasterizer2D_height = i_2;
-      method5997(0, 0, i_1, i_2);
+   public static void replace(int[] var0, int var1, int var2) {
+      Rasterizer2D_pixels = var0;
+      Rasterizer2D_width = var1;
+      Rasterizer2D_height = var2;
+      setClip(0, 0, var1, var2);
    }
 
    public static void method6000(int i_0, int i_1, int i_2, int i_3) {
@@ -94,7 +94,7 @@ public class class321 extends DualNode {
       }
    }
 
-   public static void method5997(int i_0, int i_1, int i_2, int i_3) {
+   public static void setClip(int i_0, int i_1, int i_2, int i_3) {
       if (i_0 < 0) {
          i_0 = 0;
       }
@@ -228,7 +228,7 @@ public class class321 extends DualNode {
       }
    }
 
-   public static void method6007(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, byte[] bytes_6, int i_7, boolean bool_8) {
+   public static void drawGradientPixels(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, byte[] bytes_6, int i_7) {
       if (i_0 + i_2 >= 0 && i_3 + i_1 >= 0) {
          if (i_0 < Rasterizer2D_width && i_1 < Rasterizer2D_height) {
             int i_9 = 0;
@@ -501,7 +501,7 @@ public class class321 extends DualNode {
       }
    }
 
-   public static void method6016(int i_0, int i_1, int i_2, int[] ints_3, int[] ints_4) {
+   public static void fillMaskedRectangle(int i_0, int i_1, int i_2, int[] ints_3, int[] ints_4) {
       int i_5 = i_0 + Rasterizer2D_width * i_1;
 
       for (i_1 = 0; i_1 < ints_3.length; i_1++) {
@@ -606,7 +606,7 @@ public class class321 extends DualNode {
       }
    }
 
-   public static void method6006(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
+   public static void fillRectangleGradient(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
       if (i_2 > 0 && i_3 > 0) {
          int i_8 = 0;
          int i_9 = 65536 / i_3;
@@ -738,21 +738,21 @@ public class class321 extends DualNode {
       }
    }
 
-   public static void method6022() {
-      int i_0 = 0;
+   public static void clear() {
+      int var0 = 0;
 
-      int i_1;
-      for (i_1 = Rasterizer2D_width * Rasterizer2D_height - 7; i_0 < i_1; Rasterizer2D_pixels[i_0++] = 0) {
-         Rasterizer2D_pixels[i_0++] = 0;
-         Rasterizer2D_pixels[i_0++] = 0;
-         Rasterizer2D_pixels[i_0++] = 0;
-         Rasterizer2D_pixels[i_0++] = 0;
-         Rasterizer2D_pixels[i_0++] = 0;
-         Rasterizer2D_pixels[i_0++] = 0;
-         Rasterizer2D_pixels[i_0++] = 0;
+      int var1;
+      for (var1 = Rasterizer2D_width * Rasterizer2D_height - 7; var0 < var1; Rasterizer2D_pixels[var0++] = 0) {
+         Rasterizer2D_pixels[var0++] = 0;
+         Rasterizer2D_pixels[var0++] = 0;
+         Rasterizer2D_pixels[var0++] = 0;
+         Rasterizer2D_pixels[var0++] = 0;
+         Rasterizer2D_pixels[var0++] = 0;
+         Rasterizer2D_pixels[var0++] = 0;
+         Rasterizer2D_pixels[var0++] = 0;
       }
 
-      for (i_1 += 7; i_0 < i_1; Rasterizer2D_pixels[i_0++] = 0) {
+      for (var1 += 7; var0 < var1; Rasterizer2D_pixels[var0++] = 0) {
          ;
       }
 

@@ -80,7 +80,7 @@ public final class class66 extends class69 {
 
                if (Client.field881 >= this.field614 && Client.field881 < this.field622) {
                   class127_5 = this.field626;
-                  class127_5.method2901(this.field633 - super.field1005, this.field624 - this.field623, this.field620 - super.field949);
+                  class127_5.method2901(this.field633 - super.x, this.field624 - this.field623, this.field620 - super.y);
                   if (super.field1000 == 512) {
                      class127_5.method2869();
                      class127_5.method2869();
@@ -105,7 +105,7 @@ public final class class66 extends class69 {
                      class127_5.method2869();
                   }
 
-                  class127_5.method2901(super.field1005 - this.field633, this.field623 - this.field624, super.field949 - this.field620);
+                  class127_5.method2901(super.x - this.field633, this.field623 - this.field624, super.y - this.field620);
                }
             }
 
@@ -130,8 +130,8 @@ public final class class66 extends class69 {
       super.field994[0] = i_1;
       super.field962[0] = i_2;
       int i_4 = this.method1187();
-      super.field1005 = super.field994[0] * 128 + i_4 * 64;
-      super.field949 = i_4 * 64 + super.field962[0] * 128;
+      super.x = super.field994[0] * 128 + i_4 * 64;
+      super.y = i_4 * 64 + super.field962[0] * 128;
    }
 
    int method1187() {
@@ -270,7 +270,7 @@ public final class class66 extends class69 {
       this.field621 = new Username(class300_1.readNullTerminatedString(), FontName.loginType);
       this.method1182();
       this.method1185();
-      if (this == Client.field657) {
+      if (this == Client.localPlayer) {
          class10.field69 = this.field621.method5197();
       }
 
@@ -318,13 +318,13 @@ public final class class66 extends class69 {
          }
       }
 
-      for (i_2 = 0; i_2 < Client.field695; i_2++) {
-         int i_5 = Client.field696[i_2];
-         class79 class79_4 = Client.field694[i_5];
-         if (class79_4 != null && class79_4.field1002 > 0) {
-            --class79_4.field1002;
-            if (class79_4.field1002 == 0) {
-               class79_4.field977 = null;
+      for (i_2 = 0; i_2 < Client.npcCount; i_2++) {
+         int i_5 = Client.npcIndices[i_2];
+         NPC NPC_4 = Client.npcs[i_5];
+         if (NPC_4 != null && NPC_4.field1002 > 0) {
+            --NPC_4.field1002;
+            if (NPC_4.field1002 == 0) {
+               NPC_4.field977 = null;
             }
          }
       }

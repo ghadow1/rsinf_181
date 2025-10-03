@@ -4,15 +4,15 @@ import java.util.concurrent.TimeUnit;
 public class class234 implements Runnable {
 
    static Thread field3148;
-   public static class261 field3146 = new class261();
-   public static class261 field3145 = new class261();
+   public static NodeDeque field3146 = new NodeDeque();
+   public static NodeDeque field3145 = new NodeDeque();
    static int field3144 = 0;
    static Object field3147 = new Object();
 
    public void run() {
       try {
          while (true) {
-            class261 class261_2 = field3146;
+            NodeDeque nodeDeque_2 = field3146;
             class231 class231_1;
             synchronized(field3146) {
                class231_1 = (class231) field3146.method4892();
@@ -22,13 +22,13 @@ public class class234 implements Runnable {
             if (class231_1 != null) {
                if (class231_1.field3118 == 0) {
                   class231_1.field3116.method5866((int)class231_1.hash, class231_1.field3115, class231_1.field3115.length);
-                  class261_2 = field3146;
+                  nodeDeque_2 = field3146;
                   synchronized(field3146) {
                      class231_1.unlink();
                   }
                } else if (class231_1.field3118 == 1) {
                   class231_1.field3115 = class231_1.field3116.method5865((int)class231_1.hash, -8739933);
-                  class261_2 = field3146;
+                  nodeDeque_2 = field3146;
                   synchronized(field3146) {
                      field3145.method4917(class231_1);
                   }

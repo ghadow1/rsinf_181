@@ -53,9 +53,9 @@ public class class9 {
    static int method114(int i_0, class92 class92_1, boolean bool_2, int i_3) {
       int i_4;
       if (i_0 == 6600) {
-         i_4 = class42.field372;
-         int i_10 = (Client.field657.field1005 >> 7) + class196.field2389;
-         int i_6 = (Client.field657.field949 >> 7) + class1.field1;
+         i_4 = ItemContainer_2.plane;
+         int i_10 = (Client.localPlayer.x >> 7) + class196.field2389;
+         int i_6 = (Client.localPlayer.y >> 7) + class1.field1;
          class31.method538(-1838562089).method6309(i_4, i_10, i_6, true, (byte) -35);
          return 1;
       } else {

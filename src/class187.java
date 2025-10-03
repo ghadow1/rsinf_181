@@ -375,12 +375,12 @@ public class class187 extends LinkedListNode {
             class6.method72(class5.field22, Client.field710);
             class241.method4368(true);
             i_50 = class55.field503;
-            if (i_50 > class42.field372) {
-               i_50 = class42.field372;
+            if (i_50 > ItemContainer_2.plane) {
+               i_50 = ItemContainer_2.plane;
             }
 
-            if (i_50 < class42.field372 - 1) {
-               i_50 = class42.field372 - 1;
+            if (i_50 < ItemContainer_2.plane - 1) {
+               i_50 = ItemContainer_2.plane - 1;
             }
 
             if (Client.field656) {

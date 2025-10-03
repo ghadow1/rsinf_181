@@ -56,13 +56,13 @@ public class class188 {
          Login.field1206 = SoundSystem.method4021(Client.field683, "leftarrow", "");
       }
 
-      if (class256.field3490 == null) {
-         class256.field3490 = SoundSystem.method4021(Client.field683, "rightarrow", "");
+      if (NPCDefinition.field3490 == null) {
+         NPCDefinition.field3490 = SoundSystem.method4021(Client.field683, "rightarrow", "");
       }
 
-      class321.fillRectangle(Login.field1208, 23, 765, 480, 0);
-      class321.method6005(Login.field1208, 0, 125, 23, 12425273, 9135624);
-      class321.method6005(Login.field1208 + 125, 0, 640, 23, 5197647, 2697513);
+      Rasterizer2D.fillRectangle(Login.field1208, 23, 765, 480, 0);
+      Rasterizer2D.method6005(Login.field1208, 0, 125, 23, 12425273, 9135624);
+      Rasterizer2D.method6005(Login.field1208 + 125, 0, 640, 23, 5197647, 2697513);
       font_0.method5341("Select a world", Login.field1208 + 62, 15, 0, -1);
       if (class74.field1073 != null) {
          class74.field1073[1].method6101(Login.field1208 + 140, 1);
@@ -130,7 +130,7 @@ public class class188 {
          font_0.draw("Type", i_6 + 32, 17, 16777215, -1);
       }
 
-      class321.fillRectangle(Login.field1208 + 708, 4, 50, 16, 0);
+      Rasterizer2D.fillRectangle(Login.field1208 + 708, 4, 50, 16, 0);
       font_1.method5341("Cancel", Login.field1208 + 708 + 25, 16, 16777215, -1);
       Login.field1207 = -1;
       if (class31.field271 != null) {
@@ -175,8 +175,8 @@ public class class188 {
             Login.field1206.method6101(8, class249.field3308 / 2 - Login.field1206.field3893 / 2);
          }
 
-         if (class256.field3490 != null && Login.field1190 < Login.field1186) {
-            class256.field3490.method6101(class7.field46 - class256.field3490.field3897 - 8, class249.field3308 / 2 - class256.field3490.field3893 / 2);
+         if (NPCDefinition.field3490 != null && Login.field1190 < Login.field1186) {
+            NPCDefinition.field3490.method6101(class7.field46 - NPCDefinition.field3490.field3897 - 8, class249.field3308 / 2 - NPCDefinition.field3490.field3893 / 2);
          }
 
          int i_12 = i_10 + 23;
@@ -257,8 +257,8 @@ public class class188 {
                i_27 = MouseHandler.MouseHandler_y - 25 - i_18;
             }
 
-            class321.fillRectangle(MouseHandler.MouseHandler_x - i_17 / 2, i_27, i_17, i_18, 16777120);
-            class321.drawRectangle(MouseHandler.MouseHandler_x - i_17 / 2, i_27, i_17, i_18, 0);
+            Rasterizer2D.fillRectangle(MouseHandler.MouseHandler_x - i_17 / 2, i_27, i_17, i_18, 16777120);
+            Rasterizer2D.drawRectangle(MouseHandler.MouseHandler_x - i_17 / 2, i_27, i_17, i_18, 0);
             font_1.method5341(World.field1031[Login.field1207].field1028, MouseHandler.MouseHandler_x, i_27 + font_1.field3709 + 4, 0, -1);
          }
       }
@@ -266,11 +266,11 @@ public class class188 {
       class202.field2486.vmethod6077(0, 0, -1141719337);
    }
 
-   public static final void method3644(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
+   public static final void method3644(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5) {
       class135.method3260(string_0, string_1, i_2, i_3, i_4, i_5, false);
    }
 
-   static final String method3631(int i_0, int i_1) {
+   static final String method3631(int i_0) {
       String string_2 = Integer.toString(i_0);
 
       for (int i_3 = string_2.length() - 3; i_3 > 0; i_3 -= 3) {

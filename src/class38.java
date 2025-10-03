@@ -46,21 +46,21 @@ public class class38 extends class26 {
       this.field330 = new HashSet(i_7);
 
       for (int i_11 = 0; i_11 < i_7; i_11++) {
-         class39 class39_9 = new class39();
+         WorldMapSection1 worldMapSection1_9 = new WorldMapSection1();
 
          try {
-            class39_9.method674(class300_2, 1442686433);
+            worldMapSection1_9.method674(class300_2, 1442686433);
          } catch (IllegalStateException illegalstateexception_12) {
             continue;
          }
 
-         this.field330.add(class39_9);
+         this.field330.add(worldMapSection1_9);
       }
 
       this.method670(class300_2, bool_4, 2146657354);
    }
 
-   static class174 method667(int i_0, int i_1, int i_2) {
+   static ParamDefinition method667(int i_0, int i_1, int i_2) {
       Client.field735.field2098 = i_0;
       Client.field735.field2101 = i_1;
       Client.field735.field2099 = 1;

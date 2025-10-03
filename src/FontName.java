@@ -546,7 +546,7 @@ public class FontName {
       if (i_7 != 0 && this.field344 != 0 && this.field343 != null) {
          i_8 = this.method699(i_8, i_7, -500571874);
          i_7 = this.method712(i_7, (byte) -128);
-         class321.method6007(i_1, i_2, i_5, i_6, i_3, i_4, this.field343[i_7 - 1][i_8], this.field344, true);
+         Rasterizer2D.drawGradientPixels(i_1, i_2, i_5, i_6, i_3, i_4, this.field343[i_7 - 1][i_8], this.field344);
       }
    }
 
@@ -566,31 +566,31 @@ public class FontName {
 
    static final void method703(Widget widget_0, int i_1, int i_2, int i_3) {
       if (widget_0.field2567 == 1) {
-         class188.method3644(widget_0.field2573, "", 24, 0, 0, widget_0.field2688, -952173886);
+         class188.method3644(widget_0.field2573, "", 24, 0, 0, widget_0.field2688);
       }
 
       String string_4;
       if (widget_0.field2567 == 2 && !Client.isSpellSelected) {
          string_4 = class292.method5318(widget_0, (byte) 126);
          if (string_4 != null) {
-            class188.method3644(string_4, class73.colorStartTag(65280) + widget_0.field2686, 25, 0, -1, widget_0.field2688, 1431395202);
+            class188.method3644(string_4, class73.colorStartTag(65280) + widget_0.field2686, 25, 0, -1, widget_0.field2688);
          }
       }
 
       if (widget_0.field2567 == 3) {
-         class188.method3644("Close", "", 26, 0, 0, widget_0.field2688, 931812202);
+         class188.method3644("Close", "", 26, 0, 0, widget_0.field2688);
       }
 
       if (widget_0.field2567 == 4) {
-         class188.method3644(widget_0.field2573, "", 28, 0, 0, widget_0.field2688, -887464512);
+         class188.method3644(widget_0.field2573, "", 28, 0, 0, widget_0.field2688);
       }
 
       if (widget_0.field2567 == 5) {
-         class188.method3644(widget_0.field2573, "", 29, 0, 0, widget_0.field2688, -119888586);
+         class188.method3644(widget_0.field2573, "", 29, 0, 0, widget_0.field2688);
       }
 
       if (widget_0.field2567 == 6 && Client.field850 == null) {
-         class188.method3644(widget_0.field2573, "", 30, 0, -1, widget_0.field2688, -1987811730);
+         class188.method3644(widget_0.field2573, "", 30, 0, -1, widget_0.field2688);
       }
 
       int i_5;
@@ -614,11 +614,11 @@ public class FontName {
                      ItemDefinition itemDefinition_9 = class26.method404(widget_0.field2560[i_14] - 1);
                      if (Client.isItemSelected == 1 && class92.method2185(class268.method4987(widget_0))) {
                         if (widget_0.field2688 != class63.field594 || i_14 != class23.field182) {
-                           class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 31, itemDefinition_9.field3410, i_14, widget_0.field2688, -1926139785);
+                           class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 31, itemDefinition_9.field3410, i_14, widget_0.field2688);
                         }
                      } else if (Client.isSpellSelected && class92.method2185(class268.method4987(widget_0))) {
                         if ((WorldMapCacheName.field301 & 0x10) == 16) {
-                           class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 32, itemDefinition_9.field3410, i_14, widget_0.field2688, -1736041216);
+                           class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 32, itemDefinition_9.field3410, i_14, widget_0.field2688);
                         }
                      } else {
                         String[] arr_10 = itemDefinition_9.inventoryActions;
@@ -640,7 +640,7 @@ public class FontName {
                         }
 
                         if (class195.method3685(class268.method4987(widget_0))) {
-                           class188.method3644("Use", class73.colorStartTag(16748608) + itemDefinition_9.name, 38, itemDefinition_9.field3410, i_14, widget_0.field2688, 1888076482);
+                           class188.method3644("Use", class73.colorStartTag(16748608) + itemDefinition_9.name, 38, itemDefinition_9.field3410, i_14, widget_0.field2688);
                         }
 
                         if (class92.method2185(class268.method4987(widget_0))) {
@@ -680,12 +680,12 @@ public class FontName {
                                     b_13 = 43;
                                  }
 
-                                 class188.method3644(arr_10[i_17], class73.colorStartTag(16748608) + itemDefinition_9.name, b_13, itemDefinition_9.field3410, i_14, widget_0.field2688, -1772751404);
+                                 class188.method3644(arr_10[i_17], class73.colorStartTag(16748608) + itemDefinition_9.name, b_13, itemDefinition_9.field3410, i_14, widget_0.field2688);
                               }
                            }
                         }
 
-                        class188.method3644("Examine", class73.colorStartTag(16748608) + itemDefinition_9.name, 1005, itemDefinition_9.field3410, i_14, widget_0.field2688, -1955913083);
+                        class188.method3644("Examine", class73.colorStartTag(16748608) + itemDefinition_9.name, 1005, itemDefinition_9.field3410, i_14, widget_0.field2688);
                      }
                   }
                }
@@ -698,19 +698,19 @@ public class FontName {
       if (widget_0.field2563) {
          if (Client.isSpellSelected) {
             if (class96.method2266(class268.method4987(widget_0), -2113880295) && (WorldMapCacheName.field301 & 0x20) == 32) {
-               class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + widget_0.field2643, 58, 0, widget_0.field2565, widget_0.field2688, 148926542);
+               class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + widget_0.field2643, 58, 0, widget_0.field2565, widget_0.field2688);
             }
          } else {
             for (i_14 = 9; i_14 >= 5; --i_14) {
                String string_15 = class154.method3407(widget_0, i_14, (short) 255);
                if (string_15 != null) {
-                  class188.method3644(string_15, widget_0.field2643, 1007, i_14 + 1, widget_0.field2565, widget_0.field2688, -1059740776);
+                  class188.method3644(string_15, widget_0.field2643, 1007, i_14 + 1, widget_0.field2565, widget_0.field2688);
                }
             }
 
             string_4 = class292.method5318(widget_0, (byte) 86);
             if (string_4 != null) {
-               class188.method3644(string_4, widget_0.field2643, 25, 0, widget_0.field2565, widget_0.field2688, -1033230881);
+               class188.method3644(string_4, widget_0.field2643, 25, 0, widget_0.field2565, widget_0.field2688);
             }
 
             for (i_5 = 4; i_5 >= 0; --i_5) {
@@ -721,7 +721,7 @@ public class FontName {
             }
 
             if (class61.method1119(class268.method4987(widget_0), -673878359)) {
-               class188.method3644("Continue", "", 30, 0, widget_0.field2565, widget_0.field2688, 1867560144);
+               class188.method3644("Continue", "", 30, 0, widget_0.field2565, widget_0.field2688);
             }
          }
       }

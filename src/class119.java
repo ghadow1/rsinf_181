@@ -4,7 +4,7 @@ import java.io.IOException;
 public class class119 implements class139 {
 
    static int field1539;
-   class261 field1537 = new class261();
+   NodeDeque field1537 = new NodeDeque();
    int field1533 = 0;
    double field1534 = 1.0D;
    int field1535 = 128;
@@ -36,7 +36,7 @@ public class class119 implements class139 {
          }
       }
 
-      this.field1537 = new class261();
+      this.field1537 = new NodeDeque();
       this.field1533 = this.field1530;
    }
 

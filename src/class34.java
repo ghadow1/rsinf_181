@@ -82,8 +82,8 @@ public abstract class class34 {
    }
 
    public static void method599(int i_0) {
-      class256.field3465.method3323();
-      class256.field3466.method3323();
+      NPCDefinition.field3465.method3323();
+      NPCDefinition.field3466.method3323();
    }
 
 }

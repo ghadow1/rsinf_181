@@ -1,4 +1,4 @@
-public final class class325 extends class321 {
+public final class class325 extends Rasterizer2D {
 
    public int[] field3908;
    public int field3898;
@@ -23,47 +23,47 @@ public final class class325 extends class321 {
    class325() {
    }
 
-   public void method6126(int i_1, int i_2) {
+   public void drawTransBgAt(int i_1, int i_2) {
       i_1 += this.field3901;
       i_2 += this.field3902;
-      int i_3 = i_1 + i_2 * class321.Rasterizer2D_width;
+      int i_3 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
       int i_4 = 0;
       int i_5 = this.field3900;
       int i_6 = this.field3899;
-      int i_7 = class321.Rasterizer2D_width - i_6;
+      int i_7 = Rasterizer2D.Rasterizer2D_width - i_6;
       int i_8 = 0;
       int i_9;
-      if (i_2 < class321.Rasterizer2D_yClipStart) {
-         i_9 = class321.Rasterizer2D_yClipStart - i_2;
+      if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+         i_9 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
          i_5 -= i_9;
-         i_2 = class321.Rasterizer2D_yClipStart;
+         i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
          i_4 += i_9 * i_6;
-         i_3 += i_9 * class321.Rasterizer2D_width;
+         i_3 += i_9 * Rasterizer2D.Rasterizer2D_width;
       }
 
-      if (i_5 + i_2 > class321.Rasterizer2D_yClipEnd) {
-         i_5 -= i_5 + i_2 - class321.Rasterizer2D_yClipEnd;
+      if (i_5 + i_2 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+         i_5 -= i_5 + i_2 - Rasterizer2D.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.Rasterizer2D_xClipStart) {
-         i_9 = class321.Rasterizer2D_xClipStart - i_1;
+      if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+         i_9 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
          i_6 -= i_9;
-         i_1 = class321.Rasterizer2D_xClipStart;
+         i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
          i_4 += i_9;
          i_3 += i_9;
          i_8 += i_9;
          i_7 += i_9;
       }
 
-      if (i_6 + i_1 > class321.Rasterizer2D_xClipEnd) {
-         i_9 = i_6 + i_1 - class321.Rasterizer2D_xClipEnd;
+      if (i_6 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+         i_9 = i_6 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
          i_6 -= i_9;
          i_8 += i_9;
          i_7 += i_9;
       }
 
       if (i_6 > 0 && i_5 > 0) {
-         method6124(class321.Rasterizer2D_pixels, this.field3908, 0, i_4, i_3, i_6, i_5, i_7, i_8);
+         method6124(Rasterizer2D.Rasterizer2D_pixels, this.field3908, 0, i_4, i_3, i_6, i_5, i_7, i_8);
       }
    }
 
@@ -146,27 +146,27 @@ public final class class325 extends class321 {
          i_20 = i_20 + 15 >> 4;
          i_21 >>= 4;
          i_22 = i_22 + 15 >> 4;
-         if (i_19 < class321.Rasterizer2D_xClipStart) {
-            i_19 = class321.Rasterizer2D_xClipStart;
+         if (i_19 < Rasterizer2D.Rasterizer2D_xClipStart) {
+            i_19 = Rasterizer2D.Rasterizer2D_xClipStart;
          }
 
-         if (i_20 > class321.Rasterizer2D_xClipEnd) {
-            i_20 = class321.Rasterizer2D_xClipEnd;
+         if (i_20 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+            i_20 = Rasterizer2D.Rasterizer2D_xClipEnd;
          }
 
-         if (i_21 < class321.Rasterizer2D_yClipStart) {
-            i_21 = class321.Rasterizer2D_yClipStart;
+         if (i_21 < Rasterizer2D.Rasterizer2D_yClipStart) {
+            i_21 = Rasterizer2D.Rasterizer2D_yClipStart;
          }
 
-         if (i_22 > class321.Rasterizer2D_yClipEnd) {
-            i_22 = class321.Rasterizer2D_yClipEnd;
+         if (i_22 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+            i_22 = Rasterizer2D.Rasterizer2D_yClipEnd;
          }
 
          i_20 = i_19 - i_20;
          if (i_20 < 0) {
             i_22 = i_21 - i_22;
             if (i_22 < 0) {
-               int i_23 = i_19 + i_21 * class321.Rasterizer2D_width;
+               int i_23 = i_19 + i_21 * Rasterizer2D.Rasterizer2D_width;
                double d_24 = 1.6777216E7D / (double)i_6;
                int i_26 = (int)Math.floor(Math.sin(d_7) * d_24 + 0.5D);
                int i_27 = (int)Math.floor(Math.cos(d_7) * d_24 + 0.5D);
@@ -183,7 +183,7 @@ public final class class325 extends class321 {
                int i_38;
                if (i_27 == 0) {
                   if (i_26 == 0) {
-                     for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                     for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                         i_34 = i_23;
                         i_35 = i_30;
                         i_36 = i_31;
@@ -192,7 +192,7 @@ public final class class325 extends class321 {
                            for (; i_37 < 0; i_37++) {
                               i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                               if (i_38 != 0) {
-                                 class321.Rasterizer2D_pixels[i_34++] = i_38;
+                                 Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                               } else {
                                  ++i_34;
                               }
@@ -202,7 +202,7 @@ public final class class325 extends class321 {
                         ++i_33;
                      }
                   } else if (i_26 < 0) {
-                     for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                     for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                         i_34 = i_23;
                         i_35 = i_30;
                         i_36 = (i_28 * i_26 >> 4) + i_31;
@@ -222,7 +222,7 @@ public final class class325 extends class321 {
                            while (i_37 < 0) {
                               i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                               if (i_38 != 0) {
-                                 class321.Rasterizer2D_pixels[i_34++] = i_38;
+                                 Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                               } else {
                                  ++i_34;
                               }
@@ -236,7 +236,7 @@ public final class class325 extends class321 {
                         i_30 -= i_26;
                      }
                   } else {
-                     for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                     for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                         i_34 = i_23;
                         i_35 = i_30;
                         i_36 = (i_28 * i_26 >> 4) + i_31;
@@ -256,7 +256,7 @@ public final class class325 extends class321 {
                            while (i_37 < 0) {
                               i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                               if (i_38 != 0) {
-                                 class321.Rasterizer2D_pixels[i_34++] = i_38;
+                                 Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                               } else {
                                  ++i_34;
                               }
@@ -272,7 +272,7 @@ public final class class325 extends class321 {
                   }
                } else if (i_27 < 0) {
                   if (i_26 == 0) {
-                     for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                     for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                         i_34 = i_23;
                         i_35 = (i_28 * i_27 >> 4) + i_30;
                         i_36 = i_31;
@@ -292,7 +292,7 @@ public final class class325 extends class321 {
                            while (i_37 < 0) {
                               i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                               if (i_38 != 0) {
-                                 class321.Rasterizer2D_pixels[i_34++] = i_38;
+                                 Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                               } else {
                                  ++i_34;
                               }
@@ -306,7 +306,7 @@ public final class class325 extends class321 {
                         i_31 += i_27;
                      }
                   } else if (i_26 < 0) {
-                     for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                     for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                         i_34 = i_23;
                         i_35 = (i_28 * i_27 >> 4) + i_30;
                         i_36 = (i_28 * i_26 >> 4) + i_31;
@@ -338,7 +338,7 @@ public final class class325 extends class321 {
                         while (i_37 < 0) {
                            i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                            if (i_38 != 0) {
-                              class321.Rasterizer2D_pixels[i_34++] = i_38;
+                              Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                            } else {
                               ++i_34;
                            }
@@ -353,7 +353,7 @@ public final class class325 extends class321 {
                         i_31 += i_27;
                      }
                   } else {
-                     for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                     for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                         i_34 = i_23;
                         i_35 = (i_28 * i_27 >> 4) + i_30;
                         i_36 = (i_28 * i_26 >> 4) + i_31;
@@ -385,7 +385,7 @@ public final class class325 extends class321 {
                         while (i_37 < 0) {
                            i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                            if (i_38 != 0) {
-                              class321.Rasterizer2D_pixels[i_34++] = i_38;
+                              Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                            } else {
                               ++i_34;
                            }
@@ -401,7 +401,7 @@ public final class class325 extends class321 {
                      }
                   }
                } else if (i_26 == 0) {
-                  for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                  for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                      i_34 = i_23;
                      i_35 = (i_28 * i_27 >> 4) + i_30;
                      i_36 = i_31;
@@ -421,7 +421,7 @@ public final class class325 extends class321 {
                         while (i_37 < 0) {
                            i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                            if (i_38 != 0) {
-                              class321.Rasterizer2D_pixels[i_34++] = i_38;
+                              Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                            } else {
                               ++i_34;
                            }
@@ -435,7 +435,7 @@ public final class class325 extends class321 {
                      i_31 += i_27;
                   }
                } else if (i_26 < 0) {
-                  for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                  for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                      i_34 = i_23;
                      i_35 = (i_28 * i_27 >> 4) + i_30;
                      i_36 = (i_28 * i_26 >> 4) + i_31;
@@ -467,7 +467,7 @@ public final class class325 extends class321 {
                      while (i_37 < 0) {
                         i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                         if (i_38 != 0) {
-                           class321.Rasterizer2D_pixels[i_34++] = i_38;
+                           Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                         } else {
                            ++i_34;
                         }
@@ -482,7 +482,7 @@ public final class class325 extends class321 {
                      i_31 += i_27;
                   }
                } else {
-                  for (i_33 = i_22; i_33 < 0; i_23 += class321.Rasterizer2D_width) {
+                  for (i_33 = i_22; i_33 < 0; i_23 += Rasterizer2D.Rasterizer2D_width) {
                      i_34 = i_23;
                      i_35 = (i_28 * i_27 >> 4) + i_30;
                      i_36 = (i_28 * i_26 >> 4) + i_31;
@@ -514,7 +514,7 @@ public final class class325 extends class321 {
                      while (i_37 < 0) {
                         i_38 = this.field3908[(i_35 >> 12) + (i_36 >> 12) * this.field3899];
                         if (i_38 != 0) {
-                           class321.Rasterizer2D_pixels[i_34++] = i_38;
+                           Rasterizer2D.Rasterizer2D_pixels[i_34++] = i_38;
                         } else {
                            ++i_34;
                         }
@@ -566,35 +566,35 @@ public final class class325 extends class321 {
             i_4 = (i_12 + ((i_6 << 16) - i_8) - 1) / i_12;
          }
 
-         i_13 = i_1 + i_2 * class321.Rasterizer2D_width;
-         int i_14 = class321.Rasterizer2D_width - i_3;
-         if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
-            i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
+         i_13 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
+         int i_14 = Rasterizer2D.Rasterizer2D_width - i_3;
+         if (i_2 + i_4 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+            i_4 -= i_2 + i_4 - Rasterizer2D.Rasterizer2D_yClipEnd;
          }
 
          int i_15;
-         if (i_2 < class321.Rasterizer2D_yClipStart) {
-            i_15 = class321.Rasterizer2D_yClipStart - i_2;
+         if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+            i_15 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
             i_4 -= i_15;
-            i_13 += i_15 * class321.Rasterizer2D_width;
+            i_13 += i_15 * Rasterizer2D.Rasterizer2D_width;
             i_8 += i_12 * i_15;
          }
 
-         if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
-            i_15 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
+         if (i_3 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+            i_15 = i_3 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
             i_3 -= i_15;
             i_14 += i_15;
          }
 
-         if (i_1 < class321.Rasterizer2D_xClipStart) {
-            i_15 = class321.Rasterizer2D_xClipStart - i_1;
+         if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+            i_15 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
             i_3 -= i_15;
             i_13 += i_15;
             i_7 += i_11 * i_15;
             i_14 += i_15;
          }
 
-         method6200(class321.Rasterizer2D_pixels, this.field3908, 0, i_7, i_8, i_13, i_14, i_3, i_4, i_11, i_12, i_5);
+         method6200(Rasterizer2D.Rasterizer2D_pixels, this.field3908, 0, i_7, i_8, i_13, i_14, i_3, i_4, i_11, i_12, i_5);
       }
    }
 
@@ -604,26 +604,26 @@ public final class class325 extends class321 {
          int i_6 = (i_3 * (this.field3901 + this.field3899) + this.field3898 - 1) / this.field3898 + i_1;
          int i_7 = i_2 + i_4 * this.field3902 / this.field3904;
          int i_8 = i_2 + (this.field3904 + (this.field3902 + this.field3900) * i_4 - 1) / this.field3904;
-         if (i_5 < class321.Rasterizer2D_xClipStart) {
-            i_5 = class321.Rasterizer2D_xClipStart;
+         if (i_5 < Rasterizer2D.Rasterizer2D_xClipStart) {
+            i_5 = Rasterizer2D.Rasterizer2D_xClipStart;
          }
 
-         if (i_6 > class321.Rasterizer2D_xClipEnd) {
-            i_6 = class321.Rasterizer2D_xClipEnd;
+         if (i_6 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+            i_6 = Rasterizer2D.Rasterizer2D_xClipEnd;
          }
 
-         if (i_7 < class321.Rasterizer2D_yClipStart) {
-            i_7 = class321.Rasterizer2D_yClipStart;
+         if (i_7 < Rasterizer2D.Rasterizer2D_yClipStart) {
+            i_7 = Rasterizer2D.Rasterizer2D_yClipStart;
          }
 
-         if (i_8 > class321.Rasterizer2D_yClipEnd) {
-            i_8 = class321.Rasterizer2D_yClipEnd;
+         if (i_8 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+            i_8 = Rasterizer2D.Rasterizer2D_yClipEnd;
          }
 
          if (i_5 < i_6 && i_7 < i_8) {
-            int i_9 = i_5 + i_7 * class321.Rasterizer2D_width;
-            int i_10 = class321.Rasterizer2D_width - (i_6 - i_5);
-            if (i_9 < class321.Rasterizer2D_pixels.length) {
+            int i_9 = i_5 + i_7 * Rasterizer2D.Rasterizer2D_width;
+            int i_10 = Rasterizer2D.Rasterizer2D_width - (i_6 - i_5);
+            if (i_9 < Rasterizer2D.Rasterizer2D_pixels.length) {
                for (int i_11 = i_7; i_11 < i_8; i_11++) {
                   for (int i_12 = i_5; i_12 < i_6; i_12++) {
                      int i_13 = i_12 - i_1 << 4;
@@ -702,7 +702,7 @@ public final class class325 extends class321 {
                               i_28 = 1;
                            }
 
-                           class321.Rasterizer2D_pixels[i_9] = i_28;
+                           Rasterizer2D.Rasterizer2D_pixels[i_9] = i_28;
                         }
 
                         ++i_9;
@@ -722,44 +722,44 @@ public final class class325 extends class321 {
    public void method6121(int i_1, int i_2) {
       i_1 += this.field3901;
       i_2 += this.field3902;
-      int i_3 = i_1 + i_2 * class321.Rasterizer2D_width;
+      int i_3 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
       int i_4 = 0;
       int i_5 = this.field3900;
       int i_6 = this.field3899;
-      int i_7 = class321.Rasterizer2D_width - i_6;
+      int i_7 = Rasterizer2D.Rasterizer2D_width - i_6;
       int i_8 = 0;
       int i_9;
-      if (i_2 < class321.Rasterizer2D_yClipStart) {
-         i_9 = class321.Rasterizer2D_yClipStart - i_2;
+      if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+         i_9 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
          i_5 -= i_9;
-         i_2 = class321.Rasterizer2D_yClipStart;
+         i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
          i_4 += i_9 * i_6;
-         i_3 += i_9 * class321.Rasterizer2D_width;
+         i_3 += i_9 * Rasterizer2D.Rasterizer2D_width;
       }
 
-      if (i_5 + i_2 > class321.Rasterizer2D_yClipEnd) {
-         i_5 -= i_5 + i_2 - class321.Rasterizer2D_yClipEnd;
+      if (i_5 + i_2 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+         i_5 -= i_5 + i_2 - Rasterizer2D.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.Rasterizer2D_xClipStart) {
-         i_9 = class321.Rasterizer2D_xClipStart - i_1;
+      if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+         i_9 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
          i_6 -= i_9;
-         i_1 = class321.Rasterizer2D_xClipStart;
+         i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
          i_4 += i_9;
          i_3 += i_9;
          i_8 += i_9;
          i_7 += i_9;
       }
 
-      if (i_6 + i_1 > class321.Rasterizer2D_xClipEnd) {
-         i_9 = i_6 + i_1 - class321.Rasterizer2D_xClipEnd;
+      if (i_6 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+         i_9 = i_6 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
          i_6 -= i_9;
          i_8 += i_9;
          i_7 += i_9;
       }
 
       if (i_6 > 0 && i_5 > 0) {
-         method6122(class321.Rasterizer2D_pixels, this.field3908, i_4, i_3, i_6, i_5, i_7, i_8);
+         method6122(Rasterizer2D.Rasterizer2D_pixels, this.field3908, i_4, i_3, i_6, i_5, i_7, i_8);
       }
    }
 
@@ -804,7 +804,7 @@ public final class class325 extends class321 {
    }
 
    public void method6114() {
-      class321.method6033(this.field3908, this.field3899, this.field3900);
+      Rasterizer2D.replace(this.field3908, this.field3899, this.field3900);
    }
 
    public void method6115(int i_1) {
@@ -850,37 +850,37 @@ public final class class325 extends class321 {
    public void method6135(int i_1, int i_2, int i_3) {
       i_1 += this.field3901;
       i_2 += this.field3902;
-      int i_4 = i_1 + i_2 * class321.Rasterizer2D_width;
+      int i_4 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
       int i_5 = 0;
       int i_6 = this.field3900;
       int i_7 = this.field3899;
-      int i_8 = class321.Rasterizer2D_width - i_7;
+      int i_8 = Rasterizer2D.Rasterizer2D_width - i_7;
       int i_9 = 0;
       int i_10;
-      if (i_2 < class321.Rasterizer2D_yClipStart) {
-         i_10 = class321.Rasterizer2D_yClipStart - i_2;
+      if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+         i_10 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
          i_6 -= i_10;
-         i_2 = class321.Rasterizer2D_yClipStart;
+         i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
          i_5 += i_10 * i_7;
-         i_4 += i_10 * class321.Rasterizer2D_width;
+         i_4 += i_10 * Rasterizer2D.Rasterizer2D_width;
       }
 
-      if (i_6 + i_2 > class321.Rasterizer2D_yClipEnd) {
-         i_6 -= i_6 + i_2 - class321.Rasterizer2D_yClipEnd;
+      if (i_6 + i_2 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+         i_6 -= i_6 + i_2 - Rasterizer2D.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.Rasterizer2D_xClipStart) {
-         i_10 = class321.Rasterizer2D_xClipStart - i_1;
+      if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+         i_10 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
          i_7 -= i_10;
-         i_1 = class321.Rasterizer2D_xClipStart;
+         i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
          i_5 += i_10;
          i_4 += i_10;
          i_9 += i_10;
          i_8 += i_10;
       }
 
-      if (i_7 + i_1 > class321.Rasterizer2D_xClipEnd) {
-         i_10 = i_7 + i_1 - class321.Rasterizer2D_xClipEnd;
+      if (i_7 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+         i_10 = i_7 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
          i_7 -= i_10;
          i_9 += i_10;
          i_8 += i_10;
@@ -888,9 +888,9 @@ public final class class325 extends class321 {
 
       if (i_7 > 0 && i_6 > 0) {
          if (i_3 == 256) {
-            method6134(0, 0, 0, class321.Rasterizer2D_pixels, this.field3908, i_5, 0, i_4, 0, i_7, i_6, i_8, i_9);
+            method6134(0, 0, 0, Rasterizer2D.Rasterizer2D_pixels, this.field3908, i_5, 0, i_4, 0, i_7, i_6, i_8, i_9);
          } else {
-            method6119(0, 0, 0, class321.Rasterizer2D_pixels, this.field3908, i_5, 0, i_4, 0, i_7, i_6, i_8, i_9, i_3);
+            method6119(0, 0, 0, Rasterizer2D.Rasterizer2D_pixels, this.field3908, i_5, 0, i_4, 0, i_7, i_6, i_8, i_9, i_3);
          }
 
       }
@@ -927,28 +927,28 @@ public final class class325 extends class321 {
             i_4 = (i_13 + ((i_7 << 16) - i_9) - 1) / i_13;
          }
 
-         i_14 = i_1 + i_2 * class321.Rasterizer2D_width;
-         int i_15 = class321.Rasterizer2D_width - i_3;
-         if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
-            i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
+         i_14 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
+         int i_15 = Rasterizer2D.Rasterizer2D_width - i_3;
+         if (i_2 + i_4 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+            i_4 -= i_2 + i_4 - Rasterizer2D.Rasterizer2D_yClipEnd;
          }
 
          int i_16;
-         if (i_2 < class321.Rasterizer2D_yClipStart) {
-            i_16 = class321.Rasterizer2D_yClipStart - i_2;
+         if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+            i_16 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
             i_4 -= i_16;
-            i_14 += i_16 * class321.Rasterizer2D_width;
+            i_14 += i_16 * Rasterizer2D.Rasterizer2D_width;
             i_9 += i_13 * i_16;
          }
 
-         if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
-            i_16 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
+         if (i_3 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+            i_16 = i_3 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
             i_3 -= i_16;
             i_15 += i_16;
          }
 
-         if (i_1 < class321.Rasterizer2D_xClipStart) {
-            i_16 = class321.Rasterizer2D_xClipStart - i_1;
+         if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+            i_16 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
             i_3 -= i_16;
             i_14 += i_16;
             i_8 += i_12 * i_16;
@@ -956,9 +956,9 @@ public final class class325 extends class321 {
          }
 
          if (i_5 == 256) {
-            method6111(0, 0, 0, i_8, this.field3908, class321.Rasterizer2D_pixels, 0, 0, -i_4, i_9, i_14, i_15, i_3, i_12, i_13, i_6);
+            method6111(0, 0, 0, i_8, this.field3908, Rasterizer2D.Rasterizer2D_pixels, 0, 0, -i_4, i_9, i_14, i_15, i_3, i_12, i_13, i_6);
          } else {
-            method6138(0, 0, 0, i_8, this.field3908, class321.Rasterizer2D_pixels, 0, 0, -i_4, i_9, i_14, i_15, i_3, i_12, i_13, i_6, i_5);
+            method6138(0, 0, 0, i_8, this.field3908, Rasterizer2D.Rasterizer2D_pixels, 0, 0, -i_4, i_9, i_14, i_15, i_3, i_12, i_13, i_6, i_5);
          }
 
       }
@@ -1003,7 +1003,7 @@ public final class class325 extends class321 {
 
    }
 
-   public void method6140(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, int[] ints_9, int[] ints_10) {
+   public void drawRotatedMaskedCenteredAround(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, int[] ints_9, int[] ints_10) {
       try {
          int i_11 = -i_3 / 2;
          int i_12 = -i_4 / 2;
@@ -1013,7 +1013,7 @@ public final class class325 extends class321 {
          i_14 = i_14 * i_8 >> 8;
          int i_15 = i_12 * i_13 + i_11 * i_14 + (i_5 << 16);
          int i_16 = i_12 * i_14 - i_11 * i_13 + (i_6 << 16);
-         int i_17 = i_1 + i_2 * class321.Rasterizer2D_width;
+         int i_17 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
 
          for (i_2 = 0; i_2 < i_4; i_2++) {
             int i_18 = ints_9[i_2];
@@ -1022,14 +1022,14 @@ public final class class325 extends class321 {
             int i_21 = i_16 - i_13 * i_18;
 
             for (i_1 = -ints_10[i_2]; i_1 < 0; i_1++) {
-               class321.Rasterizer2D_pixels[i_19++] = this.field3908[this.field3899 * (i_21 >> 16) + (i_20 >> 16)];
+               Rasterizer2D.Rasterizer2D_pixels[i_19++] = this.field3908[this.field3899 * (i_21 >> 16) + (i_20 >> 16)];
                i_20 += i_14;
                i_21 -= i_13;
             }
 
             i_15 += i_13;
             i_16 += i_14;
-            i_17 += class321.Rasterizer2D_width;
+            i_17 += Rasterizer2D.Rasterizer2D_width;
          }
       } catch (Exception exception_23) {
          ;
@@ -1068,35 +1068,35 @@ public final class class325 extends class321 {
             i_4 = (i_13 + ((i_7 << 16) - i_9) - 1) / i_13;
          }
 
-         i_14 = i_1 + i_2 * class321.Rasterizer2D_width;
-         int i_15 = class321.Rasterizer2D_width - i_3;
-         if (i_2 + i_4 > class321.Rasterizer2D_yClipEnd) {
-            i_4 -= i_2 + i_4 - class321.Rasterizer2D_yClipEnd;
+         i_14 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
+         int i_15 = Rasterizer2D.Rasterizer2D_width - i_3;
+         if (i_2 + i_4 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+            i_4 -= i_2 + i_4 - Rasterizer2D.Rasterizer2D_yClipEnd;
          }
 
          int i_16;
-         if (i_2 < class321.Rasterizer2D_yClipStart) {
-            i_16 = class321.Rasterizer2D_yClipStart - i_2;
+         if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+            i_16 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
             i_4 -= i_16;
-            i_14 += i_16 * class321.Rasterizer2D_width;
+            i_14 += i_16 * Rasterizer2D.Rasterizer2D_width;
             i_9 += i_13 * i_16;
          }
 
-         if (i_3 + i_1 > class321.Rasterizer2D_xClipEnd) {
-            i_16 = i_3 + i_1 - class321.Rasterizer2D_xClipEnd;
+         if (i_3 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+            i_16 = i_3 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
             i_3 -= i_16;
             i_15 += i_16;
          }
 
-         if (i_1 < class321.Rasterizer2D_xClipStart) {
-            i_16 = class321.Rasterizer2D_xClipStart - i_1;
+         if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+            i_16 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
             i_3 -= i_16;
             i_14 += i_16;
             i_8 += i_12 * i_16;
             i_15 += i_16;
          }
 
-         method6132(class321.Rasterizer2D_pixels, this.field3908, 0, i_8, i_9, i_14, i_15, i_3, i_4, i_12, i_13, i_6, i_5);
+         method6132(Rasterizer2D.Rasterizer2D_pixels, this.field3908, 0, i_8, i_9, i_14, i_15, i_3, i_4, i_12, i_13, i_6, i_5);
       }
    }
 
@@ -1107,44 +1107,44 @@ public final class class325 extends class321 {
    public void method6129(int i_1, int i_2, int i_3) {
       i_1 += this.field3901;
       i_2 += this.field3902;
-      int i_4 = i_1 + i_2 * class321.Rasterizer2D_width;
+      int i_4 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
       int i_5 = 0;
       int i_6 = this.field3900;
       int i_7 = this.field3899;
-      int i_8 = class321.Rasterizer2D_width - i_7;
+      int i_8 = Rasterizer2D.Rasterizer2D_width - i_7;
       int i_9 = 0;
       int i_10;
-      if (i_2 < class321.Rasterizer2D_yClipStart) {
-         i_10 = class321.Rasterizer2D_yClipStart - i_2;
+      if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+         i_10 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
          i_6 -= i_10;
-         i_2 = class321.Rasterizer2D_yClipStart;
+         i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
          i_5 += i_10 * i_7;
-         i_4 += i_10 * class321.Rasterizer2D_width;
+         i_4 += i_10 * Rasterizer2D.Rasterizer2D_width;
       }
 
-      if (i_6 + i_2 > class321.Rasterizer2D_yClipEnd) {
-         i_6 -= i_6 + i_2 - class321.Rasterizer2D_yClipEnd;
+      if (i_6 + i_2 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+         i_6 -= i_6 + i_2 - Rasterizer2D.Rasterizer2D_yClipEnd;
       }
 
-      if (i_1 < class321.Rasterizer2D_xClipStart) {
-         i_10 = class321.Rasterizer2D_xClipStart - i_1;
+      if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+         i_10 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
          i_7 -= i_10;
-         i_1 = class321.Rasterizer2D_xClipStart;
+         i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
          i_5 += i_10;
          i_4 += i_10;
          i_9 += i_10;
          i_8 += i_10;
       }
 
-      if (i_7 + i_1 > class321.Rasterizer2D_xClipEnd) {
-         i_10 = i_7 + i_1 - class321.Rasterizer2D_xClipEnd;
+      if (i_7 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+         i_10 = i_7 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
          i_7 -= i_10;
          i_9 += i_10;
          i_8 += i_10;
       }
 
       if (i_7 > 0 && i_6 > 0) {
-         method6130(class321.Rasterizer2D_pixels, this.field3908, 0, i_5, i_4, i_7, i_6, i_8, i_9, i_3);
+         method6130(Rasterizer2D.Rasterizer2D_pixels, this.field3908, 0, i_5, i_4, i_7, i_6, i_8, i_9, i_3);
       }
    }
 
@@ -1177,7 +1177,7 @@ public final class class325 extends class321 {
          i_10000 = i_5 - i_1;
       }
 
-      int i_13 = i_3 + i_11 + (i_9 + i_2 + i_4) * class321.Rasterizer2D_width + i_1;
+      int i_13 = i_3 + i_11 + (i_9 + i_2 + i_4) * Rasterizer2D.Rasterizer2D_width + i_1;
       int i_14 = i_9 + i_2;
 
       for (int i_15 = i_9; i_15 < i_10; i_15++) {
@@ -1202,13 +1202,13 @@ public final class class325 extends class321 {
          for (int i_20 = i_19; i_20 < i_12; i_20++) {
             int i_21 = this.field3908[i_20 + i_15 * this.field3899];
             if (i_21 != 0) {
-               class321.Rasterizer2D_pixels[i_18++] = i_21;
+               Rasterizer2D.Rasterizer2D_pixels[i_18++] = i_21;
             } else {
                ++i_18;
             }
          }
 
-         i_13 += class321.Rasterizer2D_width;
+         i_13 += Rasterizer2D.Rasterizer2D_width;
       }
 
    }
@@ -1239,7 +1239,7 @@ public final class class325 extends class321 {
          i_13 = i_13 * i_9 >> 8;
          int i_14 = i_11 * i_12 + i_10 * i_13 + (i_5 << 16);
          int i_15 = i_11 * i_13 - i_10 * i_12 + (i_6 << 16);
-         int i_16 = i_1 + i_2 * class321.Rasterizer2D_width;
+         int i_16 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
 
          for (i_2 = 0; i_2 < i_4; i_2++) {
             int i_17 = i_16;
@@ -1249,7 +1249,7 @@ public final class class325 extends class321 {
             for (i_1 = -i_3; i_1 < 0; i_1++) {
                int i_20 = this.field3908[this.field3899 * (i_19 >> 16) + (i_18 >> 16)];
                if (i_20 != 0) {
-                  class321.Rasterizer2D_pixels[i_17++] = i_20;
+                  Rasterizer2D.Rasterizer2D_pixels[i_17++] = i_20;
                } else {
                   ++i_17;
                }
@@ -1260,7 +1260,7 @@ public final class class325 extends class321 {
 
             i_14 += i_12;
             i_15 += i_13;
-            i_16 += class321.Rasterizer2D_width;
+            i_16 += Rasterizer2D.Rasterizer2D_width;
          }
       } catch (Exception exception_22) {
          ;
@@ -1270,48 +1270,48 @@ public final class class325 extends class321 {
 
    public void method6127(int i_1, int i_2, int i_3, int i_4) {
       if (i_3 == 256) {
-         this.method6126(i_1, i_2);
+         this.drawTransBgAt(i_1, i_2);
       } else {
          i_1 += this.field3901;
          i_2 += this.field3902;
-         int i_5 = i_1 + i_2 * class321.Rasterizer2D_width;
+         int i_5 = i_1 + i_2 * Rasterizer2D.Rasterizer2D_width;
          int i_6 = 0;
          int i_7 = this.field3900;
          int i_8 = this.field3899;
-         int i_9 = class321.Rasterizer2D_width - i_8;
+         int i_9 = Rasterizer2D.Rasterizer2D_width - i_8;
          int i_10 = 0;
          int i_11;
-         if (i_2 < class321.Rasterizer2D_yClipStart) {
-            i_11 = class321.Rasterizer2D_yClipStart - i_2;
+         if (i_2 < Rasterizer2D.Rasterizer2D_yClipStart) {
+            i_11 = Rasterizer2D.Rasterizer2D_yClipStart - i_2;
             i_7 -= i_11;
-            i_2 = class321.Rasterizer2D_yClipStart;
+            i_2 = Rasterizer2D.Rasterizer2D_yClipStart;
             i_6 += i_11 * i_8;
-            i_5 += i_11 * class321.Rasterizer2D_width;
+            i_5 += i_11 * Rasterizer2D.Rasterizer2D_width;
          }
 
-         if (i_7 + i_2 > class321.Rasterizer2D_yClipEnd) {
-            i_7 -= i_7 + i_2 - class321.Rasterizer2D_yClipEnd;
+         if (i_7 + i_2 > Rasterizer2D.Rasterizer2D_yClipEnd) {
+            i_7 -= i_7 + i_2 - Rasterizer2D.Rasterizer2D_yClipEnd;
          }
 
-         if (i_1 < class321.Rasterizer2D_xClipStart) {
-            i_11 = class321.Rasterizer2D_xClipStart - i_1;
+         if (i_1 < Rasterizer2D.Rasterizer2D_xClipStart) {
+            i_11 = Rasterizer2D.Rasterizer2D_xClipStart - i_1;
             i_8 -= i_11;
-            i_1 = class321.Rasterizer2D_xClipStart;
+            i_1 = Rasterizer2D.Rasterizer2D_xClipStart;
             i_6 += i_11;
             i_5 += i_11;
             i_10 += i_11;
             i_9 += i_11;
          }
 
-         if (i_8 + i_1 > class321.Rasterizer2D_xClipEnd) {
-            i_11 = i_8 + i_1 - class321.Rasterizer2D_xClipEnd;
+         if (i_8 + i_1 > Rasterizer2D.Rasterizer2D_xClipEnd) {
+            i_11 = i_8 + i_1 - Rasterizer2D.Rasterizer2D_xClipEnd;
             i_8 -= i_11;
             i_10 += i_11;
             i_9 += i_11;
          }
 
          if (i_8 > 0 && i_7 > 0) {
-            method6123(class321.Rasterizer2D_pixels, this.field3908, 0, i_6, i_5, i_8, i_7, i_9, i_10, i_3, i_4);
+            method6123(Rasterizer2D.Rasterizer2D_pixels, this.field3908, 0, i_6, i_5, i_8, i_7, i_9, i_10, i_3, i_4);
          }
       }
    }

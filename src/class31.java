@@ -119,9 +119,9 @@ public class class31 {
          } else {
             int i_6;
             if (i_0 == 3308) {
-               i_4 = class42.field372;
-               i_5 = (Client.field657.field1005 >> 7) + class196.field2389;
-               i_6 = (Client.field657.field949 >> 7) + class1.field1;
+               i_4 = ItemContainer_2.plane;
+               i_5 = (Client.localPlayer.x >> 7) + class196.field2389;
+               i_6 = (Client.localPlayer.y >> 7) + class1.field1;
                MouseRecorder.field1098[++class70.field1014 - 1] = (i_5 << 14) + i_6 + (i_4 << 28);
                return 1;
             } else if (i_0 == 3309) {

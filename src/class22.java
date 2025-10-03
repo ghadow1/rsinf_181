@@ -15,7 +15,7 @@ public final class class22 {
 
    static final void method275(int i_0) {
       for (class77 class77_1 = (class77) Client.field785.method4892(); class77_1 != null; class77_1 = (class77) Client.field785.method4894()) {
-         if (class77_1.field1124 == class42.field372 && !class77_1.field1122) {
+         if (class77_1.field1124 == ItemContainer_2.plane && !class77_1.field1122) {
             if (Client.field881 >= class77_1.field1114) {
                class77_1.method1938(Client.field718, (byte) 4);
                if (class77_1.field1122) {

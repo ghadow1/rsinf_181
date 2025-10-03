@@ -83,7 +83,7 @@ public class class3 implements UnknownT {
             i_11 = i_4;
          }
 
-         int[] ints_20 = class174.field2102.field3908;
+         int[] ints_20 = ParamDefinition.sceneMinimapSprite.field3908;
          i_27 = i_1 * 4 + (103 - i_2) * 2048 + 24624;
          i_15 = GCMonitor.method770(long_6);
          class253 class253_16 = class128.method2970(i_15);
@@ -183,7 +183,7 @@ public class class3 implements UnknownT {
                i_26 = 15597568;
             }
 
-            int[] ints_25 = class174.field2102.field3908;
+            int[] ints_25 = ParamDefinition.sceneMinimapSprite.field3908;
             int i_30 = i_1 * 4 + (103 - i_2) * 2048 + 24624;
             if (i_9 != 0 && i_9 != 2) {
                ints_25[i_30] = i_26;

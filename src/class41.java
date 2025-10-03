@@ -118,7 +118,7 @@ public class class41 {
          if (class66_2.field977.charAt(0) == 126) {
             class66_2.field977 = class66_2.field977.substring(1);
             class62.method1132(2, class66_2.field621.method5197(), class66_2.field977);
-         } else if (class66_2 == Client.field657) {
+         } else if (class66_2 == Client.localPlayer) {
             class62.method1132(2, class66_2.field621.method5197(), class66_2.field977);
          }
 
@@ -178,7 +178,7 @@ public class class41 {
                class66_2.field982 = i_6 & 0xff;
                class66_2.field1002 = 150;
                class66_2.field963 = bool_18;
-               class66_2.field998 = class66_2 != Client.field657 && gameState_20.field3092 && "" != Client.field762 && string_16.toLowerCase().indexOf(Client.field762) == -1;
+               class66_2.field998 = class66_2 != Client.localPlayer && gameState_20.field3092 && "" != Client.field762 && string_16.toLowerCase().indexOf(Client.field762) == -1;
                if (gameState_20.field3091) {
                   i_13 = bool_18 ? 91 : 1;
                } else {

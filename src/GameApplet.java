@@ -59,21 +59,21 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       class32.field277 = class46_2;
    }
 
-   public static class256 method1005(int i_0) {
-      class256 class256_2 = (class256) class256.field3465.get((long) i_0);
-      if (class256_2 != null) {
-         return class256_2;
+   public static NPCDefinition method1005(int i_0) {
+      NPCDefinition NPCDefinition_2 = (NPCDefinition) NPCDefinition.field3465.get((long) i_0);
+      if (NPCDefinition_2 != null) {
+         return NPCDefinition_2;
       } else {
-         byte[] bytes_3 = class256.field3484.method4144(9, i_0);
-         class256_2 = new class256();
-         class256_2.field3467 = i_0;
+         byte[] bytes_3 = NPCDefinition.field3484.method4144(9, i_0);
+         NPCDefinition_2 = new NPCDefinition();
+         NPCDefinition_2.field3467 = i_0;
          if (bytes_3 != null) {
-            class256_2.method4703(new ByteBuffer(bytes_3));
+            NPCDefinition_2.method4703(new ByteBuffer(bytes_3));
          }
 
-         class256_2.method4704();
-         class256.field3465.put(class256_2, (long) i_0);
-         return class256_2;
+         NPCDefinition_2.method4704();
+         NPCDefinition.field3465.put(NPCDefinition_2, (long) i_0);
+         return NPCDefinition_2;
       }
    }
 

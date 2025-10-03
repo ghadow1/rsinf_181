@@ -30,14 +30,14 @@ public class class284 extends Categorizable {
          if (class69_0.field975 != -1) {
             Object obj_2 = null;
             if (class69_0.field975 < 32768) {
-               obj_2 = Client.field694[class69_0.field975];
+               obj_2 = Client.npcs[class69_0.field975];
             } else if (class69_0.field975 >= 32768) {
                obj_2 = Client.field909[class69_0.field975 - 32768];
             }
 
             if (obj_2 != null) {
-               int i_3 = class69_0.field1005 - ((class69) obj_2).field1005;
-               int i_4 = class69_0.field949 - ((class69) obj_2).field949;
+               int i_3 = class69_0.x - ((class69) obj_2).x;
+               int i_4 = class69_0.y - ((class69) obj_2).y;
                if (i_3 != 0 || i_4 != 0) {
                   class69_0.field1000 = (int)(Math.atan2((double)i_3, (double)i_4) * 325.949D) & 0x7ff;
                }

@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.RandomAccessFile;
 
-public class class65 extends class174 {
+public class class65 extends ParamDefinition {
 
    public boolean vmethod3594(int i_1, int i_2, int i_3, class172 class172_4, int i_5) {
       return i_2 == super.field2098 && i_3 == super.field2101;
@@ -108,9 +108,9 @@ public class class65 extends class174 {
       }
    }
 
-   static final void method1174(int i_0, int i_1, int i_2, int i_3, int i_4) {
+   static final void method1174(int i_0, int i_1, int i_2, int i_3) {
       if (Client.isItemSelected == 0 && !Client.isSpellSelected) {
-         class188.method3644("Walk here", "", 23, 0, i_0 - i_2, i_1 - i_3, 730328145);
+         class188.method3644("Walk here", "", 23, 0, i_0 - i_2, i_1 - i_3);
       }
 
       long long_5 = -1L;
@@ -138,7 +138,7 @@ public class class65 extends class174 {
                int i_17 = class91.method2176(i_9, (byte) 102);
                int i_18 = class3.method33(i_9, (byte) -12);
                int i_19 = class74.method1784(i_9, -77884497);
-               if (i_18 == 2 && class5.field22.method3096(class42.field372, i_16, i_17, long_26) >= 0) {
+               if (i_18 == 2 && class5.field22.method3096(ItemContainer_2.plane, i_16, i_17, long_26) >= 0) {
                   class253 class253_20 = class128.method2970(i_19);
                   if (class253_20.field3391 != null) {
                      class253_20 = class253_20.method4595();
@@ -149,10 +149,10 @@ public class class65 extends class174 {
                   }
 
                   if (Client.isItemSelected == 1) {
-                     class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(65535) + class253_20.field3360, 1, i_19, i_16, i_17, -741988185);
+                     class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(65535) + class253_20.field3360, 1, i_19, i_16, i_17);
                   } else if (Client.isSpellSelected) {
                      if ((WorldMapCacheName.field301 & 0x4) == 4) {
-                        class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(65535) + class253_20.field3360, 2, i_19, i_16, i_17, -1869857600);
+                        class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(65535) + class253_20.field3360, 2, i_19, i_16, i_17);
                      }
                   } else {
                      String[] arr_28 = class253_20.field3377;
@@ -180,31 +180,31 @@ public class class65 extends class174 {
                                  s_23 = 1001;
                               }
 
-                              class188.method3644(arr_28[i_31], class73.colorStartTag(65535) + class253_20.field3360, s_23, i_19, i_16, i_17, -877016828);
+                              class188.method3644(arr_28[i_31], class73.colorStartTag(65535) + class253_20.field3360, s_23, i_19, i_16, i_17);
                            }
                         }
                      }
 
-                     class188.method3644("Examine", class73.colorStartTag(65535) + class253_20.field3360, 1002, class253_20.field3357, i_16, i_17, 11490889);
+                     class188.method3644("Examine", class73.colorStartTag(65535) + class253_20.field3360, 1002, class253_20.field3357, i_16, i_17);
                   }
                }
 
                int i_21;
-               class79 class79_22;
+               NPC NPC_22;
                class66 class66_24;
                int[] ints_35;
                int i_37;
                if (i_18 == 1) {
-                  class79 class79_32 = Client.field694[i_19];
-                  if (class79_32 == null) {
+                  NPC NPC_32 = Client.npcs[i_19];
+                  if (NPC_32 == null) {
                      break label334;
                   }
 
-                  if (class79_32.field1134.field3469 == 1 && (class79_32.field1005 & 0x7f) == 64 && (class79_32.field949 & 0x7f) == 64) {
-                     for (i_21 = 0; i_21 < Client.field695; i_21++) {
-                        class79_22 = Client.field694[Client.field696[i_21]];
-                        if (class79_22 != null && class79_22 != class79_32 && class79_22.field1134.field3469 == 1 && class79_32.field1005 == class79_22.field1005 && class79_32.field949 == class79_22.field949) {
-                           class21.method272(class79_22.field1134, Client.field696[i_21], i_16, i_17, 1861825348);
+                  if (NPC_32.definition.field3469 == 1 && (NPC_32.x & 0x7f) == 64 && (NPC_32.y & 0x7f) == 64) {
+                     for (i_21 = 0; i_21 < Client.npcCount; i_21++) {
+                        NPC_22 = Client.npcs[Client.npcIndices[i_21]];
+                        if (NPC_22 != null && NPC_22 != NPC_32 && NPC_22.definition.field3469 == 1 && NPC_32.x == NPC_22.x && NPC_32.y == NPC_22.y) {
+                           class21.method272(NPC_22.definition, Client.npcIndices[i_21], i_16, i_17, 1861825348);
                         }
                      }
 
@@ -213,13 +213,13 @@ public class class65 extends class174 {
 
                      for (i_37 = 0; i_37 < i_21; i_37++) {
                         class66_24 = Client.field909[ints_35[i_37]];
-                        if (class66_24 != null && class79_32.field1005 == class66_24.field1005 && class66_24.field949 == class79_32.field949) {
+                        if (class66_24 != null && NPC_32.x == class66_24.x && class66_24.y == NPC_32.y) {
                            class36.method601(class66_24, ints_35[i_37], i_16, i_17, (byte) 98);
                         }
                      }
                   }
 
-                  class21.method272(class79_32.field1134, i_19, i_16, i_17, 676955297);
+                  class21.method272(NPC_32.definition, i_19, i_16, i_17, 676955297);
                }
 
                if (i_18 == 0) {
@@ -228,11 +228,11 @@ public class class65 extends class174 {
                      break label334;
                   }
 
-                  if ((class66_33.field1005 & 0x7f) == 64 && (class66_33.field949 & 0x7f) == 64) {
-                     for (i_21 = 0; i_21 < Client.field695; i_21++) {
-                        class79_22 = Client.field694[Client.field696[i_21]];
-                        if (class79_22 != null && class79_22.field1134.field3469 == 1 && class66_33.field1005 == class79_22.field1005 && class79_22.field949 == class66_33.field949) {
-                           class21.method272(class79_22.field1134, Client.field696[i_21], i_16, i_17, 566580282);
+                  if ((class66_33.x & 0x7f) == 64 && (class66_33.y & 0x7f) == 64) {
+                     for (i_21 = 0; i_21 < Client.npcCount; i_21++) {
+                        NPC_22 = Client.npcs[Client.npcIndices[i_21]];
+                        if (NPC_22 != null && NPC_22.definition.field3469 == 1 && class66_33.x == NPC_22.x && NPC_22.y == class66_33.y) {
+                           class21.method272(NPC_22.definition, Client.npcIndices[i_21], i_16, i_17, 566580282);
                         }
                      }
 
@@ -241,7 +241,7 @@ public class class65 extends class174 {
 
                      for (i_37 = 0; i_37 < i_21; i_37++) {
                         class66_24 = Client.field909[ints_35[i_37]];
-                        if (class66_24 != null && class66_33 != class66_24 && class66_24.field1005 == class66_33.field1005 && class66_33.field949 == class66_24.field949) {
+                        if (class66_24 != null && class66_33 != class66_24 && class66_24.x == class66_33.x && class66_33.y == class66_24.y) {
                            class36.method601(class66_24, ints_35[i_37], i_16, i_17, (byte) -117);
                         }
                      }
@@ -255,15 +255,15 @@ public class class65 extends class174 {
                }
 
                if (i_18 == 3) {
-                  class261 class261_34 = Client.field887[class42.field372][i_16][i_17];
-                  if (class261_34 != null) {
-                     for (class87 class87_38 = (class87) class261_34.method4893(); class87_38 != null; class87_38 = (class87) class261_34.method4887()) {
+                  NodeDeque nodeDeque_34 = Client.groundItems[ItemContainer_2.plane][i_16][i_17];
+                  if (nodeDeque_34 != null) {
+                     for (class87 class87_38 = (class87) nodeDeque_34.method4893(); class87_38 != null; class87_38 = (class87) nodeDeque_34.method4887()) {
                         ItemDefinition itemDefinition_36 = class26.method404(class87_38.field1244);
                         if (Client.isItemSelected == 1) {
-                           class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_36.name, 16, class87_38.field1244, i_16, i_17, 1070020816);
+                           class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_36.name, 16, class87_38.field1244, i_16, i_17);
                         } else if (Client.isSpellSelected) {
                            if ((WorldMapCacheName.field301 & 0x1) == 1) {
-                              class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_36.name, 17, class87_38.field1244, i_16, i_17, 1110984799);
+                              class188.method3644(Client.field813, Client.selectedSpellName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_36.name, 17, class87_38.field1244, i_16, i_17);
                            }
                         } else {
                            String[] arr_29 = itemDefinition_36.groundActions;
@@ -291,13 +291,13 @@ public class class65 extends class174 {
                                     b_25 = 22;
                                  }
 
-                                 class188.method3644(arr_29[i_30], class73.colorStartTag(16748608) + itemDefinition_36.name, b_25, class87_38.field1244, i_16, i_17, 422865946);
+                                 class188.method3644(arr_29[i_30], class73.colorStartTag(16748608) + itemDefinition_36.name, b_25, class87_38.field1244, i_16, i_17);
                               } else if (i_30 == 2) {
-                                 class188.method3644("Take", class73.colorStartTag(16748608) + itemDefinition_36.name, 20, class87_38.field1244, i_16, i_17, 408332748);
+                                 class188.method3644("Take", class73.colorStartTag(16748608) + itemDefinition_36.name, 20, class87_38.field1244, i_16, i_17);
                               }
                            }
 
-                           class188.method3644("Examine", class73.colorStartTag(16748608) + itemDefinition_36.name, 1004, class87_38.field1244, i_16, i_17, -1001389785);
+                           class188.method3644("Examine", class73.colorStartTag(16748608) + itemDefinition_36.name, 1004, class87_38.field1244, i_16, i_17);
                         }
                      }
                   }

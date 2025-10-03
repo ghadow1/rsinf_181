@@ -6,7 +6,7 @@ public abstract class class322 {
    public int field3878;
 
    public final void method6078() {
-      class321.method6033(this.field3876, this.field3877, this.field3878);
+      Rasterizer2D.replace(this.field3876, this.field3877, this.field3878);
    }
 
    public abstract void vmethod6077(int var1, int var2, int var3);

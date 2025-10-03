@@ -1,9 +1,9 @@
-public class class261 {
+public class NodeDeque {
 
    public LinkedListNode field3540 = new LinkedListNode();
    LinkedListNode field3541;
 
-   public class261() {
+   public NodeDeque() {
       this.field3540.next = this.field3540;
       this.field3540.previous = this.field3540;
    }

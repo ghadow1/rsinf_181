@@ -42,19 +42,19 @@ public final class class48 extends Canvas {
    static final void method810(int i_0, int i_1, int i_2, int i_3, class325 class325_4, class211 class211_5, int i_6) {
       int i_7 = i_3 * i_3 + i_2 * i_2;
       if (i_7 > 4225 && i_7 < 90000) {
-         int i_8 = Client.field722 & 0x7ff;
+         int i_8 = Client.camAngleY & 0x7ff;
          int i_9 = class130.field1787[i_8];
          int i_10 = class130.field1784[i_8];
          int i_11 = i_10 * i_2 + i_3 * i_9 >> 16;
          int i_12 = i_3 * i_10 - i_9 * i_2 >> 16;
          double d_13 = Math.atan2((double)i_11, (double)i_12);
-         int i_15 = class211_5.field2519 / 2 - 25;
+         int i_15 = class211_5.width / 2 - 25;
          int i_16 = (int)(Math.sin(d_13) * (double)i_15);
          int i_17 = (int)(Math.cos(d_13) * (double)i_15);
          byte b_18 = 20;
-         class151.field1972.method6193(i_16 + (i_0 + class211_5.field2519 / 2 - b_18 / 2), class211_5.field2522 / 2 + i_1 - b_18 / 2 - i_17 - 10, b_18, b_18, 15, 15, d_13, 256);
+         class151.field1972.method6193(i_16 + (i_0 + class211_5.width / 2 - b_18 / 2), class211_5.height / 2 + i_1 - b_18 / 2 - i_17 - 10, b_18, b_18, 15, 15, d_13, 256);
       } else {
-         MouseRecorder.method1935(i_0, i_1, i_2, i_3, class325_4, class211_5, (byte) 73);
+         MouseRecorder.drawSpriteOnMinimap(i_0, i_1, i_2, i_3, class325_4, class211_5);
       }
 
    }

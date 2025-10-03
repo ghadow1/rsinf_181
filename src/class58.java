@@ -26,47 +26,47 @@ public class class58 {
       class186.method3619((byte) 39);
       class211 class211_5 = widget_0.method4040(false);
       if (class211_5 != null) {
-         class321.method5997(i_1, i_2, class211_5.field2519 + i_1, i_2 + class211_5.field2522);
-         if (Client.field652 != 2 && Client.field652 != 5) {
-            int i_6 = Client.field722 & 0x7ff;
-            int i_7 = Client.field657.field1005 / 32 + 48;
-            int i_8 = 464 - Client.field657.field949 / 32;
-            class174.field2102.method6140(i_1, i_2, class211_5.field2519, class211_5.field2522, i_7, i_8, i_6, 256, class211_5.field2521, class211_5.field2520);
+         Rasterizer2D.setClip(i_1, i_2, class211_5.width + i_1, i_2 + class211_5.height);
+         if (Client.minimapState != 2 && Client.minimapState != 5) {
+            int i_6 = Client.camAngleY & 0x7ff;
+            int i_7 = Client.localPlayer.x / 32 + 48;
+            int i_8 = 464 - Client.localPlayer.y / 32;
+            ParamDefinition.sceneMinimapSprite.drawRotatedMaskedCenteredAround(i_1, i_2, class211_5.width, class211_5.height, i_7, i_8, i_6, 256, class211_5.field2521, class211_5.field2520);
 
             int i_9;
             int i_10;
             int i_11;
-            for (i_9 = 0; i_9 < Client.field730; i_9++) {
-               i_10 = Client.field664[i_9] * 4 + 2 - Client.field657.field1005 / 32;
-               i_11 = Client.field883[i_9] * 4 + 2 - Client.field657.field949 / 32;
-               MouseRecorder.method1935(i_1, i_2, i_10, i_11, Client.field786[i_9], class211_5, (byte) 73);
+            for (i_9 = 0; i_9 < Client.mapIconCount; i_9++) {
+               i_10 = Client.mapIconXs[i_9] * 4 + 2 - Client.localPlayer.x / 32;
+               i_11 = Client.mapIconYs[i_9] * 4 + 2 - Client.localPlayer.y / 32;
+               MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_10, i_11, Client.field786[i_9], class211_5);
             }
 
             int i_12;
             int i_13;
             for (i_9 = 0; i_9 < 104; i_9++) {
                for (i_10 = 0; i_10 < 104; i_10++) {
-                  class261 class261_16 = Client.field887[class42.field372][i_9][i_10];
-                  if (class261_16 != null) {
-                     i_12 = i_9 * 4 + 2 - Client.field657.field1005 / 32;
-                     i_13 = i_10 * 4 + 2 - Client.field657.field949 / 32;
-                     MouseRecorder.method1935(i_1, i_2, i_12, i_13, class221.field2746[0], class211_5, (byte) 73);
+                  NodeDeque nodeDeque_16 = Client.groundItems[ItemContainer_2.plane][i_9][i_10];
+                  if (nodeDeque_16 != null) {
+                     i_12 = i_9 * 4 + 2 - Client.localPlayer.x / 32;
+                     i_13 = i_10 * 4 + 2 - Client.localPlayer.y / 32;
+                     MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_12, i_13, class221.field2746[0], class211_5);
                   }
                }
             }
 
-            for (i_9 = 0; i_9 < Client.field695; i_9++) {
-               class79 class79_17 = Client.field694[Client.field696[i_9]];
-               if (class79_17 != null && class79_17.vmethod1965()) {
-                  class256 class256_19 = class79_17.field1134;
-                  if (class256_19 != null && class256_19.field3476 != null) {
-                     class256_19 = class256_19.method4709(942859640);
+            for (i_9 = 0; i_9 < Client.npcCount; i_9++) {
+               NPC NPC_17 = Client.npcs[Client.npcIndices[i_9]];
+               if (NPC_17 != null && NPC_17.vmethod1965()) {
+                  NPCDefinition NPCDefinition_19 = NPC_17.definition;
+                  if (NPCDefinition_19 != null && NPCDefinition_19.field3476 != null) {
+                     NPCDefinition_19 = NPCDefinition_19.transform();
                   }
 
-                  if (class256_19 != null && class256_19.field3493 && class256_19.field3496) {
-                     i_12 = class79_17.field1005 / 32 - Client.field657.field1005 / 32;
-                     i_13 = class79_17.field949 / 32 - Client.field657.field949 / 32;
-                     MouseRecorder.method1935(i_1, i_2, i_12, i_13, class221.field2746[1], class211_5, (byte) 73);
+                  if (NPCDefinition_19 != null && NPCDefinition_19.field3493 && NPCDefinition_19.field3496) {
+                     i_12 = NPC_17.x / 32 - Client.localPlayer.x / 32;
+                     i_13 = NPC_17.y / 32 - Client.localPlayer.y / 32;
+                     MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_12, i_13, class221.field2746[1], class211_5);
                   }
                }
             }
@@ -76,63 +76,63 @@ public class class58 {
 
             for (i_11 = 0; i_11 < i_9; i_11++) {
                class66 class66_18 = Client.field909[ints_20[i_11]];
-               if (class66_18 != null && class66_18.vmethod1965() && !class66_18.field628 && class66_18 != Client.field657) {
-                  i_13 = class66_18.field1005 / 32 - Client.field657.field1005 / 32;
-                  int i_14 = class66_18.field949 / 32 - Client.field657.field949 / 32;
+               if (class66_18 != null && class66_18.vmethod1965() && !class66_18.field628 && class66_18 != Client.localPlayer) {
+                  i_13 = class66_18.x / 32 - Client.localPlayer.x / 32;
+                  int i_14 = class66_18.y / 32 - Client.localPlayer.y / 32;
                   boolean bool_15 = false;
-                  if (Client.field657.field632 != 0 && class66_18.field632 != 0 && class66_18.field632 == Client.field657.field632) {
+                  if (Client.localPlayer.field632 != 0 && class66_18.field632 != 0 && class66_18.field632 == Client.localPlayer.field632) {
                      bool_15 = true;
                   }
 
                   if (class66_18.method1181(-1900430541)) {
-                     MouseRecorder.method1935(i_1, i_2, i_13, i_14, class221.field2746[3], class211_5, (byte) 73);
+                     MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_13, i_14, class221.field2746[3], class211_5);
                   } else if (bool_15) {
-                     MouseRecorder.method1935(i_1, i_2, i_13, i_14, class221.field2746[4], class211_5, (byte) 73);
+                     MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_13, i_14, class221.field2746[4], class211_5);
                   } else if (class66_18.method1184((byte) 12)) {
-                     MouseRecorder.method1935(i_1, i_2, i_13, i_14, class221.field2746[5], class211_5, (byte) 73);
+                     MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_13, i_14, class221.field2746[5], class211_5);
                   } else {
-                     MouseRecorder.method1935(i_1, i_2, i_13, i_14, class221.field2746[2], class211_5, (byte) 73);
+                     MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_13, i_14, class221.field2746[2], class211_5);
                   }
                }
             }
 
             if (Client.field708 != 0 && Client.field881 % 20 < 10) {
-               if (Client.field708 == 1 && Client.field824 >= 0 && Client.field824 < Client.field694.length) {
-                  class79 class79_21 = Client.field694[Client.field824];
-                  if (class79_21 != null) {
-                     i_12 = class79_21.field1005 / 32 - Client.field657.field1005 / 32;
-                     i_13 = class79_21.field949 / 32 - Client.field657.field949 / 32;
-                     class48.method810(i_1, i_2, i_12, i_13, class39.field342[1], class211_5, -1460314936);
+               if (Client.field708 == 1 && Client.field824 >= 0 && Client.field824 < Client.npcs.length) {
+                  NPC NPC_21 = Client.npcs[Client.field824];
+                  if (NPC_21 != null) {
+                     i_12 = NPC_21.x / 32 - Client.localPlayer.x / 32;
+                     i_13 = NPC_21.y / 32 - Client.localPlayer.y / 32;
+                     class48.method810(i_1, i_2, i_12, i_13, WorldMapSection1.mapMarkerSprites[1], class211_5, -1460314936);
                   }
                }
 
                if (Client.field708 == 2) {
-                  i_11 = Client.field737 * 4 - class196.field2389 * 4 + 2 - Client.field657.field1005 / 32;
-                  i_12 = Client.field777 * 4 - class1.field1 * 4 + 2 - Client.field657.field949 / 32;
-                  class48.method810(i_1, i_2, i_11, i_12, class39.field342[1], class211_5, -1460314936);
+                  i_11 = Client.field737 * 4 - class196.field2389 * 4 + 2 - Client.localPlayer.x / 32;
+                  i_12 = Client.field777 * 4 - class1.field1 * 4 + 2 - Client.localPlayer.y / 32;
+                  class48.method810(i_1, i_2, i_11, i_12, WorldMapSection1.mapMarkerSprites[1], class211_5, -1460314936);
                }
 
                if (Client.field708 == 10 && Client.field689 >= 0 && Client.field689 < Client.field909.length) {
                   class66 class66_22 = Client.field909[Client.field689];
                   if (class66_22 != null) {
-                     i_12 = class66_22.field1005 / 32 - Client.field657.field1005 / 32;
-                     i_13 = class66_22.field949 / 32 - Client.field657.field949 / 32;
-                     class48.method810(i_1, i_2, i_12, i_13, class39.field342[1], class211_5, -1460314936);
+                     i_12 = class66_22.x / 32 - Client.localPlayer.x / 32;
+                     i_13 = class66_22.y / 32 - Client.localPlayer.y / 32;
+                     class48.method810(i_1, i_2, i_12, i_13, WorldMapSection1.mapMarkerSprites[1], class211_5, -1460314936);
                   }
                }
             }
 
-            if (Client.field885 != 0) {
-               i_11 = Client.field885 * 4 + 2 - Client.field657.field1005 / 32;
-               i_12 = Client.field842 * 4 + 2 - Client.field657.field949 / 32;
-               MouseRecorder.method1935(i_1, i_2, i_11, i_12, class39.field342[0], class211_5, (byte) 73);
+            if (Client.destinationX != 0) {
+               i_11 = Client.destinationX * 4 + 2 - Client.localPlayer.x / 32;
+               i_12 = Client.destinationY * 4 + 2 - Client.localPlayer.y / 32;
+               MouseRecorder.drawSpriteOnMinimap(i_1, i_2, i_11, i_12, WorldMapSection1.mapMarkerSprites[0], class211_5);
             }
 
-            if (!Client.field657.field628) {
-               class321.fillRectangle(class211_5.field2519 / 2 + i_1 - 1, class211_5.field2522 / 2 + i_2 - 1, 3, 3, 16777215);
+            if (!Client.localPlayer.field628) {
+               Rasterizer2D.fillRectangle(class211_5.width / 2 + i_1 - 1, class211_5.height / 2 + i_2 - 1, 3, 3, 16777215);
             }
          } else {
-            class321.method6016(i_1, i_2, 0, class211_5.field2521, class211_5.field2520);
+            Rasterizer2D.fillMaskedRectangle(i_1, i_2, 0, class211_5.field2521, class211_5.field2520);
          }
 
          Client.field861[i_3] = true;

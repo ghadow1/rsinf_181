@@ -13,7 +13,7 @@ public class class292 {
    }
 
    static final void method5319(Widget[] arr_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8) {
-      class321.method5997(i_2, i_3, i_4, i_5);
+      Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
       class130.method3051();
 
       for (int i_10 = 0; i_10 < arr_0.length; i_10++) {
@@ -146,19 +146,19 @@ public class class292 {
                         Client.field804 = i_14;
                         class4.method48(i_13, i_14, widget_11.field2579, widget_11.field2667, 1991855037);
                         Client.field843[widget_11.field2701] = true;
-                        class321.method5997(i_2, i_3, i_4, i_5);
+                        Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
                         continue;
                      }
 
                      if (widget_11.field2568 == 1338) {
                         class58.method1098(widget_11, i_13, i_14, i_12);
-                        class321.method5997(i_2, i_3, i_4, i_5);
+                        Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
                         continue;
                      }
 
                      if (widget_11.field2568 == 1339) {
                         class18.method205(widget_11, i_13, i_14, i_12, (byte) 61);
-                        class321.method5997(i_2, i_3, i_4, i_5);
+                        Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
                         continue;
                      }
 
@@ -200,7 +200,7 @@ public class class292 {
                         class191.method3668(class61_31.field571, i_16, i_17, i_18, i_19, i_13, i_14, i_12);
                      }
 
-                     class321.method5997(i_2, i_3, i_4, i_5);
+                     Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
                      class130.method3051();
                   }
 
@@ -230,7 +230,7 @@ public class class292 {
                                     if (widget_11.field2635 != null && i_20 < 20) {
                                        class325 class325_47 = widget_11.method4038(i_20, -1022923411);
                                        if (class325_47 != null) {
-                                          class325_47.method6126(i_23, i_24);
+                                          class325_47.drawTransBgAt(i_23, i_24);
                                        } else if (Widget.field2562) {
                                           FriendSystem.invalidateWidget(widget_11);
                                        }
@@ -268,8 +268,8 @@ public class class292 {
                                              if (i_1 != -1) {
                                                 Widget widget_29 = arr_0[i_1 & 0xffff];
                                                 int i_30;
-                                                if (i_24 + i_26 < class321.Rasterizer2D_yClipStart && widget_29.field2586 > 0) {
-                                                   i_30 = (class321.Rasterizer2D_yClipStart - i_24 - i_26) * Client.field718 / 3;
+                                                if (i_24 + i_26 < Rasterizer2D.Rasterizer2D_yClipStart && widget_29.field2586 > 0) {
+                                                   i_30 = (Rasterizer2D.Rasterizer2D_yClipStart - i_24 - i_26) * Client.field718 / 3;
                                                    if (i_30 > Client.field718 * 10) {
                                                       i_30 = Client.field718 * 10;
                                                    }
@@ -283,8 +283,8 @@ public class class292 {
                                                    FriendSystem.invalidateWidget(widget_29);
                                                 }
 
-                                                if (i_26 + i_24 + 32 > class321.Rasterizer2D_yClipEnd && widget_29.field2586 < widget_29.field2569 - widget_29.field2667) {
-                                                   i_30 = (i_26 + i_24 + 32 - class321.Rasterizer2D_yClipEnd) * Client.field718 / 3;
+                                                if (i_26 + i_24 + 32 > Rasterizer2D.Rasterizer2D_yClipEnd && widget_29.field2586 < widget_29.field2569 - widget_29.field2667) {
+                                                   i_30 = (i_26 + i_24 + 32 - Rasterizer2D.Rasterizer2D_yClipEnd) * Client.field718 / 3;
                                                    if (i_30 > Client.field718 * 10) {
                                                       i_30 = Client.field718 * 10;
                                                    }
@@ -301,7 +301,7 @@ public class class292 {
                                           } else if (widget_11 == class59.field549 && i_20 == Client.field698) {
                                              class325_28.method6129(i_23, i_24, 128);
                                           } else {
-                                             class325_28.method6126(i_23, i_24);
+                                             class325_28.drawTransBgAt(i_23, i_24);
                                           }
                                        } else {
                                           FriendSystem.invalidateWidget(widget_11);
@@ -328,22 +328,22 @@ public class class292 {
                            if (widget_11.field2571) {
                               switch(widget_11.field2693.field3886) {
                               case 1:
-                                 class321.method6005(i_13, i_14, widget_11.field2579, widget_11.field2667, widget_11.field2695, widget_11.field2639);
+                                 Rasterizer2D.method6005(i_13, i_14, widget_11.field2579, widget_11.field2667, widget_11.field2695, widget_11.field2639);
                                  break;
                               case 2:
-                                 class321.method6006(i_13, i_14, widget_11.field2579, widget_11.field2667, widget_11.field2695, widget_11.field2639, 255 - (widget_11.field2595 & 0xff), 255 - (widget_11.field2596 & 0xff));
+                                 Rasterizer2D.fillRectangleGradient(i_13, i_14, widget_11.field2579, widget_11.field2667, widget_11.field2695, widget_11.field2639, 255 - (widget_11.field2595 & 0xff), 255 - (widget_11.field2596 & 0xff));
                                  break;
                               default:
                                  if (i_15 == 0) {
-                                    class321.fillRectangle(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20);
+                                    Rasterizer2D.fillRectangle(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20);
                                  } else {
-                                    class321.method6004(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20, 256 - (i_15 & 0xff));
+                                    Rasterizer2D.method6004(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20, 256 - (i_15 & 0xff));
                                  }
                               }
                            } else if (i_15 == 0) {
-                              class321.drawRectangle(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20);
+                              Rasterizer2D.drawRectangle(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20);
                            } else {
-                              class321.drawRectangleAlpha(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20, 256 - (i_15 & 0xff));
+                              Rasterizer2D.drawRectangleAlpha(i_13, i_14, widget_11.field2579, widget_11.field2667, i_20, 256 - (i_15 & 0xff));
                            }
                         } else {
                            Font font_40;
@@ -379,7 +379,7 @@ public class class292 {
                                     }
 
                                     if ((itemDefinition_46.isStackable == 1 || widget_11.field2655 != 1) && widget_11.field2655 != -1) {
-                                       string_45 = class73.colorStartTag(16748608) + string_45 + "</col>" + " " + 'x' + class188.method3631(widget_11.field2655, 434520276);
+                                       string_45 = class73.colorStartTag(16748608) + string_45 + "</col>" + " " + 'x' + class188.method3631(widget_11.field2655);
                                     }
                                  }
 
@@ -399,7 +399,7 @@ public class class292 {
                               if (!widget_11.field2563) {
                                  class325_41 = widget_11.method4036(UserComparator10.runCs1(widget_11), 1738149818);
                                  if (class325_41 != null) {
-                                    class325_41.method6126(i_13, i_14);
+                                    class325_41.drawTransBgAt(i_13, i_14);
                                  } else if (Widget.field2562) {
                                     FriendSystem.invalidateWidget(widget_11);
                                  }
@@ -424,12 +424,12 @@ public class class292 {
                                        } else if (i_15 != 0) {
                                           class325_41.method6131(i_13, i_14, widget_11.field2579, widget_11.field2667, 256 - (i_15 & 0xff));
                                        } else if (i_21 == widget_11.field2579 && i_22 == widget_11.field2667) {
-                                          class325_41.method6126(i_13, i_14);
+                                          class325_41.drawTransBgAt(i_13, i_14);
                                        } else {
                                           class325_41.method6125(i_13, i_14, widget_11.field2579, widget_11.field2667);
                                        }
                                     } else {
-                                       class321.method5998(i_13, i_14, i_13 + widget_11.field2579, i_14 + widget_11.field2667);
+                                       Rasterizer2D.method5998(i_13, i_14, i_13 + widget_11.field2579, i_14 + widget_11.field2667);
                                        i_23 = (i_21 - 1 + widget_11.field2579) / i_21;
                                        i_24 = (i_22 - 1 + widget_11.field2667) / i_22;
 
@@ -440,12 +440,12 @@ public class class292 {
                                              } else if (i_15 != 0) {
                                                 class325_41.method6129(i_13 + i_25 * i_21, i_14 + i_26 * i_22, 256 - (i_15 & 0xff));
                                              } else {
-                                                class325_41.method6126(i_13 + i_25 * i_21, i_14 + i_22 * i_26);
+                                                class325_41.drawTransBgAt(i_13 + i_25 * i_21, i_14 + i_22 * i_26);
                                              }
                                           }
                                        }
 
-                                       class321.method5997(i_2, i_3, i_4, i_5);
+                                       Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
                                     }
                                  }
                               }
@@ -477,16 +477,16 @@ public class class292 {
                                     if (widget_11.field2649 == 0) {
                                        class127_42 = Client.field918.method3997((class258) null, -1, (class258) null, -1);
                                     } else {
-                                       class127_42 = Client.field657.vmethod3253(759381421);
+                                       class127_42 = Client.localPlayer.vmethod3253(759381421);
                                     }
                                  } else if (i_21 == -1) {
-                                    class127_42 = widget_11.method4049((class258) null, -1, bool_37, Client.field657.field613, 1036934880);
+                                    class127_42 = widget_11.method4049((class258) null, -1, bool_37, Client.localPlayer.field613, 1036934880);
                                     if (class127_42 == null && Widget.field2562) {
                                        FriendSystem.invalidateWidget(widget_11);
                                     }
                                  } else {
                                     class258 class258_48 = class7.method81(i_21, (byte) 1);
-                                    class127_42 = widget_11.method4049(class258_48, widget_11.field2692, bool_37, Client.field657.field613, 482898105);
+                                    class127_42 = widget_11.method4049(class258_48, widget_11.field2692, bool_37, Client.localPlayer.field613, 482898105);
                                     if (class127_42 == null && Widget.field2562) {
                                        FriendSystem.invalidateWidget(widget_11);
                                     }
@@ -529,7 +529,7 @@ public class class292 {
                                              if (itemDefinition_34.isStackable != 1 && widget_11.field2705[i_21] == 1) {
                                                 string_35 = class73.colorStartTag(16748608) + itemDefinition_34.name + "</col>";
                                              } else {
-                                                string_35 = class73.colorStartTag(16748608) + itemDefinition_34.name + "</col>" + " " + 'x' + class188.method3631(widget_11.field2705[i_21], 1502705611);
+                                                string_35 = class73.colorStartTag(16748608) + itemDefinition_34.name + "</col>" + " " + 'x' + class188.method3631(widget_11.field2705[i_21]);
                                              }
 
                                              i_26 = i_23 * (widget_11.field2631 + 115) + i_13;
@@ -587,8 +587,8 @@ public class class292 {
                                        i_26 = i_5 - i_21;
                                     }
 
-                                    class321.fillRectangle(i_25, i_26, i_20, i_21, 16777120);
-                                    class321.drawRectangle(i_25, i_26, i_20, i_21, 0);
+                                    Rasterizer2D.fillRectangle(i_25, i_26, i_20, i_21, 16777120);
+                                    Rasterizer2D.drawRectangle(i_25, i_26, i_20, i_21, 0);
                                     string_33 = widget_11.field2601;
                                     i_27 = i_26 + font_32.field3709 + 2;
 
@@ -620,7 +620,7 @@ public class class292 {
                                     }
 
                                     if (widget_11.field2597 == 1) {
-                                       class321.method6014(i_20, i_21, i_22, i_23, widget_11.field2695);
+                                       Rasterizer2D.method6014(i_20, i_21, i_22, i_23, widget_11.field2695);
                                     } else {
                                        class202.method3912(i_20, i_21, i_22, i_23, widget_11.field2695, widget_11.field2597);
                                     }
@@ -746,8 +746,8 @@ public class class292 {
                   return 2;
                }
             } else {
-               if (class39.field336 != null && class32.field280 < class257.field3502) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = class39.field336[++class32.field280 - 1] & 0xffff;
+               if (WorldMapSection1.field336 != null && class32.field280 < class257.field3502) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = WorldMapSection1.field336[++class32.field280 - 1] & 0xffff;
                } else {
                   MouseRecorder.field1098[++class70.field1014 - 1] = -1;
                }

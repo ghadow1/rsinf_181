@@ -193,10 +193,10 @@ public class class309 implements Runnable {
 
       } else {
          Login.loginIndex = i_3;
-         class321.method6022();
+         Rasterizer2D.clear();
          byte[] bytes_5 = class233_0.method4163("title.jpg", "", 1900657492);
          class5.field23 = class158.method3435(bytes_5, (byte) -3);
-         class79.field1135 = class5.field23.method6112();
+         NPC.field1135 = class5.field23.method6112();
          if ((Client.field653 & 0x20000000) != 0) {
             class87.field1243 = SoundSystem.method4021(class233_1, "logo_deadman_mode", "");
          } else {
@@ -258,7 +258,7 @@ public class class309 implements Runnable {
          Login.field1187 = Login.field1208 + 202;
          class62.field585 = Login.field1187 + 180;
          class5.field23.method6121(Login.field1208, 0);
-         class79.field1135.method6121(Login.field1208 + 382, 0);
+         NPC.field1135.method6121(Login.field1208 + 382, 0);
          class87.field1243.method6101(Login.field1208 + 382 - class87.field1243.field3897 / 2, 18);
       }
    }

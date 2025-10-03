@@ -70,7 +70,7 @@ public class class235 extends class233 {
                class231_5.hash = (long)i_2;
                class231_5.field3116 = class308_3;
                class231_5.field3117 = this;
-               class261 class261_6 = class234.field3146;
+               NodeDeque nodeDeque_6 = class234.field3146;
                synchronized(class234.field3146) {
                   class234.field3146.method4917(class231_5);
                }

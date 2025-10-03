@@ -33,7 +33,7 @@ public class class30 {
          return 1;
       } else if (i_0 == 3101) {
          class70.field1014 -= 2;
-         class63.method1139(Client.field657, MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1], (byte) -39);
+         class63.method1139(Client.localPlayer, MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1], (byte) -39);
          return 1;
       } else if (i_0 == 3103) {
          if (!MouseRecorder.field1105) {
@@ -186,7 +186,7 @@ public class class30 {
                   PriorityComparator.setClientFlag(MouseRecorder.field1098[--class70.field1014] == 1);
                   return 1;
                } else if (i_0 == 3128) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = class62.method1128(1493130068) ? 1 : 0;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class62.method1128() ? 1 : 0;
                   return 1;
                } else if (i_0 == 3129) {
                   class70.field1014 -= 2;
@@ -454,7 +454,7 @@ public class class30 {
                return 1;
             } else if (i_0 == 3624) {
                i_4 = MouseRecorder.field1098[--class70.field1014];
-               if (class46.field410 != null && i_4 < class46.field410.method5079() && class46.field410.method5151(i_4).method5041().equals(Client.field657.field621)) {
+               if (class46.field410 != null && i_4 < class46.field410.method5079() && class46.field410.method5151(i_4).method5041().equals(Client.localPlayer.field621)) {
                   MouseRecorder.field1098[++class70.field1014 - 1] = 1;
                } else {
                   MouseRecorder.field1098[++class70.field1014 - 1] = 0;

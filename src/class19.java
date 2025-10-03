@@ -204,19 +204,19 @@ public class class19 implements class37 {
             }
          }
 
-         int[] ints_13 = class321.Rasterizer2D_pixels;
-         int i_14 = class321.Rasterizer2D_width;
-         int i_15 = class321.Rasterizer2D_height;
+         int[] ints_13 = Rasterizer2D.Rasterizer2D_pixels;
+         int i_14 = Rasterizer2D.Rasterizer2D_width;
+         int i_15 = Rasterizer2D.Rasterizer2D_height;
          int[] ints_16 = new int[4];
-         class321.method5999(ints_16);
+         Rasterizer2D.getClipArray(ints_16);
          class325_9 = new class325(36, 32);
-         class321.method6033(class325_9.field3908, 36, 32);
-         class321.method6022();
+         Rasterizer2D.replace(class325_9.field3908, 36, 32);
+         Rasterizer2D.clear();
          class130.method3051();
          class130.method2976(16, 16);
          class130.field1768 = false;
          if (itemDefinition_10.field3439 != -1) {
-            class325_23.method6126(0, 0);
+            class325_23.drawTransBgAt(0, 0);
          }
 
          int i_17 = itemDefinition_10.zoom2d;
@@ -231,7 +231,7 @@ public class class19 implements class37 {
          class127_22.method2899();
          class127_22.method2866(0, itemDefinition_10.yan2d, itemDefinition_10.field3420, itemDefinition_10.xan2d, itemDefinition_10.offsetX2d, class127_22.field1873 / 2 + i_18 + itemDefinition_10.offsetY2d, i_19 + itemDefinition_10.offsetY2d);
          if (itemDefinition_10.field3454 != -1) {
-            class325_23.method6126(0, 0);
+            class325_23.drawTransBgAt(0, 0);
          }
 
          if (i_2 >= 1) {
@@ -246,9 +246,9 @@ public class class19 implements class37 {
             class325_9.method6171(i_3);
          }
 
-         class321.method6033(class325_9.field3908, 36, 32);
+         Rasterizer2D.replace(class325_9.field3908, 36, 32);
          if (itemDefinition_10.field3444 != -1) {
-            class325_23.method6126(0, 0);
+            class325_23.drawTransBgAt(0, 0);
          }
 
          if (i_4 == 1 || i_4 == 2 && itemDefinition_10.isStackable == 1) {
@@ -269,8 +269,8 @@ public class class19 implements class37 {
             ItemDefinition.field3445.put(class325_9, long_7);
          }
 
-         class321.method6033(ints_13, i_14, i_15);
-         class321.method6013(ints_16);
+         Rasterizer2D.replace(ints_13, i_14, i_15);
+         Rasterizer2D.method6013(ints_16);
          class130.method3051();
          class130.field1768 = true;
          return class325_9;

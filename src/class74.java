@@ -27,7 +27,7 @@ public class class74 {
    }
 
    final boolean method1764(Username username_1, boolean bool_2) {
-      return username_1 == null ? false : (username_1.equals(Client.field657.field621) ? true : this.field1070.method5183(username_1, bool_2, 547540517));
+      return username_1 == null ? false : (username_1.equals(Client.localPlayer.field621) ? true : this.field1070.method5183(username_1, bool_2, 547540517));
    }
 
    final boolean isIgnored(Username username_1) {
@@ -57,7 +57,7 @@ public class class74 {
             } else {
                StringBuilder stringbuilder_10000;
                String string_5;
-               if (Client.field657.field621.equals(username_3)) {
+               if (Client.localPlayer.field621.equals(username_3)) {
                   stringbuilder_10000 = null;
                   string_5 = "You can\'t add yourself to your own friend list";
                   class62.method1132(30, "", string_5);
@@ -106,7 +106,7 @@ public class class74 {
                Object obj_10000 = null;
                String str_4 = "Your ignore list is full. Max of 100 for free users, and 400 for members";
                class62.method1132(30, "", str_4);
-            } else if (Client.field657.field621.equals(username_3)) {
+            } else if (Client.localPlayer.field621.equals(username_3)) {
                class41.method737();
             } else if (this.isIgnored(username_3)) {
                Client.method1650(string_1);

@@ -24,7 +24,7 @@ public class GameState implements UnknownT {
    }
 
    static class325 method4130(int i_0, int i_1, int i_2, short s_3) {
-      return (class325) class29.field244.method3348(Widget.method4089(i_0, i_1, i_2));
+      return (class325) class29.field244.method3348(Widget.getWorldMapSpriteHash(i_0, i_1, i_2));
    }
 
 }

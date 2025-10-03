@@ -8,10 +8,10 @@ public class class83 {
 
    static final int method1995(int i_0) {
       if (class17.field117.field1060) {
-         return class42.field372;
+         return ItemContainer_2.plane;
       } else {
-         int i_1 = class62.method1130(PacketBuffer.field3727, class1.field3, class42.field372);
-         return i_1 - GCMonitor.field383 < 800 && (class55.field502[class42.field372][PacketBuffer.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? class42.field372 : 3;
+         int i_1 = class62.method1130(PacketBuffer.field3727, class1.field3, ItemContainer_2.plane);
+         return i_1 - GCMonitor.field383 < 800 && (class55.field502[ItemContainer_2.plane][PacketBuffer.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? ItemContainer_2.plane : 3;
       }
    }
 

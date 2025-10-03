@@ -19,7 +19,7 @@ final class class4 implements class0 {
       ++Client.field751;
       class56.method1085();
       if (Client.field773) {
-         class227.method4124(Client.field657, false, (byte) 22);
+         class227.method4124(Client.localPlayer, false, (byte) 22);
       }
 
       if (Client.field781 >= 0 && Client.field909[Client.field781] != null) {
@@ -45,7 +45,7 @@ final class class4 implements class0 {
       i_1 = Client.field914;
       i_2 = Client.field746;
       i_3 = Client.field714;
-      class321.method5997(i_0, i_1, i_0 + i_2, i_3 + i_1);
+      Rasterizer2D.setClip(i_0, i_1, i_0 + i_2, i_3 + i_1);
       class130.method3051();
       int i_29;
       if (!Client.field899) {
@@ -58,7 +58,7 @@ final class class4 implements class0 {
             i_5 = Client.field902[4] + 128;
          }
 
-         i_29 = Client.field722 & 0x7ff;
+         i_29 = Client.camAngleY & 0x7ff;
          class72.method1724(MouseHandler.field499, Client.field729, class26.field227, i_5, i_29, FontName.method700(i_5, (byte) -68), i_3, 806808180);
       }
 
@@ -72,7 +72,7 @@ final class class4 implements class0 {
       int i_15;
       if (!Client.field899) {
          if (class17.field117.field1060) {
-            i_29 = class42.field372;
+            i_29 = ItemContainer_2.plane;
          } else {
             label567: {
                i_7 = 3;
@@ -82,16 +82,16 @@ final class class4 implements class0 {
                         i_8 = MouseHandler.field499 >> 7;
                         i_9 = class26.field227 >> 7;
                      } else {
-                        i_8 = Client.field657.field1005 >> 7;
-                        i_9 = Client.field657.field949 >> 7;
+                        i_8 = Client.localPlayer.x >> 7;
+                        i_9 = Client.localPlayer.y >> 7;
                      }
 
                      i_10 = PacketBuffer.field3727 >> 7;
                      i_11 = class1.field3 >> 7;
                      if (i_10 >= 0 && i_11 >= 0 && i_10 < 104 && i_11 < 104) {
                         if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
-                           if ((class55.field502[class42.field372][i_10][i_11] & 0x4) != 0) {
-                              i_7 = class42.field372;
+                           if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
+                              i_7 = ItemContainer_2.plane;
                            }
 
                            if (i_8 > i_10) {
@@ -121,8 +121,8 @@ final class class4 implements class0 {
                                     --i_10;
                                  }
 
-                                 if ((class55.field502[class42.field372][i_10][i_11] & 0x4) != 0) {
-                                    i_7 = class42.field372;
+                                 if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
+                                    i_7 = ItemContainer_2.plane;
                                  }
 
                                  i_15 += i_14;
@@ -134,8 +134,8 @@ final class class4 implements class0 {
                                        --i_11;
                                     }
 
-                                    if ((class55.field502[class42.field372][i_10][i_11] & 0x4) != 0) {
-                                       i_7 = class42.field372;
+                                    if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
+                                       i_7 = ItemContainer_2.plane;
                                     }
                                  }
                               }
@@ -151,8 +151,8 @@ final class class4 implements class0 {
                                        --i_11;
                                     }
 
-                                    if ((class55.field502[class42.field372][i_10][i_11] & 0x4) != 0) {
-                                       i_7 = class42.field372;
+                                    if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
+                                       i_7 = ItemContainer_2.plane;
                                     }
 
                                     i_15 += i_14;
@@ -164,8 +164,8 @@ final class class4 implements class0 {
                                           --i_10;
                                        }
 
-                                       if ((class55.field502[class42.field372][i_10][i_11] & 0x4) != 0) {
-                                          i_7 = class42.field372;
+                                       if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
+                                          i_7 = ItemContainer_2.plane;
                                        }
                                     }
                                  }
@@ -174,23 +174,23 @@ final class class4 implements class0 {
                            }
                         }
 
-                        i_29 = class42.field372;
+                        i_29 = ItemContainer_2.plane;
                         break label567;
                      }
 
-                     i_29 = class42.field372;
+                     i_29 = ItemContainer_2.plane;
                      break label567;
                   }
                }
 
-               if (Client.field657.field1005 >= 0 && Client.field657.field949 >= 0 && Client.field657.field1005 < 13312 && Client.field657.field949 < 13312) {
-                  if ((class55.field502[class42.field372][Client.field657.field1005 >> 7][Client.field657.field949 >> 7] & 0x4) != 0) {
-                     i_7 = class42.field372;
+               if (Client.localPlayer.x >= 0 && Client.localPlayer.y >= 0 && Client.localPlayer.x < 13312 && Client.localPlayer.y < 13312) {
+                  if ((class55.field502[ItemContainer_2.plane][Client.localPlayer.x >> 7][Client.localPlayer.y >> 7] & 0x4) != 0) {
+                     i_7 = ItemContainer_2.plane;
                   }
 
                   i_29 = i_7;
                } else {
-                  i_29 = class42.field372;
+                  i_29 = ItemContainer_2.plane;
                }
             }
          }
@@ -258,7 +258,7 @@ final class class4 implements class0 {
       }
 
       class186.method3619((byte) 95);
-      class321.fillRectangle(i_0, i_1, i_2, i_3, 0);
+      Rasterizer2D.fillRectangle(i_0, i_1, i_2, i_3, 0);
       class186.method3619((byte) 8);
       i_13 = class130.field1773;
       class130.field1773 = Client.field917;
@@ -274,7 +274,7 @@ final class class4 implements class0 {
       int[] ints_18 = class89.field1257;
 
       int i_19;
-      for (i_19 = 0; i_19 < i_17 + Client.field695; i_19++) {
+      for (i_19 = 0; i_19 < i_17 + Client.npcCount; i_19++) {
          Object obj_20;
          if (i_19 < i_17) {
             obj_20 = Client.field909[ints_18[i_19]];
@@ -284,19 +284,19 @@ final class class4 implements class0 {
                continue;
             }
 
-            if (obj_20 == Client.field657) {
+            if (obj_20 == Client.localPlayer) {
                i_16 = i_19;
                continue;
             }
          } else {
-            obj_20 = Client.field694[Client.field696[i_19 - i_17]];
+            obj_20 = Client.npcs[Client.npcIndices[i_19 - i_17]];
          }
 
          class112.method2506((class69) obj_20, i_19, i_0, i_1, i_2, i_3);
       }
 
       if (Client.field773 && i_16 != -1) {
-         class112.method2506(Client.field657, i_16, i_0, i_1, i_2, i_3);
+         class112.method2506(Client.localPlayer, i_16, i_0, i_1, i_2, i_3);
       }
 
       if (bool_32) {
@@ -394,9 +394,9 @@ final class class4 implements class0 {
 
             if (Client.field805[i_19] == 4) {
                i_27 = (150 - Client.field748[i_19]) * (class23.fontBold12.method5417(string_31) + 100) / 150;
-               class321.method5998(i_0 + Client.field752 - 50, i_1, i_0 + Client.field752 + 50, i_3 + i_1);
+               Rasterizer2D.method5998(i_0 + Client.field752 - 50, i_1, i_0 + Client.field752 + 50, i_3 + i_1);
                class23.fontBold12.draw(string_31, i_0 + Client.field752 + 50 - i_27, Client.field753 + i_1, i_26, 0);
-               class321.method5997(i_0, i_1, i_0 + i_2, i_3 + i_1);
+               Rasterizer2D.setClip(i_0, i_1, i_0 + i_2, i_3 + i_1);
             }
 
             if (Client.field805[i_19] == 5) {
@@ -408,9 +408,9 @@ final class class4 implements class0 {
                   i_28 = i_27 - 125;
                }
 
-               class321.method5998(i_0, Client.field753 + i_1 - class23.fontBold12.field3709 - 1, i_0 + i_2, Client.field753 + i_1 + 5);
+               Rasterizer2D.method5998(i_0, Client.field753 + i_1 - class23.fontBold12.field3709 - 1, i_0 + i_2, Client.field753 + i_1 + 5);
                class23.fontBold12.method5341(string_31, i_0 + Client.field752, i_28 + Client.field753 + i_1, i_26, 0);
-               class321.method5997(i_0, i_1, i_0 + i_2, i_3 + i_1);
+               Rasterizer2D.setClip(i_0, i_1, i_0 + i_2, i_3 + i_1);
             }
          } else {
             class23.fontBold12.method5341(string_31, i_0 + Client.field752, Client.field753 + i_1, 16776960, 0);
@@ -420,7 +420,7 @@ final class class4 implements class0 {
       if (Client.field708 == 2) {
          class32.method544((Client.field737 - class196.field2389 << 7) + Client.field821, (Client.field777 - class1.field1 << 7) + Client.field677, Client.field675 * 2);
          if (Client.field752 > -1 && Client.field881 % 20 < 10) {
-            class173.field2096[0].method6126(i_0 + Client.field752 - 12, Client.field753 + i_1 - 28);
+            class173.field2096[0].drawTransBgAt(i_0 + Client.field752 - 12, Client.field753 + i_1 - 28);
          }
       }
 
@@ -440,7 +440,7 @@ final class class4 implements class0 {
       }
 
       if (Client.field661) {
-         class321.fillRectangle(i_0, i_1, i_2, i_3, 0);
+         Rasterizer2D.fillRectangle(i_0, i_1, i_2, i_3, 0);
          class281.method5180("Loading - please wait.", false, -32623127);
       }
 

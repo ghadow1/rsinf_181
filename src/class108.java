@@ -88,7 +88,7 @@ public class class108 {
    }
 
    static final void method2491(int i_0) {
-      class174.disconnectGame();
+      ParamDefinition.disconnectGame();
       switch(i_0) {
       case 1:
          class213.disconnectMessage();

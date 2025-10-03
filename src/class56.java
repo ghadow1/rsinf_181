@@ -11,7 +11,7 @@ public class class56 {
 
    static final void method1090() {
       if (Client.field700 > 0) {
-         class174.disconnectGame();
+         ParamDefinition.disconnectGame();
       } else {
          Client.field797.method4993();
          class96.updateGameState(40);
@@ -21,8 +21,8 @@ public class class56 {
    }
 
    static void method1085() {
-      if (Client.field657.field1005 >> 7 == Client.field885 && Client.field657.field949 >> 7 == Client.field842) {
-         Client.field885 = 0;
+      if (Client.localPlayer.x >> 7 == Client.destinationX && Client.localPlayer.y >> 7 == Client.destinationY) {
+         Client.destinationX = 0;
       }
 
    }
@@ -33,7 +33,7 @@ public class class56 {
       class250.method4530();
 
       int i_3;
-      class79 class79_5;
+      NPC NPC_5;
       int i_6;
       int i_7;
       int i_8;
@@ -46,14 +46,14 @@ public class class56 {
          }
 
          boolean bool_4 = false;
-         if (Client.field694[i_3] == null) {
-            Client.field694[i_3] = new class79();
+         if (Client.npcs[i_3] == null) {
+            Client.npcs[i_3] = new NPC();
             bool_4 = true;
          }
 
-         class79_5 = Client.field694[i_3];
-         Client.field696[++Client.field695 - 1] = i_3;
-         class79_5.field973 = Client.field881;
+         NPC_5 = Client.npcs[i_3];
+         Client.npcIndices[++Client.npcCount - 1] = i_3;
+         NPC_5.field973 = Client.field881;
          if (bool_0) {
             i_6 = buffer3_1.method5445(8);
             if (i_6 > 127) {
@@ -69,7 +69,7 @@ public class class56 {
          i_7 = buffer3_1.method5445(1);
          i_8 = Client.field780[buffer3_1.method5445(3)];
          if (bool_4) {
-            class79_5.field1000 = class79_5.field950 = i_8;
+            NPC_5.field1000 = NPC_5.field950 = i_8;
          }
 
          i_9 = buffer3_1.method5445(1);
@@ -89,21 +89,21 @@ public class class56 {
             }
          }
 
-         class79_5.field1134 = GameApplet.method1005(buffer3_1.method5445(14));
-         class79_5.field952 = class79_5.field1134.field3469;
-         class79_5.field948 = class79_5.field1134.field3492;
-         if (class79_5.field948 == 0) {
-            class79_5.field950 = 0;
+         NPC_5.definition = GameApplet.method1005(buffer3_1.method5445(14));
+         NPC_5.field952 = NPC_5.definition.field3469;
+         NPC_5.field948 = NPC_5.definition.field3492;
+         if (NPC_5.field948 == 0) {
+            NPC_5.field950 = 0;
          }
 
-         class79_5.field957 = class79_5.field1134.field3475;
-         class79_5.field958 = class79_5.field1134.field3499;
-         class79_5.field959 = class79_5.field1134.field3485;
-         class79_5.field960 = class79_5.field1134.field3501;
-         class79_5.field1004 = class79_5.field1134.field3472;
-         class79_5.field955 = class79_5.field1134.field3482;
-         class79_5.field956 = class79_5.field1134.field3474;
-         class79_5.method1963(Client.field657.field994[0] + i_6, Client.field657.field962[0] + i_10, i_7 == 1, (short) 128);
+         NPC_5.field957 = NPC_5.definition.field3475;
+         NPC_5.field958 = NPC_5.definition.field3499;
+         NPC_5.field959 = NPC_5.definition.field3485;
+         NPC_5.field960 = NPC_5.definition.field3501;
+         NPC_5.field1004 = NPC_5.definition.field3472;
+         NPC_5.field955 = NPC_5.definition.field3482;
+         NPC_5.field956 = NPC_5.definition.field3474;
+         NPC_5.method1963(Client.localPlayer.field994[0] + i_6, Client.localPlayer.field962[0] + i_10, i_7 == 1, (short) 128);
       }
 
       buffer3_1.method5446();
@@ -111,22 +111,22 @@ public class class56 {
       int i_15;
       for (i_3 = 0; i_3 < Client.field697; i_3++) {
          i_15 = Client.field859[i_3];
-         class79_5 = Client.field694[i_15];
+         NPC_5 = Client.npcs[i_15];
          i_6 = buffer3_1.readUnsignedByte();
          if ((i_6 & 0x1) != 0) {
-            class79_5.field975 = buffer3_1.readShortLittleEndian();
-            if (class79_5.field975 == 65535) {
-               class79_5.field975 = -1;
+            NPC_5.field975 = buffer3_1.readShortLittleEndian();
+            if (NPC_5.field975 == 65535) {
+               NPC_5.field975 = -1;
             }
          }
 
          if ((i_6 & 0x40) != 0) {
             i_7 = buffer3_1.readShortWithOffset2();
             i_8 = buffer3_1.readShortWithOffset2();
-            i_9 = class79_5.field1005 - (i_7 - class196.field2389 - class196.field2389) * 64;
-            i_10 = class79_5.field949 - (i_8 - class1.field1 - class1.field1) * 64;
+            i_9 = NPC_5.x - (i_7 - class196.field2389 - class196.field2389) * 64;
+            i_10 = NPC_5.y - (i_8 - class1.field1 - class1.field1) * 64;
             if (i_9 != 0 || i_10 != 0) {
-               class79_5.field976 = (int)(Math.atan2((double)i_9, (double)i_10) * 325.949D) & 0x7ff;
+               NPC_5.field976 = (int)(Math.atan2((double)i_9, (double)i_10) * 325.949D) & 0x7ff;
             }
          }
 
@@ -137,39 +137,39 @@ public class class56 {
             }
 
             i_8 = buffer3_1.readInvertedUnsignedByte();
-            if (i_7 == class79_5.field981 && i_7 != -1) {
+            if (i_7 == NPC_5.field981 && i_7 != -1) {
                i_9 = class7.method81(i_7, (byte) 1).field3529;
                if (i_9 == 1) {
-                  class79_5.field951 = 0;
-                  class79_5.field974 = 0;
-                  class79_5.field984 = i_8;
-                  class79_5.field985 = 0;
+                  NPC_5.field951 = 0;
+                  NPC_5.field974 = 0;
+                  NPC_5.field984 = i_8;
+                  NPC_5.field985 = 0;
                }
 
                if (i_9 == 2) {
-                  class79_5.field985 = 0;
+                  NPC_5.field985 = 0;
                }
-            } else if (i_7 == -1 || class79_5.field981 == -1 || class7.method81(i_7, (byte) 1).field3533 >= class7.method81(class79_5.field981, (byte) 1).field3533) {
-               class79_5.field981 = i_7;
-               class79_5.field951 = 0;
-               class79_5.field974 = 0;
-               class79_5.field984 = i_8;
-               class79_5.field985 = 0;
-               class79_5.field1008 = class79_5.field1003;
+            } else if (i_7 == -1 || NPC_5.field981 == -1 || class7.method81(i_7, (byte) 1).field3533 >= class7.method81(NPC_5.field981, (byte) 1).field3533) {
+               NPC_5.field981 = i_7;
+               NPC_5.field951 = 0;
+               NPC_5.field974 = 0;
+               NPC_5.field984 = i_8;
+               NPC_5.field985 = 0;
+               NPC_5.field1008 = NPC_5.field1003;
             }
          }
 
          if ((i_6 & 0x4) != 0) {
-            class79_5.field1134 = GameApplet.method1005(buffer3_1.readUnsignedShort());
-            class79_5.field952 = class79_5.field1134.field3469;
-            class79_5.field948 = class79_5.field1134.field3492;
-            class79_5.field957 = class79_5.field1134.field3475;
-            class79_5.field958 = class79_5.field1134.field3499;
-            class79_5.field959 = class79_5.field1134.field3485;
-            class79_5.field960 = class79_5.field1134.field3501;
-            class79_5.field1004 = class79_5.field1134.field3472;
-            class79_5.field955 = class79_5.field1134.field3482;
-            class79_5.field956 = class79_5.field1134.field3474;
+            NPC_5.definition = GameApplet.method1005(buffer3_1.readUnsignedShort());
+            NPC_5.field952 = NPC_5.definition.field3469;
+            NPC_5.field948 = NPC_5.definition.field3492;
+            NPC_5.field957 = NPC_5.definition.field3475;
+            NPC_5.field958 = NPC_5.definition.field3499;
+            NPC_5.field959 = NPC_5.definition.field3485;
+            NPC_5.field960 = NPC_5.definition.field3501;
+            NPC_5.field1004 = NPC_5.definition.field3472;
+            NPC_5.field955 = NPC_5.definition.field3482;
+            NPC_5.field956 = NPC_5.definition.field3474;
          }
 
          if ((i_6 & 0x10) != 0) {
@@ -195,7 +195,7 @@ public class class56 {
                   }
 
                   i_13 = buffer3_1.readSmartInt();
-                  class79_5.method1657(i_9, i_11, i_10, i_12, Client.field881, i_13);
+                  NPC_5.method1657(i_9, i_11, i_10, i_12, Client.field881, i_13);
                }
             }
 
@@ -208,50 +208,50 @@ public class class56 {
                      i_12 = buffer3_1.readSmartInt();
                      i_13 = buffer3_1.readUnsignedByte();
                      int i_14 = i_11 > 0 ? buffer3_1.readInvertedUnsignedByte() : i_13;
-                     class79_5.method1655(i_10, Client.field881, i_11, i_12, i_13, i_14, (byte) 15);
+                     NPC_5.method1655(i_10, Client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
-                     class79_5.method1659(i_10);
+                     NPC_5.method1659(i_10);
                   }
                }
             }
          }
 
          if ((i_6 & 0x8) != 0) {
-            class79_5.field986 = buffer3_1.readShortLittleEndian();
+            NPC_5.field986 = buffer3_1.readShortLittleEndian();
             i_7 = buffer3_1.readIntCustomOrder2();
-            class79_5.field990 = i_7 >> 16;
-            class79_5.field989 = (i_7 & 0xffff) + Client.field881;
-            class79_5.field987 = 0;
-            class79_5.field988 = 0;
-            if (class79_5.field989 > Client.field881) {
-               class79_5.field987 = -1;
+            NPC_5.field990 = i_7 >> 16;
+            NPC_5.field989 = (i_7 & 0xffff) + Client.field881;
+            NPC_5.field987 = 0;
+            NPC_5.field988 = 0;
+            if (NPC_5.field989 > Client.field881) {
+               NPC_5.field987 = -1;
             }
 
-            if (class79_5.field986 == 65535) {
-               class79_5.field986 = -1;
+            if (NPC_5.field986 == 65535) {
+               NPC_5.field986 = -1;
             }
          }
 
          if ((i_6 & 0x2) != 0) {
-            class79_5.field977 = buffer3_1.readNullTerminatedString();
-            class79_5.field1002 = 100;
+            NPC_5.field977 = buffer3_1.readNullTerminatedString();
+            NPC_5.field1002 = 100;
          }
       }
 
       for (i_3 = 0; i_3 < Client.field775; i_3++) {
          i_15 = Client.field776[i_3];
-         if (Client.field694[i_15].field973 != Client.field881) {
-            Client.field694[i_15].field1134 = null;
-            Client.field694[i_15] = null;
+         if (Client.npcs[i_15].field973 != Client.field881) {
+            Client.npcs[i_15].definition = null;
+            Client.npcs[i_15] = null;
          }
       }
 
       if (buffer3_1.position != Client.data.serverPacketLength) {
          throw new RuntimeException(buffer3_1.position + "," + Client.data.serverPacketLength);
       } else {
-         for (i_3 = 0; i_3 < Client.field695; i_3++) {
-            if (Client.field694[Client.field696[i_3]] == null) {
-               throw new RuntimeException(i_3 + "," + Client.field695);
+         for (i_3 = 0; i_3 < Client.npcCount; i_3++) {
+            if (Client.npcs[Client.npcIndices[i_3]] == null) {
+               throw new RuntimeException(i_3 + "," + Client.npcCount);
             }
          }
 

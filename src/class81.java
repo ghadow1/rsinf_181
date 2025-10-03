@@ -28,7 +28,7 @@ public class class81 {
 
       for (int i_7 = 0; i_7 < i_3; i_7++) {
          class66 class66_8 = Client.field909[ints_4[i_7]];
-         if (class66_8 != null && class66_8 != Client.field657 && class66_8.field621 != null && class66_8.field621.equals(username_6)) {
+         if (class66_8 != null && class66_8 != Client.localPlayer && class66_8.field621 != null && class66_8.field621.equals(username_6)) {
             class187 class187_9;
             if (i_0 == 1) {
                class187_9 = class235.method4265(ClientPacketProt.field2250, Client.data.field1313);
