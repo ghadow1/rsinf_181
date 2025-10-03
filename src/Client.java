@@ -58,18 +58,18 @@ public final class Client extends GameApplet implements class280 {
    static int[] npcIndices;
    static int field697;
    static int[] field859;
-   public static final InBuffer data;
+   public static final PacketWriter data;
    static int field700;
    static boolean field701;
    static boolean field815;
-   static class272 field797;
-   static HashMap field704;
+   static Timer timer;
+   static HashMap fontsMap;
    static int field705;
    static int field706;
    static int field707;
    static int field896;
    static int field709;
-   static class172[] field710;
+   static CollisionMap[] field710;
    static boolean field798;
    static int[][][] field712;
    static final int[] field713;
@@ -310,18 +310,18 @@ public final class Client extends GameApplet implements class280 {
       npcIndices = new int[32768];
       field697 = 0;
       field859 = new int[250];
-      data = new InBuffer();
+      data = new PacketWriter();
       field700 = 0;
       field701 = false;
       field815 = true;
-      field797 = new class272();
-      field704 = new HashMap();
+      timer = new Timer();
+      fontsMap = new HashMap();
       field705 = 0;
       field706 = 1;
       field707 = 0;
       field896 = 1;
       field709 = 0;
-      field710 = new class172[4];
+      field710 = new CollisionMap[4];
       field798 = false;
       field712 = new int[4][13][13];
       field713 = new int[] {0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3};
@@ -893,7 +893,7 @@ public final class Client extends GameApplet implements class280 {
             jagbuf.position = 0;
             class305_3.read(jagbuf.buffer, 0, Client.data.serverPacketLength);
             Client.data.field1318 = 0;
-            field797.method5005();
+            timer.method5005();
             Client.data.field1317 = Client.data.field1321;
             Client.data.field1321 = Client.data.field1309;
             Client.data.field1309 = Client.data.serverPacket;
@@ -2204,7 +2204,7 @@ public final class Client extends GameApplet implements class280 {
 
    final void method1274(int i_1, int i_2) {
       class236.method4312(i_1, i_2);
-      class5.field22.method3103(ItemContainer_2.plane, i_1, i_2, false);
+      class5.field22.click(ItemContainer_2.plane, i_1, i_2, false);
       field674 = true;
    }
 
@@ -2235,11 +2235,11 @@ public final class Client extends GameApplet implements class280 {
       Rasterizer2D.method5996();
       if (field758) {
          if (field757 == 1) {
-            class140.field1915[field756 / 100].drawTransBgAt(field876 - 8, field755 - 8);
+            SceneOccluder.field1915[field756 / 100].drawTransBgAt(field876 - 8, field755 - 8);
          }
 
          if (field757 == 2) {
-            class140.field1915[field756 / 100 + 4].drawTransBgAt(field876 - 8, field755 - 8);
+            SceneOccluder.field1915[field756 / 100 + 4].drawTransBgAt(field876 - 8, field755 - 8);
          }
       }
 
@@ -2490,11 +2490,11 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (field662 == 0) {
-               class272.startUpInitialization();
+               Timer.startUpInitialization();
                class141.method3291();
             } else if (field662 == 5) {
                class248.method4484();
-               class272.startUpInitialization();
+               Timer.startUpInitialization();
                class141.method3291();
             } else if (field662 != 10 && field662 != 11) {
                if (field662 == 20) {
@@ -2742,14 +2742,14 @@ public final class Client extends GameApplet implements class280 {
                data.copy(class187_16);
             }
 
-            if (field797.field3605) {
+            if (timer.field3605) {
                class187_16 = class235.method4265(ClientPacketProt.field2217, data.field1313);
                class187_16.outBuffer.writeByte(0);
                i_3 = class187_16.outBuffer.position;
-               field797.method4999(class187_16.outBuffer);
+               timer.method4999(class187_16.outBuffer);
                class187_16.outBuffer.writeSizeAtOffset(class187_16.outBuffer.position - i_3);
                data.copy(class187_16);
-               field797.method4998(-481288218);
+               timer.method4998(-481288218);
             }
 
             Object object_36 = FontName.field348.field589;
@@ -3203,16 +3203,16 @@ public final class Client extends GameApplet implements class280 {
                                                 }
                                              }
 
-                                             if (class133.method3105()) {
-                                                i_5 = class133.field1850;
-                                                i_6 = class133.field1837;
+                                             if (Scene.method3105()) {
+                                                i_5 = Scene.clickTileX;
+                                                i_6 = Scene.clickTileZ;
                                                 class187_20 = class235.method4265(ClientPacketProt.field2299, data.field1313);
                                                 class187_20.outBuffer.writeByte(5);
                                                 class187_20.outBuffer.writeShortWithOffset2(i_6 + class1.field1);
                                                 class187_20.outBuffer.writeShortWithOffset2(i_5 + class196.field2389);
                                                 class187_20.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                                                 data.copy(class187_20);
-                                                class133.method3222();
+                                                Scene.method3222();
                                                 field876 = MouseHandler.field483;
                                                 field755 = MouseHandler.field495;
                                                 field757 = 1;
@@ -3552,7 +3552,7 @@ public final class Client extends GameApplet implements class280 {
 
             if (buffer3_3.position == 8) {
                buffer3_3.position = 0;
-               class135.field1872 = buffer3_3.readLongFromMediumEndian();
+               Entity.field1872 = buffer3_3.readLongFromMediumEndian();
                field686 = 5;
             }
          }
@@ -3572,7 +3572,7 @@ public final class Client extends GameApplet implements class280 {
             buffer3_4.writeIntBigEndian(ints_25[3]);
 
 
-            buffer3_4.writeLongBigEndian(class135.field1872);
+            buffer3_4.writeLongBigEndian(Entity.field1872);
             if (field662 == 40) {
                buffer3_4.writeIntBigEndian(class74.field1074[0]);
                buffer3_4.writeIntBigEndian(class74.field1074[1]);
@@ -3676,13 +3676,13 @@ public final class Client extends GameApplet implements class280 {
             class187_7.outBuffer.writeIntBigEndian(class32.field279.field3136);
             class187_7.outBuffer.writeIntBigEndian(class151.field1971.field3136);
             class187_7.outBuffer.writeIntBigEndian(class2.field6.field3136);
-            class187_7.outBuffer.writeIntBigEndian(class126.field1647.field3136);
+            class187_7.outBuffer.writeIntBigEndian(Tile.field1647.field3136);
             class187_7.outBuffer.writeIntBigEndian(class67.field650.field3136);
             class187_7.outBuffer.writeIntBigEndian(0);
             class187_7.outBuffer.writeIntBigEndian(WorldMapID.field232.field3136);
             class187_7.outBuffer.writeIntBigEndian(field684.field3136);
             class187_7.outBuffer.writeIntBigEndian(ItemDefinition.field3457.field3136);
-            class187_7.outBuffer.writeIntBigEndian(class135.field1874.field3136);
+            class187_7.outBuffer.writeIntBigEndian(Entity.field1874.field3136);
             class187_7.outBuffer.encryptTEA(ints_25, i_9, class187_7.outBuffer.position);
             class187_7.outBuffer.writeShortSizeAtOffset(class187_7.outBuffer.position - i_17);
             data.copy(class187_7);
@@ -3812,7 +3812,7 @@ public final class Client extends GameApplet implements class280 {
                if (((AbstractSocket) obj_2).vmethod5826((byte) 73) >= data.serverPacketLength) {
                   buffer3_3.position = 0;
                   ((AbstractSocket) obj_2).read(buffer3_3.buffer, 0, data.serverPacketLength);
-                  field797.method5014();
+                  timer.method5014();
                   class137.method3264(-1702335616);
                   class20.method238(buffer3_3, (byte) -61);
                   class48.field418 = -1;
@@ -3871,7 +3871,7 @@ public final class Client extends GameApplet implements class280 {
                      ((AbstractSocket) obj_2).read(buffer3_3.buffer, 0, data.serverPacketLength);
                      buffer3_3.position = 0;
                      i_31 = data.serverPacketLength;
-                     field797.method5000();
+                     timer.method5000();
                      data.method2218();
                      data.packetBuffer.position = 0;
                      data.serverPacket = null;

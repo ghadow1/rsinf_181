@@ -30,23 +30,23 @@ final class class10 implements Comparator {
          int i_3 = class212.var_configurations[i_0];
          if (i_5 == 1) {
             if (i_3 == 1) {
-               class130.method2978(0.9D);
-               ((class119) class130.field1781).method2745(0.9D);
+               Rasterizer3D.method2978(0.9D);
+               ((class119) Rasterizer3D.field1781).method2745(0.9D);
             }
 
             if (i_3 == 2) {
-               class130.method2978(0.8D);
-               ((class119) class130.field1781).method2745(0.8D);
+               Rasterizer3D.method2978(0.8D);
+               ((class119) Rasterizer3D.field1781).method2745(0.8D);
             }
 
             if (i_3 == 3) {
-               class130.method2978(0.7D);
-               ((class119) class130.field1781).method2745(0.7D);
+               Rasterizer3D.method2978(0.7D);
+               ((class119) Rasterizer3D.field1781).method2745(0.7D);
             }
 
             if (i_3 == 4) {
-               class130.method2978(0.6D);
-               ((class119) class130.field1781).method2745(0.6D);
+               Rasterizer3D.method2978(0.6D);
+               ((class119) Rasterizer3D.field1781).method2745(0.6D);
             }
 
             class292.method5317(-201583329);

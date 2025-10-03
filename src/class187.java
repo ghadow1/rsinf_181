@@ -68,10 +68,10 @@ public class class187 extends LinkedListNode {
             }
 
             class186.method3619((byte) 70);
-            class5.field22.method3066();
+            class5.field22.clear();
 
             for (i_2 = 0; i_2 < 4; i_2++) {
-               Client.field710[i_2].method3558();
+               Client.field710[i_2].clear();
             }
 
             int i_50;
@@ -130,13 +130,13 @@ public class class187 extends LinkedListNode {
                      class186.method3619((byte) 50);
                      i_7 = class48.field418 * 8 - 48;
                      i_8 = class128.field1747 * 8 - 48;
-                     class172[] arr_9 = Client.field710;
+                     CollisionMap[] arr_9 = Client.field710;
 
                      for (i_10 = 0; i_10 < 4; i_10++) {
                         for (i_11 = 0; i_11 < 64; i_11++) {
                            for (i_12 = 0; i_12 < 64; i_12++) {
                               if (i_4 + i_11 > 0 && i_11 + i_4 < 103 && i_12 + i_5 > 0 && i_12 + i_5 < 103) {
-                                 arr_9[i_10].field2085[i_4 + i_11][i_12 + i_5] &= ~0x1000000;
+                                 arr_9[i_10].flags[i_4 + i_11][i_12 + i_5] &= ~0x1000000;
                               }
                            }
                         }
@@ -269,8 +269,8 @@ public class class187 extends LinkedListNode {
                                  int i_15 = i_5 * 8;
                                  int i_16 = (i_53 & 0x7) * 8;
                                  int i_17 = (i_10 & 0x7) * 8;
-                                 class133 class133_18 = class5.field22;
-                                 class172[] arr_19 = Client.field710;
+                                 Scene scene_18 = class5.field22;
+                                 CollisionMap[] arr_19 = Client.field710;
                                  ByteBuffer class300_20 = new ByteBuffer(bytes_55);
                                  int i_21 = -1;
 
@@ -352,12 +352,12 @@ public class class187 extends LinkedListNode {
                                                 i_48 = i_50 - 1;
                                              }
 
-                                             class172 class172_49 = null;
+                                             CollisionMap collisionMap_49 = null;
                                              if (i_48 >= 0) {
-                                                class172_49 = arr_19[i_48];
+                                                collisionMap_49 = arr_19[i_48];
                                              }
 
-                                             class67.method1236(i_50, i_39, i_47, i_21, i_30 + i_8 & 0x3, i_29, class133_18, class172_49);
+                                             class67.method1236(i_50, i_39, i_47, i_21, i_30 + i_8 & 0x3, i_29, scene_18, collisionMap_49);
                                           }
                                        }
                                     }

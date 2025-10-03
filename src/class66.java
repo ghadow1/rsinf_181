@@ -61,7 +61,7 @@ public final class class66 extends class69 {
             return null;
          } else {
             class127_4.method2899();
-            super.field999 = class127_4.field1873;
+            super.field999 = class127_4.height;
             class127 class127_5;
             class127[] arr_6;
             if (!this.field634 && super.field986 != -1 && super.field987 != -1) {

@@ -202,7 +202,7 @@ public class class29 {
             int i_18;
             int i_19;
             if (class257_12.field3508 >= 0) {
-               i_15 = class130.field1781.vmethod3284(class257_12.field3508, 992321423);
+               i_15 = Rasterizer3D.field1781.vmethod3284(class257_12.field3508, 992321423);
                b_16 = 96;
                if (i_15 == -2) {
                   i_18 = 12345678;
@@ -226,7 +226,7 @@ public class class29 {
                   i_18 = i_19 + (i_15 & 0xff80);
                }
 
-               i_10 = class130.field1783[i_18] | ~0xffffff;
+               i_10 = Rasterizer3D.field1783[i_18] | ~0xffffff;
             } else if (class257_12.field3512 == 16711935) {
                i_10 = i_11;
             } else {
@@ -254,7 +254,7 @@ public class class29 {
                   i_15 = i_19 + (i_18 & 0xff80);
                }
 
-               i_10 = class130.field1783[i_15] | ~0xffffff;
+               i_10 = Rasterizer3D.field1783[i_15] | ~0xffffff;
             }
          }
 
@@ -382,7 +382,7 @@ public class class29 {
                int i_17;
                int i_18;
                if (class257_10.field3508 >= 0) {
-                  i_13 = class130.field1781.vmethod3284(class257_10.field3508, 1939659846);
+                  i_13 = Rasterizer3D.field1781.vmethod3284(class257_10.field3508, 1939659846);
                   b_14 = 96;
                   if (i_13 == -2) {
                      i_17 = 12345678;
@@ -406,7 +406,7 @@ public class class29 {
                      i_17 = i_18 + (i_13 & 0xff80);
                   }
 
-                  i_8 = class130.field1783[i_17] | ~0xffffff;
+                  i_8 = Rasterizer3D.field1783[i_17] | ~0xffffff;
                } else if (class257_10.field3512 == 16711935) {
                   i_8 = i_9;
                } else {
@@ -434,7 +434,7 @@ public class class29 {
                      i_13 = i_18 + (i_17 & 0xff80);
                   }
 
-                  i_8 = class130.field1783[i_13] | ~0xffffff;
+                  i_8 = Rasterizer3D.field1783[i_13] | ~0xffffff;
                }
             }
 
@@ -854,7 +854,7 @@ public class class29 {
                   Client.field750[i_4][i_5] = Client.field751;
                }
 
-               long long_6 = class126.method2854(0, 0, 1, !NPC_3.definition.field3496, Client.npcIndices[i_2]);
+               long long_6 = Tile.method2854(0, 0, 1, !NPC_3.definition.field3496, Client.npcIndices[i_2]);
                NPC_3.field953 = Client.field881;
                class5.field22.method3077(ItemContainer_2.plane, NPC_3.x, NPC_3.y, class62.method1130(NPC_3.field952 * 64 - 64 + NPC_3.x, NPC_3.field952 * 64 - 64 + NPC_3.y, ItemContainer_2.plane), NPC_3.field952 * 64 - 64 + 60, NPC_3, NPC_3.field950, long_6, NPC_3.field967);
             }

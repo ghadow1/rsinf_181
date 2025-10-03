@@ -5,8 +5,8 @@ public final class class141 {
    int field1920;
    int field1927;
    int field1923;
-   public class135 field1924;
-   public class135 field1925;
+   public Entity field1924;
+   public Entity field1925;
    int field1926;
    int field1919;
    public long field1917 = 0L;

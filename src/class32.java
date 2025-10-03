@@ -16,10 +16,10 @@ public class class32 {
          i_0 -= PacketBuffer.field3727;
          i_4 -= GCMonitor.field383;
          i_1 -= class1.field3;
-         int i_5 = class130.field1787[class11.field77];
-         int i_6 = class130.field1784[class11.field77];
-         int i_7 = class130.field1787[MouseRecorder.field1112];
-         int i_8 = class130.field1784[MouseRecorder.field1112];
+         int i_5 = Rasterizer3D.sine[class11.field77];
+         int i_6 = Rasterizer3D.cosine[class11.field77];
+         int i_7 = Rasterizer3D.sine[MouseRecorder.field1112];
+         int i_8 = Rasterizer3D.cosine[MouseRecorder.field1112];
          int i_9 = i_7 * i_1 + i_0 * i_8 >> 16;
          i_1 = i_8 * i_1 - i_0 * i_7 >> 16;
          i_0 = i_9;

@@ -521,7 +521,7 @@ public class class253 extends DualNode {
       }
    }
 
-   public final class135 method4591(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, byte b_7) {
+   public final Entity method4591(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, byte b_7) {
       long long_8;
       if (this.field3359 == null) {
          long_8 = (long)(i_2 + (this.field3357 << 10));
@@ -529,7 +529,7 @@ public class class253 extends DualNode {
          long_8 = (long)(i_2 + (i_1 << 3) + (this.field3357 << 10));
       }
 
-      Object obj_10 = (class135) field3354.get(long_8);
+      Object obj_10 = (Entity) field3354.get(long_8);
       if (obj_10 == null) {
          Model model_11 = this.method4594(i_1, i_2);
          if (model_11 == null) {
@@ -560,7 +560,7 @@ public class class253 extends DualNode {
          }
       }
 
-      return (class135) obj_10;
+      return (Entity) obj_10;
    }
 
    public int method4596(int i_1, int i_2, int i_3) {

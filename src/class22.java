@@ -55,7 +55,7 @@ public final class class22 {
       }
 
       if (b_7 != -1 && str_8 != null) {
-         class135.method3260(str_8, class73.colorStartTag(16748608) + itemDefinition_1.name, b_7, itemDefinition_1.field3410, i_2, widget_0.field2688, bool_4);
+         Entity.method3260(str_8, class73.colorStartTag(16748608) + itemDefinition_1.name, b_7, itemDefinition_1.field3410, i_2, widget_0.field2688, bool_4);
       }
 
    }

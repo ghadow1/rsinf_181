@@ -721,7 +721,7 @@ public class Widget extends LinkedListNode {
          if (font_2 != null) {
             return font_2;
          } else {
-            font_2 = FileSystem.getFont(class216.field2547, TimeUtils.field2498, this.fontId, 0);
+            font_2 = GameObject.getFont(class216.field2547, TimeUtils.field2498, this.fontId, 0);
             if (font_2 != null) {
                cachedFonts.put(font_2, (long)this.fontId);
             } else {
@@ -917,7 +917,7 @@ public class Widget extends LinkedListNode {
          if (i_1 >= i_7 && i_1 < 104 - i_7 && i_2 >= i_7 && i_2 < 104 - i_7) {
             int i_9 = class66_0.method1187();
             ParamDefinition paramDefinition_10 = class38.method667(i_1, i_2, 2134464513);
-            class172 class172_11 = Client.field710[class66_0.field629];
+            CollisionMap collisionMap_11 = Client.field710[class66_0.field629];
             int[] ints_12 = Client.field929;
             int[] ints_13 = Client.field930;
 
@@ -962,7 +962,7 @@ public class Widget extends LinkedListNode {
                class173.field2092[b_22] = i_5;
                i_39 = b_22 + 1;
                class173.field2094[b_22] = i_6;
-               ints_24 = class172_11.field2085;
+               ints_24 = collisionMap_11.flags;
 
                while (true) {
                   if (i_39 == i_23) {
@@ -977,9 +977,9 @@ public class Widget extends LinkedListNode {
                   i_23 = i_23 + 1 & 0xfff;
                   i_36 = i_16 - i_20;
                   i_37 = i_17 - i_21;
-                  i_25 = i_16 - class172_11.field2071;
-                  i_26 = i_17 - class172_11.field2082;
-                  if (paramDefinition_10.vmethod3594(1, i_16, i_17, class172_11, -1217489379)) {
+                  i_25 = i_16 - collisionMap_11.xInset;
+                  i_26 = i_17 - collisionMap_11.yInset;
+                  if (paramDefinition_10.vmethod3594(1, i_16, i_17, collisionMap_11, -1217489379)) {
                      class173.field2088 = i_16;
                      class218.field2707 = i_17;
                      bool_35 = true;
@@ -1054,7 +1054,7 @@ public class Widget extends LinkedListNode {
 
                bool_34 = bool_35;
             } else if (i_9 == 2) {
-               bool_34 = class138.method3267(i_5, i_6, paramDefinition_10, class172_11, 4377134);
+               bool_34 = class138.method3267(i_5, i_6, paramDefinition_10, collisionMap_11, 4377134);
             } else {
                i_16 = i_5;
                i_17 = i_6;
@@ -1069,7 +1069,7 @@ public class Widget extends LinkedListNode {
                class173.field2092[b_22] = i_5;
                i_39 = b_22 + 1;
                class173.field2094[b_22] = i_6;
-               ints_24 = class172_11.field2085;
+               ints_24 = collisionMap_11.flags;
 
                label640:
                while (true) {
@@ -1092,9 +1092,9 @@ public class Widget extends LinkedListNode {
                                  i_23 = i_23 + 1 & 0xfff;
                                  i_36 = i_16 - i_20;
                                  i_37 = i_17 - i_21;
-                                 i_25 = i_16 - class172_11.field2071;
-                                 i_26 = i_17 - class172_11.field2082;
-                                 if (paramDefinition_10.vmethod3594(i_9, i_16, i_17, class172_11, -2069995326)) {
+                                 i_25 = i_16 - collisionMap_11.xInset;
+                                 i_26 = i_17 - collisionMap_11.yInset;
+                                 if (paramDefinition_10.vmethod3594(i_9, i_16, i_17, collisionMap_11, -2069995326)) {
                                     class173.field2088 = i_16;
                                     class218.field2707 = i_17;
                                     bool_35 = true;

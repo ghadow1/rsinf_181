@@ -64,7 +64,7 @@ public class class234 implements Runnable {
    }
 
    public static final ResourceHandler method4256(class166 class166_0, int i_1, int i_2, int i_3) {
-      if (class172.field2078 == 0) {
+      if (CollisionMap.field2078 == 0) {
          throw new IllegalStateException();
       } else if (i_1 >= 0 && i_1 < 2) {
          if (i_2 < 256) {

@@ -4,7 +4,7 @@ public abstract class class205 {
 
    abstract byte[] vmethod3935();
 
-   static final void method3933(byte[] bytes_0, int i_1, int i_2, class133 class133_3, class172[] arr_4) {
+   static final void method3933(byte[] bytes_0, int i_1, int i_2, Scene scene_3, CollisionMap[] arr_4) {
       ByteBuffer class300_6 = new ByteBuffer(bytes_0);
       int i_7 = -1;
 
@@ -38,12 +38,12 @@ public abstract class class205 {
                   i_19 = i_13 - 1;
                }
 
-               class172 class172_20 = null;
+               CollisionMap collisionMap_20 = null;
                if (i_19 >= 0) {
-                  class172_20 = arr_4[i_19];
+                  collisionMap_20 = arr_4[i_19];
                }
 
-               class67.method1236(i_13, i_17, i_18, i_7, i_16, i_15, class133_3, class172_20);
+               class67.method1236(i_13, i_17, i_18, i_7, i_16, i_15, scene_3, collisionMap_20);
             }
          }
       }

@@ -121,7 +121,7 @@ public class ClientPacketProt implements class181 {
       return string_2;
    }
 
-   static final void method3611(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, class133 class133_7, class172 class172_8) {
+   static final void method3611(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, Scene scene_7, CollisionMap collisionMap_8) {
       class253 class253_10 = class128.method2970(i_4);
       int i_11;
       int i_12;
@@ -157,7 +157,7 @@ public class ClientPacketProt implements class181 {
       int i_18 = ints_17[i_13][i_15] + ints_17[i_14][i_15] + ints_17[i_13][i_16] + ints_17[i_14][i_16] >> 2;
       int i_19 = (i_2 << 7) + (i_11 << 6);
       int i_20 = (i_3 << 7) + (i_12 << 6);
-      long long_21 = class126.method2854(i_2, i_3, 2, class253_10.field3369 == 0, i_4);
+      long long_21 = Tile.method2854(i_2, i_3, 2, class253_10.field3369 == 0, i_4);
       int i_23 = (i_5 << 6) + i_6;
       if (class253_10.field3361 == 1) {
          i_23 += 256;
@@ -168,12 +168,12 @@ public class ClientPacketProt implements class181 {
          if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
             obj_24 = class253_10.method4592(22, i_5, ints_17, i_19, i_18, i_20, -1160623337);
          } else {
-            obj_24 = new class93(i_4, 22, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+            obj_24 = new class93(i_4, 22, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
          }
 
-         class133_7.method3072(i_0, i_2, i_3, i_18, (class135) obj_24, long_21, i_23);
+         scene_7.method3072(i_0, i_2, i_3, i_18, (Entity) obj_24, long_21, i_23);
          if (class253_10.field3382 == 1) {
-            class172_8.method3562(i_2, i_3);
+            collisionMap_8.setBlockedByFloorDec(i_2, i_3);
          }
 
       } else if (i_6 != 10 && i_6 != 11) {
@@ -181,36 +181,36 @@ public class ClientPacketProt implements class181 {
             if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                obj_24 = class253_10.method4592(i_6, i_5, ints_17, i_19, i_18, i_20, -1160623337);
             } else {
-               obj_24 = new class93(i_4, i_6, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+               obj_24 = new class93(i_4, i_6, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
             }
 
-            class133_7.method3076(i_0, i_2, i_3, i_18, 1, 1, (class135) obj_24, 0, long_21, i_23);
+            scene_7.method3076(i_0, i_2, i_3, i_18, 1, 1, (Entity) obj_24, 0, long_21, i_23);
             if (class253_10.field3382 != 0) {
-               class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368);
+               collisionMap_8.addGameObject(i_2, i_3, i_11, i_12, class253_10.field3368);
             }
 
          } else if (i_6 == 0) {
             if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                obj_24 = class253_10.method4592(0, i_5, ints_17, i_19, i_18, i_20, -1160623337);
             } else {
-               obj_24 = new class93(i_4, 0, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+               obj_24 = new class93(i_4, 0, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
             }
 
-            class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field512[i_5], 0, long_21, i_23);
+            scene_7.method3093(i_0, i_2, i_3, i_18, (Entity) obj_24, (Entity) null, class55.field512[i_5], 0, long_21, i_23);
             if (class253_10.field3382 != 0) {
-               class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
+               collisionMap_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
             }
 
          } else if (i_6 == 1) {
             if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                obj_24 = class253_10.method4592(1, i_5, ints_17, i_19, i_18, i_20, -1160623337);
             } else {
-               obj_24 = new class93(i_4, 1, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+               obj_24 = new class93(i_4, 1, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
             }
 
-            class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field513[i_5], 0, long_21, i_23);
+            scene_7.method3093(i_0, i_2, i_3, i_18, (Entity) obj_24, (Entity) null, class55.field513[i_5], 0, long_21, i_23);
             if (class253_10.field3382 != 0) {
-               class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
+               collisionMap_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
             }
 
          } else {
@@ -223,53 +223,53 @@ public class ClientPacketProt implements class181 {
                   obj_25 = class253_10.method4592(2, i_5 + 4, ints_17, i_19, i_18, i_20, -1160623337);
                   obj_26 = class253_10.method4592(2, i_30, ints_17, i_19, i_18, i_20, -1160623337);
                } else {
-                  obj_25 = new class93(i_4, 2, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
-                  obj_26 = new class93(i_4, 2, i_30, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                  obj_25 = new class93(i_4, 2, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
+                  obj_26 = new class93(i_4, 2, i_30, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
 
-               class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_25, (class135) obj_26, class55.field512[i_5], class55.field512[i_30], long_21, i_23);
+               scene_7.method3093(i_0, i_2, i_3, i_18, (Entity) obj_25, (Entity) obj_26, class55.field512[i_5], class55.field512[i_30], long_21, i_23);
                if (class253_10.field3382 != 0) {
-                  class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
+                  collisionMap_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
                }
 
             } else if (i_6 == 3) {
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                   obj_24 = class253_10.method4592(3, i_5, ints_17, i_19, i_18, i_20, -1160623337);
                } else {
-                  obj_24 = new class93(i_4, 3, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                  obj_24 = new class93(i_4, 3, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
 
-               class133_7.method3093(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field513[i_5], 0, long_21, i_23);
+               scene_7.method3093(i_0, i_2, i_3, i_18, (Entity) obj_24, (Entity) null, class55.field513[i_5], 0, long_21, i_23);
                if (class253_10.field3382 != 0) {
-                  class172_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
+                  collisionMap_8.method3559(i_2, i_3, i_6, i_5, class253_10.field3368);
                }
 
             } else if (i_6 == 9) {
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                   obj_24 = class253_10.method4592(i_6, i_5, ints_17, i_19, i_18, i_20, -1160623337);
                } else {
-                  obj_24 = new class93(i_4, i_6, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                  obj_24 = new class93(i_4, i_6, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
 
-               class133_7.method3076(i_0, i_2, i_3, i_18, 1, 1, (class135) obj_24, 0, long_21, i_23);
+               scene_7.method3076(i_0, i_2, i_3, i_18, 1, 1, (Entity) obj_24, 0, long_21, i_23);
                if (class253_10.field3382 != 0) {
-                  class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368);
+                  collisionMap_8.addGameObject(i_2, i_3, i_11, i_12, class253_10.field3368);
                }
 
             } else if (i_6 == 4) {
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                   obj_24 = class253_10.method4592(4, i_5, ints_17, i_19, i_18, i_20, -1160623337);
                } else {
-                  obj_24 = new class93(i_4, 4, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                  obj_24 = new class93(i_4, 4, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
 
-               class133_7.method3142(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, class55.field512[i_5], 0, 0, 0, long_21, i_23);
+               scene_7.method3142(i_0, i_2, i_3, i_18, (Entity) obj_24, (Entity) null, class55.field512[i_5], 0, 0, 0, long_21, i_23);
             } else {
                Object obj_27;
                long long_31;
                if (i_6 == 5) {
                   i_30 = 16;
-                  long_31 = class133_7.method3130(i_0, i_2, i_3);
+                  long_31 = scene_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
                      i_30 = class128.method2970(GCMonitor.method770(long_31)).field3374;
                   }
@@ -277,13 +277,13 @@ public class ClientPacketProt implements class181 {
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                      obj_27 = class253_10.method4592(4, i_5, ints_17, i_19, i_18, i_20, -1160623337);
                   } else {
-                     obj_27 = new class93(i_4, 4, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                     obj_27 = new class93(i_4, 4, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
 
-                  class133_7.method3142(i_0, i_2, i_3, i_18, (class135) obj_27, (class135) null, class55.field512[i_5], 0, i_30 * class55.field514[i_5], i_30 * class55.field520[i_5], long_21, i_23);
+                  scene_7.method3142(i_0, i_2, i_3, i_18, (Entity) obj_27, (Entity) null, class55.field512[i_5], 0, i_30 * class55.field514[i_5], i_30 * class55.field520[i_5], long_21, i_23);
                } else if (i_6 == 6) {
                   i_30 = 8;
-                  long_31 = class133_7.method3130(i_0, i_2, i_3);
+                  long_31 = scene_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
                      i_30 = class128.method2970(GCMonitor.method770(long_31)).field3374 / 2;
                   }
@@ -291,22 +291,22 @@ public class ClientPacketProt implements class181 {
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                      obj_27 = class253_10.method4592(4, i_5 + 4, ints_17, i_19, i_18, i_20, -1160623337);
                   } else {
-                     obj_27 = new class93(i_4, 4, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                     obj_27 = new class93(i_4, 4, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
 
-                  class133_7.method3142(i_0, i_2, i_3, i_18, (class135) obj_27, (class135) null, 256, i_5, i_30 * class55.field509[i_5], i_30 * class55.field517[i_5], long_21, i_23);
+                  scene_7.method3142(i_0, i_2, i_3, i_18, (Entity) obj_27, (Entity) null, 256, i_5, i_30 * class55.field509[i_5], i_30 * class55.field517[i_5], long_21, i_23);
                } else if (i_6 == 7) {
                   int i_33 = i_5 + 2 & 0x3;
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
                      obj_24 = class253_10.method4592(4, i_33 + 4, ints_17, i_19, i_18, i_20, -1160623337);
                   } else {
-                     obj_24 = new class93(i_4, 4, i_33 + 4, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                     obj_24 = new class93(i_4, 4, i_33 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
 
-                  class133_7.method3142(i_0, i_2, i_3, i_18, (class135) obj_24, (class135) null, 256, i_33, 0, 0, long_21, i_23);
+                  scene_7.method3142(i_0, i_2, i_3, i_18, (Entity) obj_24, (Entity) null, 256, i_33, 0, 0, long_21, i_23);
                } else if (i_6 == 8) {
                   i_30 = 8;
-                  long_31 = class133_7.method3130(i_0, i_2, i_3);
+                  long_31 = scene_7.method3130(i_0, i_2, i_3);
                   if (long_31 != 0L) {
                      i_30 = class128.method2970(GCMonitor.method770(long_31)).field3374 / 2;
                   }
@@ -317,11 +317,11 @@ public class ClientPacketProt implements class181 {
                      obj_27 = class253_10.method4592(4, i_5 + 4, ints_17, i_19, i_18, i_20, -1160623337);
                      obj_28 = class253_10.method4592(4, i_29 + 4, ints_17, i_19, i_18, i_20, -1160623337);
                   } else {
-                     obj_27 = new class93(i_4, 4, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
-                     obj_28 = new class93(i_4, 4, i_29 + 4, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+                     obj_27 = new class93(i_4, 4, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
+                     obj_28 = new class93(i_4, 4, i_29 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
 
-                  class133_7.method3142(i_0, i_2, i_3, i_18, (class135) obj_27, (class135) obj_28, 256, i_5, i_30 * class55.field509[i_5], i_30 * class55.field517[i_5], long_21, i_23);
+                  scene_7.method3142(i_0, i_2, i_3, i_18, (Entity) obj_27, (Entity) obj_28, 256, i_5, i_30 * class55.field509[i_5], i_30 * class55.field517[i_5], long_21, i_23);
                }
             }
          }
@@ -329,15 +329,15 @@ public class ClientPacketProt implements class181 {
          if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
             obj_24 = class253_10.method4592(10, i_5, ints_17, i_19, i_18, i_20, -1160623337);
          } else {
-            obj_24 = new class93(i_4, 10, i_5, i_1, i_2, i_3, class253_10.field3373, true, (class135) null);
+            obj_24 = new class93(i_4, 10, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
          }
 
          if (obj_24 != null) {
-            class133_7.method3076(i_0, i_2, i_3, i_18, i_11, i_12, (class135) obj_24, i_6 == 11 ? 256 : 0, long_21, i_23);
+            scene_7.method3076(i_0, i_2, i_3, i_18, i_11, i_12, (Entity) obj_24, i_6 == 11 ? 256 : 0, long_21, i_23);
          }
 
          if (class253_10.field3382 != 0) {
-            class172_8.method3560(i_2, i_3, i_11, i_12, class253_10.field3368);
+            collisionMap_8.addGameObject(i_2, i_3, i_11, i_12, class253_10.field3368);
          }
 
       }

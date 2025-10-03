@@ -1,4 +1,4 @@
-public class class130 extends Rasterizer2D {
+public class Rasterizer3D extends Rasterizer2D {
 
    static boolean field1763 = false;
    static boolean field1772 = false;
@@ -10,8 +10,8 @@ public class class130 extends Rasterizer2D {
    public static int[] field1783 = new int[65536];
    static int[] field1785 = new int[512];
    static int[] field1786 = new int[2048];
-   public static int[] field1787 = new int[2048];
-   public static int[] field1784 = new int[2048];
+   public static int[] sine = new int[2048];
+   public static int[] cosine = new int[2048];
    static int field1788;
    static int field1776;
    static int field1774;
@@ -33,8 +33,8 @@ public class class130 extends Rasterizer2D {
       }
 
       for (i_0 = 0; i_0 < 2048; i_0++) {
-         field1787[i_0] = (int)(65536.0D * Math.sin((double)i_0 * 0.0030679615D));
-         field1784[i_0] = (int)(65536.0D * Math.cos((double)i_0 * 0.0030679615D));
+         sine[i_0] = (int)(65536.0D * Math.sin((double)i_0 * 0.0030679615D));
+         cosine[i_0] = (int)(65536.0D * Math.cos((double)i_0 * 0.0030679615D));
       }
 
    }

@@ -157,7 +157,7 @@ public class class112 {
                class66 class66_12 = (class66) class69_0;
                if (i_1 < i_76) {
                   class219.method4113(class69_0, class69_0.field999 + 15);
-                  AbstractFont abstractFont_13 = (AbstractFont) Client.field704.get(class292.field3677);
+                  AbstractFont abstractFont_13 = (AbstractFont) Client.fontsMap.get(class292.field3677);
                   byte b_93 = 9;
                   abstractFont_13.method5341(class66_12.field621.method5197(), i_2 + Client.field752, i_3 + Client.field753 - b_93, 16777215, 0);
                   b_9 = 18;

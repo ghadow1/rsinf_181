@@ -2,7 +2,7 @@ import java.util.Comparator;
 
 final class class5 implements Comparator {
 
-   static class133 field22;
+   static Scene field22;
    static class325 field23;
 
    public static class240 method61(int i_0) {
@@ -62,8 +62,8 @@ final class class5 implements Comparator {
                }
             }
 
-            long long_10 = class126.method2854(i_0, i_1, 3, false, 0);
-            field22.method3073(ItemContainer_2.plane, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, ItemContainer_2.plane), class87_6, long_10, class87_13, class87_12);
+            long long_10 = Tile.method2854(i_0, i_1, 3, false, 0);
+            field22.newGroundItemPile(ItemContainer_2.plane, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, ItemContainer_2.plane), class87_6, long_10, class87_13, class87_12);
          }
       }
    }

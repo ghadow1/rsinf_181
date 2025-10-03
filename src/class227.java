@@ -10,7 +10,7 @@ public final class class227 {
          int i_3 = class66_0.x >> 7;
          int i_4 = class66_0.y >> 7;
          if (i_3 >= 0 && i_3 < 104 && i_4 >= 0 && i_4 < 104) {
-            long long_5 = class126.method2854(0, 0, 0, false, class66_0.field637);
+            long long_5 = Tile.method2854(0, 0, 0, false, class66_0.field637);
             if (class66_0.field626 != null && Client.field881 >= class66_0.field614 && Client.field881 < class66_0.field622) {
                class66_0.field634 = false;
                class66_0.field623 = class62.method1130(class66_0.x, class66_0.y, ItemContainer_2.plane);

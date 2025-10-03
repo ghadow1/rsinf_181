@@ -6,7 +6,7 @@ import java.io.StringWriter;
 
 public final class class123 {
 
-   public class135 field1614;
+   public Entity field1614;
    int field1612;
    public long field1617;
    int field1613;

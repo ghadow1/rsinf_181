@@ -188,7 +188,7 @@ final class class2 implements class0 {
                                  bool_25 = class45.field395[widget_10.field2650[i_21][i_24]];
                               }
 
-                              if (InBuffer.method2244(widget_10.field2650[i_21][i_24]) || bool_25) {
+                              if (PacketWriter.method2244(widget_10.field2650[i_21][i_24]) || bool_25) {
                                  bool_22 = true;
                                  if (widget_10.field2578 != null && widget_10.field2578[i_21] > Client.field881) {
                                     break;

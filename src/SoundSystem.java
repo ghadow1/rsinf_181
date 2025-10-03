@@ -41,7 +41,7 @@ public class SoundSystem {
    }
 
    static final void method4022() {
-      class133.field1848 = false;
+      Scene.field1848 = false;
       Client.field656 = false;
    }
 

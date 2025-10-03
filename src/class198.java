@@ -60,7 +60,7 @@ public class class198 extends class115 {
       for (MusicPatchNode musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4892(); musicPatchNode_3 != null; musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4894()) {
          if (i_1 < 0 || musicPatchNode_3.field2440 == i_1) {
             if (musicPatchNode_3.field2454 != null) {
-               musicPatchNode_3.field2454.method2540(class172.field2078 / 100);
+               musicPatchNode_3.field2454.method2540(CollisionMap.field2078 / 100);
                if (musicPatchNode_3.field2454.method2585()) {
                   this.field2435.field2487.method2286(musicPatchNode_3.field2454);
                }
@@ -200,7 +200,7 @@ public class class198 extends class115 {
 
    protected synchronized void vmethod3893(int[] ints_1, int i_2, int i_3) {
       if (this.field2416.method3833()) {
-         int i_4 = this.field2416.field2463 * this.field2426 / class172.field2078;
+         int i_4 = this.field2416.field2463 * this.field2426 / CollisionMap.field2078;
 
          do {
             long long_5 = this.field2433 + (long)i_3 * (long)i_4;
@@ -223,7 +223,7 @@ public class class198 extends class115 {
 
    protected synchronized void vmethod3906(int i_1) {
       if (this.field2416.method3833()) {
-         int i_2 = this.field2416.field2463 * this.field2426 / class172.field2078;
+         int i_2 = this.field2416.field2463 * this.field2426 / CollisionMap.field2078;
 
          do {
             long long_3 = this.field2433 + (long)i_2 * (long)i_1;
@@ -264,7 +264,7 @@ public class class198 extends class115 {
          i_3 += (int)(d_7 * (double)i_5);
       }
 
-      i_5 = (int)((double)(musicPatchNode_1.rawSound.sampleRate * 256) * Math.pow(2.0D, (double)i_3 * 3.255208333333333E-4D) / (double)class172.field2078 + 0.5D);
+      i_5 = (int)((double)(musicPatchNode_1.rawSound.sampleRate * 256) * Math.pow(2.0D, (double)i_3 * 3.255208333333333E-4D) / (double) CollisionMap.field2078 + 0.5D);
       return i_5 < 1 ? 1 : i_5;
    }
 
@@ -576,7 +576,7 @@ public class class198 extends class115 {
    }
 
    boolean method3740(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4, int i_5) {
-      musicPatchNode_1.field2455 = class172.field2078 / 100;
+      musicPatchNode_1.field2455 = CollisionMap.field2078 / 100;
       if (musicPatchNode_1.field2436 < 0 || musicPatchNode_1.field2454 != null && !musicPatchNode_1.field2454.method2558()) {
          int i_6 = musicPatchNode_1.field2446;
          if (i_6 > 0) {

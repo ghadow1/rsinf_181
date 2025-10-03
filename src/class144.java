@@ -112,7 +112,7 @@ public class class144 {
          for (i_10 = 0; i_10 < ints_17.length; i_10++) {
             int i_11 = i_10 * 32 + 15 + 128;
             int i_12 = FontName.method700(i_11, (byte) -12);
-            int i_13 = class130.field1787[i_11];
+            int i_13 = Rasterizer3D.sine[i_11];
             int i_15 = i_3 - 334;
             if (i_15 < 0) {
                i_15 = 0;
@@ -125,7 +125,7 @@ public class class144 {
             ints_17[i_10] = i_13 * i_14 >> 16;
          }
 
-         class133.method3101(ints_17, 500, 800, i_2 * 334 / i_3, 334);
+         Scene.initVisibilityMatrix(ints_17, 500, 800, i_2 * 334 / i_3, 334);
       }
 
       Client.field913 = i_0;

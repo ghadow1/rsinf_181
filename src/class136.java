@@ -3,9 +3,9 @@ public final class class136 {
    static class333 field1875;
    int field1876;
    int field1877;
-   public class135 field1884;
+   public Entity field1884;
    int field1879;
-   public class135 field1881;
+   public Entity field1881;
    int field1880;
    int field1878;
    public long field1882 = 0L;

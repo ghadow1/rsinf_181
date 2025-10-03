@@ -212,9 +212,9 @@ public class class19 implements class37 {
          class325_9 = new class325(36, 32);
          Rasterizer2D.replace(class325_9.field3908, 36, 32);
          Rasterizer2D.clear();
-         class130.method3051();
-         class130.method2976(16, 16);
-         class130.field1768 = false;
+         Rasterizer3D.method3051();
+         Rasterizer3D.method2976(16, 16);
+         Rasterizer3D.field1768 = false;
          if (itemDefinition_10.field3439 != -1) {
             class325_23.drawTransBgAt(0, 0);
          }
@@ -226,10 +226,10 @@ public class class19 implements class37 {
             i_17 = (int)(1.04D * (double)i_17);
          }
 
-         int i_18 = i_17 * class130.field1787[itemDefinition_10.xan2d] >> 16;
-         int i_19 = i_17 * class130.field1784[itemDefinition_10.xan2d] >> 16;
+         int i_18 = i_17 * Rasterizer3D.sine[itemDefinition_10.xan2d] >> 16;
+         int i_19 = i_17 * Rasterizer3D.cosine[itemDefinition_10.xan2d] >> 16;
          class127_22.method2899();
-         class127_22.method2866(0, itemDefinition_10.yan2d, itemDefinition_10.field3420, itemDefinition_10.xan2d, itemDefinition_10.offsetX2d, class127_22.field1873 / 2 + i_18 + itemDefinition_10.offsetY2d, i_19 + itemDefinition_10.offsetY2d);
+         class127_22.method2866(0, itemDefinition_10.yan2d, itemDefinition_10.field3420, itemDefinition_10.xan2d, itemDefinition_10.offsetX2d, class127_22.height / 2 + i_18 + itemDefinition_10.offsetY2d, i_19 + itemDefinition_10.offsetY2d);
          if (itemDefinition_10.field3454 != -1) {
             class325_23.drawTransBgAt(0, 0);
          }
@@ -271,8 +271,8 @@ public class class19 implements class37 {
 
          Rasterizer2D.replace(ints_13, i_14, i_15);
          Rasterizer2D.method6013(ints_16);
-         class130.method3051();
-         class130.field1768 = true;
+         Rasterizer3D.method3051();
+         Rasterizer3D.field1768 = true;
          return class325_9;
       }
    }

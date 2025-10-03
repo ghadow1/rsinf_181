@@ -1414,7 +1414,7 @@ public class class113 extends class115 {
    }
 
    public static class113 method2529(RawSound rawSound_0, int i_1, int i_2) {
-      return rawSound_0.field1390 != null && rawSound_0.field1390.length != 0 ? new class113(rawSound_0, (int)((long) rawSound_0.sampleRate * 256L * (long)i_1 / (long)(class172.field2078 * 100)), i_2 << 6) : null;
+      return rawSound_0.field1390 != null && rawSound_0.field1390.length != 0 ? new class113(rawSound_0, (int)((long) rawSound_0.sampleRate * 256L * (long)i_1 / (long)(CollisionMap.field2078 * 100)), i_2 << 6) : null;
    }
 
 }

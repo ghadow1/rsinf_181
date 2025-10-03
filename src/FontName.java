@@ -716,7 +716,7 @@ public class FontName {
             for (i_5 = 4; i_5 >= 0; --i_5) {
                String string_16 = class154.method3407(widget_0, i_5, (short) 255);
                if (string_16 != null) {
-                  class135.method3260(string_16, widget_0.field2643, 57, i_5 + 1, widget_0.field2565, widget_0.field2688, widget_0.field2691);
+                  Entity.method3260(string_16, widget_0.field2643, 57, i_5 + 1, widget_0.field2565, widget_0.field2688, widget_0.field2691);
                }
             }
 

@@ -13,7 +13,7 @@ public class class56 {
       if (Client.field700 > 0) {
          ParamDefinition.disconnectGame();
       } else {
-         Client.field797.method4993();
+         Client.timer.method4993();
          class96.updateGameState(40);
          class269.field3563 = Client.data.getSocket();
          Client.data.method2224();
@@ -258,12 +258,12 @@ public class class56 {
       }
    }
 
-   static final void method1088(byte[] bytes_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, class172[] arr_8, byte b_9) {
+   static final void method1088(byte[] bytes_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, CollisionMap[] arr_8, byte b_9) {
       int i_11;
       for (int i_10 = 0; i_10 < 8; i_10++) {
          for (i_11 = 0; i_11 < 8; i_11++) {
             if (i_10 + i_2 > 0 && i_10 + i_2 < 103 && i_3 + i_11 > 0 && i_3 + i_11 < 103) {
-               arr_8[i_1].field2085[i_10 + i_2][i_3 + i_11] &= ~0x1000000;
+               arr_8[i_1].flags[i_10 + i_2][i_3 + i_11] &= ~0x1000000;
             }
          }
       }

@@ -55,7 +55,7 @@ public class class285 extends UserList {
    public final void method5233(ByteBuffer class300_1, int i_2) {
       this.method5232(class300_1.readNullTerminatedString(), 537403926);
       long long_3 = class300_1.readLongFromMediumEndian();
-      this.method5231(class126.method2855(long_3), -1948396413);
+      this.method5231(Tile.method2855(long_3), -1948396413);
       this.field3657 = class300_1.readSignedByte();
       int i_5 = class300_1.readUnsignedByte();
       if (i_5 != 255) {

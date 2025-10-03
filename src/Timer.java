@@ -1,4 +1,4 @@
-public class class272 {
+public class Timer {
 
    long field3603 = -1L;
    long field3602 = -1L;
@@ -14,10 +14,10 @@ public class class272 {
    static void startUpInitialization() {
       int i_1;
       if (Client.field680 == 0) {
-         class5.field22 = new class133(4, 104, 104, class55.field516);
+         class5.field22 = new Scene(4, 104, 104, class55.field516);
 
          for (i_1 = 0; i_1 < 4; i_1++) {
-            Client.field710[i_1] = new class172(104, 104);
+            Client.field710[i_1] = new CollisionMap(104, 104);
          }
 
          ParamDefinition.sceneMinimapSprite = new class325(512, 512);
@@ -43,12 +43,12 @@ public class class272 {
          class32.field279 = class65.method1169(11, false, true, true, (byte) 6);
          class151.field1971 = class65.method1169(12, false, true, true, (byte) 6);
          class2.field6 = class65.method1169(13, true, false, true, (byte) 6);
-         class126.field1647 = class65.method1169(14, false, true, true, (byte) 6);
+         Tile.field1647 = class65.method1169(14, false, true, true, (byte) 6);
          class67.field650 = class65.method1169(15, false, true, true, (byte) 6);
          WorldMapID.field232 = class65.method1169(17, true, true, true, (byte) 6);
          Client.field684 = class65.method1169(18, false, true, true, (byte) 6);
          ItemDefinition.field3457 = class65.method1169(19, false, true, true, (byte) 6);
-         class135.field1874 = class65.method1169(20, false, true, true, (byte) 6);
+         Entity.field1874 = class65.method1169(20, false, true, true, (byte) 6);
          Login.field1189 = "Connecting to update server";
          Login.field1188 = 20;
          Client.field680 = 40;
@@ -68,11 +68,11 @@ public class class272 {
          i_1 += class32.field279.method4259() * 2 / 100;
          i_1 += class151.field1971.method4259() * 2 / 100;
          i_1 += class2.field6.method4259() * 2 / 100;
-         i_1 += class126.field1647.method4259() * 2 / 100;
+         i_1 += Tile.field1647.method4259() * 2 / 100;
          i_1 += class67.field650.method4259() * 2 / 100;
          i_1 += ItemDefinition.field3457.method4259() / 100;
          i_1 += Client.field684.method4259() / 100;
-         i_1 += class135.field1874.method4259() / 100;
+         i_1 += Entity.field1874.method4259() / 100;
          i_1 += WorldMapID.field232.method4258() && WorldMapID.field232.method4148(741322871) ? 1 : 0;
          if (i_1 != 100) {
             if (i_1 != 0) {
@@ -89,11 +89,11 @@ public class class272 {
             ItemContainer_2.method763(NPCDefinition.field3500, "Models");
             ItemContainer_2.method763(Client.field683, "Sprites");
             ItemContainer_2.method763(class32.field279, "Music Jingles");
-            ItemContainer_2.method763(class126.field1647, "Music Samples");
+            ItemContainer_2.method763(Tile.field1647, "Music Samples");
             ItemContainer_2.method763(class67.field650, "Music Patches");
             ItemContainer_2.method763(ItemDefinition.field3457, "World Map");
             ItemContainer_2.method763(Client.field684, "World Map Geography");
-            ItemContainer_2.method763(class135.field1874, "World Map Ground");
+            ItemContainer_2.method763(Entity.field1874, "World Map Ground");
             class159.field1995 = new class312();
             class159.field1995.method5903(WorldMapID.field232, (byte) 104);
             Login.field1189 = "Loaded update list";
@@ -101,16 +101,16 @@ public class class272 {
             Client.field680 = 45;
          }
       } else if (Client.field680 == 45) {
-         class126.method2853(22050, !Client.field656, 2);
+         Tile.method2853(22050, !Client.field656, 2);
          class198 class198_34 = new class198();
          class198_34.method3720(9, 128);
          WorldMapElement.field1144 = class234.method4256(GameApplet.field463, 0, 22050, 2015059645);
          WorldMapElement.field1144.method2424(class198_34, 750974673);
-         class58.method1094(class67.field650, class126.field1647, class13.field89, class198_34, (byte) 14);
+         class58.method1094(class67.field650, Tile.field1647, class13.field89, class198_34, (byte) 14);
          class190.field2361 = class234.method4256(GameApplet.field463, 1, 2048, 2054660994);
          class57.field532 = new class98();
          class190.field2361.method2424(class57.field532, -1975857573);
-         class84.field1177 = new class112(22050, class172.field2078);
+         class84.field1177 = new class112(22050, CollisionMap.field2078);
          Login.field1189 = "Prepared sound engine";
          Login.field1188 = 35;
          Client.field680 = 50;
@@ -122,14 +122,14 @@ public class class272 {
             i_2 = arr_33.length;
             class293 class293_30 = class169.field2056;
             class292[] arr_4 = new class292[] {class292.field3681, class292.field3677, class292.field3676, class292.field3679, class292.field3684, class292.field3678};
-            Client.field704 = class293_30.method5321(arr_4, -354104614);
-            if (Client.field704.size() < i_2) {
-               Login.field1189 = "Loading fonts - " + Client.field704.size() * 100 / i_2 + "%";
+            Client.fontsMap = class293_30.method5321(arr_4, -354104614);
+            if (Client.fontsMap.size() < i_2) {
+               Login.field1189 = "Loading fonts - " + Client.fontsMap.size() * 100 / i_2 + "%";
                Login.field1188 = 40;
             } else {
-               class213.field2529 = (Font) Client.field704.get(class292.field3676);
-               class169.field2054 = (Font) Client.field704.get(class292.field3677);
-               class23.fontBold12 = (Font) Client.field704.get(class292.field3678);
+               class213.field2529 = (Font) Client.fontsMap.get(class292.field3676);
+               class169.field2054 = (Font) Client.fontsMap.get(class292.field3677);
+               class23.fontBold12 = (Font) Client.fontsMap.get(class292.field3678);
                class22.field174 = Client.field711.vmethod6276(1619784372);
                Login.field1189 = "Loaded fonts";
                Login.field1188 = 40;
@@ -324,8 +324,8 @@ public class class272 {
                   ++i_1;
                }
 
-               if (class140.field1915 == null) {
-                  class140.field1915 = class131.method3062(Client.field683, class159.field1995.field3829, 0, 483704862);
+               if (SceneOccluder.field1915 == null) {
+                  SceneOccluder.field1915 = class131.method3062(Client.field683, class159.field1995.field3829, 0, 483704862);
                } else {
                   ++i_1;
                }
@@ -369,8 +369,8 @@ public class class272 {
                   Login.field1188 = 90;
                } else {
                   class6.field40 = new class119(class4.field18, Client.field683, 20, 0.8D, Client.field656 ? 64 : 128);
-                  class130.method2983(class6.field40);
-                  class130.method2978(0.8D);
+                  Rasterizer3D.method2983(class6.field40);
+                  Rasterizer3D.method2978(0.8D);
                   Client.field680 = 100;
                }
             } else if (Client.field680 == 100) {
@@ -422,7 +422,7 @@ public class class272 {
                } else {
                   if (class136.field1875 == null) {
                      class136.field1875 = new class333();
-                     class136.field1875.method6298(ItemDefinition.field3457, Client.field684, class135.field1874, class23.fontBold12, Client.field704, class285.field3660, 269789148);
+                     class136.field1875.method6298(ItemDefinition.field3457, Client.field684, Entity.field1874, class23.fontBold12, Client.fontsMap, class285.field3660, 269789148);
                   }
 
                   Login.field1189 = "Loaded world map";

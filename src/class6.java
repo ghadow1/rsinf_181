@@ -62,7 +62,7 @@ public class class6 {
       class240.field3203 = class240.field3204.method4154(16);
    }
 
-   static final void method72(class133 class133_0, class172[] arr_1) {
+   static final void method72(Scene scene_0, CollisionMap[] arr_1) {
       int i_3;
       int i_4;
       int i_5;
@@ -77,7 +77,7 @@ public class class6 {
                   }
 
                   if (i_6 >= 0) {
-                     arr_1[i_6].method3561(i_4, i_5, -2087203619);
+                     arr_1[i_6].setBlockedByFloor(i_4, i_5);
                   }
                }
             }
@@ -286,11 +286,11 @@ public class class6 {
 
                         i_33 = 0;
                         if (i_32 != -1) {
-                           i_33 = class130.field1783[class77.method1948(i_32, 96, 1550273173)];
+                           i_33 = Rasterizer3D.field1783[class77.method1948(i_32, 96, 1550273173)];
                         }
 
                         if (i_22 == 0) {
-                           class133_0.method3071(i_3, i_12, i_18, 0, 0, -1, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27, 730668545), class77.method1948(i_31, i_28, 1795163624), class77.method1948(i_31, i_29, 1270402615), class77.method1948(i_31, i_30, 1843049924), 0, 0, 0, 0, i_33, 0);
+                           scene_0.method3071(i_3, i_12, i_18, 0, 0, -1, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27, 730668545), class77.method1948(i_31, i_28, 1795163624), class77.method1948(i_31, i_29, 1270402615), class77.method1948(i_31, i_30, 1843049924), 0, 0, 0, 0, i_33, 0);
                         } else {
                            i_34 = class55.field506[i_3][i_12][i_18] + 1;
                            byte b_55 = class268.field3561[i_3][i_12][i_18];
@@ -316,7 +316,7 @@ public class class6 {
                            int i_42;
                            int i_43;
                            if (i_52 >= 0) {
-                              i_41 = class130.field1781.vmethod3284(i_52, 1833085397);
+                              i_41 = Rasterizer3D.field1781.vmethod3284(i_52, 1833085397);
                               i_40 = -1;
                            } else if (class257_36.field3512 == 16711935) {
                               i_40 = -2;
@@ -337,7 +337,7 @@ public class class6 {
 
                            i_42 = 0;
                            if (i_41 != -2) {
-                              i_42 = class130.field1783[class112.method2517(i_41, 96, (byte) 1)];
+                              i_42 = Rasterizer3D.field1783[class112.method2517(i_41, 96, (byte) 1)];
                            }
 
                            if (class257_36.field3507 != -1) {
@@ -350,10 +350,10 @@ public class class6 {
                               }
 
                               i_41 = class327.method6244(i_43, class257_36.field3504, i_44);
-                              i_42 = class130.field1783[class112.method2517(i_41, 96, (byte) 1)];
+                              i_42 = Rasterizer3D.field1783[class112.method2517(i_41, 96, (byte) 1)];
                            }
 
-                           class133_0.method3071(i_3, i_12, i_18, i_34, b_55, i_52, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27, 1393916461), class77.method1948(i_31, i_28, 1575342974), class77.method1948(i_31, i_29, 1119072540), class77.method1948(i_31, i_30, 1315475262), class112.method2517(i_40, i_27, (byte) 1), class112.method2517(i_40, i_28, (byte) 1), class112.method2517(i_40, i_29, (byte) 1), class112.method2517(i_40, i_30, (byte) 1), i_33, i_42);
+                           scene_0.method3071(i_3, i_12, i_18, i_34, b_55, i_52, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27, 1393916461), class77.method1948(i_31, i_28, 1575342974), class77.method1948(i_31, i_29, 1119072540), class77.method1948(i_31, i_30, 1315475262), class112.method2517(i_40, i_27, (byte) 1), class112.method2517(i_40, i_28, (byte) 1), class112.method2517(i_40, i_29, (byte) 1), class112.method2517(i_40, i_30, (byte) 1), i_33, i_42);
                         }
                      }
                   }
@@ -363,7 +363,7 @@ public class class6 {
 
          for (i_12 = 1; i_12 < 103; i_12++) {
             for (i_13 = 1; i_13 < 103; i_13++) {
-               class133_0.method3074(i_3, i_13, i_12, class164.method3468(i_3, i_13, i_12, (byte) -93));
+               scene_0.method3074(i_3, i_13, i_12, class164.method3468(i_3, i_13, i_12, (byte) -93));
             }
          }
 
@@ -374,12 +374,12 @@ public class class6 {
          class32.field282[i_3] = null;
       }
 
-      class133_0.method3097(-50, -10, -50);
+      scene_0.method3097(-50, -10, -50);
 
       for (i_3 = 0; i_3 < 104; i_3++) {
          for (i_4 = 0; i_4 < 104; i_4++) {
             if ((class55.field502[1][i_3][i_4] & 0x2) == 2) {
-               class133_0.method3068(i_3, i_4);
+               scene_0.method3068(i_3, i_4);
             }
          }
       }
@@ -439,7 +439,7 @@ public class class6 {
                         s_53 = 240;
                         i_16 = class55.field516[i_13][i_9][i_10] - s_53;
                         i_17 = class55.field516[i_12][i_9][i_10];
-                        class133.method3112(i_6, 1, i_9 * 128, i_9 * 128, i_10 * 128, i_11 * 128 + 128, i_16, i_17);
+                        Scene.addOccluder(i_6, 1, i_9 * 128, i_9 * 128, i_10 * 128, i_11 * 128 + 128, i_16, i_17);
 
                         for (i_18 = i_12; i_18 <= i_13; i_18++) {
                            for (i_19 = i_10; i_19 <= i_11; i_19++) {
@@ -489,7 +489,7 @@ public class class6 {
                         s_53 = 240;
                         i_16 = class55.field516[i_13][i_10][i_8] - s_53;
                         i_17 = class55.field516[i_12][i_10][i_8];
-                        class133.method3112(i_6, 2, i_10 * 128, i_11 * 128 + 128, i_8 * 128, i_8 * 128, i_16, i_17);
+                        Scene.addOccluder(i_6, 2, i_10 * 128, i_11 * 128 + 128, i_8 * 128, i_8 * 128, i_16, i_17);
 
                         for (i_18 = i_12; i_18 <= i_13; i_18++) {
                            for (i_19 = i_10; i_19 <= i_11; i_19++) {
@@ -536,7 +536,7 @@ public class class6 {
 
                      if ((i_11 - i_10 + 1) * (i_13 - i_12 + 1) >= 4) {
                         i_14 = class55.field516[i_7][i_10][i_12];
-                        class133.method3112(i_6, 4, i_10 * 128, i_11 * 128 + 128, i_12 * 128, i_13 * 128 + 128, i_14, i_14);
+                        Scene.addOccluder(i_6, 4, i_10 * 128, i_11 * 128 + 128, i_12 * 128, i_13 * 128 + 128, i_14, i_14);
 
                         for (i_15 = i_10; i_15 <= i_11; i_15++) {
                            for (i_16 = i_12; i_16 <= i_13; i_16++) {

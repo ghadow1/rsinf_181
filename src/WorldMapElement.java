@@ -157,8 +157,8 @@ public class WorldMapElement {
             i_4 = Client.field928 / 16;
             if (Client.field731 >= 0) {
                i_1 = Client.field731 - MouseRecorder.field1112 & 0x7ff;
-               i_5 = class130.field1787[i_1];
-               i_6 = class130.field1784[i_1];
+               i_5 = Rasterizer3D.sine[i_1];
+               i_6 = Rasterizer3D.cosine[i_1];
                MouseHandler.field499 += i_4 * i_5 / 65536;
                class26.field227 += i_6 * i_4 / 65536;
             }

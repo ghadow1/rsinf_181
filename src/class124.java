@@ -118,7 +118,7 @@ public class class124 extends LinkedListNode {
          }
 
          for (i_13 = 0; i_13 < ints_11.length; i_13++) {
-            ints_11[i_13] = class130.method2980(ints_11[i_13], d_1);
+            ints_11[i_13] = Rasterizer3D.method2980(ints_11[i_13], d_1);
          }
 
          if (i_6 == 0) {

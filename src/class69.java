@@ -1,4 +1,4 @@
-public abstract class class69 extends class135 {
+public abstract class class69 extends Entity {
 
    int x;
    int y;

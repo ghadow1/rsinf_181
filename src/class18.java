@@ -346,8 +346,8 @@ public class class18 extends class34 {
                i_5 -= class211_4.width / 2;
                i_6 -= class211_4.height / 2;
                int i_7 = Client.camAngleY & 0x7ff;
-               int i_8 = class130.field1787[i_7];
-               int i_9 = class130.field1784[i_7];
+               int i_8 = Rasterizer3D.sine[i_7];
+               int i_9 = Rasterizer3D.cosine[i_7];
                int i_10 = i_5 * i_9 + i_6 * i_8 >> 11;
                int i_11 = i_6 * i_9 - i_8 * i_5 >> 11;
                int i_12 = i_10 + Client.localPlayer.x >> 7;

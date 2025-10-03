@@ -43,8 +43,8 @@ public final class class48 extends Canvas {
       int i_7 = i_3 * i_3 + i_2 * i_2;
       if (i_7 > 4225 && i_7 < 90000) {
          int i_8 = Client.camAngleY & 0x7ff;
-         int i_9 = class130.field1787[i_8];
-         int i_10 = class130.field1784[i_8];
+         int i_9 = Rasterizer3D.sine[i_8];
+         int i_10 = Rasterizer3D.cosine[i_8];
          int i_11 = i_10 * i_2 + i_3 * i_9 >> 16;
          int i_12 = i_3 * i_10 - i_9 * i_2 >> 16;
          double d_13 = Math.atan2((double)i_11, (double)i_12);

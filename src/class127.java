@@ -1,4 +1,4 @@
-public class class127 extends class135 {
+public class class127 extends Entity {
 
    static class127 field1703 = new class127();
    static byte[] field1705 = new byte[1];
@@ -66,10 +66,10 @@ public class class127 extends class135 {
    int field1700;
 
    static {
-      field1683 = class130.field1787;
-      field1736 = class130.field1784;
-      field1737 = class130.field1783;
-      field1738 = class130.field1786;
+      field1683 = Rasterizer3D.sine;
+      field1736 = Rasterizer3D.cosine;
+      field1737 = Rasterizer3D.field1783;
+      field1738 = Rasterizer3D.field1786;
    }
 
    class127() {
@@ -209,7 +209,7 @@ public class class127 extends class135 {
    public void method2899() {
       if (this.field1698 != 1) {
          this.field1698 = 1;
-         super.field1873 = 0;
+         super.height = 0;
          this.field1706 = 0;
          this.field1673 = 0;
 
@@ -217,8 +217,8 @@ public class class127 extends class135 {
             int i_2 = this.field1676[i_1];
             int i_3 = this.field1677[i_1];
             int i_4 = this.field1678[i_1];
-            if (-i_3 > super.field1873) {
-               super.field1873 = -i_3;
+            if (-i_3 > super.height) {
+               super.height = -i_3;
             }
 
             if (i_3 > this.field1706) {
@@ -232,7 +232,7 @@ public class class127 extends class135 {
          }
 
          this.field1673 = (int)(Math.sqrt((double)this.field1673) + 0.99D);
-         this.field1702 = (int)(Math.sqrt((double)(this.field1673 * this.field1673 + super.field1873 * super.field1873)) + 0.99D);
+         this.field1702 = (int)(Math.sqrt((double)(this.field1673 * this.field1673 + super.height * super.height)) + 0.99D);
          this.field1701 = this.field1702 + (int)(Math.sqrt((double)(this.field1673 * this.field1673 + this.field1706 * this.field1706)) + 0.99D);
       }
    }
@@ -262,8 +262,8 @@ public class class127 extends class135 {
    }
 
    final void method2880(int i_1) {
-      int i_2 = class130.field1774;
-      int i_3 = class130.field1775;
+      int i_2 = Rasterizer3D.field1774;
+      int i_3 = Rasterizer3D.field1775;
       int i_4 = 0;
       int i_5 = this.field1680[i_1];
       int i_6 = this.field1681[i_1];
@@ -272,9 +272,9 @@ public class class127 extends class135 {
       int i_9 = field1717[i_6];
       int i_10 = field1717[i_7];
       if (this.field1687 == null) {
-         class130.field1766 = 0;
+         Rasterizer3D.field1766 = 0;
       } else {
-         class130.field1766 = this.field1687[i_1] & 0xff;
+         Rasterizer3D.field1766 = this.field1687[i_1] & 0xff;
       }
 
       int i_11;
@@ -291,15 +291,15 @@ public class class127 extends class135 {
          i_13 = this.field1697[i_1];
          if (i_10 >= 50) {
             i_14 = field1738[i_10 - i_8] * (50 - i_8);
-            field1726[i_4] = i_2 + class130.field1773 * (i_11 + ((field1715[i_7] - i_11) * i_14 >> 16)) / 50;
-            field1699[i_4] = i_3 + class130.field1773 * (i_12 + ((field1716[i_7] - i_12) * i_14 >> 16)) / 50;
+            field1726[i_4] = i_2 + Rasterizer3D.field1773 * (i_11 + ((field1715[i_7] - i_11) * i_14 >> 16)) / 50;
+            field1699[i_4] = i_3 + Rasterizer3D.field1773 * (i_12 + ((field1716[i_7] - i_12) * i_14 >> 16)) / 50;
             field1728[i_4++] = i_13 + ((this.field1685[i_1] - i_13) * i_14 >> 16);
          }
 
          if (i_9 >= 50) {
             i_14 = field1738[i_9 - i_8] * (50 - i_8);
-            field1726[i_4] = i_2 + class130.field1773 * (i_11 + ((field1715[i_6] - i_11) * i_14 >> 16)) / 50;
-            field1699[i_4] = i_3 + class130.field1773 * (i_12 + ((field1716[i_6] - i_12) * i_14 >> 16)) / 50;
+            field1726[i_4] = i_2 + Rasterizer3D.field1773 * (i_11 + ((field1715[i_6] - i_11) * i_14 >> 16)) / 50;
+            field1699[i_4] = i_3 + Rasterizer3D.field1773 * (i_12 + ((field1716[i_6] - i_12) * i_14 >> 16)) / 50;
             field1728[i_4++] = i_13 + ((this.field1684[i_1] - i_13) * i_14 >> 16);
          }
       }
@@ -314,15 +314,15 @@ public class class127 extends class135 {
          i_13 = this.field1684[i_1];
          if (i_8 >= 50) {
             i_14 = field1738[i_8 - i_9] * (50 - i_9);
-            field1726[i_4] = i_2 + class130.field1773 * (i_11 + ((field1715[i_5] - i_11) * i_14 >> 16)) / 50;
-            field1699[i_4] = i_3 + class130.field1773 * (i_12 + ((field1716[i_5] - i_12) * i_14 >> 16)) / 50;
+            field1726[i_4] = i_2 + Rasterizer3D.field1773 * (i_11 + ((field1715[i_5] - i_11) * i_14 >> 16)) / 50;
+            field1699[i_4] = i_3 + Rasterizer3D.field1773 * (i_12 + ((field1716[i_5] - i_12) * i_14 >> 16)) / 50;
             field1728[i_4++] = i_13 + ((this.field1697[i_1] - i_13) * i_14 >> 16);
          }
 
          if (i_10 >= 50) {
             i_14 = field1738[i_10 - i_9] * (50 - i_9);
-            field1726[i_4] = i_2 + class130.field1773 * (i_11 + ((field1715[i_7] - i_11) * i_14 >> 16)) / 50;
-            field1699[i_4] = i_3 + class130.field1773 * (i_12 + ((field1716[i_7] - i_12) * i_14 >> 16)) / 50;
+            field1726[i_4] = i_2 + Rasterizer3D.field1773 * (i_11 + ((field1715[i_7] - i_11) * i_14 >> 16)) / 50;
+            field1699[i_4] = i_3 + Rasterizer3D.field1773 * (i_12 + ((field1716[i_7] - i_12) * i_14 >> 16)) / 50;
             field1728[i_4++] = i_13 + ((this.field1685[i_1] - i_13) * i_14 >> 16);
          }
       }
@@ -337,15 +337,15 @@ public class class127 extends class135 {
          i_13 = this.field1685[i_1];
          if (i_9 >= 50) {
             i_14 = field1738[i_9 - i_10] * (50 - i_10);
-            field1726[i_4] = i_2 + class130.field1773 * (i_11 + ((field1715[i_6] - i_11) * i_14 >> 16)) / 50;
-            field1699[i_4] = i_3 + class130.field1773 * (i_12 + ((field1716[i_6] - i_12) * i_14 >> 16)) / 50;
+            field1726[i_4] = i_2 + Rasterizer3D.field1773 * (i_11 + ((field1715[i_6] - i_11) * i_14 >> 16)) / 50;
+            field1699[i_4] = i_3 + Rasterizer3D.field1773 * (i_12 + ((field1716[i_6] - i_12) * i_14 >> 16)) / 50;
             field1728[i_4++] = i_13 + ((this.field1684[i_1] - i_13) * i_14 >> 16);
          }
 
          if (i_8 >= 50) {
             i_14 = field1738[i_8 - i_10] * (50 - i_10);
-            field1726[i_4] = i_2 + class130.field1773 * (i_11 + ((field1715[i_5] - i_11) * i_14 >> 16)) / 50;
-            field1699[i_4] = i_3 + class130.field1773 * (i_12 + ((field1716[i_5] - i_12) * i_14 >> 16)) / 50;
+            field1726[i_4] = i_2 + Rasterizer3D.field1773 * (i_11 + ((field1715[i_5] - i_11) * i_14 >> 16)) / 50;
+            field1699[i_4] = i_3 + Rasterizer3D.field1773 * (i_12 + ((field1716[i_5] - i_12) * i_14 >> 16)) / 50;
             field1728[i_4++] = i_13 + ((this.field1697[i_1] - i_13) * i_14 >> 16);
          }
       }
@@ -356,14 +356,14 @@ public class class127 extends class135 {
       i_14 = field1699[0];
       int i_15 = field1699[1];
       int i_16 = field1699[2];
-      class130.field1763 = false;
+      Rasterizer3D.field1763 = false;
       int i_17;
       int i_18;
       int i_19;
       int i_20;
       if (i_4 == 3) {
-         if (i_11 < 0 || i_12 < 0 || i_13 < 0 || i_11 > class130.field1788 || i_12 > class130.field1788 || i_13 > class130.field1788) {
-            class130.field1763 = true;
+         if (i_11 < 0 || i_12 < 0 || i_13 < 0 || i_11 > Rasterizer3D.field1788 || i_12 > Rasterizer3D.field1788 || i_13 > Rasterizer3D.field1788) {
+            Rasterizer3D.field1763 = true;
          }
 
          if (this.field1689 != null && this.field1689[i_1] != -1) {
@@ -379,20 +379,20 @@ public class class127 extends class135 {
             }
 
             if (this.field1685[i_1] == -1) {
-               class130.method2986(i_14, i_15, i_16, i_11, i_12, i_13, this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], this.field1689[i_1]);
+               Rasterizer3D.method2986(i_14, i_15, i_16, i_11, i_12, i_13, this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], this.field1689[i_1]);
             } else {
-               class130.method2986(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], this.field1689[i_1]);
+               Rasterizer3D.method2986(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], this.field1689[i_1]);
             }
          } else if (this.field1685[i_1] == -1) {
-            class130.method3007(i_14, i_15, i_16, i_11, i_12, i_13, field1737[this.field1697[i_1]]);
+            Rasterizer3D.method3007(i_14, i_15, i_16, i_11, i_12, i_13, field1737[this.field1697[i_1]]);
          } else {
-            class130.method3020(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2]);
+            Rasterizer3D.method3020(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2]);
          }
       }
 
       if (i_4 == 4) {
-         if (i_11 < 0 || i_12 < 0 || i_13 < 0 || i_11 > class130.field1788 || i_12 > class130.field1788 || i_13 > class130.field1788 || field1726[3] < 0 || field1726[3] > class130.field1788) {
-            class130.field1763 = true;
+         if (i_11 < 0 || i_12 < 0 || i_13 < 0 || i_11 > Rasterizer3D.field1788 || i_12 > Rasterizer3D.field1788 || i_13 > Rasterizer3D.field1788 || field1726[3] < 0 || field1726[3] > Rasterizer3D.field1788) {
+            Rasterizer3D.field1763 = true;
          }
 
          if (this.field1689 != null && this.field1689[i_1] != -1) {
@@ -409,19 +409,19 @@ public class class127 extends class135 {
 
             short s_21 = this.field1689[i_1];
             if (this.field1685[i_1] == -1) {
-               class130.method2986(i_14, i_15, i_16, i_11, i_12, i_13, this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
-               class130.method2986(i_14, i_16, field1699[3], i_11, i_13, field1726[3], this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
+               Rasterizer3D.method2986(i_14, i_15, i_16, i_11, i_12, i_13, this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
+               Rasterizer3D.method2986(i_14, i_16, field1699[3], i_11, i_13, field1726[3], this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
             } else {
-               class130.method2986(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
-               class130.method2986(i_14, i_16, field1699[3], i_11, i_13, field1726[3], field1728[0], field1728[2], field1728[3], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
+               Rasterizer3D.method2986(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
+               Rasterizer3D.method2986(i_14, i_16, field1699[3], i_11, i_13, field1726[3], field1728[0], field1728[2], field1728[3], field1715[i_17], field1715[i_18], field1715[i_19], field1716[i_17], field1716[i_18], field1716[i_19], field1717[i_17], field1717[i_18], field1717[i_19], s_21);
             }
          } else if (this.field1685[i_1] == -1) {
             i_17 = field1737[this.field1697[i_1]];
-            class130.method3007(i_14, i_15, i_16, i_11, i_12, i_13, i_17);
-            class130.method3007(i_14, i_16, field1699[3], i_11, i_13, field1726[3], i_17);
+            Rasterizer3D.method3007(i_14, i_15, i_16, i_11, i_12, i_13, i_17);
+            Rasterizer3D.method3007(i_14, i_16, field1699[3], i_11, i_13, field1726[3], i_17);
          } else {
-            class130.method3020(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2]);
-            class130.method3020(i_14, i_16, field1699[3], i_11, i_13, field1726[3], field1728[0], field1728[2], field1728[3]);
+            Rasterizer3D.method3020(i_14, i_15, i_16, i_11, i_12, i_13, field1728[0], field1728[1], field1728[2]);
+            Rasterizer3D.method3020(i_14, i_16, field1699[3], i_11, i_13, field1726[3], field1728[0], field1728[2], field1728[3]);
          }
       }
 
@@ -491,9 +491,9 @@ public class class127 extends class135 {
          int i_9 = field1683[i_1];
 
          for (int i_10 = 0; i_10 < this.field1675; i_10++) {
-            int i_11 = class130.method3040(this.field1676[i_10], this.field1678[i_10], i_8, i_9);
+            int i_11 = Rasterizer3D.method3040(this.field1676[i_10], this.field1678[i_10], i_8, i_9);
             int i_12 = this.field1677[i_10];
-            int i_13 = class130.method3061(this.field1676[i_10], this.field1678[i_10], i_8, i_9);
+            int i_13 = Rasterizer3D.method3061(this.field1676[i_10], this.field1678[i_10], i_8, i_9);
             if (i_11 < i_2) {
                i_2 = i_11;
             }
@@ -660,7 +660,7 @@ public class class127 extends class135 {
                }
             } else {
                for (i_12 = 0; i_12 < class127_11.field1675; i_12++) {
-                  i_13 = (-this.field1677[i_12] << 16) / super.field1873;
+                  i_13 = (-this.field1677[i_12] << 16) / super.height;
                   if (i_13 < i_6) {
                      i_14 = i_2 + this.field1676[i_12];
                      i_15 = i_4 + this.field1678[i_12];
@@ -697,18 +697,18 @@ public class class127 extends class135 {
       int i_14 = i_12 + i_13;
       if (i_14 > 50 && i_12 < 3500) {
          int i_15 = i_8 * i_4 + i_5 * i_6 >> 16;
-         int i_16 = (i_15 - this.field1673) * class130.field1773;
-         if (i_16 / i_14 < class130.field1779) {
-            int i_17 = (i_15 + this.field1673) * class130.field1773;
-            if (i_17 / i_14 > class130.field1778) {
+         int i_16 = (i_15 - this.field1673) * Rasterizer3D.field1773;
+         if (i_16 / i_14 < Rasterizer3D.field1779) {
+            int i_17 = (i_15 + this.field1673) * Rasterizer3D.field1773;
+            if (i_17 / i_14 > Rasterizer3D.field1778) {
                int i_18 = i_3 * i_7 - i_11 * i_2 >> 16;
                int i_19 = i_2 * this.field1673 >> 16;
-               int i_20 = (i_18 + i_19) * class130.field1773;
-               if (i_20 / i_14 > class130.field1780) {
-                  int i_21 = (i_3 * super.field1873 >> 16) + i_19;
-                  int i_22 = (i_18 - i_21) * class130.field1773;
-                  if (i_22 / i_14 < class130.field1777) {
-                     int i_23 = i_13 + (i_2 * super.field1873 >> 16);
+               int i_20 = (i_18 + i_19) * Rasterizer3D.field1773;
+               if (i_20 / i_14 > Rasterizer3D.field1780) {
+                  int i_21 = (i_3 * super.height >> 16) + i_19;
+                  int i_22 = (i_18 - i_21) * Rasterizer3D.field1773;
+                  if (i_22 / i_14 < Rasterizer3D.field1777) {
+                     int i_23 = i_13 + (i_2 * super.height >> 16);
                      boolean bool_24 = false;
                      boolean bool_25 = false;
                      if (i_12 - i_23 <= 50) {
@@ -756,8 +756,8 @@ public class class127 extends class135 {
                               i_22 /= i_37;
                            }
 
-                           i_38 = i_27 - class130.field1774;
-                           i_39 = i_29 - class130.field1775;
+                           i_38 = i_27 - Rasterizer3D.field1774;
+                           i_39 = i_29 - Rasterizer3D.field1775;
                            if (i_38 > i_16 && i_38 < i_17 && i_39 > i_22 && i_39 < i_20) {
                               bool_36 = true;
                            }
@@ -772,8 +772,8 @@ public class class127 extends class135 {
                         }
                      }
 
-                     int i_49 = class130.field1774;
-                     i_37 = class130.field1775;
+                     int i_49 = Rasterizer3D.field1774;
+                     i_37 = Rasterizer3D.field1775;
                      i_38 = 0;
                      i_39 = 0;
                      if (i_1 != 0) {
@@ -802,8 +802,8 @@ public class class127 extends class135 {
                         i_43 = i_42 * i_2 + i_3 * i_43 >> 16;
                         field1714[i_40] = i_43 - i_12;
                         if (i_43 >= 50) {
-                           field1719[i_40] = i_41 * class130.field1773 / i_43 + i_49;
-                           field1713[i_40] = i_44 * class130.field1773 / i_43 + i_37;
+                           field1719[i_40] = i_41 * Rasterizer3D.field1773 / i_43 + i_49;
+                           field1713[i_40] = i_44 * Rasterizer3D.field1773 / i_43 + i_37;
                         } else {
                            field1719[i_40] = -5000;
                            bool_24 = true;
@@ -875,11 +875,11 @@ public class class127 extends class135 {
          int i_2 = this.field1680[i_1];
          int i_3 = this.field1681[i_1];
          int i_4 = this.field1682[i_1];
-         class130.field1763 = field1710[i_1];
+         Rasterizer3D.field1763 = field1710[i_1];
          if (this.field1687 == null) {
-            class130.field1766 = 0;
+            Rasterizer3D.field1766 = 0;
          } else {
-            class130.field1766 = this.field1687[i_1] & 0xff;
+            Rasterizer3D.field1766 = this.field1687[i_1] & 0xff;
          }
 
          if (this.field1689 != null && this.field1689[i_1] != -1) {
@@ -898,14 +898,14 @@ public class class127 extends class135 {
             }
 
             if (this.field1685[i_1] == -1) {
-               class130.method2986(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_5], field1715[i_6], field1715[i_7], field1716[i_5], field1716[i_6], field1716[i_7], field1717[i_5], field1717[i_6], field1717[i_7], this.field1689[i_1]);
+               Rasterizer3D.method2986(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], this.field1697[i_1], this.field1697[i_1], this.field1697[i_1], field1715[i_5], field1715[i_6], field1715[i_7], field1716[i_5], field1716[i_6], field1716[i_7], field1717[i_5], field1717[i_6], field1717[i_7], this.field1689[i_1]);
             } else {
-               class130.method2986(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], this.field1697[i_1], this.field1684[i_1], this.field1685[i_1], field1715[i_5], field1715[i_6], field1715[i_7], field1716[i_5], field1716[i_6], field1716[i_7], field1717[i_5], field1717[i_6], field1717[i_7], this.field1689[i_1]);
+               Rasterizer3D.method2986(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], this.field1697[i_1], this.field1684[i_1], this.field1685[i_1], field1715[i_5], field1715[i_6], field1715[i_7], field1716[i_5], field1716[i_6], field1716[i_7], field1717[i_5], field1717[i_6], field1717[i_7], this.field1689[i_1]);
             }
          } else if (this.field1685[i_1] == -1) {
-            class130.method3007(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], field1737[this.field1697[i_1]]);
+            Rasterizer3D.method3007(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], field1737[this.field1697[i_1]]);
          } else {
-            class130.method3020(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], this.field1697[i_1], this.field1684[i_1], this.field1685[i_1]);
+            Rasterizer3D.method3020(field1713[i_2], field1713[i_3], field1713[i_4], field1719[i_2], field1719[i_3], field1719[i_4], this.field1697[i_1], this.field1684[i_1], this.field1685[i_1]);
          }
 
       }
@@ -1175,7 +1175,7 @@ public class class127 extends class135 {
 
                   if ((i_11 - i_12) * (field1713[i_10] - field1713[i_27]) - (i_13 - i_12) * (field1713[i_8] - field1713[i_27]) > 0) {
                      field1723[i_7] = false;
-                     if (i_11 >= 0 && i_12 >= 0 && i_13 >= 0 && i_11 <= class130.field1788 && i_12 <= class130.field1788 && i_13 <= class130.field1788) {
+                     if (i_11 >= 0 && i_12 >= 0 && i_13 >= 0 && i_11 <= Rasterizer3D.field1788 && i_12 <= Rasterizer3D.field1788 && i_13 <= Rasterizer3D.field1788) {
                         field1710[i_7] = false;
                      } else {
                         field1710[i_7] = true;
@@ -1377,8 +1377,8 @@ public class class127 extends class135 {
          this.method2910();
       }
 
-      int i_8 = class130.field1774;
-      int i_9 = class130.field1775;
+      int i_8 = Rasterizer3D.field1774;
+      int i_9 = Rasterizer3D.field1775;
       int i_10 = field1683[i_1];
       int i_11 = field1736[i_1];
       int i_12 = field1683[i_2];
@@ -1418,8 +1418,8 @@ public class class127 extends class135 {
          i_23 = i_21 * i_17 - i_22 * i_16 >> 16;
          i_22 = i_21 * i_16 + i_22 * i_17 >> 16;
          field1714[i_19] = i_22 - i_18;
-         field1719[i_19] = i_20 * class130.field1773 / i_22 + i_8;
-         field1713[i_19] = i_23 * class130.field1773 / i_22 + i_9;
+         field1719[i_19] = i_20 * Rasterizer3D.field1773 / i_22 + i_8;
+         field1713[i_19] = i_23 * Rasterizer3D.field1773 / i_22 + i_9;
          if (this.field1691 > 0) {
             field1715[i_19] = i_20;
             field1716[i_19] = i_23;
@@ -1441,8 +1441,8 @@ public class class127 extends class135 {
          this.method2910();
       }
 
-      int i_9 = class130.field1774;
-      int i_10 = class130.field1775;
+      int i_9 = Rasterizer3D.field1774;
+      int i_10 = Rasterizer3D.field1775;
       int i_11 = field1683[i_1];
       int i_12 = field1736[i_1];
       int i_13 = field1683[i_2];
@@ -1482,8 +1482,8 @@ public class class127 extends class135 {
          i_24 = i_22 * i_18 - i_23 * i_17 >> 16;
          i_23 = i_22 * i_17 + i_23 * i_18 >> 16;
          field1714[i_20] = i_23 - i_19;
-         field1719[i_20] = i_9 + i_21 * class130.field1773 / i_8;
-         field1713[i_20] = i_10 + i_24 * class130.field1773 / i_8;
+         field1719[i_20] = i_9 + i_21 * Rasterizer3D.field1773 / i_8;
+         field1713[i_20] = i_10 + i_24 * Rasterizer3D.field1773 / i_8;
          if (this.field1691 > 0) {
             field1715[i_20] = i_21;
             field1716[i_20] = i_24;

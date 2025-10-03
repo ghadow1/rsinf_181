@@ -1,13 +1,13 @@
 public final class class120 {
 
-   class135 field1543;
+   Entity field1543;
    int field1541;
    int field1540;
    int field1547;
    long field1544;
-   class135 field1542;
-   class135 field1545;
-   int field1546;
+   Entity field1542;
+   Entity field1545;
+   int height;
 
    public static void method2766() {
       class253.field3390.method3323();

@@ -102,7 +102,7 @@ public class ResourceHandler {
 
             while (long_2 > 5000L + this.field1412) {
                this.method2410(256, 1268557925);
-               this.field1412 += (long)(256000 / class172.field2078);
+               this.field1412 += (long)(256000 / CollisionMap.field2078);
             }
          } catch (Exception exception_7) {
             this.field1412 = long_2;
@@ -189,7 +189,7 @@ public class ResourceHandler {
       class301.method5733(ints_1, 0, i_3);
       this.field1423 -= i_2;
       if (this.field1410 != null && this.field1423 <= 0) {
-         this.field1423 += class172.field2078 >> 4;
+         this.field1423 += CollisionMap.field2078 >> 4;
          class77.method1947(this.field1410, -1064292468);
          this.method2456(this.field1410, this.field1410.vmethod2689(), 2049205678);
          int i_4 = 0;

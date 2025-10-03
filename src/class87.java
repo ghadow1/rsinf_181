@@ -1,4 +1,4 @@
-public final class class87 extends class135 {
+public final class class87 extends Entity {
 
    static class324 field1243;
    static int field1242;

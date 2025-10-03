@@ -38,7 +38,7 @@ final class class4 implements class0 {
       }
 
       class29.method497(false, -1807867865);
-      InBuffer.method2245();
+      PacketWriter.method2245();
       class22.method275(205706610);
       class144.method3318(i_0, i_1, i_2, i_3, true);
       i_0 = Client.field913;
@@ -46,7 +46,7 @@ final class class4 implements class0 {
       i_2 = Client.field746;
       i_3 = Client.field714;
       Rasterizer2D.setClip(i_0, i_1, i_0 + i_2, i_3 + i_1);
-      class130.method3051();
+      Rasterizer3D.method3051();
       int i_29;
       if (!Client.field899) {
          i_5 = Client.field721;
@@ -260,10 +260,10 @@ final class class4 implements class0 {
       class186.method3619((byte) 95);
       Rasterizer2D.fillRectangle(i_0, i_1, i_2, i_3, 0);
       class186.method3619((byte) 8);
-      i_13 = class130.field1773;
-      class130.field1773 = Client.field917;
+      i_13 = Rasterizer3D.field1773;
+      Rasterizer3D.field1773 = Client.field917;
       class5.field22.method3092(PacketBuffer.field3727, GCMonitor.field383, class1.field3, class11.field77, MouseRecorder.field1112, i_5);
-      class130.field1773 = i_13;
+      Rasterizer3D.field1773 = i_13;
       class186.method3619((byte) 124);
       class5.field22.method3115();
       Client.field740 = 0;
@@ -424,7 +424,7 @@ final class class4 implements class0 {
          }
       }
 
-      ((class119) class130.field1781).method2736(Client.field718);
+      ((class119) Rasterizer3D.field1781).method2736(Client.field718);
       class21.method273(i_0, i_1, i_2, i_3, -2108015148);
       PacketBuffer.field3727 = i_29;
       GCMonitor.field383 = i_7;
@@ -447,7 +447,7 @@ final class class4 implements class0 {
    }
 
    static final int method49(int i_0, int i_1, int i_2, int i_3, int i_4) {
-      int i_5 = 65536 - class130.field1784[i_2 * 1024 / i_3] >> 1;
+      int i_5 = 65536 - Rasterizer3D.cosine[i_2 * 1024 / i_3] >> 1;
       return ((65536 - i_5) * i_0 >> 16) + (i_5 * i_1 >> 16);
    }
 

@@ -36,9 +36,6 @@ public class TimeUtils extends class205 {
          }
 
          long long_8 = 0L;
-         boolean bool_10 = true;
-         boolean bool_11 = false;
-         boolean bool_12 = false;
          if (i_1 == 0) {
             long_8 = class5.field22.method3130(i_0, i_2, i_3);
          }
@@ -66,7 +63,7 @@ public class TimeUtils extends class205 {
                class5.field22.method3208(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15);
                if (class253_14.field3382 != 0) {
-                  Client.field710[i_0].method3564(i_2, i_3, i_16, i_17, class253_14.field3368, -1166825819);
+                  Client.field710[i_0].method3564(i_2, i_3, i_16, i_17, class253_14.field3368);
                }
             }
 
@@ -90,7 +87,7 @@ public class TimeUtils extends class205 {
                class5.field22.method3201(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15);
                if (class253_14.field3382 == 1) {
-                  Client.field710[i_0].method3567(i_2, i_3);
+                  Client.field710[i_0].setBlockedByUnknown(i_2, i_3);
                }
             }
          }

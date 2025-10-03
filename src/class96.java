@@ -191,7 +191,7 @@ public class class96 {
                   } else if (i_30 == 37) {
                      i_12 = ints_7[i_18];
                      class221.field2747 -= i_12;
-                     String string_32 = class272.method5015(MouseRecorder.field1093, class221.field2747, i_12, -1350169073);
+                     String string_32 = Timer.method5015(MouseRecorder.field1093, class221.field2747, i_12, -1350169073);
                      MouseRecorder.field1093[++class221.field2747 - 1] = string_32;
                   } else if (i_30 == 38) {
                      --class70.field1014;
@@ -327,7 +327,7 @@ public class class96 {
             Client.field686 = 0;
             Client.field687 = 0;
             Client.field688 = 0;
-            Client.field797.method4996(i_0);
+            Client.timer.method4996(i_0);
             if (i_0 != 20) {
                class9.method99(false, -1114411806);
             }

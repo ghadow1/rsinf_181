@@ -6,7 +6,7 @@ public abstract class ParamDefinition {
    public int field2099;
    public int field2097;
 
-   public abstract boolean vmethod3594(int var1, int var2, int var3, class172 var4, int var5);
+   public abstract boolean vmethod3594(int var1, int var2, int var3, CollisionMap var4, int var5);
 
    static final void disconnectGame() {
       Client.data.method2233();
@@ -33,7 +33,7 @@ public abstract class ParamDefinition {
       class63.method1134((byte) 5);
       class214.field2536.method3323();
       class207.method3940((byte) -50);
-      ((class119) class130.field1781).method2762(1945022462);
+      ((class119) Rasterizer3D.field1781).method2762(1945022462);
       class92.field1291.method3323();
       class197.field2405.method4158(-1559971076);
       class167.field2049.method4158(-420803493);
@@ -47,10 +47,10 @@ public abstract class ParamDefinition {
       class17.field110.method4158(-1533856957);
       class32.field279.method4158(287902762);
       class151.field1971.method4158(452413942);
-      class5.field22.method3066();
+      class5.field22.clear();
 
       for (int i_1 = 0; i_1 < 4; i_1++) {
-         Client.field710[i_1].method3558();
+         Client.field710[i_1].clear();
       }
 
       System.gc();

@@ -123,7 +123,7 @@ public class class153 extends ChainedComparator {
          Client.field670.method4886();
 
          for (i_15 = 0; i_15 < 4; i_15++) {
-            Client.field710[i_15].method3558();
+            Client.field710[i_15].clear();
          }
 
       }

@@ -415,7 +415,7 @@ public class class30 {
                return 1;
             } else if (i_0 == 3617) {
                string_6 = MouseRecorder.field1093[--class221.field2747];
-               class126.method2856(string_6);
+               Tile.method2856(string_6);
                return 1;
             } else if (i_0 == 3618) {
                MouseRecorder.field1098[++class70.field1014 - 1] = class46.field410 != null ? class46.field410.field3653 : 0;

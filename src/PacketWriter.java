@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class InBuffer {
+public class PacketWriter {
 
    ServerPacketProt field1321;
    ServerPacketProt field1317;

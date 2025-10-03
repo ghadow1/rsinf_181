@@ -267,7 +267,7 @@ public class class188 {
    }
 
    public static final void method3644(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5) {
-      class135.method3260(string_0, string_1, i_2, i_3, i_4, i_5, false);
+      Entity.method3260(string_0, string_1, i_2, i_3, i_4, i_5, false);
    }
 
    static final String method3631(int i_0) {

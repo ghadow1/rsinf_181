@@ -1,8 +1,8 @@
-public abstract class class135 extends DualNode {
+public abstract class Entity extends DualNode {
 
    static long field1872;
    static class235 field1874;
-   public int field1873 = 1000;
+   public int height = 1000;
 
    protected class127 vmethod3253(int i_1) {
       return null;
@@ -11,7 +11,7 @@ public abstract class class135 extends DualNode {
    void vmethod3258(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, long long_9) {
       class127 class127_11 = this.vmethod3253(19676459);
       if (class127_11 != null) {
-         this.field1873 = class127_11.field1873;
+         this.height = class127_11.height;
          class127_11.vmethod3258(i_1, i_2, i_3, i_4, i_5, i_6, i_7, i_8, long_9);
       }
 

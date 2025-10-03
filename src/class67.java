@@ -59,7 +59,7 @@ public class class67 implements Comparator {
       return var_0 >= 48 && var_0 <= 57 || var_0 >= 65 && var_0 <= 90 || var_0 >= 97 && var_0 <= 122;
    }
 
-   static final void method1236(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, class133 class133_6, class172 class172_7) {
+   static final void method1236(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, Scene scene_6, CollisionMap collisionMap_7) {
       if (!Client.field656 || (class55.field502[0][i_1][i_2] & 0x2) != 0 || (class55.field502[i_0][i_1][i_2] & 0x10) == 0) {
          if (i_0 < class55.field503) {
             class55.field503 = i_0;
@@ -100,7 +100,7 @@ public class class67 implements Comparator {
          int i_17 = ints_16[i_12][i_15] + ints_16[i_13][i_14] + ints_16[i_12][i_14] + ints_16[i_13][i_15] >> 2;
          int i_18 = (i_1 << 7) + (i_10 << 6);
          int i_19 = (i_2 << 7) + (i_11 << 6);
-         long long_20 = class126.method2854(i_1, i_2, 2, class253_9.field3369 == 0, i_3);
+         long long_20 = Tile.method2854(i_1, i_2, 2, class253_9.field3369 == 0, i_3);
          int i_22 = i_5 + (i_4 << 6);
          if (class253_9.field3361 == 1) {
             i_22 += 256;
@@ -116,12 +116,12 @@ public class class67 implements Comparator {
                if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                   obj_23 = class253_9.method4591(22, i_4, ints_16, i_18, i_17, i_19, (byte) 11);
                } else {
-                  obj_23 = new class93(i_3, 22, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                  obj_23 = new class93(i_3, 22, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                }
 
-               class133_6.method3072(i_0, i_1, i_2, i_17, (class135) obj_23, long_20, i_22);
-               if (class253_9.field3382 == 1 && class172_7 != null) {
-                  class172_7.method3562(i_1, i_2);
+               scene_6.method3072(i_0, i_1, i_2, i_17, (Entity) obj_23, long_20, i_22);
+               if (class253_9.field3382 == 1 && collisionMap_7 != null) {
+                  collisionMap_7.setBlockedByFloorDec(i_1, i_2);
                }
 
             }
@@ -132,26 +132,26 @@ public class class67 implements Comparator {
                   if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                      obj_23 = class253_9.method4591(i_5, i_4, ints_16, i_18, i_17, i_19, (byte) 49);
                   } else {
-                     obj_23 = new class93(i_3, i_5, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                     obj_23 = new class93(i_3, i_5, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                   }
 
-                  class133_6.method3076(i_0, i_1, i_2, i_17, 1, 1, (class135) obj_23, 0, long_20, i_22);
+                  scene_6.method3076(i_0, i_1, i_2, i_17, 1, 1, (Entity) obj_23, 0, long_20, i_22);
                   if (i_5 >= 12 && i_5 <= 17 && i_5 != 13 && i_0 > 0) {
                      class137.field1887[i_0][i_1][i_2] |= 0x924;
                   }
 
-                  if (class253_9.field3382 != 0 && class172_7 != null) {
-                     class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368);
+                  if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                     collisionMap_7.addGameObject(i_1, i_2, i_10, i_11, class253_9.field3368);
                   }
 
                } else if (i_5 == 0) {
                   if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                      obj_23 = class253_9.method4591(0, i_4, ints_16, i_18, i_17, i_19, (byte) -63);
                   } else {
-                     obj_23 = new class93(i_3, 0, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                     obj_23 = new class93(i_3, 0, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                   }
 
-                  class133_6.method3093(i_0, i_1, i_2, i_17, (class135) obj_23, (class135) null, class55.field512[i_4], 0, long_20, i_22);
+                  scene_6.method3093(i_0, i_1, i_2, i_17, (Entity) obj_23, (Entity) null, class55.field512[i_4], 0, long_20, i_22);
                   if (i_4 == 0) {
                      if (class253_9.field3356) {
                         class32.field282[i_0][i_1][i_2] = 50;
@@ -190,22 +190,22 @@ public class class67 implements Comparator {
                      }
                   }
 
-                  if (class253_9.field3382 != 0 && class172_7 != null) {
-                     class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
+                  if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                     collisionMap_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                   }
 
                   if (class253_9.field3374 != 16) {
-                     class133_6.method3082(i_0, i_1, i_2, class253_9.field3374);
+                     scene_6.method3082(i_0, i_1, i_2, class253_9.field3374);
                   }
 
                } else if (i_5 == 1) {
                   if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                      obj_23 = class253_9.method4591(1, i_4, ints_16, i_18, i_17, i_19, (byte) -9);
                   } else {
-                     obj_23 = new class93(i_3, 1, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                     obj_23 = new class93(i_3, 1, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                   }
 
-                  class133_6.method3093(i_0, i_1, i_2, i_17, (class135) obj_23, (class135) null, class55.field513[i_4], 0, long_20, i_22);
+                  scene_6.method3093(i_0, i_1, i_2, i_17, (Entity) obj_23, (Entity) null, class55.field513[i_4], 0, long_20, i_22);
                   if (class253_9.field3356) {
                      if (i_4 == 0) {
                         class32.field282[i_0][i_1][i_2 + 1] = 50;
@@ -218,8 +218,8 @@ public class class67 implements Comparator {
                      }
                   }
 
-                  if (class253_9.field3382 != 0 && class172_7 != null) {
-                     class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
+                  if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                     collisionMap_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                   }
 
                } else {
@@ -232,11 +232,11 @@ public class class67 implements Comparator {
                         obj_30 = class253_9.method4591(2, i_4 + 4, ints_16, i_18, i_17, i_19, (byte) -71);
                         obj_31 = class253_9.method4591(2, i_29, ints_16, i_18, i_17, i_19, (byte) 39);
                      } else {
-                        obj_30 = new class93(i_3, 2, i_4 + 4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
-                        obj_31 = new class93(i_3, 2, i_29, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                        obj_30 = new class93(i_3, 2, i_4 + 4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
+                        obj_31 = new class93(i_3, 2, i_29, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                      }
 
-                     class133_6.method3093(i_0, i_1, i_2, i_17, (class135) obj_30, (class135) obj_31, class55.field512[i_4], class55.field512[i_29], long_20, i_22);
+                     scene_6.method3093(i_0, i_1, i_2, i_17, (Entity) obj_30, (Entity) obj_31, class55.field512[i_4], class55.field512[i_29], long_20, i_22);
                      if (class253_9.field3372) {
                         if (i_4 == 0) {
                            class137.field1887[i_0][i_1][i_2] |= 0x249;
@@ -253,22 +253,22 @@ public class class67 implements Comparator {
                         }
                      }
 
-                     if (class253_9.field3382 != 0 && class172_7 != null) {
-                        class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
+                     if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                        collisionMap_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                      }
 
                      if (class253_9.field3374 != 16) {
-                        class133_6.method3082(i_0, i_1, i_2, class253_9.field3374);
+                        scene_6.method3082(i_0, i_1, i_2, class253_9.field3374);
                      }
 
                   } else if (i_5 == 3) {
                      if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                         obj_23 = class253_9.method4591(3, i_4, ints_16, i_18, i_17, i_19, (byte) -30);
                      } else {
-                        obj_23 = new class93(i_3, 3, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                        obj_23 = new class93(i_3, 3, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                      }
 
-                     class133_6.method3093(i_0, i_1, i_2, i_17, (class135) obj_23, (class135) null, class55.field513[i_4], 0, long_20, i_22);
+                     scene_6.method3093(i_0, i_1, i_2, i_17, (Entity) obj_23, (Entity) null, class55.field513[i_4], 0, long_20, i_22);
                      if (class253_9.field3356) {
                         if (i_4 == 0) {
                            class32.field282[i_0][i_1][i_2 + 1] = 50;
@@ -281,40 +281,40 @@ public class class67 implements Comparator {
                         }
                      }
 
-                     if (class253_9.field3382 != 0 && class172_7 != null) {
-                        class172_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
+                     if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                        collisionMap_7.method3559(i_1, i_2, i_5, i_4, class253_9.field3368);
                      }
 
                   } else if (i_5 == 9) {
                      if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                         obj_23 = class253_9.method4591(i_5, i_4, ints_16, i_18, i_17, i_19, (byte) -68);
                      } else {
-                        obj_23 = new class93(i_3, i_5, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                        obj_23 = new class93(i_3, i_5, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                      }
 
-                     class133_6.method3076(i_0, i_1, i_2, i_17, 1, 1, (class135) obj_23, 0, long_20, i_22);
-                     if (class253_9.field3382 != 0 && class172_7 != null) {
-                        class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368);
+                     scene_6.method3076(i_0, i_1, i_2, i_17, 1, 1, (Entity) obj_23, 0, long_20, i_22);
+                     if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                        collisionMap_7.addGameObject(i_1, i_2, i_10, i_11, class253_9.field3368);
                      }
 
                      if (class253_9.field3374 != 16) {
-                        class133_6.method3082(i_0, i_1, i_2, class253_9.field3374);
+                        scene_6.method3082(i_0, i_1, i_2, class253_9.field3374);
                      }
 
                   } else if (i_5 == 4) {
                      if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                         obj_23 = class253_9.method4591(4, i_4, ints_16, i_18, i_17, i_19, (byte) -59);
                      } else {
-                        obj_23 = new class93(i_3, 4, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                        obj_23 = new class93(i_3, 4, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                      }
 
-                     class133_6.method3142(i_0, i_1, i_2, i_17, (class135) obj_23, (class135) null, class55.field512[i_4], 0, 0, 0, long_20, i_22);
+                     scene_6.method3142(i_0, i_1, i_2, i_17, (Entity) obj_23, (Entity) null, class55.field512[i_4], 0, 0, 0, long_20, i_22);
                   } else {
                      long long_32;
                      Object obj_34;
                      if (i_5 == 5) {
                         i_29 = 16;
-                        long_32 = class133_6.method3130(i_0, i_1, i_2);
+                        long_32 = scene_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
                            i_29 = class128.method2970(GCMonitor.method770(long_32)).field3374;
                         }
@@ -322,13 +322,13 @@ public class class67 implements Comparator {
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                            obj_34 = class253_9.method4591(4, i_4, ints_16, i_18, i_17, i_19, (byte) -50);
                         } else {
-                           obj_34 = new class93(i_3, 4, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                           obj_34 = new class93(i_3, 4, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                         }
 
-                        class133_6.method3142(i_0, i_1, i_2, i_17, (class135) obj_34, (class135) null, class55.field512[i_4], 0, i_29 * class55.field514[i_4], i_29 * class55.field520[i_4], long_20, i_22);
+                        scene_6.method3142(i_0, i_1, i_2, i_17, (Entity) obj_34, (Entity) null, class55.field512[i_4], 0, i_29 * class55.field514[i_4], i_29 * class55.field520[i_4], long_20, i_22);
                      } else if (i_5 == 6) {
                         i_29 = 8;
-                        long_32 = class133_6.method3130(i_0, i_1, i_2);
+                        long_32 = scene_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
                            i_29 = class128.method2970(GCMonitor.method770(long_32)).field3374 / 2;
                         }
@@ -336,22 +336,22 @@ public class class67 implements Comparator {
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                            obj_34 = class253_9.method4591(4, i_4 + 4, ints_16, i_18, i_17, i_19, (byte) 45);
                         } else {
-                           obj_34 = new class93(i_3, 4, i_4 + 4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                           obj_34 = new class93(i_3, 4, i_4 + 4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                         }
 
-                        class133_6.method3142(i_0, i_1, i_2, i_17, (class135) obj_34, (class135) null, 256, i_4, i_29 * class55.field509[i_4], i_29 * class55.field517[i_4], long_20, i_22);
+                        scene_6.method3142(i_0, i_1, i_2, i_17, (Entity) obj_34, (Entity) null, 256, i_4, i_29 * class55.field509[i_4], i_29 * class55.field517[i_4], long_20, i_22);
                      } else if (i_5 == 7) {
                         i_24 = i_4 + 2 & 0x3;
                         if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                            obj_23 = class253_9.method4591(4, i_24 + 4, ints_16, i_18, i_17, i_19, (byte) 42);
                         } else {
-                           obj_23 = new class93(i_3, 4, i_24 + 4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                           obj_23 = new class93(i_3, 4, i_24 + 4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                         }
 
-                        class133_6.method3142(i_0, i_1, i_2, i_17, (class135) obj_23, (class135) null, 256, i_24, 0, 0, long_20, i_22);
+                        scene_6.method3142(i_0, i_1, i_2, i_17, (Entity) obj_23, (Entity) null, 256, i_24, 0, 0, long_20, i_22);
                      } else if (i_5 == 8) {
                         i_29 = 8;
-                        long_32 = class133_6.method3130(i_0, i_1, i_2);
+                        long_32 = scene_6.method3130(i_0, i_1, i_2);
                         if (long_32 != 0L) {
                            i_29 = class128.method2970(GCMonitor.method770(long_32)).field3374 / 2;
                         }
@@ -362,11 +362,11 @@ public class class67 implements Comparator {
                            obj_34 = class253_9.method4591(4, i_4 + 4, ints_16, i_18, i_17, i_19, (byte) -12);
                            obj_27 = class253_9.method4591(4, i_28 + 4, ints_16, i_18, i_17, i_19, (byte) -59);
                         } else {
-                           obj_34 = new class93(i_3, 4, i_4 + 4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
-                           obj_27 = new class93(i_3, 4, i_28 + 4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                           obj_34 = new class93(i_3, 4, i_4 + 4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
+                           obj_27 = new class93(i_3, 4, i_28 + 4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                         }
 
-                        class133_6.method3142(i_0, i_1, i_2, i_17, (class135) obj_34, (class135) obj_27, 256, i_4, i_29 * class55.field509[i_4], i_29 * class55.field517[i_4], long_20, i_22);
+                        scene_6.method3142(i_0, i_1, i_2, i_17, (Entity) obj_34, (Entity) obj_27, 256, i_4, i_29 * class55.field509[i_4], i_29 * class55.field517[i_4], long_20, i_22);
                      }
                   }
                }
@@ -374,10 +374,10 @@ public class class67 implements Comparator {
                if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                   obj_23 = class253_9.method4591(10, i_4, ints_16, i_18, i_17, i_19, (byte) -18);
                } else {
-                  obj_23 = new class93(i_3, 10, i_4, i_0, i_1, i_2, class253_9.field3373, true, (class135) null);
+                  obj_23 = new class93(i_3, 10, i_4, i_0, i_1, i_2, class253_9.field3373, true, (Entity) null);
                }
 
-               if (obj_23 != null && class133_6.method3076(i_0, i_1, i_2, i_17, i_10, i_11, (class135) obj_23, i_5 == 11 ? 256 : 0, long_20, i_22) && class253_9.field3356) {
+               if (obj_23 != null && scene_6.method3076(i_0, i_1, i_2, i_17, i_10, i_11, (Entity) obj_23, i_5 == 11 ? 256 : 0, long_20, i_22) && class253_9.field3356) {
                   i_24 = 15;
                   if (obj_23 instanceof class127) {
                      i_24 = ((class127) obj_23).method2864() / 4;
@@ -395,8 +395,8 @@ public class class67 implements Comparator {
                   }
                }
 
-               if (class253_9.field3382 != 0 && class172_7 != null) {
-                  class172_7.method3560(i_1, i_2, i_10, i_11, class253_9.field3368);
+               if (class253_9.field3382 != 0 && collisionMap_7 != null) {
+                  collisionMap_7.addGameObject(i_1, i_2, i_10, i_11, class253_9.field3368);
                }
 
             }

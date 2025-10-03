@@ -339,7 +339,7 @@ public class class91 {
                if (Client.field674) {
                   class5.field22.method3104();
                } else {
-                  class5.field22.method3103(ItemContainer_2.plane, i_0, i_1, true);
+                  class5.field22.click(ItemContainer_2.plane, i_0, i_1, true);
                }
             } else {
                class187 class187_11;

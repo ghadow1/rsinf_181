@@ -41,8 +41,8 @@ public class MouseRecorder {
          int i_7 = Client.camAngleY & 0x7ff;
          int i_8 = i_3 * i_3 + i_2 * i_2;
          if (i_8 <= 6400) {
-            int i_9 = class130.field1787[i_7];
-            int i_10 = class130.field1784[i_7];
+            int i_9 = Rasterizer3D.sine[i_7];
+            int i_10 = Rasterizer3D.cosine[i_7];
             int i_11 = i_10 * i_2 + i_3 * i_9 >> 16;
             int i_12 = i_3 * i_10 - i_9 * i_2 >> 16;
             if (i_8 > 2500) {

@@ -1,23 +1,23 @@
-public final class class126 extends LinkedListNode {
+public final class Tile extends LinkedListNode {
 
    static class235 field1647;
-   class120 field1669;
+   class120 tileItemPile;
    class131 field1646;
    class141 field1652;
    class136 field1656;
    class123 field1664;
-   int field1655;
+   int gameObjectsCount;
    class122 field1650;
    boolean field1661;
    int field1659;
-   class126 field1667;
+   Tile field1667;
    boolean field1660;
    int field1654;
    boolean field1662;
    int field1651;
    int field1666;
    int field1665;
-   FileSystem[] field1663 = new FileSystem[5];
+   GameObject[] gameObjects = new GameObject[5];
    int[] field1657 = new int[5];
    int field1658 = 0;
    int field1670;
@@ -25,7 +25,7 @@ public final class class126 extends LinkedListNode {
    int field1668;
    int field1653;
 
-   class126(int i_1, int i_2, int i_3) {
+   Tile(int i_1, int i_2, int i_3) {
       this.field1648 = this.field1670 = i_1;
       this.field1668 = i_2;
       this.field1653 = i_3;
@@ -68,7 +68,7 @@ public final class class126 extends LinkedListNode {
 
    public static final void method2853(int i_0, boolean bool_1, int i_2) {
       if (i_0 >= 8000 && i_0 <= 48000) {
-         class172.field2078 = i_0;
+         CollisionMap.field2078 = i_0;
          class169.field2053 = bool_1;
          ResourceHandler.field1407 = i_2;
       } else {

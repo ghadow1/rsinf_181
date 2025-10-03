@@ -1,4 +1,4 @@
-public final class class86 extends class135 {
+public final class class86 extends Entity {
 
    boolean field1220 = false;
    int field1237 = 0;

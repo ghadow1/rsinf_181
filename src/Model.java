@@ -1,4 +1,4 @@
-public class Model extends class135 {
+public class Model extends Entity {
 
    static int[] field1584 = new int[10000];
    static int[] field1585 = new int[10000];
@@ -42,8 +42,8 @@ public class Model extends class135 {
    int field1554;
 
    static {
-      field1570 = class130.field1787;
-      field1588 = class130.field1784;
+      field1570 = Rasterizer3D.sine;
+      field1588 = Rasterizer3D.cosine;
    }
 
    Model() {
@@ -270,7 +270,7 @@ public class Model extends class135 {
 
    void method2789() {
       if (!this.field1578) {
-         super.field1873 = 0;
+         super.height = 0;
          this.field1579 = 0;
          this.field1575 = 999999;
          this.field1564 = -999999;
@@ -297,8 +297,8 @@ public class Model extends class135 {
                this.field1582 = i_4;
             }
 
-            if (-i_3 > super.field1873) {
-               super.field1873 = -i_3;
+            if (-i_3 > super.height) {
+               super.height = -i_3;
             }
 
             if (i_3 > this.field1579) {
@@ -1505,7 +1505,7 @@ public class Model extends class135 {
                }
             } else {
                for (i_12 = 0; i_12 < model_11.field1558; i_12++) {
-                  i_13 = (-this.field1550[i_12] << 16) / super.field1873;
+                  i_13 = (-this.field1550[i_12] << 16) / super.height;
                   if (i_13 < i_6) {
                      i_14 = i_2 + this.field1576[i_12];
                      i_15 = i_4 + this.field1552[i_12];

@@ -14,7 +14,7 @@ public final class NPC extends class69 {
             return null;
          } else {
             class127_4.method2899();
-            super.field999 = class127_4.field1873;
+            super.field999 = class127_4.height;
             if (super.field986 != -1 && super.field987 != -1) {
                class127 class127_5 = class201.method3887(super.field986, (byte) 2).method4406(super.field987, 1645713423);
                if (class127_5 != null) {

@@ -77,7 +77,7 @@ public class class50 extends ResourceHandler {
    }
 
    protected void vmethod2413(int i_1) {
-      this.field432 = new AudioFormat((float)class172.field2078, 16, class169.field2053 ? 2 : 1, true, false);
+      this.field432 = new AudioFormat((float) CollisionMap.field2078, 16, class169.field2053 ? 2 : 1, true, false);
       this.field431 = new byte[256 << (class169.field2053 ? 2 : 1)];
    }
 

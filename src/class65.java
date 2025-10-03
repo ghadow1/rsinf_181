@@ -3,7 +3,7 @@ import java.io.RandomAccessFile;
 
 public class class65 extends ParamDefinition {
 
-   public boolean vmethod3594(int i_1, int i_2, int i_3, class172 class172_4, int i_5) {
+   public boolean vmethod3594(int i_1, int i_2, int i_3, CollisionMap collisionMap_4, int i_5) {
       return i_2 == super.field2098 && i_3 == super.field2101;
    }
 

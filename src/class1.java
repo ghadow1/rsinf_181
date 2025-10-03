@@ -294,7 +294,7 @@ final class class1 implements class0 {
                      }
 
                      if (i_6 == 2) {
-                        FileSystem fileSystem_45 = class5.field22.method3195(ItemContainer_2.plane, i_8, i_9);
+                        GameObject fileSystem_45 = class5.field22.method3195(ItemContainer_2.plane, i_8, i_9);
                         if (i_4 == 11) {
                            i_4 = 10;
                         }

@@ -389,16 +389,16 @@ public class class72 {
       int i_15;
       int i_16;
       if (i_9 != 0) {
-         i_14 = class130.field1787[i_9];
-         i_15 = class130.field1784[i_9];
+         i_14 = Rasterizer3D.sine[i_9];
+         i_15 = Rasterizer3D.cosine[i_9];
          i_16 = i_12 * i_15 - i_14 * i_8 >> 16;
          i_13 = i_12 * i_14 + i_15 * i_8 >> 16;
          i_12 = i_16;
       }
 
       if (i_10 != 0) {
-         i_14 = class130.field1787[i_10];
-         i_15 = class130.field1784[i_10];
+         i_14 = Rasterizer3D.sine[i_10];
+         i_15 = Rasterizer3D.cosine[i_10];
          i_16 = i_14 * i_13 + i_15 * i_11 >> 16;
          i_13 = i_15 * i_13 - i_14 * i_11 >> 16;
          i_11 = i_16;

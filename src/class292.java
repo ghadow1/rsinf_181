@@ -14,7 +14,7 @@ public class class292 {
 
    static final void method5319(Widget[] arr_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8) {
       Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
-      class130.method3051();
+      Rasterizer3D.method3051();
 
       for (int i_10 = 0; i_10 < arr_0.length; i_10++) {
          Widget widget_11 = arr_0[i_10];
@@ -201,7 +201,7 @@ public class class292 {
                      }
 
                      Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
-                     class130.method3051();
+                     Rasterizer3D.method3051();
                   }
 
                   if (Client.field869 || Client.field862[i_12] || Client.field768 > 1) {
@@ -468,7 +468,7 @@ public class class292 {
                                        class127_42 = itemDefinition_34.method4644(1);
                                        if (class127_42 != null) {
                                           class127_42.method2899();
-                                          i_23 = class127_42.field1873 / 2;
+                                          i_23 = class127_42.height / 2;
                                        } else {
                                           FriendSystem.invalidateWidget(widget_11);
                                        }
@@ -492,9 +492,9 @@ public class class292 {
                                     }
                                  }
 
-                                 class130.method2976(widget_11.field2579 / 2 + i_13, widget_11.field2667 / 2 + i_14);
-                                 i_24 = class130.field1787[widget_11.field2615] * widget_11.field2618 >> 16;
-                                 i_25 = class130.field1784[widget_11.field2615] * widget_11.field2618 >> 16;
+                                 Rasterizer3D.method2976(widget_11.field2579 / 2 + i_13, widget_11.field2667 / 2 + i_14);
+                                 i_24 = Rasterizer3D.sine[widget_11.field2615] * widget_11.field2618 >> 16;
+                                 i_25 = Rasterizer3D.cosine[widget_11.field2615] * widget_11.field2618 >> 16;
                                  if (class127_42 != null) {
                                     if (!widget_11.field2563) {
                                        class127_42.method2866(0, widget_11.field2616, 0, widget_11.field2615, 0, i_24, i_25);
@@ -508,7 +508,7 @@ public class class292 {
                                     }
                                  }
 
-                                 class130.method2973();
+                                 Rasterizer3D.method2973();
                               } else {
                                  if (widget_11.field2566 == 7) {
                                     font_40 = widget_11.getFont();

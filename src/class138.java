@@ -57,27 +57,27 @@ public class class138 extends DualNode {
          int i_17;
          int i_18;
          if (!class128.field1744) {
-            i_6 = class133.field1827;
-            i_7 = class133.field1801;
-            i_8 = class133.field1829;
-            i_9 = class133.field1830;
+            i_6 = Scene.sinEyePitch;
+            i_7 = Scene.cosEyePitch;
+            i_8 = Scene.sinEyeYaw;
+            i_9 = Scene.cosEyeYaw;
             byte b_10 = 50;
             short s_11 = 3500;
-            i_12 = (class128.field1742 - class130.field1774) * b_10 / class130.field1773;
-            i_13 = (class128.field1743 - class130.field1775) * b_10 / class130.field1773;
-            i_14 = (class128.field1742 - class130.field1774) * s_11 / class130.field1773;
-            int i_15 = (class128.field1743 - class130.field1775) * s_11 / class130.field1773;
-            int i_16 = class130.method2995(i_13, b_10, i_7, i_6);
-            i_17 = class130.method2996(i_13, b_10, i_7, i_6);
+            i_12 = (class128.field1742 - Rasterizer3D.field1774) * b_10 / Rasterizer3D.field1773;
+            i_13 = (class128.field1743 - Rasterizer3D.field1775) * b_10 / Rasterizer3D.field1773;
+            i_14 = (class128.field1742 - Rasterizer3D.field1774) * s_11 / Rasterizer3D.field1773;
+            int i_15 = (class128.field1743 - Rasterizer3D.field1775) * s_11 / Rasterizer3D.field1773;
+            int i_16 = Rasterizer3D.method2995(i_13, b_10, i_7, i_6);
+            i_17 = Rasterizer3D.method2996(i_13, b_10, i_7, i_6);
             i_13 = i_16;
-            i_16 = class130.method2995(i_15, s_11, i_7, i_6);
-            i_18 = class130.method2996(i_15, s_11, i_7, i_6);
+            i_16 = Rasterizer3D.method2995(i_15, s_11, i_7, i_6);
+            i_18 = Rasterizer3D.method2996(i_15, s_11, i_7, i_6);
             i_15 = i_16;
-            i_16 = class130.method2982(i_12, i_17, i_9, i_8);
-            i_17 = class130.method2994(i_12, i_17, i_9, i_8);
+            i_16 = Rasterizer3D.method2982(i_12, i_17, i_9, i_8);
+            i_17 = Rasterizer3D.method2994(i_12, i_17, i_9, i_8);
             i_12 = i_16;
-            i_16 = class130.method2982(i_14, i_18, i_9, i_8);
-            i_18 = class130.method2994(i_14, i_18, i_9, i_8);
+            i_16 = Rasterizer3D.method2982(i_14, i_18, i_9, i_8);
+            i_18 = Rasterizer3D.method2994(i_14, i_18, i_9, i_8);
             class134.field1871 = (i_12 + i_16) / 2;
             class128.field1745 = (i_13 + i_15) / 2;
             class128.field1746 = (i_17 + i_18) / 2;
@@ -102,7 +102,7 @@ public class class138 extends DualNode {
       }
    }
 
-   public static final boolean method3267(int i_0, int i_1, ParamDefinition paramDefinition_2, class172 class172_3, int i_4) {
+   public static final boolean method3267(int i_0, int i_1, ParamDefinition paramDefinition_2, CollisionMap collisionMap_3, int i_4) {
       int i_5 = i_0;
       int i_6 = i_1;
       byte b_7 = 64;
@@ -117,7 +117,7 @@ public class class138 extends DualNode {
       byte b_10001 = b_11;
       int i_19 = b_11 + 1;
       class173.field2094[b_10001] = i_1;
-      int[][] ints_13 = class172_3.field2085;
+      int[][] ints_13 = collisionMap_3.flags;
 
       while (i_12 != i_19) {
          i_5 = class173.field2092[i_12];
@@ -125,9 +125,9 @@ public class class138 extends DualNode {
          i_12 = i_12 + 1 & 0xfff;
          int i_17 = i_5 - i_9;
          int i_18 = i_6 - i_10;
-         int i_14 = i_5 - class172_3.field2071;
-         int i_15 = i_6 - class172_3.field2082;
-         if (paramDefinition_2.vmethod3594(2, i_5, i_6, class172_3, -1888775070)) {
+         int i_14 = i_5 - collisionMap_3.xInset;
+         int i_15 = i_6 - collisionMap_3.yInset;
+         if (paramDefinition_2.vmethod3594(2, i_5, i_6, collisionMap_3, -1888775070)) {
             class173.field2088 = i_5;
             class218.field2707 = i_6;
             return true;

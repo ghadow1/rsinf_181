@@ -69,7 +69,7 @@ public class class202 extends class115 {
 
    void method3896(MusicPatchNode musicPatchNode_1, int i_2, int i_3) {
       if ((this.field2485.field2421[musicPatchNode_1.field2440] & 0x4) != 0 && musicPatchNode_1.field2436 < 0) {
-         int i_4 = this.field2485.field2408[musicPatchNode_1.field2440] / class172.field2078;
+         int i_4 = this.field2485.field2408[musicPatchNode_1.field2440] / CollisionMap.field2078;
          int i_5 = (i_4 + 1048575 - musicPatchNode_1.field2444) / i_4;
          musicPatchNode_1.field2444 = i_4 * i_2 + musicPatchNode_1.field2444 & 0xfffff;
          if (i_5 <= i_2) {
@@ -93,7 +93,7 @@ public class class202 extends class115 {
 
    void method3895(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4, int i_5, int i_6) {
       if ((this.field2485.field2421[musicPatchNode_1.field2440] & 0x4) != 0 && musicPatchNode_1.field2436 < 0) {
-         int i_7 = this.field2485.field2408[musicPatchNode_1.field2440] / class172.field2078;
+         int i_7 = this.field2485.field2408[musicPatchNode_1.field2440] / CollisionMap.field2078;
 
          while (true) {
             int i_8 = (i_7 + 1048575 - musicPatchNode_1.field2444) / i_7;
@@ -106,7 +106,7 @@ public class class202 extends class115 {
             i_3 += i_8;
             i_4 -= i_8;
             musicPatchNode_1.field2444 += i_7 * i_8 - 1048576;
-            int i_9 = class172.field2078 / 100;
+            int i_9 = CollisionMap.field2078 / 100;
             int i_10 = 262144 / i_7;
             if (i_10 < i_9) {
                i_9 = i_10;
@@ -198,10 +198,10 @@ public class class202 extends class115 {
          int i_23 = i_1 - i_17;
          int i_24 = i_8 + i_1 - i_17;
          int i_25 = i_8 + i_16 + i_1;
-         class130.method2981(i_18, i_19, i_20);
-         class130.method3007(i_22, i_23, i_24, i_18, i_19, i_20, i_4);
-         class130.method2981(i_18, i_20, i_21);
-         class130.method3007(i_22, i_24, i_25, i_18, i_20, i_21, i_4);
+         Rasterizer3D.method2981(i_18, i_19, i_20);
+         Rasterizer3D.method3007(i_22, i_23, i_24, i_18, i_19, i_20, i_4);
+         Rasterizer3D.method2981(i_18, i_20, i_21);
+         Rasterizer3D.method3007(i_22, i_24, i_25, i_18, i_20, i_21, i_4);
       }
    }
 
