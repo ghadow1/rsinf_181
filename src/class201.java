@@ -1,6 +1,6 @@
 public class class201 extends LinkedListNode {
 
-   class103[] field2474 = new class103[128];
+   RawSound[] field2474 = new RawSound[128];
    short[] field2482 = new short[128];
    byte[] field2476 = new byte[128];
    byte[] field2477 = new byte[128];
@@ -326,7 +326,7 @@ public class class201 extends LinkedListNode {
             i_32 = b_41 * (b_30 - b_44) + (b_30 - b_44) / 2;
 
             for (i_33 = b_44; i_33 < b_30; i_33++) {
-               i_34 = class120.method2767(i_32, b_30 - b_44, -989207473);
+               i_34 = class120.method2767(i_32, b_30 - b_44);
                this.field2476[i_33] = (byte)(i_34 * this.field2476[i_33] + 32 >> 6);
                i_32 += b_31 - b_41;
             }
@@ -374,7 +374,7 @@ public class class201 extends LinkedListNode {
             i_32 = i_47 * (b_30 - b_44) + (b_30 - b_44) / 2;
 
             for (i_33 = b_44; i_33 < b_30; i_33++) {
-               i_34 = class120.method2767(i_32, b_30 - b_44, -808907900);
+               i_34 = class120.method2767(i_32, b_30 - b_44);
                int i_35 = i_34 + (this.field2477[i_33] & 0xff);
                if (i_35 < 0) {
                   i_35 = 0;
@@ -447,14 +447,14 @@ public class class201 extends LinkedListNode {
 
    }
 
-   void method3889(int i_1) {
+   void method3889() {
       this.field2480 = null;
    }
 
-   boolean method3883(class108 class108_1, byte[] bytes_2, int[] ints_3, int i_4) {
+   boolean method3883(class108 class108_1, byte[] bytes_2, int[] ints_3) {
       boolean bool_5 = true;
       int i_6 = 0;
-      class103 class103_7 = null;
+      RawSound rawSound_7 = null;
 
       for (int i_8 = 0; i_8 < 128; i_8++) {
          if (bytes_2 == null || bytes_2[i_8] != 0) {
@@ -463,18 +463,18 @@ public class class201 extends LinkedListNode {
                if (i_9 != i_6) {
                   i_6 = i_9--;
                   if ((i_9 & 0x1) == 0) {
-                     class103_7 = class108_1.method2483(i_9 >> 2, ints_3);
+                     rawSound_7 = class108_1.method2483(i_9 >> 2, ints_3);
                   } else {
-                     class103_7 = class108_1.method2484(i_9 >> 2, ints_3);
+                     rawSound_7 = class108_1.method2484(i_9 >> 2, ints_3);
                   }
 
-                  if (class103_7 == null) {
+                  if (rawSound_7 == null) {
                      bool_5 = false;
                   }
                }
 
-               if (class103_7 != null) {
-                  this.field2474[i_8] = class103_7;
+               if (rawSound_7 != null) {
+                  this.field2474[i_8] = rawSound_7;
                   this.field2480[i_8] = 0;
                }
             }

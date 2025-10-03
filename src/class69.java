@@ -62,11 +62,11 @@ public abstract class class69 extends class135 {
    int field1007 = 0;
    int field1008 = 0;
 
-   boolean vmethod1965(int i_1) {
+   boolean vmethod1965() {
       return false;
    }
 
-   final void method1657(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
+   final void method1657(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       boolean bool_8 = true;
       boolean bool_9 = true;
 
@@ -141,8 +141,8 @@ public abstract class class69 extends class135 {
       }
    }
 
-   final void method1659(int i_1, int i_2) {
-      class246 class246_3 = class51.method854(i_1, 73121711);
+   final void method1659(int i_1) {
+      class246 class246_3 = class51.method854(i_1);
 
       for (class78 class78_4 = (class78) this.field954.method4838(); class78_4 != null; class78_4 = (class78) this.field954.method4808()) {
          if (class246_3 == class78_4.field1128) {
@@ -154,7 +154,7 @@ public abstract class class69 extends class135 {
    }
 
    final void method1655(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, byte b_7) {
-      class246 class246_8 = class51.method854(i_1, 1884870915);
+      class246 class246_8 = class51.method854(i_1);
       class78 class78_9 = null;
       class78 class78_10 = null;
       int i_11 = class246_8.field3282;

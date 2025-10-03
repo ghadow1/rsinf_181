@@ -69,7 +69,7 @@ public class class102 extends LinkedListNode {
 
    }
 
-   class103 method2370(int[] ints_1) {
+   RawSound method2370(int[] ints_1) {
       if (ints_1 != null && ints_1[0] <= 0) {
          return null;
       } else {
@@ -114,7 +114,7 @@ public class class102 extends LinkedListNode {
          this.field1382 = null;
          byte[] bytes_7 = this.field1362;
          this.field1362 = null;
-         return new class103(this.field1356, bytes_7, this.field1358, this.field1359, this.field1364);
+         return new RawSound(this.field1356, bytes_7, this.field1358, this.field1359, this.field1364);
       }
    }
 

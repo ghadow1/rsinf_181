@@ -1,7 +1,7 @@
 public final class class227 {
 
    static void method4124(class66 class66_0, boolean bool_1, byte b_2) {
-      if (class66_0 != null && class66_0.vmethod1965(-1534806847) && !class66_0.field628) {
+      if (class66_0 != null && class66_0.vmethod1965() && !class66_0.field628) {
          class66_0.field634 = false;
          if ((Client.field656 && class89.field1255 > 50 || class89.field1255 > 200) && bool_1 && class66_0.field978 == class66_0.field1004) {
             class66_0.field634 = true;

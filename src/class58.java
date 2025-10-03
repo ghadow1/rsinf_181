@@ -57,7 +57,7 @@ public class class58 {
 
             for (i_9 = 0; i_9 < Client.field695; i_9++) {
                class79 class79_17 = Client.field694[Client.field696[i_9]];
-               if (class79_17 != null && class79_17.vmethod1965(-1461786701)) {
+               if (class79_17 != null && class79_17.vmethod1965()) {
                   class256 class256_19 = class79_17.field1134;
                   if (class256_19 != null && class256_19.field3476 != null) {
                      class256_19 = class256_19.method4709(942859640);
@@ -76,7 +76,7 @@ public class class58 {
 
             for (i_11 = 0; i_11 < i_9; i_11++) {
                class66 class66_18 = Client.field909[ints_20[i_11]];
-               if (class66_18 != null && class66_18.vmethod1965(-2093257625) && !class66_18.field628 && class66_18 != Client.field657) {
+               if (class66_18 != null && class66_18.vmethod1965() && !class66_18.field628 && class66_18 != Client.field657) {
                   i_13 = class66_18.field1005 / 32 - Client.field657.field1005 / 32;
                   int i_14 = class66_18.field949 / 32 - Client.field657.field949 / 32;
                   boolean bool_15 = false;

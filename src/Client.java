@@ -2333,8 +2333,8 @@ public final class Client extends GameApplet implements class280 {
                      obj_10000 = null;
                      class101 class101_9 = class101.method2334(class13.field89, class75_6.field1079, 0);
                      if (class101_9 != null) {
-                        class103 class103_10 = class101_9.method2330().method2376(class84.field1177);
-                        class113 class113_11 = class113.method2529(class103_10, 100, i_8);
+                        RawSound rawSound_10 = class101_9.method2330().method2376(class84.field1177);
+                        class113 class113_11 = class113.method2529(rawSound_10, 100, i_8);
                         class113_11.method2626(-1);
                         class57.field532.method2286(class113_11);
                         class75_6.field1085 = class113_11;
@@ -2350,8 +2350,8 @@ public final class Client extends GameApplet implements class280 {
                      obj_10000 = null;
                      class101 class101_19 = class101.method2334(class13.field89, class75_6.field1088[i_14], 0);
                      if (class101_19 != null) {
-                        class103 class103_20 = class101_19.method2330().method2376(class84.field1177);
-                        class113 class113_12 = class113.method2529(class103_20, 100, i_8);
+                        RawSound rawSound_20 = class101_19.method2330().method2376(class84.field1177);
+                        class113 class113_12 = class113.method2529(rawSound_20, 100, i_8);
                         class113_12.method2626(0);
                         class57.field532.method2286(class113_12);
                         class75_6.field1084 = class113_12;
@@ -2405,7 +2405,7 @@ public final class Client extends GameApplet implements class280 {
             int i_7;
             try {
                if (class197.field2402 == 1) {
-                  i_7 = MouseRecorder.field1099.method3707(911615124);
+                  i_7 = MouseRecorder.field1099.method3707();
                   if (i_7 > 0 && MouseRecorder.field1099.method3713(529284444)) {
                      i_7 -= class197.field2404;
                      if (i_7 < 0) {
@@ -2537,8 +2537,8 @@ public final class Client extends GameApplet implements class280 {
                   class17.field119 = new class108(class197.field2401, class197.field2400);
                }
 
-               if (MouseRecorder.field1099.method3719(class154.field1981, class197.field2406, class17.field119, 22050, -2127323557)) {
-                  MouseRecorder.field1099.method3775(-444816783);
+               if (MouseRecorder.field1099.method3719(class154.field1981, class197.field2406, class17.field119, 22050)) {
+                  MouseRecorder.field1099.method3775();
                   MouseRecorder.field1099.method3706(class56.field529, 932419026);
                   MouseRecorder.field1099.method3802(class154.field1981, class158.field1992, -2040319753);
                   class197.field2402 = 0;
@@ -4076,7 +4076,7 @@ public final class Client extends GameApplet implements class280 {
                field654 = MouseHandler.field483;
                field763 = MouseHandler.field495;
                if (i_3 >= 0) {
-                  class112.method2510(i_3, -1767057302);
+                  class112.method2510(i_3);
                }
 
                FriendSystem.invalidateWidget(class18.field127);

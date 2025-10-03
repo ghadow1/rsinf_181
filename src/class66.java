@@ -162,7 +162,7 @@ public final class class66 extends class69 {
       this.field631 = class281.field3637;
    }
 
-   final boolean vmethod1965(int i_1) {
+   final boolean vmethod1965() {
       return this.field613 != null;
    }
 

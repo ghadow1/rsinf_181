@@ -13,7 +13,7 @@ public class class60 {
             Client.field839 = false;
             int i_4 = class13.getNewestMenuIdx();
             if (i_4 != -1) {
-               class112.method2510(i_4, -1929645984);
+               class112.method2510(i_4);
             }
 
          }

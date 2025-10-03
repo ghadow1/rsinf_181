@@ -19,7 +19,7 @@ public class class221 {
 
    static final void method4116(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
       if (class162.method3445(i_0)) {
-         class2.method26(Widget.field2556[i_0], -1, i_1, i_2, i_3, i_4, i_5, i_6, (short) 29276);
+         class2.method26(Widget.field2556[i_0], -1, i_1, i_2, i_3, i_4, i_5, i_6);
       }
    }
 

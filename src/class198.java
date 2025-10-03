@@ -17,8 +17,8 @@ public class class198 extends class115 {
    int[] field2410 = new int[16];
    int[] field2425 = new int[16];
    int[] field2408 = new int[16];
-   class199[][] field2427 = new class199[16][128];
-   class199[][] field2428 = new class199[16][128];
+   MusicPatchNode[][] field2427 = new MusicPatchNode[16][128];
+   MusicPatchNode[][] field2428 = new MusicPatchNode[16][128];
    class200 field2416 = new class200();
    class202 field2435 = new class202(this);
    class318 field2417 = new class318(128);
@@ -32,47 +32,47 @@ public class class198 extends class115 {
       this.method3726();
    }
 
-   void method3824(int i_1, int i_2, int i_3) {
+   void method3824(int i_1, int i_2) {
       this.field2414[i_1] = i_2;
       this.field2415[i_1] = i_2 & ~0x7f;
       this.method3716(i_1, i_2, (byte) 5);
    }
 
-   void method3729(int i_1, int i_2, int i_3, int i_4) {
-      class199 class199_5 = this.field2427[i_1][i_2];
-      if (class199_5 != null) {
+   void method3729(int i_1, int i_2) {
+      MusicPatchNode musicPatchNode_5 = this.field2427[i_1][i_2];
+      if (musicPatchNode_5 != null) {
          this.field2427[i_1][i_2] = null;
          if ((this.field2421[i_1] & 0x2) != 0) {
-            for (class199 class199_6 = (class199) this.field2435.field2484.method4892(); class199_6 != null; class199_6 = (class199) this.field2435.field2484.method4894()) {
-               if (class199_6.field2440 == class199_5.field2440 && class199_6.field2436 < 0 && class199_5 != class199_6) {
-                  class199_5.field2436 = 0;
+            for (MusicPatchNode musicPatchNode_6 = (MusicPatchNode) this.field2435.field2484.method4892(); musicPatchNode_6 != null; musicPatchNode_6 = (MusicPatchNode) this.field2435.field2484.method4894()) {
+               if (musicPatchNode_6.field2440 == musicPatchNode_5.field2440 && musicPatchNode_6.field2436 < 0 && musicPatchNode_5 != musicPatchNode_6) {
+                  musicPatchNode_5.field2436 = 0;
                   break;
                }
             }
          } else {
-            class199_5.field2436 = 0;
+            musicPatchNode_5.field2436 = 0;
          }
 
       }
    }
 
    void method3723(int i_1) {
-      for (class199 class199_3 = (class199) this.field2435.field2484.method4892(); class199_3 != null; class199_3 = (class199) this.field2435.field2484.method4894()) {
-         if (i_1 < 0 || class199_3.field2440 == i_1) {
-            if (class199_3.field2454 != null) {
-               class199_3.field2454.method2540(class172.field2078 / 100);
-               if (class199_3.field2454.method2585()) {
-                  this.field2435.field2487.method2286(class199_3.field2454);
+      for (MusicPatchNode musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4892(); musicPatchNode_3 != null; musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4894()) {
+         if (i_1 < 0 || musicPatchNode_3.field2440 == i_1) {
+            if (musicPatchNode_3.field2454 != null) {
+               musicPatchNode_3.field2454.method2540(class172.field2078 / 100);
+               if (musicPatchNode_3.field2454.method2585()) {
+                  this.field2435.field2487.method2286(musicPatchNode_3.field2454);
                }
 
-               class199_3.method3826((byte) 21);
+               musicPatchNode_3.method3826();
             }
 
-            if (class199_3.field2436 < 0) {
-               this.field2427[class199_3.field2440][class199_3.field2450] = null;
+            if (musicPatchNode_3.field2436 < 0) {
+               this.field2427[musicPatchNode_3.field2440][musicPatchNode_3.field2450] = null;
             }
 
-            class199_3.unlink();
+            musicPatchNode_3.unlink();
          }
       }
 
@@ -91,8 +91,8 @@ public class class198 extends class115 {
          this.field2429[i_1] = 8192;
          this.field2418[i_1] = 0;
          this.field2419[i_1] = 8192;
-         this.method3715(i_1, -117878160);
-         this.method3784(i_1, -1541338262);
+         this.method3715(i_1);
+         this.method3784(i_1);
          this.field2421[i_1] = 0;
          this.field2424[i_1] = 32767;
          this.field2423[i_1] = 256;
@@ -107,17 +107,17 @@ public class class198 extends class115 {
    }
 
    void method3717(int i_1, int i_2, int i_3, int i_4) {
-      this.method3729(i_1, i_2, 64, -1579005533);
+      this.method3729(i_1, i_2);
       if ((this.field2421[i_1] & 0x2) != 0) {
-         for (class199 class199_5 = (class199) this.field2435.field2484.method4893(); class199_5 != null; class199_5 = (class199) this.field2435.field2484.method4887()) {
-            if (class199_5.field2440 == i_1 && class199_5.field2436 < 0) {
-               this.field2427[i_1][class199_5.field2450] = null;
-               this.field2427[i_1][i_2] = class199_5;
-               int i_6 = (class199_5.field2445 * class199_5.field2446 >> 12) + class199_5.field2441;
-               class199_5.field2441 += i_2 - class199_5.field2450 << 8;
-               class199_5.field2445 = i_6 - class199_5.field2441;
-               class199_5.field2446 = 4096;
-               class199_5.field2450 = i_2;
+         for (MusicPatchNode musicPatchNode_5 = (MusicPatchNode) this.field2435.field2484.method4893(); musicPatchNode_5 != null; musicPatchNode_5 = (MusicPatchNode) this.field2435.field2484.method4887()) {
+            if (musicPatchNode_5.field2440 == i_1 && musicPatchNode_5.field2436 < 0) {
+               this.field2427[i_1][musicPatchNode_5.field2450] = null;
+               this.field2427[i_1][i_2] = musicPatchNode_5;
+               int i_6 = (musicPatchNode_5.field2445 * musicPatchNode_5.field2446 >> 12) + musicPatchNode_5.field2441;
+               musicPatchNode_5.field2441 += i_2 - musicPatchNode_5.field2450 << 8;
+               musicPatchNode_5.field2445 = i_6 - musicPatchNode_5.field2441;
+               musicPatchNode_5.field2446 = 4096;
+               musicPatchNode_5.field2450 = i_2;
                return;
             }
          }
@@ -125,46 +125,46 @@ public class class198 extends class115 {
 
       class201 class201_10 = (class201) this.field2417.method5952((long)this.field2413[i_1]);
       if (class201_10 != null) {
-         class103 class103_9 = class201_10.field2474[i_2];
-         if (class103_9 != null) {
-            class199 class199_7 = new class199();
-            class199_7.field2440 = i_1;
-            class199_7.field2437 = class201_10;
-            class199_7.field2439 = class103_9;
-            class199_7.field2452 = class201_10.field2481[i_2];
-            class199_7.field2438 = class201_10.field2479[i_2];
-            class199_7.field2450 = i_2;
-            class199_7.field2442 = i_3 * i_3 * class201_10.field2476[i_2] * class201_10.field2475 + 1024 >> 11;
-            class199_7.field2443 = class201_10.field2477[i_2] & 0xff;
-            class199_7.field2441 = (i_2 << 8) - (class201_10.field2482[i_2] & 0x7fff);
-            class199_7.field2447 = 0;
-            class199_7.field2448 = 0;
-            class199_7.field2449 = 0;
-            class199_7.field2436 = -1;
-            class199_7.field2451 = 0;
+         RawSound rawSound_9 = class201_10.field2474[i_2];
+         if (rawSound_9 != null) {
+            MusicPatchNode musicPatchNode_7 = new MusicPatchNode();
+            musicPatchNode_7.field2440 = i_1;
+            musicPatchNode_7.field2437 = class201_10;
+            musicPatchNode_7.rawSound = rawSound_9;
+            musicPatchNode_7.field2452 = class201_10.field2481[i_2];
+            musicPatchNode_7.field2438 = class201_10.field2479[i_2];
+            musicPatchNode_7.field2450 = i_2;
+            musicPatchNode_7.field2442 = i_3 * i_3 * class201_10.field2476[i_2] * class201_10.field2475 + 1024 >> 11;
+            musicPatchNode_7.field2443 = class201_10.field2477[i_2] & 0xff;
+            musicPatchNode_7.field2441 = (i_2 << 8) - (class201_10.field2482[i_2] & 0x7fff);
+            musicPatchNode_7.field2447 = 0;
+            musicPatchNode_7.field2448 = 0;
+            musicPatchNode_7.field2449 = 0;
+            musicPatchNode_7.field2436 = -1;
+            musicPatchNode_7.field2451 = 0;
             if (this.field2410[i_1] == 0) {
-               class199_7.field2454 = class113.method2524(class103_9, this.method3730(class199_7, -1641054838), this.method3731(class199_7, (byte) -57), this.method3732(class199_7, -1266735092));
+               musicPatchNode_7.field2454 = class113.method2524(rawSound_9, this.method3730(musicPatchNode_7), this.method3731(musicPatchNode_7), this.method3732(musicPatchNode_7));
             } else {
-               class199_7.field2454 = class113.method2524(class103_9, this.method3730(class199_7, -1881364797), 0, this.method3732(class199_7, -1266735092));
-               this.method3767(class199_7, class201_10.field2482[i_2] < 0, (byte) -7);
+               musicPatchNode_7.field2454 = class113.method2524(rawSound_9, this.method3730(musicPatchNode_7), 0, this.method3732(musicPatchNode_7));
+               this.method3767(musicPatchNode_7, class201_10.field2482[i_2] < 0, (byte) -7);
             }
 
             if (class201_10.field2482[i_2] < 0) {
-               class199_7.field2454.method2626(-1);
+               musicPatchNode_7.field2454.method2626(-1);
             }
 
-            if (class199_7.field2438 >= 0) {
-               class199 class199_8 = this.field2428[i_1][class199_7.field2438];
-               if (class199_8 != null && class199_8.field2436 < 0) {
-                  this.field2427[i_1][class199_8.field2450] = null;
-                  class199_8.field2436 = 0;
+            if (musicPatchNode_7.field2438 >= 0) {
+               MusicPatchNode musicPatchNode_8 = this.field2428[i_1][musicPatchNode_7.field2438];
+               if (musicPatchNode_8 != null && musicPatchNode_8.field2436 < 0) {
+                  this.field2427[i_1][musicPatchNode_8.field2450] = null;
+                  musicPatchNode_8.field2436 = 0;
                }
 
-               this.field2428[i_1][class199_7.field2438] = class199_7;
+               this.field2428[i_1][musicPatchNode_7.field2438] = musicPatchNode_7;
             }
 
-            this.field2435.field2484.method4917(class199_7);
-            this.field2427[i_1][i_2] = class199_7;
+            this.field2435.field2484.method4917(musicPatchNode_7);
+            this.field2427[i_1][i_2] = musicPatchNode_7;
          }
       }
    }
@@ -214,7 +214,7 @@ public class class198 extends class115 {
             this.field2435.vmethod3893(ints_1, i_2, i_7);
             i_2 += i_7;
             i_3 -= i_7;
-            this.method3738(1814583214);
+            this.method3738();
          } while (this.field2416.method3833());
       }
 
@@ -236,38 +236,35 @@ public class class198 extends class115 {
             this.field2433 += (long)i_5 * (long)i_2;
             this.field2435.vmethod3906(i_5);
             i_1 -= i_5;
-            this.method3738(1310291586);
+            this.method3738();
          } while (this.field2416.method3833());
       }
 
       this.field2435.vmethod3906(i_1);
    }
 
-   void method3793(int i_1, int i_2, byte b_3) {
-   }
-
-   void method3722(int i_1, int i_2, int i_3) {
+   void method3722(int i_1, int i_2) {
       this.field2429[i_1] = i_2;
    }
 
-   int method3730(class199 class199_1, int i_2) {
-      int i_3 = (class199_1.field2445 * class199_1.field2446 >> 12) + class199_1.field2441;
-      i_3 += (this.field2429[class199_1.field2440] - 8192) * this.field2423[class199_1.field2440] >> 12;
-      class196 class196_4 = class199_1.field2452;
+   int method3730(MusicPatchNode musicPatchNode_1) {
+      int i_3 = (musicPatchNode_1.field2445 * musicPatchNode_1.field2446 >> 12) + musicPatchNode_1.field2441;
+      i_3 += (this.field2429[musicPatchNode_1.field2440] - 8192) * this.field2423[musicPatchNode_1.field2440] >> 12;
+      class196 class196_4 = musicPatchNode_1.field2452;
       int i_5;
-      if (class196_4.field2394 > 0 && (class196_4.field2393 > 0 || this.field2418[class199_1.field2440] > 0)) {
+      if (class196_4.field2394 > 0 && (class196_4.field2393 > 0 || this.field2418[musicPatchNode_1.field2440] > 0)) {
          i_5 = class196_4.field2393 << 2;
          int i_6 = class196_4.field2395 << 1;
-         if (class199_1.field2458 < i_6) {
-            i_5 = i_5 * class199_1.field2458 / i_6;
+         if (musicPatchNode_1.field2458 < i_6) {
+            i_5 = i_5 * musicPatchNode_1.field2458 / i_6;
          }
 
-         i_5 += this.field2418[class199_1.field2440] >> 7;
-         double d_7 = Math.sin(0.01227184630308513D * (double)(class199_1.field2453 & 0x1ff));
+         i_5 += this.field2418[musicPatchNode_1.field2440] >> 7;
+         double d_7 = Math.sin(0.01227184630308513D * (double)(musicPatchNode_1.field2453 & 0x1ff));
          i_3 += (int)(d_7 * (double)i_5);
       }
 
-      i_5 = (int)((double)(class199_1.field2439.field1389 * 256) * Math.pow(2.0D, (double)i_3 * 3.255208333333333E-4D) / (double)class172.field2078 + 0.5D);
+      i_5 = (int)((double)(musicPatchNode_1.rawSound.sampleRate * 256) * Math.pow(2.0D, (double)i_3 * 3.255208333333333E-4D) / (double)class172.field2078 + 0.5D);
       return i_5 < 1 ? 1 : i_5;
    }
 
@@ -275,7 +272,7 @@ public class class198 extends class115 {
       return null;
    }
 
-   public synchronized boolean method3719(class203 class203_1, class233 class233_2, class108 class108_3, int i_4, int i_5) {
+   public synchronized boolean method3719(class203 class203_1, class233 class233_2, class108 class108_3, int i_4) {
       class203_1.method3925();
       boolean bool_6 = true;
       int[] ints_7 = null;
@@ -304,7 +301,7 @@ public class class198 extends class115 {
             this.field2417.method5951(class201_11, (long)i_9);
          }
 
-         if (!class201_10.method3883(class108_3, class177_8.field2108, ints_7, 1229710126)) {
+         if (!class201_10.method3883(class108_3, class177_8.field2108, ints_7)) {
             bool_6 = false;
          }
       }
@@ -316,12 +313,12 @@ public class class198 extends class115 {
       return bool_6;
    }
 
-   boolean method3739(class199 class199_1, int i_2) {
-      if (class199_1.field2454 == null) {
-         if (class199_1.field2436 >= 0) {
-            class199_1.unlink();
-            if (class199_1.field2438 > 0 && class199_1 == this.field2428[class199_1.field2440][class199_1.field2438]) {
-               this.field2428[class199_1.field2440][class199_1.field2438] = null;
+   boolean method3739(MusicPatchNode musicPatchNode_1) {
+      if (musicPatchNode_1.field2454 == null) {
+         if (musicPatchNode_1.field2436 >= 0) {
+            musicPatchNode_1.unlink();
+            if (musicPatchNode_1.field2438 > 0 && musicPatchNode_1 == this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438]) {
+               this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438] = null;
             }
          }
 
@@ -331,33 +328,33 @@ public class class198 extends class115 {
       }
    }
 
-   void method3715(int i_1, int i_2) {
+   void method3715(int i_1) {
       if ((this.field2421[i_1] & 0x2) != 0) {
-         for (class199 class199_3 = (class199) this.field2435.field2484.method4892(); class199_3 != null; class199_3 = (class199) this.field2435.field2484.method4894()) {
-            if (class199_3.field2440 == i_1 && this.field2427[i_1][class199_3.field2450] == null && class199_3.field2436 < 0) {
-               class199_3.field2436 = 0;
+         for (MusicPatchNode musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4892(); musicPatchNode_3 != null; musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4894()) {
+            if (musicPatchNode_3.field2440 == i_1 && this.field2427[i_1][musicPatchNode_3.field2450] == null && musicPatchNode_3.field2436 < 0) {
+               musicPatchNode_3.field2436 = 0;
             }
          }
       }
 
    }
 
-   public int method3707(int i_1) {
+   public int method3707() {
       return this.field2409;
    }
 
-   public synchronized void method3775(int i_1) {
+   public synchronized void method3775() {
       for (class201 class201_2 = (class201) this.field2417.method5950(); class201_2 != null; class201_2 = (class201) this.field2417.method5953()) {
-         class201_2.method3889(56898655);
+         class201_2.method3889();
       }
 
    }
 
-   void method3784(int i_1, int i_2) {
+   void method3784(int i_1) {
       if ((this.field2421[i_1] & 0x4) != 0) {
-         for (class199 class199_3 = (class199) this.field2435.field2484.method4892(); class199_3 != null; class199_3 = (class199) this.field2435.field2484.method4894()) {
-            if (class199_3.field2440 == i_1) {
-               class199_3.field2444 = 0;
+         for (MusicPatchNode musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4892(); musicPatchNode_3 != null; musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4894()) {
+            if (musicPatchNode_3.field2440 == i_1) {
+               musicPatchNode_3.field2444 = 0;
             }
          }
       }
@@ -373,7 +370,7 @@ public class class198 extends class115 {
          i_4 = i_1 & 0xf;
          i_5 = i_1 >> 8 & 0x7f;
          i_6 = i_1 >> 16 & 0x7f;
-         this.method3729(i_4, i_5, i_6, -1579005533);
+         this.method3729(i_4, i_5);
       } else if (i_3 == 144) {
          i_4 = i_1 & 0xf;
          i_5 = i_1 >> 8 & 0x7f;
@@ -381,7 +378,7 @@ public class class198 extends class115 {
          if (i_6 > 0) {
             this.method3717(i_4, i_5, i_6, 659813426);
          } else {
-            this.method3729(i_4, i_5, 64, -1579005533);
+            this.method3729(i_4, i_5);
          }
 
       } else if (i_3 == 160) {
@@ -453,7 +450,7 @@ public class class198 extends class115 {
             if (i_6 >= 64) {
                this.field2421[i_4] |= 0x2;
             } else {
-               this.method3715(i_4, -557228287);
+               this.method3715(i_4);
                this.field2421[i_4] &= ~0x2;
             }
          }
@@ -483,7 +480,7 @@ public class class198 extends class115 {
          }
 
          if (i_5 == 123) {
-            this.method3714(i_4, 786188119);
+            this.method3714(i_4);
          }
 
          int i_7;
@@ -513,7 +510,7 @@ public class class198 extends class115 {
             if (i_6 >= 64) {
                this.field2421[i_4] |= 0x4;
             } else {
-               this.method3784(i_4, 194455911);
+               this.method3784(i_4);
                this.field2421[i_4] &= ~0x4;
             }
          }
@@ -533,11 +530,10 @@ public class class198 extends class115 {
       } else if (i_3 == 208) {
          i_4 = i_1 & 0xf;
          i_5 = i_1 >> 8 & 0x7f;
-         this.method3793(i_4, i_5, (byte) 8);
       } else if (i_3 == 224) {
          i_4 = i_1 & 0xf;
          i_5 = (i_1 >> 8 & 0x7f) + (i_1 >> 9 & 0x3f80);
-         this.method3722(i_4, i_5, 1785966044);
+         this.method3722(i_4, i_5);
       } else {
          i_3 = i_1 & 0xff;
          if (i_3 == 255) {
@@ -579,95 +575,95 @@ public class class198 extends class115 {
       this.field2434 = this.field2416.method3861(this.field2432);
    }
 
-   boolean method3740(class199 class199_1, int[] ints_2, int i_3, int i_4, int i_5) {
-      class199_1.field2455 = class172.field2078 / 100;
-      if (class199_1.field2436 < 0 || class199_1.field2454 != null && !class199_1.field2454.method2558()) {
-         int i_6 = class199_1.field2446;
+   boolean method3740(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4, int i_5) {
+      musicPatchNode_1.field2455 = class172.field2078 / 100;
+      if (musicPatchNode_1.field2436 < 0 || musicPatchNode_1.field2454 != null && !musicPatchNode_1.field2454.method2558()) {
+         int i_6 = musicPatchNode_1.field2446;
          if (i_6 > 0) {
-            i_6 -= (int)(16.0D * Math.pow(2.0D, 4.921259842519685E-4D * (double)this.field2419[class199_1.field2440]) + 0.5D);
+            i_6 -= (int)(16.0D * Math.pow(2.0D, 4.921259842519685E-4D * (double)this.field2419[musicPatchNode_1.field2440]) + 0.5D);
             if (i_6 < 0) {
                i_6 = 0;
             }
 
-            class199_1.field2446 = i_6;
+            musicPatchNode_1.field2446 = i_6;
          }
 
-         class199_1.field2454.method2538(this.method3730(class199_1, -1889826116));
-         class196 class196_7 = class199_1.field2452;
+         musicPatchNode_1.field2454.method2538(this.method3730(musicPatchNode_1));
+         class196 class196_7 = musicPatchNode_1.field2452;
          boolean bool_8 = false;
-         ++class199_1.field2458;
-         class199_1.field2453 += class196_7.field2394;
-         double d_9 = 5.086263020833333E-6D * (double)((class199_1.field2450 - 60 << 8) + (class199_1.field2445 * class199_1.field2446 >> 12));
+         ++musicPatchNode_1.field2458;
+         musicPatchNode_1.field2453 += class196_7.field2394;
+         double d_9 = 5.086263020833333E-6D * (double)((musicPatchNode_1.field2450 - 60 << 8) + (musicPatchNode_1.field2445 * musicPatchNode_1.field2446 >> 12));
          if (class196_7.field2392 > 0) {
             if (class196_7.field2391 > 0) {
-               class199_1.field2447 += (int)(128.0D * Math.pow(2.0D, d_9 * (double)class196_7.field2391) + 0.5D);
+               musicPatchNode_1.field2447 += (int)(128.0D * Math.pow(2.0D, d_9 * (double)class196_7.field2391) + 0.5D);
             } else {
-               class199_1.field2447 += 128;
+               musicPatchNode_1.field2447 += 128;
             }
          }
 
          if (class196_7.field2387 != null) {
             if (class196_7.field2390 > 0) {
-               class199_1.field2448 += (int)(128.0D * Math.pow(2.0D, (double)class196_7.field2390 * d_9) + 0.5D);
+               musicPatchNode_1.field2448 += (int)(128.0D * Math.pow(2.0D, (double)class196_7.field2390 * d_9) + 0.5D);
             } else {
-               class199_1.field2448 += 128;
+               musicPatchNode_1.field2448 += 128;
             }
 
-            while (class199_1.field2449 < class196_7.field2387.length - 2 && class199_1.field2448 > (class196_7.field2387[class199_1.field2449 + 2] & 0xff) << 8) {
-               class199_1.field2449 += 2;
+            while (musicPatchNode_1.field2449 < class196_7.field2387.length - 2 && musicPatchNode_1.field2448 > (class196_7.field2387[musicPatchNode_1.field2449 + 2] & 0xff) << 8) {
+               musicPatchNode_1.field2449 += 2;
             }
 
-            if (class196_7.field2387.length - 2 == class199_1.field2449 && class196_7.field2387[class199_1.field2449 + 1] == 0) {
+            if (class196_7.field2387.length - 2 == musicPatchNode_1.field2449 && class196_7.field2387[musicPatchNode_1.field2449 + 1] == 0) {
                bool_8 = true;
             }
          }
 
-         if (class199_1.field2436 >= 0 && class196_7.field2388 != null && (this.field2421[class199_1.field2440] & 0x1) == 0 && (class199_1.field2438 < 0 || class199_1 != this.field2428[class199_1.field2440][class199_1.field2438])) {
+         if (musicPatchNode_1.field2436 >= 0 && class196_7.field2388 != null && (this.field2421[musicPatchNode_1.field2440] & 0x1) == 0 && (musicPatchNode_1.field2438 < 0 || musicPatchNode_1 != this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438])) {
             if (class196_7.field2398 > 0) {
-               class199_1.field2436 += (int)(128.0D * Math.pow(2.0D, (double)class196_7.field2398 * d_9) + 0.5D);
+               musicPatchNode_1.field2436 += (int)(128.0D * Math.pow(2.0D, (double)class196_7.field2398 * d_9) + 0.5D);
             } else {
-               class199_1.field2436 += 128;
+               musicPatchNode_1.field2436 += 128;
             }
 
-            while (class199_1.field2451 < class196_7.field2388.length - 2 && class199_1.field2436 > (class196_7.field2388[class199_1.field2451 + 2] & 0xff) << 8) {
-               class199_1.field2451 += 2;
+            while (musicPatchNode_1.field2451 < class196_7.field2388.length - 2 && musicPatchNode_1.field2436 > (class196_7.field2388[musicPatchNode_1.field2451 + 2] & 0xff) << 8) {
+               musicPatchNode_1.field2451 += 2;
             }
 
-            if (class196_7.field2388.length - 2 == class199_1.field2451) {
+            if (class196_7.field2388.length - 2 == musicPatchNode_1.field2451) {
                bool_8 = true;
             }
          }
 
          if (bool_8) {
-            class199_1.field2454.method2540(class199_1.field2455);
+            musicPatchNode_1.field2454.method2540(musicPatchNode_1.field2455);
             if (ints_2 != null) {
-               class199_1.field2454.vmethod3893(ints_2, i_3, i_4);
+               musicPatchNode_1.field2454.vmethod3893(ints_2, i_3, i_4);
             } else {
-               class199_1.field2454.vmethod3906(i_4);
+               musicPatchNode_1.field2454.vmethod3906(i_4);
             }
 
-            if (class199_1.field2454.method2585()) {
-               this.field2435.field2487.method2286(class199_1.field2454);
+            if (musicPatchNode_1.field2454.method2585()) {
+               this.field2435.field2487.method2286(musicPatchNode_1.field2454);
             }
 
-            class199_1.method3826((byte) -23);
-            if (class199_1.field2436 >= 0) {
-               class199_1.unlink();
-               if (class199_1.field2438 > 0 && class199_1 == this.field2428[class199_1.field2440][class199_1.field2438]) {
-                  this.field2428[class199_1.field2440][class199_1.field2438] = null;
+            musicPatchNode_1.method3826();
+            if (musicPatchNode_1.field2436 >= 0) {
+               musicPatchNode_1.unlink();
+               if (musicPatchNode_1.field2438 > 0 && musicPatchNode_1 == this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438]) {
+                  this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438] = null;
                }
             }
 
             return true;
          } else {
-            class199_1.field2454.method2536(class199_1.field2455, this.method3731(class199_1, (byte) -94), this.method3732(class199_1, -1266735092));
+            musicPatchNode_1.field2454.method2536(musicPatchNode_1.field2455, this.method3731(musicPatchNode_1), this.method3732(musicPatchNode_1));
             return false;
          }
       } else {
-         class199_1.method3826((byte) -18);
-         class199_1.unlink();
-         if (class199_1.field2438 > 0 && class199_1 == this.field2428[class199_1.field2440][class199_1.field2438]) {
-            this.field2428[class199_1.field2440][class199_1.field2438] = null;
+         musicPatchNode_1.method3826();
+         musicPatchNode_1.unlink();
+         if (musicPatchNode_1.field2438 > 0 && musicPatchNode_1 == this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438]) {
+            this.field2428[musicPatchNode_1.field2440][musicPatchNode_1.field2438] = null;
          }
 
          return true;
@@ -683,7 +679,7 @@ public class class198 extends class115 {
       this.field2408[i_1] = (int)(2097152.0D * Math.pow(2.0D, (double)i_2 * 5.4931640625E-4D) + 0.5D);
    }
 
-   void method3738(int i_1) {
+   void method3738() {
       int i_2 = this.field2431;
       int i_3 = this.field2432;
 
@@ -724,36 +720,36 @@ public class class198 extends class115 {
       this.field2434 = long_4;
    }
 
-   void method3767(class199 class199_1, boolean bool_2, byte b_3) {
-      int i_4 = class199_1.field2439.field1390.length;
+   void method3767(MusicPatchNode musicPatchNode_1, boolean bool_2, byte b_3) {
+      int i_4 = musicPatchNode_1.rawSound.field1390.length;
       int i_5;
-      if (bool_2 && class199_1.field2439.field1393) {
-         int i_6 = i_4 + i_4 - class199_1.field2439.field1391;
-         i_5 = (int)((long)i_6 * (long)this.field2410[class199_1.field2440] >> 6);
+      if (bool_2 && musicPatchNode_1.rawSound.field1393) {
+         int i_6 = i_4 + i_4 - musicPatchNode_1.rawSound.field1391;
+         i_5 = (int)((long)i_6 * (long)this.field2410[musicPatchNode_1.field2440] >> 6);
          i_4 <<= 8;
          if (i_5 >= i_4) {
             i_5 = i_4 + i_4 - 1 - i_5;
-            class199_1.field2454.method2614(true);
+            musicPatchNode_1.field2454.method2614(true);
          }
       } else {
-         i_5 = (int)((long)i_4 * (long)this.field2410[class199_1.field2440] >> 6);
+         i_5 = (int)((long)i_4 * (long)this.field2410[musicPatchNode_1.field2440] >> 6);
       }
 
-      class199_1.field2454.method2596(i_5);
+      musicPatchNode_1.field2454.method2596(i_5);
    }
 
    protected synchronized int vmethod3892() {
       return 0;
    }
 
-   int method3731(class199 class199_1, byte b_2) {
-      class196 class196_3 = class199_1.field2452;
-      int i_4 = this.field2422[class199_1.field2440] * this.field2411[class199_1.field2440] + 4096 >> 13;
+   int method3731(MusicPatchNode musicPatchNode_1) {
+      class196 class196_3 = musicPatchNode_1.field2452;
+      int i_4 = this.field2422[musicPatchNode_1.field2440] * this.field2411[musicPatchNode_1.field2440] + 4096 >> 13;
       i_4 = i_4 * i_4 + 16384 >> 15;
-      i_4 = i_4 * class199_1.field2442 + 16384 >> 15;
+      i_4 = i_4 * musicPatchNode_1.field2442 + 16384 >> 15;
       i_4 = i_4 * this.field2409 + 128 >> 8;
       if (class196_3.field2392 > 0) {
-         i_4 = (int)((double)i_4 * Math.pow(0.5D, 1.953125E-5D * (double)class199_1.field2447 * (double)class196_3.field2392) + 0.5D);
+         i_4 = (int)((double)i_4 * Math.pow(0.5D, 1.953125E-5D * (double) musicPatchNode_1.field2447 * (double)class196_3.field2392) + 0.5D);
       }
 
       int i_5;
@@ -761,24 +757,24 @@ public class class198 extends class115 {
       int i_7;
       int i_8;
       if (class196_3.field2387 != null) {
-         i_5 = class199_1.field2448;
-         i_6 = class196_3.field2387[class199_1.field2449 + 1];
-         if (class199_1.field2449 < class196_3.field2387.length - 2) {
-            i_7 = (class196_3.field2387[class199_1.field2449] & 0xff) << 8;
-            i_8 = (class196_3.field2387[class199_1.field2449 + 2] & 0xff) << 8;
-            i_6 += (i_5 - i_7) * (class196_3.field2387[class199_1.field2449 + 3] - i_6) / (i_8 - i_7);
+         i_5 = musicPatchNode_1.field2448;
+         i_6 = class196_3.field2387[musicPatchNode_1.field2449 + 1];
+         if (musicPatchNode_1.field2449 < class196_3.field2387.length - 2) {
+            i_7 = (class196_3.field2387[musicPatchNode_1.field2449] & 0xff) << 8;
+            i_8 = (class196_3.field2387[musicPatchNode_1.field2449 + 2] & 0xff) << 8;
+            i_6 += (i_5 - i_7) * (class196_3.field2387[musicPatchNode_1.field2449 + 3] - i_6) / (i_8 - i_7);
          }
 
          i_4 = i_6 * i_4 + 32 >> 6;
       }
 
-      if (class199_1.field2436 > 0 && class196_3.field2388 != null) {
-         i_5 = class199_1.field2436;
-         i_6 = class196_3.field2388[class199_1.field2451 + 1];
-         if (class199_1.field2451 < class196_3.field2388.length - 2) {
-            i_7 = (class196_3.field2388[class199_1.field2451] & 0xff) << 8;
-            i_8 = (class196_3.field2388[class199_1.field2451 + 2] & 0xff) << 8;
-            i_6 += (i_5 - i_7) * (class196_3.field2388[class199_1.field2451 + 3] - i_6) / (i_8 - i_7);
+      if (musicPatchNode_1.field2436 > 0 && class196_3.field2388 != null) {
+         i_5 = musicPatchNode_1.field2436;
+         i_6 = class196_3.field2388[musicPatchNode_1.field2451 + 1];
+         if (musicPatchNode_1.field2451 < class196_3.field2388.length - 2) {
+            i_7 = (class196_3.field2388[musicPatchNode_1.field2451] & 0xff) << 8;
+            i_8 = (class196_3.field2388[musicPatchNode_1.field2451 + 2] & 0xff) << 8;
+            i_6 += (i_5 - i_7) * (class196_3.field2388[musicPatchNode_1.field2451 + 3] - i_6) / (i_8 - i_7);
          }
 
          i_4 = i_6 * i_4 + 32 >> 6;
@@ -787,23 +783,23 @@ public class class198 extends class115 {
       return i_4;
    }
 
-   int method3732(class199 class199_1, int i_2) {
-      int i_3 = this.field2412[class199_1.field2440];
-      return i_3 < 8192 ? i_3 * class199_1.field2443 + 32 >> 6 : 16384 - ((128 - class199_1.field2443) * (16384 - i_3) + 32 >> 6);
+   int method3732(MusicPatchNode musicPatchNode_1) {
+      int i_3 = this.field2412[musicPatchNode_1.field2440];
+      return i_3 < 8192 ? i_3 * musicPatchNode_1.field2443 + 32 >> 6 : 16384 - ((128 - musicPatchNode_1.field2443) * (16384 - i_3) + 32 >> 6);
    }
 
-   void method3714(int i_1, int i_2) {
-      for (class199 class199_3 = (class199) this.field2435.field2484.method4892(); class199_3 != null; class199_3 = (class199) this.field2435.field2484.method4894()) {
-         if ((i_1 < 0 || class199_3.field2440 == i_1) && class199_3.field2436 < 0) {
-            this.field2427[class199_3.field2440][class199_3.field2450] = null;
-            class199_3.field2436 = 0;
+   void method3714(int i_1) {
+      for (MusicPatchNode musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4892(); musicPatchNode_3 != null; musicPatchNode_3 = (MusicPatchNode) this.field2435.field2484.method4894()) {
+         if ((i_1 < 0 || musicPatchNode_3.field2440 == i_1) && musicPatchNode_3.field2436 < 0) {
+            this.field2427[musicPatchNode_3.field2440][musicPatchNode_3.field2450] = null;
+            musicPatchNode_3.field2436 = 0;
          }
       }
 
    }
 
-   public synchronized void method3720(int i_1, int i_2, int i_3) {
-      this.method3824(i_1, i_2, 2040435181);
+   public synchronized void method3720(int i_1, int i_2) {
+      this.method3824(i_1, i_2);
    }
 
    public static boolean method3811(int i_0) {

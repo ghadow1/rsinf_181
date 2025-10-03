@@ -107,7 +107,7 @@ public class class74 {
                String str_4 = "Your ignore list is full. Max of 100 for free users, and 400 for members";
                class62.method1132(30, "", str_4);
             } else if (Client.field657.field621.equals(username_3)) {
-               class41.method737(-1659690111);
+               class41.method737();
             } else if (this.isIgnored(username_3)) {
                Client.method1650(string_1);
             } else if (this.method1764(username_3, false)) {
@@ -119,7 +119,7 @@ public class class74 {
       }
    }
 
-   final void method1771(String string_1, byte b_2) {
+   final void method1771(String string_1) {
       if (string_1 != null) {
          Username username_3 = new Username(string_1, this.field1075);
          if (username_3.method5205()) {
@@ -159,7 +159,7 @@ public class class74 {
 
    }
 
-   public static int method1819(int i_0, int i_1, int i_2) {
+   public static int method1819(int i_0, int i_1) {
       int i_3;
       if (i_1 > i_0) {
          i_3 = i_0;

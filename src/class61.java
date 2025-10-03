@@ -17,7 +17,7 @@ public class class61 extends LinkedListNode {
             i_7 += buffer3_0.readUnsignedByte() << 8;
          }
 
-         class41.method736(buffer3_0, i_5, class66_6, i_7, 158563963);
+         class41.method736(buffer3_0, i_5, class66_6, i_7);
       }
 
       if (buffer3_0.position - i_3 != i_1) {

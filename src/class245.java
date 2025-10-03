@@ -200,8 +200,8 @@ public class class245 extends DualNode {
                }
 
                if (i_3 > 0) {
-                  class103 class103_11 = class101_10.method2330().method2376(class84.field1177);
-                  class113 class113_12 = class113.method2529(class103_11, 100, i_3);
+                  RawSound rawSound_11 = class101_10.method2330().method2376(class84.field1177);
+                  class113 class113_12 = class113.method2529(rawSound_11, 100, i_3);
                   class113_12.method2626(Client.field895[i_1] - 1);
                   class57.field532.method2286(class113_12);
                }

@@ -11,13 +11,13 @@ public class class41 {
       this.field354 = class213_3;
    }
 
-   static final void method737(int i_0) {
+   static final void method737() {
       Object obj_10000 = null;
       String str_1 = "You can\'t add yourself to your own ignore list";
       class62.method1132(30, "", str_1);
    }
 
-   static final void method736(PacketBuffer buffer3_0, int i_1, class66 class66_2, int i_3, int i_4) {
+   static final void method736(PacketBuffer buffer3_0, int i_1, class66 class66_2, int i_3) {
       byte b_5 = -1;
       int i_6;
       int i_7;
@@ -47,7 +47,7 @@ public class class41 {
                }
 
                i_12 = buffer3_0.readSmartInt();
-               class66_2.method1657(i_8, i_10, i_9, i_11, Client.field881, i_12, -13467582);
+               class66_2.method1657(i_8, i_10, i_9, i_11, Client.field881, i_12);
             }
          }
 
@@ -62,7 +62,7 @@ public class class41 {
                   i_13 = i_10 > 0 ? buffer3_0.readUnsignedByte() : i_12;
                   class66_2.method1655(i_9, Client.field881, i_10, i_11, i_12, i_13, (byte) 52);
                } else {
-                  class66_2.method1659(i_9, 1541896355);
+                  class66_2.method1659(i_9);
                }
             }
          }

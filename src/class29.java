@@ -842,7 +842,7 @@ public class class29 {
    static final void method497(boolean bool_0, int i_1) {
       for (int i_2 = 0; i_2 < Client.field695; i_2++) {
          class79 class79_3 = Client.field694[Client.field696[i_2]];
-         if (class79_3 != null && class79_3.vmethod1965(135759381) && class79_3.field1134.field3473 == bool_0 && class79_3.field1134.method4710()) {
+         if (class79_3 != null && class79_3.vmethod1965() && class79_3.field1134.field3473 == bool_0 && class79_3.field1134.method4710()) {
             int i_4 = class79_3.field1005 >> 7;
             int i_5 = class79_3.field949 >> 7;
             if (i_4 >= 0 && i_4 < 104 && i_5 >= 0 && i_5 < 104) {

@@ -7,7 +7,7 @@ public class class112 {
 
    public class112(int i_1, int i_2) {
       if (i_2 != i_1) {
-         int i_3 = class74.method1819(i_1, i_2, 1745629182);
+         int i_3 = class74.method1819(i_1, i_2);
          i_1 /= i_3;
          i_2 /= i_3;
          this.field1465 = i_1;
@@ -42,7 +42,7 @@ public class class112 {
       }
    }
 
-   byte[] method2504(byte[] bytes_1, byte b_2) {
+   byte[] method2504(byte[] bytes_1) {
       if (this.field1464 != null) {
          int i_3 = (int)((long)this.field1463 * (long)bytes_1.length / (long)this.field1465) + 14;
          int[] ints_4 = new int[i_3];
@@ -82,7 +82,7 @@ public class class112 {
       return bytes_1;
    }
 
-   int method2505(int i_1, int i_2) {
+   int method2505(int i_1) {
       if (this.field1464 != null) {
          i_1 = (int)((long)i_1 * (long)this.field1463 / (long)this.field1465);
       }
@@ -90,7 +90,7 @@ public class class112 {
       return i_1;
    }
 
-   int method2516(int i_1, int i_2) {
+   int method2516(int i_1) {
       if (this.field1464 != null) {
          i_1 = (int)((long)i_1 * (long)this.field1463 / (long)this.field1465) + 6;
       }
@@ -98,7 +98,7 @@ public class class112 {
       return i_1;
    }
 
-   static void method2510(int i_0, int i_1) {
+   static void method2510(int i_0) {
       Client.field916 = new class82();
       Client.field916.field1157 = Client.field792[i_0];
       Client.field916.field1156 = Client.field793[i_0];
@@ -107,8 +107,8 @@ public class class112 {
       Client.field916.field1159 = Client.field796[i_0];
    }
 
-   static final void method2506(class69 class69_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
-      if (class69_0 != null && class69_0.vmethod1965(531981561)) {
+   static final void method2506(class69 class69_0, int i_1, int i_2, int i_3, int i_4, int i_5) {
+      if (class69_0 != null && class69_0.vmethod1965()) {
          if (class69_0 instanceof class79) {
             class256 class256_7 = ((class79) class69_0).field1134;
             if (class256_7.field3476 != null) {

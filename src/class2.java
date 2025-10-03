@@ -3,7 +3,7 @@ final class class2 implements class0 {
    static long field4;
    static class235 field6;
 
-   void method19(Long long_1, ByteBuffer class300_2, int i_3) {
+   void method19(Long long_1, ByteBuffer class300_2) {
       class300_2.writeLongBigEndian(long_1.longValue());
    }
 
@@ -12,7 +12,7 @@ final class class2 implements class0 {
    }
 
    public void vmethod43(Object object_1, ByteBuffer class300_2, int i_3) {
-      this.method19((Long) object_1, class300_2, -338982282);
+      this.method19((Long) object_1, class300_2);
    }
 
    public static int method18(byte[] bytes_0, int i_1, int i_2) {
@@ -34,7 +34,7 @@ final class class2 implements class0 {
 
    }
 
-   static final void method26(Widget[] arr_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, short s_8) {
+   static final void method26(Widget[] arr_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
       for (int i_9 = 0; i_9 < arr_0.length; i_9++) {
          Widget widget_10 = arr_0[i_9];
          if (widget_10 != null && widget_10.field2583 == i_1 && (!widget_10.field2563 || widget_10.field2566 == 0 || widget_10.field2551 || class268.method4987(widget_10) != 0 || widget_10 == Client.field829 || widget_10.field2568 == 1338)) {
@@ -544,9 +544,9 @@ final class class2 implements class0 {
                   }
 
                   if (widget_10.field2566 == 0) {
-                     method26(arr_0, widget_10.field2688, i_13, i_14, i_15, i_16, i_11 - widget_10.field2585, i_12 - widget_10.field2586, (short) 6626);
+                     method26(arr_0, widget_10.field2688, i_13, i_14, i_15, i_16, i_11 - widget_10.field2585, i_12 - widget_10.field2586);
                      if (widget_10.field2675 != null) {
-                        method26(widget_10.field2675, widget_10.field2688, i_13, i_14, i_15, i_16, i_11 - widget_10.field2585, i_12 - widget_10.field2586, (short) 18147);
+                        method26(widget_10.field2675, widget_10.field2688, i_13, i_14, i_15, i_16, i_11 - widget_10.field2585, i_12 - widget_10.field2586);
                      }
 
                      class61 class61_28 = (class61) Client.field816.method5952((long) widget_10.field2688);

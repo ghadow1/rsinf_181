@@ -33,7 +33,7 @@ public final class class79 extends class69 {
       }
    }
 
-   final boolean vmethod1965(int i_1) {
+   final boolean vmethod1965() {
       return this.field1134 != null;
    }
 

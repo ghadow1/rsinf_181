@@ -55,9 +55,9 @@ public class class101 {
       }
    }
 
-   public class103 method2330() {
+   public RawSound method2330() {
       byte[] bytes_1 = this.method2332();
-      return new class103(22050, bytes_1, this.field1353 * 22050 / 1000, this.field1354 * 22050 / 1000);
+      return new RawSound(22050, bytes_1, this.field1353 * 22050 / 1000, this.field1354 * 22050 / 1000);
    }
 
    public final int method2331() {

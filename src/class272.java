@@ -103,7 +103,7 @@ public class class272 {
       } else if (Client.field680 == 45) {
          class126.method2853(22050, !Client.field656, 2);
          class198 class198_34 = new class198();
-         class198_34.method3720(9, 128, -1686884768);
+         class198_34.method3720(9, 128);
          WorldMapElement.field1144 = class234.method4256(GameApplet.field463, 0, 22050, 2015059645);
          WorldMapElement.field1144.method2424(class198_34, 750974673);
          class58.method1094(class67.field650, class126.field1647, class13.field89, class198_34, (byte) 14);

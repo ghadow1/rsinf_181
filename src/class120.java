@@ -9,7 +9,7 @@ public final class class120 {
    class135 field1545;
    int field1546;
 
-   public static void method2766(byte b_0) {
+   public static void method2766() {
       class253.field3390.method3323();
       class253.field3387.method3323();
       class253.field3354.method3323();
@@ -23,7 +23,7 @@ public final class class120 {
       }
    }
 
-   public static int method2767(int i_0, int i_1, int i_2) {
+   public static int method2767(int i_0, int i_1) {
       int i_3 = i_0 >>> 31;
       return (i_0 + i_3) / i_1 - i_3;
    }

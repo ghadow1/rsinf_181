@@ -13,7 +13,7 @@ public abstract class class174 {
       class197.method3688();
       class244.field3254.method3323();
       class245.field3273.method3323();
-      class120.method2766((byte) 76);
+      class120.method2766();
       class34.method599(1908697951);
       ItemDefinition.field3407.method3323();
       ItemDefinition.field3408.method3323();

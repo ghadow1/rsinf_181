@@ -360,7 +360,7 @@ public class class30 {
                return 1;
             } else if (i_0 == 3608) {
                string_6 = MouseRecorder.field1093[--class221.field2747];
-               class58.field546.method1771(string_6, (byte) 8);
+               class58.field546.method1771(string_6);
                return 1;
             } else if (i_0 == 3609) {
                string_6 = MouseRecorder.field1093[--class221.field2747];

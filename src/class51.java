@@ -5,7 +5,7 @@ public class class51 {
    static Applet field437 = null;
    static String field434 = "";
 
-   public static class246 method854(int i_0, int i_1) {
+   public static class246 method854(int i_0) {
       class246 class246_2 = (class246) class246.field3278.get((long)i_0);
       if (class246_2 != null) {
          return class246_2;

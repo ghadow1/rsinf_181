@@ -16,11 +16,11 @@ public class class113 extends class115 {
    int field1482;
    int field1474;
 
-   class113(class103 class103_1, int i_2, int i_3, int i_4) {
-      super.field1497 = class103_1;
-      this.field1476 = class103_1.field1391;
-      this.field1473 = class103_1.field1392;
-      this.field1478 = class103_1.field1393;
+   class113(RawSound rawSound_1, int i_2, int i_3, int i_4) {
+      super.field1497 = rawSound_1;
+      this.field1476 = rawSound_1.field1391;
+      this.field1473 = rawSound_1.field1392;
+      this.field1478 = rawSound_1.field1393;
       this.field1469 = i_2;
       this.field1470 = i_3;
       this.field1475 = i_4;
@@ -28,11 +28,11 @@ public class class113 extends class115 {
       this.method2525();
    }
 
-   class113(class103 class103_1, int i_2, int i_3) {
-      super.field1497 = class103_1;
-      this.field1476 = class103_1.field1391;
-      this.field1473 = class103_1.field1392;
-      this.field1478 = class103_1.field1393;
+   class113(RawSound rawSound_1, int i_2, int i_3) {
+      super.field1497 = rawSound_1;
+      this.field1476 = rawSound_1.field1391;
+      this.field1473 = rawSound_1.field1392;
+      this.field1478 = rawSound_1.field1393;
       this.field1469 = i_2;
       this.field1470 = i_3;
       this.field1475 = 8192;
@@ -103,10 +103,10 @@ public class class113 extends class115 {
       if (this.field1470 == 0 && this.field1479 == 0) {
          this.vmethod3906(i_3);
       } else {
-         class103 class103_4 = (class103) super.field1497;
+         RawSound rawSound_4 = (RawSound) super.field1497;
          int i_5 = this.field1476 << 8;
          int i_6 = this.field1473 << 8;
-         int i_7 = class103_4.field1390.length << 8;
+         int i_7 = rawSound_4.field1390.length << 8;
          int i_8 = i_6 - i_5;
          if (i_8 <= 0) {
             this.field1477 = 0;
@@ -137,7 +137,7 @@ public class class113 extends class115 {
          if (this.field1477 < 0) {
             if (this.field1478) {
                if (this.field1469 < 0) {
-                  i_9 = this.method2641(ints_1, i_2, i_5, i_3, class103_4.field1390[this.field1476]);
+                  i_9 = this.method2641(ints_1, i_2, i_5, i_3, rawSound_4.field1390[this.field1476]);
                   if (this.field1471 >= i_5) {
                      return;
                   }
@@ -147,14 +147,14 @@ public class class113 extends class115 {
                }
 
                while (true) {
-                  i_9 = this.method2543(ints_1, i_9, i_6, i_3, class103_4.field1390[this.field1473 - 1]);
+                  i_9 = this.method2543(ints_1, i_9, i_6, i_3, rawSound_4.field1390[this.field1473 - 1]);
                   if (this.field1471 < i_6) {
                      return;
                   }
 
                   this.field1471 = i_6 + i_6 - 1 - this.field1471;
                   this.field1469 = -this.field1469;
-                  i_9 = this.method2641(ints_1, i_9, i_5, i_3, class103_4.field1390[this.field1476]);
+                  i_9 = this.method2641(ints_1, i_9, i_5, i_3, rawSound_4.field1390[this.field1476]);
                   if (this.field1471 >= i_5) {
                      return;
                   }
@@ -164,7 +164,7 @@ public class class113 extends class115 {
                }
             } else if (this.field1469 < 0) {
                while (true) {
-                  i_9 = this.method2641(ints_1, i_9, i_5, i_3, class103_4.field1390[this.field1473 - 1]);
+                  i_9 = this.method2641(ints_1, i_9, i_5, i_3, rawSound_4.field1390[this.field1473 - 1]);
                   if (this.field1471 >= i_5) {
                      return;
                   }
@@ -173,7 +173,7 @@ public class class113 extends class115 {
                }
             } else {
                while (true) {
-                  i_9 = this.method2543(ints_1, i_9, i_6, i_3, class103_4.field1390[this.field1476]);
+                  i_9 = this.method2543(ints_1, i_9, i_6, i_3, rawSound_4.field1390[this.field1476]);
                   if (this.field1471 < i_6) {
                      return;
                   }
@@ -186,7 +186,7 @@ public class class113 extends class115 {
                if (this.field1478) {
                   label119: {
                      if (this.field1469 < 0) {
-                        i_9 = this.method2641(ints_1, i_2, i_5, i_3, class103_4.field1390[this.field1476]);
+                        i_9 = this.method2641(ints_1, i_2, i_5, i_3, rawSound_4.field1390[this.field1476]);
                         if (this.field1471 >= i_5) {
                            return;
                         }
@@ -199,7 +199,7 @@ public class class113 extends class115 {
                      }
 
                      do {
-                        i_9 = this.method2543(ints_1, i_9, i_6, i_3, class103_4.field1390[this.field1473 - 1]);
+                        i_9 = this.method2543(ints_1, i_9, i_6, i_3, rawSound_4.field1390[this.field1473 - 1]);
                         if (this.field1471 < i_6) {
                            return;
                         }
@@ -210,7 +210,7 @@ public class class113 extends class115 {
                            break;
                         }
 
-                        i_9 = this.method2641(ints_1, i_9, i_5, i_3, class103_4.field1390[this.field1476]);
+                        i_9 = this.method2641(ints_1, i_9, i_5, i_3, rawSound_4.field1390[this.field1476]);
                         if (this.field1471 >= i_5) {
                            return;
                         }
@@ -223,7 +223,7 @@ public class class113 extends class115 {
                   int i_10;
                   if (this.field1469 < 0) {
                      while (true) {
-                        i_9 = this.method2641(ints_1, i_9, i_5, i_3, class103_4.field1390[this.field1473 - 1]);
+                        i_9 = this.method2641(ints_1, i_9, i_5, i_3, rawSound_4.field1390[this.field1473 - 1]);
                         if (this.field1471 >= i_5) {
                            return;
                         }
@@ -240,7 +240,7 @@ public class class113 extends class115 {
                      }
                   } else {
                      while (true) {
-                        i_9 = this.method2543(ints_1, i_9, i_6, i_3, class103_4.field1390[this.field1476]);
+                        i_9 = this.method2543(ints_1, i_9, i_6, i_3, rawSound_4.field1390[this.field1476]);
                         if (this.field1471 < i_6) {
                            return;
                         }
@@ -301,10 +301,10 @@ public class class113 extends class115 {
          }
       }
 
-      class103 class103_2 = (class103) super.field1497;
+      RawSound rawSound_2 = (RawSound) super.field1497;
       int i_3 = this.field1476 << 8;
       int i_4 = this.field1473 << 8;
-      int i_5 = class103_2.field1390.length << 8;
+      int i_5 = rawSound_2.field1390.length << 8;
       int i_6 = i_4 - i_3;
       if (i_6 <= 0) {
          this.field1477 = 0;
@@ -460,7 +460,7 @@ public class class113 extends class115 {
    }
 
    public synchronized void method2596(int i_1) {
-      int i_2 = ((class103) super.field1497).field1390.length << 8;
+      int i_2 = ((RawSound) super.field1497).field1390.length << 8;
       if (i_1 < -1) {
          i_1 = -1;
       }
@@ -477,7 +477,7 @@ public class class113 extends class115 {
    }
 
    public boolean method2558() {
-      return this.field1471 < 0 || this.field1471 >= ((class103) super.field1497).field1390.length << 8;
+      return this.field1471 < 0 || this.field1471 >= ((RawSound) super.field1497).field1390.length << 8;
    }
 
    public synchronized void method2538(int i_1) {
@@ -561,9 +561,9 @@ public class class113 extends class115 {
       int i_1 = this.field1472 * 3 >> 6;
       i_1 = (i_1 ^ i_1 >> 31) + (i_1 >>> 31);
       if (this.field1477 == 0) {
-         i_1 -= i_1 * this.field1471 / (((class103) super.field1497).field1390.length << 8);
+         i_1 -= i_1 * this.field1471 / (((RawSound) super.field1497).field1390.length << 8);
       } else if (this.field1477 >= 0) {
-         i_1 -= i_1 * this.field1476 / ((class103) super.field1497).field1390.length;
+         i_1 -= i_1 * this.field1476 / ((RawSound) super.field1497).field1390.length;
       }
 
       return i_1 > 255 ? 255 : i_1;
@@ -580,14 +580,14 @@ public class class113 extends class115 {
             this.field1479 += i_2;
             if (this.field1469 == -256 && (this.field1471 & 0xff) == 0) {
                if (class169.field2053) {
-                  i_2 = method2561(0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this);
+                  i_2 = method2561(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this);
                } else {
-                  i_2 = method2560(((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this);
+                  i_2 = method2560(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this);
                }
             } else if (class169.field2053) {
-               i_2 = method2605(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2605(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
             } else {
-               i_2 = method2569(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2569(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
             }
 
             this.field1479 -= i_2;
@@ -604,17 +604,17 @@ public class class113 extends class115 {
 
          if (this.field1469 == -256 && (this.field1471 & 0xff) == 0) {
             if (class169.field2053) {
-               return method2553(0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this);
+               return method2553(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this);
             }
 
-            return method2594(((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this);
+            return method2594(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this);
          }
 
          if (class169.field2053) {
-            return method2557(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this, this.field1469, i_5);
+            return method2557(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this, this.field1469, i_5);
          }
 
-         return method2556(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this, this.field1469, i_5);
+         return method2556(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this, this.field1469, i_5);
       }
    }
 
@@ -701,14 +701,14 @@ public class class113 extends class115 {
             this.field1479 += i_2;
             if (this.field1469 == 256 && (this.field1471 & 0xff) == 0) {
                if (class169.field2053) {
-                  i_2 = method2559(0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this);
+                  i_2 = method2559(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this);
                } else {
-                  i_2 = method2586(((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this);
+                  i_2 = method2586(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this);
                }
             } else if (class169.field2053) {
-               i_2 = method2627(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2627(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
             } else {
-               i_2 = method2633(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2633(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
             }
 
             this.field1479 -= i_2;
@@ -725,17 +725,17 @@ public class class113 extends class115 {
 
          if (this.field1469 == 256 && (this.field1471 & 0xff) == 0) {
             if (class169.field2053) {
-               return method2551(0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this);
+               return method2551(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this);
             }
 
-            return method2550(((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this);
+            return method2550(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this);
          }
 
          if (class169.field2053) {
-            return method2555(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this, this.field1469, i_5);
+            return method2555(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this, this.field1469, i_5);
          }
 
-         return method2554(0, 0, ((class103) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this, this.field1469, i_5);
+         return method2554(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this, this.field1469, i_5);
       }
    }
 
@@ -1409,12 +1409,12 @@ public class class113 extends class115 {
       return i_4 >> 1;
    }
 
-   public static class113 method2524(class103 class103_0, int i_1, int i_2, int i_3) {
-      return class103_0.field1390 != null && class103_0.field1390.length != 0 ? new class113(class103_0, i_1, i_2, i_3) : null;
+   public static class113 method2524(RawSound rawSound_0, int i_1, int i_2, int i_3) {
+      return rawSound_0.field1390 != null && rawSound_0.field1390.length != 0 ? new class113(rawSound_0, i_1, i_2, i_3) : null;
    }
 
-   public static class113 method2529(class103 class103_0, int i_1, int i_2) {
-      return class103_0.field1390 != null && class103_0.field1390.length != 0 ? new class113(class103_0, (int)((long)class103_0.field1389 * 256L * (long)i_1 / (long)(class172.field2078 * 100)), i_2 << 6) : null;
+   public static class113 method2529(RawSound rawSound_0, int i_1, int i_2) {
+      return rawSound_0.field1390 != null && rawSound_0.field1390.length != 0 ? new class113(rawSound_0, (int)((long) rawSound_0.sampleRate * 256L * (long)i_1 / (long)(class172.field2078 * 100)), i_2 << 6) : null;
    }
 
 }

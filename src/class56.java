@@ -195,7 +195,7 @@ public class class56 {
                   }
 
                   i_13 = buffer3_1.readSmartInt();
-                  class79_5.method1657(i_9, i_11, i_10, i_12, Client.field881, i_13, 295125263);
+                  class79_5.method1657(i_9, i_11, i_10, i_12, Client.field881, i_13);
                }
             }
 
@@ -210,7 +210,7 @@ public class class56 {
                      int i_14 = i_11 > 0 ? buffer3_1.readInvertedUnsignedByte() : i_13;
                      class79_5.method1655(i_10, Client.field881, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
-                     class79_5.method1659(i_10, 1541896355);
+                     class79_5.method1659(i_10);
                   }
                }
             }

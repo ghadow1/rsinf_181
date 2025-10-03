@@ -1,4 +1,4 @@
-public class class199 extends LinkedListNode {
+public class MusicPatchNode extends LinkedListNode {
 
    int field2441;
    int field2445;
@@ -18,13 +18,13 @@ public class class199 extends LinkedListNode {
    int field2453;
    int field2451;
    class201 field2437;
-   class103 field2439;
+   RawSound rawSound;
    class196 field2452;
    class113 field2454;
 
-   void method3826(byte b_1) {
+   void method3826() {
       this.field2437 = null;
-      this.field2439 = null;
+      this.rawSound = null;
       this.field2452 = null;
       this.field2454 = null;
    }

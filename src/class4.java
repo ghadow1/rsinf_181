@@ -292,15 +292,15 @@ final class class4 implements class0 {
             obj_20 = Client.field694[Client.field696[i_19 - i_17]];
          }
 
-         class112.method2506((class69) obj_20, i_19, i_0, i_1, i_2, i_3, -1062431544);
+         class112.method2506((class69) obj_20, i_19, i_0, i_1, i_2, i_3);
       }
 
       if (Client.field773 && i_16 != -1) {
-         class112.method2506(Client.field657, i_16, i_0, i_1, i_2, i_3, -1193836953);
+         class112.method2506(Client.field657, i_16, i_0, i_1, i_2, i_3);
       }
 
       if (bool_32) {
-         class112.method2506(Client.field909[Client.field781], i_15, i_0, i_1, i_2, i_3, 1030652004);
+         class112.method2506(Client.field909[Client.field781], i_15, i_0, i_1, i_2, i_3);
       }
 
       for (i_19 = 0; i_19 < Client.field740; i_19++) {
