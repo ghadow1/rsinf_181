@@ -9,7 +9,7 @@ public class class91 {
    static final class265 field1278 = new class265();
    static int field1282 = 0;
 
-   static final void method2170(int i_0, int i_1, int i_2, int i_3, String string_5, int i_6, int i_7) {
+   static final void writeSomePacket(int i_0, int i_1, int i_2, int i_3, String string_5, int i_6, int i_7) {
       if (i_2 >= 2000) {
          i_2 -= 2000;
       }

@@ -8,7 +8,7 @@ import java.util.Iterator;
 
 public final class Client extends GameApplet implements class280 {
 
-   static boolean packetDebugging = true;
+   static boolean packetDebugging = false;
 
    static class235 field683;
    static class235 field684;
@@ -3191,7 +3191,7 @@ public final class Client extends GameApplet implements class280 {
                                                       i_5 = field654;
                                                       i_6 = field763;
                                                       class82 class82_42 = field916;
-                                                      class91.method2170(class82_42.field1157, class82_42.field1156, class82_42.field1155, class82_42.field1158, class82_42.field1159, i_5, i_6);
+                                                      class91.writeSomePacket(class82_42.field1157, class82_42.field1156, class82_42.field1155, class82_42.field1158, class82_42.field1159, i_5, i_6);
                                                       field916 = null;
                                                    }
 
@@ -4008,7 +4008,7 @@ public final class Client extends GameApplet implements class280 {
                      int i_20 = field795[i_23];
                      String string_13 = field796[i_23];
                      String string_14 = field668[i_23];
-                     class91.method2170(i_9, i_10, i_11, i_20, string_14, MouseHandler.field483, MouseHandler.field495);
+                     class91.writeSomePacket(i_9, i_10, i_11, i_20, string_14, MouseHandler.field483, MouseHandler.field495);
                   }
 
                   field674 = false;
@@ -4047,7 +4047,7 @@ public final class Client extends GameApplet implements class280 {
                      i_22 = field795[i_3];
                      String string_18 = field796[i_3];
                      String string_19 = field668[i_3];
-                     class91.method2170(i_15, i_16, i_6, i_22, string_19, MouseHandler.field483, MouseHandler.field495);
+                     class91.writeSomePacket(i_15, i_16, i_6, i_22, string_19, MouseHandler.field483, MouseHandler.field495);
                   }
 
                   if (i_21 == 2 && menuOptionsCount > 0) {
@@ -4061,7 +4061,7 @@ public final class Client extends GameApplet implements class280 {
                   i_10 = field654;
                   i_11 = field763;
                   class82 class82_12 = field916;
-                  class91.method2170(class82_12.field1157, class82_12.field1156, class82_12.field1155, class82_12.field1158, class82_12.field1159, i_10, i_11);
+                  class91.writeSomePacket(class82_12.field1157, class82_12.field1156, class82_12.field1155, class82_12.field1158, class82_12.field1159, i_10, i_11);
                   field916 = null;
                }
 
@@ -4200,7 +4200,7 @@ public final class Client extends GameApplet implements class280 {
                int i_14 = field830 + field837;
                int i_15 = field838 + field831;
                class82 class82_13 = field916;
-               class91.method2170(class82_13.field1157, class82_13.field1156, class82_13.field1155, class82_13.field1158, class82_13.field1159, i_14, i_15);
+               class91.writeSomePacket(class82_13.field1157, class82_13.field1156, class82_13.field1155, class82_13.field1158, class82_13.field1159, i_14, i_15);
                field916 = null;
             }
 
