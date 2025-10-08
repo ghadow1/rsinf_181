@@ -451,7 +451,8 @@ public class ByteBuffer extends LinkedListNode {
    }
 
    //..Writes a short with second byte offset
-   public void writeShortWithOffset2(int value) {
+   //..renamed from -> writeShortWithOffset2
+   public void writeUnsignedShortA(int value) {
       this.buffer[++this.position - 1] = (byte) (value >> 8);
       this.buffer[++this.position - 1] = (byte) (value + 128);
    }

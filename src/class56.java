@@ -285,9 +285,9 @@ public class class56 {
    }
 
    static void method1086(int i_0, int i_1, int i_2) {
-      class187 class187_3 = class235.method4265(ClientPacketProt.field2273, Client.data.field1313);
+      class187 class187_3 = class235.method4265(ClientPacketProt.RESUME_PAUSEBUTTON, Client.data.field1313);
       class187_3.outBuffer.writeIntCustomOrder(i_0);
-      class187_3.outBuffer.writeShortWithOffset2(i_1);
+      class187_3.outBuffer.writeUnsignedShortA(i_1);
       Client.data.copy(class187_3);
    }
 

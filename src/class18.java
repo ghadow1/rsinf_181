@@ -354,8 +354,8 @@ public class class18 extends class34 {
                int i_13 = Client.localPlayer.y - i_11 >> 7;
                class187 class187_14 = class235.method4265(ClientPacketProt.field2262, Client.data.field1313);
                class187_14.outBuffer.writeByte(18);
-               class187_14.outBuffer.writeShortWithOffset2(i_13 + class1.field1);
-               class187_14.outBuffer.writeShortWithOffset2(i_12 + class196.field2389);
+               class187_14.outBuffer.writeUnsignedShortA(i_13 + class1.field1);
+               class187_14.outBuffer.writeUnsignedShortA(i_12 + class196.field2389);
                class187_14.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.outBuffer.writeByte(i_5);
                class187_14.outBuffer.writeByte(i_6);

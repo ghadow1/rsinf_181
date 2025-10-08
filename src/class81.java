@@ -42,7 +42,7 @@ public class class81 {
                Client.data.copy(class187_9);
             } else if (i_0 == 6) {
                class187_9 = class235.method4265(ClientPacketProt.field2257, Client.data.field1313);
-               class187_9.outBuffer.writeShortWithOffset2(ints_4[i_7]);
+               class187_9.outBuffer.writeUnsignedShortA(ints_4[i_7]);
                class187_9.outBuffer.writeInvertedByte(0);
                Client.data.copy(class187_9);
             } else if (i_0 == 7) {

@@ -70,7 +70,7 @@ public class ClientPacketProt implements class181 {
    public static final ClientPacketProt field2270 = new ClientPacketProt(67, -2);
    public static final ClientPacketProt field2271 = new ClientPacketProt(68, 8);
    public static final ClientPacketProt field2272 = new ClientPacketProt(69, 4);
-   public static final ClientPacketProt field2273 = new ClientPacketProt(70, 6);
+   public static final ClientPacketProt RESUME_PAUSEBUTTON = new ClientPacketProt(70, 6);
    public static final ClientPacketProt field2274 = new ClientPacketProt(71, 3);
    public static final ClientPacketProt field2265 = new ClientPacketProt(72, 8);
    public static final ClientPacketProt field2276 = new ClientPacketProt(73, 1);

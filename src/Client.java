@@ -3208,8 +3208,8 @@ public final class Client extends GameApplet implements class280 {
                                                 i_6 = Scene.clickTileZ;
                                                 class187_20 = class235.method4265(ClientPacketProt.field2299, data.field1313);
                                                 class187_20.outBuffer.writeByte(5);
-                                                class187_20.outBuffer.writeShortWithOffset2(i_6 + class1.field1);
-                                                class187_20.outBuffer.writeShortWithOffset2(i_5 + class196.field2389);
+                                                class187_20.outBuffer.writeUnsignedShortA(i_6 + class1.field1);
+                                                class187_20.outBuffer.writeUnsignedShortA(i_5 + class196.field2389);
                                                 class187_20.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                                                 data.copy(class187_20);
                                                 Scene.method3222();
@@ -4185,8 +4185,8 @@ public final class Client extends GameApplet implements class280 {
 
                   if (widget_16 != null) {
                      class187 class187_17 = class235.method4265(ClientPacketProt.field2260, data.field1313);
-                     class187_17.outBuffer.writeShortWithOffset2(field828.field2565);
-                     class187_17.outBuffer.writeShortWithOffset2(field832.field2690);
+                     class187_17.outBuffer.writeUnsignedShortA(field828.field2565);
+                     class187_17.outBuffer.writeUnsignedShortA(field832.field2690);
                      class187_17.outBuffer.writeShortBigEndian(field832.field2565);
                      class187_17.outBuffer.writeIntLittleEndian(field828.field2688);
                      class187_17.outBuffer.writeIntReversed(field832.field2688);
