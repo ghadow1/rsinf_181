@@ -76,7 +76,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt field2188 = new ServerPacketProt(73, 0);
    public static final ServerPacketProt field2115 = new ServerPacketProt(74, 1);
    public static final ServerPacketProt field2121 = new ServerPacketProt(75, 6);
-   public static final ServerPacketProt field2145 = new ServerPacketProt(76, 6);
+   public static final ServerPacketProt MAYBE_HINT_ICON = new ServerPacketProt(76, 6);
    public static final ServerPacketProt ifOpenSubMessage = new ServerPacketProt(77, 7);
    public static final ServerPacketProt field2193 = new ServerPacketProt(78, 0);
    public static final ServerPacketProt field2194 = new ServerPacketProt(79, -2);

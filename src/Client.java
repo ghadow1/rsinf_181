@@ -1169,7 +1169,7 @@ public final class Client extends GameApplet implements class280 {
                return true;
             }
 
-            if (ServerPacketProt.field2145 == Client.data.serverPacket) {
+            if (ServerPacketProt.MAYBE_HINT_ICON == Client.data.serverPacket) {
                packet_integer_653 = jagbuf.readIntCustomOrder();
                i_6 = jagbuf.readShortWithOffset2();
                widget_7 = WorldMapElement.getWidget(packet_integer_653);
