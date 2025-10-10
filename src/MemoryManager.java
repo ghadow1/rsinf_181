@@ -111,7 +111,7 @@ public class MemoryManager implements Runnable {
             }
          }
       } catch (Exception e) {
-         ErrorHandler.logError(null, e, (byte) 5);
+         ErrorHandler.logError(null, e);
       }
    }
 

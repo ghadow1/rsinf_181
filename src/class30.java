@@ -25,7 +25,7 @@ public class class30 {
       }
    }
 
-   static int method536(int i_0, class92 class92_1, boolean bool_2, byte b_3) {
+   static int method536(int i_0, boolean bool_2) {
       String string_4;
       if (i_0 == 3100) {
          string_4 = MouseRecorder.field1093[--class221.field2747];
@@ -33,7 +33,7 @@ public class class30 {
          return 1;
       } else if (i_0 == 3101) {
          class70.field1014 -= 2;
-         class63.method1139(Client.localPlayer, MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1], (byte) -39);
+         class63.method1139(Client.localPlayer, MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1]);
          return 1;
       } else if (i_0 == 3103) {
          if (!MouseRecorder.field1105) {
@@ -101,7 +101,7 @@ public class class30 {
                   return 1;
                } else if (i_0 == 3112) {
                   class17.field117.field1060 = MouseRecorder.field1098[--class70.field1014] == 1;
-                  class97.method2268(2128059454);
+                  class97.method2268();
                   return 1;
                } else if (i_0 == 3113) {
                   string_4 = MouseRecorder.field1093[--class221.field2747];
@@ -234,7 +234,7 @@ public class class30 {
                   if (i_0 == 3141) {
                      bool_9 = MouseRecorder.field1098[--class70.field1014] == 1;
                      class17.field117.field1066 = bool_9;
-                     class97.method2268(2080088285);
+                     class97.method2268();
                      return 1;
                   } else if (i_0 == 3142) {
                      MouseRecorder.field1098[++class70.field1014 - 1] = class17.field117.field1066 ? 1 : 0;
@@ -244,7 +244,7 @@ public class class30 {
                      Client.field691 = bool_9;
                      if (!bool_9) {
                         class17.field117.field1065 = "";
-                        class97.method2268(2140193048);
+                        class97.method2268();
                      }
 
                      return 1;
@@ -257,7 +257,7 @@ public class class30 {
                      bool_9 = MouseRecorder.field1098[--class70.field1014] == 1;
                      if (bool_9 == class17.field117.field1063) {
                         class17.field117.field1063 = !bool_9;
-                        class97.method2268(2086771658);
+                        class97.method2268();
                      }
 
                      return 1;

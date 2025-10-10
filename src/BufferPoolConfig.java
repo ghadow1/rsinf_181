@@ -320,8 +320,8 @@ public class BufferPoolConfig {
             int[] ints_19 = new int[4];
             Rasterizer2D.getClipArray(ints_19);
             Rasterizer2D.setClip(Login.field1208, 0, Login.field1208 + 765, class249.field3308);
-            class278.field3631.method1735(Login.field1208 - 22, Client.field881, (byte) -86);
-            class278.field3631.method1735(Login.field1208 + 22 + 765 - 128, Client.field881, (byte) -49);
+            class278.field3631.method1735(Login.field1208 - 22, Client.field881);
+            class278.field3631.method1735(Login.field1208 + 22 + 765 - 128, Client.field881);
             Rasterizer2D.method6013(ints_19);
          }
 

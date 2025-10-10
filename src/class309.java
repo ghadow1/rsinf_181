@@ -194,7 +194,7 @@ public class class309 implements Runnable {
       } else {
          Login.loginIndex = i_3;
          Rasterizer2D.clear();
-         byte[] bytes_5 = class233_0.method4163("title.jpg", "", 1900657492);
+         byte[] bytes_5 = class233_0.method4163("title.jpg", "");
          class5.field23 = class158.method3435(bytes_5, (byte) -3);
          NPC.field1135 = class5.field23.method6112();
          if ((Client.field653 & 0x20000000) != 0) {

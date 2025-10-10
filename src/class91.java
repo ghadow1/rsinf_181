@@ -22,12 +22,12 @@ public class class91 {
          Client.field756 = 0;
          Client.destinationX = i_0;
          Client.destinationY = i_1;
-         class187_9 = class235.method4265(ClientPacketProt.field2247, Client.data.field1313);
-         class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1);
-         class187_9.outBuffer.writeShortLittleEndian(class23.field182);
-         class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
-         class187_9.outBuffer.writeIntLittleEndian(class63.field594);
-         class187_9.outBuffer.writeShortWithOffset(i_0 + class196.field2389);
+         class187_9 = class235.method4265(ClientPacketProt.IT_ON_OBJ, Client.data.field1313);
+         class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1); //..objectY
+         class187_9.outBuffer.writeShortLittleEndian(class23.field182); //..slot
+         class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0); //..control key down
+         class187_9.outBuffer.writeIntLittleEndian(class63.field594); //..interface_hash
+         class187_9.outBuffer.writeShortWithOffset(i_0 + class196.field2389); //..objectX
          class187_9.outBuffer.writeShortBigEndian(i_3);
          class187_9.outBuffer.writeShortLittleEndian(class4.field19);
          Client.data.copy(class187_9);
@@ -360,7 +360,7 @@ public class class91 {
                   if (i_2 == 25) {
                      widget_17 = Client.method1649(i_1, i_0);
                      if (widget_17 != null) {
-                        class31.method542(-456020317);
+                        class31.method542();
                         class87.method2053(i_1, i_0, class78.method1957(class268.method4987(widget_17), (byte) 35), widget_17.field2690, 96373324);
                         Client.isItemSelected = 0;
                         Client.field813 = class292.method5318(widget_17, (byte) 70);
@@ -481,7 +481,7 @@ public class class91 {
                         Client.field698 = i_0;
                      } else {
                         if (i_2 == 38) {
-                           class31.method542(-339786927);
+                           class31.method542();
                            widget_17 = WorldMapElement.getWidget(i_1);
                            Client.isItemSelected = 1;
                            class23.field182 = i_0;
@@ -773,7 +773,7 @@ public class class91 {
       }
 
       if (Client.isSpellSelected) {
-         class31.method542(-102545378);
+         class31.method542();
       }
 
       if (class59.field549 != null && Client.field759 == 0) {

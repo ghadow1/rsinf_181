@@ -33,7 +33,7 @@ public class class225 {
                   }
 
                   if (i_6 != -1) {
-                     class258 class258_7 = class7.method81(i_6, (byte) 1);
+                     class258 class258_7 = class7.method81(i_6);
 
                      for (widget_4.field2584 += Client.field718; widget_4.field2584 > class258_7.field3522[widget_4.field2692]; FriendSystem.invalidateWidget(widget_4)) {
                         widget_4.field2584 -= class258_7.field3522[widget_4.field2692];

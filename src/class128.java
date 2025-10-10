@@ -77,7 +77,7 @@ public class class128 {
       }
    }
 
-   public static int method2971(CharSequence charsequence_0, int i_1) {
+   public static int method2971(CharSequence charsequence_0) {
       int i_2 = charsequence_0.length();
       int i_3 = 0;
 
@@ -88,7 +88,7 @@ public class class128 {
       return i_3;
    }
 
-   static class92 method2947(int i_0, byte b_1) {
+   static class92 method2947(int i_0) {
       class92 class92_2 = (class92) class92.field1291.get((long)i_0);
       if (class92_2 != null) {
          return class92_2;

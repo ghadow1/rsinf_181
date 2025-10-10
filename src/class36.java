@@ -1,8 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public final class class36 {
 
@@ -75,8 +71,8 @@ public final class class36 {
       int i_14 = i_10 / 64;
       class22_6.field180 = i_13 - i_11 + 1;
       class22_6.field176 = i_14 - i_12 + 1;
-      class22_6.field175 = i_11 - this.field312.method338(-1254649049);
-      class22_6.field177 = i_12 - this.field312.method340(124036044);
+      class22_6.field175 = i_11 - this.field312.method338();
+      class22_6.field177 = i_12 - this.field312.method340();
       if (class22_6.field175 < 0) {
          class22_6.field180 += class22_6.field175;
          class22_6.field175 = 0;
@@ -162,8 +158,8 @@ public final class class36 {
          System.nanoTime();
          int i_5 = class233_1.method4160(WorldMapCacheName.field308.field306);
          int i_6 = class233_1.method4161(i_5, string_2);
-         ByteBuffer class300_7 = new ByteBuffer(class233_1.method4163(WorldMapCacheName.field308.field306, string_2, 794658484));
-         ByteBuffer class300_8 = new ByteBuffer(class233_1.method4163(WorldMapCacheName.field302.field306, string_2, 529639123));
+         ByteBuffer class300_7 = new ByteBuffer(class233_1.method4163(WorldMapCacheName.field308.field306, string_2));
+         ByteBuffer class300_8 = new ByteBuffer(class233_1.method4163(WorldMapCacheName.field302.field306, string_2));
          System.nanoTime();
          System.nanoTime();
          this.field312 = new class38();
@@ -174,15 +170,15 @@ public final class class36 {
             return;
          }
 
-         this.field312.method342((byte) -45);
-         this.field312.method343(-1178629401);
-         this.field312.method405((byte) 32);
-         this.field319 = this.field312.method338(-1534939923) * 64;
-         this.field325 = this.field312.method340(473515020) * 64;
-         this.field314 = (this.field312.method339() - this.field312.method338(845768281) + 1) * 64;
-         this.field324 = (this.field312.method341() - this.field312.method340(-427693058) + 1) * 64;
-         int i_17 = this.field312.method339() - this.field312.method338(-264563708) + 1;
-         int i_10 = this.field312.method341() - this.field312.method340(161263687) + 1;
+         this.field312.method342();
+         this.field312.method343();
+         this.field312.method405();
+         this.field319 = this.field312.method338() * 64;
+         this.field325 = this.field312.method340() * 64;
+         this.field314 = (this.field312.method339() - this.field312.method338() + 1) * 64;
+         this.field324 = (this.field312.method341() - this.field312.method340() + 1) * 64;
+         int i_17 = this.field312.method339() - this.field312.method338() + 1;
+         int i_10 = this.field312.method341() - this.field312.method340() + 1;
          System.nanoTime();
          System.nanoTime();
          class88.method2069(-1709939450);
@@ -193,8 +189,8 @@ public final class class36 {
             class15 class15_12 = (class15) iterator_11.next();
             int i_13 = class15_12.field157;
             int i_14 = class15_12.field158;
-            int i_15 = i_13 - this.field312.method338(-786100799);
-            int i_16 = i_14 - this.field312.method340(-1970340826);
+            int i_15 = i_13 - this.field312.method338();
+            int i_16 = i_14 - this.field312.method340();
             this.field315[i_15][i_16] = new class29(i_13, i_14, this.field312.method325(), this.field322);
             this.field315[i_15][i_16].method423(class15_12, this.field312.field331, 1340237556);
          }
@@ -202,7 +198,7 @@ public final class class36 {
          for (int i_18 = 0; i_18 < i_17; i_18++) {
             for (int i_19 = 0; i_19 < i_10; i_19++) {
                if (this.field315[i_18][i_19] == null) {
-                  this.field315[i_18][i_19] = new class29(this.field312.method338(-134766221) + i_18, this.field312.method340(-1532237977) + i_19, this.field312.method325(), this.field322);
+                  this.field315[i_18][i_19] = new class29(this.field312.method338() + i_18, this.field312.method340() + i_19, this.field312.method325(), this.field322);
                   this.field315[i_18][i_19].method424(this.field312.field330, this.field312.field331, -523355957);
                }
             }
@@ -211,13 +207,13 @@ public final class class36 {
          System.nanoTime();
          System.nanoTime();
          if (class233_1.method4162(WorldMapCacheName.field303.field306, string_2)) {
-            byte[] bytes_21 = class233_1.method4163(WorldMapCacheName.field303.field306, string_2, -1408492249);
+            byte[] bytes_21 = class233_1.method4163(WorldMapCacheName.field303.field306, string_2);
             this.field313 = class158.method3435(bytes_21, (byte) -56);
          }
 
          System.nanoTime();
-         class233_1.method4156(1731367566);
-         class233_1.method4158(-922458067);
+         class233_1.method4156();
+         class233_1.method4158();
          this.field321 = true;
       }
    }

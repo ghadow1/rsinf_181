@@ -470,7 +470,7 @@ public class class102 extends LinkedListNode {
          int i_10 = class144.method3316(i_5 - 1);
 
          for (int i_11 = 0; i_11 < i_5; i_11++) {
-            ints_14[i_11] = class73.method1757(i_11, i_10, (byte) -46);
+            ints_14[i_11] = class73.method1757(i_11, i_10);
          }
 
          if (i_1 != 0) {

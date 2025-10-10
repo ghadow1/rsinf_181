@@ -59,7 +59,7 @@ public class class234 implements Runnable {
             }
          }
       } catch (Exception exception_13) {
-         ErrorHandler.logError((String) null, exception_13, (byte) 70);
+         ErrorHandler.logError(null, exception_13);
       }
    }
 

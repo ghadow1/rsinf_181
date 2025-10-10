@@ -513,7 +513,7 @@ public class ByteBuffer extends LinkedListNode {
       if (length + this.position > this.buffer.length) {
          throw new IllegalStateException("String length exceeds buffer");
       }
-      String result = class73.method1755(this.buffer, this.position, length, 917330802);
+      String result = class73.method1755(this.buffer, this.position, length);
       this.position += length;
       return result;
    }

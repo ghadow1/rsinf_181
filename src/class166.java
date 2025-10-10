@@ -8,17 +8,17 @@ public class class166 implements Runnable {
    class165 field2027 = null;
    class165 field2030 = null;
    boolean field2032 = false;
-   public static String field2029;
-   public static String field2028;
+   public static String appletVendor;
+   public static String appletVersion;
    Thread field2031;
 
    public class166() {
-      field2029 = "Unknown";
-      field2028 = "1.6";
+      appletVendor = "Unknown";
+      appletVersion = "1.6";
 
       try {
-         field2029 = System.getProperty("java.vendor");
-         field2028 = System.getProperty("java.version");
+         appletVendor = System.getProperty("java.vendor");
+         appletVersion = System.getProperty("java.version");
       } catch (Exception exception_2) {
          ;
       }
@@ -48,7 +48,7 @@ public class class166 implements Runnable {
       }
    }
 
-   public final class165 method3472(Runnable runnable_1, int i_2, int i_3) {
+   public final class165 method3472(Runnable runnable_1, int i_2) {
       return this.method3471(2, i_2, runnable_1);
    }
 

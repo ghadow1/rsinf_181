@@ -10,7 +10,7 @@ public class class169 {
    static boolean field2055 = false;
    static Hashtable field2052 = new Hashtable(16);
 
-   public static void method3503(class233 class233_0, int i_1, int i_2, int i_3, boolean bool_4, int i_5) {
+   public static void method3503(class233 class233_0, int i_1, int i_2, int i_3, boolean bool_4) {
       class197.field2402 = 1;
       class11.field76 = class233_0;
       class197.field2403 = i_1;
@@ -20,7 +20,7 @@ public class class169 {
       class197.field2404 = 10000;
    }
 
-   static int method3501(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method3501(int i_0, boolean bool_2) {
       Widget widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       if (i_0 == 1700) {
          MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2690;

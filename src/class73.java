@@ -14,7 +14,7 @@ public class class73 {
    boolean field1063;
 
    class73() {
-      this.method1749(true, (short) -11262);
+      this.method1749();
    }
 
    class73(ByteBuffer class300_1) {
@@ -51,38 +51,15 @@ public class class73 {
                this.field1066 = class300_1.readBoolean();
             }
          } else {
-            this.method1749(true, (short) -31921);
+            this.method1749();
          }
       } else {
-         this.method1749(true, (short) -25325);
+         this.method1749();
       }
 
    }
 
-   void method1749(boolean bool_1, short s_2) {
-   }
-
-   ByteBuffer method1746(int i_1) {
-      ByteBuffer class300_2 = new ByteBuffer(100);
-      class300_2.writeByte(field1062);
-      class300_2.writeByte(this.field1060 ? 1 : 0);
-      class300_2.writeByte(this.field1063 ? 1 : 0);
-      class300_2.writeByte(this.field1064);
-      class300_2.writeByte(this.field1067.size());
-      Iterator iterator_3 = this.field1067.entrySet().iterator();
-
-      while (iterator_3.hasNext()) {
-         Entry map$entry_4 = (Entry) iterator_3.next();
-         class300_2.writeIntBigEndian(((Integer) map$entry_4.getKey()).intValue());
-         class300_2.writeIntBigEndian(((Integer) map$entry_4.getValue()).intValue());
-      }
-
-      class300_2.writeNullTerminatedString(this.field1065 != null ? this.field1065 : "");
-      class300_2.writeBoolean(this.field1066);
-      return class300_2;
-   }
-
-   public static String method1755(byte[] bytes_0, int i_1, int i_2, int i_3) {
+   public static String method1755(byte[] bytes_0, int i_1, int i_2) {
       char[] arr_4 = new char[i_2];
       int i_5 = 0;
       int i_6 = i_1;
@@ -135,7 +112,7 @@ public class class73 {
       return new String(arr_4, 0, i_5);
    }
 
-   public static int method1757(int i_0, int i_1, byte b_2) {
+   public static int method1757(int i_0, int i_1) {
       int i_3;
       for (i_3 = 0; i_1 > 0; --i_1) {
          i_3 = i_3 << 1 | i_0 & 0x1;
@@ -143,10 +120,6 @@ public class class73 {
       }
 
       return i_3;
-   }
-
-   static String colorStartTag(int i_0) {
-      return "<col=" + Integer.toHexString(i_0) + ">";
    }
 
    static int method1753(int i_0) {
@@ -209,7 +182,7 @@ public class class73 {
                return 1;
             } else if (i_0 == 5004) {
                i_11 = MouseRecorder.field1098[--class70.field1014];
-               Message message_17 = class23.method297(i_11, 377219115);
+               Message message_17 = class23.method297(i_11);
                if (message_17 != null) {
                   MouseRecorder.field1098[++class70.field1014 - 1] = message_17.field602;
                   MouseRecorder.field1098[++class70.field1014 - 1] = message_17.field598;
@@ -380,11 +353,11 @@ public class class73 {
                   return 1;
                } else if (i_0 == 5017) {
                   i_11 = MouseRecorder.field1098[--class70.field1014];
-                  MouseRecorder.field1098[++class70.field1014 - 1] = class72.method1744(i_11, -1877742024);
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class72.method1744(i_11);
                   return 1;
                } else if (i_0 == 5018) {
                   i_11 = MouseRecorder.field1098[--class70.field1014];
-                  MouseRecorder.field1098[++class70.field1014 - 1] = class196.method3686(i_11, (short) 17338);
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class196.method3686(i_11);
                   return 1;
                } else if (i_0 == 5019) {
                   i_11 = MouseRecorder.field1098[--class70.field1014];
@@ -392,7 +365,7 @@ public class class73 {
                   return 1;
                } else if (i_0 == 5020) {
                   string_4 = MouseRecorder.field1093[--class221.field2747];
-                  class314.method5907(string_4, 199301274);
+                  class314.developerCommands(string_4);
                   return 1;
                } else if (i_0 == 5021) {
                   Client.field762 = MouseRecorder.field1093[--class221.field2747].toLowerCase().trim();
@@ -419,6 +392,33 @@ public class class73 {
             }
          }
       }
+   }
+
+   void method1749() {
+   }
+
+   static String colorStartTag(int i_0) {
+      return "<col=" + Integer.toHexString(i_0) + ">";
+   }
+
+   ByteBuffer method1746() {
+      ByteBuffer class300_2 = new ByteBuffer(100);
+      class300_2.writeByte(field1062);
+      class300_2.writeByte(this.field1060 ? 1 : 0);
+      class300_2.writeByte(this.field1063 ? 1 : 0);
+      class300_2.writeByte(this.field1064);
+      class300_2.writeByte(this.field1067.size());
+      Iterator iterator_3 = this.field1067.entrySet().iterator();
+
+      while (iterator_3.hasNext()) {
+         Entry map$entry_4 = (Entry) iterator_3.next();
+         class300_2.writeIntBigEndian(((Integer) map$entry_4.getKey()).intValue());
+         class300_2.writeIntBigEndian(((Integer) map$entry_4.getValue()).intValue());
+      }
+
+      class300_2.writeNullTerminatedString(this.field1065 != null ? this.field1065 : "");
+      class300_2.writeBoolean(this.field1066);
+      return class300_2;
    }
 
 }

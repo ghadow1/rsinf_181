@@ -42,6 +42,17 @@ public class class143 implements Runnable {
       }
    }
 
+   static String method3305() {
+      String str_1 = "";
+
+      Message message_3;
+      for (Iterator iterator_2 = class91.field1277.iterator(); iterator_2.hasNext(); str_1 = str_1 + message_3.field599 + ':' + message_3.field605 + '\n') {
+         message_3 = (Message) iterator_2.next();
+      }
+
+      return str_1;
+   }
+
    public void run() {
       while (!this.field1946) {
          try {
@@ -89,21 +100,10 @@ public class class143 implements Runnable {
 
             }
          } catch (Exception exception_17) {
-            ErrorHandler.logError((String) null, exception_17, (byte) 35);
+            ErrorHandler.logError(null, exception_17);
          }
       }
 
-   }
-
-   static String method3305(int i_0) {
-      String str_1 = "";
-
-      Message message_3;
-      for (Iterator iterator_2 = class91.field1277.iterator(); iterator_2.hasNext(); str_1 = str_1 + message_3.field599 + ':' + message_3.field605 + '\n') {
-         message_3 = (Message) iterator_2.next();
-      }
-
-      return str_1;
    }
 
    static int method3306(int i_0, class92 class92_1, boolean bool_2, int i_3) {

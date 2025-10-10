@@ -9,7 +9,7 @@ public class class214 {
    long field2539;
    long field2537;
 
-   public void method4009(int[] ints_1, int[] ints_2, boolean bool_3, int i_4, int i_5) {
+   public void method4009(int[] ints_1, int[] ints_2, boolean bool_3, int i_4) {
       if (ints_1 == null) {
          ints_1 = new int[12];
 
@@ -72,7 +72,7 @@ public class class214 {
 
    public class127 method3997(class258 class258_1, int i_2, class258 class258_3, int i_4) {
       if (this.field2532 != -1) {
-         return GameApplet.method1005(this.field2532).method4707(class258_1, i_2, class258_3, i_4, (byte) 27);
+         return GameApplet.method1005(this.field2532).method4707(class258_1, i_2, class258_3, i_4);
       } else {
          long long_6 = this.field2539;
          int[] ints_8 = this.field2534;
@@ -101,7 +101,7 @@ public class class214 {
             int i_12;
             for (int i_11 = 0; i_11 < 12; i_11++) {
                i_12 = ints_8[i_11];
-               if (i_12 >= 256 && i_12 < 512 && !class231.method4138(i_12 - 256).method4440(-1807295410)) {
+               if (i_12 >= 256 && i_12 < 512 && !class231.method4138(i_12 - 256).method4440()) {
                   bool_10 = true;
                }
 
@@ -308,7 +308,7 @@ public class class214 {
 
    public void method4006(boolean bool_1, int i_2) {
       if (this.field2535 != bool_1) {
-         this.method4009((int[]) null, this.field2533, bool_1, -1, -1386227106);
+         this.method4009(null, this.field2533, bool_1, -1);
       }
    }
 

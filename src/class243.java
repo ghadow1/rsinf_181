@@ -85,7 +85,7 @@ public class class243 extends DualNode {
 
       class127 class127_6;
       if (this.field3238 != -1 && i_1 != -1) {
-         class127_6 = class7.method81(this.field3238, (byte) 1).method4787(class127_3, i_1, -1365798268);
+         class127_6 = class7.method81(this.field3238).method4787(class127_3, i_1, -1365798268);
       } else {
          class127_6 = class127_3.method2860(true);
       }

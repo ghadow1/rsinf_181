@@ -180,7 +180,7 @@ public final class Client extends GameApplet implements class280 {
    static Widget field850;
    static int field910;
    static int field823;
-   public static int field890;
+   public static int localRights;
    static int field825;
    static boolean field826;
    static Widget field827;
@@ -432,7 +432,7 @@ public final class Client extends GameApplet implements class280 {
       field850 = null;
       field910 = 0;
       field823 = 0;
-      field890 = 0;
+      localRights = 0;
       field825 = -1;
       field826 = false;
       field827 = null;
@@ -694,7 +694,7 @@ public final class Client extends GameApplet implements class280 {
 
       FontName.field348 = null;
       data.method2233();
-      class123.method2842((short) 3762);
+      class123.method2842();
       Widget.method4091();
       class36.field329 = null;
       if (WorldMapElement.field1144 != null) {
@@ -1273,7 +1273,7 @@ public final class Client extends GameApplet implements class280 {
                   packet_integer_653 = -1;
                }
 
-               class8.method93(packet_integer_653, 1523306949);
+               class8.method93(packet_integer_653);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1285,7 +1285,7 @@ public final class Client extends GameApplet implements class280 {
                   i_6 = -1;
                }
 
-               class17.method188(i_6, packet_integer_653, 131988648);
+               class17.method188(i_6);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1949,7 +1949,7 @@ public final class Client extends GameApplet implements class280 {
 
             if (ServerPacketProt.triggerOnDialogAbortMessage == Client.data.serverPacket) {
                if (field905 != -1) {
-                  class17.method175(field905, 0, -1199742641);
+                  class17.method175(field905, 0);
                }
 
                Client.data.serverPacket = null;
@@ -2044,7 +2044,7 @@ public final class Client extends GameApplet implements class280 {
                }
 
                if (field905 != -1) {
-                  class17.method175(field905, 1, -1199742641);
+                  class17.method175(field905, 1);
                }
 
                Client.data.serverPacket = null;
@@ -2183,7 +2183,7 @@ public final class Client extends GameApplet implements class280 {
                return true;
             }
 
-            ErrorHandler.logError("" + (Client.data.serverPacket != null ? Client.data.serverPacket.field2201 : -1) + "," + (Client.data.field1321 != null ? Client.data.field1321.field2201 : -1) + "," + (Client.data.field1317 != null ? Client.data.field1317.field2201 : -1) + "," + Client.data.serverPacketLength, (Throwable) null, (byte) 116);
+            ErrorHandler.logError((Client.data.serverPacket != null ? Client.data.serverPacket.field2201 : -1) + "," + (Client.data.field1321 != null ? Client.data.field1321.field2201 : -1) + "," + (Client.data.field1317 != null ? Client.data.field1317.field2201 : -1) + "," + Client.data.serverPacketLength, null);
             ParamDefinition.disconnectGame();
          } catch (IOException ioexception_36) {
             class56.method1090();
@@ -2194,7 +2194,7 @@ public final class Client extends GameApplet implements class280 {
                string_19 = string_19 + jagbuf.buffer[i_18] + ",";
             }
 
-            ErrorHandler.logError(string_19, exception_37, (byte) 36);
+            ErrorHandler.logError(string_19, exception_37);
             ParamDefinition.disconnectGame();
          }
 
@@ -2722,7 +2722,7 @@ public final class Client extends GameApplet implements class280 {
          class56.method1090();
       } else {
          if (!field674) {
-            class77.method1945(-1819884546);
+            class77.method1945();
          }
 
          int i_2;
@@ -3057,7 +3057,7 @@ public final class Client extends GameApplet implements class280 {
                      }
                   }
 
-                  class63.method1141(-1953240154);
+                  class63.method1141();
                   class66.method1203(1715272698);
                   ++field718;
                   if (field757 != 0) {
@@ -3085,8 +3085,9 @@ public final class Client extends GameApplet implements class280 {
                   field754 = 0;
 
                   while (class218.method4109() && field754 < 128) {
-                     if (field890 >= 2 && class45.field395[82] && class97.field1338 == 66) {
-                        String string_28 = class143.method3305(1670821408);
+                     //..Some kind of admin map movement
+                     if (localRights >= 2 && class45.field395[82] && class97.field1338 == 66) {
+                        String string_28 = class143.method3305();
                         WorldMapID.client.method879(string_28, (byte) 54);
                      } else if (field727 != 1 || class207.field2508 <= 0) {
                         field921[field754] = class97.field1338;
@@ -3095,8 +3096,9 @@ public final class Client extends GameApplet implements class280 {
                      }
                   }
 
-                  boolean bool_34 = field890 >= 2;
-                  if (bool_34 && class45.field395[82] && class45.field395[81] && field853 != 0) {
+                  boolean administrator = localRights >= 2;
+                  if (administrator
+                          && class45.field395[82] && class45.field395[81] && field853 != 0) {
                      i_5 = localPlayer.field629 - field853;
                      if (i_5 < 0) {
                         i_5 = 0;
@@ -3112,7 +3114,7 @@ public final class Client extends GameApplet implements class280 {
                   }
 
                   if (field905 != -1) {
-                     class221.method4116(field905, 0, 0, class7.field46, class249.field3308, 0, 0, -1917255225);
+                     class221.method4116(field905, 0, 0, class7.field46, class249.field3308, 0, 0);
                   }
 
                   ++field673;
@@ -3582,7 +3584,7 @@ public final class Client extends GameApplet implements class280 {
                buffer3_4.writeByte(field690.getId(1559391851));
                switch(field690.field2003) {
                case 0:
-                  buffer3_4.writeIntBigEndian(((Integer) class17.field117.field1067.get(Integer.valueOf(class128.method2971(Login.field1180, -1418597327)))).intValue());
+                  buffer3_4.writeIntBigEndian(((Integer) class17.field117.field1067.get(Integer.valueOf(class128.method2971(Login.field1180)))).intValue());
                   break;
                case 1:
                case 2:
@@ -3761,7 +3763,7 @@ public final class Client extends GameApplet implements class280 {
                   i_16 |= buffer3_3.method5440() << 16;
                   i_16 |= buffer3_3.method5440() << 8;
                   i_16 |= buffer3_3.method5440();
-                  int i_19 = class128.method2971(Login.field1180, -1787442962);
+                  int i_19 = class128.method2971(Login.field1180);
                   if (class17.field117.field1067.size() >= 10 && !class17.field117.field1067.containsKey(Integer.valueOf(i_19))) {
                      Iterator iterator_29 = class17.field117.field1067.entrySet().iterator();
                      iterator_29.next();
@@ -3777,8 +3779,8 @@ public final class Client extends GameApplet implements class280 {
                   class17.field117.field1065 = null;
                }
 
-               class97.method2268(2102243507);
-               field890 = ((AbstractSocket) obj_2).vmethod5825((byte) 2);
+               class97.method2268();
+               localRights = ((AbstractSocket) obj_2).vmethod5825((byte) 2);
                field826 = ((AbstractSocket) obj_2).vmethod5825((byte) 2) == 1;
                field770 = ((AbstractSocket) obj_2).vmethod5825((byte) 2);
                field770 <<= 8;
@@ -4301,7 +4303,7 @@ public final class Client extends GameApplet implements class280 {
          try {
             class159.method3440("oldschool", string_8, b_9, 21);
          } catch (Exception exception_7) {
-            ErrorHandler.logError((String) null, exception_7, (byte) 125);
+            ErrorHandler.logError(null, exception_7);
          }
 
          WorldMapID.client = this;

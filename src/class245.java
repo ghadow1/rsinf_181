@@ -91,67 +91,6 @@ public class class245 extends DualNode {
       return model_6;
    }
 
-   public boolean method4440(int i_1) {
-      if (this.field3266 == null) {
-         return true;
-      } else {
-         boolean bool_2 = true;
-
-         for (int i_3 = 0; i_3 < this.field3266.length; i_3++) {
-            if (!class288.field3665.method4146(this.field3266[i_3], 0)) {
-               bool_2 = false;
-            }
-         }
-
-         return bool_2;
-      }
-   }
-
-   void method4449(ByteBuffer class300_1) {
-      while (true) {
-         int i_3 = class300_1.readUnsignedByte();
-         if (i_3 == 0) {
-            return;
-         }
-
-         this.method4436(class300_1, i_3);
-      }
-   }
-
-   public Model method4439() {
-      if (this.field3266 == null) {
-         return null;
-      } else {
-         Model[] arr_2 = new Model[this.field3266.length];
-
-         for (int i_3 = 0; i_3 < this.field3266.length; i_3++) {
-            arr_2[i_3] = Model.method2769(class288.field3665, this.field3266[i_3], 0);
-         }
-
-         Model model_5;
-         if (arr_2.length == 1) {
-            model_5 = arr_2[0];
-         } else {
-            model_5 = new Model(arr_2, arr_2.length);
-         }
-
-         int i_4;
-         if (this.field3267 != null) {
-            for (i_4 = 0; i_4 < this.field3267.length; i_4++) {
-               model_5.method2783(this.field3267[i_4], this.field3264[i_4]);
-            }
-         }
-
-         if (this.field3269 != null) {
-            for (i_4 = 0; i_4 < this.field3269.length; i_4++) {
-               model_5.method2784(this.field3269[i_4], this.field3270[i_4]);
-            }
-         }
-
-         return model_5;
-      }
-   }
-
    static final void method4461(int i_0) {
       for (int i_1 = 0; i_1 < Client.field893; i_1++) {
          --Client.field897[i_1];
@@ -233,13 +172,74 @@ public class class245 extends DualNode {
 
          if (!bool_13) {
             if (Client.field911 != 0 && Client.field889 != -1) {
-               class169.method3503(class29.field253, Client.field889, 0, Client.field911, false, 1090882543);
+               class169.method3503(class29.field253, Client.field889, 0, Client.field911, false);
             }
 
             Client.field699 = false;
          }
       }
 
+   }
+
+   void method4449(ByteBuffer class300_1) {
+      while (true) {
+         int i_3 = class300_1.readUnsignedByte();
+         if (i_3 == 0) {
+            return;
+         }
+
+         this.method4436(class300_1, i_3);
+      }
+   }
+
+   public Model method4439() {
+      if (this.field3266 == null) {
+         return null;
+      } else {
+         Model[] arr_2 = new Model[this.field3266.length];
+
+         for (int i_3 = 0; i_3 < this.field3266.length; i_3++) {
+            arr_2[i_3] = Model.method2769(class288.field3665, this.field3266[i_3], 0);
+         }
+
+         Model model_5;
+         if (arr_2.length == 1) {
+            model_5 = arr_2[0];
+         } else {
+            model_5 = new Model(arr_2, arr_2.length);
+         }
+
+         int i_4;
+         if (this.field3267 != null) {
+            for (i_4 = 0; i_4 < this.field3267.length; i_4++) {
+               model_5.method2783(this.field3267[i_4], this.field3264[i_4]);
+            }
+         }
+
+         if (this.field3269 != null) {
+            for (i_4 = 0; i_4 < this.field3269.length; i_4++) {
+               model_5.method2784(this.field3269[i_4], this.field3270[i_4]);
+            }
+         }
+
+         return model_5;
+      }
+   }
+
+   public boolean method4440() {
+      if (this.field3266 == null) {
+         return true;
+      } else {
+         boolean bool_2 = true;
+
+         for (int i_3 = 0; i_3 < this.field3266.length; i_3++) {
+            if (!class288.field3665.method4146(this.field3266[i_3], 0)) {
+               bool_2 = false;
+            }
+         }
+
+         return bool_2;
+      }
    }
 
 }

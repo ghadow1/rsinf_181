@@ -13,10 +13,10 @@ public class class96 {
       if (class187.method3627(class62_0.field584)) {
          class18.field121 = (class41) arr_3[0];
          class241 class241_5 = class222.method4118(class18.field121.field355);
-         class92_4 = class75.method1828(class62_0.field584, class241_5.field3213, class241_5.field3230, (short) 17061);
+         class92_4 = class75.method1828(class62_0.field584, class241_5.field3213, class241_5.field3230);
       } else {
          i_18 = ((Integer) arr_3[0]).intValue();
-         class92_4 = class128.method2947(i_18, (byte) 1);
+         class92_4 = class128.method2947(i_18);
       }
 
       if (class92_4 != null) {
@@ -169,7 +169,7 @@ public class class96 {
                      MouseRecorder.field1098[++class70.field1014 - 1] = class67.method1237(i_12);
                   } else if (i_30 == 27) {
                      i_12 = ints_7[i_18];
-                     class171.method3554(i_12, MouseRecorder.field1098[--class70.field1014], 691418621);
+                     class171.method3554(i_12, MouseRecorder.field1098[--class70.field1014]);
                   } else if (i_30 == 31) {
                      class70.field1014 -= 2;
                      if (MouseRecorder.field1098[class70.field1014] <= MouseRecorder.field1098[class70.field1014 + 1]) {
@@ -265,7 +265,7 @@ public class class96 {
                         }
                      } else {
                         i_12 = ints_7[i_18];
-                        class92 class92_13 = class128.method2947(i_12, (byte) 1);
+                        class92 class92_13 = class128.method2947(i_12);
                         int[] ints_14 = new int[class92_13.field1283];
                         String[] arr_15 = new String[class92_13.field1285];
 
@@ -303,7 +303,7 @@ public class class96 {
                }
 
                stringbuilder_25.append("").append(b_8);
-               ErrorHandler.logError(stringbuilder_25.toString(), exception_28, (byte) 123);
+               ErrorHandler.logError(stringbuilder_25.toString(), exception_28);
             }
          } finally {
             if (MouseRecorder.field1104) {
@@ -329,7 +329,7 @@ public class class96 {
             Client.field688 = 0;
             Client.timer.method4996(i_0);
             if (i_0 != 20) {
-               class9.method99(false, -1114411806);
+               class9.method99(false);
             }
          }
 

@@ -250,13 +250,13 @@ public abstract class class21 {
       }
    }
 
-   static int method274(int i_0, int i_1, byte b_2) {
+   static int method274(int i_0, int i_1) {
       class59 class59_3 = (class59) class59.field552.method5952((long)i_0);
       return class59_3 == null ? -1 : (i_1 >= 0 && i_1 < class59_3.field550.length ? class59_3.field550[i_1] : -1);
    }
 
-   static final void method273(int i_0, int i_1, int i_2, int i_3, int i_4) {
-      class75.method1826(1435918510);
+   static final void method273() {
+      class75.method1826();
    }
 
 }

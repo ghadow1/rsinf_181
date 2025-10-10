@@ -136,7 +136,7 @@ final class class2 implements class0 {
                         }
 
                         if (!Client.field674) {
-                           class77.method1945(433609873);
+                           class77.method1945();
                         }
                      }
                   } else if (widget_10.field2697 && MouseHandler.MouseHandler_x >= i_13 && MouseHandler.MouseHandler_y >= i_14 && MouseHandler.MouseHandler_x < i_15 && MouseHandler.MouseHandler_y < i_16) {
@@ -207,7 +207,7 @@ final class class2 implements class0 {
                            if (i_21 < 10) {
                               class91.method2163(i_21 + 1, widget_10.field2688, widget_10.field2565, widget_10.field2690, "", (byte) 120);
                            } else if (i_21 == 10) {
-                              class31.method542(613868218);
+                              class31.method542();
                               class87.method2053(widget_10.field2688, widget_10.field2565, class78.method1957(class268.method4987(widget_10), (byte) 4), widget_10.field2690, 96373324);
                               Client.field813 = class292.method5318(widget_10, (byte) 44);
                               if (Client.field813 == null) {
@@ -268,7 +268,7 @@ final class class2 implements class0 {
                         class136.field1875.method6301(i_18, i_19, bool_34 & bool_35, bool_34 & bool_22, (byte) 24);
                      }
 
-                     if (Client.field828 != null && widget_10 != Client.field828 && bool_34 && class23.method295(class268.method4987(widget_10), 1515733926)) {
+                     if (Client.field828 != null && widget_10 != Client.field828 && bool_34 && class23.method295(class268.method4987(widget_10))) {
                         Client.field832 = widget_10;
                      }
 
@@ -565,11 +565,11 @@ final class class2 implements class0 {
                            }
 
                            if (!Client.field674) {
-                              class77.method1945(-1195420075);
+                              class77.method1945();
                            }
                         }
 
-                        class221.method4116(class61_28.field571, i_13, i_14, i_15, i_16, i_11, i_12, -1438868703);
+                        class221.method4116(class61_28.field571, i_13, i_14, i_15, i_16, i_11, i_12);
                      }
                   }
                }
@@ -579,7 +579,7 @@ final class class2 implements class0 {
 
    }
 
-   static int method27(int i_0, int i_1, int i_2) {
+   static int method27(int i_0, int i_1) {
       class59 class59_3 = (class59) class59.field552.method5952((long)i_0);
       return class59_3 == null ? 0 : (i_1 >= 0 && i_1 < class59_3.field551.length ? class59_3.field551[i_1] : 0);
    }

@@ -37,17 +37,17 @@ public class class17 {
       return null;
    }
 
-   static void method188(int i_0, int i_1, int i_2) {
+   static void method188(int i_0) {
       if (Client.field911 != 0 && i_0 != -1) {
-         class169.method3503(class32.field279, i_0, 0, Client.field911, false, 1012111879);
+         class169.method3503(class32.field279, i_0, 0, Client.field911, false);
          Client.field699 = true;
       }
 
    }
 
-   static final void method175(int i_0, int i_1, int i_2) {
+   static final void method175(int i_0, int i_1) {
       if (class162.method3445(i_0)) {
-         class31.method539(Widget.field2556[i_0], i_1, (short) 28886);
+         class31.method539(Widget.field2556[i_0], i_1);
       }
    }
 

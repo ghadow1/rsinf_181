@@ -138,7 +138,7 @@ public class class56 {
 
             i_8 = buffer3_1.readInvertedUnsignedByte();
             if (i_7 == NPC_5.field981 && i_7 != -1) {
-               i_9 = class7.method81(i_7, (byte) 1).field3529;
+               i_9 = class7.method81(i_7).field3529;
                if (i_9 == 1) {
                   NPC_5.field951 = 0;
                   NPC_5.field974 = 0;
@@ -149,7 +149,7 @@ public class class56 {
                if (i_9 == 2) {
                   NPC_5.field985 = 0;
                }
-            } else if (i_7 == -1 || NPC_5.field981 == -1 || class7.method81(i_7, (byte) 1).field3533 >= class7.method81(NPC_5.field981, (byte) 1).field3533) {
+            } else if (i_7 == -1 || NPC_5.field981 == -1 || class7.method81(i_7).field3533 >= class7.method81(NPC_5.field981).field3533) {
                NPC_5.field981 = i_7;
                NPC_5.field951 = 0;
                NPC_5.field974 = 0;

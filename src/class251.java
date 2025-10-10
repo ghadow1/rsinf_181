@@ -12,7 +12,7 @@ public class class251 extends DualNode {
    public String[] field3323;
    public int[] field3322;
 
-   void method4537(ByteBuffer class300_1, int i_2, byte b_3) {
+   void method4537(ByteBuffer class300_1, int i_2) {
       if (i_2 == 1) {
          this.field3317 = (char)class300_1.readUnsignedByte();
       } else if (i_2 == 2) {
@@ -57,7 +57,7 @@ public class class251 extends DualNode {
             return;
          }
 
-         this.method4537(class300_1, i_3, (byte) 19);
+         this.method4537(class300_1, i_3);
       }
    }
 

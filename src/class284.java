@@ -7,7 +7,7 @@ public class class284 extends Categorizable {
       return super.category == Client.field807 && Client.field807 != class284_1.category ? -1 : (Client.field807 == class284_1.category && super.category != Client.field807 ? 1 : (super.category != 0 && class284_1.category == 0 ? -1 : (class284_1.category != 0 && super.category == 0 ? 1 : (this.field3650 && !class284_1.field3650 ? -1 : (!this.field3650 && class284_1.field3650 ? 1 : (this.field3651 && !class284_1.field3651 ? -1 : (!this.field3651 && class284_1.field3651 ? 1 : (super.category != 0 ? super.field3633 - class284_1.field3633 : class284_1.field3633 - super.field3633))))))));
    }
 
-   public int vmethod5221(User user_1, int i_2) {
+   public int vmethod5221(User user_1) {
       return this.method5219((class284) user_1, -1855698207);
    }
 

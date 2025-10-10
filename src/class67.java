@@ -41,7 +41,7 @@ public class class67 implements Comparator {
          byte[] bytes_8 = class248.field3298.method4144(14, i_0);
          class248_3 = new class248();
          if (bytes_8 != null) {
-            class248_3.method4485(new ByteBuffer(bytes_8), -1936267259);
+            class248_3.method4485(new ByteBuffer(bytes_8));
          }
 
          class248.field3294.put(class248_3, (long)i_0);

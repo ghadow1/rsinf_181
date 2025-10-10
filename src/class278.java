@@ -8,7 +8,7 @@ public class class278 extends User {
       return this.field3630 - class278_1.field3630;
    }
 
-   public int vmethod5221(User user_1, int i_2) {
+   public int vmethod5221(User user_1) {
       return this.method5155((class278) user_1, -585814173);
    }
 

@@ -32,33 +32,10 @@ public final class class171 extends AbstractSocket implements Runnable {
       this.field2069 = this.field2060.getOutputStream();
    }
 
-   void method3556(byte[] bytes_1, int i_2, int i_3, int i_4) throws IOException {
-      if (!this.field2061) {
-         if (this.field2059) {
-            this.field2059 = false;
-            throw new IOException();
-         } else {
-            if (this.field2064 == null) {
-               this.field2064 = new byte[this.field2066];
-            }
-
-            synchronized(this) {
-               for (int i_6 = 0; i_6 < i_3; i_6++) {
-                  this.field2064[this.field2067] = bytes_1[i_6 + i_2];
-                  this.field2067 = (this.field2067 + 1) % this.field2066;
-                  if ((this.field2065 + this.field2058) % this.field2066 == this.field2067) {
-                     throw new IOException();
-                  }
-               }
-
-               if (this.field2063 == null) {
-                  this.field2063 = this.field2062.method3472(this, 3, -246698410);
-               }
-
-               this.notifyAll();
-            }
-         }
-      }
+   public static void method3553() {
+      MouseRecorder.field1099.method3712();
+      class197.field2402 = 1;
+      class11.field76 = null;
    }
 
    public void close() {
@@ -109,8 +86,32 @@ public final class class171 extends AbstractSocket implements Runnable {
       }
    }
 
-   public void vmethod5829(byte[] bytes_1, int i_2, int i_3, int i_4) throws IOException {
-      this.method3556(bytes_1, i_2, i_3, -338727961);
+   public static void method3554(int i_0, int i_1) {
+      class248 class248_4 = (class248) class248.field3294.get(i_0);
+      class248 class248_3;
+      if (class248_4 != null) {
+         class248_3 = class248_4;
+      } else {
+         byte[] bytes_9 = class248.field3298.method4144(14, i_0);
+         class248_4 = new class248();
+         if (bytes_9 != null) {
+            class248_4.method4485(new ByteBuffer(bytes_9));
+         }
+
+         class248.field3294.put(class248_4, i_0);
+         class248_3 = class248_4;
+      }
+
+      int i_5 = class248_3.field3296;
+      int i_6 = class248_3.field3297;
+      int i_7 = class248_3.field3295;
+      int i_8 = class212.field2527[i_7 - i_6];
+      if (i_1 < 0 || i_1 > i_8) {
+         i_1 = 0;
+      }
+
+      i_8 <<= i_6;
+      class212.var_configurations[i_5] = class212.var_configurations[i_5] & ~i_8 | i_1 << i_6 & i_8;
    }
 
    public int vmethod5826(byte b_1) throws IOException {
@@ -123,6 +124,68 @@ public final class class171 extends AbstractSocket implements Runnable {
 
    protected void finalize() {
       this.close();
+   }
+
+   public static class239 method3546(int i_0) {
+      class239 class239_2 = (class239) class239.field3202.get(i_0);
+      if (class239_2 != null) {
+         return class239_2;
+      } else {
+         byte[] bytes_3 = class239.field3200.method4144(5, i_0);
+         class239_2 = new class239();
+         if (bytes_3 != null) {
+            class239_2.method4350(new ByteBuffer(bytes_3));
+         }
+
+         class239.field3202.put(class239_2, i_0);
+         return class239_2;
+      }
+   }
+
+   void method3556(byte[] bytes_1, int i_2, int i_3) throws IOException {
+      if (!this.field2061) {
+         if (this.field2059) {
+            this.field2059 = false;
+            throw new IOException();
+         } else {
+            if (this.field2064 == null) {
+               this.field2064 = new byte[this.field2066];
+            }
+
+            synchronized(this) {
+               for (int i_6 = 0; i_6 < i_3; i_6++) {
+                  this.field2064[this.field2067] = bytes_1[i_6 + i_2];
+                  this.field2067 = (this.field2067 + 1) % this.field2066;
+                  if ((this.field2065 + this.field2058) % this.field2066 == this.field2067) {
+                     throw new IOException();
+                  }
+               }
+
+               if (this.field2063 == null) {
+                  this.field2063 = this.field2062.method3472(this, 3);
+               }
+
+               this.notifyAll();
+            }
+         }
+      }
+   }
+
+   public static class310 method3530(int i_0) {
+      class310[] arr_2 = class152.method3383();
+
+      for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
+         class310 class310_4 = arr_2[i_3];
+         if (i_0 == class310_4.field3815) {
+            return class310_4;
+         }
+      }
+
+      return null;
+   }
+
+   public void vmethod5829(byte[] bytes_1, int i_2, int i_3, int i_4) throws IOException {
+      this.method3556(bytes_1, i_2, i_3);
    }
 
    public void run() {
@@ -194,72 +257,9 @@ public final class class171 extends AbstractSocket implements Runnable {
             break;
          }
       } catch (Exception exception_12) {
-         ErrorHandler.logError((String) null, exception_12, (byte) 6);
+         ErrorHandler.logError(null, exception_12);
       }
 
-   }
-
-   public static void method3553(int i_0) {
-      MouseRecorder.field1099.method3712();
-      class197.field2402 = 1;
-      class11.field76 = null;
-   }
-
-   public static class310 method3530(int i_0) {
-      class310[] arr_2 = class152.method3383();
-
-      for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
-         class310 class310_4 = arr_2[i_3];
-         if (i_0 == class310_4.field3815) {
-            return class310_4;
-         }
-      }
-
-      return null;
-   }
-
-   public static void method3554(int i_0, int i_1, int i_2) {
-      class248 class248_4 = (class248) class248.field3294.get((long)i_0);
-      class248 class248_3;
-      if (class248_4 != null) {
-         class248_3 = class248_4;
-      } else {
-         byte[] bytes_9 = class248.field3298.method4144(14, i_0);
-         class248_4 = new class248();
-         if (bytes_9 != null) {
-            class248_4.method4485(new ByteBuffer(bytes_9), -1509826882);
-         }
-
-         class248.field3294.put(class248_4, (long)i_0);
-         class248_3 = class248_4;
-      }
-
-      int i_5 = class248_3.field3296;
-      int i_6 = class248_3.field3297;
-      int i_7 = class248_3.field3295;
-      int i_8 = class212.field2527[i_7 - i_6];
-      if (i_1 < 0 || i_1 > i_8) {
-         i_1 = 0;
-      }
-
-      i_8 <<= i_6;
-      class212.var_configurations[i_5] = class212.var_configurations[i_5] & ~i_8 | i_1 << i_6 & i_8;
-   }
-
-   public static class239 method3546(int i_0, int i_1) {
-      class239 class239_2 = (class239) class239.field3202.get((long)i_0);
-      if (class239_2 != null) {
-         return class239_2;
-      } else {
-         byte[] bytes_3 = class239.field3200.method4144(5, i_0);
-         class239_2 = new class239();
-         if (bytes_3 != null) {
-            class239_2.method4350(new ByteBuffer(bytes_3), -1922259569);
-         }
-
-         class239.field3202.put(class239_2, (long)i_0);
-         return class239_2;
-      }
    }
 
 }

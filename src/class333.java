@@ -1,9 +1,4 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class class333 {
 
@@ -84,7 +79,7 @@ public class class333 {
          }
 
          class26_6 = (class26) iterator_5.next();
-      } while (!class26_6.method373(i_1, i_2, i_3, 772882794));
+      } while (!class26_6.method373(i_1, i_2, i_3));
 
       return class26_6;
    }
@@ -103,26 +98,26 @@ public class class333 {
          }
 
          class26_4 = (class26) iterator_3.next();
-      } while (class26_4.method347((byte) -34) != i_1);
+      } while (class26_4.method347() != i_1);
 
       return class26_4;
    }
 
-   void method6449(class26 class26_1, int i_2) {
+   void method6449(class26 class26_1) {
       this.field3986 = class26_1;
       this.field4019 = new class36(this.field3983, this.field4021, this.field3976, this.field4010);
-      this.field4028.method6285(this.field3986.method369(-1549026278));
+      this.field4028.method6285(this.field3986.method369());
    }
 
-   void method6313(class26 class26_1, int i_2) {
+   void method6313(class26 class26_1) {
       if (this.field3986 == null || class26_1 != this.field3986) {
-         this.method6449(class26_1, -1813483224);
-         this.method6314(-1, -1, -1, 1348080831);
+         this.method6449(class26_1);
+         this.method6314(-1, -1, -1);
       }
    }
 
    public int method6332(int i_1) {
-      return this.field3986 == null ? -1 : this.field3990 + this.field3986.method338(-1264098925) * 64;
+      return this.field3986 == null ? -1 : this.field3990 + this.field3986.method338() * 64;
    }
 
    void method6450(byte b_1) {
@@ -146,17 +141,17 @@ public class class333 {
       this.field3988.addAll(this.field4016);
    }
 
-   void method6314(int i_1, int i_2, int i_3, int i_4) {
+   void method6314(int i_1, int i_2, int i_3) {
       if (this.field3986 != null) {
-         int[] ints_5 = this.field3986.method330(i_1, i_2, i_3, 1197175712);
+         int[] ints_5 = this.field3986.method330(i_1, i_2, i_3);
          if (ints_5 == null) {
-            ints_5 = this.field3986.method330(this.field3986.method343(-1111611912), this.field3986.method342((byte) -30), this.field3986.method405((byte) -16), 1762283890);
+            ints_5 = this.field3986.method330(this.field3986.method343(), this.field3986.method342(), this.field3986.method405());
          }
 
-         this.method6305(ints_5[0] - this.field3986.method338(-1607087713) * 64, ints_5[1] - this.field3986.method340(426909580) * 64, true, 997010308);
+         this.method6305(ints_5[0] - this.field3986.method338() * 64, ints_5[1] - this.field3986.method340() * 64, true, 997010308);
          this.field3970 = -1;
          this.field3993 = -1;
-         this.field3994 = this.method6323(this.field3986.method337(459716843), -1360526836);
+         this.field3994 = this.method6323(this.field3986.method337(), -1360526836);
          this.field3974 = this.field3994;
          this.field3972 = null;
          this.field3991 = null;
@@ -169,7 +164,7 @@ public class class333 {
    }
 
    public int method6333(int i_1) {
-      return this.field3986 == null ? -1 : this.field3999 + this.field3986.method340(297229601) * 64;
+      return this.field3986 == null ? -1 : this.field3999 + this.field3986.method340() * 64;
    }
 
    void method6304(int i_1) {
@@ -201,15 +196,15 @@ public class class333 {
    }
 
    public void method6369(int i_1, int i_2, int i_3) {
-      if (this.field3986 != null && this.field3986.method329(i_1, i_2, 431640899)) {
-         this.field3970 = i_1 - this.field3986.method338(120607152) * 64;
-         this.field3993 = i_2 - this.field3986.method340(-20854713) * 64;
+      if (this.field3986 != null && this.field3986.method329(i_1, i_2)) {
+         this.field3970 = i_1 - this.field3986.method338() * 64;
+         this.field3993 = i_2 - this.field3986.method340() * 64;
       }
    }
 
    public void method6380(int i_1, int i_2, int i_3) {
       if (this.field3986 != null) {
-         this.method6305(i_1 - this.field3986.method338(-1585762587) * 64, i_2 - this.field3986.method340(-972485029) * 64, true, 2047866040);
+         this.method6305(i_1 - this.field3986.method338() * 64, i_2 - this.field3986.method340() * 64, true, 2047866040);
          this.field3970 = -1;
          this.field3993 = -1;
       }
@@ -219,9 +214,9 @@ public class class333 {
       if (this.field3986 != null) {
          int i_6 = (int)((float)this.field3990 + ((float)(i_1 - this.field3995) - (float)this.method6412(-1200687327) * this.field3994 / 2.0F) / this.field3994);
          int i_7 = (int)((float)this.field3999 - ((float)(i_2 - this.field3975) - (float)this.method6461((byte) 127) * this.field3994 / 2.0F) / this.field3994);
-         this.field4024 = this.field3986.method331(i_6 + this.field3986.method338(-1555576379) * 64, i_7 + this.field3986.method340(-531003506) * 64, 1177032245);
+         this.field4024 = this.field3986.method331(i_6 + this.field3986.method338() * 64, i_7 + this.field3986.method340() * 64);
          if (this.field4024 != null && bool_3) {
-            boolean bool_8 = Client.field890 >= 2;
+            boolean bool_8 = Client.localRights >= 2;
             if (bool_8 && class45.field395[82] && class45.field395[81]) {
                class28.method418(this.field4024.field2530, this.field4024.field2528, this.field4024.field2531, false, 1223150720);
             } else {
@@ -341,7 +336,7 @@ public class class333 {
          this.method6322(i_1, i_2, i_3, i_4, i_8, 1955930802);
       } else {
          if (!this.field4019.method609(1588270336)) {
-            this.field4019.method602(this.field4029, this.field3986.method369(-185399103), Client.field655, (byte) 1);
+            this.field4019.method602(this.field4029, this.field3986.method369(), Client.field655, (byte) 1);
             if (!this.field4019.method609(1588270336)) {
                return;
             }
@@ -374,8 +369,7 @@ public class class333 {
          }
 
          this.method6319(i_1, i_2, i_3, i_4, i_9, i_10, (byte) -125);
-         bool_11 = Client.field890 >= 2;
-         if (bool_11 && this.field4025 && this.field4024 != null) {
+         if (this.field4025 && this.field4024 != null) {
             this.field3981.draw("Coord: " + this.field4024, Rasterizer2D.Rasterizer2D_xClipStart + 10, Rasterizer2D.Rasterizer2D_yClipStart + 20, 16776960, -1);
          }
 
@@ -391,10 +385,10 @@ public class class333 {
       class29.field244.method3350(5);
    }
 
-   public void method6320(int i_1, int i_2, int i_3, int i_4, int i_5) {
+   public void method6320(int i_1, int i_2, int i_3, int i_4) {
       if (this.field4028.method6295()) {
          if (!this.field4019.method609(1588270336)) {
-            this.field4019.method602(this.field4029, this.field3986.method369(131273805), Client.field655, (byte) 1);
+            this.field4019.method602(this.field4029, this.field3986.method369(), Client.field655, (byte) 1);
             if (!this.field4019.method609(1588270336)) {
                return;
             }
@@ -446,14 +440,14 @@ public class class333 {
       for (int i_10 = 0; i_10 < ints_9.length; i_10++) {
          ByteBuffer class300_11 = new ByteBuffer(this.field4029.method4144(i_8, ints_9[i_10]));
          class26 class26_12 = new class26();
-         class26_12.method344(class300_11, ints_9[i_10], (byte) 0);
-         this.field3992.put(class26_12.method369(-229522962), class26_12);
+         class26_12.method344(class300_11, ints_9[i_10]);
+         this.field3992.put(class26_12.method369(), class26_12);
          if (class26_12.method334()) {
             this.field3985 = class26_12;
          }
       }
 
-      this.method6313(this.field3985, 812407126);
+      this.method6313(this.field3985);
       this.field3987 = null;
    }
 
@@ -470,12 +464,12 @@ public class class333 {
       boolean bool_7 = false;
       if (class26_6 != this.field3987 || bool_4) {
          this.field3987 = class26_6;
-         this.method6313(class26_6, 2110747910);
+         this.method6313(class26_6);
          bool_7 = true;
       }
 
       if (bool_7 || bool_4) {
-         this.method6314(i_1, i_2, i_3, 2043648085);
+         this.method6314(i_1, i_2, i_3);
       }
 
    }
@@ -562,7 +556,7 @@ public class class333 {
    public void method6310(int i_1, int i_2) {
       class26 class26_3 = this.method6327(i_1, -1118693055);
       if (class26_3 != null) {
-         this.method6313(class26_3, 1238595784);
+         this.method6313(class26_3);
       }
 
    }
@@ -608,12 +602,12 @@ public class class333 {
    }
 
    public class213 method6415(byte b_1) {
-      return this.field3986 == null ? null : this.field3986.method331(this.method6332(302099777), this.method6333(-1722466928), 1591288232);
+      return this.field3986 == null ? null : this.field3986.method331(this.method6332(302099777), this.method6333(-1722466928));
    }
 
    public void method6330(int i_1, int i_2, int i_3, int i_4) {
       if (this.field3986 != null) {
-         int[] ints_5 = this.field3986.method330(i_1, i_2, i_3, 1037680047);
+         int[] ints_5 = this.field3986.method330(i_1, i_2, i_3);
          if (ints_5 != null) {
             this.method6369(ints_5[0], ints_5[1], -1604144136);
          }
@@ -623,7 +617,7 @@ public class class333 {
 
    public void method6389(int i_1, int i_2, int i_3, int i_4) {
       if (this.field3986 != null) {
-         int[] ints_5 = this.field3986.method330(i_1, i_2, i_3, -235419821);
+         int[] ints_5 = this.field3986.method330(i_1, i_2, i_3);
          if (ints_5 != null) {
             this.method6380(ints_5[0], ints_5[1], 2145778203);
          }
@@ -632,7 +626,7 @@ public class class333 {
    }
 
    public int method6311(byte b_1) {
-      return this.field3986 == null ? -1 : this.field3986.method347((byte) 21);
+      return this.field3986 == null ? -1 : this.field3986.method347();
    }
 
    public void method6338(byte b_1) {
@@ -748,20 +742,20 @@ public class class333 {
       this.method6350((byte) -67);
    }
 
-   public boolean method6348(int i_1, byte b_2) {
+   public boolean method6348(int i_1) {
       return !this.field4014.contains(Integer.valueOf(i_1));
    }
 
-   public void method6315(class26 class26_1, class213 class213_2, class213 class213_3, boolean bool_4, int i_5) {
+   public void method6315(class26 class26_1, class213 class213_2, class213 class213_3, boolean bool_4) {
       if (class26_1 != null) {
          if (this.field3986 == null || class26_1 != this.field3986) {
-            this.method6449(class26_1, -1956464788);
+            this.method6449(class26_1);
          }
 
-         if (!bool_4 && this.field3986.method373(class213_2.field2531, class213_2.field2530, class213_2.field2528, 1217284738)) {
-            this.method6314(class213_2.field2531, class213_2.field2530, class213_2.field2528, 1722414721);
+         if (!bool_4 && this.field3986.method373(class213_2.field2531, class213_2.field2530, class213_2.field2528)) {
+            this.method6314(class213_2.field2531, class213_2.field2530, class213_2.field2528);
          } else {
-            this.method6314(class213_3.field2531, class213_3.field2530, class213_3.field2528, 1901778927);
+            this.method6314(class213_3.field2531, class213_3.field2530, class213_3.field2528);
          }
 
       }
@@ -776,7 +770,7 @@ public class class333 {
          return null;
       } else if (!this.field4019.method609(1588270336)) {
          return null;
-      } else if (!this.field3986.method329(class213_2.field2530, class213_2.field2528, -924381995)) {
+      } else if (!this.field3986.method329(class213_2.field2530, class213_2.field2528)) {
          return null;
       } else {
          HashMap hashmap_4 = this.field4019.method610(1662606206);

@@ -73,7 +73,7 @@ public class Timer {
          i_1 += ItemDefinition.field3457.method4259() / 100;
          i_1 += Client.field684.method4259() / 100;
          i_1 += Entity.field1874.method4259() / 100;
-         i_1 += WorldMapID.field232.method4258() && WorldMapID.field232.method4148(741322871) ? 1 : 0;
+         i_1 += WorldMapID.field232.method4258() && WorldMapID.field232.method4148() ? 1 : 0;
          if (i_1 != 100) {
             if (i_1 != 0) {
                Login.field1189 = "Checking for updates - " + i_1 + "%";
@@ -204,7 +204,7 @@ public class Timer {
                   Client.field680 = 70;
                }
             } else if (Client.field680 == 70) {
-               if (!SoundSystem.field2544.method4148(1149416705)) {
+               if (!SoundSystem.field2544.method4148()) {
                   Login.field1189 = "Loading config - " + SoundSystem.field2544.method4257() + "%";
                   Login.field1188 = 60;
                } else {
@@ -262,7 +262,7 @@ public class Timer {
                   class235 class235_21 = SoundSystem.field2544;
                   class235 class235_22 = Client.field683;
                   class241.field3225 = class235_22;
-                  if (class235_21.method4148(-443186285)) {
+                  if (class235_21.method4148()) {
                      class314.field3846 = class235_21.method4154(35);
                      class241.field3219 = new class241[class314.field3846];
 
@@ -364,7 +364,7 @@ public class Timer {
                   Client.field680 = 90;
                }
             } else if (Client.field680 == 90) {
-               if (!class4.field18.method4148(75783134)) {
+               if (!class4.field18.method4148()) {
                   Login.field1189 = "Loading textures - " + "0%";
                   Login.field1188 = 90;
                } else {
@@ -385,7 +385,7 @@ public class Timer {
                }
             } else if (Client.field680 == 110) {
                FontName.field348 = new class63();
-               GameApplet.field463.method3472(FontName.field348, 10, 1809900382);
+               GameApplet.field463.method3472(FontName.field348, 10);
                Login.field1189 = "Loaded input handler";
                Login.field1188 = 92;
                Client.field680 = 120;
@@ -394,20 +394,20 @@ public class Timer {
                   Login.field1189 = "Loading wordpack - " + 0 + "%";
                   Login.field1188 = 94;
                } else {
-                  class209 class209_25 = new class209(class17.field110.method4163("huffman", "", -722893265));
+                  class209 class209_25 = new class209(class17.field110.method4163("huffman", ""));
                   class210.field2515 = class209_25;
                   Login.field1189 = "Loaded wordpack";
                   Login.field1188 = 94;
                   Client.field680 = 130;
                }
             } else if (Client.field680 == 130) {
-               if (!GCMonitor.field382.method4148(1613307654)) {
+               if (!GCMonitor.field382.method4148()) {
                   Login.field1189 = "Loading interfaces - " + GCMonitor.field382.method4257() * 4 / 5 + "%";
                   Login.field1188 = 96;
-               } else if (!class151.field1971.method4148(-666909078)) {
+               } else if (!class151.field1971.method4148()) {
                   Login.field1189 = "Loading interfaces - " + (80 + class151.field1971.method4257() / 6) + "%";
                   Login.field1188 = 96;
-               } else if (!class2.field6.method4148(767958628)) {
+               } else if (!class2.field6.method4148()) {
                   Login.field1189 = "Loading interfaces - " + (96 + class2.field6.method4257() / 50) + "%";
                   Login.field1188 = 96;
                } else {
@@ -417,8 +417,8 @@ public class Timer {
                }
             } else if (Client.field680 == 140) {
                Login.field1188 = 100;
-               if (!ItemDefinition.field3457.method4165(WorldMapCacheName.field308.field306, -928538356)) {
-                  Login.field1189 = "Loading world map - " + ItemDefinition.field3457.method4238(WorldMapCacheName.field308.field306, (byte) -19) / 10 + "%";
+               if (!ItemDefinition.field3457.method4165(WorldMapCacheName.field308.field306)) {
+                  Login.field1189 = "Loading world map - " + ItemDefinition.field3457.method4238(WorldMapCacheName.field308.field306) / 10 + "%";
                } else {
                   if (class136.field1875 == null) {
                      class136.field1875 = new class333();

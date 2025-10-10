@@ -21,7 +21,7 @@ public final class class77 extends Entity {
       int i_8 = class201.method3887(this.field1116, (byte) 96).field3238;
       if (i_8 != -1) {
          this.field1122 = false;
-         this.field1119 = class7.method81(i_8, (byte) 1);
+         this.field1119 = class7.method81(i_8);
       } else {
          this.field1122 = true;
       }
@@ -56,7 +56,7 @@ public final class class77 extends Entity {
       }
    }
 
-   static void method1945(int i_0) {
+   static void method1945() {
       FriendSystem.method4121();
       Client.field796[0] = "Cancel";
       Client.field668[0] = "";
@@ -65,14 +65,14 @@ public final class class77 extends Entity {
       Client.menuOptionsCount = 1;
    }
 
-   static final void method1947(class115 class115_0, int i_1) {
+   static void method1947(class115 class115_0) {
       class115_0.field1498 = false;
       if (class115_0.field1497 != null) {
          class115_0.field1497.field1529 = 0;
       }
 
       for (class115 class115_2 = class115_0.vmethod3894(); class115_2 != null; class115_2 = class115_0.vmethod3891()) {
-         method1947(class115_2, -464512720);
+         method1947(class115_2);
       }
 
    }
@@ -184,7 +184,7 @@ public final class class77 extends Entity {
       return 1;
    }
 
-   static final int method1948(int i_0, int i_1, int i_2) {
+   static int method1948(int i_0, int i_1) {
       if (i_0 == -1) {
          return 12345678;
       } else {

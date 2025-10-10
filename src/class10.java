@@ -76,10 +76,10 @@ final class class10 implements Comparator {
 
             if (s_4 != Client.field911) {
                if (Client.field911 == 0 && Client.field889 != -1) {
-                  class169.method3503(class29.field253, Client.field889, 0, s_4, false, 210229460);
+                  class169.method3503(class29.field253, Client.field889, 0, s_4, false);
                   Client.field699 = false;
                } else if (s_4 == 0) {
-                  class171.method3553(401790387);
+                  class171.method3553();
                   Client.field699 = false;
                } else if (class197.field2402 != 0) {
                   class56.field529 = s_4;
@@ -152,7 +152,7 @@ final class class10 implements Comparator {
          }
 
          if (i_5 == 18) {
-            Client.field678 = (class84) MemoryManager.findById(class233.method4141((byte) -27), i_3);
+            Client.field678 = MemoryManager.findById(class233.method4141(), i_3);
             if (Client.field678 == null) {
                Client.field678 = class84.field1173;
             }
@@ -167,7 +167,7 @@ final class class10 implements Comparator {
          }
 
          if (i_5 == 22) {
-            Client.field679 = (class84) MemoryManager.findById(class233.method4141((byte) 48), i_3);
+            Client.field679 = MemoryManager.findById(class233.method4141(), i_3);
             if (Client.field679 == null) {
                Client.field679 = class84.field1173;
             }

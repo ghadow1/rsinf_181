@@ -114,7 +114,7 @@ public class class137 {
       if (Client.field905 != -1) {
          i_1 = Client.field905;
          if (i_1 != -1 && class128.field1755[i_1]) {
-            Widget.field2557.method4157(i_1, 513084306);
+            Widget.field2557.method4157(i_1);
             if (Widget.field2556[i_1] != null) {
                boolean bool_6 = true;
 
@@ -145,7 +145,7 @@ public class class137 {
       Client.field816 = new class318(8);
       Client.field850 = null;
       FriendSystem.method4121();
-      Client.field918.method4009((int[]) null, new int[] {0, 0, 0, 0, 0}, false, -1, 646936980);
+      Client.field918.method4009(null, new int[]{0, 0, 0, 0, 0}, false, -1);
 
       for (i_1 = 0; i_1 < 8; i_1++) {
          Client.field778[i_1] = null;

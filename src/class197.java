@@ -19,7 +19,7 @@ public class class197 {
       class61_0.unlink();
       int i_6;
       if (bool_1 && i_3 != -1 && class128.field1755[i_3]) {
-         Widget.field2557.method4157(i_3, 513084306);
+         Widget.field2557.method4157(i_3);
          if (Widget.field2556[i_3] != null) {
             boolean bool_8 = true;
 
@@ -73,7 +73,7 @@ public class class197 {
 
       HealthBarUpdate.method145();
       if (Client.field905 != -1) {
-         class17.method175(Client.field905, 1, -1199742641);
+         class17.method175(Client.field905, 1);
       }
 
    }

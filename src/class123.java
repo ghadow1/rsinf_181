@@ -1,8 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.io.StringWriter;
+import java.io.*;
 
 public final class class123 {
 
@@ -13,7 +9,7 @@ public final class class123 {
    int field1618;
    int field1616;
 
-   static String method2843(Throwable throwable_0, byte b_1) throws IOException {
+   static String someStringZip(Throwable throwable_0) throws IOException {
       String str_2;
       if (throwable_0 instanceof GZipDecompressor) {
          GZipDecompressor GZipDecompressor_3 = (GZipDecompressor) throwable_0;
@@ -61,14 +57,12 @@ public final class class123 {
       }
    }
 
-   public static void method2842(short s_0) {
+   public static void method2842() {
       if (class45.field392 != null) {
-         class45 class45_1 = class45.field392;
-         synchronized(class45.field392) {
+         synchronized (class45.field392) {
             class45.field392 = null;
          }
       }
-
    }
 
 }

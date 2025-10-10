@@ -125,7 +125,7 @@ public class class250 extends DualNode {
          int i_6;
          int i_8;
          if (class69_0.field996 >= Client.field881) {
-            if (class69_0.field996 == Client.field881 || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981, (byte) 1).field3522[class69_0.field951]) {
+            if (class69_0.field996 == Client.field881 || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981).field3522[class69_0.field951]) {
                i_3 = class69_0.field996 - class69_0.field995;
                i_4 = Client.field881 - class69_0.field995;
                i_5 = class69_0.field991 * 128 + class69_0.field952 * 64;
@@ -146,7 +146,7 @@ public class class250 extends DualNode {
             } else {
                label434: {
                   if (class69_0.field981 != -1 && class69_0.field984 == 0) {
-                     class258_12 = class7.method81(class69_0.field981, (byte) 1);
+                     class258_12 = class7.method81(class69_0.field981);
                      if (class69_0.field1008 > 0 && class258_12.field3525 == 0) {
                         ++class69_0.field1007;
                         break label434;
@@ -319,7 +319,7 @@ public class class250 extends DualNode {
       class284.method5226(class69_0);
       class69_0.field967 = false;
       if (class69_0.field978 != -1) {
-         class258_12 = class7.method81(class69_0.field978, (byte) 1);
+         class258_12 = class7.method81(class69_0.field978);
          if (class258_12 != null && class258_12.field3520 != null) {
             ++class69_0.field1001;
             if (class69_0.field979 < class258_12.field3520.length && class69_0.field1001 > class258_12.field3522[class69_0.field979]) {
@@ -345,7 +345,7 @@ public class class250 extends DualNode {
 
          i_3 = class201.method3887(class69_0.field986, (byte) -20).field3238;
          if (i_3 != -1) {
-            class258 class258_13 = class7.method81(i_3, (byte) 1);
+            class258 class258_13 = class7.method81(i_3);
             if (class258_13 != null && class258_13.field3520 != null) {
                ++class69_0.field988;
                if (class69_0.field987 < class258_13.field3520.length && class69_0.field988 > class258_13.field3522[class69_0.field987]) {
@@ -366,7 +366,7 @@ public class class250 extends DualNode {
       }
 
       if (class69_0.field981 != -1 && class69_0.field984 <= 1) {
-         class258_12 = class7.method81(class69_0.field981, (byte) 1);
+         class258_12 = class7.method81(class69_0.field981);
          if (class258_12.field3525 == 1 && class69_0.field1008 > 0 && class69_0.field995 <= Client.field881 && class69_0.field996 < Client.field881) {
             class69_0.field984 = 1;
             return;
@@ -374,7 +374,7 @@ public class class250 extends DualNode {
       }
 
       if (class69_0.field981 != -1 && class69_0.field984 == 0) {
-         class258_12 = class7.method81(class69_0.field981, (byte) 1);
+         class258_12 = class7.method81(class69_0.field981);
          if (class258_12 != null && class258_12.field3520 != null) {
             ++class69_0.field974;
             if (class69_0.field951 < class258_12.field3520.length && class69_0.field974 > class258_12.field3522[class69_0.field951]) {

@@ -7,30 +7,6 @@ public class class248 extends DualNode {
    public int field3297;
    public int field3295;
 
-   void method4489(ByteBuffer class300_1, int i_2, int i_3) {
-      if (i_2 == 1) {
-         this.field3296 = class300_1.readUnsignedShort();
-         this.field3297 = class300_1.readUnsignedByte();
-         this.field3295 = class300_1.readUnsignedByte();
-      }
-
-   }
-
-   public void method4485(ByteBuffer class300_1, int i_2) {
-      while (true) {
-         int i_3 = class300_1.readUnsignedByte();
-         if (i_3 == 0) {
-            return;
-         }
-
-         this.method4489(class300_1, i_3, 611768322);
-      }
-   }
-
-   public static int method4493(CharSequence charsequence_0, int i_1) {
-      return AbstractWorldMapData.method554(charsequence_0, i_1);
-   }
-
    static void method4484() {
       int i_4;
       int i_16;
@@ -132,11 +108,11 @@ public class class248 extends DualNode {
       } else {
          if ((MouseHandler.field493 == 1 || !class46.field413 && MouseHandler.field493 == 4) && MouseHandler.field483 >= Login.field1208 + 765 - 50 && MouseHandler.field495 >= 453) {
             class17.field117.field1063 = !class17.field117.field1063;
-            class97.method2268(2118101811);
+            class97.method2268();
             if (!class17.field117.field1063) {
                class119.method2761(class29.field253, "scape main", "", 255, false, (byte) -92);
             } else {
-               class171.method3553(2054009362);
+               class171.method3553();
             }
          }
 
@@ -296,7 +272,7 @@ public class class248 extends DualNode {
                            }
 
                            class268.loginResponseMessages("", "Connecting to server...", "");
-                           class9.method99(false, -1093013043);
+                           class9.method99(false);
                            class96.updateGameState(20);
                            return;
                         }
@@ -318,7 +294,7 @@ public class class248 extends DualNode {
                            Client.field691 = !Client.field691;
                            if (!Client.field691 && class17.field117.field1065 != null) {
                               class17.field117.field1065 = null;
-                              class97.method2268(2113961646);
+                              class97.method2268();
                            }
                         }
 
@@ -337,7 +313,7 @@ public class class248 extends DualNode {
                               }
                            }
 
-                           class97.method2268(2134130666);
+                           class97.method2268();
                         }
 
                         while (true) {
@@ -392,7 +368,7 @@ public class class248 extends DualNode {
                                     }
 
                                     class268.loginResponseMessages("", "Connecting to server...", "");
-                                    class9.method99(false, -1259093589);
+                                    class9.method99(false);
                                     class96.updateGameState(20);
                                     return;
                                  }
@@ -433,7 +409,7 @@ public class class248 extends DualNode {
 
                               class9.field65 = Integer.parseInt(class36.field328);
                               class36.field328 = "";
-                              class9.method99(true, -2125427032);
+                              class9.method99(true);
                               class268.loginResponseMessages("", "Connecting to server...", "");
                               class96.updateGameState(20);
                               return;
@@ -486,7 +462,7 @@ public class class248 extends DualNode {
 
                                     class9.field65 = Integer.parseInt(class36.field328);
                                     class36.field328 = "";
-                                    class9.method99(true, -1709278569);
+                                    class9.method99(true);
                                     class268.loginResponseMessages("", "Connecting to server...", "");
                                     class96.updateGameState(20);
                                     return;
@@ -647,6 +623,30 @@ public class class248 extends DualNode {
 
             }
          }
+      }
+   }
+
+   void method4489(ByteBuffer class300_1, int i_2) {
+      if (i_2 == 1) {
+         this.field3296 = class300_1.readUnsignedShort();
+         this.field3297 = class300_1.readUnsignedByte();
+         this.field3295 = class300_1.readUnsignedByte();
+      }
+
+   }
+
+   public static int method4493(CharSequence charsequence_0, int i_1) {
+      return AbstractWorldMapData.method554(charsequence_0, i_1);
+   }
+
+   public void method4485(ByteBuffer class300_1) {
+      while (true) {
+         int i_3 = class300_1.readUnsignedByte();
+         if (i_3 == 0) {
+            return;
+         }
+
+         this.method4489(class300_1, i_3);
       }
    }
 

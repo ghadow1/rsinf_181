@@ -1,6 +1,7 @@
+import netscape.javascript.JSObject;
+
 import java.applet.Applet;
 import java.net.URL;
-import netscape.javascript.JSObject;
 
 public final class class66 extends class69 {
 
@@ -54,8 +55,8 @@ public final class class66 extends class69 {
       if (this.field613 == null) {
          return null;
       } else {
-         class258 class258_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981, (byte) 1) : null;
-         class258 class258_3 = super.field978 != -1 && !this.field634 && (super.field978 != super.field1004 || class258_2 == null) ? class7.method81(super.field978, (byte) 1) : null;
+         class258 class258_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981) : null;
+         class258 class258_3 = super.field978 != -1 && !this.field634 && (super.field978 != super.field1004 || class258_2 == null) ? class7.method81(super.field978) : null;
          class127 class127_4 = this.field613.method3997(class258_2, super.field951, class258_3, super.field979);
          if (class127_4 == null) {
             return null;
@@ -167,7 +168,7 @@ public final class class66 extends class69 {
    }
 
    final void method1189(int i_1, int i_2, byte b_3) {
-      if (super.field981 != -1 && class7.method81(super.field981, (byte) 1).field3532 == 1) {
+      if (super.field981 != -1 && class7.method81(super.field981).field3532 == 1) {
          super.field981 = -1;
       }
 
@@ -277,7 +278,8 @@ public final class class66 extends class69 {
       this.field618 = class300_1.readUnsignedByte();
       this.field617 = class300_1.readUnsignedShort();
       this.field628 = class300_1.readUnsignedByte() == 1;
-      if (Client.field703 == 0 && Client.field890 >= 2) {
+      if (Client.field703 == 0
+              && Client.localRights >= 2) {
          this.field628 = false;
       }
 
@@ -285,7 +287,7 @@ public final class class66 extends class69 {
          this.field613 = new class214();
       }
 
-      this.field613.method4009(ints_5, ints_10, i_3 == 1, i_4, -650970656);
+      this.field613.method4009(ints_5, ints_10, i_3 == 1, i_4);
    }
 
    boolean method1181(int i_1) {

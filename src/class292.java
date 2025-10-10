@@ -34,7 +34,7 @@ public class class292 {
             widget_11.field2702 = Client.field881;
             if (!widget_11.field2563 || !class62.method1133(widget_11)) {
                if (widget_11.field2568 > 0) {
-                  class8.method85(widget_11, -1619270893);
+                  class8.method85(widget_11);
                }
 
                int i_13 = widget_11.field2577 + i_6;
@@ -167,11 +167,11 @@ public class class292 {
                      }
 
                      if (widget_11.field2568 == 1401) {
-                        class136.field1875.method6320(i_13, i_14, widget_11.field2579, widget_11.field2667, -1774436451);
+                        class136.field1875.method6320(i_13, i_14, widget_11.field2579, widget_11.field2667);
                      }
 
                      if (widget_11.field2568 == 1402) {
-                        class278.field3631.method1735(i_13, Client.field881, (byte) -54);
+                        class278.field3631.method1735(i_13, Client.field881);
                      }
                   }
 
@@ -485,7 +485,7 @@ public class class292 {
                                        FriendSystem.invalidateWidget(widget_11);
                                     }
                                  } else {
-                                    class258 class258_48 = class7.method81(i_21, (byte) 1);
+                                    class258 class258_48 = class7.method81(i_21);
                                     class127_42 = widget_11.method4049(class258_48, widget_11.field2692, bool_37, Client.localPlayer.field613, 482898105);
                                     if (class127_42 == null && Widget.field2562) {
                                        FriendSystem.invalidateWidget(widget_11);

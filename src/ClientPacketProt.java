@@ -44,7 +44,7 @@ public class ClientPacketProt implements class181 {
    public static final ClientPacketProt field2243 = new ClientPacketProt(40, 8);
    public static final ClientPacketProt field2234 = new ClientPacketProt(41, 6);
    public static final ClientPacketProt field2245 = new ClientPacketProt(42, 2);
-   public static final ClientPacketProt field2247 = new ClientPacketProt(44, 15);
+   public static final ClientPacketProt IT_ON_OBJ = new ClientPacketProt(44, 15);
    public static final ClientPacketProt field2248 = new ClientPacketProt(45, 4);
    public static final ClientPacketProt field2249 = new ClientPacketProt(46, 8);
    public static final ClientPacketProt field2250 = new ClientPacketProt(47, 3);

@@ -7,7 +7,7 @@ final class class11 implements Comparator {
    static class324[] field72;
 
    int method126(class7 class7_1, class7 class7_2, byte b_3) {
-      return class7_1.method74((byte) -114).compareTo(class7_2.method74((byte) -48));
+      return class7_1.method74().compareTo(class7_2.method74());
    }
 
    public int compare(Object object_1, Object object_2) {

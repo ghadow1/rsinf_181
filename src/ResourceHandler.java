@@ -190,7 +190,7 @@ public class ResourceHandler {
       this.field1423 -= i_2;
       if (this.field1410 != null && this.field1423 <= 0) {
          this.field1423 += CollisionMap.field2078 >> 4;
-         class77.method1947(this.field1410, -1064292468);
+         class77.method1947(this.field1410);
          this.method2456(this.field1410, this.field1410.vmethod2689(), 2049205678);
          int i_4 = 0;
          int i_5 = 255;

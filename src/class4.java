@@ -59,7 +59,7 @@ final class class4 implements class0 {
          }
 
          i_29 = Client.camAngleY & 0x7ff;
-         class72.method1724(MouseHandler.field499, Client.field729, class26.field227, i_5, i_29, FontName.method700(i_5, (byte) -68), i_3, 806808180);
+         class72.method1724(MouseHandler.field499, Client.field729, class26.field227, i_5, i_29, FontName.method700(i_5, (byte) -68), i_3);
       }
 
       int i_8;
@@ -425,7 +425,7 @@ final class class4 implements class0 {
       }
 
       ((class119) Rasterizer3D.field1781).method2736(Client.field718);
-      class21.method273(i_0, i_1, i_2, i_3, -2108015148);
+      class21.method273();
       PacketBuffer.field3727 = i_29;
       GCMonitor.field383 = i_7;
       class1.field3 = i_8;

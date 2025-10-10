@@ -425,7 +425,28 @@ public abstract class class233 {
       }
    }
 
-   public byte[] method4163(String string_1, String string_2, int i_3) {
+   static class84[] method4141() {
+      return new class84[] {class84.field1167, class84.field1170, class84.field1173, class84.field1169};
+   }
+
+   static int method4172(int i_0) {
+      if (i_0 == 3200) {
+         class70.field1014 -= 3;
+         class81.method1989(MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1], MouseRecorder.field1098[class70.field1014 + 2]);
+         return 1;
+      } else if (i_0 == 3201) {
+         class8.method93(MouseRecorder.field1098[--class70.field1014]);
+         return 1;
+      } else if (i_0 == 3202) {
+         class70.field1014 -= 2;
+         class17.method188(MouseRecorder.field1098[class70.field1014]);
+         return 1;
+      } else {
+         return 2;
+      }
+   }
+
+   public byte[] method4163(String string_1, String string_2) {
       string_1 = string_1.toLowerCase();
       string_2 = string_2.toLowerCase();
       int i_4 = this.field3135.method6501(HealthBarUpdate.method148(string_1));
@@ -433,14 +454,14 @@ public abstract class class233 {
       return this.method4144(i_4, i_5);
    }
 
-   public void method4156(int i_1) {
+   public void method4156() {
       for (int i_2 = 0; i_2 < this.field3126.length; i_2++) {
          this.field3126[i_2] = null;
       }
 
    }
 
-   public void method4158(int i_1) {
+   public void method4158() {
       for (int i_2 = 0; i_2 < this.field3138.length; i_2++) {
          if (this.field3138[i_2] != null) {
             for (int i_3 = 0; i_3 < this.field3138[i_2].length; i_3++) {
@@ -451,7 +472,7 @@ public abstract class class233 {
 
    }
 
-   public boolean method4148(int i_1) {
+   public boolean method4148() {
       boolean bool_2 = true;
 
       for (int i_3 = 0; i_3 < this.field3128.length; i_3++) {
@@ -467,51 +488,30 @@ public abstract class class233 {
       return bool_2;
    }
 
-   public boolean method4165(String string_1, int i_2) {
+   public boolean method4165(String string_1) {
       string_1 = string_1.toLowerCase();
       int i_3 = this.field3135.method6501(HealthBarUpdate.method148(string_1));
       return this.method4199(i_3);
    }
 
-   public int method4238(String string_1, byte b_2) {
+   public int method4238(String string_1) {
       string_1 = string_1.toLowerCase();
       int i_3 = this.field3135.method6501(HealthBarUpdate.method148(string_1));
       return this.vmethod4266(i_3);
    }
 
-   public void method4157(int i_1, int i_2) {
+   public void method4157(int i_1) {
       for (int i_3 = 0; i_3 < this.field3138[i_1].length; i_3++) {
          this.field3138[i_1][i_3] = null;
       }
 
    }
 
-   public void method4166(String string_1, byte b_2) {
+   public void method4166(String string_1) {
       string_1 = string_1.toLowerCase();
       int i_3 = this.field3135.method6501(HealthBarUpdate.method148(string_1));
       if (i_3 >= 0) {
          this.vmethod4278(i_3);
-      }
-   }
-
-   static class84[] method4141(byte b_0) {
-      return new class84[] {class84.field1167, class84.field1170, class84.field1173, class84.field1169};
-   }
-
-   static int method4172(int i_0, class92 class92_1, boolean bool_2, int i_3) {
-      if (i_0 == 3200) {
-         class70.field1014 -= 3;
-         class81.method1989(MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1], MouseRecorder.field1098[class70.field1014 + 2]);
-         return 1;
-      } else if (i_0 == 3201) {
-         class8.method93(MouseRecorder.field1098[--class70.field1014], 486411267);
-         return 1;
-      } else if (i_0 == 3202) {
-         class70.field1014 -= 2;
-         class17.method188(MouseRecorder.field1098[class70.field1014], MouseRecorder.field1098[class70.field1014 + 1], -211024130);
-         return 1;
-      } else {
-         return 2;
       }
    }
 

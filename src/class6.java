@@ -286,11 +286,11 @@ public class class6 {
 
                         i_33 = 0;
                         if (i_32 != -1) {
-                           i_33 = Rasterizer3D.field1783[class77.method1948(i_32, 96, 1550273173)];
+                           i_33 = Rasterizer3D.field1783[class77.method1948(i_32, 96)];
                         }
 
                         if (i_22 == 0) {
-                           scene_0.method3071(i_3, i_12, i_18, 0, 0, -1, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27, 730668545), class77.method1948(i_31, i_28, 1795163624), class77.method1948(i_31, i_29, 1270402615), class77.method1948(i_31, i_30, 1843049924), 0, 0, 0, 0, i_33, 0);
+                           scene_0.method3071(i_3, i_12, i_18, 0, 0, -1, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27), class77.method1948(i_31, i_28), class77.method1948(i_31, i_29), class77.method1948(i_31, i_30), 0, 0, 0, 0, i_33, 0);
                         } else {
                            i_34 = class55.field506[i_3][i_12][i_18] + 1;
                            byte b_55 = class268.field3561[i_3][i_12][i_18];
@@ -353,7 +353,7 @@ public class class6 {
                               i_42 = Rasterizer3D.field1783[class112.method2517(i_41, 96, (byte) 1)];
                            }
 
-                           scene_0.method3071(i_3, i_12, i_18, i_34, b_55, i_52, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27, 1393916461), class77.method1948(i_31, i_28, 1575342974), class77.method1948(i_31, i_29, 1119072540), class77.method1948(i_31, i_30, 1315475262), class112.method2517(i_40, i_27, (byte) 1), class112.method2517(i_40, i_28, (byte) 1), class112.method2517(i_40, i_29, (byte) 1), class112.method2517(i_40, i_30, (byte) 1), i_33, i_42);
+                           scene_0.method3071(i_3, i_12, i_18, i_34, b_55, i_52, i_23, i_24, i_25, i_26, class77.method1948(i_31, i_27), class77.method1948(i_31, i_28), class77.method1948(i_31, i_29), class77.method1948(i_31, i_30), class112.method2517(i_40, i_27, (byte) 1), class112.method2517(i_40, i_28, (byte) 1), class112.method2517(i_40, i_29, (byte) 1), class112.method2517(i_40, i_30, (byte) 1), i_33, i_42);
                         }
                      }
                   }

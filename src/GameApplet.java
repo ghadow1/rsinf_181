@@ -402,7 +402,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    protected final void method972() {
-      if (class166.field2029.toLowerCase().indexOf("microsoft") != -1) {
+      if (class166.appletVendor.toLowerCase().indexOf("microsoft") != -1) {
          class45.field407[186] = 57;
          class45.field407[187] = 27;
          class45.field407[188] = 71;
@@ -483,9 +483,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             field463 = new class166();
          }
 
-         field463.method3472(this, 1, 193419386);
+         field463.method3472(this, 1);
       } catch (Exception exception_6) {
-         ErrorHandler.logError((String) null, exception_6, (byte) 89);
+         ErrorHandler.logError(null, exception_6);
          this.loadingError("crash");
       }
 
@@ -579,10 +579,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    public void run() {
       try {
-         if (class166.field2029 != null) {
-            String string_1 = class166.field2029.toLowerCase();
+         if (class166.appletVendor != null) {
+            String string_1 = class166.appletVendor.toLowerCase();
             if (string_1.indexOf("sun") != -1 || string_1.indexOf("apple") != -1) {
-               String string_2 = class166.field2028;
+               String string_2 = class166.appletVersion;
                if (string_2.equals("1.1") || string_2.startsWith("1.1.") || string_2.equals("1.2") || string_2.startsWith("1.2.") || string_2.equals("1.3") || string_2.startsWith("1.3.") || string_2.equals("1.4") || string_2.startsWith("1.4.") || string_2.equals("1.5") || string_2.startsWith("1.5.") || string_2.equals("1.6.0")) {
                   this.loadingError("wrongjava");
                   return;
@@ -621,7 +621,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.method968(this.canvas, 1151565468);
          }
       } catch (Exception exception_6) {
-         ErrorHandler.logError((String) null, exception_6, (byte) 40);
+         ErrorHandler.logError(null, exception_6);
          this.loadingError("crash");
       }
 

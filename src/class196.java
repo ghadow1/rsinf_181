@@ -11,7 +11,7 @@ public class class196 {
    int field2390;
    int field2398;
 
-   static int method3686(int i_0, short s_1) {
+    static int method3686(int i_0) {
       Message message_2 = (Message) class91.field1277.method5924((long)i_0);
       return message_2 == null ? -1 : (message_2.previousDual == class91.field1278.field3551 ? -1 : ((Message) message_2.previousDual).field600);
    }

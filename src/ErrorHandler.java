@@ -230,11 +230,11 @@ public class ErrorHandler extends DualNode {
       }
    }
 
-   public static void logError(String string_0, Throwable throwable_1, byte b_2) {
+   public static void logError(String string_0, Throwable throwable_1) {
       try {
          String str_3 = "";
          if (throwable_1 != null) {
-            str_3 = class123.method2843(throwable_1, (byte) 1);
+            str_3 = class123.someStringZip(throwable_1);
          }
 
          if (string_0 != null) {
@@ -254,7 +254,7 @@ public class ErrorHandler extends DualNode {
             return;
          }
 
-         URL url_4 = new URL(GZipDecompressor.field4064.getCodeBase(), "clienterror.ws?c=" + GZipDecompressor.field4065 + "&u=" + class10.field69 + "&v1=" + class166.field2029 + "&v2=" + class166.field2028 + "&ct=" + GZipDecompressor.field4066 + "&e=" + str_3);
+         URL url_4 = new URL(GZipDecompressor.field4064.getCodeBase(), "clienterror.ws?c=" + GZipDecompressor.field4065 + "&u=" + class10.field69 + "&v1=" + class166.appletVendor + "&v2=" + class166.appletVersion + "&ct=" + GZipDecompressor.field4066 + "&e=" + str_3);
          DataInputStream datainputstream_5 = new DataInputStream(url_4.openStream());
          datainputstream_5.read();
          datainputstream_5.close();

@@ -423,8 +423,8 @@ public class class187 extends LinkedListNode {
                for (i_8 = i_4 - 1; i_8 <= i_5 + 1; i_8++) {
                   for (i_53 = i_52 - 1; i_53 <= i_7 + 1; i_53++) {
                      if (i_8 < i_4 || i_8 > i_5 || i_53 < i_52 || i_53 > i_7) {
-                        WorldMapCacheName.field307.method4166("m" + i_8 + "_" + i_53, (byte) 62);
-                        WorldMapCacheName.field307.method4166("l" + i_8 + "_" + i_53, (byte) -1);
+                        WorldMapCacheName.field307.method4166("m" + i_8 + "_" + i_53);
+                        WorldMapCacheName.field307.method4166("l" + i_8 + "_" + i_53);
                      }
                   }
                }

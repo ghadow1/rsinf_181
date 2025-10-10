@@ -62,7 +62,7 @@ public class class23 extends class34 {
          Login.loginIndex = 3;
          Login.field1212 = 1;
       } else if (i_0 == 4) {
-         class63.method1137(0, 1823729833);
+         class63.method1137(0);
       } else if (i_0 == 5) {
          Login.field1212 = 2;
          class268.loginResponseMessages("Your account has not logged out from its last", "session or the server is too busy right now.", "Please try again in a few minutes.");
@@ -89,7 +89,7 @@ public class class23 extends class34 {
       } else if (i_0 == 17) {
          class268.loginResponseMessages("You are standing in a members-only area.", "To play on this world move to a free area first", "");
       } else if (i_0 == 18) {
-         class63.method1137(1, 1736065240);
+         class63.method1137(1);
       } else if (i_0 == 19) {
          class268.loginResponseMessages("This world is running a closed Beta.", "Sorry invited players only.", "Please use a different world.");
       } else if (i_0 == 20) {
@@ -139,16 +139,16 @@ public class class23 extends class34 {
       class96.updateGameState(10);
    }
 
-   public static void method286(int i_0) {
+   public static void method286() {
       class246.field3278.method3323();
       class246.field3276.method3323();
    }
 
-   static Message method297(int i_0, int i_1) {
+   static Message method297(int i_0) {
       return (Message) class91.field1277.method5924((long)i_0);
    }
 
-   public static boolean method295(int i_0, int i_1) {
+   public static boolean method295(int i_0) {
       return (i_0 >> 20 & 0x1) != 0;
    }
 

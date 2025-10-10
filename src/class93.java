@@ -21,7 +21,7 @@ public class class93 extends Entity {
       this.field1296 = i_5;
       this.field1299 = i_6;
       if (i_7 != -1) {
-         this.field1293 = class7.method81(i_7, (byte) 1);
+         this.field1293 = class7.method81(i_7);
          this.field1298 = 0;
          this.field1300 = Client.field881 - 1;
          if (this.field1293.field3529 == 0 && entity_9 != null && entity_9 instanceof class93) {

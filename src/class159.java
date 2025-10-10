@@ -171,7 +171,7 @@ public class class159 extends ChainedComparator {
             i_4 = MouseRecorder.field1098[--class70.field1014];
             if (i_4 == 1 || i_4 == 2) {
                class17.field117.field1064 = i_4;
-               class97.method2268(2084017992);
+               class97.method2268();
             }
 
             return 1;

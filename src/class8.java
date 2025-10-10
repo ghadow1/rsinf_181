@@ -28,7 +28,7 @@ final class class8 implements Comparator {
       return string_0;
    }
 
-   static final void method85(Widget widget_0, int i_1) {
+   static void method85(Widget widget_0) {
       int i_2 = widget_0.field2568;
       if (i_2 == 324) {
          if (Client.field919 == -1) {
@@ -93,9 +93,9 @@ final class class8 implements Comparator {
       return string_0;
    }
 
-   static void method93(int i_0, int i_1) {
+   static void method93(int i_0) {
       if (i_0 == -1 && !Client.field699) {
-         class171.method3553(-461767725);
+         class171.method3553();
       } else if (i_0 != -1 && i_0 != Client.field889 && Client.field911 != 0 && !Client.field699) {
          class235 class235_2 = class29.field253;
          int i_3 = Client.field911;

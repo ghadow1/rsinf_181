@@ -55,7 +55,7 @@ public final class class75 extends LinkedListNode {
 
    }
 
-   static class92 method1828(int i_0, int i_1, int i_2, short s_3) {
+   static class92 method1828(int i_0, int i_1, int i_2) {
       int i_4 = (i_1 << 8) + i_0;
       class92 class92_6 = ItemContainer.method821(i_4);
       if (class92_6 != null) {
@@ -67,7 +67,7 @@ public final class class75 extends LinkedListNode {
       }
    }
 
-   static final void method1826(int i_0) {
+   static void method1826() {
       Client.field767 = 0;
       int i_1 = (Client.localPlayer.x >> 7) + class196.field2389;
       int i_2 = (Client.localPlayer.y >> 7) + class1.field1;
@@ -85,13 +85,13 @@ public final class class75 extends LinkedListNode {
 
    }
 
-   static void method1824(int i_0, class213 class213_1, boolean bool_2, byte b_3) {
-      class26 class26_4 = class31.method538(868064378).method6327(i_0, -1144902380);
+   static void method1824(int i_0, class213 class213_1, boolean bool_2) {
+      class26 class26_4 = class31.method538().method6327(i_0, -1144902380);
       int i_5 = Client.localPlayer.field629;
       int i_6 = (Client.localPlayer.x >> 7) + class196.field2389;
       int i_7 = (Client.localPlayer.y >> 7) + class1.field1;
       class213 class213_8 = new class213(i_5, i_6, i_7);
-      class31.method538(-1492208120).method6315(class26_4, class213_8, class213_1, bool_2, 1469825217);
+      class31.method538().method6315(class26_4, class213_8, class213_1, bool_2);
    }
 
 }

@@ -209,7 +209,7 @@ public class class41 {
          }
 
          i_7 = buffer3_0.readUnsignedByte();
-         class63.method1139(class66_2, i_6, i_7, (byte) -124);
+         class63.method1139(class66_2, i_6, i_7);
       }
 
       if (class66_2.field638) {

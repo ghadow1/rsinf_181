@@ -25,7 +25,7 @@ public class class38 extends class26 {
    }
 
    void method666(ByteBuffer class300_1, ByteBuffer class300_2, int i_3, boolean bool_4, byte b_5) {
-      this.method344(class300_1, i_3, (byte) 0);
+      this.method344(class300_1, i_3);
       int i_6 = class300_2.readUnsignedShort();
       this.field333 = new HashSet(i_6);
 

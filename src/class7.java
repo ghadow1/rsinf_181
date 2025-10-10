@@ -18,7 +18,7 @@ public class class7 {
       int i_5 = class300_1.readIntMedEndian();
       this.field53 = new class9();
       this.field53.method115(2, (byte) 126);
-      this.field53.method100(b_2, 874487771);
+      this.field53.method100(b_2);
       this.field53.field60 = i_4;
       this.field53.field61 = i_5;
       this.field53.field58 = 0;
@@ -26,15 +26,7 @@ public class class7 {
       this.field53.field59 = i_3;
    }
 
-   public String method74(byte b_1) {
-      return this.field44;
-   }
-
-   public String method77(short s_1) {
-      return this.field45;
-   }
-
-   public static class258 method81(int i_0, byte b_1) {
+   public static class258 method81(int i_0) {
       class258 class258_2 = (class258) class258.field3524.get((long)i_0);
       if (class258_2 != null) {
          return class258_2;
@@ -49,6 +41,14 @@ public class class7 {
          class258.field3524.put(class258_2, (long)i_0);
          return class258_2;
       }
+   }
+
+   public String method74() {
+      return this.field44;
+   }
+
+   public String method77() {
+      return this.field45;
    }
 
    static final void method73(int i_0) {

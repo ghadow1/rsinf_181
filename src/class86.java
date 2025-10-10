@@ -41,7 +41,7 @@ public final class class86 extends Entity {
       this.field1220 = false;
       int i_12 = class201.method3887(this.field1235, (byte) -4).field3238;
       if (i_12 != -1) {
-         this.field1236 = class7.method81(i_12, (byte) 1);
+         this.field1236 = class7.method81(i_12);
       } else {
          this.field1236 = null;
       }

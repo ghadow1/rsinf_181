@@ -19,7 +19,7 @@ public class class26 {
    String field219;
    LinkedList field224;
 
-   public void method344(ByteBuffer class300_1, int i_2, byte b_3) {
+   public void method344(ByteBuffer class300_1, int i_2) {
       this.field221 = i_2;
       this.field214 = class300_1.readNullTerminatedString();
       this.field219 = class300_1.readNullTerminatedString();
@@ -38,7 +38,7 @@ public class class26 {
       this.method332();
    }
 
-   public boolean method329(int i_1, int i_2, int i_3) {
+   public boolean method329(int i_1, int i_2) {
       int i_4 = i_1 / 64;
       int i_5 = i_2 / 64;
       if (i_4 >= this.field217 && i_4 <= this.field223) {
@@ -63,11 +63,11 @@ public class class26 {
       }
    }
 
-   public int method347(byte b_1) {
+   public int method347() {
       return this.field221;
    }
 
-   public int[] method330(int i_1, int i_2, int i_3, int i_4) {
+   public int[] method330(int i_1, int i_2, int i_3) {
       Iterator iterator_5 = this.field224.iterator();
 
       class37 class37_6;
@@ -82,15 +82,15 @@ public class class26 {
       return class37_6.vmethod760(i_1, i_2, i_3, (byte) 12);
    }
 
-   public int method338(int i_1) {
+   public int method338() {
       return this.field217;
    }
 
-   public int method340(int i_1) {
+   public int method340() {
       return this.field220;
    }
 
-   public boolean method373(int i_1, int i_2, int i_3, int i_4) {
+   public boolean method373(int i_1, int i_2, int i_3) {
       Iterator iterator_5 = this.field224.iterator();
 
       class37 class37_6;
@@ -105,7 +105,7 @@ public class class26 {
       return true;
    }
 
-   public class213 method331(int i_1, int i_2, int i_3) {
+   public class213 method331(int i_1, int i_2) {
       Iterator iterator_4 = this.field224.iterator();
 
       class37 class37_5;
@@ -120,23 +120,23 @@ public class class26 {
       return class37_5.vmethod742(i_1, i_2, (byte) -13);
    }
 
-   public int method343(int i_1) {
+   public int method343() {
       return this.field218.field2531;
    }
 
-   public String method369(int i_1) {
+   public String method369() {
       return this.field214;
    }
 
-   public int method342(byte b_1) {
+   public int method342() {
       return this.field218.field2530;
    }
 
-   public int method405(byte b_1) {
+   public int method405() {
       return this.field218.field2528;
    }
 
-   public int method337(int i_1) {
+   public int method337() {
       return this.field228;
    }
 
