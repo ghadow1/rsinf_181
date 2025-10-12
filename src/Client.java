@@ -819,7 +819,7 @@ public final class Client extends GameApplet implements class280 {
 
    }
 
-   final boolean method1257(int i_1) {
+   final boolean method1257() {
       int i_2 = class13.getNewestMenuIdx();
       return (field789 == 1 && menuOptionsCount > 2 || MouseRecorder.isRightClickOnlyMenu(i_2)) && !field769[i_2];
    }
@@ -3180,14 +3180,14 @@ public final class Client extends GameApplet implements class280 {
                                                             widget_44.method4063(field764, field765);
                                                          }
 
-                                                         class187_20 = class235.method4265(ClientPacketProt.field2283, data.field1313);
+                                                         class187_20 = class235.method4265(ClientPacketProt.IF_ITEM_DRAG_OT, data.field1313);
                                                          class187_20.outBuffer.writeShortBigEndian(field764);
                                                          class187_20.outBuffer.writeShortLittleEndian(field765);
                                                          class187_20.outBuffer.writeIntBigEndian(class18.field127.field2688);
                                                          class187_20.outBuffer.writeNegatedByte(b_35);
                                                          data.copy(class187_20);
                                                       }
-                                                   } else if (this.method1257(-246080062)) {
+                                                   } else if (this.method1257()) {
                                                       this.method1274(field654, field763);
                                                    } else if (menuOptionsCount > 0) {
                                                       i_5 = field654;
@@ -4038,7 +4038,7 @@ public final class Client extends GameApplet implements class280 {
                      }
                   }
 
-                  if ((i_21 == 1 || !class46.field413 && i_21 == 4) && this.method1257(-1559742054)) {
+                  if ((i_21 == 1 || !class46.field413 && i_21 == 4) && this.method1257()) {
                      i_21 = 2;
                   }
 
@@ -4059,7 +4059,7 @@ public final class Client extends GameApplet implements class280 {
                   return;
                }
 
-               if (class18.field127 != null && !field874 && menuOptionsCount > 0 && !this.method1257(205478244)) {
+               if (class18.field127 != null && !field874 && menuOptionsCount > 0 && !this.method1257()) {
                   i_10 = field654;
                   i_11 = field763;
                   class82 class82_12 = field916;
@@ -4186,7 +4186,7 @@ public final class Client extends GameApplet implements class280 {
                   }
 
                   if (widget_16 != null) {
-                     class187 class187_17 = class235.method4265(ClientPacketProt.field2260, data.field1313);
+                     class187 class187_17 = class235.method4265(ClientPacketProt.IF_ITEM_DRAG, data.field1313);
                      class187_17.outBuffer.writeUnsignedShortA(field828.field2565);
                      class187_17.outBuffer.writeUnsignedShortA(field832.field2690);
                      class187_17.outBuffer.writeShortBigEndian(field832.field2565);
@@ -4196,7 +4196,7 @@ public final class Client extends GameApplet implements class280 {
                      data.copy(class187_17);
                   }
                }
-            } else if (this.method1257(839989029)) {
+            } else if (this.method1257()) {
                this.method1274(field830 + field837, field831 + field838);
             } else if (menuOptionsCount > 0) {
                int i_14 = field830 + field837;

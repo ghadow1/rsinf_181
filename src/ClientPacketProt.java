@@ -57,7 +57,7 @@ public class ClientPacketProt implements class181 {
    public static final ClientPacketProt field2224 = new ClientPacketProt(54, -1);
    public static final ClientPacketProt field2277 = new ClientPacketProt(55, 9);
    public static final ClientPacketProt field2301 = new ClientPacketProt(56, 3);
-   public static final ClientPacketProt field2260 = new ClientPacketProt(57, 16);
+   public static final ClientPacketProt IF_ITEM_DRAG = new ClientPacketProt(57, 16);
    public static final ClientPacketProt field2261 = new ClientPacketProt(58, 8);
    public static final ClientPacketProt field2303 = new ClientPacketProt(59, 3);
    public static final ClientPacketProt field2263 = new ClientPacketProt(60, -1);
@@ -80,7 +80,7 @@ public class ClientPacketProt implements class181 {
    public static final ClientPacketProt field2280 = new ClientPacketProt(77, -1);
    public static final ClientPacketProt field2286 = new ClientPacketProt(78, -1);
    public static final ClientPacketProt field2282 = new ClientPacketProt(79, 7);
-   public static final ClientPacketProt field2283 = new ClientPacketProt(80, 9);
+   public static final ClientPacketProt IF_ITEM_DRAG_OT = new ClientPacketProt(80, 9);
    public static final ClientPacketProt field2284 = new ClientPacketProt(81, 11);
    public static final ClientPacketProt field2285 = new ClientPacketProt(82, 16);
    public static final ClientPacketProt field2241 = new ClientPacketProt(83, 3);
