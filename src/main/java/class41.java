@@ -172,7 +172,7 @@ public class class41 {
                class89.field1264.position = 0;
                buffer3_0.readBytes(class89.field1264.buffer, 0, i_9);
                class89.field1264.position = 0;
-               String string_16 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(class89.field1264, (byte) 23), (byte) -16));
+               String string_16 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(class89.field1264, (byte) 23)));
                class66_2.field977 = string_16.trim();
                class66_2.field966 = i_6 >> 8;
                class66_2.field982 = i_6 & 0xff;

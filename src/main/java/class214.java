@@ -336,7 +336,7 @@ public class class214 {
       if (bytes_3 == null) {
          return false;
       } else {
-         class185.method3617(bytes_3, (byte) 11);
+         RemoveNode.method3617(bytes_3, (byte) 11);
          return true;
       }
    }

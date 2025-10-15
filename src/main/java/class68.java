@@ -37,7 +37,7 @@ public final class class68 extends LinkedListNode {
       }
 
       for (int i_6 = 0; i_6 < Client.menuOptionsCount; i_6++) {
-         if (class1.method5(Client.menuOpcodes[i_6], -2073640894)) {
+         if (class1.method5(Client.menuOpcodes[i_6])) {
             if (i_6 < Client.menuOptionsCount - 1) {
                for (int i_7 = i_6; i_7 < Client.menuOptionsCount - 1; i_7++) {
                   Client.field796[i_7] = Client.field796[i_7 + 1];

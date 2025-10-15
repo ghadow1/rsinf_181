@@ -10,7 +10,8 @@ final class class1 implements class0 {
       class300_2.writeIntBigEndian(integer_1.intValue());
    }
 
-   static final void method10(class185 class185_0) {
+   static final void method10(RemoveNode removeNode_0) {
+      System.out.println("Here " + removeNode_0.toString());
       PacketBuffer buffer3_2 = Client.data.packetBuffer;
       int i_3;
       int i_4;
@@ -19,7 +20,9 @@ final class class1 implements class0 {
       int i_7;
       int i_8;
       int i_9;
-      if (class185.field2320 == class185_0) {
+      if (RemoveNode.field2320 == removeNode_0) {
+         System.out.println("Debug marker 678");
+
          i_3 = buffer3_2.readInvertedUnsignedByte();
          i_4 = i_3 >> 2;
          i_5 = i_3 & 0x3;
@@ -33,7 +36,8 @@ final class class1 implements class0 {
 
       } else {
          class87 class87_33;
-         if (class185.field2321 == class185_0) {
+         if (RemoveNode.field2321 == removeNode_0) {
+            System.out.println("Debug marker 444");
             i_3 = buffer3_2.readOffsetUnsignedByte();
             i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
             i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
@@ -63,7 +67,9 @@ final class class1 implements class0 {
             byte b_14;
             int i_15;
             int i_40;
-            if (class185.field2316 == class185_0) {
+            if (RemoveNode.field2316 == removeNode_0) { //..15
+               System.out.println("Here 15 clear something 2");
+
                i_3 = buffer3_2.readInvertedUnsignedByte() * 4;
                i_4 = buffer3_2.readUnsignedShort();
                i_5 = buffer3_2.readShortWithOffset();
@@ -89,7 +95,9 @@ final class class1 implements class0 {
                   Client.field670.method4917(class86_16);
                }
 
-            } else if (class185.field2322 == class185_0) {
+            } else if (RemoveNode.field2322 == removeNode_0) {
+               System.out.println("Here 7 clear something");
+
                i_3 = buffer3_2.readShortLittleEndian();
                i_4 = buffer3_2.readShortWithOffset2();
                i_5 = buffer3_2.readShortLittleEndian();
@@ -110,7 +118,9 @@ final class class1 implements class0 {
                   }
                }
 
-            } else if (class185.field2315 == class185_0) {
+            } else if (RemoveNode.field2315 == removeNode_0) {
+               System.out.println("Here 5 clear something");
+
                i_3 = buffer3_2.readShortWithOffset();
                i_4 = buffer3_2.readShortWithOffset2();
                i_5 = buffer3_2.readOffsetUnsignedByte();
@@ -129,7 +139,8 @@ final class class1 implements class0 {
                }
 
             } else {
-               if (class185.field2319 == class185_0) {
+               if (RemoveNode.field2319 == removeNode_0) {
+                  System.out.println("Here 5 clear something also");
                   i_3 = buffer3_2.readUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
                   i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
@@ -151,7 +162,8 @@ final class class1 implements class0 {
                   }
                }
 
-               if (class185.field2318 == class185_0) {
+               if (RemoveNode.clearItem == removeNode_0) {
+                  System.out.println("Here 14 clear something");
                   byte b_38 = buffer3_2.readNegatedByte();
                   i_4 = buffer3_2.readShortWithOffset2();
                   byte b_39 = buffer3_2.readNegatedByte();
@@ -194,7 +206,7 @@ final class class1 implements class0 {
                      int i_27 = ints_26[i_23][i_24] + ints_26[i_22][i_24] + ints_26[i_22][i_25] + ints_26[i_23][i_25] >> 2;
                      int i_28 = (i_36 << 7) + (i_20 << 6);
                      int i_29 = (i_17 << 7) + (i_21 << 6);
-                     class127 class127_30 = class253_19.method4592(i_9, i_10, ints_26, i_28, i_27, i_29, -1160623337);
+                     class127 class127_30 = class253_19.method4592(i_9, i_10, ints_26, i_28, i_27, i_29);
                      if (class127_30 != null) {
                         class201.method3885(ItemContainer_2.plane, i_36, i_17, i_11, -1, 0, 0, i_7 + 1, i_4 + 1, -2048347982);
                         class66_18.field614 = i_7 + Client.field881;
@@ -224,7 +236,9 @@ final class class1 implements class0 {
                   }
                }
 
-               if (class185.field2323 == class185_0) {
+               if (RemoveNode.field2323 == removeNode_0) {
+                  System.out.println("Debug marker 448888884");
+
                   i_3 = buffer3_2.readOffsetUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
                   i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
@@ -237,7 +251,9 @@ final class class1 implements class0 {
                      class201.method3885(ItemContainer_2.plane, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
                   }
 
-               } else if (class185.field2317 == class185_0) {
+               } else if (RemoveNode.field2317 == removeNode_0) {
+                  System.out.println("Debug marker 345345345");
+
                   i_3 = buffer3_2.readUnsignedShort();
                   i_4 = buffer3_2.readOffsetUnsignedByte();
                   i_5 = buffer3_2.readShortWithOffset();
@@ -251,7 +267,7 @@ final class class1 implements class0 {
                      Client.field785.method4917(class77_34);
                   }
 
-               } else if (class185.field2324 == class185_0) {
+               } else if (RemoveNode.field2324 == removeNode_0) {
                   i_3 = buffer3_2.readInvertedUnsignedByte();
                   i_4 = i_3 >> 2;
                   i_5 = i_3 & 0x3;
@@ -326,11 +342,11 @@ final class class1 implements class0 {
       return Integer.valueOf(class300_1.readIntMedEndian());
    }
 
-   static boolean method5(int i_0, int i_1) {
+   static boolean method5(int i_0) {
       return i_0 == 57 || i_0 == 58 || i_0 == 1007 || i_0 == 25 || i_0 == 30;
    }
 
-   public static String method17(String string_0, byte b_1) {
+   public static String method17(String string_0) {
       int i_2 = string_0.length();
       char[] arr_3 = new char[i_2];
       byte b_4 = 2;

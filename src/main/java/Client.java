@@ -927,7 +927,8 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.locDelMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2320);
+               System.out.println("LOC DELETE");
+               class1.method10(RemoveNode.field2320);
                Client.data.serverPacket = null;
                return true;
             }
@@ -969,7 +970,8 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.field2137 == Client.data.serverPacket) {
-               class1.method10(class185.field2315);
+               System.out.println("sfsdfsdfsdfsdfsdf this e");
+               class1.method10(RemoveNode.field2315);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1006,8 +1008,8 @@ public final class Client extends GameApplet implements class280 {
 
                while (jagbuf.position < Client.data.serverPacketLength) {
                   packet_integer_653 = jagbuf.readUnsignedByte();
-                  class185 class185_59 = class6.method70()[packet_integer_653];
-                  class1.method10(class185_59);
+                  RemoveNode removeNode_59 = class6.method70()[packet_integer_653];
+                  class1.method10(removeNode_59);
                }
 
                Client.data.serverPacket = null;
@@ -1158,13 +1160,15 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.field2157 == Client.data.serverPacket) {
-               class1.method10(class185.field2318);
+               System.out.println("Attempting to remove ground item node");
+               class1.method10(RemoveNode.clearItem);
                Client.data.serverPacket = null;
                return true;
             }
 
             if (ServerPacketProt.field2164 == Client.data.serverPacket) {
-               class1.method10(class185.field2324);
+               System.out.println("DFSFSDFSDFSDFSF");
+               class1.method10(RemoveNode.field2324);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1346,7 +1350,7 @@ public final class Client extends GameApplet implements class280 {
                if (!bool_50 && field767 == 0) {
                   field922[field875] = long_13;
                   field875 = (field875 + 1) % 100;
-                  String string_28 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 39), (byte) -89));
+                  String string_28 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 39)));
                   if (gameState_12.modIcon != -1) {
                      MilliClock.method157(9, AbstractWorldMapData.iconTag(gameState_12.modIcon) + string_38, string_28, SoundSystem.base37DecodeLong(long_24));
                   } else {
@@ -1461,7 +1465,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.soundAreaMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2319);
+               class1.method10(RemoveNode.field2319);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1494,19 +1498,24 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.mapAnimMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2317);
+               System.out.println("mapAnimMessage message packet");
+
+               class1.method10(RemoveNode.field2317);
                Client.data.serverPacket = null;
                return true;
             }
 
             if (ServerPacketProt.objDelMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2321);
+               System.out.println("objDelMessage message packet");
+
+               class1.method10(RemoveNode.field2321);
                Client.data.serverPacket = null;
                return true;
             }
 
             if (ServerPacketProt.objCountMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2322);
+               System.out.println("object count message packet");
+               class1.method10(RemoveNode.field2322);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1720,7 +1729,7 @@ public final class Client extends GameApplet implements class280 {
 
             if (ServerPacketProt.field2180 == Client.data.serverPacket) {
                string_38 = jagbuf.readNullTerminatedString();
-               string_19 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 54), (byte) -70));
+               string_19 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 54)));
                class62.method1132(6, string_38, string_19);
                Client.data.serverPacket = null;
                return true;
@@ -1779,7 +1788,9 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.locAddChangeMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2323);
+               System.out.println("locAddChangeMessage message packet");
+
+               class1.method10(RemoveNode.field2323);
                Client.data.serverPacket = null;
                return true;
             }
@@ -2013,7 +2024,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.mapProjAnimMessage == Client.data.serverPacket) {
-               class1.method10(class185.field2316);
+               class1.method10(RemoveNode.field2316);
                Client.data.serverPacket = null;
                return true;
             }
@@ -2073,7 +2084,7 @@ public final class Client extends GameApplet implements class280 {
                if (!bool_34 && field767 == 0) {
                   field922[field875] = long_32;
                   field875 = (field875 + 1) % 100;
-                  String string_35 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 52), (byte) -86));
+                  String string_35 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 52)));
                   byte b_15;
                   if (gameState_31.field3091) {
                      b_15 = 7;
@@ -2727,13 +2738,14 @@ public final class Client extends GameApplet implements class280 {
 
          int i_2;
          for (i_2 = 0; i_2 < 100 && this.parsePacket(); i_2++) {
+
             ;
          }
 
          if (field662 == 30) {
             int i_3;
             class187 class187_16;
-            while (class198.method3811(1881799127)) {
+            while (class198.method3811()) {
                class187_16 = class235.method4265(ClientPacketProt.field2252, data.field1313);
                class187_16.outBuffer.writeByte(0);
                i_3 = class187_16.outBuffer.position;

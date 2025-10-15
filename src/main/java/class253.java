@@ -464,7 +464,7 @@ public class class253 extends DualNode {
       }
    }
 
-   public final boolean method4608(int i_1) {
+   public final boolean method4608() {
       if (this.field3362 == null) {
          return true;
       } else {
@@ -478,7 +478,7 @@ public class class253 extends DualNode {
       }
    }
 
-   public final class127 method4592(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, int i_7) {
+   public final class127 method4592(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6) {
       long long_8;
       if (this.field3359 == null) {
          long_8 = (long)(i_2 + (this.field3357 << 10));

@@ -20,7 +20,7 @@ public class class284 extends Categorizable {
       if (bytes_4 == null) {
          return false;
       } else {
-         class185.method3617(bytes_4, (byte) -41);
+         RemoveNode.method3617(bytes_4, (byte) -41);
          return true;
       }
    }

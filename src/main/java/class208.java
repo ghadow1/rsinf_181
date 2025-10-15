@@ -100,7 +100,7 @@ public class class208 {
                      return 1;
                   } else if (i_0 == 4115) {
                      i_11 = MouseRecorder.field1098[--class70.field1014];
-                     MouseRecorder.field1098[++class70.field1014 - 1] = class185.method3615((char)i_11, 2012637233) ? 1 : 0;
+                     MouseRecorder.field1098[++class70.field1014 - 1] = RemoveNode.method3615((char)i_11, 2012637233) ? 1 : 0;
                      return 1;
                   } else if (i_0 == 4116) {
                      i_11 = MouseRecorder.field1098[--class70.field1014];

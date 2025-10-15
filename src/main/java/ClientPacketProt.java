@@ -166,7 +166,7 @@ public class ClientPacketProt implements class181 {
       Object obj_24;
       if (i_6 == 22) {
          if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-            obj_24 = class253_10.method4592(22, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+            obj_24 = class253_10.method4592(22, i_5, ints_17, i_19, i_18, i_20);
          } else {
             obj_24 = new class93(i_4, 22, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
          }
@@ -179,7 +179,7 @@ public class ClientPacketProt implements class181 {
       } else if (i_6 != 10 && i_6 != 11) {
          if (i_6 >= 12) {
             if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-               obj_24 = class253_10.method4592(i_6, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+               obj_24 = class253_10.method4592(i_6, i_5, ints_17, i_19, i_18, i_20);
             } else {
                obj_24 = new class93(i_4, i_6, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
             }
@@ -191,7 +191,7 @@ public class ClientPacketProt implements class181 {
 
          } else if (i_6 == 0) {
             if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-               obj_24 = class253_10.method4592(0, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+               obj_24 = class253_10.method4592(0, i_5, ints_17, i_19, i_18, i_20);
             } else {
                obj_24 = new class93(i_4, 0, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
             }
@@ -203,7 +203,7 @@ public class ClientPacketProt implements class181 {
 
          } else if (i_6 == 1) {
             if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-               obj_24 = class253_10.method4592(1, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+               obj_24 = class253_10.method4592(1, i_5, ints_17, i_19, i_18, i_20);
             } else {
                obj_24 = new class93(i_4, 1, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
             }
@@ -220,8 +220,8 @@ public class ClientPacketProt implements class181 {
                Object obj_25;
                Object obj_26;
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                  obj_25 = class253_10.method4592(2, i_5 + 4, ints_17, i_19, i_18, i_20, -1160623337);
-                  obj_26 = class253_10.method4592(2, i_30, ints_17, i_19, i_18, i_20, -1160623337);
+                  obj_25 = class253_10.method4592(2, i_5 + 4, ints_17, i_19, i_18, i_20);
+                  obj_26 = class253_10.method4592(2, i_30, ints_17, i_19, i_18, i_20);
                } else {
                   obj_25 = new class93(i_4, 2, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   obj_26 = new class93(i_4, 2, i_30, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
@@ -234,7 +234,7 @@ public class ClientPacketProt implements class181 {
 
             } else if (i_6 == 3) {
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                  obj_24 = class253_10.method4592(3, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+                  obj_24 = class253_10.method4592(3, i_5, ints_17, i_19, i_18, i_20);
                } else {
                   obj_24 = new class93(i_4, 3, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
@@ -246,7 +246,7 @@ public class ClientPacketProt implements class181 {
 
             } else if (i_6 == 9) {
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                  obj_24 = class253_10.method4592(i_6, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+                  obj_24 = class253_10.method4592(i_6, i_5, ints_17, i_19, i_18, i_20);
                } else {
                   obj_24 = new class93(i_4, i_6, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
@@ -258,7 +258,7 @@ public class ClientPacketProt implements class181 {
 
             } else if (i_6 == 4) {
                if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                  obj_24 = class253_10.method4592(4, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+                  obj_24 = class253_10.method4592(4, i_5, ints_17, i_19, i_18, i_20);
                } else {
                   obj_24 = new class93(i_4, 4, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                }
@@ -275,7 +275,7 @@ public class ClientPacketProt implements class181 {
                   }
 
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                     obj_27 = class253_10.method4592(4, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+                     obj_27 = class253_10.method4592(4, i_5, ints_17, i_19, i_18, i_20);
                   } else {
                      obj_27 = new class93(i_4, 4, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
@@ -289,7 +289,7 @@ public class ClientPacketProt implements class181 {
                   }
 
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                     obj_27 = class253_10.method4592(4, i_5 + 4, ints_17, i_19, i_18, i_20, -1160623337);
+                     obj_27 = class253_10.method4592(4, i_5 + 4, ints_17, i_19, i_18, i_20);
                   } else {
                      obj_27 = new class93(i_4, 4, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
@@ -298,7 +298,7 @@ public class ClientPacketProt implements class181 {
                } else if (i_6 == 7) {
                   int i_33 = i_5 + 2 & 0x3;
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                     obj_24 = class253_10.method4592(4, i_33 + 4, ints_17, i_19, i_18, i_20, -1160623337);
+                     obj_24 = class253_10.method4592(4, i_33 + 4, ints_17, i_19, i_18, i_20);
                   } else {
                      obj_24 = new class93(i_4, 4, i_33 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                   }
@@ -314,8 +314,8 @@ public class ClientPacketProt implements class181 {
                   int i_29 = i_5 + 2 & 0x3;
                   Object obj_28;
                   if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-                     obj_27 = class253_10.method4592(4, i_5 + 4, ints_17, i_19, i_18, i_20, -1160623337);
-                     obj_28 = class253_10.method4592(4, i_29 + 4, ints_17, i_19, i_18, i_20, -1160623337);
+                     obj_27 = class253_10.method4592(4, i_5 + 4, ints_17, i_19, i_18, i_20);
+                     obj_28 = class253_10.method4592(4, i_29 + 4, ints_17, i_19, i_18, i_20);
                   } else {
                      obj_27 = new class93(i_4, 4, i_5 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
                      obj_28 = new class93(i_4, 4, i_29 + 4, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
@@ -327,7 +327,7 @@ public class ClientPacketProt implements class181 {
          }
       } else {
          if (class253_10.field3373 == -1 && class253_10.field3391 == null) {
-            obj_24 = class253_10.method4592(10, i_5, ints_17, i_19, i_18, i_20, -1160623337);
+            obj_24 = class253_10.method4592(10, i_5, ints_17, i_19, i_18, i_20);
          } else {
             obj_24 = new class93(i_4, 10, i_5, i_1, i_2, i_3, class253_10.field3373, true, (Entity) null);
          }

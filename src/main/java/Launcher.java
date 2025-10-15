@@ -2,12 +2,7 @@ import javax.swing.*;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
@@ -69,8 +64,7 @@ public class Launcher implements AppletStub {
                 Integer.parseInt(cfg.get("applet_minheight"))));
         game.setStub(new Launcher());
         game.init();
-        String title = new File(".").getCanonicalPath();
-        title = title.substring(title.lastIndexOf('\\') + 1);
+        String title = "Old School RuneScape";
 
         JFrame frame = new JFrame(title);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

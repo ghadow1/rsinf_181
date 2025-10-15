@@ -47,8 +47,8 @@ public class class6 {
 
    }
 
-   public static class185[] method70() {
-      return new class185[] {class185.field2322, class185.field2316, class185.field2318, class185.field2317, class185.field2324, class185.field2319, class185.field2320, class185.field2321, class185.field2315, class185.field2323};
+   public static RemoveNode[] method70() {
+      return new RemoveNode[] {RemoveNode.field2322, RemoveNode.field2316, RemoveNode.clearItem, RemoveNode.field2317, RemoveNode.field2324, RemoveNode.field2319, RemoveNode.field2320, RemoveNode.field2321, RemoveNode.field2315, RemoveNode.field2323};
    }
 
    public static void method66(class233 class233_0, class233 class233_1) {

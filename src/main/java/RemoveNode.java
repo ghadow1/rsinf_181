@@ -1,17 +1,17 @@
-public class class185 {
+public class RemoveNode {
 
-   public static final class185 field2322 = new class185(7);
-   public static final class185 field2316 = new class185(15);
-   public static final class185 field2318 = new class185(14);
-   public static final class185 field2317 = new class185(6);
-   public static final class185 field2324 = new class185(4);
-   public static final class185 field2319 = new class185(5);
-   public static final class185 field2320 = new class185(2);
-   public static final class185 field2321 = new class185(3);
-   public static final class185 field2315 = new class185(5);
-   public static final class185 field2323 = new class185(4);
+   public static final RemoveNode field2322 = new RemoveNode(7);
+   public static final RemoveNode field2316 = new RemoveNode(15);
+   public static final RemoveNode clearItem = new RemoveNode(14);
+   public static final RemoveNode field2317 = new RemoveNode(6);
+   public static final RemoveNode field2324 = new RemoveNode(4);
+   public static final RemoveNode field2319 = new RemoveNode(5);
+   public static final RemoveNode field2320 = new RemoveNode(2);
+   public static final RemoveNode field2321 = new RemoveNode(3);
+   public static final RemoveNode field2315 = new RemoveNode(5);
+   public static final RemoveNode field2323 = new RemoveNode(4);
 
-   class185(int i_1) {
+   RemoveNode(int i_1) {
    }
 
    static void method3617(byte[] bytes_0, byte b_1) {
