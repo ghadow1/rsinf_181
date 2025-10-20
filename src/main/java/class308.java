@@ -213,7 +213,7 @@ public final class class308 {
       return "" + this.field3805;
    }
 
-   public byte[] method5865(int i_1, int i_2) {
+   public byte[] method5865(int i_1) {
       class342 class342_3 = this.field3803;
       synchronized(this.field3803) {
          try {

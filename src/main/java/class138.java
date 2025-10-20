@@ -38,11 +38,11 @@ public class class138 extends DualNode {
 
    }
 
-   public boolean method3268(int i_1, int i_2) {
+   public boolean method3268(int i_1) {
       return this.field1893[i_1].field1644;
    }
 
-   static final boolean method3275(class127 class127_0, int i_1, int i_2, int i_3, byte b_4) {
+   static final boolean method3275(class127 class127_0, int i_1, int i_2, int i_3) {
       boolean bool_5 = class128.field1753;
       if (!bool_5) {
          return false;
@@ -78,7 +78,7 @@ public class class138 extends DualNode {
             i_12 = i_16;
             i_16 = Rasterizer3D.method2982(i_14, i_18, i_9, i_8);
             i_18 = Rasterizer3D.method2994(i_14, i_18, i_9, i_8);
-            class134.field1871 = (i_12 + i_16) / 2;
+            BuddyRankComparator.field1871 = (i_12 + i_16) / 2;
             class128.field1745 = (i_13 + i_15) / 2;
             class128.field1746 = (i_17 + i_18) / 2;
             class87.field1242 = (i_16 - i_12) / 2;
@@ -95,14 +95,14 @@ public class class138 extends DualNode {
          i_9 = class127_0.field1671;
          i_17 = class127_0.field1707;
          i_18 = class127_0.field1674;
-         i_12 = class134.field1871 - i_6;
+         i_12 = BuddyRankComparator.field1871 - i_6;
          i_13 = class128.field1745 - i_7;
          i_14 = class128.field1746 - i_8;
          return Math.abs(i_12) > i_9 + class56.field527 ? false : (Math.abs(i_13) > i_17 + class128.field1741 ? false : (Math.abs(i_14) > i_18 + class82.field1160 ? false : (Math.abs(i_14 * class7.field48 - i_13 * class48.field422) > i_18 * class128.field1741 + i_17 * class82.field1160 ? false : (Math.abs(i_12 * class48.field422 - i_14 * class87.field1242) > i_9 * class82.field1160 + i_18 * class56.field527 ? false : Math.abs(i_13 * class87.field1242 - i_12 * class7.field48) <= i_17 * class56.field527 + i_9 * class128.field1741))));
       }
    }
 
-   public static final boolean method3267(int i_0, int i_1, ParamDefinition paramDefinition_2, CollisionMap collisionMap_3, int i_4) {
+   public static final boolean method3267(int i_0, int i_1, ParamDefinition paramDefinition_2, CollisionMap collisionMap_3) {
       int i_5 = i_0;
       int i_6 = i_1;
       byte b_7 = 64;

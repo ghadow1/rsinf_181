@@ -582,12 +582,12 @@ public class class113 extends class115 {
                if (class169.field2053) {
                   i_2 = method2561(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this);
                } else {
-                  i_2 = method2560(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this);
+                  i_2 = method2560(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, i_6, i_3, this);
                }
             } else if (class169.field2053) {
-               i_2 = method2605(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2605(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
             } else {
-               i_2 = method2569(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2569(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
             }
 
             this.field1479 -= i_2;
@@ -604,7 +604,7 @@ public class class113 extends class115 {
 
          if (this.field1469 == -256 && (this.field1471 & 0xff) == 0) {
             if (class169.field2053) {
-               return method2553(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this);
+               return method2553(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, i_4, i_3, this);
             }
 
             return method2594(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this);
@@ -703,12 +703,12 @@ public class class113 extends class115 {
                if (class169.field2053) {
                   i_2 = method2559(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this);
                } else {
-                  i_2 = method2586(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this);
+                  i_2 = method2586(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, i_6, i_3, this);
                }
             } else if (class169.field2053) {
-               i_2 = method2627(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2627(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, this.field1481, this.field1468, 0, i_6, i_3, this, this.field1469, i_5);
             } else {
-               i_2 = method2633(0, 0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, 0, i_6, i_3, this, this.field1469, i_5);
+               i_2 = method2633(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, this.field1480, i_6, i_3, this, this.field1469, i_5);
             }
 
             this.field1479 -= i_2;
@@ -725,7 +725,7 @@ public class class113 extends class115 {
 
          if (this.field1469 == 256 && (this.field1471 & 0xff) == 0) {
             if (class169.field2053) {
-               return method2551(0, ((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, 0, i_4, i_3, this);
+               return method2551(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1482, this.field1474, i_4, i_3, this);
             }
 
             return method2550(((RawSound) super.field1497).field1390, ints_1, this.field1471, i_2, this.field1472, 0, i_4, i_3, this);
@@ -953,11 +953,12 @@ public class class113 extends class115 {
       return i_5 >> 1;
    }
 
-   static int method2551(int i_0, byte[] bytes_1, int[] ints_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, class113 class113_10) {
+   static int method2551(byte[] bytes_1, int[] ints_2, int i_3, int i_4, int i_5, int i_6, int i_8, int i_9, class113 class113_10) {
       i_3 >>= 8;
       i_9 >>= 8;
       i_5 <<= 2;
       i_6 <<= 2;
+      int i_7;
       if ((i_7 = i_4 + i_9 - i_3) > i_8) {
          i_7 = i_8;
       }
@@ -1000,11 +1001,12 @@ public class class113 extends class115 {
       return i_4 >> 1;
    }
 
-   static int method2553(int i_0, byte[] bytes_1, int[] ints_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, class113 class113_10) {
+   static int method2553(byte[] bytes_1, int[] ints_2, int i_3, int i_4, int i_5, int i_6, int i_8, int i_9, class113 class113_10) {
       i_3 >>= 8;
       i_9 >>= 8;
       i_5 <<= 2;
       i_6 <<= 2;
+      int i_7;
       if ((i_7 = i_3 + i_4 - (i_9 - 1)) > i_8) {
          i_7 = i_8;
       }
@@ -1047,15 +1049,17 @@ public class class113 extends class115 {
       return i_4 >> 1;
    }
 
-   static int method2633(int i_0, int i_1, byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, class113 class113_11, int i_12, int i_13) {
+   static int method2633(byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_9, int i_10, class113 class113_11, int i_12, int i_13) {
       class113_11.field1482 -= class113_11.field1481 * i_5;
       class113_11.field1474 -= class113_11.field1468 * i_5;
+      int i_8;
       if (i_12 == 0 || (i_8 = i_5 + (i_10 - i_4 + i_12 - 257) / i_12) > i_9) {
          i_8 = i_9;
       }
 
       byte b_14;
       int i_10001;
+      int i_1;
       while (i_5 < i_8) {
          i_1 = i_4 >> 8;
          b_14 = bytes_2[i_1];
@@ -1083,7 +1087,7 @@ public class class113 extends class115 {
       return i_5;
    }
 
-   static int method2569(int i_0, int i_1, byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, class113 class113_11, int i_12, int i_13) {
+   static int method2569(byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, class113 class113_11, int i_12, int i_13) {
       class113_11.field1482 -= class113_11.field1481 * i_5;
       class113_11.field1474 -= class113_11.field1468 * i_5;
       if (i_12 == 0 || (i_8 = i_5 + (i_10 + 256 - i_4 + i_12) / i_12) > i_9) {
@@ -1091,6 +1095,7 @@ public class class113 extends class115 {
       }
 
       int i_10001;
+      int i_1;
       while (i_5 < i_8) {
          i_1 = i_4 >> 8;
          byte b_14 = bytes_2[i_1 - 1];
@@ -1104,11 +1109,9 @@ public class class113 extends class115 {
          i_8 = i_9;
       }
 
-      i_0 = i_13;
-
       for (i_1 = i_12; i_5 < i_8; i_4 += i_1) {
          i_10001 = i_5++;
-         ints_3[i_10001] += ((i_0 << 8) + (bytes_2[i_4 >> 8] - i_0) * (i_4 & 0xff)) * i_6 >> 6;
+         ints_3[i_10001] += ((i_13 << 8) + (bytes_2[i_4 >> 8] - i_13) * (i_4 & 0xff)) * i_6 >> 6;
          i_6 += i_7;
       }
 
@@ -1119,11 +1122,12 @@ public class class113 extends class115 {
       return i_5;
    }
 
-   static int method2586(byte[] bytes_0, int[] ints_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, class113 class113_9) {
+   static int method2586(byte[] bytes_0, int[] ints_1, int i_2, int i_3, int i_4, int i_5, int i_7, int i_8, class113 class113_9) {
       i_2 >>= 8;
       i_8 >>= 8;
       i_4 <<= 2;
       i_5 <<= 2;
+      int i_6;
       if ((i_6 = i_3 + i_8 - i_2) > i_7) {
          i_6 = i_7;
       }
@@ -1156,11 +1160,12 @@ public class class113 extends class115 {
       return i_3;
    }
 
-   static int method2560(byte[] bytes_0, int[] ints_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, class113 class113_9) {
+   static int method2560(byte[] bytes_0, int[] ints_1, int i_2, int i_3, int i_4, int i_5, int i_7, int i_8, class113 class113_9) {
       i_2 >>= 8;
       i_8 >>= 8;
       i_4 <<= 2;
       i_5 <<= 2;
+      int i_6;
       if ((i_6 = i_3 + i_2 - (i_8 - 1)) > i_7) {
          i_6 = i_7;
       }
@@ -1193,7 +1198,7 @@ public class class113 extends class115 {
       return i_3;
    }
 
-   static int method2627(int i_0, int i_1, byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, int i_11, int i_12, class113 class113_13, int i_14, int i_15) {
+   static int method2627(byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, int i_11, int i_12, class113 class113_13, int i_14, int i_15) {
       class113_13.field1472 -= i_5 * class113_13.field1480;
       if (i_14 == 0 || (i_10 = i_5 + (i_12 - i_4 + i_14 - 257) / i_14) > i_11) {
          i_10 = i_11;
@@ -1203,6 +1208,8 @@ public class class113 extends class115 {
 
       byte b_16;
       int i_10001;
+      int i_0;
+      int i_1;
       for (i_10 <<= 1; i_5 < i_10; i_4 += i_14) {
          i_1 = i_4 >> 8;
          b_16 = bytes_2[i_1];
@@ -1240,7 +1247,7 @@ public class class113 extends class115 {
       return i_5;
    }
 
-   static int method2605(int i_0, int i_1, byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, int i_11, int i_12, class113 class113_13, int i_14, int i_15) {
+   static int method2605(byte[] bytes_2, int[] ints_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9, int i_10, int i_11, int i_12, class113 class113_13, int i_14, int i_15) {
       class113_13.field1472 -= i_5 * class113_13.field1480;
       if (i_14 == 0 || (i_10 = i_5 + (i_12 + 256 - i_4 + i_14) / i_14) > i_11) {
          i_10 = i_11;
@@ -1249,6 +1256,8 @@ public class class113 extends class115 {
       i_5 <<= 1;
 
       int i_10001;
+      int i_0;
+      int i_1;
       for (i_10 <<= 1; i_5 < i_10; i_4 += i_14) {
          i_1 = i_4 >> 8;
          byte b_16 = bytes_2[i_1 - 1];

@@ -53,7 +53,7 @@ public class class213 {
    }
 
    public static void method3989() {
-      class249.field3301.method3323();
+      ParamComposition.field3301.method3323();
    }
 
    static void disconnectMessage() {

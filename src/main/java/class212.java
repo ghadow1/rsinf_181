@@ -54,7 +54,7 @@ public class class212 {
                   i_10 += ints_3[i_5++];
                   widget_11 = WorldMapElement.getWidget(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12).isMembersOnly || Client.field655)) {
+                  if (i_12 != -1 && (!item.getDefinition(i_12).isMembersOnly || Client.field655)) {
                      for (i_13 = 0; i_13 < widget_11.field2560.length; i_13++) {
                         if (i_12 + 1 == widget_11.field2560[i_13]) {
                            i_8 += widget_11.field2705[i_13];
@@ -92,7 +92,7 @@ public class class212 {
                   i_10 += ints_3[i_5++];
                   widget_11 = WorldMapElement.getWidget(i_10);
                   i_12 = ints_3[i_5++];
-                  if (i_12 != -1 && (!class26.method404(i_12).isMembersOnly || Client.field655)) {
+                  if (i_12 != -1 && (!item.getDefinition(i_12).isMembersOnly || Client.field655)) {
                      for (i_13 = 0; i_13 < widget_11.field2560.length; i_13++) {
                         if (i_12 + 1 == widget_11.field2560[i_13]) {
                            i_8 = 999999999;

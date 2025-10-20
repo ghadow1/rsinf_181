@@ -102,7 +102,7 @@ public class class29 {
          int i_11 = (int)((float)i_1 + f_6 * (float)class213_10.field2530 - f_7);
          int i_12 = (int)((float)(i_2 + i_4) - (float)class213_10.field2528 * f_6 - f_7);
          class34 class34_13 = (class34) map$entry_9.getValue();
-         if (class34_13 != null && class34_13.method578(-1274004046)) {
+         if (class34_13 != null && class34_13.method578()) {
             class34_13.field296 = i_11;
             class34_13.field295 = i_12;
             class241 class241_14 = class222.method4118(class34_13.vmethod597(-2000175293));
@@ -152,7 +152,7 @@ public class class29 {
 
       while (iterator_7.hasNext()) {
          class34 class34_8 = (class34) iterator_7.next();
-         if (class34_8.method578(-1274004046)) {
+         if (class34_8.method578()) {
             int i_9 = class34_8.field297.field2530 % 64;
             int i_10 = class34_8.field297.field2528 % 64;
             class34_8.field296 = (int)((float)i_9 * f_6 + (float)i_1);
@@ -288,10 +288,10 @@ public class class29 {
       Iterator iterator_3 = list_1.iterator();
 
       while (iterator_3.hasNext()) {
-         class18 class18_4 = (class18) iterator_3.next();
-         if (class18_4.field297.field2530 >> 6 == this.field245 && class18_4.field297.field2528 >> 6 == this.field246) {
-            class18 class18_5 = new class18(class18_4.field297, class18_4.field297, class18_4.field125, this.method502(class18_4.field125, 1732767815));
-            this.field251.add(class18_5);
+         Buffer buffer_4 = (Buffer) iterator_3.next();
+         if (buffer_4.field297.field2530 >> 6 == this.field245 && buffer_4.field297.field2528 >> 6 == this.field246) {
+            Buffer buffer_5 = new Buffer(buffer_4.field297, buffer_4.field297, buffer_4.field125, this.method502(buffer_4.field125, 1732767815));
+            this.field251.add(buffer_5);
          }
       }
 
@@ -340,7 +340,7 @@ public class class29 {
 
       while (iterator_5.hasNext()) {
          class34 class34_6 = (class34) iterator_5.next();
-         if (class34_6.method578(-1274004046)) {
+         if (class34_6.method578()) {
             class241 class241_7 = class222.method4118(class34_6.vmethod597(1091186624));
             if (class241_7 != null && hashset_1.contains(Integer.valueOf(class241_7.method4373((byte) 74)))) {
                this.method493(class241_7, class34_6.field296, class34_6.field295, i_2, i_3, (byte) 90);
@@ -589,7 +589,7 @@ public class class29 {
          obj_11 = new class23(class213_8, class213_7, class253_1.field3357, this);
       } else {
          class241 class241_10 = class222.method4118(class253_1.field3378);
-         obj_11 = new class18(class213_8, class213_7, class241_10.field3213, this.method451(class241_10, 1686665284));
+         obj_11 = new Buffer(class213_8, class213_7, class241_10.field3213, this.method451(class241_10, 1686665284));
       }
 
       this.field252.put(new class213(0, i_3, i_4), obj_11);
@@ -630,7 +630,7 @@ public class class29 {
 
       while (iterator_5.hasNext()) {
          class34 class34_6 = (class34) iterator_5.next();
-         if (class34_6.method578(-1274004046)) {
+         if (class34_6.method578()) {
             int i_7 = class34_6.vmethod597(-72715581);
             if (hashset_1.contains(Integer.valueOf(i_7))) {
                class241 class241_8 = class222.method4118(i_7);
@@ -729,7 +729,7 @@ public class class29 {
             class34 class34_9;
             while (iterator_8.hasNext()) {
                class34_9 = (class34) iterator_8.next();
-               if (class34_9.method578(-1274004046) && class34_9.method576(i_4, i_5, (byte) -101)) {
+               if (class34_9.method578() && class34_9.method576(i_4, i_5)) {
                   linkedlist_7.add(class34_9);
                }
             }
@@ -738,7 +738,7 @@ public class class29 {
 
             while (iterator_8.hasNext()) {
                class34_9 = (class34) iterator_8.next();
-               if (class34_9.method578(-1274004046) && class34_9.method576(i_4, i_5, (byte) -101)) {
+               if (class34_9.method578() && class34_9.method576(i_4, i_5)) {
                   linkedlist_7.add(class34_9);
                }
             }

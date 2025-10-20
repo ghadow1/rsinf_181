@@ -59,7 +59,7 @@ final class class4 implements class0 {
          }
 
          i_29 = Client.camAngleY & 0x7ff;
-         class72.method1724(MouseHandler.field499, Client.field729, class26.field227, i_5, i_29, FontName.method700(i_5, (byte) -68), i_3);
+         class72.method1724(MouseHandler.field499, Client.field729, item.field227, i_5, i_29, FontName.method700(i_5, (byte) -68), i_3);
       }
 
       int i_8;
@@ -80,7 +80,7 @@ final class class4 implements class0 {
                   label559: {
                      if (Client.field727 == 1) {
                         i_8 = MouseHandler.field499 >> 7;
-                        i_9 = class26.field227 >> 7;
+                        i_9 = item.field227 >> 7;
                      } else {
                         i_8 = Client.localPlayer.x >> 7;
                         i_9 = Client.localPlayer.y >> 7;

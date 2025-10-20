@@ -31,7 +31,7 @@ final class class5 implements Comparator {
 
          class87 class87_7;
          for (class87_7 = (class87) nodeDeque_3.method4892(); class87_7 != null; class87_7 = (class87) nodeDeque_3.method4894()) {
-            ItemDefinition itemDefinition_8 = class26.method404(class87_7.field1244);
+            ItemDefinition itemDefinition_8 = item.getDefinition(class87_7.field1244);
             long long_9 = (long) itemDefinition_8.price;
             if (itemDefinition_8.isStackable == 1) {
                long_9 *= (long)(class87_7.field1245 + 1);

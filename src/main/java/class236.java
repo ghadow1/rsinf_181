@@ -46,8 +46,8 @@ public class class236 {
       }
 
       int i_6 = i_1;
-      if (i_4 + i_1 > class249.field3308) {
-         i_6 = class249.field3308 - i_4;
+      if (i_4 + i_1 > ParamComposition.field3308) {
+         i_6 = ParamComposition.field3308 - i_4;
       }
 
       if (i_6 < 0) {

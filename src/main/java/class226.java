@@ -40,7 +40,7 @@ public class class226 {
             i_11 = i_8 & 0xff;
             class66_7.field1006[0] = class89.field1250[i_1];
             class66_7.field629 = (byte)i_9;
-            class66_7.method1205((i_10 << 13) + i_4 - class196.field2389, (i_11 << 13) + i_5 - class1.field1, 2076329240);
+            class66_7.method1205((i_10 << 13) + i_4 - class196.field2389, (i_11 << 13) + i_5 - class1.field1);
             class66_7.field638 = false;
             return true;
          }

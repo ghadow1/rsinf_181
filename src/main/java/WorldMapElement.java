@@ -52,22 +52,22 @@ public class WorldMapElement {
       if (Client.field727 == 0) {
          i_1 = Client.localPlayer.x;
          i_2 = Client.localPlayer.y;
-         if (MouseHandler.field499 - i_1 < -500 || MouseHandler.field499 - i_1 > 500 || class26.field227 - i_2 < -500 || class26.field227 - i_2 > 500) {
+         if (MouseHandler.field499 - i_1 < -500 || MouseHandler.field499 - i_1 > 500 || item.field227 - i_2 < -500 || item.field227 - i_2 > 500) {
             MouseHandler.field499 = i_1;
-            class26.field227 = i_2;
+            item.field227 = i_2;
          }
 
          if (i_1 != MouseHandler.field499) {
             MouseHandler.field499 += (i_1 - MouseHandler.field499) / 16;
          }
 
-         if (i_2 != class26.field227) {
-            class26.field227 += (i_2 - class26.field227) / 16;
+         if (i_2 != item.field227) {
+            item.field227 += (i_2 - item.field227) / 16;
          }
 
          i_3 = MouseHandler.field499 >> 7;
-         i_4 = class26.field227 >> 7;
-         i_5 = class62.method1130(MouseHandler.field499, class26.field227, ItemContainer_2.plane);
+         i_4 = item.field227 >> 7;
+         i_5 = class62.method1130(MouseHandler.field499, item.field227, ItemContainer_2.plane);
          i_6 = 0;
          int i_7;
          if (i_3 > 3 && i_4 > 3 && i_3 < 100 && i_4 < 100) {
@@ -160,7 +160,7 @@ public class WorldMapElement {
                i_5 = Rasterizer3D.sine[i_1];
                i_6 = Rasterizer3D.cosine[i_1];
                MouseHandler.field499 += i_4 * i_5 / 65536;
-               class26.field227 += i_6 * i_4 / 65536;
+               item.field227 += i_6 * i_4 / 65536;
             }
 
             if (Client.field871 != 0) {

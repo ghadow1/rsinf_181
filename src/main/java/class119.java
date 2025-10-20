@@ -29,7 +29,7 @@ public class class119 implements class139 {
 
    }
 
-   public void method2762(int i_1) {
+   public void method2762() {
       for (int i_2 = 0; i_2 < this.field1531.length; i_2++) {
          if (this.field1531[i_2] != null) {
             this.field1531[i_2].method2844();
@@ -73,7 +73,7 @@ public class class119 implements class139 {
 
    public void method2745(double d_1) {
       this.field1534 = d_1;
-      this.method2762(169512565);
+      this.method2762();
    }
 
    public boolean vmethod3279(int i_1, byte b_2) {
@@ -126,7 +126,8 @@ public class class119 implements class139 {
       return BufferPool.method5761(i_0, false, (byte) 58);
    }
 
-   static File method2760(String string_0, String string_1, int i_2) {
+   //..Some king of settings
+   static File writeJagCLDat(String string_0, String string_1, int i_2) {
       String str_4 = i_2 == 0 ? "" : "" + i_2;
       class167.field2038 = new File(GameState.field3095, "jagex_cl_" + string_0 + "_" + string_1 + str_4 + ".dat");
       String string_5 = null;
@@ -259,7 +260,7 @@ public class class119 implements class139 {
       class169.method3503(class233_0, i_6, i_7, i_3, bool_4);
    }
 
-   static int method2743(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method2743(int i_0) {
       Widget widget_4 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
       if (i_0 == 2600) {
          MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2585;

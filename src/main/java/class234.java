@@ -27,7 +27,7 @@ public class class234 implements Runnable {
                      class231_1.unlink();
                   }
                } else if (class231_1.field3118 == 1) {
-                  class231_1.field3115 = class231_1.field3116.method5865((int)class231_1.hash, -8739933);
+                  class231_1.field3115 = class231_1.field3116.method5865((int)class231_1.hash);
                   nodeDeque_2 = field3146;
                   synchronized(field3146) {
                      field3145.method4917(class231_1);

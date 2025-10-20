@@ -788,7 +788,7 @@ public class Widget extends LinkedListNode {
             }
 
             if (i_6 == 4) {
-               ItemDefinition itemDefinition_10 = class26.method404(i_7);
+               ItemDefinition itemDefinition_10 = item.getDefinition(i_7);
                model_23 = itemDefinition_10.method4643(10);
                if (model_23 == null) {
                   field2562 = true;
@@ -1054,7 +1054,7 @@ public class Widget extends LinkedListNode {
 
                bool_34 = bool_35;
             } else if (i_9 == 2) {
-               bool_34 = class138.method3267(i_5, i_6, paramDefinition_10, collisionMap_11, 4377134);
+               bool_34 = class138.method3267(i_5, i_6, paramDefinition_10, collisionMap_11);
             } else {
                i_16 = i_5;
                i_17 = i_6;
@@ -1381,7 +1381,7 @@ public class Widget extends LinkedListNode {
             Client.field729 = i_3;
          }
 
-         class26.field227 = Client.localPlayer.y;
+         item.field227 = Client.localPlayer.y;
          Client.field736 = false;
       }
 

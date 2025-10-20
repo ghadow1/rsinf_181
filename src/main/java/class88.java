@@ -14,11 +14,11 @@ public class class88 {
       this.field1247 = this.field1249.submit(new class57());
    }
 
-   boolean method2067(int i_1) {
+   boolean method2067() {
       return this.field1247.isDone();
    }
 
-   SecureRandom method2057(int i_1) {
+   SecureRandom method2057() {
       try {
          return (SecureRandom) this.field1247.get();
       } catch (Exception exception_5) {
@@ -28,12 +28,12 @@ public class class88 {
       }
    }
 
-   void method2064(int i_1) {
+   void method2064() {
       this.field1249.shutdown();
       this.field1249 = null;
    }
 
-   static void method2056(int i_0, class308 class308_1, class235 class235_2, int i_3) {
+   static void method2056(int i_0, class308 class308_1, class235 class235_2) {
       byte[] bytes_4 = null;
       NodeDeque nodeDeque_5 = class234.field3146;
       synchronized(class234.field3146) {
@@ -48,12 +48,12 @@ public class class88 {
       if (bytes_4 != null) {
          class235_2.method4264(class308_1, i_0, bytes_4, true);
       } else {
-         byte[] bytes_9 = class308_1.method5865(i_0, -8739933);
+         byte[] bytes_9 = class308_1.method5865(i_0);
          class235_2.method4264(class308_1, i_0, bytes_9, true);
       }
    }
 
-   static void method2069(int i_0) {
+   static void method2069() {
       class29.field244.method3357();
    }
 

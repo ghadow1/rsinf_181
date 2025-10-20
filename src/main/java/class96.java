@@ -11,8 +11,8 @@ public class class96 {
       class92 class92_4;
       int i_18;
       if (class187.method3627(class62_0.field584)) {
-         class18.field121 = (class41) arr_3[0];
-         class241 class241_5 = class222.method4118(class18.field121.field355);
+         Buffer.field121 = (class41) arr_3[0];
+         class241 class241_5 = class222.method4118(Buffer.field121.field355);
          class92_4 = class75.method1828(class62_0.field584, class241_5.field3213, class241_5.field3230);
       } else {
          i_18 = ((Integer) arr_3[0]).intValue();

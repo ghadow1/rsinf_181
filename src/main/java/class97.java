@@ -17,7 +17,7 @@ public class class97 extends LinkedListNode {
       class343 class343_1 = null;
 
       try {
-         class343_1 = class18.userPrefSave("", class29.field248.field3111, true);
+         class343_1 = Buffer.userPrefSave("", class29.field248.field3111, true);
          ByteBuffer class300_2 = class17.field117.method1746();
          class343_1.method6561(class300_2.buffer, 0, class300_2.position);
       } catch (Exception exception_4) {

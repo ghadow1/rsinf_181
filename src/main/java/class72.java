@@ -62,10 +62,10 @@ public class class72 {
       class1.field3 = i_2 - i_13;
       class11.field77 = i_3;
       MouseRecorder.field1112 = i_4;
-      if (Client.field727 == 1 && Client.localRights >= 2 && Client.field881 % 50 == 0 && (MouseHandler.field499 >> 7 != Client.localPlayer.x >> 7 || class26.field227 >> 7 != Client.localPlayer.y >> 7)) {
+      if (Client.field727 == 1 && Client.localRights >= 2 && Client.field881 % 50 == 0 && (MouseHandler.field499 >> 7 != Client.localPlayer.x >> 7 || item.field227 >> 7 != Client.localPlayer.y >> 7)) {
          i_14 = Client.localPlayer.field629;
          i_15 = (MouseHandler.field499 >> 7) + class196.field2389;
-         i_16 = (class26.field227 >> 7) + class1.field1;
+         i_16 = (item.field227 >> 7) + class1.field1;
          class28.method418(i_15, i_16, i_14, true, 1931276581);
       }
 

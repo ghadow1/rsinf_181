@@ -664,7 +664,7 @@ public final class Client extends GameApplet implements class280 {
 
    void method1253() {
       int i_2 = class7.field46;
-      int i_3 = class249.field3308;
+      int i_3 = ParamComposition.field3308;
       if (super.field454 < i_2) {
          i_2 = super.field454;
       }
@@ -732,7 +732,7 @@ public final class Client extends GameApplet implements class280 {
 
    void method1247() {
       if (field662 != 1000) {
-         boolean bool_2 = class26.method365();
+         boolean bool_2 = item.method365();
          if (!bool_2) {
             this.method1248();
          }
@@ -741,7 +741,7 @@ public final class Client extends GameApplet implements class280 {
    }
 
    final void method1293(boolean bool_1) {
-      WorldMapID.method416(field905, class7.field46, class249.field3308, bool_1);
+      WorldMapID.method416(field905, class7.field46, ParamComposition.field3308, bool_1);
    }
 
    protected final void vmethod1243(int i_1) {
@@ -764,7 +764,7 @@ public final class Client extends GameApplet implements class280 {
       class190.field2358 = field703 == 0 ? 43594 : field807 + 40000;
       class132.field1800 = field703 == 0 ? 443 : field807 + 50000;
       class90.field1266 = class190.field2358;
-      class134.field1870 = SoundSystem.field2540;
+      BuddyRankComparator.field1870 = SoundSystem.field2540;
       class247.field3291 = SoundSystem.field2541;
       WorldMapCacheName.field309 = SoundSystem.field2542;
       Message.field604 = SoundSystem.field2546;
@@ -773,7 +773,7 @@ public final class Client extends GameApplet implements class280 {
       this.method932();
       class36.field329 = this.method877();
       class62.field573 = new class308(255, class167.field2042, class167.field2039, 500000);
-      class17.field117 = class134.method3249();
+      class17.field117 = BuddyRankComparator.method3249();
       this.method878();
       class218.method4110(this, class60.field566);
       if (field703 != 0) {
@@ -1034,7 +1034,7 @@ public final class Client extends GameApplet implements class280 {
                      return true;
                   }
 
-                  itemDefinition_44 = class26.method404(i_6);
+                  itemDefinition_44 = item.getDefinition(i_6);
                   widget_20.field2607 = 4;
                   widget_20.field2649 = i_6;
                   widget_20.field2615 = itemDefinition_44.xan2d;
@@ -1044,7 +1044,7 @@ public final class Client extends GameApplet implements class280 {
                } else {
                   widget_20.field2690 = i_6;
                   widget_20.field2655 = i_18;
-                  itemDefinition_44 = class26.method404(i_6);
+                  itemDefinition_44 = item.getDefinition(i_6);
                   widget_20.field2615 = itemDefinition_44.xan2d;
                   widget_20.field2616 = itemDefinition_44.yan2d;
                   widget_20.field2640 = itemDefinition_44.field3420;
@@ -2240,7 +2240,7 @@ public final class Client extends GameApplet implements class280 {
       class294.field3697 = null;
       if (field905 != -1) {
          field858 = 0;
-         class191.method3668(field905, 0, 0, class7.field46, class249.field3308, 0, 0, -1);
+         class191.method3668(field905, 0, 0, class7.field46, ParamComposition.field3308, 0, 0, -1);
       }
 
       Rasterizer2D.method5996();
@@ -2886,8 +2886,8 @@ public final class Client extends GameApplet implements class280 {
                i_4 = MouseHandler.field495;
                if (i_4 < 0) {
                   i_4 = 0;
-               } else if (i_4 > class249.field3308) {
-                  i_4 = class249.field3308;
+               } else if (i_4 > ParamComposition.field3308) {
+                  i_4 = ParamComposition.field3308;
                }
 
                i_5 = MouseHandler.field483;
@@ -3126,7 +3126,7 @@ public final class Client extends GameApplet implements class280 {
                   }
 
                   if (field905 != -1) {
-                     class221.method4116(field905, 0, 0, class7.field46, class249.field3308, 0, 0);
+                     class221.method4116(field905, 0, 0, class7.field46, ParamComposition.field3308, 0, 0);
                   }
 
                   ++field673;
@@ -3152,13 +3152,13 @@ public final class Client extends GameApplet implements class280 {
                                                 this.method1641();
                                              }
 
-                                             if (class18.field127 != null) {
-                                                FriendSystem.invalidateWidget(class18.field127);
+                                             if (Buffer.field127 != null) {
+                                                FriendSystem.invalidateWidget(Buffer.field127);
                                                 ++field766;
                                                 if (MouseHandler.field485 == 0) {
                                                    if (field874) {
-                                                      if (class294.field3697 == class18.field127 && field764 != field765) {
-                                                         Widget widget_44 = class18.field127;
+                                                      if (class294.field3697 == Buffer.field127 && field764 != field765) {
+                                                         Widget widget_44 = Buffer.field127;
                                                          byte b_35 = 0;
                                                          if (field809 == 1 && widget_44.field2568 == 206) {
                                                             b_35 = 1;
@@ -3195,7 +3195,7 @@ public final class Client extends GameApplet implements class280 {
                                                          class187_20 = class235.method4265(ClientPacketProt.IF_ITEM_DRAG_OT, data.field1313);
                                                          class187_20.outBuffer.writeShortBigEndian(field764);
                                                          class187_20.outBuffer.writeShortLittleEndian(field765);
-                                                         class187_20.outBuffer.writeIntBigEndian(class18.field127.field2688);
+                                                         class187_20.outBuffer.writeIntBigEndian(Buffer.field127.field2688);
                                                          class187_20.outBuffer.writeNegatedByte(b_35);
                                                          data.copy(class187_20);
                                                       }
@@ -3211,7 +3211,7 @@ public final class Client extends GameApplet implements class280 {
 
                                                    field759 = 10;
                                                    MouseHandler.field493 = 0;
-                                                   class18.field127 = null;
+                                                   Buffer.field127 = null;
                                                 } else if (field766 >= 5 && (MouseHandler.MouseHandler_x > field654 + 5 || MouseHandler.MouseHandler_x < field654 - 5 || MouseHandler.MouseHandler_y > field763 + 5 || MouseHandler.MouseHandler_y < field763 - 5)) {
                                                    field874 = true;
                                                 }
@@ -3454,9 +3454,9 @@ public final class Client extends GameApplet implements class280 {
 
       try {
          if (field686 == 0) {
-            if (class23.field187 == null && (field692.method2067(-2036940847) || field687 > 250)) {
-               class23.field187 = field692.method2057(1181780583);
-               field692.method2064(1961789418);
+            if (class23.field187 == null && (field692.method2067() || field687 > 250)) {
+               class23.field187 = field692.method2057();
+               field692.method2064();
                field692 = null;
             }
 
@@ -3641,7 +3641,7 @@ public final class Client extends GameApplet implements class280 {
             class187_7.outBuffer.writeNullTerminatedString(Login.field1180);
             class187_7.outBuffer.writeByte((field869 ? 1 : 0) << 1 | (field656 ? 1 : 0));
             class187_7.outBuffer.writeShortBigEndian(class7.field46);
-            class187_7.outBuffer.writeShortBigEndian(class249.field3308);
+            class187_7.outBuffer.writeShortBigEndian(ParamComposition.field3308);
             PacketBuffer buffer3_10 = class187_7.outBuffer;
             int i_13;
             if (field693 != null) {
@@ -3981,7 +3981,7 @@ public final class Client extends GameApplet implements class280 {
          }
       }
 
-      if (class18.field127 == null) {
+      if (Buffer.field127 == null) {
          if (field828 == null) {
             int i_21 = MouseHandler.field493;
             int i_9;
@@ -4071,7 +4071,7 @@ public final class Client extends GameApplet implements class280 {
                   return;
                }
 
-               if (class18.field127 != null && !field874 && menuOptionsCount > 0 && !this.method1257()) {
+               if (Buffer.field127 != null && !field874 && menuOptionsCount > 0 && !this.method1257()) {
                   i_10 = field654;
                   i_11 = field763;
                   class82 class82_12 = field916;
@@ -4081,11 +4081,11 @@ public final class Client extends GameApplet implements class280 {
 
                field874 = false;
                field766 = 0;
-               if (class18.field127 != null) {
-                  FriendSystem.invalidateWidget(class18.field127);
+               if (Buffer.field127 != null) {
+                  FriendSystem.invalidateWidget(Buffer.field127);
                }
 
-               class18.field127 = WorldMapElement.getWidget(i_6);
+               Buffer.field127 = WorldMapElement.getWidget(i_6);
                field765 = i_16;
                field654 = MouseHandler.field483;
                field763 = MouseHandler.field495;
@@ -4093,7 +4093,7 @@ public final class Client extends GameApplet implements class280 {
                   class112.method2510(i_3);
                }
 
-               FriendSystem.invalidateWidget(class18.field127);
+               FriendSystem.invalidateWidget(Buffer.field127);
                return;
             }
 
@@ -4107,7 +4107,7 @@ public final class Client extends GameApplet implements class280 {
       int i_5;
       if (widget_3 == null) {
          i_4 = class7.field46;
-         i_5 = class249.field3308;
+         i_5 = ParamComposition.field3308;
       } else {
          i_4 = widget_3.field2579;
          i_5 = widget_3.field2667;
@@ -4302,7 +4302,7 @@ public final class Client extends GameApplet implements class280 {
                   field703 = Integer.parseInt(string_4);
                   break;
                case 17:
-                  class26.field213 = string_4;
+                  item.field213 = string_4;
                }
             }
          }

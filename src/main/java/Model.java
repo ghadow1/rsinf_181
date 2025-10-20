@@ -1082,7 +1082,7 @@ public class Model extends Entity {
       class300_2.position = i_26;
       i_55 = class300_2.readUnsignedByte();
       if (i_55 != 0) {
-         new class134();
+         new BuddyRankComparator();
          class300_2.readUnsignedShort();
          class300_2.readUnsignedShort();
          class300_2.readUnsignedShort();

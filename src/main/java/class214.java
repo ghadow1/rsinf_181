@@ -105,7 +105,7 @@ public class class214 {
                   bool_10 = true;
                }
 
-               if (i_12 >= 512 && !class26.method404(i_12 - 512).method4646(this.field2535, (byte) -66)) {
+               if (i_12 >= 512 && !item.getDefinition(i_12 - 512).method4646(this.field2535)) {
                   bool_10 = true;
                }
             }
@@ -136,7 +136,7 @@ public class class214 {
                   }
 
                   if (i_14 >= 512) {
-                     model_15 = class26.method404(i_14 - 512).method4694(this.field2535, (byte) 36);
+                     model_15 = item.getDefinition(i_14 - 512).method4694(this.field2535);
                      if (model_15 != null) {
                         arr_17[i_12++] = model_15;
                      }
@@ -147,7 +147,7 @@ public class class214 {
 
                for (i_14 = 0; i_14 < 5; i_14++) {
                   if (this.field2533[i_14] < class247.field3291[i_14].length) {
-                     model_18.method2783(class134.field1870[i_14], class247.field3291[i_14][this.field2533[i_14]]);
+                     model_18.method2783(BuddyRankComparator.field1870[i_14], class247.field3291[i_14][this.field2533[i_14]]);
                   }
 
                   if (this.field2533[i_14] < Message.field604[i_14].length) {
@@ -166,11 +166,11 @@ public class class214 {
          } else {
             class127 class127_19;
             if (class258_1 != null && class258_3 != null) {
-               class127_19 = class258_1.method4765(class127_9, i_2, class258_3, i_4, 743277610);
+               class127_19 = class258_1.method4765(class127_9, i_2, class258_3, i_4);
             } else if (class258_1 != null) {
-               class127_19 = class258_1.method4784(class127_9, i_2, 1904294443);
+               class127_19 = class258_1.method4784(class127_9, i_2);
             } else {
-               class127_19 = class258_3.method4784(class127_9, i_4, 1926012083);
+               class127_19 = class258_3.method4784(class127_9, i_4);
             }
 
             return class127_19;
@@ -191,7 +191,7 @@ public class class214 {
                bool_2 = true;
             }
 
-            if (i_4 >= 512 && !class26.method404(i_4 - 512).method4683(this.field2535)) {
+            if (i_4 >= 512 && !item.getDefinition(i_4 - 512).method4683(this.field2535)) {
                bool_2 = true;
             }
          }
@@ -214,7 +214,7 @@ public class class214 {
                }
 
                if (i_6 >= 512) {
-                  model_7 = class26.method404(i_6 - 512).method4649(this.field2535, (byte) 81);
+                  model_7 = item.getDefinition(i_6 - 512).method4649(this.field2535);
                   if (model_7 != null) {
                      arr_8[i_4++] = model_7;
                   }
@@ -225,7 +225,7 @@ public class class214 {
 
             for (i_6 = 0; i_6 < 5; i_6++) {
                if (this.field2533[i_6] < class247.field3291[i_6].length) {
-                  model_9.method2783(class134.field1870[i_6], class247.field3291[i_6][this.field2533[i_6]]);
+                  model_9.method2783(BuddyRankComparator.field1870[i_6], class247.field3291[i_6][this.field2533[i_6]]);
                }
 
                if (this.field2533[i_6] < Message.field604[i_6].length) {

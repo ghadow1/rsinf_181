@@ -35,7 +35,7 @@ public class class333 {
    int field3977 = -1;
    int field3998 = -1;
    int field4030 = -1;
-   class26 field3986;
+   item field3986;
    class36 field4019;
    float field3994;
    float field3974;
@@ -54,8 +54,8 @@ public class class333 {
    HashMap field4021;
    class332 field4028;
    HashMap field3992;
-   class26 field3987;
-   class26 field3985;
+   item field3987;
+   item field3985;
    int field4000;
    int field4012;
 
@@ -69,49 +69,49 @@ public class class333 {
       return this.field3970 != -1 && this.field3993 != -1;
    }
 
-   public class26 method6308(int i_1, int i_2, int i_3, byte b_4) {
+   public item method6308(int i_1, int i_2, int i_3, byte b_4) {
       Iterator iterator_5 = this.field3992.values().iterator();
 
-      class26 class26_6;
+      item item_6;
       do {
          if (!iterator_5.hasNext()) {
             return null;
          }
 
-         class26_6 = (class26) iterator_5.next();
-      } while (!class26_6.method373(i_1, i_2, i_3));
+         item_6 = (item) iterator_5.next();
+      } while (!item_6.method373(i_1, i_2, i_3));
 
-      return class26_6;
+      return item_6;
    }
 
    float method6323(int i_1, int i_2) {
       return i_1 == 25 ? 1.0F : (i_1 == 37 ? 1.5F : (i_1 == 50 ? 2.0F : (i_1 == 75 ? 3.0F : (i_1 == 100 ? 4.0F : 8.0F))));
    }
 
-   public class26 method6327(int i_1, int i_2) {
+   public item method6327(int i_1, int i_2) {
       Iterator iterator_3 = this.field3992.values().iterator();
 
-      class26 class26_4;
+      item item_4;
       do {
          if (!iterator_3.hasNext()) {
             return null;
          }
 
-         class26_4 = (class26) iterator_3.next();
-      } while (class26_4.method347() != i_1);
+         item_4 = (item) iterator_3.next();
+      } while (item_4.method347() != i_1);
 
-      return class26_4;
+      return item_4;
    }
 
-   void method6449(class26 class26_1) {
-      this.field3986 = class26_1;
+   void method6449(item item_1) {
+      this.field3986 = item_1;
       this.field4019 = new class36(this.field3983, this.field4021, this.field3976, this.field4010);
       this.field4028.method6285(this.field3986.method369());
    }
 
-   void method6313(class26 class26_1) {
-      if (this.field3986 == null || class26_1 != this.field3986) {
-         this.method6449(class26_1);
+   void method6313(item item_1) {
+      if (this.field3986 == null || item_1 != this.field3986) {
+         this.method6449(item_1);
          this.method6314(-1, -1, -1);
       }
    }
@@ -439,11 +439,11 @@ public class class333 {
 
       for (int i_10 = 0; i_10 < ints_9.length; i_10++) {
          ByteBuffer class300_11 = new ByteBuffer(this.field4029.method4144(i_8, ints_9[i_10]));
-         class26 class26_12 = new class26();
-         class26_12.method344(class300_11, ints_9[i_10]);
-         this.field3992.put(class26_12.method369(), class26_12);
-         if (class26_12.method334()) {
-            this.field3985 = class26_12;
+         item item_12 = new item();
+         item_12.method344(class300_11, ints_9[i_10]);
+         this.field3992.put(item_12.method369(), item_12);
+         if (item_12.method334()) {
+            this.field3985 = item_12;
          }
       }
 
@@ -452,19 +452,19 @@ public class class333 {
    }
 
    public void method6309(int i_1, int i_2, int i_3, boolean bool_4, byte b_5) {
-      class26 class26_6 = this.method6308(i_1, i_2, i_3, (byte) 30);
-      if (class26_6 == null) {
+      item item_6 = this.method6308(i_1, i_2, i_3, (byte) 30);
+      if (item_6 == null) {
          if (!bool_4) {
             return;
          }
 
-         class26_6 = this.field3985;
+         item_6 = this.field3985;
       }
 
       boolean bool_7 = false;
-      if (class26_6 != this.field3987 || bool_4) {
-         this.field3987 = class26_6;
-         this.method6313(class26_6);
+      if (item_6 != this.field3987 || bool_4) {
+         this.field3987 = item_6;
+         this.method6313(item_6);
          bool_7 = true;
       }
 
@@ -554,9 +554,9 @@ public class class333 {
    }
 
    public void method6310(int i_1, int i_2) {
-      class26 class26_3 = this.method6327(i_1, -1118693055);
-      if (class26_3 != null) {
-         this.method6313(class26_3);
+      item item_3 = this.method6327(i_1, -1118693055);
+      if (item_3 != null) {
+         this.method6313(item_3);
       }
 
    }
@@ -633,7 +633,7 @@ public class class333 {
       this.field3984 = 3;
    }
 
-   public class26 method6312(byte b_1) {
+   public item method6312(byte b_1) {
       return this.field3986;
    }
 
@@ -746,10 +746,10 @@ public class class333 {
       return !this.field4014.contains(Integer.valueOf(i_1));
    }
 
-   public void method6315(class26 class26_1, class213 class213_2, class213 class213_3, boolean bool_4) {
-      if (class26_1 != null) {
-         if (this.field3986 == null || class26_1 != this.field3986) {
-            this.method6449(class26_1);
+   public void method6315(item item_1, class213 class213_2, class213 class213_3, boolean bool_4) {
+      if (item_1 != null) {
+         if (this.field3986 == null || item_1 != this.field3986) {
+            this.method6449(item_1);
          }
 
          if (!bool_4 && this.field3986.method373(class213_2.field2531, class213_2.field2530, class213_2.field2528)) {

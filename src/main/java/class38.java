@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
-public class class38 extends class26 {
+public class class38 extends item {
 
    static class319 field332;
    List field331;
@@ -18,7 +18,7 @@ public class class38 extends class26 {
          class213 class213_7 = new class213(class300_1.readIntMedEndian());
          boolean bool_8 = class300_1.readUnsignedByte() == 1;
          if (bool_2 || !bool_8) {
-            this.field331.add(new class18((class213) null, class213_7, i_6, (class28) null));
+            this.field331.add(new Buffer((class213) null, class213_7, i_6, (class28) null));
          }
       }
 

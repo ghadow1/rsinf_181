@@ -202,7 +202,7 @@ public class class253 extends DualNode {
          } else if (i_2 == 82) {
             this.field3378 = class300_1.readUnsignedShort();
          } else if (i_2 == 249) {
-            this.field3396 = class26.method403(class300_1, this.field3396, -2066495425);
+            this.field3396 = item.method403(class300_1, this.field3396);
          }
       } else {
          this.field3349 = class300_1.readUnsignedShort();

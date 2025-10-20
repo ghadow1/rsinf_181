@@ -141,7 +141,7 @@ public class NPCDefinition extends DualNode {
          } else if (i_2 == 111) {
             this.field3498 = true;
          } else if (i_2 == 249) {
-            this.field3487 = class26.method403(class300_1, this.field3487, 1431656909);
+            this.field3487 = item.method403(class300_1, this.field3487);
          }
       } else {
          this.field3494 = class300_1.readUnsignedShort();
@@ -277,11 +277,11 @@ public class NPCDefinition extends DualNode {
 
          class127 class127_11;
          if (class258_1 != null && class258_3 != null) {
-            class127_11 = class258_1.method4765(class127_6, i_2, class258_3, i_4, 743277610);
+            class127_11 = class258_1.method4765(class127_6, i_2, class258_3, i_4);
          } else if (class258_1 != null) {
-            class127_11 = class258_1.method4784(class127_6, i_2, 2082674209);
+            class127_11 = class258_1.method4784(class127_6, i_2);
          } else if (class258_3 != null) {
-            class127_11 = class258_3.method4784(class127_6, i_4, 1828784709);
+            class127_11 = class258_3.method4784(class127_6, i_4);
          } else {
             class127_11 = class127_6.method2859(true);
          }

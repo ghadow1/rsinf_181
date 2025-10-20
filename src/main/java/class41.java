@@ -214,7 +214,7 @@ public class class41 {
 
       if (class66_2.field638) {
          if (b_5 == 127) {
-            class66_2.method1205(class66_2.field639, class66_2.field640, 1369099765);
+            class66_2.method1205(class66_2.field639, class66_2.field640);
          } else {
             byte b_17;
             if (b_5 != -1) {

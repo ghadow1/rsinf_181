@@ -77,11 +77,11 @@ public class class248 extends DualNode {
                   NPC.field1135.method6121(Login.field1208 + 382, 0);
                   class87.field1243.method6101(Login.field1208 + 382 - class87.field1243.field3897 / 2, 18);
                } else {
-                  if (Login.field1190 > 0 && Login.field1206 != null && MouseHandler.field483 >= 0 && MouseHandler.field483 <= Login.field1206.field3897 && MouseHandler.field495 >= class249.field3308 / 2 - 50 && MouseHandler.field495 <= class249.field3308 / 2 + 50) {
+                  if (Login.field1190 > 0 && Login.field1206 != null && MouseHandler.field483 >= 0 && MouseHandler.field483 <= Login.field1206.field3897 && MouseHandler.field495 >= ParamComposition.field3308 / 2 - 50 && MouseHandler.field495 <= ParamComposition.field3308 / 2 + 50) {
                      --Login.field1190;
                   }
 
-                  if (Login.field1190 < Login.field1186 && NPCDefinition.field3490 != null && MouseHandler.field483 >= class7.field46 - NPCDefinition.field3490.field3897 - 5 && MouseHandler.field483 <= class7.field46 && MouseHandler.field495 >= class249.field3308 / 2 - 50 && MouseHandler.field495 <= class249.field3308 / 2 + 50) {
+                  if (Login.field1190 < Login.field1186 && NPCDefinition.field3490 != null && MouseHandler.field483 >= class7.field46 - NPCDefinition.field3490.field3897 - 5 && MouseHandler.field483 <= class7.field46 && MouseHandler.field495 >= ParamComposition.field3308 / 2 - 50 && MouseHandler.field495 <= ParamComposition.field3308 / 2 + 50) {
                      ++Login.field1190;
                   }
                }

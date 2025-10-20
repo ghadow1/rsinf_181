@@ -1,9 +1,9 @@
-public class class249 extends DualNode {
+public class ParamComposition extends DualNode {
 
    public static int field3308;
    static class233 field3307;
    static class145 field3301 = new class145(64);
-   boolean field3305 = true;
+   boolean autoDisable = true;
    public int field3302;
    char field3306;
    public String field3303;
@@ -30,7 +30,7 @@ public class class249 extends DualNode {
       } else if (i_2 == 2) {
          this.field3302 = class300_1.readIntMedEndian();
       } else if (i_2 == 4) {
-         this.field3305 = false;
+         this.autoDisable = false;
       } else if (i_2 == 5) {
          this.field3303 = class300_1.readNullTerminatedString();
       }

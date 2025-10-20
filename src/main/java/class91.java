@@ -488,7 +488,7 @@ public class class91 {
                            class63.field594 = i_1;
                            class4.field19 = i_3;
                            FriendSystem.invalidateWidget(widget_17);
-                           Client.selectedItemName = class73.colorStartTag(16748608) + class26.method404(i_3).name + class73.colorStartTag(16777215);
+                           Client.selectedItemName = class73.colorStartTag(16748608) + item.getDefinition(i_3).name + class73.colorStartTag(16777215);
                            if (Client.selectedItemName == null) {
                               Client.selectedItemName = "null";
                            }
@@ -733,7 +733,7 @@ public class class91 {
                                  if (i_2 == 1005) {
                                     widget_17 = WorldMapElement.getWidget(i_1);
                                     if (widget_17 != null && widget_17.field2705[i_0] >= 100000) {
-                                       class62.method1132(27, "", widget_17.field2705[i_0] + " x " + class26.method404(i_3).name);
+                                       class62.method1132(27, "", widget_17.field2705[i_0] + " x " + item.getDefinition(i_3).name);
                                     } else {
                                        class187_10 = class235.method4265(ClientPacketProt.field2227, Client.data.field1313);
                                        class187_10.outBuffer.writeShortLittleEndian(i_3);

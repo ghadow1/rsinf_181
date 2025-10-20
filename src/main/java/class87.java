@@ -6,7 +6,7 @@ public final class class87 extends Entity {
    int field1245;
 
    protected final class127 vmethod3253(int i_1) {
-      return class26.method404(this.field1244).method4644(this.field1245);
+      return item.getDefinition(this.field1244).method4644(this.field1245);
    }
 
    static void method2053(int i_0, int i_1, int i_2, int i_3, int i_4) {

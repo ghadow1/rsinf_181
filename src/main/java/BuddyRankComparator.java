@@ -1,9 +1,9 @@
 import java.io.IOException;
 
-public class class134 {
+public class BuddyRankComparator {
 
    public static short[] field1870;
-   public static boolean field1868;
+   public static boolean ItemDefinition_inMembersWorld;
    static int field1871;
 
    static class73 method3249() {
@@ -11,7 +11,7 @@ public class class134 {
       class73 class73_2 = new class73();
 
       try {
-         class343_1 = class18.userPrefSave("", class29.field248.field3111, false);
+         class343_1 = Buffer.userPrefSave("", class29.field248.field3111, false);
          byte[] bytes_3 = new byte[(int)class343_1.method6552()];
 
          int i_5;

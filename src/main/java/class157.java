@@ -20,7 +20,7 @@ public class class157 extends ChainedComparator {
    static boolean method3428() {
       try {
          if (World.field1027 == null) {
-            World.field1027 = class258.field3534.method3296(new URL(class26.field213), (byte) 78);
+            World.field1027 = class258.field3534.method3296(new URL(item.field213), (byte) 78);
          } else if (World.field1027.method3307()) {
             byte[] bytes_1 = World.field1027.method3308();
             ByteBuffer class300_2 = new ByteBuffer(bytes_1);

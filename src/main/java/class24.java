@@ -19,21 +19,21 @@ public class class24 implements class37 {
       return i_1 >= this.field197 && i_1 < this.field196 + this.field197 ? i_2 >> 6 >= this.field200 && i_2 >> 6 <= this.field207 && i_3 >> 6 >= this.field199 && i_3 >> 6 <= this.field201 : false;
    }
 
-   public void vmethod738(class26 class26_1, byte b_2) {
-      if (class26_1.field217 > this.field202) {
-         class26_1.field217 = this.field202;
+   public void vmethod738(item item_1, byte b_2) {
+      if (item_1.field217 > this.field202) {
+         item_1.field217 = this.field202;
       }
 
-      if (class26_1.field223 < this.field204) {
-         class26_1.field223 = this.field204;
+      if (item_1.field223 < this.field204) {
+         item_1.field223 = this.field204;
       }
 
-      if (class26_1.field220 > this.field203) {
-         class26_1.field220 = this.field203;
+      if (item_1.field220 > this.field203) {
+         item_1.field220 = this.field203;
       }
 
-      if (class26_1.field222 < this.field205) {
-         class26_1.field222 = this.field205;
+      if (item_1.field222 < this.field205) {
+         item_1.field222 = this.field205;
       }
 
    }

@@ -39,7 +39,7 @@ public class class25 {
          int i_6 = MouseRecorder.field1098[class70.field1014 + 1];
          widget_4.field2690 = i_5;
          widget_4.field2655 = i_6;
-         ItemDefinition itemDefinition_7 = class26.method404(i_5);
+         ItemDefinition itemDefinition_7 = item.getDefinition(i_5);
          widget_4.field2615 = itemDefinition_7.xan2d;
          widget_4.field2616 = itemDefinition_7.yan2d;
          widget_4.field2640 = itemDefinition_7.field3420;
@@ -70,8 +70,8 @@ public class class25 {
       int i_4 = 0;
 
       for (int i_5 = 0; i_5 < ItemDefinition.field3455; i_5++) {
-         ItemDefinition itemDefinition_6 = class26.method404(i_5);
-         if ((!bool_1 || itemDefinition_6.field3452) && itemDefinition_6.field3444 == -1 && itemDefinition_6.name.toLowerCase().indexOf(string_0) != -1) {
+         ItemDefinition itemDefinition_6 = item.getDefinition(i_5);
+         if ((!bool_1 || itemDefinition_6.isTradable) && itemDefinition_6.noteTemplate == -1 && itemDefinition_6.name.toLowerCase().indexOf(string_0) != -1) {
             if (i_4 >= 250) {
                class257.field3502 = -1;
                WorldMapSection1.field336 = null;
@@ -98,7 +98,7 @@ public class class25 {
       String[] arr_9 = new String[class257.field3502];
 
       for (int i_10 = 0; i_10 < class257.field3502; i_10++) {
-         arr_9[i_10] = class26.method404(shorts_3[i_10]).name;
+         arr_9[i_10] = item.getDefinition(shorts_3[i_10]).name;
       }
 
       class82.method1991(arr_9, WorldMapSection1.field336, (short) -2750);

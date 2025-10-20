@@ -90,36 +90,36 @@ public class class258 extends DualNode {
 
    }
 
-   public class127 method4784(class127 class127_1, int i_2, int i_3) {
+   public class127 method4784(class127 class127_1, int i_2) {
       i_2 = this.field3520[i_2];
       class138 class138_4 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_4 == null) {
          return class127_1.method2859(true);
       } else {
-         class127 class127_5 = class127_1.method2859(!class138_4.method3268(i_2, 1270501095));
+         class127 class127_5 = class127_1.method2859(!class138_4.method3268(i_2));
          class127_5.method2888(class138_4, i_2);
          return class127_5;
       }
    }
 
-   public class127 method4765(class127 class127_1, int i_2, class258 class258_3, int i_4, int i_5) {
+   public class127 method4765(class127 class127_1, int i_2, class258 class258_3, int i_4) {
       i_2 = this.field3520[i_2];
       class138 class138_6 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_6 == null) {
-         return class258_3.method4784(class127_1, i_4, 1790643125);
+         return class258_3.method4784(class127_1, i_4);
       } else {
          i_4 = class258_3.field3520[i_4];
          class138 class138_7 = class30.method537(i_4 >> 16);
          i_4 &= 0xffff;
          class127 class127_8;
          if (class138_7 == null) {
-            class127_8 = class127_1.method2859(!class138_6.method3268(i_2, 1644534064));
+            class127_8 = class127_1.method2859(!class138_6.method3268(i_2));
             class127_8.method2888(class138_6, i_2);
             return class127_8;
          } else {
-            class127_8 = class127_1.method2859(!class138_6.method3268(i_2, 458788534) & !class138_7.method3268(i_4, 1192790777));
+            class127_8 = class127_1.method2859(!class138_6.method3268(i_2) & !class138_7.method3268(i_4));
             class127_8.method2867(class138_6, i_2, class138_7, i_4, this.field3518);
             return class127_8;
          }
@@ -133,7 +133,7 @@ public class class258 extends DualNode {
       if (class138_5 == null) {
          return class127_1.method2859(true);
       } else {
-         class127 class127_6 = class127_1.method2859(!class138_5.method3268(i_2, 318487825));
+         class127 class127_6 = class127_1.method2859(!class138_5.method3268(i_2));
          i_3 &= 0x3;
          if (i_3 == 1) {
             class127_6.method2871();
@@ -163,7 +163,7 @@ public class class258 extends DualNode {
       if (class138_4 == null) {
          return class127_1.method2860(true);
       } else {
-         class127 class127_5 = class127_1.method2860(!class138_4.method3268(i_2, 213488098));
+         class127 class127_5 = class127_1.method2860(!class138_4.method3268(i_2));
          class127_5.method2888(class138_4, i_2);
          return class127_5;
       }
@@ -186,12 +186,12 @@ public class class258 extends DualNode {
 
          class127 class127_8;
          if (class138_6 != null && i_7 != 65535) {
-            class127_8 = class127_1.method2859(!class138_5.method3268(i_4, -192963652) & !class138_6.method3268(i_7, -1688256999));
+            class127_8 = class127_1.method2859(!class138_5.method3268(i_4) & !class138_6.method3268(i_7));
             class127_8.method2888(class138_5, i_4);
             class127_8.method2888(class138_6, i_7);
             return class127_8;
          } else {
-            class127_8 = class127_1.method2859(!class138_5.method3268(i_4, 502039853));
+            class127_8 = class127_1.method2859(!class138_5.method3268(i_4));
             class127_8.method2888(class138_5, i_4);
             return class127_8;
          }

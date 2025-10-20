@@ -258,7 +258,7 @@ public class class65 extends ParamDefinition {
                   NodeDeque nodeDeque_34 = Client.groundItems[ItemContainer_2.plane][i_16][i_17];
                   if (nodeDeque_34 != null) {
                      for (class87 class87_38 = (class87) nodeDeque_34.method4893(); class87_38 != null; class87_38 = (class87) nodeDeque_34.method4887()) {
-                        ItemDefinition itemDefinition_36 = class26.method404(class87_38.field1244);
+                        ItemDefinition itemDefinition_36 = item.getDefinition(class87_38.field1244);
                         if (Client.isItemSelected == 1) {
                            class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_36.name, 16, class87_38.field1244, i_16, i_17);
                         } else if (Client.isSpellSelected) {

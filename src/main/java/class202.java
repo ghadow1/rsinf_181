@@ -19,12 +19,12 @@ public class class202 extends class115 {
 
             do {
                if (i_5 <= musicPatchNode_6.field2455) {
-                  this.method3895(musicPatchNode_6, ints_1, i_4, i_5, i_4 + i_5, 1383437948);
+                  this.method3895(musicPatchNode_6, ints_1, i_4, i_5, i_4 + i_5);
                   musicPatchNode_6.field2455 -= i_5;
                   break;
                }
 
-               this.method3895(musicPatchNode_6, ints_1, i_4, musicPatchNode_6.field2455, i_5 + i_4, 1316254184);
+               this.method3895(musicPatchNode_6, ints_1, i_4, musicPatchNode_6.field2455, i_5 + i_4);
                i_4 += musicPatchNode_6.field2455;
                i_5 -= musicPatchNode_6.field2455;
             } while (!this.field2485.method3740(musicPatchNode_6, ints_1, i_4, i_5, -1512694949));
@@ -91,7 +91,7 @@ public class class202 extends class115 {
       musicPatchNode_1.field2454.vmethod3906(i_2);
    }
 
-   void method3895(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4, int i_5, int i_6) {
+   void method3895(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4, int i_5) {
       if ((this.field2485.field2421[musicPatchNode_1.field2440] & 0x4) != 0 && musicPatchNode_1.field2436 < 0) {
          int i_7 = this.field2485.field2408[musicPatchNode_1.field2440] / CollisionMap.field2078;
 
@@ -149,11 +149,11 @@ public class class202 extends class115 {
       if (world_0.method1680() != Client.field655) {
          Client.field655 = world_0.method1680();
          boolean bool_2 = world_0.method1680();
-         if (bool_2 != class134.field1868) {
-            ItemDefinition.field3407.method3323();
+         if (bool_2 != BuddyRankComparator.ItemDefinition_inMembersWorld) {
+            ItemDefinition.ItemDefinition_cached.method3323();
             ItemDefinition.field3408.method3323();
             ItemDefinition.field3445.method3323();
-            class134.field1868 = bool_2;
+            BuddyRankComparator.ItemDefinition_inMembersWorld = bool_2;
          }
       }
 

@@ -157,7 +157,7 @@ public class class292 {
                      }
 
                      if (widget_11.field2568 == 1339) {
-                        class18.method205(widget_11, i_13, i_14, i_12, (byte) 61);
+                        Buffer.method205(widget_11, i_13, i_14, i_12, (byte) 61);
                         Rasterizer2D.setClip(i_2, i_3, i_4, i_5);
                         continue;
                      }
@@ -239,7 +239,7 @@ public class class292 {
                                     boolean bool_38 = false;
                                     boolean bool_39 = false;
                                     i_27 = widget_11.field2560[i_20] - 1;
-                                    if (i_23 + 32 > i_2 && i_23 < i_4 && i_24 + 32 > i_3 && i_24 < i_5 || widget_11 == class18.field127 && i_20 == Client.field765) {
+                                    if (i_23 + 32 > i_2 && i_23 < i_4 && i_24 + 32 > i_3 && i_24 < i_5 || widget_11 == Buffer.field127 && i_20 == Client.field765) {
                                        class325 class325_28;
                                        if (Client.isItemSelected == 1 && i_20 == class23.field182 && widget_11.field2688 == class63.field594) {
                                           class325_28 = class19.method236(i_27, widget_11.field2705[i_20], 2, 0, 2, false, 2024001124);
@@ -248,7 +248,7 @@ public class class292 {
                                        }
 
                                        if (class325_28 != null) {
-                                          if (widget_11 == class18.field127 && i_20 == Client.field765) {
+                                          if (widget_11 == Buffer.field127 && i_20 == Client.field765) {
                                              i_25 = MouseHandler.MouseHandler_x - Client.field654;
                                              i_26 = MouseHandler.MouseHandler_y - Client.field763;
                                              if (i_25 < 5 && i_25 > -5) {
@@ -372,7 +372,7 @@ public class class292 {
                                  }
 
                                  if (widget_11.field2563 && widget_11.field2690 != -1) {
-                                    ItemDefinition itemDefinition_46 = class26.method404(widget_11.field2690);
+                                    ItemDefinition itemDefinition_46 = item.getDefinition(widget_11.field2690);
                                     string_45 = itemDefinition_46.name;
                                     if (string_45 == null) {
                                        string_45 = "null";
@@ -462,7 +462,7 @@ public class class292 {
                                  class127 class127_42 = null;
                                  i_23 = 0;
                                  if (widget_11.field2690 != -1) {
-                                    itemDefinition_34 = class26.method404(widget_11.field2690);
+                                    itemDefinition_34 = item.getDefinition(widget_11.field2690);
                                     if (itemDefinition_34 != null) {
                                        itemDefinition_34 = itemDefinition_34.method4656(widget_11.field2655);
                                        class127_42 = itemDefinition_34.method4644(1);
@@ -524,7 +524,7 @@ public class class292 {
                                     for (i_22 = 0; i_22 < widget_11.field2576; i_22++) {
                                        for (i_23 = 0; i_23 < widget_11.field2670; i_23++) {
                                           if (widget_11.field2560[i_21] > 0) {
-                                             itemDefinition_34 = class26.method404(widget_11.field2560[i_21] - 1);
+                                             itemDefinition_34 = item.getDefinition(widget_11.field2560[i_21] - 1);
                                              String string_35;
                                              if (itemDefinition_34.isStackable != 1 && widget_11.field2705[i_21] == 1) {
                                                 string_35 = class73.colorStartTag(16748608) + itemDefinition_34.name + "</col>";
@@ -649,7 +649,7 @@ public class class292 {
       int i_4;
       if (i_0 == 4200) {
          i_4 = MouseRecorder.field1098[--class70.field1014];
-         MouseRecorder.field1093[++class221.field2747 - 1] = class26.method404(i_4).name;
+         MouseRecorder.field1093[++class221.field2747 - 1] = item.getDefinition(i_4).name;
          return 1;
       } else {
          int i_5;
@@ -658,7 +658,7 @@ public class class292 {
             class70.field1014 -= 2;
             i_4 = MouseRecorder.field1098[class70.field1014];
             i_5 = MouseRecorder.field1098[class70.field1014 + 1];
-            itemDefinition_6 = class26.method404(i_4);
+            itemDefinition_6 = item.getDefinition(i_4);
             if (i_5 >= 1 && i_5 <= 5 && itemDefinition_6.groundActions[i_5 - 1] != null) {
                MouseRecorder.field1093[++class221.field2747 - 1] = itemDefinition_6.groundActions[i_5 - 1];
             } else {
@@ -670,7 +670,7 @@ public class class292 {
             class70.field1014 -= 2;
             i_4 = MouseRecorder.field1098[class70.field1014];
             i_5 = MouseRecorder.field1098[class70.field1014 + 1];
-            itemDefinition_6 = class26.method404(i_4);
+            itemDefinition_6 = item.getDefinition(i_4);
             if (i_5 >= 1 && i_5 <= 5 && itemDefinition_6.inventoryActions[i_5 - 1] != null) {
                MouseRecorder.field1093[++class221.field2747 - 1] = itemDefinition_6.inventoryActions[i_5 - 1];
             } else {
@@ -680,19 +680,19 @@ public class class292 {
             return 1;
          } else if (i_0 == 4203) {
             i_4 = MouseRecorder.field1098[--class70.field1014];
-            MouseRecorder.field1098[++class70.field1014 - 1] = class26.method404(i_4).price;
+            MouseRecorder.field1098[++class70.field1014 - 1] = item.getDefinition(i_4).price;
             return 1;
          } else if (i_0 == 4204) {
             i_4 = MouseRecorder.field1098[--class70.field1014];
-            MouseRecorder.field1098[++class70.field1014 - 1] = class26.method404(i_4).isStackable == 1 ? 1 : 0;
+            MouseRecorder.field1098[++class70.field1014 - 1] = item.getDefinition(i_4).isStackable == 1 ? 1 : 0;
             return 1;
          } else {
             ItemDefinition itemDefinition_7;
             if (i_0 == 4205) {
                i_4 = MouseRecorder.field1098[--class70.field1014];
-               itemDefinition_7 = class26.method404(i_4);
-               if (itemDefinition_7.field3444 == -1 && itemDefinition_7.field3443 >= 0) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.field3443;
+               itemDefinition_7 = item.getDefinition(i_4);
+               if (itemDefinition_7.noteTemplate == -1 && itemDefinition_7.note >= 0) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.note;
                } else {
                   MouseRecorder.field1098[++class70.field1014 - 1] = i_4;
                }
@@ -700,9 +700,9 @@ public class class292 {
                return 1;
             } else if (i_0 == 4206) {
                i_4 = MouseRecorder.field1098[--class70.field1014];
-               itemDefinition_7 = class26.method404(i_4);
-               if (itemDefinition_7.field3444 >= 0 && itemDefinition_7.field3443 >= 0) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.field3443;
+               itemDefinition_7 = item.getDefinition(i_4);
+               if (itemDefinition_7.noteTemplate >= 0 && itemDefinition_7.note >= 0) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.note;
                } else {
                   MouseRecorder.field1098[++class70.field1014 - 1] = i_4;
                }
@@ -710,13 +710,13 @@ public class class292 {
                return 1;
             } else if (i_0 == 4207) {
                i_4 = MouseRecorder.field1098[--class70.field1014];
-               MouseRecorder.field1098[++class70.field1014 - 1] = class26.method404(i_4).isMembersOnly ? 1 : 0;
+               MouseRecorder.field1098[++class70.field1014 - 1] = item.getDefinition(i_4).isMembersOnly ? 1 : 0;
                return 1;
             } else if (i_0 == 4208) {
                i_4 = MouseRecorder.field1098[--class70.field1014];
-               itemDefinition_7 = class26.method404(i_4);
-               if (itemDefinition_7.field3439 == -1 && itemDefinition_7.field3400 >= 0) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.field3400;
+               itemDefinition_7 = item.getDefinition(i_4);
+               if (itemDefinition_7.placeholderTemplate == -1 && itemDefinition_7.placeholder >= 0) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.placeholder;
                } else {
                   MouseRecorder.field1098[++class70.field1014 - 1] = i_4;
                }
@@ -724,9 +724,9 @@ public class class292 {
                return 1;
             } else if (i_0 == 4209) {
                i_4 = MouseRecorder.field1098[--class70.field1014];
-               itemDefinition_7 = class26.method404(i_4);
-               if (itemDefinition_7.field3439 >= 0 && itemDefinition_7.field3400 >= 0) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.field3400;
+               itemDefinition_7 = item.getDefinition(i_4);
+               if (itemDefinition_7.placeholderTemplate >= 0 && itemDefinition_7.placeholder >= 0) {
+                  MouseRecorder.field1098[++class70.field1014 - 1] = itemDefinition_7.placeholder;
                } else {
                   MouseRecorder.field1098[++class70.field1014 - 1] = i_4;
                }

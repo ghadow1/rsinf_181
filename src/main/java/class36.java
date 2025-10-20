@@ -42,7 +42,7 @@ public final class class36 {
 
             while (iterator_5.hasNext()) {
                class34 class34_6 = (class34) iterator_5.next();
-               if (class34_6.method578(-1274004046)) {
+               if (class34_6.method578()) {
                   int i_7 = class34_6.vmethod597(1513522577);
                   if (!this.field316.containsKey(Integer.valueOf(i_7))) {
                      LinkedList linkedlist_8 = new LinkedList();
@@ -181,7 +181,7 @@ public final class class36 {
          int i_10 = this.field312.method341() - this.field312.method340() + 1;
          System.nanoTime();
          System.nanoTime();
-         class88.method2069(-1709939450);
+         class88.method2069();
          this.field315 = new class29[i_17][i_10];
          Iterator iterator_11 = this.field312.field333.iterator();
 

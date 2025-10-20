@@ -15,21 +15,21 @@ public class AbstractWorldMapData implements class37 {
       return i_1 >= this.field293 && i_1 < this.field286 + this.field293 ? i_2 >> 6 == this.field294 && i_3 >> 6 == this.field288 : false;
    }
 
-   public void vmethod738(class26 class26_1, byte b_2) {
-      if (class26_1.field217 > this.field287) {
-         class26_1.field217 = this.field287;
+   public void vmethod738(item item_1, byte b_2) {
+      if (item_1.field217 > this.field287) {
+         item_1.field217 = this.field287;
       }
 
-      if (class26_1.field223 < this.field287) {
-         class26_1.field223 = this.field287;
+      if (item_1.field223 < this.field287) {
+         item_1.field223 = this.field287;
       }
 
-      if (class26_1.field220 > this.field290) {
-         class26_1.field220 = this.field290;
+      if (item_1.field220 > this.field290) {
+         item_1.field220 = this.field290;
       }
 
-      if (class26_1.field222 < this.field290) {
-         class26_1.field222 = this.field290;
+      if (item_1.field222 < this.field290) {
+         item_1.field222 = this.field290;
       }
 
    }

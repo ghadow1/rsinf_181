@@ -21,21 +21,21 @@ public class ItemContainer_2 implements class37 {
       return i_1 >= this.field368 && i_1 < this.field368 + this.field363 ? i_2 >= (this.field364 << 6) + (this.field376 << 3) && i_2 <= (this.field364 << 6) + (this.field376 << 3) + 7 && i_3 >= (this.field365 << 6) + (this.field369 << 3) && i_3 <= (this.field365 << 6) + (this.field369 << 3) + 7 : false;
    }
 
-   public void vmethod738(class26 class26_1, byte b_2) {
-      if (class26_1.field217 > this.field366) {
-         class26_1.field217 = this.field366;
+   public void vmethod738(item item_1, byte b_2) {
+      if (item_1.field217 > this.field366) {
+         item_1.field217 = this.field366;
       }
 
-      if (class26_1.field223 < this.field366) {
-         class26_1.field223 = this.field366;
+      if (item_1.field223 < this.field366) {
+         item_1.field223 = this.field366;
       }
 
-      if (class26_1.field220 > this.field375) {
-         class26_1.field220 = this.field375;
+      if (item_1.field220 > this.field375) {
+         item_1.field220 = this.field375;
       }
 
-      if (class26_1.field222 < this.field375) {
-         class26_1.field222 = this.field375;
+      if (item_1.field222 < this.field375) {
+         item_1.field222 = this.field375;
       }
 
    }

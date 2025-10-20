@@ -12,7 +12,7 @@ public class class57 implements Callable {
       return securerandom_2;
    }
 
-   public static void method1093(int i_0) {
+   public static void method1093() {
       class240.field3205.method3323();
    }
 

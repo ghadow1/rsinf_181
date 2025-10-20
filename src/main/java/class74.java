@@ -13,7 +13,7 @@ public class class74 {
       this.field1071 = new class276(class338_1);
    }
 
-   final boolean method1781(Username username_1, int i_2) {
+   final boolean method1781(Username username_1) {
       class284 class284_3 = (class284) this.field1070.method5082(username_1);
       return class284_3 != null && class284_3.method5168((byte) -4);
    }

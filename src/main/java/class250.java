@@ -6,7 +6,7 @@ public class class250 extends DualNode {
 
    void method4513(ByteBuffer class300_1, int i_2) {
       if (i_2 == 249) {
-         this.field3310 = class26.method403(class300_1, this.field3310, -412721913);
+         this.field3310 = item.method403(class300_1, this.field3310);
       }
 
    }

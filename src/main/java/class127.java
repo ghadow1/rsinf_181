@@ -733,7 +733,7 @@ public class class127 extends Entity {
                      if (bool_34 && bool_31) {
                         boolean bool_36 = false;
                         if (field1732) {
-                           bool_36 = class138.method3275(this, i_6, i_7, i_8, (byte) 44);
+                           bool_36 = class138.method3275(this, i_6, i_7, i_8);
                         } else {
                            i_37 = i_12 - i_13;
                            if (i_37 <= 50) {

@@ -14,8 +14,8 @@ public abstract class ParamDefinition {
       class244.field3254.method3323();
       class245.field3273.method3323();
       class120.method2766();
-      class34.method599(1908697951);
-      ItemDefinition.field3407.method3323();
+      class34.method599();
+      ItemDefinition.ItemDefinition_cached.method3323();
       ItemDefinition.field3408.method3323();
       ItemDefinition.field3445.method3323();
       class258.field3524.method3323();
@@ -23,7 +23,7 @@ public abstract class ParamDefinition {
       class243.field3239.method3323();
       class243.field3240.method3323();
       class201.method3888((byte) 1);
-      class57.method1093(1843458331);
+      class57.method1093();
       ErrorHandler.field3325.method3323();
       ErrorHandler.field3329.method3323();
       ErrorHandler.field3330.method3323();
@@ -33,7 +33,7 @@ public abstract class ParamDefinition {
       class63.method1134();
       class214.field2536.method3323();
       class207.method3940((byte) -50);
-      ((class119) Rasterizer3D.field1781).method2762(1945022462);
+      ((class119) Rasterizer3D.field1781).method2762();
       class92.field1291.method3323();
       class197.field2405.method4158();
       class167.field2049.method4158();

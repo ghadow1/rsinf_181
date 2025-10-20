@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class class26 {
+public class item {
 
    static String field213;
    static int field227;
@@ -200,44 +200,44 @@ public class class26 {
       return new class213(this.field218);
    }
 
-   public static ItemDefinition method404(int i_0) {
-      ItemDefinition itemDefinition_2 = (ItemDefinition) ItemDefinition.field3407.get((long)i_0);
+   public static ItemDefinition getDefinition(int itemId) {
+      ItemDefinition itemDefinition_2 = (ItemDefinition) ItemDefinition.ItemDefinition_cached.get((long) itemId);
       if (itemDefinition_2 != null) {
          return itemDefinition_2;
       } else {
-         byte[] bytes_3 = class91.field1276.method4144(10, i_0);
+         byte[] bytes_3 = class91.field1276.method4144(10, itemId);
          itemDefinition_2 = new ItemDefinition();
-         itemDefinition_2.field3410 = i_0;
+         itemDefinition_2.field3410 = itemId;
          if (bytes_3 != null) {
-            itemDefinition_2.method4638(new ByteBuffer(bytes_3));
+            itemDefinition_2.decode(new ByteBuffer(bytes_3));
          }
 
          itemDefinition_2.method4637();
-         if (itemDefinition_2.field3444 != -1) {
-            itemDefinition_2.method4666(method404(itemDefinition_2.field3444), method404(itemDefinition_2.field3443));
+         if (itemDefinition_2.noteTemplate != -1) {
+            itemDefinition_2.method4666(getDefinition(itemDefinition_2.noteTemplate), getDefinition(itemDefinition_2.note));
          }
 
          if (itemDefinition_2.field3454 != -1) {
-            itemDefinition_2.method4641(method404(itemDefinition_2.field3454), method404(itemDefinition_2.field3453));
+            itemDefinition_2.method4641(getDefinition(itemDefinition_2.field3454), getDefinition(itemDefinition_2.field3453));
          }
 
-         if (itemDefinition_2.field3439 != -1) {
-            itemDefinition_2.method4689(method404(itemDefinition_2.field3439), method404(itemDefinition_2.field3400));
+         if (itemDefinition_2.placeholderTemplate != -1) {
+            itemDefinition_2.genPlaceholder(getDefinition(itemDefinition_2.placeholderTemplate), getDefinition(itemDefinition_2.placeholder));
          }
 
-         if (!class134.field1868 && itemDefinition_2.isMembersOnly) {
+         if (!BuddyRankComparator.ItemDefinition_inMembersWorld && itemDefinition_2.isMembersOnly) {
             itemDefinition_2.name = "Members object";
-            itemDefinition_2.field3452 = false;
+            itemDefinition_2.isTradable = false;
             itemDefinition_2.groundActions = null;
             itemDefinition_2.inventoryActions = null;
-            itemDefinition_2.field3403 = -1;
+            itemDefinition_2.shiftClickIndex = -1;
             itemDefinition_2.field3450 = 0;
-            if (itemDefinition_2.field3409 != null) {
+            if (itemDefinition_2.params != null) {
                boolean bool_4 = false;
 
-               for (LinkedListNode linkedListNode_5 = itemDefinition_2.field3409.method5927(); linkedListNode_5 != null; linkedListNode_5 = itemDefinition_2.field3409.method5928()) {
-                  class249 class249_6 = class18.method209((int) linkedListNode_5.hash, (byte) 4);
-                  if (class249_6.field3305) {
+               for (LinkedListNode linkedListNode_5 = itemDefinition_2.params.method5927(); linkedListNode_5 != null; linkedListNode_5 = itemDefinition_2.params.method5928()) {
+                  ParamComposition paramComposition_6 = Buffer.getParamDefinition((int) linkedListNode_5.hash, (byte) 4);
+                  if (paramComposition_6.autoDisable) {
                      linkedListNode_5.unlink();
                   } else {
                      bool_4 = true;
@@ -245,12 +245,19 @@ public class class26 {
                }
 
                if (!bool_4) {
-                  itemDefinition_2.field3409 = null;
+                  itemDefinition_2.params = null;
                }
             }
          }
 
-         ItemDefinition.field3407.put(itemDefinition_2, (long)i_0);
+         //..Item Overrides
+         if (itemId == 10890) {
+            itemDefinition_2.name = "Arios Starter Book";
+            itemDefinition_2.inventoryActions = new String[]{"Read", null, null, null, "Drop"};
+         }
+
+         //..Put item definitions into stored cache
+         ItemDefinition.ItemDefinition_cached.put(itemDefinition_2, (long) itemId);
          return itemDefinition_2;
       }
    }
@@ -401,7 +408,7 @@ public class class26 {
                                  class322.field3882.position = i_9 * 8 + 5;
                                  i_11 = class322.field3882.readIntMedEndian();
                                  int i_19 = class322.field3882.readIntMedEndian();
-                                 class235_18.method4262(i_11, i_19, 1381214916);
+                                 class235_18.method4262(i_11, i_19);
                               }
                            }
                         } else {
@@ -462,7 +469,7 @@ public class class26 {
       }
    }
 
-   static final class316 method403(ByteBuffer class300_0, class316 class316_1, int i_2) {
+   static final class316 method403(ByteBuffer class300_0, class316 class316_1) {
       int i_3 = class300_0.readUnsignedByte();
       int i_4;
       if (class316_1 == null) {
@@ -492,7 +499,7 @@ public class class26 {
       return class316_1;
    }
 
-   static int method387(char var_0, class190 class190_1, int i_2) {
+   static int method387(char var_0, class190 class190_1) {
       int i_3 = var_0 << 4;
       if (Character.isUpperCase(var_0) || Character.isTitleCase(var_0)) {
          var_0 = Character.toLowerCase(var_0);

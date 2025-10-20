@@ -116,15 +116,15 @@ public final class class66 extends class69 {
       }
    }
 
-   void method1186(int i_1) {
+   void method1186() {
       this.field631 = class46.field410 != null && class46.field410.method5081(this.field621) ? class281.field3638 : class281.field3639;
    }
 
-   void method1220(int i_1) {
-      this.field636 = class58.field546.method1781(this.field621, 1053718867) ? class281.field3638 : class281.field3639;
+   void method1220() {
+      this.field636 = class58.field546.method1781(this.field621) ? class281.field3638 : class281.field3639;
    }
 
-   void method1205(int i_1, int i_2, int i_3) {
+   void method1205(int i_1, int i_2) {
       super.field1003 = 0;
       super.field1008 = 0;
       super.field1007 = 0;
@@ -181,10 +181,10 @@ public final class class66 extends class69 {
 
             this.method1191(i_1, i_2, b_3);
          } else {
-            this.method1205(i_1, i_2, 1558444576);
+            this.method1205(i_1, i_2);
          }
       } else {
-         this.method1205(i_1, i_2, 1600132142);
+         this.method1205(i_1, i_2);
       }
 
    }
@@ -213,7 +213,7 @@ public final class class66 extends class69 {
             }
 
             if (ints_5[i_6] >= 512) {
-               int i_9 = class26.method404(ints_5[i_6] - 512).field3450;
+               int i_9 = item.getDefinition(ints_5[i_6] - 512).field3450;
                if (i_9 != 0) {
                   this.field632 = i_9;
                }
@@ -292,7 +292,7 @@ public final class class66 extends class69 {
 
    boolean method1181(int i_1) {
       if (this.field636 == class281.field3637) {
-         this.method1220(1998050438);
+         this.method1220();
       }
 
       return this.field636 == class281.field3638;
@@ -300,7 +300,7 @@ public final class class66 extends class69 {
 
    boolean method1184(byte b_1) {
       if (this.field631 == class281.field3637) {
-         this.method1186(-1972244682);
+         this.method1186();
       }
 
       return this.field631 == class281.field3638;

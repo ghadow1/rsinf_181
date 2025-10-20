@@ -161,7 +161,7 @@ final class class2 implements class0 {
                      class65.method1174(i_18, i_19, i_13, i_14);
                   }
                } else if (widget_10.field2568 == 1338) {
-                  class18.method208(widget_10, i_11, i_12, 1919867373);
+                  Buffer.method208(widget_10, i_11, i_12, 1919867373);
                } else {
                   if (widget_10.field2568 == 1400) {
                      class136.field1875.method6335(MouseHandler.MouseHandler_x, MouseHandler.MouseHandler_y, bool_34, i_11, i_12, widget_10.field2579, widget_10.field2667, -2047217979);
@@ -289,7 +289,7 @@ final class class2 implements class0 {
                            Client.field854.method4917(class62_30);
                         }
 
-                        if (Client.field828 != null || class18.field127 != null || Client.field674) {
+                        if (Client.field828 != null || Buffer.field127 != null || Client.field674) {
                            bool_22 = false;
                            bool_35 = false;
                            bool_34 = false;
@@ -522,7 +522,7 @@ final class class2 implements class0 {
                   }
 
                   if (!widget_10.field2563) {
-                     if (Client.field828 != null || class18.field127 != null || Client.field674) {
+                     if (Client.field828 != null || Buffer.field127 != null || Client.field674) {
                         continue;
                      }
 

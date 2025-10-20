@@ -4,7 +4,7 @@ public class ItemDefinition extends DualNode {
    static class235 field3457;
    public static int field3455;
    public int field3410;
-   public static class145 field3407 = new class145(64);
+   public static class145 ItemDefinition_cached = new class145(64);
    public static class145 field3408 = new class145(50);
    public static class145 field3445 = new class145(200);
    public String name = "null";
@@ -19,175 +19,175 @@ public class ItemDefinition extends DualNode {
    public boolean isMembersOnly = false;
    public String[] groundActions = new String[] {null, null, "Take", null, null};
    public String[] inventoryActions = new String[] {null, null, null, null, "Drop"};
-   int field3403 = -2;
+   int shiftClickIndex = -2;
    int maleModel = -1;
-   int field3437 = -1;
+   int maleModel1 = -1;
    int maleOffset = 0;
-   int field3432 = -1;
-   int field3433 = -1;
-   int field3434 = 0;
+   int femaleModel = -1;
+   int femaleModel1 = -1;
+   int femaleOffset = 0;
    int field3435 = -1;
    int field3430 = -1;
    int field3436 = -1;
    int field3438 = -1;
    int field3417 = -1;
    int field3440 = -1;
-   public int field3443 = -1;
-   public int field3444 = -1;
+   public int note = -1;
+   public int noteTemplate = -1;
    int resizeX = 128;
    int resizeY = 128;
    int resizeZ = 128;
    public int ambient = 0;
    public int contrast = 0;
    public int field3450 = 0;
-   public boolean field3452 = false;
+   public boolean isTradable = false;
    int field3453 = -1;
    int field3454 = -1;
-   public int field3400 = -1;
-   public int field3439 = -1;
+   public int placeholder = -1;
+   public int placeholderTemplate = -1;
    int model;
-   short[] field3424;
-   short[] field3414;
+   short[] recolorFrom;
+   short[] recolorTo;
    short[] field3415;
    short[] field3416;
-   int[] field3441;
-   int[] field3442;
-   class316 field3409;
+   int[] countobj;
+   int[] countco;
+   class316 params;
 
-   void decodeNext(ByteBuffer class300_1, int i_2) {
-      if (i_2 == 1) {
-         this.model = class300_1.readUnsignedShort();
-      } else if (i_2 == 2) {
-         this.name = class300_1.readNullTerminatedString();
-      } else if (i_2 == 4) {
-         this.zoom2d = class300_1.readUnsignedShort();
-      } else if (i_2 == 5) {
-         this.xan2d = class300_1.readUnsignedShort();
-      } else if (i_2 == 6) {
-         this.yan2d = class300_1.readUnsignedShort();
-      } else if (i_2 == 7) {
-         this.offsetX2d = class300_1.readUnsignedShort();
+   void decodeNext(ByteBuffer buffer, int opcode) {
+      if (opcode == 1) {
+         this.model = buffer.readUnsignedShort();
+      } else if (opcode == 2) {
+         this.name = buffer.readNullTerminatedString();
+      } else if (opcode == 4) {
+         this.zoom2d = buffer.readUnsignedShort();
+      } else if (opcode == 5) {
+         this.xan2d = buffer.readUnsignedShort();
+      } else if (opcode == 6) {
+         this.yan2d = buffer.readUnsignedShort();
+      } else if (opcode == 7) {
+         this.offsetX2d = buffer.readUnsignedShort();
          if (this.offsetX2d > 32767) {
             this.offsetX2d -= 65536;
          }
-      } else if (i_2 == 8) {
-         this.offsetY2d = class300_1.readUnsignedShort();
+      } else if (opcode == 8) {
+         this.offsetY2d = buffer.readUnsignedShort();
          if (this.offsetY2d > 32767) {
             this.offsetY2d -= 65536;
          }
-      } else if (i_2 == 11) {
+      } else if (opcode == 11) {
          this.isStackable = 1;
-      } else if (i_2 == 12) {
-         this.price = class300_1.readIntMedEndian();
-      } else if (i_2 == 16) {
+      } else if (opcode == 12) {
+         this.price = buffer.readIntMedEndian();
+      } else if (opcode == 16) {
          this.isMembersOnly = true;
-      } else if (i_2 == 23) {
-         this.maleModel = class300_1.readUnsignedShort();
-         this.maleOffset = class300_1.readUnsignedByte();
-      } else if (i_2 == 24) {
-         this.field3437 = class300_1.readUnsignedShort();
-      } else if (i_2 == 25) {
-         this.field3432 = class300_1.readUnsignedShort();
-         this.field3434 = class300_1.readUnsignedByte();
-      } else if (i_2 == 26) {
-         this.field3433 = class300_1.readUnsignedShort();
-      } else if (i_2 >= 30 && i_2 < 35) {
-         this.groundActions[i_2 - 30] = class300_1.readNullTerminatedString();
-         if (this.groundActions[i_2 - 30].equalsIgnoreCase("Hidden")) {
-            this.groundActions[i_2 - 30] = null;
+      } else if (opcode == 23) {
+         this.maleModel = buffer.readUnsignedShort();
+         this.maleOffset = buffer.readUnsignedByte();
+      } else if (opcode == 24) {
+         this.maleModel1 = buffer.readUnsignedShort();
+      } else if (opcode == 25) {
+         this.femaleModel = buffer.readUnsignedShort();
+         this.femaleOffset = buffer.readUnsignedByte();
+      } else if (opcode == 26) {
+         this.femaleModel1 = buffer.readUnsignedShort();
+      } else if (opcode >= 30 && opcode < 35) {
+         this.groundActions[opcode - 30] = buffer.readNullTerminatedString();
+         if (this.groundActions[opcode - 30].equalsIgnoreCase("Hidden")) {
+            this.groundActions[opcode - 30] = null;
          }
-      } else if (i_2 >= 35 && i_2 < 40) {
-         this.inventoryActions[i_2 - 35] = class300_1.readNullTerminatedString();
+      } else if (opcode >= 35 && opcode < 40) {
+         this.inventoryActions[opcode - 35] = buffer.readNullTerminatedString();
       } else {
          int i_4;
          int i_5;
-         if (i_2 == 40) {
-            i_4 = class300_1.readUnsignedByte();
-            this.field3424 = new short[i_4];
-            this.field3414 = new short[i_4];
+         if (opcode == 40) {
+            i_4 = buffer.readUnsignedByte();
+            this.recolorFrom = new short[i_4];
+            this.recolorTo = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3424[i_5] = (short)class300_1.readUnsignedShort();
-               this.field3414[i_5] = (short)class300_1.readUnsignedShort();
+               this.recolorFrom[i_5] = (short)buffer.readUnsignedShort();
+               this.recolorTo[i_5] = (short)buffer.readUnsignedShort();
             }
-         } else if (i_2 == 41) {
-            i_4 = class300_1.readUnsignedByte();
+         } else if (opcode == 41) {
+            i_4 = buffer.readUnsignedByte();
             this.field3415 = new short[i_4];
             this.field3416 = new short[i_4];
 
             for (i_5 = 0; i_5 < i_4; i_5++) {
-               this.field3415[i_5] = (short)class300_1.readUnsignedShort();
-               this.field3416[i_5] = (short)class300_1.readUnsignedShort();
+               this.field3415[i_5] = (short)buffer.readUnsignedShort();
+               this.field3416[i_5] = (short)buffer.readUnsignedShort();
             }
-         } else if (i_2 == 42) {
-            this.field3403 = class300_1.readSignedByte();
-         } else if (i_2 == 65) {
-            this.field3452 = true;
-         } else if (i_2 == 78) {
-            this.field3435 = class300_1.readUnsignedShort();
-         } else if (i_2 == 79) {
-            this.field3430 = class300_1.readUnsignedShort();
-         } else if (i_2 == 90) {
-            this.field3436 = class300_1.readUnsignedShort();
-         } else if (i_2 == 91) {
-            this.field3417 = class300_1.readUnsignedShort();
-         } else if (i_2 == 92) {
-            this.field3438 = class300_1.readUnsignedShort();
-         } else if (i_2 == 93) {
-            this.field3440 = class300_1.readUnsignedShort();
-         } else if (i_2 == 95) {
-            this.field3420 = class300_1.readUnsignedShort();
-         } else if (i_2 == 97) {
-            this.field3443 = class300_1.readUnsignedShort();
-         } else if (i_2 == 98) {
-            this.field3444 = class300_1.readUnsignedShort();
-         } else if (i_2 >= 100 && i_2 < 110) {
-            if (this.field3441 == null) {
-               this.field3441 = new int[10];
-               this.field3442 = new int[10];
+         } else if (opcode == 42) {
+            this.shiftClickIndex = buffer.readSignedByte();
+         } else if (opcode == 65) {
+            this.isTradable = true;
+         } else if (opcode == 78) {
+            this.field3435 = buffer.readUnsignedShort();
+         } else if (opcode == 79) {
+            this.field3430 = buffer.readUnsignedShort();
+         } else if (opcode == 90) {
+            this.field3436 = buffer.readUnsignedShort();
+         } else if (opcode == 91) {
+            this.field3417 = buffer.readUnsignedShort();
+         } else if (opcode == 92) {
+            this.field3438 = buffer.readUnsignedShort();
+         } else if (opcode == 93) {
+            this.field3440 = buffer.readUnsignedShort();
+         } else if (opcode == 95) {
+            this.field3420 = buffer.readUnsignedShort();
+         } else if (opcode == 97) {
+            this.note = buffer.readUnsignedShort();
+         } else if (opcode == 98) {
+            this.noteTemplate = buffer.readUnsignedShort();
+         } else if (opcode >= 100 && opcode < 110) {
+            if (this.countobj == null) {
+               this.countobj = new int[10];
+               this.countco = new int[10];
             }
 
-            this.field3441[i_2 - 100] = class300_1.readUnsignedShort();
-            this.field3442[i_2 - 100] = class300_1.readUnsignedShort();
-         } else if (i_2 == 110) {
-            this.resizeX = class300_1.readUnsignedShort();
-         } else if (i_2 == 111) {
-            this.resizeY = class300_1.readUnsignedShort();
-         } else if (i_2 == 112) {
-            this.resizeZ = class300_1.readUnsignedShort();
-         } else if (i_2 == 113) {
-            this.ambient = class300_1.readSignedByte();
-         } else if (i_2 == 114) {
-            this.contrast = class300_1.readSignedByte();
-         } else if (i_2 == 115) {
-            this.field3450 = class300_1.readUnsignedByte();
-         } else if (i_2 == 139) {
-            this.field3453 = class300_1.readUnsignedShort();
-         } else if (i_2 == 140) {
-            this.field3454 = class300_1.readUnsignedShort();
-         } else if (i_2 == 148) {
-            this.field3400 = class300_1.readUnsignedShort();
-         } else if (i_2 == 149) {
-            this.field3439 = class300_1.readUnsignedShort();
-         } else if (i_2 == 249) {
-            this.field3409 = class26.method403(class300_1, this.field3409, -675682767);
+            this.countobj[opcode - 100] = buffer.readUnsignedShort();
+            this.countco[opcode - 100] = buffer.readUnsignedShort();
+         } else if (opcode == 110) {
+            this.resizeX = buffer.readUnsignedShort();
+         } else if (opcode == 111) {
+            this.resizeY = buffer.readUnsignedShort();
+         } else if (opcode == 112) {
+            this.resizeZ = buffer.readUnsignedShort();
+         } else if (opcode == 113) {
+            this.ambient = buffer.readSignedByte();
+         } else if (opcode == 114) {
+            this.contrast = buffer.readSignedByte();
+         } else if (opcode == 115) {
+            this.field3450 = buffer.readUnsignedByte();
+         } else if (opcode == 139) {
+            this.field3453 = buffer.readUnsignedShort();
+         } else if (opcode == 140) {
+            this.field3454 = buffer.readUnsignedShort();
+         } else if (opcode == 148) {
+            this.placeholder = buffer.readUnsignedShort();
+         } else if (opcode == 149) {
+            this.placeholderTemplate = buffer.readUnsignedShort();
+         } else if (opcode == 249) {
+            this.params = item.method403(buffer, this.params);
          }
       }
 
    }
 
    public final class127 method4644(int i_1) {
-      if (this.field3441 != null && i_1 > 1) {
+      if (this.countobj != null && i_1 > 1) {
          int i_3 = -1;
 
          for (int i_4 = 0; i_4 < 10; i_4++) {
-            if (i_1 >= this.field3442[i_4] && this.field3442[i_4] != 0) {
-               i_3 = this.field3441[i_4];
+            if (i_1 >= this.countco[i_4] && this.countco[i_4] != 0) {
+               i_3 = this.countobj[i_4];
             }
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3).method4644(1);
+            return item.getDefinition(i_3).method4644(1);
          }
       }
 
@@ -204,9 +204,9 @@ public class ItemDefinition extends DualNode {
             }
 
             int i_5;
-            if (this.field3424 != null) {
-               for (i_5 = 0; i_5 < this.field3424.length; i_5++) {
-                  model_7.method2783(this.field3424[i_5], this.field3414[i_5]);
+            if (this.recolorFrom != null) {
+               for (i_5 = 0; i_5 < this.recolorFrom.length; i_5++) {
+                  model_7.method2783(this.recolorFrom[i_5], this.recolorTo[i_5]);
                }
             }
 
@@ -226,17 +226,17 @@ public class ItemDefinition extends DualNode {
 
    public final Model method4643(int i_1) {
       int i_4;
-      if (this.field3441 != null && i_1 > 1) {
+      if (this.countobj != null && i_1 > 1) {
          int i_3 = -1;
 
          for (i_4 = 0; i_4 < 10; i_4++) {
-            if (i_1 >= this.field3442[i_4] && this.field3442[i_4] != 0) {
-               i_3 = this.field3441[i_4];
+            if (i_1 >= this.countco[i_4] && this.countco[i_4] != 0) {
+               i_3 = this.countobj[i_4];
             }
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3).method4643(1);
+            return item.getDefinition(i_3).method4643(1);
          }
       }
 
@@ -248,9 +248,9 @@ public class ItemDefinition extends DualNode {
             model_5.method2786(this.resizeX, this.resizeY, this.resizeZ);
          }
 
-         if (this.field3424 != null) {
-            for (i_4 = 0; i_4 < this.field3424.length; i_4++) {
-               model_5.method2783(this.field3424[i_4], this.field3414[i_4]);
+         if (this.recolorFrom != null) {
+            for (i_4 = 0; i_4 < this.recolorFrom.length; i_4++) {
+               model_5.method2783(this.recolorFrom[i_4], this.recolorTo[i_4]);
             }
          }
 
@@ -291,7 +291,7 @@ public class ItemDefinition extends DualNode {
       }
    }
 
-   public final Model method4649(boolean bool_1, byte b_2) {
+   public final Model method4649(boolean bool_1) {
       int i_3 = this.field3436;
       int i_4 = this.field3438;
       if (bool_1) {
@@ -310,9 +310,9 @@ public class ItemDefinition extends DualNode {
          }
 
          int i_8;
-         if (this.field3424 != null) {
-            for (i_8 = 0; i_8 < this.field3424.length; i_8++) {
-               model_5.method2783(this.field3424[i_8], this.field3414[i_8]);
+         if (this.recolorFrom != null) {
+            for (i_8 = 0; i_8 < this.recolorFrom.length; i_8++) {
+               model_5.method2783(this.recolorFrom[i_8], this.recolorTo[i_8]);
             }
          }
 
@@ -326,24 +326,24 @@ public class ItemDefinition extends DualNode {
       }
    }
 
-   void method4638(ByteBuffer class300_1) {
+   void decode(ByteBuffer buffer) {
       while (true) {
-         int i_3 = class300_1.readUnsignedByte();
+         int i_3 = buffer.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.decodeNext(class300_1, i_3);
+         this.decodeNext(buffer, i_3);
       }
    }
 
-   public final boolean method4646(boolean bool_1, byte b_2) {
+   public final boolean method4646(boolean bool_1) {
       int i_3 = this.maleModel;
-      int i_4 = this.field3437;
+      int i_4 = this.maleModel1;
       int i_5 = this.field3435;
       if (bool_1) {
-         i_3 = this.field3432;
-         i_4 = this.field3433;
+         i_3 = this.femaleModel;
+         i_4 = this.femaleModel1;
          i_5 = this.field3430;
       }
 
@@ -367,13 +367,13 @@ public class ItemDefinition extends DualNode {
       }
    }
 
-   public final Model method4694(boolean bool_1, byte b_2) {
+   public final Model method4694(boolean bool_1) {
       int i_3 = this.maleModel;
-      int i_4 = this.field3437;
+      int i_4 = this.maleModel1;
       int i_5 = this.field3435;
       if (bool_1) {
-         i_3 = this.field3432;
-         i_4 = this.field3433;
+         i_3 = this.femaleModel;
+         i_4 = this.femaleModel1;
          i_5 = this.field3430;
       }
 
@@ -397,14 +397,14 @@ public class ItemDefinition extends DualNode {
             model_6.method2782(0, this.maleOffset, 0);
          }
 
-         if (bool_1 && this.field3434 != 0) {
-            model_6.method2782(0, this.field3434, 0);
+         if (bool_1 && this.femaleOffset != 0) {
+            model_6.method2782(0, this.femaleOffset, 0);
          }
 
          int i_10;
-         if (this.field3424 != null) {
-            for (i_10 = 0; i_10 < this.field3424.length; i_10++) {
-               model_6.method2783(this.field3424[i_10], this.field3414[i_10]);
+         if (this.recolorFrom != null) {
+            for (i_10 = 0; i_10 < this.recolorFrom.length; i_10++) {
+               model_6.method2783(this.recolorFrom[i_10], this.recolorTo[i_10]);
             }
          }
 
@@ -426,8 +426,8 @@ public class ItemDefinition extends DualNode {
       this.field3420 = itemDefinition_1.field3420;
       this.offsetX2d = itemDefinition_1.offsetX2d;
       this.offsetY2d = itemDefinition_1.offsetY2d;
-      this.field3424 = itemDefinition_1.field3424;
-      this.field3414 = itemDefinition_1.field3414;
+      this.recolorFrom = itemDefinition_1.recolorFrom;
+      this.recolorTo = itemDefinition_1.recolorTo;
       this.field3415 = itemDefinition_1.field3415;
       this.field3416 = itemDefinition_1.field3416;
       this.name = itemDefinition_2.name;
@@ -444,18 +444,18 @@ public class ItemDefinition extends DualNode {
       this.field3420 = itemDefinition_1.field3420;
       this.offsetX2d = itemDefinition_1.offsetX2d;
       this.offsetY2d = itemDefinition_1.offsetY2d;
-      this.field3424 = itemDefinition_2.field3424;
-      this.field3414 = itemDefinition_2.field3414;
+      this.recolorFrom = itemDefinition_2.recolorFrom;
+      this.recolorTo = itemDefinition_2.recolorTo;
       this.field3415 = itemDefinition_2.field3415;
       this.field3416 = itemDefinition_2.field3416;
       this.name = itemDefinition_2.name;
       this.isMembersOnly = itemDefinition_2.isMembersOnly;
       this.isStackable = itemDefinition_2.isStackable;
       this.maleModel = itemDefinition_2.maleModel;
-      this.field3437 = itemDefinition_2.field3437;
+      this.maleModel1 = itemDefinition_2.maleModel1;
       this.field3435 = itemDefinition_2.field3435;
-      this.field3432 = itemDefinition_2.field3432;
-      this.field3433 = itemDefinition_2.field3433;
+      this.femaleModel = itemDefinition_2.femaleModel;
+      this.femaleModel1 = itemDefinition_2.femaleModel1;
       this.field3430 = itemDefinition_2.field3430;
       this.field3436 = itemDefinition_2.field3436;
       this.field3438 = itemDefinition_2.field3438;
@@ -474,37 +474,37 @@ public class ItemDefinition extends DualNode {
       this.price = 0;
    }
 
-   void method4689(ItemDefinition itemDefinition_1, ItemDefinition itemDefinition_2) {
-      this.model = itemDefinition_1.model;
-      this.zoom2d = itemDefinition_1.zoom2d;
-      this.xan2d = itemDefinition_1.xan2d;
-      this.yan2d = itemDefinition_1.yan2d;
-      this.field3420 = itemDefinition_1.field3420;
-      this.offsetX2d = itemDefinition_1.offsetX2d;
-      this.offsetY2d = itemDefinition_1.offsetY2d;
-      this.field3424 = itemDefinition_1.field3424;
-      this.field3414 = itemDefinition_1.field3414;
-      this.field3415 = itemDefinition_1.field3415;
-      this.field3416 = itemDefinition_1.field3416;
-      this.isStackable = itemDefinition_1.isStackable;
+   void genPlaceholder(ItemDefinition def, ItemDefinition itemDefinition_2) {
+      this.model = def.model;
+      this.zoom2d = def.zoom2d;
+      this.xan2d = def.xan2d;
+      this.yan2d = def.yan2d;
+      this.field3420 = def.field3420;
+      this.offsetX2d = def.offsetX2d;
+      this.offsetY2d = def.offsetY2d;
+      this.recolorFrom = def.recolorFrom;
+      this.recolorTo = def.recolorTo;
+      this.field3415 = def.field3415;
+      this.field3416 = def.field3416;
+      this.isStackable = def.isStackable;
       this.name = itemDefinition_2.name;
       this.price = 0;
       this.isMembersOnly = false;
-      this.field3452 = false;
+      this.isTradable = false;
    }
 
    public ItemDefinition method4656(int i_1) {
-      if (this.field3441 != null && i_1 > 1) {
+      if (this.countobj != null && i_1 > 1) {
          int i_3 = -1;
 
          for (int i_4 = 0; i_4 < 10; i_4++) {
-            if (i_1 >= this.field3442[i_4] && this.field3442[i_4] != 0) {
-               i_3 = this.field3441[i_4];
+            if (i_1 >= this.countco[i_4] && this.countco[i_4] != 0) {
+               i_3 = this.countobj[i_4];
             }
          }
 
          if (i_3 != -1) {
-            return class26.method404(i_3);
+            return item.getDefinition(i_3);
          }
       }
 
@@ -577,15 +577,15 @@ public class ItemDefinition extends DualNode {
    }
 
    public int method4652() {
-      return this.field3403 != -1 && this.inventoryActions != null ? (this.field3403 >= 0 ? (this.inventoryActions[this.field3403] != null ? this.field3403 : -1) : ("Drop".equalsIgnoreCase(this.inventoryActions[4]) ? 4 : -1)) : -1;
+      return this.shiftClickIndex != -1 && this.inventoryActions != null ? (this.shiftClickIndex >= 0 ? (this.inventoryActions[this.shiftClickIndex] != null ? this.shiftClickIndex : -1) : ("Drop".equalsIgnoreCase(this.inventoryActions[4]) ? 4 : -1)) : -1;
    }
 
    public String method4648(int i_1, String string_2) {
-      return class5.method54(this.field3409, i_1, string_2, (byte) -115);
+      return class5.method54(this.params, i_1, string_2, (byte) -115);
    }
 
    public int method4650(int i_1, int i_2) {
-      class316 class316_5 = this.field3409;
+      class316 class316_5 = this.params;
       int i_4;
       if (class316_5 == null) {
          i_4 = i_2;

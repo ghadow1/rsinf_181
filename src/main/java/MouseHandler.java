@@ -142,7 +142,7 @@ public class MouseHandler implements MouseListener, MouseMotionListener, FocusLi
                   i_2 = World.method1686(buffer3_0);
                   class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                } else {
-                  class18.method210(buffer3_0, i_4, 164873785);
+                  Buffer.method210(buffer3_0, i_4, 164873785);
                }
             }
          }
@@ -166,7 +166,7 @@ public class MouseHandler implements MouseListener, MouseMotionListener, FocusLi
                      i_2 = World.method1686(buffer3_0);
                      class89.field1252[i_4] = (byte)(class89.field1252[i_4] | 0x2);
                   } else {
-                     class18.method210(buffer3_0, i_4, 164873785);
+                     Buffer.method210(buffer3_0, i_4, 164873785);
                   }
                }
             }

@@ -122,7 +122,7 @@ public final class class45 implements KeyListener, FocusListener {
    }
 
    public static void method794(class233 class233_0, int i_1) {
-      class249.field3307 = class233_0;
+      ParamComposition.field3307 = class233_0;
    }
 
    static void method787(int i_0) {

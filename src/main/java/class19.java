@@ -23,21 +23,21 @@ public class class19 implements class37 {
       return i_1 >= this.field132 && i_1 < this.field132 + this.field130 ? i_2 >= (this.field131 << 6) + (this.field140 << 3) && i_2 <= (this.field131 << 6) + (this.field137 << 3) + 7 && i_3 >= (this.field136 << 6) + (this.field143 << 3) && i_3 <= (this.field136 << 6) + (this.field138 << 3) + 7 : false;
    }
 
-   public void vmethod738(class26 class26_1, byte b_2) {
-      if (class26_1.field217 > this.field133) {
-         class26_1.field217 = this.field133;
+   public void vmethod738(item item_1, byte b_2) {
+      if (item_1.field217 > this.field133) {
+         item_1.field217 = this.field133;
       }
 
-      if (class26_1.field223 < this.field133) {
-         class26_1.field223 = this.field133;
+      if (item_1.field223 < this.field133) {
+         item_1.field223 = this.field133;
       }
 
-      if (class26_1.field220 > this.field134) {
-         class26_1.field220 = this.field134;
+      if (item_1.field220 > this.field134) {
+         item_1.field220 = this.field134;
       }
 
-      if (class26_1.field222 < this.field134) {
-         class26_1.field222 = this.field134;
+      if (item_1.field222 < this.field134) {
+         item_1.field222 = this.field134;
       }
 
    }
@@ -167,18 +167,18 @@ public class class19 implements class37 {
          }
       }
 
-      ItemDefinition itemDefinition_10 = class26.method404(i_0);
-      if (i_1 > 1 && itemDefinition_10.field3441 != null) {
+      ItemDefinition itemDefinition_10 = item.getDefinition(i_0);
+      if (i_1 > 1 && itemDefinition_10.countobj != null) {
          int i_11 = -1;
 
          for (int i_12 = 0; i_12 < 10; i_12++) {
-            if (i_1 >= itemDefinition_10.field3442[i_12] && itemDefinition_10.field3442[i_12] != 0) {
-               i_11 = itemDefinition_10.field3441[i_12];
+            if (i_1 >= itemDefinition_10.countco[i_12] && itemDefinition_10.countco[i_12] != 0) {
+               i_11 = itemDefinition_10.countobj[i_12];
             }
          }
 
          if (i_11 != -1) {
-            itemDefinition_10 = class26.method404(i_11);
+            itemDefinition_10 = item.getDefinition(i_11);
          }
       }
 
@@ -187,8 +187,8 @@ public class class19 implements class37 {
          return null;
       } else {
          class325 class325_23 = null;
-         if (itemDefinition_10.field3444 != -1) {
-            class325_23 = method236(itemDefinition_10.field3443, 10, 1, 0, 0, true, 2024001124);
+         if (itemDefinition_10.noteTemplate != -1) {
+            class325_23 = method236(itemDefinition_10.note, 10, 1, 0, 0, true, 2024001124);
             if (class325_23 == null) {
                return null;
             }
@@ -197,8 +197,8 @@ public class class19 implements class37 {
             if (class325_23 == null) {
                return null;
             }
-         } else if (itemDefinition_10.field3439 != -1) {
-            class325_23 = method236(itemDefinition_10.field3400, i_1, 0, 0, 0, false, 2024001124);
+         } else if (itemDefinition_10.placeholderTemplate != -1) {
+            class325_23 = method236(itemDefinition_10.placeholder, i_1, 0, 0, 0, false, 2024001124);
             if (class325_23 == null) {
                return null;
             }
@@ -215,7 +215,7 @@ public class class19 implements class37 {
          Rasterizer3D.method3051();
          Rasterizer3D.method2976(16, 16);
          Rasterizer3D.field1768 = false;
-         if (itemDefinition_10.field3439 != -1) {
+         if (itemDefinition_10.placeholderTemplate != -1) {
             class325_23.drawTransBgAt(0, 0);
          }
 
@@ -247,7 +247,7 @@ public class class19 implements class37 {
          }
 
          Rasterizer2D.replace(class325_9.field3908, 36, 32);
-         if (itemDefinition_10.field3444 != -1) {
+         if (itemDefinition_10.noteTemplate != -1) {
             class325_23.drawTransBgAt(0, 0);
          }
 

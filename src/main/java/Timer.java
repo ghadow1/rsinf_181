@@ -226,7 +226,7 @@ public class Timer {
                   Font font_8 = class213.field2529;
                   class91.field1276 = class235_28;
                   ItemDefinition.field3405 = class235_6;
-                  class134.field1868 = bool_7;
+                  BuddyRankComparator.ItemDefinition_inMembersWorld = bool_7;
                   ItemDefinition.field3455 = class91.field1276.method4154(10);
                   class78.field1129 = font_8;
                   class235 class235_9 = SoundSystem.field2544;

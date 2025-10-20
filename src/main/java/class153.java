@@ -117,7 +117,7 @@ public class class153 extends ChainedComparator {
          PacketBuffer.field3727 -= i_6 << 7;
          class1.field3 -= i_7 << 7;
          MouseHandler.field499 -= i_6 << 7;
-         class26.field227 -= i_7 << 7;
+         item.field227 -= i_7 << 7;
          Client.field747 = -1;
          Client.field785.method4886();
          Client.field670.method4886();

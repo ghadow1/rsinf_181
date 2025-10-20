@@ -159,7 +159,7 @@ public class class70 extends LinkedListNode {
       class187 class187_1 = class235.method4265(ClientPacketProt.WINDOW_STATUS, Client.data.field1313);
       class187_1.outBuffer.writeByte(class34.method598()); //..Display Mode
       class187_1.outBuffer.writeShortBigEndian(class7.field46);
-      class187_1.outBuffer.writeShortBigEndian(class249.field3308);
+      class187_1.outBuffer.writeShortBigEndian(ParamComposition.field3308);
       Client.data.copy(class187_1);
    }
 

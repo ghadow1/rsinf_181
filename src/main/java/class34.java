@@ -12,8 +12,13 @@ public abstract class class34 {
 
    abstract class28 vmethod575(int var1);
 
-   boolean method579(int i_1, int i_2, int i_3) {
-      if (!this.method578(-1274004046)) {
+   public static void method599() {
+      NPCDefinition.field3465.method3323();
+      NPCDefinition.field3466.method3323();
+   }
+
+   boolean method579(int i_1, int i_2) {
+      if (!this.method578()) {
          return false;
       } else {
          class241 class241_4 = class222.method4118(this.vmethod597(-602867254));
@@ -58,32 +63,27 @@ public abstract class class34 {
       }
    }
 
-   boolean method578(int i_1) {
-      return this.vmethod597(1762345994) >= 0;
-   }
-
    public abstract int vmethod597(int var1);
 
-   boolean method585(int i_1, int i_2, int i_3) {
-      class28 class28_4 = this.vmethod575(1426074195);
-      return class28_4 == null ? false : (i_1 >= this.field296 - class28_4.field236 / 2 && i_1 <= class28_4.field236 / 2 + this.field296 ? i_2 >= this.field295 && i_2 <= this.field295 + class28_4.field238 : false);
+   boolean method578() {
+      return this.vmethod597(1762345994) >= 0;
    }
 
    abstract int vmethod577(byte var1);
 
    abstract int vmethod593(byte var1);
 
-   boolean method576(int i_1, int i_2, byte b_3) {
-      return this.method579(i_1, i_2, 406020312) ? true : this.method585(i_1, i_2, -1252480817);
+   boolean method585(int i_1, int i_2) {
+      class28 class28_4 = this.vmethod575(1426074195);
+      return class28_4 == null ? false : (i_1 >= this.field296 - class28_4.field236 / 2 && i_1 <= class28_4.field236 / 2 + this.field296 ? i_2 >= this.field295 && i_2 <= this.field295 + class28_4.field238 : false);
    }
 
    static int method598() {
       return Client.field869 ? 2 : 1;
    }
 
-   public static void method599(int i_0) {
-      NPCDefinition.field3465.method3323();
-      NPCDefinition.field3466.method3323();
+   boolean method576(int i_1, int i_2) {
+      return this.method579(i_1, i_2) ? true : this.method585(i_1, i_2);
    }
 
 }

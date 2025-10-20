@@ -48,7 +48,7 @@ public class class90 {
    }
 
    class343 method2102(boolean bool_1) {
-      return class18.userPrefSave("2", class29.field248.field3111, bool_1);
+      return Buffer.userPrefSave("2", class29.field248.field3111, bool_1);
    }
 
    boolean method2099() {

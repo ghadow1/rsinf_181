@@ -2,7 +2,7 @@ import java.awt.Component;
 import java.io.File;
 import java.io.IOException;
 
-public class class18 extends class34 {
+public class Buffer extends class34 {
 
    static Widget field127;
    static class41 field121;
@@ -11,7 +11,7 @@ public class class18 extends class34 {
    final int field123;
    final int field124;
 
-   class18(class213 class213_1, class213 class213_2, int i_3, class28 class28_4) {
+   Buffer(class213 class213_1, class213 class213_2, int i_3, class28 class28_4) {
       super(class213_1, class213_2);
       this.field125 = i_3;
       this.field122 = class28_4;
@@ -86,20 +86,20 @@ public class class18 extends class34 {
       }
    }
 
-   public static class249 method209(int i_0, byte b_1) {
-      class249 class249_2 = (class249) class249.field3301.get((long)i_0);
-      if (class249_2 != null) {
-         return class249_2;
+   public static ParamComposition getParamDefinition(int i_0, byte b_1) {
+      ParamComposition paramComposition_2 = (ParamComposition) ParamComposition.field3301.get((long)i_0);
+      if (paramComposition_2 != null) {
+         return paramComposition_2;
       } else {
-         byte[] bytes_3 = class249.field3307.method4144(11, i_0);
-         class249_2 = new class249();
+         byte[] bytes_3 = ParamComposition.field3307.method4144(11, i_0);
+         paramComposition_2 = new ParamComposition();
          if (bytes_3 != null) {
-            class249_2.method4497(new ByteBuffer(bytes_3));
+            paramComposition_2.method4497(new ByteBuffer(bytes_3));
          }
 
-         class249_2.method4496();
-         class249.field3301.put(class249_2, (long)i_0);
-         return class249_2;
+         paramComposition_2.method4496();
+         ParamComposition.field3301.put(paramComposition_2, (long)i_0);
+         return paramComposition_2;
       }
    }
 
@@ -162,7 +162,7 @@ public class class18 extends class34 {
             }
 
             if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
-               class66_5.method1205(i_7, i_8, 1226353499);
+               class66_5.method1205(i_7, i_8);
                class66_5.field638 = false;
             } else if (bool_3) {
                class66_5.field638 = true;
@@ -233,7 +233,7 @@ public class class18 extends class34 {
                   class66_5.method1189(i_7, i_8, class89.field1250[i_1]);
                }
             } else {
-               class66_5.method1205(i_7, i_8, 1143943897);
+               class66_5.method1205(i_7, i_8);
                class66_5.field638 = false;
             }
 
@@ -259,7 +259,7 @@ public class class18 extends class34 {
                i_11 = i_9 + class66_5.field994[0];
                i_12 = i_10 + class66_5.field962[0];
                if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
-                  class66_5.method1205(i_11, i_12, 1788073097);
+                  class66_5.method1205(i_11, i_12);
                   class66_5.field638 = false;
                } else if (bool_3) {
                   class66_5.field638 = true;
@@ -283,7 +283,7 @@ public class class18 extends class34 {
                i_11 = (i_9 + class196.field2389 + class66_5.field994[0] & 0x3fff) - class196.field2389;
                i_12 = (i_10 + class1.field1 + class66_5.field962[0] & 0x3fff) - class1.field1;
                if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
-                  class66_5.method1205(i_11, i_12, 1045541896);
+                  class66_5.method1205(i_11, i_12);
                   class66_5.field638 = false;
                } else if (bool_3) {
                   class66_5.field638 = true;

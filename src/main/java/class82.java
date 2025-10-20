@@ -130,7 +130,7 @@ public class class82 {
             var_10 = Character.toLowerCase(var_10);
             var_11 = Character.toLowerCase(var_11);
             if (var_11 != var_10) {
-               return class26.method387(var_10, class190_2, -1599883249) - class26.method387(var_11, class190_2, -1757365235);
+               return item.method387(var_10, class190_2) - item.method387(var_11, class190_2);
             }
          }
       }
@@ -154,7 +154,7 @@ public class class82 {
             var_19 = Character.toLowerCase(var_19);
             var_21 = Character.toLowerCase(var_21);
             if (var_19 != var_21) {
-               return class26.method387(var_19, class190_2, -2081105774) - class26.method387(var_21, class190_2, -1433613834);
+               return item.method387(var_19, class190_2) - item.method387(var_21, class190_2);
             }
          }
       }
@@ -167,7 +167,7 @@ public class class82 {
             var_21 = charsequence_0.charAt(i_20);
             char var_14 = charsequence_1.charAt(i_20);
             if (var_14 != var_21) {
-               return class26.method387(var_21, class190_2, -1555702306) - class26.method387(var_14, class190_2, -1550537763);
+               return item.method387(var_21, class190_2) - item.method387(var_14, class190_2);
             }
          }
 

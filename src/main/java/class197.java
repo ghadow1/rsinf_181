@@ -173,16 +173,16 @@ public class class197 {
                   return 1;
                } else {
                   int i_9;
-                  class249 class249_10;
+                  ParamComposition paramComposition_10;
                   if (i_0 == 6513) {
                      class70.field1014 -= 2;
                      i_8 = MouseRecorder.field1098[class70.field1014];
                      i_9 = MouseRecorder.field1098[class70.field1014 + 1];
-                     class249_10 = class18.method209(i_9, (byte) 4);
-                     if (class249_10.method4499()) {
-                        MouseRecorder.field1093[++class221.field2747 - 1] = GameApplet.method1005(i_8).method4740(i_9, class249_10.field3303, -1901190491);
+                     paramComposition_10 = Buffer.getParamDefinition(i_9, (byte) 4);
+                     if (paramComposition_10.method4499()) {
+                        MouseRecorder.field1093[++class221.field2747 - 1] = GameApplet.method1005(i_8).method4740(i_9, paramComposition_10.field3303, -1901190491);
                      } else {
-                        MouseRecorder.field1098[++class70.field1014 - 1] = GameApplet.method1005(i_8).method4711(i_9, class249_10.field3302);
+                        MouseRecorder.field1098[++class70.field1014 - 1] = GameApplet.method1005(i_8).method4711(i_9, paramComposition_10.field3302);
                      }
 
                      return 1;
@@ -190,11 +190,11 @@ public class class197 {
                      class70.field1014 -= 2;
                      i_8 = MouseRecorder.field1098[class70.field1014];
                      i_9 = MouseRecorder.field1098[class70.field1014 + 1];
-                     class249_10 = class18.method209(i_9, (byte) 4);
-                     if (class249_10.method4499()) {
-                        MouseRecorder.field1093[++class221.field2747 - 1] = class128.method2970(i_8).method4632(i_9, class249_10.field3303, (byte) 37);
+                     paramComposition_10 = Buffer.getParamDefinition(i_9, (byte) 4);
+                     if (paramComposition_10.method4499()) {
+                        MouseRecorder.field1093[++class221.field2747 - 1] = class128.method2970(i_8).method4632(i_9, paramComposition_10.field3303, (byte) 37);
                      } else {
-                        MouseRecorder.field1098[++class70.field1014 - 1] = class128.method2970(i_8).method4596(i_9, class249_10.field3302, -291840142);
+                        MouseRecorder.field1098[++class70.field1014 - 1] = class128.method2970(i_8).method4596(i_9, paramComposition_10.field3302, -291840142);
                      }
 
                      return 1;
@@ -202,11 +202,11 @@ public class class197 {
                      class70.field1014 -= 2;
                      i_8 = MouseRecorder.field1098[class70.field1014];
                      i_9 = MouseRecorder.field1098[class70.field1014 + 1];
-                     class249_10 = class18.method209(i_9, (byte) 4);
-                     if (class249_10.method4499()) {
-                        MouseRecorder.field1093[++class221.field2747 - 1] = class26.method404(i_8).method4648(i_9, class249_10.field3303);
+                     paramComposition_10 = Buffer.getParamDefinition(i_9, (byte) 4);
+                     if (paramComposition_10.method4499()) {
+                        MouseRecorder.field1093[++class221.field2747 - 1] = item.getDefinition(i_8).method4648(i_9, paramComposition_10.field3303);
                      } else {
-                        MouseRecorder.field1098[++class70.field1014 - 1] = class26.method404(i_8).method4650(i_9, class249_10.field3302);
+                        MouseRecorder.field1098[++class70.field1014 - 1] = item.getDefinition(i_8).method4650(i_9, paramComposition_10.field3302);
                      }
 
                      return 1;
@@ -214,11 +214,11 @@ public class class197 {
                      class70.field1014 -= 2;
                      i_8 = MouseRecorder.field1098[class70.field1014];
                      i_9 = MouseRecorder.field1098[class70.field1014 + 1];
-                     class249_10 = class18.method209(i_9, (byte) 4);
-                     if (class249_10.method4499()) {
-                        MouseRecorder.field1093[++class221.field2747 - 1] = class249.method4510(i_8, 1544024361).method4515(i_9, class249_10.field3303);
+                     paramComposition_10 = Buffer.getParamDefinition(i_9, (byte) 4);
+                     if (paramComposition_10.method4499()) {
+                        MouseRecorder.field1093[++class221.field2747 - 1] = ParamComposition.method4510(i_8, 1544024361).method4515(i_9, paramComposition_10.field3303);
                      } else {
-                        MouseRecorder.field1098[++class70.field1014 - 1] = class249.method4510(i_8, 1491402359).method4514(i_9, class249_10.field3302);
+                        MouseRecorder.field1098[++class70.field1014 - 1] = ParamComposition.method4510(i_8, 1491402359).method4514(i_9, paramComposition_10.field3302);
                      }
 
                      return 1;

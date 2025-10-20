@@ -68,7 +68,7 @@ public class class159 extends ChainedComparator {
       File file_9;
       label135:
       while (i_10 < 4) {
-         class1.field2 = class119.method2760(string_0, string_1, i_10);
+         class1.field2 = class119.writeJagCLDat(string_0, string_1, i_10);
          if (!class1.field2.exists()) {
             class1.field2.mkdirs();
          }

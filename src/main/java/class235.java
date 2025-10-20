@@ -24,7 +24,7 @@ public class class235 extends class233 {
          class322.field3882.position = i_8 * 8 + 5;
          int i_9 = class322.field3882.readIntMedEndian();
          int i_10 = class322.field3882.readIntMedEndian();
-         this.method4262(i_9, i_10, 238802641);
+         this.method4262(i_9, i_10);
       } else {
          class128.method2961((class235) null, 255, 255, 0, (byte) 0, true);
          class236.field3173[i_8] = this;
@@ -34,7 +34,7 @@ public class class235 extends class233 {
 
    void vmethod4260(int i_1, short s_2) {
       if (this.field3156 != null && this.field3160 != null && this.field3160[i_1]) {
-         class88.method2056(i_1, this.field3156, this, -1214592487);
+         class88.method2056(i_1, this.field3156, this);
       } else {
          class128.method2961(this, this.field3154, i_1, super.field3131[i_1], (byte) 2, true);
       }
@@ -191,11 +191,11 @@ public class class235 extends class233 {
 
    }
 
-   void method4262(int i_1, int i_2, int i_3) {
+   void method4262(int i_1, int i_2) {
       this.field3159 = i_1;
       this.field3161 = i_2;
       if (this.field3153 != null) {
-         class88.method2056(this.field3154, this.field3153, this, -1214592487);
+         class88.method2056(this.field3154, this.field3153, this);
       } else {
          class128.method2961(this, 255, this.field3154, this.field3159, (byte) 0, true);
       }

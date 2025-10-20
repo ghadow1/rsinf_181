@@ -611,7 +611,7 @@ public class FontName {
                   Client.field764 = i_14;
                   class294.field3697 = widget_0;
                   if (widget_0.field2560[i_14] > 0) {
-                     ItemDefinition itemDefinition_9 = class26.method404(widget_0.field2560[i_14] - 1);
+                     ItemDefinition itemDefinition_9 = item.getDefinition(widget_0.field2560[i_14] - 1);
                      if (Client.isItemSelected == 1 && class92.method2185(class268.method4987(widget_0))) {
                         if (widget_0.field2688 != class63.field594 || i_14 != class23.field182) {
                            class188.method3644("Use", Client.selectedItemName + " " + "->" + " " + class73.colorStartTag(16748608) + itemDefinition_9.name, 31, itemDefinition_9.field3410, i_14, widget_0.field2688);
