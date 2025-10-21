@@ -236,7 +236,7 @@ public class Widget extends LinkedListNode {
          if (class325_6 != null) {
             return class325_6;
          } else {
-            class325_6 = class65.method1178(class216.field2547, i_3, 0, -1966899450);
+            class325_6 = class65.method1178(class216.field2547, i_3, 0);
             if (class325_6 == null) {
                field2562 = true;
                return null;
@@ -820,7 +820,7 @@ public class Widget extends LinkedListNode {
             if (class325_4 != null) {
                return class325_4;
             } else {
-               class325_4 = class65.method1178(class216.field2547, i_3, 0, -1506119460);
+               class325_4 = class65.method1178(class216.field2547, i_3, 0);
                if (class325_4 != null) {
                   field2558.put(class325_4, (long)i_3);
                } else {

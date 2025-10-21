@@ -1476,7 +1476,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.updateStatMessage == Client.data.serverPacket) {
-               class65.method1176((byte) 65);
+               class65.method1176();
                packet_integer_653 = jagbuf.readIntLittleEndian();
                i_6 = jagbuf.readNegatedUnsignedByte();
                i_18 = jagbuf.readUnsignedByte();
@@ -1802,7 +1802,7 @@ public final class Client extends GameApplet implements class280 {
                   }
                }
 
-               class65.method1176((byte) 56);
+               class65.method1176();
                field806 += 32;
                Client.data.serverPacket = null;
                return true;
@@ -1907,7 +1907,7 @@ public final class Client extends GameApplet implements class280 {
                   FriendSystem.invalidateWidget(widget_7);
                }
 
-               class65.method1176((byte) -93);
+               class65.method1176();
                field888[++field671 - 1 & 0x1f] = i_6 & 0x7fff;
                Client.data.serverPacket = null;
                return true;
@@ -1929,7 +1929,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.updateRunWeightMessage == Client.data.serverPacket) {
-               class65.method1176((byte) -73);
+               class65.method1176();
                field823 = jagbuf.readSignedShortBigEndian();
                field844 = field673;
                Client.data.serverPacket = null;
@@ -2173,7 +2173,7 @@ public final class Client extends GameApplet implements class280 {
                   FriendSystem.invalidateWidget(widget_7);
                }
 
-               class65.method1176((byte) 94);
+               class65.method1176();
                field888[++field671 - 1 & 0x1f] = i_6 & 0x7fff;
                Client.data.serverPacket = null;
                return true;
@@ -2186,7 +2186,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.updateRunEnergyMessage == Client.data.serverPacket) {
-               class65.method1176((byte) -125);
+               class65.method1176();
                field910 = jagbuf.readUnsignedByte();
                field844 = field673;
                Client.data.serverPacket = null;

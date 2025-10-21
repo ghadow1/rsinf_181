@@ -125,7 +125,7 @@ public class class250 extends DualNode {
          int i_6;
          int i_8;
          if (class69_0.field996 >= Client.cycle) {
-            if (class69_0.field996 == Client.cycle || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981).field3522[class69_0.field951]) {
+            if (class69_0.field996 == Client.cycle || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981).duration[class69_0.field951]) {
                i_3 = class69_0.field996 - class69_0.field995;
                i_4 = Client.cycle - class69_0.field995;
                i_5 = class69_0.field991 * 128 + class69_0.field952 * 64;
@@ -320,15 +320,15 @@ public class class250 extends DualNode {
       class69_0.field967 = false;
       if (class69_0.field978 != -1) {
          class258_12 = class7.method81(class69_0.field978);
-         if (class258_12 != null && class258_12.field3520 != null) {
+         if (class258_12 != null && class258_12.frameCount != null) {
             ++class69_0.field1001;
-            if (class69_0.field979 < class258_12.field3520.length && class69_0.field1001 > class258_12.field3522[class69_0.field979]) {
+            if (class69_0.field979 < class258_12.frameCount.length && class69_0.field1001 > class258_12.duration[class69_0.field979]) {
                class69_0.field1001 = 1;
                ++class69_0.field979;
                class19.method224(class258_12, class69_0.field979, class69_0.x, class69_0.y, -837687849);
             }
 
-            if (class69_0.field979 >= class258_12.field3520.length) {
+            if (class69_0.field979 >= class258_12.frameCount.length) {
                class69_0.field1001 = 0;
                class69_0.field979 = 0;
                class19.method224(class258_12, class69_0.field979, class69_0.x, class69_0.y, -272321099);
@@ -346,15 +346,15 @@ public class class250 extends DualNode {
          i_3 = SceneSound.method3887(class69_0.field986).field3238;
          if (i_3 != -1) {
             class258 class258_13 = class7.method81(i_3);
-            if (class258_13 != null && class258_13.field3520 != null) {
+            if (class258_13 != null && class258_13.frameCount != null) {
                ++class69_0.field988;
-               if (class69_0.field987 < class258_13.field3520.length && class69_0.field988 > class258_13.field3522[class69_0.field987]) {
+               if (class69_0.field987 < class258_13.frameCount.length && class69_0.field988 > class258_13.duration[class69_0.field987]) {
                   class69_0.field988 = 1;
                   ++class69_0.field987;
                   class19.method224(class258_13, class69_0.field987, class69_0.x, class69_0.y, 282707669);
                }
 
-               if (class69_0.field987 >= class258_13.field3520.length && (class69_0.field987 < 0 || class69_0.field987 >= class258_13.field3520.length)) {
+               if (class69_0.field987 >= class258_13.frameCount.length && (class69_0.field987 < 0 || class69_0.field987 >= class258_13.frameCount.length)) {
                   class69_0.field986 = -1;
                }
             } else {
@@ -375,20 +375,20 @@ public class class250 extends DualNode {
 
       if (class69_0.field981 != -1 && class69_0.field984 == 0) {
          class258_12 = class7.method81(class69_0.field981);
-         if (class258_12 != null && class258_12.field3520 != null) {
+         if (class258_12 != null && class258_12.frameCount != null) {
             ++class69_0.field974;
-            if (class69_0.field951 < class258_12.field3520.length && class69_0.field974 > class258_12.field3522[class69_0.field951]) {
+            if (class69_0.field951 < class258_12.frameCount.length && class69_0.field974 > class258_12.duration[class69_0.field951]) {
                class69_0.field974 = 1;
                ++class69_0.field951;
                class19.method224(class258_12, class69_0.field951, class69_0.x, class69_0.y, 1833355104);
             }
 
-            if (class69_0.field951 >= class258_12.field3520.length) {
+            if (class69_0.field951 >= class258_12.frameCount.length) {
                class69_0.field951 -= class258_12.field3515;
                ++class69_0.field985;
                if (class69_0.field985 >= class258_12.field3535) {
                   class69_0.field981 = -1;
-               } else if (class69_0.field951 >= 0 && class69_0.field951 < class258_12.field3520.length) {
+               } else if (class69_0.field951 >= 0 && class69_0.field951 < class258_12.frameCount.length) {
                   class19.method224(class258_12, class69_0.field951, class69_0.x, class69_0.y, -720755355);
                } else {
                   class69_0.field981 = -1;

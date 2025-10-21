@@ -15,9 +15,9 @@ public class class258 extends DualNode {
    public int field3525 = -1;
    public int field3532 = -1;
    public int field3529 = 2;
-   public int[] field3522;
+   public int[] duration;
    int[] field3518;
-   public int[] field3520;
+   public int[] frameCount;
    int[] field3530;
    public int[] field3523;
 
@@ -26,20 +26,20 @@ public class class258 extends DualNode {
       int i_5;
       if (i_2 == 1) {
          i_4 = class300_1.readUnsignedShort();
-         this.field3522 = new int[i_4];
+         this.duration = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3522[i_5] = class300_1.readUnsignedShort();
+            this.duration[i_5] = class300_1.readUnsignedShort();
          }
 
-         this.field3520 = new int[i_4];
+         this.frameCount = new int[i_4];
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3520[i_5] = class300_1.readUnsignedShort();
+            this.frameCount[i_5] = class300_1.readUnsignedShort();
          }
 
          for (i_5 = 0; i_5 < i_4; i_5++) {
-            this.field3520[i_5] += class300_1.readUnsignedShort() << 16;
+            this.frameCount[i_5] += class300_1.readUnsignedShort() << 16;
          }
       } else if (i_2 == 2) {
          this.field3515 = class300_1.readUnsignedShort();
@@ -91,7 +91,7 @@ public class class258 extends DualNode {
    }
 
    public class127 method4784(class127 class127_1, int i_2) {
-      i_2 = this.field3520[i_2];
+      i_2 = this.frameCount[i_2];
       class138 class138_4 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_4 == null) {
@@ -104,13 +104,13 @@ public class class258 extends DualNode {
    }
 
    public class127 method4765(class127 class127_1, int i_2, class258 class258_3, int i_4) {
-      i_2 = this.field3520[i_2];
+      i_2 = this.frameCount[i_2];
       class138 class138_6 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_6 == null) {
          return class258_3.method4784(class127_1, i_4);
       } else {
-         i_4 = class258_3.field3520[i_4];
+         i_4 = class258_3.frameCount[i_4];
          class138 class138_7 = class30.method537(i_4 >> 16);
          i_4 &= 0xffff;
          class127 class127_8;
@@ -127,7 +127,7 @@ public class class258 extends DualNode {
    }
 
    class127 method4763(class127 class127_1, int i_2, int i_3) {
-      i_2 = this.field3520[i_2];
+      i_2 = this.frameCount[i_2];
       class138 class138_5 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_5 == null) {
@@ -157,7 +157,7 @@ public class class258 extends DualNode {
    }
 
    class127 method4787(class127 class127_1, int i_2, int i_3) {
-      i_2 = this.field3520[i_2];
+      i_2 = this.frameCount[i_2];
       class138 class138_4 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_4 == null) {
@@ -170,7 +170,7 @@ public class class258 extends DualNode {
    }
 
    public class127 method4767(class127 class127_1, int i_2, int i_3) {
-      int i_4 = this.field3520[i_2];
+      int i_4 = this.frameCount[i_2];
       class138 class138_5 = class30.method537(i_4 >> 16);
       i_4 &= 0xffff;
       if (class138_5 == null) {

@@ -44,10 +44,10 @@ public final class class77 extends Entity {
       if (!this.field1122) {
          this.field1121 += i_1;
 
-         while (this.field1121 > this.field1119.field3522[this.field1120]) {
-            this.field1121 -= this.field1119.field3522[this.field1120];
+         while (this.field1121 > this.field1119.duration[this.field1120]) {
+            this.field1121 -= this.field1119.duration[this.field1120];
             ++this.field1120;
-            if (this.field1120 >= this.field1119.field3520.length) {
+            if (this.field1120 >= this.field1119.frameCount.length) {
                this.field1122 = true;
                break;
             }

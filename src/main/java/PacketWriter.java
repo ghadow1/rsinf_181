@@ -78,7 +78,7 @@ public class PacketWriter {
                if (projectile_1.field1224 > 0) {
                   NPC NPC_2 = Client.npcs[projectile_1.field1224 - 1];
                   if (NPC_2 != null && NPC_2.x >= 0 && NPC_2.x < 13312 && NPC_2.y >= 0 && NPC_2.y < 13312) {
-                     projectile_1.setDestination(NPC_2.x, NPC_2.y, MusicPatchPcmStream.getTileHeight(NPC_2.x, NPC_2.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
+                     projectile_1.updateVelocity(NPC_2.x, NPC_2.y, MusicPatchPcmStream.getTileHeight(NPC_2.x, NPC_2.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
                   }
                }
 
@@ -92,12 +92,12 @@ public class PacketWriter {
                   }
 
                   if (class66_4 != null && class66_4.x >= 0 && class66_4.x < 13312 && class66_4.y >= 0 && class66_4.y < 13312) {
-                     projectile_1.setDestination(class66_4.x, class66_4.y, MusicPatchPcmStream.getTileHeight(class66_4.x, class66_4.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
+                     projectile_1.updateVelocity(class66_4.x, class66_4.y, MusicPatchPcmStream.getTileHeight(class66_4.x, class66_4.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
                   }
                }
 
-               projectile_1.method2043(Client.field718);
-               class5.field22.method3077(WorldMapRectangle.plane, (int) projectile_1.x, (int) projectile_1.y, (int) projectile_1.z, 60, projectile_1, projectile_1.field1234, -1L, false);
+               projectile_1.update(Client.field718);
+               class5.field22.method3077(WorldMapRectangle.plane, (int) projectile_1.x, (int) projectile_1.z, (int) projectile_1.y, 60, projectile_1, projectile_1.yaw, -1L, false);
             }
          } else {
             projectile_1.unlink();

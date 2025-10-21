@@ -26,7 +26,7 @@ public class ErrorHandler extends DualNode {
    int field3347 = -1;
    public int[] field3345;
 
-   void method4553(ByteBuffer class300_1, int i_2, int i_3) {
+   void method4553(ByteBuffer class300_1, int i_2) {
       if (i_2 == 1) {
          this.field3332 = class300_1.readNullableShort();
       } else if (i_2 == 2) {
@@ -89,18 +89,18 @@ public class ErrorHandler extends DualNode {
 
    }
 
-   void method4552(ByteBuffer class300_1, byte b_2) {
+   void method4552(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4553(class300_1, i_3, 1504666290);
+         this.method4553(class300_1, i_3);
       }
    }
 
-   public final ErrorHandler method4554(byte b_1) {
+   public final ErrorHandler method4554() {
       int i_2 = -1;
       if (this.field3346 != -1) {
          i_2 = class67.method1237(this.field3346);
@@ -118,7 +118,7 @@ public class ErrorHandler extends DualNode {
       return i_3 != -1 ? Projectile.method2046(i_3) : null;
    }
 
-   public class325 method4551(int i_1) {
+   public class325 method4551() {
       if (this.field3334 < 0) {
          return null;
       } else {
@@ -126,7 +126,7 @@ public class ErrorHandler extends DualNode {
          if (class325_2 != null) {
             return class325_2;
          } else {
-            class325_2 = class65.method1178(field3343, this.field3334, 0, -892985778);
+            class325_2 = class65.method1178(field3343, this.field3334, 0);
             if (class325_2 != null) {
                field3329.put(class325_2, (long)this.field3334);
             }
@@ -136,7 +136,7 @@ public class ErrorHandler extends DualNode {
       }
    }
 
-   public class325 method4557(int i_1) {
+   public class325 method4557() {
       if (this.field3336 < 0) {
          return null;
       } else {
@@ -144,7 +144,7 @@ public class ErrorHandler extends DualNode {
          if (class325_2 != null) {
             return class325_2;
          } else {
-            class325_2 = class65.method1178(field3343, this.field3336, 0, -1087527356);
+            class325_2 = class65.method1178(field3343, this.field3336, 0);
             if (class325_2 != null) {
                field3329.put(class325_2, (long)this.field3336);
             }
@@ -154,7 +154,7 @@ public class ErrorHandler extends DualNode {
       }
    }
 
-   public class325 method4558(byte b_1) {
+   public class325 method4558() {
       if (this.field3337 < 0) {
          return null;
       } else {
@@ -162,7 +162,7 @@ public class ErrorHandler extends DualNode {
          if (class325_2 != null) {
             return class325_2;
          } else {
-            class325_2 = class65.method1178(field3343, this.field3337, 0, -662564123);
+            class325_2 = class65.method1178(field3343, this.field3337, 0);
             if (class325_2 != null) {
                field3329.put(class325_2, (long)this.field3337);
             }
@@ -172,7 +172,7 @@ public class ErrorHandler extends DualNode {
       }
    }
 
-   public class325 method4583(int i_1) {
+   public class325 method4583() {
       if (this.field3338 < 0) {
          return null;
       } else {
@@ -180,7 +180,7 @@ public class ErrorHandler extends DualNode {
          if (class325_2 != null) {
             return class325_2;
          } else {
-            class325_2 = class65.method1178(field3343, this.field3338, 0, 1588545487);
+            class325_2 = class65.method1178(field3343, this.field3338, 0);
             if (class325_2 != null) {
                field3329.put(class325_2, (long)this.field3338);
             }
@@ -190,7 +190,7 @@ public class ErrorHandler extends DualNode {
       }
    }
 
-   public Font method4565(int i_1) {
+   public Font method4565() {
       if (this.field3332 == -1) {
          return null;
       } else {
@@ -217,7 +217,7 @@ public class ErrorHandler extends DualNode {
       }
    }
 
-   public String method4555(int i_1, int i_2) {
+   public String method4555(int i_1) {
       String string_3 = this.field3342;
 
       while (true) {

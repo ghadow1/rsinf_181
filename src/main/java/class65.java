@@ -7,7 +7,7 @@ public class class65 extends ParamDefinition {
       return i_2 == super.field2098 && i_3 == super.field2101;
    }
 
-   public static class325 method1178(class233 class233_0, int i_1, int i_2, int i_3) {
+   public static class325 method1178(class233 class233_0, int i_1, int i_2) {
       if (!class284.method5220(class233_0, i_1, i_2)) {
          return null;
       } else {
@@ -31,7 +31,7 @@ public class class65 extends ParamDefinition {
       }
    }
 
-   static void method1176(byte b_0) {
+   static void method1176() {
       for (class61 class61_1 = (class61) Client.field816.method5950(); class61_1 != null; class61_1 = (class61) Client.field816.method5953()) {
          int i_2 = class61_1.field571;
          if (class162.method3445(i_2)) {
@@ -58,16 +58,16 @@ public class class65 extends ParamDefinition {
 
    }
 
-   static class235 method1169(int i_0, boolean bool_1, boolean bool_2, boolean bool_3, byte b_4) {
+   static class235 method1169(int i_0, boolean bool_1, boolean bool_2) {
       class308 class308_5 = null;
       if (class167.field2042 != null) {
          class308_5 = new class308(i_0, class167.field2042, class167.field2041[i_0], 1000000);
       }
 
-      return new class235(class308_5, MusicPatchPcmStream.field573, i_0, bool_1, bool_2, bool_3);
+      return new class235(class308_5, MusicPatchPcmStream.field573, i_0, bool_1, bool_2, true);
    }
 
-   static File method1177(String string_0, int i_1) {
+   static File method1177(String string_0) {
       if (!class169.field2055) {
          throw new RuntimeException("");
       } else {
@@ -309,7 +309,7 @@ public class class65 extends ParamDefinition {
       }
    }
 
-   static int method1175(int i_0, class92 class92_1, boolean bool_2, int i_3) {
+   static int method1175(int i_0) {
       int i_4;
       int i_5;
       int i_7;
@@ -317,7 +317,7 @@ public class class65 extends ParamDefinition {
          class70.field1014 -= 2;
          i_4 = MouseRecorder.field1098[class70.field1014];
          i_5 = MouseRecorder.field1098[class70.field1014 + 1];
-         class251 class251_6 = class136.method3261(i_4, -497669049);
+         class251 class251_6 = class136.method3261(i_4);
          if (class251_6.field3321 != 115) {
             ;
          }
@@ -338,7 +338,7 @@ public class class65 extends ParamDefinition {
       } else if (i_0 != 3408) {
          if (i_0 == 3411) {
             i_4 = MouseRecorder.field1098[--class70.field1014];
-            class251 class251_11 = class136.method3261(i_4, 1132147020);
+            class251 class251_11 = class136.method3261(i_4);
             MouseRecorder.field1098[++class70.field1014 - 1] = class251_11.method4535((byte) -54);
             return 1;
          } else {
@@ -350,7 +350,7 @@ public class class65 extends ParamDefinition {
          i_5 = MouseRecorder.field1098[class70.field1014 + 1];
          int i_10 = MouseRecorder.field1098[class70.field1014 + 2];
          i_7 = MouseRecorder.field1098[class70.field1014 + 3];
-         class251 class251_8 = class136.method3261(i_10, 395300588);
+         class251 class251_8 = class136.method3261(i_10);
          if (i_4 == class251_8.field3317 && i_5 == class251_8.field3321) {
             for (int i_9 = 0; i_9 < class251_8.field3320; i_9++) {
                if (i_7 == class251_8.field3316[i_9]) {

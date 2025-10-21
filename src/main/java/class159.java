@@ -133,12 +133,12 @@ public class class159 extends ChainedComparator {
             ;
          }
 
-         class167.field2042 = new class342(new class343(class65.method1177("main_file_cache.dat2", -46052492), "rw", 1048576000L), 5200, 0);
-         class167.field2039 = new class342(new class343(class65.method1177("main_file_cache.idx255", -46052492), "rw", 1048576L), 6000, 0);
+         class167.field2042 = new class342(new class343(class65.method1177("main_file_cache.dat2"), "rw", 1048576000L), 5200, 0);
+         class167.field2039 = new class342(new class343(class65.method1177("main_file_cache.idx255"), "rw", 1048576L), 6000, 0);
          class167.field2041 = new class342[FontName.field350];
 
          for (int i_12 = 0; i_12 < FontName.field350; i_12++) {
-            class167.field2041[i_12] = new class342(new class343(class65.method1177("main_file_cache.idx" + i_12, -46052492), "rw", 1048576L), 6000, 0);
+            class167.field2041[i_12] = new class342(new class343(class65.method1177("main_file_cache.idx" + i_12), "rw", 1048576L), 6000, 0);
          }
 
       }

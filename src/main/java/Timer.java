@@ -29,26 +29,26 @@ public class Timer {
          Login.field1188 = 10;
          Client.field680 = 30;
       } else if (Client.field680 == 30) {
-         class197.field2405 = class65.method1169(0, false, true, true, (byte) 6);
-         class167.field2049 = class65.method1169(1, false, true, true, (byte) 6);
-         SoundSystem.field2544 = class65.method1169(2, true, false, true, (byte) 6);
-         GCMonitor.field382 = class65.method1169(3, false, true, true, (byte) 6);
-         class13.field89 = class65.method1169(4, false, true, true, (byte) 6);
-         WorldMapCacheName.field307 = class65.method1169(5, true, true, true, (byte) 6);
-         class29.field253 = class65.method1169(6, true, true, true, (byte) 6);
-         NPCDefinition.field3500 = class65.method1169(7, false, true, true, (byte) 6);
-         Client.field683 = class65.method1169(8, false, true, true, (byte) 6);
-         class4.field18 = class65.method1169(9, false, true, true, (byte) 6);
-         class17.field110 = class65.method1169(10, false, true, true, (byte) 6);
-         class32.field279 = class65.method1169(11, false, true, true, (byte) 6);
-         class151.field1971 = class65.method1169(12, false, true, true, (byte) 6);
-         class2.field6 = class65.method1169(13, true, false, true, (byte) 6);
-         Tile.field1647 = class65.method1169(14, false, true, true, (byte) 6);
-         class67.field650 = class65.method1169(15, false, true, true, (byte) 6);
-         WorldMapID.field232 = class65.method1169(17, true, true, true, (byte) 6);
-         Client.field684 = class65.method1169(18, false, true, true, (byte) 6);
-         ItemDefinition.field3457 = class65.method1169(19, false, true, true, (byte) 6);
-         Entity.field1874 = class65.method1169(20, false, true, true, (byte) 6);
+         class197.field2405 = class65.method1169(0, false, true);
+         class167.field2049 = class65.method1169(1, false, true);
+         SoundSystem.field2544 = class65.method1169(2, true, false);
+         GCMonitor.field382 = class65.method1169(3, false, true);
+         class13.field89 = class65.method1169(4, false, true);
+         WorldMapCacheName.field307 = class65.method1169(5, true, true);
+         class29.field253 = class65.method1169(6, true, true);
+         NPCDefinition.field3500 = class65.method1169(7, false, true);
+         Client.field683 = class65.method1169(8, false, true);
+         class4.field18 = class65.method1169(9, false, true);
+         class17.field110 = class65.method1169(10, false, true);
+         class32.field279 = class65.method1169(11, false, true);
+         class151.field1971 = class65.method1169(12, false, true);
+         class2.field6 = class65.method1169(13, true, false);
+         Tile.field1647 = class65.method1169(14, false, true);
+         class67.field650 = class65.method1169(15, false, true);
+         WorldMapID.field232 = class65.method1169(17, true, true);
+         Client.field684 = class65.method1169(18, false, true);
+         ItemDefinition.field3457 = class65.method1169(19, false, true);
+         Entity.field1874 = class65.method1169(20, false, true);
          Login.field1189 = "Connecting to update server";
          Login.field1188 = 20;
          Client.field680 = 40;
@@ -283,13 +283,13 @@ public class Timer {
             } else if (Client.field680 == 80) {
                i_1 = 0;
                if (Message.field607 == null) {
-                  Message.field607 = class65.method1178(Client.field683, class159.field1995.field3826, 0, 254674010);
+                  Message.field607 = class65.method1178(Client.field683, class159.field1995.field3826, 0);
                } else {
                   ++i_1;
                }
 
                if (class151.field1972 == null) {
-                  class151.field1972 = class65.method1178(Client.field683, class159.field1995.field3823, 0, 300652258);
+                  class151.field1972 = class65.method1178(Client.field683, class159.field1995.field3823, 0);
                } else {
                   ++i_1;
                }

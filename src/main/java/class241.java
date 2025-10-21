@@ -44,7 +44,7 @@ public class class241 extends DualNode {
          if (class325_3 != null) {
             return class325_3;
          } else {
-            class325_3 = class65.method1178(field3225, i_1, 0, -1315452392);
+            class325_3 = class65.method1178(field3225, i_1, 0);
             if (class325_3 != null) {
                field3215.put(class325_3, (long)i_1);
             }

@@ -45,7 +45,7 @@ public final class class136 {
       }
    }
 
-   public static class251 method3261(int i_0, int i_1) {
+   public static class251 method3261(int i_0) {
       class251 class251_2 = (class251) class251.field3315.get((long)i_0);
       if (class251_2 != null) {
          return class251_2;

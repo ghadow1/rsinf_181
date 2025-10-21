@@ -61,7 +61,7 @@ public class class246 extends DualNode {
          if (class325_2 != null) {
             return class325_2;
          } else {
-            class325_2 = class65.method1178(field3280, this.field3287, 0, -1115802193);
+            class325_2 = class65.method1178(field3280, this.field3287, 0);
             if (class325_2 != null) {
                field3276.put(class325_2, (long)this.field3287);
             }
@@ -79,7 +79,7 @@ public class class246 extends DualNode {
          if (class325_2 != null) {
             return class325_2;
          } else {
-            class325_2 = class65.method1178(field3280, this.field3286, 0, 310507605);
+            class325_2 = class65.method1178(field3280, this.field3286, 0);
             if (class325_2 != null) {
                field3276.put(class325_2, (long)this.field3286);
             }

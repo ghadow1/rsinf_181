@@ -34,8 +34,8 @@ public class class93 extends Entity {
          }
 
          if (bool_8 && this.field1293.field3515 != -1) {
-            this.field1298 = (int)(Math.random() * (double)this.field1293.field3520.length);
-            this.field1300 -= (int)(Math.random() * (double)this.field1293.field3522[this.field1298]);
+            this.field1298 = (int)(Math.random() * (double)this.field1293.frameCount.length);
+            this.field1300 -= (int)(Math.random() * (double)this.field1293.duration[this.field1298]);
          }
       }
 
@@ -51,16 +51,16 @@ public class class93 extends Entity {
          label56: {
             do {
                do {
-                  if (i_2 <= this.field1293.field3522[this.field1298]) {
+                  if (i_2 <= this.field1293.duration[this.field1298]) {
                      break label56;
                   }
 
-                  i_2 -= this.field1293.field3522[this.field1298];
+                  i_2 -= this.field1293.duration[this.field1298];
                   ++this.field1298;
-               } while (this.field1298 < this.field1293.field3520.length);
+               } while (this.field1298 < this.field1293.frameCount.length);
 
                this.field1298 -= this.field1293.field3515;
-            } while (this.field1298 >= 0 && this.field1298 < this.field1293.field3520.length);
+            } while (this.field1298 >= 0 && this.field1298 < this.field1293.frameCount.length);
 
             this.field1293 = null;
          }
