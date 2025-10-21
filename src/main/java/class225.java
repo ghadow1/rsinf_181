@@ -5,9 +5,9 @@ public class class225 {
    static final void method4122(Widget[] arr_0, int i_1) {
       for (int i_3 = 0; i_3 < arr_0.length; i_3++) {
          Widget widget_4 = arr_0[i_3];
-         if (widget_4 != null && widget_4.field2583 == i_1 && (!widget_4.field2563 || !class62.method1133(widget_4))) {
+         if (widget_4 != null && widget_4.field2583 == i_1 && (!widget_4.field2563 || !MusicPatchPcmStream.method1133(widget_4))) {
             if (widget_4.field2566 == 0) {
-               if (!widget_4.field2563 && class62.method1133(widget_4) && widget_4 != class72.field1059) {
+               if (!widget_4.field2563 && MusicPatchPcmStream.method1133(widget_4) && widget_4 != class72.field1059) {
                   continue;
                }
 

@@ -14,9 +14,9 @@ public class class314 implements Comparator {
          class17.field117.field1060 = !class17.field117.field1060;
          class97.method2268();
          if (class17.field117.field1060) {
-            class62.method1132(99, "", "Roofs are now all hidden");
+            MusicPatchPcmStream.method1132(99, "", "Roofs are now all hidden");
          } else {
-            class62.method1132(99, "", "Roofs will only be removed selectively");
+            MusicPatchPcmStream.method1132(99, "", "Roofs will only be removed selectively");
          }
       }
 

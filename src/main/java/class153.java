@@ -29,13 +29,13 @@ public class class153 extends ChainedComparator {
          class96.updateGameState(25);
          class281.method5180("Loading - please wait.", true, -2090803826);
          int i_4 = class196.field2389;
-         int i_5 = class1.field1;
+         int i_5 = SceneNode.field1;
          class196.field2389 = (i_0 - 6) * 8;
-         class1.field1 = (i_1 - 6) * 8;
+         SceneNode.field1 = (i_1 - 6) * 8;
          int i_6 = class196.field2389 - i_4;
-         int i_7 = class1.field1 - i_5;
+         int i_7 = SceneNode.field1 - i_5;
          i_4 = class196.field2389;
-         i_5 = class1.field1;
+         i_5 = SceneNode.field1;
 
          int i_8;
          int i_10;
@@ -115,12 +115,12 @@ public class class153 extends ChainedComparator {
          Client.field893 = 0;
          Client.field899 = false;
          PacketBuffer.field3727 -= i_6 << 7;
-         class1.field3 -= i_7 << 7;
+         SceneNode.field3 -= i_7 << 7;
          MouseHandler.field499 -= i_6 << 7;
          item.field227 -= i_7 << 7;
          Client.field747 = -1;
          Client.field785.method4886();
-         Client.field670.method4886();
+         Client.projectiles.method4886();
 
          for (i_15 = 0; i_15 < 4; i_15++) {
             Client.field710[i_15].clear();

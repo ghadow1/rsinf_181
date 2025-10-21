@@ -72,7 +72,7 @@ final class class4 implements class0 {
       int i_15;
       if (!Client.field899) {
          if (class17.field117.field1060) {
-            i_29 = ItemContainer_2.plane;
+            i_29 = WorldMapRectangle.plane;
          } else {
             label567: {
                i_7 = 3;
@@ -87,11 +87,11 @@ final class class4 implements class0 {
                      }
 
                      i_10 = PacketBuffer.field3727 >> 7;
-                     i_11 = class1.field3 >> 7;
+                     i_11 = SceneNode.field3 >> 7;
                      if (i_10 >= 0 && i_11 >= 0 && i_10 < 104 && i_11 < 104) {
                         if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
-                           if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
-                              i_7 = ItemContainer_2.plane;
+                           if ((class55.field502[WorldMapRectangle.plane][i_10][i_11] & 0x4) != 0) {
+                              i_7 = WorldMapRectangle.plane;
                            }
 
                            if (i_8 > i_10) {
@@ -121,8 +121,8 @@ final class class4 implements class0 {
                                     --i_10;
                                  }
 
-                                 if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
-                                    i_7 = ItemContainer_2.plane;
+                                 if ((class55.field502[WorldMapRectangle.plane][i_10][i_11] & 0x4) != 0) {
+                                    i_7 = WorldMapRectangle.plane;
                                  }
 
                                  i_15 += i_14;
@@ -134,8 +134,8 @@ final class class4 implements class0 {
                                        --i_11;
                                     }
 
-                                    if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
-                                       i_7 = ItemContainer_2.plane;
+                                    if ((class55.field502[WorldMapRectangle.plane][i_10][i_11] & 0x4) != 0) {
+                                       i_7 = WorldMapRectangle.plane;
                                     }
                                  }
                               }
@@ -151,8 +151,8 @@ final class class4 implements class0 {
                                        --i_11;
                                     }
 
-                                    if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
-                                       i_7 = ItemContainer_2.plane;
+                                    if ((class55.field502[WorldMapRectangle.plane][i_10][i_11] & 0x4) != 0) {
+                                       i_7 = WorldMapRectangle.plane;
                                     }
 
                                     i_15 += i_14;
@@ -164,8 +164,8 @@ final class class4 implements class0 {
                                           --i_10;
                                        }
 
-                                       if ((class55.field502[ItemContainer_2.plane][i_10][i_11] & 0x4) != 0) {
-                                          i_7 = ItemContainer_2.plane;
+                                       if ((class55.field502[WorldMapRectangle.plane][i_10][i_11] & 0x4) != 0) {
+                                          i_7 = WorldMapRectangle.plane;
                                        }
                                     }
                                  }
@@ -174,23 +174,23 @@ final class class4 implements class0 {
                            }
                         }
 
-                        i_29 = ItemContainer_2.plane;
+                        i_29 = WorldMapRectangle.plane;
                         break label567;
                      }
 
-                     i_29 = ItemContainer_2.plane;
+                     i_29 = WorldMapRectangle.plane;
                      break label567;
                   }
                }
 
                if (Client.localPlayer.x >= 0 && Client.localPlayer.y >= 0 && Client.localPlayer.x < 13312 && Client.localPlayer.y < 13312) {
-                  if ((class55.field502[ItemContainer_2.plane][Client.localPlayer.x >> 7][Client.localPlayer.y >> 7] & 0x4) != 0) {
-                     i_7 = ItemContainer_2.plane;
+                  if ((class55.field502[WorldMapRectangle.plane][Client.localPlayer.x >> 7][Client.localPlayer.y >> 7] & 0x4) != 0) {
+                     i_7 = WorldMapRectangle.plane;
                   }
 
                   i_29 = i_7;
                } else {
-                  i_29 = ItemContainer_2.plane;
+                  i_29 = WorldMapRectangle.plane;
                }
             }
          }
@@ -202,7 +202,7 @@ final class class4 implements class0 {
 
       i_29 = PacketBuffer.field3727;
       i_7 = GCMonitor.field383;
-      i_8 = class1.field3;
+      i_8 = SceneNode.field3;
       i_9 = class11.field77;
       i_10 = MouseRecorder.field1112;
 
@@ -218,7 +218,7 @@ final class class4 implements class0 {
             }
 
             if (i_11 == 2) {
-               class1.field3 += i_12;
+               SceneNode.field3 += i_12;
             }
 
             if (i_11 == 3) {
@@ -262,7 +262,7 @@ final class class4 implements class0 {
       class186.method3619((byte) 8);
       i_13 = Rasterizer3D.field1773;
       Rasterizer3D.field1773 = Client.field917;
-      class5.field22.method3092(PacketBuffer.field3727, GCMonitor.field383, class1.field3, class11.field77, MouseRecorder.field1112, i_5);
+      class5.field22.method3092(PacketBuffer.field3727, GCMonitor.field383, SceneNode.field3, class11.field77, MouseRecorder.field1112, i_5);
       Rasterizer3D.field1773 = i_13;
       class186.method3619((byte) 124);
       class5.field22.method3115();
@@ -418,8 +418,8 @@ final class class4 implements class0 {
       }
 
       if (Client.field708 == 2) {
-         class32.method544((Client.field737 - class196.field2389 << 7) + Client.field821, (Client.field777 - class1.field1 << 7) + Client.field677, Client.field675 * 2);
-         if (Client.field752 > -1 && Client.field881 % 20 < 10) {
+         class32.method544((Client.field737 - class196.field2389 << 7) + Client.field821, (Client.field777 - SceneNode.field1 << 7) + Client.field677, Client.field675 * 2);
+         if (Client.field752 > -1 && Client.cycle % 20 < 10) {
             class173.field2096[0].drawTransBgAt(i_0 + Client.field752 - 12, Client.field753 + i_1 - 28);
          }
       }
@@ -428,7 +428,7 @@ final class class4 implements class0 {
       class21.method273();
       PacketBuffer.field3727 = i_29;
       GCMonitor.field383 = i_7;
-      class1.field3 = i_8;
+      SceneNode.field3 = i_8;
       class11.field77 = i_9;
       MouseRecorder.field1112 = i_10;
       if (Client.field661) {

@@ -170,13 +170,13 @@ public class class248 extends DualNode {
                      }
                   }
 
-                  i_8 = class62.field585 - 80;
+                  i_8 = MusicPatchPcmStream.field585 - 80;
                   s_9 = 291;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
                      class5.method50(class190.someConnectionType("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
                   }
 
-                  i_8 = class62.field585 + 80;
+                  i_8 = MusicPatchPcmStream.field585 + 80;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20 || bool_18) {
                      if ((Client.field653 & 0x2000000) != 0) {
                         Login.field1197 = "";
@@ -257,7 +257,7 @@ public class class248 extends DualNode {
                            }
                         }
 
-                        i_8 = class62.field585 - 80;
+                        i_8 = MusicPatchPcmStream.field585 - 80;
                         s_9 = 321;
                         if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
                            Login.field1180 = Login.field1180.trim();
@@ -287,7 +287,7 @@ public class class248 extends DualNode {
                            Login.field1201 = true;
                         }
 
-                        i_8 = class62.field585 + -117;
+                        i_8 = MusicPatchPcmStream.field585 + -117;
                         s_9 = 277;
                         Login.field1199 = i_16 >= i_8 && i_16 < i_8 + class237.field3191 && i_17 >= s_9 && i_17 < s_9 + class25.field212;
                         if (i_4 == 1 && Login.field1199) {
@@ -298,7 +298,7 @@ public class class248 extends DualNode {
                            }
                         }
 
-                        i_8 = class62.field585 + 24;
+                        i_8 = MusicPatchPcmStream.field585 + 24;
                         s_9 = 277;
                         Login.field1184 = i_16 >= i_8 && i_16 < i_8 + class237.field3191 && i_17 >= s_9 && i_17 < s_9 + class25.field212;
                         if (i_4 == 1 && Login.field1184) {
@@ -608,13 +608,13 @@ public class class248 extends DualNode {
                         }
                      }
 
-                     i_19 = class62.field585 - 80;
+                     i_19 = MusicPatchPcmStream.field585 - 80;
                      s_21 = 321;
                      if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
                         class137.method3266(false);
                      }
 
-                     i_19 = class62.field585 + 80;
+                     i_19 = MusicPatchPcmStream.field585 + 80;
                      if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
                         Login.loginIndex = 0;
                      }

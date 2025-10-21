@@ -24,12 +24,12 @@ public class class159 extends ChainedComparator {
       class119.field1539 = i_2;
 
       try {
-         class62.field586 = System.getProperty("os.name");
+         MusicPatchPcmStream.field586 = System.getProperty("os.name");
       } catch (Exception exception_15) {
-         class62.field586 = "Unknown";
+         MusicPatchPcmStream.field586 = "Unknown";
       }
 
-      class67.field647 = class62.field586.toLowerCase();
+      class67.field647 = MusicPatchPcmStream.field586.toLowerCase();
 
       try {
          GameState.field3095 = System.getProperty("user.home");
@@ -68,12 +68,12 @@ public class class159 extends ChainedComparator {
       File file_9;
       label135:
       while (i_10 < 4) {
-         class1.field2 = class119.writeJagCLDat(string_0, string_1, i_10);
-         if (!class1.field2.exists()) {
-            class1.field2.mkdirs();
+         SceneNode.field2 = class119.writeJagCLDat(string_0, string_1, i_10);
+         if (!SceneNode.field2.exists()) {
+            SceneNode.field2.mkdirs();
          }
 
-         File[] arr_6 = class1.field2.listFiles();
+         File[] arr_6 = SceneNode.field2.listFiles();
          if (arr_6 == null) {
             break;
          }
@@ -96,7 +96,7 @@ public class class159 extends ChainedComparator {
          }
       }
 
-      File file_5 = class1.field2;
+      File file_5 = SceneNode.field2;
       class169.field2050 = file_5;
       if (!class169.field2050.exists()) {
          throw new RuntimeException("");

@@ -148,7 +148,7 @@ public class class333 {
             ints_5 = this.field3986.method330(this.field3986.method343(), this.field3986.method342(), this.field3986.method405());
          }
 
-         this.method6305(ints_5[0] - this.field3986.method338() * 64, ints_5[1] - this.field3986.method340() * 64, true, 997010308);
+         this.method6305(ints_5[0] - this.field3986.method338() * 64, ints_5[1] - this.field3986.method340() * 64, true);
          this.field3970 = -1;
          this.field3993 = -1;
          this.field3994 = this.method6323(this.field3986.method337(), -1360526836);
@@ -159,15 +159,15 @@ public class class333 {
       }
    }
 
-   public int method6412(int i_1) {
+   public int method6412() {
       return this.field3996;
    }
 
-   public int method6333(int i_1) {
+   public int method6333() {
       return this.field3986 == null ? -1 : this.field3999 + this.field3986.method340() * 64;
    }
 
-   void method6304(int i_1) {
+   void method6304() {
       if (this.method6307(-1067289346)) {
          int i_2 = this.field3970 - this.field3990;
          int i_3 = this.field3993 - this.field3999;
@@ -179,7 +179,7 @@ public class class333 {
             i_3 /= Math.min(8, Math.abs(i_3));
          }
 
-         this.method6305(i_2 + this.field3990, i_3 + this.field3999, true, 1498384117);
+         this.method6305(i_2 + this.field3990, i_3 + this.field3999, true);
          if (this.field3970 == this.field3990 && this.field3999 == this.field3993) {
             this.field3970 = -1;
             this.field3993 = -1;
@@ -188,23 +188,23 @@ public class class333 {
       }
    }
 
-   final void method6306(byte b_1) {
+   final void method6306() {
       this.field3989 = -1;
       this.field4001 = -1;
       this.field4007 = -1;
       this.field4006 = -1;
    }
 
-   public void method6369(int i_1, int i_2, int i_3) {
+   public void method6369(int i_1, int i_2) {
       if (this.field3986 != null && this.field3986.method329(i_1, i_2)) {
          this.field3970 = i_1 - this.field3986.method338() * 64;
          this.field3993 = i_2 - this.field3986.method340() * 64;
       }
    }
 
-   public void method6380(int i_1, int i_2, int i_3) {
+   public void method6380(int i_1, int i_2) {
       if (this.field3986 != null) {
-         this.method6305(i_1 - this.field3986.method338() * 64, i_2 - this.field3986.method340() * 64, true, 2047866040);
+         this.method6305(i_1 - this.field3986.method338() * 64, i_2 - this.field3986.method340() * 64, true);
          this.field3970 = -1;
          this.field3993 = -1;
       }
@@ -212,8 +212,8 @@ public class class333 {
 
    void method6302(int i_1, int i_2, boolean bool_3, long long_4) {
       if (this.field3986 != null) {
-         int i_6 = (int)((float)this.field3990 + ((float)(i_1 - this.field3995) - (float)this.method6412(-1200687327) * this.field3994 / 2.0F) / this.field3994);
-         int i_7 = (int)((float)this.field3999 - ((float)(i_2 - this.field3975) - (float)this.method6461((byte) 127) * this.field3994 / 2.0F) / this.field3994);
+         int i_6 = (int) ((float) this.field3990 + ((float) (i_1 - this.field3995) - (float) this.method6412() * this.field3994 / 2.0F) / this.field3994);
+         int i_7 = (int) ((float) this.field3999 - ((float) (i_2 - this.field3975) - (float) this.method6461() * this.field3994 / 2.0F) / this.field3994);
          this.field4024 = this.field3986.method331(i_6 + this.field3986.method338() * 64, i_7 + this.field3986.method340() * 64);
          if (this.field4024 != null && bool_3) {
             boolean bool_8 = Client.localRights >= 2;
@@ -243,21 +243,21 @@ public class class333 {
 
    }
 
-   final void method6305(int i_1, int i_2, boolean bool_3, int i_4) {
+   final void method6305(int i_1, int i_2, boolean bool_3) {
       this.field3990 = i_1;
       this.field3999 = i_2;
       TimeUtils.getAdjustedTimeMillis();
       if (bool_3) {
-         this.method6306((byte) 1);
+         this.method6306();
       }
 
    }
 
-   public int method6461(byte b_1) {
+   public int method6461() {
       return this.field3997;
    }
 
-   public class34 method6355(byte b_1) {
+   public class34 method6355() {
       if (this.field3991 == null) {
          return null;
       } else {
@@ -274,11 +274,11 @@ public class class333 {
       }
    }
 
-   boolean method6318(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
+   boolean method6318(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       return this.field4026 == null ? true : (this.field4026.field3899 == i_1 && this.field4026.field3900 == i_2 ? (this.field4019.field310 != this.field4027 ? true : (this.field4030 != Client.field924 ? true : (i_3 <= 0 && i_4 <= 0 ? i_3 + i_1 < i_5 || i_2 + i_4 < i_6 : true))) : true);
    }
 
-   void method6322(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
+   void method6322(int i_1, int i_2, int i_3, int i_4, int i_5) {
       byte b_7 = 20;
       int i_8 = i_3 / 2 + i_1;
       int i_9 = i_4 / 2 + i_2 - 18 - b_7;
@@ -297,10 +297,10 @@ public class class333 {
          i_9 = (int)((float)i_9 / f_11);
          i_10 = (int)((float)i_10 / f_11);
          int i_12 = this.method6332(455278746) - i_5 / 2 - i_8;
-         int i_13 = this.method6333(408492838) - i_6 / 2 - i_8;
+         int i_13 = this.method6333() - i_6 / 2 - i_8;
          int i_14 = i_1 - (i_8 + i_12 - this.field3977) * this.field4019.field310;
          int i_15 = i_2 - this.field4019.field310 * (i_8 - (i_13 - this.field3998));
-         if (this.method6318(i_9, i_10, i_14, i_15, i_3, i_4, -1863961695)) {
+         if (this.method6318(i_9, i_10, i_14, i_15, i_3, i_4)) {
             if (this.field4026 != null && this.field4026.field3899 == i_9 && this.field4026.field3900 == i_10) {
                Arrays.fill(this.field4026.field3908, 0);
             } else {
@@ -308,7 +308,7 @@ public class class333 {
             }
 
             this.field3977 = this.method6332(1671180892) - i_5 / 2 - i_8;
-            this.field3998 = this.method6333(140338410) - i_6 / 2 - i_8;
+            this.field3998 = this.method6333() - i_6 / 2 - i_8;
             this.field4027 = this.field4019.field310;
             class68.field944.method4321(this.field3977, this.field3998, this.field4026, (float)this.field4027 / f_11);
             this.field4030 = Client.field924;
@@ -333,7 +333,7 @@ public class class333 {
       Rasterizer2D.fillRectangle(i_1, i_2, i_3, i_4, -16777216);
       int i_8 = this.field4028.method6284(-805069530);
       if (i_8 < 100) {
-         this.method6322(i_1, i_2, i_3, i_4, i_8, 1955930802);
+         this.method6322(i_1, i_2, i_3, i_4, i_8);
       } else {
          if (!this.field4019.method609(1588270336)) {
             this.field4019.method602(this.field4029, this.field3986.method369(), Client.field655, (byte) 1);
@@ -399,27 +399,27 @@ public class class333 {
    }
 
    public void method6470(int i_1, int i_2, class213 class213_3, class213 class213_4, byte b_5) {
-      class62 class62_6 = new class62();
+      MusicPatchPcmStream musicPatchPcmStream_6 = new MusicPatchPcmStream();
       class41 class41_7 = new class41(i_2, class213_3, class213_4);
-      class62_6.method1131(new Object[] {class41_7});
+      musicPatchPcmStream_6.method1131(new Object[] {class41_7});
       switch(i_1) {
       case 1008:
-         class62_6.method1123(10);
+         musicPatchPcmStream_6.method1123(10);
          break;
       case 1009:
-         class62_6.method1123(11);
+         musicPatchPcmStream_6.method1123(11);
          break;
       case 1010:
-         class62_6.method1123(12);
+         musicPatchPcmStream_6.method1123(12);
          break;
       case 1011:
-         class62_6.method1123(13);
+         musicPatchPcmStream_6.method1123(13);
          break;
       case 1012:
-         class62_6.method1123(14);
+         musicPatchPcmStream_6.method1123(14);
       }
 
-      class184.method3613(class62_6);
+      class184.method3613(musicPatchPcmStream_6);
    }
 
    public void method6298(class233 class233_1, class233 class233_2, class233 class233_3, Font font_4, HashMap hashmap_5, class324[] arr_6, int i_7) {
@@ -474,14 +474,14 @@ public class class333 {
 
    }
 
-   public void method6471(int i_1) {
+   public void method6471() {
       this.field4028.method6286();
    }
 
    public void method6335(int i_1, int i_2, boolean bool_3, int i_4, int i_5, int i_6, int i_7, int i_8) {
       if (this.field4028.method6295()) {
          this.method6450((byte) -59);
-         this.method6304(-1342245212);
+         this.method6304();
          if (bool_3) {
             int i_9 = (int)Math.ceil((double)((float)i_6 / this.field3994));
             int i_10 = (int)Math.ceil((double)((float)i_7 / this.field3994));
@@ -490,18 +490,18 @@ public class class333 {
 
             Iterator iterator_13;
             class34 class34_14;
-            class62 class62_15;
+            MusicPatchPcmStream musicPatchPcmStream_15;
             class41 class41_16;
-            for (iterator_13 = list_11.iterator(); iterator_13.hasNext(); class184.method3613(class62_15)) {
+            for (iterator_13 = list_11.iterator(); iterator_13.hasNext(); class184.method3613(musicPatchPcmStream_15)) {
                class34_14 = (class34) iterator_13.next();
                hashset_12.add(class34_14);
-               class62_15 = new class62();
+               musicPatchPcmStream_15 = new MusicPatchPcmStream();
                class41_16 = new class41(class34_14.vmethod597(-229566020), class34_14.field298, class34_14.field297);
-               class62_15.method1131(new Object[] {class41_16, Integer.valueOf(i_1), Integer.valueOf(i_2)});
+               musicPatchPcmStream_15.method1131(new Object[] {class41_16, Integer.valueOf(i_1), Integer.valueOf(i_2)});
                if (this.field4005.contains(class34_14)) {
-                  class62_15.method1123(17);
+                  musicPatchPcmStream_15.method1123(17);
                } else {
-                  class62_15.method1123(15);
+                  musicPatchPcmStream_15.method1123(15);
                }
             }
 
@@ -510,11 +510,11 @@ public class class333 {
             while (iterator_13.hasNext()) {
                class34_14 = (class34) iterator_13.next();
                if (!hashset_12.contains(class34_14)) {
-                  class62_15 = new class62();
+                  musicPatchPcmStream_15 = new MusicPatchPcmStream();
                   class41_16 = new class41(class34_14.vmethod597(723844955), class34_14.field298, class34_14.field297);
-                  class62_15.method1131(new Object[] {class41_16, Integer.valueOf(i_1), Integer.valueOf(i_2)});
-                  class62_15.method1123(16);
-                  class184.method3613(class62_15);
+                  musicPatchPcmStream_15.method1131(new Object[] {class41_16, Integer.valueOf(i_1), Integer.valueOf(i_2)});
+                  musicPatchPcmStream_15.method1123(16);
+                  class184.method3613(musicPatchPcmStream_15);
                }
             }
 
@@ -587,10 +587,10 @@ public class class333 {
          if (this.field4006 != -1) {
             int i_8 = i_1 - this.field4001;
             int i_9 = i_2 - this.field3989;
-            this.method6305(this.field4006 - (int)((float)i_8 / this.field3974), (int)((float)i_9 / this.field3974) + this.field4007, false, 206616151);
+            this.method6305(this.field4006 - (int) ((float) i_8 / this.field3974), (int) ((float) i_9 / this.field3974) + this.field4007, false);
          }
       } else {
-         this.method6306((byte) 1);
+         this.method6306();
       }
 
       if (bool_4) {
@@ -602,14 +602,14 @@ public class class333 {
    }
 
    public class213 method6415(byte b_1) {
-      return this.field3986 == null ? null : this.field3986.method331(this.method6332(302099777), this.method6333(-1722466928));
+      return this.field3986 == null ? null : this.field3986.method331(this.method6332(302099777), this.method6333());
    }
 
    public void method6330(int i_1, int i_2, int i_3, int i_4) {
       if (this.field3986 != null) {
          int[] ints_5 = this.field3986.method330(i_1, i_2, i_3);
          if (ints_5 != null) {
-            this.method6369(ints_5[0], ints_5[1], -1604144136);
+            this.method6369(ints_5[0], ints_5[1]);
          }
 
       }
@@ -619,7 +619,7 @@ public class class333 {
       if (this.field3986 != null) {
          int[] ints_5 = this.field3986.method330(i_1, i_2, i_3);
          if (ints_5 != null) {
-            this.method6380(ints_5[0], ints_5[1], 2145778203);
+            this.method6380(ints_5[0], ints_5[1]);
          }
 
       }
@@ -699,7 +699,7 @@ public class class333 {
          }
 
          this.field3991 = this.field3972.iterator();
-         return this.method6355((byte) 3);
+         return this.method6355();
       }
    }
 

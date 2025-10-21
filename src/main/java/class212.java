@@ -138,7 +138,7 @@ public class class212 {
                }
 
                if (i_7 == 19) {
-                  i_8 = (Client.localPlayer.y >> 7) + class1.field1;
+                  i_8 = (Client.localPlayer.y >> 7) + SceneNode.field1;
                }
 
                if (i_7 == 20) {

@@ -256,7 +256,7 @@ public class class309 implements Runnable {
          Login.field1179 = true;
          Login.field1208 = (class7.field46 - 765) / 2;
          Login.field1187 = Login.field1208 + 202;
-         class62.field585 = Login.field1187 + 180;
+         MusicPatchPcmStream.field585 = Login.field1187 + 180;
          class5.field23.method6121(Login.field1208, 0);
          NPC.field1135.method6121(Login.field1208 + 382, 0);
          class87.field1243.method6101(Login.field1208 + 382 - class87.field1243.field3897 / 2, 18);

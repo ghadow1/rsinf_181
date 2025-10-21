@@ -39,10 +39,10 @@ final class class2 implements class0 {
          Widget widget_10 = arr_0[i_9];
          if (widget_10 != null && widget_10.field2583 == i_1 && (!widget_10.field2563 || widget_10.field2566 == 0 || widget_10.field2551 || class268.method4987(widget_10) != 0 || widget_10 == Client.field829 || widget_10.field2568 == 1338)) {
             if (widget_10.field2563) {
-               if (class62.method1133(widget_10)) {
+               if (MusicPatchPcmStream.method1133(widget_10)) {
                   continue;
                }
-            } else if (widget_10.field2566 == 0 && widget_10 != class72.field1059 && class62.method1133(widget_10)) {
+            } else if (widget_10.field2566 == 0 && widget_10 != class72.field1059 && MusicPatchPcmStream.method1133(widget_10)) {
                continue;
             }
 
@@ -120,13 +120,13 @@ final class class2 implements class0 {
 
             if (bool_33 || !widget_10.field2563 || i_13 < i_15 && i_14 < i_16) {
                if (widget_10.field2563) {
-                  class62 class62_27;
+                  MusicPatchPcmStream musicPatchPcmStream_27;
                   if (widget_10.field2580) {
                      if (MouseHandler.MouseHandler_x >= i_13 && MouseHandler.MouseHandler_y >= i_14 && MouseHandler.MouseHandler_x < i_15 && MouseHandler.MouseHandler_y < i_16) {
-                        for (class62_27 = (class62) Client.field854.method4892(); class62_27 != null; class62_27 = (class62) Client.field854.method4894()) {
-                           if (class62_27.field574) {
-                              class62_27.unlink();
-                              class62_27.field575.field2642 = false;
+                        for (musicPatchPcmStream_27 = (MusicPatchPcmStream) Client.field854.method4892(); musicPatchPcmStream_27 != null; musicPatchPcmStream_27 = (MusicPatchPcmStream) Client.field854.method4894()) {
+                           if (musicPatchPcmStream_27.field574) {
+                              musicPatchPcmStream_27.unlink();
+                              musicPatchPcmStream_27.field575.field2642 = false;
                            }
                         }
 
@@ -140,9 +140,9 @@ final class class2 implements class0 {
                         }
                      }
                   } else if (widget_10.field2697 && MouseHandler.MouseHandler_x >= i_13 && MouseHandler.MouseHandler_y >= i_14 && MouseHandler.MouseHandler_x < i_15 && MouseHandler.MouseHandler_y < i_16) {
-                     for (class62_27 = (class62) Client.field854.method4892(); class62_27 != null; class62_27 = (class62) Client.field854.method4894()) {
-                        if (class62_27.field574 && class62_27.field575.field2671 == class62_27.field581) {
-                           class62_27.unlink();
+                     for (musicPatchPcmStream_27 = (MusicPatchPcmStream) Client.field854.method4892(); musicPatchPcmStream_27 != null; musicPatchPcmStream_27 = (MusicPatchPcmStream) Client.field854.method4894()) {
+                        if (musicPatchPcmStream_27.field574 && musicPatchPcmStream_27.field575.field2671 == musicPatchPcmStream_27.field581) {
+                           musicPatchPcmStream_27.unlink();
                         }
                      }
                   }
@@ -190,7 +190,7 @@ final class class2 implements class0 {
 
                               if (PacketWriter.method2244(widget_10.field2650[i_21][i_24]) || bool_25) {
                                  bool_22 = true;
-                                 if (widget_10.field2578 != null && widget_10.field2578[i_21] > Client.field881) {
+                                 if (widget_10.field2578 != null && widget_10.field2578[i_21] > Client.cycle) {
                                     break;
                                  }
 
@@ -228,9 +228,9 @@ final class class2 implements class0 {
 
                            if (i_24 != 0) {
                               if (widget_10.field2578[i_21] == 0) {
-                                 widget_10.field2578[i_21] = i_24 + Client.field881 + widget_10.field2588[i_21];
+                                 widget_10.field2578[i_21] = i_24 + Client.cycle + widget_10.field2588[i_21];
                               } else {
-                                 widget_10.field2578[i_21] = i_24 + Client.field881;
+                                 widget_10.field2578[i_21] = i_24 + Client.cycle;
                               }
                            } else {
                               widget_10.field2578[i_21] = Integer.MAX_VALUE;
@@ -279,14 +279,14 @@ final class class2 implements class0 {
                      }
 
                      if (widget_10.field2551) {
-                        class62 class62_30;
+                        MusicPatchPcmStream musicPatchPcmStream_30;
                         if (bool_34 && Client.field853 != 0 && widget_10.field2671 != null) {
-                           class62_30 = new class62();
-                           class62_30.field574 = true;
-                           class62_30.field575 = widget_10;
-                           class62_30.field577 = Client.field853;
-                           class62_30.field581 = widget_10.field2671;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field574 = true;
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field577 = Client.field853;
+                           musicPatchPcmStream_30.field581 = widget_10.field2671;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (Client.field828 != null || Buffer.field127 != null || Client.field674) {
@@ -298,93 +298,93 @@ final class class2 implements class0 {
                         if (!widget_10.field2589 && bool_22) {
                            widget_10.field2589 = true;
                            if (widget_10.field2652 != null) {
-                              class62_30 = new class62();
-                              class62_30.field574 = true;
-                              class62_30.field575 = widget_10;
-                              class62_30.field576 = MouseHandler.field483 - i_11;
-                              class62_30.field577 = MouseHandler.field495 - i_12;
-                              class62_30.field581 = widget_10.field2652;
-                              Client.field854.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field574 = true;
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field576 = MouseHandler.field483 - i_11;
+                              musicPatchPcmStream_30.field577 = MouseHandler.field495 - i_12;
+                              musicPatchPcmStream_30.field581 = widget_10.field2652;
+                              Client.field854.addFirst(musicPatchPcmStream_30);
                            }
                         }
 
                         if (widget_10.field2589 && bool_35 && widget_10.field2653 != null) {
-                           class62_30 = new class62();
-                           class62_30.field574 = true;
-                           class62_30.field575 = widget_10;
-                           class62_30.field576 = MouseHandler.MouseHandler_x - i_11;
-                           class62_30.field577 = MouseHandler.MouseHandler_y - i_12;
-                           class62_30.field581 = widget_10.field2653;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field574 = true;
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field576 = MouseHandler.MouseHandler_x - i_11;
+                           musicPatchPcmStream_30.field577 = MouseHandler.MouseHandler_y - i_12;
+                           musicPatchPcmStream_30.field581 = widget_10.field2653;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (widget_10.field2589 && !bool_35) {
                            widget_10.field2589 = false;
                            if (widget_10.field2654 != null) {
-                              class62_30 = new class62();
-                              class62_30.field574 = true;
-                              class62_30.field575 = widget_10;
-                              class62_30.field576 = MouseHandler.MouseHandler_x - i_11;
-                              class62_30.field577 = MouseHandler.MouseHandler_y - i_12;
-                              class62_30.field581 = widget_10.field2654;
-                              Client.field856.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field574 = true;
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field576 = MouseHandler.MouseHandler_x - i_11;
+                              musicPatchPcmStream_30.field577 = MouseHandler.MouseHandler_y - i_12;
+                              musicPatchPcmStream_30.field581 = widget_10.field2654;
+                              Client.field856.addFirst(musicPatchPcmStream_30);
                            }
                         }
 
                         if (bool_35 && widget_10.field2637 != null) {
-                           class62_30 = new class62();
-                           class62_30.field574 = true;
-                           class62_30.field575 = widget_10;
-                           class62_30.field576 = MouseHandler.MouseHandler_x - i_11;
-                           class62_30.field577 = MouseHandler.MouseHandler_y - i_12;
-                           class62_30.field581 = widget_10.field2637;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field574 = true;
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field576 = MouseHandler.MouseHandler_x - i_11;
+                           musicPatchPcmStream_30.field577 = MouseHandler.MouseHandler_y - i_12;
+                           musicPatchPcmStream_30.field581 = widget_10.field2637;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (!widget_10.field2642 && bool_34) {
                            widget_10.field2642 = true;
                            if (widget_10.field2608 != null) {
-                              class62_30 = new class62();
-                              class62_30.field574 = true;
-                              class62_30.field575 = widget_10;
-                              class62_30.field576 = MouseHandler.MouseHandler_x - i_11;
-                              class62_30.field577 = MouseHandler.MouseHandler_y - i_12;
-                              class62_30.field581 = widget_10.field2608;
-                              Client.field854.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field574 = true;
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field576 = MouseHandler.MouseHandler_x - i_11;
+                              musicPatchPcmStream_30.field577 = MouseHandler.MouseHandler_y - i_12;
+                              musicPatchPcmStream_30.field581 = widget_10.field2608;
+                              Client.field854.addFirst(musicPatchPcmStream_30);
                            }
                         }
 
                         if (widget_10.field2642 && bool_34 && widget_10.field2581 != null) {
-                           class62_30 = new class62();
-                           class62_30.field574 = true;
-                           class62_30.field575 = widget_10;
-                           class62_30.field576 = MouseHandler.MouseHandler_x - i_11;
-                           class62_30.field577 = MouseHandler.MouseHandler_y - i_12;
-                           class62_30.field581 = widget_10.field2581;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field574 = true;
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field576 = MouseHandler.MouseHandler_x - i_11;
+                           musicPatchPcmStream_30.field577 = MouseHandler.MouseHandler_y - i_12;
+                           musicPatchPcmStream_30.field581 = widget_10.field2581;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (widget_10.field2642 && !bool_34) {
                            widget_10.field2642 = false;
                            if (widget_10.field2658 != null) {
-                              class62_30 = new class62();
-                              class62_30.field574 = true;
-                              class62_30.field575 = widget_10;
-                              class62_30.field576 = MouseHandler.MouseHandler_x - i_11;
-                              class62_30.field577 = MouseHandler.MouseHandler_y - i_12;
-                              class62_30.field581 = widget_10.field2658;
-                              Client.field856.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field574 = true;
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field576 = MouseHandler.MouseHandler_x - i_11;
+                              musicPatchPcmStream_30.field577 = MouseHandler.MouseHandler_y - i_12;
+                              musicPatchPcmStream_30.field581 = widget_10.field2658;
+                              Client.field856.addFirst(musicPatchPcmStream_30);
                            }
                         }
 
                         if (widget_10.field2602 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2602;
-                           Client.field852.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2602;
+                           Client.field852.addFirst(musicPatchPcmStream_30);
                         }
 
-                        class62 class62_32;
+                        MusicPatchPcmStream musicPatchPcmStream_32;
                         int i_36;
                         int i_37;
                         if (widget_10.field2626 != null && Client.field806 > widget_10.field2592) {
@@ -395,19 +395,19 @@ final class class2 implements class0 {
 
                                  for (i_37 = 0; i_37 < widget_10.field2664.length; i_37++) {
                                     if (i_24 == widget_10.field2664[i_37]) {
-                                       class62_32 = new class62();
-                                       class62_32.field575 = widget_10;
-                                       class62_32.field581 = widget_10.field2626;
-                                       Client.field854.method4917(class62_32);
+                                       musicPatchPcmStream_32 = new MusicPatchPcmStream();
+                                       musicPatchPcmStream_32.field575 = widget_10;
+                                       musicPatchPcmStream_32.field581 = widget_10.field2626;
+                                       Client.field854.addFirst(musicPatchPcmStream_32);
                                        break label865;
                                     }
                                  }
                               }
                            } else {
-                              class62_30 = new class62();
-                              class62_30.field575 = widget_10;
-                              class62_30.field581 = widget_10.field2626;
-                              Client.field854.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field581 = widget_10.field2626;
+                              Client.field854.addFirst(musicPatchPcmStream_30);
                            }
 
                            widget_10.field2592 = Client.field806;
@@ -421,19 +421,19 @@ final class class2 implements class0 {
 
                                  for (i_37 = 0; i_37 < widget_10.field2666.length; i_37++) {
                                     if (i_24 == widget_10.field2666[i_37]) {
-                                       class62_32 = new class62();
-                                       class62_32.field575 = widget_10;
-                                       class62_32.field581 = widget_10.field2665;
-                                       Client.field854.method4917(class62_32);
+                                       musicPatchPcmStream_32 = new MusicPatchPcmStream();
+                                       musicPatchPcmStream_32.field575 = widget_10;
+                                       musicPatchPcmStream_32.field581 = widget_10.field2665;
+                                       Client.field854.addFirst(musicPatchPcmStream_32);
                                        break label841;
                                     }
                                  }
                               }
                            } else {
-                              class62_30 = new class62();
-                              class62_30.field575 = widget_10;
-                              class62_30.field581 = widget_10.field2665;
-                              Client.field854.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field581 = widget_10.field2665;
+                              Client.field854.addFirst(musicPatchPcmStream_30);
                            }
 
                            widget_10.field2603 = Client.field671;
@@ -447,75 +447,75 @@ final class class2 implements class0 {
 
                                  for (i_37 = 0; i_37 < widget_10.field2668.length; i_37++) {
                                     if (i_24 == widget_10.field2668[i_37]) {
-                                       class62_32 = new class62();
-                                       class62_32.field575 = widget_10;
-                                       class62_32.field581 = widget_10.field2594;
-                                       Client.field854.method4917(class62_32);
+                                       musicPatchPcmStream_32 = new MusicPatchPcmStream();
+                                       musicPatchPcmStream_32.field575 = widget_10;
+                                       musicPatchPcmStream_32.field581 = widget_10.field2594;
+                                       Client.field854.addFirst(musicPatchPcmStream_32);
                                        break label817;
                                     }
                                  }
                               }
                            } else {
-                              class62_30 = new class62();
-                              class62_30.field575 = widget_10;
-                              class62_30.field581 = widget_10.field2594;
-                              Client.field854.method4917(class62_30);
+                              musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_30.field575 = widget_10;
+                              musicPatchPcmStream_30.field581 = widget_10.field2594;
+                              Client.field854.addFirst(musicPatchPcmStream_30);
                            }
 
                            widget_10.field2700 = Client.field846;
                         }
 
                         if (Client.field847 > widget_10.field2689 && widget_10.field2672 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2672;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2672;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (Client.field672 > widget_10.field2689 && widget_10.field2674 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2674;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2674;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (Client.field849 > widget_10.field2689 && widget_10.field2623 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2623;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2623;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (Client.field915 > widget_10.field2689 && widget_10.field2622 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2622;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2622;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (Client.field851 > widget_10.field2689 && widget_10.field2681 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2681;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2681;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         if (Client.field844 > widget_10.field2689 && widget_10.field2676 != null) {
-                           class62_30 = new class62();
-                           class62_30.field575 = widget_10;
-                           class62_30.field581 = widget_10.field2676;
-                           Client.field854.method4917(class62_30);
+                           musicPatchPcmStream_30 = new MusicPatchPcmStream();
+                           musicPatchPcmStream_30.field575 = widget_10;
+                           musicPatchPcmStream_30.field581 = widget_10.field2676;
+                           Client.field854.addFirst(musicPatchPcmStream_30);
                         }
 
                         widget_10.field2689 = Client.field673;
                         if (widget_10.field2673 != null) {
                            for (i_36 = 0; i_36 < Client.field754; i_36++) {
-                              class62 class62_31 = new class62();
-                              class62_31.field575 = widget_10;
-                              class62_31.field580 = Client.field921[i_36];
-                              class62_31.field587 = Client.field877[i_36];
-                              class62_31.field581 = widget_10.field2673;
-                              Client.field854.method4917(class62_31);
+                              MusicPatchPcmStream musicPatchPcmStream_31 = new MusicPatchPcmStream();
+                              musicPatchPcmStream_31.field575 = widget_10;
+                              musicPatchPcmStream_31.field580 = Client.field921[i_36];
+                              musicPatchPcmStream_31.field587 = Client.field877[i_36];
+                              musicPatchPcmStream_31.field581 = widget_10.field2673;
+                              Client.field854.addFirst(musicPatchPcmStream_31);
                            }
                         }
                      }
@@ -552,10 +552,10 @@ final class class2 implements class0 {
                      class61 class61_28 = (class61) Client.field816.method5952((long) widget_10.field2688);
                      if (class61_28 != null) {
                         if (class61_28.field569 == 0 && MouseHandler.MouseHandler_x >= i_13 && MouseHandler.MouseHandler_y >= i_14 && MouseHandler.MouseHandler_x < i_15 && MouseHandler.MouseHandler_y < i_16 && !Client.field674) {
-                           for (class62 class62_29 = (class62) Client.field854.method4892(); class62_29 != null; class62_29 = (class62) Client.field854.method4894()) {
-                              if (class62_29.field574) {
-                                 class62_29.unlink();
-                                 class62_29.field575.field2642 = false;
+                           for (MusicPatchPcmStream musicPatchPcmStream_29 = (MusicPatchPcmStream) Client.field854.method4892(); musicPatchPcmStream_29 != null; musicPatchPcmStream_29 = (MusicPatchPcmStream) Client.field854.method4894()) {
+                              if (musicPatchPcmStream_29.field574) {
+                                 musicPatchPcmStream_29.unlink();
+                                 musicPatchPcmStream_29.field575.field2642 = false;
                               }
                            }
 

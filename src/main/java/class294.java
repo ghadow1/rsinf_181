@@ -11,7 +11,7 @@ public class class294 {
       class231_4.field3116 = class308_2;
       NodeDeque nodeDeque_5 = class234.field3146;
       synchronized(class234.field3146) {
-         class234.field3146.method4917(class231_4);
+         class234.field3146.addFirst(class231_4);
       }
 
       Object object_10 = class234.field3147;

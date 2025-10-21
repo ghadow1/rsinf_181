@@ -6,14 +6,14 @@ public class class96 {
    static int field1327;
    static class260 field1324 = new class260();
 
-   static void method2267(class62 class62_0, int i_1) {
-      Object[] arr_3 = class62_0.field581;
+   static void method2267(MusicPatchPcmStream musicPatchPcmStream_0, int i_1) {
+      Object[] arr_3 = musicPatchPcmStream_0.field581;
       class92 class92_4;
       int i_18;
-      if (class187.method3627(class62_0.field584)) {
+      if (class187.method3627(musicPatchPcmStream_0.field584)) {
          Buffer.field121 = (class41) arr_3[0];
          class241 class241_5 = class222.method4118(Buffer.field121.field355);
-         class92_4 = class75.method1828(class62_0.field584, class241_5.field3213, class241_5.field3230);
+         class92_4 = class75.method1828(musicPatchPcmStream_0.field584, class241_5.field3213, class241_5.field3230);
       } else {
          i_18 = ((Integer) arr_3[0]).intValue();
          class92_4 = class128.method2947(i_18);
@@ -43,46 +43,46 @@ public class class96 {
                   if (arr_3[i_11] instanceof Integer) {
                      i_12 = ((Integer) arr_3[i_11]).intValue();
                      if (i_12 == 0x80000001) {
-                        i_12 = class62_0.field576;
+                        i_12 = musicPatchPcmStream_0.field576;
                      }
 
                      if (i_12 == 0x80000002) {
-                        i_12 = class62_0.field577;
+                        i_12 = musicPatchPcmStream_0.field577;
                      }
 
                      if (i_12 == 0x80000003) {
-                        i_12 = class62_0.field575 != null ? class62_0.field575.field2688 : -1;
+                        i_12 = musicPatchPcmStream_0.field575 != null ? musicPatchPcmStream_0.field575.field2688 : -1;
                      }
 
                      if (i_12 == 0x80000004) {
-                        i_12 = class62_0.field578;
+                        i_12 = musicPatchPcmStream_0.field578;
                      }
 
                      if (i_12 == 0x80000005) {
-                        i_12 = class62_0.field575 != null ? class62_0.field575.field2565 : -1;
+                        i_12 = musicPatchPcmStream_0.field575 != null ? musicPatchPcmStream_0.field575.field2565 : -1;
                      }
 
                      if (i_12 == 0x80000006) {
-                        i_12 = class62_0.field579 != null ? class62_0.field579.field2688 : -1;
+                        i_12 = musicPatchPcmStream_0.field579 != null ? musicPatchPcmStream_0.field579.field2688 : -1;
                      }
 
                      if (i_12 == 0x80000007) {
-                        i_12 = class62_0.field579 != null ? class62_0.field579.field2565 : -1;
+                        i_12 = musicPatchPcmStream_0.field579 != null ? musicPatchPcmStream_0.field579.field2565 : -1;
                      }
 
                      if (i_12 == 0x80000008) {
-                        i_12 = class62_0.field580;
+                        i_12 = musicPatchPcmStream_0.field580;
                      }
 
                      if (i_12 == 0x80000009) {
-                        i_12 = class62_0.field587;
+                        i_12 = musicPatchPcmStream_0.field587;
                      }
 
                      MouseRecorder.field1095[i_9++] = i_12;
                   } else if (arr_3[i_11] instanceof String) {
                      string_19 = (String) arr_3[i_11];
                      if (string_19.equals("event_opbase")) {
-                        string_19 = class62_0.field582;
+                        string_19 = musicPatchPcmStream_0.field582;
                      }
 
                      class334.field4032[i_10++] = string_19;
@@ -90,7 +90,7 @@ public class class96 {
                }
 
                i_11 = 0;
-               MouseRecorder.field1106 = class62_0.field583;
+               MouseRecorder.field1106 = musicPatchPcmStream_0.field583;
 
                while (true) {
                   ++i_11;

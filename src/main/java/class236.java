@@ -56,7 +56,7 @@ public class class236 {
 
       class247.field3292 = i_5;
       class30.field267 = i_6;
-      ItemContainer_2.field373 = i_3;
+      WorldMapRectangle.field373 = i_3;
       class75.field1092 = Client.menuOptionsCount * 15 + 22;
    }
 

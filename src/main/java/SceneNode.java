@@ -1,6 +1,6 @@
 import java.io.File;
 
-final class class1 implements class0 {
+final class SceneNode implements class0 {
 
    static File field2;
    static int field1;
@@ -10,8 +10,8 @@ final class class1 implements class0 {
       class300_2.writeIntBigEndian(integer_1.intValue());
    }
 
-   static final void method10(RemoveNode removeNode_0) {
-      System.out.println("Here " + removeNode_0.toString());
+   static final void addSceneNode(RenderableSceneNode RenderableSceneNode_0) {
+      System.out.println("Adding scene node " + RenderableSceneNode_0.toString());
       PacketBuffer buffer3_2 = Client.data.packetBuffer;
       int i_3;
       int i_4;
@@ -20,7 +20,7 @@ final class class1 implements class0 {
       int i_7;
       int i_8;
       int i_9;
-      if (RemoveNode.field2320 == removeNode_0) {
+      if (RenderableSceneNode.field2320 == RenderableSceneNode_0) {
          System.out.println("Debug marker 678");
 
          i_3 = buffer3_2.readInvertedUnsignedByte();
@@ -31,19 +31,19 @@ final class class1 implements class0 {
          i_8 = (i_7 >> 4 & 0x7) + class311.localSceneX;
          i_9 = (i_7 & 0x7) + UserComparator10.localSceneY;
          if (i_8 >= 0 && i_9 >= 0 && i_8 < 104 && i_9 < 104) {
-            class201.method3885(ItemContainer_2.plane, i_8, i_9, i_6, -1, i_4, i_5, 0, -1, -1700353173);
+            SceneSound.method3885(WorldMapRectangle.plane, i_8, i_9, i_6, -1, i_4, i_5, 0, -1);
          }
 
       } else {
          class87 class87_33;
-         if (RemoveNode.field2321 == removeNode_0) {
+         if (RenderableSceneNode.field2321 == RenderableSceneNode_0) {
             System.out.println("Debug marker 444");
             i_3 = buffer3_2.readOffsetUnsignedByte();
             i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
             i_5 = (i_3 & 0x7) + UserComparator10.localSceneY;
             i_6 = buffer3_2.readShortWithOffset2();
             if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
-               NodeDeque nodeDeque_32 = Client.groundItems[ItemContainer_2.plane][i_4][i_5];
+               NodeDeque nodeDeque_32 = Client.groundItems[WorldMapRectangle.plane][i_4][i_5];
                if (nodeDeque_32 != null) {
                   for (class87_33 = (class87) nodeDeque_32.method4892(); class87_33 != null; class87_33 = (class87) nodeDeque_32.method4894()) {
                      if ((i_6 & 0x7fff) == class87_33.field1244) {
@@ -53,10 +53,10 @@ final class class1 implements class0 {
                   }
 
                   if (nodeDeque_32.method4892() == null) {
-                     Client.groundItems[ItemContainer_2.plane][i_4][i_5] = null;
+                     Client.groundItems[WorldMapRectangle.plane][i_4][i_5] = null;
                   }
 
-                  class5.method60(i_4, i_5);
+                  class5.updatePendingSpawn(i_4, i_5);
                }
             }
 
@@ -67,36 +67,12 @@ final class class1 implements class0 {
             byte b_14;
             int i_15;
             int i_40;
-            if (RemoveNode.field2316 == removeNode_0) { //..15
-               System.out.println("Here 15 clear something 2");
-
-               i_3 = buffer3_2.readInvertedUnsignedByte() * 4;
-               i_4 = buffer3_2.readUnsignedShort();
-               i_5 = buffer3_2.readShortWithOffset();
-               i_6 = buffer3_2.readInvertedUnsignedByte() * 4;
-               i_7 = buffer3_2.readSignedShortLittleEndian();
-               i_8 = buffer3_2.readUnsignedByte();
-               i_9 = buffer3_2.readInvertedUnsignedByte();
-               i_10 = buffer3_2.readShortLittleEndian();
-               i_11 = buffer3_2.readOffsetUnsignedByte();
-               i_40 = (i_11 >> 4 & 0x7) + class311.localSceneX;
-               i_13 = (i_11 & 0x7) + UserComparator10.localSceneY;
-               b_14 = buffer3_2.readOffsetByte();
-               byte b_41 = buffer3_2.readNegatedByte();
-               i_15 = b_41 + i_40;
-               int i_42 = b_14 + i_13;
-               if (i_40 >= 0 && i_13 >= 0 && i_40 < 104 && i_13 < 104 && i_15 >= 0 && i_42 >= 0 && i_15 < 104 && i_42 < 104 && i_5 != 65535) {
-                  i_40 = i_40 * 128 + 64;
-                  i_13 = i_13 * 128 + 64;
-                  i_15 = i_15 * 128 + 64;
-                  i_42 = i_42 * 128 + 64;
-                  class86 class86_16 = new class86(i_5, ItemContainer_2.plane, i_40, i_13, class62.method1130(i_40, i_13, ItemContainer_2.plane) - i_6, i_10 + Client.field881, i_4 + Client.field881, i_8, i_9, i_7, i_3);
-                  class86_16.method2033(i_15, i_42, class62.method1130(i_15, i_42, ItemContainer_2.plane) - i_3, i_10 + Client.field881, -2118689642);
-                  Client.field670.method4917(class86_16);
-               }
-
-            } else if (RemoveNode.field2322 == removeNode_0) {
-               System.out.println("Here 7 clear something");
+            if (RenderableSceneNode.projectileNode == RenderableSceneNode_0) { //..15
+               //..Handle incoming projectiles to render
+               System.out.println("Node to add is a projectile, attempting to read projectile data.");
+               decodeIncomingProjectileData(buffer3_2);
+            } else if (RenderableSceneNode.field2322 == RenderableSceneNode_0) {
+               System.out.println("Some other node type");
 
                i_3 = buffer3_2.readShortLittleEndian();
                i_4 = buffer3_2.readShortWithOffset2();
@@ -105,7 +81,7 @@ final class class1 implements class0 {
                i_7 = (i_6 >> 4 & 0x7) + class311.localSceneX;
                i_8 = (i_6 & 0x7) + UserComparator10.localSceneY;
                if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
-                  NodeDeque nodeDeque_43 = Client.groundItems[ItemContainer_2.plane][i_7][i_8];
+                  NodeDeque nodeDeque_43 = Client.groundItems[WorldMapRectangle.plane][i_7][i_8];
                   if (nodeDeque_43 != null) {
                      for (class87 class87_35 = (class87) nodeDeque_43.method4892(); class87_35 != null; class87_35 = (class87) nodeDeque_43.method4894()) {
                         if ((i_3 & 0x7fff) == class87_35.field1244 && i_5 == class87_35.field1245) {
@@ -114,11 +90,11 @@ final class class1 implements class0 {
                         }
                      }
 
-                     class5.method60(i_7, i_8);
+                     class5.updatePendingSpawn(i_7, i_8);
                   }
                }
 
-            } else if (RemoveNode.field2315 == removeNode_0) {
+            } else if (RenderableSceneNode.field2315 == RenderableSceneNode_0) {
                System.out.println("Here 5 clear something");
 
                i_3 = buffer3_2.readShortWithOffset();
@@ -130,16 +106,16 @@ final class class1 implements class0 {
                   class87_33 = new class87();
                   class87_33.field1244 = i_4;
                   class87_33.field1245 = i_3;
-                  if (Client.groundItems[ItemContainer_2.plane][i_6][i_7] == null) {
-                     Client.groundItems[ItemContainer_2.plane][i_6][i_7] = new NodeDeque();
+                  if (Client.groundItems[WorldMapRectangle.plane][i_6][i_7] == null) {
+                     Client.groundItems[WorldMapRectangle.plane][i_6][i_7] = new NodeDeque();
                   }
 
-                  Client.groundItems[ItemContainer_2.plane][i_6][i_7].method4917(class87_33);
-                  class5.method60(i_6, i_7);
+                  Client.groundItems[WorldMapRectangle.plane][i_6][i_7].addFirst(class87_33);
+                  class5.updatePendingSpawn(i_6, i_7);
                }
 
             } else {
-               if (RemoveNode.field2319 == removeNode_0) {
+               if (RenderableSceneNode.field2319 == RenderableSceneNode_0) {
                   System.out.println("Here 5 clear something also");
                   i_3 = buffer3_2.readUnsignedByte();
                   i_4 = (i_3 >> 4 & 0x7) + class311.localSceneX;
@@ -162,7 +138,7 @@ final class class1 implements class0 {
                   }
                }
 
-               if (RemoveNode.clearItem == removeNode_0) {
+               if (RenderableSceneNode.clearItem == RenderableSceneNode_0) {
                   System.out.println("Here 14 clear something");
                   byte b_38 = buffer3_2.readNegatedByte();
                   i_4 = buffer3_2.readShortWithOffset2();
@@ -202,15 +178,15 @@ final class class1 implements class0 {
                      int i_23 = i_36 + (i_20 + 1 >> 1);
                      int i_24 = i_17 + (i_21 >> 1);
                      int i_25 = i_17 + (i_21 + 1 >> 1);
-                     int[][] ints_26 = class55.field516[ItemContainer_2.plane];
+                     int[][] ints_26 = class55.field516[WorldMapRectangle.plane];
                      int i_27 = ints_26[i_23][i_24] + ints_26[i_22][i_24] + ints_26[i_22][i_25] + ints_26[i_23][i_25] >> 2;
                      int i_28 = (i_36 << 7) + (i_20 << 6);
                      int i_29 = (i_17 << 7) + (i_21 << 6);
                      class127 class127_30 = class253_19.method4592(i_9, i_10, ints_26, i_28, i_27, i_29);
                      if (class127_30 != null) {
-                        class201.method3885(ItemContainer_2.plane, i_36, i_17, i_11, -1, 0, 0, i_7 + 1, i_4 + 1, -2048347982);
-                        class66_18.field614 = i_7 + Client.field881;
-                        class66_18.field622 = i_4 + Client.field881;
+                        SceneSound.method3885(WorldMapRectangle.plane, i_36, i_17, i_11, -1, 0, 0, i_7 + 1, i_4 + 1);
+                        class66_18.field614 = i_7 + Client.cycle;
+                        class66_18.field622 = i_4 + Client.cycle;
                         class66_18.field626 = class127_30;
                         class66_18.field633 = i_36 * 128 + i_20 * 64;
                         class66_18.field620 = i_17 * 128 + i_21 * 64;
@@ -236,7 +212,7 @@ final class class1 implements class0 {
                   }
                }
 
-               if (RemoveNode.field2323 == removeNode_0) {
+               if (RenderableSceneNode.field2323 == RenderableSceneNode_0) {
                   System.out.println("Debug marker 448888884");
 
                   i_3 = buffer3_2.readOffsetUnsignedByte();
@@ -248,10 +224,10 @@ final class class1 implements class0 {
                   i_9 = Client.field713[i_7];
                   i_10 = buffer3_2.readShortWithOffset();
                   if (i_4 >= 0 && i_5 >= 0 && i_4 < 104 && i_5 < 104) {
-                     class201.method3885(ItemContainer_2.plane, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1, -2141458231);
+                     SceneSound.method3885(WorldMapRectangle.plane, i_4, i_5, i_9, i_10, i_7, i_8, 0, -1);
                   }
 
-               } else if (RemoveNode.field2317 == removeNode_0) {
+               } else if (RenderableSceneNode.field2317 == RenderableSceneNode_0) {
                   System.out.println("Debug marker 345345345");
 
                   i_3 = buffer3_2.readUnsignedShort();
@@ -263,11 +239,11 @@ final class class1 implements class0 {
                   if (i_7 >= 0 && i_8 >= 0 && i_7 < 104 && i_8 < 104) {
                      i_7 = i_7 * 128 + 64;
                      i_8 = i_8 * 128 + 64;
-                     class77 class77_34 = new class77(i_3, ItemContainer_2.plane, i_7, i_8, class62.method1130(i_7, i_8, ItemContainer_2.plane) - i_4, i_5, Client.field881);
-                     Client.field785.method4917(class77_34);
+                     class77 class77_34 = new class77(i_3, WorldMapRectangle.plane, i_7, i_8, MusicPatchPcmStream.getTileHeight(i_7, i_8, WorldMapRectangle.plane) - i_4, i_5, Client.cycle);
+                     Client.field785.addFirst(class77_34);
                   }
 
-               } else if (RemoveNode.field2324 == removeNode_0) {
+               } else if (RenderableSceneNode.field2324 == RenderableSceneNode_0) {
                   i_3 = buffer3_2.readInvertedUnsignedByte();
                   i_4 = i_3 >> 2;
                   i_5 = i_3 & 0x3;
@@ -278,52 +254,52 @@ final class class1 implements class0 {
                   i_10 = buffer3_2.readUnsignedShort();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
-                        class136 class136_37 = class5.field22.method3088(ItemContainer_2.plane, i_8, i_9);
+                        class136 class136_37 = class5.field22.method3088(WorldMapRectangle.plane, i_8, i_9);
                         if (class136_37 != null) {
                            i_40 = GCMonitor.method770(class136_37.field1882);
                            if (i_4 == 2) {
-                              class136_37.field1884 = new class93(i_40, 2, i_5 + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class136_37.field1884);
-                              class136_37.field1881 = new class93(i_40, 2, i_5 + 1 & 0x3, ItemContainer_2.plane, i_8, i_9, i_10, false, class136_37.field1881);
+                              class136_37.field1884 = new class93(i_40, 2, i_5 + 4, WorldMapRectangle.plane, i_8, i_9, i_10, false, class136_37.field1884);
+                              class136_37.field1881 = new class93(i_40, 2, i_5 + 1 & 0x3, WorldMapRectangle.plane, i_8, i_9, i_10, false, class136_37.field1881);
                            } else {
-                              class136_37.field1884 = new class93(i_40, i_4, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, class136_37.field1884);
+                              class136_37.field1884 = new class93(i_40, i_4, i_5, WorldMapRectangle.plane, i_8, i_9, i_10, false, class136_37.field1884);
                            }
                         }
                      }
 
                      if (i_6 == 1) {
-                        class141 class141_44 = class5.field22.method3118(ItemContainer_2.plane, i_8, i_9);
+                        class141 class141_44 = class5.field22.method3118(WorldMapRectangle.plane, i_8, i_9);
                         if (class141_44 != null) {
                            i_40 = GCMonitor.method770(class141_44.field1917);
                            if (i_4 != 4 && i_4 != 5) {
                               if (i_4 == 6) {
-                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
+                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, WorldMapRectangle.plane, i_8, i_9, i_10, false, class141_44.field1924);
                               } else if (i_4 == 7) {
-                                 class141_44.field1924 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
+                                 class141_44.field1924 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, WorldMapRectangle.plane, i_8, i_9, i_10, false, class141_44.field1924);
                               } else if (i_4 == 8) {
-                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
-                                 class141_44.field1925 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1925);
+                                 class141_44.field1924 = new class93(i_40, 4, i_5 + 4, WorldMapRectangle.plane, i_8, i_9, i_10, false, class141_44.field1924);
+                                 class141_44.field1925 = new class93(i_40, 4, (i_5 + 2 & 0x3) + 4, WorldMapRectangle.plane, i_8, i_9, i_10, false, class141_44.field1925);
                               }
                            } else {
-                              class141_44.field1924 = new class93(i_40, 4, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, class141_44.field1924);
+                              class141_44.field1924 = new class93(i_40, 4, i_5, WorldMapRectangle.plane, i_8, i_9, i_10, false, class141_44.field1924);
                            }
                         }
                      }
 
                      if (i_6 == 2) {
-                        GameObject fileSystem_45 = class5.field22.method3195(ItemContainer_2.plane, i_8, i_9);
+                        GameObject fileSystem_45 = class5.field22.method3195(WorldMapRectangle.plane, i_8, i_9);
                         if (i_4 == 11) {
                            i_4 = 10;
                         }
 
                         if (fileSystem_45 != null) {
-                           fileSystem_45.field1933 = new class93(GCMonitor.method770(fileSystem_45.field1941), i_4, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, fileSystem_45.field1933);
+                           fileSystem_45.field1933 = new class93(GCMonitor.method770(fileSystem_45.field1941), i_4, i_5, WorldMapRectangle.plane, i_8, i_9, i_10, false, fileSystem_45.field1933);
                         }
                      }
 
                      if (i_6 == 3) {
-                        class123 class123_46 = class5.field22.method3091(ItemContainer_2.plane, i_8, i_9);
+                        class123 class123_46 = class5.field22.method3091(WorldMapRectangle.plane, i_8, i_9);
                         if (class123_46 != null) {
-                           class123_46.field1614 = new class93(GCMonitor.method770(class123_46.field1617), 22, i_5, ItemContainer_2.plane, i_8, i_9, i_10, false, class123_46.field1614);
+                           class123_46.field1614 = new class93(GCMonitor.method770(class123_46.field1617), 22, i_5, WorldMapRectangle.plane, i_8, i_9, i_10, false, class123_46.field1614);
                         }
                      }
                   }
@@ -331,6 +307,53 @@ final class class1 implements class0 {
                }
             }
          }
+      }
+   }
+
+   private static void decodeIncomingProjectileData(PacketBuffer buffer3_2) {
+      int i_40;
+      byte b_14;
+      int i_7;
+      int i_10;
+      int i_5;
+      int i_13;
+      int i_6;
+      int i_9;
+      int i_3;
+      int i_15;
+      int i_8;
+      int i_4;
+      int i_11;
+      //..Projectile information
+      i_3 = buffer3_2.readInvertedUnsignedByte() * 4; //..1
+      i_4 = buffer3_2.readUnsignedShort(); //..2
+      i_5 = buffer3_2.readShortWithOffset(); //..3
+      i_6 = buffer3_2.readInvertedUnsignedByte() * 4; //..4
+      i_7 = buffer3_2.readSignedShortLittleEndian(); //..5
+      i_8 = buffer3_2.readUnsignedByte(); //..6
+      i_9 = buffer3_2.readInvertedUnsignedByte(); //..7
+      i_10 = buffer3_2.readShortLittleEndian(); //..8
+      //..Projectile location ?
+      i_11 = buffer3_2.readOffsetUnsignedByte(); //..9
+      i_40 = (i_11 >> 4 & 0x7) + class311.localSceneX;
+      i_13 = (i_11 & 0x7) + UserComparator10.localSceneY;
+      //..Unknown
+      b_14 = buffer3_2.readOffsetByte(); //..10
+      byte b_41 = buffer3_2.readNegatedByte(); //..11
+
+      i_15 = b_41 + i_40;
+      int i_42 = b_14 + i_13;
+      if (i_40 >= 0 && i_13 >= 0 && i_40 < 104 && i_13 < 104 && i_15 >= 0 && i_42 >= 0 && i_15 < 104 && i_42 < 104 && i_5 != 65535) {
+         i_40 = i_40 * 128 + 64;
+         i_13 = i_13 * 128 + 64;
+         i_15 = i_15 * 128 + 64;
+         i_42 = i_42 * 128 + 64;
+
+         //..Projectile(int i_1, int i_2, int sourceX, int sourceY, int sourceZ, int i_6, int cycleEnd, int slope, int startHeight, int i_10, int i_11) {
+         Projectile projectile = new Projectile(i_5, WorldMapRectangle.plane, i_40, i_13, MusicPatchPcmStream.getTileHeight(i_40, i_13, WorldMapRectangle.plane) - i_6, i_10 + Client.cycle, i_4 + Client.cycle, i_8, i_9, i_7, i_3);
+         projectile.setDestination(i_15, i_42, MusicPatchPcmStream.getTileHeight(i_15, i_42, WorldMapRectangle.plane) - i_3, i_10 + Client.cycle);
+
+         Client.projectiles.addFirst(projectile);
       }
    }
 

@@ -1376,7 +1376,7 @@ public class Widget extends LinkedListNode {
          }
 
          MouseHandler.field499 = Client.localPlayer.x;
-         int i_3 = class62.method1130(Client.localPlayer.x, Client.localPlayer.y, ItemContainer_2.plane) - Client.field728;
+         int i_3 = MusicPatchPcmStream.getTileHeight(Client.localPlayer.x, Client.localPlayer.y, WorldMapRectangle.plane) - Client.field728;
          if (i_3 < Client.field729) {
             Client.field729 = i_3;
          }

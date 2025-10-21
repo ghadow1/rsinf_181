@@ -66,7 +66,7 @@ public final class class66 extends class69 {
             class127 class127_5;
             class127[] arr_6;
             if (!this.field634 && super.field986 != -1 && super.field987 != -1) {
-               class127_5 = class201.method3887(super.field986, (byte) 43).method4406(super.field987, 1645713423);
+               class127_5 = SceneSound.method3887(super.field986).method4406(super.field987);
                if (class127_5 != null) {
                   class127_5.method2901(0, -super.field990, 0);
                   arr_6 = new class127[] {class127_4, class127_5};
@@ -75,11 +75,11 @@ public final class class66 extends class69 {
             }
 
             if (!this.field634 && this.field626 != null) {
-               if (Client.field881 >= this.field622) {
+               if (Client.cycle >= this.field622) {
                   this.field626 = null;
                }
 
-               if (Client.field881 >= this.field614 && Client.field881 < this.field622) {
+               if (Client.cycle >= this.field614 && Client.cycle < this.field622) {
                   class127_5 = this.field626;
                   class127_5.method2901(this.field633 - super.x, this.field624 - this.field623, this.field620 - super.y);
                   if (super.field1000 == 512) {

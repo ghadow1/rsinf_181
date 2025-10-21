@@ -14,17 +14,17 @@ public class class31 {
       StringBuilder stringbuilder_10000 = new StringBuilder();
       stringbuilder_10000 = stringbuilder_10000.append("Please remove ").append(string_0);
       String string_2 = stringbuilder_10000.append(" from your friend list first").toString();
-      class62.method1132(30, "", string_2);
+      MusicPatchPcmStream.method1132(30, "", string_2);
    }
 
    static void method542() {
       if (Client.isSpellSelected) {
          Widget widget_1 = Client.method1649(class41.field359, Client.field848);
          if (widget_1 != null && widget_1.field2662 != null) {
-            class62 class62_2 = new class62();
-            class62_2.field575 = widget_1;
-            class62_2.field581 = widget_1.field2662;
-            class184.method3613(class62_2);
+            MusicPatchPcmStream musicPatchPcmStream_2 = new MusicPatchPcmStream();
+            musicPatchPcmStream_2.field575 = widget_1;
+            musicPatchPcmStream_2.field581 = widget_1.field2662;
+            class184.method3613(musicPatchPcmStream_2);
          }
 
          Client.isSpellSelected = false;
@@ -47,12 +47,12 @@ public class class31 {
                }
             }
 
-            class62 class62_6;
+            MusicPatchPcmStream musicPatchPcmStream_6;
             if (i_1 == 0 && widget_4.field2677 != null) {
-               class62_6 = new class62();
-               class62_6.field575 = widget_4;
-               class62_6.field581 = widget_4.field2677;
-               class184.method3613(class62_6);
+               musicPatchPcmStream_6 = new MusicPatchPcmStream();
+               musicPatchPcmStream_6.field575 = widget_4;
+               musicPatchPcmStream_6.field581 = widget_4.field2677;
+               class184.method3613(musicPatchPcmStream_6);
             }
 
             if (i_1 == 1 && widget_4.field2678 != null) {
@@ -63,10 +63,10 @@ public class class31 {
                   }
                }
 
-               class62_6 = new class62();
-               class62_6.field575 = widget_4;
-               class62_6.field581 = widget_4.field2678;
-               class184.method3613(class62_6);
+               musicPatchPcmStream_6 = new MusicPatchPcmStream();
+               musicPatchPcmStream_6.field575 = widget_4;
+               musicPatchPcmStream_6.field581 = widget_4.field2678;
+               class184.method3613(musicPatchPcmStream_6);
             }
          }
       }
@@ -75,7 +75,7 @@ public class class31 {
 
    static int method540(int i_0) {
       if (i_0 == 3300) {
-         MouseRecorder.field1098[++class70.field1014 - 1] = Client.field881;
+         MouseRecorder.field1098[++class70.field1014 - 1] = Client.cycle;
          return 1;
       } else {
          int i_4;
@@ -117,9 +117,9 @@ public class class31 {
          } else {
             int i_6;
             if (i_0 == 3308) {
-               i_4 = ItemContainer_2.plane;
+               i_4 = WorldMapRectangle.plane;
                i_5 = (Client.localPlayer.x >> 7) + class196.field2389;
-               i_6 = (Client.localPlayer.y >> 7) + class1.field1;
+               i_6 = (Client.localPlayer.y >> 7) + SceneNode.field1;
                MouseRecorder.field1098[++class70.field1014 - 1] = (i_5 << 14) + i_6 + (i_4 << 28);
                return 1;
             } else if (i_0 == 3309) {

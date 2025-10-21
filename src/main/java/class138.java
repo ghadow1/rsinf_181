@@ -30,7 +30,7 @@ public class class138 extends DualNode {
             }
 
             class132_10 = new class132(i_11, bytes_13);
-            nodeDeque_5.method4917(class132_10);
+            nodeDeque_5.addFirst(class132_10);
          }
 
          this.field1893[ints_7[i_8]] = new class125(bytes_9, class132_10);

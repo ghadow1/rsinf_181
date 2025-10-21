@@ -166,7 +166,7 @@ public class item {
          obj_6 = new AbstractWorldMapData();
          break;
       case 3:
-         obj_6 = new ItemContainer_2();
+         obj_6 = new WorldMapRectangle();
          break;
       default:
          throw new IllegalStateException("");

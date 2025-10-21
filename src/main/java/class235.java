@@ -72,7 +72,7 @@ public class class235 extends class233 {
                class231_5.field3117 = this;
                NodeDeque nodeDeque_6 = class234.field3146;
                synchronized(class234.field3146) {
-                  class234.field3146.method4917(class231_5);
+                  class234.field3146.addFirst(class231_5);
                }
 
                Object object_11 = class234.field3147;

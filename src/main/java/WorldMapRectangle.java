@@ -1,4 +1,4 @@
-public class ItemContainer_2 implements class37 {
+public class WorldMapRectangle implements class37 {
 
    static int plane;
    static int field373;

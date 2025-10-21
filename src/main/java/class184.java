@@ -23,8 +23,8 @@ public class class184 implements class181 {
       this.field2313 = i_1;
    }
 
-   public static void method3613(class62 class62_0) {
-      class96.method2267(class62_0, 500000);
+   public static void method3613(MusicPatchPcmStream musicPatchPcmStream_0) {
+      class96.method2267(musicPatchPcmStream_0, 500000);
    }
 
 }

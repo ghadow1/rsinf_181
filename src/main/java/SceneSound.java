@@ -1,4 +1,4 @@
-public class class201 extends LinkedListNode {
+public class SceneSound extends LinkedListNode {
 
    RawSound[] field2474 = new RawSound[128];
    short[] field2482 = new short[128];
@@ -9,7 +9,7 @@ public class class201 extends LinkedListNode {
    int[] field2480 = new int[128];
    int field2475;
 
-   class201(byte[] bytes_1) {
+   SceneSound(byte[] bytes_1) {
       ByteBuffer class300_2 = new ByteBuffer(bytes_1);
 
       int i_3;
@@ -484,7 +484,7 @@ public class class201 extends LinkedListNode {
       return bool_5;
    }
 
-   public static class243 method3887(int i_0, byte b_1) {
+   public static class243 method3887(int i_0) {
       class243 class243_2 = (class243) class243.field3239.get((long)i_0);
       if (class243_2 != null) {
          return class243_2;
@@ -493,7 +493,7 @@ public class class201 extends LinkedListNode {
          class243_2 = new class243();
          class243_2.field3241 = i_0;
          if (bytes_3 != null) {
-            class243_2.method4407(new ByteBuffer(bytes_3), 65111702);
+            class243_2.method4407(new ByteBuffer(bytes_3));
          }
 
          class243.field3239.put(class243_2, (long)i_0);
@@ -501,11 +501,11 @@ public class class201 extends LinkedListNode {
       }
    }
 
-   public static void method3888(byte b_0) {
+   public static void method3888() {
       class248.field3294.method3323();
    }
 
-   static final void method3885(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8, int i_9) {
+   static final void method3885(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7, int i_8) {
       class68 class68_10 = null;
 
       for (class68 class68_11 = (class68) Client.field783.method4892(); class68_11 != null; class68_11 = (class68) Client.field783.method4894()) {
@@ -522,7 +522,7 @@ public class class201 extends LinkedListNode {
          class68_10.field937 = i_1;
          class68_10.field934 = i_2;
          class294.method5327(class68_10);
-         Client.field783.method4917(class68_10);
+         Client.field783.addFirst(class68_10);
       }
 
       class68_10.field938 = i_4;

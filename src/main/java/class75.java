@@ -43,12 +43,12 @@ public final class class75 extends LinkedListNode {
 
    static void method1827() {
       if (class68.field944 != null) {
-         Client.field924 = Client.field881;
+         Client.field924 = Client.cycle;
          class68.field944.method4320();
 
          for (int i_1 = 0; i_1 < Client.field909.length; i_1++) {
             if (Client.field909[i_1] != null) {
-               class68.field944.method4316((Client.field909[i_1].x >> 7) + class196.field2389, (Client.field909[i_1].y >> 7) + class1.field1);
+               class68.field944.method4316((Client.field909[i_1].x >> 7) + class196.field2389, (Client.field909[i_1].y >> 7) + SceneNode.field1);
             }
          }
       }
@@ -70,7 +70,7 @@ public final class class75 extends LinkedListNode {
    static void method1826() {
       Client.field767 = 0;
       int i_1 = (Client.localPlayer.x >> 7) + class196.field2389;
-      int i_2 = (Client.localPlayer.y >> 7) + class1.field1;
+      int i_2 = (Client.localPlayer.y >> 7) + SceneNode.field1;
       if (i_1 >= 3053 && i_1 <= 3156 && i_2 >= 3056 && i_2 <= 3136) {
          Client.field767 = 1;
       }
@@ -89,7 +89,7 @@ public final class class75 extends LinkedListNode {
       item item_4 = class31.method538().method6327(i_0, -1144902380);
       int i_5 = Client.localPlayer.field629;
       int i_6 = (Client.localPlayer.x >> 7) + class196.field2389;
-      int i_7 = (Client.localPlayer.y >> 7) + class1.field1;
+      int i_7 = (Client.localPlayer.y >> 7) + SceneNode.field1;
       class213 class213_8 = new class213(i_5, i_6, i_7);
       class31.method538().method6315(item_4, class213_8, class213_1, bool_2);
    }

@@ -68,19 +68,19 @@ public class class250 extends DualNode {
             int i_6 = buffer3_1.method5445(1);
             if (i_6 == 0) {
                Client.npcIndices[++Client.npcCount - 1] = i_4;
-               NPC_5.field973 = Client.field881;
+               NPC_5.field973 = Client.cycle;
             } else {
                int i_7 = buffer3_1.method5445(2);
                if (i_7 == 0) {
                   Client.npcIndices[++Client.npcCount - 1] = i_4;
-                  NPC_5.field973 = Client.field881;
+                  NPC_5.field973 = Client.cycle;
                   Client.field859[++Client.field697 - 1] = i_4;
                } else {
                   int i_8;
                   int i_9;
                   if (i_7 == 1) {
                      Client.npcIndices[++Client.npcCount - 1] = i_4;
-                     NPC_5.field973 = Client.field881;
+                     NPC_5.field973 = Client.cycle;
                      i_8 = buffer3_1.method5445(3);
                      NPC_5.method1974(i_8, (byte) 1);
                      i_9 = buffer3_1.method5445(1);
@@ -89,7 +89,7 @@ public class class250 extends DualNode {
                      }
                   } else if (i_7 == 2) {
                      Client.npcIndices[++Client.npcCount - 1] = i_4;
-                     NPC_5.field973 = Client.field881;
+                     NPC_5.field973 = Client.cycle;
                      i_8 = buffer3_1.method5445(3);
                      NPC_5.method1974(i_8, (byte) 2);
                      i_9 = buffer3_1.method5445(3);
@@ -113,8 +113,8 @@ public class class250 extends DualNode {
       int i_4;
       int i_5;
       class258 class258_12;
-      if (class69_0.field995 > Client.field881) {
-         i_3 = class69_0.field995 - Client.field881;
+      if (class69_0.field995 > Client.cycle) {
+         i_3 = class69_0.field995 - Client.cycle;
          i_4 = class69_0.field991 * 128 + class69_0.field952 * 64;
          i_5 = class69_0.field993 * 128 + class69_0.field952 * 64;
          class69_0.x += (i_4 - class69_0.x) / i_3;
@@ -124,10 +124,10 @@ public class class250 extends DualNode {
       } else {
          int i_6;
          int i_8;
-         if (class69_0.field996 >= Client.field881) {
-            if (class69_0.field996 == Client.field881 || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981).field3522[class69_0.field951]) {
+         if (class69_0.field996 >= Client.cycle) {
+            if (class69_0.field996 == Client.cycle || class69_0.field981 == -1 || class69_0.field984 != 0 || class69_0.field974 + 1 > class7.method81(class69_0.field981).field3522[class69_0.field951]) {
                i_3 = class69_0.field996 - class69_0.field995;
-               i_4 = Client.field881 - class69_0.field995;
+               i_4 = Client.cycle - class69_0.field995;
                i_5 = class69_0.field991 * 128 + class69_0.field952 * 64;
                i_6 = class69_0.field993 * 128 + class69_0.field952 * 64;
                int i_7 = class69_0.field992 * 128 + class69_0.field952 * 64;
@@ -338,12 +338,12 @@ public class class250 extends DualNode {
          }
       }
 
-      if (class69_0.field986 != -1 && Client.field881 >= class69_0.field989) {
+      if (class69_0.field986 != -1 && Client.cycle >= class69_0.field989) {
          if (class69_0.field987 < 0) {
             class69_0.field987 = 0;
          }
 
-         i_3 = class201.method3887(class69_0.field986, (byte) -20).field3238;
+         i_3 = SceneSound.method3887(class69_0.field986).field3238;
          if (i_3 != -1) {
             class258 class258_13 = class7.method81(i_3);
             if (class258_13 != null && class258_13.field3520 != null) {
@@ -367,7 +367,7 @@ public class class250 extends DualNode {
 
       if (class69_0.field981 != -1 && class69_0.field984 <= 1) {
          class258_12 = class7.method81(class69_0.field981);
-         if (class258_12.field3525 == 1 && class69_0.field1008 > 0 && class69_0.field995 <= Client.field881 && class69_0.field996 < Client.field881) {
+         if (class258_12.field3525 == 1 && class69_0.field1008 > 0 && class69_0.field995 <= Client.cycle && class69_0.field996 < Client.cycle) {
             class69_0.field984 = 1;
             return;
          }

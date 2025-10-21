@@ -8,10 +8,10 @@ public class class83 {
 
    static final int method1995(int i_0) {
       if (class17.field117.field1060) {
-         return ItemContainer_2.plane;
+         return WorldMapRectangle.plane;
       } else {
-         int i_1 = class62.method1130(PacketBuffer.field3727, class1.field3, ItemContainer_2.plane);
-         return i_1 - GCMonitor.field383 < 800 && (class55.field502[ItemContainer_2.plane][PacketBuffer.field3727 >> 7][class1.field3 >> 7] & 0x4) != 0 ? ItemContainer_2.plane : 3;
+         int i_1 = MusicPatchPcmStream.getTileHeight(PacketBuffer.field3727, SceneNode.field3, WorldMapRectangle.plane);
+         return i_1 - GCMonitor.field383 < 800 && (class55.field502[WorldMapRectangle.plane][PacketBuffer.field3727 >> 7][SceneNode.field3 >> 7] & 0x4) != 0 ? WorldMapRectangle.plane : 3;
       }
    }
 
@@ -223,7 +223,7 @@ public class class83 {
          class75_6.method1821();
       }
 
-      class75.field1080.method4917(class75_6);
+      class75.field1080.addFirst(class75_6);
       if (class75_6.field1088 != null) {
          class75_6.field1089 = class75_6.field1086 + (int)(Math.random() * (double)(class75_6.field1081 - class75_6.field1086));
       }

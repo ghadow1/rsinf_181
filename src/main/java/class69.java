@@ -83,7 +83,7 @@ public abstract class class69 extends Entity {
       int i_11 = -1;
       int i_12 = 0;
       if (i_1 >= 0) {
-         ErrorHandler errorHandler_13 = class86.method2046(i_1, (byte) 0);
+         ErrorHandler errorHandler_13 = Projectile.method2046(i_1);
          i_11 = errorHandler_13.field3348;
          i_12 = errorHandler_13.field3344;
       }

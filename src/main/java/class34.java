@@ -22,8 +22,8 @@ public abstract class class34 {
          return false;
       } else {
          class241 class241_4 = class222.method4118(this.vmethod597(-602867254));
-         int i_5 = this.vmethod577((byte) 14);
-         int i_6 = this.vmethod593((byte) 1);
+         int i_5 = this.vmethod577();
+         int i_6 = this.vmethod593();
          switch(class241_4.field3226.field3459) {
          case 0:
             if (i_1 <= this.field296 - i_5 || i_1 > this.field296) {
@@ -69,9 +69,9 @@ public abstract class class34 {
       return this.vmethod597(1762345994) >= 0;
    }
 
-   abstract int vmethod577(byte var1);
+   abstract int vmethod577();
 
-   abstract int vmethod593(byte var1);
+   abstract int vmethod593();
 
    boolean method585(int i_1, int i_2) {
       class28 class28_4 = this.vmethod575(1426074195);

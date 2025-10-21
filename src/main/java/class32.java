@@ -12,10 +12,10 @@ public class class32 {
 
    static final void method544(int i_0, int i_1, int i_2) {
       if (i_0 >= 128 && i_1 >= 128 && i_0 <= 13056 && i_1 <= 13056) {
-         int i_4 = class62.method1130(i_0, i_1, ItemContainer_2.plane) - i_2;
+         int i_4 = MusicPatchPcmStream.getTileHeight(i_0, i_1, WorldMapRectangle.plane) - i_2;
          i_0 -= PacketBuffer.field3727;
          i_4 -= GCMonitor.field383;
-         i_1 -= class1.field3;
+         i_1 -= SceneNode.field3;
          int i_5 = Rasterizer3D.sine[class11.field77];
          int i_6 = Rasterizer3D.cosine[class11.field77];
          int i_7 = Rasterizer3D.sine[MouseRecorder.field1112];

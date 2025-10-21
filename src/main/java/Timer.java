@@ -81,19 +81,19 @@ public class Timer {
 
             Login.field1188 = 30;
          } else {
-            ItemContainer_2.method763(class197.field2405, "Animations");
-            ItemContainer_2.method763(class167.field2049, "Skeletons");
-            ItemContainer_2.method763(class13.field89, "Sound FX");
-            ItemContainer_2.method763(WorldMapCacheName.field307, "Maps");
-            ItemContainer_2.method763(class29.field253, "Music Tracks");
-            ItemContainer_2.method763(NPCDefinition.field3500, "Models");
-            ItemContainer_2.method763(Client.field683, "Sprites");
-            ItemContainer_2.method763(class32.field279, "Music Jingles");
-            ItemContainer_2.method763(Tile.field1647, "Music Samples");
-            ItemContainer_2.method763(class67.field650, "Music Patches");
-            ItemContainer_2.method763(ItemDefinition.field3457, "World Map");
-            ItemContainer_2.method763(Client.field684, "World Map Geography");
-            ItemContainer_2.method763(Entity.field1874, "World Map Ground");
+            WorldMapRectangle.method763(class197.field2405, "Animations");
+            WorldMapRectangle.method763(class167.field2049, "Skeletons");
+            WorldMapRectangle.method763(class13.field89, "Sound FX");
+            WorldMapRectangle.method763(WorldMapCacheName.field307, "Maps");
+            WorldMapRectangle.method763(class29.field253, "Music Tracks");
+            WorldMapRectangle.method763(NPCDefinition.field3500, "Models");
+            WorldMapRectangle.method763(Client.field683, "Sprites");
+            WorldMapRectangle.method763(class32.field279, "Music Jingles");
+            WorldMapRectangle.method763(Tile.field1647, "Music Samples");
+            WorldMapRectangle.method763(class67.field650, "Music Patches");
+            WorldMapRectangle.method763(ItemDefinition.field3457, "World Map");
+            WorldMapRectangle.method763(Client.field684, "World Map Geography");
+            WorldMapRectangle.method763(Entity.field1874, "World Map Ground");
             class159.field1995 = new class312();
             class159.field1995.method5903(WorldMapID.field232, (byte) 104);
             Login.field1189 = "Loaded update list";
@@ -193,7 +193,7 @@ public class Timer {
                class235_3.method4164("sl_arrows", "");
                class235_3.method4164("sl_stars", "");
                class235_3.method4164("sl_button", "");
-               i_5 = class62.method1121();
+               i_5 = MusicPatchPcmStream.method1121();
                if (i_27 < i_5) {
                   Login.field1189 = "Loading title screen - " + i_27 * 100 / i_5 + "%";
                   Login.field1188 = 50;

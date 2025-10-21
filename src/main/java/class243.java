@@ -17,7 +17,15 @@ public class class243 extends DualNode {
    short[] field3246;
    short[] field3245;
 
-   void method4410(ByteBuffer class300_1, int i_2, int i_3) {
+   static void method4415() {
+      if (class136.field1875 != null) {
+         class136.field1875.method6309(WorldMapRectangle.plane, (Client.localPlayer.x >> 7) + class196.field2389, (Client.localPlayer.y >> 7) + SceneNode.field1, false, (byte) -128);
+         class136.field1875.method6471();
+      }
+
+   }
+
+   void method4410(ByteBuffer class300_1, int i_2) {
       if (i_2 == 1) {
          this.field3242 = class300_1.readUnsignedShort();
       } else if (i_2 == 2) {
@@ -58,7 +66,7 @@ public class class243 extends DualNode {
 
    }
 
-   public final class127 method4406(int i_1, int i_2) {
+   public final class127 method4406(int i_1) {
       class127 class127_3 = (class127) field3240.get((long)this.field3241);
       if (class127_3 == null) {
          Model model_4 = Model.method2769(GCMonitor.field379, this.field3242, 0);
@@ -114,23 +122,15 @@ public class class243 extends DualNode {
       return class127_6;
    }
 
-   void method4407(ByteBuffer class300_1, int i_2) {
+   void method4407(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4410(class300_1, i_3, -1978905591);
+         this.method4410(class300_1, i_3);
       }
-   }
-
-   static void method4415(int i_0) {
-      if (class136.field1875 != null) {
-         class136.field1875.method6309(ItemContainer_2.plane, (Client.localPlayer.x >> 7) + class196.field2389, (Client.localPlayer.y >> 7) + class1.field1, false, (byte) -128);
-         class136.field1875.method6471(-1903923036);
-      }
-
    }
 
 }

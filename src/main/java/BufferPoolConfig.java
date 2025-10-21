@@ -5,7 +5,7 @@ public class BufferPoolConfig {
    static void method3654(Font font_0, Font font_1, Font font_2, byte b_3) {
       Login.field1208 = (class7.field46 - 765) / 2;
       Login.field1187 = Login.field1208 + 202;
-      class62.field585 = Login.field1187 + 180;
+      MusicPatchPcmStream.field585 = Login.field1187 + 180;
       if (Login.field1205) {
          class188.method3643(font_0, font_1, (byte) 11);
       } else {
@@ -89,14 +89,14 @@ public class BufferPoolConfig {
                int i_8;
                if (Login.loginIndex == 2) {
                   s_23 = 201;
-                  font_0.method5341(Login.Login_response1, class62.field585, s_23, 16776960, 0);
+                  font_0.method5341(Login.Login_response1, MusicPatchPcmStream.field585, s_23, 16776960, 0);
                   i_24 = s_23 + 15;
-                  font_0.method5341(Login.Login_response2, class62.field585, i_24, 16776960, 0);
+                  font_0.method5341(Login.Login_response2, MusicPatchPcmStream.field585, i_24, 16776960, 0);
                   i_24 += 15;
-                  font_0.method5341(Login.Login_response3, class62.field585, i_24, 16776960, 0);
+                  font_0.method5341(Login.Login_response3, MusicPatchPcmStream.field585, i_24, 16776960, 0);
                   i_24 += 15;
                   i_24 += 7;
-                  font_0.draw("Login: ", class62.field585 - 110, i_24, 16777215, 0);
+                  font_0.draw("Login: ", MusicPatchPcmStream.field585 - 110, i_24, 16777215, 0);
                   s_25 = 200;
                   string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.field1180) : Login.field1180;
 
@@ -104,19 +104,19 @@ public class BufferPoolConfig {
                      ;
                   }
 
-                  font_0.draw(AbstractFont.escapeBrackets(string_7) + (Login.field1202 == 0 & Client.field881 % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), class62.field585 - 70, i_24, 16777215, 0);
+                  font_0.draw(AbstractFont.escapeBrackets(string_7) + (Login.field1202 == 0 & Client.cycle % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), MusicPatchPcmStream.field585 - 70, i_24, 16777215, 0);
                   i_24 += 15;
-                  font_0.draw("Password: " + ClientPacketProt.method3612(Login.Login_password) + (Login.field1202 == 1 & Client.field881 % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), class62.field585 - 108, i_24, 16777215, 0);
+                  font_0.draw("Password: " + ClientPacketProt.method3612(Login.Login_password) + (Login.field1202 == 1 & Client.cycle % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), MusicPatchPcmStream.field585 - 108, i_24, 16777215, 0);
                   i_24 += 15;
                   s_23 = 277;
-                  i_8 = class62.field585 + -117;
+                  i_8 = MusicPatchPcmStream.field585 + -117;
                   boolean bool_10 = Client.field691;
                   boolean bool_11 = Login.field1199;
                   class324 class324_9 = bool_10 ? (bool_11 ? Login.field1185 : class112.field1466) : (bool_11 ? Message.field606 : Login.field1178);
                   class324_9.method6101(i_8, s_23);
                   i_8 = i_8 + class324_9.field3897 + 5;
                   font_1.draw("Remember username", i_8, s_23 + 13, 16776960, 0);
-                  i_8 = class62.field585 + 24;
+                  i_8 = MusicPatchPcmStream.field585 + 24;
                   boolean bool_14 = class17.field117.field1066;
                   boolean bool_15 = Login.field1184;
                   class324 class324_13 = bool_14 ? (bool_15 ? Login.field1185 : class112.field1466) : (bool_15 ? Message.field606 : Login.field1178);
@@ -124,11 +124,11 @@ public class BufferPoolConfig {
                   i_8 = i_8 + class324_13.field3897 + 5;
                   font_1.draw("Hide username", i_8, s_23 + 13, 16776960, 0);
                   i_24 = s_23 + 15;
-                  int i_16 = class62.field585 - 80;
+                  int i_16 = MusicPatchPcmStream.field585 - 80;
                   short s_17 = 321;
                   class240.field3207.method6101(i_16 - 73, s_17 - 20);
                   font_0.method5341("Login", i_16, s_17 + 5, 16777215, 0);
-                  i_16 = class62.field585 + 80;
+                  i_16 = MusicPatchPcmStream.field585 + 80;
                   class240.field3207.method6101(i_16 - 73, s_17 - 20);
                   font_0.method5341("Cancel", i_16, s_17 + 5, 16777215, 0);
                   s_23 = 357;
@@ -140,9 +140,9 @@ public class BufferPoolConfig {
                      PriorityComparator.cachedValue = "Can\'t login? Click here.";
                   }
 
-                  class96.field1325 = new class319(class62.field585, s_23, font_1.method5417(PriorityComparator.cachedValue), 11);
-                  class38.field332 = new class319(class62.field585, s_23, font_1.method5417("Still having trouble logging in?"), 11);
-                  font_1.method5341(PriorityComparator.cachedValue, class62.field585, s_23, 16777215, 0);
+                  class96.field1325 = new class319(MusicPatchPcmStream.field585, s_23, font_1.method5417(PriorityComparator.cachedValue), 11);
+                  class38.field332 = new class319(MusicPatchPcmStream.field585, s_23, font_1.method5417("Still having trouble logging in?"), 11);
+                  font_1.method5341(PriorityComparator.cachedValue, MusicPatchPcmStream.field585, s_23, 16777215, 0);
                } else if (Login.loginIndex == 3) {
                   s_23 = 201;
                   font_0.method5341("Invalid credentials.", Login.field1187 + 180, s_23, 16776960, 0);
@@ -170,7 +170,7 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      font_0.method5341(Login.Login_response3, Login.field1187 + 180, i_24, 16777215, 0);
                      i_24 += 15;
-                     font_0.draw("PIN: " + ClientPacketProt.method3612(class36.field328) + (Client.field881 % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), Login.field1187 + 180 - 108, i_24, 16777215, 0);
+                     font_0.draw("PIN: " + ClientPacketProt.method3612(class36.field328) + (Client.cycle % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), Login.field1187 + 180 - 108, i_24, 16777215, 0);
                      i_24 -= 8;
                      font_0.draw("Trust this computer", Login.field1187 + 180 - 9, i_24, 16776960, 0);
                      i_24 += 15;
@@ -212,7 +212,7 @@ public class BufferPoolConfig {
                         ;
                      }
 
-                     font_0.draw(AbstractFont.escapeBrackets(string_7) + (Client.field881 % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), Login.field1187 + 180 - 34, i_24, 16777215, 0);
+                     font_0.draw(AbstractFont.escapeBrackets(string_7) + (Client.cycle % 40 < 20 ? class73.colorStartTag(16776960) + "|" : ""), Login.field1187 + 180 - 34, i_24, 16777215, 0);
                      i_24 += 15;
                      i_8 = Login.field1187 + 180 - 80;
                      s_21 = 321;
@@ -222,7 +222,7 @@ public class BufferPoolConfig {
                      class240.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Back", i_8, s_21 + 5, 16777215, 0);
                      s_21 = 356;
-                     font_1.method5341("Still having trouble logging in?", class62.field585, s_21, 268435455, 0);
+                     font_1.method5341("Still having trouble logging in?", MusicPatchPcmStream.field585, s_21, 268435455, 0);
                   } else if (Login.loginIndex == 6) {
                      s_23 = 201;
                      font_0.method5341(Login.Login_response1, Login.field1187 + 180, s_23, 16776960, 0);
@@ -320,8 +320,8 @@ public class BufferPoolConfig {
             int[] ints_19 = new int[4];
             Rasterizer2D.getClipArray(ints_19);
             Rasterizer2D.setClip(Login.field1208, 0, Login.field1208 + 765, ParamComposition.field3308);
-            class278.field3631.method1735(Login.field1208 - 22, Client.field881);
-            class278.field3631.method1735(Login.field1208 + 22 + 765 - 128, Client.field881);
+            class278.field3631.method1735(Login.field1208 - 22, Client.cycle);
+            class278.field3631.method1735(Login.field1208 + 22 + 765 - 128, Client.cycle);
             Rasterizer2D.method6013(ints_19);
          }
 

@@ -11,11 +11,11 @@ public final class class227 {
          int i_4 = class66_0.y >> 7;
          if (i_3 >= 0 && i_3 < 104 && i_4 >= 0 && i_4 < 104) {
             long long_5 = Tile.method2854(0, 0, 0, false, class66_0.field637);
-            if (class66_0.field626 != null && Client.field881 >= class66_0.field614 && Client.field881 < class66_0.field622) {
+            if (class66_0.field626 != null && Client.cycle >= class66_0.field614 && Client.cycle < class66_0.field622) {
                class66_0.field634 = false;
-               class66_0.field623 = class62.method1130(class66_0.x, class66_0.y, ItemContainer_2.plane);
-               class66_0.field953 = Client.field881;
-               class5.field22.method3079(ItemContainer_2.plane, class66_0.x, class66_0.y, class66_0.field623, 60, class66_0, class66_0.field950, long_5, class66_0.field627, class66_0.field625, class66_0.field612, class66_0.field630);
+               class66_0.field623 = MusicPatchPcmStream.getTileHeight(class66_0.x, class66_0.y, WorldMapRectangle.plane);
+               class66_0.field953 = Client.cycle;
+               class5.field22.method3079(WorldMapRectangle.plane, class66_0.x, class66_0.y, class66_0.field623, 60, class66_0, class66_0.field950, long_5, class66_0.field627, class66_0.field625, class66_0.field612, class66_0.field630);
             } else {
                if ((class66_0.x & 0x7f) == 64 && (class66_0.y & 0x7f) == 64) {
                   if (Client.field750[i_3][i_4] == Client.field751) {
@@ -25,9 +25,9 @@ public final class class227 {
                   Client.field750[i_3][i_4] = Client.field751;
                }
 
-               class66_0.field623 = class62.method1130(class66_0.x, class66_0.y, ItemContainer_2.plane);
-               class66_0.field953 = Client.field881;
-               class5.field22.method3077(ItemContainer_2.plane, class66_0.x, class66_0.y, class66_0.field623, 60, class66_0, class66_0.field950, long_5, class66_0.field967);
+               class66_0.field623 = MusicPatchPcmStream.getTileHeight(class66_0.x, class66_0.y, WorldMapRectangle.plane);
+               class66_0.field953 = Client.cycle;
+               class5.field22.method3077(WorldMapRectangle.plane, class66_0.x, class66_0.y, class66_0.field623, 60, class66_0, class66_0.field950, long_5, class66_0.field967);
             }
          }
       }

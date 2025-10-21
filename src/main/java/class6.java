@@ -47,8 +47,8 @@ public class class6 {
 
    }
 
-   public static RemoveNode[] method70() {
-      return new RemoveNode[] {RemoveNode.field2322, RemoveNode.field2316, RemoveNode.clearItem, RemoveNode.field2317, RemoveNode.field2324, RemoveNode.field2319, RemoveNode.field2320, RemoveNode.field2321, RemoveNode.field2315, RemoveNode.field2323};
+   public static RenderableSceneNode[] method70() {
+      return new RenderableSceneNode[] {RenderableSceneNode.field2322, RenderableSceneNode.projectileNode, RenderableSceneNode.clearItem, RenderableSceneNode.field2317, RenderableSceneNode.field2324, RenderableSceneNode.field2319, RenderableSceneNode.field2320, RenderableSceneNode.field2321, RenderableSceneNode.field2315, RenderableSceneNode.field2323};
    }
 
    public static void method66(class233 class233_0, class233 class233_1) {

@@ -23,7 +23,7 @@ public class class91 {
          Client.destinationX = i_0;
          Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.IT_ON_OBJ, Client.data.field1313);
-         class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1); //..objectY
+         class187_9.outBuffer.writeShortWithOffset(SceneNode.field1 + i_1); //..objectY
          class187_9.outBuffer.writeShortLittleEndian(class23.field182); //..slot
          class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0); //..control key down
          class187_9.outBuffer.writeIntLittleEndian(class63.field594); //..interface_hash
@@ -44,7 +44,7 @@ public class class91 {
          class187_9.outBuffer.writeUnsignedShortA(i_3);
          class187_9.outBuffer.writeIntCustomOrder(class41.field359);
          class187_9.outBuffer.writeShortBigEndian(Client.field848);
-         class187_9.outBuffer.writeShortLittleEndian(class1.field1 + i_1);
+         class187_9.outBuffer.writeShortLittleEndian(SceneNode.field1 + i_1);
          Client.data.copy(class187_9);
       } else if (i_2 == 3) {
          Client.field876 = i_6;
@@ -54,7 +54,7 @@ public class class91 {
          Client.destinationX = i_0;
          Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2213, Client.data.field1313);
-         class187_9.outBuffer.writeShortBigEndian(class1.field1 + i_1);
+         class187_9.outBuffer.writeShortBigEndian(SceneNode.field1 + i_1);
          class187_9.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
          class187_9.outBuffer.writeUnsignedShortA(i_3);
          class187_9.outBuffer.writeShortWithOffset(i_0 + class196.field2389);
@@ -69,7 +69,7 @@ public class class91 {
          class187_9 = class235.method4265(ClientPacketProt.field2282, Client.data.field1313);
          class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
          class187_9.outBuffer.writeShortBigEndian(i_3);
-         class187_9.outBuffer.writeShortBigEndian(class1.field1 + i_1);
+         class187_9.outBuffer.writeShortBigEndian(SceneNode.field1 + i_1);
          class187_9.outBuffer.writeShortBigEndian(i_0 + class196.field2389);
          Client.data.copy(class187_9);
       } else if (i_2 == 5) {
@@ -82,7 +82,7 @@ public class class91 {
          class187_9 = class235.method4265(ClientPacketProt.field2292, Client.data.field1313);
          class187_9.outBuffer.writeShortWithOffset(i_0 + class196.field2389);
          class187_9.outBuffer.writeUnsignedShortA(i_3);
-         class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1);
+         class187_9.outBuffer.writeShortWithOffset(SceneNode.field1 + i_1);
          class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
          Client.data.copy(class187_9);
       } else if (i_2 == 6) {
@@ -94,7 +94,7 @@ public class class91 {
          Client.destinationY = i_1;
          class187_9 = class235.method4265(ClientPacketProt.field2259, Client.data.field1313);
          class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
-         class187_9.outBuffer.writeUnsignedShortA(class1.field1 + i_1);
+         class187_9.outBuffer.writeUnsignedShortA(SceneNode.field1 + i_1);
          class187_9.outBuffer.writeUnsignedShortA(i_0 + class196.field2389);
          class187_9.outBuffer.writeShortLittleEndian(i_3);
          Client.data.copy(class187_9);
@@ -253,7 +253,7 @@ public class class91 {
                class187_9.outBuffer.writeShortLittleEndian(class23.field182);
                class187_9.outBuffer.writeShortWithOffset(i_3);
                class187_9.outBuffer.writeShortWithOffset(i_0 + class196.field2389);
-               class187_9.outBuffer.writeShortLittleEndian(class1.field1 + i_1);
+               class187_9.outBuffer.writeShortLittleEndian(SceneNode.field1 + i_1);
                Client.data.copy(class187_9);
             } else if (i_2 == 17) {
                Client.field876 = i_6;
@@ -265,7 +265,7 @@ public class class91 {
                class187_9 = class235.method4265(ClientPacketProt.field2293, Client.data.field1313);
                class187_9.outBuffer.writeIntReversed(class41.field359);
                class187_9.outBuffer.writeShortBigEndian(Client.field848);
-               class187_9.outBuffer.writeUnsignedShortA(class1.field1 + i_1);
+               class187_9.outBuffer.writeUnsignedShortA(SceneNode.field1 + i_1);
                class187_9.outBuffer.writeUnsignedShortA(i_0 + class196.field2389);
                class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
                class187_9.outBuffer.writeShortLittleEndian(i_3);
@@ -278,7 +278,7 @@ public class class91 {
                Client.destinationX = i_0;
                Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2208, Client.data.field1313);
-               class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1);
+               class187_9.outBuffer.writeShortWithOffset(SceneNode.field1 + i_1);
                class187_9.outBuffer.writeShortLittleEndian(i_3);
                class187_9.outBuffer.writeShortLittleEndian(i_0 + class196.field2389);
                class187_9.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
@@ -293,7 +293,7 @@ public class class91 {
                class187_9 = class235.method4265(ClientPacketProt.field2256, Client.data.field1313);
                class187_9.outBuffer.writeShortWithOffset(i_3);
                class187_9.outBuffer.writeUnsignedShortA(i_0 + class196.field2389);
-               class187_9.outBuffer.writeShortBigEndian(class1.field1 + i_1);
+               class187_9.outBuffer.writeShortBigEndian(SceneNode.field1 + i_1);
                class187_9.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
                Client.data.copy(class187_9);
             } else if (i_2 == 20) {
@@ -304,7 +304,7 @@ public class class91 {
                Client.destinationX = i_0;
                Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2269, Client.data.field1313);
-               class187_9.outBuffer.writeShortLittleEndian(class1.field1 + i_1);
+               class187_9.outBuffer.writeShortLittleEndian(SceneNode.field1 + i_1);
                class187_9.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
                class187_9.outBuffer.writeShortLittleEndian(i_0 + class196.field2389);
                class187_9.outBuffer.writeShortLittleEndian(i_3);
@@ -317,7 +317,7 @@ public class class91 {
                Client.destinationX = i_0;
                Client.destinationY = i_1;
                class187_9 = class235.method4265(ClientPacketProt.field2203, Client.data.field1313);
-               class187_9.outBuffer.writeUnsignedShortA(class1.field1 + i_1);
+               class187_9.outBuffer.writeUnsignedShortA(SceneNode.field1 + i_1);
                class187_9.outBuffer.writeShortLittleEndian(i_3);
                class187_9.outBuffer.writeShortBigEndian(i_0 + class196.field2389);
                class187_9.outBuffer.writeInvertedByte(class45.field395[82] ? 1 : 0);
@@ -332,14 +332,14 @@ public class class91 {
                class187_9 = class235.method4265(ClientPacketProt.field2218, Client.data.field1313);
                class187_9.outBuffer.writeByte(class45.field395[82] ? 1 : 0);
                class187_9.outBuffer.writeShortWithOffset(i_3);
-               class187_9.outBuffer.writeUnsignedShortA(class1.field1 + i_1);
+               class187_9.outBuffer.writeUnsignedShortA(SceneNode.field1 + i_1);
                class187_9.outBuffer.writeShortBigEndian(i_0 + class196.field2389);
                Client.data.copy(class187_9);
             } else if (i_2 == 23) {
                if (Client.field674) {
                   class5.field22.method3104();
                } else {
-                  class5.field22.click(ItemContainer_2.plane, i_0, i_1, true);
+                  class5.field22.click(WorldMapRectangle.plane, i_0, i_1, true);
                }
             } else {
                class187 class187_11;
@@ -682,7 +682,7 @@ public class class91 {
                                     class187_9.outBuffer.writeShortBigEndian(i_3);
                                     class187_9.outBuffer.writeOffsetByte(class45.field395[82] ? 1 : 0);
                                     class187_9.outBuffer.writeUnsignedShortA(i_0 + class196.field2389);
-                                    class187_9.outBuffer.writeShortWithOffset(class1.field1 + i_1);
+                                    class187_9.outBuffer.writeShortWithOffset(SceneNode.field1 + i_1);
                                     Client.data.copy(class187_9);
                                     break label926;
                                  }
@@ -733,7 +733,7 @@ public class class91 {
                                  if (i_2 == 1005) {
                                     widget_17 = WorldMapElement.getWidget(i_1);
                                     if (widget_17 != null && widget_17.field2705[i_0] >= 100000) {
-                                       class62.method1132(27, "", widget_17.field2705[i_0] + " x " + item.getDefinition(i_3).name);
+                                       MusicPatchPcmStream.method1132(27, "", widget_17.field2705[i_0] + " x " + item.getDefinition(i_3).name);
                                     } else {
                                        class187_10 = class235.method4265(ClientPacketProt.field2227, Client.data.field1313);
                                        class187_10.outBuffer.writeShortLittleEndian(i_3);
@@ -792,12 +792,12 @@ public class class91 {
       Widget widget_6 = Client.method1649(i_1, i_2);
       if (widget_6 != null) {
          if (widget_6.field2656 != null) {
-            class62 class62_7 = new class62();
-            class62_7.field575 = widget_6;
-            class62_7.field578 = i_0;
-            class62_7.field582 = string_4;
-            class62_7.field581 = widget_6.field2656;
-            class184.method3613(class62_7);
+            MusicPatchPcmStream musicPatchPcmStream_7 = new MusicPatchPcmStream();
+            musicPatchPcmStream_7.field575 = widget_6;
+            musicPatchPcmStream_7.field578 = i_0;
+            musicPatchPcmStream_7.field582 = string_4;
+            musicPatchPcmStream_7.field581 = widget_6.field2656;
+            class184.method3613(musicPatchPcmStream_7);
          }
 
          boolean bool_12 = true;

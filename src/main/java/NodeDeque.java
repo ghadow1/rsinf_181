@@ -41,7 +41,7 @@ public class NodeDeque {
       }
    }
 
-   public void method4917(LinkedListNode linkedListNode_1) {
+   public void addFirst(LinkedListNode linkedListNode_1) {
       if (linkedListNode_1.previous != null) {
          linkedListNode_1.unlink();
       }

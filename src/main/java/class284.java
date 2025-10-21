@@ -3,26 +3,26 @@ public class class284 extends Categorizable {
    boolean field3650;
    boolean field3651;
 
-   int method5219(class284 class284_1, int i_2) {
-      return super.category == Client.field807 && Client.field807 != class284_1.category ? -1 : (Client.field807 == class284_1.category && super.category != Client.field807 ? 1 : (super.category != 0 && class284_1.category == 0 ? -1 : (class284_1.category != 0 && super.category == 0 ? 1 : (this.field3650 && !class284_1.field3650 ? -1 : (!this.field3650 && class284_1.field3650 ? 1 : (this.field3651 && !class284_1.field3651 ? -1 : (!this.field3651 && class284_1.field3651 ? 1 : (super.category != 0 ? super.field3633 - class284_1.field3633 : class284_1.field3633 - super.field3633))))))));
-   }
-
-   public int vmethod5221(User user_1) {
-      return this.method5219((class284) user_1, -1855698207);
-   }
-
-   public int compareTo(Object object_1) {
-      return this.method5219((class284) object_1, -1814764429);
-   }
-
    public static boolean method5220(class233 class233_0, int i_1, int i_2) {
       byte[] bytes_4 = class233_0.method4144(i_1, i_2);
       if (bytes_4 == null) {
          return false;
       } else {
-         RemoveNode.method3617(bytes_4, (byte) -41);
+         RenderableSceneNode.method3617(bytes_4);
          return true;
       }
+   }
+
+   int method5219(class284 class284_1) {
+      return super.category == Client.field807 && Client.field807 != class284_1.category ? -1 : (Client.field807 == class284_1.category && super.category != Client.field807 ? 1 : (super.category != 0 && class284_1.category == 0 ? -1 : (class284_1.category != 0 && super.category == 0 ? 1 : (this.field3650 && !class284_1.field3650 ? -1 : (!this.field3650 && class284_1.field3650 ? 1 : (this.field3651 && !class284_1.field3651 ? -1 : (!this.field3651 && class284_1.field3651 ? 1 : (super.category != 0 ? super.field3633 - class284_1.field3633 : class284_1.field3633 - super.field3633))))))));
+   }
+
+   public int vmethod5221(User user_1) {
+      return this.method5219((class284) user_1);
+   }
+
+   public int compareTo(Object object_1) {
+      return this.method5219((class284) object_1);
    }
 
    static final void method5226(class69 class69_0) {

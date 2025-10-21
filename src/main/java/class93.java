@@ -23,7 +23,7 @@ public class class93 extends Entity {
       if (i_7 != -1) {
          this.field1293 = class7.method81(i_7);
          this.field1298 = 0;
-         this.field1300 = Client.field881 - 1;
+         this.field1300 = Client.cycle - 1;
          if (this.field1293.field3529 == 0 && entity_9 != null && entity_9 instanceof class93) {
             class93 class93_10 = (class93) entity_9;
             if (class93_10.field1293 == this.field1293) {
@@ -43,7 +43,7 @@ public class class93 extends Entity {
 
    protected final class127 vmethod3253(int i_1) {
       if (this.field1293 != null) {
-         int i_2 = Client.field881 - this.field1300;
+         int i_2 = Client.cycle - this.field1300;
          if (i_2 > 100 && this.field1293.field3515 > 0) {
             i_2 = 100;
          }
@@ -65,7 +65,7 @@ public class class93 extends Entity {
             this.field1293 = null;
          }
 
-         this.field1300 = Client.field881 - i_2;
+         this.field1300 = Client.cycle - i_2;
       }
 
       class253 class253_13 = class128.method2970(this.field1297);

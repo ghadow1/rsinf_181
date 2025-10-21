@@ -37,9 +37,9 @@ public class class9 {
    static int method114(int i_0) {
       int i_4;
       if (i_0 == 6600) {
-         i_4 = ItemContainer_2.plane;
+         i_4 = WorldMapRectangle.plane;
          int i_10 = (Client.localPlayer.x >> 7) + class196.field2389;
-         int i_6 = (Client.localPlayer.y >> 7) + class1.field1;
+         int i_6 = (Client.localPlayer.y >> 7) + SceneNode.field1;
          class31.method538().method6309(i_4, i_10, i_6, true, (byte) -35);
          return 1;
       } else {
@@ -72,11 +72,11 @@ public class class9 {
             class213 class213_16;
             if (i_0 == 6606) {
                class213_16 = new class213(MouseRecorder.field1098[--class70.field1014]);
-               class31.method538().method6369(class213_16.field2530, class213_16.field2528, -1604144136);
+               class31.method538().method6369(class213_16.field2530, class213_16.field2528);
                return 1;
             } else if (i_0 == 6607) {
                class213_16 = new class213(MouseRecorder.field1098[--class70.field1014]);
-               class31.method538().method6380(class213_16.field2530, class213_16.field2528, 2147035195);
+               class31.method538().method6380(class213_16.field2530, class213_16.field2528);
                return 1;
             } else if (i_0 == 6608) {
                class213_16 = new class213(MouseRecorder.field1098[--class70.field1014]);
@@ -88,7 +88,7 @@ public class class9 {
                return 1;
             } else if (i_0 == 6610) {
                MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6332(-786263367);
-               MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6333(-2026899768);
+               MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6333();
                return 1;
             } else {
                item item_14;
@@ -219,8 +219,8 @@ public class class9 {
                            return 1;
                         }
                      } else if (i_0 == 6622) {
-                        MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6412(-1379152210);
-                        MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6461((byte) 86);
+                        MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6412();
+                        MouseRecorder.field1098[++class70.field1014 - 1] = class31.method538().method6461();
                         return 1;
                      } else if (i_0 == 6623) {
                         class213_16 = new class213(MouseRecorder.field1098[--class70.field1014]);
@@ -316,7 +316,7 @@ public class class9 {
 
                                  return 1;
                               } else if (i_0 == 6640) {
-                                 class34_9 = class31.method538().method6355((byte) 64);
+                                 class34_9 = class31.method538().method6355();
                                  if (class34_9 == null) {
                                     MouseRecorder.field1098[++class70.field1014 - 1] = -1;
                                     MouseRecorder.field1098[++class70.field1014 - 1] = -1;

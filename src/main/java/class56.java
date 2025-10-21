@@ -53,7 +53,7 @@ public class class56 {
 
          NPC_5 = Client.npcs[i_3];
          Client.npcIndices[++Client.npcCount - 1] = i_3;
-         NPC_5.field973 = Client.field881;
+         NPC_5.field973 = Client.cycle;
          if (bool_0) {
             i_6 = buffer3_1.method5445(8);
             if (i_6 > 127) {
@@ -124,7 +124,7 @@ public class class56 {
             i_7 = buffer3_1.readShortWithOffset2();
             i_8 = buffer3_1.readShortWithOffset2();
             i_9 = NPC_5.x - (i_7 - class196.field2389 - class196.field2389) * 64;
-            i_10 = NPC_5.y - (i_8 - class1.field1 - class1.field1) * 64;
+            i_10 = NPC_5.y - (i_8 - SceneNode.field1 - SceneNode.field1) * 64;
             if (i_9 != 0 || i_10 != 0) {
                NPC_5.field976 = (int)(Math.atan2((double)i_9, (double)i_10) * 325.949D) & 0x7ff;
             }
@@ -195,7 +195,7 @@ public class class56 {
                   }
 
                   i_13 = buffer3_1.readSmartInt();
-                  NPC_5.method1657(i_9, i_11, i_10, i_12, Client.field881, i_13);
+                  NPC_5.method1657(i_9, i_11, i_10, i_12, Client.cycle, i_13);
                }
             }
 
@@ -208,7 +208,7 @@ public class class56 {
                      i_12 = buffer3_1.readSmartInt();
                      i_13 = buffer3_1.readUnsignedByte();
                      int i_14 = i_11 > 0 ? buffer3_1.readInvertedUnsignedByte() : i_13;
-                     NPC_5.method1655(i_10, Client.field881, i_11, i_12, i_13, i_14, (byte) 15);
+                     NPC_5.method1655(i_10, Client.cycle, i_11, i_12, i_13, i_14, (byte) 15);
                   } else {
                      NPC_5.method1659(i_10);
                   }
@@ -220,10 +220,10 @@ public class class56 {
             NPC_5.field986 = buffer3_1.readShortLittleEndian();
             i_7 = buffer3_1.readIntCustomOrder2();
             NPC_5.field990 = i_7 >> 16;
-            NPC_5.field989 = (i_7 & 0xffff) + Client.field881;
+            NPC_5.field989 = (i_7 & 0xffff) + Client.cycle;
             NPC_5.field987 = 0;
             NPC_5.field988 = 0;
-            if (NPC_5.field989 > Client.field881) {
+            if (NPC_5.field989 > Client.cycle) {
                NPC_5.field987 = -1;
             }
 
@@ -240,7 +240,7 @@ public class class56 {
 
       for (i_3 = 0; i_3 < Client.field775; i_3++) {
          i_15 = Client.field776[i_3];
-         if (Client.npcs[i_15].field973 != Client.field881) {
+         if (Client.npcs[i_15].field973 != Client.cycle) {
             Client.npcs[i_15].definition = null;
             Client.npcs[i_15] = null;
          }

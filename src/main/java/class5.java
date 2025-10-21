@@ -21,10 +21,10 @@ final class class5 implements Comparator {
       }
    }
 
-   static final void method60(int i_0, int i_1) {
-      NodeDeque nodeDeque_3 = Client.groundItems[ItemContainer_2.plane][i_0][i_1];
+   static final void updatePendingSpawn(int i_0, int i_1) {
+      NodeDeque nodeDeque_3 = Client.groundItems[WorldMapRectangle.plane][i_0][i_1];
       if (nodeDeque_3 == null) {
-         field22.method3087(ItemContainer_2.plane, i_0, i_1);
+         field22.method3087(WorldMapRectangle.plane, i_0, i_1);
       } else {
          long long_4 = -99999999L;
          class87 class87_6 = null;
@@ -44,7 +44,7 @@ final class class5 implements Comparator {
          }
 
          if (class87_6 == null) {
-            field22.method3087(ItemContainer_2.plane, i_0, i_1);
+            field22.method3087(WorldMapRectangle.plane, i_0, i_1);
          } else {
             nodeDeque_3.method4888(class87_6);
             class87 class87_13 = null;
@@ -63,7 +63,7 @@ final class class5 implements Comparator {
             }
 
             long long_10 = Tile.method2854(i_0, i_1, 3, false, 0);
-            field22.newGroundItemPile(ItemContainer_2.plane, i_0, i_1, class62.method1130(i_0 * 128 + 64, i_1 * 128 + 64, ItemContainer_2.plane), class87_6, long_10, class87_13, class87_12);
+            field22.newGroundItemPile(WorldMapRectangle.plane, i_0, i_1, MusicPatchPcmStream.getTileHeight(i_0 * 128 + 64, i_1 * 128 + 64, WorldMapRectangle.plane), class87_6, long_10, class87_13, class87_12);
          }
       }
    }

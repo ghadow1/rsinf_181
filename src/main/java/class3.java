@@ -1,6 +1,6 @@
 public class class3 implements UnknownT {
 
-   public static final class3 field7 = new class3(2, 0, Integer.class, new class1());
+   public static final class3 field7 = new class3(2, 0, Integer.class, new SceneNode());
    public static final class3 field9 = new class3(1, 1, Long.class, new class2());
    public static final class3 field14 = new class3(0, 2, String.class, new class4());
    final int field10;

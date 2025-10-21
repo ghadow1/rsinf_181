@@ -16,7 +16,7 @@ public class class15 extends class21 {
       }
    }
 
-   void vmethod679(ByteBuffer class300_1, int i_2) {
+   void vmethod679(ByteBuffer class300_1) {
       super.field160 = Math.min(super.field160, 4);
       super.field163 = new short[1][64][64];
       super.field170 = new short[super.field160][64][64];
@@ -32,7 +32,7 @@ public class class15 extends class21 {
          if (i_4 == super.field157 && i_5 == super.field158) {
             for (int i_6 = 0; i_6 < 64; i_6++) {
                for (int i_7 = 0; i_7 < 64; i_7++) {
-                  this.method247(i_6, i_7, class300_1, -1521348339);
+                  this.method247(i_6, i_7, class300_1);
                }
             }
 

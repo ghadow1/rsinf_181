@@ -336,7 +336,7 @@ public class class214 {
       if (bytes_3 == null) {
          return false;
       } else {
-         RemoveNode.method3617(bytes_3, (byte) 11);
+         RenderableSceneNode.method3617(bytes_3);
          return true;
       }
    }

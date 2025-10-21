@@ -29,7 +29,7 @@ public class Message extends DualNode {
 
    void set(int i_1, String string_2, String string_3, String string_4) {
       this.field600 = class255.method4701();
-      this.field598 = Client.field881;
+      this.field598 = Client.cycle;
       this.field602 = i_1;
       this.field599 = string_2;
       this.method1164();

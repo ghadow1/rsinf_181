@@ -28,10 +28,10 @@ public final class class48 extends Canvas {
             for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
                Widget widget_4 = arr_2[i_3];
                if (widget_4.field2630 != null) {
-                  class62 class62_5 = new class62();
-                  class62_5.field575 = widget_4;
-                  class62_5.field581 = widget_4.field2630;
-                  class96.method2267(class62_5, 5000000);
+                  MusicPatchPcmStream musicPatchPcmStream_5 = new MusicPatchPcmStream();
+                  musicPatchPcmStream_5.field575 = widget_4;
+                  musicPatchPcmStream_5.field581 = widget_4.field2630;
+                  class96.method2267(musicPatchPcmStream_5, 5000000);
                }
             }
 

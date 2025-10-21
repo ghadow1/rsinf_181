@@ -29,7 +29,7 @@ public class class30 {
       String string_4;
       if (i_0 == 3100) {
          string_4 = MouseRecorder.field1093[--class221.field2747];
-         class62.method1132(0, "", string_4);
+         MusicPatchPcmStream.method1132(0, "", string_4);
          return 1;
       } else if (i_0 == 3101) {
          class70.field1014 -= 2;
@@ -186,7 +186,7 @@ public class class30 {
                   PriorityComparator.setClientFlag(MouseRecorder.field1098[--class70.field1014] == 1);
                   return 1;
                } else if (i_0 == 3128) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = class62.method1128() ? 1 : 0;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = MusicPatchPcmStream.method1128() ? 1 : 0;
                   return 1;
                } else if (i_0 == 3129) {
                   class70.field1014 -= 2;

@@ -56,12 +56,12 @@ final class class8 implements Comparator {
 
       } else if (i_2 == 327) {
          widget_0.field2615 = 150;
-         widget_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
+         widget_0.field2616 = (int)(Math.sin((double) Client.cycle / 40.0D) * 256.0D) & 0x7ff;
          widget_0.field2607 = 5;
          widget_0.field2649 = 0;
       } else if (i_2 == 328) {
          widget_0.field2615 = 150;
-         widget_0.field2616 = (int)(Math.sin((double) Client.field881 / 40.0D) * 256.0D) & 0x7ff;
+         widget_0.field2616 = (int)(Math.sin((double) Client.cycle / 40.0D) * 256.0D) & 0x7ff;
          widget_0.field2607 = 5;
          widget_0.field2649 = 1;
       }

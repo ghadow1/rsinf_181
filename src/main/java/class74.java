@@ -218,7 +218,7 @@ public class class74 {
                if (Client.localPlayer.field621.equals(username_3)) {
                   stringbuilder_10000 = null;
                   string_5 = "You can't add yourself to your own friend list";
-                  class62.method1132(30, "", string_5);
+                  MusicPatchPcmStream.method1132(30, "", string_5);
                } else if (this.method1764(username_3, false)) {
                   class36.method633(string_1, -1454512266);
                } else if (this.isIgnored(username_3)) {
@@ -227,7 +227,7 @@ public class class74 {
                   stringbuilder_10000 = stringbuilder_10000.append("Please remove ").append(string_1);
                   obj_10001 = null;
                   string_5 = stringbuilder_10000.append(" from your ignore list first").toString();
-                  class62.method1132(30, "", string_5);
+                  MusicPatchPcmStream.method1132(30, "", string_5);
                } else {
                   class187 class187_4 = class235.method4265(ClientPacketProt.field2291, Client.data.field1313);
                   class187_4.outBuffer.writeByte(class209.method3945(string_1));
@@ -266,11 +266,11 @@ public class class74 {
       for (class286 class286_2 = (class286) this.field1070.field3642.method4922(); class286_2 != null; class286_2 = (class286) this.field1070.field3642.method4923()) {
          if ((long)class286_2.field3661 < TimeUtils.getAdjustedTimeMillis() / 1000L - 5L) {
             if (class286_2.field3663 > 0) {
-               class62.method1132(5, "", class286_2.field3662 + " has logged in.");
+               MusicPatchPcmStream.method1132(5, "", class286_2.field3662 + " has logged in.");
             }
 
             if (class286_2.field3663 == 0) {
-               class62.method1132(5, "", class286_2.field3662 + " has logged out.");
+               MusicPatchPcmStream.method1132(5, "", class286_2.field3662 + " has logged out.");
             }
 
             class286_2.method3602();
@@ -330,7 +330,7 @@ public class class74 {
             if (this.method1778()) {
                Object obj_10000 = null;
                String str_4 = "Your ignore list is full. Max of 100 for free users, and 400 for members";
-               class62.method1132(30, "", str_4);
+               MusicPatchPcmStream.method1132(30, "", str_4);
             } else if (Client.localPlayer.field621.equals(username_3)) {
                class41.method737();
             } else if (this.isIgnored(username_3)) {

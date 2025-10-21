@@ -67,13 +67,13 @@ public class WorldMapElement {
 
          i_3 = MouseHandler.field499 >> 7;
          i_4 = item.field227 >> 7;
-         i_5 = class62.method1130(MouseHandler.field499, item.field227, ItemContainer_2.plane);
+         i_5 = MusicPatchPcmStream.getTileHeight(MouseHandler.field499, item.field227, WorldMapRectangle.plane);
          i_6 = 0;
          int i_7;
          if (i_3 > 3 && i_4 > 3 && i_3 < 100 && i_4 < 100) {
             for (i_7 = i_3 - 4; i_7 <= i_3 + 4; i_7++) {
                for (int i_8 = i_4 - 4; i_8 <= i_4 + 4; i_8++) {
-                  int i_9 = ItemContainer_2.plane;
+                  int i_9 = WorldMapRectangle.plane;
                   if (i_9 < 3 && (class55.field502[1][i_7][i_8] & 0x2) == 2) {
                      ++i_9;
                   }
@@ -101,7 +101,7 @@ public class WorldMapElement {
             Client.field739 += (i_7 - Client.field739) / 80;
          }
 
-         Client.field729 = class62.method1130(Client.localPlayer.x, Client.localPlayer.y, ItemContainer_2.plane) - Client.field728;
+         Client.field729 = MusicPatchPcmStream.getTileHeight(Client.localPlayer.x, Client.localPlayer.y, WorldMapRectangle.plane) - Client.field728;
       } else if (Client.field727 == 1) {
          Widget.method4090(-174761515);
          short s_11 = -1;

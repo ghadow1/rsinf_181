@@ -124,7 +124,7 @@ public class class112 {
          int[] ints_8 = class89.field1257;
          byte b_9 = 0;
          class66 class66_11;
-         if (i_1 < i_76 && class69_0.field953 == Client.field881) {
+         if (i_1 < i_76 && class69_0.field953 == Client.cycle) {
             class66_11 = (class66) class69_0;
             boolean bool_10;
             if (Client.field774 == 0) {
@@ -173,7 +173,7 @@ public class class112 {
             class219.method4113(class69_0, class69_0.field999 + 15);
 
             for (class78 class78_89 = (class78) class69_0.field954.method4838(); class78_89 != null; class78_89 = (class78) class69_0.field954.method4808()) {
-               class70 class70_90 = class78_89.method1950(Client.field881, (byte) 41);
+               class70 class70_90 = class78_89.method1950(Client.cycle, (byte) 41);
                if (class70_90 == null) {
                   if (class78_89.method1960(-16711936)) {
                      class78_89.unlink();
@@ -195,7 +195,7 @@ public class class112 {
 
                   int i_18 = 255;
                   boolean bool_19 = true;
-                  int i_20 = Client.field881 - class70_90.field1016;
+                  int i_20 = Client.cycle - class70_90.field1016;
                   int i_21 = i_16 * class70_90.field1012 / class246_92.field3288;
                   int i_22;
                   int i_94;
@@ -300,7 +300,7 @@ public class class112 {
                }
             }
 
-            if (Client.field708 == 1 && Client.npcIndices[i_1 - i_76] == Client.field824 && Client.field881 % 20 < 10) {
+            if (Client.field708 == 1 && Client.npcIndices[i_1 - i_76] == Client.field824 && Client.cycle % 20 < 10) {
                class219.method4113(class69_0, class69_0.field999 + 15);
                if (Client.field752 > -1) {
                   class173.field2096[0].drawTransBgAt(i_2 + Client.field752 - 12, i_3 + Client.field753 - 28);
@@ -329,11 +329,11 @@ public class class112 {
             ErrorHandler errorHandler_96 = null;
             int i_99 = 0;
             if (i_98 >= 0) {
-               if (i_97 <= Client.field881) {
+               if (i_97 <= Client.cycle) {
                   continue;
                }
 
-               errorHandler_96 = class86.method2046(class69_0.field969[i_78], (byte) 0);
+               errorHandler_96 = Projectile.method2046(class69_0.field969[i_78]);
                i_99 = errorHandler_96.field3344;
                if (errorHandler_96 != null && errorHandler_96.field3345 != null) {
                   errorHandler_96 = errorHandler_96.method4554((byte) 0);
@@ -349,13 +349,13 @@ public class class112 {
             i_16 = class69_0.field972[i_78];
             ErrorHandler errorHandler_82 = null;
             if (i_16 >= 0) {
-               errorHandler_82 = class86.method2046(i_16, (byte) 0);
+               errorHandler_82 = Projectile.method2046(i_16);
                if (errorHandler_82 != null && errorHandler_82.field3345 != null) {
                   errorHandler_82 = errorHandler_82.method4554((byte) 0);
                }
             }
 
-            if (i_97 - i_99 <= Client.field881) {
+            if (i_97 - i_99 <= Client.cycle) {
                if (errorHandler_96 == null) {
                   class69_0.field971[i_78] = -1;
                } else {
@@ -598,7 +598,7 @@ public class class112 {
                         }
                      }
 
-                     i_63 = class69_0.field971[i_78] - Client.field881;
+                     i_63 = class69_0.field971[i_78] - Client.cycle;
                      int i_64 = errorHandler_96.field3335 - i_63 * errorHandler_96.field3335 / errorHandler_96.field3344;
                      int i_65 = i_63 * errorHandler_96.field3340 / errorHandler_96.field3344 + -errorHandler_96.field3340;
                      int i_66 = i_64 + (i_2 + Client.field752 - (i_52 >> 1));

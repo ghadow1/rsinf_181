@@ -25,11 +25,11 @@ public abstract class class21 {
       this.field169 = false;
    }
 
-   boolean method244(int i_1) {
+   boolean method244() {
       return this.field168 && this.field169;
    }
 
-   void method246(int i_1) {
+   void method246() {
       this.field163 = null;
       this.field170 = null;
       this.field165 = null;
@@ -39,7 +39,7 @@ public abstract class class21 {
       this.field169 = false;
    }
 
-   void method253(int i_1, int i_2, ByteBuffer class300_3, int i_4, byte b_5) {
+   void method253(int i_1, int i_2, ByteBuffer class300_3, int i_4) {
       int i_6 = ((i_4 & 0x18) >> 3) + 1;
       boolean bool_7 = (i_4 & 0x2) != 0;
       boolean bool_8 = (i_4 & 0x4) != 0;
@@ -78,7 +78,7 @@ public abstract class class21 {
 
    }
 
-   void method258(int i_1, int i_2, ByteBuffer class300_3, int i_4, byte b_5) {
+   void method258(int i_1, int i_2, ByteBuffer class300_3, int i_4) {
       boolean bool_6 = (i_4 & 0x2) != 0;
       if (bool_6) {
          this.field170[0][i_1][i_2] = (short)class300_3.readUnsignedByte();
@@ -87,11 +87,11 @@ public abstract class class21 {
       this.field163[0][i_1][i_2] = (short)class300_3.readUnsignedByte();
    }
 
-   void method245(class233 class233_1, int i_2) {
-      if (!this.method244(-613524686)) {
+   void method245(class233 class233_1) {
+      if (!this.method244()) {
          byte[] bytes_3 = class233_1.method4144(this.field161, this.field162);
          if (bytes_3 != null) {
-            this.vmethod679(new ByteBuffer(bytes_3), -1951934103);
+            this.vmethod679(new ByteBuffer(bytes_3));
             this.field168 = true;
             this.field169 = true;
          }
@@ -99,29 +99,29 @@ public abstract class class21 {
       }
    }
 
-   int method250(int i_1) {
+   int method250() {
       return this.field157;
    }
 
-   int method251(int i_1) {
+   int method251() {
       return this.field158;
    }
 
-   abstract void vmethod679(ByteBuffer var1, int var2);
+   abstract void vmethod679(ByteBuffer var1);
 
-   void method247(int i_1, int i_2, ByteBuffer class300_3, int i_4) {
+   void method247(int i_1, int i_2, ByteBuffer class300_3) {
       int i_5 = class300_3.readUnsignedByte();
       if (i_5 != 0) {
          if ((i_5 & 0x1) != 0) {
-            this.method258(i_1, i_2, class300_3, i_5, (byte) 0);
+            this.method258(i_1, i_2, class300_3, i_5);
          } else {
-            this.method253(i_1, i_2, class300_3, i_5, (byte) 44);
+            this.method253(i_1, i_2, class300_3, i_5);
          }
 
       }
    }
 
-   static final void method272(NPCDefinition NPCDefinition_0, int i_1, int i_2, int i_3, int i_4) {
+   static final void method272(NPCDefinition NPCDefinition_0, int i_1, int i_2, int i_3) {
       if (Client.menuOptionsCount < 400) {
          if (NPCDefinition_0.field3476 != null) {
             NPCDefinition_0 = NPCDefinition_0.transform();

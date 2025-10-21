@@ -64,7 +64,7 @@ public class class65 extends ParamDefinition {
          class308_5 = new class308(i_0, class167.field2042, class167.field2041[i_0], 1000000);
       }
 
-      return new class235(class308_5, class62.field573, i_0, bool_1, bool_2, bool_3);
+      return new class235(class308_5, MusicPatchPcmStream.field573, i_0, bool_1, bool_2, bool_3);
    }
 
    static File method1177(String string_0, int i_1) {
@@ -138,7 +138,7 @@ public class class65 extends ParamDefinition {
                int i_17 = class91.method2176(i_9, (byte) 102);
                int i_18 = class3.method33(i_9, (byte) -12);
                int i_19 = class74.method1784(i_9, -77884497);
-               if (i_18 == 2 && class5.field22.method3096(ItemContainer_2.plane, i_16, i_17, long_26) >= 0) {
+               if (i_18 == 2 && class5.field22.method3096(WorldMapRectangle.plane, i_16, i_17, long_26) >= 0) {
                   class253 class253_20 = class128.method2970(i_19);
                   if (class253_20.field3391 != null) {
                      class253_20 = class253_20.method4595();
@@ -204,7 +204,7 @@ public class class65 extends ParamDefinition {
                      for (i_21 = 0; i_21 < Client.npcCount; i_21++) {
                         NPC_22 = Client.npcs[Client.npcIndices[i_21]];
                         if (NPC_22 != null && NPC_22 != NPC_32 && NPC_22.definition.field3469 == 1 && NPC_32.x == NPC_22.x && NPC_32.y == NPC_22.y) {
-                           class21.method272(NPC_22.definition, Client.npcIndices[i_21], i_16, i_17, 1861825348);
+                           class21.method272(NPC_22.definition, Client.npcIndices[i_21], i_16, i_17);
                         }
                      }
 
@@ -219,7 +219,7 @@ public class class65 extends ParamDefinition {
                      }
                   }
 
-                  class21.method272(NPC_32.definition, i_19, i_16, i_17, 676955297);
+                  class21.method272(NPC_32.definition, i_19, i_16, i_17);
                }
 
                if (i_18 == 0) {
@@ -232,7 +232,7 @@ public class class65 extends ParamDefinition {
                      for (i_21 = 0; i_21 < Client.npcCount; i_21++) {
                         NPC_22 = Client.npcs[Client.npcIndices[i_21]];
                         if (NPC_22 != null && NPC_22.definition.field3469 == 1 && class66_33.x == NPC_22.x && NPC_22.y == class66_33.y) {
-                           class21.method272(NPC_22.definition, Client.npcIndices[i_21], i_16, i_17, 566580282);
+                           class21.method272(NPC_22.definition, Client.npcIndices[i_21], i_16, i_17);
                         }
                      }
 
@@ -255,7 +255,7 @@ public class class65 extends ParamDefinition {
                }
 
                if (i_18 == 3) {
-                  NodeDeque nodeDeque_34 = Client.groundItems[ItemContainer_2.plane][i_16][i_17];
+                  NodeDeque nodeDeque_34 = Client.groundItems[WorldMapRectangle.plane][i_16][i_17];
                   if (nodeDeque_34 != null) {
                      for (class87 class87_38 = (class87) nodeDeque_34.method4893(); class87_38 != null; class87_38 = (class87) nodeDeque_34.method4887()) {
                         ItemDefinition itemDefinition_36 = item.getDefinition(class87_38.field1244);

@@ -105,20 +105,20 @@ public class class198 extends class115 {
          }
       }
 
-      class201 class201_10 = (class201) this.field2417.method5952((long)this.field2413[i_1]);
-      if (class201_10 != null) {
-         RawSound rawSound_9 = class201_10.field2474[i_2];
+      SceneSound sceneSound_10 = (SceneSound) this.field2417.method5952((long)this.field2413[i_1]);
+      if (sceneSound_10 != null) {
+         RawSound rawSound_9 = sceneSound_10.field2474[i_2];
          if (rawSound_9 != null) {
             MusicPatchNode musicPatchNode_7 = new MusicPatchNode();
             musicPatchNode_7.field2440 = i_1;
-            musicPatchNode_7.field2437 = class201_10;
+            musicPatchNode_7.field2437 = sceneSound_10;
             musicPatchNode_7.rawSound = rawSound_9;
-            musicPatchNode_7.field2452 = class201_10.field2481[i_2];
-            musicPatchNode_7.field2438 = class201_10.field2479[i_2];
+            musicPatchNode_7.field2452 = sceneSound_10.field2481[i_2];
+            musicPatchNode_7.field2438 = sceneSound_10.field2479[i_2];
             musicPatchNode_7.field2450 = i_2;
-            musicPatchNode_7.field2442 = i_3 * i_3 * class201_10.field2476[i_2] * class201_10.field2475 + 1024 >> 11;
-            musicPatchNode_7.field2443 = class201_10.field2477[i_2] & 0xff;
-            musicPatchNode_7.field2441 = (i_2 << 8) - (class201_10.field2482[i_2] & 0x7fff);
+            musicPatchNode_7.field2442 = i_3 * i_3 * sceneSound_10.field2476[i_2] * sceneSound_10.field2475 + 1024 >> 11;
+            musicPatchNode_7.field2443 = sceneSound_10.field2477[i_2] & 0xff;
+            musicPatchNode_7.field2441 = (i_2 << 8) - (sceneSound_10.field2482[i_2] & 0x7fff);
             musicPatchNode_7.field2447 = 0;
             musicPatchNode_7.field2448 = 0;
             musicPatchNode_7.field2449 = 0;
@@ -128,10 +128,10 @@ public class class198 extends class115 {
                musicPatchNode_7.field2454 = class113.method2524(rawSound_9, this.method3730(musicPatchNode_7), this.method3731(musicPatchNode_7), this.method3732(musicPatchNode_7));
             } else {
                musicPatchNode_7.field2454 = class113.method2524(rawSound_9, this.method3730(musicPatchNode_7), 0, this.method3732(musicPatchNode_7));
-               this.method3767(musicPatchNode_7, class201_10.field2482[i_2] < 0, (byte) -7);
+               this.method3767(musicPatchNode_7, sceneSound_10.field2482[i_2] < 0, (byte) -7);
             }
 
-            if (class201_10.field2482[i_2] < 0) {
+            if (sceneSound_10.field2482[i_2] < 0) {
                musicPatchNode_7.field2454.method2626(-1);
             }
 
@@ -145,7 +145,7 @@ public class class198 extends class115 {
                this.field2428[i_1][musicPatchNode_7.field2438] = musicPatchNode_7;
             }
 
-            this.field2435.field2484.method4917(musicPatchNode_7);
+            this.field2435.field2484.addFirst(musicPatchNode_7);
             this.field2427[i_1][i_2] = musicPatchNode_7;
          }
       }
@@ -272,26 +272,26 @@ public class class198 extends class115 {
 
       for (class177 class177_8 = (class177) class203_1.field2492.method5950(); class177_8 != null; class177_8 = (class177) class203_1.field2492.method5953()) {
          int i_9 = (int)class177_8.hash;
-         class201 class201_10 = (class201) this.field2417.method5952((long)i_9);
-         if (class201_10 == null) {
+         SceneSound sceneSound_10 = (SceneSound) this.field2417.method5952((long)i_9);
+         if (sceneSound_10 == null) {
             byte[] bytes_12 = class233_2.method4208(i_9);
-            class201 class201_11;
+            SceneSound sceneSound_11;
             if (bytes_12 == null) {
-               class201_11 = null;
+               sceneSound_11 = null;
             } else {
-               class201_11 = new class201(bytes_12);
+               sceneSound_11 = new SceneSound(bytes_12);
             }
 
-            class201_10 = class201_11;
-            if (class201_11 == null) {
+            sceneSound_10 = sceneSound_11;
+            if (sceneSound_11 == null) {
                bool_6 = false;
                continue;
             }
 
-            this.field2417.method5951(class201_11, (long)i_9);
+            this.field2417.method5951(sceneSound_11, (long)i_9);
          }
 
-         if (!class201_10.method3883(class108_3, class177_8.field2108, ints_7)) {
+         if (!sceneSound_10.method3883(class108_3, class177_8.field2108, ints_7)) {
             bool_6 = false;
          }
       }
@@ -334,8 +334,8 @@ public class class198 extends class115 {
    }
 
    public synchronized void method3775() {
-      for (class201 class201_2 = (class201) this.field2417.method5950(); class201_2 != null; class201_2 = (class201) this.field2417.method5953()) {
-         class201_2.method3889();
+      for (SceneSound sceneSound_2 = (SceneSound) this.field2417.method5950(); sceneSound_2 != null; sceneSound_2 = (SceneSound) this.field2417.method5953()) {
+         sceneSound_2.method3889();
       }
 
    }
@@ -375,8 +375,8 @@ public class class198 extends class115 {
    }
 
    public synchronized void method3710(int i_1) {
-      for (class201 class201_2 = (class201) this.field2417.method5950(); class201_2 != null; class201_2 = (class201) this.field2417.method5953()) {
-         class201_2.unlink();
+      for (SceneSound sceneSound_2 = (SceneSound) this.field2417.method5950(); sceneSound_2 != null; sceneSound_2 = (SceneSound) this.field2417.method5953()) {
+         sceneSound_2.unlink();
       }
 
    }

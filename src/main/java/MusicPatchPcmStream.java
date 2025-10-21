@@ -1,4 +1,4 @@
-public class class62 extends LinkedListNode {
+public class MusicPatchPcmStream extends LinkedListNode {
 
    static int field585;
    static class308 field573;
@@ -32,7 +32,7 @@ public class class62 extends LinkedListNode {
       return widget_0.field2706;
    }
 
-   static final int method1130(int i_0, int i_1, int i_2) {
+   static final int getTileHeight(int i_0, int i_1, int i_2) {
       int i_4 = i_0 >> 7;
       int i_5 = i_1 >> 7;
       if (i_4 >= 0 && i_5 >= 0 && i_4 <= 103 && i_5 <= 103) {

@@ -17,7 +17,6 @@ class334.class
 class269.class
 class209.class
 class229.class
-class1.class
 class59.class
 MilliClock.class
 class301.class
@@ -39,6 +38,7 @@ class13.class
 GameApplet.class
 WorldMapData_1.class
 class93.class
+SceneNode.class
 class73.class
 class125.class
 class145.class
@@ -144,6 +144,7 @@ class171.class
 UserComparator10.class
 DualNode.class
 class139.class
+Projectile.class
 Widget.class
 class166.class
 World.class
@@ -256,6 +257,7 @@ UnknownT.class
 class338.class
 class147.class
 class330.class
+MusicPatchPcmStream.class
 class285.class
 class265.class
 class104.class
@@ -278,8 +280,6 @@ class111.class
 class57.class
 ChainedComparator.class
 Timer.class
-ItemContainer_2.class
-class62.class
 ClientPacketProt.class
 ItemDefinition.class
 class316.class
@@ -300,6 +300,7 @@ class102.class
 class293.class
 class322.class
 FriendSystem.class
+WorldMapRectangle.class
 class41.class
 class207.class
 PacketWriter.class
@@ -307,6 +308,7 @@ class179.class
 class214.class
 class287.class
 class319.class
+RenderableSceneNode.class
 class264.class
 class161.class
 class149.class
@@ -322,13 +324,11 @@ class34.class
 class241.class
 class213.class
 class29.class
-RemoveNode.class
 class11.class
 class323.class
 class288.class
 class178.class
 class0.class
-class86.class
 class155.class
 item.class
 class63.class

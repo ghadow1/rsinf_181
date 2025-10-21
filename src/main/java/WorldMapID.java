@@ -35,7 +35,7 @@ public final class WorldMapID {
                string_4 = string_4 + class73.colorStartTag(16777215) + " " + '/' + " " + (Client.menuOptionsCount - 2) + " more options";
             }
 
-            class23.fontBold12.drawRandomAlphaAndSpacing(string_4, i_0 + 4, i_1 + 15, 16777215, 0, Client.field881 / 1000);
+            class23.fontBold12.drawRandomAlphaAndSpacing(string_4, i_0 + 4, i_1 + 15, 16777215, 0, Client.cycle / 1000);
          }
       }
    }

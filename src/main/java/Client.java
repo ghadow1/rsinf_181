@@ -23,7 +23,7 @@ public final class Client extends GameApplet implements class280 {
    static boolean field658 = false;
    static int field662 = 0;
    static boolean field661 = true;
-   static int field881 = 0;
+   static int cycle = 0;
    static long field663 = 1L;
    static int field717 = -1;
    static int field665 = -1;
@@ -141,7 +141,7 @@ public final class Client extends GameApplet implements class280 {
    static int field781;
    static NodeDeque[][][] groundItems;
    static NodeDeque field783;
-   static NodeDeque field670;
+   static NodeDeque projectiles;
    static NodeDeque field785;
    static int[] field760;
    static int[] field787;
@@ -393,7 +393,7 @@ public final class Client extends GameApplet implements class280 {
       field781 = -1;
       groundItems = new NodeDeque[4][104][104];
       field783 = new NodeDeque();
-      field670 = new NodeDeque();
+      projectiles = new NodeDeque();
       field785 = new NodeDeque();
       field760 = new int[25];
       field787 = new int[25];
@@ -655,7 +655,7 @@ public final class Client extends GameApplet implements class280 {
    static final void method1650(String string_0) {
       StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
       String string_2 = stringbuilder_10000.append(" is already on your ignore list").toString();
-      class62.method1132(30, "", string_2);
+      MusicPatchPcmStream.method1132(30, "", string_2);
    }
 
    public Username vmethod5179(byte b_1) {
@@ -772,7 +772,7 @@ public final class Client extends GameApplet implements class280 {
       this.method972();
       this.method932();
       class36.field329 = this.method877();
-      class62.field573 = new class308(255, class167.field2042, class167.field2039, 500000);
+      MusicPatchPcmStream.field573 = new class308(255, class167.field2042, class167.field2039, 500000);
       class17.field117 = BuddyRankComparator.method3249();
       this.method878();
       class218.method4110(this, class60.field566);
@@ -928,7 +928,7 @@ public final class Client extends GameApplet implements class280 {
 
             if (ServerPacketProt.locDelMessage == Client.data.serverPacket) {
                System.out.println("LOC DELETE");
-               class1.method10(RemoveNode.field2320);
+               SceneNode.addSceneNode(RenderableSceneNode.field2320);
                Client.data.serverPacket = null;
                return true;
             }
@@ -970,8 +970,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.field2137 == Client.data.serverPacket) {
-               System.out.println("sfsdfsdfsdfsdfsdf this e");
-               class1.method10(RemoveNode.field2315);
+               SceneNode.addSceneNode(RenderableSceneNode.field2315);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1008,8 +1007,8 @@ public final class Client extends GameApplet implements class280 {
 
                while (jagbuf.position < Client.data.serverPacketLength) {
                   packet_integer_653 = jagbuf.readUnsignedByte();
-                  RemoveNode removeNode_59 = class6.method70()[packet_integer_653];
-                  class1.method10(removeNode_59);
+                  RenderableSceneNode renderableSceneNode_59 = class6.method70()[packet_integer_653];
+                  SceneNode.addSceneNode(renderableSceneNode_59);
                }
 
                Client.data.serverPacket = null;
@@ -1119,10 +1118,10 @@ public final class Client extends GameApplet implements class280 {
                if (class55.field501 >= 100) {
                   packet_integer_653 = class70.field1017 * 128 + 64;
                   i_6 = class30.field259 * 128 + 64;
-                  i_18 = class62.method1130(packet_integer_653, i_6, ItemContainer_2.plane) - class31.field268;
+                  i_18 = MusicPatchPcmStream.getTileHeight(packet_integer_653, i_6, WorldMapRectangle.plane) - class31.field268;
                   i_8 = packet_integer_653 - PacketBuffer.field3727;
                   i_21 = i_18 - GCMonitor.field383;
-                  i_10 = i_6 - class1.field3;
+                  i_10 = i_6 - SceneNode.field3;
                   i_11 = (int)Math.sqrt((double)(i_10 * i_10 + i_8 * i_8));
                   class11.field77 = (int)(Math.atan2((double)i_21, (double)i_11) * 325.949D) & 0x7ff;
                   MouseRecorder.field1112 = (int) (Math.atan2((double) i_8, (double) i_10) * -325.949D) & 0x7ff;
@@ -1161,14 +1160,13 @@ public final class Client extends GameApplet implements class280 {
 
             if (ServerPacketProt.field2157 == Client.data.serverPacket) {
                System.out.println("Attempting to remove ground item node");
-               class1.method10(RemoveNode.clearItem);
+               SceneNode.addSceneNode(RenderableSceneNode.clearItem);
                Client.data.serverPacket = null;
                return true;
             }
 
             if (ServerPacketProt.field2164 == Client.data.serverPacket) {
-               System.out.println("DFSFSDFSDFSDFSF");
-               class1.method10(RemoveNode.field2324);
+               SceneNode.addSceneNode(RenderableSceneNode.field2324);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1350,7 +1348,7 @@ public final class Client extends GameApplet implements class280 {
                if (!bool_50 && field767 == 0) {
                   field922[field875] = long_13;
                   field875 = (field875 + 1) % 100;
-                  String string_28 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 39)));
+                  String string_28 = AbstractFont.escapeBrackets(SceneNode.method17(class311.method5898(jagbuf, (byte) 39)));
                   if (gameState_12.modIcon != -1) {
                      MilliClock.method157(9, AbstractWorldMapData.iconTag(gameState_12.modIcon) + string_38, string_28, SoundSystem.base37DecodeLong(long_24));
                   } else {
@@ -1375,9 +1373,9 @@ public final class Client extends GameApplet implements class280 {
                }
 
                arr_58[0] = new Integer(jagbuf.readIntMedEndian());
-               class62 class62_49 = new class62();
-               class62_49.field581 = arr_58;
-               class184.method3613(class62_49);
+               MusicPatchPcmStream musicPatchPcmStream_49 = new MusicPatchPcmStream();
+               musicPatchPcmStream_49.field581 = arr_58;
+               class184.method3613(musicPatchPcmStream_49);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1445,8 +1443,8 @@ public final class Client extends GameApplet implements class280 {
                class96.field1327 = jagbuf.readUnsignedByte();
                if (class96.field1327 >= 100) {
                   PacketBuffer.field3727 = class46.field412 * 128 + 64;
-                  class1.field3 = class210.field2516 * 128 + 64;
-                  GCMonitor.field383 = class62.method1130(PacketBuffer.field3727, class1.field3, ItemContainer_2.plane) - class190.field2345;
+                  SceneNode.field3 = class210.field2516 * 128 + 64;
+                  GCMonitor.field383 = MusicPatchPcmStream.getTileHeight(PacketBuffer.field3727, SceneNode.field3, WorldMapRectangle.plane) - class190.field2345;
                }
 
                Client.data.serverPacket = null;
@@ -1465,7 +1463,7 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.soundAreaMessage == Client.data.serverPacket) {
-               class1.method10(RemoveNode.field2319);
+               SceneNode.addSceneNode(RenderableSceneNode.field2319);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1500,7 +1498,7 @@ public final class Client extends GameApplet implements class280 {
             if (ServerPacketProt.mapAnimMessage == Client.data.serverPacket) {
                System.out.println("mapAnimMessage message packet");
 
-               class1.method10(RemoveNode.field2317);
+               SceneNode.addSceneNode(RenderableSceneNode.field2317);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1508,14 +1506,14 @@ public final class Client extends GameApplet implements class280 {
             if (ServerPacketProt.objDelMessage == Client.data.serverPacket) {
                System.out.println("objDelMessage message packet");
 
-               class1.method10(RemoveNode.field2321);
+               SceneNode.addSceneNode(RenderableSceneNode.field2321);
                Client.data.serverPacket = null;
                return true;
             }
 
             if (ServerPacketProt.objCountMessage == Client.data.serverPacket) {
                System.out.println("object count message packet");
-               class1.method10(RemoveNode.field2322);
+               SceneNode.addSceneNode(RenderableSceneNode.field2322);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1644,7 +1642,7 @@ public final class Client extends GameApplet implements class280 {
                   System.out.println("======= end_messageGameMessage =======");
                }
                if (!bool_46) {
-                  class62.method1132(packet_integer_653, str_45, string_43);
+                  MusicPatchPcmStream.method1132(packet_integer_653, str_45, string_43);
                }
 
                Client.data.serverPacket = null;
@@ -1671,15 +1669,15 @@ public final class Client extends GameApplet implements class280 {
 
                for (packet_integer_653 = class311.localSceneX; packet_integer_653 < class311.localSceneX + 8; packet_integer_653++) {
                   for (i_6 = UserComparator10.localSceneY; i_6 < UserComparator10.localSceneY + 8; i_6++) {
-                     if (groundItems[ItemContainer_2.plane][packet_integer_653][i_6] != null) {
-                        groundItems[ItemContainer_2.plane][packet_integer_653][i_6] = null;
-                        class5.method60(packet_integer_653, i_6);
+                     if (groundItems[WorldMapRectangle.plane][packet_integer_653][i_6] != null) {
+                        groundItems[WorldMapRectangle.plane][packet_integer_653][i_6] = null;
+                        class5.updatePendingSpawn(packet_integer_653, i_6);
                      }
                   }
                }
 
                for (class68 class68_39 = (class68) field783.method4892(); class68_39 != null; class68_39 = (class68) field783.method4894()) {
-                  if (class68_39.field937 >= class311.localSceneX && class68_39.field937 < class311.localSceneX + 8 && class68_39.field934 >= UserComparator10.localSceneY && class68_39.field934 < UserComparator10.localSceneY + 8 && class68_39.field943 == ItemContainer_2.plane) {
+                  if (class68_39.field937 >= class311.localSceneX && class68_39.field937 < class311.localSceneX + 8 && class68_39.field934 >= UserComparator10.localSceneY && class68_39.field934 < UserComparator10.localSceneY + 8 && class68_39.field943 == WorldMapRectangle.plane) {
                      class68_39.field931 = 0;
                   }
                }
@@ -1729,8 +1727,8 @@ public final class Client extends GameApplet implements class280 {
 
             if (ServerPacketProt.field2180 == Client.data.serverPacket) {
                string_38 = jagbuf.readNullTerminatedString();
-               string_19 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 54)));
-               class62.method1132(6, string_38, string_19);
+               string_19 = AbstractFont.escapeBrackets(SceneNode.method17(class311.method5898(jagbuf, (byte) 54)));
+               MusicPatchPcmStream.method1132(6, string_38, string_19);
                Client.data.serverPacket = null;
                return true;
             }
@@ -1790,7 +1788,7 @@ public final class Client extends GameApplet implements class280 {
             if (ServerPacketProt.locAddChangeMessage == Client.data.serverPacket) {
                System.out.println("locAddChangeMessage message packet");
 
-               class1.method10(RemoveNode.field2323);
+               SceneNode.addSceneNode(RenderableSceneNode.field2323);
                Client.data.serverPacket = null;
                return true;
             }
@@ -2024,7 +2022,8 @@ public final class Client extends GameApplet implements class280 {
             }
 
             if (ServerPacketProt.mapProjAnimMessage == Client.data.serverPacket) {
-               class1.method10(RemoveNode.field2316);
+               System.out.println("Incoming scene projectile node call.");
+               SceneNode.addSceneNode(RenderableSceneNode.projectileNode);
                Client.data.serverPacket = null;
                return true;
             }
@@ -2084,7 +2083,7 @@ public final class Client extends GameApplet implements class280 {
                if (!bool_34 && field767 == 0) {
                   field922[field875] = long_32;
                   field875 = (field875 + 1) % 100;
-                  String string_35 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(jagbuf, (byte) 52)));
+                  String string_35 = AbstractFont.escapeBrackets(SceneNode.method17(class311.method5898(jagbuf, (byte) 52)));
                   byte b_15;
                   if (gameState_31.field3091) {
                      b_15 = 7;
@@ -2093,9 +2092,9 @@ public final class Client extends GameApplet implements class280 {
                   }
 
                   if (gameState_31.modIcon != -1) {
-                     class62.method1132(b_15, AbstractWorldMapData.iconTag(gameState_31.modIcon) + string_38, string_35);
+                     MusicPatchPcmStream.method1132(b_15, AbstractWorldMapData.iconTag(gameState_31.modIcon) + string_38, string_35);
                   } else {
-                     class62.method1132(b_15, string_38, string_35);
+                     MusicPatchPcmStream.method1132(b_15, string_38, string_35);
                   }
                }
 
@@ -2199,7 +2198,7 @@ public final class Client extends GameApplet implements class280 {
          } catch (IOException ioexception_36) {
             class56.method1090();
          } catch (Exception exception_37) {
-            string_19 = "" + (Client.data.serverPacket != null ? Client.data.serverPacket.field2201 : -1) + "," + (Client.data.field1321 != null ? Client.data.field1321.field2201 : -1) + "," + (Client.data.field1317 != null ? Client.data.field1317.field2201 : -1) + "," + Client.data.serverPacketLength + "," + (localPlayer.field994[0] + class196.field2389) + "," + (localPlayer.field962[0] + class1.field1) + ",";
+            string_19 = "" + (Client.data.serverPacket != null ? Client.data.serverPacket.field2201 : -1) + "," + (Client.data.field1321 != null ? Client.data.field1321.field2201 : -1) + "," + (Client.data.field1317 != null ? Client.data.field1317.field2201 : -1) + "," + Client.data.serverPacketLength + "," + (localPlayer.field994[0] + class196.field2389) + "," + (localPlayer.field962[0] + SceneNode.field1) + ",";
 
             for (i_18 = 0; i_18 < Client.data.serverPacketLength && i_18 < 50; i_18++) {
                string_19 = string_19 + jagbuf.buffer[i_18] + ",";
@@ -2215,7 +2214,7 @@ public final class Client extends GameApplet implements class280 {
 
    final void method1274(int i_1, int i_2) {
       class236.method4312(i_1, i_2);
-      class5.field22.click(ItemContainer_2.plane, i_1, i_2, false);
+      class5.field22.click(WorldMapRectangle.plane, i_1, i_2, false);
       field674 = true;
    }
 
@@ -2234,7 +2233,7 @@ public final class Client extends GameApplet implements class280 {
          field843[i_2] = false;
       }
 
-      field741 = field881;
+      field741 = cycle;
       field803 = -1;
       field804 = -1;
       class294.field3697 = null;
@@ -2267,7 +2266,7 @@ public final class Client extends GameApplet implements class280 {
       } else {
          i_2 = class247.field3292;
          i_3 = class30.field267;
-         i_4 = ItemContainer_2.field373;
+         i_4 = WorldMapRectangle.field373;
          i_5 = class75.field1092;
          int i_15 = 6116423;
          Rasterizer2D.fillRectangle(i_2, i_3, i_4, i_5, i_15);
@@ -2291,7 +2290,7 @@ public final class Client extends GameApplet implements class280 {
 
          i_14 = class247.field3292;
          i_16 = class30.field267;
-         i_17 = ItemContainer_2.field373;
+         i_17 = WorldMapRectangle.field373;
          int i_18 = class75.field1092;
 
          for (int i_13 = 0; i_13 < field858; i_13++) {
@@ -2311,7 +2310,7 @@ public final class Client extends GameApplet implements class280 {
          }
       }
 
-      i_2 = ItemContainer_2.plane;
+      i_2 = WorldMapRectangle.plane;
       i_3 = localPlayer.x;
       i_4 = localPlayer.y;
       i_5 = field718;
@@ -2402,7 +2401,7 @@ public final class Client extends GameApplet implements class280 {
    }
 
    protected final void vmethod1599() {
-      ++field881;
+      ++cycle;
       this.method1247();
 
       while (true) {
@@ -2963,9 +2962,9 @@ public final class Client extends GameApplet implements class280 {
 
             class45.method801(-2003037366);
             int[] ints_38;
-            if (field747 != ItemContainer_2.plane) {
-               field747 = ItemContainer_2.plane;
-               i_2 = ItemContainer_2.plane;
+            if (field747 != WorldMapRectangle.plane) {
+               field747 = WorldMapRectangle.plane;
+               i_2 = WorldMapRectangle.plane;
                ints_38 = ParamDefinition.sceneMinimapSprite.field3908;
                i_4 = ints_38.length;
 
@@ -3009,7 +3008,7 @@ public final class Client extends GameApplet implements class280 {
 
                for (i_7 = 0; i_7 < 104; i_7++) {
                   for (i_8 = 0; i_8 < 104; i_8++) {
-                     long long_25 = class5.field22.method3095(ItemContainer_2.plane, i_7, i_8);
+                     long long_25 = class5.field22.method3095(WorldMapRectangle.plane, i_7, i_8);
                      if (long_25 != 0L) {
                         i_11 = GCMonitor.method770(long_25);
                         i_12 = class128.method2970(i_11).field3378;
@@ -3119,7 +3118,7 @@ public final class Client extends GameApplet implements class280 {
                      }
 
                      if (i_5 != localPlayer.field629) {
-                        class28.method418(localPlayer.field994[0] + class196.field2389, localPlayer.field962[0] + class1.field1, i_5, false, -1379117889);
+                        class28.method418(localPlayer.field994[0] + class196.field2389, localPlayer.field962[0] + SceneNode.field1, i_5, false, -1379117889);
                      }
 
                      field853 = 0;
@@ -3134,20 +3133,20 @@ public final class Client extends GameApplet implements class280 {
                   while (true) {
                      Widget widget_29;
                      Widget widget_41;
-                     class62 class62_43;
+                     MusicPatchPcmStream musicPatchPcmStream_43;
                      do {
-                        class62_43 = (class62) field852.method4900();
-                        if (class62_43 == null) {
+                        musicPatchPcmStream_43 = (MusicPatchPcmStream) field852.method4900();
+                        if (musicPatchPcmStream_43 == null) {
                            while (true) {
                               do {
-                                 class62_43 = (class62) field856.method4900();
-                                 if (class62_43 == null) {
+                                 musicPatchPcmStream_43 = (MusicPatchPcmStream) field856.method4900();
+                                 if (musicPatchPcmStream_43 == null) {
                                     while (true) {
                                        do {
-                                          class62_43 = (class62) field854.method4900();
-                                          if (class62_43 == null) {
+                                          musicPatchPcmStream_43 = (MusicPatchPcmStream) field854.method4900();
+                                          if (musicPatchPcmStream_43 == null) {
                                              this.method1333((byte) 116);
-                                             class243.method4415(-1672246120);
+                                             class243.method4415();
                                              if (field828 != null) {
                                                 this.method1641();
                                              }
@@ -3222,7 +3221,7 @@ public final class Client extends GameApplet implements class280 {
                                                 i_6 = Scene.clickTileZ;
                                                 class187_20 = class235.method4265(ClientPacketProt.field2299, data.field1313);
                                                 class187_20.outBuffer.writeByte(5);
-                                                class187_20.outBuffer.writeUnsignedShortA(i_6 + class1.field1);
+                                                class187_20.outBuffer.writeUnsignedShortA(i_6 + SceneNode.field1);
                                                 class187_20.outBuffer.writeUnsignedShortA(i_5 + class196.field2389);
                                                 class187_20.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                                                 data.copy(class187_20);
@@ -3270,7 +3269,7 @@ public final class Client extends GameApplet implements class280 {
                                              if (field899) {
                                                 i_5 = class46.field412 * 128 + 64;
                                                 i_6 = class210.field2516 * 128 + 64;
-                                                i_7 = class62.method1130(i_5, i_6, ItemContainer_2.plane) - class190.field2345;
+                                                i_7 = MusicPatchPcmStream.getTileHeight(i_5, i_6, WorldMapRectangle.plane) - class190.field2345;
                                                 if (PacketBuffer.field3727 < i_5) {
                                                    PacketBuffer.field3727 = (i_5 - PacketBuffer.field3727) * class96.field1327 / 1000 + PacketBuffer.field3727 + class83.field1166;
                                                    if (PacketBuffer.field3727 > i_5) {
@@ -3299,26 +3298,26 @@ public final class Client extends GameApplet implements class280 {
                                                    }
                                                 }
 
-                                                if (class1.field3 < i_6) {
-                                                   class1.field3 = (i_6 - class1.field3) * class96.field1327 / 1000 + class1.field3 + class83.field1166;
-                                                   if (class1.field3 > i_6) {
-                                                      class1.field3 = i_6;
+                                                if (SceneNode.field3 < i_6) {
+                                                   SceneNode.field3 = (i_6 - SceneNode.field3) * class96.field1327 / 1000 + SceneNode.field3 + class83.field1166;
+                                                   if (SceneNode.field3 > i_6) {
+                                                      SceneNode.field3 = i_6;
                                                    }
                                                 }
 
-                                                if (class1.field3 > i_6) {
-                                                   class1.field3 -= class96.field1327 * (class1.field3 - i_6) / 1000 + class83.field1166;
-                                                   if (class1.field3 < i_6) {
-                                                      class1.field3 = i_6;
+                                                if (SceneNode.field3 > i_6) {
+                                                   SceneNode.field3 -= class96.field1327 * (SceneNode.field3 - i_6) / 1000 + class83.field1166;
+                                                   if (SceneNode.field3 < i_6) {
+                                                      SceneNode.field3 = i_6;
                                                    }
                                                 }
 
                                                 i_5 = class70.field1017 * 128 + 64;
                                                 i_6 = class30.field259 * 128 + 64;
-                                                i_7 = class62.method1130(i_5, i_6, ItemContainer_2.plane) - class31.field268;
+                                                i_7 = MusicPatchPcmStream.getTileHeight(i_5, i_6, WorldMapRectangle.plane) - class31.field268;
                                                 i_8 = i_5 - PacketBuffer.field3727;
                                                 i_9 = i_7 - GCMonitor.field383;
-                                                i_10 = i_6 - class1.field3;
+                                                i_10 = i_6 - SceneNode.field3;
                                                 i_11 = (int)Math.sqrt((double)(i_8 * i_8 + i_10 * i_10));
                                                 i_12 = (int)(Math.atan2((double)i_9, (double)i_11) * 325.949D) & 0x7ff;
                                                 i_13 = (int)(Math.atan2((double)i_8, (double)i_10) * -325.949D) & 0x7ff;
@@ -3408,7 +3407,7 @@ public final class Client extends GameApplet implements class280 {
                                              return;
                                           }
 
-                                          widget_29 = class62_43.field575;
+                                          widget_29 = musicPatchPcmStream_43.field575;
                                           if (widget_29.field2565 < 0) {
                                              break;
                                           }
@@ -3416,11 +3415,11 @@ public final class Client extends GameApplet implements class280 {
                                           widget_41 = WorldMapElement.getWidget(widget_29.field2583);
                                        } while (widget_41 == null || widget_41.field2675 == null || widget_29.field2565 >= widget_41.field2675.length || widget_29 != widget_41.field2675[widget_29.field2565]);
 
-                                       class184.method3613(class62_43);
+                                       class184.method3613(musicPatchPcmStream_43);
                                     }
                                  }
 
-                                 widget_29 = class62_43.field575;
+                                 widget_29 = musicPatchPcmStream_43.field575;
                                  if (widget_29.field2565 < 0) {
                                     break;
                                  }
@@ -3428,11 +3427,11 @@ public final class Client extends GameApplet implements class280 {
                                  widget_41 = WorldMapElement.getWidget(widget_29.field2583);
                               } while (widget_41 == null || widget_41.field2675 == null || widget_29.field2565 >= widget_41.field2675.length || widget_29 != widget_41.field2675[widget_29.field2565]);
 
-                              class184.method3613(class62_43);
+                              class184.method3613(musicPatchPcmStream_43);
                            }
                         }
 
-                        widget_29 = class62_43.field575;
+                        widget_29 = musicPatchPcmStream_43.field575;
                         if (widget_29.field2565 < 0) {
                            break;
                         }
@@ -3440,7 +3439,7 @@ public final class Client extends GameApplet implements class280 {
                         widget_41 = WorldMapElement.getWidget(widget_29.field2583);
                      } while (widget_41 == null || widget_41.field2675 == null || widget_29.field2565 >= widget_41.field2675.length || widget_29 != widget_41.field2675[widget_29.field2565]);
 
-                     class184.method3613(class62_43);
+                     class184.method3613(musicPatchPcmStream_43);
                   }
                }
             }
@@ -3994,16 +3993,16 @@ public final class Client extends GameApplet implements class280 {
                if (i_21 != 1 && (class46.field413 || i_21 != 4)) {
                   i_3 = MouseHandler.MouseHandler_x;
                   i_15 = MouseHandler.MouseHandler_y;
-                  if (i_3 < class247.field3292 - 10 || i_3 > class247.field3292 + ItemContainer_2.field373 + 10 || i_15 < class30.field267 - 10 || i_15 > class30.field267 + class75.field1092 + 10) {
+                  if (i_3 < class247.field3292 - 10 || i_3 > class247.field3292 + WorldMapRectangle.field373 + 10 || i_15 < class30.field267 - 10 || i_15 > class30.field267 + class75.field1092 + 10) {
                      field674 = false;
-                     UserComparator10.method2215(class247.field3292, class30.field267, ItemContainer_2.field373, class75.field1092);
+                     UserComparator10.method2215(class247.field3292, class30.field267, WorldMapRectangle.field373, class75.field1092);
                   }
                }
 
                if (i_21 == 1 || !class46.field413 && i_21 == 4) {
                   i_3 = class247.field3292;
                   i_15 = class30.field267;
-                  i_16 = ItemContainer_2.field373;
+                  i_16 = WorldMapRectangle.field373;
                   i_6 = MouseHandler.field483;
                   i_22 = MouseHandler.field495;
                   int i_23 = -1;
@@ -4026,7 +4025,7 @@ public final class Client extends GameApplet implements class280 {
                   }
 
                   field674 = false;
-                  UserComparator10.method2215(class247.field3292, class30.field267, ItemContainer_2.field373, class75.field1092);
+                  UserComparator10.method2215(class247.field3292, class30.field267, WorldMapRectangle.field373, class75.field1092);
                }
             } else {
                label281: {
@@ -4150,26 +4149,26 @@ public final class Client extends GameApplet implements class280 {
 
          int i_7 = i_2 - field834 + field829.field2585;
          int i_8 = i_3 - field835 + field829.field2586;
-         class62 class62_9;
+         MusicPatchPcmStream musicPatchPcmStream_9;
          if (field828.field2620 != null && field839) {
-            class62_9 = new class62();
-            class62_9.field575 = field828;
-            class62_9.field576 = i_7;
-            class62_9.field577 = i_8;
-            class62_9.field581 = field828.field2620;
-            class184.method3613(class62_9);
+            musicPatchPcmStream_9 = new MusicPatchPcmStream();
+            musicPatchPcmStream_9.field575 = field828;
+            musicPatchPcmStream_9.field576 = i_7;
+            musicPatchPcmStream_9.field577 = i_8;
+            musicPatchPcmStream_9.field581 = field828.field2620;
+            class184.method3613(musicPatchPcmStream_9);
          }
 
          if (MouseHandler.field485 == 0) {
             if (field839) {
                if (field828.field2660 != null) {
-                  class62_9 = new class62();
-                  class62_9.field575 = field828;
-                  class62_9.field576 = i_7;
-                  class62_9.field577 = i_8;
-                  class62_9.field579 = field832;
-                  class62_9.field581 = field828.field2660;
-                  class184.method3613(class62_9);
+                  musicPatchPcmStream_9 = new MusicPatchPcmStream();
+                  musicPatchPcmStream_9.field575 = field828;
+                  musicPatchPcmStream_9.field576 = i_7;
+                  musicPatchPcmStream_9.field577 = i_8;
+                  musicPatchPcmStream_9.field579 = field832;
+                  musicPatchPcmStream_9.field581 = field828.field2660;
+                  class184.method3613(musicPatchPcmStream_9);
                }
 
                if (field832 != null) {

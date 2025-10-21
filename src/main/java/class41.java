@@ -14,7 +14,7 @@ public class class41 {
    static final void method737() {
       Object obj_10000 = null;
       String str_1 = "You can\'t add yourself to your own ignore list";
-      class62.method1132(30, "", str_1);
+      MusicPatchPcmStream.method1132(30, "", str_1);
    }
 
    static final void method736(PacketBuffer buffer3_0, int i_1, class66 class66_2, int i_3) {
@@ -47,7 +47,7 @@ public class class41 {
                }
 
                i_12 = buffer3_0.readSmartInt();
-               class66_2.method1657(i_8, i_10, i_9, i_11, Client.field881, i_12);
+               class66_2.method1657(i_8, i_10, i_9, i_11, Client.cycle, i_12);
             }
          }
 
@@ -60,7 +60,7 @@ public class class41 {
                   i_11 = buffer3_0.readSmartInt();
                   i_12 = buffer3_0.readOffsetUnsignedByte();
                   i_13 = i_10 > 0 ? buffer3_0.readUnsignedByte() : i_12;
-                  class66_2.method1655(i_9, Client.field881, i_10, i_11, i_12, i_13, (byte) 52);
+                  class66_2.method1655(i_9, Client.cycle, i_10, i_11, i_12, i_13, (byte) 52);
                } else {
                   class66_2.method1659(i_9);
                }
@@ -72,10 +72,10 @@ public class class41 {
          class66_2.field986 = buffer3_0.readShortWithOffset2();
          i_6 = buffer3_0.readIntCustomOrder2();
          class66_2.field990 = i_6 >> 16;
-         class66_2.field989 = (i_6 & 0xffff) + Client.field881;
+         class66_2.field989 = (i_6 & 0xffff) + Client.cycle;
          class66_2.field987 = 0;
          class66_2.field988 = 0;
-         if (class66_2.field989 > Client.field881) {
+         if (class66_2.field989 > Client.cycle) {
             class66_2.field987 = -1;
          }
 
@@ -93,8 +93,8 @@ public class class41 {
          class66_2.field993 = buffer3_0.readOffsetByte();
          class66_2.field992 = buffer3_0.readOffsetByte();
          class66_2.field983 = buffer3_0.readInvertedByte();
-         class66_2.field995 = buffer3_0.readShortWithOffset() + Client.field881;
-         class66_2.field996 = buffer3_0.readShortLittleEndian() + Client.field881;
+         class66_2.field995 = buffer3_0.readShortWithOffset() + Client.cycle;
+         class66_2.field996 = buffer3_0.readShortLittleEndian() + Client.cycle;
          class66_2.field997 = buffer3_0.readUnsignedShort();
          if (class66_2.field638) {
             class66_2.field991 += class66_2.field639;
@@ -117,9 +117,9 @@ public class class41 {
          class66_2.field977 = buffer3_0.readNullTerminatedString();
          if (class66_2.field977.charAt(0) == 126) {
             class66_2.field977 = class66_2.field977.substring(1);
-            class62.method1132(2, class66_2.field621.method5197(), class66_2.field977);
+            MusicPatchPcmStream.method1132(2, class66_2.field621.method5197(), class66_2.field977);
          } else if (class66_2 == Client.localPlayer) {
-            class62.method1132(2, class66_2.field621.method5197(), class66_2.field977);
+            MusicPatchPcmStream.method1132(2, class66_2.field621.method5197(), class66_2.field977);
          }
 
          class66_2.field963 = false;
@@ -172,7 +172,7 @@ public class class41 {
                class89.field1264.position = 0;
                buffer3_0.readBytes(class89.field1264.buffer, 0, i_9);
                class89.field1264.position = 0;
-               String string_16 = AbstractFont.escapeBrackets(class1.method17(class311.method5898(class89.field1264, (byte) 23)));
+               String string_16 = AbstractFont.escapeBrackets(SceneNode.method17(class311.method5898(class89.field1264, (byte) 23)));
                class66_2.field977 = string_16.trim();
                class66_2.field966 = i_6 >> 8;
                class66_2.field982 = i_6 & 0xff;
@@ -186,9 +186,9 @@ public class class41 {
                }
 
                if (gameState_20.modIcon != -1) {
-                  class62.method1132(i_13, AbstractWorldMapData.iconTag(gameState_20.modIcon) + class66_2.field621.method5197(), string_16);
+                  MusicPatchPcmStream.method1132(i_13, AbstractWorldMapData.iconTag(gameState_20.modIcon) + class66_2.field621.method5197(), string_16);
                } else {
-                  class62.method1132(i_13, class66_2.field621.method5197(), string_16);
+                  MusicPatchPcmStream.method1132(i_13, class66_2.field621.method5197(), string_16);
                }
             }
          }

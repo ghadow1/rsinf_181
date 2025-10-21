@@ -43,11 +43,11 @@ public class class23 extends class34 {
 
    }
 
-   int vmethod577(byte b_1) {
+   int vmethod577() {
       return this.field189;
    }
 
-   int vmethod593(byte b_1) {
+   int vmethod593() {
       return this.field186;
    }
 

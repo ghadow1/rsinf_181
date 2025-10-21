@@ -38,7 +38,7 @@ public class class28 {
             i_8 = class300_0.readUnsignedByte();
             if (i_8 == 0) {
                if (i_1 == 0) {
-                  class55.field516[0][i_2][i_3] = -class1.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5) * 8;
+                  class55.field516[0][i_2][i_3] = -SceneNode.method14(i_4 + 932731 + i_2, i_3 + 556238 + i_5) * 8;
                } else {
                   class55.field516[i_1][i_2][i_3] = class55.field516[i_1 - 1][i_2][i_3] - 240;
                }

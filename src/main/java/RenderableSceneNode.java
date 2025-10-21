@@ -1,20 +1,20 @@
-public class RemoveNode {
+public class RenderableSceneNode {
 
-   public static final RemoveNode field2322 = new RemoveNode(7);
-   public static final RemoveNode field2316 = new RemoveNode(15);
-   public static final RemoveNode clearItem = new RemoveNode(14);
-   public static final RemoveNode field2317 = new RemoveNode(6);
-   public static final RemoveNode field2324 = new RemoveNode(4);
-   public static final RemoveNode field2319 = new RemoveNode(5);
-   public static final RemoveNode field2320 = new RemoveNode(2);
-   public static final RemoveNode field2321 = new RemoveNode(3);
-   public static final RemoveNode field2315 = new RemoveNode(5);
-   public static final RemoveNode field2323 = new RemoveNode(4);
+   public static final RenderableSceneNode field2322 = new RenderableSceneNode();
+   public static final RenderableSceneNode projectileNode = new RenderableSceneNode();
+   public static final RenderableSceneNode clearItem = new RenderableSceneNode();
+   public static final RenderableSceneNode field2317 = new RenderableSceneNode();
+   public static final RenderableSceneNode field2324 = new RenderableSceneNode();
+   public static final RenderableSceneNode field2319 = new RenderableSceneNode();
+   public static final RenderableSceneNode field2320 = new RenderableSceneNode();
+   public static final RenderableSceneNode field2321 = new RenderableSceneNode();
+   public static final RenderableSceneNode field2315 = new RenderableSceneNode();
+   public static final RenderableSceneNode field2323 = new RenderableSceneNode();
 
-   RemoveNode(int i_1) {
+   RenderableSceneNode() {
    }
 
-   static void method3617(byte[] bytes_0, byte b_1) {
+   static void method3617(byte[] bytes_0) {
       ByteBuffer class300_2 = new ByteBuffer(bytes_0);
       class300_2.position = bytes_0.length - 2;
       class326.field3911 = class300_2.readUnsignedShort();
@@ -80,7 +80,7 @@ public class RemoveNode {
 
    }
 
-   public static boolean method3615(char var_0, int i_1) {
+   public static boolean method3615(char var_0) {
       return var_0 >= 65 && var_0 <= 90 || var_0 >= 97 && var_0 <= 122;
    }
 

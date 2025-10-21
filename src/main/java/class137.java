@@ -86,7 +86,7 @@ public class class137 {
       }
 
       Client.field781 = -1;
-      Client.field670.method4886();
+      Client.projectiles.method4886();
       Client.field785.method4886();
 
       int i_3;

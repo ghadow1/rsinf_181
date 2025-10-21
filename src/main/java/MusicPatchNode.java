@@ -17,7 +17,7 @@ public class MusicPatchNode extends LinkedListNode {
    int field2449;
    int field2453;
    int field2451;
-   class201 field2437;
+   SceneSound field2437;
    RawSound rawSound;
    class196 field2452;
    class113 field2454;

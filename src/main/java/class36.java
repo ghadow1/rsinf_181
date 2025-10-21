@@ -320,7 +320,7 @@ public final class class36 {
       StringBuilder stringbuilder_10000 = (new StringBuilder()).append(string_0);
       Object obj_10001 = null;
       String string_2 = stringbuilder_10000.append(" is already on your friend list").toString();
-      class62.method1132(30, "", string_2);
+      MusicPatchPcmStream.method1132(30, "", string_2);
    }
 
    public static int method625(int i_0, int i_1, int i_2, int i_3) {

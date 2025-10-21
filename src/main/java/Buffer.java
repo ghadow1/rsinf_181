@@ -35,11 +35,11 @@ public class Buffer extends class34 {
       return this.field125;
    }
 
-   int vmethod577(byte b_1) {
+   int vmethod577() {
       return this.field123;
    }
 
-   int vmethod593(byte b_1) {
+   int vmethod593() {
       return this.field124;
    }
 
@@ -50,7 +50,7 @@ public class Buffer extends class34 {
    }
 
    public static class343 userPrefSave(String string_0, String string_1, boolean bool_2) {
-      File file_4 = new File(class1.field2, "preferences" + string_0 + ".dat");
+      File file_4 = new File(SceneNode.field2, "preferences" + string_0 + ".dat");
       if (file_4.exists()) {
          try {
             class343 class343_11 = new class343(file_4, "rw", 10000L);
@@ -117,7 +117,7 @@ public class Buffer extends class34 {
          } else if (Client.field770 == i_1) {
             throw new RuntimeException();
          } else {
-            class89.field1253[i_1] = (class66_5.field629 << 28) + (class1.field1 + class66_5.field962[0] >> 13) + (class196.field2389 + class66_5.field994[0] >> 13 << 14);
+            class89.field1253[i_1] = (class66_5.field629 << 28) + (SceneNode.field1 + class66_5.field962[0] >> 13) + (class196.field2389 + class66_5.field994[0] >> 13 << 14);
             if (class66_5.field976 != -1) {
                class89.field1260[i_1] = class66_5.field976;
             } else {
@@ -272,7 +272,7 @@ public class Buffer extends class34 {
 
                class66_5.field629 = (byte)(i_8 + class66_5.field629 & 0x3);
                if (Client.field770 == i_1) {
-                  ItemContainer_2.plane = class66_5.field629;
+                  WorldMapRectangle.plane = class66_5.field629;
                }
 
             } else {
@@ -281,7 +281,7 @@ public class Buffer extends class34 {
                i_9 = i_7 >> 14 & 0x3fff;
                i_10 = i_7 & 0x3fff;
                i_11 = (i_9 + class196.field2389 + class66_5.field994[0] & 0x3fff) - class196.field2389;
-               i_12 = (i_10 + class1.field1 + class66_5.field962[0] & 0x3fff) - class1.field1;
+               i_12 = (i_10 + SceneNode.field1 + class66_5.field962[0] & 0x3fff) - SceneNode.field1;
                if (Client.field770 == i_1 && (class66_5.x < 1536 || class66_5.y < 1536 || class66_5.x >= 11776 || class66_5.y >= 11776)) {
                   class66_5.method1205(i_11, i_12);
                   class66_5.field638 = false;
@@ -296,7 +296,7 @@ public class Buffer extends class34 {
 
                class66_5.field629 = (byte)(i_8 + class66_5.field629 & 0x3);
                if (Client.field770 == i_1) {
-                  ItemContainer_2.plane = class66_5.field629;
+                  WorldMapRectangle.plane = class66_5.field629;
                }
 
             }
@@ -354,7 +354,7 @@ public class Buffer extends class34 {
                int i_13 = Client.localPlayer.y - i_11 >> 7;
                class187 class187_14 = class235.method4265(ClientPacketProt.field2262, Client.data.field1313);
                class187_14.outBuffer.writeByte(18);
-               class187_14.outBuffer.writeUnsignedShortA(i_13 + class1.field1);
+               class187_14.outBuffer.writeUnsignedShortA(i_13 + SceneNode.field1);
                class187_14.outBuffer.writeUnsignedShortA(i_12 + class196.field2389);
                class187_14.outBuffer.writeOffsetByte(class45.field395[82] ? (class45.field395[81] ? 2 : 1) : 0);
                class187_14.outBuffer.writeByte(i_5);

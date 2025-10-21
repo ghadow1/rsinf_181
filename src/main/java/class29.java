@@ -479,11 +479,11 @@ public class class29 {
       }
    }
 
-   boolean method430(class233 class233_1, byte b_2) {
+   boolean method430(class233 class233_1) {
       this.field252.clear();
       if (this.field247 != null) {
-         this.field247.method245(class233_1, 1963301304);
-         if (this.field247.method244(-613524686)) {
+         this.field247.method245(class233_1);
+         if (this.field247.method244()) {
             this.method425(0, 0, 64, 64, this.field247, 585564692);
             return true;
          } else {
@@ -494,9 +494,9 @@ public class class29 {
 
          Iterator iterator_4;
          WorldMapSection1 worldMapSection1_5;
-         for (iterator_4 = this.field242.iterator(); iterator_4.hasNext(); bool_3 &= worldMapSection1_5.method244(-613524686)) {
+         for (iterator_4 = this.field242.iterator(); iterator_4.hasNext(); bool_3 &= worldMapSection1_5.method244()) {
             worldMapSection1_5 = (WorldMapSection1) iterator_4.next();
-            worldMapSection1_5.method245(class233_1, 2013007718);
+            worldMapSection1_5.method245(class233_1);
          }
 
          if (bool_3) {
@@ -754,13 +754,13 @@ public class class29 {
 
    void method429(short s_1) {
       if (this.field247 != null) {
-         this.field247.method246(651504876);
+         this.field247.method246();
       } else {
          Iterator iterator_2 = this.field242.iterator();
 
          while (iterator_2.hasNext()) {
             WorldMapSection1 worldMapSection1_3 = (WorldMapSection1) iterator_2.next();
-            worldMapSection1_3.method246(1146093408);
+            worldMapSection1_3.method246();
          }
       }
 
@@ -771,7 +771,7 @@ public class class29 {
       if (this.field247 != null || !this.field242.isEmpty()) {
          if (GameState.method4130(this.field245, this.field246, i_1, (short) -4698) == null) {
             boolean bool_7 = true;
-            bool_7 &= this.method430(class233_4, (byte) 96);
+            bool_7 &= this.method430(class233_4);
             int i_9;
             if (this.field247 != null) {
                i_9 = this.field247.field161;
@@ -831,7 +831,7 @@ public class class29 {
 
       while (iterator_4.hasNext()) {
          WorldMapSection1 worldMapSection1_5 = (WorldMapSection1) iterator_4.next();
-         if (worldMapSection1_5.method250(-121424149) == this.field245 && worldMapSection1_5.method251(-1967751745) == this.field246) {
+         if (worldMapSection1_5.method250() == this.field245 && worldMapSection1_5.method251() == this.field246) {
             this.field242.add(worldMapSection1_5);
          }
       }
@@ -855,8 +855,8 @@ public class class29 {
                }
 
                long long_6 = Tile.method2854(0, 0, 1, !NPC_3.definition.field3496, Client.npcIndices[i_2]);
-               NPC_3.field953 = Client.field881;
-               class5.field22.method3077(ItemContainer_2.plane, NPC_3.x, NPC_3.y, class62.method1130(NPC_3.field952 * 64 - 64 + NPC_3.x, NPC_3.field952 * 64 - 64 + NPC_3.y, ItemContainer_2.plane), NPC_3.field952 * 64 - 64 + 60, NPC_3, NPC_3.field950, long_6, NPC_3.field967);
+               NPC_3.field953 = Client.cycle;
+               class5.field22.method3077(WorldMapRectangle.plane, NPC_3.x, NPC_3.y, MusicPatchPcmStream.getTileHeight(NPC_3.field952 * 64 - 64 + NPC_3.x, NPC_3.field952 * 64 - 64 + NPC_3.y, WorldMapRectangle.plane), NPC_3.field952 * 64 - 64 + 60, NPC_3, NPC_3.field950, long_6, NPC_3.field967);
             }
          }
       }

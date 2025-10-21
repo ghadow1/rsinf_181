@@ -45,7 +45,7 @@ final class HealthBarUpdate implements Comparator {
    }
 
    static void method145() {
-      class236.method4312(ItemContainer_2.field373 / 2 + class247.field3292, class30.field267);
+      class236.method4312(WorldMapRectangle.field373 / 2 + class247.field3292, class30.field267);
    }
 
    static void method144(int i_0) {

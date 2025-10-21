@@ -50,7 +50,7 @@ public class class187 extends LinkedListNode {
             byte[] bytes_3 = WorldMapElement.field1145[i_2];
             if (bytes_3 != null) {
                i_4 = (TimeUtils.field2501[i_2] >> 8) * 64 - class196.field2389;
-               i_5 = (TimeUtils.field2501[i_2] & 0xff) * 64 - class1.field1;
+               i_5 = (TimeUtils.field2501[i_2] & 0xff) * 64 - SceneNode.field1;
                if (Client.field798) {
                   i_4 = 10;
                   i_5 = 10;
@@ -124,7 +124,7 @@ public class class187 extends LinkedListNode {
                byte[] bytes_6;
                for (i_50 = 0; i_50 < i_2; i_50++) {
                   i_4 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
-                  i_5 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
+                  i_5 = (TimeUtils.field2501[i_50] & 0xff) * 64 - SceneNode.field1;
                   bytes_6 = class13.field90[i_50];
                   if (bytes_6 != null) {
                      class186.method3619((byte) 50);
@@ -156,7 +156,7 @@ public class class187 extends LinkedListNode {
 
                for (i_50 = 0; i_50 < i_2; i_50++) {
                   i_4 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
-                  i_5 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
+                  i_5 = (TimeUtils.field2501[i_50] & 0xff) * 64 - SceneNode.field1;
                   bytes_6 = class13.field90[i_50];
                   if (bytes_6 == null && class128.field1747 < 800) {
                      class186.method3619((byte) 58);
@@ -170,7 +170,7 @@ public class class187 extends LinkedListNode {
                   byte[] bytes_54 = WorldMapElement.field1145[i_50];
                   if (bytes_54 != null) {
                      i_5 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
-                     i_52 = (TimeUtils.field2501[i_50] & 0xff) * 64 - class1.field1;
+                     i_52 = (TimeUtils.field2501[i_50] & 0xff) * 64 - SceneNode.field1;
                      class186.method3619((byte) 75);
                      class205.method3933(bytes_54, i_5, i_52, class5.field22, Client.field710);
                   }
@@ -375,12 +375,12 @@ public class class187 extends LinkedListNode {
             class6.method72(class5.field22, Client.field710);
             class241.method4368(true);
             i_50 = class55.field503;
-            if (i_50 > ItemContainer_2.plane) {
-               i_50 = ItemContainer_2.plane;
+            if (i_50 > WorldMapRectangle.plane) {
+               i_50 = WorldMapRectangle.plane;
             }
 
-            if (i_50 < ItemContainer_2.plane - 1) {
-               i_50 = ItemContainer_2.plane - 1;
+            if (i_50 < WorldMapRectangle.plane - 1) {
+               i_50 = WorldMapRectangle.plane - 1;
             }
 
             if (Client.field656) {
@@ -391,7 +391,7 @@ public class class187 extends LinkedListNode {
 
             for (i_4 = 0; i_4 < 104; i_4++) {
                for (i_5 = 0; i_5 < 104; i_5++) {
-                  class5.method60(i_4, i_5);
+                  class5.updatePendingSpawn(i_4, i_5);
                }
             }
 

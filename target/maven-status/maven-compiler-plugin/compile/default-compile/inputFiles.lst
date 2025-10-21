@@ -25,7 +25,6 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/GrandExchangeOfferUnitPriceComparator.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/HealthBarUpdate.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ItemContainer.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ItemContainer_2.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ItemDefinition.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Launcher.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/LinkedListNode.java
@@ -37,6 +36,7 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/MouseHandler.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/MouseRecorder.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/MusicPatchNode.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/MusicPatchPcmStream.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/NPC.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/NPCDefinition.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/NodeDeque.java
@@ -45,12 +45,14 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ParamComposition.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ParamDefinition.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/PriorityComparator.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Projectile.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Rasterizer2D.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Rasterizer3D.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/RawSound.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/RemoveNode.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/RenderableSceneNode.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ResourceHandler.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Scene.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SceneNode.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SceneOccluder.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ServerPacketProt.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SoundSystem.java
@@ -68,9 +70,9 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/WorldMapData_1.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/WorldMapElement.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/WorldMapID.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/WorldMapRectangle.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/WorldMapSection1.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class0.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class1.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class10.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class100.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class101.java
@@ -299,7 +301,6 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class6.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class60.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class61.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class62.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class63.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class65.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class66.java
@@ -319,7 +320,6 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class82.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class83.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class84.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class86.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class87.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class88.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class89.java

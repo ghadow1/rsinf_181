@@ -22,7 +22,7 @@ public abstract class ParamDefinition {
       class258.field3519.method3323();
       class243.field3239.method3323();
       class243.field3240.method3323();
-      class201.method3888((byte) 1);
+      SceneSound.method3888();
       class57.method1093();
       ErrorHandler.field3325.method3323();
       ErrorHandler.field3329.method3323();

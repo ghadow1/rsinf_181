@@ -72,18 +72,18 @@ public class PacketWriter {
    }
 
    static final void method2245() {
-      for (class86 class86_1 = (class86) Client.field670.method4892(); class86_1 != null; class86_1 = (class86) Client.field670.method4894()) {
-         if (class86_1.field1215 == ItemContainer_2.plane && Client.field881 <= class86_1.field1240) {
-            if (Client.field881 >= class86_1.field1217) {
-               if (class86_1.field1224 > 0) {
-                  NPC NPC_2 = Client.npcs[class86_1.field1224 - 1];
+      for (Projectile projectile_1 = (Projectile) Client.projectiles.method4892(); projectile_1 != null; projectile_1 = (Projectile) Client.projectiles.method4894()) {
+         if (projectile_1.field1215 == WorldMapRectangle.plane && Client.cycle <= projectile_1.cycleEnd) {
+            if (Client.cycle >= projectile_1.field1217) {
+               if (projectile_1.field1224 > 0) {
+                  NPC NPC_2 = Client.npcs[projectile_1.field1224 - 1];
                   if (NPC_2 != null && NPC_2.x >= 0 && NPC_2.x < 13312 && NPC_2.y >= 0 && NPC_2.y < 13312) {
-                     class86_1.method2033(NPC_2.x, NPC_2.y, class62.method1130(NPC_2.x, NPC_2.y, class86_1.field1215) - class86_1.field1225, Client.field881, -653530834);
+                     projectile_1.setDestination(NPC_2.x, NPC_2.y, MusicPatchPcmStream.getTileHeight(NPC_2.x, NPC_2.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
                   }
                }
 
-               if (class86_1.field1224 < 0) {
-                  int i_3 = -class86_1.field1224 - 1;
+               if (projectile_1.field1224 < 0) {
+                  int i_3 = -projectile_1.field1224 - 1;
                   class66 class66_4;
                   if (i_3 == Client.field770) {
                      class66_4 = Client.localPlayer;
@@ -92,15 +92,15 @@ public class PacketWriter {
                   }
 
                   if (class66_4 != null && class66_4.x >= 0 && class66_4.x < 13312 && class66_4.y >= 0 && class66_4.y < 13312) {
-                     class86_1.method2033(class66_4.x, class66_4.y, class62.method1130(class66_4.x, class66_4.y, class86_1.field1215) - class86_1.field1225, Client.field881, -1906132151);
+                     projectile_1.setDestination(class66_4.x, class66_4.y, MusicPatchPcmStream.getTileHeight(class66_4.x, class66_4.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
                   }
                }
 
-               class86_1.method2043(Client.field718, (byte) -4);
-               class5.field22.method3077(ItemContainer_2.plane, (int)class86_1.field1218, (int)class86_1.field1227, (int)class86_1.field1228, 60, class86_1, class86_1.field1234, -1L, false);
+               projectile_1.method2043(Client.field718);
+               class5.field22.method3077(WorldMapRectangle.plane, (int) projectile_1.x, (int) projectile_1.y, (int) projectile_1.z, 60, projectile_1, projectile_1.field1234, -1L, false);
             }
          } else {
-            class86_1.unlink();
+            projectile_1.unlink();
          }
       }
 

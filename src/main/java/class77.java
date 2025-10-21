@@ -18,7 +18,7 @@ public final class class77 extends Entity {
       this.field1113 = i_4;
       this.field1118 = i_5;
       this.field1114 = i_7 + i_6;
-      int i_8 = class201.method3887(this.field1116, (byte) 96).field3238;
+      int i_8 = SceneSound.method3887(this.field1116).field3238;
       if (i_8 != -1) {
          this.field1122 = false;
          this.field1119 = class7.method81(i_8);
@@ -29,12 +29,12 @@ public final class class77 extends Entity {
    }
 
    protected final class127 vmethod3253(int i_1) {
-      class243 class243_2 = class201.method3887(this.field1116, (byte) 65);
+      class243 class243_2 = SceneSound.method3887(this.field1116);
       class127 class127_3;
       if (!this.field1122) {
-         class127_3 = class243_2.method4406(this.field1120, 1645713423);
+         class127_3 = class243_2.method4406(this.field1120);
       } else {
-         class127_3 = class243_2.method4406(-1, 1645713423);
+         class127_3 = class243_2.method4406(-1);
       }
 
       return class127_3 == null ? null : class127_3;

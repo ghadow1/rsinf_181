@@ -12,10 +12,10 @@ public final class class87 extends Entity {
    static void method2053(int i_0, int i_1, int i_2, int i_3, int i_4) {
       Widget widget_5 = Client.method1649(i_0, i_1);
       if (widget_5 != null && widget_5.field2661 != null) {
-         class62 class62_6 = new class62();
-         class62_6.field575 = widget_5;
-         class62_6.field581 = widget_5.field2661;
-         class184.method3613(class62_6);
+         MusicPatchPcmStream musicPatchPcmStream_6 = new MusicPatchPcmStream();
+         musicPatchPcmStream_6.field575 = widget_5;
+         musicPatchPcmStream_6.field581 = widget_5.field2661;
+         class184.method3613(musicPatchPcmStream_6);
       }
 
       Client.field812 = i_3;

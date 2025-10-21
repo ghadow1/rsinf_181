@@ -27,9 +27,9 @@ public class class20 implements UnknownT {
       int i_7 = i_4 & 0x3fff;
       class66_3.field994[0] = i_6 - class196.field2389;
       class66_3.x = (class66_3.field994[0] << 7) + (class66_3.method1187() << 6);
-      class66_3.field962[0] = i_7 - class1.field1;
+      class66_3.field962[0] = i_7 - SceneNode.field1;
       class66_3.y = (class66_3.field962[0] << 7) + (class66_3.method1187() << 6);
-      ItemContainer_2.plane = class66_3.field629 = b_5;
+      WorldMapRectangle.plane = class66_3.field629 = b_5;
       if (class89.field1254[i_2] != null) {
          class66_3.method1179(class89.field1254[i_2]);
       }

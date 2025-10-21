@@ -115,7 +115,7 @@ public class ErrorHandler extends DualNode {
          i_3 = this.field3345[this.field3345.length - 1];
       }
 
-      return i_3 != -1 ? class86.method2046(i_3, (byte) 0) : null;
+      return i_3 != -1 ? Projectile.method2046(i_3) : null;
    }
 
    public class325 method4551(int i_1) {

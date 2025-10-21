@@ -19,7 +19,7 @@ public class WorldMapSection1 extends class21 {
       return this.field340;
    }
 
-   void vmethod679(ByteBuffer class300_1, int i_2) {
+   void vmethod679(ByteBuffer class300_1) {
       super.field160 = Math.min(super.field160, 4);
       super.field163 = new short[1][64][64];
       super.field170 = new short[super.field160][64][64];
@@ -37,7 +37,7 @@ public class WorldMapSection1 extends class21 {
          if (i_4 == super.field157 && i_5 == super.field158 && i_6 == this.field337 && i_7 == this.field338) {
             for (int i_8 = 0; i_8 < 8; i_8++) {
                for (int i_9 = 0; i_9 < 8; i_9++) {
-                  this.method247(i_8 + this.field337 * 8, i_9 + this.field338 * 8, class300_1, -1521348339);
+                  this.method247(i_8 + this.field337 * 8, i_9 + this.field338 * 8, class300_1);
                }
             }
 

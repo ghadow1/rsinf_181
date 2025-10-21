@@ -32,10 +32,10 @@ public class class219 {
       }
 
       if (bool_3 && widget_0.field2679 != null && (i_5 != widget_0.field2579 || i_6 != widget_0.field2667)) {
-         class62 class62_7 = new class62();
-         class62_7.field575 = widget_0;
-         class62_7.field581 = widget_0.field2679;
-         Client.field854.method4917(class62_7);
+         MusicPatchPcmStream musicPatchPcmStream_7 = new MusicPatchPcmStream();
+         musicPatchPcmStream_7.field575 = widget_0;
+         musicPatchPcmStream_7.field581 = widget_0.field2679;
+         Client.field854.addFirst(musicPatchPcmStream_7);
       }
 
    }

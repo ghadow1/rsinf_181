@@ -46,7 +46,7 @@ public class class58 {
             int i_13;
             for (i_9 = 0; i_9 < 104; i_9++) {
                for (i_10 = 0; i_10 < 104; i_10++) {
-                  NodeDeque nodeDeque_16 = Client.groundItems[ItemContainer_2.plane][i_9][i_10];
+                  NodeDeque nodeDeque_16 = Client.groundItems[WorldMapRectangle.plane][i_9][i_10];
                   if (nodeDeque_16 != null) {
                      i_12 = i_9 * 4 + 2 - Client.localPlayer.x / 32;
                      i_13 = i_10 * 4 + 2 - Client.localPlayer.y / 32;
@@ -96,7 +96,7 @@ public class class58 {
                }
             }
 
-            if (Client.field708 != 0 && Client.field881 % 20 < 10) {
+            if (Client.field708 != 0 && Client.cycle % 20 < 10) {
                if (Client.field708 == 1 && Client.field824 >= 0 && Client.field824 < Client.npcs.length) {
                   NPC NPC_21 = Client.npcs[Client.field824];
                   if (NPC_21 != null) {
@@ -108,7 +108,7 @@ public class class58 {
 
                if (Client.field708 == 2) {
                   i_11 = Client.field737 * 4 - class196.field2389 * 4 + 2 - Client.localPlayer.x / 32;
-                  i_12 = Client.field777 * 4 - class1.field1 * 4 + 2 - Client.localPlayer.y / 32;
+                  i_12 = Client.field777 * 4 - SceneNode.field1 * 4 + 2 - Client.localPlayer.y / 32;
                   class48.method810(i_1, i_2, i_11, i_12, WorldMapSection1.mapMarkerSprites[1], class211_5, -1460314936);
                }
 
@@ -162,11 +162,11 @@ public class class58 {
          } else if (widget_4.field2679 == null) {
             return 0;
          } else {
-            class62 class62_5 = new class62();
-            class62_5.field575 = widget_4;
-            class62_5.field581 = widget_4.field2679;
-            class62_5.field583 = MouseRecorder.field1106 + 1;
-            Client.field854.method4917(class62_5);
+            MusicPatchPcmStream musicPatchPcmStream_5 = new MusicPatchPcmStream();
+            musicPatchPcmStream_5.field575 = widget_4;
+            musicPatchPcmStream_5.field581 = widget_4.field2679;
+            musicPatchPcmStream_5.field583 = MouseRecorder.field1106 + 1;
+            Client.field854.addFirst(musicPatchPcmStream_5);
             return 1;
          }
       } else {

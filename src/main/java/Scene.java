@@ -1108,7 +1108,7 @@ public class Scene {
    }
 
    void method3108(Tile tile_1, boolean bool_2) {
-      field1846.method4917(tile_1);
+      field1846.addFirst(tile_1);
 
       while (true) {
          Tile tile_3;
@@ -1340,28 +1340,28 @@ public class Scene {
                                     if (i_4 < cameraXTile && (i_14 & 0x4) != 0) {
                                        tile_36 = arr_8[i_4 + 1][i_5];
                                        if (tile_36 != null && tile_36.field1661) {
-                                          field1846.method4917(tile_36);
+                                          field1846.addFirst(tile_36);
                                        }
                                     }
 
                                     if (i_5 < cameraYTile && (i_14 & 0x2) != 0) {
                                        tile_36 = arr_8[i_4][i_5 + 1];
                                        if (tile_36 != null && tile_36.field1661) {
-                                          field1846.method4917(tile_36);
+                                          field1846.addFirst(tile_36);
                                        }
                                     }
 
                                     if (i_4 > cameraXTile && (i_14 & 0x1) != 0) {
                                        tile_36 = arr_8[i_4 - 1][i_5];
                                        if (tile_36 != null && tile_36.field1661) {
-                                          field1846.method4917(tile_36);
+                                          field1846.addFirst(tile_36);
                                        }
                                     }
 
                                     if (i_5 > cameraYTile && (i_14 & 0x8) != 0) {
                                        tile_36 = arr_8[i_4][i_5 - 1];
                                        if (tile_36 != null && tile_36.field1661) {
-                                          field1846.method4917(tile_36);
+                                          field1846.addFirst(tile_36);
                                        }
                                     }
                                  }
@@ -1488,9 +1488,9 @@ public class Scene {
                                        for (i_15 = fileSystem_33.field1930; i_15 <= fileSystem_33.field1938; i_15++) {
                                           Tile tile_26 = arr_8[i_14][i_15];
                                           if (tile_26.field1654 != 0) {
-                                             field1846.method4917(tile_26);
+                                             field1846.addFirst(tile_26);
                                           } else if ((i_14 != i_4 || i_15 != i_5) && tile_26.field1661) {
-                                             field1846.method4917(tile_26);
+                                             field1846.addFirst(tile_26);
                                           }
                                        }
                                     }
@@ -1598,35 +1598,35 @@ public class Scene {
          if (i_6 < this.field1802 - 1) {
             tile_30 = this.tiles[i_6 + 1][i_4][i_5];
             if (tile_30 != null && tile_30.field1661) {
-               field1846.method4917(tile_30);
+               field1846.addFirst(tile_30);
             }
          }
 
          if (i_4 < cameraXTile) {
             tile_30 = arr_8[i_4 + 1][i_5];
             if (tile_30 != null && tile_30.field1661) {
-               field1846.method4917(tile_30);
+               field1846.addFirst(tile_30);
             }
          }
 
          if (i_5 < cameraYTile) {
             tile_30 = arr_8[i_4][i_5 + 1];
             if (tile_30 != null && tile_30.field1661) {
-               field1846.method4917(tile_30);
+               field1846.addFirst(tile_30);
             }
          }
 
          if (i_4 > cameraXTile) {
             tile_30 = arr_8[i_4 - 1][i_5];
             if (tile_30 != null && tile_30.field1661) {
-               field1846.method4917(tile_30);
+               field1846.addFirst(tile_30);
             }
          }
 
          if (i_5 > cameraYTile) {
             tile_30 = arr_8[i_4][i_5 - 1];
             if (tile_30 != null && tile_30.field1661) {
-               field1846.method4917(tile_30);
+               field1846.addFirst(tile_30);
             }
          }
       }

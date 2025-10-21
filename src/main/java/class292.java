@@ -31,8 +31,8 @@ public class class292 {
             }
 
             widget_11.field2701 = i_12;
-            widget_11.field2702 = Client.field881;
-            if (!widget_11.field2563 || !class62.method1133(widget_11)) {
+            widget_11.field2702 = Client.cycle;
+            if (!widget_11.field2563 || !MusicPatchPcmStream.method1133(widget_11)) {
                if (widget_11.field2568 > 0) {
                   class8.method85(widget_11);
                }
@@ -163,7 +163,7 @@ public class class292 {
                      }
 
                      if (widget_11.field2568 == 1400) {
-                        class136.field1875.method6317(i_13, i_14, widget_11.field2579, widget_11.field2667, Client.field881, -365948534);
+                        class136.field1875.method6317(i_13, i_14, widget_11.field2579, widget_11.field2667, Client.cycle, -365948534);
                      }
 
                      if (widget_11.field2568 == 1401) {
@@ -171,12 +171,12 @@ public class class292 {
                      }
 
                      if (widget_11.field2568 == 1402) {
-                        class278.field3631.method1735(i_13, Client.field881);
+                        class278.field3631.method1735(i_13, Client.cycle);
                      }
                   }
 
                   if (widget_11.field2566 == 0) {
-                     if (!widget_11.field2563 && class62.method1133(widget_11) && widget_11 != class72.field1059) {
+                     if (!widget_11.field2563 && MusicPatchPcmStream.method1133(widget_11) && widget_11 != class72.field1059) {
                         continue;
                      }
 
