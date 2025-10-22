@@ -69,20 +69,20 @@ public final class Projectile extends Entity {
       byte localYOffset;
       int targetX;
       int startCycle;
-      int graphicsId;
+      int endCycle;  // Renamed from graphicsId
       int sourceY;
       int startHeight;
       int targetZOffset;
       int targetZ;
       int targetXOffset;
       int slope;
-      int endCycle;
+      int graphicsId;  // Renamed from endCycle
       int targetY;
 
       // Read projectile information
       targetZOffset = buffer.readInvertedUnsignedByte() * 4; // Target Z offset
-      graphicsId = buffer.readUnsignedShort(); // Graphics/SpotAnim ID
-      endCycle = buffer.readShortWithOffset(); // End cycle (duration)
+      endCycle = buffer.readUnsignedShort(); // This is actually endCycle/speed
+      graphicsId = buffer.readShortWithOffset(); // This is actually graphicsId
       startHeight = buffer.readInvertedUnsignedByte() * 4; // Start height offset
       targetX = buffer.readSignedShortLittleEndian(); // Target X coordinate
       slope = buffer.readUnsignedByte(); // Projectile arc/slope
@@ -103,7 +103,7 @@ public final class Projectile extends Entity {
 
       if (sourceX >= 0 && sourceY >= 0 && sourceX < 104 && sourceY < 104
               && targetXOffset >= 0 && targetYOffset >= 0 && targetXOffset < 104 && targetYOffset < 104
-              && endCycle != 65535) {
+              && graphicsId != 65535) {  // Changed from endCycle
 
          // Convert to world coordinates (128 units per tile, center at 64)
          sourceX = sourceX * 128 + 64;
