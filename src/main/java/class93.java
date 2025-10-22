@@ -9,7 +9,7 @@ public class class93 extends Entity {
    int field1295;
    int field1296;
    int field1299;
-   class258 field1293;
+   SequenceAnimation field1293;
    int field1298;
    int field1300;
 

@@ -12,13 +12,13 @@ public class class30 {
    }
 
    static class138 method537(int i_0) {
-      class138 class138_2 = (class138) class258.field3519.get((long)i_0);
+      class138 class138_2 = (class138) SequenceAnimation.field3519.get((long)i_0);
       if (class138_2 != null) {
          return class138_2;
       } else {
-         class138_2 = class136.method3262(class258.field3516, class258.field3517, i_0, false);
+         class138_2 = class136.method3262(SequenceAnimation.field3516, SequenceAnimation.field3517, i_0, false);
          if (class138_2 != null) {
-            class258.field3519.put(class138_2, (long)i_0);
+            SequenceAnimation.field3519.put(class138_2, (long)i_0);
          }
 
          return class138_2;

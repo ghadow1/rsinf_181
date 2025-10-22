@@ -9,7 +9,7 @@ public final class class77 extends Entity {
    int field1113;
    int field1118;
    int field1114;
-   class258 field1119;
+   SequenceAnimation field1119;
 
    class77(int i_1, int i_2, int i_3, int i_4, int i_5, int i_6, int i_7) {
       this.field1116 = i_1;

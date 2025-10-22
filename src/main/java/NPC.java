@@ -15,9 +15,9 @@ public final class NPC extends class69 {
       if (this.definition == null) {
          return null;
       } else {
-         class258 class258_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981) : null;
-         class258 class258_3 = super.field978 != -1 && (super.field1004 != super.field978 || class258_2 == null) ? class7.method81(super.field978) : null;
-         class127 class127_4 = this.definition.method4707(class258_2, super.field951, class258_3, super.field979);
+         SequenceAnimation sequenceAnimation_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981) : null;
+         SequenceAnimation sequenceAnimation_3 = super.field978 != -1 && (super.field1004 != super.field978 || sequenceAnimation_2 == null) ? class7.method81(super.field978) : null;
+         class127 class127_4 = this.definition.method4707(sequenceAnimation_2, super.field951, sequenceAnimation_3, super.field979);
          if (class127_4 == null) {
             return null;
          } else {

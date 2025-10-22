@@ -18,8 +18,8 @@ public abstract class ParamDefinition {
       ItemDefinition.ItemDefinition_cached.method3323();
       ItemDefinition.field3408.method3323();
       ItemDefinition.field3445.method3323();
-      class258.field3524.method3323();
-      class258.field3519.method3323();
+      SequenceAnimation.field3524.method3323();
+      SequenceAnimation.field3519.method3323();
       class243.field3239.method3323();
       class243.field3240.method3323();
       SceneSound.method3888();

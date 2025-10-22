@@ -475,18 +475,18 @@ public class class292 {
                                     }
                                  } else if (widget_11.field2607 == 5) {
                                     if (widget_11.field2649 == 0) {
-                                       class127_42 = Client.field918.method3997((class258) null, -1, (class258) null, -1);
+                                       class127_42 = Client.field918.method3997((SequenceAnimation) null, -1, (SequenceAnimation) null, -1);
                                     } else {
                                        class127_42 = Client.localPlayer.vmethod3253(759381421);
                                     }
                                  } else if (i_21 == -1) {
-                                    class127_42 = widget_11.method4049((class258) null, -1, bool_37, Client.localPlayer.field613, 1036934880);
+                                    class127_42 = widget_11.method4049((SequenceAnimation) null, -1, bool_37, Client.localPlayer.field613, 1036934880);
                                     if (class127_42 == null && Widget.field2562) {
                                        FriendSystem.invalidateWidget(widget_11);
                                     }
                                  } else {
-                                    class258 class258_48 = class7.method81(i_21);
-                                    class127_42 = widget_11.method4049(class258_48, widget_11.field2692, bool_37, Client.localPlayer.field613, 482898105);
+                                    SequenceAnimation sequenceAnimation_48 = class7.method81(i_21);
+                                    class127_42 = widget_11.method4049(sequenceAnimation_48, widget_11.field2692, bool_37, Client.localPlayer.field613, 482898105);
                                     if (class127_42 == null && Widget.field2562) {
                                        FriendSystem.invalidateWidget(widget_11);
                                     }

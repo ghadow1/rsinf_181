@@ -404,7 +404,7 @@ public class class253 extends DualNode {
       }
    }
 
-   public final class127 method4614(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, class258 class258_7, int i_8) {
+   public final class127 method4614(int i_1, int i_2, int[][] ints_3, int i_4, int i_5, int i_6, SequenceAnimation sequenceAnimation_7, int i_8) {
       long long_10;
       if (this.field3359 == null) {
          long_10 = (long)(i_2 + (this.field3357 << 10));
@@ -423,11 +423,11 @@ public class class253 extends DualNode {
          field3355.put(class127_12, long_10);
       }
 
-      if (class258_7 == null && this.field3370 == -1) {
+      if (sequenceAnimation_7 == null && this.field3370 == -1) {
          return class127_12;
       } else {
-         if (class258_7 != null) {
-            class127_12 = class258_7.method4763(class127_12, i_8, i_2);
+         if (sequenceAnimation_7 != null) {
+            class127_12 = sequenceAnimation_7.method4763(class127_12, i_8, i_2);
          } else {
             class127_12 = class127_12.method2859(true);
          }

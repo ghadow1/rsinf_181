@@ -54,6 +54,8 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Scene.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SceneNode.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SceneOccluder.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SceneSound.java
+/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SequenceAnimation.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/ServerPacketProt.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/SoundSystem.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/Tile.java
@@ -159,7 +161,6 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class2.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class20.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class200.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class201.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class202.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class203.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class205.java
@@ -209,7 +210,6 @@
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class253.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class255.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class257.java
-/Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class258.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class259.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class260.java
 /Users/ghadow/Alpha Workspace/legacy/rsinf_181/src/main/java/class262.java

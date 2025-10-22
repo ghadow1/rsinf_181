@@ -55,9 +55,9 @@ public final class class66 extends class69 {
       if (this.field613 == null) {
          return null;
       } else {
-         class258 class258_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981) : null;
-         class258 class258_3 = super.field978 != -1 && !this.field634 && (super.field978 != super.field1004 || class258_2 == null) ? class7.method81(super.field978) : null;
-         class127 class127_4 = this.field613.method3997(class258_2, super.field951, class258_3, super.field979);
+         SequenceAnimation sequenceAnimation_2 = super.field981 != -1 && super.field984 == 0 ? class7.method81(super.field981) : null;
+         SequenceAnimation sequenceAnimation_3 = super.field978 != -1 && !this.field634 && (super.field978 != super.field1004 || sequenceAnimation_2 == null) ? class7.method81(super.field978) : null;
+         class127 class127_4 = this.field613.method3997(sequenceAnimation_2, super.field951, sequenceAnimation_3, super.field979);
          if (class127_4 == null) {
             return null;
          } else {

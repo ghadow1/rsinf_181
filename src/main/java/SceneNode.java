@@ -70,7 +70,7 @@ final class SceneNode implements class0 {
             if (RenderableSceneNode.projectileNode == RenderableSceneNode_0) { //..15
                //..Handle incoming projectiles to render
                System.out.println("Node to add is a projectile, attempting to read projectile data.");
-               decodeIncomingProjectileData(buffer3_2);
+               Projectile.decode(buffer3_2);
             } else if (RenderableSceneNode.field2322 == RenderableSceneNode_0) {
                System.out.println("Some other node type");
 
@@ -307,56 +307,6 @@ final class SceneNode implements class0 {
                }
             }
          }
-      }
-   }
-
-   private static void decodeIncomingProjectileData(PacketBuffer buffer3_2) {
-      int sourceX;
-      byte b_14;
-      int i_7;
-      int i_10;
-      int i_5;
-      int sourceY;
-      int i_6;
-      int startHeight;
-      int i_3;
-      int i_15;
-      int slope;
-      int i_4;
-      int i_11;
-      //..Projectile information
-      i_3 = buffer3_2.readInvertedUnsignedByte() * 4; //..1
-      i_4 = buffer3_2.readUnsignedShort(); //..2
-      i_5 = buffer3_2.readShortWithOffset(); //..3
-      i_6 = buffer3_2.readInvertedUnsignedByte() * 4; //..4
-      i_7 = buffer3_2.readSignedShortLittleEndian(); //..5
-      slope = buffer3_2.readUnsignedByte(); //..6
-      startHeight = buffer3_2.readInvertedUnsignedByte(); //..7
-      i_10 = buffer3_2.readShortLittleEndian(); //..8
-      //..Projectile location ?
-      i_11 = buffer3_2.readOffsetUnsignedByte(); //..9
-      sourceX = (i_11 >> 4 & 0x7) + class311.localSceneX;
-      sourceY = (i_11 & 0x7) + UserComparator10.localSceneY;
-      //..Unknown
-      b_14 = buffer3_2.readOffsetByte(); //..10
-      byte b_41 = buffer3_2.readNegatedByte(); //..11
-
-      i_15 = b_41 + sourceX;
-      int i_42 = b_14 + sourceY;
-      if (sourceX >= 0 && sourceY >= 0 && sourceX < 104 && sourceY < 104 && i_15 >= 0 && i_42 >= 0 && i_15 < 104 && i_42 < 104 && i_5 != 65535) {
-         sourceX = sourceX * 128 + 64;
-         sourceY = sourceY * 128 + 64;
-         i_15 = i_15 * 128 + 64;
-         i_42 = i_42 * 128 + 64;
-
-         //..Projectile(int i_1, int i_2, int sourceX, int sourceY, int sourceZ, int i_6, int cycleEnd, int slope, int startHeight, int i_10, int i_11) {
-         Projectile projectile = new Projectile(i_5, WorldMapRectangle.plane, sourceX, sourceY,
-                 MusicPatchPcmStream.getTileHeight(sourceX, sourceY, WorldMapRectangle.plane) - i_6,
-                 i_10 + Client.cycle, i_4 + Client.cycle, slope, startHeight, i_7, i_3);
-
-         projectile.updateVelocity(i_15, i_42, MusicPatchPcmStream.getTileHeight(i_15, i_42, WorldMapRectangle.plane) - i_3, i_10 + Client.cycle);
-
-         Client.projectiles.addFirst(projectile);
       }
    }
 

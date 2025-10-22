@@ -232,9 +232,9 @@ public class Timer {
                   class235 class235_9 = SoundSystem.field2544;
                   class235 class235_10 = class197.field2405;
                   class235 class235_11 = class167.field2049;
-                  class258.field3527 = class235_9;
-                  class258.field3516 = class235_10;
-                  class258.field3517 = class235_11;
+                  SequenceAnimation.field3527 = class235_9;
+                  SequenceAnimation.field3516 = class235_10;
+                  SequenceAnimation.field3517 = class235_11;
                   class235 class235_12 = SoundSystem.field2544;
                   class235 class235_13 = NPCDefinition.field3500;
                   class243.field3247 = class235_12;

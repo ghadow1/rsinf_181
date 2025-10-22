@@ -26,20 +26,20 @@ public class class7 {
       this.field53.field59 = i_3;
    }
 
-   public static class258 method81(int i_0) {
-      class258 class258_2 = (class258) class258.field3524.get((long)i_0);
-      if (class258_2 != null) {
-         return class258_2;
+   public static SequenceAnimation method81(int i_0) {
+      SequenceAnimation sequenceAnimation_2 = (SequenceAnimation) SequenceAnimation.field3524.get((long)i_0);
+      if (sequenceAnimation_2 != null) {
+         return sequenceAnimation_2;
       } else {
-         byte[] bytes_3 = class258.field3527.method4144(12, i_0);
-         class258_2 = new class258();
+         byte[] bytes_3 = SequenceAnimation.field3527.method4144(12, i_0);
+         sequenceAnimation_2 = new SequenceAnimation();
          if (bytes_3 != null) {
-            class258_2.method4759(new ByteBuffer(bytes_3), (byte) 88);
+            sequenceAnimation_2.method4759(new ByteBuffer(bytes_3), (byte) 88);
          }
 
-         class258_2.method4761(806874502);
-         class258.field3524.put(class258_2, (long)i_0);
-         return class258_2;
+         sequenceAnimation_2.method4761(806874502);
+         SequenceAnimation.field3524.put(sequenceAnimation_2, (long)i_0);
+         return sequenceAnimation_2;
       }
    }
 

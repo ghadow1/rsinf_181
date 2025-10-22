@@ -226,10 +226,10 @@ public class NPCDefinition extends DualNode {
       }
    }
 
-   public final class127 method4707(class258 class258_1, int i_2, class258 class258_3, int i_4) {
+   public final class127 method4707(SequenceAnimation sequenceAnimation_1, int i_2, SequenceAnimation sequenceAnimation_3, int i_4) {
       if (this.field3476 != null) {
          NPCDefinition NPCDefinition_13 = this.transform();
-         return NPCDefinition_13 == null ? null : NPCDefinition_13.method4707(class258_1, i_2, class258_3, i_4);
+         return NPCDefinition_13 == null ? null : NPCDefinition_13.method4707(sequenceAnimation_1, i_2, sequenceAnimation_3, i_4);
       } else {
          class127 class127_6 = (class127) field3466.get((long)this.field3467);
          if (class127_6 == null) {
@@ -276,12 +276,12 @@ public class NPCDefinition extends DualNode {
          }
 
          class127 class127_11;
-         if (class258_1 != null && class258_3 != null) {
-            class127_11 = class258_1.method4765(class127_6, i_2, class258_3, i_4);
-         } else if (class258_1 != null) {
-            class127_11 = class258_1.method4784(class127_6, i_2);
-         } else if (class258_3 != null) {
-            class127_11 = class258_3.method4784(class127_6, i_4);
+         if (sequenceAnimation_1 != null && sequenceAnimation_3 != null) {
+            class127_11 = sequenceAnimation_1.method4765(class127_6, i_2, sequenceAnimation_3, i_4);
+         } else if (sequenceAnimation_1 != null) {
+            class127_11 = sequenceAnimation_1.method4784(class127_6, i_2);
+         } else if (sequenceAnimation_3 != null) {
+            class127_11 = sequenceAnimation_3.method4784(class127_6, i_4);
          } else {
             class127_11 = class127_6.method2859(true);
          }

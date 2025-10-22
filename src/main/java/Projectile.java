@@ -1,20 +1,20 @@
 public final class Projectile extends Entity {
 
    boolean isMoving = false;
-   int seqFrame = 0;
-   int seqCycle = 0;
-   int field1235;
-   int field1215;
+   int animationFrame = 0;
+   int animationCycle = 0;
+   int graphicsId;
+   int targetPlane;
    int sourceX;
    int sourceZ;
    int sourceY;
-   int field1217;
-   int cycleEnd;
+   int startCycle;
+   int endCycle;
    int slope;
    int startHeight;
-   int field1224;
-   int field1225;
-   class258 sequenceAnim;
+   int targetX;
+   int targetZ;
+   SequenceAnimation animation;
    double x;
    double z;
    double y;
@@ -26,24 +26,24 @@ public final class Projectile extends Entity {
    int yaw;
    int pitch;
 
-   Projectile(int i_1, int i_2, int sourceX, int sourceZ, int sourceY, int i_6, int cycleEnd, int slope, int startHeight, int i_10, int i_11) {
-      this.field1235 = i_1;
-      this.field1215 = i_2;
+   Projectile(int graphicsId, int plane, int sourceX, int sourceZ, int sourceY, int startCycle, int endCycle, int slope, int startHeight, int targetX, int targetZ) {
+      this.graphicsId = graphicsId;
+      this.targetPlane = plane;
       this.sourceX = sourceX;
       this.sourceZ = sourceZ;
       this.sourceY = sourceY;
-      this.field1217 = i_6;
-      this.cycleEnd = cycleEnd;
+      this.startCycle = startCycle;
+      this.endCycle = endCycle;
       this.slope = slope;
       this.startHeight = startHeight;
-      this.field1224 = i_10;
-      this.field1225 = i_11;
+      this.targetX = targetX;
+      this.targetZ = targetZ;
       this.isMoving = false;
-      int i_12 = SceneSound.method3887(this.field1235).field3238;
-      if (i_12 != -1) {
-         this.sequenceAnim = class7.method81(i_12);
+      int animationId = SceneSound.method3887(this.graphicsId).field3238;
+      if (animationId != -1) {
+         this.animation = class7.method81(animationId);
       } else {
-         this.sequenceAnim = null;
+         this.animation = null;
       }
 
    }
@@ -64,67 +64,156 @@ public final class Projectile extends Entity {
       }
    }
 
+   public static void decode(PacketBuffer buffer) {
+      int sourceX;
+      byte localYOffset;
+      int targetX;
+      int startCycle;
+      int graphicsId;
+      int sourceY;
+      int startHeight;
+      int targetZOffset;
+      int targetZ;
+      int targetXOffset;
+      int slope;
+      int endCycle;
+      int targetY;
+
+      // Read projectile information
+      targetZOffset = buffer.readInvertedUnsignedByte() * 4; // Target Z offset
+      graphicsId = buffer.readUnsignedShort(); // Graphics/SpotAnim ID
+      endCycle = buffer.readShortWithOffset(); // End cycle (duration)
+      startHeight = buffer.readInvertedUnsignedByte() * 4; // Start height offset
+      targetX = buffer.readSignedShortLittleEndian(); // Target X coordinate
+      slope = buffer.readUnsignedByte(); // Projectile arc/slope
+      targetY = buffer.readInvertedUnsignedByte(); // Target Y height
+      startCycle = buffer.readShortLittleEndian(); // Start cycle (delay)
+
+      // Read projectile location (packed into single byte)
+      int packedLocation = buffer.readOffsetUnsignedByte();
+      sourceX = (packedLocation >> 4 & 0x7) + class311.localSceneX;
+      sourceY = (packedLocation & 0x7) + UserComparator10.localSceneY;
+
+      // Read target offsets
+      localYOffset = buffer.readOffsetByte(); // Local Y offset
+      byte localXOffset = buffer.readNegatedByte(); // Local X offset
+
+      targetXOffset = localXOffset + sourceX;
+      int targetYOffset = localYOffset + sourceY;
+
+      if (sourceX >= 0 && sourceY >= 0 && sourceX < 104 && sourceY < 104
+              && targetXOffset >= 0 && targetYOffset >= 0 && targetXOffset < 104 && targetYOffset < 104
+              && endCycle != 65535) {
+
+         // Convert to world coordinates (128 units per tile, center at 64)
+         sourceX = sourceX * 128 + 64;
+         sourceY = sourceY * 128 + 64;
+         targetXOffset = targetXOffset * 128 + 64;
+         targetYOffset = targetYOffset * 128 + 64;
+
+         Projectile projectile = new Projectile(
+                 endCycle,
+                 WorldMapRectangle.plane,
+                 sourceX,
+                 sourceY,
+                 MusicPatchPcmStream.getTileHeight(sourceX, sourceY, WorldMapRectangle.plane) - startHeight,
+                 startCycle + Client.cycle,
+                 graphicsId + Client.cycle,
+                 slope,
+                 targetY,
+                 targetX,
+                 targetZOffset
+         );
+
+         projectile.updateVelocity(
+                 targetXOffset,
+                 targetYOffset,
+                 MusicPatchPcmStream.getTileHeight(targetXOffset, targetYOffset, WorldMapRectangle.plane) - targetZOffset,
+                 startCycle + Client.cycle
+         );
+
+         Client.projectiles.addFirst(projectile);
+
+         System.out.println(String.format("PROJECTILE_DECODE: gfxId=%d speed=%d startH=%d endH=%d slope=%d delay=%d srcX=%d srcY=%d dstX=%d dstY=%d targetIdx=%d",
+                 graphicsId, endCycle, startHeight, targetZOffset, slope, startCycle, sourceX / 128, sourceY / 128, targetXOffset / 128, targetYOffset / 128, targetX));
+      }
+   }
+
    protected final class127 vmethod3253(int i_1) {
-      class243 class243_2 = SceneSound.method3887(this.field1235);
-      class127 class127_3 = class243_2.method4406(this.seqFrame);
-      if (class127_3 == null) {
+      class243 graphicsDefinition = SceneSound.method3887(this.graphicsId);
+      class127 model = graphicsDefinition.method4406(this.animationFrame);
+      if (model == null) {
          return null;
       } else {
-         class127_3.method2863(this.pitch);
-         return class127_3;
+         model.method2863(this.pitch);
+         return model;
       }
    }
 
    final void update(int delta) {
       this.isMoving = true;
+
+      // Update position using velocity
       this.x += (double) delta * this.velocityX;
       this.z += (double) delta * this.velocityZ;
       this.y += (double) delta * this.velocityY + 0.5D * this.accelerationZ * (double) delta * (double) delta;
       this.velocityY += (double) delta * this.accelerationZ;
+
+      // Update rotation angles
       this.yaw = (int) (Math.atan2(this.velocityX, this.velocityZ) * 325.949D) + 1024 & 0x7ff;
       this.pitch = (int) (Math.atan2(this.velocityY, this.velocity) * 325.949D) & 0x7ff;
-      if (this.sequenceAnim != null) {
-         this.seqCycle += delta;
+
+      // Update animation
+      if (this.animation != null) {
+         this.animationCycle += delta;
 
          while (true) {
             do {
                do {
-                  if (this.seqCycle <= this.sequenceAnim.duration[this.seqFrame]) {
+                  if (this.animationCycle <= this.animation.duration[this.animationFrame]) {
                      return;
                   }
 
-                  this.seqCycle -= this.sequenceAnim.duration[this.seqFrame];
-                  ++this.seqFrame;
-               } while (this.seqFrame < this.sequenceAnim.frameCount.length);
+                  this.animationCycle -= this.animation.duration[this.animationFrame];
+                  ++this.animationFrame;
+               } while (this.animationFrame < this.animation.frameCount.length);
 
-               this.seqFrame -= this.sequenceAnim.field3515;
-            } while (this.seqFrame >= 0 && this.seqFrame < this.sequenceAnim.frameCount.length);
+               this.animationFrame -= this.animation.field3515;
+            } while (this.animationFrame >= 0 && this.animationFrame < this.animation.frameCount.length);
 
-            this.seqFrame = 0;
+            this.animationFrame = 0;
          }
       }
    }
 
-   final void updateVelocity(int dstX, int dstZ, int dstY, int cycle) {
+   final void updateVelocity(int destinationX, int destinationZ, int destinationY, int currentCycle) {
       double dx;
+
+      // Initialize position if not yet moving
       if (!this.isMoving) {
-         dx = dstX - this.sourceX;
-         double dz = dstZ - this.sourceZ;
-         double d = Math.sqrt(dx * dx + dz * dz);
-         this.x = (double) this.sourceX + (double) this.startHeight * dx / d;
-         this.z = (double) this.startHeight * dz / d + (double) this.sourceZ;
+         dx = destinationX - this.sourceX;
+         double dz = destinationZ - this.sourceZ;
+         double horizontalDistance = Math.sqrt(dx * dx + dz * dz);
+         this.x = (double) this.sourceX + (double) this.startHeight * dx / horizontalDistance;
+         this.z = (double) this.startHeight * dz / horizontalDistance + (double) this.sourceZ;
          this.y = (double) this.sourceY;
       }
 
-      dx = this.cycleEnd + 1 - cycle;
-      this.velocityX = ((double) dstX - this.x) / dx;
-      this.velocityZ = ((double) dstZ - this.z) / dx;
+      // Calculate time remaining until end
+      dx = this.endCycle + 1 - currentCycle;
+
+      // Calculate horizontal velocities
+      this.velocityX = ((double) destinationX - this.x) / dx;
+      this.velocityZ = ((double) destinationZ - this.z) / dx;
       this.velocity = Math.sqrt(this.velocityZ * this.velocityZ + this.velocityX * this.velocityX);
+
+      // Calculate initial vertical velocity based on slope
       if (!this.isMoving) {
          this.velocityY = -this.velocity * Math.tan(0.02454369D * (double) this.slope);
       }
 
-      this.accelerationZ = 2.0D * ((double) dstY - this.y - dx * this.velocityY) / (dx * dx);
+      // Calculate vertical acceleration (gravity)
+      this.accelerationZ = 2.0D * ((double) destinationY - this.y - dx * this.velocityY) / (dx * dx);
    }
 
 }

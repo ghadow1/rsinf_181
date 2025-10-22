@@ -70,27 +70,27 @@ public class class214 {
 
    }
 
-   public class127 method3997(class258 class258_1, int i_2, class258 class258_3, int i_4) {
+   public class127 method3997(SequenceAnimation sequenceAnimation_1, int i_2, SequenceAnimation sequenceAnimation_3, int i_4) {
       if (this.field2532 != -1) {
-         return GameApplet.method1005(this.field2532).method4707(class258_1, i_2, class258_3, i_4);
+         return GameApplet.method1005(this.field2532).method4707(sequenceAnimation_1, i_2, sequenceAnimation_3, i_4);
       } else {
          long long_6 = this.field2539;
          int[] ints_8 = this.field2534;
-         if (class258_1 != null && (class258_1.field3528 >= 0 || class258_1.field3521 >= 0)) {
+         if (sequenceAnimation_1 != null && (sequenceAnimation_1.field3528 >= 0 || sequenceAnimation_1.field3521 >= 0)) {
             ints_8 = new int[12];
 
             for (int i_16 = 0; i_16 < 12; i_16++) {
                ints_8[i_16] = this.field2534[i_16];
             }
 
-            if (class258_1.field3528 >= 0) {
-               long_6 += (long)(class258_1.field3528 - this.field2534[5] << 40);
-               ints_8[5] = class258_1.field3528;
+            if (sequenceAnimation_1.field3528 >= 0) {
+               long_6 += (long)(sequenceAnimation_1.field3528 - this.field2534[5] << 40);
+               ints_8[5] = sequenceAnimation_1.field3528;
             }
 
-            if (class258_1.field3521 >= 0) {
-               long_6 += (long)(class258_1.field3521 - this.field2534[3] << 48);
-               ints_8[3] = class258_1.field3521;
+            if (sequenceAnimation_1.field3521 >= 0) {
+               long_6 += (long)(sequenceAnimation_1.field3521 - this.field2534[3] << 48);
+               ints_8[3] = sequenceAnimation_1.field3521;
             }
          }
 
@@ -161,16 +161,16 @@ public class class214 {
             }
          }
 
-         if (class258_1 == null && class258_3 == null) {
+         if (sequenceAnimation_1 == null && sequenceAnimation_3 == null) {
             return class127_9;
          } else {
             class127 class127_19;
-            if (class258_1 != null && class258_3 != null) {
-               class127_19 = class258_1.method4765(class127_9, i_2, class258_3, i_4);
-            } else if (class258_1 != null) {
-               class127_19 = class258_1.method4784(class127_9, i_2);
+            if (sequenceAnimation_1 != null && sequenceAnimation_3 != null) {
+               class127_19 = sequenceAnimation_1.method4765(class127_9, i_2, sequenceAnimation_3, i_4);
+            } else if (sequenceAnimation_1 != null) {
+               class127_19 = sequenceAnimation_1.method4784(class127_9, i_2);
             } else {
-               class127_19 = class258_3.method4784(class127_9, i_4);
+               class127_19 = sequenceAnimation_3.method4784(class127_9, i_4);
             }
 
             return class127_19;

@@ -277,10 +277,10 @@ public class class19 implements class37 {
       }
    }
 
-   static void method224(class258 class258_0, int i_1, int i_2, int i_3, int i_4) {
+   static void method224(SequenceAnimation sequenceAnimation_0, int i_1, int i_2, int i_3, int i_4) {
       if (Client.field893 < 50 && Client.field892 != 0) {
-         if (class258_0.field3523 != null && i_1 < class258_0.field3523.length) {
-            int i_5 = class258_0.field3523[i_1];
+         if (sequenceAnimation_0.field3523 != null && i_1 < sequenceAnimation_0.field3523.length) {
+            int i_5 = sequenceAnimation_0.field3523[i_1];
             if (i_5 != 0) {
                int i_6 = i_5 >> 8;
                int i_7 = i_5 >> 4 & 0x7;

@@ -1,4 +1,4 @@
-public class class258 extends DualNode {
+public class SequenceAnimation extends DualNode {
 
    public static class233 field3516;
    public static class233 field3517;
@@ -103,14 +103,14 @@ public class class258 extends DualNode {
       }
    }
 
-   public class127 method4765(class127 class127_1, int i_2, class258 class258_3, int i_4) {
+   public class127 method4765(class127 class127_1, int i_2, SequenceAnimation sequenceAnimation_3, int i_4) {
       i_2 = this.frameCount[i_2];
       class138 class138_6 = class30.method537(i_2 >> 16);
       i_2 &= 0xffff;
       if (class138_6 == null) {
-         return class258_3.method4784(class127_1, i_4);
+         return sequenceAnimation_3.method4784(class127_1, i_4);
       } else {
-         i_4 = class258_3.frameCount[i_4];
+         i_4 = sequenceAnimation_3.frameCount[i_4];
          class138 class138_7 = class30.method537(i_4 >> 16);
          i_4 &= 0xffff;
          class127 class127_8;

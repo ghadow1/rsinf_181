@@ -710,9 +710,9 @@ public final class Client extends GameApplet implements class280 {
       }
 
       class89.method2093((byte) 0);
-      if (class258.field3534 != null) {
-         class258.field3534.method3297((byte) 78);
-         class258.field3534 = null;
+      if (SequenceAnimation.field3534 != null) {
+         SequenceAnimation.field3534.method3297((byte) 78);
+         SequenceAnimation.field3534 = null;
       }
 
       try {
@@ -768,7 +768,7 @@ public final class Client extends GameApplet implements class280 {
       class247.field3291 = SoundSystem.field2541;
       WorldMapCacheName.field309 = SoundSystem.field2542;
       Message.field604 = SoundSystem.field2546;
-      class258.field3534 = new class143();
+      SequenceAnimation.field3534 = new class143();
       this.method972();
       this.method932();
       class36.field329 = this.method877();

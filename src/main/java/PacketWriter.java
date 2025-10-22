@@ -73,17 +73,17 @@ public class PacketWriter {
 
    static final void method2245() {
       for (Projectile projectile_1 = (Projectile) Client.projectiles.method4892(); projectile_1 != null; projectile_1 = (Projectile) Client.projectiles.method4894()) {
-         if (projectile_1.field1215 == WorldMapRectangle.plane && Client.cycle <= projectile_1.cycleEnd) {
-            if (Client.cycle >= projectile_1.field1217) {
-               if (projectile_1.field1224 > 0) {
-                  NPC NPC_2 = Client.npcs[projectile_1.field1224 - 1];
+         if (projectile_1.targetPlane == WorldMapRectangle.plane && Client.cycle <= projectile_1.endCycle) {
+            if (Client.cycle >= projectile_1.startCycle) {
+               if (projectile_1.targetX > 0) {
+                  NPC NPC_2 = Client.npcs[projectile_1.targetX - 1];
                   if (NPC_2 != null && NPC_2.x >= 0 && NPC_2.x < 13312 && NPC_2.y >= 0 && NPC_2.y < 13312) {
-                     projectile_1.updateVelocity(NPC_2.x, NPC_2.y, MusicPatchPcmStream.getTileHeight(NPC_2.x, NPC_2.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
+                     projectile_1.updateVelocity(NPC_2.x, NPC_2.y, MusicPatchPcmStream.getTileHeight(NPC_2.x, NPC_2.y, projectile_1.targetPlane) - projectile_1.targetZ, Client.cycle);
                   }
                }
 
-               if (projectile_1.field1224 < 0) {
-                  int i_3 = -projectile_1.field1224 - 1;
+               if (projectile_1.targetX < 0) {
+                  int i_3 = -projectile_1.targetX - 1;
                   class66 class66_4;
                   if (i_3 == Client.field770) {
                      class66_4 = Client.localPlayer;
@@ -92,7 +92,7 @@ public class PacketWriter {
                   }
 
                   if (class66_4 != null && class66_4.x >= 0 && class66_4.x < 13312 && class66_4.y >= 0 && class66_4.y < 13312) {
-                     projectile_1.updateVelocity(class66_4.x, class66_4.y, MusicPatchPcmStream.getTileHeight(class66_4.x, class66_4.y, projectile_1.field1215) - projectile_1.field1225, Client.cycle);
+                     projectile_1.updateVelocity(class66_4.x, class66_4.y, MusicPatchPcmStream.getTileHeight(class66_4.x, class66_4.y, projectile_1.targetPlane) - projectile_1.targetZ, Client.cycle);
                   }
                }
 

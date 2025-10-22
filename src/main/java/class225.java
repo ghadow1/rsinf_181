@@ -33,14 +33,14 @@ public class class225 {
                   }
 
                   if (i_6 != -1) {
-                     class258 class258_7 = class7.method81(i_6);
+                     SequenceAnimation sequenceAnimation_7 = class7.method81(i_6);
 
-                     for (widget_4.field2584 += Client.field718; widget_4.field2584 > class258_7.duration[widget_4.field2692]; FriendSystem.invalidateWidget(widget_4)) {
-                        widget_4.field2584 -= class258_7.duration[widget_4.field2692];
+                     for (widget_4.field2584 += Client.field718; widget_4.field2584 > sequenceAnimation_7.duration[widget_4.field2692]; FriendSystem.invalidateWidget(widget_4)) {
+                        widget_4.field2584 -= sequenceAnimation_7.duration[widget_4.field2692];
                         ++widget_4.field2692;
-                        if (widget_4.field2692 >= class258_7.frameCount.length) {
-                           widget_4.field2692 -= class258_7.field3515;
-                           if (widget_4.field2692 < 0 || widget_4.field2692 >= class258_7.frameCount.length) {
+                        if (widget_4.field2692 >= sequenceAnimation_7.frameCount.length) {
+                           widget_4.field2692 -= sequenceAnimation_7.field3515;
+                           if (widget_4.field2692 < 0 || widget_4.field2692 >= sequenceAnimation_7.frameCount.length) {
                               widget_4.field2692 = 0;
                            }
                         }

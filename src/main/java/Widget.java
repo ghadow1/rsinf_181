@@ -733,7 +733,7 @@ public class Widget extends LinkedListNode {
       }
    }
 
-   public class127 method4049(class258 class258_1, int i_2, boolean bool_3, class214 class214_4, int i_5) {
+   public class127 method4049(SequenceAnimation sequenceAnimation_1, int i_2, boolean bool_3, class214 class214_4, int i_5) {
       field2562 = false;
       int i_6;
       int i_7;
@@ -801,8 +801,8 @@ public class Widget extends LinkedListNode {
             field2698.put(class127_8, (long)(i_7 + (i_6 << 16)));
          }
 
-         if (class258_1 != null) {
-            class127_8 = class258_1.method4767(class127_8, i_2, -1834936397);
+         if (sequenceAnimation_1 != null) {
+            class127_8 = sequenceAnimation_1.method4767(class127_8, i_2, -1834936397);
          }
 
          return class127_8;

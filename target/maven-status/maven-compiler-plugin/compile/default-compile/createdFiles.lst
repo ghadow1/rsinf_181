@@ -152,7 +152,6 @@ class69.class
 class311.class
 class52.class
 class138.class
-class201.class
 MouseRecorder.class
 class276.class
 class143.class
@@ -167,6 +166,7 @@ class120.class
 class248.class
 ItemContainer.class
 class225.class
+SequenceAnimation.class
 class23.class
 class230.class
 class195.class
@@ -285,7 +285,6 @@ ItemDefinition.class
 class316.class
 class292.class
 GZipDecompressor.class
-class258.class
 class162.class
 FontName.class
 class238.class
@@ -324,6 +323,7 @@ class34.class
 class241.class
 class213.class
 class29.class
+SceneSound.class
 class11.class
 class323.class
 class288.class
