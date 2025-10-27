@@ -108,7 +108,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.field464 = true;
          if (TimeUtils.getAdjustedTimeMillis() - this.field468 > 1000L) {
             Rectangle rectangle_2 = graphics_1.getClipBounds();
-            if (rectangle_2 == null || rectangle_2.width >= class7.field46 && rectangle_2.height >= ParamComposition.field3308) {
+            if (rectangle_2 == null || rectangle_2.width >= class7.clientWidth && rectangle_2.height >= ParamComposition.clientHeight) {
                this.field467 = true;
             }
          }
@@ -204,20 +204,20 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          container_2.remove(this.canvas);
       }
 
-      class7.field46 = Math.max(container_2.getWidth(), this.field476);
-      ParamComposition.field3308 = Math.max(container_2.getHeight(), this.field459);
+      class7.clientWidth = Math.max(container_2.getWidth(), this.field476);
+      ParamComposition.clientHeight = Math.max(container_2.getHeight(), this.field459);
       Insets insets_3;
       if (this.applicationFrame != null) {
          insets_3 = this.applicationFrame.getInsets();
-         class7.field46 -= insets_3.right + insets_3.left;
-         ParamComposition.field3308 -= insets_3.top + insets_3.bottom;
+         class7.clientWidth -= insets_3.right + insets_3.left;
+         ParamComposition.clientHeight -= insets_3.top + insets_3.bottom;
       }
 
       this.canvas = new class48(this);
       container_2.setBackground(Color.BLACK);
       container_2.setLayout((LayoutManager) null);
       container_2.add(this.canvas);
-      this.canvas.setSize(class7.field46, ParamComposition.field3308);
+      this.canvas.setSize(class7.clientWidth, ParamComposition.clientHeight);
       this.canvas.setVisible(true);
       this.canvas.setBackground(Color.BLACK);
       if (container_2 == this.applicationFrame) {
@@ -230,11 +230,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       this.canvas.addFocusListener(this);
       this.canvas.requestFocus();
       this.field464 = true;
-      if (class202.field2486 != null && class7.field46 == class202.field2486.field3877 && ParamComposition.field3308 == class202.field2486.field3878) {
-         ((class52) class202.field2486).method856(this.canvas, (byte) 0);
-         class202.field2486.vmethod6077(0, 0, -1942972544);
+      if (class202.field2486 != null && class7.clientWidth == class202.field2486.field3877 && ParamComposition.clientHeight == class202.field2486.field3878) {
+         ((class52) class202.field2486).method856(this.canvas);
+         class202.field2486.vmethod6077(0, 0);
       } else {
-         class202.field2486 = new class52(class7.field46, ParamComposition.field3308, this.canvas);
+         class202.field2486 = new class52(class7.clientWidth, ParamComposition.clientHeight, this.canvas);
       }
 
       this.field467 = false;
@@ -261,7 +261,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          if (bool_3) {
             graphics_5.setColor(Color.black);
-            graphics_5.fillRect(0, 0, class7.field46, ParamComposition.field3308);
+            graphics_5.fillRect(0, 0, class7.clientWidth, ParamComposition.clientHeight);
          }
 
          Color color_6 = new Color(140, 17, 17);
@@ -281,10 +281,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             graphics_7.setFont(WorldMapData_1.fontHelvetica13);
             graphics_7.setColor(Color.white);
             graphics_7.drawString(string_2, (304 - HealthBarUpdate.loginScreenFontMetrics.stringWidth(string_2)) / 2, 22);
-            graphics_5.drawImage(GrandExchangeOfferUnitPriceComparator.field3125, class7.field46 / 2 - 152, ParamComposition.field3308 / 2 - 18, (ImageObserver) null);
+            graphics_5.drawImage(GrandExchangeOfferUnitPriceComparator.field3125, class7.clientWidth / 2 - 152, ParamComposition.clientHeight / 2 - 18, (ImageObserver) null);
          } catch (Exception exception_10) {
-            int i_8 = class7.field46 / 2 - 152;
-            int i_9 = ParamComposition.field3308 / 2 - 18;
+            int i_8 = class7.clientWidth / 2 - 152;
+            int i_9 = ParamComposition.clientHeight / 2 - 18;
             graphics_5.setColor(color_6);
             graphics_5.drawRect(i_8, i_9, 303, 33);
             graphics_5.fillRect(i_8 + 2, i_9 + 2, i_1 * 3, 30);
@@ -317,12 +317,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.field455 = 1;
          }
 
-         class7.field46 = Math.min(this.field454, this.field473);
-         ParamComposition.field3308 = Math.min(this.field455, this.field461);
-         this.field456 = (this.field454 - class7.field46) / 2;
+         class7.clientWidth = Math.min(this.field454, this.field473);
+         ParamComposition.clientHeight = Math.min(this.field455, this.field461);
+         this.field456 = (this.field454 - class7.clientWidth) / 2;
          this.field451 = 0;
-         this.canvas.setSize(class7.field46, ParamComposition.field3308);
-         class202.field2486 = new class52(class7.field46, ParamComposition.field3308, this.canvas);
+         this.canvas.setSize(class7.clientWidth, ParamComposition.clientHeight);
+         class202.field2486 = new class52(class7.clientWidth, ParamComposition.clientHeight, this.canvas);
          if (container_2 == this.applicationFrame) {
             Insets insets_4 = this.applicationFrame.getInsets();
             this.canvas.setLocation(insets_4.left + this.field456, this.field451 + insets_4.top);
@@ -351,7 +351,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       this.vmethod1599();
    }
 
-   final void method968(Object object_1, int i_2) {
+   final void method968(Object object_1) {
       if (this.field471 != null) {
          for (int i_3 = 0; i_3 < 50 && this.field471.peekEvent() != null; i_3++) {
             class251.method4550(1L);
@@ -364,7 +364,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       }
    }
 
-   void method910(int i_1) {
+   void method910() {
       Container container_2 = this.method902();
       long long_3 = TimeUtils.getAdjustedTimeMillis();
       long long_5 = field452[class238.field3192];
@@ -378,7 +378,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if (++field465 - 1 > 50) {
          field465 -= 50;
          this.field464 = true;
-         this.canvas.setSize(class7.field46, ParamComposition.field3308);
+         this.canvas.setSize(class7.clientWidth, ParamComposition.clientHeight);
          this.canvas.setVisible(true);
          if (container_2 == this.applicationFrame) {
             Insets insets_8 = this.applicationFrame.getInsets();
@@ -392,10 +392,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.method908();
       }
 
-      this.method970(-2058666477);
-      this.vmethod1493(this.field464, (byte) -5);
+      this.method970();
+      this.vmethod1493(this.field464);
       if (this.field464) {
-         this.method927((byte) -42);
+         this.method927();
       }
 
       this.field464 = false;
@@ -440,7 +440,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected class168 method877() {
       if (this.field469 == null) {
          this.field469 = new class44();
-         this.field469.method772(this.canvas, (byte) 31);
+         this.field469.method772(this.canvas);
       }
 
       return this.field469;
@@ -475,8 +475,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
 
          applet = this;
-         class7.field46 = i_1;
-         ParamComposition.field3308 = i_2;
+         class7.clientWidth = i_1;
+         ParamComposition.clientHeight = i_2;
          GZipDecompressor.field4065 = i_3;
          GZipDecompressor.field4064 = this;
          if (field463 == null) {
@@ -491,7 +491,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    }
 
-   final void method970(int i_1) {
+   final void method970() {
       class319 class319_2 = this.method903();
       if (this.field454 != class319_2.field3865 || class319_2.field3866 != this.field455 || this.field450) {
          this.method882();
@@ -500,7 +500,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    }
 
-   protected abstract void vmethod1493(boolean var1, byte var2);
+   protected abstract void vmethod1493(boolean var1);
 
    final void method908() {
       Canvas canvas_2 = this.canvas;
@@ -513,28 +513,28 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       canvas_3.removeFocusListener(MouseHandler.field479);
       MouseHandler.field481 = 0;
       if (this.field469 != null) {
-         this.field469.method773(this.canvas, -325226469);
+         this.field469.method773(this.canvas);
       }
 
       this.method1003();
       class81.method1990(this.canvas);
       Buffer.method200(this.canvas);
       if (this.field469 != null) {
-         this.field469.method772(this.canvas, (byte) 13);
+         this.field469.method772(this.canvas);
       }
 
       this.method890();
    }
 
-   protected void method879(String string_1, byte b_2) {
+   protected void method879(String string_1) {
       this.field470.setContents(new StringSelection(string_1), (ClipboardOwner) null);
    }
 
-   void method927(byte b_1) {
+   void method927() {
       int i_2 = this.field456;
       int i_3 = this.field451;
-      int i_4 = this.field454 - class7.field46 - i_2;
-      int i_5 = this.field455 - ParamComposition.field3308 - i_3;
+      int i_4 = this.field454 - class7.clientWidth - i_2;
+      int i_5 = this.field455 - ParamComposition.clientHeight - i_3;
       if (i_2 > 0 || i_4 > 0 || i_3 > 0 || i_5 > 0) {
          try {
             Container container_6 = this.method902();
@@ -570,7 +570,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    }
 
-   protected final boolean method931(int i_1) {
+   protected final boolean method931() {
       return this.applicationFrame != null;
    }
 
@@ -617,8 +617,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                this.method953();
             }
 
-            this.method910(-1190727122);
-            this.method968(this.canvas, 1151565468);
+            this.method910();
+            this.method968(this.canvas);
          }
       } catch (Exception exception_6) {
          ErrorHandler.logError(null, exception_6);

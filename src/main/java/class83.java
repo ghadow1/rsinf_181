@@ -46,40 +46,40 @@ public class class83 {
             widget_4.field2586 = 0;
          }
 
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1101) {
          widget_4.field2695 = MouseRecorder.field1098[--class70.field1014];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1102) {
          widget_4.field2571 = MouseRecorder.field1098[--class70.field1014] == 1;
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1103) {
          widget_4.field2595 = MouseRecorder.field1098[--class70.field1014];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1104) {
          widget_4.field2597 = MouseRecorder.field1098[--class70.field1014];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1105) {
          widget_4.field2599 = MouseRecorder.field1098[--class70.field1014];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1106) {
          widget_4.field2591 = MouseRecorder.field1098[--class70.field1014];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1107) {
          widget_4.field2613 = MouseRecorder.field1098[--class70.field1014] == 1;
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1108) {
          widget_4.field2607 = 1;
          widget_4.field2649 = MouseRecorder.field1098[--class70.field1014];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else if (i_0 == 1109) {
          class70.field1014 -= 6;
@@ -89,7 +89,7 @@ public class class83 {
          widget_4.field2616 = MouseRecorder.field1098[class70.field1014 + 3];
          widget_4.field2640 = MouseRecorder.field1098[class70.field1014 + 4];
          widget_4.field2618 = MouseRecorder.field1098[class70.field1014 + 5];
-         FriendSystem.invalidateWidget(widget_4);
+         Widget2.invalidateWidget(widget_4);
          return 1;
       } else {
          int i_9;
@@ -99,58 +99,58 @@ public class class83 {
                widget_4.field2611 = i_9;
                widget_4.field2692 = 0;
                widget_4.field2584 = 0;
-               FriendSystem.invalidateWidget(widget_4);
+               Widget2.invalidateWidget(widget_4);
             }
 
             return 1;
          } else if (i_0 == 1111) {
             widget_4.field2621 = MouseRecorder.field1098[--class70.field1014] == 1;
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1112) {
             String string_8 = MouseRecorder.field1093[--class221.field2747];
             if (!string_8.equals(widget_4.field2601)) {
                widget_4.field2601 = string_8;
-               FriendSystem.invalidateWidget(widget_4);
+               Widget2.invalidateWidget(widget_4);
             }
 
             return 1;
          } else if (i_0 == 1113) {
             widget_4.fontId = MouseRecorder.field1098[--class70.field1014];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1114) {
             class70.field1014 -= 3;
             widget_4.field2628 = MouseRecorder.field1098[class70.field1014];
             widget_4.field2629 = MouseRecorder.field1098[class70.field1014 + 1];
             widget_4.field2627 = MouseRecorder.field1098[class70.field1014 + 2];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1115) {
             widget_4.field2659 = MouseRecorder.field1098[--class70.field1014] == 1;
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1116) {
             widget_4.field2559 = MouseRecorder.field1098[--class70.field1014];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1117) {
             widget_4.field2604 = MouseRecorder.field1098[--class70.field1014];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1118) {
             widget_4.field2605 = MouseRecorder.field1098[--class70.field1014] == 1;
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1119) {
             widget_4.field2606 = MouseRecorder.field1098[--class70.field1014] == 1;
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1120) {
             class70.field1014 -= 2;
             widget_4.field2687 = MouseRecorder.field1098[class70.field1014];
             widget_4.field2569 = MouseRecorder.field1098[class70.field1014 + 1];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             if (i_5 != -1 && widget_4.field2566 == 0) {
                WorldMapID.method413(Widget.field2556[i_5 >> 16], widget_4, false);
             }
@@ -159,26 +159,26 @@ public class class83 {
          } else if (i_0 == 1121) {
             class56.method1086(widget_4.field2688, widget_4.field2565, -881674814);
             Client.field850 = widget_4;
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1122) {
             widget_4.field2600 = MouseRecorder.field1098[--class70.field1014];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1123) {
             widget_4.field2639 = MouseRecorder.field1098[--class70.field1014];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1124) {
             widget_4.field2596 = MouseRecorder.field1098[--class70.field1014];
-            FriendSystem.invalidateWidget(widget_4);
+            Widget2.invalidateWidget(widget_4);
             return 1;
          } else if (i_0 == 1125) {
             i_9 = MouseRecorder.field1098[--class70.field1014];
-            class323 class323_7 = (class323) MemoryManager.findById(ResourceHandler.method2405((byte) 69), i_9);
+            class323 class323_7 = (class323) MemoryManager.findById(ResourceHandler.method2405(), i_9);
             if (class323_7 != null) {
                widget_4.field2693 = class323_7;
-               FriendSystem.invalidateWidget(widget_4);
+               Widget2.invalidateWidget(widget_4);
             }
 
             return 1;

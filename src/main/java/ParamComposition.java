@@ -1,6 +1,6 @@
 public class ParamComposition extends DualNode {
 
-   public static int field3308;
+   public static int clientHeight;
    static class233 field3307;
    static class145 field3301 = new class145(64);
    boolean autoDisable = true;

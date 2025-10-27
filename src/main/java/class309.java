@@ -204,7 +204,7 @@ public class class309 implements Runnable {
          }
 
          Login.field1194 = SoundSystem.method4021(class233_1, "titlebox", "");
-         class240.field3207 = SoundSystem.method4021(class233_1, "titlebutton", "");
+         ClanEntry.field3207 = SoundSystem.method4021(class233_1, "titlebutton", "");
          int i_7 = class233_1.method4160("runes");
          int i_8 = class233_1.method4161(i_7, "");
          class324[] arr_6 = class289.method5281(class233_1, i_7, i_8, 1740775565);
@@ -221,7 +221,7 @@ public class class309 implements Runnable {
          class25.field212 = Login.field1178.field3893;
          class278.field3631 = new class72(Login.field1181);
          if (bool_2) {
-            Login.field1180 = "";
+            Login.localUsername = "";
             Login.Login_password = "";
          }
 
@@ -254,7 +254,7 @@ public class class309 implements Runnable {
          }
 
          Login.field1179 = true;
-         Login.field1208 = (class7.field46 - 765) / 2;
+         Login.field1208 = (class7.clientWidth - 765) / 2;
          Login.field1187 = Login.field1208 + 202;
          MusicPatchPcmStream.field585 = Login.field1187 + 180;
          class5.field23.method6121(Login.field1208, 0);

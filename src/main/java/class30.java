@@ -200,8 +200,8 @@ public class class30 {
                   --class70.field1014;
                   return 1;
                } else if (i_0 == 3132) {
-                  MouseRecorder.field1098[++class70.field1014 - 1] = class7.field46;
-                  MouseRecorder.field1098[++class70.field1014 - 1] = ParamComposition.field3308;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = class7.clientWidth;
+                  MouseRecorder.field1098[++class70.field1014 - 1] = ParamComposition.clientHeight;
                   return 1;
                } else if (i_0 == 3133) {
                   --class70.field1014;

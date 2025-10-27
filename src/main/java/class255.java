@@ -11,7 +11,7 @@ public class class255 implements UnknownT {
       this.field3462 = i_2;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field3462;
    }
 

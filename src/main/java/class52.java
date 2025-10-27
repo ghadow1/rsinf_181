@@ -23,11 +23,11 @@ public final class class52 extends class322 {
       DirectColorModel directcolormodel_5 = new DirectColorModel(32, 16711680, 65280, 255);
       WritableRaster writableraster_6 = Raster.createWritableRaster(directcolormodel_5.createCompatibleSampleModel(super.field3877, super.field3878), databufferint_4, (Point) null);
       this.field440 = new BufferedImage(directcolormodel_5, writableraster_6, false, new Hashtable());
-      this.method856(component_3, (byte) 0);
+      this.method856(component_3);
       this.method6078();
    }
 
-   final void method860(Graphics graphics_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
+   final void method860(Graphics graphics_1, int i_2, int i_3, int i_4, int i_5) {
       try {
          Shape shape_7 = graphics_1.getClip();
          graphics_1.clipRect(i_2, i_3, i_4, i_5);
@@ -39,7 +39,7 @@ public final class class52 extends class322 {
 
    }
 
-   final void method867(Graphics graphics_1, int i_2, int i_3, int i_4) {
+   final void method867(Graphics graphics_1, int i_2, int i_3) {
       try {
          graphics_1.drawImage(this.field440, i_2, i_3, this.field439);
       } catch (Exception exception_6) {
@@ -48,16 +48,16 @@ public final class class52 extends class322 {
 
    }
 
-   final void method856(Component component_1, byte b_2) {
+   final void method856(Component component_1) {
       this.field439 = component_1;
    }
 
-   public final void vmethod6077(int i_1, int i_2, int i_3) {
-      this.method867(this.field439.getGraphics(), i_1, i_2, 689962734);
+   public final void vmethod6077(int i_1, int i_2) {
+      this.method867(this.field439.getGraphics(), i_1, i_2);
    }
 
    public final void vmethod6075(int i_1, int i_2, int i_3, int i_4, int i_5) {
-      this.method860(this.field439.getGraphics(), i_1, i_2, i_3, i_4, -143326584);
+      this.method860(this.field439.getGraphics(), i_1, i_2, i_3, i_4);
    }
 
 }

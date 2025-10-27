@@ -16,7 +16,7 @@ public class class13 {
          Widget widget_7 = arr_0[i_6];
          if (widget_7 != null && widget_7.field2583 == i_1) {
             class219.method4112(widget_7, i_2, i_3, bool_4);
-            ResourceHandler.method2441(widget_7, i_2, i_3, (byte) -41);
+            ResourceHandler.method2441(widget_7, i_2, i_3);
             if (widget_7.field2585 > widget_7.field2687 - widget_7.field2579) {
                widget_7.field2585 = widget_7.field2687 - widget_7.field2579;
             }

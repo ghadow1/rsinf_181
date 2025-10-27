@@ -581,7 +581,7 @@ public class ItemDefinition extends DualNode {
    }
 
    public String method4648(int i_1, String string_2) {
-      return class5.method54(this.params, i_1, string_2, (byte) -115);
+      return class5.method54(this.params, i_1, string_2);
    }
 
    public int method4650(int i_1, int i_2) {

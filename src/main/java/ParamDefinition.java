@@ -47,7 +47,7 @@ public abstract class ParamDefinition {
       class17.field110.method4158();
       class32.field279.method4158();
       class151.field1971.method4158();
-      class5.field22.clear();
+      class5.scene.clear();
 
       for (int i_1 = 0; i_1 < 4; i_1++) {
          Client.field710[i_1].clear();

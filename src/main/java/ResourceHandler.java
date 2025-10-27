@@ -18,7 +18,7 @@ public class ResourceHandler {
    protected int[] field1415;
    class115 field1410;
 
-   protected void vmethod2418(int i_1) throws Exception {
+   protected void vmethod2418() throws Exception {
    }
 
    protected void vmethod2438(byte b_1) {
@@ -39,7 +39,7 @@ public class ResourceHandler {
                this.field1421 = true;
             }
 
-            int i_4 = this.vmethod2415((byte) 97);
+            int i_4 = this.vmethod2415();
             if (this.field1419 - i_4 > this.field1417) {
                this.field1417 = this.field1419 - i_4;
             }
@@ -66,7 +66,7 @@ public class ResourceHandler {
             }
 
             while (i_4 < i_5) {
-               this.method2411(this.field1415, 256);
+               this.method2411(this.field1415);
                this.vmethod2404();
                i_4 += 256;
             }
@@ -101,7 +101,7 @@ public class ResourceHandler {
             }
 
             while (long_2 > 5000L + this.field1412) {
-               this.method2410(256, 1268557925);
+               this.method2410();
                this.field1412 += (long)(256000 / CollisionMap.field2078);
             }
          } catch (Exception exception_7) {
@@ -111,18 +111,18 @@ public class ResourceHandler {
       }
    }
 
-   protected int vmethod2415(byte b_1) throws Exception {
+   protected int vmethod2415() {
       return this.field1424;
    }
 
    protected void vmethod2414(int i_1, byte b_2) throws Exception {
    }
 
-   public final synchronized void method2408(int i_1) {
+   public final synchronized void method2408() {
       this.field1421 = true;
 
       try {
-         this.vmethod2418(-313753219);
+         this.vmethod2418();
       } catch (Exception exception_3) {
          this.vmethod2438((byte) 66);
          this.field1416 = TimeUtils.getAdjustedTimeMillis() + 2000L;
@@ -130,19 +130,19 @@ public class ResourceHandler {
 
    }
 
-   final void method2410(int i_1, int i_2) {
-      this.field1423 -= i_1;
+   final void method2410() {
+      this.field1423 -= 256;
       if (this.field1423 < 0) {
          this.field1423 = 0;
       }
 
       if (this.field1410 != null) {
-         this.field1410.vmethod3906(i_1);
+         this.field1410.vmethod3906(256);
       }
 
    }
 
-   public final synchronized void method2434(byte b_1) {
+   public final synchronized void method2434() {
       if (class88.field1246 != null) {
          boolean bool_2 = true;
 
@@ -167,7 +167,7 @@ public class ResourceHandler {
       this.field1415 = null;
    }
 
-   final void method2456(class115 class115_1, int i_2, int i_3) {
+   final void method2456(class115 class115_1, int i_2) {
       int i_4 = i_2 >> 5;
       class115 class115_5 = this.field1425[i_4];
       if (class115_5 == null) {
@@ -180,18 +180,18 @@ public class ResourceHandler {
       class115_1.field1496 = i_2;
    }
 
-   final void method2411(int[] ints_1, int i_2) {
-      int i_3 = i_2;
+   final void method2411(int[] ints_1) {
+      int i_3 = 256;
       if (class169.field2053) {
-         i_3 = i_2 << 1;
+         i_3 = 256 << 1;
       }
 
       class301.method5733(ints_1, 0, i_3);
-      this.field1423 -= i_2;
+      this.field1423 -= 256;
       if (this.field1410 != null && this.field1423 <= 0) {
          this.field1423 += CollisionMap.field2078 >> 4;
          class77.method1947(this.field1410);
-         this.method2456(this.field1410, this.field1410.vmethod2689(), 2049205678);
+         this.method2456(this.field1410, this.field1410.vmethod2689());
          int i_4 = 0;
          int i_5 = 255;
 
@@ -242,7 +242,7 @@ public class ResourceHandler {
                            class115 class115_14 = class115_11.vmethod3894();
                            if (class115_14 != null) {
                               for (int i_15 = class115_11.field1496; class115_14 != null; class115_14 = class115_11.vmethod3891()) {
-                                 this.method2456(class115_14, i_15 * class115_14.vmethod2689() >> 8, -1474916440);
+                                 this.method2456(class115_14, i_15 * class115_14.vmethod2689() >> 8);
                               }
                            }
 
@@ -286,7 +286,7 @@ public class ResourceHandler {
       }
 
       if (this.field1410 != null) {
-         this.field1410.vmethod3893(ints_1, 0, i_2);
+         this.field1410.vmethod3893(ints_1, 0, 256);
       }
 
       this.field1412 = TimeUtils.getAdjustedTimeMillis();
@@ -295,18 +295,18 @@ public class ResourceHandler {
    protected void vmethod2404() throws Exception {
    }
 
-   public final void method2407(byte b_1) {
+   public final void method2407() {
       this.field1421 = true;
    }
 
-   public final synchronized void method2424(class115 class115_1, int i_2) {
+   public final synchronized void method2424(class115 class115_1) {
       this.field1410 = class115_1;
    }
 
-   protected void vmethod2413(int i_1) throws Exception {
+   protected void vmethod2413() {
    }
 
-   static void method2441(Widget widget_0, int i_1, int i_2, byte b_3) {
+   static void method2441(Widget widget_0, int i_1, int i_2) {
       if (widget_0.field2694 == 0) {
          widget_0.field2577 = widget_0.field2651;
       } else if (widget_0.field2694 == 1) {
@@ -337,7 +337,7 @@ public class ResourceHandler {
 
    }
 
-   public static class323[] method2405(byte b_0) {
+   public static class323[] method2405() {
       return new class323[] {class323.field3887, class323.field3888, class323.field3885};
    }
 

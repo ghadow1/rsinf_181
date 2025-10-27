@@ -1,31 +1,31 @@
-public class class240 extends DualNode {
+public class ClanEntry extends DualNode {
 
    static ByteBuffer field3209;
    static class324 field3207;
    static class233 field3204;
-   public static int field3203;
+   public static int size;
    static class145 field3205 = new class145(64);
    public int field3206 = 0;
 
-   void method4354(ByteBuffer class300_1, int i_2, int i_3) {
+   void method4354(ByteBuffer class300_1, int i_2) {
       if (i_2 == 5) {
          this.field3206 = class300_1.readUnsignedShort();
       }
 
    }
 
-   void method4353(ByteBuffer class300_1, int i_2) {
+   void method4353(ByteBuffer class300_1) {
       while (true) {
          int i_3 = class300_1.readUnsignedByte();
          if (i_3 == 0) {
             return;
          }
 
-         this.method4354(class300_1, i_3, -1780799047);
+         this.method4354(class300_1, i_3);
       }
    }
 
-   public static boolean method4366(char var_0, int i_1) {
+   public static boolean method4366(char var_0) {
       if ((var_0 <= 0 || var_0 >= 128) && (var_0 < 160 || var_0 > 255)) {
          if (var_0 != 0) {
             char[] arr_2 = class288.field3667;

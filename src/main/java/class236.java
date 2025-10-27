@@ -37,8 +37,8 @@ public class class236 {
       i_3 += 8;
       i_4 = Client.menuOptionsCount * 15 + 22;
       i_5 = i_0 - i_3 / 2;
-      if (i_3 + i_5 > class7.field46) {
-         i_5 = class7.field46 - i_3;
+      if (i_3 + i_5 > class7.clientWidth) {
+         i_5 = class7.clientWidth - i_3;
       }
 
       if (i_5 < 0) {
@@ -46,8 +46,8 @@ public class class236 {
       }
 
       int i_6 = i_1;
-      if (i_4 + i_1 > ParamComposition.field3308) {
-         i_6 = ParamComposition.field3308 - i_4;
+      if (i_4 + i_1 > ParamComposition.clientHeight) {
+         i_6 = ParamComposition.clientHeight - i_4;
       }
 
       if (i_6 < 0) {

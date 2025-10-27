@@ -75,7 +75,7 @@ public class class234 implements Runnable {
             ResourceHandler resourceHandler_4 = class32.field277.vmethod2314((byte) 1);
             resourceHandler_4.field1415 = new int[256 * (class169.field2053 ? 2 : 1)];
             resourceHandler_4.field1414 = i_2;
-            resourceHandler_4.vmethod2413(-1518489339);
+            resourceHandler_4.vmethod2413();
             resourceHandler_4.field1424 = (i_2 & ~0x3ff) + 1024;
             if (resourceHandler_4.field1424 > 16384) {
                resourceHandler_4.field1424 = 16384;

@@ -79,7 +79,7 @@ public abstract class class34 {
    }
 
    static int method598() {
-      return Client.field869 ? 2 : 1;
+      return Client.resizeSettings ? 2 : 1;
    }
 
    boolean method576(int i_1, int i_2) {

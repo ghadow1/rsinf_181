@@ -15,7 +15,7 @@ public class class3 implements UnknownT {
       this.field13 = class0_4;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field11;
    }
 
@@ -61,7 +61,7 @@ public class class3 implements UnknownT {
    }
 
    static final void method37(int i_0, int i_1, int i_2, int i_3, int i_4) {
-      long long_6 = class5.field22.method3130(i_0, i_1, i_2);
+      long long_6 = class5.scene.method3130(i_0, i_1, i_2);
       int i_8;
       int i_9;
       int i_10;
@@ -69,7 +69,7 @@ public class class3 implements UnknownT {
       int i_15;
       int i_27;
       if (long_6 != 0L) {
-         i_8 = class5.field22.method3096(i_0, i_1, i_2, long_6);
+         i_8 = class5.scene.method3096(i_0, i_1, i_2, long_6);
          i_9 = i_8 >> 6 & 0x3;
          i_10 = i_8 & 0x1f;
          i_11 = i_3;
@@ -157,9 +157,9 @@ public class class3 implements UnknownT {
          }
       }
 
-      long_6 = class5.field22.method3094(i_0, i_1, i_2);
+      long_6 = class5.scene.method3094(i_0, i_1, i_2);
       if (long_6 != 0L) {
-         i_8 = class5.field22.method3096(i_0, i_1, i_2, long_6);
+         i_8 = class5.scene.method3096(i_0, i_1, i_2, long_6);
          i_9 = i_8 >> 6 & 0x3;
          i_10 = i_8 & 0x1f;
          i_11 = GCMonitor.method770(long_6);
@@ -199,7 +199,7 @@ public class class3 implements UnknownT {
          }
       }
 
-      long_6 = class5.field22.method3095(i_0, i_1, i_2);
+      long_6 = class5.scene.method3095(i_0, i_1, i_2);
       if (long_6 != 0L) {
          i_8 = GCMonitor.method770(long_6);
          class253 class253_22 = class128.method2970(i_8);

@@ -11,7 +11,7 @@ public class class84 implements UnknownT {
       this.field1171 = i_1;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field1171;
    }
 

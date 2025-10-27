@@ -366,22 +366,22 @@ public class class198 extends class115 {
 
    }
 
-   public synchronized boolean method3713(int i_1) {
+   public synchronized boolean method3713() {
       return this.field2416.method3833();
    }
 
-   public synchronized void method3706(int i_1, int i_2) {
+   public synchronized void method3706(int i_1) {
       this.field2409 = i_1;
    }
 
-   public synchronized void method3710(int i_1) {
+   public synchronized void method3710() {
       for (SceneSound sceneSound_2 = (SceneSound) this.field2417.method5950(); sceneSound_2 != null; sceneSound_2 = (SceneSound) this.field2417.method5953()) {
          sceneSound_2.unlink();
       }
 
    }
 
-   public synchronized void method3802(class203 class203_1, boolean bool_2, int i_3) {
+   public synchronized void method3802(class203 class203_1, boolean bool_2) {
       this.method3712();
       this.field2416.method3877(class203_1.field2491);
       this.field2430 = bool_2;
@@ -399,7 +399,7 @@ public class class198 extends class115 {
       this.field2434 = this.field2416.method3861(this.field2432);
    }
 
-   boolean method3740(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4, int i_5) {
+   boolean method3740(MusicPatchNode musicPatchNode_1, int[] ints_2, int i_3, int i_4) {
       musicPatchNode_1.field2455 = CollisionMap.field2078 / 100;
       if (musicPatchNode_1.field2436 < 0 || musicPatchNode_1.field2454 != null && !musicPatchNode_1.field2454.method2558()) {
          int i_6 = musicPatchNode_1.field2446;

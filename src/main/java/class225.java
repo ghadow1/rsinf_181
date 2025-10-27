@@ -35,7 +35,7 @@ public class class225 {
                   if (i_6 != -1) {
                      SequenceAnimation sequenceAnimation_7 = class7.method81(i_6);
 
-                     for (widget_4.field2584 += Client.field718; widget_4.field2584 > sequenceAnimation_7.duration[widget_4.field2692]; FriendSystem.invalidateWidget(widget_4)) {
+                     for (widget_4.field2584 += Client.field718; widget_4.field2584 > sequenceAnimation_7.duration[widget_4.field2692]; Widget2.invalidateWidget(widget_4)) {
                         widget_4.field2584 -= sequenceAnimation_7.duration[widget_4.field2692];
                         ++widget_4.field2692;
                         if (widget_4.field2692 >= sequenceAnimation_7.frameCount.length) {
@@ -55,7 +55,7 @@ public class class225 {
                   i_6 *= Client.field718;
                   widget_4.field2615 = i_9 + widget_4.field2615 & 0x7ff;
                   widget_4.field2616 = i_6 + widget_4.field2616 & 0x7ff;
-                  FriendSystem.invalidateWidget(widget_4);
+                  Widget2.invalidateWidget(widget_4);
                }
             }
          }

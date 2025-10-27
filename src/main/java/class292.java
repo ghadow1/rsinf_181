@@ -131,7 +131,7 @@ public class class292 {
                            Runtime runtime_43 = Runtime.getRuntime();
                            i_21 = (int)((runtime_43.totalMemory() - runtime_43.freeMemory()) / 1024L);
                            i_22 = 16776960;
-                           if (i_21 > 327680 && !Client.field656) {
+                           if (i_21 > 327680 && !Client.resizeSettings2) {
                               i_22 = 16711680;
                            }
 
@@ -204,7 +204,7 @@ public class class292 {
                      Rasterizer3D.method3051();
                   }
 
-                  if (Client.field869 || Client.field862[i_12] || Client.field768 > 1) {
+                  if (Client.resizeSettings || Client.field862[i_12] || Client.field768 > 1) {
                      if (widget_11.field2566 == 0 && !widget_11.field2563 && widget_11.field2569 > widget_11.field2667) {
                         GrandExchangeOfferUnitPriceComparator.method4139(i_13 + widget_11.field2579, i_14, widget_11.field2586, widget_11.field2667, widget_11.field2569, (byte) -20);
                      }
@@ -232,7 +232,7 @@ public class class292 {
                                        if (class325_47 != null) {
                                           class325_47.drawTransBgAt(i_23, i_24);
                                        } else if (Widget.field2562) {
-                                          FriendSystem.invalidateWidget(widget_11);
+                                          Widget2.invalidateWidget(widget_11);
                                        }
                                     }
                                  } else {
@@ -280,7 +280,7 @@ public class class292 {
 
                                                    widget_29.field2586 -= i_30;
                                                    Client.field763 += i_30;
-                                                   FriendSystem.invalidateWidget(widget_29);
+                                                   Widget2.invalidateWidget(widget_29);
                                                 }
 
                                                 if (i_26 + i_24 + 32 > Rasterizer2D.Rasterizer2D_yClipEnd && widget_29.field2586 < widget_29.field2569 - widget_29.field2667) {
@@ -295,7 +295,7 @@ public class class292 {
 
                                                    widget_29.field2586 += i_30;
                                                    Client.field763 -= i_30;
-                                                   FriendSystem.invalidateWidget(widget_29);
+                                                   Widget2.invalidateWidget(widget_29);
                                                 }
                                              }
                                           } else if (widget_11 == class59.field549 && i_20 == Client.field698) {
@@ -304,7 +304,7 @@ public class class292 {
                                              class325_28.drawTransBgAt(i_23, i_24);
                                           }
                                        } else {
-                                          FriendSystem.invalidateWidget(widget_11);
+                                          Widget2.invalidateWidget(widget_11);
                                        }
                                     }
                                  }
@@ -351,7 +351,7 @@ public class class292 {
                               font_40 = widget_11.getFont();
                               if (font_40 == null) {
                                  if (Widget.field2562) {
-                                    FriendSystem.invalidateWidget(widget_11);
+                                    Widget2.invalidateWidget(widget_11);
                                  }
                               } else {
                                  String string_45 = widget_11.field2601;
@@ -401,7 +401,7 @@ public class class292 {
                                  if (class325_41 != null) {
                                     class325_41.drawTransBgAt(i_13, i_14);
                                  } else if (Widget.field2562) {
-                                    FriendSystem.invalidateWidget(widget_11);
+                                    Widget2.invalidateWidget(widget_11);
                                  }
                               } else {
                                  if (widget_11.field2690 != -1) {
@@ -412,7 +412,7 @@ public class class292 {
 
                                  if (class325_41 == null) {
                                     if (Widget.field2562) {
-                                       FriendSystem.invalidateWidget(widget_11);
+                                       Widget2.invalidateWidget(widget_11);
                                     }
                                  } else {
                                     i_21 = class325_41.field3898;
@@ -470,7 +470,7 @@ public class class292 {
                                           class127_42.method2899();
                                           i_23 = class127_42.height / 2;
                                        } else {
-                                          FriendSystem.invalidateWidget(widget_11);
+                                          Widget2.invalidateWidget(widget_11);
                                        }
                                     }
                                  } else if (widget_11.field2607 == 5) {
@@ -482,13 +482,13 @@ public class class292 {
                                  } else if (i_21 == -1) {
                                     class127_42 = widget_11.method4049((SequenceAnimation) null, -1, bool_37, Client.localPlayer.field613, 1036934880);
                                     if (class127_42 == null && Widget.field2562) {
-                                       FriendSystem.invalidateWidget(widget_11);
+                                       Widget2.invalidateWidget(widget_11);
                                     }
                                  } else {
                                     SequenceAnimation sequenceAnimation_48 = class7.method81(i_21);
                                     class127_42 = widget_11.method4049(sequenceAnimation_48, widget_11.field2692, bool_37, Client.localPlayer.field613, 482898105);
                                     if (class127_42 == null && Widget.field2562) {
-                                       FriendSystem.invalidateWidget(widget_11);
+                                       Widget2.invalidateWidget(widget_11);
                                     }
                                  }
 
@@ -514,7 +514,7 @@ public class class292 {
                                     font_40 = widget_11.getFont();
                                     if (font_40 == null) {
                                        if (Widget.field2562) {
-                                          FriendSystem.invalidateWidget(widget_11);
+                                          Widget2.invalidateWidget(widget_11);
                                        }
                                        continue;
                                     }

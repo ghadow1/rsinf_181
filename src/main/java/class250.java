@@ -29,7 +29,7 @@ public class class250 extends DualNode {
    }
 
    public String method4515(int i_1, String string_2) {
-      return class5.method54(this.field3310, i_1, string_2, (byte) -34);
+      return class5.method54(this.field3310, i_1, string_2);
    }
 
    void method4512() {

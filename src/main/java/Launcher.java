@@ -6,11 +6,8 @@ import java.io.*;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class Launcher implements AppletStub {
-
-    public static final Logger logger = Logger.getLogger(Launcher.class.getSimpleName());
 
     private static final HashMap<String, String> params = new HashMap<String, String>();
     private static final HashMap<String, String> cfg = new HashMap<String, String>();

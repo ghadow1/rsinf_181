@@ -21,7 +21,7 @@ public final class class22 {
                if (class77_1.field1122) {
                   class77_1.unlink();
                } else {
-                  class5.field22.method3077(class77_1.field1124, class77_1.field1117, class77_1.field1113, class77_1.field1118, 60, class77_1, 0, -1L, false);
+                  class5.scene.method3077(class77_1.field1124, class77_1.field1117, class77_1.field1113, class77_1.field1118, 60, class77_1, 0, -1L, false);
                }
             }
          } else {

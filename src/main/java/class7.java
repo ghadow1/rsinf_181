@@ -1,6 +1,6 @@
 public class class7 {
 
-   public static int field46;
+   public static int clientWidth;
    static int field48;
    static boolean field49;
    String field44;
@@ -62,7 +62,7 @@ public class class7 {
       }
 
       if (Client.field850 != null) {
-         FriendSystem.invalidateWidget(Client.field850);
+         Widget2.invalidateWidget(Client.field850);
          Client.field850 = null;
       }
 

@@ -58,8 +58,8 @@ public class class6 {
    }
 
    public static void method68(class233 class233_0) {
-      class240.field3204 = class233_0;
-      class240.field3203 = class240.field3204.method4154(16);
+      ClanEntry.field3204 = class233_0;
+      ClanEntry.size = ClanEntry.field3204.method4154(16);
    }
 
    static final void method72(Scene scene_0, CollisionMap[] arr_1) {
@@ -212,7 +212,7 @@ public class class6 {
                      i_17 -= class293.field3689[i_20];
                   }
 
-                  if (i_18 >= 1 && i_18 < 103 && (!Client.field656 || (class55.field502[0][i_12][i_18] & 0x2) != 0 || (class55.field502[i_3][i_12][i_18] & 0x10) == 0)) {
+                  if (i_18 >= 1 && i_18 < 103 && (!Client.resizeSettings2 || (class55.field502[0][i_12][i_18] & 0x2) != 0 || (class55.field502[i_3][i_12][i_18] & 0x10) == 0)) {
                      if (i_3 < class55.field503) {
                         class55.field503 = i_3;
                      }
@@ -564,10 +564,10 @@ public class class6 {
       if (MouseHandler.field485 == 1 || !class46.field413 && MouseHandler.field485 == 4) {
          if (i_5 >= i_1 && i_5 < i_1 + 16 && i_6 >= i_2 && i_6 < i_2 + 16) {
             widget_0.field2586 -= 4;
-            FriendSystem.invalidateWidget(widget_0);
+            Widget2.invalidateWidget(widget_0);
          } else if (i_5 >= i_1 && i_5 < i_1 + 16 && i_6 >= i_3 + i_2 - 16 && i_6 < i_3 + i_2) {
             widget_0.field2586 += 4;
-            FriendSystem.invalidateWidget(widget_0);
+            Widget2.invalidateWidget(widget_0);
          } else if (i_5 >= i_1 - Client.field882 && i_5 < Client.field882 + i_1 + 16 && i_6 >= i_2 + 16 && i_6 < i_3 + i_2 - 16) {
             i_8 = i_3 * (i_3 - 32) / i_4;
             if (i_8 < 8) {
@@ -577,7 +577,7 @@ public class class6 {
             int i_9 = i_6 - i_2 - 16 - i_8 / 2;
             int i_10 = i_3 - 32 - i_8;
             widget_0.field2586 = i_9 * (i_4 - i_3) / i_10;
-            FriendSystem.invalidateWidget(widget_0);
+            Widget2.invalidateWidget(widget_0);
             Client.field719 = true;
          }
       }
@@ -586,7 +586,7 @@ public class class6 {
          i_8 = widget_0.field2579;
          if (i_5 >= i_1 - i_8 && i_6 >= i_2 && i_5 < i_1 + 16 && i_6 <= i_3 + i_2) {
             widget_0.field2586 += Client.field853 * 45;
-            FriendSystem.invalidateWidget(widget_0);
+            Widget2.invalidateWidget(widget_0);
          }
       }
 

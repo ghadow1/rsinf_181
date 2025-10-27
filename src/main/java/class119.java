@@ -302,7 +302,7 @@ public class class119 implements class139 {
          MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2639;
          return 1;
       } else if (i_0 == 2613) {
-         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2693.getId(1137104764);
+         MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2693.getId();
          return 1;
       } else if (i_0 == 2614) {
          MouseRecorder.field1098[++class70.field1014 - 1] = widget_4.field2564 ? 1 : 0;

@@ -19,7 +19,7 @@ public class class137 {
       }
 
       ItemContainer.method815();
-      if (Client.field691 && Login.field1180 != null && Login.field1180.length() > 0) {
+      if (Client.field691 && Login.localUsername != null && Login.localUsername.length() > 0) {
          Login.field1202 = 1;
       } else {
          Login.field1202 = 0;
@@ -50,7 +50,7 @@ public class class137 {
       Client.field669 = 0;
       Client.field700 = 0;
       Client.field708 = 0;
-      FriendSystem.method4121();
+      Widget2.method4121();
       MouseHandler.field480 = 0;
       class91.field1279.clear();
       class91.field1277.method5926();
@@ -101,9 +101,9 @@ public class class137 {
       Client.field783 = new NodeDeque();
       class58.field546.method1780((short) 487);
 
-      for (i_1 = 0; i_1 < class240.field3203; i_1++) {
-         class240 class240_4 = class5.method61(i_1);
-         if (class240_4 != null) {
+      for (i_1 = 0; i_1 < ClanEntry.size; i_1++) {
+         ClanEntry clanEntry_4 = class5.method61(i_1);
+         if (clanEntry_4 != null) {
             class212.field2524[i_1] = 0;
             class212.var_configurations[i_1] = 0;
          }
@@ -144,7 +144,7 @@ public class class137 {
       Client.field905 = -1;
       Client.field816 = new class318(8);
       Client.field850 = null;
-      FriendSystem.method4121();
+      Widget2.method4121();
       Client.field918.method4009(null, new int[]{0, 0, 0, 0, 0}, false, -1);
 
       for (i_1 = 0; i_1 < 8; i_1++) {

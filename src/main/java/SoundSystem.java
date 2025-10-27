@@ -42,7 +42,7 @@ public class SoundSystem {
 
    static final void method4022() {
       Scene.field1848 = false;
-      Client.field656 = false;
+      Client.resizeSettings2 = false;
    }
 
    public static class324 method4021(class233 class233_0, String string_1, String string_2) {

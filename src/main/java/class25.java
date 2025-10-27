@@ -20,7 +20,7 @@ public class class25 {
          widget_4 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
       }
 
-      FriendSystem.invalidateWidget(widget_4);
+      Widget2.invalidateWidget(widget_4);
       if (i_0 != 1200 && i_0 != 1205 && i_0 != 1212) {
          if (i_0 == 1201) {
             widget_4.field2607 = 2;

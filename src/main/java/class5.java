@@ -2,29 +2,29 @@ import java.util.Comparator;
 
 final class class5 implements Comparator {
 
-   static Scene field22;
+   static Scene scene;
    static class325 field23;
 
-   public static class240 method61(int i_0) {
-      class240 class240_2 = (class240) class240.field3205.get((long)i_0);
-      if (class240_2 != null) {
-         return class240_2;
+   public static ClanEntry method61(int i_0) {
+      ClanEntry clanEntry_2 = (ClanEntry) ClanEntry.field3205.get((long) i_0);
+      if (clanEntry_2 != null) {
+         return clanEntry_2;
       } else {
-         byte[] bytes_3 = class240.field3204.method4144(16, i_0);
-         class240_2 = new class240();
+         byte[] bytes_3 = ClanEntry.field3204.method4144(16, i_0);
+         clanEntry_2 = new ClanEntry();
          if (bytes_3 != null) {
-            class240_2.method4353(new ByteBuffer(bytes_3), -927981442);
+            clanEntry_2.method4353(new ByteBuffer(bytes_3));
          }
 
-         class240.field3205.put(class240_2, (long)i_0);
-         return class240_2;
+         ClanEntry.field3205.put(clanEntry_2, (long) i_0);
+         return clanEntry_2;
       }
    }
 
-   static final void updatePendingSpawn(int i_0, int i_1) {
+   static void updatePendingSpawn(int i_0, int i_1) {
       NodeDeque nodeDeque_3 = Client.groundItems[WorldMapRectangle.plane][i_0][i_1];
       if (nodeDeque_3 == null) {
-         field22.method3087(WorldMapRectangle.plane, i_0, i_1);
+         scene.method3087(WorldMapRectangle.plane, i_0, i_1);
       } else {
          long long_4 = -99999999L;
          class87 class87_6 = null;
@@ -44,7 +44,7 @@ final class class5 implements Comparator {
          }
 
          if (class87_6 == null) {
-            field22.method3087(WorldMapRectangle.plane, i_0, i_1);
+            scene.method3087(WorldMapRectangle.plane, i_0, i_1);
          } else {
             nodeDeque_3.method4888(class87_6);
             class87 class87_13 = null;
@@ -63,12 +63,12 @@ final class class5 implements Comparator {
             }
 
             long long_10 = Tile.method2854(i_0, i_1, 3, false, 0);
-            field22.newGroundItemPile(WorldMapRectangle.plane, i_0, i_1, MusicPatchPcmStream.getTileHeight(i_0 * 128 + 64, i_1 * 128 + 64, WorldMapRectangle.plane), class87_6, long_10, class87_13, class87_12);
+            scene.newGroundItemPile(WorldMapRectangle.plane, i_0, i_1, MusicPatchPcmStream.getTileHeight(i_0 * 128 + 64, i_1 * 128 + 64, WorldMapRectangle.plane), class87_6, long_10, class87_13, class87_12);
          }
       }
    }
 
-   static String method54(class316 class316_0, int i_1, String string_2, byte b_3) {
+   static String method54(class316 class316_0, int i_1, String string_2) {
       if (class316_0 == null) {
          return string_2;
       } else {
@@ -124,7 +124,7 @@ final class class5 implements Comparator {
    }
 
    int method51(class7 class7_1, class7 class7_2) {
-      return class7_1.field51 < class7_2.field51 ? -1 : (class7_2.field51 == class7_1.field51 ? 0 : 1);
+      return Integer.compare(class7_1.field51, class7_2.field51);
    }
 
    public int compare(Object object_1, Object object_2) {

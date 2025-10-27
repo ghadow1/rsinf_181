@@ -167,7 +167,7 @@ public class class245 extends DualNode {
          if (class197.field2402 != 0) {
             bool_13 = true;
          } else {
-            bool_13 = MouseRecorder.field1099.method3713(-1920160);
+            bool_13 = MouseRecorder.field1099.method3713();
          }
 
          if (!bool_13) {

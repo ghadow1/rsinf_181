@@ -20,7 +20,7 @@ public class WorldMapData_1 implements UnknownT {
       this.field3836 = i_2;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field3836;
    }
 

@@ -856,7 +856,7 @@ public class class29 {
 
                long long_6 = Tile.method2854(0, 0, 1, !NPC_3.definition.field3496, Client.npcIndices[i_2]);
                NPC_3.field953 = Client.cycle;
-               class5.field22.method3077(WorldMapRectangle.plane, NPC_3.x, NPC_3.y, MusicPatchPcmStream.getTileHeight(NPC_3.field952 * 64 - 64 + NPC_3.x, NPC_3.field952 * 64 - 64 + NPC_3.y, WorldMapRectangle.plane), NPC_3.field952 * 64 - 64 + 60, NPC_3, NPC_3.field950, long_6, NPC_3.field967);
+               class5.scene.method3077(WorldMapRectangle.plane, NPC_3.x, NPC_3.y, MusicPatchPcmStream.getTileHeight(NPC_3.field952 * 64 - 64 + NPC_3.x, NPC_3.field952 * 64 - 64 + NPC_3.y, WorldMapRectangle.plane), NPC_3.field952 * 64 - 64 + 60, NPC_3, NPC_3.field950, long_6, NPC_3.field967);
             }
          }
       }

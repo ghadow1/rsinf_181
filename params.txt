@@ -4,7 +4,7 @@ codebase=http://oldschool13a.runescape.com/
 mainclass=client.class
 
 param=1=1
-param=2=https://payments.jagex.com/operator/v1/
+param=2=https://payments.arios.com/operator/v1/
 param=3=true
 param=4=16773
 param=5=1
@@ -13,9 +13,9 @@ param=7=0
 param=8=true
 param=9=ElZAIrq5NpKN6D3mDdihco3oPeYN2KFy2DCquj7JMmECPmLrDP3Bnw
 param=10=5
-param=11=https://auth.jagex.com/
+param=11=https://arios.com/
 param=12=313
-param=13=.runescape.com
+param=13=.arios.com
 param=14=0
 param=15=0
 param=16=false

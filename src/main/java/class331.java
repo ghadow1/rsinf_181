@@ -54,7 +54,7 @@ public class class331 extends LinkedListNode {
       this.field3931 = string_25;
    }
 
-   public int method6282(byte b_1) {
+   public int method6282() {
       byte b_2 = 39;
       int i_3 = b_2 + class13.method152(this.field3934);
       i_3 += class13.method152(this.field3951);
@@ -66,7 +66,7 @@ public class class331 extends LinkedListNode {
       return i_3;
    }
 
-   public void method6281(ByteBuffer class300_1, int i_2) {
+   public void method6281(ByteBuffer class300_1) {
       class300_1.writeByte(8);
       class300_1.writeByte(this.field3938);
       class300_1.writeByte(this.field3939 ? 1 : 0);

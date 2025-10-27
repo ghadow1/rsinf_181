@@ -262,10 +262,10 @@ final class class4 implements class0 {
       class186.method3619((byte) 8);
       i_13 = Rasterizer3D.field1773;
       Rasterizer3D.field1773 = Client.field917;
-      class5.field22.method3092(PacketBuffer.field3727, GCMonitor.field383, SceneNode.field3, class11.field77, MouseRecorder.field1112, i_5);
+      class5.scene.method3092(PacketBuffer.field3727, GCMonitor.field383, SceneNode.field3, class11.field77, MouseRecorder.field1112, i_5);
       Rasterizer3D.field1773 = i_13;
       class186.method3619((byte) 124);
-      class5.field22.method3115();
+      class5.scene.method3115();
       Client.field740 = 0;
       boolean bool_32 = false;
       i_15 = -1;
@@ -441,7 +441,7 @@ final class class4 implements class0 {
 
       if (Client.field661) {
          Rasterizer2D.fillRectangle(i_0, i_1, i_2, i_3, 0);
-         class281.method5180("Loading - please wait.", false, -32623127);
+         class281.method5180("Loading - please wait.", false);
       }
 
    }

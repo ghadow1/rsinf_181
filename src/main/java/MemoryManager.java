@@ -91,7 +91,7 @@ public class MemoryManager implements Runnable {
    public static <T extends UnknownT> T findById(T[] values, int id) {
       for (int i = 0; i < values.length; i++) {
          T value = values[i];
-         if (id == value.getId(320353268)) {
+         if (id == value.getId()) {
             return value;
          }
       }

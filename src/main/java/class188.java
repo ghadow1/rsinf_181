@@ -172,11 +172,11 @@ public class class188 {
          int i_11 = (i_6 + World.field1022 - 1) / i_6;
          Login.field1186 = i_11 - i_5;
          if (Login.field1206 != null && Login.field1190 > 0) {
-            Login.field1206.method6101(8, ParamComposition.field3308 / 2 - Login.field1206.field3893 / 2);
+            Login.field1206.method6101(8, ParamComposition.clientHeight / 2 - Login.field1206.field3893 / 2);
          }
 
          if (NPCDefinition.field3490 != null && Login.field1190 < Login.field1186) {
-            NPCDefinition.field3490.method6101(class7.field46 - NPCDefinition.field3490.field3897 - 8, ParamComposition.field3308 / 2 - NPCDefinition.field3490.field3893 / 2);
+            NPCDefinition.field3490.method6101(class7.clientWidth - NPCDefinition.field3490.field3897 - 8, ParamComposition.clientHeight / 2 - NPCDefinition.field3490.field3893 / 2);
          }
 
          int i_12 = i_10 + 23;
@@ -263,7 +263,7 @@ public class class188 {
          }
       }
 
-      class202.field2486.vmethod6077(0, 0, -1141719337);
+      class202.field2486.vmethod6077(0, 0);
    }
 
    public static final void method3644(String string_0, String string_1, int i_2, int i_3, int i_4, int i_5) {

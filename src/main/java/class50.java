@@ -11,7 +11,7 @@ public class class50 extends ResourceHandler {
    AudioFormat field432;
    byte[] field431;
 
-   protected void vmethod2418(int i_1) {
+   protected void vmethod2418() {
       this.field429.flush();
    }
 
@@ -23,7 +23,7 @@ public class class50 extends ResourceHandler {
 
    }
 
-   protected int vmethod2415(byte b_1) {
+   protected int vmethod2415() {
       return this.field430 - (this.field429.available() >> (class169.field2053 ? 2 : 1));
    }
 
@@ -76,7 +76,7 @@ public class class50 extends ResourceHandler {
       this.field429.write(this.field431, 0, i_1 << 1);
    }
 
-   protected void vmethod2413(int i_1) {
+   protected void vmethod2413() {
       this.field432 = new AudioFormat((float) CollisionMap.field2078, 16, class169.field2053 ? 2 : 1, true, false);
       this.field431 = new byte[256 << (class169.field2053 ? 2 : 1)];
    }

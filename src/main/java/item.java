@@ -365,9 +365,9 @@ public class item {
 
                         int i_15 = i_10 == 0 ? 5 : 9;
                         class226.field3071 = grandExchangeOfferUnitPriceComparator_14;
-                        class240.field3209 = new ByteBuffer(i_15 + i_11 + class226.field3071.field3122);
-                        class240.field3209.writeByte(i_10);
-                        class240.field3209.writeIntBigEndian(i_11);
+                        ClanEntry.field3209 = new ByteBuffer(i_15 + i_11 + class226.field3071.field3122);
+                        ClanEntry.field3209.writeByte(i_10);
+                        ClanEntry.field3209.writeIntBigEndian(i_11);
                         class236.field3175 = 8;
                         class236.field3174.position = 0;
                      } else if (class236.field3175 == 0) {
@@ -379,28 +379,28 @@ public class item {
                         }
                      }
                   } else {
-                     i_7 = class240.field3209.buffer.length - class226.field3071.field3122;
+                     i_7 = ClanEntry.field3209.buffer.length - class226.field3071.field3122;
                      i_8 = 512 - class236.field3175;
-                     if (i_8 > i_7 - class240.field3209.position) {
-                        i_8 = i_7 - class240.field3209.position;
+                     if (i_8 > i_7 - ClanEntry.field3209.position) {
+                        i_8 = i_7 - ClanEntry.field3209.position;
                      }
 
                      if (i_8 > i_17) {
                         i_8 = i_17;
                      }
 
-                     class236.field3176.read(class240.field3209.buffer, class240.field3209.position, i_8);
+                     class236.field3176.read(ClanEntry.field3209.buffer, ClanEntry.field3209.position, i_8);
                      if (class236.field3181 != 0) {
                         for (i_9 = 0; i_9 < i_8; i_9++) {
-                           class240.field3209.buffer[class240.field3209.position + i_9] ^= class236.field3181;
+                           ClanEntry.field3209.buffer[ClanEntry.field3209.position + i_9] ^= class236.field3181;
                         }
                      }
 
-                     class240.field3209.position += i_8;
+                     ClanEntry.field3209.position += i_8;
                      class236.field3175 += i_8;
-                     if (i_7 == class240.field3209.position) {
+                     if (i_7 == ClanEntry.field3209.position) {
                         if (class226.field3071.hash == 16711935L) {
-                           class322.field3882 = class240.field3209;
+                           class322.field3882 = ClanEntry.field3209;
 
                            for (i_9 = 0; i_9 < 256; i_9++) {
                               class235 class235_18 = class236.field3173[i_9];
@@ -413,7 +413,7 @@ public class item {
                            }
                         } else {
                            class236.field3177.reset();
-                           class236.field3177.update(class240.field3209.buffer, 0, i_7);
+                           class236.field3177.update(ClanEntry.field3209.buffer, 0, i_7);
                            i_9 = (int)class236.field3177.getValue();
                            if (i_9 != class226.field3071.field3121) {
                               try {
@@ -430,7 +430,7 @@ public class item {
 
                            class236.field3179 = 0;
                            class236.field3178 = 0;
-                           class226.field3071.field3124.method4263((int)(class226.field3071.hash & 0xffffL), class240.field3209.buffer, (class226.field3071.hash & 0xff0000L) == 16711680L, SoundSystem.field2545);
+                           class226.field3071.field3124.method4263((int)(class226.field3071.hash & 0xffffL), ClanEntry.field3209.buffer, (class226.field3071.hash & 0xff0000L) == 16711680L, SoundSystem.field2545);
                         }
 
                         class226.field3071.unlink();
@@ -442,7 +442,7 @@ public class item {
 
                         class236.field3175 = 0;
                         class226.field3071 = null;
-                        class240.field3209 = null;
+                        ClanEntry.field3209 = null;
                      } else {
                         if (class236.field3175 != 512) {
                            break;

@@ -27,9 +27,9 @@ public class class9 {
 
    static final void method99(boolean bool_0) {
       if (bool_0) {
-         Client.field690 = Login.field1201 ? class160.field2004 : class160.field2002;
+         Client.authentication = Login.field1201 ? class160.field2004 : class160.field2002;
       } else {
-         Client.field690 = class17.field117.field1067.containsKey(Integer.valueOf(class128.method2971(Login.field1180))) ? class160.field2005 : class160.field2001;
+         Client.authentication = class17.field117.field1067.containsKey(Integer.valueOf(class128.method2971(Login.localUsername))) ? class160.field2005 : class160.field2001;
       }
 
    }

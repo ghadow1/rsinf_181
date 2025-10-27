@@ -49,7 +49,7 @@ public class class197 {
 
       Widget widget_9 = WorldMapElement.getWidget(i_4);
       if (widget_9 != null) {
-         FriendSystem.invalidateWidget(widget_9);
+         Widget2.invalidateWidget(widget_9);
       }
 
       for (i_6 = 0; i_6 < Client.menuOptionsCount; i_6++) {
@@ -226,7 +226,7 @@ public class class197 {
                      MouseRecorder.field1098[++class70.field1014 - 1] = Client.field658 ? 1 : 0;
                      return 1;
                   } else if (i_0 == 6519) {
-                     MouseRecorder.field1098[++class70.field1014 - 1] = Client.clientType & 0x3;
+                     MouseRecorder.field1098[++class70.field1014 - 1] = Client.platformType & 0x3;
                      return 1;
                   } else if (i_0 == 6520) {
                      return 1;

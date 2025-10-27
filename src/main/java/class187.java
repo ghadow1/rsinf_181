@@ -64,11 +64,11 @@ public class class187 extends LinkedListNode {
             Client.field709 = 2;
          } else {
             if (Client.field709 != 0) {
-               class281.method5180("Loading - please wait." + "<br>" + " (" + 100 + "%" + ")", true, -1780948037);
+               class281.method5180("Loading - please wait." + "<br>" + " (" + 100 + "%" + ")", true);
             }
 
             class186.method3619((byte) 70);
-            class5.field22.clear();
+            class5.scene.clear();
 
             for (i_2 = 0; i_2 < 4; i_2++) {
                Client.field710[i_2].clear();
@@ -172,7 +172,7 @@ public class class187 extends LinkedListNode {
                      i_5 = (TimeUtils.field2501[i_50] >> 8) * 64 - class196.field2389;
                      i_52 = (TimeUtils.field2501[i_50] & 0xff) * 64 - SceneNode.field1;
                      class186.method3619((byte) 75);
-                     class205.method3933(bytes_54, i_5, i_52, class5.field22, Client.field710);
+                     class205.method3933(bytes_54, i_5, i_52, class5.scene, Client.field710);
                   }
                }
             }
@@ -269,7 +269,7 @@ public class class187 extends LinkedListNode {
                                  int i_15 = i_5 * 8;
                                  int i_16 = (i_53 & 0x7) * 8;
                                  int i_17 = (i_10 & 0x7) * 8;
-                                 Scene scene_18 = class5.field22;
+                                 Scene scene_18 = class5.scene;
                                  CollisionMap[] arr_19 = Client.field710;
                                  ByteBuffer class300_20 = new ByteBuffer(bytes_55);
                                  int i_21 = -1;
@@ -372,7 +372,7 @@ public class class187 extends LinkedListNode {
 
             class241.method4368(true);
             class186.method3619((byte) 101);
-            class6.method72(class5.field22, Client.field710);
+            class6.method72(class5.scene, Client.field710);
             class241.method4368(true);
             i_50 = class55.field503;
             if (i_50 > WorldMapRectangle.plane) {
@@ -383,10 +383,10 @@ public class class187 extends LinkedListNode {
                i_50 = WorldMapRectangle.plane - 1;
             }
 
-            if (Client.field656) {
-               class5.field22.method3067(class55.field503);
+            if (Client.resizeSettings2) {
+               class5.scene.method3067(class55.field503);
             } else {
-               class5.field22.method3067(0);
+               class5.scene.method3067(0);
             }
 
             for (i_4 = 0; i_4 < 104; i_4++) {
@@ -408,7 +408,7 @@ public class class187 extends LinkedListNode {
 
             class253.field3387.method3323();
             class187 class187_59;
-            if (WorldMapID.client.method931(285080873)) {
+            if (WorldMapID.client.method931()) {
                class187_59 = class235.method4265(ClientPacketProt.field2212, Client.data.field1313);
                class187_59.outBuffer.writeIntBigEndian(1057001181);
                Client.data.copy(class187_59);

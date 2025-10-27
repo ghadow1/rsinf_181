@@ -337,9 +337,9 @@ public class class91 {
                Client.data.copy(class187_9);
             } else if (i_2 == 23) {
                if (Client.field674) {
-                  class5.field22.method3104();
+                  class5.scene.method3104();
                } else {
-                  class5.field22.click(WorldMapRectangle.plane, i_0, i_1, true);
+                  class5.scene.click(WorldMapRectangle.plane, i_0, i_1, true);
                }
             } else {
                class187 class187_11;
@@ -409,7 +409,7 @@ public class class91 {
                         if (Client.field850 == null) {
                            class56.method1086(i_1, i_0, -881674814);
                            Client.field850 = Client.method1649(i_1, i_0);
-                           FriendSystem.invalidateWidget(Client.field850);
+                           Widget2.invalidateWidget(Client.field850);
                         }
                      } else if (i_2 == 31) {
                         class187_9 = class235.method4265(ClientPacketProt.field2266, Client.data.field1313);
@@ -487,7 +487,7 @@ public class class91 {
                            class23.field182 = i_0;
                            class63.field594 = i_1;
                            class4.field19 = i_3;
-                           FriendSystem.invalidateWidget(widget_17);
+                           Widget2.invalidateWidget(widget_17);
                            Client.selectedItemName = class73.colorStartTag(16748608) + item.getDefinition(i_3).name + class73.colorStartTag(16777215);
                            if (Client.selectedItemName == null) {
                               Client.selectedItemName = "null";
@@ -769,7 +769,7 @@ public class class91 {
 
       if (Client.isItemSelected != 0) {
          Client.isItemSelected = 0;
-         FriendSystem.invalidateWidget(WorldMapElement.getWidget(class63.field594));
+         Widget2.invalidateWidget(WorldMapElement.getWidget(class63.field594));
       }
 
       if (Client.isSpellSelected) {
@@ -777,7 +777,7 @@ public class class91 {
       }
 
       if (class59.field549 != null && Client.field759 == 0) {
-         FriendSystem.invalidateWidget(class59.field549);
+         Widget2.invalidateWidget(class59.field549);
       }
 
    }

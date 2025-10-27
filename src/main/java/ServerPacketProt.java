@@ -45,10 +45,10 @@ public class ServerPacketProt {
    public static final ServerPacketProt field2157 = new ServerPacketProt(42, 14);
    public static final ServerPacketProt field2162 = new ServerPacketProt(43, -2);
    public static final ServerPacketProt updateInvPartialMessage = new ServerPacketProt(44, -2);
-   public static final ServerPacketProt field2189 = new ServerPacketProt(45, -1);
+   public static final ServerPacketProt updatePrivateMessage = new ServerPacketProt(45, -1);
    public static final ServerPacketProt field2161 = new ServerPacketProt(46, 2);
    public static final ServerPacketProt worldHopAction = new ServerPacketProt(47, -1);
-   public static final ServerPacketProt ifSetEventsMessage = new ServerPacketProt(48, 12);
+   public static final ServerPacketProt ifSetClanMessage = new ServerPacketProt(48, 12);
    public static final ServerPacketProt field2164 = new ServerPacketProt(49, 4);
    public static final ServerPacketProt field2123 = new ServerPacketProt(50, 10);
    public static final ServerPacketProt rebuildRegionMessage = new ServerPacketProt(51, -2);
@@ -59,9 +59,9 @@ public class ServerPacketProt {
    public static final ServerPacketProt field2171 = new ServerPacketProt(56, -2);
    public static final ServerPacketProt field2172 = new ServerPacketProt(57, 28);
    public static final ServerPacketProt field2132 = new ServerPacketProt(58, -2);
-   public static final ServerPacketProt field2174 = new ServerPacketProt(59, 8);
+   public static final ServerPacketProt updateIgnoresMessage = new ServerPacketProt(59, 8);
    public static final ServerPacketProt updateRunEnergyMessage = new ServerPacketProt(60, 1);
-   public static final ServerPacketProt field2124 = new ServerPacketProt(61, 6);
+   public static final ServerPacketProt updateFriendsMessage = new ServerPacketProt(61, 6);
    public static final ServerPacketProt runClientScriptMessage = new ServerPacketProt(62, -2);
    public static final ServerPacketProt varpSmallMessage = new ServerPacketProt(63, 3);
    public static final ServerPacketProt updateZonePartialFollowsMessage = new ServerPacketProt(64, 2);
@@ -78,7 +78,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt field2121 = new ServerPacketProt(75, 6);
    public static final ServerPacketProt MAYBE_HINT_ICON = new ServerPacketProt(76, 6);
    public static final ServerPacketProt ifOpenSubMessage = new ServerPacketProt(77, 7);
-   public static final ServerPacketProt field2193 = new ServerPacketProt(78, 0);
+   public static final ServerPacketProt updateClanFriendsMaybe = new ServerPacketProt(78, 0);
    public static final ServerPacketProt field2194 = new ServerPacketProt(79, -2);
    public static final ServerPacketProt field2195 = new ServerPacketProt(80, 2);
    public static final ServerPacketProt field2196 = new ServerPacketProt(81, -2);

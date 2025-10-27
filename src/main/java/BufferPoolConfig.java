@@ -2,8 +2,8 @@ public class BufferPoolConfig {
 
    public static byte[][][] customPools;
 
-   static void method3654(Font font_0, Font font_1, Font font_2, byte b_3) {
-      Login.field1208 = (class7.field46 - 765) / 2;
+   static void drawLoginScreen(Font font_0, Font font_1, Font font_2) {
+      Login.field1208 = (class7.clientWidth - 765) / 2;
       Login.field1187 = Login.field1208 + 202;
       MusicPatchPcmStream.field585 = Login.field1187 + 180;
       if (Login.field1205) {
@@ -42,7 +42,7 @@ public class BufferPoolConfig {
             if (Login.loginIndex != 4) {
                font_0.draw("Login: ", Login.field1187 + 180 - 110, i_24, 16777215, 0);
                s_25 = 200;
-               string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.field1180) : Login.field1180;
+               string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.localUsername) : Login.localUsername;
 
                for (string_7 = string_6; font_0.method5417(string_7) > s_25; string_7 = string_7.substring(0, string_7.length() - 1)) {
                   ;
@@ -64,10 +64,10 @@ public class BufferPoolConfig {
                i_24 = s_23 + 30;
                i_5 = Login.field1187 + 180 - 80;
                s_18 = 291;
-               class240.field3207.method6101(i_5 - 73, s_18 - 20);
+               ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                font_0.method5350("New User", i_5 - 73, s_18 - 20, 144, 40, 16777215, 0, 1, 1, 0);
                i_5 = Login.field1187 + 180 + 80;
-               class240.field3207.method6101(i_5 - 73, s_18 - 20);
+               ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                font_0.method5350("Existing User", i_5 - 73, s_18 - 20, 144, 40, 16777215, 0, 1, 1, 0);
             } else if (Login.loginIndex == 1) {
                font_0.method5341(Login.field1197, Login.field1187 + 180, 201, 16776960, 0);
@@ -80,10 +80,10 @@ public class BufferPoolConfig {
                i_24 += 15;
                i_5 = Login.field1187 + 180 - 80;
                s_18 = 321;
-               class240.field3207.method6101(i_5 - 73, s_18 - 20);
+               ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                font_0.method5341("Continue", i_5, s_18 + 5, 16777215, 0);
                i_5 = Login.field1187 + 180 + 80;
-               class240.field3207.method6101(i_5 - 73, s_18 - 20);
+               ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                font_0.method5341("Cancel", i_5, s_18 + 5, 16777215, 0);
             } else {
                int i_8;
@@ -98,7 +98,7 @@ public class BufferPoolConfig {
                   i_24 += 7;
                   font_0.draw("Login: ", MusicPatchPcmStream.field585 - 110, i_24, 16777215, 0);
                   s_25 = 200;
-                  string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.field1180) : Login.field1180;
+                  string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.localUsername) : Login.localUsername;
 
                   for (string_7 = string_6; font_0.method5417(string_7) > s_25; string_7 = string_7.substring(1)) {
                      ;
@@ -123,20 +123,18 @@ public class BufferPoolConfig {
                   class324_13.method6101(i_8, s_23);
                   i_8 = i_8 + class324_13.field3897 + 5;
                   font_1.draw("Hide username", i_8, s_23 + 13, 16776960, 0);
-                  i_24 = s_23 + 15;
                   int i_16 = MusicPatchPcmStream.field585 - 80;
                   short s_17 = 321;
-                  class240.field3207.method6101(i_16 - 73, s_17 - 20);
+                  ClanEntry.field3207.method6101(i_16 - 73, s_17 - 20);
                   font_0.method5341("Login", i_16, s_17 + 5, 16777215, 0);
                   i_16 = MusicPatchPcmStream.field585 + 80;
-                  class240.field3207.method6101(i_16 - 73, s_17 - 20);
+                  ClanEntry.field3207.method6101(i_16 - 73, s_17 - 20);
                   font_0.method5341("Cancel", i_16, s_17 + 5, 16777215, 0);
                   s_23 = 357;
-                  switch(Login.field1212) {
-                  case 2:
+
+                  if (Login.field1212 == 2) {
                      PriorityComparator.cachedValue = "Having trouble logging in?";
-                     break;
-                  default:
+                  } else {
                      PriorityComparator.cachedValue = "Can\'t login? Click here.";
                   }
 
@@ -153,11 +151,11 @@ public class BufferPoolConfig {
                   i_24 += 15;
                   i_5 = Login.field1187 + 180;
                   s_18 = 276;
-                  class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                  ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                   font_2.method5341("Try again", i_5, s_18 + 5, 16777215, 0);
                   i_5 = Login.field1187 + 180;
                   s_18 = 326;
-                  class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                  ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                   font_2.method5341("Forgotten password?", i_5, s_18 + 5, 16777215, 0);
                } else {
                   short s_21;
@@ -188,10 +186,10 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_8 = Login.field1187 + 180 - 80;
                      s_21 = 321;
-                     class240.field3207.method6101(i_8 - 73, s_21 - 20);
+                     ClanEntry.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Continue", i_8, s_21 + 5, 16777215, 0);
                      i_8 = Login.field1187 + 180 + 80;
-                     class240.field3207.method6101(i_8 - 73, s_21 - 20);
+                     ClanEntry.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Cancel", i_8, s_21 + 5, 16777215, 0);
                      font_1.method5341("<u=ff>Can\'t Log In?</u>", Login.field1187 + 180, s_21 + 36, 255, 0);
                   } else if (Login.loginIndex == 5) {
@@ -206,7 +204,7 @@ public class BufferPoolConfig {
                      i_24 += 14;
                      font_0.draw("Username/email: ", Login.field1187 + 180 - 145, i_24, 16777215, 0);
                      s_25 = 174;
-                     string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.field1180) : Login.field1180;
+                     string_6 = class17.field117.field1066 ? ClientPacketProt.method3612(Login.localUsername) : Login.localUsername;
 
                      for (string_7 = string_6; font_0.method5417(string_7) > s_25; string_7 = string_7.substring(1)) {
                         ;
@@ -216,10 +214,10 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_8 = Login.field1187 + 180 - 80;
                      s_21 = 321;
-                     class240.field3207.method6101(i_8 - 73, s_21 - 20);
+                     ClanEntry.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Recover", i_8, s_21 + 5, 16777215, 0);
                      i_8 = Login.field1187 + 180 + 80;
-                     class240.field3207.method6101(i_8 - 73, s_21 - 20);
+                     ClanEntry.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Back", i_8, s_21 + 5, 16777215, 0);
                      s_21 = 356;
                      font_1.method5341("Still having trouble logging in?", MusicPatchPcmStream.field585, s_21, 268435455, 0);
@@ -233,7 +231,7 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_5 = Login.field1187 + 180;
                      s_18 = 321;
-                     class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                     ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                      font_0.method5341("Back", i_5, s_18 + 5, 16777215, 0);
                   } else if (Login.loginIndex == 7) {
                      s_23 = 216;
@@ -245,10 +243,10 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_5 = Login.field1187 + 180 - 80;
                      s_18 = 321;
-                     class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                     ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                      font_0.method5341("Set Date of Birth", i_5, s_18 + 5, 16777215, 0);
                      i_5 = Login.field1187 + 180 + 80;
-                     class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                     ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                      font_0.method5341("Back", i_5, s_18 + 5, 16777215, 0);
                   } else if (Login.loginIndex == 8) {
                      s_23 = 216;
@@ -260,10 +258,10 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_5 = Login.field1187 + 180 - 80;
                      s_18 = 321;
-                     class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                     ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                      font_0.method5341("Privacy Policy", i_5, s_18 + 5, 16777215, 0);
                      i_5 = Login.field1187 + 180 + 80;
-                     class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                     ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                      font_0.method5341("Back", i_5, s_18 + 5, 16777215, 0);
                   } else if (Login.loginIndex == 12) {
                      s_23 = 201;
@@ -273,12 +271,12 @@ public class BufferPoolConfig {
                      switch(Login.field1182) {
                      case 0:
                         str_22 = "Your account has been disabled.";
-                        string_6 = FriendSystem.field2811;
+                        string_6 = Widget2.assist_message_1;
                         string_7 = "";
                         break;
                      case 1:
                         str_22 = "Account locked as we suspect it has been stolen.";
-                        string_6 = FriendSystem.field2961;
+                        string_6 = Widget2.assist_message_2;
                         string_7 = "";
                         break;
                      default:
@@ -293,11 +291,11 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_8 = Login.field1187 + 180;
                      s_21 = 276;
-                     class240.field3207.method6101(i_8 - 73, s_21 - 20);
+                     ClanEntry.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Support Page", i_8, s_21 + 5, 16777215, 0);
                      i_8 = Login.field1187 + 180;
                      s_21 = 326;
-                     class240.field3207.method6101(i_8 - 73, s_21 - 20);
+                     ClanEntry.field3207.method6101(i_8 - 73, s_21 - 20);
                      font_0.method5341("Back", i_8, s_21 + 5, 16777215, 0);
                   } else if (Login.loginIndex == 24) {
                      s_23 = 221;
@@ -309,7 +307,7 @@ public class BufferPoolConfig {
                      i_24 += 15;
                      i_5 = Login.field1187 + 180;
                      s_18 = 301;
-                     class240.field3207.method6101(i_5 - 73, s_18 - 20);
+                     ClanEntry.field3207.method6101(i_5 - 73, s_18 - 20);
                      font_0.method5341("Ok", i_5, s_18 + 5, 16777215, 0);
                   }
                }
@@ -319,7 +317,7 @@ public class BufferPoolConfig {
          if (Client.field662 >= 10) {
             int[] ints_19 = new int[4];
             Rasterizer2D.getClipArray(ints_19);
-            Rasterizer2D.setClip(Login.field1208, 0, Login.field1208 + 765, ParamComposition.field3308);
+            Rasterizer2D.setClip(Login.field1208, 0, Login.field1208 + 765, ParamComposition.clientHeight);
             class278.field3631.method1735(Login.field1208 - 22, Client.cycle);
             class278.field3631.method1735(Login.field1208 + 22 + 765 - 128, Client.cycle);
             Rasterizer2D.method6013(ints_19);

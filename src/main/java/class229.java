@@ -14,7 +14,7 @@ public class class229 {
    }
 
    public static class229 method4133(int i_0) {
-      class229[] arr_2 = class328.method6256();
+      class229[] arr_2 = IssacSeed.method6256();
 
       for (int i_3 = 0; i_3 < arr_2.length; i_3++) {
          class229 class229_4 = arr_2[i_3];

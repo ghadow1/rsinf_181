@@ -11,9 +11,9 @@ public class ItemContainer {
    }
 
    static void method815() {
-      if (Login.field1180 == null || Login.field1180.length() <= 0) {
+      if (Login.localUsername == null || Login.localUsername.length() <= 0) {
          if (class17.field117.field1065 != null) {
-            Login.field1180 = class17.field117.field1065;
+            Login.localUsername = class17.field117.field1065;
             Client.field691 = true;
          } else {
             Client.field691 = false;

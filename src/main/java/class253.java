@@ -581,7 +581,7 @@ public class class253 extends DualNode {
    }
 
    public String method4632(int i_1, String string_2, byte b_3) {
-      return class5.method54(this.field3396, i_1, string_2, (byte) -65);
+      return class5.method54(this.field3396, i_1, string_2);
    }
 
 }

@@ -4,7 +4,7 @@ public class PacketWriter {
 
    ServerPacketProt field1321;
    ServerPacketProt field1317;
-   public class328 field1313;
+   public IssacSeed field1313;
    ServerPacketProt field1309;
    class260 field1316 = new class260();
    int field1311 = 0;
@@ -97,7 +97,7 @@ public class PacketWriter {
                }
 
                projectile_1.update(Client.field718);
-               class5.field22.method3077(WorldMapRectangle.plane, (int) projectile_1.x, (int) projectile_1.z, (int) projectile_1.y, 60, projectile_1, projectile_1.yaw, -1L, false);
+               class5.scene.method3077(WorldMapRectangle.plane, (int) projectile_1.x, (int) projectile_1.z, (int) projectile_1.y, 60, projectile_1, projectile_1.yaw, -1L, false);
             }
          } else {
             projectile_1.unlink();

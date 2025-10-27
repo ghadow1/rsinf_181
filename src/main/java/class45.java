@@ -92,7 +92,7 @@ public final class class45 implements KeyListener, FocusListener {
    public final void keyTyped(KeyEvent keyevent_1) {
       if (field392 != null) {
          char var_2 = keyevent_1.getKeyChar();
-         if (var_2 != 0 && var_2 != 65535 && class240.method4366(var_2, -17259877)) {
+         if (var_2 != 0 && var_2 != 65535 && ClanEntry.method4366(var_2)) {
             int i_3 = field404 + 1 & 0x7f;
             if (i_3 != field396) {
                field400[field404] = -1;

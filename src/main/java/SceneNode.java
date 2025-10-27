@@ -254,7 +254,7 @@ final class SceneNode implements class0 {
                   i_10 = buffer3_2.readUnsignedShort();
                   if (i_8 >= 0 && i_9 >= 0 && i_8 < 103 && i_9 < 103) {
                      if (i_6 == 0) {
-                        class136 class136_37 = class5.field22.method3088(WorldMapRectangle.plane, i_8, i_9);
+                        class136 class136_37 = class5.scene.method3088(WorldMapRectangle.plane, i_8, i_9);
                         if (class136_37 != null) {
                            i_40 = GCMonitor.method770(class136_37.field1882);
                            if (i_4 == 2) {
@@ -267,7 +267,7 @@ final class SceneNode implements class0 {
                      }
 
                      if (i_6 == 1) {
-                        class141 class141_44 = class5.field22.method3118(WorldMapRectangle.plane, i_8, i_9);
+                        class141 class141_44 = class5.scene.method3118(WorldMapRectangle.plane, i_8, i_9);
                         if (class141_44 != null) {
                            i_40 = GCMonitor.method770(class141_44.field1917);
                            if (i_4 != 4 && i_4 != 5) {
@@ -286,7 +286,7 @@ final class SceneNode implements class0 {
                      }
 
                      if (i_6 == 2) {
-                        GameObject fileSystem_45 = class5.field22.method3195(WorldMapRectangle.plane, i_8, i_9);
+                        GameObject fileSystem_45 = class5.scene.method3195(WorldMapRectangle.plane, i_8, i_9);
                         if (i_4 == 11) {
                            i_4 = 10;
                         }
@@ -297,7 +297,7 @@ final class SceneNode implements class0 {
                      }
 
                      if (i_6 == 3) {
-                        class123 class123_46 = class5.field22.method3091(WorldMapRectangle.plane, i_8, i_9);
+                        class123 class123_46 = class5.scene.method3091(WorldMapRectangle.plane, i_8, i_9);
                         if (class123_46 != null) {
                            class123_46.field1614 = new class93(GCMonitor.method770(class123_46.field1617), 22, i_5, WorldMapRectangle.plane, i_8, i_9, i_10, false, class123_46.field1614);
                         }

@@ -28,7 +28,7 @@ public class class31 {
          }
 
          Client.isSpellSelected = false;
-         FriendSystem.invalidateWidget(widget_1);
+         Widget2.invalidateWidget(widget_1);
       }
    }
 

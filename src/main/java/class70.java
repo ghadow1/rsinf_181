@@ -158,12 +158,12 @@ public class class70 extends LinkedListNode {
    static void writeOutgoingWindowMode() {
       class187 class187_1 = class235.method4265(ClientPacketProt.WINDOW_STATUS, Client.data.field1313);
       class187_1.outBuffer.writeByte(class34.method598()); //..Display Mode
-      class187_1.outBuffer.writeShortBigEndian(class7.field46);
-      class187_1.outBuffer.writeShortBigEndian(ParamComposition.field3308);
+      class187_1.outBuffer.writeShortBigEndian(class7.clientWidth);
+      class187_1.outBuffer.writeShortBigEndian(ParamComposition.clientHeight);
       Client.data.copy(class187_1);
    }
 
-   static boolean method1676(String string_0, int i_1) {
+   static boolean openURL(String string_0) {
       if (string_0 == null) {
          return false;
       } else {

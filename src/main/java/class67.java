@@ -60,7 +60,7 @@ public class class67 implements Comparator {
    }
 
    static final void method1236(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, Scene scene_6, CollisionMap collisionMap_7) {
-      if (!Client.field656 || (class55.field502[0][i_1][i_2] & 0x2) != 0 || (class55.field502[i_0][i_1][i_2] & 0x10) == 0) {
+      if (!Client.resizeSettings2 || (class55.field502[0][i_1][i_2] & 0x2) != 0 || (class55.field502[i_0][i_1][i_2] & 0x10) == 0) {
          if (i_0 < class55.field503) {
             class55.field503 = i_0;
          }
@@ -112,7 +112,7 @@ public class class67 implements Comparator {
 
          Object obj_23;
          if (i_5 == 22) {
-            if (!Client.field656 || class253_9.field3369 != 0 || class253_9.field3382 == 1 || class253_9.field3388) {
+            if (!Client.resizeSettings2 || class253_9.field3369 != 0 || class253_9.field3382 == 1 || class253_9.field3388) {
                if (class253_9.field3373 == -1 && class253_9.field3391 == null) {
                   obj_23 = class253_9.method4591(22, i_4, ints_16, i_18, i_17, i_19, (byte) 11);
                } else {

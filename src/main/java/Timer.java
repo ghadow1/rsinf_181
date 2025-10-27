@@ -14,7 +14,7 @@ public class Timer {
    static void startUpInitialization() {
       int i_1;
       if (Client.field680 == 0) {
-         class5.field22 = new Scene(4, 104, 104, class55.field516);
+         class5.scene = new Scene(4, 104, 104, class55.field516);
 
          for (i_1 = 0; i_1 < 4; i_1++) {
             Client.field710[i_1] = new CollisionMap(104, 104);
@@ -101,15 +101,15 @@ public class Timer {
             Client.field680 = 45;
          }
       } else if (Client.field680 == 45) {
-         Tile.method2853(22050, !Client.field656, 2);
+         Tile.method2853(22050, !Client.resizeSettings2, 2);
          class198 class198_34 = new class198();
          class198_34.method3720(9, 128);
          WorldMapElement.field1144 = class234.method4256(GameApplet.field463, 0, 22050, 2015059645);
-         WorldMapElement.field1144.method2424(class198_34, 750974673);
+         WorldMapElement.field1144.method2424(class198_34);
          class58.method1094(class67.field650, Tile.field1647, class13.field89, class198_34, (byte) 14);
          class190.field2361 = class234.method4256(GameApplet.field463, 1, 2048, 2054660994);
          class57.field532 = new class98();
-         class190.field2361.method2424(class57.field532, -1975857573);
+         class190.field2361.method2424(class57.field532);
          class84.field1177 = new class112(22050, CollisionMap.field2078);
          Login.field1189 = "Prepared sound engine";
          Login.field1188 = 35;
@@ -214,7 +214,7 @@ public class Timer {
                   class6.method66(SoundSystem.field2544, NPCDefinition.field3500);
                   class235_26 = SoundSystem.field2544;
                   class235_3 = NPCDefinition.field3500;
-                  boolean bool_35 = Client.field656;
+                  boolean bool_35 = Client.resizeSettings2;
                   class253.field3395 = class235_26;
                   class253.field3351 = class235_3;
                   class253.field3352 = bool_35;
@@ -368,7 +368,7 @@ public class Timer {
                   Login.field1189 = "Loading textures - " + "0%";
                   Login.field1188 = 90;
                } else {
-                  class6.field40 = new class119(class4.field18, Client.field683, 20, 0.8D, Client.field656 ? 64 : 128);
+                  class6.field40 = new class119(class4.field18, Client.field683, 20, 0.8D, Client.resizeSettings2 ? 64 : 128);
                   Rasterizer3D.method2983(class6.field40);
                   Rasterizer3D.method2978(0.8D);
                   Client.field680 = 100;

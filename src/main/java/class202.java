@@ -27,7 +27,7 @@ public class class202 extends class115 {
                this.method3895(musicPatchNode_6, ints_1, i_4, musicPatchNode_6.field2455, i_5 + i_4);
                i_4 += musicPatchNode_6.field2455;
                i_5 -= musicPatchNode_6.field2455;
-            } while (!this.field2485.method3740(musicPatchNode_6, ints_1, i_4, i_5, -1512694949));
+            } while (!this.field2485.method3740(musicPatchNode_6, ints_1, i_4, i_5));
          }
       }
 
@@ -49,7 +49,7 @@ public class class202 extends class115 {
 
                this.method3896(musicPatchNode_3, musicPatchNode_3.field2455, 1166888342);
                i_2 -= musicPatchNode_3.field2455;
-            } while (!this.field2485.method3740(musicPatchNode_3, (int[]) null, 0, i_2, -176973860));
+            } while (!this.field2485.method3740(musicPatchNode_3, (int[]) null, 0, i_2));
          }
       }
 

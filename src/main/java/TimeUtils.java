@@ -31,36 +31,36 @@ public class TimeUtils extends class205 {
 
    static final void method3938(int i_0, int i_1, int i_2, int i_3, int i_4, int i_5, int i_6) {
       if (i_2 >= 1 && i_3 >= 1 && i_2 <= 102 && i_3 <= 102) {
-         if (Client.field656 && i_0 != WorldMapRectangle.plane) {
+         if (Client.resizeSettings2 && i_0 != WorldMapRectangle.plane) {
             return;
          }
 
          long long_8 = 0L;
          if (i_1 == 0) {
-            long_8 = class5.field22.method3130(i_0, i_2, i_3);
+            long_8 = class5.scene.method3130(i_0, i_2, i_3);
          }
 
          if (i_1 == 1) {
-            long_8 = class5.field22.method3180(i_0, i_2, i_3);
+            long_8 = class5.scene.method3180(i_0, i_2, i_3);
          }
 
          if (i_1 == 2) {
-            long_8 = class5.field22.method3094(i_0, i_2, i_3);
+            long_8 = class5.scene.method3094(i_0, i_2, i_3);
          }
 
          if (i_1 == 3) {
-            long_8 = class5.field22.method3095(i_0, i_2, i_3);
+            long_8 = class5.scene.method3095(i_0, i_2, i_3);
          }
 
          int i_13;
          if (long_8 != 0L) {
-            i_13 = class5.field22.method3096(i_0, i_2, i_3, long_8);
+            i_13 = class5.scene.method3096(i_0, i_2, i_3, long_8);
             int i_15 = GCMonitor.method770(long_8);
             int i_16 = i_13 & 0x1f;
             int i_17 = i_13 >> 6 & 0x3;
             class253 class253_14;
             if (i_1 == 0) {
-               class5.field22.method3208(i_0, i_2, i_3);
+               class5.scene.method3208(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15);
                if (class253_14.field3382 != 0) {
                   Client.field710[i_0].method3564(i_2, i_3, i_16, i_17, class253_14.field3368);
@@ -68,11 +68,11 @@ public class TimeUtils extends class205 {
             }
 
             if (i_1 == 1) {
-               class5.field22.method3084(i_0, i_2, i_3);
+               class5.scene.method3084(i_0, i_2, i_3);
             }
 
             if (i_1 == 2) {
-               class5.field22.method3154(i_0, i_2, i_3);
+               class5.scene.method3154(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15);
                if (i_2 + class253_14.field3365 > 103 || i_3 + class253_14.field3365 > 103 || i_2 + class253_14.field3366 > 103 || i_3 + class253_14.field3366 > 103) {
                   return;
@@ -84,7 +84,7 @@ public class TimeUtils extends class205 {
             }
 
             if (i_1 == 3) {
-               class5.field22.method3201(i_0, i_2, i_3);
+               class5.scene.method3201(i_0, i_2, i_3);
                class253_14 = class128.method2970(i_15);
                if (class253_14.field3382 == 1) {
                   Client.field710[i_0].setBlockedByUnknown(i_2, i_3);
@@ -98,7 +98,7 @@ public class TimeUtils extends class205 {
                i_13 = i_0 + 1;
             }
 
-            ClientPacketProt.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.field22, Client.field710[i_0]);
+            ClientPacketProt.method3611(i_0, i_13, i_2, i_3, i_4, i_5, i_6, class5.scene, Client.field710[i_0]);
          }
       }
 

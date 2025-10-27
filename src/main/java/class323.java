@@ -12,7 +12,7 @@ public class class323 implements UnknownT {
       this.field3889 = i_2;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field3889;
    }
 

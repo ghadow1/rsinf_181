@@ -286,7 +286,7 @@ public class class235 extends class233 {
       }
    }
 
-   public static class187 method4265(ClientPacketProt packet, class328 class328_1) {
+   public static class187 method4265(ClientPacketProt packet, IssacSeed issacSeed_1) {
       class187 class187_3;
       if (class187.field2336 == 0) {
          class187_3 = new class187();
@@ -308,7 +308,7 @@ public class class235 extends class233 {
          class187_3.outBuffer = new PacketBuffer(260);
       }
 
-      class187_3.outBuffer.method5442(class328_1);
+      class187_3.outBuffer.method5442(issacSeed_1);
       class187_3.outBuffer.method5473(class187_3.field2338.opcode);
       class187_3.field2331 = 0;
       return class187_3;

@@ -33,9 +33,9 @@ public class class154 extends ChainedComparator {
 
    }
 
-   static void method3406(short s_0) {
-      Login.field1180 = Login.field1180.trim();
-      if (Login.field1180.length() == 0) {
+   static void passwordResetButton() {
+      Login.localUsername = Login.localUsername.trim();
+      if (Login.localUsername.length() == 0) {
          class268.loginResponseMessages("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.");
       } else {
          long long_2;
@@ -75,7 +75,7 @@ public class class154 extends ChainedComparator {
          if (long_2 == 0L) {
             b_1 = 5;
          } else {
-            String string_36 = Login.field1180;
+            String string_36 = Login.localUsername;
             Random random_37 = new Random();
             ByteBuffer class300_27 = new ByteBuffer(128);
             ByteBuffer class300_10 = new ByteBuffer(128);
@@ -189,7 +189,7 @@ public class class154 extends ChainedComparator {
                         }
 
                         string_32 = new String(class300_28.buffer, 0, class300_28.position);
-                        if (class70.method1676(string_32, -1155103111)) {
+                        if (class70.openURL(string_32)) {
                            class5.method50(string_32, true, false);
                            b_31 = 2;
                         } else {
@@ -215,7 +215,7 @@ public class class154 extends ChainedComparator {
 
          switch(b_1) {
          case 2:
-            class268.loginResponseMessages(FriendSystem.field2942, FriendSystem.field3027, FriendSystem.field2768);
+            class268.loginResponseMessages(Widget2.assist_message_3, Widget2.assist_message_4, Widget2.assist_message_5);
             Login.loginIndex = 6;
             break;
          case 3:

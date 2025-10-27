@@ -51,7 +51,7 @@ public class class23 extends class34 {
       return this.field186;
    }
 
-   static void method296(int i_0, byte b_1) {
+   static void loginResponseAction(int i_0) {
       if (i_0 == -3) {
          class268.loginResponseMessages("Connection timed out.", "Please try using a different world.", "");
       } else if (i_0 == -2) {
@@ -113,7 +113,7 @@ public class class23 extends class34 {
       } else if (i_0 == 37) {
          class268.loginResponseMessages("Your account is currently inaccessible.", "Please try again in a few minutes.", "");
       } else if (i_0 == 38) {
-         class268.loginResponseMessages("You need to vote to play!", "Visit runescape.com and vote,", "and then come back here!");
+         class268.loginResponseMessages("You need to vote to play!", "Visit arios.com and vote,", "and then come back here!");
       } else if (i_0 == 55) {
          Login.loginIndex = 8;
       } else {

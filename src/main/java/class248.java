@@ -77,11 +77,11 @@ public class class248 extends DualNode {
                   NPC.field1135.method6121(Login.field1208 + 382, 0);
                   class87.field1243.method6101(Login.field1208 + 382 - class87.field1243.field3897 / 2, 18);
                } else {
-                  if (Login.field1190 > 0 && Login.field1206 != null && MouseHandler.field483 >= 0 && MouseHandler.field483 <= Login.field1206.field3897 && MouseHandler.field495 >= ParamComposition.field3308 / 2 - 50 && MouseHandler.field495 <= ParamComposition.field3308 / 2 + 50) {
+                  if (Login.field1190 > 0 && Login.field1206 != null && MouseHandler.field483 >= 0 && MouseHandler.field483 <= Login.field1206.field3897 && MouseHandler.field495 >= ParamComposition.clientHeight / 2 - 50 && MouseHandler.field495 <= ParamComposition.clientHeight / 2 + 50) {
                      --Login.field1190;
                   }
 
-                  if (Login.field1190 < Login.field1186 && NPCDefinition.field3490 != null && MouseHandler.field483 >= class7.field46 - NPCDefinition.field3490.field3897 - 5 && MouseHandler.field483 <= class7.field46 && MouseHandler.field495 >= ParamComposition.field3308 / 2 - 50 && MouseHandler.field495 <= ParamComposition.field3308 / 2 + 50) {
+                  if (Login.field1190 < Login.field1186 && NPCDefinition.field3490 != null && MouseHandler.field483 >= class7.clientWidth - NPCDefinition.field3490.field3897 - 5 && MouseHandler.field483 <= class7.clientWidth && MouseHandler.field495 >= ParamComposition.clientHeight / 2 - 50 && MouseHandler.field495 <= ParamComposition.clientHeight / 2 + 50) {
                      ++Login.field1190;
                   }
                }
@@ -106,12 +106,17 @@ public class class248 extends DualNode {
          }
 
       } else {
+         //..Below is non logged in buttons
+         //..Login screen button handling
          if ((MouseHandler.field493 == 1 || !class46.field413 && MouseHandler.field493 == 4) && MouseHandler.field483 >= Login.field1208 + 765 - 50 && MouseHandler.field495 >= 453) {
+            //..Music button handling
             class17.field117.field1063 = !class17.field117.field1063;
             class97.method2268();
             if (!class17.field117.field1063) {
+               System.out.println("enabling music from login");
                class119.method2761(class29.field253, "scape main", "", 255, false, (byte) -92);
             } else {
+               System.out.println("disabling  music from login");
                class171.method3553();
             }
          }
@@ -137,13 +142,16 @@ public class class248 extends DualNode {
                      byte b_6 = 100;
                      byte b_7 = 35;
                      if (MouseHandler.field483 >= i_4 && MouseHandler.field483 <= i_4 + b_6 && MouseHandler.field495 >= s_5 && MouseHandler.field495 <= b_7 + s_5) {
+                        System.out.println("Login screen button 2011");
+
                         UserComparator10.method2214();
                         return;
                      }
                   }
 
                   if (World.field1027 != null) {
-                     UserComparator10.method2214();
+                     System.out.println("Login screen - World selection button");
+                     //..UserComparator10.method2214();
                   }
                }
 
@@ -173,7 +181,7 @@ public class class248 extends DualNode {
                   i_8 = MusicPatchPcmStream.field585 - 80;
                   s_9 = 291;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
-                     class5.method50(class190.someConnectionType("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
+                     class5.method50("Create an account url link here", true, false);
                   }
 
                   i_8 = MusicPatchPcmStream.field585 + 80;
@@ -184,7 +192,7 @@ public class class248 extends DualNode {
                         Login.Login_response2 = "Your normal account will not be affected.";
                         Login.Login_response3 = "";
                         Login.loginIndex = 1;
-                        if (Client.field691 && Login.field1180 != null && Login.field1180.length() > 0) {
+                        if (Client.field691 && Login.localUsername != null && Login.localUsername.length() > 0) {
                            Login.field1202 = 1;
                         } else {
                            Login.field1202 = 0;
@@ -202,7 +210,7 @@ public class class248 extends DualNode {
 
                         Login.field1197 = "Warning!";
                         Login.loginIndex = 1;
-                        if (Client.field691 && Login.field1180 != null && Login.field1180.length() > 0) {
+                        if (Client.field691 && Login.localUsername != null && Login.localUsername.length() > 0) {
                            Login.field1202 = 1;
                         } else {
                            Login.field1202 = 0;
@@ -213,7 +221,7 @@ public class class248 extends DualNode {
                         Login.Login_response3 = "not work on this world.";
                         Login.field1197 = "Warning!";
                         Login.loginIndex = 1;
-                        if (Client.field691 && Login.field1180 != null && Login.field1180.length() > 0) {
+                        if (Client.field691 && Login.localUsername != null && Login.localUsername.length() > 0) {
                            Login.field1202 = 1;
                         } else {
                            Login.field1202 = 0;
@@ -252,7 +260,7 @@ public class class248 extends DualNode {
                                  Login.loginIndex = 5;
                                  return;
                               case 2:
-                                 class5.method50("https://support.runescape.com/hc/en-gb", true, false);
+                                 class5.method50("https://discord.gg/RZ43jqTAFb", true, false);
                               }
                            }
                         }
@@ -260,8 +268,8 @@ public class class248 extends DualNode {
                         i_8 = MusicPatchPcmStream.field585 - 80;
                         s_9 = 321;
                         if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
-                           Login.field1180 = Login.field1180.trim();
-                           if (Login.field1180.length() == 0) {
+                           Login.localUsername = Login.localUsername.trim();
+                           if (Login.localUsername.length() == 0) {
                               class268.loginResponseMessages("", "Please enter your username/email address.", "");
                               return;
                            }
@@ -280,7 +288,7 @@ public class class248 extends DualNode {
                         i_8 = Login.field1187 + 180 + 80;
                         if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
                            Login.loginIndex = 0;
-                           Login.field1180 = "";
+                           Login.localUsername = "";
                            Login.Login_password = "";
                            class9.field65 = 0;
                            class36.field328 = "";
@@ -304,9 +312,9 @@ public class class248 extends DualNode {
                         if (i_4 == 1 && Login.field1184) {
                            class17.field117.field1066 = !class17.field117.field1066;
                            if (!class17.field117.field1066) {
-                              Login.field1180 = "";
+                              Login.localUsername = "";
                               class17.field117.field1065 = null;
-                              if (Client.field691 && Login.field1180 != null && Login.field1180.length() > 0) {
+                              if (Client.field691 && Login.localUsername != null && Login.localUsername.length() > 0) {
                                  Login.field1202 = 1;
                               } else {
                                  Login.field1202 = 0;
@@ -329,22 +337,22 @@ public class class248 extends DualNode {
 
                               if (class97.field1338 == 13) {
                                  Login.loginIndex = 0;
-                                 Login.field1180 = "";
+                                 Login.localUsername = "";
                                  Login.Login_password = "";
                                  class9.field65 = 0;
                                  class36.field328 = "";
                                  Login.field1201 = true;
                               } else if (Login.field1202 == 0) {
-                                 if (class97.field1338 == 85 && Login.field1180.length() > 0) {
-                                    Login.field1180 = Login.field1180.substring(0, Login.field1180.length() - 1);
+                                 if (class97.field1338 == 85 && Login.localUsername.length() > 0) {
+                                    Login.localUsername = Login.localUsername.substring(0, Login.localUsername.length() - 1);
                                  }
 
                                  if (class97.field1338 == 84 || class97.field1338 == 80) {
                                     Login.field1202 = 1;
                                  }
 
-                                 if (bool_10 && Login.field1180.length() < 320) {
-                                    Login.field1180 = Login.field1180 + class207.field2508;
+                                 if (bool_10 && Login.localUsername.length() < 320) {
+                                    Login.localUsername = Login.localUsername + class207.field2508;
                                  }
                               } else if (Login.field1202 == 1) {
                                  if (class97.field1338 == 85 && Login.Login_password.length() > 0) {
@@ -356,8 +364,8 @@ public class class248 extends DualNode {
                                  }
 
                                  if (class97.field1338 == 84) {
-                                    Login.field1180 = Login.field1180.trim();
-                                    if (Login.field1180.length() == 0) {
+                                    Login.localUsername = Login.localUsername.trim();
+                                    if (Login.localUsername.length() == 0) {
                                        class268.loginResponseMessages("", "Please enter your username/email address.", "");
                                        return;
                                     }
@@ -391,7 +399,7 @@ public class class248 extends DualNode {
                         i_19 = Login.field1187 + 180;
                         s_21 = 326;
                         if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                           class268.loginResponseMessages("Please enter your username.", "If you created your account after November", "2010, this will be the creation email address.");
+                           class268.loginResponseMessages("This feature doesn't work", "Please proceed to the server discord.", "You can submit a password reset request there.");
                            Login.loginIndex = 5;
                            return;
                         }
@@ -420,13 +428,13 @@ public class class248 extends DualNode {
                            }
 
                            if (i_4 == 1 && i_16 >= Login.field1187 + 180 - 34 && i_16 <= Login.field1187 + 34 + 180 && i_17 >= 351 && i_17 <= 363) {
-                              class5.method50(class190.someConnectionType("secure", true) + "m=totp-authenticator/disableTOTPRequest", true, false);
+                              class5.method50("https://discord.gg/RZ43jqTAFb", true, false);
                            }
 
                            i_19 = Login.field1187 + 180 + 80;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
                               Login.loginIndex = 0;
-                              Login.field1180 = "";
+                              Login.localUsername = "";
                               Login.Login_password = "";
                               class9.field65 = 0;
                               class36.field328 = "";
@@ -444,7 +452,7 @@ public class class248 extends DualNode {
 
                               if (class97.field1338 == 13) {
                                  Login.loginIndex = 0;
-                                 Login.field1180 = "";
+                                 Login.localUsername = "";
                                  Login.Login_password = "";
                                  class9.field65 = 0;
                                  class36.field328 = "";
@@ -477,7 +485,7 @@ public class class248 extends DualNode {
                            i_19 = Login.field1187 + 180 - 80;
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                              class154.method3406((short) 8742);
+                              class154.passwordResetButton();
                               return;
                            }
 
@@ -490,7 +498,7 @@ public class class248 extends DualNode {
                            if (class38.field332 != null) {
                               i_23 = class38.field332.field3865 / 2;
                               if (i_4 == 1 && i_16 >= class38.field332.field3863 - i_23 && i_16 <= i_23 + class38.field332.field3863 && i_17 >= s_9 - 15 && i_17 < s_9) {
-                                 class5.method50(class190.someConnectionType("secure", true) + "m=weblogin/g=oldscape/cant_log_in", true, false);
+                                 class5.method50("https://discord.gg/RZ43jqTAFb", true, false);
                               }
                            }
 
@@ -507,17 +515,17 @@ public class class248 extends DualNode {
                               if (class97.field1338 == 13) {
                                  class137.method3266(true);
                               } else {
-                                 if (class97.field1338 == 85 && Login.field1180.length() > 0) {
-                                    Login.field1180 = Login.field1180.substring(0, Login.field1180.length() - 1);
+                                 if (class97.field1338 == 85 && Login.localUsername.length() > 0) {
+                                    Login.localUsername = Login.localUsername.substring(0, Login.localUsername.length() - 1);
                                  }
 
                                  if (class97.field1338 == 84) {
-                                    class154.method3406((short) 16089);
+                                    class154.passwordResetButton();
                                     return;
                                  }
 
-                                 if (bool_10 && Login.field1180.length() < 320) {
-                                    Login.field1180 = Login.field1180 + class207.field2508;
+                                 if (bool_10 && Login.localUsername.length() < 320) {
+                                    Login.localUsername = Login.localUsername + class207.field2508;
                                  }
                               }
                            }
@@ -540,7 +548,7 @@ public class class248 extends DualNode {
                            i_19 = Login.field1187 + 180 - 80;
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                              class5.method50(class190.someConnectionType("secure", true) + "m=dob/set_dob.ws", true, false);
+                              class5.method50("https://discord.gg/RZ43jqTAFb", true, false);
                               class268.loginResponseMessages("", "Page has opened in a new window.", "(Please check your popup blocker.)");
                               Login.loginIndex = 6;
                               return;
@@ -554,7 +562,7 @@ public class class248 extends DualNode {
                            i_19 = Login.field1187 + 180 - 80;
                            s_21 = 321;
                            if (i_4 == 1 && i_16 >= i_19 - 75 && i_16 <= i_19 + 75 && i_17 >= s_21 - 20 && i_17 <= s_21 + 20) {
-                              class5.method50("https://www.jagex.com/terms/privacy/#eight", true, false);
+                              class5.method50("https://discord.gg/RZ43jqTAFb", true, false);
                               class268.loginResponseMessages("", "Page has opened in a new window.", "(Please check your popup blocker.)");
                               Login.loginIndex = 6;
                               return;
@@ -568,10 +576,10 @@ public class class248 extends DualNode {
                            String str_15 = "";
                            switch(Login.field1182) {
                            case 0:
-                              str_15 = "https://support.runescape.com/hc/en-gb/articles/115002238729-Account-Bans";
+                              str_15 = "https://discord.gg/RZ43jqTAFb";
                               break;
                            case 1:
-                              str_15 = "https://support.runescape.com/hc/en-gb/articles/206103939-My-account-is-locked";
+                              str_15 = "https://discord.gg/RZ43jqTAFb";
                               break;
                            default:
                               class137.method3266(false);

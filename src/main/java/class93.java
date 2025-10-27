@@ -131,7 +131,7 @@ public class class93 extends Entity {
 
       class236.field3174.position = 0;
       class226.field3071 = null;
-      class240.field3209 = null;
+      ClanEntry.field3209 = null;
       class236.field3175 = 0;
 
       while (true) {

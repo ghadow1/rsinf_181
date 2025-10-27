@@ -23,7 +23,7 @@ public final class class87 extends Entity {
       class41.field359 = i_0;
       Client.field848 = i_1;
       WorldMapCacheName.field301 = i_2;
-      FriendSystem.invalidateWidget(widget_5);
+      Widget2.invalidateWidget(widget_5);
    }
 
    public static void method2054(class233 class233_0, byte b_1) {

@@ -19,7 +19,7 @@ public class GameState implements UnknownT {
       this.field3092 = bool_5;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field3089;
    }
 

@@ -341,7 +341,7 @@ public class NPCDefinition extends DualNode {
    }
 
    public String method4740(int i_1, String string_2, int i_3) {
-      return class5.method54(this.field3487, i_1, string_2, (byte) -9);
+      return class5.method54(this.field3487, i_1, string_2);
    }
 
 }

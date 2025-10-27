@@ -9,7 +9,7 @@ public abstract class class322 {
       Rasterizer2D.replace(this.field3876, this.field3877, this.field3878);
    }
 
-   public abstract void vmethod6077(int var1, int var2, int var3);
+   public abstract void vmethod6077(int var1, int var2);
 
    public abstract void vmethod6075(int var1, int var2, int var3, int var4, int var5);
 

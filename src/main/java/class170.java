@@ -9,9 +9,9 @@ public abstract class class170 {
    static void method3515(int i_0) {
       Client.field868 = 0L;
       if (i_0 >= 2) {
-         Client.field869 = true;
+         Client.resizeSettings = true;
       } else {
-         Client.field869 = false;
+         Client.resizeSettings = false;
       }
 
       if (class34.method598() == 1) {

@@ -27,7 +27,7 @@ public class class153 extends ChainedComparator {
          class48.field418 = i_0;
          class128.field1747 = i_1;
          class96.updateGameState(25);
-         class281.method5180("Loading - please wait.", true, -2090803826);
+         class281.method5180("Loading - please wait.", true);
          int i_4 = class196.field2389;
          int i_5 = SceneNode.field1;
          class196.field2389 = (i_0 - 6) * 8;

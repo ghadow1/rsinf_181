@@ -71,7 +71,7 @@ public class class132 extends LinkedListNode {
                   class207.field2507 = widget_13;
                }
 
-               FriendSystem.invalidateWidget(widget_7);
+               Widget2.invalidateWidget(widget_7);
                return 1;
             }
          }
@@ -81,12 +81,12 @@ public class class132 extends LinkedListNode {
             widget_10 = bool_2 ? MouseRecorder.field1111 : class207.field2507;
             Widget widget_11 = WorldMapElement.getWidget(widget_10.field2688);
             widget_11.field2675[widget_10.field2565] = null;
-            FriendSystem.invalidateWidget(widget_11);
+            Widget2.invalidateWidget(widget_11);
             return 1;
          } else if (i_0 == 102) {
             widget_10 = WorldMapElement.getWidget(MouseRecorder.field1098[--class70.field1014]);
             widget_10.field2675 = null;
-            FriendSystem.invalidateWidget(widget_10);
+            Widget2.invalidateWidget(widget_10);
             return 1;
          } else if (i_0 != 200) {
             if (i_0 == 201) {

@@ -272,7 +272,7 @@ public class class209 {
 
    static int method3948(int i_0, int i_1) {
       long long_3 = (long)((i_0 << 16) + i_1);
-      return class226.field3071 != null && class226.field3071.hash == long_3 ? class240.field3209.position * 99 / (class240.field3209.buffer.length - class226.field3071.field3122) + 1 : 0;
+      return class226.field3071 != null && class226.field3071.hash == long_3 ? ClanEntry.field3209.position * 99 / (ClanEntry.field3209.buffer.length - class226.field3071.field3122) + 1 : 0;
    }
 
    public static int method3945(String string_0) {
@@ -311,7 +311,7 @@ public class class209 {
                int i_15 = i_11 + i_2;
                if (i_14 > 0 && i_15 > 0 && i_14 < 103 && i_15 < 103) {
                   class253 class253_16 = class128.method2970(i_6);
-                  if (i_13 != 22 || !Client.field656 || class253_16.field3369 != 0 || class253_16.field3382 == 1 || class253_16.field3388) {
+                  if (i_13 != 22 || !Client.resizeSettings2 || class253_16.field3369 != 0 || class253_16.field3382 == 1 || class253_16.field3388) {
                      if (!class253_16.method4608()) {
                         ++Client.field707;
                         bool_4 = false;

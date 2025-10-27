@@ -324,7 +324,7 @@ public class class96 {
          }
 
          if (i_0 == 20 || i_0 == 40 || i_0 == 45) {
-            Client.field686 = 0;
+            Client.stateLogin = 0;
             Client.field687 = 0;
             Client.field688 = 0;
             Client.timer.method4996(i_0);
@@ -353,7 +353,7 @@ public class class96 {
                class309.method5892(class17.field110, Client.field683, false, 4, -273498913);
             } else if (Login.field1179) {
                Login.field1194 = null;
-               class240.field3207 = null;
+               ClanEntry.field3207 = null;
                Login.field1181 = null;
                class5.field23 = null;
                NPC.field1135 = null;

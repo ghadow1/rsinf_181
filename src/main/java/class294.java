@@ -33,23 +33,23 @@ public class class294 {
       int i_5 = 0;
       int i_6 = 0;
       if (class68_0.field932 == 0) {
-         long_2 = class5.field22.method3130(class68_0.field943, class68_0.field937, class68_0.field934);
+         long_2 = class5.scene.method3130(class68_0.field943, class68_0.field937, class68_0.field934);
       }
 
       if (class68_0.field932 == 1) {
-         long_2 = class5.field22.method3180(class68_0.field943, class68_0.field937, class68_0.field934);
+         long_2 = class5.scene.method3180(class68_0.field943, class68_0.field937, class68_0.field934);
       }
 
       if (class68_0.field932 == 2) {
-         long_2 = class5.field22.method3094(class68_0.field943, class68_0.field937, class68_0.field934);
+         long_2 = class5.scene.method3094(class68_0.field943, class68_0.field937, class68_0.field934);
       }
 
       if (class68_0.field932 == 3) {
-         long_2 = class5.field22.method3095(class68_0.field943, class68_0.field937, class68_0.field934);
+         long_2 = class5.scene.method3095(class68_0.field943, class68_0.field937, class68_0.field934);
       }
 
       if (long_2 != 0L) {
-         int i_7 = class5.field22.method3096(class68_0.field943, class68_0.field937, class68_0.field934, long_2);
+         int i_7 = class5.scene.method3096(class68_0.field943, class68_0.field937, class68_0.field934, long_2);
          i_4 = GCMonitor.method770(long_2);
          i_5 = i_7 & 0x1f;
          i_6 = i_7 >> 6 & 0x3;

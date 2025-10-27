@@ -52,7 +52,7 @@ public class class192 implements UnknownT {
       this.field2379 = i_2;
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field2379;
    }
 

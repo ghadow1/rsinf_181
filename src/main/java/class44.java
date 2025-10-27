@@ -1,4 +1,4 @@
-import java.awt.Component;
+import java.awt.*;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
@@ -6,11 +6,11 @@ public final class class44 implements class168, MouseWheelListener {
 
    int field384 = 0;
 
-   void method772(Component component_1, byte b_2) {
+   void method772(Component component_1) {
       component_1.addMouseWheelListener(this);
    }
 
-   void method773(Component component_1, int i_2) {
+   void method773(Component component_1) {
       component_1.removeMouseWheelListener(this);
    }
 

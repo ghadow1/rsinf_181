@@ -20,7 +20,7 @@ public class Login {
    static String Login_response1;
    static String Login_response2;
    static String Login_response3;
-   static String field1180;
+   static String localUsername;
    static String Login_password;
    static boolean field1199;
    static boolean field1184;
@@ -44,7 +44,7 @@ public class Login {
       Login_response1 = "";
       Login_response2 = "";
       Login_response3 = "";
-      field1180 = "";
+      localUsername = "";
       Login_password = "";
       field1199 = false;
       field1184 = false;

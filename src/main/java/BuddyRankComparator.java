@@ -55,7 +55,7 @@ public class BuddyRankComparator {
          widget_5.field2574 = MouseRecorder.field1098[class70.field1014 + 1];
          widget_5.field2694 = MouseRecorder.field1098[class70.field1014 + 2];
          widget_5.field2570 = MouseRecorder.field1098[class70.field1014 + 3];
-         FriendSystem.invalidateWidget(widget_5);
+         Widget2.invalidateWidget(widget_5);
          WorldMapID.client.method1260(widget_5);
          if (i_4 != -1 && widget_5.field2566 == 0) {
             WorldMapID.method413(Widget.field2556[i_4 >> 16], widget_5, false);
@@ -68,7 +68,7 @@ public class BuddyRankComparator {
          widget_5.field2576 = MouseRecorder.field1098[class70.field1014 + 1];
          widget_5.field2638 = MouseRecorder.field1098[class70.field1014 + 2];
          widget_5.field2572 = MouseRecorder.field1098[class70.field1014 + 3];
-         FriendSystem.invalidateWidget(widget_5);
+         Widget2.invalidateWidget(widget_5);
          WorldMapID.client.method1260(widget_5);
          if (i_4 != -1 && widget_5.field2566 == 0) {
             WorldMapID.method413(Widget.field2556[i_4 >> 16], widget_5, false);
@@ -79,7 +79,7 @@ public class BuddyRankComparator {
          boolean bool_6 = MouseRecorder.field1098[--class70.field1014] == 1;
          if (bool_6 != widget_5.field2706) {
             widget_5.field2706 = bool_6;
-            FriendSystem.invalidateWidget(widget_5);
+            Widget2.invalidateWidget(widget_5);
          }
 
          return 1;

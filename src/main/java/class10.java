@@ -84,7 +84,7 @@ final class class10 implements Comparator {
                } else if (class197.field2402 != 0) {
                   class56.field529 = s_4;
                } else {
-                  MouseRecorder.field1099.method3706(s_4, 1964595873);
+                  MouseRecorder.field1099.method3706(s_4);
                }
 
                Client.field911 = s_4;

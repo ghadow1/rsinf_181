@@ -2,7 +2,7 @@ public class PacketBuffer extends ByteBuffer {
 
    static int field3727;
    static final int[] field3724 = new int[] {0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1};
-   class328 field3725;
+   IssacSeed field3725;
    int field3726;
 
    public PacketBuffer(int i_1) {
@@ -14,8 +14,8 @@ public class PacketBuffer extends ByteBuffer {
       return i_2 >= 128;
    }
 
-   public void method5442(class328 class328_1) {
-      this.field3725 = class328_1;
+   public void method5442(IssacSeed issacSeed_1) {
+      this.field3725 = issacSeed_1;
    }
 
    public void method5473(int i_1) {
@@ -70,7 +70,7 @@ public class PacketBuffer extends ByteBuffer {
    }
 
    public void method5437(int[] ints_1) {
-      this.field3725 = new class328(ints_1);
+      this.field3725 = new IssacSeed(ints_1);
    }
 
    static class324 method5474(class233 class233_0, int i_1, int i_2) {

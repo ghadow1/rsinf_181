@@ -57,7 +57,7 @@ public final class class77 extends Entity {
    }
 
    static void method1945() {
-      FriendSystem.method4121();
+      Widget2.method4121();
       Client.field796[0] = "Cancel";
       Client.field668[0] = "";
       Client.menuOpcodes[0] = 1006;

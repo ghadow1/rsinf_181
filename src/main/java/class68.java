@@ -30,9 +30,9 @@ public final class class68 extends LinkedListNode {
       Client.field816.method5951(class61_4, (long)i_0);
       HealthBarUpdate.method146(i_1);
       Widget widget_5 = WorldMapElement.getWidget(i_0);
-      FriendSystem.invalidateWidget(widget_5);
+      Widget2.invalidateWidget(widget_5);
       if (Client.field850 != null) {
-         FriendSystem.invalidateWidget(Client.field850);
+         Widget2.invalidateWidget(Client.field850);
          Client.field850 = null;
       }
 

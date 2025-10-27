@@ -13,7 +13,7 @@ public class class57 implements Callable {
    }
 
    public static void method1093() {
-      class240.field3205.method3323();
+      ClanEntry.field3205.method3323();
    }
 
 }

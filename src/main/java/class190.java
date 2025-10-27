@@ -56,7 +56,7 @@ public class class190 implements UnknownT {
       return new class190[]{field2351, field2349, field2347, field2350, field2348, field2360, field2352};
    }
 
-   public int getId(int i_1) {
+   public int getId() {
       return this.field2354;
    }
 
@@ -96,7 +96,7 @@ public class class190 implements UnknownT {
          str_4 = "/p=" + class294.field3695;
       }
 
-      String str_5 = "runescape.com";
+      String str_5 = "arios.com";
       return str_3 + string_0 + "." + str_5 + "/l=" + class56.field528 + "/a=" + class239.field3199 + str_4 + "/";
    }
 

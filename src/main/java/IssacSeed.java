@@ -1,4 +1,4 @@
-public final class class328 {
+public final class IssacSeed {
 
    int[] field3921 = new int[256];
    int[] field3918 = new int[256];
@@ -7,7 +7,7 @@ public final class class328 {
    int field3922;
    int field3919;
 
-   public class328(int[] ints_1) {
+   public IssacSeed(int[] ints_1) {
       for (int i_2 = 0; i_2 < ints_1.length; i_2++) {
          this.field3918[i_2] = ints_1[i_2];
       }
