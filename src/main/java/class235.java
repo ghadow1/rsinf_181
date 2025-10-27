@@ -287,6 +287,7 @@ public class class235 extends class233 {
    }
 
    public static class187 method4265(ClientPacketProt packet, IssacSeed issacSeed_1) {
+     System.out.println("Writing outoging packet "+packet.opcode);
       class187 class187_3;
       if (class187.field2336 == 0) {
          class187_3 = new class187();

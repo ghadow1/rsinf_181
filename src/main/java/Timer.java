@@ -462,7 +462,7 @@ public class Timer {
       this.field3603 = TimeUtils.getAdjustedTimeMillis();
    }
 
-   public void method4998(int i_1) {
+   public void method4998() {
       this.field3605 = false;
       this.field3609 = 0;
    }

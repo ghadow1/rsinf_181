@@ -181,7 +181,7 @@ public class class248 extends DualNode {
                   i_8 = MusicPatchPcmStream.field585 - 80;
                   s_9 = 291;
                   if (i_4 == 1 && i_16 >= i_8 - 75 && i_16 <= i_8 + 75 && i_17 >= s_9 - 20 && i_17 <= s_9 + 20) {
-                     class5.method50("Create an account url link here", true, false);
+                     class5.method50("https://discord.gg/RZ43jqTAFb", true, false);
                   }
 
                   i_8 = MusicPatchPcmStream.field585 + 80;

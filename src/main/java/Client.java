@@ -2760,7 +2760,7 @@ public final class Client extends GameApplet implements class280 {
                timer.method4999(class187_16.outBuffer);
                class187_16.outBuffer.writeSizeAtOffset(class187_16.outBuffer.position - i_3);
                data.copy(class187_16);
-               timer.method4998(-481288218);
+               timer.method4998();
             }
 
             Object object_36 = FontName.field348.field589;
