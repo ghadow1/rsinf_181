@@ -1535,7 +1535,7 @@ public final class Client extends GameApplet implements class280 {
                return true;
             }
 
-            if (ServerPacketProt.field2176 == Client.data.serverPacket) {
+            if (ServerPacketProt.ifCloseSub == Client.data.serverPacket) {
                pos_node = jagbuf.readIntMedEndian();
                class61 class61_55 = (class61) field816.method5952((long) pos_node);
                if (class61_55 != null) {
@@ -1984,7 +1984,7 @@ public final class Client extends GameApplet implements class280 {
                bool_51 = jagbuf.readUnsignedByte() == 1;
                if (bool_51) {
                   Categorizable.field3632 = TimeUtils.getAdjustedTimeMillis() - jagbuf.readLongFromMediumEndian();
-                  class68.field942 = new class6(jagbuf, true);
+                  class68.field942 = new class6(jagbuf);
                } else {
                   class68.field942 = null;
                }
@@ -2960,7 +2960,7 @@ public final class Client extends GameApplet implements class280 {
                class136.field1875.method6299();
             }
 
-            class45.method801(-2003037366);
+            class45.method801();
             int[] ints_38;
             if (field747 != WorldMapRectangle.plane) {
                field747 = WorldMapRectangle.plane;

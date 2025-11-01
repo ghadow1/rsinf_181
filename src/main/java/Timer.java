@@ -247,7 +247,7 @@ public class Timer {
                   class235 class235_15 = SoundSystem.field2544;
                   class251.field3314 = class235_15;
                   class5.method62(SoundSystem.field2544);
-                  class45.method794(SoundSystem.field2544, -939658474);
+                  class45.method794(SoundSystem.field2544);
                   class170.field2057 = new class90();
                   class235 class235_16 = SoundSystem.field2544;
                   class235 class235_17 = Client.field683;

@@ -67,7 +67,7 @@ public final class class55 {
             }
          }
 
-         class153.method3399(i_4, i_3, true, 240895507);
+         class153.method3399(i_4, i_3, true);
       } else {
          i_3 = buffer3_1.readShortWithOffset();
          i_4 = buffer3_1.readShortWithOffset2();
@@ -135,7 +135,7 @@ public final class class55 {
             }
          }
 
-         class153.method3399(i_4, i_3, !bool_16, -359848032);
+         class153.method3399(i_4, i_3, !bool_16);
       }
 
    }

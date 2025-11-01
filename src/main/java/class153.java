@@ -22,7 +22,7 @@ public class class153 extends ChainedComparator {
       return this.method3391((Categorizable) object_1, (Categorizable) object_2, 16711935);
    }
 
-   static final void method3399(int i_0, int i_1, boolean bool_2, int i_3) {
+   static final void method3399(int i_0, int i_1, boolean bool_2) {
       if (!bool_2 || i_0 != class48.field418 || class128.field1747 != i_1) {
          class48.field418 = i_0;
          class128.field1747 = i_1;

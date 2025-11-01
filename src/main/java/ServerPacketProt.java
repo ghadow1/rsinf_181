@@ -9,7 +9,7 @@ public class ServerPacketProt {
    public static final ServerPacketProt locAddChangeMessage = new ServerPacketProt(6, 4);
    public static final ServerPacketProt field2122 = new ServerPacketProt(7, 4);
    public static final ServerPacketProt mapAnimMessage = new ServerPacketProt(8, 6);
-   public static final ServerPacketProt field2176 = new ServerPacketProt(9, 4);
+   public static final ServerPacketProt ifCloseSub = new ServerPacketProt(9, 4);
    public static final ServerPacketProt field2141 = new ServerPacketProt(10, -2);
    public static final ServerPacketProt mapProjAnimMessage = new ServerPacketProt(11, 15);
    public static final ServerPacketProt soundAreaMessage = new ServerPacketProt(12, 5);

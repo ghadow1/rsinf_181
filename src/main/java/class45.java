@@ -105,7 +105,7 @@ public final class class45 implements KeyListener, FocusListener {
       keyevent_1.consume();
    }
 
-   static final void method801(int i_0) {
+   static final void method801() {
       if (class7.field49) {
          if (class46.field410 != null) {
             class46.field410.method5133();
@@ -121,11 +121,11 @@ public final class class45 implements KeyListener, FocusListener {
 
    }
 
-   public static void method794(class233 class233_0, int i_1) {
+   public static void method794(class233 class233_0) {
       ParamComposition.field3307 = class233_0;
    }
 
-   static void method787(int i_0) {
+   static void method787() {
       class55.field504 = null;
       class55.field505 = null;
       class55.field506 = null;

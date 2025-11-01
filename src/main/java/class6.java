@@ -19,7 +19,7 @@ public class class6 {
       field32 = new class8();
    }
 
-   public class6(ByteBuffer class300_1, boolean bool_2) {
+   public class6(ByteBuffer class300_1) {
       int i_3 = class300_1.readUnsignedShort();
       boolean bool_4 = class300_1.readUnsignedByte() == 1;
       byte b_5;

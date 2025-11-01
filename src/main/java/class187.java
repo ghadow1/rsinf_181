@@ -432,7 +432,7 @@ public class class187 extends LinkedListNode {
 
             class96.updateGameState(30);
             class186.method3619((byte) 70);
-            class45.method787(337917094);
+            class45.method787();
             class187_59 = class235.method4265(ClientPacketProt.field2279, Client.data.field1313);
             Client.data.copy(class187_59);
             class141.method3291();
